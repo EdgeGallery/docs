@@ -2066,7 +2066,7 @@ Mep-agent由Go语言开发，建议开发者使用Docker容器的形式部署，
 App的配置文件 app_instance_info.yaml 并将MEC
 App注册到Mep，实现服务注册与发现以及服务订阅。
 
-在进行使用MEP-Agent之前，请参考[*应用接口调用流程*](#_应用接口调用流程)章节准备appInstanceId，AK，SK。[](#_应用认证机制（责任人：陈传雨）)
+在进行使用MEP-Agent之前，请参考[*应用接口调用流程*](#应用接口调用流程)章节准备appInstanceId，AK，SK。[](#_应用认证机制（责任人：陈传雨）)
 
 #### 将应用信息导入MEP
 
