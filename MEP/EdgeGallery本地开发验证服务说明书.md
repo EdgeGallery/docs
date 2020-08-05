@@ -1957,7 +1957,7 @@ root@ubuntu:~# docker run -d --name kong-service \
             -e "KONG_SSL_CIPHER_SUITE=custom" \
             -e "KONG_SSL_CIPHERS=ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384"\
             -e "KONG_NGINX_HTTP_SSL_PROTOCOLS=TLSv1.2 TLSv1.3" \
-            -e "KONG_NGINX_HTTP_SSL_PREFER_SERVER\_CIPHERS=on" \
+            -e "KONG_NGINX_HTTP_SSL_PREFER_SERVER_CIPHERS=on" \
             -v /data/thirdparty/kong:/var/lib/kong/data \
             -p <host IP>:8443:8443 \ # host IP 为部署环境的IP地址
             kong:2.0.4-alpine /bin/sh -c 'export ADDR=`hostname`;export KONG_ADMIN_LISTEN="$ADDR:8444 ssl";export KONG_PROXY_LISTEN="$ADDR:8443 ssl http2";./docker-entrypoint.sh kong docker-start'
