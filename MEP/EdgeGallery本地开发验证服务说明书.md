@@ -2134,7 +2134,7 @@ Mep-agent执行MEC App服务注册的流程：
 
 1.  Mep-Agent向EG-LDVS MEP发送请求
 
-请求头header携带着签名(签名算法参考[*AK/SK签名认证算法说明*](#AK/SK签名认证算法说明)章节)，EG-LDVS MEP校验签名，校验通过返回token（有效期1小时）
+请求头header携带着签名(签名算法参考*AK/SK签名认证算法说明*章节)，EG-LDVS MEP校验签名，校验通过返回token（有效期1小时）
 
 2.  Mep-Agent向EG-LDVS MEP注册服务
 
