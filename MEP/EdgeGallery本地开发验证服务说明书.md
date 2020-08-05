@@ -2101,9 +2101,8 @@ root@ubuntu:/home/EG-LDVS/mep-agent# chown -R eguser:eggroup /tmp/mepagent-conf/
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod -R 640 /tmp/mepagent-conf/
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /tmp/mepagent-conf/app_conf.yaml
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /tmp/mepagent-conf/mepagent.properties
-```
-** 运行mep-agent容器，完成mec app服务注册（注：运行前请先获取AK及SK，并完成MEC APP部署，根据部署的MEC APP的实际信息修改app_instance_info配置文件，此次假定app_instance_info.yaml保存在/home/EG-LDVS/mep-agent/conf路径下。）
-```
+
+# 运行mep-agent容器，完成mec app服务注册（注：运行前请先获取AK及SK，并完成MEC APP部署，根据部署的MEC APP的实际信息修改app_instance_info配置文件，此次假定app_instance_info.yaml保存在/home/EG-LDVS/mep-agent/conf路径下。）
 root@ubuntu:/home/EG-LDVS/mep-agent# chown -R eguser:eggroup /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml
 #可选，mep-agent默认自带一份样例app_instance_info.yaml用于注册
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml #可选，mep-agent默认自带一份样例app_instance_info.yaml用于注册**
