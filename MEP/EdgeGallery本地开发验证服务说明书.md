@@ -172,7 +172,7 @@ MEP管理应用的服务，应用需要将其服务注册到MEP中，MEP-Agent�
 
 -   在启动应用实例时，通过应用启动参数或输入配置得到应用的appInstanceId，AK/SK，即应用已知自身的appInstanceId和AK/SK。参考[*部署mep-agent*](#EG-LDVS-MEP-agent部署指导)章节。
 
--   在启动EG-LDVS时，配置同样的appInstanceId，AK/SK，确保其能对该应用进行认证。参考[*部署mepauth*](#EG-LDVS-MEP部署指导)章节。
+-   在启动EG-LDVS时，配置同样的appInstanceId，AK/SK，确保其能对该应用进行认证。参考[*部署mepauth*](#部署mepauth)章节。
 
 应用调用EG-LDVS的API接口的流程如下。
 
@@ -2134,7 +2134,7 @@ Mep-agent执行MEC App服务注册的流程：
 
 1.  Mep-Agent向EG-LDVS MEP发送请求
 
-请求头header携带着签名(签名算法参考*AK/SK签名认证算法说明*章节)，EG-LDVS MEP校验签名，校验通过返回token（有效期1小时）[](#_AK/SK签名认证算法说明)
+请求头header携带着签名(签名算法参考[*AK/SK签名认证算法说明*](#_AK/SK签名认证算法说明)章节)，EG-LDVS MEP校验签名，校验通过返回token（有效期1小时）
 
 2.  Mep-Agent向EG-LDVS MEP注册服务
 
