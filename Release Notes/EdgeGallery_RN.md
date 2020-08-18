@@ -1,7 +1,6 @@
-.. This work is licensed under a Creative Commons Attribution 4.0 International License.
-.. http://creativecommons.org/licenses/by/4.0
-.. Copyright 2019-2020 Huawei Technologies Co., Ltd.
-.. _release_notes:
+.. This work is licensed under a Creative Commons Attribution 4.0 International License. <br>
+.. http://creativecommons.org/licenses/by/4.0 <br>
+.. Copyright 2019-2020 Huawei Technologies Co., Ltd. <br>
 
 Release Notes
 =============
@@ -10,7 +9,7 @@ Release Notes
    EdgeGallery Introduction
    
  Version: e.g. v0.9
- --------------
+--------------
 
  :Release Date: xxxx-xxx-xx
  :Image Version: x.x.x
