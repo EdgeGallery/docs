@@ -1,0 +1,739 @@
+swagger: '2.0'
+info:
+  description: Inventory REST API
+  version: 1.0.0
+  title: Inventory REST API
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+host: '127.0.0.1:8093'
+basePath: /
+tags:
+  - name: app-lcm-inventory-handler
+    description: App Lcm Inventory Handler
+  - name: app-store-inventory-handler
+    description: App Store Inventory Handler
+  - name: mec-host-inventory-handler
+    description: Mec Host Inventory Handler
+paths:
+  '/inventory/v1/tenant/{tenant_id}/appstores':
+    delete:
+      tags:
+        - app-store-inventory-handler
+      summary: Deletes all application store records
+      operationId: deleteAllAppStoreRecordsUsingDELETE
+      produces:
+        - application/json
+      parameters:
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      deprecated: false
+  '/inventory/v1/tenant/{tenant_id}/appstores/{appstore_ip}':
+    delete:
+      tags:
+        - app-store-inventory-handler
+      summary: Deletes application store record
+      operationId: deleteAppStoreRecordUsingDELETE
+      produces:
+        - application/json
+      parameters:
+        - name: appstore_ip
+          in: path
+          description: appstore IP
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      deprecated: false
+  '/inventory/v1/tenant/{tenant_id}/mechosts':
+    delete:
+      tags:
+        - mec-host-inventory-handler
+      summary: Deletes all MEC host records
+      operationId: deleteAllMecHostRecordsUsingDELETE
+      produces:
+        - application/json
+      parameters:
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      deprecated: false
+  '/inventory/v1/tenant/{tenant_id}/mechosts/{mechost_ip}':
+    delete:
+      tags:
+        - mec-host-inventory-handler
+      summary: Deletes MEC host record
+      operationId: deleteMecHostRecordUsingDELETE
+      produces:
+        - application/json
+      parameters:
+        - name: mechost_ip
+          in: path
+          description: mechost IP
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      deprecated: false
+  '/inventory/v1/tenants/{tenant_id}/applcms':
+    get:
+      tags:
+        - app-lcm-inventory-handler
+      summary: Retrieves all application LCM records
+      operationId: getAllAppLcmRecordsUsingGET
+      produces:
+        - application/json
+      parameters:
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              type: object
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    post:
+      tags:
+        - app-lcm-inventory-handler
+      summary: Adds new application LCM record
+      operationId: addAppLcmRecordUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: appLcmDto
+          description: applcm inventory information
+          required: false
+          schema:
+            $ref: '#/definitions/AppLcmDto'
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    delete:
+      tags:
+        - app-lcm-inventory-handler
+      summary: Deletes all application LCM records
+      operationId: deleteAllAppLcmRecordsUsingDELETE
+      produces:
+        - application/json
+      parameters:
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      deprecated: false
+  '/inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip}':
+    get:
+      tags:
+        - app-lcm-inventory-handler
+      summary: Retrieves application LCM record
+      operationId: getAppLcmRecordUsingGET
+      produces:
+        - application/json
+      parameters:
+        - name: applcm_ip
+          in: path
+          description: applcm IP
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/AppLcmDto'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    put:
+      tags:
+        - app-lcm-inventory-handler
+      summary: Updates existing application LCM record
+      operationId: updateAppLcmRecordUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: appLcmDto
+          description: applcm inventory information
+          required: false
+          schema:
+            $ref: '#/definitions/AppLcmDto'
+        - name: applcm_ip
+          in: path
+          description: applcm IP
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    delete:
+      tags:
+        - app-lcm-inventory-handler
+      summary: Deletes application LCM record
+      operationId: deleteAppLcmRecordUsingDELETE
+      produces:
+        - application/json
+      parameters:
+        - name: applcm_ip
+          in: path
+          description: applcm IP
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      deprecated: false
+  '/inventory/v1/tenants/{tenant_id}/appstores':
+    get:
+      tags:
+        - app-store-inventory-handler
+      summary: Retrieves all application store records
+      operationId: getAllAppStoreRecordsUsingGET
+      produces:
+        - application/json
+      parameters:
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              type: object
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    post:
+      tags:
+        - app-store-inventory-handler
+      summary: Adds new application store record
+      operationId: addAppStoreRecordUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: appStoreDto
+          description: appstore inventory information
+          required: false
+          schema:
+            $ref: '#/definitions/AppStoreDto'
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  '/inventory/v1/tenants/{tenant_id}/appstores/{appstore_ip}':
+    get:
+      tags:
+        - app-store-inventory-handler
+      summary: Retrieves application store record
+      operationId: getAppStoreRecordUsingGET
+      produces:
+        - application/json
+      parameters:
+        - name: appstore_ip
+          in: path
+          description: appstore IP
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/MecHostDto'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    put:
+      tags:
+        - app-store-inventory-handler
+      summary: Updates existing application store record
+      operationId: updateAppStoreRecordUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: appStoreDto
+          description: appstore inventory information
+          required: false
+          schema:
+            $ref: '#/definitions/AppStoreDto'
+        - name: appstore_ip
+          in: path
+          description: appstore IP
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  '/inventory/v1/tenants/{tenant_id}/mechosts':
+    get:
+      tags:
+        - mec-host-inventory-handler
+      summary: Retrieves all MEC host records
+      operationId: getAllMecHostRecordsUsingGET
+      produces:
+        - application/json
+      parameters:
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              type: object
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    post:
+      tags:
+        - mec-host-inventory-handler
+      summary: Adds new MEC host record
+      operationId: addMecHostRecordUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: mecHostDto
+          description: mechost inventory information
+          required: false
+          schema:
+            $ref: '#/definitions/MecHostDto'
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  '/inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}':
+    get:
+      tags:
+        - mec-host-inventory-handler
+      summary: Retrieves MEC host record
+      operationId: getMecHostRecordUsingGET
+      produces:
+        - application/json
+      parameters:
+        - name: mechost_ip
+          in: path
+          description: mechost IP
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/MecHostDto'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    put:
+      tags:
+        - mec-host-inventory-handler
+      summary: Updates existing MEC host record
+      operationId: updateMecHostRecordUsingPUT
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: mecHostDto
+          description: mechost inventory information
+          required: false
+          schema:
+            $ref: '#/definitions/MecHostDto'
+        - name: mechost_ip
+          in: path
+          description: mechost IP
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  '/inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/k8sconfig':
+    post:
+      tags:
+        - mec-host-inventory-handler
+      summary: Upload K8s configuration file to applcm
+      operationId: uploadConfigFileUsingPOST
+      consumes:
+        - multipart/form-data
+      produces:
+        - '*/*'
+      parameters:
+        - name: access_token
+          in: header
+          description: access token
+          required: false
+          type: string
+        - name: file
+          in: formData
+          description: config file
+          required: false
+          type: file
+        - name: mechost_ip
+          in: path
+          description: mechost IP
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    delete:
+      tags:
+        - mec-host-inventory-handler
+      summary: Deletes K8s configuration file from applcm
+      operationId: deleteConfigFileUsingDELETE
+      produces:
+        - application/json
+        - text/plain
+      parameters:
+        - name: access_token
+          in: header
+          description: access token
+          required: false
+          type: string
+        - name: mechost_ip
+          in: path
+          description: mechost IP
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant identifier
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      deprecated: false
+definitions:
+  AppLcmDto:
+    type: object
+    properties:
+      applcmIp:
+        type: string
+      applcmPort:
+        type: string
+      password:
+        type: string
+      userName:
+        type: string
+    title: AppLcmDto
+  AppStoreDto:
+    type: object
+    properties:
+      appstoreIp:
+        type: string
+      appstoreName:
+        type: string
+      appstorePort:
+        type: string
+      password:
+        type: string
+      producer:
+        type: string
+      uri:
+        type: string
+      userName:
+        type: string
+    title: AppStoreDto
+  MecHostDto:
+    type: object
+    properties:
+      address:
+        type: string
+      affinity:
+        type: string
+      applcmIp:
+        type: string
+      city:
+        type: string
+      edgeName:
+        type: string
+      edgeRepoPort:
+        type: string
+      edgerepoIp:
+        type: string
+      edgerepoPassword:
+        type: string
+      edgerepoUsername:
+        type: string
+      mechostIp:
+        type: string
+      mechostName:
+        type: string
+      password:
+        type: string
+      userName:
+        type: string
+      zipCode:
+        type: string
+    title: MecHostDto
+  Status:
+    type: object
+    properties:
+      response:
+        type: string
+    title: Status
