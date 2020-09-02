@@ -1,0 +1,373 @@
+swagger: '2.0'
+info:
+  description: APPLICATION PACKAGE MANAGER REST API
+  version: 1.0.0
+  title: APPLICATION PACKAGE MANAGER REST API
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+host: 'localhost:30107'
+basePath: /
+tags:
+  - name: APM api system
+    description: Apm Handler
+paths:
+  '/apm/v1/tenants/{tenant_id}/packages':
+    get:
+      tags:
+        - APM api system
+      summary: Retrieves all application packages
+      operationId: getAllAppPackageInfoUsingGET
+      produces:
+        - application/json
+      parameters:
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              type: object
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    post:
+      tags:
+        - APM api system
+      summary: Onboard application package
+      operationId: onBoardAppPackageUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: appPackageDto
+          description: app package info
+          required: false
+          schema:
+            $ref: '#/definitions/AppPackageDto'
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  '/apm/v1/tenants/{tenant_id}/packages/{app_package_id}':
+    get:
+      tags:
+        - APM api system
+      summary: Retrieves application package information
+      operationId: getAppPackageInfoUsingGET
+      produces:
+        - application/json
+      parameters:
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/AppPackageDto'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    delete:
+      tags:
+        - APM api system
+      summary: Deletes application package
+      operationId: deleteAppPackageUsingDELETE
+      produces:
+        - text/plain
+      parameters:
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      deprecated: false
+  '/apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download':
+    get:
+      tags:
+        - APM api system
+      summary: Download application package CSAR
+      operationId: downloadAppPackageUsingGET
+      produces:
+        - application/octet-stream
+      parameters:
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/InputStreamResource'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  '/apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_ip}':
+    delete:
+      tags:
+        - APM api system
+      summary: Deletes an application packages
+      operationId: deleteAppPackageInHostUsingDELETE
+      produces:
+        - text/plain
+      parameters:
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: false
+          type: string
+        - name: host_ip
+          in: path
+          description: host ip
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      deprecated: false
+definitions:
+  AppPackageDto:
+    type: object
+    properties:
+      appIconUrl:
+        type: string
+      appId:
+        type: string
+      appPkgAffinity:
+        type: string
+      appPkgDesc:
+        type: string
+      appPkgId:
+        type: string
+      appPkgName:
+        type: string
+      appPkgPath:
+        type: string
+      appPkgVersion:
+        type: string
+      appProvider:
+        type: string
+      createdTime:
+        type: string
+      mecHostInfo:
+        type: array
+        items:
+          $ref: '#/definitions/MecHostDto'
+      modifiedTime:
+        type: string
+    title: AppPackageDto
+  File:
+    type: object
+    properties:
+      absolute:
+        type: boolean
+      absoluteFile:
+        $ref: '#/definitions/File'
+      absolutePath:
+        type: string
+      canonicalFile:
+        $ref: '#/definitions/File'
+      canonicalPath:
+        type: string
+      directory:
+        type: boolean
+      file:
+        type: boolean
+      freeSpace:
+        type: integer
+        format: int64
+      hidden:
+        type: boolean
+      name:
+        type: string
+      parent:
+        type: string
+      parentFile:
+        $ref: '#/definitions/File'
+      path:
+        type: string
+      totalSpace:
+        type: integer
+        format: int64
+      usableSpace:
+        type: integer
+        format: int64
+    title: File
+  InputStream:
+    type: object
+    title: InputStream
+  InputStreamResource:
+    type: object
+    properties:
+      description:
+        type: string
+      file:
+        $ref: '#/definitions/File'
+      filename:
+        type: string
+      inputStream:
+        $ref: '#/definitions/InputStream'
+      open:
+        type: boolean
+      readable:
+        type: boolean
+      uri:
+        $ref: '#/definitions/URI'
+      url:
+        $ref: '#/definitions/URL'
+    title: InputStreamResource
+  MecHostDto:
+    type: object
+    properties:
+      error:
+        type: string
+      hostIp:
+        type: string
+      status:
+        type: string
+    title: MecHostDto
+  URI:
+    type: object
+    properties:
+      absolute:
+        type: boolean
+      authority:
+        type: string
+      fragment:
+        type: string
+      host:
+        type: string
+      opaque:
+        type: boolean
+      path:
+        type: string
+      port:
+        type: integer
+        format: int32
+      query:
+        type: string
+      rawAuthority:
+        type: string
+      rawFragment:
+        type: string
+      rawPath:
+        type: string
+      rawQuery:
+        type: string
+      rawSchemeSpecificPart:
+        type: string
+      rawUserInfo:
+        type: string
+      scheme:
+        type: string
+      schemeSpecificPart:
+        type: string
+      userInfo:
+        type: string
+    title: URI
+  URL:
+    type: object
+    properties:
+      authority:
+        type: string
+      content:
+        type: object
+      defaultPort:
+        type: integer
+        format: int32
+      file:
+        type: string
+      host:
+        type: string
+      path:
+        type: string
+      port:
+        type: integer
+        format: int32
+      protocol:
+        type: string
+      query:
+        type: string
+      ref:
+        type: string
+      userInfo:
+        type: string
+    title: URL
