@@ -175,3 +175,6 @@ epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
+
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = False     # optional.
