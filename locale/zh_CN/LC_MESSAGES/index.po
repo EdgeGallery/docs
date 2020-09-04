@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../index.rst:2
 msgid "Welcome to Edgegallery's documentation!"
-msgstr ""
+msgstr "欢迎使用Edgegallery的文档！"
 
 #: ../../index.rst:4
 msgid ""
@@ -31,20 +31,26 @@ msgid ""
 "with public clouds. Build a unified MEC application ecosystem based on "
 "the heterogeneous differentiation of compatible edge infrastructure."
 msgstr ""
+"EdgeGallery社区聚焦5G MEC平台框架，"
+"通过开源协作构建起MEC边缘的资源、应用、安全、"
+"管理的基础框架和网络开放服务的事实标准，"
+"并实现同公有云的互联互通。在兼容边缘基础设施异构差异化的基础上，"
+"构建起统一的MEC应用生态系统."
 
 #: ../../index.rst:16
 msgid "Getting Started"
 msgstr ""
-
+"快速入门"
 #: ../../index.rst:22
 msgid "Release Notes"
 msgstr ""
+"版本说明"
 
 #: ../../index.rst:28
 msgid "Developer Guide"
-msgstr ""
+msgstr "开发者指导"
 
 #: ../../index.rst:34
 msgid "Projects"
-msgstr ""
+msgstr "项目"
 
