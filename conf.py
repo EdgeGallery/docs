@@ -30,6 +30,10 @@ release = u'0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
+from recommonmark.parser import CommonMarkParser
+source_parsers = {
+    '.md': CommonMarkParser,
+}
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #

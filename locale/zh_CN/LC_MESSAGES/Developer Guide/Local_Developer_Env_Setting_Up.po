@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../Developer Guide/Local_Developer_Env_Setting_Up.md:2
 msgid "Development Guide"
-msgstr ""
+msgstr "开发者指导"
 
 #: ../../Developer Guide/Local_Developer_Env_Setting_Up.md:4
 msgid "### TBA"

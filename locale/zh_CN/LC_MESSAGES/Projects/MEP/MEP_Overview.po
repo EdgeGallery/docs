@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../Projects/MEP/MEP_Overview.md:2
 msgid "MEP Overview"
-msgstr ""
+msgstr "MEP 总览"
 
 #: ../../Projects/MEP/MEP_Overview.md:5
 msgid "# MEP 整体项目介绍"
