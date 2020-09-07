@@ -1,0 +1,199 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.appstore.mec.interfaces.apackage.web.PackageController"
+  x-java-interface: "cse.gen.openMec.mec_appstore._package.PackageControllerIntf"
+basePath: "/mec/appstore/v1"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /apps/{appId}/packages/{packageId}/action/download:
+    get:
+      tags:
+      - "Package Controller"
+      summary: "download the package by package id."
+      operationId: "downloadPackage"
+      produces:
+      - "application/octet-stream"
+      parameters:
+      - name: "packageId"
+        in: "path"
+        description: "package Id"
+        required: true
+        type: "string"
+      - name: "appId"
+        in: "path"
+        description: "app Id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "file"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /apps/{appId}/packages/{packageId}/files:
+    post:
+      tags:
+      - "Package Controller"
+      summary: "get csar file uri by csarId"
+      operationId: "getCsarFileByName"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "packageId"
+        in: "path"
+        description: "package Id"
+        required: true
+        type: "string"
+      - name: "filePath"
+        in: "query"
+        required: false
+        type: "string"
+      - name: "appId"
+        in: "path"
+        description: "app Id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "string"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /apps/{appId}/packages/{packageId}:
+    get:
+      tags:
+      - "Package Controller"
+      summary: "get app package bycsarId"
+      operationId: "getPackageById"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "appId"
+        in: "path"
+        description: "app Id"
+        required: true
+        type: "string"
+      - name: "packageId"
+        in: "path"
+        description: "package Id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/PackageDto"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+    delete:
+      tags:
+      - "Package Controller"
+      summary: "delete a package"
+      operationId: "unPublishPackage"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "userId"
+        in: "query"
+        required: true
+        type: "string"
+      - name: "userName"
+        in: "query"
+        required: true
+        type: "string"
+      - name: "appId"
+        in: "path"
+        description: "app Id"
+        required: true
+        type: "string"
+      - name: "packageId"
+        in: "path"
+        description: "package Id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "string"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+definitions:
+  PackageDto:
+    type: "object"
+    properties:
+      csarId:
+        type: "string"
+      downloadUrl:
+        type: "string"
+      iconUrl:
+        type: "string"
+      size:
+        type: "string"
+      format:
+        type: "string"
+      createTime:
+        type: "string"
+      name:
+        type: "string"
+      version:
+        type: "string"
+      type:
+        type: "string"
+      details:
+        type: "string"
+      affinity:
+        type: "string"
+      industry:
+        type: "string"
+      contact:
+        type: "string"
+      appId:
+        type: "string"
+    x-java-class: "org.appstore.mec.interfaces.apackage.facade.dto.PackageDto"

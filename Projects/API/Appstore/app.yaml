@@ -1,0 +1,359 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.appstore.mec.interfaces.app.web.AppController"
+  x-java-interface: "cse.gen.openMec.mec_appstore.app.AppControllerIntf"
+basePath: "/mec/appstore/v1"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /apps:
+    get:
+      tags:
+      - "APP Controller"
+      summary: "get app list by condition, return all apps."
+      operationId: "queryAppsByCond"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "name"
+        in: "query"
+        description: "app name"
+        required: false
+        type: "string"
+      - name: "provider"
+        in: "query"
+        description: "app provider"
+        required: false
+        type: "string"
+      - name: "type"
+        in: "query"
+        description: "app type"
+        required: false
+        type: "string"
+      - name: "affinity"
+        in: "query"
+        description: "app affinity"
+        required: false
+        type: "string"
+      - name: "userId"
+        in: "query"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/AppDto"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+    post:
+      tags:
+      - "APP Controller"
+      summary: "upload app package"
+      operationId: "appRegistering"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "userId"
+        in: "query"
+        required: true
+        type: "string"
+      - name: "userName"
+        in: "query"
+        required: true
+        type: "string"
+      - name: "file"
+        in: "formData"
+        description: "csar package"
+        required: true
+        type: "file"
+      - name: "icon"
+        in: "formData"
+        description: "file icon"
+        required: true
+        type: "file"
+      - name: "type"
+        in: "formData"
+        description: "app type"
+        required: true
+        type: "string"
+      - name: "shortDesc"
+        in: "formData"
+        description: "app shortDesc"
+        required: true
+        type: "string"
+      - name: "affinity"
+        in: "formData"
+        description: "app affinity"
+        required: true
+        type: "string"
+      - name: "industry"
+        in: "formData"
+        description: "app industry"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "string"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /apps/{appId}:
+    get:
+      tags:
+      - "APP Controller"
+      summary: "get app package list by app id."
+      operationId: "queryAppById"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "appId"
+        in: "path"
+        description: "app id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/AppDto"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+    delete:
+      tags:
+      - "APP Controller"
+      summary: "delete app and package list by id."
+      operationId: "deleteAppById"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "userId"
+        in: "query"
+        required: true
+        type: "string"
+      - name: "userName"
+        in: "query"
+        required: true
+        type: "string"
+      - name: "appId"
+        in: "path"
+        description: "app id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "string"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /apps/{appId}/action/download:
+    get:
+      tags:
+      - "APP Controller"
+      summary: "download the latest version of package."
+      operationId: "download"
+      produces:
+      - "application/octet-stream"
+      parameters:
+      - name: "appId"
+        in: "path"
+        description: "app id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "file"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /apps/{appId}/icon:
+    get:
+      tags:
+      - "APP Controller"
+      summary: "get app icon by csarId and file name."
+      operationId: "downloadIcon"
+      produces:
+      - "application/octet-stream"
+      parameters:
+      - name: "appId"
+        in: "path"
+        description: "app Id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "file"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "file"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /apps/{appId}/packages:
+    get:
+      tags:
+      - "APP Controller"
+      summary: "get app package list by condition"
+      operationId: "queryPackageListByAppId"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "appId"
+        in: "path"
+        description: "appId"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/PackageDto"
+        404:
+          description: "resource not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+definitions:
+  AppDto:
+    type: "object"
+    properties:
+      appId:
+        type: "string"
+      iconUrl:
+        type: "string"
+      name:
+        type: "string"
+      provider:
+        type: "string"
+      type:
+        type: "string"
+      shortDesc:
+        type: "string"
+      createTime:
+        type: "string"
+      details:
+        type: "string"
+      downloadCount:
+        type: "integer"
+        format: "int32"
+      affinity:
+        type: "string"
+      industry:
+        type: "string"
+      contact:
+        type: "string"
+      score:
+        type: "number"
+        format: "double"
+      userId:
+        type: "string"
+      userName:
+        type: "string"
+    x-java-class: "org.appstore.mec.interfaces.app.facade.dto.AppDto"
+  PackageDto:
+    type: "object"
+    properties:
+      csarId:
+        type: "string"
+      downloadUrl:
+        type: "string"
+      iconUrl:
+        type: "string"
+      size:
+        type: "string"
+      format:
+        type: "string"
+      createTime:
+        type: "string"
+      name:
+        type: "string"
+      version:
+        type: "string"
+      type:
+        type: "string"
+      details:
+        type: "string"
+      affinity:
+        type: "string"
+      industry:
+        type: "string"
+      contact:
+        type: "string"
+      appId:
+        type: "string"
+    x-java-class: "org.appstore.mec.interfaces.apackage.facade.dto.PackageDto"

@@ -1,0 +1,136 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.appstore.mec.interfaces.comment.CommentController"
+  x-java-interface: "cse.gen.openMec.mec_appstore.comment.CommentControllerIntf"
+basePath: "/mec/appstore/v1/"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /apps/{appId}/comments:
+    get:
+      tags:
+      - "Comment Controller"
+      summary: "get comments by csar id."
+      operationId: "getComments"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "appId"
+        in: "path"
+        description: "app Id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Comment"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+    post:
+      tags:
+      - "Comment Controller"
+      summary: "add comment to a app."
+      operationId: "addComments"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "userId"
+        in: "query"
+        required: true
+        type: "string"
+      - name: "userName"
+        in: "query"
+        required: true
+        type: "string"
+      - name: "appId"
+        in: "path"
+        description: "appId"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "entity"
+        required: true
+        schema:
+          $ref: "#/definitions/CommentRequest"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "string"
+definitions:
+  CommentRequest:
+    type: "object"
+    required:
+    - "body"
+    - "score"
+    properties:
+      body:
+        type: "string"
+      score:
+        type: "number"
+        format: "double"
+    x-java-class: "org.appstore.mec.interfaces.comment.CommentRequest"
+  Comment:
+    type: "object"
+    properties:
+      commentId:
+        type: "integer"
+        format: "int32"
+      user:
+        $ref: "#/definitions/User"
+      appId:
+        type: "string"
+      body:
+        type: "string"
+      score:
+        type: "number"
+        format: "double"
+      commentTime:
+        type: "string"
+    x-java-class: "org.appstore.mec.domain.model.comment.Comment"
+  Permissions:
+    type: "object"
+    properties:
+      platform:
+        type: "string"
+      role:
+        type: "string"
+      pageIds:
+        type: "array"
+        items:
+          type: "string"
+    x-java-class: "org.appstore.mec.domain.model.user.Permissions"
+  User:
+    type: "object"
+    properties:
+      userId:
+        type: "string"
+      userName:
+        type: "string"
+      permissions:
+        type: "array"
+        items:
+          $ref: "#/definitions/Permissions"
+      company:
+        type: "string"
+      gender:
+        type: "string"
+      telephone:
+        type: "string"
+    x-java-class: "org.appstore.mec.domain.model.user.User"
