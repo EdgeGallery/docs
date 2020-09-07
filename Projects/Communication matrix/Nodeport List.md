@@ -14,7 +14,7 @@ Kubernetes NodePort List
 | mecm-esr | mecesr  | mecesr | ClusterIP| 38181|
 | mecm-meo-fe |  mecm-fe | mecm-fe-svc   | ClusterIP  | 8443  |
 | toolchain | toolchain-0 | tool-chain-svc | ClusterIP  | 8059 |
-| user-mgmt | user-mgmt-bcf6d68fc-cg7l4  | user-mgmt-svc | ClusterIP | 8067 |
+| user-mgmt | user-mgmt  | user-mgmt-svc | ClusterIP | 8067 |
 | user-mgmt-postgres | user-mgmt-postgres-0 | user-mgmt-postgres-svc | ClusterIP | 5432 |
 | user-mgmt-redis | user-mgmt-redis-0 | user-mgmt-redis-svc | ClusterIP | 6379 |
 | service-center | service-center| service-center | ClusterIP | 30100 |
