@@ -4,20 +4,20 @@ Kubernetes NodePort List
 | **Component** | **Pod Name** | **Service Name** | **Node Port** | **Internal Port** |
 | --- | --- | --- | --- | --- |
 | appstore-be | appstore-be-0 | appstore-be-svc | ClusterIP| 8099 |
-| appstore-fe | appstore-fe-7bc748564-6mwph   | appstore-fe-svc | ClusterIP| 8443|
+| appstore-fe | appstore-fe   | appstore-fe-svc | ClusterIP| 8443|
 | appstore-be-postgres | appstore-be-postgres-0 | appstore-be-postgres-svc | ClusterIP | 5432 |
 | developer-be | developer-be-0 | N/A| N/A | N/A |
-| developer-fe | developer-fe-55c69585dd-klc78 | developer-fe-svc | ClusterIP| 8443|
+| developer-fe | developer-fe | developer-fe-svc | ClusterIP| 8443|
 | developer-be-postgres | developer-be-postgres-0 | developer-be-postgres-svc | ClusterIP | 5432 |
-| example-app | zoon-minder-6b75cff5c7-44mhh  | zoon-minder-svc  | 32040 | 80 |
-| example-app | zoon-minder-db-77b965878d-zpj7f  | zonedb-svc  | ClusterIP| 3306|
-| mecm-esr | mecesr-7855f8f465-rfr6g  | mecesr | ClusterIP| 38181|
-| mecm-meo-fe |  mecm-fe-5b96b97ccd-dpfck | mecm-fe-svc   | ClusterIP  | 8443  |
+| example-app | zoon-minder  | zoon-minder-svc  | 32040 | 80 |
+| example-app | zoon-minder-db  | zonedb-svc  | ClusterIP| 3306|
+| mecm-esr | mecesr  | mecesr | ClusterIP| 38181|
+| mecm-meo-fe |  mecm-fe | mecm-fe-svc   | ClusterIP  | 8443  |
 | toolchain | toolchain-0 | tool-chain-svc | ClusterIP  | 8059 |
 | user-mgmt | user-mgmt-bcf6d68fc-cg7l4  | user-mgmt-svc | ClusterIP | 8067 |
 | user-mgmt-postgres | user-mgmt-postgres-0 | user-mgmt-postgres-svc | ClusterIP | 5432 |
 | user-mgmt-redis | user-mgmt-redis-0 | user-mgmt-redis-svc | ClusterIP | 6379 |
-| service-center | service-center-64ffd8c67f-gqdrg| service-center | ClusterIP | 30100 |
+| service-center | service-center| service-center | ClusterIP | 30100 |
 | integration-testing | N/A  | N/A  | N/A  | N/A  |
 | mecm-applcm |  N/A  | N/A  | N/A  | N/A  |
 | mecm-catalog |  N/A  | N/A  | N/A  | N/A  |
