@@ -16,13 +16,6 @@ Kubernetes NodePort List
 | user-mgmt-postgres | user-mgmt-postgres-0 | user-mgmt-postgres-svc | ClusterIP | 5432 |
 | user-mgmt-redis | user-mgmt-redis-0 | user-mgmt-redis-svc | ClusterIP | 6379 |
 | service-center | service-center| service-center | ClusterIP | 30100 |
-| example-app | N/A  | N/A  | N/A  | N/A  | 
-| integration-testing | N/A  | N/A  | N/A  | N/A  |
-| mecm-applcm |  N/A  | N/A  | N/A  | N/A  |
-| mecm-catalog |  N/A  | N/A  | N/A  | N/A  |
-| mecm-meo-be |  N/A  | N/A  | N/A  | N/A  |
-| mep | N/A  | N/A  | N/A  | N/A  |
-| mep-agent | N/A  | N/A  | N/A  | N/A  |
 
 
 Kubernetes Ingress Information
