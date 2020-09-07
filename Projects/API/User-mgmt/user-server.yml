@@ -1,0 +1,235 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.edgegallery.user.auth.controller.UserController"
+  x-java-interface: "cse.gen.openMec.user_mgmt_be.user_mgmt_be.UserControllerIntf"
+basePath: "/v1/users"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /:
+    post:
+      summary: "register"
+      description: "The API can receive register user request. If register success,\
+        \ it will return status 201. If username or telephone has existed, or verification\
+        \ code is error, it will reutrn status 403. If database connection has exception,\
+        \ it will return status 500. If register failed, it will return status 400."
+      operationId: "register"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "request"
+        description: "TenantRegisterReqDto"
+        required: true
+        schema:
+          $ref: "#/definitions/TenantRegisterRequest"
+      responses:
+        "200":
+          description: "response of 200"
+          schema:
+            type: "object"
+        "201":
+          description: "register success"
+          schema:
+            $ref: "#/definitions/TenantRespDto"
+        "400":
+          description: "Bad Request"
+          schema:
+            $ref: "#/definitions/ErrorRespDto"
+        "403":
+          description: "FORBIDDEN"
+          schema:
+            $ref: "#/definitions/ErrorRespDto"
+        "500":
+          description: "INTERNAL ERROR"
+          schema:
+            $ref: "#/definitions/ErrorRespDto"
+  /password:
+    put:
+      summary: "forget password"
+      description: "The API can receive the retrieve password request. If retrieve\
+        \ success, it will return status 200. If telephone do not exist or the verification\
+        \ code is error, it will return status 403. If database connection has exception,\
+        \ it will return status 500. If retrieve failed, it will return status 400."
+      operationId: "retrievePassword"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "request"
+        description: "RetrievePasswordReqDto"
+        required: true
+        schema:
+          $ref: "#/definitions/RetrievePasswordReqDto"
+      responses:
+        "200":
+          description: "response of 200"
+          schema:
+            type: "object"
+        "400":
+          description: "Bad Request"
+          schema:
+            $ref: "#/definitions/ErrorRespDto"
+        "403":
+          description: "Forbidden"
+          schema:
+            $ref: "#/definitions/ErrorRespDto"
+        "500":
+          description: "INTERNAL ERROR"
+          schema:
+            $ref: "#/definitions/ErrorRespDto"
+  /action/uniqueness:
+    post:
+      summary: "check uniqueness"
+      description: "The API can receive the unique verify request for telephone or\
+        \ username. If the request param is unique, it will return status 200, otherwise\
+        \ it will return status 400."
+      operationId: "uniqueness"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "request"
+        description: "uniquenessRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/UniqueReqDto"
+      responses:
+        "200":
+          description: "response of 200"
+          schema:
+            type: "object"
+        "400":
+          description: "Bad Request"
+          schema:
+            $ref: "#/definitions/ErrorRespDto"
+definitions:
+  RoleDto:
+    type: "object"
+    required:
+    - "platform"
+    - "role"
+    properties:
+      platform:
+        type: "string"
+        enum:
+        - "APPSTORE"
+        - "DEVELOPER"
+        - "MECM"
+      role:
+        type: "string"
+        enum:
+        - "GUEST"
+        - "TENANT"
+        - "ADMIN"
+    x-java-class: "org.edgegallery.user.auth.controller.dto.response.RoleDto"
+  TenantRespDto:
+    type: "object"
+    required:
+    - "company"
+    - "gender"
+    - "permissions"
+    - "telephone"
+    - "userId"
+    - "username"
+    properties:
+      username:
+        type: "string"
+        example: "TestUser1"
+      company:
+        type: "string"
+        example: "hauwei"
+      gender:
+        type: "string"
+        example: "male"
+      telephone:
+        type: "string"
+        example: "15533449966"
+      userId:
+        type: "string"
+        example: "37423702-051a-46b4-bf2b-f190759cc0b8"
+      permissions:
+        type: "array"
+        items:
+          $ref: "#/definitions/RoleDto"
+    x-java-class: "org.edgegallery.user.auth.controller.dto.response.TenantRespDto"
+  ErrorRespDto:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      message:
+        type: "string"
+      detail:
+        type: "string"
+    x-java-class: "org.edgegallery.user.auth.controller.dto.response.ErrorRespDto"
+  TenantRegisterRequest:
+    type: "object"
+    required:
+    - "company"
+    - "gender"
+    - "password"
+    - "telephone"
+    - "username"
+    properties:
+      username:
+        type: "string"
+        example: "TestUser1"
+        pattern: "^[a-zA-Z][a-zA-Z0-9_]{5,29}$"
+      company:
+        type: "string"
+        example: "huawei"
+      gender:
+        type: "string"
+        example: "male"
+      telephone:
+        type: "string"
+        example: "15533449966"
+      password:
+        type: "string"
+        example: "TestPassword1"
+        pattern: "^(?=.*[a-zA-Z])(?=.*\\d)(?=.*[~!@#$%^&*()_+\\-={}:\";<>?,./]).{6,18}$"
+      verificationCode:
+        type: "string"
+        example: "123456"
+        pattern: "^\\d{6,6}$"
+    x-java-class: "org.edgegallery.user.auth.controller.dto.request.TenantRegisterReqDto"
+  RetrievePasswordReqDto:
+    type: "object"
+    required:
+    - "newPassword"
+    - "telephone"
+    - "verificationCode"
+    properties:
+      telephone:
+        type: "string"
+        example: "15191881309"
+        pattern: "^1[34578]\\d{9}$"
+      newPassword:
+        type: "string"
+        example: "TestPassword1"
+        pattern: "^(?=.*[a-zA-Z])(?=.*\\d)(?=.*[~!@#$%^&*()_+\\-={}:\";<>?,./]).{6,18}$"
+      verificationCode:
+        type: "string"
+        example: "123456"
+        pattern: "^\\d{6,6}$"
+    x-java-class: "org.edgegallery.user.auth.controller.dto.request.RetrievePasswordReqDto"
+  UniqueReqDto:
+    type: "object"
+    required:
+    - "telephone"
+    - "username"
+    properties:
+      username:
+        type: "string"
+        example: "zhangtest"
+        pattern: "^[a-zA-Z][a-zA-Z0-9_]{5,29}$"
+      telephone:
+        type: "string"
+        example: "15191881203"
+        pattern: "^1[34578]\\d{9}$"
+    x-java-class: "org.edgegallery.user.auth.controller.dto.request.UniqueReqDto"

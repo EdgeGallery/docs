@@ -1,0 +1,58 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.edgegallery.user.auth.controller.VerificationController"
+  x-java-interface: "cse.gen.openMec.user_mgmt_be.identity.VerificationControllerIntf"
+basePath: "/v1/identity"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /sms:
+    post:
+      summary: "verification"
+      description: "The API can receive the send verification code request. If send\
+        \ verification code success, it will return status 200. If send verification\
+        \ code error, it will return status 417."
+      operationId: "verification"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "request"
+        description: "verificationRequest"
+        required: true
+        schema:
+          $ref: "#/definitions/VerificationReqDto"
+      responses:
+        "200":
+          description: "response of 200"
+          schema:
+            type: "object"
+        "417":
+          description: "Expectation Failed"
+          schema:
+            $ref: "#/definitions/ErrorRespDto"
+definitions:
+  ErrorRespDto:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      message:
+        type: "string"
+      detail:
+        type: "string"
+    x-java-class: "org.edgegallery.user.auth.controller.dto.response.ErrorRespDto"
+  VerificationReqDto:
+    type: "object"
+    required:
+    - "telephone"
+    properties:
+      telephone:
+        type: "string"
+        example: "15191881159"
+        pattern: "^1[34578]\\d{9}$"
+    x-java-class: "org.edgegallery.user.auth.controller.dto.request.VerificationReqDto"

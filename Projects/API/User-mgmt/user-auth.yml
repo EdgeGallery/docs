@@ -1,0 +1,41 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.edgegallery.user.auth.controller.OAuthServerController"
+  x-java-interface: "cse.gen.openMec.user_mgmt_be.auth.OAuthServerControllerIntf"
+basePath: "/auth"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /logout:
+    get:
+      summary: "logout"
+      description: "The API can receive the logout request, If logout successful,\
+        \ it will return status 200, otherwise it will return status 500."
+      operationId: "logout"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "response of 200"
+          schema:
+            type: "string"
+        "500":
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/ErrorRespDto"
+definitions:
+  ErrorRespDto:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      message:
+        type: "string"
+      detail:
+        type: "string"
+    x-java-class: "org.edgegallery.user.auth.controller.dto.response.ErrorRespDto"
