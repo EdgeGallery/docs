@@ -1,5 +1,5 @@
 ## AppStore-be 三方件使用清单
-|	groupId	|	artifactId	|	version	|	license	|	是否主动依赖	|
+|	groupId	|	artifactId	|	version	|	license	|	direct import (Y/N)	|
 |	---	|	---	|	---	|	---	|	---	|
 |	aopalliance	|	aopalliance	|	1.0 	|	Public Domain	|		|
 |	com.fasterxml	|	classmate	|	1.4.0 	|	The Apache Software License, Version 2.0	|		|
