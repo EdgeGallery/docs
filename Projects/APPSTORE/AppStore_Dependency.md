@@ -1,4 +1,4 @@
-## AppStore 三方件使用清单
+## AppStore-be 三方件使用清单
 | groupId| artifactId | version  |license   | 是否主动依赖 |
 |---|---|---|---|---|
 | aopalliance|aopalliance|1.0	|  |  |
