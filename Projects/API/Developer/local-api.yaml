@@ -1,0 +1,44 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.edgegallery.developer.controller.LocalApiController"
+  x-java-interface: "cse.gen.openMec.mec_developer.localapi.LocalApiControllerIntf"
+basePath: "/mec/developer/v1/localapi"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+paths:
+  /{fileName}:
+    get:
+      summary: "query all local api"
+      operationId: "getFile"
+      produces:
+        - "application/octet-stream"
+      parameters:
+        - name: "fileName"
+          in: "path"
+          description: "fileName"
+          required: true
+          type: "string"
+      responses:
+        200:
+          description: "OK"
+          schema:
+            type: "file"
+        400:
+          description: "Bad Request"
+          schema:
+            $ref: "#/definitions/ErrorRespDto"
+definitions:
+  ErrorRespDto:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      message:
+        type: "string"
+      detail:
+        type: "string"
+    x-java-class: "org.edgegallery.developer.response.ErrorRespDto"
