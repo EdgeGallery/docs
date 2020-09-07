@@ -9,9 +9,6 @@ Kubernetes NodePort List
 | developer-be | developer-be-0 | N/A| N/A | N/A |
 | developer-fe | developer-fe | developer-fe-svc | ClusterIP| 8443|
 | developer-be-postgres | developer-be-postgres-0 | developer-be-postgres-svc | ClusterIP | 5432 |
-| example-app | zoon-minder  | zoon-minder-svc  | 32040 | 80 |
-| example-app | zoon-minder-db  | zonedb-svc  | ClusterIP| 3306|
-| example-app | ar-sight  | ar-sight-svc  | 32601/32602/32603/32604/32605/32606/32607 | 19903/10086/44446/19906/19931/1928/19932|
 | mecm-esr | mecesr  | mecesr | ClusterIP| 38181|
 | mecm-meo-fe |  mecm-fe | mecm-fe-svc   | ClusterIP  | 8443  |
 | toolchain | toolchain-0 | tool-chain-svc | ClusterIP  | 8059 |
@@ -19,6 +16,7 @@ Kubernetes NodePort List
 | user-mgmt-postgres | user-mgmt-postgres-0 | user-mgmt-postgres-svc | ClusterIP | 5432 |
 | user-mgmt-redis | user-mgmt-redis-0 | user-mgmt-redis-svc | ClusterIP | 6379 |
 | service-center | service-center| service-center | ClusterIP | 30100 |
+| example-app | N/A  | N/A  | N/A  | N/A  | 
 | integration-testing | N/A  | N/A  | N/A  | N/A  |
 | mecm-applcm |  N/A  | N/A  | N/A  | N/A  |
 | mecm-catalog |  N/A  | N/A  | N/A  | N/A  |
