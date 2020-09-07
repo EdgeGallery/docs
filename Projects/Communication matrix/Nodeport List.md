@@ -11,6 +11,7 @@ Kubernetes NodePort List
 | developer-be-postgres | developer-be-postgres-0 | developer-be-postgres-svc | ClusterIP | 5432 |
 | example-app | zoon-minder  | zoon-minder-svc  | 32040 | 80 |
 | example-app | zoon-minder-db  | zonedb-svc  | ClusterIP| 3306|
+| example-app | ar-sight  | ar-sight-svc  | 32601/32602/32603/32604/32605/32606/32607 | 19903/10086/44446/19906/19931/1928/19932|
 | mecm-esr | mecesr  | mecesr | ClusterIP| 38181|
 | mecm-meo-fe |  mecm-fe | mecm-fe-svc   | ClusterIP  | 8443  |
 | toolchain | toolchain-0 | tool-chain-svc | ClusterIP  | 8059 |
