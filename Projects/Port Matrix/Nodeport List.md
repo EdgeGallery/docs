@@ -19,7 +19,6 @@ Kubernetes NodePort List
 | mecm-inventory| mecm-inventory| mecm-inventory-svc | 30203| 8093|
 | mecm-applcm-controller| mecm-applcm-controller| mecm-applcm-controller-svc | 30204| 8094|
 | mecm-applcm-k8splugin| mecm-applcm-k8splugin| mecm-applcm-k8splugin-svc | 30205| 8095|
-| mecm-fe | mecm-fe| mecm-fe-svc | 30093| 8443|
 
 ServiceComb NodePort List
 --------------------------
