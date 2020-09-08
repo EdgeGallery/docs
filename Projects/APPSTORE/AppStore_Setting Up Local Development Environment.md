@@ -22,11 +22,11 @@
 
 1、下载[Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/145609_130f04c9_7625245.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg "service center1.jpg")
 
 2、解压后运行 start-service-center.bat  和  start-frontend.bat
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/145614_e28a01c3_7625245.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg "service center2.jpg")
 
 - ### DataBase
 
@@ -36,11 +36,11 @@
 
 3、创建名为appstoredb的数据库
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/145939_2e4b19a9_7625245.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/153833_89c54e53_7625245.jpeg "db1.jpg")
 
 4、根据[appstore部署文件](https://gitee.com/EdgeGallery_group/helm-charts/blob/master/appstore/templates/appstore-be/appstore-be-configmap.yaml) 中的数据库语句创建表结构
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/145954_0d140810_7625245.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/153843_47080502_7625245.jpeg "db2.jpg")
 
 5、创建名为usermgmtdb的数据库
 
@@ -58,7 +58,7 @@
 
 5、在编译器（此处以IDEA为例）中配置MainServer的运行时环境变量
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/150502_27fbe6c2_7625245.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/154011_896d887f_7625245.jpeg "usermgmt1.jpg")
 
 6、运行MainServer函数，启动UserManagement
 
@@ -68,7 +68,7 @@
 
 2、在编译器（此处以IDEA为例）中配置MainServer的运行时环境变量
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/150641_895a31a0_7625245.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/154023_9c49d20c_7625245.jpeg "appstore-be1.jpg")
 
 3、运行MainServer函数，启动appstore-be
 
@@ -88,7 +88,7 @@
 
 7、在编译器（此处以IDEA为例）中配置GatewayApplication的运行时环境变量
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/150934_a4743ec2_7625245.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/154035_12e727fc_7625245.jpeg "appstore-fe1.jpg")
 
 8、运行GatewayApplication启动WebsiteGateway与AppStore-fe，浏览器访问http://127.0.0.1:8080/ 即可访问到AppStore首页
 
