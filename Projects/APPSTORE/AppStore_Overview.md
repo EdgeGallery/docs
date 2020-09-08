@@ -22,11 +22,9 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 - 推荐使用Chrome浏览器
 ## 特性描述
 
-###应用上传
+### 应用上传
 App上传，为应用开发者提供展示平台，将开发者所开发的边缘应用通过AppStore对外展示，提升影响力。
-
-###应用下载
+### 应用下载
 App下载，主要为MECM系统提供应用列表，并通过边缘节点完成应用的生命周期管理。
-
 [1]: https://gitee.com/edgegallery/appstore-be "appstore-be"
 [2]: https://gitee.com/edgegallery/appstore-fe "appstore-fe"
