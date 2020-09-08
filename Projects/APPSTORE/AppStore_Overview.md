@@ -1,6 +1,6 @@
 [TOC]
 # APP STORE
-## 特性描述
+
 
 AppStore是开发者发布和上线App应用的市场，由Developer平台开发的边缘应用，经过测试可以直接分享到AppStore应用商店。AppStore分为前后台两个部分，[appstore-be][1]是后台部分，提供主要功能接口供前台或其他三方系统调用，[appstore-fe][2]是前台部分，提供界面展示。
 
@@ -19,8 +19,11 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 以上部署视图是按照K8S部署设计的， 在实际部署过程中，可以直接在虚拟机或者docker容器中启动各自的服务，部署过程中需要有一下几点注意：
 
 - appstore-fe，appstore-be，DB Service都需要注册到ServiceCenter中，有关ServiceCenter的使用方法请参考：https://servicecomb.apache.org/cn/
-
 - 推荐使用Chrome浏览器
-
+## 特性描述
+###应用上传
+App上传，为应用开发者提供展示平台，将开发者所开发的边缘应用通过AppStore对外展示，提升影响力。
+###应用下载
+App下载，主要为MECM系统提供应用列表，并通过边缘节点完成应用的生命周期管理。
 [1]: https://gitee.com/edgegallery/appstore-be "appstore-be"
 [2]: https://gitee.com/edgegallery/appstore-fe "appstore-fe"
