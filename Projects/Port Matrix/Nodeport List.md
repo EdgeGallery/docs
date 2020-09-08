@@ -13,6 +13,13 @@ Kubernetes NodePort List
 | user-mgmt-postgres | user-mgmt-postgres-0 | user-mgmt-postgres-svc | ClusterIP | 5432 |
 | user-mgmt-redis | user-mgmt-redis-0 | user-mgmt-redis-svc | ClusterIP | 6379 |
 | service-center | service-center| service-center | ClusterIP | 30100 |
+| mecm-fe | mecm-fe| mecm-fe-svc | 30093| 8443|
+| mecm-appo | mecm-appo| mecm-appo-svc | 30201| 8091|
+| mecm-apm | mecm-apm| mecm-apm-svc | 30202| 8092|
+| mecm-inventory| mecm-inventory| mecm-inventory-svc | 30203| 8093|
+| mecm-applcm-controller| mecm-applcm-controller| mecm-applcm-controller-svc | 30204| 8094|
+| mecm-applcm-k8splugin| mecm-applcm-k8splugin| mecm-applcm-k8splugin-svc | 30205| 8095|
+| mecm-fe | mecm-fe| mecm-fe-svc | 30093| 8443|
 
 ServiceComb NodePort List
 --------------------------
