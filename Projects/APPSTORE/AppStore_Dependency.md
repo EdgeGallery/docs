@@ -1,25 +1,25 @@
 ## AppStore-be 三方件使用清单
 |	groupId	|	artifactId	|	version	|	license	|	direct import (Y/N)	|
 |	---	|	---	|	---	|	---	|	---	|
-|	aopalliance	|	aopalliance	|	1.0 	|	Public Domain	|		|
-|	com.fasterxml	|	classmate	|	1.4.0 	|	The Apache Software License, Version 2.0	|		|
-|	com.fasterxml.jackson.core	|	jackson-annotations	|	2.9.0 	|	The Apache Software License, Version 2.0	|		|
-|	com.fasterxml.jackson.core	|	jackson-core	|	2.9.9 	|	The Apache Software License, Version 2.0	|		|
-|	com.fasterxml.jackson.core	|	jackson-databind	|	2.9.10.6 	|	The Apache Software License, Version 2.0	|		|
-|	com.fasterxml.jackson.dataformat	|	jackson-dataformat-xml	|	2.9.9 	|	The Apache Software License, Version 2.0	|		|
-|	com.fasterxml.jackson.dataformat	|	jackson-dataformat-yaml	|	2.9.9 	|	The Apache Software License, Version 2.0	|		|
-|	com.fasterxml.jackson.datatype	|	jackson-datatype-jdk8	|	2.9.9 	|	The Apache Software License, Version 2.0	|		|
-|	com.fasterxml.jackson.datatype	|	jackson-datatype-jsr310	|	2.9.9 	|	The Apache Software License, Version 2.0	|		|
-|	com.fasterxml.jackson.module	|	jackson-module-jaxb-annotations	|	2.9.9 	|	The Apache Software License, Version 2.0	|		|
-|	com.fasterxml.jackson.module	|	jackson-module-parameter-names	|	2.9.9 	|	The Apache Software License, Version 2.0	|		|
-|	com.fasterxml.woodstox	|	woodstox-core	|	5.0.3 	|	The Apache License, Version 2.0	|		|
-|	com.github.ben-manes.caffeine	|	caffeine	|	2.6.2 	|	Apache License, Version 2.0	|		|
-|	com.github.waffle	|	waffle-jna	|	1.9.1 	|	Eclipse Public License	|		|
-|	com.google.code.findbugs	|	jsr305	|	3.0.2 	|	The Apache Software License, Version 2.0	|		|
-|	com.google.code.gson	|	gson	|	2.8.2 	|	Apache 2.0	|		|
-|	com.google.errorprone	|	error_prone_annotations	|	2.1.3 	|	Apache 2.0	|		|
-|	com.google.guava	|	guava	|	26.0-jre 	|	The Apache Software License, Version 2.0	|		|
-|	com.google.inject	|	guice	|	4.2.0 	|	The Apache Software License, Version 2.0	|		|
+|	aopalliance	|	aopalliance	|	1.0 	|	Public Domain	|	N	|
+|	com.fasterxml	|	classmate	|	1.4.0 	|	The Apache Software License, Version 2.0	|	N	|
+|	com.fasterxml.jackson.core	|	jackson-annotations	|	2.9.0 	|	The Apache Software License, Version 2.0	|	N	|
+|	com.fasterxml.jackson.core	|	jackson-core	|	2.9.9 	|	The Apache Software License, Version 2.0	|	N	|
+|	com.fasterxml.jackson.core	|	jackson-databind	|	2.9.10.6 	|	The Apache Software License, Version 2.0	|	Y	|
+|	com.fasterxml.jackson.dataformat	|	jackson-dataformat-xml	|	2.9.9 	|	The Apache Software License, Version 2.0	|	N	|
+|	com.fasterxml.jackson.dataformat	|	jackson-dataformat-yaml	|	2.9.9 	|	The Apache Software License, Version 2.0	|	N	|
+|	com.fasterxml.jackson.datatype	|	jackson-datatype-jdk8	|	2.9.9 	|	The Apache Software License, Version 2.0	|	N	|
+|	com.fasterxml.jackson.datatype	|	jackson-datatype-jsr310	|	2.9.9 	|	The Apache Software License, Version 2.0	|	N	|
+|	com.fasterxml.jackson.module	|	jackson-module-jaxb-annotations	|	2.9.9 	|	The Apache Software License, Version 2.0	|	N	|
+|	com.fasterxml.jackson.module	|	jackson-module-parameter-names	|	2.9.9 	|	The Apache Software License, Version 2.0	|	N	|
+|	com.fasterxml.woodstox	|	woodstox-core	|	5.0.3 	|	The Apache License, Version 2.0	|	N	|
+|	com.github.ben-manes.caffeine	|	caffeine	|	2.6.2 	|	Apache License, Version 2.0	|	N	|
+|	com.github.waffle	|	waffle-jna	|	1.9.1 	|	Eclipse Public License	|	N	|
+|	com.google.code.findbugs	|	jsr305	|	3.0.2 	|	The Apache Software License, Version 2.0	|	N	|
+|	com.google.code.gson	|	gson	|	2.8.2 	|	Apache 2.0	|	Y	|
+|	com.google.errorprone	|	error_prone_annotations	|	2.1.3 	|	Apache 2.0	|	N	|
+|	com.google.guava	|	guava	|	26.0-jre 	|	The Apache Software License, Version 2.0	|	N	|
+|	com.google.inject	|	guice	|	4.2.0 	|	The Apache Software License, Version 2.0	|	N	|
 |	com.google.inject.extensions	|	guice-assistedinject	|	4.1.0 	|	The Apache Software License, Version 2.0	|		|
 |	com.google.inject.extensions	|	guice-multibindings	|	4.1.0 	|	The Apache Software License, Version 2.0	|		|
 |	com.google.j2objc	|	j2objc-annotations	|	1.1 	|	The Apache Software License, Version 2.0	|		|
