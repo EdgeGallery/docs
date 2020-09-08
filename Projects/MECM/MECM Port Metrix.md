@@ -5,4 +5,5 @@
 | APM   | 8092 |         对外提供应用包管理的服务端口                             |
 | Inventory           |  8093                      |    对外提供存量管理的服务端口 |
 | applcm controller     | 8094   |    applcm中对外提供应用生命周期管理的服务端口   |
-| aplcm k8splugin           | 8095 |  applcm中的k8s插件对外提供k8s的服务端口
+| aplcm k8splugin           | 8095 |  applcm中的k8s插件对外提供k8s的服务端口|
+| FE                      |     8443     | 前台模块的对外开放端口 |
