@@ -215,6 +215,7 @@
 ## AppStore-fe 三方件使用清单
 
 |	type	|	name	|	version	|	LICENSE	|	direct import	|
+|	---	|	---	|	---	|	---	|	---	|
 |	devDependencies	|	@vue/cli-plugin-babel	|	3.11.0	|		|	Y	|
 |	devDependencies	|	@vue/cli-plugin-eslint	|	3.11.0	|		|	Y	|
 |	devDependencies	|	@vue/cli-service	|	3.11.0	|		|	Y	|
