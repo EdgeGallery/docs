@@ -1,0 +1,35 @@
+## APPSTORE应用商店
+
+### 概述
+AppStore是开发者发布和上线App应用的市场，由Developer平台开发的边缘应用，经过测试可以直接分享到AppStore应用商店。也可直接上传符合平台规范的应用包，应用包文件类型为csar。一个APP对应多个Package，使用者可直接下载APP的最新版本Package或者下载指定版本的Package。
+
+### 登录注册
+ 进入网址后，注册账号，注册完成之后，登录界面
+![注册页面](https://images.gitee.com/uploads/images/2020/0908/163000_767c7da4_5416924.png "注册.PNG")
+![登录界面](https://images.gitee.com/uploads/images/2020/0908/163022_fe7cc972_5416924.png "登录.PNG")
+
+### 商店首页
+登陆成功后进入商店首页
+![商店首页](https://images.gitee.com/uploads/images/2020/0908/162506_099b5658_5416924.png "首页.PNG")
+
+
+### 应用详情
+1. 点击应用查看应用详情，详情界面展示应用版本，行业，类型等基本信息，下侧展示具体介绍，基本信息中的右侧操作中，可以鼠标点击下载按钮，下载csar包；
+![应用详情](https://images.gitee.com/uploads/images/2020/0908/163133_ad521f54_5416924.png "应用详情.PNG")
+2. 如需对APP进行评论，可使用鼠标左键点击APP详情右侧下方的评论按钮，在弹出的评论框输入评论，设置评分，鼠标左键点击按钮后，评论提交成功。
+
+![评论界面](https://images.gitee.com/uploads/images/2020/0908/163237_9f574a3d_5416924.png "评论界面.PNG")
+
+
+### 上传应用
+1.上传APP，打开APP Store主界面，点击右侧上传图标，打开上传APP对话框。
+![首页上传](https://images.gitee.com/uploads/images/2020/0908/163449_f7591d08_5416924.png "首页上传.PNG")
+2.在上传对话框中选择需要上传的APP，上传或选择系统默认提供的APP图标，选择APP行业、类型、架构，填写APP简单描述，点击确认完成上传。
+![上传界面](https://images.gitee.com/uploads/images/2020/0908/163540_358bd2b9_5416924.png "上传界面.PNG")
+
+
+### 我的应用
+1.如需查看用户所上传的所有APP 列表，在主页点击 “我的应用/My APP”。
+
+2.删除应用可通过点击我的应用列表最右侧操作一栏的功能完成。
+![我的应用](https://images.gitee.com/uploads/images/2020/0908/163634_86ff98f2_5416924.png "我的应用.PNG")
