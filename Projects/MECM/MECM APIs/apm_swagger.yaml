@@ -1,3 +1,4 @@
+---
 swagger: '2.0'
 info:
   description: APPLICATION PACKAGE MANAGER REST API
@@ -5,27 +6,27 @@ info:
   title: APPLICATION PACKAGE MANAGER REST API
   license:
     name: Apache 2.0
-    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
-host: 'localhost:30107'
-basePath: /
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: localhost:30202
+basePath: "/"
 tags:
-  - name: APM api system
-    description: Apm Handler
+- name: APM api system
+  description: Apm Handler
 paths:
-  '/apm/v1/tenants/{tenant_id}/packages':
+  "/apm/v1/tenants/{tenant_id}/packages":
     get:
       tags:
-        - APM api system
+      - APM api system
       summary: Retrieves all application packages
       operationId: getAllAppPackageInfoUsingGET
       produces:
-        - application/json
+      - application/json
       parameters:
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: false
-          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
       responses:
         '200':
           description: OK
@@ -42,25 +43,30 @@ paths:
       deprecated: false
     post:
       tags:
-        - APM api system
+      - APM api system
       summary: Onboard application package
       operationId: onBoardAppPackageUsingPOST
       consumes:
-        - application/json
+      - application/json
       produces:
-        - application/json
+      - application/json
       parameters:
-        - in: body
-          name: appPackageDto
-          description: app package info
-          required: false
-          schema:
-            $ref: '#/definitions/AppPackageDto'
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: false
-          type: string
+      - name: access_token
+        in: header
+        description: access_token
+        required: true
+        type: string
+      - in: body
+        name: appPackageDto
+        description: app package info
+        required: false
+        schema:
+          "$ref": "#/definitions/AppPackageDto"
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
       responses:
         '200':
           description: OK
@@ -75,30 +81,30 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  '/apm/v1/tenants/{tenant_id}/packages/{app_package_id}':
+  "/apm/v1/tenants/{tenant_id}/packages/{app_package_id}":
     get:
       tags:
-        - APM api system
+      - APM api system
       summary: Retrieves application package information
       operationId: getAppPackageInfoUsingGET
       produces:
-        - application/json
+      - application/json
       parameters:
-        - name: app_package_id
-          in: path
-          description: app package id
-          required: false
-          type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: false
-          type: string
+      - name: app_package_id
+        in: path
+        description: app package id
+        required: false
+        type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
       responses:
         '200':
           description: OK
           schema:
-            $ref: '#/definitions/AppPackageDto'
+            "$ref": "#/definitions/AppPackageDto"
         '401':
           description: Unauthorized
         '403':
@@ -108,22 +114,22 @@ paths:
       deprecated: false
     delete:
       tags:
-        - APM api system
+      - APM api system
       summary: Deletes application package
       operationId: deleteAppPackageUsingDELETE
       produces:
-        - text/plain
+      - text/plain
       parameters:
-        - name: app_package_id
-          in: path
-          description: app package id
-          required: false
-          type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: false
-          type: string
+      - name: app_package_id
+        in: path
+        description: app package id
+        required: false
+        type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
       responses:
         '200':
           description: OK
@@ -136,30 +142,30 @@ paths:
         '403':
           description: Forbidden
       deprecated: false
-  '/apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download':
+  "/apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download":
     get:
       tags:
-        - APM api system
+      - APM api system
       summary: Download application package CSAR
       operationId: downloadAppPackageUsingGET
       produces:
-        - application/octet-stream
+      - application/octet-stream
       parameters:
-        - name: app_package_id
-          in: path
-          description: app package id
-          required: false
-          type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: false
-          type: string
+      - name: app_package_id
+        in: path
+        description: app package id
+        required: false
+        type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
       responses:
         '200':
           description: OK
           schema:
-            $ref: '#/definitions/InputStreamResource'
+            "$ref": "#/definitions/InputStreamResource"
         '401':
           description: Unauthorized
         '403':
@@ -167,30 +173,30 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  '/apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_ip}':
+  "/apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_ip}":
     delete:
       tags:
-        - APM api system
+      - APM api system
       summary: Deletes an application packages
       operationId: deleteAppPackageInHostUsingDELETE
       produces:
-        - text/plain
+      - text/plain
       parameters:
-        - name: app_package_id
-          in: path
-          description: app package id
-          required: false
-          type: string
-        - name: host_ip
-          in: path
-          description: host ip
-          required: false
-          type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: false
-          type: string
+      - name: app_package_id
+        in: path
+        description: app package id
+        required: false
+        type: string
+      - name: host_ip
+        in: path
+        description: host ip
+        required: false
+        type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
       responses:
         '200':
           description: OK
@@ -230,7 +236,7 @@ definitions:
       mecHostInfo:
         type: array
         items:
-          $ref: '#/definitions/MecHostDto'
+          "$ref": "#/definitions/MecHostDto"
       modifiedTime:
         type: string
     title: AppPackageDto
@@ -240,11 +246,11 @@ definitions:
       absolute:
         type: boolean
       absoluteFile:
-        $ref: '#/definitions/File'
+        "$ref": "#/definitions/File"
       absolutePath:
         type: string
       canonicalFile:
-        $ref: '#/definitions/File'
+        "$ref": "#/definitions/File"
       canonicalPath:
         type: string
       directory:
@@ -261,7 +267,7 @@ definitions:
       parent:
         type: string
       parentFile:
-        $ref: '#/definitions/File'
+        "$ref": "#/definitions/File"
       path:
         type: string
       totalSpace:
@@ -280,19 +286,19 @@ definitions:
       description:
         type: string
       file:
-        $ref: '#/definitions/File'
+        "$ref": "#/definitions/File"
       filename:
         type: string
       inputStream:
-        $ref: '#/definitions/InputStream'
+        "$ref": "#/definitions/InputStream"
       open:
         type: boolean
       readable:
         type: boolean
       uri:
-        $ref: '#/definitions/URI'
+        "$ref": "#/definitions/URI"
       url:
-        $ref: '#/definitions/URL'
+        "$ref": "#/definitions/URL"
     title: InputStreamResource
   MecHostDto:
     type: object
