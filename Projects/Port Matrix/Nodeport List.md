@@ -19,10 +19,10 @@ Kubernetes NodePort List
 | mecm-inventory| mecm-inventory| mecm-inventory-svc | 30203| 8093|
 | mecm-applcm-controller| mecm-applcm-controller| mecm-applcm-controller-svc | 30204| 8094|
 | mecm-applcm-k8splugin| mecm-applcm-k8splugin| mecm-applcm-k8splugin-svc | 30205| 8095|
-| mepserver| |  | | |
-| mepauth| |  | | |
-| kong-apigw| |  | | |
-| mep-postgre-db| |  | | |
+| mepserver|mepserver-deploy |  mepserver-service | ClusterIP | 8080 |
+| mepauth|mepauth-deploy |mepauth-service  | ClusterIP | 8088|
+| kong-apigw|apigw-kongy | kong-service | 30443|8443 |
+| mep-postgre-db|pg-deploy |pg-service  | ClusterIP |5432 |
 
 ServiceComb NodePort List
 --------------------------
