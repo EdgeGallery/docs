@@ -10,4 +10,12 @@ Developer是开发者开发和测试边缘应用的edgegallery平台，该平台
 
 ### 开发者平台首页首页
 登陆成功后进入开发者平台首页
-
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0910/203347_7c79c40a_7625288.png "首页.png")
+新建项目
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0910/204102_08771904_7625288.png "屏幕截图.png")
+选择能力
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0910/204324_5a6a9ff0_7625288.png "屏幕截图.png")
+测试构建
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0910/204416_366d5d94_7625288.png "屏幕截图.png")
+API能力展示
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0910/204711_ed8a96a2_7625288.png "屏幕截图.png")
