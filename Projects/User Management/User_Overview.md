@@ -7,3 +7,8 @@ User Management模块是为EdgeGallery项目提供用户管理的基本能力，
 *   手机验证：是基于华为公有云的短信业务进行开发的功能特性，用于用户注册与密码找回，能够更好的保证用户账号的安全；
 
 *   用户分权分域：区分用户角色，是各平台进行分权分域设置的基础。
+
+- [特性设计](https://gitee.com/-/ide/project/edgegallery/docs/edit/master/-/Projects/User%20Management/User_Features.md)
+- [接口设计](https://gitee.com/-/ide/project/edgegallery/docs/edit/master/-/Projects/User%20Management/User_Interfaces.md)
+- [数据库设计](https://gitee.com/-/ide/project/edgegallery/docs/edit/master/-/Projects/User%20Management/User_DataBase_Design.md)
+- [依赖设计]
