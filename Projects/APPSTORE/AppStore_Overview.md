@@ -1,6 +1,9 @@
-[TOC]
-# APP STORE
-
+*   [APP STORE](#APP STORE)
+    *   [架构说明](#架构说明)
+    *   [部署视图](#部署视图)
+    *   [特性描述](#特性描述)
+        *   [应用上传](#应用上传) 
+        *   [应用下载](#应用下载) 
 
 AppStore是开发者发布和上线App应用的市场，由Developer平台开发的边缘应用，经过测试可以直接分享到AppStore应用商店。AppStore分为前后台两个部分，[appstore-be][1]是后台部分，提供主要功能接口供前台或其他三方系统调用，[appstore-fe][2]是前台部分，提供界面展示。
 
@@ -14,7 +17,7 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 
 3. appstore DB：后台依赖Postgres数据库。appstore-fe：开发者平台前台框架，使用VUE开发。
 
-## 部署试图
+## 部署视图
 ![](https://images.gitee.com/uploads/images/2020/0709/154053_b41b4a97_5504908.png)
 以上部署视图是按照K8S部署设计的， 在实际部署过程中，可以直接在虚拟机或者docker容器中启动各自的服务，部署过程中需要有一下几点注意：
 
