@@ -2,12 +2,6 @@
 
 User Management模块是为EdgeGallery项目提供用户管理的基本能力，包括用户注册/登录/权限认证等功能。为AppStore/开发者平台/MECM提供统一的用户鉴权和认证服务。
 
-*   单点登录：用户在任一User Management信任的平台上登录后，无需在其他信任平台再次登录的能力，简化了用户的重复操作，提高了用户体验；
-    
-*   手机验证：是基于华为公有云的短信业务进行开发的功能特性，用于用户注册与密码找回，能够更好的保证用户账号的安全；
-
-*   用户分权分域：区分用户角色，是各平台进行分权分域设置的基础。
-
 - [特性设计](https://gitee.com/-/ide/project/edgegallery/docs/edit/master/-/Projects/User%20Management/User_Features.md)
 - [接口设计](https://gitee.com/-/ide/project/edgegallery/docs/edit/master/-/Projects/User%20Management/User_Interfaces.md)
 - [数据库设计](https://gitee.com/-/ide/project/edgegallery/docs/edit/master/-/Projects/User%20Management/User_DataBase_Design.md)
