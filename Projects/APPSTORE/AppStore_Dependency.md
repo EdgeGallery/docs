@@ -216,6 +216,7 @@
 
 |	type	|	name	|	version	|	LICENSE	|	direct import	|
 |	---	|	---	|	---	|	---	|	---	|
+|	dependencies	|	acorn	|	7.2.0	|	MIT	|	Y	|
 |	devDependencies	|	@vue/cli-plugin-babel	|	3.11.0	|	MIT	|	Y	|
 |	devDependencies	|	@vue/cli-plugin-eslint	|	3.11.0	|	MIT	|	Y	|
 |	devDependencies	|	@vue/cli-service	|	3.11.0	|	MIT	|	Y	|
