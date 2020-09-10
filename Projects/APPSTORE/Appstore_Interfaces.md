@@ -42,13 +42,13 @@ Query all apps by condation.
 Resource URI: /mec/appstore/v1/apps
 ```
 
-| Name          | Definition    | Required|
-| ------------- | ------------- |------------|
-| name | app name. |no|
-| provider | app provider. |no|
-| type | app type. |no|
-| affinity | app affinity. |no|
-| userId | app creater. |no|
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| name | app name. |request param|no|
+| provider | app provider. |request param|no|
+| type | app type. |request param|no|
+| affinity | app affinity. |request param|no|
+| userId | app creater. |request param|no|
 
 Example response:
 ```
@@ -72,4 +72,109 @@ Example response:
     "userName": "string"
   }
 ]
+```
+
+#### 1.1.2 GET one
+Query app by app id.
+```
+Resource URI: /mec/appstore/v1/apps/{appId}
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| appId | app name.|path | yes|
+
+
+Example response:
+```
+200 OK
+  {
+    "appId": "string",
+    "iconUrl": "string",
+    "name": "string",
+    "provider": "string",
+    "type": "string",
+    "shortDesc": "string",
+    "createTime": "string",
+    "details": "string",
+    "downloadCount": 0,
+    "affinity": "string",
+    "industry": "string",
+    "contact": "string",
+    "score": 0,
+    "userId": "string",
+    "userName": "string"
+  }
+```
+
+#### 1.1.3 POST 
+registe a app.
+```
+Resource URI: /mec/appstore/v1/apps
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| userId | user id|request param | yes|
+| userName | app name|request param | yes|
+| file | package file|RequestPart | yes|
+| icon | app icon file|RequestPart | yes|
+| type | application type|RequestPart | yes|
+| shortDesc | short desc of input|RequestPart | yes|
+| affinity | affinity of app|RequestPart | yes|
+| industry | industry of app|RequestPart | yes|
+
+Example response:
+```
+200 OK
+  add app and upload package success.
+```
+
+#### 1.1.4 DELETE 
+delete a app.
+```
+Resource URI: /mec/appstore/v1/apps/{appId}
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| userId | user id|request param | yes|
+| userName | app name|request param | yes|
+| appId | app id|path | yes|
+
+Example response:
+```
+200 OK
+  delete App success..
+```
+
+#### 1.1.5 GET lastest package
+get latest version package of app.
+```
+Resource URI: /mec/appstore/v1/apps/{appId}/action/download
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| userId | user id|request param | yes|
+| userName | app name|request param | yes|
+| appId | app id|path | yes|
+
+Example response:
+```
+200 OK
+  binary output.
+```
+
+#### 1.1.6 GET lastest package
+get app icon by app id.
+```
+Resource URI: /mec/appstore/v1/apps/{appId}/icon
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| userId | user id|request param | yes|
+| userName | app name|request param | yes|
+| appId | app id|path | yes|
+
+Example response:
+```
+200 OK
+  binary output.
 ```
