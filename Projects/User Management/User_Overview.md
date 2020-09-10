@@ -11,4 +11,5 @@ User Management模块是为EdgeGallery项目提供用户管理的基本能力，
 - [特性设计](https://gitee.com/-/ide/project/edgegallery/docs/edit/master/-/Projects/User%20Management/User_Features.md)
 - [接口设计](https://gitee.com/-/ide/project/edgegallery/docs/edit/master/-/Projects/User%20Management/User_Interfaces.md)
 - [数据库设计](https://gitee.com/-/ide/project/edgegallery/docs/edit/master/-/Projects/User%20Management/User_DataBase_Design.md)
+- [Dependency](https://gitee.com/-/ide/project/edgegallery/docs/edit/master/-/Projects/User%20Management/User_Dependency.md)
 - [Contribution](https://gitee.com/-/ide/project/edgegallery/docs/edit/master/-/Projects/User%20Management/User_Contribution.md)
