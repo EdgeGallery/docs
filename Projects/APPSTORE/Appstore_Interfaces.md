@@ -8,7 +8,7 @@ APP Store Interfaces
     - [1.3 Register App](#13-register-app)
     - [1.4 Delete One App](#14-delete-one-app)
     - [1.5 Get Latest Version Of App](#15-get-latest-version-of-app)
-    - [1.6 Get Icon Of App](#15-get-icon-of-app)
+    - [1.6 Get Icon Of App](#16-get-icon-of-app)
   - [2. Package](#2-package)
     - [2.1 Get All Packages of APP](#21-get-all-packages-of-app)
     - [2.2 Get One Package](#22-get-one-package)
@@ -101,7 +101,7 @@ Example response:
   }
 ```
 
-#### 1.3 Register App 
+### 1.3 Register App 
 registe a app.
 ```
 Resource URI: /mec/appstore/v1/apps
@@ -124,7 +124,7 @@ Example response:
   add app and upload package success.
 ```
 
-#### 1.4 Delete One App 
+### 1.4 Delete One App 
 delete a app.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}
@@ -142,7 +142,7 @@ Example response:
   delete App success..
 ```
 
-#### 1.5 Get Latest Version Of App
+### 1.5 Get Latest Version Of App
 get latest version package of app.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/action/download
@@ -160,7 +160,7 @@ Example response:
   binary output.
 ```
 
-#### 1.6 Get Icon Of App
+### 1.6 Get Icon Of App
 get app icon by app id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/icon
@@ -183,7 +183,7 @@ Example response:
 Package belong to App, etch App have at least one Package. 
 
 
-#### 2.1 GET all package by appid
+### 2.1 GET all package by appid
 
 Query all packages by appid.
 
@@ -219,7 +219,7 @@ Example response:
 ]
 ```
 
-#### 2.2 Get One Package
+### 2.2 Get One Package
 Query app by app id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}
@@ -251,7 +251,7 @@ Example response:
   }
 ```
 
-#### 2.3 Delete One Package
+### 2.3 Delete One Package
 delete a package of app.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}
@@ -268,7 +268,7 @@ Example response:
    delete package success.
 ```
 
-#### 2.4 Download One Package 
+### 2.4 Download One Package 
 download one package by appId and packageId.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download
@@ -285,7 +285,7 @@ Example response:
   binary output.
 ```
 
-#### 2.5 Get File Content
+### 2.5 Get File Content
 Get file content by app id package id and file path.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
@@ -308,7 +308,7 @@ Example response:
 User can submit comments to an app. 
 
 
-#### 3.1 Get Comments Of App
+### 3.1 Get Comments Of App
 Get comments by app id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/comments
@@ -349,7 +349,7 @@ Example response:
 ]
 ```
 
-#### 3.1 Submit Comment To App
+### 3.1 Submit Comment To App
 User submit comment to app by app id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/comments
