@@ -1,4 +1,4 @@
-APP Store Interfaces
+Developer Interfaces
 ==============
 - [APP Store Interfaces](#appstore-interfaces)
 - [AppStore-Server](#AppStore-server)
