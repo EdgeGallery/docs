@@ -21,7 +21,7 @@ This section cover the Developer-Server interfaces.
 ### 1.1 POST upload plugin 
 Upload one plugin with some params.
 ```
-Resource URI: /mec/developer/v1/plugins
+Resource URI: /mec/developer/v1/plugins/
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
