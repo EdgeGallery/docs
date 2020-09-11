@@ -9,8 +9,8 @@ Developer Interfaces
 	- [1.4 GET download plugin](#14-get-download-plugin)
 	- [1.5 GET download logo](#15-get-download-logo)
 	- [1.6 GET download plugin](#16-get-download-api)
-	- [1.7 PUT update plugin](#11-put-update-plugin)
-	- [1.8 PUT mark plugin](#11-put-mark-plugin)
+	- [1.7 PUT update plugin](#17-put-update-plugin)
+	- [1.8 PUT mark plugin](#18-put-mark-plugin)
  
 
 # Developer-Server
