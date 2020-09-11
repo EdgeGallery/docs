@@ -10,7 +10,7 @@ APP Store Interfaces
     - [1.5 Get Latest Version Of App](#15-get-latest-version-of-app)
     - [1.6 Get Icon Of App](#16-get-icon-of-app)
   - [2. Package](#2-package)
-    - [2.1 Get All Packages of APP](#21-get-all-packages-of-app)
+    - [2.1 Get All Packages Of APP](#21-get-all-packages-of-app)
     - [2.2 Get One Package](#22-get-one-package)
     - [2.3 Delete One Package](#23-delete-one-package)
     - [2.4 Download One Package](#24-delete-one-package)
@@ -183,9 +183,9 @@ Example response:
 Package belong to App, etch App have at least one Package. 
 
 
-### 2.1 GET all package by appid
+### 2.1 Get All Packages Of APP
 
-Query all packages by appid.
+Query all packages by app id.
 
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages
