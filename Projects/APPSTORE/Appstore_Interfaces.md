@@ -1,27 +1,23 @@
 APP Store Interfaces
 ==============
 - [APP Store Interfaces](#appstore-interfaces)
-- [AppStore-Server](#AppStore-server)
+- [AppStore-Server](#appStore-server)
   - [1. APP](#1-app)
     - [1.1 Get All Apps](#11-get-all-apps)
-      - [1.1.1 GET all by condation](#111-get-all)
-      - [1.1.2 GET one](#112-get-one)
-      - [1.1.3 POST](#112-post)
-      - [1.1.4 DELETE one](#112-delete-one)
-      - [1.1.5 GET lastest package](#112-get-latest-package)
-      - [1.1.6 GET app icon](#112-get-app-icon)
+    - [1.2 Get One App](#12-get-one-app)
+    - [1.3 Register App](#13-register-app)
+    - [1.4 Delete One App](#14-delete-one-app)
+    - [1.5 Get Latest Version Of App](#15-get-latest-version-of-app)
+    - [1.6 Get Icon Of App](#15-get-icon-of-app)
   - [2. Package](#2-package)
-    - [2.1 packages](#21-packages)
-      - [2.1.1 GET all package by appid](#211-get-all)
-      - [2.1.2 GET one](#212-get-one)
-      - [2.1.3 DELETE one](#213-delete-one)
-      - [2.1.4 DOWNLOAD one](#213-delete-one)
-    - [2.2 files](#21-files)
-      - [2.2.1 GET FILE CONTENT](#221-get-file-by-filepath)
-  - [3. Comments](#3-comment)
-    - [3.1 comments](#31-comments)
-      - [3.1.1 GET all comments by appid](#311-get-all)
-      - [3.1.2 POST one comment to app](#312-get-one)
+    - [2.1 Get All Packages of APP](#21-get-all-packages-of-app)
+    - [2.2 Get One Package](#22-get-one-package)
+    - [2.3 Delete One Package](#23-delete-one-package)
+    - [2.4 Download One Package](#24-delete-one-package)
+    - [2.5 Get File Content](#25-get-file-content)
+  - [3. Comments](#3-comments)
+    - [3.1 Get Comments Of App](#31-get-comments-of-app)
+    - [3.2 Submit Comment To App](#32-submit-comment-to-app)
 
 # AppStore-Server
 This section cover the AppStore-Server interfaces.
@@ -105,10 +101,11 @@ Example response:
   }
 ```
 
-#### 1.1.3 POST 
+#### 1.3 Register App 
 registe a app.
 ```
 Resource URI: /mec/appstore/v1/apps
+Method: POST
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
@@ -127,10 +124,11 @@ Example response:
   add app and upload package success.
 ```
 
-#### 1.1.4 DELETE 
+#### 1.4 Delete One App 
 delete a app.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}
+Method: DELETE
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
@@ -144,10 +142,11 @@ Example response:
   delete App success..
 ```
 
-#### 1.1.5 GET lastest package
+#### 1.5 Get Latest Version Of App
 get latest version package of app.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/action/download
+Method: GET
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
@@ -161,10 +160,11 @@ Example response:
   binary output.
 ```
 
-#### 1.1.6 GET lastest package
+#### 1.6 Get Icon Of App
 get app icon by app id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/icon
+Method: GET
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
@@ -177,48 +177,19 @@ Example response:
 200 OK
   binary output.
 ```
-
-APP Store Interfaces
-==============
-- [APP Store Interfaces](#appstore-interfaces)
-- [AppStore-Server](#AppStore-server)
-  - [1. APP](#1-app)
-    - [1.1 apps](#11-apps)
-      - [1.1.1 GET all by condation](#111-get-all)
-      - [1.1.2 GET one](#112-get-one)
-      - [1.1.3 POST](#112-post)
-      - [1.1.4 DELETE one](#112-delete-one)
-      - [1.1.5 GET lastest package](#112-get-latest-package)
-      - [1.1.6 GET app icon](#112-get-app-icon)
-  - [2. Package](#2-package)
-    - [2.1 packages](#21-packages)
-      - [2.1.1 GET all package by appid](#211-get-all)
-      - [2.1.2 GET one](#212-get-one)
-      - [2.1.3 DELETE one](#213-delete-one)
-      - [2.1.4 DOWNLOAD one](#213-delete-one)
-    - [2.2 files](#21-files)
-      - [2.2.1 GET FILE CONTENT](#221-get-file-by-filepath)
-  - [3. Comments](#3-comment)
-    - [3.1 comments](#31-comments)
-      - [3.1.1 GET all comments by appid](#311-get-all)
-      - [3.1.2 POST one comment to app](#312-get-one)
-
-# AppStore-Server
-This section cover the AppStore-Server interfaces.
 
 ## 2. Package
 
 Package belong to App, etch App have at least one Package. 
 
-### 2.1 packages
 
-
-#### 2.1.1 GET all package by app id
+#### 2.1 GET all package by appid
 
 Query all packages by appid.
 
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages
+Method: GET
 ```
 
 | Name          | Definition |type   | Required|
@@ -248,10 +219,11 @@ Example response:
 ]
 ```
 
-#### 2.1.2 GET one
+#### 2.2 Get One Package
 Query app by app id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}
+Method: GET
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
@@ -279,10 +251,11 @@ Example response:
   }
 ```
 
-#### 2.1.3 DELETE one 
+#### 2.3 Delete One Package
 delete a package of app.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}
+Method: DELETE
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
@@ -295,10 +268,11 @@ Example response:
    delete package success.
 ```
 
-#### 2.1.4 GET download one 
+#### 2.4 Download One Package 
 download one package by appId and packageId.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download
+Method: GET
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
@@ -310,13 +284,12 @@ Example response:
 200 OK
   binary output.
 ```
-### 2.2 files
 
-
-#### 2.2.1 GET lastest package
-get latest version package of app.
+#### 2.5 Get File Content
+Get file content by app id package id and file path.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
+Method: GET
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
@@ -332,14 +305,14 @@ Example response:
 ```
 ## 3. Comment
 
-User can leave comments to app. 
-
-### 3.1 comments
+User can submit comments to an app. 
 
 
-#### 3.1.1 GET all comments by app id
+#### 3.1 Get Comments Of App
+Get comments by app id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/comments
+Method: GET
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
@@ -376,9 +349,11 @@ Example response:
 ]
 ```
 
-#### 3.1.1 POST leave a comment to app
+#### 3.1 Submit Comment To App
+User submit comment to app by app id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/comments
+Method: POST
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
