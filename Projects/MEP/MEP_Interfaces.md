@@ -18,7 +18,7 @@ MEP Interfaces
     - [1.1 Create/Set new entry](#11-createset-new-entry)
     - [1.2. Delete an entry](#12-delete-an-entry)
 
-# Mep-Server
+## Mep-Server
 This section cover the mep-server interfaces.
 
 ## 1. DNS rule configurations
@@ -326,7 +326,7 @@ Example response:
 ```
 
 
-# Dns-Server
+## Dns-Server
 
 Mep has a programmable dns server which can perform the name resolution of the MEC applications. This management interface of the dns server is handled using a rest interface and this section cover the details of this interface.
 

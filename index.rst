@@ -35,11 +35,10 @@ infrastructure.
    :maxdepth: 1
    :caption: Projects
 
-   MEP Overview <Projects/MEP/MEP_Overview>
-   MEP Features <Projects/MEP/MEP_Features>
-   MEP Interfaces <Projects/MEP/MEP_Interfaces>
-   MEP Dependency <Projects/MEP/MEP_Dependency>
-   MEP Database Design <Projects/MEP/MEP_DataBase_Design>
-   MEP Contribution <Projects/MEP/MEP_Contribution>
+   AppStore <Projects/APPSTORE/AppStore>   
+   Developer <Projects/Developer/Developer>
+   MECM <Projects/MECM/MECM>
+   MEP <Projects/MEP/MEP>
+   User Management <Projects/User Management/UserManagement>
 
 
