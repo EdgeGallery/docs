@@ -13,7 +13,7 @@ APP Store Interfaces
     - [2.1 Get All Packages Of APP](#21-get-all-packages-of-app)
     - [2.2 Get One Package](#22-get-one-package)
     - [2.3 Delete One Package](#23-delete-one-package)
-    - [2.4 Download One Package](#24-delete-one-package)
+    - [2.4 Download One Package](#24-download-one-package)
     - [2.5 Get File Content](#25-get-file-content)
   - [3. Comments](#3-comments)
     - [3.1 Get Comments Of App](#31-get-comments-of-app)
@@ -349,7 +349,7 @@ Example response:
 ]
 ```
 
-### 3.1 Submit Comment To App
+### 3.2 Submit Comment To App
 User submit comment to app by app id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/comments
