@@ -3,7 +3,7 @@ APP Store Interfaces
 - [APP Store Interfaces](#appstore-interfaces)
 - [AppStore-Server](#AppStore-server)
   - [1. APP](#1-app)
-    - [1.1 apps](#11-apps)
+    - [1.1 Get All Apps](#11-get-all-apps)
       - [1.1.1 GET all by condation](#111-get-all)
       - [1.1.2 GET one](#112-get-one)
       - [1.1.3 POST](#112-post)
@@ -30,16 +30,14 @@ This section cover the AppStore-Server interfaces.
 
 APP is the basic publishing unit of APP Store. 
 
-### 1.1 apps
 
-Unit of APP Server, one app with one or more packages.
-
-#### 1.1.1 GET all
+### 1.1 Get All Apps
 
 Query all apps by condation.
 
 ```
 Resource URI: /mec/appstore/v1/apps
+Method: GET
 ```
 
 | Name          | Definition |type   | Required|
@@ -74,10 +72,11 @@ Example response:
 ]
 ```
 
-#### 1.1.2 GET one
+### 1.2 Get One App
 Query app by app id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}
+Method: GET
 ```
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
