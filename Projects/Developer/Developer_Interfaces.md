@@ -28,7 +28,7 @@ Resource URI: /mec/developer/v1/plugins/
 | pluginFile | plugin file|request part|yes|
 | logoFile | plugin logo file |request part|yes|
 | apiFile | plugin api file |request part|yes|
-| pluginName | plugin name |request part|yes|
+| pluginName | plugin name |request param|yes|
 | codeLanguage | language represented by the plugin |request param|yes|
 | pluginType | 1 plugin 2 sdk |request param|yes|
 | version | plugin version |request param|yes|
@@ -169,10 +169,10 @@ Resource URI: /mec/appstore/v1/plugins/{pluginId}
 | logoFile | plugin logo file |request part|no|
 | apiFile | plugin api file |request part|no|
 | pluginName | plugin name |request part|no|
-| codeLanguage | language represented by the plugin |request param|no|
-| pluginType | 1 plugin 2 sdk |request param|no|
-| version | plugin version |request param|no|
-| introduction | plugin brief |request param|no|
+| codeLanguage | language represented by the plugin |request part|no|
+| pluginType | 1 plugin 2 sdk |request part|no|
+| version | plugin version |request part|no|
+| introduction | plugin brief |request part|no|
 
 Example response:
 ```
