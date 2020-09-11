@@ -15,7 +15,7 @@ Developer Interfaces
        - [2.1 POST upload app](#21-post-upload-app)
        - [2.2 GET all test task](#22-get-all-test-task)
        - [2.3 GET all app tags](#23-get-all-app-tags)
-       - [2.4 POST upload app to store](#24-get-upload-app-to-store)
+       - [2.4 POST upload app to store](#24-post-upload-app-to-store)
        - [2.5 GET start test](#25-get-start-test)
        - [2.6 GET subtask list](#26-get-subtask-list)
 
