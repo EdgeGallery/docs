@@ -46,7 +46,7 @@ Developer Interfaces
 	- [5.3 POST create one EdgeGalleryCapability](#53-post-create-one-edgegallerycapability)
 	- [5.4 DELETE one EdgeGalleryCapability](#54-delete-one-edgegallerycapability)
 	- [5.5 GET all EdgeGalleryCapability](#55-get-all-edgegallerycapability)
-	- [5.5 GET all EdgeGalleryCapability by groupid](#56-get-all-edgegallerycapability-by-groupid)
+	- [5.6 GET all EdgeGalleryCapability by groupid](#56-get-all-edgegallerycapability-by-groupid)
 	- [5.7 GET all EdgeGallery API](#57-get-all-edgegallery-api)
 	- [5.8 GET all EdgeGallery ECO API](#58-get-all-edgegallery-eco-api)
 	
