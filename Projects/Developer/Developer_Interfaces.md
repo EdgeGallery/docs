@@ -1578,7 +1578,7 @@ Example response:
 }
 ```
 
-### 4.4 DELETE  one host
+### 4.4 DELETE one host
 Delete one host.
 ```
 Resource URI: /mec/developer/v1/hosts/{hostId}
