@@ -30,7 +30,7 @@ Developer Interfaces
 	- [3.9 PUT modify test config](#39-put-modify-test-config)
 	- [3.10 GET one test-config](#310-get-one-test-config)
 	- [3.11 POST upload to store](#311-post-upload-to-store)
-	- [3.12 POST open project to eco](#312-post-open-project-to-store)
+	- [3.12 POST open project to eco](#312-post-open-project-to-eco)
 	- [3.13 POST add image to project](#313-post-add-image-to-project)
 	- [3.14 DELETE image of project](#314-delete-image-of-project)
 	- [3.15 GET image of project](#315-get-image-of-project)
