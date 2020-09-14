@@ -378,7 +378,7 @@ Resource URI: /mec/developer/v1/apps/{appId}/action/upload
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
 | appId | app id|path param|yes|
-| userId | the author name of upload app |request param|yes|
+| userId | the author id of upload app |request param|yes|
 | userName | the author name of upload app|request param|yes|
 
 Example response:
@@ -395,7 +395,7 @@ Resource URI: /mec/developer/v1/apps/{appId}/action/start-test
 | Name          | Definition |type   | Required|
 | ------------- | ------------- |------------|------------|
 | appId | app id|path param|yes|
-| userId | the author name of upload app |request param|yes|
+| userId | the author id of upload app |request param|yes|
 
 Example response:
 ```
