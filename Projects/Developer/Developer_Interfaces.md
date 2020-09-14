@@ -49,6 +49,13 @@ Developer Interfaces
 	- [5.6 GET all EdgeGalleryCapability by groupid](#56-get-all-edgegallerycapability-by-groupid)
 	- [5.7 GET all EdgeGallery API](#57-get-all-edgegallery-api)
 	- [5.8 GET all EdgeGallery ECO API](#58-get-all-edgegallery-eco-api)
+  - [6. File](#6-file)
+    - [6.1 GET one file](#61-get-one-file)
+    - [6.2 POST upload one file](#62-post-upload-one-file)
+	- [6.3 POST upload helm yaml](#63-post-upload-helm-yaml)
+	- [6.4 GET helm yaml](#64-get-helm-yaml)
+	- [6.5 DELETE helm yaml](#65-delete-helm-yaml)
+	- [6.6 POST get sample code](#66-post-get-sample-code)
 	
 
  
@@ -1875,6 +1882,117 @@ Example response:
 
 
 
+## 6. File
+This part is to configure the app, perform app deployment, and test the api for file operations
+### 6.1 GET one file
+Get one file
+```
+Resource URI: /mec/developer/v1/files/{fileId}
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+|fileId|file id|path param|yes|
+|userId|the author id of upload file|request param|yes|
 
+Example response:
+```
+200 OK
+binary output
+```
 
+### 6.2 POST upload one file
+Upload  file
+```
+Resource URI: /mec/developer/v1/files
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| file | MultipartFile class|request part|yes|
+|userId|the author id of upload file|request param|yes|
 
+Example response:
+```
+200 OK
+{
+  "fileId": "string",
+  "fileName": "string",
+  "url": "string",
+  "userId": "string",
+  "uploadDate": "2020-09-14T09:03:17.084Z",
+  "filePath": "string",
+  "temp": false
+}
+```
+
+### 6.3 POST upload helm yaml
+Upload helm template yaml.
+```
+Resource URI: /mec/developer/v1/files/helm-template-yaml
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| file | MultipartFile class|request part|yes|
+|userId|the author id of upload file|request param|yes|
+|projectId|project id|request param|yes|
+
+Example response:
+```
+200 OK
+{
+  "fileId": "string",
+  "fileName": "string"
+}
+```
+
+### 6.4 GET helm yaml
+Query helm template yaml.
+```
+Resource URI: /mec/developer/v1/files/helm-template-yaml
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+|userId|the author id of upload file|request param|yes|
+|projectId|project id|request param|yes|
+
+Example response:
+```
+200 OK
+[
+  {}
+]
+```
+
+### 6.5 DELETE helm yaml
+Delete helm template yaml.
+```
+Resource URI: /mec/developer/v1/files/helm-template-yaml
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+|fileId|file id|request param|yes||
+
+Example response:
+```
+200 OK
+"string"
+```
+
+### 6.6 POST get sample code
+Get sample code.
+```
+Resource URI: /mec/developer/v1/files/samplecode
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+|apiFileIds|api file id list|body param|yes||
+```
+List<String>
+[
+  "string"
+]
+```
+Example response:
+```
+200 OK
+byte array output
+```
