@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Edgegallery Authors
+# This file is distributed under the same license as the edgegallery
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: edgegallery \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-14 09:59+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../Projects/MECM/MECM Metrix.md:1 Port
+msgid "MECM端口矩阵"
+msgstr ""
+
+#: ../../Projects/MECM/MECM Metrix.md:2 Port
+msgid ""
+"| 模块                 | 端口号      |外部端口号"
+"                                       |   作用描述     | | "
+"----------------------- | "
+"-------------------------------|----------------------------- "
+"|------------| | APPO |  8091 |     30201    |对外提供应用生命周期管理的服务端口          "
+"| | APM   | 8092 |     30202    |对外提供应用包管理的服务端口"
+"                             | | Inventory           |  8093   |"
+"          30203         |    对外提供存量管理的服务端口 | | applcm controller     | "
+"8094   |         30204       |applcm中对外提供应用生命周期管理的服务端口   | | aplcm "
+"k8splugin           | 8095 |      30205       |applcm中的k8s插件对外提供k8s的服务端口|"
+" | FE                      |     8443|     30093    | 前台模块的对外开放端口 |"
+msgstr ""
+

@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Edgegallery Authors
+# This file is distributed under the same license as the edgegallery
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: edgegallery \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-14 09:59+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:1
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:3
+msgid "APP Store Interfaces"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:4
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:22
+msgid "AppStore-Server"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:5
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:25
+msgid "1. APP"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:6
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:30
+msgid "1.1 Get All Apps"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:7
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:106
+msgid "1.2 Get One App"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:8
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:139
+msgid "1.3 Register App"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:9
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:162
+msgid "1.4 Delete One App"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:10
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:180
+msgid "1.5 Get Latest Version Of App"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:11
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:198
+msgid "1.6 Get Icon Of App"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:12
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:216
+msgid "2. Package"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:13
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:221
+msgid "2.1 Get All Packages Of APP"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:14
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:272
+msgid "2.2 Get One Package"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:15
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:304
+msgid "2.3 Delete One Package"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:16
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:321
+msgid "2.4 Download One Package"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:17
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:338
+msgid "2.5 Get File Content"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:18
+msgid "3. Comments"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:19
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:361
+msgid "3.1 Get Comments Of App"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:20
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:402
+msgid "3.2 Submit Comment To App"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:23
+msgid "This section cover the AppStore-Server interfaces."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:27
+msgid "APP is the basic publishing unit of APP Store."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:32
+msgid "Query all apps by condation."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:82
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:117
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:156
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:174
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:192
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:210
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:249
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:283
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:315
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:332
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:351
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:372
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:425
+msgid "Example response:"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:107
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:273
+msgid "Query app by app id."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:112
+msgid ""
+"| Name          | Definition |type   | Required| | ------------- | "
+"------------- |------------|------------| | appId | app name.|path | yes|"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:140
+msgid "registe a app."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:145
+msgid ""
+"| Name          | Definition |type   | Required| | ------------- | "
+"------------- |------------|------------| | userId | user id|request "
+"param | yes| | userName | app name|request param | yes| | file | package "
+"file|RequestPart | yes| | icon | app icon file|RequestPart | yes| | type "
+"| application type|RequestPart | yes| | shortDesc | short desc of "
+"input|RequestPart | yes| | affinity | affinity of app|RequestPart | yes| "
+"| industry | industry of app|RequestPart | yes|"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:163
+msgid "delete a app."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:168
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:186
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:204
+msgid ""
+"| Name          | Definition |type   | Required| | ------------- | "
+"------------- |------------|------------| | userId | user id|request "
+"param | yes| | userName | app name|request param | yes| | appId | app "
+"id|path | yes|"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:181
+msgid "get latest version package of app."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:199
+msgid "get app icon by app id."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:218
+msgid "Package belong to App, etch App have at least one Package."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:223
+msgid "Query all packages by app id."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:278
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:310
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:327
+msgid ""
+"| Name          | Definition |type   | Required| | ------------- | "
+"------------- |------------|------------| | appId | app id|path | yes| | "
+"packageId | package id|path | yes|"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:305
+msgid "delete a package of app."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:322
+msgid "download one package by appId and packageId."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:339
+msgid "Get file content by app id package id and file path."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:344
+msgid ""
+"| Name          | Definition |type   | Required| | ------------- | "
+"------------- |------------|------------| | userId | user id|request "
+"param | yes| | userName | app name|request param | yes| | appId | app "
+"id|path | yes| | filePath | file path|FormParam | yes|"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:356
+msgid "3. Comment"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:358
+msgid "User can submit comments to an app."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:362
+msgid "Get comments by app id."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:367
+msgid ""
+"| Name          | Definition |type   | Required| | ------------- | "
+"------------- |------------|------------| | appId | app id|path | yes|"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:403
+msgid "User submit comment to app by app id."
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:408
+msgid ""
+"| Name          | Definition |type   | Required| | ------------- | "
+"------------- |------------|------------| | userId | user id|request "
+"param | yes| | userName | app name|request param | yes| | appId | app "
+"id|path | yes| | entity | comment entity|RequestBody | yes|"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore_Interfaces.md:415
+msgid "Example request body:"
+msgstr ""
+
