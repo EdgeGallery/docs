@@ -56,6 +56,8 @@ Developer Interfaces
 	- [6.4 GET helm yaml](#64-get-helm-yaml)
 	- [6.5 DELETE helm yaml](#65-delete-helm-yaml)
 	- [6.6 POST get sample code](#66-post-get-sample-code)
+  - [7. LocalApi](#7-localapi)
+    - [7.1 GET one api file](#71-get-one-api-file)
 	
 
  
@@ -1995,4 +1997,22 @@ Example response:
 ```
 200 OK
 byte array output
+```
+## 7. LocalApi
+Get the APIs of all functional modules of developer platform
+### 7.1 GET one api file
+Get one api file
+```
+Resource URI: /mec/developer/v1/localapi/{fileName}
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+|fileName|api file name|path param|yes|
+```
+filename: "plugin", "testapp", "hosts", "files", "capability-groups", "projects"
+```
+Example response:
+```
+200 OK
+binary output
 ```
