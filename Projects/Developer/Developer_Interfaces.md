@@ -40,6 +40,15 @@ Developer Interfaces
 	- [4.3 POST create one host](#43-post-create-one-host)
 	- [4.4 DELETE one host](#44-delete-one-host)
 	- [4.5 PUT modify one host](#45-put-modify-one-host)
+  - [5. Capability-groups](#5-capability-groups)
+     - [5.1 POST create one EdgeGalleryCapabilityGroup](#51-post-create-one-edgegallerycapabilitygroup)
+    - [5.2 DELETE one EdgeGalleryCapabilityGroup](#52-delete-one-edgegallerycapabilitygroup)
+	- [5.3 POST create one EdgeGalleryCapability](#53-post-create-one-edgegallerycapability)
+	- [5.4 DELETE one EdgeGalleryCapability](#54-delete-one-edgegallerycapability)
+	- [5.5 GET all EdgeGalleryCapability](#55-get-all-edgegallerycapability)
+	- [5.5 GET all EdgeGalleryCapability by groupid](#56-get-all-edgegallerycapability-by-groupid)
+	- [5.7 GET all EdgeGallery API](#57-get-all-edgegallery-api)
+	- [5.8 GET all EdgeGallery ECO API](#58-get-all-edgegallery-eco-api)
 	
 
  
@@ -1635,6 +1644,235 @@ Example response:
   "portRangeMax": 0
 }
 ```
+
+## 5. Capability-groups
+Services or capabilities of edge applications
+### 5.1 POST create one EdgeGalleryCapabilityGroup
+Create one Capability group.
+```
+Resource URI: /mec/developer/v1/capability-groups/
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+|OpenMepCapabilityGroup|entity class|body param|yes|
+```
+OpenMepCapabilityGroup
+{
+  "groupId": "string",
+  "name": "string",
+  "type": "OPENMEP",
+  "description": "string",
+  "capabilityDetailList": [
+    {
+      "detailId": "string",
+      "groupId": "string",
+      "service": "string",
+      "version": "string",
+      "description": "string",
+      "provider": "string",
+      "apiFileId": "string"
+    }
+  ]
+}
+```
+Example response:
+```
+200 OK
+{
+  "groupId": "string",
+  "name": "string",
+  "type": "OPENMEP",
+  "description": "string",
+  "capabilityDetailList": [
+    {
+      "detailId": "string",
+      "groupId": "string",
+      "service": "string",
+      "version": "string",
+      "description": "string",
+      "provider": "string",
+      "apiFileId": "string"
+    }
+  ]
+}
+```
+
+### 5.2 DELETE one EdgeGalleryCapabilityGroup
+Delete one Capability group by id.
+```
+Resource URI: /mec/developer/v1/capability-groups/{groupId}
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| groupId | group id|path param|yes|
+
+Example response:
+```
+200 OK
+true
+```
+
+### 5.3 POST create one EdgeGalleryCapability
+Create one EdgeGalleryCapability
+```
+Resource URI: /mec/developer/v1/capability-groups/{groupId}
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| OpenMepCapabilityDetail | entity class|body param|yes|
+| groupId | group id|path param|yes|
+```
+OpenMepCapabilityDetail
+{
+  "detailId": "string",
+  "groupId": "string",
+  "service": "string",
+  "version": "string",
+  "description": "string",
+  "provider": "string",
+  "apiFileId": "string"
+}
+```
+
+Example response:
+```
+200 OK
+{
+  "detailId": "string",
+  "groupId": "string",
+  "service": "string",
+  "version": "string",
+  "description": "string",
+  "provider": "string",
+  "apiFileId": "string"
+}
+```
+
+### 5.4 DELETE one EdgeGalleryCapability
+Delete one EdgeGalleryCapability by id
+```
+Resource URI: /mec/developer/v1/capability-groups/capabilities/{capabilityId}
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| capabilityId | capability id|path param|yes|
+
+Example response:
+```
+200 OK
+true
+```
+
+### 5.5 GET all EdgeGalleryCapability
+Gey all EdgeGalleryCapability 
+```
+Resource URI: /mec/developer/v1/capability-groups
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| capabilityId | capability id|path param|yes|
+
+Example response:
+```
+200 OK
+[
+  {
+    "groupId": "string",
+    "name": "string",
+    "type": "OPENMEP",
+    "description": "string",
+    "capabilityDetailList": [
+      {
+        "detailId": "string",
+        "groupId": "string",
+        "service": "string",
+        "version": "string",
+        "description": "string",
+        "provider": "string",
+        "apiFileId": "string"
+      }
+    ]
+  }
+]
+```
+
+### 5.6 GET all EdgeGalleryCapability by groupid
+Gey all EdgeGalleryCapability by  groupid
+```
+Resource URI: /mec/developer/v1/capability-groups/{groupId}
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| groupId | capability group id|path param|yes|
+
+Example response:
+```
+200 OK
+{
+  "groupId": "string",
+  "name": "string",
+  "type": "OPENMEP",
+  "description": "string",
+  "capabilityDetailList": [
+    {
+      "detailId": "string",
+      "groupId": "string",
+      "service": "string",
+      "version": "string",
+      "description": "string",
+      "provider": "string",
+      "apiFileId": "string"
+    }
+  ]
+}
+```
+
+### 5.7 GET all EdgeGallery API
+Gey all EdgeGallery  API
+```
+Resource URI: /mec/developer/v1/capability-groups/openmep-api
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+
+Example response:
+```
+200 OK
+{
+  "openMeps": [
+    {
+      "name": "string",
+      "service": "string",
+      "description": "string",
+      "apiFileId": "string"
+    }
+  ]
+}
+```
+
+### 5.8 GET all EdgeGallery ECO API
+Gey all EdgeGallery ECO API
+```
+Resource URI: /mec/developer/v1/capability-groups/openmepeco-api
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+
+Example response:
+```
+200 OK
+{
+  "openMepEcos": [
+    {
+      "name": "string",
+      "service": "string",
+      "description": "string",
+      "apiFileId": "string"
+    }
+  ]
+}
+```
+
 
 
 
