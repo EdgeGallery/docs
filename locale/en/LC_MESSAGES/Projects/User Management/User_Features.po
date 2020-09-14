@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Edgegallery Authors
+# This file is distributed under the same license as the edgegallery
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: edgegallery \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-14 09:59+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../Projects/User Management/User_Features.md:1
+msgid "特性设计"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:3
+#: Management/User_Features.md:29
+msgid "单点登录"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:4
+#: Management/User_Features.md:42
+msgid "手机验证"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:31
+msgid ""
+"单点登录系统是基于ServiceComb、Spring "
+"Security、Oauth2、JWT、Vue等技术实现，采用OAuth2协议的授权码模式（authorization "
+"code），MECM、AppStore、Developer作为客户端，与认证服务器user-mgmt-"
+"be进行交互，实现单点登陆与单点注销功能。使用Cookie+Session机制实现用户认证鉴权和超时退出功能，使用JWT存储用户基本信息，减轻认证服务器压力。"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:33
+msgid "单点登录时序图"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:35
+#: Management/User_Features.md:39 Management/User_Features.md:56
+#: Management/User_Features.md:60 Management/User_Features.md:64
+#: Management/User_Features.md:81 Management/User_Features.md:92
+msgid "输入图片说明"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:37
+msgid "单点注销时序图"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:44
+msgid "用户管理使用的手机验证来注册和忘记密码。短信业务使用的华为云消息&短信服务，详细信息请点击这里。"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:53
+msgid "界面设计"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:58
+msgid "登录界面"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:62
+msgid "注册界面"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:66
+msgid "忘记密码界面"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:68
+msgid "验证流程"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:71
+msgid "用户注册"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:73
+msgid "用户注册时，用户管理需要完成以下工作："
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:75
+msgid "手机号和用户名都需要做唯一性校验，注册时必须通过手机验证码校验"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:77
+msgid "用户名大于6位"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:79
+msgid "用户输入用户名和手机号时，动态调用后台接口，判断用户名或者手机号是否已被注册"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:83
+msgid "忘记密码"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:85
+msgid "用户忘记密码时，用户管理需要完成以下工作："
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:87
+msgid "用户输入手机号时，动态调用后台接口，判断手机号是否已被注册，如果已经被注册，可进行下一步发送验证码，如果没有被注册，提示用户先进行注册。"
+msgstr ""
+
+#: ../../Projects/User Management/User_Features.md:89
+msgid "修改成功后，返回登录界面。"
+msgstr ""
+

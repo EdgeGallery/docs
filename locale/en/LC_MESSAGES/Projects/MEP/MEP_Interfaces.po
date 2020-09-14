@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Edgegallery Authors
+# This file is distributed under the same license as the edgegallery
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: edgegallery \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-14 09:59+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1
+#: ../../Projects/MEP/MEP_Interfaces.md:3
+msgid "MEP Interfaces"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4
+#: ../../Projects/MEP/MEP_Interfaces.md:21
+msgid "Mep-Server"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5
+#: ../../Projects/MEP/MEP_Interfaces.md:24
+msgid "1. DNS rule configurations"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6
+#: ../../Projects/MEP/MEP_Interfaces.md:28
+msgid "1.1 Mp1 Interface for DNS configurations"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:7
+#: ../../Projects/MEP/MEP_Interfaces.md:32
+msgid "1.1.1 GET all"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:8
+#: ../../Projects/MEP/MEP_Interfaces.md:78
+msgid "1.1.2 GET one"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:9
+#: ../../Projects/MEP/MEP_Interfaces.md:118
+msgid "1.1.2 PUT"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:10
+#: ../../Projects/MEP/MEP_Interfaces.md:185
+msgid "1.2 Mm5 Interface for DNS configurations"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:11
+#: ../../Projects/MEP/MEP_Interfaces.md:189
+msgid "1.2.1 POST"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:12
+#: ../../Projects/MEP/MEP_Interfaces.md:245
+msgid "1.2.2 GET all"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:13
+#: ../../Projects/MEP/MEP_Interfaces.md:292
+msgid "1.2.3 GET one"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:14
+#: ../../Projects/MEP/MEP_Interfaces.md:332
+msgid "1.2.4 PUT"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:15
+#: ../../Projects/MEP/MEP_Interfaces.md:399
+msgid "1.2.5 DELETE"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:16
+#: ../../Projects/MEP/MEP_Interfaces.md:432
+msgid "Dns-Server"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:17
+#: ../../Projects/MEP/MEP_Interfaces.md:436
+msgid "1. DNS management"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:18
+#: ../../Projects/MEP/MEP_Interfaces.md:438
+msgid "1.1 Create/Set new entry"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:19
+#: ../../Projects/MEP/MEP_Interfaces.md:485
+msgid "1.2. Delete an entry"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:22
+msgid "This section cover the mep-server interfaces."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:26
+msgid "DNS rules can be configured using both Mp1 and Mm5 interfaces."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:30
+msgid ""
+"Uisng the Mp1 interfaces mec apps can query and activate/deactivate dns "
+"rules associated to it. Implementation of this interface are as per the "
+"ETSI GS MEC 011 V2.1.1 document."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:34
+#: ../../Projects/MEP/MEP_Interfaces.md:247
+msgid "Query all DNS rules associated with an application."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:55
+#: ../../Projects/MEP/MEP_Interfaces.md:105
+#: ../../Projects/MEP/MEP_Interfaces.md:172
+#: ../../Projects/MEP/MEP_Interfaces.md:232
+#: ../../Projects/MEP/MEP_Interfaces.md:269
+#: ../../Projects/MEP/MEP_Interfaces.md:319
+#: ../../Projects/MEP/MEP_Interfaces.md:386
+#: ../../Projects/MEP/MEP_Interfaces.md:426
+#: ../../Projects/MEP/MEP_Interfaces.md:480
+#: ../../Projects/MEP/MEP_Interfaces.md:514
+msgid "Example response:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:80
+#: ../../Projects/MEP/MEP_Interfaces.md:294
+msgid "Query single DNS rule associated with an application."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:120
+#: ../../Projects/MEP/MEP_Interfaces.md:334
+msgid ""
+"Modify the state of a rule associated with an application. This interface"
+" can modify the state from ACTIVE to INACTIVE or vice versa. No other "
+"field can be modified using this interface."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:145
+#: ../../Projects/MEP/MEP_Interfaces.md:359
+msgid ""
+"Request body can be as following. | Field  Name   | Values"
+"                      | Mandatory?    | | ------------- | "
+"--------------------------- | ------------- | | dnsRuleId     | string"
+"                      | No, if present must be same with actual | | "
+"domainName    | string                      | No, if present must be same"
+" with actual | | ipAddressType | enum {IP_V4, IP_V6}     | No, if present"
+" must be same with actual | | ipAddress     | string"
+"                      | No, if present must be same with actual | | ttl"
+"           | int (non-zero value)        | No, if present must be same "
+"with actual | | state         | enum {ACTIVE, INACTIVE} | Yes |"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:156
+#: ../../Projects/MEP/MEP_Interfaces.md:221
+#: ../../Projects/MEP/MEP_Interfaces.md:370
+#: ../../Projects/MEP/MEP_Interfaces.md:447
+msgid "Example request body:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:187
+msgid ""
+"Uisng the Mm5 interfaces MECM can create, query, update or delete the dns"
+" rules associated to and application. Implementation of this interface "
+"are specified in ETSI GS MEC 010-1 V1.1.1 and ETSI GS MEC 010-2 V2.1.1 "
+"documents."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:191
+msgid ""
+"Create a new DNS rule and associate it with a MEC application. DNS rule "
+"id will be generated by the mep-server, thus no need to pass this field "
+"during the creation."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:212
+msgid ""
+"Request body can be as following. | Field  Name   | Values"
+"                      | Mandatory? | | ------------- | "
+"--------------------------- | ---------- | | domainName    | string"
+"                      | Yes | | ipAddressType | enum {IP_V4, IP_V6}     |"
+" Yes | | ipAddress     | string                      | Yes | | ttl"
+"           | int (non-zero value)        | Yes | | state         | enum "
+"{ACTIVE, INACTIVE} | Yes |"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:401
+msgid "Delete a DNS rule associated to an application."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:434
+msgid ""
+"Mep has a programmable dns server which can perform the name resolution "
+"of the MEC applications. This management interface of the dns server is "
+"handled using a rest interface and this section cover the details of this"
+" interface."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:440
+msgid ""
+"DNS entry can be added or modified using this interface. Once a record is"
+" added/modified, the resource will be available for the device "
+"application to query."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:467
+msgid ""
+"Using this interface multiple records on multiple zones can be submitted "
+"together."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:469
+msgid ""
+"Details about the request fields: | Field  Name   | Values"
+"                      | Mandatory?    | Description | | ------------- | "
+"--------------------------- | ------------- | ----------- | | zone"
+"          | string                      | Yes | Zone name | | name"
+"          | string                      | Yes | Domain name | | type"
+"          | enum {A, AAAA}          | Yes | DNS resource type, A in case "
+"of Ipv4 and AAAA for Ipv6 | | class         | enum {IN}               | "
+"Yes on create | Resource record class | | ttl           | int (non-zero "
+"value)        | Yes on create | Record TTL value | | rData         | "
+"list(string)                | Yes on create | IP Address list, Ip type "
+"must match with the type field |"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:487
+msgid "DNS entry can be deleted from the dns-server using this interface."
+msgstr ""
+

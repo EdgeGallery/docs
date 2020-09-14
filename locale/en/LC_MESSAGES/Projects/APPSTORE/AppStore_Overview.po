@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Edgegallery Authors
+# This file is distributed under the same license as the edgegallery
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: edgegallery \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-14 09:59+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:1
+msgid "APPSTORE Overview"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:5
+msgid "APP_STORE"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:6
+#: ../../Projects/APPSTORE/AppStore_Overview.md:15
+msgid "架构说明"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:7
+#: ../../Projects/APPSTORE/AppStore_Overview.md:24
+msgid "部署视图"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:8
+#: ../../Projects/APPSTORE/AppStore_Overview.md:30
+msgid "特性描述"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:9
+#: ../../Projects/APPSTORE/AppStore_Overview.md:32
+msgid "应用上传"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:10
+#: ../../Projects/APPSTORE/AppStore_Overview.md:35
+msgid "应用下载"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:11
+msgid "APP STORE"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:12
+msgid ""
+"AppStore是开发者发布和上线App应用的市场，由Developer平台开发的边缘应用，经过测试可以直接分享到AppStore应用商店。AppStore分为前后台两个部分"
+"，appstore-be是后台部分，提供主要功能接口供前台或其他三方系统调用，appstore-fe是前台部分，提供界面展示。"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:18
+msgid "appstore-fe：开发者平台前台框架，使用VUE开发。"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:20
+msgid ""
+"appstore-"
+"be：开发者平台后台框架，使用SpringBoot+ServiceComb开发。（有关ServiceComb请参考这里：https://servicecomb.apache.org/cn/）"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:22
+msgid "appstore DB：后台依赖Postgres数据库。appstore-fe：开发者平台前台框架，使用VUE开发。"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:25
+msgid "以上部署视图是按照K8S部署设计的， 在实际部署过程中，可以直接在虚拟机或者docker容器中启动各自的服务，部署过程中需要有一下几点注意："
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:28
+msgid ""
+"appstore-fe，appstore-be，DB "
+"Service都需要注册到ServiceCenter中，有关ServiceCenter的使用方法请参考：https://servicecomb.apache.org/cn/"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:29
+msgid "推荐使用Chrome浏览器"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:31
+msgid "输入图片说明"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:33
+msgid "App上传，为应用开发者提供展示平台，将开发者所开发的边缘应用通过AppStore对外展示，提升影响力。"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview.md:36
+msgid "App下载，主要为MECM系统提供应用列表，并通过边缘节点完成应用的生命周期管理。"
+msgstr ""
+
