@@ -22,7 +22,7 @@ Developer Interfaces
        - [3.1 GET all project](#31-get-all-project)
        - [3.2 GET one project](#32-get-one-project)
        - [3.3 POST create one project](#33-post-create-one-project)
-       - [3.4 Delete one project](#34-delete-one-project)
+       - [3.4 DELETE one project](#34-delete-one-project)
        - [3.5 PUT modify one project](#35-put-modify-one-project)
 	- [3.6 POST deploy one project](#36-post-deploy-one-project)
 	- [3.7 POST clean test env](#37-post-clean-test-env)
@@ -34,6 +34,13 @@ Developer Interfaces
 	- [3.13 POST add image to project](#313-post-add-image-to-project)
 	- [3.14 DELETE image of project](#314-delete-image-of-project)
 	- [3.15 GET image of project](#315-get-image-of-project)
+  - [4. Host](#4-host)
+    - [4.1 GET all host](#41-get-all-host)
+    - [4.2 GET one host](#42-get-one-host)
+	- [4.3 POST create one host](#43-post-create-one-host)
+	- [4.4 DELETE one host](#44-delete-one-host)
+	- [4.5 PUT modify one host](#45-put-modify-one-host)
+	
 
  
 
@@ -1468,3 +1475,168 @@ Example response:
   ]
 }
 ```
+
+## 4. Host
+server of build and test or deploy app
+### 4.1 GET all host
+Query all host.
+```
+Resource URI: /mec/developer/v1/hosts
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+
+Example response:
+```
+200 OK
+[
+  {
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "ip": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0
+  }
+]
+```
+
+### 4.2 GET one host
+Query  host by id.
+```
+Resource URI: /mec/developer/v1/hosts/{hostId}
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| hostId | host id|path param|yes|
+
+Example response:
+```
+200 OK
+[
+  {
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "ip": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0
+  }
+]
+```
+
+### 4.3 POST create one host
+Create one host.
+```
+Resource URI: /mec/developer/v1/hosts/
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| MepHost | entity class|body param|yes|
+```
+MepHost
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+
+Example response:
+```
+200 OK
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+
+### 4.4 DELETE  one host
+Delete one host.
+```
+Resource URI: /mec/developer/v1/hosts/{hostId}
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| hostId | host id|path param|yes|
+
+Example response:
+```
+200 OK
+true
+```
+
+### 4.5 PUT modify one host
+Create one host.
+```
+Resource URI: /mec/developer/v1/hosts/{hostId}
+```
+| Name          | Definition |type   | Required|
+| ------------- | ------------- |------------|------------|
+| hostId | host id|path param|yes|
+| MepHost | entity class|body param|yes|
+```
+MepHost
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+Example response:
+```
+200 OK
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+
+
+
+
+
