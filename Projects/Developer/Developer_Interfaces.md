@@ -48,7 +48,7 @@ Developer Interfaces
 This section cover the Developer-Server interfaces.
 
 ## 1. Plugin
-
+Development environment plug-in or sdk
 ### 1.1 POST upload plugin 
 Upload one plugin with some params.
 ```
@@ -295,7 +295,7 @@ Example response:
 ```
 
 ## 2. App
-
+Edge applications on the car
 ### 2.1 POST upload app 
 Upload app with some params.
 ```
@@ -452,7 +452,7 @@ Example response:
 }
 ```
 ## 3. App Project
-
+Edge application projects created by the developer platform
 ### 3.1 GET all project
 Query all app project with userId.
 ```
@@ -1477,7 +1477,7 @@ Example response:
 ```
 
 ## 4. Host
-server of build and test or deploy app
+Server of build and test or deploy app
 ### 4.1 GET all host
 Query all host.
 ```
