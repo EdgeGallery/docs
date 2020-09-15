@@ -1,7 +1,7 @@
 Developer
 ============
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    Developer Overview <Developer_Overview>
    Developer Features <Developer_Features>
