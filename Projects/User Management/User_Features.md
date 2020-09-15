@@ -15,11 +15,11 @@
 
 ### 单点登录时序图
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0709/165324_cdda101c_5504908.png "登陆流程图.png")
+![](https://images.gitee.com/uploads/images/2020/0709/165324_cdda101c_5504908.png)
 
 ### 单点注销时序图
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0709/165333_fa1db216_5504908.png "单点注销时序图.png")
+![](https://images.gitee.com/uploads/images/2020/0709/165333_fa1db216_5504908.png)
 
 
 ## 手机验证
@@ -36,15 +36,15 @@ user-mgmt下配置文件application.properties，设置sms.enabled=false
 ### 界面设计
 ----
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0709/165626_169c8546_5504908.png "界面设计1.png")
+![](https://images.gitee.com/uploads/images/2020/0709/165626_169c8546_5504908.png)
 
 登录界面
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0709/165638_d9f1d3b4_5504908.png "界面设计2.png")
+![](https://images.gitee.com/uploads/images/2020/0709/165638_d9f1d3b4_5504908.png)
 
 注册界面
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0709/165650_2ab44fd1_5504908.png "界面设计3.png")
+![](https://images.gitee.com/uploads/images/2020/0709/165650_2ab44fd1_5504908.png)
 
 忘记密码界面
 
