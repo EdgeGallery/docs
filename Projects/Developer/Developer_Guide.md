@@ -48,4 +48,4 @@ Developer是开发者开发和测试边缘应用的edgegallery平台，该平台
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0915/113433_718e3cb3_5504908.png "测试任务管理.png")
 
 ### 开发者平台-社区
-此页面开发中
+页面开发中
