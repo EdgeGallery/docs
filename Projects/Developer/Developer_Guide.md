@@ -1,4 +1,5 @@
-## Developer开发者平台
+Developer Guide
+============
 
 ### 概述
 Developer是开发者开发和测试边缘应用的edgegallery平台，该平台提供了开发工具、开放的API能力、集成测试验证环境等，完成测试后可直接生成package包。开发者可以选择发布appstore或者发布到API生态。

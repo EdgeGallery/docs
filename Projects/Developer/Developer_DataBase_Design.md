@@ -1,3 +1,6 @@
+Developer DataBase Design
+============
+
 ## 概要
 Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。**PostgreSQL**是开源的对象-关系数据库服务器(ORDBMS)，在灵活的BSD许可证下发行。进一步了解PostgreSQL可以点击[这里](https://www.runoob.com/postgresql/postgresql-tutorial.html)。
 - tbl_plugin: 存储开发者上传的插件信息，如名字、满意度、插件保存路径等
