@@ -3,7 +3,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
 - tbl_plugin: 存储开发者上传的插件信息，如名字、满意度、插件保存路径等
 ```
 CREATE TABLE tbl_plugin (
-    	pluginid              varchar(255)       NOT NULL,    //插件ID
+    	pluginid              varchar(255)       NOT NULL,    --插件ID
     	pluginname            varchar(255)       NOT NULL,    --插件名字
     	introduction          varchar(500)       NULL,        --插件简介
         satisfaction          float4             NOT NULL,    --满意度（评分）
