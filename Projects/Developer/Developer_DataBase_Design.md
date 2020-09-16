@@ -23,17 +23,17 @@ CREATE TABLE tbl_plugin (
     );
 ```
 
-- catalog_package_table: 存储应用的package信息，一个应用可以拥有多个package
+- tbl_downloadrecord: 存储插件的下载记录，一个插件对应对应多条下载记录
 ```
- CREATE TABLE "tbl_downloadrecord"(
-      "recordid" varchar(255)  NOT NULL,
-      "pluginid" varchar(255)  NOT NULL,
-      "downloaduserid" varchar(255)  NOT NULL,
-      "downloadusername" varchar(255)  NOT NULL,
-      "score" float4 NOT NULL,
-      "scoretype" int4 NOT NULL,
-      "downloadtime" timestamptz(0) NOT NULL,
-      CONSTRAINT "tbl_downloadrecord_pkey" PRIMARY KEY ("recordid")
+ CREATE TABLE  tbl_downloadrecord (
+       recordid          varchar(255)    NOT NULL,    --下载记录ID
+       pluginid          varchar(255)    NOT NULL,    --插件ID
+       downloaduserid    varchar(255)    NOT NULL,    --下载用户ID
+       downloadusername  varchar(255)    NOT NULL,    --下载用户姓名
+       score             float4          NOT NULL,    --评分分数（1-5）
+       scoretype         int4            NOT NULL,    --评分类型
+       downloadtime      timestamptz(0)  NOT NULL,    --下载时间
+       CONSTRAINT  tbl_downloadrecord_pkey  PRIMARY KEY (recordid)
     );
 ```
 
