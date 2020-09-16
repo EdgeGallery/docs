@@ -1,43 +1,25 @@
-**PostgreSQL**是开源的对象-关系数据库服务器(ORDBMS)，在灵活的BSD许可证下发行。进一步了解PostgreSQL可以点击[这里](https://www.runoob.com/postgresql/postgresql-tutorial.html)。
-
-| **数据库表** | **字段** | **功能** |
-| --- | --- | --- |
-| tbl\_plugin | pluginid,pluginname,introduction,satisfaction,  <br>codelanguage,plugintype,version,downloadcount,  <br>logofile,pluginfileuserid,uploadtime,username,  <br>pluginsize,apifile,scorecount | 存储开发者上传的插件信息，包括插件名称，类型，存储路径，大小，下载次数等。 |
-| tbl\_downloadrecord | recordid,pluginid,downloaduserid,downloadusername,  <br>score,scoretype,downloadtime | 存储插件的下载记录。 |
-| tbl\_testapp | appid,appname,appfile,affinity,  <br>appdesc,uploadtime,userid,logofile,  <br>appversion,type | 存储开发者上传的APP信息，包括APP的名称，类型，版本等信息。 |
-| tbl\_appfuntion | functionid,funcname,funcdesc,addtime | 存储APP的类型信息，此表默认由管理员执行初始化，无需开发者平台接口去初始化。 |
-| tbl\_testtask | taskid,taskno,status,begintime,  <br>endtime,appid | 存储APP测试的任务信息。 |
-| tbl\_subtaskstatus | executionid,taskid,testcaseid,  <br>status,parameters | 存储APP测试子任务信息，包括所有子任务的完成状态等。 |
-| tbl\_app\_project | id,name,provider,platform,type,  <br>description,status,user\_id,create\_date,  <br>last\_test\_id,version,capabilities,  <br>project\_type,icon\_file\_id,open\_capability\_id | 存储开发者创建的APP项目信息，包括APP的名称，提供者，平台，架构，版本，服务能力等信息。 |
-| tbl\_openmep\_capability | group\_id,name,type,description | 存储创建APP项目时，开发者平台提供的能力以及生态提供的能力信息。 |
-| tbl\_openmep\_capability\_detail | detail\_id,service,version,description,  <br>provider,group\_id,api\_file\_id | 存储创建APP项目时，开发者平台提供的能力或者生态提供的能力对应的服务信息。 |
-| tbl\_project\_test\_config | test\_id,project\_id,agent\_config,  <br>image\_file\_id,app\_api\_file\_id,status,  <br>access\_url,error\_log,deploy\_date,  <br>hosts,app\_instance\_id,work\_load\_id | 存储部署APP项目时的测试配置信息，包括部署的节点信息，APP项目的文件路径等。 |
-| tbl\_project\_test\_record | id,config,image\_url,status,  <br>access\_url,error\_log,project\_id,  <br>hosts | 存储部署APP项目时的测试配置信息的记录。 |
-| tbl\_project\_image | id,name,version,project\_id,  <br>type,port,node\_port | 存储部署APP项目时上传的APP镜像信息。 |
-| tbl\_service\_host | host\_id,name,address,architecture,  <br>status,ip,os,port\_range\_min,  <br>port\_range\_max,port,delete | 存储部署APP项目时可以选择的服务器节点信息。 |
-| tbl\_uploaded\_file | file\_id,file\_nameis\_temp,  <br>user\_id,upload\_date,file\_path | 存储APP项目的API文件信息。 |
-| tbl\_api\_emulator | id,user\_id,host\_id,port,  <br>workload\_id,create\_time | 存储更改APP项目的API文件中的服务器信息。 |
 ## 概要
-AppStore数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用了三张数据库表格：
-- app_table: 存储app信息，如名字、提供者、描述等
+Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。**PostgreSQL**是开源的对象-关系数据库服务器(ORDBMS)，在灵活的BSD许可证下发行。进一步了解PostgreSQL可以点击[这里](https://www.runoob.com/postgresql/postgresql-tutorial.html)。
+- tbl_plugin: 存储开发者上传的插件信息，如名字、满意度、插件保存路径等
 ```
-CREATE TABLE app_table (
-    	APPID                    VARCHAR(200)       NOT NULL,
-    	APPNAME                  VARCHAR(100)       NULL,
-    	APPLICATIONTYPE          VARCHAR(300)       NULL,
-    	SHORTDESC                TEXT               NULL,
-    	PROVIDER                 VARCHAR(300)       NULL,
-    	APPINTRODUCTION          TEXT               NULL,
-    	DOWNLOADCOUNT            INT                NULL,
-    	AFFINITY                 VARCHAR(100)       NULL,
-    	INDUSTRY                 VARCHAR(100)       NULL,
-    	CONTACT                  VARCHAR(100)       NULL,
-    	USERID                   VARCHAR(100)       NULL,
-    	USERNAME                 VARCHAR(100)       NULL,
-    	CREATETIME               TIMESTAMP          NULL,
-    	MODIFYTIME               TIMESTAMP          NULL,
-        SCORE                    NUMERIC(2,1)       NULL,
-    	CONSTRAINT app_table_pkey PRIMARY KEY (APPID)
+CREATE TABLE tbl_plugin (
+    	pluginid              varchar(255)       NOT NULL,    --插件ID
+    	pluginname            varchar(255)       NOT NULL,    --插件名字
+    	introduction          varchar(500)       NULL,        --插件简介
+        satisfaction          float4             NOT NULL,    --满意度（评分）
+        codelanguage          varchar(255)       NOT NULL,    --插件代表的编程语言
+        plugintype            int4               NOT NULL,    --插件类型（1：plugin 2:sdk）
+        version               varchar(255)       NOT NULL,    --插件版本
+        downloadcount         int4               NOT NULL,    --下载次数
+        logofile              varchar(500)       NOT NULL,    --插件图标的保存路径
+        pluginfile            varchar(500)       NOT NULL,    --插件的保存路径
+        userid                varchar(255)       NOT NULL,    --上传插件的用户ID
+        uploadtime            timestamptz(6)     NOT NULL,    --上传时间
+        username              varchar(255)       NOT NULL,    --上传插件的用户姓名
+        pluginsize            int4               NOT NULL,    --插件大小（字节）
+        apifile               varchar(500)       NOT NULL,    --插件API文件的保存路径
+        scorecount            int4               NOT NULL,    --插件的评分次数
+      CONSTRAINT "tbl_plugin_pkey" PRIMARY KEY ("pluginid")
     );
 ```
 
