@@ -1778,7 +1778,6 @@ root@ubuntu:/home/EG-LDVS# chmod 600 /home/EG-LDVS/mepserver/*
 本节介绍如何基于EG-LDVS源码构建mepserver和mepauth容器镜像。此处假设用户已经获取到发布的mep代码并放置到/home/EG-LDVS/mep目录下。
 ```
 root@ubuntu:/home/EG-LDVS# cd mep/mepserver
-root@ubuntu:/home/EG-LDVS/mep/mepserver# git checkout 1.0
 root@ubuntu:/home/EG-LDVS/mep/mepserver# docker build --no-cache -t edgegallery/mep:1.0 -f docker/Dockerfile .
 root@ubuntu:/home/EG-LDVS/mep/mepserver# cd ../mepauth
 root@ubuntu:/home/EG-LDVS/mep/mepauth# docker build --no-cache -t edgegallery/mepauth:1.0 -f docker/Dockerfile .
@@ -2103,7 +2102,6 @@ root@ubuntu:~# set +o history
 此处假设用户已经获取到发布的mep-agent代码并放置到/home/EG-LDVS/mep-agent目录下。
 ```
 root@ubuntu:/home/EG-LDVS# cd mep-agent
-root@ubuntu:/home/EG-LDVSmep-agent# git checkout 1.0
 root@ubuntu:/home/EG-LDVSmep-agent# docker build --no-cache -t edgegallery/mep-agent:1.0 -f docker/Dockerfile .
 ```
 3.  运行mep-agent 容器
