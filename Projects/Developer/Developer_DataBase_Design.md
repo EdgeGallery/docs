@@ -79,3 +79,14 @@ CREATE TABLE tbl_plugin (
        CONSTRAINT  tbl_subtaskstatus_pkey  PRIMARY KEY ( executionid )
     );
 ```
+
+- tbl_appfunction: 存储应用的所有亲和力的信息
+```
+ CREATE TABLE  tbl_appfunction (
+       functionid     varchar(255)    NOT NULL,   --功能ID（主键）
+       funcname       varchar(255)    NOT NULL,   --功能名称
+       funcdesc       varchar(255)    NOT NULL,   --功能描述
+       addtime        varchar(244)    NOT NULL,   --添加时间
+       CONSTRAINT  tbl_appfunction_pkey  PRIMARY KEY ( functionid )
+    );
+```
