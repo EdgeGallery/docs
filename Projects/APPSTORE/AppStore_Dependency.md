@@ -2,6 +2,7 @@ AppStore Dependency
 ===================
 
 ## AppStore-be 三方件使用清单
+
 |	groupId	|	artifactId	|	version	|	license	|	direct import (Y/N)	|
 |	---	|	---	|	---	|	---	|	---	|
 |	aopalliance	|	aopalliance	|	1.0 	|	Public Domain	|	N	|

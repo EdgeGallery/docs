@@ -15,7 +15,7 @@
 
 ### 单点登录时序图
 
-![单点登录时序图](../images/user-mgmt/165324_cdda101c_5504908.png)
+![单点登录时序图](https://images.gitee.com/uploads/images/2020/0709/165324_cdda101c_5504908.png)
 
 ### 单点注销时序图
 
