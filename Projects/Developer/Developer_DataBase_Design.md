@@ -44,7 +44,7 @@ CREATE TABLE tbl_plugin (
        appname        varchar(255)    NULL,       --应用名称
        appfile        varchar(255)    NOT NULL,   --应用存储的路径
        affinity       varchar(255)    NOT NULL,   --亲和力（x86/arm/cpu等）
-       industry       varchar(255)    NOT NULL,   --行业（应用用于什么行业）
+       industry       varchar(255)    NOT NULL,   --应用所属行业
        appdesc        varchar(500)    NULL,       --描述（应用简介）
        uploadtime     timestamptz(0)  NOT NULL,   --上传时间
        userid         varchar(255)    NOT NULL,   --上传应用的用户ID
@@ -88,5 +88,27 @@ CREATE TABLE tbl_plugin (
        funcdesc       varchar(255)    NOT NULL,   --功能描述
        addtime        varchar(244)    NOT NULL,   --添加时间
        CONSTRAINT  tbl_appfunction_pkey  PRIMARY KEY ( functionid )
+    );
+```
+- tbl_app_project: 存储开发者在开发者平台自构建的应用项目的信息
+```
+ CREATE TABLE  tbl_app_project  (
+       id                  varchar(50)   NOT NULL,      --项目ID
+       name                varchar(100)  NOT NULL,      --项目名称
+       provider            varchar(100)  NOT NULL,      --提供者
+       platform            varchar(100)  NOT NULL,      --项目架构
+       industries          varchar(100)  NOT NULL,      --项目所属行业
+       type                varchar(50)   NOT NULL,      --项目类型（视频/安全/游戏等）
+       description         text          DEFAULT NULL,  --项目描述
+       status              varchar(20)   NOT NULL,      --项目状态（已测试，部署中等）
+       user_id             varchar(50)   NOT NULL,      --创建项目的用户id
+       create_date         timestamptz(6) DEFAULT NULL, --创建时间
+       last_test_id        varchar(50)   DEFAULT NULL,  --最后一次测试的ID
+       version             varchar(50)   DEFAULT NULL,  --项目版本
+       capabilities        text          DEFAULT NULL,  --项目具有的能力（创建项目时勾选的能力）
+       project_type        varchar(10)   DEFAULT NULL,  --项目类型（新建/迁移）
+       icon_file_id        varchar(50)   DEFAULT NULL,  --项目图标文件的ID
+       open_capability_id  varchar(50)   DEFAULT NULL,  --开发者平台其他用户共享的能力ID
+       CONSTRAINT  tbl_app_project_pkey  PRIMARY KEY ( id )
     );
 ```
