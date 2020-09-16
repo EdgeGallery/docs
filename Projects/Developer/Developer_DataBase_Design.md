@@ -25,25 +25,15 @@ CREATE TABLE tbl_plugin (
 
 - catalog_package_table: 存储应用的package信息，一个应用可以拥有多个package
 ```
-CREATE TABLE catalog_package_table (
-    	VERSIONID                VARCHAR(200)       NOT NULL,
-    	PACKAGEADDRESS           VARCHAR(200)       NULL,
-    	ICONADDRESS              VARCHAR(200)       NULL,
-    	SIZE                     VARCHAR(100)       NULL,
-    	FILESTRUCTURE            TEXT               NULL,
-    	CREATETIME               TIMESTAMP          NULL,
-    	SHORTDESC                TEXT               NULL,
-    	APPNAME                  VARCHAR(100)       NULL,
-    	VERSION                  VARCHAR(20)        NULL,
-    	APPLICATIONTYPE          VARCHAR(300)       NULL,
-    	MARKDOWNCONTENT          TEXT               NULL,
-    	AFFINITY                 VARCHAR(100)       NULL,
-    	INDUSTRY                 VARCHAR(100)       NULL,
-    	CONTACT                  VARCHAR(100)       NULL,
-    	APPID                    VARCHAR(100)       NULL,
-    	USERID                   VARCHAR(100)       NULL,
-    	USERNAME                 VARCHAR(100)       NULL,
-    	CONSTRAINT catalog_package_table_pkey PRIMARY KEY (VERSIONID)
+ CREATE TABLE "tbl_downloadrecord"(
+      "recordid" varchar(255)  NOT NULL,
+      "pluginid" varchar(255)  NOT NULL,
+      "downloaduserid" varchar(255)  NOT NULL,
+      "downloadusername" varchar(255)  NOT NULL,
+      "score" float4 NOT NULL,
+      "scoretype" int4 NOT NULL,
+      "downloadtime" timestamptz(0) NOT NULL,
+      CONSTRAINT "tbl_downloadrecord_pkey" PRIMARY KEY ("recordid")
     );
 ```
 
