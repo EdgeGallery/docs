@@ -19,7 +19,7 @@ CREATE TABLE tbl_plugin (
         pluginsize            int4               NOT NULL,    --插件大小（字节）
         apifile               varchar(500)       NOT NULL,    --插件API文件的保存路径
         scorecount            int4               NOT NULL,    --插件的评分次数
-      CONSTRAINT "tbl_plugin_pkey" PRIMARY KEY ("pluginid")
+        CONSTRAINT "tbl_plugin_pkey" PRIMARY KEY ("pluginid")
     );
 ```
 
