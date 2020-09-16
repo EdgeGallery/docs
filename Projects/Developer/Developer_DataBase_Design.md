@@ -108,7 +108,7 @@ CREATE TABLE tbl_plugin (
        capabilities        text          DEFAULT NULL,  --项目具有的能力（创建项目时勾选的能力）
        project_type        varchar(10)   DEFAULT NULL,  --项目类型（新建/迁移）
        icon_file_id        varchar(50)   DEFAULT NULL,  --项目图标文件的ID
-       open_capability_id  varchar(50)   DEFAULT NULL,  --开发者平台其他用户共享的能力ID
+       open_capability_id  varchar(50)   DEFAULT NULL,  --开发者平台本身提供的以及其他开发者共享的能力ID
        CONSTRAINT  tbl_app_project_pkey  PRIMARY KEY ( id )
     );
 ```
