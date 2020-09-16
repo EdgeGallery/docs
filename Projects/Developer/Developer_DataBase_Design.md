@@ -54,3 +54,16 @@ CREATE TABLE tbl_plugin (
       CONSTRAINT  tbl_testapp_pkey  PRIMARY KEY ( appid )
     );
 ```
+
+- tbl_testtask: 存储应用的测试任务信息，一个应用对应一个测试任务
+```
+    CREATE TABLE   tbl_testtask  (
+       taskid      varchar(255)    NOT NULL,   --任务ID
+       taskno      varchar(255)    NOT NULL,   --任务编号
+       status      varchar(255)    NOT NULL,   --测试状态
+       begintime   timestamptz(6)  NOT NULL,   --任务开始时间
+       endtime     timestamptz(6)  NULL,       --任务结束时间
+       appid       varchar(255)    NOT NULL,   --应用ID
+       CONSTRAINT  tbl_testtask_pkey  PRIMARY KEY ( taskid )
+    );
+```
