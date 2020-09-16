@@ -62,7 +62,7 @@ Developer Interfaces
 
  
 
-# Developer-Server
+## Developer-Server
 This section cover the Developer-Server interfaces.
 
 ## 1. Plugin
@@ -121,10 +121,11 @@ Example response:
     "name": "string",
     "size": 0
   }
-}
+  }
 ```
 
 ### 1.2 GET all
+
 Query all plugin or sdk
 ```
 Resource URI: /mec/appstore/v1/plugins/
@@ -145,7 +146,7 @@ Example response:
   "limit": 0,
   "offset": 0,
   "total": 0
-}
+  }
 ```
 
 ### 1.3 DELETE one 
@@ -259,7 +260,7 @@ Example response:
     "name": "string",
     "size": 0
   }
-}
+  }
 ```
 ### 1.8 PUT mark plugin
 update plugin satisfaction by pluginId
@@ -309,7 +310,7 @@ Example response:
     "name": "string",
     "size": 0
   }
-}
+  }
 ```
 
 ## 2. App
@@ -352,7 +353,7 @@ Example response:
     "endTime": "2020-09-11T06:26:46.351Z",
     "appId": "string"
   }
-}
+  }
 ```
 
 ### 2.2 GET all test task 
@@ -382,7 +383,7 @@ Example response:
       "appId": "string"
     }
   ]
-}
+  }
 ```
 
 ### 2.3 GET all app tags 
@@ -408,7 +409,7 @@ Example response:
       "appId": "string"
     }
   ]
-}
+  }
 ```
 
 ### 2.4 POST upload app to store 
@@ -467,7 +468,7 @@ Example response:
       "parameters": "string"
     }
   ]
-}
+  }
 ```
 ## 3. App Project
 Edge application projects created by the developer platform
@@ -524,8 +525,8 @@ Example response:
     "createDate": "2020-09-14T01:38:48.361Z",
     "openCapabilityId": "string"
   }
-]
-}
+  ]
+  }
 ```
 
 ### 3.2 GET one project 
@@ -580,7 +581,8 @@ Example response:
   "userId": "string",
   "createDate": "2020-09-14T01:45:11.950Z",
   "openCapabilityId": "string"
-}
+  }
+
 ```
 
 ### 3.3 POST create one project 
@@ -634,7 +636,7 @@ Application
   "userId": "string",
   "createDate": "2020-09-14T01:48:09.468Z",
   "openCapabilityId": "string"
-}
+  }
 ```
 Example response:
 ```
@@ -678,8 +680,8 @@ Example response:
   "userId": "string",
   "createDate": "2020-09-14T01:48:09.468Z",
   "openCapabilityId": "string"
-}
-}
+  }
+  }
 ```
 
 ### 3.4 Delete one project
@@ -750,7 +752,7 @@ ApplicationProject
   "userId": "string",
   "createDate": "2020-09-14T01:48:09.468Z",
   "openCapabilityId": "string"
-}
+  }
 ```
 Example response:
 ```
@@ -794,7 +796,7 @@ Example response:
   "userId": "string",
   "createDate": "2020-09-14T01:48:09.468Z",
   "openCapabilityId": "string"
-}
+  }
 ```
 
 ### 3.6 POST deploy one project 
@@ -849,7 +851,7 @@ Example response:
   "userId": "string",
   "createDate": "2020-09-14T01:48:09.468Z",
   "openCapabilityId": "string"
-}
+  }
 ```
 
 ### 3.7 POST clean test env 
@@ -970,7 +972,7 @@ ProjectTestConfig
   "workLoadId": "string",
   "appInstanceId": "string",
   "deployDate": "2020-09-14T01:48:09.469Z"
-}
+  }
 ```
 Example response:
 ```
@@ -1064,7 +1066,7 @@ Example response:
   "workLoadId": "string",
   "appInstanceId": "string",
   "deployDate": "2020-09-14T01:48:09.469Z"
-}
+  }
 ```
 
 ### 3.9 PUT modify test config 
@@ -1167,7 +1169,7 @@ ProjectTestConfig
   "workLoadId": "string",
   "appInstanceId": "string",
   "deployDate": "2020-09-14T01:48:09.469Z"
-}
+  }
 ```
 Example response:
 ```
@@ -1261,7 +1263,7 @@ Example response:
   "workLoadId": "string",
   "appInstanceId": "string",
   "deployDate": "2020-09-14T01:48:09.469Z"
-}
+  }
 ```
 ### 3.10 GET one test-config 
 Query one test config by projectId
@@ -1339,7 +1341,7 @@ Example response:
           "name": "string",
           "mountPath": "string"
         }
-      ]
+      ],
     }
   ],
   "hosts": [
@@ -1364,7 +1366,7 @@ Example response:
   "workLoadId": "string",
   "appInstanceId": "string",
   "deployDate": "2020-09-14T01:48:09.469Z"
-}
+  }
 ```
 
 ### 3.11 POST upload to store 
@@ -1413,7 +1415,7 @@ Example response:
       "apiFileId": "string"
     }
   ]
-}
+  }
 ```
 
 ### 3.13 POST add image to project 
@@ -1435,7 +1437,7 @@ ProjectImageConfig
   "projectId": "string",
   "type": "PLATFORM",
   "nodePort": 0
-}
+  }
 ```
 Example response:
 ```
@@ -1448,7 +1450,7 @@ Example response:
   "projectId": "string",
   "type": "PLATFORM",
   "nodePort": 0
-}
+  }
 ```
 
 ### 3.14 DELETE image of project 
@@ -1491,7 +1493,7 @@ Example response:
       "nodePort": 0
     }
   ]
-}
+  }
 ```
 
 ## 4. Host
@@ -1521,7 +1523,7 @@ Example response:
     "portRangeMin": 0,
     "portRangeMax": 0
   }
-]
+  ]
 ```
 
 ### 4.2 GET one host
@@ -1550,7 +1552,7 @@ Example response:
     "portRangeMin": 0,
     "portRangeMax": 0
   }
-]
+  ]
 ```
 
 ### 4.3 POST create one host
@@ -1575,7 +1577,7 @@ MepHost
   "os": "string",
   "portRangeMin": 0,
   "portRangeMax": 0
-}
+  }
 ```
 
 Example response:
@@ -1593,7 +1595,7 @@ Example response:
   "os": "string",
   "portRangeMin": 0,
   "portRangeMax": 0
-}
+  }
 ```
 
 ### 4.4 DELETE one host
@@ -1634,7 +1636,7 @@ MepHost
   "os": "string",
   "portRangeMin": 0,
   "portRangeMax": 0
-}
+  }
 ```
 Example response:
 ```
@@ -1651,7 +1653,7 @@ Example response:
   "os": "string",
   "portRangeMin": 0,
   "portRangeMax": 0
-}
+  }
 ```
 
 ## 5. Capability-groups
@@ -1682,7 +1684,7 @@ OpenMepCapabilityGroup
       "apiFileId": "string"
     }
   ]
-}
+  }
 ```
 Example response:
 ```
@@ -1703,7 +1705,7 @@ Example response:
       "apiFileId": "string"
     }
   ]
-}
+  }
 ```
 
 ### 5.2 DELETE one EdgeGalleryCapabilityGroup
@@ -1740,7 +1742,7 @@ OpenMepCapabilityDetail
   "description": "string",
   "provider": "string",
   "apiFileId": "string"
-}
+  }
 ```
 
 Example response:
@@ -1754,7 +1756,7 @@ Example response:
   "description": "string",
   "provider": "string",
   "apiFileId": "string"
-}
+  }
 ```
 
 ### 5.4 DELETE one EdgeGalleryCapability
@@ -1802,7 +1804,7 @@ Example response:
       }
     ]
   }
-]
+  ]
 ```
 
 ### 5.6 GET all EdgeGalleryCapability by groupid
@@ -1833,7 +1835,7 @@ Example response:
       "apiFileId": "string"
     }
   ]
-}
+  }
 ```
 
 ### 5.7 GET all EdgeGallery API
@@ -1856,7 +1858,7 @@ Example response:
       "apiFileId": "string"
     }
   ]
-}
+  }
 ```
 
 ### 5.8 GET all EdgeGallery ECO API
@@ -1879,7 +1881,7 @@ Example response:
       "apiFileId": "string"
     }
   ]
-}
+  }
 ```
 
 
@@ -1923,7 +1925,7 @@ Example response:
   "uploadDate": "2020-09-14T09:03:17.084Z",
   "filePath": "string",
   "temp": false
-}
+  }
 ```
 
 ### 6.3 POST upload helm yaml
@@ -1943,7 +1945,7 @@ Example response:
 {
   "fileId": "string",
   "fileName": "string"
-}
+  }
 ```
 
 ### 6.4 GET helm yaml
@@ -1961,7 +1963,7 @@ Example response:
 200 OK
 [
   {}
-]
+  ]
 ```
 
 ### 6.5 DELETE helm yaml
@@ -1991,7 +1993,7 @@ Resource URI: /mec/developer/v1/files/samplecode
 List<String>
 [
   "string"
-]
+  ]
 ```
 Example response:
 ```
