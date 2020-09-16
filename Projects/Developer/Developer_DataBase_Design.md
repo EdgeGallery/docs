@@ -27,7 +27,7 @@ CREATE TABLE tbl_plugin (
 ```
  CREATE TABLE  tbl_downloadrecord (
        recordid          varchar(255)    NOT NULL,    --下载记录ID
-       pluginid          varchar(255)    NOT NULL,    --插件ID
+       pluginid          varchar(255)    NOT NULL,    --插件ID（对应tbl_plugin中的pluginid）
        downloaduserid    varchar(255)    NOT NULL,    --下载用户ID
        downloadusername  varchar(255)    NOT NULL,    --下载用户姓名
        score             float4          NOT NULL,    --评分分数（1-5）
@@ -63,7 +63,19 @@ CREATE TABLE tbl_plugin (
        status      varchar(255)    NOT NULL,   --测试状态
        begintime   timestamptz(6)  NOT NULL,   --任务开始时间
        endtime     timestamptz(6)  NULL,       --任务结束时间
-       appid       varchar(255)    NOT NULL,   --应用ID
+       appid       varchar(255)    NOT NULL,   --应用ID（对应tbl_testapp中的appid）
        CONSTRAINT  tbl_testtask_pkey  PRIMARY KEY ( taskid )
+    );
+```
+
+- tbl_subtaskstatus: 存储应用的测试子任务信息，一个测试主任务对应多条子任务
+```
+ CREATE TABLE  tbl_subtaskstatus  (
+       executionid      varchar(255)  DEFAULT NULL,   --执行ID（主键）
+       taskid           varchar(255)  DEFAULT NULL,   --主任务ID（对应tbl_testtask中的taskid)
+       testcaseid       int4          NOT NULL,       --测试用例id(1-5,int)
+       status           varchar(255)  DEFAULT NULL,   --子任务执行状态
+       parameters       text          DEFAULT NULL,   --子任务参数
+       CONSTRAINT  tbl_subtaskstatus_pkey  PRIMARY KEY ( executionid )
     );
 ```
