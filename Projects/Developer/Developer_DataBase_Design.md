@@ -37,16 +37,20 @@ CREATE TABLE tbl_plugin (
     );
 ```
 
-- csar_package_score: 存储应用的评论信息
+- tbl_testapp: 存储开发者上传的应用信息，如应用名称，版本等
 ```
-CREATE TABLE csar_package_score (
-        COMMENTID                serial,
-        USERID                   VARCHAR(100)       NULL,
-        USERNAME                 VARCHAR(100)       NULL,
-        APPID                    VARCHAR(200)       NOT NULL,
-        COMMENTS                 TEXT               NULL,
-        SCORE                    NUMERIC(2,1)       NULL,
-        COMMENTTIME              TIMESTAMP          NULL,
-        CONSTRAINT csar_package_score_pkey PRIMARY KEY (COMMENTID)
+  CREATE TABLE tbl_testapp (
+       appid          varchar(255)    NOT NULL,   --应用ID
+       appname        varchar(255)    NULL,       --应用名称
+       appfile        varchar(255)    NOT NULL,   --应用存储的路径
+       affinity       varchar(255)    NOT NULL,   --亲和力（x86/arm/cpu等）
+       industry       varchar(255)    NOT NULL,   --行业（应用用于什么行业）
+       appdesc        varchar(500)    NULL,       --描述（应用简介）
+       uploadtime     timestamptz(0)  NOT NULL,   --上传时间
+       userid         varchar(255)    NOT NULL,   --上传应用的用户ID
+       logofile       varchar(255)    NOT NULL,   --应用图标的存储路径
+       appversion     varchar(255)    NULL,       --应用版本
+       type           varchar(255)    NOT NULL,   --应用类型（视频/应用/安全等）
+      CONSTRAINT  tbl_testapp_pkey  PRIMARY KEY ( appid )
     );
 ```
