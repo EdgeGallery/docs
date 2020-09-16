@@ -112,3 +112,13 @@ CREATE TABLE tbl_plugin (
        CONSTRAINT  tbl_app_project_pkey  PRIMARY KEY ( id )
     );
 ```
+- tbl_openmep_capability: 存储开发者在开发者平台自构建应用项目时，平台所具有的全部能力的信息
+```
+CREATE TABLE  tbl_openmep_capability  (
+       group_id      varchar(50)     NOT NULL,      --能力组ID
+       name          varchar(255)    DEFAULT NULL,  --能力名称
+       type          varchar(20)     DEFAULT NULL,  --能力类型
+       description   text            DEFAULT NULL,  --能力描述
+       CONSTRAINT  tbl_openmep_capability_pkey  PRIMARY KEY ( group_id )
+    );
+```
