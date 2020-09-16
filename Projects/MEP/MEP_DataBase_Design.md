@@ -1,4 +1,5 @@
 MEP DataBasea Design
 ====================
 
-the introduction and design of Database
+Currently in release v0.9, only api gateway kong use PostgreSQL Database as its backend storage. Other MEP components do not depend on  PostgreSQL Database.
+In future release v1.0, the ak sk api feature would use PostgreSQL Database to store the ak and sk infomation.
