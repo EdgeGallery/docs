@@ -15,11 +15,11 @@
 
 ### 单点登录时序图
 
-![](https://images.gitee.com/uploads/images/2020/0709/165324_cdda101c_5504908.png)
+![单点登录时序图](https://images.gitee.com/uploads/images/2020/0709/165324_cdda101c_5504908.png)
 
 ### 单点注销时序图
 
-![](https://images.gitee.com/uploads/images/2020/0709/165333_fa1db216_5504908.png)
+![单点注销时序图](https://images.gitee.com/uploads/images/2020/0709/165333_fa1db216_5504908.png)
 
 
 ## 手机验证
@@ -36,11 +36,11 @@ user-mgmt下配置文件application.properties，设置sms.enabled=false
 ### 界面设计
 ----
 
-![](https://images.gitee.com/uploads/images/2020/0709/165626_169c8546_5504908.png)
+![登录界面](https://images.gitee.com/uploads/images/2020/0709/165626_169c8546_5504908.png)
 
 登录界面
 
-![](https://images.gitee.com/uploads/images/2020/0709/165638_d9f1d3b4_5504908.png)
+![注册界面](https://images.gitee.com/uploads/images/2020/0709/165638_d9f1d3b4_5504908.png)
 
 注册界面
 
@@ -61,7 +61,7 @@ user-mgmt下配置文件application.properties，设置sms.enabled=false
     
 3.  用户输入用户名和手机号时，动态调用后台接口，判断用户名或者手机号是否已被注册
     
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0709/165705_b098806f_5504908.png "注册流程.png")
+![忘记密码](https://images.gitee.com/uploads/images/2020/0709/165705_b098806f_5504908.png "注册流程.png")
 
 #### 忘记密码
 
@@ -72,4 +72,4 @@ user-mgmt下配置文件application.properties，设置sms.enabled=false
 2.  修改成功后，返回登录界面。
     
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0709/165714_12086f92_5504908.png "忘记密码流程.png")
+![忘记密码流程](https://images.gitee.com/uploads/images/2020/0709/165714_12086f92_5504908.png "忘记密码流程.png")
