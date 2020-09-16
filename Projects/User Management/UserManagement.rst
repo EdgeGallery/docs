@@ -1,7 +1,7 @@
 User Management
 ============
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
 
    User Overview <User_Overview>
    User Features <User_Features>
