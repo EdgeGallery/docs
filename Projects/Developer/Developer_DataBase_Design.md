@@ -90,6 +90,7 @@ CREATE TABLE tbl_plugin (
        CONSTRAINT  tbl_appfunction_pkey  PRIMARY KEY ( functionid )
     );
 ```
+
 - tbl_app_project: 存储开发者在开发者平台自构建的应用项目的信息
 ```
  CREATE TABLE  tbl_app_project  (
@@ -112,6 +113,7 @@ CREATE TABLE tbl_plugin (
        CONSTRAINT  tbl_app_project_pkey  PRIMARY KEY ( id )
     );
 ```
+
 - tbl_openmep_capability: 存储开发者在开发者平台自构建应用项目时，平台提供的全部能力的信息
 ```
 CREATE TABLE  tbl_openmep_capability  (
@@ -120,5 +122,19 @@ CREATE TABLE  tbl_openmep_capability  (
        type          varchar(20)     DEFAULT NULL,  --能力类型
        description   text            DEFAULT NULL,  --能力描述
        CONSTRAINT  tbl_openmep_capability_pkey  PRIMARY KEY ( group_id )
+    );
+```
+
+- tbl_openmep_capability_detail: 存储开发者在开发者平台自构建应用项目时，平台提供的能力详情（能力所提供的服务）的信息，一个能力对应多个能力详情（服务）
+```
+ CREATE TABLE  tbl_openmep_capability_detail  (
+       detail_id      varchar(50)     NOT NULL,       --能力详情ID
+       service        varchar(100)    DEFAULT NULL,   --服务名称
+       version        varchar(100)    DEFAULT NULL,   --服务版本
+       description    text            DEFAULT NULL,   --服务描述
+       provider       varchar(100)    DEFAULT NULL,   --服务提供者
+       group_id       varchar(50)     DEFAULT NULL,   --能力ID（对应tbl_openmep_capability的group_id）
+       api_file_id    varchar(255)    DEFAULT NULL,   --服务API文件ID
+      CONSTRAINT  tbl_openmep_capability_detail_pkey  PRIMARY KEY ( detail_id )
     );
 ```
