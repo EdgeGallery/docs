@@ -80,7 +80,7 @@ Example request:
   "company": "company",
   "gender": "male",
   "telephone": "13812345678",
-  "password": "TestPassword1",
+  "password": "123.qwe",
   "verificationCode": "123456"
 }
 ```
@@ -143,7 +143,7 @@ Example request:
 ```json
 {
   "telephone": "13812345678",
-  "newPassword": "TestPassword1",
+  "newPassword": "123.qwe",
   "verificationCode": "123456"
 }
 ```
