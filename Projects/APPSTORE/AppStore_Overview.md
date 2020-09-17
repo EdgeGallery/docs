@@ -31,8 +31,8 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 EdgeGallery为用户提供了可用的AppStore环境，操作指导请参考[《AppStore_Guide》](/Projects/APPSTORE/AppStore_Guide.md)
 
 ## 搭建本地开发环境
-AppStore提供了指导文档，帮助用户搭建本地开发环境，方便用户进行本地调试。详情请参考
-[《AppStore_Setting Up Local Development Environment》](/Projects/APPSTORE/AppStore_Setting Up Local Development Environment.md)
+AppStore提供了指导文档，帮助用户搭建本地开发环境，方便用户进行本地调试。详情请参考[《AppStore_Setting_Up_Local_Development_Environment》](/Projects/APPSTORE/AppStore_Setting_Up_Local_Development_Environment.md)
+
 
 ## 其他
 AppStore还提供了其他文档以供参考：
