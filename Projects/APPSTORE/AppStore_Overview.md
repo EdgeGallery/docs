@@ -22,21 +22,21 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 - 推荐使用Chrome浏览器
 
 ## 特性描述
-详细特性描述请参考[《AppStore_Features》](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_Features.md)
+详细特性描述请参考[《AppStore_Features》](/Projects/APPSTORE/AppStore_Features.md)
 
 ## 接口文档
-详细的接口文档请参考[《AppStore_Interfaces》](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/Appstore_Interfaces.md)
+详细的接口文档请参考[《AppStore_Interfaces》](/Projects/APPSTORE/Appstore_Interfaces.md)
 
 ## 操作指导
-EdgeGallery为用户提供了可用的AppStore环境，操作指导请参考[《AppStore_Guide》](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_Guide.md)
+EdgeGallery为用户提供了可用的AppStore环境，操作指导请参考[《AppStore_Guide》](/Projects/APPSTORE/AppStore_Guide.md)
 
 ## 搭建本地开发环境
-AppStore提供了指导文档，帮助用户搭建本地开发环境，方便用户进行本地调试。详情请参考[《AppStore_Setting Up Local Development Environment.md》](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_Setting%20Up%20Local%20Development%20Environment.md)
+AppStore提供了指导文档，帮助用户搭建本地开发环境，方便用户进行本地调试。详情请参考[《AppStore_Setting Up Local Development Environment.md》](/Projects/APPSTORE/AppStore_Setting%20Up%20Local%20Development%20Environment.md)
 
 ## 其他
 AppStore还提供了其他文档以供参考：
-- 数据库设计文档[《AppStore_DataBase_Design》](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_DataBase_Design.md)
-- 三方件依赖清单[《AppStore_Dependency》](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_Dependency.md)
+- 数据库设计文档[《AppStore_DataBase_Design》](/Projects/APPSTORE/AppStore_DataBase_Design.md)
+- 三方件依赖清单[《AppStore_Dependency》](/Projects/APPSTORE/AppStore_Dependency.md)
 
 [1]: https://gitee.com/edgegallery/appstore-be "appstore-be"
 [2]: https://gitee.com/edgegallery/appstore-fe "appstore-fe"
