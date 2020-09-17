@@ -72,18 +72,19 @@ Upload one plugin with some params.
 ```
 Resource URI: /mec/developer/v1/plugins/
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| pluginFile | plugin file|request part|yes|
-| logoFile | plugin logo file |request part|yes|
-| apiFile | plugin api file |request part|yes|
-| pluginName | plugin name |request param|yes|
-| codeLanguage | language represented by the plugin |request param|yes|
-| pluginType | 1 plugin 2 sdk |request param|yes|
-| version | plugin version |request param|yes|
-| introduction | plugin brief |request param|yes|
-| userId | the author's id of upload plugin |request param|yes|
-| userName | the author's name of upload plugin |request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|pluginFile|pluginfile|requestpart|yes|
+|logoFile|pluginlogofile|requestpart|yes|
+|apiFile|pluginapifile|requestpart|yes|
+|pluginName|pluginname|requestparam|yes|
+|codeLanguage|languagerepresentedbytheplugin|requestparam|yes|
+|pluginType|1plugin2sdk|requestparam|yes|
+|version|pluginversion|requestparam|yes|
+|introduction|pluginbrief|requestparam|yes|
+|userId|theauthor'sidofuploadplugin|requestparam|yes|
+|userName|theauthor'snameofuploadplugin|requestparam|yes|
 
 Example response:
 ```
@@ -130,11 +131,11 @@ Query all plugin or sdk
 ```
 Resource URI: /mec/appstore/v1/plugins/
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| pluginType | plugin type|request param | yes|
-| limit | the max count of one page|request param | yes|
-| offset | start index of the page|request param | yes|
+|Name|Definition|type|Required|
+|-------------| -------------|------------|------------|
+|pluginType|plugin type|request param|yes|
+|limit|the max count of one page|request param|yes|
+|offset|start index of the page|request param|yes|
 
 Example response:
 ```
@@ -154,9 +155,9 @@ Delete one plugin by pluginId
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| pluginId | plugin id|path param | yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|pluginId|plugin id|path param|yes|
 
 Example response:
 ```
@@ -169,9 +170,9 @@ download one plugin
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/download
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| pluginId | plugin id|path param | yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|pluginId|plugin id|path param|yes|
 
 Example response:
 ```
@@ -184,9 +185,9 @@ download plugin's logo file
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/get-logofile
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| pluginId | plugin id|path param | yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|pluginId|plugin id|path param|yes|
 
 Example response:
 ```
@@ -198,9 +199,9 @@ download plugin's api file
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/get-apifile
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| pluginId | plugin id|path param | yes|
+|Name| Definition|type|Required|
+|-------------|-------------|------------|------------|
+|pluginId|plugin id|path param|yes|
 
 Example response:
 ```
@@ -212,17 +213,18 @@ update api by id
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| pluginId | plugin id|path param | yes|
-| pluginFile | plugin file|request part|no|
-| logoFile | plugin logo file |request part|no|
-| apiFile | plugin api file |request part|no|
-| pluginName | plugin name |request part|no|
-| codeLanguage | language represented by the plugin |request part|no|
-| pluginType | 1 plugin 2 sdk |request part|no|
-| version | plugin version |request part|no|
-| introduction | plugin brief |request part|no|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|pluginId|pluginid|pathparam|yes|
+|pluginFile|pluginfile|requestpart|no|
+|logoFile|pluginlogofile|requestpart|no|
+|apiFile|pluginapifile|requestpart|no|
+|pluginName|pluginname|requestpart|no|
+|codeLanguage|languagerepresentedbytheplugin|requestpart|no|
+|pluginType|1plugin2sdk|requestpart|no|
+|version|pluginversion|requestpart|no|
+|introduction|pluginbrief|requestpart|no|
 
 Example response:
 ```
@@ -267,12 +269,13 @@ update plugin satisfaction by pluginId
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/score
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| pluginId | plugin id|path param | yes|
-| score|plugin satisfaction|request param|yes|
-| userId | rater id |request param|yes|
-| userName | rater name |request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|pluginId|pluginid|pathparam|yes|
+|score|pluginsatisfaction|requestparam|yes|
+|userId|raterid|requestparam|yes|
+|userName|ratername|requestparam|yes|
 
 Example response:
 ```
@@ -320,15 +323,16 @@ Upload app with some params.
 ```
 Resource URI: /mec/developer/v1/apps/
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| appFile | app file|request part|yes|
-| logoFile | app logo file |request part|yes|
-| affinity | app affinity |request param|yes|
-| industry | app industry |request param|yes|
-| type | app type|request param|yes|
-| appDesc | app brief |request param|yes|
-| userId | the author id of upload app |request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|appFile|appfile|requestpart|yes|
+|logoFile|applogofile|requestpart|yes|
+|affinity|appaffinity|requestparam|yes|
+|industry|appindustry|requestparam|yes|
+|type|apptype|requestparam|yes|
+|appDesc|appbrief|requestparam|yes|
+|userId|theauthoridofuploadapp|requestparam|yes|
 
 Example response:
 ```
@@ -361,13 +365,13 @@ Query all test task by condtions
 ```
 Resource URI: /mec/developer/v1/apps/
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| appName | app name|request param|no|
-| status | test task status |request param|no|
-| beginTime | task begin time |request param|no|
-| endTime | task end time |request param|no|
-| userId | the author id of upload app |request param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|appName|appname|requestparam|no|
+|status|testtaskstatus|requestparam|no|
+|beginTime|taskbegintime|requestparam|no|
+|endTime|taskendtime|requestparam|no|
+|userId|theauthoridofuploadapp|requestparam|yes|
 
 Example response:
 ```
@@ -391,8 +395,9 @@ Query app function tags
 ```
 Resource URI: /mec/developer/v1/apps/tags
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
 
 
 Example response:
@@ -417,11 +422,12 @@ upload app to store
 ```
 Resource URI: /mec/developer/v1/apps/{appId}/action/upload
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| appId | app id|path param|yes|
-| userId | the author id of upload app |request param|yes|
-| userName | the author name of upload app|request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|appId|appid|pathparam|yes|
+|userId|theauthoridofuploadapp|requestparam|yes|
+|userName|theauthornameofuploadapp|requestparam|yes|
 
 Example response:
 ```
@@ -434,10 +440,11 @@ start to test app
 ```
 Resource URI: /mec/developer/v1/apps/{appId}/action/start-test
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| appId | app id|path param|yes|
-| userId | the author id of upload app |request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|appId|appid|pathparam|yes|
+|userId|theauthoridofuploadapp|requestparam|yes|
 
 Example response:
 ```
@@ -450,10 +457,11 @@ query test subtask list
 ```
 Resource URI: /mec/developer/v1/apps/{appId}/task/{taskId}/subtasks
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| appId | app id|path param|yes|
-| taskId | main task id |path param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|appId|appid|pathparam|yes|
+|taskId|maintaskid|pathparam|yes|
 
 Example response:
 ```
@@ -477,9 +485,10 @@ Query all app project with userId.
 ```
 Resource URI: /mec/developer/v1/projects/
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| userId | the author id of create procject|request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|userId|theauthoridofcreateprocject|requestparam|yes|
 
 Example response:
 ```
@@ -534,10 +543,11 @@ Query project by id
 ```
 Resource URI:  /mec/developer/v1/projects/{projectId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
-| userId | the author id of create project |request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
+|userId|theauthoridofcreateproject|requestparam|yes|
 
 Example response:
 ```
@@ -590,10 +600,11 @@ Create one project with some params
 ```
 Resource URI: /mec/developer/v1/projects/
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| ApplicationProject | Entity class|body param|yes|
-| userId | the author id of create project |request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|ApplicationProject|Entityclass|bodyparam|yes|
+|userId|theauthoridofcreateproject|requestparam|yes|
 
 ```
 Application
@@ -705,11 +716,12 @@ modify one project by id
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
-| userId | the author name of upload app |request param|yes|
-| ApplicationProject | entity class |body param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
+|userId|theauthornameofuploadapp|requestparam|yes|
+|ApplicationProject|entityclass|bodyparam|yes|
 
 ```
 ApplicationProject
@@ -804,10 +816,11 @@ Deploy one project by id
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/deploy
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
-| userId | the author id of create project |request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
+|userId|theauthoridofcreateproject|requestparam|yes|
 
 Example response:
 ```
@@ -859,11 +872,12 @@ clean test env
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/clean
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
-| userId | the author id of create project |request param|yes|
-| completed | test status |request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
+|userId|theauthoridofcreateproject|requestparam|yes|
+|completed|teststatus|requestparam|yes|
 
 Example response:
 ```
@@ -876,11 +890,12 @@ create test config of one project
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/test-config
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
-| userId | the author id of create project |request param|yes|
-| ProjectTestConfig | entity class |body param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
+|userId|theauthoridofcreateproject|requestparam|yes|
+|ProjectTestConfig|entityclass|bodyparam|yes|
 ```
 ProjectTestConfig
 {
@@ -1074,10 +1089,11 @@ modify test config of one project
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/test-config
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
-| ProjectTestConfig | entity class |body param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
+|ProjectTestConfig|entityclass|bodyparam|yes|
 ```
 ProjectTestConfig
 {
@@ -1270,9 +1286,10 @@ Query one test config by projectId
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/test-config
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
 
 Example response:
 ```
@@ -1374,11 +1391,12 @@ upload app project to appstore
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/upload
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
-| userId | the author id of create project |request param|yes|
-| userName | the author name of create project |request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
+|userId|theauthoridofcreateproject|requestparam|yes|
+|userName|theauthornameofcreateproject|requestparam|yes|
 
 Example response:
 ```
@@ -1391,10 +1409,11 @@ Open project to eco
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/open-api
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
-| userId | the author id of create project |request param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
+|userId|theauthoridofcreateproject|requestparam|yes|
 
 Example response:
 ```
@@ -1423,10 +1442,11 @@ Add image to project
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/image
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
-| ProjectImageConfig |entity class |body param|yes|
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
+|ProjectImageConfig|entityclass|bodyparam|yes|
 ```
 ProjectImageConfig
 {
@@ -1458,10 +1478,10 @@ DELETE image of project
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/image/{imageId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
-| imageId |imageId |path param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
+|imageId|imageId|pathparam|yes|
 
 Example response:
 ```
@@ -1474,9 +1494,9 @@ GET image of project
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/image
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| projectId | project id|path param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
 
 Example response:
 ```
@@ -1503,8 +1523,8 @@ Query all host.
 ```
 Resource URI: /mec/developer/v1/hosts
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
 
 Example response:
 ```
@@ -1531,9 +1551,9 @@ Query  host by id.
 ```
 Resource URI: /mec/developer/v1/hosts/{hostId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| hostId | host id|path param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|hostId|hostid|pathparam|yes|
 
 Example response:
 ```
@@ -1560,9 +1580,9 @@ Create one host.
 ```
 Resource URI: /mec/developer/v1/hosts/
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| MepHost | entity class|body param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|MepHost|entityclass|bodyparam|yes|
 ```
 MepHost
 {
@@ -1603,9 +1623,9 @@ Delete one host.
 ```
 Resource URI: /mec/developer/v1/hosts/{hostId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| hostId | host id|path param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|hostId|hostid|pathparam|yes|
 
 Example response:
 ```
@@ -1618,10 +1638,10 @@ Create one host.
 ```
 Resource URI: /mec/developer/v1/hosts/{hostId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| hostId | host id|path param|yes|
-| MepHost | entity class|body param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|hostId|hostid|pathparam|yes|
+|MepHost|entityclass|bodyparam|yes|
 ```
 MepHost
 {
@@ -1663,9 +1683,9 @@ Create one Capability group.
 ```
 Resource URI: /mec/developer/v1/capability-groups/
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-|OpenMepCapabilityGroup|entity class|body param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|OpenMepCapabilityGroup|entityclass|bodyparam|yes|
 ```
 OpenMepCapabilityGroup
 {
@@ -1713,9 +1733,9 @@ Delete one Capability group by id.
 ```
 Resource URI: /mec/developer/v1/capability-groups/{groupId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| groupId | group id|path param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|groupId|groupid|pathparam|yes|
 
 Example response:
 ```
@@ -1728,10 +1748,10 @@ Create one EdgeGalleryCapability
 ```
 Resource URI: /mec/developer/v1/capability-groups/{groupId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| OpenMepCapabilityDetail | entity class|body param|yes|
-| groupId | group id|path param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|OpenMepCapabilityDetail|entityclass|bodyparam|yes|
+|groupId|groupid|pathparam|yes|
 ```
 OpenMepCapabilityDetail
 {
@@ -1764,9 +1784,9 @@ Delete one EdgeGalleryCapability by id
 ```
 Resource URI: /mec/developer/v1/capability-groups/capabilities/{capabilityId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| capabilityId | capability id|path param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|capabilityId|capabilityid|pathparam|yes|
 
 Example response:
 ```
@@ -1779,9 +1799,9 @@ Gey all EdgeGalleryCapability
 ```
 Resource URI: /mec/developer/v1/capability-groups
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| capabilityId | capability id|path param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|capabilityId|capabilityid|pathparam|yes|
 
 Example response:
 ```
@@ -1812,9 +1832,9 @@ Gey all EdgeGalleryCapability by  groupid
 ```
 Resource URI: /mec/developer/v1/capability-groups/{groupId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| groupId | capability group id|path param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|groupId|capabilitygroupid|pathparam|yes|
 
 Example response:
 ```
@@ -1843,8 +1863,8 @@ Gey all EdgeGallery  API
 ```
 Resource URI: /mec/developer/v1/capability-groups/openmep-api
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
 
 Example response:
 ```
@@ -1866,8 +1886,8 @@ Gey all EdgeGallery ECO API
 ```
 Resource URI: /mec/developer/v1/capability-groups/openmepeco-api
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
 
 Example response:
 ```
@@ -1893,10 +1913,10 @@ Get one file
 ```
 Resource URI: /mec/developer/v1/files/{fileId}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-|fileId|file id|path param|yes|
-|userId|the author id of upload file|request param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|fileId|fileid|pathparam|yes|
+|userId|theauthoridofuploadfile|requestparam|yes|
 
 Example response:
 ```
@@ -1909,10 +1929,10 @@ Upload  file
 ```
 Resource URI: /mec/developer/v1/files
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| file | MultipartFile class|request part|yes|
-|userId|the author id of upload file|request param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|file|MultipartFileclass|requestpart|yes|
+|userId|theauthoridofuploadfile|requestparam|yes|
 
 Example response:
 ```
@@ -1933,11 +1953,11 @@ Upload helm template yaml.
 ```
 Resource URI: /mec/developer/v1/files/helm-template-yaml
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| file | MultipartFile class|request part|yes|
-|userId|the author id of upload file|request param|yes|
-|projectId|project id|request param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|file|MultipartFileclass|requestpart|yes|
+|userId|theauthoridofuploadfile|requestparam|yes|
+|projectId|projectid|requestparam|yes|
 
 Example response:
 ```
@@ -1953,10 +1973,10 @@ Query helm template yaml.
 ```
 Resource URI: /mec/developer/v1/files/helm-template-yaml
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-|userId|the author id of upload file|request param|yes|
-|projectId|project id|request param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|userId|theauthoridofuploadfile|requestparam|yes|
+|projectId|projectid|requestparam|yes|
 
 Example response:
 ```
@@ -1971,9 +1991,9 @@ Delete helm template yaml.
 ```
 Resource URI: /mec/developer/v1/files/helm-template-yaml
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-|fileId|file id|request param|yes||
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|fileId|fileid|requestparam|yes||
 
 Example response:
 ```
@@ -1986,9 +2006,9 @@ Get sample code.
 ```
 Resource URI: /mec/developer/v1/files/samplecode
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-|apiFileIds|api file id list|body param|yes||
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|apiFileIds|apifileidlist|bodyparam|yes||
 ```
 List<String>
 [
@@ -2007,9 +2027,9 @@ Get one api file
 ```
 Resource URI: /mec/developer/v1/localapi/{fileName}
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-|fileName|api file name|path param|yes|
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|fileName|apifilename|pathparam|yes|
 ```
 filename: "plugin", "testapp", "hosts", "files", "capability-groups", "projects"
 ```
