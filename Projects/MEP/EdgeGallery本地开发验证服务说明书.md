@@ -1753,7 +1753,7 @@ root@ubuntu:/home/EG-LDVS/mepserver# openssl genrsa -out jwt_privatekey 2048
 root@ubuntu:/home/EG-LDVS/mepserver# openssl rsa -in jwt_privatekey -pubout -out jwt_publickey
 # Encrypt jwt private key 
 root@ubuntu:/home/EG-LDVS/mepserver# openssl rsa -in jwt_privatekey -aes256 -out jwt_encrypted_privatekey
-# 用户需通过交互式命令设置加密密码，此处假定密码设置为qC#4k5ibyZ
+# 用户需通过交互式命令设置加密密码，此处假定密码设置为te9Fmv%qaq
 
 ```
 
@@ -1987,7 +1987,7 @@ root@ubuntu:~# docker run -itd --name mepserver \
 
 # 登陆mepserver容器并启动mepserver程序
 docker exec -it -u eguser mepserver sh
-bin/start.sh &
+bin/start.sh
 
 # 提示输入根加密组件，要求大于256位，示例：
 j7k0UwOJSsIfi3dzainoBdkcpJJJOJlzd2oBwMQxXdaZ3oCswITWUyLP4eldxdcKGmDvG1qwUEfQjAg71ZeFYyHgXa5OpBlmug3z06bs7ssr2XYTuPydK6y4K34UfsgRKEwMgGP1Ieo8x20lbjXcq0tJG4Q7xgakXs59NwnBeNg2N8R1FgfqD0z9weWgxd7DdJZkDpbJgdANT31y4KDeDCpJXld6XQOxi99mO2xQdMcH6OUyIfgDP7dPaJU57D33
