@@ -2128,7 +2128,7 @@ root@ubuntu:/home/EG-LDVS/mep-agent/conf# docker run -itd --name mepagent \
          -e MEP_APIGW_PORT=8443 \
          -e MEP_AUTH_ROUTE=mepauth \
          -e ENABLE_WAIT=true \
-         -v home/EG-LDVS/mepserver/ca.crt:/usr/mep/ssl/ca.crt:ro \
+         -v /home/EG-LDVS/mepserver/ca.crt:/usr/mep/ssl/ca.crt:ro \
          -e "CA_CERT=/usr/mep/ssl/ca.crt" \
          -e "CA_CERT_DOMAIN_NAME=edgegallery " \
          -v /tmp/mepagent-conf/app_conf.yaml:/usr/mep/conf/app\_conf.yaml:ro \
