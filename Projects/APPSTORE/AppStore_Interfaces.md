@@ -1,7 +1,8 @@
 AppStore Interfaces
 ==============
+The document is for the appstore-be project, there are three parts of interfaces in the project.
+
 - [AppStore Interfaces](#appstore-interfaces)
-- [AppStore-Server](#appstore-server)
   - [1. APP](#1-app)
     - [1.1 Get All Apps](#11-get-all-apps)
     - [1.2 Get One App](#12-get-one-app)
@@ -19,8 +20,6 @@ AppStore Interfaces
     - [3.1 Get Comments Of App](#31-get-comments-of-app)
     - [3.2 Submit Comment To App](#32-submit-comment-to-app)
 
-# AppStore-Server
-This section cover the AppStore-Server interfaces.
 
 ## 1. APP
 
