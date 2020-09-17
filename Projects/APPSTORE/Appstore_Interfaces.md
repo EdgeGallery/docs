@@ -36,13 +36,13 @@ Resource URI: /mec/appstore/v1/apps
 Method: GET
 ```
 
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| name | app name. |request param|no|
-| provider | app provider. |request param|no|
-| type | app type. |request param|no|
-| affinity | app affinity. |request param|no|
-| userId | app creater. |request param|no|
+|Name|Definition|type|Required|
+|---|---|---|---|
+|name|app name.|request param|no|
+|provider|app provider.|request param|no|
+|type|app type.|request param|no|
+|affinity|app affinity.|request param|no|
+|userId|app creater.|request param|no|
 
 Example response:
 ```
@@ -74,9 +74,10 @@ Query app by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}
 Method: GET
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| appId | app name.|path | yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appId|app name.|path|yes|
 
 
 Example response:
@@ -107,21 +108,22 @@ registe a app.
 Resource URI: /mec/appstore/v1/apps
 Method: POST
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| userId | user id|request param | yes|
-| userName | app name|request param | yes|
-| file | package file|RequestPart | yes|
-| icon | app icon file|RequestPart | yes|
-| type | application type|RequestPart | yes|
-| shortDesc | short desc of input|RequestPart | yes|
-| affinity | affinity of app|RequestPart | yes|
-| industry | industry of app|RequestPart | yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|userId|user id|request param|yes|
+|userName|app name|request param|yes|
+|file|package file|RequestPart|yes|
+|icon|app icon file|RequestPart|yes|
+|type|application type|RequestPart|yes|
+|shortDesc |short desc of input|RequestPart |yes|
+|affinity |affinity of app|RequestPart |yes|
+|industry |industry of app|RequestPart |yes|
 
 Example response:
 ```
 200 OK
-  add app and upload package success.
+  "add app and upload package success."
 ```
 
 ### 1.4 Delete One App 
@@ -130,16 +132,17 @@ delete a app.
 Resource URI: /mec/appstore/v1/apps/{appId}
 Method: DELETE
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| userId | user id|request param | yes|
-| userName | app name|request param | yes|
-| appId | app id|path | yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|userId|user id|request param |yes|
+|userName |app name|request param |yes|
+|appId |app id|path |yes|
 
 Example response:
 ```
 200 OK
-  delete App success..
+  "delete App success."
 ```
 
 ### 1.5 Get Latest Version Of App
@@ -148,11 +151,12 @@ get latest version package of app.
 Resource URI: /mec/appstore/v1/apps/{appId}/action/download
 Method: GET
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| userId | user id|request param | yes|
-| userName | app name|request param | yes|
-| appId | app id|path | yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|userId |user id|request param |yes|
+|userName |app name|request param |yes|
+|appId |app id|path |yes|
 
 Example response:
 ```
@@ -166,11 +170,12 @@ get app icon by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}/icon
 Method: GET
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| userId | user id|request param | yes|
-| userName | app name|request param | yes|
-| appId | app id|path | yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|userId |user id|request param |yes|
+|userName |app name|request param |yes|
+|appId |app id|path |yes|
 
 Example response:
 ```
@@ -192,9 +197,10 @@ Resource URI: /mec/appstore/v1/apps/{appId}/packages
 Method: GET
 ```
 
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| appId | app id |type|yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appId |app id |type|yes|
 
 Example response:
 ```
@@ -225,10 +231,11 @@ Query app by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}
 Method: GET
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| appId | app id|path | yes|
-| packageId | package id|path | yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appId |app id|path |yes|
+|packageId |package id|path |yes|
 
 Example response:
 ```
@@ -257,10 +264,11 @@ delete a package of app.
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}
 Method: DELETE
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| appId | app id|path | yes|
-| packageId | package id|path | yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appId |app id|path |yes|
+|packageId |package id|path |yes|
 
 Example response:
 ```
@@ -274,10 +282,11 @@ download one package by appId and packageId.
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download
 Method: GET
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| appId | app id|path | yes|
-| packageId | package id|path | yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appId |app id|path |yes|
+|packageId |package id|path |yes|
 
 Example response:
 ```
@@ -291,12 +300,13 @@ Get file content by app id package id and file path.
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
 Method: GET
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| userId | user id|request param | yes|
-| userName | app name|request param | yes|
-| appId | app id|path | yes|
-| filePath | file path|FormParam | yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|userId |user id|request param |yes|
+|userName |app name|request param |yes|
+|appId |app id|path |yes|
+|filePath |file path|FormParam |yes|
 
 Example response:
 ```
@@ -314,9 +324,10 @@ Get comments by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}/comments
 Method: GET
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| appId | app id|path | yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appId |app id|path |yes|
 
 
 Example response:
@@ -355,12 +366,13 @@ User submit comment to app by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}/comments
 Method: POST
 ```
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| userId | user id|request param | yes|
-| userName | app name|request param | yes|
-| appId | app id|path | yes|
-| entity | comment entity|RequestBody | yes|
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|userId |user id|request param |yes|
+|userName |app name|request param |yes|
+|appId |app id|path |yes|
+|entity |comment entity|RequestBody |yes|
 
 Example request body:
 ```
@@ -375,5 +387,5 @@ Example request body:
 Example response:
 ```
 200 OK
- comments success.
+ "comments success."
 ```
