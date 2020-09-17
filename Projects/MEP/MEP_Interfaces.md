@@ -39,7 +39,8 @@ MEP Interfaces
 
 ## MEP 接口简介
 
-MEP主要包含MEP-server和MEP-auth两个主要功能模块。截止到v0.9版本，MEP server接口分为两类，一类为遵循ETSI MEC 011 v2.1.1标准的Mp1接口，主要为App提供服务注册发现，App状态通知订阅，Dns规则获取等功能；另一类为Mm5接口，主要为MECM/MEPM提供配置管理功能。MEP auth目前主要作为鉴权模块，为App提供token申请发放功能。
+MEP主要包含MEP-server和MEP-auth两个主要功能模块。截止到v0.9版本，MEP server接口分为两类，一类为遵循ETSI MEC 011 v2.1.1标准的Mp1接口，主要为App提供服务注册发现，App状态通知订阅，Dns规则获取等功能；另一类为Mm5接口，主要为MECM/MEPM提供配置管理功能。MEP auth目前主要作为鉴权模块，为App提供token申请发放功能。  
+URL为服务自己的URL，PORT为服务自己的PORT。如果经过KONG，PORT变成KONG的PORT，URL需要添加对应的路由。mepauth直接添加{KONG_MEPAUTH_ROUTE}，mepserver把/mep用{KONG_MEPSERVER_ROUTE}替换。
 
 ## MEP-auth模块接口
 
@@ -52,14 +53,14 @@ MEP主要包含MEP-server和MEP-auth两个主要功能模块。截止到v0.9版�
 URL：
 
 ```
-POST https://{HOST}:{PORT}/{KONG_MEPAUTH_ROUTE}/mepauth/v1/token
+POST https://{HOST}:{PORT}/mepauth/v1/token
 ```
 
 请求参数：
 
  |名称  |          类型 |    描述       |                                      IN     |  必选|
  |---|---|---|---|---|
- | Content-Type |   String  | MIME类型，  填“application/json”                        |               header  | 是|                                                                    
+ | Content-Type |   String  | MIME类型，  填"application/json"                        |               header  | 是|                                                                    
  | Authorization|   String   |认证信息   |                                      header  | 是|
  |  x-sdk-date  |    String   |签名时间（当前时间戳，格式：YYYYMMDDTHHMMSSZ）|   header |  是|
  |  Host    |       String |  与生成认证信息签名用到的host字段保持一致   |      header|   是|
@@ -74,27 +75,27 @@ Body参数：
 请求示例：
 
 ```
-POST https://{HOST}:8443/mepauth/mepauth/v1/token
+POST https://{HOST}:{PORT}/mepauth/v1/token
 
 {
-  “header”: [
+  "header": [
     {
-      “key”: “Content-Type”,
-      “value”: “application/json”
+      "key": "Content-Type",
+      "value": "application/json"
     },
     {
-      “key”: “Authorization”,
-      “value”: “SDK-HMAC-SHA256 Access= QVUJMSUMgS0VZLS0tLS0=,
+      "key": "Authorization",
+      "value": "SDK-HMAC-SHA256 Access= QVUJMSUMgS0VZLS0tLS0=,
       SignedHeaders=content-type;host;x-sdk-date,
-      Signature=142b0dc3feaeb3662b2033a8e6425596546e08a231aa39179b4060867dd15d3d”
+      Signature=142b0dc3feaeb3662b2033a8e6425596546e08a231aa39179b4060867dd15d3d"
     },
     {
-      “key”: “x-sdk-date”,
-      “value”: “20060102T150405Z”
+      "key": "x-sdk-date",
+      "value": "20060102T150405Z"
     },
     {
-      “key”:”Host”,
-      “value”:”xxx”
+      "key":"Host",
+      "value":"xxx"
     }
   ]
 }
@@ -118,9 +119,9 @@ OK
 ```
 HTTP/1.1 200 OK
 {
-	“access_token”:”xxxx”,
-	“token_type”:”Bearer”,
-	“expires_in”:”3600”
+	"access_token":"xxxx",
+	"token_type":"Bearer",
+	"expires_in":"3600"
 }
 
 ```
@@ -139,7 +140,7 @@ HTTP/1.1 200 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applications/{appInstanceId}/services
+GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services
 ```
 
 请求参数：
@@ -156,12 +157,12 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
+GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
 {
-  “header”: [
+  "header": [
     {
-      “key”: “Authorization”,
-      “value”: “Bearer xxx”
+      "key": "Authorization",
+      "value": "Bearer xxx"
     }
   ]
 }
@@ -216,38 +217,38 @@ HTTP/1.1 200 OK
 {
 [
   {
-    “serInstanceId”: “0bc92b06cc213d2ad8beda71bd0e1460”,
-    “serName”: “ExampleService”,
-    “serCategory”: {
-      “href”: “/example/catalogue1”,
-      “id”: “id12345”,
-      “name”: “RNI”,
-      “version”: “version1”
+    "serInstanceId": "0bc92b06cc213d2ad8beda71bd0e1460",
+    "serName": "ExampleService",
+    "serCategory": {
+      "href": "/example/catalogue1",
+      "id": "id12345",
+      "name": "RNI",
+      "version": "version1"
     },
-    “version”: “ServiceVersion1”,
-    “state”: “ACTIVE”,
-    “transportInfo”: {
-      “id”: “TransId12345”,
-      “name”: “REST”,
-      “description”: “REST API”,
-      “type”: “REST_HTTP”,
-      “protocol”: “HTTP”,
-      “version”: “2.0”,
-      “endpoint”: {},
-      “security”: {
-        “oAuth2Info”: {
-          “grantTypes”: [
-            “OAUTH2_CLIENT_CREDENTIALS”
+    "version": "ServiceVersion1",
+    "state": "ACTIVE",
+    "transportInfo": {
+      "id": "TransId12345",
+      "name": "REST",
+      "description": "REST API",
+      "type": "REST_HTTP",
+      "protocol": "HTTP",
+      "version": "2.0",
+      "endpoint": {},
+      "security": {
+        "oAuth2Info": {
+          "grantTypes": [
+            "OAUTH2_CLIENT_CREDENTIALS"
           ],
-          “tokenEndpoint”: “/mecSerMgmtApi/security/TokenEndPoint”
+          "tokenEndpoint": "/mecSerMgmtApi/security/TokenEndPoint"
         }
       },
-      “implSpecificInfo”: {}
+      "implSpecificInfo": {}
     },
-    “serializer”: “JSON”,
-    “scopeOfLocality”: “MEC_SYSTEM”,
-    “consumedLocalOnly”: false,
-    “isLocal”: true
+    "serializer": "JSON",
+    "scopeOfLocality": "MEC_SYSTEM",
+    "consumedLocalOnly": false,
+    "isLocal": true
   }
 ]
 }
@@ -261,7 +262,7 @@ HTTP/1.1 200 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
+GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
 ```
 
 请求参数：
@@ -279,12 +280,12 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
+GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
 {
-  “header”: [
+  "header": [
     {
-      “key”: “Authorization”,
-      “value”: “Bearer xxx”
+      "key": "Authorization",
+      "value": "Bearer xxx"
     }
   ]
 }
@@ -336,38 +337,38 @@ OK
 ```
 HTTP/1.1 200 OK
 {
- “serInstanceId”: “0bc92b06cc213d2ad8beda71bd0e1460”,
- “serName”: “ExampleService”,
- “serCategory”: {
-      “href”: “/example/catalogue1”,
-      “id”: “id12345”,
-      “name”: “RNI”,
-      “version”: “version1”
+ "serInstanceId": "0bc92b06cc213d2ad8beda71bd0e1460",
+ "serName": "ExampleService",
+ "serCategory": {
+      "href": "/example/catalogue1",
+      "id": "id12345",
+      "name": "RNI",
+      "version": "version1"
  },
- “version”: “ServiceVersion1”,
- “state”: “ACTIVE”,
- “transportInfo”: {
-   “id”: “TransId12345”,
-   “name”: “REST”,
-   “description”: “REST API”,
-   “type”: “REST_HTTP”,
-   “protocol”: “HTTP”,
-   “version”: “2.0”,
-   “endpoint”: {},
-   “security”: {
-        “oAuth2Info”: {
-          “grantTypes”: [
-            “OAUTH2_CLIENT_CREDENTIALS”
+ "version": "ServiceVersion1",
+ "state": "ACTIVE",
+ "transportInfo": {
+   "id": "TransId12345",
+   "name": "REST",
+   "description": "REST API",
+   "type": "REST_HTTP",
+   "protocol": "HTTP",
+   "version": "2.0",
+   "endpoint": {},
+   "security": {
+        "oAuth2Info": {
+          "grantTypes": [
+            "OAUTH2_CLIENT_CREDENTIALS"
           ],
-          “tokenEndpoint”: “/mecSerMgmtApi/security/TokenEndPoint”
+          "tokenEndpoint": "/mecSerMgmtApi/security/TokenEndPoint"
         }
       },
-      “implSpecificInfo”: {}
+      "implSpecificInfo": {}
     },
-    “serializer”: “JSON”,
-    “scopeOfLocality”: “MEC_SYSTEM”,
-    “consumedLocalOnly”: false,
-    “isLocal”: true
+    "serializer": "JSON",
+    "scopeOfLocality": "MEC_SYSTEM",
+    "consumedLocalOnly": false,
+    "isLocal": true
  }
 ```
 
@@ -378,14 +379,14 @@ HTTP/1.1 200 OK
 URL
 
 ```
-POST https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applications/{appInstanceId}/services
+POST https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services
 ```
 
 请求参数：
 
 |名称    |        类型    | 描述     |                           IN   |    必选|
   | ---| ---| ---| ---| ---| 
- |  Content-Type    | String   | MIME类型，填“application/json”                       |     header|   是|                                                                                          
+ |  Content-Type    | String   | MIME类型，填"application/json"                       |     header|   是|                                                                                          
  |Authorization |  String |  Token信息，格式：Bearer token信息  | header|   是|
   |appInstanceId |  String |  APP实例ID（UUID）             |      path |    是|
 
@@ -428,17 +429,17 @@ Body参数：
 请求示例：
 
 ```
-POST https://{HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
+POST https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
 {
-  “header”: [
+  "header": [
     {
-      “key”: “Content-Type”,
-      “value”: “application/json”,
-      “key”: “Authorization”,
-      “value”: “Bearer xxx”
+      "key": "Content-Type",
+      "value": "application/json",
+      "key": "Authorization",
+      "value": "Bearer xxx"
     }
   ],
-  “body”: {
+  "body": {
     "serName": "FaceRegService",
     "serCategory": {
     "href": "/example/catalogue1",
@@ -565,14 +566,14 @@ HTTP/1.1 201 OK
 URL
 
 ```
-PUT https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
+PUT https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
 ```
 
 请求参数：
 
   | 名称           |  类型   |   描述           |                      IN     |   必选| 
   |---|---|---|---|---|
-  | Content-Type  |   String   | MIME类型，  填“application/json”        |                 header  | 是|                                                                     
+  | Content-Type  |   String   | MIME类型，  填"application/json"        |                 header  | 是|                                                                     
   |Authorization   |String   |Token信息，格式：Bearer token信息  | header   |是|
   |appInstanceId  | String   |APP实例ID（UUID）                  | path    | 是|
   |serviceId     |  String   |APP服务实例ID                       |path     |是|
@@ -616,17 +617,17 @@ Body参数：
 请求示例：
 
 ```
-PUT https://{HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
+PUT https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
 {
-        “header”: [
+        "header": [
             {
-                “key”: “Content-Type”,
-                “value”: “application/json”,
-                “key”: “Authorization”,
-                “value”: “Bearer xxx”
+                "key": "Content-Type",
+                "value": "application/json",
+                "key": "Authorization",
+                "value": "Bearer xxx"
             }
         ],
-        “body”: {
+        "body": {
             "serName": "FaceRegService",
             "serCategory": {
                 "href": "/example/catalogue1",
@@ -754,7 +755,7 @@ HTTP/1.1 200 OK
 URL
 
 ```
-DELETE https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
+DELETE https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
 ```
 
 请求参数：
@@ -772,15 +773,15 @@ Body参数：
 请求示例：
 
 ```
-DELETE https://{HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
+DELETE https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ],
-    “body”: {
+    "body": {
     }
 }
 
@@ -810,7 +811,7 @@ HTTP/1.1 204 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
+GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
@@ -827,12 +828,12 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
+GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -880,14 +881,14 @@ HTTP/1.1 200 OK
 URL
 
 ```
-POST https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
+POST https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
 
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
-| Content-Type  | String | MIME类型，填“application/json” | header |  是   |
+| Content-Type  | String | MIME类型，填"application/json" | header |  是   |
 | Authorization | String | Token信息，格式：Bearer token信息 | header |  是   |
 | appInstanceId | String | APP实例ID（UUID） | path |  是   |
 
@@ -911,17 +912,17 @@ Body参数：
 请求示例：
 
 ```
-POST https://{HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
+POST https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Content-Type”,
-            “value”: “application/json”,
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Content-Type",
+            "value": "application/json",
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
-    “body”: {
+    "body": {
         "subscriptionType": "SerAvailabilityNotificationSubscription",
         "callbackReference": "https://159.138.1.2:8080/callback",
         "filteringCriteria": {
@@ -1019,7 +1020,7 @@ HTTP/1.1 201 OK
 URL
 
 ```
-DELETE https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
+DELETE https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
 请求参数：
@@ -1037,12 +1038,12 @@ Body参数：
 请求示例：
 
 ```
-DELETE https://{HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
+DELETE https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -1071,7 +1072,7 @@ HTTP/1.1 204 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
+GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
 请求参数：
@@ -1089,12 +1090,12 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
+GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
-    “header”: [
+    "header": [
         { 
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -1169,7 +1170,7 @@ HTTP/1.1 200 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applications/{appInstanceId}/subscriptions
+GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
@@ -1186,12 +1187,12 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
+GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -1240,14 +1241,14 @@ HTTP/1.1 200 OK
 URL
 
 ```
-POST https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applications/{appInstanceId}/subscriptions
+POST https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
 
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
-| Content-Type  | String | MIME类型，填“application/json”  | header |  是   |
+| Content-Type  | String | MIME类型，填"application/json"  | header |  是   |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
 | appInstanceId  | String | APP实例ID（UUID） | path |  是   |
 
@@ -1262,17 +1263,17 @@ Body参数：
 请求示例：
 
 ```
-POST https://{HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
+POST https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Content-Type”,
-            “value”: “application/json”,
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Content-Type",
+            "value": "application/json",
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
-    “body”: {
+    "body": {
         "subscriptionType": "AppTerminationNotificationSubscription",
         "callbackReference": "https://159.138.1.2:8080/callback",
         "appInstanceId": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f"
@@ -1324,7 +1325,7 @@ HTTP/1.1 201 OK
 URL
 
 ```
-DELETE https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
+DELETE https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
 请求参数：
@@ -1342,12 +1343,12 @@ Body参数：
 请求示例：
 
 ```
-DELETE https://{HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
+DELETE https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -1376,7 +1377,7 @@ HTTP/1.1 204 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
+GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
 请求参数：
@@ -1394,12 +1395,12 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
+GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -1468,7 +1469,7 @@ Query all DNS rules associated with an application.
 URL
 
 ```
-GET https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applications/{appInstanceId}/dns_rules
+GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules
 ```
 
 Request parameters:
@@ -1485,7 +1486,7 @@ None
 Example Request:
 
 ```
-GET https://{HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules
+GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules
 ```
 
 Return Parameters:
@@ -1531,7 +1532,7 @@ Query single DNS rule associated with an application.
 URL
 
 ```
-GET https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
+GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
 ```
 
 Request parameters:
@@ -1549,7 +1550,7 @@ None
 Example Request:
 
 ```
-GET https://{HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
+GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
 ```
 
 Return Parameters:
@@ -1585,7 +1586,7 @@ Modify the state of a rule associated with an application. This interface can mo
 URL
 
 ```
-PUT https://{HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
+PUT https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
 ```
 
 Request parameters:
@@ -1610,7 +1611,7 @@ Body parameters:
 Example Request:
 
 ```
-PUT https://{HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
+PUT https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
 {
     "dnsRuleId": "bbc14ed1-92f4-457f-95e8-93aa723a9f12",
     "domainName": "facerecgservice.com",
@@ -1622,7 +1623,7 @@ PUT https://{HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-
 
 or
 
-PUT https://{HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
+PUT https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
 {
     "state": "ACTIVE"
 }
