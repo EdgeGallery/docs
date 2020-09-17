@@ -47,3 +47,19 @@ Deveoper Contribution
 5、创建名为usermgmtdb的数据库
 
 6、根据[usermgmt部署文件](https://gitee.com/edgegallery/helm-charts/blob/master/user-mgmt/templates/user-mgmt-configmap.yaml)中的数据库语句创建表结构
+
+- ### UserManagement
+
+1、下载user-mgmt-be代码和user-mgmt-fe代码
+
+2、安装node.js和npm，进入user-mgmt-fe文件夹，运行`npm install`和`npm run build`
+
+3、在user-mgmt-be的src/main/resources/文件夹中创建static文件夹
+
+4、将user-mgmt-fe编译出的dist文件夹中的内容拷贝到user-mgmt-be的static文件夹中
+
+5、在编译器（此处以IDEA为例）中配置MainServer的运行时环境变量
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0917/150744_df40e73d_5504908.png "user-env.png")
+
+6、运行MainServer函数，启动UserManagement
