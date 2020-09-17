@@ -42,7 +42,7 @@ Deveoper Contribution
 
 4、根据[developer部署文件](https://gitee.com/edgegallery/helm-charts/blob/master/developer/templates/developer-be/developer-be-configmap.yaml) 中的数据库语句创建表结构
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0917/113700_4dc810bf_5504908.png "bushu.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0917/141811_dfeec2eb_5504908.png "dev-sql.png")
 
 5、创建名为usermgmtdb的数据库
 
