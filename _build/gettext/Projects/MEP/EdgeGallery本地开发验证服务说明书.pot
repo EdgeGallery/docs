@@ -89,7 +89,7 @@ msgid "在MEC场景下，海量的应用将运行在网络边缘进行业务处�
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:42
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/0805/102832_c7372e58_5504908.png \"164204_1eeb56cc_5504908.png\")"
+msgid "![输入图片说明](/uploads/images/2020/0805/102832_c7372e58_5504908.png \"164204_1eeb56cc_5504908.png\")"
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:44
@@ -109,7 +109,7 @@ msgid "### 系统架构"
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:54
-msgid "EG-LDVS包含MEP和MEP-Agent两个组件。 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0804/164331_49cda7cd_5504908.png \"系统架构.png\")"
+msgid "EG-LDVS包含MEP和MEP-Agent两个组件。 ![输入图片说明](/uploads/images/2020/0804/164331_49cda7cd_5504908.png \"系统架构.png\")"
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:57
@@ -193,7 +193,7 @@ msgid "LDVS-MEP提供服务注册，更新，删除，查询相关API接口。�
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:414
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/0804/165650_4eeb753e_5504908.png \"特性1.png\")"
+msgid "![输入图片说明](/uploads/images/2020/0804/165650_4eeb753e_5504908.png \"特性1.png\")"
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:417
@@ -213,7 +213,7 @@ msgid "应用能够通过LDVS-MEP进行服务状态的订阅，更新，删除�
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:430
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/0804/165707_f4dbb36e_5504908.png \"特性2.png\")"
+msgid "![输入图片说明](/uploads/images/2020/0804/165707_f4dbb36e_5504908.png \"特性2.png\")"
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:433
@@ -229,7 +229,7 @@ msgid "LDVS MEP管理应用的服务，应用需要将其服务注册到MEP中�
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:444
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/0804/165723_8d9be51d_5504908.png \"特性3.png\")"
+msgid "![输入图片说明](/uploads/images/2020/0804/165723_8d9be51d_5504908.png \"特性3.png\")"
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:447
@@ -281,7 +281,7 @@ msgid "EG-LDVS校验token并处理相关请求。"
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:472
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/0804/165746_8ff53084_5504908.png \"接口调用.png\")"
+msgid "![输入图片说明](/uploads/images/2020/0804/165746_8ff53084_5504908.png \"接口调用.png\")"
 msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:474
