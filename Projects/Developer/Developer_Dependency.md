@@ -3,6 +3,7 @@ Developer Dependency
 
 
 ## Developer-be 三方件使用清单
+
 |	groupId	|	artifactId	|	version	|	license	|	direct import (Y/N)	|
 |	---	|	---	|	---	|	---	|	---	|	
 |	aopalliance	|	aopalliance	|	1	|	Public Domain	|	N	|
@@ -221,6 +222,7 @@ Developer Dependency
 
 
 ## Developer-fe 三方件使用清单
+
 |	type	|	name	|	version	|	license	|	direct import (Y/N)	|
 |	---	|	---	|	---	|	---	|	---	|	
 |	dependencies	|	auth0-js	|	9.11.3	|	MIT	|	Y	|
