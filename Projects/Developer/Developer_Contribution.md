@@ -38,7 +38,7 @@ Deveoper Contribution
 
 3、创建名为developerdb的数据库
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0917/113411_59204055_5504908.png "developer-db.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0917/141631_0f92f2de_5504908.png "dev-db.png")
 
 4、根据[developer部署文件](https://gitee.com/edgegallery/helm-charts/blob/master/developer/templates/developer-be/developer-be-configmap.yaml) 中的数据库语句创建表结构
 
