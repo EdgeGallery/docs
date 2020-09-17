@@ -90,9 +90,9 @@ Example response:
 response 201 OK
 {
   "username": "TestUser1",
-  "company": "hauwei",
+  "company": "company",
   "gender": "male",
-  "telephone": "15533449966",
+  "telephone": "13812345678",
   "userId": "37423702-051a-46b4-bf2b-f190759cc0b8",
   "permissions": [
     {
