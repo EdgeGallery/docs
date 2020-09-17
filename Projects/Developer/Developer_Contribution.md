@@ -63,3 +63,33 @@ Deveoper Contribution
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0917/150744_df40e73d_5504908.png "user-env.png")
 
 6、运行MainServer函数，启动UserManagement
+
+- ### developer-be
+
+1、下载developer-be代码
+
+2、在编译器（此处以IDEA为例）中配置DeveloperApp的运行时环境变量
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0917/154506_0ed087ca_5504908.png "dev-config.png")
+
+3、运行DeveloperApp函数，启动developer-be
+
+- ### developer-fe
+
+1、下载developer-fe代码
+
+2、进入developer-fe文件夹，运行`npm install`和`npm run build`
+
+3、下载website-gateway代码
+
+4、在website-gateway的src/main/resources/文件夹中创建static文件夹
+
+5、将appstore-fe编译出的dist文件夹中的内容拷贝到website-gateway的static文件夹中
+
+6、修改website-gateway中/src/main/resources/application.yaml 文件内的`server.port`为`8080`
+
+7、在编译器（此处以IDEA为例）中配置GatewayApp的运行时环境变量
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0917/160010_6fafc86e_5504908.png "ws-config.png")
+
+8、运行GatewayApp启动WebsiteGateway与developer-fe，浏览器访问http://127.0.0.1:8080/ 即可访问到developer首页
