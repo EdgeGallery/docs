@@ -2107,7 +2107,7 @@ root@ubuntu:/home/EG-LDVSmep-agent# docker build --no-cache -t edgegallery/mep-a
 3.  运行mep-agent 容器
 ```
 root@ubuntu:/home/EG-LDVS/mep-agent# mkdir –p /tmp/mepagent-conf/
-root@ubuntu:/home/EG-LDVS/mep-agent# cp conf/app_conf.yaml/tmp/mepagent-conf/
+root@ubuntu:/home/EG-LDVS/mep-agent# cp conf/app_conf.yaml /tmp/mepagent-conf/
 root@ubuntu:~# cat > /tmp/mepagent-conf/mepagent.properties << EOF
 ACCESS_KEY=QVUJMSUMgS0VZLS0tLS0
 SECRET_KEY=DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc
