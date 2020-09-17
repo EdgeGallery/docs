@@ -1,5 +1,7 @@
-## 概要
+AppStore DataBase Design
+=========================
 AppStore数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用了三张数据库表格：
+
 - app_table: 存储app信息，如名字、提供者、描述等
 ```
 CREATE TABLE app_table (

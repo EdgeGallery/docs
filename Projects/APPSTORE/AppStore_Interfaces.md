@@ -1,7 +1,7 @@
-APP Store Interfaces
+AppStore Interfaces
 ==============
-- [APP Store Interfaces](#appstore-interfaces)
-- [AppStore-Server](#appStore-server)
+- [AppStore Interfaces](#appstore-interfaces)
+- [AppStore-Server](#appstore-server)
   - [1. APP](#1-app)
     - [1.1 Get All Apps](#11-get-all-apps)
     - [1.2 Get One App](#12-get-one-app)
@@ -15,7 +15,7 @@ APP Store Interfaces
     - [2.3 Delete One Package](#23-delete-one-package)
     - [2.4 Download One Package](#24-download-one-package)
     - [2.5 Get File Content](#25-get-file-content)
-  - [3. Comments](#3-comments)
+  - [3. Comment](#3-comment)
     - [3.1 Get Comments Of App](#31-get-comments-of-app)
     - [3.2 Submit Comment To App](#32-submit-comment-to-app)
 

@@ -1,4 +1,5 @@
-## APPSTORE应用商店
+AppStore Guide
+========================
 
 ### 概述
 AppStore是开发者发布和上线App应用的市场，由Developer平台开发的边缘应用，经过测试可以直接分享到AppStore应用商店。也可直接上传符合平台规范的应用包，应用包文件类型为csar。一个APP对应多个Package，使用者可直接下载APP的最新版本Package或者下载指定版本的Package。

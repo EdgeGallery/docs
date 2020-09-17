@@ -1,4 +1,5 @@
-# 特性描述
+AppStore Features
+======================
 AppStore当前提供两个主要特性，分别为应用上传和应用下载。调用时的时序图如下：
 
 ![](/uploads/images/2020/0910/155612_fa4e8566_7786397.jpeg "appstore.jpg")

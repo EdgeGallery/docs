@@ -1,4 +1,4 @@
-AppStore_Setting Up Local Development Environment
+AppStore Setting Up Local Development Environment
 =================================================
 ## 简介
 
