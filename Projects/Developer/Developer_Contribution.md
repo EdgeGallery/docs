@@ -24,7 +24,7 @@ Deveoper Contribution
 
 1、下载[Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)
 
-!30[](https://images.gitee.com/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg "service center1.jpg")
+![](https://images.gitee.com/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg "service center1.jpg")
 
 2、解压后运行 start-service-center.bat  和  start-frontend.bat
 
