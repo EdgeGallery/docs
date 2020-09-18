@@ -44,8 +44,8 @@ Method: POST
 
 | Name    | Definition |type   | Required| Describe |
 | ------- | ---------- |-------|---------| ---------|
-| username | 用户名 |form data|是| |
-| password | 密码 |form data|是| |
+| username | 用户名 |body|是| |
+| password | 密码 |body|是| |
 
 Example response:
 ```
