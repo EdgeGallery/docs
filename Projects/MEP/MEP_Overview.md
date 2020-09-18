@@ -15,6 +15,8 @@ Computing）为典型的资源边缘化模式，在移动网络边缘提供IT服
 
 EdgeGallery MEP项目旨在打造一个边缘侧的开源、开放的参考MEP平台，MEP项目当前包含MEP和MEP-Agent两个组件。
 
+![输入图片说明](/uploads/images/2020/0804/164331_49cda7cd_5504908.png "系统架构.png")
+
 MEP（MEC Platform, MEC平台）是ETSI MEC标准定义的MEC平台网元，部署位置在边缘侧，主要涵盖如下功能：
 
 - 为ME APP提供服务治理能力（注册、发现、订阅、通知）。
@@ -25,19 +27,20 @@ MEP（MEC Platform, MEC平台）是ETSI MEC标准定义的MEC平台网元，部�
 MEP组件运行时包含如下微服务：
 
 - mepauth：为应用提供认证鉴权，同时承担部分配置管理的能力。
-
 - mep：提供服务治理，app订阅通知管理的相关功能。
-
 - kong：采用了开源网关软件kong，负责相关路由转发和插件配置等功能。
-
 - postgres：postgres为kong和mepauth提供数据存储能力。
 
 MEP-Agent组件：应用集成适配器，这个组件在实际使用时，应用开发者可以将其作为应用的一部分。它实现了实例配置信息导入，服务注册等相关基础功能，可以简化应用与平台的集成。
 
-## Target & Scope 目标与范围
-
-
-
- _其中Mp1接口遵从ETSI GS MEC 011 [1] 规范。_ 
-
 ## MEP 整体架构
+
+![输入图片说明](/uploads/images/2020/0804/164331_49cda7cd_5504908.png "系统架构.png")
+
+图中涉及的MEP关联主要接口有：
+- Mp1：APP与MEP之间，提供APP服务注册发现，APP状态通知订阅等能力。
+- Mp2: MEP与UPF之间，提供数据面的配置能力。
+- Mm3：MEO与MEPM之间，提供包管理，APP生命周期管理能力
+- Mm5：MEPM与MEP之间，执行MEP平台配置管理，配置APP规则等能力。
+  
+对于应用App来说，Mp1是APP与MEP交互最重要的接口，APP能通过Mp1将自身服务注册到MEP平台，同事也能够通过服务发现调用MEP对外提供的服务。
