@@ -1,7 +1,7 @@
 Deveoper Contribution
 ============
 
-### 简介
+### 本地开发环境搭建
 
 本文将指导用户如何在本地搭建developer-be和developer-fe模块，从而帮助开发者快速理解、开发代码。
 
