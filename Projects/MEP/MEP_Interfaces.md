@@ -53,7 +53,7 @@ URL为服务自己的URL，PORT为服务自己的PORT。如果经过KONG，PORT�
 URL：
 
 ```
-POST https://{HOST}:{PORT}/mepauth/v1/token
+POST /mepauth/v1/token
 ```
 
 请求参数：
@@ -75,7 +75,7 @@ Body参数：
 请求示例：
 
 ```
-POST https://{HOST}:{PORT}/mepauth/v1/token
+POST /mepauth/v1/token
 
 {
   "header": [
@@ -140,7 +140,7 @@ HTTP/1.1 200 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services
+GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services
 ```
 
 请求参数：
@@ -157,7 +157,7 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
+GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
 {
   "header": [
     {
@@ -262,7 +262,7 @@ HTTP/1.1 200 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
+GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
 ```
 
 请求参数：
@@ -280,7 +280,7 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
+GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
 {
   "header": [
     {
@@ -379,7 +379,7 @@ HTTP/1.1 200 OK
 URL
 
 ```
-POST https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services
+POST /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services
 ```
 
 请求参数：
@@ -429,7 +429,7 @@ Body参数：
 请求示例：
 
 ```
-POST https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
+POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
 {
   "header": [
     {
@@ -566,7 +566,7 @@ HTTP/1.1 201 OK
 URL
 
 ```
-PUT https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
+PUT /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
 ```
 
 请求参数：
@@ -617,7 +617,7 @@ Body参数：
 请求示例：
 
 ```
-PUT https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
+PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
 {
         "header": [
             {
@@ -755,7 +755,7 @@ HTTP/1.1 200 OK
 URL
 
 ```
-DELETE https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
+DELETE /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
 ```
 
 请求参数：
@@ -773,7 +773,7 @@ Body参数：
 请求示例：
 
 ```
-DELETE https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
+DELETE /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
 {
     "header": [
         {
@@ -811,7 +811,7 @@ HTTP/1.1 204 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
+GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
@@ -828,7 +828,7 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
+GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
     "header": [
         {
@@ -881,7 +881,7 @@ HTTP/1.1 200 OK
 URL
 
 ```
-POST https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
+POST /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
@@ -912,7 +912,7 @@ Body参数：
 请求示例：
 
 ```
-POST https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
+POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
     "header": [
         {
@@ -1020,7 +1020,7 @@ HTTP/1.1 201 OK
 URL
 
 ```
-DELETE https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
+DELETE /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
 请求参数：
@@ -1038,7 +1038,7 @@ Body参数：
 请求示例：
 
 ```
-DELETE https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
+DELETE /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
     "header": [
         {
@@ -1072,7 +1072,7 @@ HTTP/1.1 204 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
+GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
 请求参数：
@@ -1090,7 +1090,7 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
+GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
     "header": [
         { 
@@ -1170,7 +1170,7 @@ HTTP/1.1 200 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions
+GET /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
@@ -1187,7 +1187,7 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
+GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
     "header": [
         {
@@ -1241,7 +1241,7 @@ HTTP/1.1 200 OK
 URL
 
 ```
-POST https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions
+POST /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
@@ -1263,7 +1263,7 @@ Body参数：
 请求示例：
 
 ```
-POST https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
+POST /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
     "header": [
         {
@@ -1325,7 +1325,7 @@ HTTP/1.1 201 OK
 URL
 
 ```
-DELETE https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
+DELETE /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
 请求参数：
@@ -1343,7 +1343,7 @@ Body参数：
 请求示例：
 
 ```
-DELETE https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
+DELETE /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
     "header": [
         {
@@ -1377,7 +1377,7 @@ HTTP/1.1 204 OK
 URL
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
+GET /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
 请求参数：
@@ -1395,7 +1395,7 @@ Body参数：
 请求示例：
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
+GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
     "header": [
         {
@@ -1469,7 +1469,7 @@ Query all DNS rules associated with an application.
 URL
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules
+GET /mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules
 ```
 
 Request parameters:
@@ -1486,7 +1486,7 @@ None
 Example Request:
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules
+GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules
 ```
 
 Return Parameters:
@@ -1532,7 +1532,7 @@ Query single DNS rule associated with an application.
 URL
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
+GET /mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
 ```
 
 Request parameters:
@@ -1550,7 +1550,7 @@ None
 Example Request:
 
 ```
-GET https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
+GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
 ```
 
 Return Parameters:
@@ -1586,7 +1586,7 @@ Modify the state of a rule associated with an application. This interface can mo
 URL
 
 ```
-PUT https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
+PUT /mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
 ```
 
 Request parameters:
@@ -1611,7 +1611,7 @@ Body parameters:
 Example Request:
 
 ```
-PUT https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
+PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
 {
     "dnsRuleId": "bbc14ed1-92f4-457f-95e8-93aa723a9f12",
     "domainName": "facerecgservice.com",
@@ -1623,7 +1623,7 @@ PUT https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47
 
 or
 
-PUT https://{HOST}:{PORT}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
+PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
 {
     "state": "ACTIVE"
 }
@@ -1668,7 +1668,7 @@ Create a new DNS rule and associate it with a MEC application. DNS rule id will 
 URL
 
 ```
-POST https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/{appInstanceId}/dns_rules
+POST /mepcfg/mec_app_config/v1/rules/{appInstanceId}/dns_rules
 ```
 
 Request parameters:
@@ -1691,7 +1691,7 @@ Body parameters:
 Example Request:
 
 ```
-POST https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules
+POST /mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules
 {
     "domainName": "facerecgservice.com",
     "ipAddressType": "IP_V4",
@@ -1734,7 +1734,7 @@ Query all DNS rules associated with an application.
 URL
 
 ```
-GET https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/{appInstanceId}/dns_rules
+GET /mepcfg/mec_app_config/v1/rules/{appInstanceId}/dns_rules
 ```
 
 Request parameters:
@@ -1751,7 +1751,7 @@ None
 Example Request:
 
 ```
-GET https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules
+GET /mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules
 ```
 
 Return Parameters:
@@ -1797,7 +1797,7 @@ Query single DNS rule associated with an application.
 URL
 
 ```
-GET https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/{appInstanceId}/dns_rules/{dnsRuleId}
+GET /mepcfg/mec_app_config/v1/rules/{appInstanceId}/dns_rules/{dnsRuleId}
 ```
 
 Request parameters:
@@ -1815,7 +1815,7 @@ None
 Example Request:
 
 ```
-GET https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/20a19292-384c-4d44-ba64-a8e8269f0f25
+GET /mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/20a19292-384c-4d44-ba64-a8e8269f0f25
 ```
 
 Return Parameters:
@@ -1851,7 +1851,7 @@ Modify the state of a rule associated with an application. This interface can mo
 URL
 
 ```
-PUT https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/{appInstanceId}/dns_rules/{dnsRuleId}
+PUT /mepcfg/mec_app_config/v1/rules/{appInstanceId}/dns_rules/{dnsRuleId}
 ```
 
 Request parameters:
@@ -1876,7 +1876,7 @@ Body parameters:
 Example Request:
 
 ```
-PUT https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
+PUT /mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
 {
     "dnsRuleId": "bbc14ed1-92f4-457f-95e8-93aa723a9f12",
     "domainName": "facerecgservice.com",
@@ -1888,7 +1888,7 @@ PUT https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e
 
 or 
 
-PUT https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
+PUT /mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
 {
     "state": "ACTIVE"
 }
@@ -1928,7 +1928,7 @@ Delete a DNS rule associated to an application.
 URL
 
 ```
-DELETE https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/{appInstanceId}/dns_rules/{dnsRuleId}
+DELETE /mepcfg/mec_app_config/v1/rules/{appInstanceId}/dns_rules/{dnsRuleId}
 ```
 
 Request parameters:
@@ -1946,7 +1946,7 @@ None
 Example Request:
 
 ```
-DELETE https://{HOST}:{PORT}/mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/20a19292-384c-4d44-ba64-a8e8269f0f25
+DELETE /mepcfg/mec_app_config/v1/rules/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/20a19292-384c-4d44-ba64-a8e8269f0f25
 ```
 
 Return Parameters:
@@ -1973,7 +1973,7 @@ Using this interface multiple records on multiple zones can be submitted togethe
 URL
 
 ```
-PUT https://{HOST}:{PORT}/mep/dns_server_mgmt/v1/rrecord
+PUT /mep/dns_server_mgmt/v1/rrecord
 ```
 
 Request parameters:
@@ -1994,7 +1994,7 @@ Body parameters:
 Example Request:
 
 ```
-PUT https://{HOST}:{PORT}/mep/dns_server_mgmt/v1/rrecord
+PUT /mep/dns_server_mgmt/v1/rrecord
 [
   {
     "zone": ".",
@@ -2031,7 +2031,7 @@ DNS entry can be deleted from the dns-server using this interface.
 URL
 
 ```
-DELETE https://{HOST}:{PORT}/mep/dns_server_mgmt/v1/rrecord/{fqdn}/{rrtype}
+DELETE /mep/dns_server_mgmt/v1/rrecord/{fqdn}/{rrtype}
 ```
 
 Request parameters:
@@ -2048,7 +2048,7 @@ None
 Example Request:
 
 ```
-DELETE https://{HOST}:{PORT}/mep/dns_server_mgmt/v1/rrecord/www.example.com./A
+DELETE /mep/dns_server_mgmt/v1/rrecord/www.example.com./A
 ```
 
 Return Parameters:
