@@ -3,13 +3,12 @@ Developer
 .. toctree::
    :maxdepth: 2
 
-   Developer Overview <Developer_Overview>
-   Developer Features <Developer_Features>
-   Developer Interfaces <Developer_Interfaces>
-   Developer DataBase Design <Developer_DataBase_Design>
-   Developer Dependency <Developer_Dependency>
-   Developer Guide <Developer_Guide>
-   Developer Contribution <Developer_Contribution>
+   概述 <Developer_Overview>
+   特性设计 <Developer_Features>
+   接口设计 <Developer_Interfaces>
+   依赖 <Developer_Dependency>
+   数据库设计 <Developer_DataBase_Design>
+   如何贡献 <Developer_Contribution>
    
    
   
