@@ -1891,9 +1891,9 @@ root@ubuntu:~# docker run -d --name postgres-db \
 -e "POSTGRES_INITDB_ARGS=--auth-local=password" \  
 -e "PGDATA=/var/lib/postgresql/data/pgdata" \
 -v "/data/thirdparty/postgres:/var/lib/postgresql/data" \
--v "/home/EG-LDVS/mepserver/mepserver_tls.crt:/var/lib/postgresql/data/server.crt:ro"\
--v "/home/EG-LDVS/mepserver/mepserver_tls.key:/var/lib/postgresql/data/server.key:ro"\
--v "/home/EG-LDVS/mepserver/init.sql:/docker-entrypoint-initdb.d/init.sql:ro"\
+-v "/home/EG-LDVS/mepserver/mepserver_tls.crt:/var/lib/postgresql/data/server.crt:ro" \
+-v "/home/EG-LDVS/mepserver/mepserver_tls.key:/var/lib/postgresql/data/server.key:ro" \
+-v "/home/EG-LDVS/mepserver/init.sql:/docker-entrypoint-initdb.d/init.sql:ro" \
 postgres:12.3 \
 -c ssl=on \
 -c ssl_cert_file=/var/lib/postgresql/data/server.crt \
@@ -2042,7 +2042,7 @@ root@ubuntu:~# docker run -itd --name mepauth \
             -v /home/EG-LDVS/mepserver/mepserver_tls.crt:/usr/mep/ssl/server.crt:ro\
             -v /home/EG-LDVS/mepserver/mepserver_tls.key:/usr/mep/ssl/server.key:ro\
             -v /home/EG-LDVS/mepserver/ca.crt:/usr/mep/ssl/ca.crt:ro \
-            -v /tmp/mepauth-conf/mepauth.properties:/usr/mep/mepauth.properties \
+            -v /tmp/mepauth-conf/mepauth.properties:/usr/mep/mprop/mepauth.properties \
             -e "MEPAUTH_APIGW_HOST=kong-service" \
             -e "MEPAUTH_APIGW_PORT=8444" \
             -e "MEPAUTH_CERT_DOMAIN_NAME=edgegallery" \
