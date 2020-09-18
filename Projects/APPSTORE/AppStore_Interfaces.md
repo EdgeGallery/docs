@@ -1,6 +1,6 @@
-AppStore Interfaces
+接口设计
 ==============
-The document is for the appstore-be project, there are three parts of interfaces in the project.
+文档中介绍了appstore-be模块的接口设计详情，共有三个部分，分别对应于app管理、包管理、评论管理。
 
 - [AppStore Interfaces](#appstore-interfaces)
   - [1. APP](#1-app)

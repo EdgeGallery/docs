@@ -1,4 +1,4 @@
-AppStore DataBase Design
+数据库设计
 =========================
 AppStore数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用了三张数据库表格：
 
