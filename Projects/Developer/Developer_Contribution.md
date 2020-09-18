@@ -85,7 +85,7 @@ Deveoper Contribution
 
 4、在website-gateway的src/main/resources/文件夹中创建static文件夹
 
-5、将appstore-fe编译出的dist文件夹中的内容拷贝到website-gateway的static文件夹中
+5、将developer-fe编译出的dist文件夹中的内容拷贝到website-gateway的static文件夹中
 
 6、修改website-gateway中/src/main/resources/application.yaml 文件内的`server.port`为`8080`
 
