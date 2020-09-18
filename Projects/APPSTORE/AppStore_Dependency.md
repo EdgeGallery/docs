@@ -1,4 +1,4 @@
-AppStore Dependency
+依赖
 ====================
 
 ## AppStore-be 三方件使用清单
