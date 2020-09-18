@@ -82,3 +82,67 @@ MEP管理应用的服务，应用需要将其服务注册到MEP中，MEP-Agent�
 
 
 # DNS server 特性
+The MEP platform provides the domain name resolution services to the applications deployed in the EdgeGallery MEC, which can be utilized by the device applications in UE. MEC platform receives the DNS configurations from the MEC management, which includes the FQDN(Fully Qualified Domain Name), IP address and related entries. MEC applications can later query or modify the state of these configurations.
+
+The three major operations for DNS are:
+
+1. DNS management operations
+2. Query configuration and Activation/Deactivation by the MEC applications
+3. DNS query by the device applications
+
+We will see each of these features in the below section.
+## DNS management operations
+
+DNS configurations are created either by MECM modules during start-up or from the OSS directly. DNS management supports both create, update, query and delete operations.
+
+**Rule creation at start-up**
+
+DNS configurations are embedded in the application descriptor and MEO(Multi-access Edge Orchestrator) will get these information during the start-up of the application. Once MEO receives the application descriptor, it searches for the DNS related configurations and pass this information to the MEPM(MEC Platform Manager) module in the edge along with the start-up request on Mm3 interface.
+
+Upon receiving the DNS configurations from MEO, MEPM send this request to the MEP server on Mm5 interface after deploying the MEC application.
+
+![DNS entry from MEO](https://images.gitee.com/uploads/images/2020/0918/133822_31b532a2_7625394.png "meo-mepm-mep.png")
+
+**Rule creation from OSS**
+
+DNS configurations can be updated from OSS directly over Mm2 interface through MEPM.
+
+![DNS entry from OSS](https://images.gitee.com/uploads/images/2020/0918/133912_597b2c17_7625394.png "oss-mepm-mep.png")
+
+## DNS configurations from MEC applications
+
+MEC applications can query the DNS configurations created for it and can activate or deactivate the same. Activation or deactivation can be performed by modifying the state of the DNS configuration.
+
+![DNS configurations from MEC App](https://images.gitee.com/uploads/images/2020/0918/133933_9f7bd2ec_7625394.png "mecapp-mep.png")
+
+## DNS query
+
+Device application in the UE can query the DNS server for the domain name resolution. By default the DNS server will listen on the 53 port.
+
+## How to configure the DNS server?
+
+The dns server in MEP runs inside a container and can be configured using few command line parameters. 
+
+**Command**
+
+```
+dnsserver [OPTION]...
+```
+
+Detailed list of the optional parameters are stated below.
+
+| parameter | Type | Range/Length | Default | Description |
+| --------- | ---- | ------------ | ------- | ----------- |
+| -db | string | 1~256  | dbEgDns | Backend store db name |
+| -port | number | 1~65535  | 53 | DNS server listening port |
+| -managementPort | number | 1~65535  | 8080 | Management interface listening port |
+| -connectionTimeout | number | 2~50  | 2 | Connection timeout |
+| -ipAdd | string | Ipv4/Ipv6  | 0.0.0.0 | DNS listening ip address |
+| -managementIpAdd | string | Ipv4/Ipv6  | 0.0.0.0 | Management interface listening ip address |
+| -forwarder | string | Ipv4/Ipv6  |  | DNS proxy server IP |
+| -loadBalance | bool | true/false  | false | For domain names with multiple ip address, enabling this option will perform loadbalancing by shuffling the response IP list |
+
+Example
+```
+$ dnsserver -port=8053 -managementPort=8080 -loadBalance -forwarder <some-dns-server>
+```
