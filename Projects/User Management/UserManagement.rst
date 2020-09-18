@@ -3,10 +3,10 @@ User Management
 .. toctree::
    :maxdepth: 3
 
-   User Overview <User_Overview>
-   User Features <User_Features>
-   User Dependency <User_Dependency>
-   User DataBase Design <User_DataBase_Design>
-   User Interfaces <User_Interfaces>
-   User Contribution <User_Contribution>
+   概述 <User_Overview>
+   特性设计 <User_Features>
+   接口设计 <User_Interfaces>
+   依赖 <User_Dependency>
+   数据库设计 <User_DataBase_Design>
+   如何贡献 <User_Contribution>
 

@@ -23,9 +23,8 @@ Resource URI: /auth/logout
 Method: GET
 ```
 
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| name | app name. |request param|no|
+| Name          | Definition |type   | Required| Describe |
+| ------------- | ---------- |-------|---------| ---------|
 
 
 Example response:
@@ -43,10 +42,10 @@ Resource URI: /auth/login
 Method: POST
 ```
 
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| username | 用户名 |form data|是|
-| password | 密码 |form data|是|
+| Name    | Definition |type   | Required| Describe |
+| ------- | ---------- |-------|---------| ---------|
+| username | 用户名 |body|是| |
+| password | 密码 |body|是| |
 
 Example response:
 ```
@@ -64,14 +63,14 @@ Resource URI: /v1/users
 Method: POST
 ```
 
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| username | 用户名 |body|是|
-| password | 密码 |body|是|
-| company | 公司 |body|是|
-| gender | 性别 |body|是|
-| telephone | 电话号码 |body|是。如果未开启短信校验功能，只校验电话号码格式；如果开启短信校验功能，会给该号码发送验证码。|
-| verificationCode | 验证码 |body|否。如果开启短信校验功能，必须输入|
+| Name     | Definition |type   | Required| Describe |
+| -------- | -----------|-------|---------| ---------|
+| username | 用户名 |body|是| 必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间 |
+| password | 密码 |body|是| 必须满足复杂度要求，必须是数字/字母/特数字符的组合，长度在6~18个字符之间 |
+| company | 公司 |body|是|  |
+| gender | 性别 |body|是|  |
+| telephone | 电话号码 |body|是 | 11位有效数字，必须以1开头。如果未开启短信校验功能，只校验电话号码格式；如果开启短信校验功能，会给该号码发送验证码。|
+| verificationCode | 验证码 |body|否 | 如果开启短信校验功能，必须输入|
 
 Example request:
 ```json
@@ -90,9 +89,9 @@ Example response:
 response 201 OK
 {
   "username": "TestUser1",
-  "company": "hauwei",
+  "company": "company",
   "gender": "male",
-  "telephone": "15533449966",
+  "telephone": "13812345678",
   "userId": "37423702-051a-46b4-bf2b-f190759cc0b8",
   "permissions": [
     {
@@ -133,11 +132,11 @@ Resource URI: /password
 Method: PUT
 ```
 
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| telephone | 电话号码 |body|是|
-| newPassword | 密码 |body|是|
-| verificationCode | 验证码 |body|是|
+| Name          | Definition |type   | Required| Describe |
+| ------------- | ---------- |-------|---------| -------- |
+| telephone | 电话号码 |body|是| 已经注册过的手机号码 |
+| newPassword | 密码 |body|是| 必须满足复杂度要求，必须是数字/字母/特数字符的组合，长度在6~18个字符之间  |
+| verificationCode | 验证码 |body|是| 6位有效数字 |
 
 Example request:
 ```json
@@ -183,10 +182,10 @@ Resource URI: /action/uniqueness
 Method: POST
 ```
 
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| username | 用户名 |body|是|
-| telephone | 电话号码 |body|是|
+| Name      | Definition |type   | Required|Describe |
+| --------- | ---------- |-------|---------|-------- |
+| username | 用户名 |body|是|  必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间 |
+| telephone | 电话号码 |body|是|  11位有效数字，必须以1开头。如果未开启短信校验功能，只校验电话号码格式；如果开启短信校验功能，会给该号码发送验证码。 |
 
 Example request:
 ```json
@@ -217,9 +216,9 @@ Resource URI: /v1/identity/sms
 Method: POST
 ```
 
-| Name          | Definition |type   | Required|
-| ------------- | ------------- |------------|------------|
-| telephone | 电话号码 |body|是|
+| Name          | Definition |type   | Required|Describe |
+| ------------- | ---------- |-------|---------|-------- |
+| telephone | 电话号码 |body|是|11位有效数字，必须以1开头。如果未开启短信校验功能，只校验电话号码格式；如果开启短信校验功能，会给该号码发送验证码。 |
 
 
 Example request:
