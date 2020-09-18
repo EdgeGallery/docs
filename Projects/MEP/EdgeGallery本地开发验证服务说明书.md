@@ -288,17 +288,15 @@ POST https://{LDVS_HOST}:8443/mepauth/mepauth/v1/token
     },
     {
       “key”: “Authorization”,
-      “value”: “SDK-HMAC-SHA256 Access= QVUJMSUMgS0VZLS0tLS0=,
-      SignedHeaders=content-type;host;x-sdk-date,
-      Signature=142b0dc3feaeb3662b2033a8e6425596546e08a231aa39179b4060867dd15d3d”
+      “value”: “SDK-HMAC-SHA256 Access=QVUJMSUMgS0VZLS0tLS0, SignedHeaders=content-type;host;x-sdk-date, Signature=ed613656a251a5cedab133e38cc7486b9343a2fefbaa6ef4b4e7f369d82fb4b7”
     },
     {
       “key”: “x-sdk-date”,
-      “value”: “20060102T150405Z”
+      “value”: “20200918T111451Z”
     },
     {
       “key”:”Host”,
-      “value”:”xxx”
+      “value”:”119.8.115.201:8443”
     }
   ]
 }
