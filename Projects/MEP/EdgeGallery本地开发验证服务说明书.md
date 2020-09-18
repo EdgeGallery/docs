@@ -206,8 +206,8 @@ AK/SK。应用需要保存该信息，在使用MEP平台服务时，使用该信
 
 ### AK/SK签名认证算法说明
 
-应用与LDVS交互时，需要首先通过服务认证接口获取token，需要使用分配给应用的AK/SK使用签名算法获取签名结果，作为”
-Authorization”的值添加在请求header中，以获取有效token，在后续的交互接口中，携带该token进行交互。
+应用与LDVS交互时，需要首先通过服务认证接口获取token，需要使用分配给应用的AK/SK使用签名算法获取签名结果，作为"
+Authorization"的值添加在请求header中，以获取有效token，在后续的交互接口中，携带该token进行交互。
 
 EG-LDVS采用和华为公有云相同的签名认证算法，相关指导说明可以参考华为公有云AK/SK签名认证算法指导：
 
@@ -263,7 +263,7 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPAUTH_ROUTE}/mepauth/v1/token
 
  |名称  |          类型 |    描述       |                                      IN     |  必选|
  |---|---|---|---|---|
- | Content-Type |   String  | MIME类型，  填“application/json”                        |               header  | 是|                                                                    
+ | Content-Type |   String  | MIME类型，  填"application/json"                        |               header  | 是|                                                                    
  | Authorization|   String   |认证信息   |                                      header  | 是|
  |  x-sdk-date  |    String   |签名时间（当前时间戳，格式：YYYYMMDDTHHMMSSZ）|   header |  是|
  |  Host    |       String |  与生成认证信息签名用到的host字段保持一致   |      header|   是|
@@ -281,22 +281,22 @@ Body参数：
 POST https://{LDVS_HOST}:8443/mepauth/mepauth/v1/token
 
 {
-  “header”: [
+  "header": [
     {
-      “key”: “Content-Type”,
-      “value”: “application/json”
+      "key": "Content-Type",
+      "value": "application/json"
     },
     {
-      “key”: “Authorization”,
-      “value”: “SDK-HMAC-SHA256 Access=QVUJMSUMgS0VZLS0tLS0, SignedHeaders=content-type;host;x-sdk-date, Signature=ed613656a251a5cedab133e38cc7486b9343a2fefbaa6ef4b4e7f369d82fb4b7”
+      "key": "Authorization",
+      "value": "SDK-HMAC-SHA256 Access=QVUJMSUMgS0VZLS0tLS0, SignedHeaders=content-type;host;x-sdk-date, Signature=ed613656a251a5cedab133e38cc7486b9343a2fefbaa6ef4b4e7f369d82fb4b7"
     },
     {
-      “key”: “x-sdk-date”,
-      “value”: “20200918T111451Z”
+      "key": "x-sdk-date",
+      "value": "20200918T111451Z"
     },
     {
-      “key”:”Host”,
-      “value”:”119.8.115.201:8443”
+      "key":"Host",
+      "value":"119.8.115.201:8443"
     }
   ]
 }
@@ -320,9 +320,9 @@ OK
 ```
 HTTP/1.1 200 OK
 {
-	“access_token”:”xxxx”,
-	“token_type”:”Bearer”,
-	“expires_in”:”3600”
+	"access_token":"xxxx",
+	"token_type":"Bearer",
+	"expires_in":"3600"
 }
 
 ```
@@ -358,10 +358,10 @@ Body参数：
 ```
 GET https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
 {
-  “header”: [
+  "header": [
     {
-      “key”: “Authorization”,
-      “value”: “Bearer xxx”
+      "key": "Authorization",
+      "value": "Bearer xxx"
     }
   ]
 }
@@ -416,38 +416,38 @@ HTTP/1.1 200 OK
 {
 [
   {
-    “serInstanceId”: “0bc92b06cc213d2ad8beda71bd0e1460”,
-    “serName”: “ExampleService”,
-    “serCategory”: {
-      “href”: “/example/catalogue1”,
-      “id”: “id12345”,
-      “name”: “RNI”,
-      “version”: “version1”
+    "serInstanceId": "0bc92b06cc213d2ad8beda71bd0e1460",
+    "serName": "ExampleService",
+    "serCategory": {
+      "href": "/example/catalogue1",
+      "id": "id12345",
+      "name": "RNI",
+      "version": "version1"
     },
-    “version”: “ServiceVersion1”,
-    “state”: “ACTIVE”,
-    “transportInfo”: {
-      “id”: “TransId12345”,
-      “name”: “REST”,
-      “description”: “REST API”,
-      “type”: “REST_HTTP”,
-      “protocol”: “HTTP”,
-      “version”: “2.0”,
-      “endpoint”: {},
-      “security”: {
-        “oAuth2Info”: {
-          “grantTypes”: [
-            “OAUTH2_CLIENT_CREDENTIALS”
+    "version": "ServiceVersion1",
+    "state": "ACTIVE",
+    "transportInfo": {
+      "id": "TransId12345",
+      "name": "REST",
+      "description": "REST API",
+      "type": "REST_HTTP",
+      "protocol": "HTTP",
+      "version": "2.0",
+      "endpoint": {},
+      "security": {
+        "oAuth2Info": {
+          "grantTypes": [
+            "OAUTH2_CLIENT_CREDENTIALS"
           ],
-          “tokenEndpoint”: “/mecSerMgmtApi/security/TokenEndPoint”
+          "tokenEndpoint": "/mecSerMgmtApi/security/TokenEndPoint"
         }
       },
-      “implSpecificInfo”: {}
+      "implSpecificInfo": {}
     },
-    “serializer”: “JSON”,
-    “scopeOfLocality”: “MEC_SYSTEM”,
-    “consumedLocalOnly”: false,
-    “isLocal”: true
+    "serializer": "JSON",
+    "scopeOfLocality": "MEC_SYSTEM",
+    "consumedLocalOnly": false,
+    "isLocal": true
   }
 ]
 }
@@ -481,10 +481,10 @@ Body参数：
 ```
 GET https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
 {
-  “header”: [
+  "header": [
     {
-      “key”: “Authorization”,
-      “value”: “Bearer xxx”
+      "key": "Authorization",
+      "value": "Bearer xxx"
     }
   ]
 }
@@ -536,38 +536,38 @@ OK
 ```
 HTTP/1.1 200 OK
 {
- “serInstanceId”: “0bc92b06cc213d2ad8beda71bd0e1460”,
- “serName”: “ExampleService”,
- “serCategory”: {
-      “href”: “/example/catalogue1”,
-      “id”: “id12345”,
-      “name”: “RNI”,
-      “version”: “version1”
+ "serInstanceId": "0bc92b06cc213d2ad8beda71bd0e1460",
+ "serName": "ExampleService",
+ "serCategory": {
+      "href": "/example/catalogue1",
+      "id": "id12345",
+      "name": "RNI",
+      "version": "version1"
  },
- “version”: “ServiceVersion1”,
- “state”: “ACTIVE”,
- “transportInfo”: {
-   “id”: “TransId12345”,
-   “name”: “REST”,
-   “description”: “REST API”,
-   “type”: “REST_HTTP”,
-   “protocol”: “HTTP”,
-   “version”: “2.0”,
-   “endpoint”: {},
-   “security”: {
-        “oAuth2Info”: {
-          “grantTypes”: [
-            “OAUTH2_CLIENT_CREDENTIALS”
+ "version": "ServiceVersion1",
+ "state": "ACTIVE",
+ "transportInfo": {
+   "id": "TransId12345",
+   "name": "REST",
+   "description": "REST API",
+   "type": "REST_HTTP",
+   "protocol": "HTTP",
+   "version": "2.0",
+   "endpoint": {},
+   "security": {
+        "oAuth2Info": {
+          "grantTypes": [
+            "OAUTH2_CLIENT_CREDENTIALS"
           ],
-          “tokenEndpoint”: “/mecSerMgmtApi/security/TokenEndPoint”
+          "tokenEndpoint": "/mecSerMgmtApi/security/TokenEndPoint"
         }
       },
-      “implSpecificInfo”: {}
+      "implSpecificInfo": {}
     },
-    “serializer”: “JSON”,
-    “scopeOfLocality”: “MEC_SYSTEM”,
-    “consumedLocalOnly”: false,
-    “isLocal”: true
+    "serializer": "JSON",
+    "scopeOfLocality": "MEC_SYSTEM",
+    "consumedLocalOnly": false,
+    "isLocal": true
  }
 ```
 
@@ -585,7 +585,7 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/appli
 
 |名称    |        类型    | 描述     |                           IN   |    必选|
   | ---| ---| ---| ---| ---| 
- |  Content-Type    | String   | MIME类型，填“application/json”                       |     header|   是|                                                                                          
+ |  Content-Type    | String   | MIME类型，填"application/json"                       |     header|   是|                                                                                          
  |Authorization |  String |  Token信息，格式：Bearer token信息  | header|   是|
   |appInstanceId |  String |  APP实例ID（UUID）             |      path |    是|
 
@@ -630,15 +630,15 @@ Body参数：
 ```
 POST https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
 {
-  “header”: [
+  "header": [
     {
-      “key”: “Content-Type”,
-      “value”: “application/json”,
-      “key”: “Authorization”,
-      “value”: “Bearer xxx”
+      "key": "Content-Type",
+      "value": "application/json",
+      "key": "Authorization",
+      "value": "Bearer xxx"
     }
   ],
-  “body”: {
+  "body": {
     "serName": "FaceRegService",
     "serCategory": {
     "href": "/example/catalogue1",
@@ -772,7 +772,7 @@ PUT https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applic
 
   | 名称           |  类型   |   描述           |                      IN     |   必选| 
   |---|---|---|---|---|
-  | Content-Type  |   String   | MIME类型，  填“application/json”        |                 header  | 是|                                                                     
+  | Content-Type  |   String   | MIME类型，  填"application/json"        |                 header  | 是|                                                                     
   |Authorization   |String   |Token信息，格式：Bearer token信息  | header   |是|
   |appInstanceId  | String   |APP实例ID（UUID）                  | path    | 是|
   |serviceId     |  String   |APP服务实例ID                       |path     |是|
@@ -818,15 +818,15 @@ Body参数：
 ```
 PUT https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
 {
-        “header”: [
+        "header": [
             {
-                “key”: “Content-Type”,
-                “value”: “application/json”,
-                “key”: “Authorization”,
-                “value”: “Bearer xxx”
+                "key": "Content-Type",
+                "value": "application/json",
+                "key": "Authorization",
+                "value": "Bearer xxx"
             }
         ],
-        “body”: {
+        "body": {
             "serName": "FaceRegService",
             "serCategory": {
                 "href": "/example/catalogue1",
@@ -974,13 +974,13 @@ Body参数：
 ```
 DELETE https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ],
-    “body”: {
+    "body": {
     }
 }
 
@@ -1029,10 +1029,10 @@ Body参数：
 ```
 GET https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -1087,7 +1087,7 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/appli
 
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
-| Content-Type  | String | MIME类型，填“application/json” | header |  是   |
+| Content-Type  | String | MIME类型，填"application/json" | header |  是   |
 | Authorization | String | Token信息，格式：Bearer token信息 | header |  是   |
 | appInstanceId | String | APP实例ID（UUID） | path |  是   |
 
@@ -1113,15 +1113,15 @@ Body参数：
 ```
 POST https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Content-Type”,
-            “value”: “application/json”,
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Content-Type",
+            "value": "application/json",
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
-    “body”: {
+    "body": {
         "subscriptionType": "SerAvailabilityNotificationSubscription",
         "callbackReference": "https://159.138.1.2:8080/callback",
         "filteringCriteria": {
@@ -1239,10 +1239,10 @@ Body参数：
 ```
 DELETE https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -1291,10 +1291,10 @@ Body参数：
 ```
 GET https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
-    “header”: [
+    "header": [
         { 
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -1388,10 +1388,10 @@ Body参数：
 ```
 GET https://{LDVS_HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -1447,7 +1447,7 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applic
 
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
-| Content-Type  | String | MIME类型，填“application/json”  | header |  是   |
+| Content-Type  | String | MIME类型，填"application/json"  | header |  是   |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
 | appInstanceId  | String | APP实例ID（UUID） | path |  是   |
 
@@ -1464,15 +1464,15 @@ Body参数：
 ```
 POST https://{LDVS_HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Content-Type”,
-            “value”: “application/json”,
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Content-Type",
+            "value": "application/json",
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
-    “body”: {
+    "body": {
         "subscriptionType": "AppTerminationNotificationSubscription",
         "callbackReference": "https://159.138.1.2:8080/callback",
         "appInstanceId": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f"
@@ -1544,10 +1544,10 @@ Body参数：
 ```
 DELETE https://{LDVS_HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -1596,10 +1596,10 @@ Body参数：
 ```
 GET https://{LDVS_HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
 {
-    “header”: [
+    "header": [
         {
-            “key”: “Authorization”,
-            “value”: “Bearer xxx”
+            "key": "Authorization",
+            "value": "Bearer xxx"
         }
     ]
 }
@@ -1724,7 +1724,7 @@ EG-LDVS不预置SSL证书及密钥，用户需要自行准备，在测试场景�
 
 -至少一个数字；
 
--至少一个特殊字符：\`\~!@\#\$%\^&\*()-\_=+\\|\[\]{};:'“,.&lt;&gt;/?
+-至少一个特殊字符：\`\~!@\#\$%\^&\*()-\_=+\\|\[\]{};:'",.&lt;&gt;/?
 和空格
 
 ```
@@ -2053,7 +2053,7 @@ root@ubuntu:~# docker run -itd --name mepauth \
 
 ##### 更新TRUSTED_LIST
 
-mepauth.properties文件中的“TRUSTED_LIST”字段用于设置允许调用EG-LDVS
+mepauth.properties文件中的"TRUSTED_LIST"字段用于设置允许调用EG-LDVS
 提供的API服务的IP地址。如果需要修改允许调用EG-LDVS
 API服务的IP地址，需要用户进入Postgres数据库容器，然后更新Kong数据库中的plugins表数据，具体操作步骤如下：
 ```
