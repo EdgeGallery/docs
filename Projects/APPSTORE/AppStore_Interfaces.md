@@ -31,11 +31,11 @@
 根据入参查询应用(APP)列表。
 
 ```
-接口URI: /mec/appstore/v1/apps
+URI： /mec/appstore/v1/apps
 方法类型: GET
 ```
 请求参数：
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |name|应用名|request param|no|
 |provider|应用提供商|request param|no|
@@ -70,11 +70,11 @@
 ### 1.2 获取应用(APP)
 根据应用ID获取应用详细信息。
 ```
-接口URI: /mec/appstore/v1/apps/{appId}
+URI： /mec/appstore/v1/apps/{appId}
 方法类型: GET
 ```
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |appId|应用名|path|yes|
 
@@ -104,11 +104,11 @@
 ### 1.3 注册应用(APP) 
 注册应用。
 ```
-接口URI: /mec/appstore/v1/apps
+URI： /mec/appstore/v1/apps
 方法类型: POST
 ```
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |userId|用户ID|request param|yes|
 |userName|应用名|request param|yes|
@@ -128,11 +128,11 @@
 ### 1.4 删除应用(APP) 
 根据应用ID删除应用(APP) 。
 ```
-接口URI: /mec/appstore/v1/apps/{appId}
+URI： /mec/appstore/v1/apps/{appId}
 方法类型: DELETE
 ```
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |userId|用户ID|request param |yes|
 |userName |应用名|request param |yes|
@@ -147,11 +147,11 @@
 ### 1.5 获取应用(APP)最新版本
 应用ID获取应用(APP)最新版本包文件。
 ```
-接口URI: /mec/appstore/v1/apps/{appId}/action/download
+URI： /mec/appstore/v1/apps/{appId}/action/download
 方法类型: GET
 ```
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |userId |用户ID|request param |yes|
 |userName |应用名|request param |yes|
@@ -166,11 +166,11 @@
 ### 1.6 获取应用(APP)图标
 应用ID获取应用(APP)图标。
 ```
-接口URI: /mec/appstore/v1/apps/{appId}/icon
+URI： /mec/appstore/v1/apps/{appId}/icon
 方法类型: GET
 ```
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |userId |用户ID|request param |yes|
 |userName |应用名|request param |yes|
@@ -191,12 +191,12 @@
 
 通过应用ID获取应用包(Package)列表。
 ```
-接口URI: /mec/appstore/v1/apps/{appId}/packages
+URI： /mec/appstore/v1/apps/{appId}/packages
 方法类型: GET
 ```
 
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID |path|yes|
 
@@ -226,11 +226,11 @@
 ### 2.2 获取应用包(Package)
 通过应用ID和应用包ID获取应用包。
 ```
-接口URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}
+URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
 方法类型: GET
 ```
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
 |packageId |应用包ID|path |yes|
@@ -259,11 +259,11 @@
 ### 2.3 删除应用包(Package)
 通过应用ID和应用包ID删除应用包。
 ```
-接口URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}
+URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
 方法类型: DELETE
 ```
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
 |packageId |应用包ID|path |yes|
@@ -277,11 +277,11 @@
 ### 2.4 下载应用包(Package) 
 通过应用ID和应用包ID下载应用包。
 ```
-接口URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download
+URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download
 方法类型: GET
 ```
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
 |packageId |应用包ID|path |yes|
@@ -295,11 +295,11 @@
 ### 2.5 获取文件内容
 通过应用ID和应用包ID以及文件路径获取应用包中文件内容。
 ```
-接口URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
+URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
 方法类型: GET
 ```
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |userId |用户ID|request param |yes|
 |userName |应用名|request param |yes|
@@ -319,11 +319,11 @@ User can submit comments to an app.
 ### 3.1 获取评论列表
 根据应用ID获取应用(APP)的评论列表。
 ```
-接口URI: /mec/appstore/v1/apps/{appId}/comments
+URI： /mec/appstore/v1/apps/{appId}/comments
 方法类型: GET
 ```
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
 
@@ -361,11 +361,11 @@ User can submit comments to an app.
 ### 3.2 提交评论
 用户根据应用ID提交应用评分及评论。
 ```
-接口URI: /mec/appstore/v1/apps/{appId}/comments
+URI： /mec/appstore/v1/apps/{appId}/comments
 方法类型: POST
 ```
 
-|参数名|描述|类型|是否必须|
+|名称|描述|IN|必选|
 |---|---|---|---|
 |userId |用户ID|request param |yes|
 |userName |应用名|request param |yes|
