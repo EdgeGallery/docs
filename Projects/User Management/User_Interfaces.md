@@ -3,8 +3,8 @@ User Interfaces
 - [User Interfaces](#appstore-interfaces)
 - [User-mgmt-Server](#appStore-server)
   - [1. AUTH](#1-AUTH)
-    - [1.1 登出](#11-登出)
-    - [1.2 登录](#12-登录)
+    - [1.1 登录](#11-登录)
+    - [1.2 登出](#12-登出)
   - [2. USER-MGMT](#2-USER-MGMT)
     - [2.1 注册用户](#21-注册用户)
     - [2.2 找回密码](#22-找回密码)
@@ -14,26 +14,7 @@ User Interfaces
 
 ## 1. AUTH
 
-### 1.1 登出
-
-登出系统
-
-```
-Resource URI: /auth/logout
-Method: GET
-```
-
-| Name          | Definition |type   | Required| Describe |
-| ------------- | ---------- |-------|---------| ---------|
-
-
-Example response:
-```
-200 OK
-Succeed
-```
-
-### 1.2 登录
+### 1.1 登录
 
 登录系统
 
@@ -51,6 +32,22 @@ Example response:
 ```
 response 200 OK
 ```
+
+### 1.2 登出
+
+登出系统
+
+```
+Resource URI: /auth/logout
+Method: GET
+```
+
+Example response:
+```
+200 OK
+Succeed
+```
+
 
 ## 2 USER-MGMT
 
