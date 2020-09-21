@@ -2,10 +2,10 @@
 ==============
 文档中介绍了appstore-be模块的接口设计详情，共有三个部分，分别对应于app管理、包管理、评论管理。
 
-- [AppStore Interfaces](#appstore-interfaces)
-  - [1. APP](#1-app)
-    - [1.1 Get All Apps](#11-get-all-apps)
-    - [1.2 Get One App](#12-get-one-app)
+- [AppStore 接口列表](#appstore-interfaces)
+  - [1. 应用(APP)](#1-app)
+    - [1.1 根据条件查询应用(APP)列表](#11-get-all-apps)
+    - [1.2 根据ID获取应用(APP)](#12-get-one-app)
     - [1.3 Register App](#13-register-app)
     - [1.4 Delete One App](#14-delete-one-app)
     - [1.5 Get Latest Version Of App](#15-get-latest-version-of-app)
