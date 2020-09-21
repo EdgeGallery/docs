@@ -2,33 +2,33 @@
 ==============
 文档中介绍了appstore-be模块的接口设计详情，共有三个部分，分别对应于app管理、包管理、评论管理。
 
-- [AppStore 接口列表](#appstore-interfaces)
-  - [1. 应用(APP)](#1-app)
-    - [1.1 查询应用(APP)列表](#11-get-all-apps)
-    - [1.2 获取应用(APP)](#12-get-one-app)
-    - [1.3 注册应用(APP)](#13-register-app)
-    - [1.4 删除应用(APP)](#14-删除应用(APP))
-    - [1.5 获取应用(APP)最新版本](#15-get-latest-version-of-app)
-    - [1.6 获取应用(APP)图标](#16-get-icon-of-app)
+- [AppStore 接口列表](#接口列表)
+  - [1. 应用](#1-应用)
+    - [1.1 获取应用列表](#11-获取应用列表)
+    - [1.2 获取应用](#12-获取应用)
+    - [1.3 注册应用](#13-注册应用)
+    - [1.4 删除应用](#14-删除应用)
+    - [1.5 获取应用最新版本](#15-获取应用最新版本)
+    - [1.6 获取应用图标](#16-获取应用图标)
   - [2. 应用包](#2-package)
-    - [2.1获取应用(APP)包列表](#21-get-all-packages-of-app)
-    - [2.2 获取应用包(Package)](#22-get-one-package)
-    - [2.3 删除应用包(Package)](#23-delete-one-package)
-    - [2.4 下载应用包(Package)](#24-download-one-package)
-    - [2.5 获取文件内容](#25-get-file-content)
-  - [3. 评论](#3-comment)
-    - [3.1 获取评论列表](#31-get-comments-of-app)
-    - [3.2 提交评论](#32-submit-comment-to-app)
+    - [2.1 获取应用包列表](#21-获取应用包列表)
+    - [2.2 获取应用包](#22-获取应用包)
+    - [2.3 删除应用包](#23-删除应用包)
+    - [2.4 下载应用包](#24-下载应用包)
+    - [2.5 获取文件内容](#25-获取文件内容)
+  - [3. 评论](#3-评论)
+    - [3.1 获取评论列表](#31-获取评论列表)
+    - [3.2 提交评论](#32-提交评论)
 
 
-## 1. 应用(APP)
+## 1. 应用
 
 应用是应用商店基本的发布单位。
 
 
-### 1.1 根据条件查询应用(APP)列表
+### 1.1 获取应用列表
 
-根据入参查询应用(APP)列表。
+根据入参查询应用列表。
 
 ```
 URI： /mec/appstore/v1/apps
@@ -67,7 +67,7 @@ URI： /mec/appstore/v1/apps
 ]
 ```
 
-### 1.2 获取应用(APP)
+### 1.2 获取应用
 根据应用ID获取应用详细信息。
 ```
 URI： /mec/appstore/v1/apps/{appId}
@@ -101,7 +101,7 @@ URI： /mec/appstore/v1/apps/{appId}
   }
 ```
 
-### 1.3 注册应用(APP) 
+### 1.3 注册应用 
 注册应用。
 ```
 URI： /mec/appstore/v1/apps
@@ -125,8 +125,8 @@ URI： /mec/appstore/v1/apps
   "add app and upload package success."
 ```
 
-### 1.4 删除应用(APP) 
-根据应用ID删除应用(APP) 。
+### 1.4 删除应用 
+根据应用ID删除应用 。
 ```
 URI： /mec/appstore/v1/apps/{appId}
 方法类型: DELETE
@@ -144,8 +144,8 @@ URI： /mec/appstore/v1/apps/{appId}
   "delete App success."
 ```
 
-### 1.5 获取应用(APP)最新版本
-应用ID获取应用(APP)最新版本包文件。
+### 1.5 获取应用最新版本
+应用ID获取应用最新版本包文件。
 ```
 URI： /mec/appstore/v1/apps/{appId}/action/download
 方法类型: GET
@@ -163,8 +163,8 @@ URI： /mec/appstore/v1/apps/{appId}/action/download
   binary output.
 ```
 
-### 1.6 获取应用(APP)图标
-应用ID获取应用(APP)图标。
+### 1.6 获取应用图标
+应用ID获取应用图标。
 ```
 URI： /mec/appstore/v1/apps/{appId}/icon
 方法类型: GET
@@ -182,14 +182,14 @@ URI： /mec/appstore/v1/apps/{appId}/icon
   binary output.
 ```
 
-## 2. 应用包(Package)
+## 2. 应用包
 
-应用包(Package)属于应用(APP)，每个应用(APP)包含至少一个应用包(Package)。
+应用包属于应用，每个应用包含至少一个应用包。
 
 
-### 2.1获取应用(APP)包列表
+### 2.1获取应用包列表
 
-通过应用ID获取应用包(Package)列表。
+通过应用ID获取应用包列表。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages
 方法类型: GET
@@ -223,7 +223,7 @@ URI： /mec/appstore/v1/apps/{appId}/packages
 ]
 ```
 
-### 2.2 获取应用包(Package)
+### 2.2 获取应用包
 通过应用ID和应用包ID获取应用包。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
@@ -256,7 +256,7 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
   }
 ```
 
-### 2.3 删除应用包(Package)
+### 2.3 删除应用包
 通过应用ID和应用包ID删除应用包。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
@@ -274,7 +274,7 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
    delete package success.
 ```
 
-### 2.4 下载应用包(Package) 
+### 2.4 下载应用包 
 通过应用ID和应用包ID下载应用包。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download
@@ -317,7 +317,7 @@ User can submit comments to an app.
 
 
 ### 3.1 获取评论列表
-根据应用ID获取应用(APP)的评论列表。
+根据应用ID获取应用的评论列表。
 ```
 URI： /mec/appstore/v1/apps/{appId}/comments
 方法类型: GET
