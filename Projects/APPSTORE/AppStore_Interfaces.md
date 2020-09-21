@@ -7,7 +7,7 @@
     - [1.1 查询应用(APP)列表](#11-get-all-apps)
     - [1.2 获取应用(APP)](#12-get-one-app)
     - [1.3 注册应用(APP)](#13-register-app)
-    - [1.4 删除应用(APP)](#14-删除应用(APP) )
+    - [1.4 删除应用(APP)](#14-删除应用(APP))
     - [1.5 获取应用(APP)最新版本](#15-get-latest-version-of-app)
     - [1.6 获取应用(APP)图标](#16-get-icon-of-app)
   - [2. 应用包](#2-package)
