@@ -1,7 +1,7 @@
-# MEP-auth 模块相关特性
+## MEP-auth 模块相关特性
 
 
-## MEP-auth 为APP提供认证鉴权功能
+### MEP-auth 为APP提供认证鉴权功能
 MEP-auth为APP提供认证鉴权功能，提供token申请接口，APP可以基于AK/SK签名算法，向MEP-auth提供正确的签名，获得token，然后通过该token访问MEP-server相关接口。
 
 应用APP通过MEP-auth申请token的流程如下图所示：
@@ -20,7 +20,7 @@ MEP-auth为APP提供认证鉴权功能，提供token申请接口，APP可以基�
 
 token申请接口详细描述请参看“MEP features”章节。
 
-## MEP-auth 为API网关提供配置功能
+### MEP-auth 为API网关提供配置功能
 MEP-auth模块在初始化，会首先对API网关（kong）进行初始化:
 
 1. 在kong添加一个consumer
@@ -37,10 +37,10 @@ MEP-auth模块在初始化，会首先对API网关（kong）进行初始化:
 - response-transformer插件：提供清除response中server header能力
 - pre-function插件：提供修改接口请求x_forwarded_for能力
 
-# MEP sever特性
+## MEP sever特性
 
 
-## MEP服务治理功能
+### MEP服务治理功能
 **定义**
 
 服务管理功能是指MEP能够进行服务的注册，更新，删除，查询的能力。
@@ -81,7 +81,7 @@ MEP管理应用的服务，应用需要将其服务注册到MEP中，MEP-Agent�
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0804/165723_8d9be51d_5504908.png "特性3.png")
 
 
-# DNS server 特性
+## DNS server 特性
 The MEP platform provides the domain name resolution services to the applications deployed in the EdgeGallery MEC, which can be utilized by the device applications in UE. MEC platform receives the DNS configurations from the MEC management, which includes the FQDN(Fully Qualified Domain Name), IP address and related entries. MEC applications can later query or modify the state of these configurations.
 
 The three major operations for DNS are:
@@ -91,7 +91,7 @@ The three major operations for DNS are:
 3. DNS query by the device applications
 
 We will see each of these features in the below section.
-## DNS management operations
+### DNS management operations
 
 DNS configurations are created either by MECM modules during start-up or from the OSS directly. DNS management supports both create, update, query and delete operations.
 
@@ -109,17 +109,17 @@ DNS configurations can be updated from OSS directly over Mm2 interface through M
 
 ![DNS entry from OSS](https://images.gitee.com/uploads/images/2020/0918/133912_597b2c17_7625394.png "oss-mepm-mep.png")
 
-## DNS configurations from MEC applications
+### DNS configurations from MEC applications
 
 MEC applications can query the DNS configurations created for it and can activate or deactivate the same. Activation or deactivation can be performed by modifying the state of the DNS configuration.
 
 ![DNS configurations from MEC App](https://images.gitee.com/uploads/images/2020/0918/133933_9f7bd2ec_7625394.png "mecapp-mep.png")
 
-## DNS query
+### DNS query
 
 Device application in the UE can query the DNS server for the domain name resolution. By default the DNS server will listen on the 53 port.
 
-## How to configure the DNS server?
+### How to configure the DNS server?
 
 The dns server in MEP runs inside a container and can be configured using few command line parameters. 
 
