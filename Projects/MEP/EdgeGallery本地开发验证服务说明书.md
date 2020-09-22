@@ -2046,6 +2046,7 @@ root@ubuntu:~# docker run -itd --name mepauth \
             -e "MEPAUTH_APIGW_HOST=kong-service" \
             -e "MEPAUTH_APIGW_PORT=8444" \
             -e "MEPAUTH_CERT_DOMAIN_NAME=edgegallery" \
+            -e "MEPSERVER_HOST=mepserver" \
             edgegallery/mepauth:1.0
 ```
 注：
