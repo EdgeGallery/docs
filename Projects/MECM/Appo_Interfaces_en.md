@@ -4,8 +4,8 @@ The document is for the Application Orchestrator project, there are two parts of
 
 - [Application Orchestrator Interfaces](#appo-interfaces)
   - [1. App Instance Info Handler](#1-app-instance-info-handler)
-    - [1.1 Get Application Instances](#11-get-application-instances)
-    - [1.2 Get Application instance](#12-get-application-instance)
+    - [1.1 Get All Application Instances](#11-get-application-instances)
+    - [1.2 Get Application Instance](#12-get-application-instance)
   - [2.App Orchestrator Handler](#2-app-orchestrator-handler)
     - [2.1 Create AppInstance](#21-create-appinstance)
     - [2.2 Get App Instance Information](#22-get-app-instance-information)
@@ -16,7 +16,7 @@ The document is for the Application Orchestrator project, there are two parts of
 
 ## 1. App Instance Info Handler
 
-### 1.1 Get Application Instances
+### 1.1 Get All Application Instances
 
 Retrieves application instances information
 
@@ -27,6 +27,7 @@ Method: GET
 
 |Name|Definition|type|Required|
 |---|---|---|---|
+|access_token|access_token|header|yes|
 |tenant_id|tenant id|path|yes|
 
 Example response:
@@ -37,7 +38,7 @@ Example response:
 ]
 ```
 
-### 1.2 Get Application instance
+### 1.2 Get Application Instance
 Retrieves application instance information
 ```
 Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_id}
@@ -46,6 +47,7 @@ Method: GET
 
 |Name|Definition|type|Required|
 |---|---|---|---|
+|access_token|access_token|header|yes|
 |appInstance_id|application instance id|path|yes|
 |tenant_id|tenant id|path|yes|
 
