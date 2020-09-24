@@ -4,7 +4,7 @@ The document is for the Application Orchestrator project, there are two parts of
 
 - [Application Orchestrator Interfaces](#appo-interfaces)
   - [1. App Instance Info Handler](#1-app-instance-info-handler)
-    - [1.1 Get All Application Instances](#11-get-application-instances)
+    - [1.1 Get All Application Instances](#11-get-all-application-instances)
     - [1.2 Get Application Instance](#12-get-application-instance)
   - [2.App Orchestrator Handler](#2-app-orchestrator-handler)
     - [2.1 Create AppInstance](#21-create-appinstance)
