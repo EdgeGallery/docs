@@ -55,7 +55,7 @@ Developer Interfaces
 	- [6.4 GET helm yaml](#64-get-helm-yaml)
 	- [6.5 DELETE helm yaml](#65-delete-helm-yaml)
 	- [6.6 POST get sample code](#66-post-get-sample-code)
-        - [6.7 GET one file return object](#67-get-one-file-return-object)
+       - [6.7 GET one file return object](#67-get-one-file-return-object)
   - [7. LocalApi](#7-localapi)
     - [7.1 GET one api file](#71-get-one-api-file)
 	
