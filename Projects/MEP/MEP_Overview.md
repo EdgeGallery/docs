@@ -35,7 +35,7 @@ MEP-Agent组件：应用集成适配器，这个组件在实际使用时，应�
 
 ## MEP 整体架构
 
-![](https://images.gitee.com/uploads/images/2020/0918/144714_23890cda_7624956.png "MEP arch v0.9.png")
+![](/uploads/images/2020/0918/144714_23890cda_7624956.png "MEP arch v0.9.png")
 
 图中涉及的MEP关联主要接口有：
 - Mp1：APP与MEP之间，提供APP服务注册发现，APP状态通知订阅等能力。
