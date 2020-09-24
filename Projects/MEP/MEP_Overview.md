@@ -11,7 +11,7 @@ Computing）为典型的资源边缘化模式，在移动网络边缘提供IT服
 
 在MEC场景下，海量的应用将运行在网络边缘进行业务处理，并且应用能够使用网络的开放能力，应用之间也能够互相进行能力提供和消费。
 
-![](/uploads/images/2020/0805/102832_c7372e58_5504908.png "164204_1eeb56cc_5504908.png")
+![](/uploads/images/2020/0805/102832_c7372e58_5504908.png)
 
 EdgeGallery MEP项目旨在打造一个边缘侧的开源、开放的参考MEP平台，MEP项目当前包含MEP和MEP-Agent两个组件。
 
@@ -35,7 +35,7 @@ MEP-Agent组件：应用集成适配器，这个组件在实际使用时，应�
 
 ## MEP 整体架构
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0918/144714_23890cda_7624956.png "MEP arch v0.9.png")
+![](https://images.gitee.com/uploads/images/2020/0918/144714_23890cda_7624956.png "MEP arch v0.9.png")
 
 图中涉及的MEP关联主要接口有：
 - Mp1：APP与MEP之间，提供APP服务注册发现，APP状态通知订阅等能力。
