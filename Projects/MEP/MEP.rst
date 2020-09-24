@@ -3,10 +3,10 @@ MEP
 .. toctree::
    :maxdepth: 4
 
-   MEP Overview <MEP_Overview>
-   MEP Features <MEP_Features>
-   MEP Interfaces <MEP_Interfaces>
-   MEP Dependency <MEP_Dependency>
-   MEP Database Design <MEP_DataBase_Design>
-   MEP Contribution <MEP_Contribution>
+   概述 <MEP_Overview>
+   特性设计 <MEP_Features>
+   接口设计 <MEP_Interfaces>
+   依赖 <MEP_Dependency>
+   数据库设计 <MEP_DataBase_Design>
+   如何贡献 <MEP_Contribution>
 
