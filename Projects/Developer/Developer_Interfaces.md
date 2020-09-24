@@ -55,6 +55,7 @@ Developer Interfaces
 	- [6.4 GET helm yaml](#64-get-helm-yaml)
 	- [6.5 DELETE helm yaml](#65-delete-helm-yaml)
 	- [6.6 POST get sample code](#66-post-get-sample-code)
+        - [6.7 GET one file return object](#67-get-one-file-return-object)
   - [7. LocalApi](#7-localapi)
     - [7.1 GET one api file](#71-get-one-api-file)
 	
@@ -2041,7 +2042,7 @@ Resource URI: /mec/developer/v1/files/samplecode
 
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
-|apiFileIds|apifileidlist|bodyparam|yes||
+|apiFileIds|apifileid list|body param|yes||
 
 ```
 List<String>
@@ -2054,6 +2055,33 @@ Example response:
 200 OK
 byte array output
 ```
+### 6.7 GET one file return object
+Get file return one object
+```
+Resource URI: /mec/developer/v1/files/api-info/{fileId}
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|fileId|file id|path param |yes|
+|userId|the author id of upload file|request param |yes|
+
+
+Example response:
+```
+200 OK
+{
+    fileId:"xxx",
+    fileName:"xxx",
+    url:"xxx",
+    userId:"xxx",
+    isTemp:false,
+    uploadDate:xxxx-xx-xx,
+    filePath:"xxx"
+}
+```
+
+
 ## 7. LocalApi
 Get the APIs of all functional modules of developer platform
 ### 7.1 GET one api file
