@@ -1,4 +1,4 @@
-MEP 特性
+特性设计
 ================
 
 ## MEP-auth 模块相关特性
@@ -103,19 +103,19 @@ DNS configurations are embedded in the application descriptor and MEO(Multi-acce
 
 Upon receiving the DNS configurations from MEO, MEPM send this request to the MEP server on Mm5 interface after deploying the MEC application.
 
-![DNS entry from MEO](/uploads/images/2020/0915/133822_31b532a2_7625394.png "meo-mepm-mep.png")
+![](/uploads/images/2020/0915/133822_31b532a2_7625394.png "meo-mepm-mep.png")
 
 **Rule creation from OSS**
 
 DNS configurations can be updated from OSS directly over Mm2 interface through MEPM.
 
-![DNS entry from OSS](/uploads/images/2020/0915/133912_597b2c17_7625394.png "oss-mepm-mep.png")
+![](/uploads/images/2020/0915/133912_597b2c17_7625394.png "oss-mepm-mep.png")
 
 ### DNS configurations from MEC applications
 
 MEC applications can query the DNS configurations created for it and can activate or deactivate the same. Activation or deactivation can be performed by modifying the state of the DNS configuration.
 
-![DNS configurations from MEC App](/uploads/images/2020/0915/133933_9f7bd2ec_7625394.png "mecapp-mep.png")
+![](/uploads/images/2020/0915/133933_9f7bd2ec_7625394.png "mecapp-mep.png")
 
 ### DNS query
 
