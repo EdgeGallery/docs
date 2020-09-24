@@ -9,7 +9,7 @@ The document is for the Application Package Manager project, there is one part o
     - [1.3 Get Application Package Information](#13-get-application-package-information)
     - [1.4 Delete Application Packages](#14-delete-application-packages)
     - [1.5 Download Csar](#15-download-csar)
-    - [1.6 Delete Application Package](#16-delete-application-packages)
+    - [1.6 Delete Application Package](#16-delete-application-package)
 
 ## 1. App Package Manage Handler
 
