@@ -52,7 +52,7 @@ EG-LDVS(EdgeGallery-Location Development Verfication Service 边缘侧-本地开
 ### 系统架构
 
 EG-LDVS包含MEP和MEP-Agent两个组件。
-![](/uploads/images/2020/0804/164331_49cda7cd_5504908.png "系统架构.png")
+![系统架构](/uploads/images/2020/0804/164331_49cda7cd_5504908.png "系统架构.png")
 
 MEP组件：应用本地开发验证服务，提供边缘平台的相关API接口，仅支持开发者本地测试使用，组件本身具备服务治理的功能API，以及相关的能力开放API，但不实现API具体的功能，仅返回正确的API响应。
 
