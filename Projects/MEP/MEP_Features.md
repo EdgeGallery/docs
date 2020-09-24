@@ -1,9 +1,7 @@
 MEP 特性
 ================
 
-
 ## MEP-auth 模块相关特性
-
 
 ### MEP-auth 为APP提供认证鉴权功能
 MEP-auth为APP提供认证鉴权功能，提供token申请接口，APP可以基于AK/SK签名算法，向MEP-auth提供正确的签名，获得token，然后通过该token访问MEP-server相关接口。
