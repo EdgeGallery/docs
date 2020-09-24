@@ -1,8 +1,48 @@
 # MEP Dependencies
 
-## MEP 内部依赖
+## MEP-auth 三方件使用清单
 
-The Dependencies of Projects, such as 3rd party lib, other projects/components.
+| artifact | version  |
+|---|---|
+|github.com/agiledragon/gomonkey| v2.0.1
+|github.com/astaxie/beego| v1.12.0
+|github.com/dgrijalva/jwt-go/v4| v4.0.0-preview1
+|github.com/go-playground/validator/v10| v10.2.0
+|github.com/natefinch/lumberjack| v2.0.0
+|github.com/sirupsen/logrus| v1.4.2
+|github.com/smartystreets/goconvey| v1.6.4
+|golang.org/x/crypto| v0.0.0-20200302210943-78000ba7a073
 
+## MEP-server 三方件使用清单
 
-## MEP 外部依赖
+| artifact | version  |
+|---|---|
+|github.com/agiledragon/gomonkey |v2.0.1|
+|github.com/apache/servicecomb-service-center |v0.0.0-20191027084911-c2dc0caef706|
+|github.com/go-playground/validator/v10 |v10.2.0|
+|github.com/satori/go.uuid| v1.2.0|
+|github.com/stretchr/testify |v1.4.0|
+|golang.org/x/crypto |v0.0.0-20200302210943-78000ba7a073|
+|golang.org/x/net |v0.0.0-20200301022130-244492dfa37a|
+
+## dns-server 三方件使用清单
+
+| artifact | version  |
+|---|---|
+|github.com/agiledragon/gomonkey | v2.0.1
+|github.com/labstack/echo/v4 | v4.1.16
+|github.com/miekg/dns | v1.1.29
+|github.com/sirupsen/logrus | v1.4.2
+|github.com/stretchr/testify | v1.4.0
+|go.etcd.io/bbolt | v1.3.4
+
+## MEP-agent 三方件使用清单
+
+| artifact | version  |
+|---|---|
+| github.com/agiledragon/gomonkey | v2.0.1
+| github.com/go-playground/validator/v10 | v10.2.0
+| github.com/natefinch/lumberjack | v2.0.0
+| github.com/sirupsen/logrus | v1.4.2
+| github.com/smartystreets/goconvey | v1.6.4
+| gopkg.in/yaml.v2 | v2.2.8
