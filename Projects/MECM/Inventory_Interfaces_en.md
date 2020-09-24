@@ -80,7 +80,7 @@ Example response:
 ```
 
 ### 1.3 Delete All Applcm Record
-Deletes all application LCM records.
+Deletes all application LCM Records.
 ```
 Resource URI: /inventory/v1/tenants/{tenant_id}/applcms
 Method: DELETE
@@ -97,7 +97,7 @@ Example response:
 ```
 
 ### 1.4 Get Application LCM Record
-Retrieves application LCM record
+Retrieves application LCM Record
 ```
 Resource URI: /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip}
 Method: GET
@@ -190,7 +190,7 @@ Example response:
   }
 ```
 
-### 1.6 Update Application LCM record
+### 1.6 Update Application LCM Record
 Updates existing application LCM record
 ```
 Resource URI: /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip}
