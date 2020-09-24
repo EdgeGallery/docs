@@ -10,7 +10,7 @@ MEP-auth为APP提供认证鉴权功能，提供token申请接口，APP可以基�
 
 应用APP通过MEP-auth申请token的流程如下图所示：
 
-![输入图片说明](/uploads/images/2020/0804/165746_8ff53084_5504908.png "接口调用.png")
+![](/uploads/images/2020/0804/165746_8ff53084_5504908.png "接口调用.png")
 
 1.  应用使用[*服务认证接口*](#服务认证接口)，获取token
 
@@ -53,7 +53,7 @@ MEP-auth模块在初始化，会首先对API网关（kong）进行初始化:
 
 MEP提供服务注册，更新，删除，查询相关API接口。应用能够通过LDVS-MEP进行服务的注册，更新，删除，查询。
 
-![服务注册，删除](https://images.gitee.com/uploads/images/2020/0804/165650_4eeb753e_5504908.png "特性1.png")
+![服务注册，删除](/uploads/images/2020/0804/165650_4eeb753e_5504908.png "特性1.png")
 
 应用服务状态订阅/通知功能
 ----------------------------------------
@@ -68,7 +68,7 @@ MEP管理应用服务的状态，应用通过MEP进行服务的注册，当服�
 
 应用能够通过LDVS-MEP进行服务状态的订阅，更新，删除，查询。
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0804/165707_f4dbb36e_5504908.png "特性2.png")
+![](/uploads/images/2020/0804/165707_f4dbb36e_5504908.png "特性2.png")
 
 EG-LDVS应用集成插件mep-agent
 ------------------------------------
@@ -82,7 +82,7 @@ LDVS MEP-Agent作为应用快速集成适配器，实现服务配置导入和服
 LDVS
 MEP管理应用的服务，应用需要将其服务注册到MEP中，MEP-Agent作为适配器，将服务信息（包括应用实例ID）导入给应用，同时提供配置的方式将应用的服务注册到MEP中。
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0804/165723_8d9be51d_5504908.png "特性3.png")
+![](/uploads/images/2020/0804/165723_8d9be51d_5504908.png "特性3.png")
 
 
 ## DNS server 特性
