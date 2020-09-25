@@ -6,6 +6,5 @@
 请参考[链接](https://gitee.com/edgegallery/platform-mgmt/blob/master/README.md)
 
 ### 社区贡献
-## APPStore
-
-请参考[输入链接说明](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_Contribution.md)
+# APPStore
+请参考[链接](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_Contribution.md)
