@@ -25,10 +25,10 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token|access_token|header|yes|
-|tenant_id|tenant id|path|yes|
+|tenant_id|tenant id|path|yes|Valid uuid not exceed 64 characters|
 
 Example response:
 ```
@@ -45,11 +45,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_id}
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token|access_token|header|yes|
-|appInstance_id|application instance id|path|yes|
-|tenant_id|tenant id|path|yes|
+|appInstance_id|application instance id|path|yes|Valid uuid not exceed 64 characters|
+|tenant_id|tenant id|path|yes|Valid uuid not exceed 64 characters|
 
 
 Example response:
@@ -69,16 +69,16 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instances
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token|access token|header|yes|
-|appInstanceDescription|appInstanceDescriptio|RequestPart|yes|
+|appInstanceDescription|appInstanceDescription|RequestPart|yes|Valid uuid not exceed 64 characters|
 |createParam|createParam|RequestPart|yes|
-|appName|appName|RequestPart|yes|
-|appPackageId|appPackageId|RequestPart|yes|
-|appdId|appdId|RequestPart|yes|
-|mecHost|mecHost|RequestPart |yes|
-|tenant_id |tenant_id|path|yes|
+|appName|appName|RequestPart|yes|Alphanumeric characters,special characters are hypen and underscore and not exceed 128 characters|
+|appPackageId|appPackageId|RequestPart|yes|Alphanumeric in lower case and not exceed 64 characters|
+|appdId|appdId|RequestPart|yes|Alphanumeric in lower case and not exceed 64 characters|
+|mecHost|mecHost|RequestPart |yes|Valid IP address not exceed 15 characters|
+|tenant_id |tenant_id|path|yes|Valid uuid not exceed 64 characters|
 
 Example request body:
 ```
@@ -114,11 +114,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token|access token|header|yes|
-|app_instance_id|application instance id|header|yes|
-|tenant_id|tenant id|path|yes|
+|app_instance_id|application instance id|header|yes|Valid uuid not exceed 64 characters|
+|tenant_id|tenant id|path|yes|Valid uuid not exceed 64 characters|
 
 Example response:
 ```
@@ -135,11 +135,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token |access token|header |yes|
-|app_instance_id |application instance id|path   |yes|
-|tenant_id|tenant id|path |yes|
+|app_instance_id |application instance id|path   |yes|Valid uuid not exceed 64 characters|
+|tenant_id|tenant id|path |yes|Valid uuid not exceed 64 characters||
 
 Example response:
 ```
@@ -162,11 +162,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token |access_token|header |yes|
-|app_instance_id |application instance id|path |yes|
-|tenant_id |tenant id|path |yes|
+|app_instance_id |application instance id|path |yes|Valid uuid not exceed 64 characters|
+|tenant_id |tenant id|path |yes|Valid uuid not exceed 64 characters|
 
 Example response:
 ```
@@ -190,12 +190,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/kpi
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token|access token|header|yes|
-|host_ip|edge host ip|path|yes|
-|host_ip|edge host ip|path|yes|
-|tenant_id|tenant_id|path|yes|
+|host_ip|edge host ip|path|yes|Valid IP address not exceed 15 characters|
+|tenant_id|tenant_id|path|yes|Valid uuid not exceed 64 characters|
 
 
 Example response:
@@ -213,12 +212,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token|access token|header|yes|
-|host_ip|edge host ip|path|yes|
-|host_ip|edge host ip|path|yes|
-|tenant_id|tenant_id|path|yes|
+|host_ip|edge host ip|path|yes|Valid IP address not exceed 15 characters|
+|tenant_id|tenant_id|path|yes|Valid uuid not exceed 64 characters|
 
 
 Example response:
