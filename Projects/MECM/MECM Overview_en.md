@@ -10,7 +10,7 @@ MECM (multi access edge compute manager) provides orchestration and life cycle m
 ## MECM Components
 ## APM
  Application package manager enables edgegallery to distribute/on-board applications to edge repositories by
-  downloading application packages form appstore. 
+  downloading application packages from appstore. 
   
 ## APPO
  Application orchestrator provides application orchestration and life cycle management functionality based on application
@@ -18,8 +18,8 @@ MECM (multi access edge compute manager) provides orchestration and life cycle m
 
 ![.](/uploads/images/2020/0924/mecm_appo_architecture.png "mecm_appo_architecture.png")
 
-##Appo Components
-Appo orchestrates application deployment by executing specified process and automating sequence of tasks, rules and
+## Appo Components
+Appo orchestrates application deployment by executing specified process and automated sequence of tasks, rules and
  policies while maintaining life cycle state.
 ### API Handler
 
@@ -29,7 +29,7 @@ Appo orchestrates application deployment by executing specified process and auto
 
 * The BPMN execution engine executes application lifecycle management related process flows.        
 
-The BPMN process can be designed through the CAMUNDA Modler tool, as shown in the figure：
+The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in the figure：
 
 ![.](/uploads/images/2020/0924/mecm_appo_process_flow.png "mecm_appo_process_flow.png")
 
