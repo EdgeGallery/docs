@@ -3,7 +3,7 @@ LcmController is mainly responsible to provide northbound API's to upload config
 , and query an application. It also provides APIs to query mep capabilities and kpi information from prometheus
 
 
-![](/uploads/images/2020/0924/mecm-sequence-diagram.png "mecm-sequence-diagram.png") 
+![](/uploads/images/2020/0924/mecm-applcm-diagram.png "mecm-applcm-diagram.png") 
 
 Upload Configuration:
  Upload configuration API is responsible to upload the kube configuration file into edge node to communicate with
