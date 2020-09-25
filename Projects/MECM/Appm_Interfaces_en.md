@@ -22,10 +22,10 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages
 Method: GET
 ```
 
-|Name|Definition|type|Required|
+|Name|Definition|type|Required|Allowed|
 |---|---|---|---|
 |access_token |access token|header |yes|
-|tenant_id|tenant id|path|yes|
+|tenant_id|tenant id|path|yes|Valid UUID|
 
 Example response:
 ```
@@ -42,11 +42,11 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token|access_token|header|yes|
 |appPackageDto|app package info|body|yes|
-|tenant_id|tenant id|path|yes|
+|tenant_id|tenant id|path|yes|Valid UUID|
 
 Example request body:
 ```
@@ -83,11 +83,11 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token |access token|header |yes|
-|app_package_id|app package id|path|yes|
-|tenant_id|tenant id|path|yes|
+|app_package_id|app package id|path|yes|Alphanumeric and must be smaller case|
+|tenant_id|tenant id|path|yes|Valid UUID|
 
 Example response:
 ```
@@ -121,12 +121,12 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token |access token|header |yes|
-|app_package_id|app package id|path |yes|
-|tenant_id|tenant id|path |yes|
-|appId |app id|path |yes|
+|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|
+|tenant_id|tenant id|path |yes|Valid UUID|
+|appId |app id|path |yes|Alphanumeric and must be smaller case|
 
 Example response:
 ```
@@ -140,10 +140,10 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|app_package_id|app package id|path |yes|
-|tenant_id |tenant id|path |yes|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
+|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|
+|tenant_id |tenant id|path |yes|Valid UUID|
 
 Example response:
 ```
@@ -210,12 +210,12 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token |access token|header |yes|
-|app_package_id |app package id|path |yes|
-|host_ip|host ip|path |yes|
-|tenant_id |tenant id|path |yes|
+|app_package_id |app package id|path |yes|Alphanumeric and must be smaller case|
+|host_ip|host ip|path |yes|Valid IP address|
+|tenant_id |tenant id|path |yes|Valid UUID|
 
 Example response:
 ```
