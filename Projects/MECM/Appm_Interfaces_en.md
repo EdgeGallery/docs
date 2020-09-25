@@ -47,6 +47,17 @@ Method: POST
 |access_token|access_token|header|yes|
 |appPackageDto|app package info|body|yes|
 |tenant_id|tenant id|path|yes|Valid UUID|
+|appIconUrl|appIconUrl|body|yes|Valid URL and not exceed more than 1024 characters|
+|appId|appId|body|yes|AlphaNumeric with smaller case alphabets|
+|appPkgAffinity|appPkgAffinity|body|yes|AlhpaNumeric with not exceed more than 255 characters|
+|appPkgDesc|appPkgDesc|body|yes|AlhpaNumeric with not exceed more 1024 characters|
+|appPkgId|appPkgId|body|yes|AlphaNumeric with smaller case alphabets not exceed more 32 characters|
+|appPkgName|appPkgName|body|yes|AlphaNumeric and allowed special characters hypen and underscore|
+|appPkgPath|appPkgPath|body|yes|Valid URL and not exceed more than 1024 characters|
+|appPkgVersion|appPkgVersion|body|yes|Valid URL and not exceed more than 1024 characters|
+|appProvider|appProvider|body|yes|AlphaNumeric and not exceed more than 1024 characters|
+|createdTime|createdTime|body|yes|Valid time and not need more than 255 characters|
+|mecHostInfo|mecHostInfo|body|yes|Valid URL and not exceed more than 15 characters|
 
 Example request body:
 ```
