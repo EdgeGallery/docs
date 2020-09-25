@@ -25,11 +25,11 @@ Deveoper Contribution
 
 1、下载[Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)
 
-![](https://images.gitee.com/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg "service center1.jpg")
+![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg "service center1.jpg")
 
 2、解压后运行 start-service-center.bat  和  start-frontend.bat
 
-![](https://images.gitee.com/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg "service center2.jpg")
+![](/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg "service center2.jpg")
 
 - #### DataBase
 
@@ -39,11 +39,11 @@ Deveoper Contribution
 
 3、创建名为developerdb的数据库
 
-![](https://images.gitee.com/uploads/images/2020/0917/141631_0f92f2de_5504908.png "dev-db.png")
+![](/uploads/images/2020/0917/141631_0f92f2de_5504908.png "dev-db.png")
 
 4、根据[developer部署文件](https://gitee.com/edgegallery/helm-charts/blob/master/developer/templates/developer-be/developer-be-configmap.yaml) 中的数据库语句创建表结构
 
-![](https://images.gitee.com/uploads/images/2020/0917/141811_dfeec2eb_5504908.png "dev-sql.png")
+![](/uploads/images/2020/0917/141811_dfeec2eb_5504908.png "dev-sql.png")
 
 5、创建名为usermgmtdb的数据库
 
@@ -61,7 +61,7 @@ Deveoper Contribution
 
 5、在编译器（此处以IDEA为例）中配置MainServer的运行时环境变量
 
-![](https://images.gitee.com/uploads/images/2020/0917/150744_df40e73d_5504908.png "user-env.png")
+![](/uploads/images/2020/0917/150744_df40e73d_5504908.png "user-env.png")
 
 6、运行MainServer函数，启动UserManagement
 
@@ -71,7 +71,7 @@ Deveoper Contribution
 
 2、在编译器（此处以IDEA为例）中配置DeveloperApp的运行时环境变量
 
-![](https://images.gitee.com/uploads/images/2020/0917/154506_0ed087ca_5504908.png "dev-config.png")
+![](/uploads/images/2020/0917/154506_0ed087ca_5504908.png "dev-config.png")
 
 3、运行DeveloperApp函数，启动developer-be
 
@@ -91,6 +91,6 @@ Deveoper Contribution
 
 7、在编译器（此处以IDEA为例）中配置GatewayApp的运行时环境变量
 
-![](https://images.gitee.com/uploads/images/2020/0917/160010_6fafc86e_5504908.png "ws-config.png")
+![](/uploads/images/2020/0917/160010_6fafc86e_5504908.png "ws-config.png")
 
 8、运行GatewayApp启动WebsiteGateway与developer-fe，浏览器访问http://127.0.0.1:8080/ 即可访问到developer首页
