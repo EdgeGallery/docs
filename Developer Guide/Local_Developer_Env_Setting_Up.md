@@ -5,3 +5,4 @@
 
 详细请参考[链接](https://gitee.com/edgegallery/platform-mgmt/blob/master/README.md)
 
+### 社区贡献
