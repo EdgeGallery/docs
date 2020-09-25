@@ -12,15 +12,28 @@ MECM (multi access edge compute manager) provides orchestration and life cycle m
  Application package manager enables edgegallery to distribute/on-board applications to edge repositories by
   downloading application packages from appstore. 
   
+![.](/uploads/images/2020/0924/mecm_apm_architecture.png "mecm_apm_architecture.png")
+
+## APM Components
+### API Handler
+
+* Provides northbound interfaces for application package on-boarding and management.     
+
+### Manager
+
+* Responsible for obtaining application packages from appstore and on-boarding.     
+  
+### Distributor
+
+* Responsible for distributing application package to the designated edge nodes.
+  
 ## APPO
- Application orchestrator provides application orchestration and life cycle management functionality based on application
-  deployment strategy while maintaining overall view of application.
+ Appo orchestrates application deployment by executing specified process and automated sequence of tasks, rules and
+  policies while maintaining life cycle state.
 
 ![.](/uploads/images/2020/0924/mecm_appo_architecture.png "mecm_appo_architecture.png")
 
 ## Appo Components
-Appo orchestrates application deployment by executing specified process and automated sequence of tasks, rules and
- policies while maintaining life cycle state.
 ### API Handler
 
 * Provides northbound interfaces for application LCM operations.     
