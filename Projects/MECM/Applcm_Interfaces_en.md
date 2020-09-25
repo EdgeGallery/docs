@@ -25,10 +25,10 @@ Resource URI: /lcmcontroller/v1/configuration
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token |access token|header |yes|
-|hostIp|host_ip|string|yes|
+|hostIp|host_ip|string|yes|Valid IP address and not exceed more than 15 characters|
 |configFile|configFile|formData|yes|
 
 Example response:
@@ -53,10 +53,10 @@ Resource URI: /lcmcontroller/v1/configuration
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token|access_token|header|yes|
-|hostIp|host_ip|string|yes|
+|hostIp|host_ip|string|yes|Valid IP address and not exceed more than 15 characters|
 
 Example response:
 ```
@@ -70,12 +70,12 @@ Resource URI: /lcmcontroller/v1/app_instance/:appInstanceId/instantiate
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token |access token|header |yes|
-|appInstanceId|appInstance Id|path|yes|
-|tenant_id|tenant id|path|yes|
-|hostIp|host Ip|string|yes|
+|appInstanceId|appInstance Id|path|yes|Valid UUID|
+|tenant_id|tenant id|path|yes|Valid UUID|
+|hostIp|host Ip|string|yes|Valid IP address and not exceed more than 15 characters|
 |file|file|formData|yes|
 
 Example response:
@@ -93,11 +93,11 @@ Resource URI: /lcmcontroller/v1/app_instances/:appInstanceId/terminate
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token |access token|header |yes|
-|appInstanceId|appInstance Id|path|yes|
-|tenant_id|tenant id|path|yes|
+|appInstanceId|appInstance Id|path|yes|Valid UUID|
+|tenant_id|tenant id|path|yes|Valid UUID|
 
 Example response:
 ```
@@ -111,11 +111,11 @@ Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |app_package_id|app package id|path |yes|
-|appInstanceId|appInstance Id|path|yes|
-|tenant_id|tenant id|path|yes|
+|appInstanceId|appInstance Id|path|yes|Valid UUID|
+|tenant_id|tenant id|path|yes|Valid UUID|
 
 Example response:
 ```
@@ -132,11 +132,11 @@ Resource URI: /lcmcontroller/v1/tenants/:tenantId/hosts/:hostIp/kpi
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token |access token|header |yes|
-|host_ip|host ip|path |yes|
-|tenant_id |tenant id|path |yes|
+|host_ip|host ip|path |yes|Valid IP address and not exceed more than 15 characters|
+|tenant_id |tenant id|path |yes|Valid UUID|
 
 Example response:
 ```
@@ -153,11 +153,11 @@ Resource URI: /lcmcontroller/v1/tenants/:tenantId/hosts/:hostIp/mep_capabilities
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
+|Name|Definition|type|Required|Allowed|
+|---|---|---|---|---|
 |access_token |access token|header |yes|
-|host_ip|host ip|path |yes|
-|tenant_id |tenant id|path |yes|
+|host_ip|host ip|path |yes|Valid IP address and not exceed more than 15 characters|
+|tenant_id |tenant id|path |yes|Valid UUID|
 
 Example response:
 ```
