@@ -50,8 +50,6 @@ The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in t
  Inventory provides configuration store for external system registration and also maintains resource information and
   topology view.
 
-## APP LCM
- AppLcm has two modules such as LCM controller and K8s Plugin.  
 ## LCM controller
  LCM controller enables edgegallery to deploy and run applications on multiple infrastructure environments (ex. VM, K8s
   etc...) by selecting appropriate plugins. 
