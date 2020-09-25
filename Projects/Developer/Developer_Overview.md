@@ -23,7 +23,7 @@ Developer Overview
 
 ![](/uploads/images/2020/0709/150201_343f1fd8_5504908.png "部署视图.png")
 
-以上部署视图是按照K8S部署设计的， 在实际部署过程中，可以直接在虚拟机或者docker容器中启动各自的服务，部署过程中需要有一下几点注意：
+以上部署视图是按照K8S部署设计的， 在实际部署过程中，可以直接在虚拟机或者docker容器中启动各自的服务，部署过程中需要有以下几点注意：
 
 *   Developer-fe，Developer-be需要注册到ServiceCenter中，有关ServiceCenter的使用方法请参考：[https://servicecomb.apache.org/cn/](https://servicecomb.apache.org/cn/)
     
