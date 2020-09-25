@@ -46,9 +46,7 @@ MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery�
 1.  新建项目
     
 2.  迁移项目
-    
-3.  E2E项目开发&测试
-    
+        
 
 #### 新建项目
 
