@@ -9,14 +9,18 @@ MECM (multi access edge compute manager) provides orchestration and life cycle m
 
 ## Description
 ## APM
- Application package manager downloads application packages from app store and provides application on-boarding and management functionality.
+ Application package manager enables edgegallery to distribute/on-board applications to edge repositories by
+  downloading application packages form appstore. 
 ## APPO
- Application orchestrator provides application orchestration functionality while maintaining the overall view of the
-  application
+ Application orchestrator enables edgegallery to orchestrate application deployment based on deployment strategy.
 ## Inventory
- Inventory provides configuration store for external systems and also maintains resource information and topology view.
+ Inventory provides configuration store for external system registration and also maintains resource information and
+  topology view.
 ## LCM controller
- LCM contoller provides life cycle management of applications. 
+ LCM contoller enables edgegallery to deploy and run applications on multiple infrastructure environments (ex. VM, K8s
+  etc...) by selecting appropriate plugins. 
+## K8s Plugin
+ K8s plugin is responsible for interaction with kubernetes infra for LCM operations. 
 
 ## Deployment view
 ![.](/uploads/images/2020/0924/mecm-deployment-overview.png "mecm-deployment-overview.png")
