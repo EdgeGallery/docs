@@ -52,11 +52,20 @@ The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in t
 
 ## LCM controller
  LCM controller enables edgegallery to deploy and run applications on multiple infrastructure environments (ex. VM, K8s
-  etc...) by selecting appropriate plugins. 
+  etc...) by selecting appropriate plugin adapter. 
+
+![.](/uploads/images/2020/0924/mecm-applcm-diagram.png "mecm-applcm-diagram.png") 
+
+## LCM controller Components
+## API Handler
+ Provides northbound interfaces for application LCM operations.
+
+## K8s Plugin adapter
+ K8s plugin adapter communicates with K8s plugin to perform LCM operation on K8s environment.
+
 ## K8s Plugin
  K8s plugin is responsible for interaction with kubernetes infra for LCM operations.
 
-![.](/uploads/images/2020/0924/mecm-applcm-diagram.png "mecm-applcm-diagram.png") 
 
 ## Deployment view
 ![.](/uploads/images/2020/0924/mecm-deployment-overview.png "mecm-deployment-overview.png")
