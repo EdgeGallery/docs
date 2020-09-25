@@ -163,7 +163,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
        project_id          varchar(50)      NOT NULL,        --项目ID（对应tbl_app_project中的id）
        agent_config        text             DEFAULT NULL,    --MEP AGENT配置项
        image_file_id       varchar(255)     NOT NULL,        --镜像文件ID
-       app_api_file_id     varchar(50)      NOT NULL,        --项目API文件ID
+       app_api_file_id     varchar(50)      DEFAULT NULL,        --项目API文件ID
        status              varchar(100)     DEFAULT NULL,    --项目状态
        access_url          varchar(200)     DEFAULT NULL,    --项目可访问的URl
        error_log           text             DEFAULT NULL,    --项目部署测试失败的日志
