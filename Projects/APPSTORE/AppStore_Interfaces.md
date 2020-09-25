@@ -35,6 +35,7 @@ URI： /mec/appstore/v1/apps
 方法类型: GET
 ```
 请求参数：
+
 |名称|描述|IN|必选|
 |---|---|---|---|
 |name|应用名|request param|no|
