@@ -63,6 +63,9 @@ Method: POST
 |access_token |access token|header |yes|
 |appLcmDto|applcm inventory information|body|yes|
 |tenant_id|tenant identifier|path|yes|Valid UUID and not exceed 64 characters|
+|applcmIp|applcmIp|body|yes|Valid URL and not exceed 15 characters|
+|applcmPort|applcmPort|body|yes|Valid Port|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
 
 Example request body:
 ```
@@ -189,6 +192,12 @@ Method: POST
 |access_token|access token|header|yes|
 |appStoreDto|appstore inventory information|object|yes|
 |tenant_id|tenant identifier|path|yes|Valid UUID and not exceed 64 characters|
+|appstoreIp|appstoreIp|body|yes|Valid IP address and not exceed 15 characters|
+|appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
+|appstorePort|appstorePort|body|yes|Valid Port and not exceed 5 characters|
+|producer|producer|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
+|uri|uri|body|yes|Valid UUID and not exceed 128 characters|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
 
 Example request body:
 ```
@@ -274,6 +283,12 @@ Method: PUT
 |appStoreDto|appstore inventory information|body|yes|
 |appstore_ip|appstore IP|path|yes|Valid IP address and not exceed 15 characters|
 |tenant_id|tenant identifier|path|yes|Valid UUID and not exceed 64 characters|
+|appstoreIp|appstoreIp|body|yes|Valid IP address and not exceed 15 characters|
+|appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
+|appstorePort|appstorePort|body|yes|Valid Port and not exceed 5 characters|
+|producer|producer|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
+|uri|uri|body|yes|Valid UUID and not exceed 128 characters|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
 
 Example request body:
 ```
@@ -352,6 +367,12 @@ Method: POST
 |access_token |access token|header |yes|
 |mecHostDto|mecHostDto|body|yes|
 |tenant_id|tenant identifier|path|yes|Valid UUID and not exceed 64 characters|
+|appstoreIp|appstoreIp|body|yes|Valid IP address and not exceed 15 characters|
+|appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
+|appstorePort|appstorePort|body|yes|Valid Port and not exceed 5 characters|
+|producer|producer|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
+|uri|uri|body|yes|Valid UUID and not exceed 128 characters|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|    
 
 Example request body:
 ```
@@ -437,6 +458,17 @@ Method: PUT
 |mecHostDto|mechost inventory information|body|yes|
 |mechost_ip|mechost IP|path|yes|Valid IP address and not exceed 15 characters|
 |tenant_id|tenant identifier|path|yes|Valid UUID and not exceed 64 characters|
+|address|address|body|yes|Valid IP address and not exceed 255 characters|
+|affinity|affinity|body|yes|AlphaNumeric, special characters allowed are hypen,underscore and comma and not exceed 128 characters|
+|applcmIp|applcmIp|body|yes|Valid IP address and not exceed 15 characters|
+|city|city|body|yes|AlphaNumeric, special characters allowed are slash and space and not exceed 128 characters|
+|edgeName|edgeName|body|yes|AlphaNumeric, special characters allowed are slash and space and not exceed 128 characters|
+|edgerepoIp|edgerepoIp|body|yes|Valid IP address and not exceed 255 characters|
+|edgerepoUsername|edgerepoUsername|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
+|mechostIp|mechostIp|body|yes|Valid IP address and not exceed 15 characters|
+|mechostName|mechostName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore and not exceed 128 characters|
+|zipCode|zipCode|body|yes|Alpha, special characters allowed are hypen and underscore and not exceed 128 characters|
 
 Example request body:
 ```
