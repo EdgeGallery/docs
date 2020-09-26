@@ -23,7 +23,7 @@ Method: GET
 ```
 
 |Name|Definition|type|Required|Allowed|
-|---|---|---|---|
+|---|---|---|---|---|
 |access_token |access token|header |yes|
 |tenant_id|tenant id|path|yes|Valid UUID|
 
