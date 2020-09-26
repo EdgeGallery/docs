@@ -25,10 +25,10 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access_token|header|yes|
-|tenant_id|tenant id|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -45,11 +45,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_id}
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access_token|header|yes|
-|appInstance_id|application instance id|path|yes|
-|tenant_id|tenant id|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|appInstance_id|application instance id|path|yes|Valid UUID|64|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
 
 
 Example response:
@@ -69,16 +69,15 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instances
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access token|header|yes|
-|appInstanceDescription|appInstanceDescriptio|RequestPart|yes|
-|createParam|createParam|RequestPart|yes|
-|appName|appName|RequestPart|yes|
-|appPackageId|appPackageId|RequestPart|yes|
-|appdId|appdId|RequestPart|yes|
-|mecHost|mecHost|RequestPart |yes|
-|tenant_id |tenant_id|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|appInstanceDescription|appInstanceDescription|RequestPart|yes|Valid UUID|64|
+|appName|appName|RequestPart|yes|Alphanumeric characters,special characters are hypen and underscore|128|
+|appPackageId|appPackageId|RequestPart|yes|Alphanumeric in lower case|64|
+|appdId|appdId|RequestPart|yes|Alphanumeric in lower case|64|
+|mecHost|mecHost|RequestPart |yes|Valid IP Address|15|
+|tenant_id |tenant_id|path|yes|Valid UUID|64|
 
 Example request body:
 ```
@@ -114,11 +113,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access token|header|yes|
-|app_instance_id|application instance id|header|yes|
-|tenant_id|tenant id|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|app_instance_id|application instance id|header|yes|Valid UUID|64|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -135,11 +134,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|app_instance_id |application instance id|path   |yes|
-|tenant_id|tenant id|path |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|app_instance_id |application instance id|path   |yes|Valid UUID|64|
+|tenant_id|tenant id|path |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -162,11 +161,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access_token|header |yes|
-|app_instance_id |application instance id|path |yes|
-|tenant_id |tenant id|path |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access_token|header |yes|Jwt token|
+|app_instance_id |application instance id|path |yes|Valid UUID|64|
+|tenant_id |tenant id|path |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -190,12 +189,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/kpi
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access token|header|yes|
-|host_ip|edge host ip|path|yes|
-|host_ip|edge host ip|path|yes|
-|tenant_id|tenant_id|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
 
 
 Example response:
@@ -213,12 +211,11 @@ Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access token|header|yes|
-|host_ip|edge host ip|path|yes|
-|host_ip|edge host ip|path|yes|
-|tenant_id|tenant_id|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
 
 
 Example response:

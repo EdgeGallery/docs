@@ -8,9 +8,8 @@ The document is for the Inventory project, there are three parts of interfaces i
     - [1.2 Add Applcm Record](#12-add-applcm-record)
     - [1.3 Delete All Applcm Record](#13-delete-all-applcm-record)
     - [1.4 Get Application LCM Record](#14-get-application-lcm-record)
-    - [1.5 Download Csar](#15-download-csar)
-    - [1.6 Update Application LCM Record](#16-update-application-lcm-record)
-    - [1.7 Delete Application LCM Record](#17-delete-application-lcm-record)
+    - [1.5 Update Application LCM Record](#15-update-application-lcm-record)
+    - [1.6 Delete Application LCM Record](#16-delete-application-lcm-record)
   - [2.App Store Inventory Handler](#2-app-store-inventory-handler)
     - [2.1 Get All Application Records ](#21-get-all-application-records)
     - [2.2 Add Application Store Record](#22-add-application-store-record)
@@ -39,10 +38,10 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/applcms
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|tenant_id|tenant identifier|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -59,11 +58,13 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/applcms
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|appLcmDto|applcm inventory information|body|yes|
-|tenant_id|tenant identifier|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|applcmIp|applcmIp|body|yes|Valid URL|15|
+|applcmPort|applcmPort|body|yes|Valid Port|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 
 Example request body:
 ```
@@ -86,10 +87,10 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/applcms
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|tenant_id|tenant identifier|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -103,11 +104,11 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip}
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|applcm_ip|applcm ip|path |yes|
-|tenant_id|tenant identifier|path |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|applcm_ip|applcm ip|path |yes|Valid IP Address|15|
+|tenant_id|tenant identifier|path |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -119,108 +120,36 @@ Example response:
 }
 ```
 
-### 1.5 Download Csar
-Download application package CSAR
-```
-Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download
-Method: GET
-```
-
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|app_package_id|app package id|path |yes|
-|tenant_id |tenant id|path |yes|
-
-Example response:
-```
-200 OK
-  {
-    "description": "string",
-    "file": {
-      "absolute": true,
-      "absolutePath": "string",
-      "canonicalPath": "string",
-      "directory": true,
-      "file": true,
-      "freeSpace": 0,
-      "hidden": true,
-      "name": "string",
-      "parent": "string",
-      "path": "string",
-      "totalSpace": 0,
-      "usableSpace": 0
-    },
-    "filename": "string",
-    "inputStream": {},
-    "open": true,
-    "readable": true,
-    "uri": {
-      "absolute": true,
-      "authority": "string",
-      "fragment": "string",
-      "host": "string",
-      "opaque": true,
-      "path": "string",
-      "port": 0,
-      "query": "string",
-      "rawAuthority": "string",
-      "rawFragment": "string",
-      "rawPath": "string",
-      "rawQuery": "string",
-      "rawSchemeSpecificPart": "string",
-      "rawUserInfo": "string",
-      "scheme": "string",
-      "schemeSpecificPart": "string",
-      "userInfo": "string"
-    },
-    "url": {
-      "authority": "string",
-      "content": {},
-      "defaultPort": 0,
-      "file": "string",
-      "host": "string",
-      "path": "string",
-      "port": 0,
-      "protocol": "string",
-      "query": "string",
-      "ref": "string",
-      "userInfo": "string"
-    }
-  }
-```
-
-### 1.6 Update Application LCM Record
+### 1.5 Update Application LCM Record
 Updates existing application LCM record
 ```
 Resource URI: /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip}
 Method: PUT
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|appLcmDto |applcm inventory information|body |yes|
-|applcm_ip|applcm IP|path |yes|
-|tenant_id |tenant identifier|path |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|applcm_ip|applcm IP|path |yes|Valid IP Address|15|
+|tenant_id |tenant identifier|path |yes|Valid UUID|64|
 
 Example response:
 ```
 200 OK
 ```
 
-### 1.7 Delete Application LCM Record
+### 1.6 Delete Application LCM Record
 Deletes application LCM record
 ```
 Resource URI: /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip}
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|applcm_ip |applcm ip|path |yes|
-|tenant_id |tenant identifier|path |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|applcm_ip |applcm ip|path |yes|Valid IP Address|15|
+|tenant_id |tenant identifier|path |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -236,10 +165,10 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/appstores
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access token|header|yes|
-|tenant_id|tenant identifier|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -256,11 +185,16 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/appstores
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access token|header|yes|
-|appStoreDto|appstore inventory information|object|yes|
-|tenant_id|tenant identifier|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|appstoreIp|appstoreIp|body|yes|Valid IP Address|15|
+|appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|appstorePort|appstorePort|body|yes|Valid Port|5|
+|producer|producer|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|uri|uri|body|yes|Valid UUID|128|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 
 Example request body:
 ```
@@ -288,11 +222,10 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/appstores
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|tenant_id |tenant identifier|path   |yes|
-|tenant_id|tenant id|path |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id |tenant identifier|path   |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -309,11 +242,11 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/appstores/{appstore_ip}
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access_token|header |yes|
-|appstore_ip |appstore IP|path |yes|
-|tenant_id |tenant identifier|path |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access_token|header |yes|Jwt token|
+|appstore_ip |appstore IP|path |yes|Valid IP Address|15|
+|tenant_id |tenant identifier|path |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -341,12 +274,17 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/appstores/{appstore_ip}
 Method: PUT
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access token|header|yes|
-|appStoreDto|appstore inventory information|body|yes|
-|appstore_ip|appstore IP|path|yes|
-|tenant_id|tenant identifier|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|appstore_ip|appstore IP|path|yes|Valid IP Address|15|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|appstoreIp|appstoreIp|body|yes|Valid IP Address|15|
+|appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|appstorePort|appstorePort|body|yes|Valid Port|5|
+|producer|producer|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|uri|uri|body|yes|Valid UUID|128|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 
 Example request body:
 ```
@@ -375,11 +313,11 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/appstores/{appstore_ip}
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access token|header|yes|
-|appstore_ip|appstore IP|path|yes|
-|tenant_id|tenant identifier|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|appstore_ip|appstore IP|path|yes|Valid IP address|15|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -400,10 +338,10 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|tenant_id|tenant identifier|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64 characters|
 
 Example response:
 ```
@@ -420,11 +358,16 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|mecHostDto|mecHostDto|body|yes|
-|tenant_id|tenant identifier|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|appstoreIp|appstoreIp|body|yes|Valid IP address|15|
+|appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|appstorePort|appstorePort|body|yes|Valid Port|5|
+|producer|producer|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|uri|uri|body|yes|Valid UUID|128|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|    
 
 Example request body:
 ```
@@ -453,10 +396,10 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|tenant_id |tenant identifier|path   |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id |tenant identifier|path   |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -474,11 +417,11 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|mechost_ip |mechost_ip|path |yes|
-|tenant_id|tenant identifier|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|mechost_ip |mechost_ip|path |yes|Valid IP address|15|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 ```
 200 OK
@@ -504,12 +447,22 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}
 Method: PUT
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access token|header|yes|
-|mecHostDto|mechost inventory information|body|yes|
-|mechost_ip|mechost IP|path|yes|
-|tenant_id|tenant identifier|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|mechost_ip|mechost IP|path|yes|Valid IP address|15|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|address|address|body|yes|Valid IP address|255|
+|affinity|affinity|body|yes|AlphaNumeric, special characters allowed are hypen,underscore and comma|128|
+|applcmIp|applcmIp|body|yes|Valid IP address|15|
+|city|city|body|yes|AlphaNumeric, special characters allowed are slash and space|128|
+|edgeName|edgeName|body|yes|AlphaNumeric, special characters allowed are slash and space|128|
+|edgerepoIp|edgerepoIp|body|yes|Valid IP address|255|
+|edgerepoUsername|edgerepoUsername|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|mechostIp|mechostIp|body|yes|Valid IP address|15|
+|mechostName|mechostName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|zipCode|zipCode|body|yes|Alpha, special characters allowed are hypen and underscore|128|
 
 Example request body:
 ```
@@ -543,11 +496,11 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|mechost_ip |mechost IP|path |yes|
-|tenant_id |tenant identifier|path   |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|mechost_ip |mechost IP|path |yes|Valid IP Address|15|
+|tenant_id |tenant identifier|path   |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -565,12 +518,12 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/k8sconfig
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
 |file|file|formData|yes|
-|mechost_ip|mechost IP|path|yes|
-|tenant_id|tenant identifier|path|yes|
+|mechost_ip|mechost IP|path|yes|Valid IP Address|15|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -587,11 +540,11 @@ Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/k8sconfig
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|mechost_ip |mechost IP|path |yes|
-|tenant_id |tenant identifier|path   |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|mechost_ip |mechost IP|path |yes|Valid IP Address|15|
+|tenant_id |tenant identifier|path   |yes|Valid UUID|64|
 
 Example response:
 ```

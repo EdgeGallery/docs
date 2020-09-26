@@ -22,10 +22,10 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|tenant_id|tenant id|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -42,11 +42,21 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages
 Method: POST
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token|access_token|header|yes|
-|appPackageDto|app package info|body|yes|
-|tenant_id|tenant id|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+|appIconUrl|appIconUrl|body|yes|Valid URL|1024|
+|appId|appId|body|yes|AlphaNumeric with smaller case alphabets|32|
+|appPkgAffinity|appPkgAffinity|body|yes|AlhpaNumeric|255|
+|appPkgDesc|appPkgDesc|body|yes|AlhpaNumeric|1024|
+|appPkgId|appPkgId|body|yes|AlphaNumeric with smaller case alphabets|32|
+|appPkgName|appPkgName|body|yes|AlphaNumeric and allowed special characters hypen and underscore|255|
+|appPkgPath|appPkgPath|body|yes|Valid URL|1024|
+|appPkgVersion|appPkgVersion|body|yes|Valid URL|1024|
+|appProvider|appProvider|body|yes|AlphaNumeric|1024|
+|createdTime|createdTime|body|yes|Valid time|255|
+|mecHostInfo|mecHostInfo|body|yes|Valid URL|15|
 
 Example request body:
 ```
@@ -83,11 +93,11 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|app_package_id|app package id|path|yes|
-|tenant_id|tenant id|path|yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|app_package_id|app package id|path|yes|Alphanumeric and must be smaller case|32|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -121,12 +131,12 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|app_package_id|app package id|path |yes|
-|tenant_id|tenant id|path |yes|
-|appId |app id|path |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|32|
+|tenant_id|tenant id|path |yes|Valid UUID|64|
+|appId |app id|path |yes|Alphanumeric and must be smaller case|32|
 
 Example response:
 ```
@@ -140,10 +150,10 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download
 Method: GET
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|app_package_id|app package id|path |yes|
-|tenant_id |tenant id|path |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|32|
+|tenant_id |tenant id|path |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -210,12 +220,12 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|
-|---|---|---|---|
-|access_token |access token|header |yes|
-|app_package_id |app package id|path |yes|
-|host_ip|host ip|path |yes|
-|tenant_id |tenant id|path |yes|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|app_package_id |app package id|path |yes|Alphanumeric and must be smaller case|32|
+|host_ip|host ip|path |yes|Valid IP address|15|
+|tenant_id |tenant id|path |yes|Valid UUID|64|
 
 Example response:
 ```
