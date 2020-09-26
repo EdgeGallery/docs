@@ -25,7 +25,7 @@ Method: GET
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id|tenant id|path|yes|Valid UUID|64 characters|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -45,18 +45,18 @@ Method: POST
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
-|tenant_id|tenant id|path|yes|Valid UUID|64 Characters|
-|appIconUrl|appIconUrl|body|yes|Valid URL|1024 Characters|
-|appId|appId|body|yes|AlphaNumeric with smaller case alphabets|32 Characters|
-|appPkgAffinity|appPkgAffinity|body|yes|AlhpaNumeric|255 Characters|
-|appPkgDesc|appPkgDesc|body|yes|AlhpaNumeric|1024 Characters|
-|appPkgId|appPkgId|body|yes|AlphaNumeric with smaller case alphabets|32 Characters|
-|appPkgName|appPkgName|body|yes|AlphaNumeric and allowed special characters hypen and underscore|255 Characters|
-|appPkgPath|appPkgPath|body|yes|Valid URL|1024 Characters|
-|appPkgVersion|appPkgVersion|body|yes|Valid URL|1024 Characters|
-|appProvider|appProvider|body|yes|AlphaNumeric|1024 Characters|
-|createdTime|createdTime|body|yes|Valid time|255 Characters|
-|mecHostInfo|mecHostInfo|body|yes|Valid URL|15 Characters|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+|appIconUrl|appIconUrl|body|yes|Valid URL|1024|
+|appId|appId|body|yes|AlphaNumeric with smaller case alphabets|32|
+|appPkgAffinity|appPkgAffinity|body|yes|AlhpaNumeric|255|
+|appPkgDesc|appPkgDesc|body|yes|AlhpaNumeric|1024|
+|appPkgId|appPkgId|body|yes|AlphaNumeric with smaller case alphabets|32|
+|appPkgName|appPkgName|body|yes|AlphaNumeric and allowed special characters hypen and underscore|255|
+|appPkgPath|appPkgPath|body|yes|Valid URL|1024|
+|appPkgVersion|appPkgVersion|body|yes|Valid URL|1024|
+|appProvider|appProvider|body|yes|AlphaNumeric|1024|
+|createdTime|createdTime|body|yes|Valid time|255|
+|mecHostInfo|mecHostInfo|body|yes|Valid URL|15|
 
 Example request body:
 ```
@@ -96,8 +96,8 @@ Method: GET
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|app_package_id|app package id|path|yes|Alphanumeric and must be smaller case|32 Characters|
-|tenant_id|tenant id|path|yes|Valid UUID|64 Characters|
+|app_package_id|app package id|path|yes|Alphanumeric and must be smaller case|32|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -134,9 +134,9 @@ Method: DELETE
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|32 Characters|
-|tenant_id|tenant id|path |yes|Valid UUID|64 Characters|
-|appId |app id|path |yes|Alphanumeric and must be smaller case|32 Characters|
+|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|32|
+|tenant_id|tenant id|path |yes|Valid UUID|64|
+|appId |app id|path |yes|Alphanumeric and must be smaller case|32|
 
 Example response:
 ```
@@ -152,8 +152,8 @@ Method: GET
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
-|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|32 Characters|
-|tenant_id |tenant id|path |yes|Valid UUID|64 Characters|
+|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|32|
+|tenant_id |tenant id|path |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -223,9 +223,9 @@ Method: DELETE
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|app_package_id |app package id|path |yes|Alphanumeric and must be smaller case|32 Characters|
-|host_ip|host ip|path |yes|Valid IP address|15 Characters|
-|tenant_id |tenant id|path |yes|Valid UUID|64 Characters|
+|app_package_id |app package id|path |yes|Alphanumeric and must be smaller case|32|
+|host_ip|host ip|path |yes|Valid IP address|15|
+|tenant_id |tenant id|path |yes|Valid UUID|64|
 
 Example response:
 ```
