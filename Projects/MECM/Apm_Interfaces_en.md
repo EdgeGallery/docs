@@ -22,10 +22,10 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages
 Method: GET
 ```
 
-|Name|Definition|type|Required|Allowed|
-|---|---|---|---|---|
-|access_token |access token|header |yes|
-|tenant_id|tenant id|path|yes|Valid UUID|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant id|path|yes|Valid UUID|64 characters|
 
 Example response:
 ```
@@ -42,22 +42,21 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages
 Method: POST
 ```
 
-|Name|Definition|type|Required|Allowed|
-|---|---|---|---|---|
-|access_token|access_token|header|yes|
-|appPackageDto|app package info|body|yes|
-|tenant_id|tenant id|path|yes|Valid UUID|
-|appIconUrl|appIconUrl|body|yes|Valid URL and not exceed more than 1024 characters|
-|appId|appId|body|yes|AlphaNumeric with smaller case alphabets|
-|appPkgAffinity|appPkgAffinity|body|yes|AlhpaNumeric with not exceed more than 255 characters|
-|appPkgDesc|appPkgDesc|body|yes|AlhpaNumeric with not exceed more 1024 characters|
-|appPkgId|appPkgId|body|yes|AlphaNumeric with smaller case alphabets not exceed more 32 characters|
-|appPkgName|appPkgName|body|yes|AlphaNumeric and allowed special characters hypen and underscore|
-|appPkgPath|appPkgPath|body|yes|Valid URL and not exceed more than 1024 characters|
-|appPkgVersion|appPkgVersion|body|yes|Valid URL and not exceed more than 1024 characters|
-|appProvider|appProvider|body|yes|AlphaNumeric and not exceed more than 1024 characters|
-|createdTime|createdTime|body|yes|Valid time and not need more than 255 characters|
-|mecHostInfo|mecHostInfo|body|yes|Valid URL and not exceed more than 15 characters|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|tenant_id|tenant id|path|yes|Valid UUID|64 Characters|
+|appIconUrl|appIconUrl|body|yes|Valid URL|1024 Characters|
+|appId|appId|body|yes|AlphaNumeric with smaller case alphabets|32 Characters|
+|appPkgAffinity|appPkgAffinity|body|yes|AlhpaNumeric|255 Characters|
+|appPkgDesc|appPkgDesc|body|yes|AlhpaNumeric|1024 Characters|
+|appPkgId|appPkgId|body|yes|AlphaNumeric with smaller case alphabets|32 Characters|
+|appPkgName|appPkgName|body|yes|AlphaNumeric and allowed special characters hypen and underscore|255 Characters|
+|appPkgPath|appPkgPath|body|yes|Valid URL|1024 Characters|
+|appPkgVersion|appPkgVersion|body|yes|Valid URL|1024 Characters|
+|appProvider|appProvider|body|yes|AlphaNumeric|1024 Characters|
+|createdTime|createdTime|body|yes|Valid time|255 Characters|
+|mecHostInfo|mecHostInfo|body|yes|Valid URL|15 Characters|
 
 Example request body:
 ```
@@ -94,11 +93,11 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}
 Method: GET
 ```
 
-|Name|Definition|type|Required|Allowed|
-|---|---|---|---|---|
-|access_token |access token|header |yes|
-|app_package_id|app package id|path|yes|Alphanumeric and must be smaller case|
-|tenant_id|tenant id|path|yes|Valid UUID|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|app_package_id|app package id|path|yes|Alphanumeric and must be smaller case|32 Characters|
+|tenant_id|tenant id|path|yes|Valid UUID|64 Characters|
 
 Example response:
 ```
@@ -132,12 +131,12 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|Allowed|
-|---|---|---|---|---|
-|access_token |access token|header |yes|
-|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|
-|tenant_id|tenant id|path |yes|Valid UUID|
-|appId |app id|path |yes|Alphanumeric and must be smaller case|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|32 Characters|
+|tenant_id|tenant id|path |yes|Valid UUID|64 Characters|
+|appId |app id|path |yes|Alphanumeric and must be smaller case|32 Characters|
 
 Example response:
 ```
@@ -151,10 +150,10 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download
 Method: GET
 ```
 
-|Name|Definition|type|Required|Allowed|
-|---|---|---|---|---|
-|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|
-|tenant_id |tenant id|path |yes|Valid UUID|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|32 Characters|
+|tenant_id |tenant id|path |yes|Valid UUID|64 Characters|
 
 Example response:
 ```
@@ -221,12 +220,12 @@ Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_
 Method: DELETE
 ```
 
-|Name|Definition|type|Required|Allowed|
-|---|---|---|---|---|
-|access_token |access token|header |yes|
-|app_package_id |app package id|path |yes|Alphanumeric and must be smaller case|
-|host_ip|host ip|path |yes|Valid IP address|
-|tenant_id |tenant id|path |yes|Valid UUID|
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|app_package_id |app package id|path |yes|Alphanumeric and must be smaller case|32 Characters|
+|host_ip|host ip|path |yes|Valid IP address|15 Characters|
+|tenant_id |tenant id|path |yes|Valid UUID|64 Characters|
 
 Example response:
 ```
