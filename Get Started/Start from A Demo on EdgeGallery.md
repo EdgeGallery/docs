@@ -20,7 +20,7 @@ Demo
 * 定位服务应用作为服务供应者发布“定位服务”，对外提供生态API，其他服务可以消费“定位服务”<br>
 
 **登录EdgeGallery开发者平台**<br>
-https://daily.developer.edgegallery.org/<br>
+https://daily.developer.edgegallery.org/<br><br>
 **开发准备**<br>
 * 新建一个项目<br>
 ![新建项目](https://images.gitee.com/uploads/images/2020/0927/164937_44bad0e1_7625241.png "屏幕截图.png")
