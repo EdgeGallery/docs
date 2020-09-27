@@ -20,5 +20,5 @@ Demo
 * 定位服务应用作为服务供应者发布“定位服务”，对外提供生态API，其他服务可以消费“定位服务”<br>
 
 **登录EdgeGallery开发者平台**<br>
-https://daily.developer.edgegallery.org/
+https://daily.developer.edgegallery.org/<br>
 **开发准备**
