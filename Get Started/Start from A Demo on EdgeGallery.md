@@ -27,4 +27,6 @@ https://daily.developer.edgegallery.org/<br><br>
 * 选择依赖的平台能力，勾选“人脸识别”<br>
 ![选择平台能力](https://images.gitee.com/uploads/images/2020/0927/165038_8a49d2c2_7625241.png "屏幕截图.png")
 * 选择对应能力版本<br>
+![能力详情](https://images.gitee.com/uploads/images/2020/0927/170533_cd17b611_7625241.png "屏幕截图.png")
+
 
