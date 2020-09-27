@@ -31,4 +31,4 @@ https://daily.developer.edgegallery.org/<br><br>
 * 创建完成后可以测试“人脸识别”服务API<br>
 选择协议类型为“https”，在“upload”API中上传一个人脸图片，然后点击“Execute”，在结果中查看识别结果。<br>
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/172222_95378115_7625241.png "屏幕截图.png")
-
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/172311_0bf298a0_7625241.png "屏幕截图.png")
