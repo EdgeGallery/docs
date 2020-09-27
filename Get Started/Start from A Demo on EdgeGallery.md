@@ -33,4 +33,5 @@ https://daily.developer.edgegallery.org/<br><br>
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/172222_95378115_7625241.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/172311_0bf298a0_7625241.png "屏幕截图.png")<br><br>
 **开发&测试**<br>
-* 下载依赖的插件<br>
+* 下载依赖的插件-pythonPlugin<br>
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/180131_b43bd374_7625241.png "屏幕截图.png")
