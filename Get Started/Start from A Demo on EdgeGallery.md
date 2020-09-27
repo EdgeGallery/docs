@@ -24,7 +24,7 @@ https://daily.developer.edgegallery.org/<br><br>
 **开发准备**<br>
 * 新建一个项目<br>
 ![新建项目](https://images.gitee.com/uploads/images/2020/0927/164937_44bad0e1_7625241.png "屏幕截图.png")
-* 选择平台能力，勾选“人脸识别”<br>
+* 选择依赖的平台能力，勾选“人脸识别”<br>
 ![选择平台能力](https://images.gitee.com/uploads/images/2020/0927/165038_8a49d2c2_7625241.png "屏幕截图.png")
 * 选择对应能力版本<br>
 
