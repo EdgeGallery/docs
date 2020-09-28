@@ -10,7 +10,7 @@ EdgeGallery Introduction
 - [项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery.md)
 - [开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
    
- Version: e.g. v0.9
+ Version: v0.9
 --------------
 
  - Release Date: 2020-09-30
