@@ -1,4 +1,4 @@
-EdgeGallery界面一览
+#EdgeGallery界面一览
 -------------------
 开发者平台：<br>
 ![开发者平台](https://images.gitee.com/uploads/images/2020/0927/153611_db1f101d_7625241.png "屏幕截图.png")<br>
@@ -9,7 +9,7 @@ EdgeGallery界面一览
 MEC管理平台：<br>
 ![MEC管理平台](https://images.gitee.com/uploads/images/2020/0927/153647_d078c1c2_7625241.png "屏幕截图.png")<br>
 
-APP开发流程
+#APP开发流程
 -------------------
 ![开发流程](https://images.gitee.com/uploads/images/2020/0927/155444_5586d113_7625241.png "屏幕截图.png")<br>
 
