@@ -1,7 +1,6 @@
 # EdgeGallery界面一览
 -------------------
 开发者平台：<br>
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/155132_54cd4c34_7625241.png "屏幕截图.png")
 ![开发者平台](https://images.gitee.com/uploads/images/2020/0927/153611_db1f101d_7625241.png "屏幕截图.png")<br>
 
 应用商城：<br>
