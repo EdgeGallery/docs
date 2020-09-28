@@ -13,7 +13,7 @@ The local startup of Appo depends on：
 - DataBase
 - Appo
 ```
-So in order to build a local environment, the final startup sequence is Database -> Appo
+So in order to build a local environment, the final startup sequence is DataBase -> Appo
 
 ### DataBase
 
@@ -33,4 +33,8 @@ So in order to build a local environment, the final startup sequence is Database
 
 ![](/uploads/images/2020/0924/appo-contribution.png "appo-contribution.png")
 
-3. Run AppOrchestratorApplication to start application orchestrator
+3. Update key-store and trust-store path in application.yaml
+
+![](/uploads/images/2020/0924/meo-ssl.png "meo-ssl.png")
+
+4. Run AppOrchestratorApplication to start application orchestrator
