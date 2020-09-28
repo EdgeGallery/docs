@@ -32,12 +32,16 @@ https://daily.developer.edgegallery.org/<br><br>
 选择协议类型为“https”，在“upload”API中上传一个人脸图片，然后点击“Execute”，在结果中查看识别结果。<br>
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/172222_95378115_7625241.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/172311_0bf298a0_7625241.png "屏幕截图.png")<br><br>
-**开发&测试**<br>
+**开发**<br>
 * 下载依赖的插件-pythonPlugin，并导入到IDE<br>
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/180131_b43bd374_7625241.png "屏幕截图.png")
-* 执行插件，会自动生成示例代码（此处以IntelliJ IDEA为例）<br>
-
-* 编写APP代码
+* 执行插件，会自动生成示例代码<br>
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/103403_fc10b6a9_7625241.png "屏幕截图.png")
+* 编写APP代码<br>
+* 构建docker image<br><br>
+**测试**<br>
+* 回到EdgeGallery开发者平台上传image<br>
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104211_03e2c3df_7625241.png "屏幕截图.png")
 
 
 
