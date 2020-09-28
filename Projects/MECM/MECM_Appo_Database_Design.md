@@ -1,5 +1,5 @@
 Database Design
-
+===============
 The APPO database uses an open source PostgreSQL database, and the recommended version is 12.3.
                                     
 - appinstanceinfo: Store app instance information, such as app_instance_id, applcm_host and tenant.

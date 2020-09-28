@@ -1,5 +1,5 @@
 Database Design
-
+=======================
 The Inventory database uses an open source PostgreSQL database, and the recommended version is 12.3.
                                     
 - applcminventory: Store applcm information, such as applcm_id, tenant_id, applcm_ip and applcm_port.
