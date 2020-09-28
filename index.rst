@@ -29,7 +29,7 @@ infrastructure.
    :maxdepth: 1
    :caption: Developer Guide
 
-   Developer Guide <Developer Guide/Local_Developer_Env_Setting_Up>
+   Developer Guide <Developer Guide/ReadMe>
 
 .. toctree::
    :maxdepth: 1
