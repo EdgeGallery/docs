@@ -35,3 +35,5 @@ https://daily.developer.edgegallery.org/<br><br>
 **开发&测试**<br>
 * 下载依赖的插件-pythonPlugin，并导入到IDE<br>
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/180131_b43bd374_7625241.png "屏幕截图.png")
+* 执行插件，会自动生成示例代码（此处以IntelliJ IDEA为例）<br>
+
