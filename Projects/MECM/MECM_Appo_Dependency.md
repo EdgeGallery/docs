@@ -26,7 +26,7 @@ rely
 |commons-pool|commons-pool|1.6|The Apache Software License, Version 2.0|N|
 |org.apache.commons|commons-lang3|3.10|The Apache Software License, Version 2.0|N|
 |com.fasterxml.uuid|java-uuid-generator|3.2.0|The Apache Software License, Version 2.0|N|
-|org.camunda.bpm.webapp|camunda-webapp|classes|7.12.0|The Apache Software License, Version 2.0|N|
+|org.camunda.bpm.webapp|camunda-webapp|7.12.0|The Apache Software License, Version 2.0|N|
 |org.camunda.bpm|camunda-engine-rest-jaxrs2|7.12.0|The Apache Software License, Version 2.0|N|
 |commons-fileupload|commons-fileupload|1.3.3|The Apache Software License, Version 2.0|N|
 |com.fasterxml.jackson.jaxrs|jackson-jaxrs-json-provider|2.11.2|The Apache Software License, Version 2.0|N|
