@@ -34,21 +34,23 @@ https://daily.developer.edgegallery.org/<br><br>
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/172311_0bf298a0_7625241.png "屏幕截图.png")<br><br>
 **开发**<br>
 * 下载依赖的插件-pythonPlugin，并导入到IDE<br>
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/180131_b43bd374_7625241.png "屏幕截图.png")
+![插件](https://images.gitee.com/uploads/images/2020/0927/180131_b43bd374_7625241.png "屏幕截图.png")
 * 执行插件，会自动生成示例代码<br>
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/103403_fc10b6a9_7625241.png "屏幕截图.png")
+![插件运行](https://images.gitee.com/uploads/images/2020/0928/103403_fc10b6a9_7625241.png "屏幕截图.png")
 * 编写APP代码<br>
 * 构建docker image<br><br>
 **测试**<br>
 * 回到EdgeGallery开发者平台上传image<br>
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104313_61e531ce_7625241.png "屏幕截图.png")
+![上传image](https://images.gitee.com/uploads/images/2020/0928/104313_61e531ce_7625241.png "屏幕截图.png")
 * 配置依赖参数<br>
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104414_78804337_7625241.png "屏幕截图.png")
+![配置依赖参数](https://images.gitee.com/uploads/images/2020/0928/104414_78804337_7625241.png "屏幕截图.png")
 * 选择部署节点<br>
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104544_0e90c7e9_7625241.png "屏幕截图.png")
+![选择部署节点](https://images.gitee.com/uploads/images/2020/0928/104544_0e90c7e9_7625241.png "屏幕截图.png")
 * 部署测试<br>
 部署成功后可以使用对应的URL进行应用测试。<br>
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104720_351d5a45_7625241.png "屏幕截图.png")
-
+![部署测试](https://images.gitee.com/uploads/images/2020/0928/104720_351d5a45_7625241.png "屏幕截图.png")<br><br>
+**应用发布**<br>
+点击“测试完成”按钮，选择是否发布应用到APPStore、是否发布应用API能力到EdgeGallery生态系统<br>
+![应用发布](https://images.gitee.com/uploads/images/2020/0928/111041_c5004536_7625241.png "屏幕截图.png")
 
 
