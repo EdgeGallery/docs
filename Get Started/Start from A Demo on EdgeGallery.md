@@ -13,7 +13,7 @@ APP开发流程
 -------------------
 ![开发流程](https://images.gitee.com/uploads/images/2020/0927/155444_5586d113_7625241.png "屏幕截图.png")<br>
 
-Demo
+Demo介绍
 -------------------
 基于EdgeGallery的定位服务开发，展示如何基于EdgeGallery开发者平台进行边缘应用开发<br>
 * 定位服务应用作为服务消费者依赖EdgeGallery平台的“人脸识别服务”<br>
@@ -31,7 +31,7 @@ https://daily.developer.edgegallery.org/<br><br>
 * 创建完成后可以测试“人脸识别”服务API<br>
 选择协议类型为“https”，在“upload”API中上传一个人脸图片，然后点击“Execute”，在结果中查看识别结果。<br>
 ![上传图片](https://images.gitee.com/uploads/images/2020/0927/172222_95378115_7625241.png "屏幕截图.png")
-![识别结果](https://images.gitee.com/uploads/images/2020/0927/172311_0bf298a0_7625241.png "屏幕截图.png")<br>
+![识别结果](https://images.gitee.com/uploads/images/2020/0927/172311_0bf298a0_7625241.png "屏幕截图.png")<br><br>
 **开发**<br>
 * 下载依赖的插件-pythonPlugin，并导入到IDE<br>
 ![插件](https://images.gitee.com/uploads/images/2020/0927/180131_b43bd374_7625241.png "屏幕截图.png")
