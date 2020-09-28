@@ -30,8 +30,8 @@ https://daily.developer.edgegallery.org/<br><br>
 ![能力详情](https://images.gitee.com/uploads/images/2020/0927/170533_cd17b611_7625241.png "屏幕截图.png")
 * 创建完成后可以测试“人脸识别”服务API<br>
 选择协议类型为“https”，在“upload”API中上传一个人脸图片，然后点击“Execute”，在结果中查看识别结果。<br>
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/172222_95378115_7625241.png "屏幕截图.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/172311_0bf298a0_7625241.png "屏幕截图.png")<br><br>
+![上传图片](https://images.gitee.com/uploads/images/2020/0927/172222_95378115_7625241.png "屏幕截图.png")
+![识别结果](https://images.gitee.com/uploads/images/2020/0927/172311_0bf298a0_7625241.png "屏幕截图.png")<br><br>
 **开发**<br>
 * 下载依赖的插件-pythonPlugin，并导入到IDE<br>
 ![插件](https://images.gitee.com/uploads/images/2020/0927/180131_b43bd374_7625241.png "屏幕截图.png")
