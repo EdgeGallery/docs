@@ -19,7 +19,7 @@ So in order to build a local environment, the final startup sequence is DataBase
 
 1. Download and install postgres 12.3 database 
 
-2. Set login name and password, such as postgresql/appo
+2. Set login name and password, such as appo
 
 3. Create a database named appodb
 
