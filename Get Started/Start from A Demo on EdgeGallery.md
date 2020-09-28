@@ -52,7 +52,17 @@ https://daily.developer.edgegallery.org/<br><br>
 **应用发布**<br>
 点击“测试完成”按钮，选择是否发布应用到APPStore、是否发布应用API能力到EdgeGallery生态系统<br>
 ![应用发布](https://images.gitee.com/uploads/images/2020/0928/111041_c5004536_7625241.png "屏幕截图.png")<br>
-访问APPStore：https://daily.appstore.edgegallery.org/<br>
-![应用商城](https://images.gitee.com/uploads/images/2020/0928/111833_bb36fd2b_7625241.png "屏幕截图.png")
+访问APPStore：https://daily.appstore.edgegallery.org/，可以找到发布的应用。<br>
+![应用商城](https://images.gitee.com/uploads/images/2020/0928/111833_bb36fd2b_7625241.png "屏幕截图.png")<br><br>
+**应用部署管理**<br>
+访问MECM：https://daily.mecm.edgegallery.org/<br>
+![MECM](https://images.gitee.com/uploads/images/2020/0928/112141_2f32426e_7625241.png "屏幕截图.png")<br>
+* 分发应用到边缘节点<br>
+![应用分发](https://images.gitee.com/uploads/images/2020/0928/112324_3a0ec58b_7625241.png "屏幕截图.png")
+* 应用部署<br>
+![应用部署1](https://images.gitee.com/uploads/images/2020/0928/112428_c52a06de_7625241.png "屏幕截图.png")<br>
+![应用部署2](https://images.gitee.com/uploads/images/2020/0928/112518_2fa4ad3a_7625241.png "屏幕截图.png")
+
+
 
 
