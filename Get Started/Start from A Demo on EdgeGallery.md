@@ -47,7 +47,7 @@ https://daily.developer.edgegallery.org/<br><br>
 * 选择部署节点<br>
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104544_0e90c7e9_7625241.png "屏幕截图.png")
 * 部署测试<br>
-部署成功后可以使用对应的URL进行应用测试。
+部署成功后可以使用对应的URL进行应用测试。<br>
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104720_351d5a45_7625241.png "屏幕截图.png")
 
 
