@@ -37,6 +37,7 @@ https://daily.developer.edgegallery.org/<br><br>
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0927/180131_b43bd374_7625241.png "屏幕截图.png")
 * 执行插件，会自动生成示例代码（此处以IntelliJ IDEA为例）<br>
 
+* 编写APP代码
 
 
 
