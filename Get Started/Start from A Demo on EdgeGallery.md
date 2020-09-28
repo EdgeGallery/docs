@@ -61,8 +61,9 @@ https://daily.developer.edgegallery.org/<br><br>
 ![应用分发](https://images.gitee.com/uploads/images/2020/0928/112324_3a0ec58b_7625241.png "屏幕截图.png")
 * 应用部署<br>
 ![应用部署1](https://images.gitee.com/uploads/images/2020/0928/112428_c52a06de_7625241.png "屏幕截图.png")<br>
-![应用部署2](https://images.gitee.com/uploads/images/2020/0928/112518_2fa4ad3a_7625241.png "屏幕截图.png")
+![应用部署2](https://images.gitee.com/uploads/images/2020/0928/112518_2fa4ad3a_7625241.png "屏幕截图.png")<br><br><br>
 
+详细信息可参考视频：
 
 
 
