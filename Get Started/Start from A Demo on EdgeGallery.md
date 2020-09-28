@@ -41,7 +41,14 @@ https://daily.developer.edgegallery.org/<br><br>
 * 构建docker image<br><br>
 **测试**<br>
 * 回到EdgeGallery开发者平台上传image<br>
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104211_03e2c3df_7625241.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104313_61e531ce_7625241.png "屏幕截图.png")
+* 配置依赖参数<br>
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104414_78804337_7625241.png "屏幕截图.png")
+* 选择部署节点<br>
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104544_0e90c7e9_7625241.png "屏幕截图.png")
+* 部署测试<br>
+部署成功后可以使用对应的URL进行应用测试。
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0928/104720_351d5a45_7625241.png "屏幕截图.png")
 
 
 
