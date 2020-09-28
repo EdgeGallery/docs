@@ -7,7 +7,8 @@ Release Notes
 
 EdgeGallery Introduction
 ------------------------
-[Start from a Demo on EdgeGallery](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery.md)
+- [项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery.md)
+- [开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
    
  Version: e.g. v0.9
 --------------
@@ -17,6 +18,8 @@ EdgeGallery Introduction
 
 
 **New Features**
+
+[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)
 
 * MEP/MECM网络隔离
 * MEP支持DNS配置
