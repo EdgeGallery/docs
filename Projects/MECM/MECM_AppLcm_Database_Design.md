@@ -1,5 +1,5 @@
 Database Design
-=============
+===============
 The LcmController database uses an open source PostgreSQL database, and the recommended version is 12.2. Two database
  tables currently designed and applied:
                                     
