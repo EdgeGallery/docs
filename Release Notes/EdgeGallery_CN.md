@@ -23,7 +23,7 @@ EdgeGallery Introduction
 * 支持All-in-One部署
 * 支持离线部署
 * 九大维度安全优化
-* MECM界面优化
+* MECM界面/拓扑管理/资源管理优化
 * （PoC）kubeedge集成验证
 
 
