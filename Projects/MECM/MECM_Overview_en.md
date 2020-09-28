@@ -1,4 +1,5 @@
-## Overview
+Overview
+============
 MECM (multi access edge compute manager) provides orchestration and life cycle management of application in
  edgegallery architecture. MECM provides various features including application on-boarding, application orchestration by selecting
   appropriate edge based on deployment strategy, application life cycle management, homing and placement of application 
@@ -7,14 +8,12 @@ MECM (multi access edge compute manager) provides orchestration and life cycle m
 ## Architecture
 ![.](/uploads/images/2020/0924/mecm-architecture.png "mecm-architecture.png")
 
-## MECM Components
 ## APM
  Application package manager enables edgegallery to distribute/on-board applications to edge repositories by
   downloading application packages from appstore. 
   
 ![.](/uploads/images/2020/0924/mecm_apm_architecture.png "mecm_apm_architecture.png")
 
-## APM Components
 ### API Handler
 
 * Provides northbound interfaces for application package on-boarding and management.     
@@ -33,7 +32,6 @@ MECM (multi access edge compute manager) provides orchestration and life cycle m
 
 ![.](/uploads/images/2020/0924/mecm_appo_architecture.png "mecm_appo_architecture.png")
 
-## Appo Components
 ### API Handler
 
 * Provides northbound interfaces for application LCM operations.     
@@ -56,14 +54,13 @@ The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in t
 
 ![.](/uploads/images/2020/0924/mecm-applcm-diagram.png "mecm-applcm-diagram.png") 
 
-## LCM controller Components
-## API Handler
+### API Handler
  Provides northbound interfaces for application LCM operations.
 
-## K8s Plugin adapter
+### K8s Plugin adapter
  K8s plugin adapter communicates with K8s plugin to perform LCM operation on K8s environment.
 
-## K8s Plugin
+### K8s Plugin
  K8s plugin is responsible for interaction with kubernetes infra for LCM operations.
 
 
