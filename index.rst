@@ -17,7 +17,7 @@ infrastructure.
    :maxdepth: 1
    :caption: Getting Started
 
-   Get Started <Get Started/README.md>
+   Get Started <Get Started/Start from A Demo on EdgeGallery>
 
 .. toctree::
    :maxdepth: 1
