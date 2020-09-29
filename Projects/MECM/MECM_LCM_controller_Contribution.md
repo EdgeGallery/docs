@@ -11,7 +11,6 @@ This section will guide developers to build LCM controller module locally and he
 The local startup of LCM controller depends on：
 ```
 - DataBase
-- LCMController
 ```
 In order to build a local environment, the final startup sequence is DataBase -> LCMController
 

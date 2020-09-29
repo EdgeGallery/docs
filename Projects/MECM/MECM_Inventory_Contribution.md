@@ -12,7 +12,6 @@ This section will guide developers to build Inventory module locally and help de
 The local startup of Inventory depends on：
 ```
 - DataBase
-- Inventory
 ```
 In order to build a local environment, the final startup sequence is DataBase -> Inventory
 
