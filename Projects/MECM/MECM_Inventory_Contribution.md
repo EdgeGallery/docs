@@ -26,7 +26,7 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 ![](/uploads/images/2020/0924/inventory-db.png "inventory-db.png")
 
-### Application orchestrator
+### Inventory
 
 1. Download Inventory code
 

@@ -25,7 +25,7 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 ![](/uploads/images/2020/0924/lcmcontroller-db.png "lcmcontroller-db.png")
 
-### Application orchestrator
+### LCM contorller
 
 1. Download LCM controller code
 
