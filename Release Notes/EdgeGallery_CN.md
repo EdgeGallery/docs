@@ -17,9 +17,23 @@ EdgeGallery Introduction
  - Image Version: v0.9
 
 **新开源仓库列表**
-| **类别** | **类型** | **URL** | **说明** |
-| -------- | -------- | ------- | ------- |
-|helm-charts|部署|https://gitee.com/edgegallery/helm-charts|EdgeGallery部署脚本|
+| **模块** | **名称**|**类型** | **URL** | **说明** |
+| -------- | ------- | -------- | ------- | ------- |
+|helm-charts|helm-charts|部署|https://gitee.com/edgegallery/helm-charts|EdgeGallery部署脚本|
+|website-gateway|website-gateway|产品仓|https://gitee.com/edgegallery/website-gateway|前台封装|
+|user-mgmt|user-mgmt|产品仓|https://gitee.com/edgegallery/user-mgmt|usermgmt后台|
+|user-mgmt|user-mgmt-fe|产品仓|https://gitee.com/edgegallery/user-mgmt-fe|usermgmt前台|
+|mecm|mecm-fe|产品仓|https://gitee.com/edgegallery/mecm-fe|MECM前台|
+|mecm|mecm-applcm|产品仓|https://gitee.com/edgegallery/mecm-applcm|MECM应用生命周期管理|
+|mecm|mecm-apm|产品仓|https://gitee.com/edgegallery/mecm-apm|MECM应用包管理|
+|mecm|mecm-inventory|产品仓|https://gitee.com/edgegallery/mecm-inventory|MECM存量管理|
+|mecm|mecm-appo|产品仓|https://gitee.com/edgegallery/mecm-appo|MECM应用编排|
+|developer|developer-be|产品仓|https://gitee.com/edgegallery/developer-be|developer后台|
+|developer|developer-fe|产品仓|https://gitee.com/edgegallery/developer-fe|developer前台|
+|appstore|appstore-fe|产品仓|https://gitee.com/edgegallery/appstore-fe|appstore前台|
+|appstore|appstore-be|产品仓|https://gitee.com/edgegallery/appstore-be|appstore后台|
+|platform-mgmt|platform-mgmt|产品仓|https://gitee.com/edgegallery/platform-mgmt|安装k8/docker|
+|docs|docs|产品仓|https://gitee.com/edgegallery/docs|文档|
 
 **New Features**
 
