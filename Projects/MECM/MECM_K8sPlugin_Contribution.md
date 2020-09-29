@@ -22,7 +22,7 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 3. Create a database named k8splugindb
 
-![](/uploads/images/2020/0924/lcmcontroller-db.png "k8sPlugin-db.png")
+![](/uploads/images/2020/0924/k8sPlugin-db.png "k8sPlugin-db.png")
 
 ### K8s plugin
 
