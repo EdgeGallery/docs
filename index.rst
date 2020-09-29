@@ -1,4 +1,4 @@
-Welcome to Edgegallery's documentation!
+Welcome to EdgeGallery's documentation!
 =======================================
 
 The EdgeGallery community focuses on the 5G MEC platform framework,
@@ -10,7 +10,7 @@ ecosystem based on the heterogeneous differentiation of compatible edge
 infrastructure.
 
 .. toctree::
-   Edgegallery Home <http://www.edgegallery.org/>
+   EdgeGallery Home <http://www.edgegallery.org/>
 
 
 .. toctree::
