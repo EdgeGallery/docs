@@ -14,7 +14,7 @@ rely
 |org.springframework.boot|spring-boot-starter-tomcat|2.3.3.RELEASE|Apache License, Version 2.0|N|
 |org.apache.tomcat.embed|tomcat-embed-core|9.0.37|Apache License, Version 2.0|N|
 |org.apache.tomcat.embed|tomcat-embed-websocket|9.0.37|Apache License, Version 2.0|N|
-|org.springframework|spring-web||5.2.8.RELEASE|Apache License, Version 2.0|N|
+|org.springframework|spring-web|5.2.8.RELEASE|Apache License, Version 2.0|N|
 |org.springframework|spring-webmvc|5.2.8.RELEASE|Apache License, Version 2.0|N|
 |org.springframework.boot|spring-boot-starter-validation|2.3.3.RELEASE|Apache License, Version 2.0|Y|
 |org.springframework.boot|spring-boot-starter-web|2.3.3.RELEASE|compile|Y|
