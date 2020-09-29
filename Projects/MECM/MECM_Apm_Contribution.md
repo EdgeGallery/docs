@@ -9,10 +9,9 @@ This section will guide developers to build APM module locally and help develope
  develop
  code 
 
-The local startup of Inventory depends on：
+The local startup of APM depends on：
 ```
 - DataBase
-- APM
 ```
 In order to build a local environment, the final startup sequence is DataBase -> APM
 

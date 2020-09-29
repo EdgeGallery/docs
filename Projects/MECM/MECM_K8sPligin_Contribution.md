@@ -11,7 +11,6 @@ This section will guide developers to build k8s plugin module locally and help d
 The local startup of k8s plugin depends on：
 ```
 - DataBase
-- K8sPlugin
 ```
 In order to build a local environment, the final startup sequence is DataBase -> K8sPlugin
 

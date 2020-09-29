@@ -11,9 +11,8 @@ This section will guide developers to build Appo module locally and help develop
 The local startup of Appo depends on：
 ```
 - DataBase
-- Appo
 ```
-So in order to build a local environment, the final startup sequence is DataBase -> Appo
+In order to build a local environment, the final startup sequence is DataBase -> Appo
 
 ### DataBase
 
