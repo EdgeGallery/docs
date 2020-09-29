@@ -55,7 +55,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  **Known Issues**
 
- 无
+  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20.md)
 
  **Security Notes**
 
