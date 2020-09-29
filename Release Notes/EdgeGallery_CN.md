@@ -16,6 +16,10 @@ EdgeGallery Introduction
  - Release Date: 2020-09-30
  - Image Version: v0.9
 
+**新开源仓库列表**
+| **类别** | **类型** | **URL** | **说明** |
+| -------- | -------- | ------- | ------- |
+|helm-charts|部署|https://gitee.com/edgegallery/helm-charts|EdgeGallery部署脚本|
 
 **New Features**
 
