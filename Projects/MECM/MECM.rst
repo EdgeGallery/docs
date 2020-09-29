@@ -13,4 +13,7 @@ MECM
    Inventory数据库设计<MECM_Inventory_Database_Design>
    APPO数据库设计<MECM_Appo_Database_Design>
    使用指导 <MECM Product Document>
+   APM如何贡献<MECM_Apm_Contribution>
+   APPO如何贡献<MECM_Appo_Contribution>
+   Inventory如何贡献<MECM_Inventory_Contribution>
    端口矩阵 <MECM Port Metrix>
