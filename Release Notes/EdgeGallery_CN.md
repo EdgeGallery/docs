@@ -67,6 +67,48 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  *Known Vulnerabilities in Used Modules*
 
+EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行修复：
+
+- Appstore:
+  | Component  | Version  | CVE  |
+  |------------|----------|------|
+  | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
+  | log4j (indirect dependency) | 1.2.17 | CVE-2019-17571 |
+  | spring-jdbc (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
+  | spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258 |
+
+- Developer:
+  | Component  | Version  | CVE  |
+  |------------|----------|------|
+  | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
+  | spring-beans (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
+  | spring-security-config (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258, CVE-2020-5398 |
+  | spring-security-core | 5.3.4.RELEASE | CVE-2018-1258 |
+  | lodash | 4.17.13 | CVE-2020-8203 |
+  | minimatch | 3.0.4 | NPM-118 |
+
+- User-mgmt:
+  | Component  | Version  | CVE  |
+  |------------|----------|------|
+  | rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
+  | netty-tcnative-boringssl-static (indirect dependency) | 2.0.31.Final | CVE-2015-2156 |
+  | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
+  | lodash | 4.17.20 | NPM-1065, NPM-557, NPM-7823 |
+  | minimatch | 3.0.4 | NPM-118 |
+
+- Website-gateway:
+  | Component  | Version  | CVE  |
+  |------------|----------|------|
+  | log4j | 1.2.17 | CVE-2019-17571 |
+  | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
+
+- MECM:
+  | Component  | Version  | CVE  |
+  |------------|----------|------|
+  | lodash | 4.17.13 | CVE-2020-8203 |
+  | minimatch | 3.0.4 | NPM-118 |
+
+
  **Upgrade Notes**
 
  N/A
