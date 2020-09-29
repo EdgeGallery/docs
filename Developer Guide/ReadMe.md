@@ -10,7 +10,7 @@ APPStore [请参考](https://gitee.com/edgegallery/docs/blob/master/Projects/APP
 
 Developer [请参考](https://gitee.com/edgegallery/docs/blob/master/Projects/Developer/Developer_Contribution.md)
 
-MECM 请参考：[APM](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Apm_Contribution.md) [APPO](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Appo_Contribution.md) [Inventory](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Inventory_Contribution.md) [APPLCM](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_LCM_controller_Contribution.md)
+MECM 请参考：[APM](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Apm_Contribution.md)  [APPO](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Appo_Contribution.md)  [Inventory](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Inventory_Contribution.md)  [APPLCM](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_LCM_controller_Contribution.md)
 
 MEP [请参考](https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/MEP_Contribution.md)
 
