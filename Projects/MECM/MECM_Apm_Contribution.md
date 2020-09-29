@@ -26,7 +26,7 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 ![](/uploads/images/2020/0924/apm-db.png "apm-db.png")
 
-### Application orchestrator
+### Application package manager
 
 1. Download APM code
 
