@@ -3,21 +3,19 @@
 
 ## EdgeGallery 安装指导
 
-请参考[链接](https://gitee.com/edgegallery/platform-mgmt/blob/master/README%2Emd)
+[All In One](https://gitee.com/edgegallery/platform-mgmt/blob/master/README%2Emd)
 
 ## 如何贡献
-APPStore <Projects/APPSTORE/AppStore_Contribution>
+- [APPStore](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_Contribution%2Emd)
 
-Developer <Projects/Developer/Developer_Contribution>
+- [Developer](https://gitee.com/edgegallery/docs/blob/master/Projects/Developer/Developer_Contribution%2Emd)
 
-MECM_APM <Projects/MECM/MECM_Apm_Contribution>
+- MECM
+	- [APM](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Apm_Contribution%2Emd)  
+	- [APPO](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Appo_Contribution%2Emd)  
+	- [Inventory](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Inventory_Contribution%2Emd)  
+	- [APPLCM](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_LCM_controller_Contribution%2Emd)
 
-MECM_APPO <Projects/MECM/MECM_Appo_Contribution>
+- [MEP](https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/MEP_Contribution%2Emd)
 
-MECM_Inventory <Projects/MECM/MECM_Inventory_Contribution>
-
-MECM_APPLCM <Projects/MECM/MECM_LCM_controller_Contribution>
-
-MEP <Projects/MEP/MEP_Contribution>
-
-User Management <Projects/APPSTORE/User_Contribution>
+- [User Management](https://gitee.com/edgegallery/docs/blob/master/Projects/User%20Management/User_Contribution%2Emd)
