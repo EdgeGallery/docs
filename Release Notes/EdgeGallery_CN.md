@@ -121,4 +121,4 @@ EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行�
 
  **Other**
 
- N/A
+ 经过安全工作组评审，Plugins仓库遗留问题单[I1XA0N](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N)将在R0.9版本发布后通过补丁形式修复，详细情况请参见安全工作组[会议纪要](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020.md)
