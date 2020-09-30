@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'EdgeGallery'
+project = u'EdgeGallery Documentation'
 copyright = u'2020, EdgeGallery'
 author = u'EdgeGallery'
 
@@ -101,7 +101,7 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-html_logo = 'images/EdgeGallery-logo-only.png'
+html_logo = 'images/edgegallery-logo-only.png'
 html_favicon = 'images/favicon.png'
 
 
