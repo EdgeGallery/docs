@@ -1,13 +1,10 @@
 Welcome to EdgeGallery's documentation!
 =======================================
 
-The EdgeGallery community focuses on the 5G MEC platform framework,
-and builds the basic framework of resources, applications, security,
-and management of the MEC edge through open source collaboration and
-the de facto standard for network open services, and realizes
-interconnection with public clouds. Build a unified MEC application
-ecosystem based on the heterogeneous differentiation of compatible edge
-infrastructure.
+EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边缘的资源、应
+用、安全、管理的基础框架和网络开放服务的事实标准，并实现同公有云的互联互通。
+在兼容边缘基础设施异构差异化的基础上，构建起统一的MEC应用生态系统。
+
 
 .. toctree::
    EdgeGallery Home <http://www.edgegallery.org/>
