@@ -40,7 +40,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 [ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)
 
-* MEP/MECM网络隔离
+* All-in-One MEP/MECM网络隔离
 * MEP支持DNS配置
 * 支持All-in-One部署
 * 支持离线部署
