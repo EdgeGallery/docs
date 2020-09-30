@@ -15,6 +15,8 @@ User-mgmt模块主要包含四个模块：
 - User-mgmt：提供用户账号管理，例如获取/更改用户信息，密码找回等服务；
 - SMS：提供短信验证服务。
 
+
+
 ## User-mgmt和其他模块之间的关系
 
 User-mgmt是EdgeGallery的用户管理模块：
