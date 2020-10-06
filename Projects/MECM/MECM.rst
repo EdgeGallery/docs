@@ -4,6 +4,8 @@ MECM
    :maxdepth: 3
 
    概述 <MECM_Overview_en>
+   Architecture建筑<MECM_Architecture_en>
+   Interface Design界面设计<MECM_Interface_Design_en>
    APM接口设计<Apm_Interfaces_en>
    Applcm接口设计<Applcm_Interfaces_en>
    Inventory接口设计<Inventory_Interfaces_en>
