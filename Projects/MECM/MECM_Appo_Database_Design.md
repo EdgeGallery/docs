@@ -1,4 +1,4 @@
-Database Design
+Appo Database Design
 ===============
 The APPO database uses an open source PostgreSQL database, and the recommended version is 12.3.
                                     

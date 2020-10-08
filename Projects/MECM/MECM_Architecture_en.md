@@ -40,10 +40,6 @@ The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in t
 
 ![.](/uploads/images/2020/0924/mecm_appo_process_flow.png "mecm_appo_process_flow.png")
 
-## Inventory
- Inventory provides configuration store for external system registration and also maintains resource information and
-  topology view.
-
 ## LCM controller
  LCM controller enables edgegallery to deploy and run applications on multiple infrastructure environments (ex. VM, K8s
   etc...) by selecting appropriate plugin adapter. 

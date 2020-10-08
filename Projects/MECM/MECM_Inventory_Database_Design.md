@@ -1,4 +1,4 @@
-Database Design
+Inventory Database Design
 =======================
 The Inventory database uses an open source PostgreSQL database, and the recommended version is 12.3.
                                     
