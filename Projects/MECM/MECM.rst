@@ -23,7 +23,7 @@ Interface Designs界面设计
    :maxdepth: 3
 
    Apm Interfaces介面<Apm_Interfaces_en>
-   Applcm Interfaces介面<Apm_Interfaces_en>
+   Applcm Interfaces介面<Applcm_Interfaces_en>
    Appo Interfaces介面<Appo_Interfaces_en>
    Inventory Interfaces介面<Inventory_Interfaces_en>
 
