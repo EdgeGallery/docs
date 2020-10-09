@@ -2,21 +2,7 @@ Applcm Interface
 ==============
 The document is for the Applcm project, there is one part of interfaces in the project.
 
-- [Applcm Interface](#applcm-interface)
-  - [1. Applcm Controller](#1-applcm-controller)
-    - [1.1 Upload Config File](#11-upload-config-file)
-    - [1.2 Delete Config File](#12-delete-config-file)
-    - [1.3 Instantiate Application](#13-instantiate-application)
-    - [1.4 Terminates Application](#14-terminates-application)
-    - [1.5 Query](#15-query)
-    - [1.6 Query Kpi](#16-query-kpi)
-    - [1.7 Query MepCapabilities](#17-query-mepcapabilities)
-
-## 1. Applcm Controller
-
-Operation for applcm system
-
-### 1.1 Upload Config File
+### Upload Config File
 
 Upload Config File
 
@@ -46,7 +32,7 @@ Example response:
 ]
 ```
 
-### 1.2 Delete Config File
+### Delete Config File
 Removes the config file
 ```
 Resource URI: /lcmcontroller/v1/configuration
@@ -63,7 +49,7 @@ Example response:
 200 OK
 ```
 
-### 1.3 Instantiate Application
+### Instantiate Application
 Application instantiated
 ```
 Resource URI: /lcmcontroller/v1/app_instance/:appInstanceId/instantiate
@@ -86,7 +72,7 @@ Example response:
   }
 ```
 
-### 1.4 Terminates Application
+### Terminates Application
 Terminates application instance id
 ```
 Resource URI: /lcmcontroller/v1/app_instances/:appInstanceId/terminate
@@ -104,7 +90,7 @@ Example response:
 200 OK
 ```
 
-### 1.5 Query
+### Query
 Get the statistics information
 ```
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId
@@ -125,7 +111,7 @@ Example response:
   }
 ```
 
-### 1.6 Query Kpi
+### Query Kpi
 Get cpu , memory and file system size
 ```
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/hosts/:hostIp/kpi
@@ -146,7 +132,7 @@ Example response:
   }
 ```
 
-### 1.7 Query MepCapabilities
+### Query MepCapabilities
 Get Mep Capabilities
 ```
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/hosts/:hostIp/mep_capabilities
