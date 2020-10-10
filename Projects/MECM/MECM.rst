@@ -15,7 +15,7 @@ Architecture
 .. toctree::
    :maxdepth: 3
 
-    MECM Architecture建筑<MECM_Architecture_en>
+    MECM Architecture架构<MECM_Architecture_en>
 
 Interface Designs界面设计
 ============
