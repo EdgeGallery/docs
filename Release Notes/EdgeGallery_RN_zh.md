@@ -19,10 +19,10 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 **新开源仓库列表**<br>
 | 模块 | 名称|类型 | URL | 说明 |
-| -------- | ------- | -------- | ------- | ------- |
-|helm-charts|helm-charts|部署|https://gitee.com/edgegallery/helm-charts|EdgeGallery部署脚本|
-|website-gateway|website-gateway|产品仓|https://gitee.com/edgegallery/website-gateway|前台封装|
-|user-mgmt|user-mgmt|产品仓|https://gitee.com/edgegallery/user-mgmt|usermgmt后台|rea
+|---|---|---|---|---|
+|helm-charts|helm-charts|部署|https://gitee.com/edgegallery/helm-charts|EdgeGallery部署脚本|<br>
+|website-gateway|website-gateway|产品仓|https://gitee.com/edgegallery/website-gateway|前台封装|<br>
+|user-mgmt|user-mgmt|产品仓|https://gitee.com/edgegallery/user-mgmt|usermgmt后台|
 |user-mgmt|user-mgmt-fe|产品仓|https://gitee.com/edgegallery/user-mgmt-fe|usermgmt前台|
 |mecm|mecm-fe|产品仓|https://gitee.com/edgegallery/mecm-fe|MECM前台|
 |mecm|mecm-applcm|产品仓|https://gitee.com/edgegallery/mecm-applcm|MECM应用生命周期管理|
@@ -32,7 +32,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 |developer|developer-be|产品仓|https://gitee.com/edgegallery/developer-be|developer后台|
 |developer|developer-fe|产品仓|https://gitee.com/edgegallery/developer-fe|developer前台|
 |appstore|appstore-fe|产品仓|https://gitee.com/edgegallery/appstore-fe|appstore前台|
-|appstore|appstore-be|产品仓|https://gitee.com/edgegallery/appstore-be|appstore后台|
+|appstore|appstore-be|产品仓|https://gitee.com/edgegallery/appstore-be|appstore后台|<br>
 |platform-mgmt|platform-mgmt|产品仓|https://gitee.com/edgegallery/platform-mgmt|安装k8/docker|
 |docs|docs|产品仓|https://gitee.com/edgegallery/docs|文档|
 
@@ -73,7 +73,7 @@ EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行�
 
 - Appstore:<br>
   | Component  | Version  | CVE  |
-  |------------|----------|------|
+  |---|---|---|
   | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
   | log4j (indirect dependency) | 1.2.17 | CVE-2019-17571 |
   | spring-jdbc (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
@@ -81,7 +81,7 @@ EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行�
 
 - Developer:<br>
   | Component  | Version  | CVE  |
-  |------------|----------|------|
+  |---|---|---|
   | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
   | spring-beans (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
   | spring-security-config (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258, CVE-2020-5398 |
@@ -91,7 +91,7 @@ EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行�
 
 - User-mgmt:<br>
   | Component  | Version  | CVE  |
-  |------------|----------|------|
+  |---|---|---|
   | rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
   | netty-tcnative-boringssl-static (indirect dependency) | 2.0.31.Final | CVE-2015-2156 |
   | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
@@ -100,13 +100,13 @@ EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行�
 
 - Website-gateway:<br>
   | Component  | Version  | CVE  |
-  |------------|----------|------|
+  |---|---|---|
   | log4j | 1.2.17 | CVE-2019-17571 |
   | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
 
 - MECM:<br>
   | Component  | Version  | CVE  |
-  |------------|----------|------|
+  |---|---|---|
   | lodash | 4.17.13 | CVE-2020-8203 |
   | minimatch | 3.0.4 | NPM-118 |
 
