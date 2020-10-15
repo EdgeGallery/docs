@@ -8,7 +8,7 @@ Release Notes
 EdgeGallery Introduction
 ------------------------
 EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用和应用开发者的端到端解决方案，对于APP应用来说除支持应用运行的基础MEP平台外，还提供APP应用管理系统（MEC Manager，极简管理面，包括MEPM以及MEAO的部分功能），能够对应用进行端到端生命周期管理，提供X86应用向ARM迁移的工具链，支持应用平滑的跨平台迁移和调优。对应用开发者来说，提供完整的应用开发IDE环境和集成验证环境，为应用开发者提供一站式开发体验，同时通过APP Store功能，对应用开发者开发的APP提供标准的准入验证流程。
-- [项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery.md)
+- [项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)
 - [开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
    
  Version: v0.9
@@ -53,21 +53,21 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  **Bug Fixes**
 
- 参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20.md)
+ 参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  **Known Issues**
 
-  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20.md)
+  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  **Security Notes**
 
  *Fixed Security Issues*
 
-  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20.md)
+  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  *Known Security Issues*
 
-  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20.md)
+  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  *Known Vulnerabilities in Used Modules*
 
@@ -134,4 +134,4 @@ EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行�
 
  **Other**
 
- 经过安全工作组评审，Plugins仓库遗留问题单[I1XA0N](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N)将在R0.9版本发布后通过补丁形式修复，详细情况请参见安全工作组[会议纪要](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020.md)
+ 经过安全工作组评审，Plugins仓库遗留问题单[I1XA0N](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N)将在R0.9版本发布后通过补丁形式修复，详细情况请参见安全工作组[会议纪要](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)
