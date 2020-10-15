@@ -75,12 +75,13 @@ EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行�
 
 - Appstore:
 
-| Component                                  | Version       | CVE     |
-|--------------------------------------------|---------------|----------------------------------------------------------------|
-| netty-transport (indirect dependency)      | 4.1.36.Final  | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
-| log4j (indirect dependency)                | 1.2.17        | CVE-2019-17571                                                 |
-| spring-jdbc (indirect dependency)          | 5.1.8.RELEASE | CVE-2020-5398                                                  |
-| spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258                                                  |
+
+  | Component  | Version  | CVE  |
+  |---|---|---|
+  | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
+  | log4j (indirect dependency) | 1.2.17 | CVE-2019-17571 |
+  | spring-jdbc (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
+  | spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258 |
 
 
 - Developer:
