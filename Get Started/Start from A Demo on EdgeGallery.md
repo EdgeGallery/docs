@@ -1,17 +1,17 @@
 # EdgeGallery界面一览
 -------------------
 开发者平台：<br>
-![](/uploads/images/2020/0927/developer_home_page.png "屏幕截图.png")<br>
+![](/uploads/images/2020/0927/developer_home_page.png "开发者平台.png")<br>
 
 应用商城：<br>
-![](/uploads/images/2020/0927/appstore_home_page.png "屏幕截图.png")<br>
+![](/uploads/images/2020/0927/appstore_home_page.png "应用商城.png")<br>
 
 MEC管理平台：<br>
-![](/uploads/images/2020/0927/mecm_home_page.png "屏幕截图.png")<br>
+![](/uploads/images/2020/0927/mecm_home_page.png "MECM管理平台.png")<br>
 
 # APP开发流程
 -------------------
-![](/uploads/images/2020/0927/development_flow.png "屏幕截图.png")<br>
+![](/uploads/images/2020/0927/development_flow.png "开发流程图.png")<br>
 
 # Demo介绍
 -------------------
@@ -23,16 +23,16 @@ MEC管理平台：<br>
 https://daily.developer.edgegallery.org/<br><br>
 ## 开发准备
 * 新建一个项目<br>
-![](/uploads/images/2020/0927/create_project.png "屏幕截图.png")
+![](/uploads/images/2020/0927/create_project.png "新建项目.png")
 * 选择依赖的平台能力，勾选“人脸识别”<br>
-![](/uploads/images/2020/0927/create_project_select_service.png "屏幕截图.png")
+![](/uploads/images/2020/0927/create_project_select_service.png "选择依赖的平台能力.png")
 * 选择对应能力版本<br>
-![](/uploads/images/2020/0927/create_project_select_service_version.png "屏幕截图.png")<br><br>
+![](/uploads/images/2020/0927/create_project_select_service_version.png "选择平台能力版本.png")<br><br>
 ## 开发
 * 下载依赖的插件-pythonPlugin，并导入到IDE<br>
-![](/uploads/images/2020/0927/180131_b43bd374_7625241.png "屏幕截图.png")
+![](/uploads/images/2020/0927/download_plugin.png "下载插件.png")
 * 执行插件，会自动生成示例代码<br>
-![](/uploads/images/2020/0927/103403_fc10b6a9_7625241.png "屏幕截图.png")
+![](/uploads/images/2020/0927/execute_plugin.png "执行插件生成示例代码.png")
 * 编写APP代码<br>
 * 构建docker image<br><br>
 ## 部署测试
