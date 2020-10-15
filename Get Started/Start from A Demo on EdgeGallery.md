@@ -4,7 +4,7 @@
 ![](/uploads/images/2020/0927/developer_home_page_1.png "屏幕截图.png")<br>
 
 应用商城：<br>
-![](/uploads/images/2020/0927/153633_8db14480_7625241.png "屏幕截图.png")<br>
+![](/uploads/images/2020/0927/appstore_home_page.png "屏幕截图.png")<br>
 
 MEC管理平台：<br>
 ![](/uploads/images/2020/0927/153647_d078c1c2_7625241.png "屏幕截图.png")<br>
