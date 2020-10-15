@@ -18,11 +18,11 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
  - Image Version: v0.9
 
 **新开源仓库列表**<br>
-| **模块** | **名称**|**类型** | **URL** | **说明** |
+| 模块 | 名称|类型 | URL | 说明 |
 | -------- | ------- | -------- | ------- | ------- |
 |helm-charts|helm-charts|部署|https://gitee.com/edgegallery/helm-charts|EdgeGallery部署脚本|
 |website-gateway|website-gateway|产品仓|https://gitee.com/edgegallery/website-gateway|前台封装|
-|user-mgmt|user-mgmt|产品仓|https://gitee.com/edgegallery/user-mgmt|usermgmt后台|
+|user-mgmt|user-mgmt|产品仓|https://gitee.com/edgegallery/user-mgmt|usermgmt后台|rea
 |user-mgmt|user-mgmt-fe|产品仓|https://gitee.com/edgegallery/user-mgmt-fe|usermgmt前台|
 |mecm|mecm-fe|产品仓|https://gitee.com/edgegallery/mecm-fe|MECM前台|
 |mecm|mecm-applcm|产品仓|https://gitee.com/edgegallery/mecm-applcm|MECM应用生命周期管理|
