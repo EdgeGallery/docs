@@ -1,8 +1,7 @@
 # EdgeGallery界面一览
 -------------------
 开发者平台：<br>
-![](/uploads/images/2020/0927/153611_db1f101d_7625241.png "屏幕截图.png")<br>
-![](/uploads/images/2020/0927/153611_db1f101d_7625242.png "屏幕截图.png")<br>
+![](/uploads/images/2020/0927/developer_home_page_1.png "屏幕截图.png")<br>
 
 应用商城：<br>
 ![](/uploads/images/2020/0927/153633_8db14480_7625241.png "屏幕截图.png")<br>
