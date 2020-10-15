@@ -20,7 +20,7 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
    :maxdepth: 1
    :caption: Release Notes
 
-   Release Details <Release Notes/EdgeGallery_RN>
+   Release Details <Release Notes/EdgeGallery_RN_zh>
 
 .. toctree::
    :maxdepth: 1
