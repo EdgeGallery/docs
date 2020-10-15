@@ -23,11 +23,11 @@ MEC管理平台：<br>
 https://daily.developer.edgegallery.org/<br><br>
 ## 开发准备
 * 新建一个项目<br>
-![](/uploads/images/2020/0927/164937_44bad0e1_7625241.png "屏幕截图.png")
+![](/uploads/images/2020/0927/create_project.png "屏幕截图.png")
 * 选择依赖的平台能力，勾选“人脸识别”<br>
-![](/uploads/images/2020/0927/165038_8a49d2c2_7625241.png "屏幕截图.png")
+![](/uploads/images/2020/0927/create_project_select_service.png "屏幕截图.png")
 * 选择对应能力版本<br>
-![](/uploads/images/2020/0927/170533_cd17b611_7625241.png "屏幕截图.png")<br><br>
+![](/uploads/images/2020/0927/create_project_select_service_version.png "屏幕截图.png")<br><br>
 ## 开发
 * 下载依赖的插件-pythonPlugin，并导入到IDE<br>
 ![](/uploads/images/2020/0927/180131_b43bd374_7625241.png "屏幕截图.png")
