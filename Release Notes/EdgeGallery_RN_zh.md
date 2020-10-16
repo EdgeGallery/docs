@@ -8,7 +8,7 @@ Release Notes
 EdgeGallery Introduction
 ------------------------
 EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用和应用开发者的端到端解决方案，对于APP应用来说除支持应用运行的基础MEP平台外，还提供APP应用管理系统（MEC Manager，极简管理面，包括MEPM以及MEAO的部分功能），能够对应用进行端到端生命周期管理，提供X86应用向ARM迁移的工具链，支持应用平滑的跨平台迁移和调优。对应用开发者来说，提供完整的应用开发IDE环境和集成验证环境，为应用开发者提供一站式开发体验，同时通过APP Store功能，对应用开发者开发的APP提供标准的准入验证流程。
-- [项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery.md)
+- [项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)
 - [开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
    
  Version: v0.9
@@ -18,23 +18,25 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
  - Image Version: v0.9
 
 **新开源仓库列表**
-| **模块** | **名称**|**类型** | **URL** | **说明** |
-| -------- | ------- | -------- | ------- | ------- |
-|helm-charts|helm-charts|部署|https://gitee.com/edgegallery/helm-charts|EdgeGallery部署脚本|
-|website-gateway|website-gateway|产品仓|https://gitee.com/edgegallery/website-gateway|前台封装|
-|user-mgmt|user-mgmt|产品仓|https://gitee.com/edgegallery/user-mgmt|usermgmt后台|
-|user-mgmt|user-mgmt-fe|产品仓|https://gitee.com/edgegallery/user-mgmt-fe|usermgmt前台|
-|mecm|mecm-fe|产品仓|https://gitee.com/edgegallery/mecm-fe|MECM前台|
-|mecm|mecm-applcm|产品仓|https://gitee.com/edgegallery/mecm-applcm|MECM应用生命周期管理|
-|mecm|mecm-apm|产品仓|https://gitee.com/edgegallery/mecm-apm|MECM应用包管理|
-|mecm|mecm-inventory|产品仓|https://gitee.com/edgegallery/mecm-inventory|MECM存量管理|
-|mecm|mecm-appo|产品仓|https://gitee.com/edgegallery/mecm-appo|MECM应用编排|
-|developer|developer-be|产品仓|https://gitee.com/edgegallery/developer-be|developer后台|
-|developer|developer-fe|产品仓|https://gitee.com/edgegallery/developer-fe|developer前台|
-|appstore|appstore-fe|产品仓|https://gitee.com/edgegallery/appstore-fe|appstore前台|
-|appstore|appstore-be|产品仓|https://gitee.com/edgegallery/appstore-be|appstore后台|
-|platform-mgmt|platform-mgmt|产品仓|https://gitee.com/edgegallery/platform-mgmt|安装k8/docker|
-|docs|docs|产品仓|https://gitee.com/edgegallery/docs|文档|
+
+| 模块            | 名称            | 类型   | URL                                           | 说明                 |
+|-----------------|-----------------|--------|-----------------------------------------------|----------------------|
+| helm-charts     | helm-charts     | 部署   | https://gitee.com/edgegallery/helm-charts     | EdgeGallery部署脚本  |
+| website-gateway | website-gateway | 产品仓 | https://gitee.com/edgegallery/website-gateway | 前台封装             |
+| user-mgmt       | user-mgmt       | 产品仓 | https://gitee.com/edgegallery/user-mgmt       | usermgmt后台         |
+| user-mgmt       | user-mgmt-fe    | 产品仓 | https://gitee.com/edgegallery/user-mgmt-fe    | usermgmt前台         |
+| mecm            | mecm-fe         | 产品仓 | https://gitee.com/edgegallery/mecm-fe         | MECM前台             |
+| mecm            | mecm-applcm     | 产品仓 | https://gitee.com/edgegallery/mecm-applcm     | MECM应用生命周期管理 |
+| mecm            | mecm-apm        | 产品仓 | https://gitee.com/edgegallery/mecm-apm        | MECM应用包管理       |
+| mecm            | mecm-inventory  | 产品仓 | https://gitee.com/edgegallery/mecm-inventory  | MECM存量管理         |
+| mecm            | mecm-appo       | 产品仓 | https://gitee.com/edgegallery/mecm-appo       | MECM应用编排         |
+| developer       | developer-be    | 产品仓 | https://gitee.com/edgegallery/developer-be    | developer后台        |
+| developer       | developer-fe    | 产品仓 | https://gitee.com/edgegallery/developer-fe    | developer前台        |
+| appstore        | appstore-fe     | 产品仓 | https://gitee.com/edgegallery/appstore-fe     | appstore前台         |
+| appstore        | appstore-be     | 产品仓 | https://gitee.com/edgegallery/appstore-be     | appstore后台         |
+| platform-mgmt   | platform-mgmt   | 产品仓 | https://gitee.com/edgegallery/platform-mgmt   | 安装k8/docker        |
+| docs            | docs            | 产品仓 | https://gitee.com/edgegallery/docs            | 文档                 |
+
 
 **New Features**
 
@@ -51,37 +53,42 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  **Bug Fixes**
 
- 参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20.md)
+ 参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  **Known Issues**
 
-  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20.md)
+  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  **Security Notes**
 
  *Fixed Security Issues*
 
-  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20.md)
+  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  *Known Security Issues*
 
-  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20.md)
+  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  *Known Vulnerabilities in Used Modules*
 
 EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行修复：
 
 - Appstore:
+
+
   | Component  | Version  | CVE  |
-  |------------|----------|------|
+  |---|---|---|
   | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
   | log4j (indirect dependency) | 1.2.17 | CVE-2019-17571 |
   | spring-jdbc (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
   | spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258 |
 
+
 - Developer:
+
+
   | Component  | Version  | CVE  |
-  |------------|----------|------|
+  |---|---|---|
   | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
   | spring-beans (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
   | spring-security-config (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258, CVE-2020-5398 |
@@ -90,8 +97,10 @@ EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行�
   | minimatch | 3.0.4 | NPM-118 |
 
 - User-mgmt:
+
+
   | Component  | Version  | CVE  |
-  |------------|----------|------|
+  |---|---|---|
   | rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
   | netty-tcnative-boringssl-static (indirect dependency) | 2.0.31.Final | CVE-2015-2156 |
   | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
@@ -99,14 +108,18 @@ EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行�
   | minimatch | 3.0.4 | NPM-118 |
 
 - Website-gateway:
+
+
   | Component  | Version  | CVE  |
-  |------------|----------|------|
+  |---|---|---|
   | log4j | 1.2.17 | CVE-2019-17571 |
   | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
 
 - MECM:
+
+
   | Component  | Version  | CVE  |
-  |------------|----------|------|
+  |---|---|---|
   | lodash | 4.17.13 | CVE-2020-8203 |
   | minimatch | 3.0.4 | NPM-118 |
 
@@ -121,4 +134,4 @@ EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行�
 
  **Other**
 
- N/A
+ 经过安全工作组评审，Plugins仓库遗留问题单[I1XA0N](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N)将在R0.9版本发布后通过补丁形式修复，详细情况请参见安全工作组[会议纪要](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)
