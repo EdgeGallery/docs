@@ -37,13 +37,13 @@ https://daily.developer.edgegallery.org/<br><br>
 * 构建docker image<br><br>
 ## 部署测试
 * 回到EdgeGallery开发者平台上传image<br>
-![](/uploads/images/2020/0927/104313_61e531ce_7625241.png "屏幕截图.png")
+![](/uploads/images/2020/0927/upload_image.png "上传image.png")
 * 配置依赖参数<br>
-![](/uploads/images/2020/0927/104414_78804337_7625241.png "屏幕截图.png")
+![](/uploads/images/2020/0927/config_params.png "配置依赖参数.png")
 * 选择部署节点<br>
-![](/uploads/images/2020/0927/155738_1363e060_7625241.png "屏幕截图.png")<br>
+![](/uploads/images/2020/0927/select_server.png "选择部署节点.png")<br>
 部署成功后可以使用对应的URL进行应用测试。<br>
-![](/uploads/images/2020/0927/104720_351d5a45_7625241.png "屏幕截图.png")<br><br>
+![](/uploads/images/2020/0927/deployment.png "部署成功.png")<br><br>
 ## 应用发布
 点击“测试完成”按钮，选择是否发布应用到APPStore、是否发布应用API能力到EdgeGallery生态系统<br>
 ![](/uploads/images/2020/0927/111041_c5004536_7625241.png "屏幕截图.png")<br>
