@@ -27,14 +27,14 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 ### Application package manager
 
-1. Download APM code
+1. Download [APM Code](https://gitee.com/edgegallery/mecm-apm/)
 
 2. Configure the runtime environment variables (using IDEA as an example)
 
-![](/uploads/images/2020/0924/apm-contribution.png "inventory-contribution.png")
+![](/uploads/images/2020/0924/apm.png "apm.png")
 
 3. Update key-store and trust-store path in application.yaml
 
-![](/uploads/images/2020/0924/meo-ssl.png "meo-ssl.png")
+![](/uploads/images/2020/0924/key-store.png "key-store.png")
 
 4. Run ApmApplication to start APM

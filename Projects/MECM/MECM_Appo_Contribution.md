@@ -26,7 +26,7 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 ### Application orchestrator
 
-1. Download Appo(application orchestrator) code
+1. Download [Appo(application orchestrator) code](https://gitee.com/edgegallery/mecm-appo/)
 
 2. Configure the runtime environment variables (using IDEA as an example)
 
@@ -34,6 +34,6 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 3. Update key-store and trust-store path in application.yaml
 
-![](/uploads/images/2020/0924/meo-ssl.png "meo-ssl.png")
+![](/uploads/images/2020/0924/key-store.png "key-store.png")
 
 4. Run AppOrchestratorApplication to start application orchestrator
