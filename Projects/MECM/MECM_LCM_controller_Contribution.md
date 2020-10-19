@@ -37,3 +37,17 @@ In order to build a local environment, the final startup sequence is DataBase ->
 ![](/uploads/images/2020/0924/mepm-applcm-ssl.png "mepm-applcm-ssl.png")
 
 4. Run main to start LCM controller
+
+### K8s plugin 
+
+1. Download [K8s plugin code](https://gitee.com/edgegallery/mecm-applcm)
+
+2. Configure the runtime environment variables (using GO Land as an example)
+
+![](/uploads/images/2020/0924/k8s-plugin-env.png "k8s-plugin-env.png")
+
+3. Update certificates path in config.yaml
+
+![](/uploads/images/2020/0924/k8s-ssl.png "k8s-ssl.png")
+
+4. Run main to start K8s plugin.
