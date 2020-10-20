@@ -14,7 +14,7 @@ Method: POST
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
-|hostIp|host_ip|string|yes|Valid IP Address|15|
+|hostIp|host Ip|string|yes|Valid IP Address|15|
 |configFile|configFile|formData|yes|
 
 Example response:
@@ -42,7 +42,7 @@ Method: DELETE
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt Token|
-|hostIp|host_ip|string|yes|Valid IP Address|15|
+|hostIp|host Ip|string|yes|Valid IP Address|15|
 
 Example response:
 ```
@@ -52,7 +52,7 @@ Example response:
 ### Instantiate Application
 Application instantiated
 ```
-Resource URI: /lcmcontroller/v1/app_instance/:appInstanceId/instantiate
+Resource URI: /lcmcontroller/v1/app_instance/{appInstanceId}/instantiate
 Method: POST
 ```
 
@@ -60,7 +60,7 @@ Method: POST
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
-|tenant_id|tenant id|path|yes|Valid UUID|64|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
 |hostIp|host Ip|string|yes|Valid IP|15|
 |file|file|formData|yes|
 
@@ -75,7 +75,7 @@ Example response:
 ### Terminates Application
 Terminates application instance id
 ```
-Resource URI: /lcmcontroller/v1/app_instances/:appInstanceId/terminate
+Resource URI: /lcmcontroller/v1/tenants/{tenantId}/app_instances/{appInstanceId}/terminate
 Method: POST
 ```
 
@@ -83,7 +83,7 @@ Method: POST
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
-|tenant_id|tenant id|path|yes|Valid UUID|64|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -93,15 +93,15 @@ Example response:
 ### Query
 Get the statistics information
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId
+Resource URI: /lcmcontroller/v1/tenants/{tenantId}/app_instances/{appInstanceId}
 Method: GET
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
-|app_package_id|app package id|path |yes|Jwt Token|
+|access_token |access token|header |yes|Jwt Token|
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
-|tenant_id|tenant id|path|yes|Valid UUID|64|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -114,15 +114,15 @@ Example response:
 ### Query Kpi
 Get cpu , memory and file system size
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/hosts/:hostIp/kpi
+Resource URI: /lcmcontroller/v1/tenants/{tenantId}/hosts/{hostIp}/kpi
 Method: GET
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
-|host_ip|host ip|path |yes|Valid IP Address|15|
-|tenant_id |tenant id|path |yes|Valid UUID|64|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -135,15 +135,15 @@ Example response:
 ### Query MepCapabilities
 Get Mep Capabilities
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/hosts/:hostIp/mep_capabilities
+Resource URI: /lcmcontroller/v1/tenants/{tenantId}/hosts/{hostIp}/mep_capabilities
 Method: GET
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
-|host_ip|host ip|path |yes|Valid IP Address|15|
-|tenant_id |tenant id|path |yes|Valid UUID|64|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId|tenant Id|path |yes|Valid UUID|64|
 
 Example response:
 ```
