@@ -2047,6 +2047,10 @@ root@ubuntu:~# docker run -itd --name mepauth \
             -e "MEPAUTH_APIGW_PORT=8444" \
             -e "MEPAUTH_CERT_DOMAIN_NAME=edgegallery" \
             -e "MEPSERVER_HOST=mepserver" \
+            -e "MEPAUTH_DB_NAME=kong" \
+            -e "MEPAUTH_DB_USER=kong" \
+            -e "MEPAUTH_DB_PASSWD=<password>" \ #请保持与之前数据库部署时设置的kong用户密码一致
+            -e "MEPAUTH_DB_HOST=postgres-db" \
             edgegallery/mepauth:1.0
 ```
 注：
