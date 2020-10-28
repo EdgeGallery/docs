@@ -13,7 +13,7 @@ The local startup of Inventory depends on：
 ```
 - DataBase
 ```
-In order to build a local environment, the final startup sequence is UserManagement - > DataBase -> Inventory
+In order to build a local environment, the final startup sequence is [Mecm-Prerequisite](MECM_Prerequisite.md) -> DataBase -> Inventory
 
 ### DataBase
 
