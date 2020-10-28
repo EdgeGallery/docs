@@ -1,7 +1,8 @@
 # docs
 
 ## 介绍
-EdgeGallery首次开源范围内的文档交付仓库
+该仓库的文档通过文档工具编译形成[文档](http://docs.edgegallery.org/zh_CN/latest/)，链接如下：http://docs.edgegallery.org/zh_CN/latest/
+
 
 
 ## 版权
