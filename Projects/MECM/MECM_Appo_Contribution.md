@@ -12,7 +12,7 @@ The local startup of Appo depends on：
 ```
 - DataBase
 ```
-In order to build a local environment, the final startup sequence is DataBase -> Appo
+In order to build a local environment, the final startup sequence is [Mecm-Prerequisite](MECM_Prerequisite.md) -> DataBase -> Appo
 
 ### DataBase
 

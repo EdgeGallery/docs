@@ -13,7 +13,7 @@ The local startup of APM depends on：
 ```
 - DataBase
 ```
-In order to build a local environment, the final startup sequence is DataBase -> APM
+In order to build a local environment, the final startup sequence is [Mecm-Prerequisite](MECM_Prerequisite.md)-> DataBase -> APM
 
 ### DataBase
 
