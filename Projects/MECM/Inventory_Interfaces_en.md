@@ -20,7 +20,11 @@ Example response:
 ```
 200 OK
 [
-  {}
+  {
+    "applcmIp": "string",
+    "applcmPort": "string",
+    "userName": "string"
+  }
 ]
 ```
 
@@ -51,6 +55,11 @@ Example request body:
 Example response:
 ```
 200 OK
+[
+  {
+    "Saved"
+  }
+]
 ```
 
 ### Delete All Applcm Record
@@ -68,6 +77,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
+  {
+    "Deleted"
+  }
+]
 ```
 
 ### Get Application LCM Record
@@ -109,6 +123,11 @@ Method: PUT
 Example response:
 ```
 200 OK
+[
+  {
+    "Updated"
+  }
+]
 ```
 
 ### Delete Application LCM Record
@@ -127,6 +146,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
+  {
+    "Deleted"
+  }
+]
 ```
 
 ### Get All Application Records 
@@ -145,7 +169,15 @@ Example response:
 ```
 200 OK
   {
-    {}
+    {
+      "appstoreIp": "string",
+      "appstoreName": "string",
+      "appstorePort": "string",
+      "producer": "string",
+      "uri": "string",
+      "userName": "string"
+    }
+    ```
   }
 ```
 
@@ -181,9 +213,11 @@ Example request body:
 Example response:
 ```
 200 OK
+[
   {
-    {}
+    "Saved"
   }
+]
 ```
 
 ### Delete All Application Records
@@ -201,9 +235,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
   {
-    "response": {}
+    "Deleted"
   }
+]
 ```
 
 ### Get Application Stores Record
@@ -272,9 +308,11 @@ Example request body:
 Example response:
 ```
 200 OK
-  [
-    "response": {}
-  ]
+[
+  {
+    "Updated"
+  }
+]
 ```
 
 ### Deletes Application Record
@@ -293,9 +331,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
   {
-    "response": {}
+    "Deleted"
   }
+]
 ```
 
 ### Get All MEC Host Records
@@ -316,7 +356,19 @@ Example response:
 ```
 200 OK
 [
-  "response": {}
+ {
+     "address": "string",
+     "affinity": "string",
+     "applcmIp": "string",
+     "city": "string",
+     "edgerepoIp": "string",
+     "edgerepoPort": "string",
+     "edgerepoUsername": "string",
+     "mechostIp": "string",
+     "mechostName": "string",
+     "userName": "string",
+     "zipCode": "string"
+   }
 ]
 ```
 
@@ -353,9 +405,11 @@ Example request body:
 Example response:
 ```
 200 OK
-  [
-    "response": {}
-  ]
+[
+  {
+    "Saved"
+  }
+]
 ```
 
 ### Delete All MEC Host Records
@@ -373,9 +427,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
   {
-    "response": {}
+    "Deleted"
   }
+]
 ```
 ### Get MEC Host Record
 
@@ -454,9 +510,11 @@ Example request body:
 Example response:
 ```
 200 OK
-  [
-    "response": {}
-  ]
+[
+  {
+    "Updated"
+  }
+]
 ```
 ### Delete MEC Host Record
 Deletes application stores record
@@ -474,9 +532,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
   {
-    "response": {}
+    "Deleted"
   }
+]
 ```
 
 ### Upload K8s Configuration File
@@ -518,7 +578,9 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
   {
-    "response": {}
+    "Deleted"
   }
+]
 ```
