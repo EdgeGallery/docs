@@ -20,7 +20,26 @@ Example response:
 ```
 200 OK
 [
-  "response": {}
+  {
+      "appIconUrl": "string",
+      "appId": "string",
+      "appPkgAffinity": "string",
+      "appPkgDesc": "string",
+      "appPkgId": "string",
+      "appPkgName": "string",
+      "appPkgPath": "string",
+      "appPkgVersion": "string",
+      "appProvider": "string",
+      "createdTime": "string",
+      "mecHostInfo": [
+        {
+          "error": "string",
+          "hostIp": "string",
+          "status": "string"
+        }
+      ],
+      "modifiedTime": "string"
+    }
 ]
 ```
 
@@ -73,6 +92,11 @@ Example request body:
 Example response:
 ```
 200 OK
+[
+  {
+     "packageId": "string"
+  }
+]
 ```
 
 ### Get Application Package Information
@@ -130,6 +154,9 @@ Method: DELETE
 Example response:
 ```
 200 OK
+{
+ "success"
+}
 ```
 
 ### Download Csar
@@ -219,4 +246,7 @@ Method: DELETE
 Example response:
 ```
 200 OK
+{
+ "success"
+}
 ```
