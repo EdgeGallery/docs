@@ -5,6 +5,7 @@
   - [MEP 接口简介](#mep-接口简介)
   - [MEP-auth模块接口](#mep-auth模块接口)
     - [服务认证接口](#服务认证接口)
+    - [AK/SK配置接口](#AK/SK配置接口)
   - [MEP-server 接口](#mep-server-接口)
     - [应用服务管理相关接口](#应用服务管理相关接口)
       - [1. 查询应用服务](#1-查询应用服务)
@@ -129,6 +130,79 @@ HTTP/1.1 200 OK
 
 
 注：在测试时，请确保启动EG-LDVS时使用的AK/SK和获取token时使用的AK/SK相同。基于AK/SK的认证，EG-LDVS对于相同的AK若5分钟内三次认证失败，对应AK将被锁定15分钟。
+
+### AK/SK配置接口
+
+URL：
+
+```
+PUT /mepauth/v1/applications/{appInstanceId}/confs
+```
+
+请求参数：
+
+|名称    |        类型    | 描述     |                           IN   |    必选|
+  | ---| ---| ---| ---| ---| 
+ |  Content-Type    | String   | MIME类型，填"application/json"                       |     header|   是| 
+  |appInstanceId |  String |  APP实例ID（UUID）             |      path |    是|
+
+Body参数：
+
+  |  名称     |                     类型 |              描述        |             必选| 
+  | ---| ---| ---| ---|
+  | authInfo|                  Object|            用户信息                        | 是| 
+  | &gt;credentials|               Object|            证书信息|   是      | 
+  | &gt;&gt;accessKeyId|                   String  |          AK          |                是|
+  | &gt;&gt;secretKey|                   String  |          SK          |                是|
+
+请求示例：
+
+```
+PUT /mepauth/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confs
+{
+    "header": [
+        {
+            "key": "Content-Type",
+            "value": "application/json"
+        }
+    ],
+    "body": {
+        "authInfo": {
+            "credentials": {
+                "accessKeyId": "QVUJMSUMgS0VZLS0tLS0",
+                "secretKey": "DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
+            }
+        }
+    }
+}
+```
+
+返回参数：
+
+返回码：200
+
+OK
+
+  |  名称     |                     类型 |              描述        |             必选| 
+  | ---| ---| ---| ---|
+  | authInfo|                  Object|            用户信息                        | 是| 
+  | &gt;credentials|               Object|            证书信息|   是      | 
+  | &gt;&gt;accessKeyId|                   String  |          AK          |                是|
+  | &gt;&gt;secretKey|                   String  |          SK          |                是|
+
+返回示例：
+
+```
+HTTP/1.1 200 OK
+{
+    "authInfo": {
+        "credentials": {
+            "accessKeyId": "QVUJMSUMgS0VZLS0tLS0",
+            "secretKey": "DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
+        }
+    }
+}
+```
 
 ## MEP-server 接口
 
