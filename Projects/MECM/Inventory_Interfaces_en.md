@@ -381,24 +381,36 @@ Method: POST
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
+|access_token|access token|header|yes|Jwt token|
+|mechost_ip|mechost IP|path|yes|Valid IP address|15|
 |tenant_id|tenant identifier|path|yes|Valid UUID|64|
-|appstoreIp|appstoreIp|body|yes|Valid IP address|15|
-|appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
-|appstorePort|appstorePort|body|yes|Valid Port|5|
-|producer|producer|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
-|uri|uri|body|yes|Valid UUID|128|
-|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|    
+|address|address|body|yes|Valid IP address|255|
+|affinity|affinity|body|yes|AlphaNumeric, special characters allowed are hypen,underscore and comma|128|
+|applcmIp|applcmIp|body|yes|Valid IP address|15|
+|city|city|body|yes|AlphaNumeric, special characters allowed are slash and space|128|
+|edgeName|edgeName|body|yes|AlphaNumeric, special characters allowed are slash and space|128|
+|edgerepoIp|edgerepoIp|body|yes|Valid IP address|255|
+|edgerepoUsername|edgerepoUsername|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|mechostIp|mechostIp|body|yes|Valid IP address|15|
+|mechostName|mechostName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|zipCode|zipCode|body|yes|Alpha, special characters allowed are hypen and underscore|128| 
 
 Example request body:
 ```
 {
-  "appstoreIp": "string",
-  "appstoreName": "string",
-  "appstorePort": "string",
-  "producer": "string",
-  "uri": "string",
-  "userName": "string"
+  "address": "string",
+  "affinity": "string",
+  "applcmIp": "string",
+  "city": "string",
+  "edgeName": "string",
+  "edgerepoIp": "string",
+  "edgerepoPort": "string",
+  "edgerepoUsername": "string",
+  "mechostIp": "string",
+  "mechostName": "string",
+  "userName": "string",
+  "zipCode": "string"
 }
 ```
 
