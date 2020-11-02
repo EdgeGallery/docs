@@ -20,7 +20,17 @@ Example response:
 ```
 200 OK
 [
-  "response": {}
+  {
+     "appInstanceId": "string",
+     "appPackageId": "string",
+     "appName": "string",
+     "appId": "string",
+     "appDescriptor": "string",
+     "mecHost": "string",
+     "applcmHost": "string",
+     "operationalStatus": "string",
+     "operationInfo":"string"
+  }
 ]
 ```
 
@@ -41,9 +51,19 @@ Method: GET
 Example response:
 ```
 200 OK
-  [
-    "response": {}
-  ]
+[
+  {
+     "appInstanceId": "string",
+     "appPackageId": "string",
+     "appName": "string",
+     "appId": "string",
+     "appDescriptor": "string",
+     "mecHost": "string",
+     "applcmHost": "string",
+     "operationalStatus": "string",
+     "operationInfo":"string"
+  }
+]
 ```
 
 ### Create AppInstance 
@@ -76,18 +96,14 @@ Example request body:
 ```
 
 Example response:
-```
-200 OK
-  {
-    "response": {}
-  }
-```
 
 ```
-201 Request Accepted
+202 Request Accepted
+[
   {
-    "response": {}
+    "app_instance_id":"string"
   }
+]
 ```
 
 ### Get App Instance Information 
@@ -106,9 +122,19 @@ Method: GET
 Example response:
 ```
 200 OK
+[
   {
-    "response": {}
+     "appInstanceId": "string",
+     "appPackageId": "string",
+     "appName": "string",
+     "appId": "string",
+     "appDescriptor": "string",
+     "mecHost": "string",
+     "applcmHost": "string",
+     "operationalStatus": "string",
+     "operationInfo":"string"
   }
+]
 ```
 
 ### Instantiate Application
@@ -125,14 +151,9 @@ Method: POST
 |tenant_id|tenant id|path |yes|Valid UUID|64|
 
 Example response:
+
 ```
-200 OK
-  {
-    "response": {}
-  }
-```
-```
-201 Request Accepted
+202 Request Accepted
   {
     "response": {}
   }
@@ -152,15 +173,9 @@ Method: DELETE
 |tenant_id |tenant id|path |yes|Valid UUID|64|
 
 Example response:
-```
-200 OK
-  {
-    "response": {}
-  }
-```
 
 ```
-200 Request Accepted
+202 Request Accepted
   {
     "response": {}
   }
@@ -184,7 +199,16 @@ Example response:
 ```
 200 OK
   [
-    "response": {}
+    "response": "{
+    "pods ":[{
+    "podstatus":"String","
+    "podname":"String",
+    "containers":[{
+    "containername": "String",
+    "metricsusage":{
+    "cpuusage" : "String",
+    "memusage" : "String",
+    "diskusage" : "String"}}]}"
   ]
 ```
 
