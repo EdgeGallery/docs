@@ -119,6 +119,17 @@ Method: PUT
 |access_token |access token|header |yes|Jwt token|
 |applcm_ip|applcm IP|path |yes|Valid IP Address|15|
 |tenant_id |tenant identifier|path |yes|Valid UUID|64|
+|appstorePort|appstorePort|body|yes|Valid Port|5|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+
+Example request body:
+```
+{
+  "appstoreIp": "string",
+  "appstorePort": "string",
+  "userName": "string"
+}
+```
 
 Example response:
 ```
