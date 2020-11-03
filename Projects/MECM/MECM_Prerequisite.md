@@ -17,7 +17,7 @@ Prerequisite
 
 6. Run the MainServer function and start UserManagement
 
-7. Download the [jwt token generation script](MECM_Jwt_Token_Generation.sh) and need to give rsa private key and payload file path in the
+7. Download the [jwt token generation script](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Jwt_Token_Generation.sh) and need to give rsa private key and payload file path in the
    field provided.
    
 Example Payload
@@ -25,8 +25,8 @@ Example Payload
 [
   	"userName": "sample user name",
   	"userId": "example user id",
-    "scope": "sample scope",
-    "ssoSessionId": "ssoSession id to be given",
+        "scope": "sample scope",
+        "ssoSessionId": "ssoSession id to be given",
   	"authorities": [ Example of authorities to be given
   	],
   	"jti": "unique id",

@@ -20,7 +20,11 @@ Example response:
 ```
 200 OK
 [
-  {}
+  {
+    "applcmIp": "string",
+    "applcmPort": "string",
+    "userName": "string"
+  }
 ]
 ```
 
@@ -51,6 +55,11 @@ Example request body:
 Example response:
 ```
 200 OK
+[
+  {
+    "Saved"
+  }
+]
 ```
 
 ### Delete All Applcm Record
@@ -68,6 +77,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
+  {
+    "Deleted"
+  }
+]
 ```
 
 ### Get Application LCM Record
@@ -105,10 +119,26 @@ Method: PUT
 |access_token |access token|header |yes|Jwt token|
 |applcm_ip|applcm IP|path |yes|Valid IP Address|15|
 |tenant_id |tenant identifier|path |yes|Valid UUID|64|
+|appstorePort|appstorePort|body|yes|Valid Port|5|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+
+Example request body:
+```
+{
+  "appstoreIp": "string",
+  "appstorePort": "string",
+  "userName": "string"
+}
+```
 
 Example response:
 ```
 200 OK
+[
+  {
+    "Updated"
+  }
+]
 ```
 
 ### Delete Application LCM Record
@@ -127,6 +157,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
+  {
+    "Deleted"
+  }
+]
 ```
 
 ### Get All Application Records 
@@ -145,7 +180,15 @@ Example response:
 ```
 200 OK
   {
-    {}
+    {
+      "appstoreIp": "string",
+      "appstoreName": "string",
+      "appstorePort": "string",
+      "producer": "string",
+      "uri": "string",
+      "userName": "string"
+    }
+    ```
   }
 ```
 
@@ -181,9 +224,11 @@ Example request body:
 Example response:
 ```
 200 OK
+[
   {
-    {}
+    "Saved"
   }
+]
 ```
 
 ### Delete All Application Records
@@ -201,9 +246,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
   {
-    "response": {}
+    "Deleted"
   }
+]
 ```
 
 ### Get Application Stores Record
@@ -272,9 +319,11 @@ Example request body:
 Example response:
 ```
 200 OK
-  [
-    "response": {}
-  ]
+[
+  {
+    "Updated"
+  }
+]
 ```
 
 ### Deletes Application Record
@@ -293,9 +342,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
   {
-    "response": {}
+    "Deleted"
   }
+]
 ```
 
 ### Get All MEC Host Records
@@ -316,7 +367,19 @@ Example response:
 ```
 200 OK
 [
-  "response": {}
+ {
+     "address": "string",
+     "affinity": "string",
+     "applcmIp": "string",
+     "city": "string",
+     "edgerepoIp": "string",
+     "edgerepoPort": "string",
+     "edgerepoUsername": "string",
+     "mechostIp": "string",
+     "mechostName": "string",
+     "userName": "string",
+     "zipCode": "string"
+   }
 ]
 ```
 
@@ -329,33 +392,47 @@ Method: POST
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
+|access_token|access token|header|yes|Jwt token|
+|mechost_ip|mechost IP|path|yes|Valid IP address|15|
 |tenant_id|tenant identifier|path|yes|Valid UUID|64|
-|appstoreIp|appstoreIp|body|yes|Valid IP address|15|
-|appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
-|appstorePort|appstorePort|body|yes|Valid Port|5|
-|producer|producer|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
-|uri|uri|body|yes|Valid UUID|128|
-|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|    
+|address|address|body|yes|Valid IP address|255|
+|affinity|affinity|body|yes|AlphaNumeric, special characters allowed are hypen,underscore and comma|128|
+|applcmIp|applcmIp|body|yes|Valid IP address|15|
+|city|city|body|yes|AlphaNumeric, special characters allowed are slash and space|128|
+|edgeName|edgeName|body|yes|AlphaNumeric, special characters allowed are slash and space|128|
+|edgerepoIp|edgerepoIp|body|yes|Valid IP address|255|
+|edgerepoUsername|edgerepoUsername|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|mechostIp|mechostIp|body|yes|Valid IP address|15|
+|mechostName|mechostName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|zipCode|zipCode|body|yes|Alpha, special characters allowed are hypen and underscore|128| 
 
 Example request body:
 ```
 {
-  "appstoreIp": "string",
-  "appstoreName": "string",
-  "appstorePort": "string",
-  "producer": "string",
-  "uri": "string",
-  "userName": "string"
+  "address": "string",
+  "affinity": "string",
+  "applcmIp": "string",
+  "city": "string",
+  "edgeName": "string",
+  "edgerepoIp": "string",
+  "edgerepoPort": "string",
+  "edgerepoUsername": "string",
+  "mechostIp": "string",
+  "mechostName": "string",
+  "userName": "string",
+  "zipCode": "string"
 }
 ```
 
 Example response:
 ```
 200 OK
-  [
-    "response": {}
-  ]
+[
+  {
+    "Saved"
+  }
+]
 ```
 
 ### Delete All MEC Host Records
@@ -373,9 +450,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
   {
-    "response": {}
+    "Deleted"
   }
+]
 ```
 ### Get MEC Host Record
 
@@ -454,9 +533,11 @@ Example request body:
 Example response:
 ```
 200 OK
-  [
-    "response": {}
-  ]
+[
+  {
+    "Updated"
+  }
+]
 ```
 ### Delete MEC Host Record
 Deletes application stores record
@@ -474,9 +555,11 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
   {
-    "response": {}
+    "Deleted"
   }
+]
 ```
 
 ### Upload K8s Configuration File
@@ -518,7 +601,9 @@ Method: DELETE
 Example response:
 ```
 200 OK
+[
   {
-    "response": {}
+    "Deleted"
   }
+]
 ```
