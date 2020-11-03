@@ -1,11 +1,11 @@
 接口设计
 ==============
 
-- [MEP Interfaces](#mep-interfaces)
+- [接口设计](#接口设计)
   - [MEP 接口简介](#mep-接口简介)
   - [MEP-auth模块接口](#mep-auth模块接口)
     - [服务认证接口](#服务认证接口)
-    - [AK/SK配置接口](#AK/SK配置接口)
+    - [AK/SK配置接口](#aksk配置接口)
   - [MEP-server 接口](#mep-server-接口)
     - [应用服务管理相关接口](#应用服务管理相关接口)
       - [1. 查询应用服务](#1-查询应用服务)
@@ -23,7 +23,6 @@
       - [2. 注册终止事件订阅](#2-注册终止事件订阅)
       - [3. 删除终止事件订阅](#3-删除终止事件订阅)
       - [4. 查询指定终止事件订阅](#4-查询指定终止事件订阅)
-    - [异常状态码](#异常状态码)
     - [DNS rule configuration interfaces](#dns-rule-configuration-interfaces)
       - [1. Mp1 Interface for DNS configurations](#1-mp1-interface-for-dns-configurations)
         - [1.1 Query all dns rules](#11-query-all-dns-rules)
@@ -35,6 +34,10 @@
         - [2.3 Query a specific dns rule](#23-query-a-specific-dns-rule)
         - [2.4 Modify a dns rule](#24-modify-a-dns-rule)
         - [2.5 Delete a dns rule](#25-delete-a-dns-rule)
+    - [Query Platform Capabilities(Services)](#query-platform-capabilitiesservices)
+      - [1.1 Query all capabilities](#11-query-all-capabilities)
+      - [1.2 Query individual capability](#12-query-individual-capability)
+    - [异常状态码](#异常状态码)
   - [Dns-Server](#dns-server)
     - [1. Create/Set new entry](#1-createset-new-entry)
     - [2. Delete an entry](#2-delete-an-entry)
@@ -1515,20 +1518,6 @@ HTTP/1.1 200 OK
 ```
 
 
-
-### 异常状态码
-| **HTTP状态码** | **描述** |
-| --- | --- |
-| 400  | 错误的请求，用来表示请求的参数不正确。 |
-| 401  | 当前请求需要鉴权认证。 |
-| 403   | 禁止当前操作。 |
-| 404  | 请求的资源未被发现。 |
-| 412  | 请求中的先决条件验证失败。 |
-| 414  | 请求的URI超长，服务器拒绝处理请求。 |
-| 500  | 内部服务器错误。 |
-| 503  | 服务不可用。 |
-
-
 ### DNS rule configuration interfaces
 
 DNS rules can be configured using both Mp1 and Mm5 interfaces.
@@ -2034,6 +2023,156 @@ Example Response:
 ```
 HTTP/1.1 204 No Content
 ```
+
+
+### Query Platform Capabilities(Services)
+
+MEP supports for querying the capabilities(services) registered with it. These capability information will be used by the MECM to display it to the user on its portal. MECM send the capability query to MEP over Mm5 interface.
+
+#### 1.1 Query all capabilities
+
+Interface to query all capabilities. This interface return the capability list registered to the queried MEP server along with the consumers of it.
+
+URL
+
+```
+GET /mepcfg/mec_platform_config/v1/capabilities
+```
+
+Request parameters:
+
+None
+
+Body parameters:
+
+None
+
+Example Request:
+
+```
+GET /mepcfg/mec_platform_config/v1/capabilities
+```
+
+Return Parameters:
+
+| Name           | Type                        | Description              |
+| -------------- | --------------------------- | ------------------------ |
+| capabilityId   | String                      | Capability/Service id    |
+| capabilityName | String                      | Capability/Service name  |
+| status         | Enum **{ACTIVE, INACTIVE}** | Status                   |
+| version        | String                      | Version info             |
+| consumers      | Array[Object]               | Consumer object list     |
+| &gt;applicationInstanceId | String           | Consumer application id  |
+
+Return Code: 200 OK
+
+Example Response:
+```
+HTTP/1.1 200 OK
+[
+    {
+        "capabilityId": "16384563dca094183778a41ea7701d15",
+        "capabilityName": "FaceRegService",
+        "status": "ACTIVE",
+        "version": "4.5.8",
+        "consumers": [
+            {
+                "applicationInstanceId": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f"
+            },
+            {
+                "applicationInstanceId": "f05a5591-d8f2-4f89-8c0b-8cea6d45712e"
+            },
+            {
+                "applicationInstanceId": "86dfc97d-325e-4feb-ac4f-280a0ba42513"
+            }
+        ]
+    },
+    {
+        "capabilityId": "f7e898d1c9ea9edd05e1181bc09afc5e",
+        "capabilityName": "Location",
+        "status": "ACTIVE",
+        "version": "v1.19",
+        "consumers": [
+            {
+                "applicationInstanceId": "88922760-861b-4578-aae5-77b8fcb06142"
+            }
+        ]
+    }
+]
+```
+
+#### 1.2 Query individual capability
+
+Interface to query an individual capability from MEP. This interface return a capability along with the consumers of it.
+
+URL
+
+```
+GET /mepcfg/mec_platform_config/v1/capabilities/{capabilityId}
+```
+
+Request parameters:
+
+| **Name** | **Type** | **Description** | **IN** | **Required** |
+| --- | --- | --- | --- | --- |
+| capabilityId  | String | Capability ID（UUID）  | path |  Yes   |
+
+Body parameters:
+
+None
+
+Example Request:
+
+```
+GET /mepcfg/mec_platform_config/v1/capabilities/16384563dca094183778a41ea7701d15
+```
+
+Return Parameters:
+
+| Name           | Type                        | Description              |
+| -------------- | --------------------------- | ------------------------ |
+| capabilityId   | String                      | Capability/Service id    |
+| capabilityName | String                      | Capability/Service name  |
+| status         | Enum **{ACTIVE, INACTIVE}** | Status                   |
+| version        | String                      | Version info             |
+| consumers      | Array[Object]               | Consumer object list     |
+| &gt;applicationInstanceId | String           | Consumer application id  |
+
+Return Code: 200 OK
+
+Example Response:
+```
+HTTP/1.1 200 OK
+{
+    "capabilityId": "16384563dca094183778a41ea7701d15",
+    "capabilityName": "FaceRegService",
+    "status": "ACTIVE",
+    "version": "4.5.8",
+    "consumers": [
+        {
+            "applicationInstanceId": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f"
+        },
+        {
+            "applicationInstanceId": "f05a5591-d8f2-4f89-8c0b-8cea6d45712e"
+        },
+        {
+            "applicationInstanceId": "86dfc97d-325e-4feb-ac4f-280a0ba42513"
+        }
+    ]
+}
+```
+
+### 异常状态码
+| **HTTP状态码** | **描述** |
+| --- | --- |
+| 400  | 错误的请求，用来表示请求的参数不正确。 |
+| 401  | 当前请求需要鉴权认证。 |
+| 403   | 禁止当前操作。 |
+| 404  | 请求的资源未被发现。 |
+| 412  | 请求中的先决条件验证失败。 |
+| 414  | 请求的URI超长，服务器拒绝处理请求。 |
+| 500  | 内部服务器错误。 |
+| 503  | 服务不可用。 |
 
 ## Dns-Server
 
