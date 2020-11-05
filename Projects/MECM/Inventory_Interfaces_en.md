@@ -368,17 +368,30 @@ Example response:
 200 OK
 [
  {
-     "address": "string",
-     "affinity": "string",
-     "applcmIp": "string",
-     "city": "string",
-     "edgerepoIp": "string",
-     "edgerepoPort": "string",
-     "edgerepoUsername": "string",
-     "mechostIp": "string",
-     "mechostName": "string",
-     "userName": "string",
-     "zipCode": "string"
+       "mechostIp": "string",
+       "mechostName": "string",
+       "zipCode": "string",
+       "city": "string",
+       "address": "string",
+       "affinity": "string",
+       "userName": "string",
+       "edgerepoName": null,
+       "edgerepoIp": "string",
+       "edgerepoPort": "string",
+       "edgerepoUsername": "string",
+       "applcmIp": "string",
+       "hwcapabilities": [
+           {
+               "hwType": "string",
+               "hwVendor": "string",
+               "hwModel": "string"
+           },
+           {
+               "hwType": "string",
+               "hwVendor": "string",
+               "hwModel": "string"
+           }
+       ]
    }
 ]
 ```
@@ -406,23 +419,41 @@ Method: POST
 |mechostName|mechostName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |zipCode|zipCode|body|yes|Alpha, special characters allowed are hypen and underscore|128| 
+|hwcapabilities|hardwareCapabilities|body|yes|AlphaNumeric characters allowed|128|
+|hwType|hardwareType|body|yes|AlphaNumeric characters allowed|128|
+|hwVendor|hardwareVendor|body|yes|AlphaNumeric characters allowed|128|
+|hwModel|hardwareModel|body|yes|AlphaNumeric characters allowed|128|
 
 Example request body:
 ```
-{
-  "address": "string",
-  "affinity": "string",
-  "applcmIp": "string",
-  "city": "string",
-  "edgeName": "string",
-  "edgerepoIp": "string",
-  "edgerepoPort": "string",
-  "edgerepoUsername": "string",
-  "mechostIp": "string",
-  "mechostName": "string",
-  "userName": "string",
-  "zipCode": "string"
-}
+[
+  {
+      "mechostIp": "string",
+      "mechostName": "string",
+      "zipCode": "string",
+      "city": "string",
+      "address": "string",
+      "affinity": "string",
+      "userName": "string",
+      "edgerepoName": null,
+      "edgerepoIp": "string",
+      "edgerepoPort": "string",
+      "edgerepoUsername": "string",
+      "applcmIp": "string",
+      "hwcapabilities": [
+          {
+              "hwType": "string",
+              "hwVendor": "string",
+              "hwModel": "string"
+          },
+          {
+              "hwType": "string",
+              "hwVendor": "string",
+              "hwModel": "string"
+          }
+      ]
+  }
+]
 ```
 
 Example response:
@@ -473,19 +504,31 @@ Method: GET
 
 ```
 200 OK
-  {
-    "address": "string",
-    "affinity": "string",
-    "applcmIp": "string",
-    "city": "string",
-    "edgeName": "string",
-    "edgerepoIp": "string",
-    "edgerepoPort": "string",
-    "edgerepoUsername": "string",
-    "mechostIp": "string",
-    "mechostName": "string",
-    "userName": "string",
-    "zipCode": "string"
+{
+      "mechostIp": "string",
+      "mechostName": "string",
+      "zipCode": "string",
+      "city": "string",
+      "address": "string",
+      "affinity": "string",
+      "userName": "string",
+      "edgerepoName": null,
+      "edgerepoIp": "string",
+      "edgerepoPort": "string",
+      "edgerepoUsername": "string",
+      "applcmIp": "string",
+      "hwcapabilities": [
+          {
+              "hwType": "string",
+              "hwVendor": "string",
+              "hwModel": "string"
+          },
+          {
+              "hwType": "string",
+              "hwVendor": "string",
+              "hwModel": "string"
+          }
+      ]
   }
 ```
 ### Update MEC Host Record
@@ -511,23 +554,39 @@ Method: PUT
 |mechostName|mechostName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |zipCode|zipCode|body|yes|Alpha, special characters allowed are hypen and underscore|128|
+|hwcapabilities|hardwareCapabilities|body|yes|AlphaNumeric characters allowed|128|
+|hwType|hardwareType|body|yes|AlphaNumeric characters allowed|128|
+|hwVendor|hardwareVendor|body|yes|AlphaNumeric characters allowed|128|
+|hwModel|hardwareModel|body|yes|AlphaNumeric characters allowed|128|
 
 Example request body:
 ```
 {
-  "address": "string",
-  "affinity": "string",
-  "applcmIp": "string",
-  "city": "string",
-  "edgeName": "string",
-  "edgerepoIp": "string",
-  "edgerepoPort": "string",
-  "edgerepoUsername": "string",
-  "mechostIp": "string",
-  "mechostName": "string",
-  "userName": "string",
-  "zipCode": "string"
-}
+      "mechostIp": "string",
+      "mechostName": "string",
+      "zipCode": "string",
+      "city": "string",
+      "address": "string",
+      "affinity": "string",
+      "userName": "string",
+      "edgerepoName": null,
+      "edgerepoIp": "string",
+      "edgerepoPort": "string",
+      "edgerepoUsername": "string",
+      "applcmIp": "string",
+      "hwcapabilities": [
+          {
+              "hwType": "string",
+              "hwVendor": "string",
+              "hwModel": "string"
+          },
+          {
+              "hwType": "string",
+              "hwVendor": "string",
+              "hwModel": "string"
+          }
+      ]
+  }
 ```
 
 Example response:
