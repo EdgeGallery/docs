@@ -27,13 +27,13 @@ This page lists all projects that have been approved by TSC to be a part of the 
 
 #### Resources committed to the Release
 
-| **Role**  | **Name** | **Linux Foundation ID** |  **Dockerhub ID** |  **Email Address** |  **Location** |
-|-----------|-----------|-----------|-----------|-----------|-----------|                               
-| PTL |  |  |  |  |  |
-| Primary Contact |  |  |  |  |  |
-| Project Manager |  |  |  |  |  |
-| Committers |  |  |  |  |  |
-| Contributors |  |  |  |  |  |
+| **Role**  | **Name** | **Gitee ID** |  **Email Address** |  **Location** |
+|-----------|-----------|-----------|-----------|-----------|                             
+| PTL |  |  |  |  |
+| Primary Contact |  |  |  |  |
+| Project Manager |  |  |  |  |
+| Committers |  |  |  |  |
+| Contributors |  |  |  |  |
 
 ## Developer
 
