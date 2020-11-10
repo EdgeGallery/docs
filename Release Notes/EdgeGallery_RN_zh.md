@@ -53,25 +53,26 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  **Bug Fixes**
 
- 参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
+ 参见 [Edgeggallery v0.9 Test Report]
+(https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  **Known Issues**
 
-  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
+  参见 [Edgeggallery v0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  **Security Notes**
 
  *Fixed Security Issues*
 
-  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
+  参见 [Edgeggallery v0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  *Known Security Issues*
 
-  参见 [Edgeggallery R0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
+  参见 [Edgeggallery v0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/Edgeggallery%20R0.9%20Test%20%20Report%20%2Emd)
 
  *Known Vulnerabilities in Used Modules*
 
-EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行修复：
+EdgeGalelry 0.9版本第三方开源组件存在以下漏洞需要用户自行修复：
 
 - Appstore:
 
@@ -134,4 +135,4 @@ EdgeGalelry R0.9版本第三方开源组件存在以下漏洞需要用户自行�
 
  **Other**
 
- 经过安全工作组评审，Plugins仓库遗留问题单[I1XA0N](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N)将在R0.9版本发布后通过补丁形式修复，详细情况请参见安全工作组[会议纪要](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)
+ 经过安全工作组评审，Plugins仓库遗留问题单[I1XA0N](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N)将在v0.9版本发布后通过补丁形式修复，详细情况请参见安全工作组[会议纪要](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)
