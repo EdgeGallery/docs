@@ -230,6 +230,65 @@ Example response:
 ```
 200 OK
   [
-    "response": {}
+   {
+     "capabilityId": "string",
+     "capabilityName": "string",
+     "status": "string",
+     "version": "string",
+      "consumers": [
+        {
+          "applicationInstanceId": "string"
+        },
+        {
+          "applicationInstanceId": "string"
+        },
+      ]
+   },
+   {
+     "capabilityId": "string",
+     "capabilityName": "string",
+     "status": "string",
+     "version": "string",
+      "consumers": [
+        {
+          "applicationInstanceId": "string"
+        }
+      ]
+   }
+  ]
+```
+
+### Get Mep Capability
+Retrieves edge host performance statistics based on capability id
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities/{capability_id}
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|capability_id|capability_id|path|yes|Alphanumeric characters,special characters are hypen and underscore|128|
+
+Example response:
+```
+200 OK
+  [
+   {
+     "capabilityId": "string",
+     "capabilityName": "string",
+     "status": "string",
+     "version": "string",
+      "consumers": [
+        {
+          "applicationInstanceId": "string"
+        },
+        {
+          "applicationInstanceId": "string"
+        },
+      ]
+   }
   ]
 ```
