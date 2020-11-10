@@ -148,7 +148,31 @@ Method: GET
 Example response:
 ```
 200 OK
-  {
-    {}    
-  }
+    [
+     {
+       "capabilityId": "string",
+       "capabilityName": "string",
+       "status": "string",
+       "version": "string",
+        "consumers": [
+          {
+            "applicationInstanceId": "string"
+          },
+          {
+            "applicationInstanceId": "string"
+          },
+        ]
+     },
+     {
+       "capabilityId": "string",
+       "capabilityName": "string",
+       "status": "string",
+       "version": "string",
+        "consumers": [
+          {
+            "applicationInstanceId": "string"
+          }
+        ]
+     }
+    ]
 ```
