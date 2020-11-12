@@ -21,8 +21,8 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 | 模块            | 名称            | 类型   | URL                                           | 说明                 |
 |-----------------|-----------------|--------|-----------------------------------------------|----------------------|
-| mep     | api-emulator     | 产品仓   | https://gitee.com/edgegallery/api-emulator     | 提供基本能力的模拟api  |
-| Plugins | Plugins | 产品仓 | https://gitee.com/edgegallery/plugins |       plugins仓       |
+| Developer     | api-emulator     | 产品仓   | https://gitee.com/edgegallery/api-emulator     | 提供基本能力的模拟api  |
+| Mep | Plugins | 产品仓 | https://gitee.com/edgegallery/plugins |       plugins仓       |
 | Developer| toolchain| 产品仓 | https://gitee.com/edgegallery/toolchain | 提供x86平台应用上车ARM时源码分析功能            |
 
 
