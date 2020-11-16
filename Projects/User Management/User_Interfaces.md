@@ -9,6 +9,9 @@ User Interfaces
     - [2.1 注册用户](#21-注册用户)
     - [2.2 找回密码](#22-找回密码)
     - [2.3 校验重复用户](#23-校验重复用户)
+    - [2.4 查询用户](#24-查询用户)
+    - [2.5 删除用户](#25-删除用户)
+    - [2.6 修改用户](#26-修改用户)
   - [3. IDENTITY](#3-IDENTITY)
     - [3.1 获取短信验证码](#31-获取短信验证码)
 
@@ -198,6 +201,162 @@ response 200 OK
 {
     "username": true or false,
     "password": true or false
+}
+```
+
+### 2.4 查询用户
+
+用户管理员查询所有的用户信息
+
+```
+Resource URI: /v1/users
+Method: GET
+Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
+```
+
+| Name      | Definition |type   | Required|Describe |
+| --------- | ---------- |-------|---------|-------- |
+
+
+Example request:
+```json
+{
+  "username": "TestUser1",
+  "telephone": "13812345678"
+}
+```
+
+Example response:
+```json
+response 200 OK
+[
+  {
+    "username": "TestUser1",
+    "company": "company",
+    "gender": "male",
+    "telephone": "13812345678",
+    "userId": "37423702-051a-46b4-bf2b-f190759cc0b8",
+    "permissions": [
+      {
+        "platform": "APPSTORE",
+        "role": "GUEST"
+      }
+    ]
+  }
+]
+
+response 400 Bad Request
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
+}
+
+response 403 FORBIDDEN
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
+}
+```
+
+### 2.5 删除用户
+
+用户管理员可以根据用户ID删除任何用户
+
+```
+Resource URI: /v1/users/{userId}
+Method: DELETE
+Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
+```
+
+| Name      | Definition |type   | Required|Describe |
+| --------- | ---------- |-------|---------|-------- |
+| userId    | 用户ID      | path  | 是      |uuid     |
+
+Example request:
+```json
+```
+
+Example response:
+```json
+response 200 OK
+
+response 400 Bad Request
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
+}
+
+response 403 FORBIDDEN
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
+}
+```
+
+
+### 2.6 修改用户
+
+用户管理员可以根据用户ID修改用户信息，返回修改后的信息。
+
+```
+Resource URI: /v1/users/{userId}
+Method: PUT
+Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
+```
+
+| Name      | Definition |type   | Required|Describe |
+| --------- | ---------- |-------|---------|-------- |
+| userId    | 用户ID      | path  | 是      |uuid     |
+
+Example request:
+```json
+{
+  "username": "TestUser1",
+  "company": "company",
+  "gender": "male",
+  "telephone": "13812345678",
+  "permissions": [
+    {
+      "platform": "APPSTORE",
+      "role": "GUEST"
+    }
+  ]
+}
+```
+
+Example response:
+```json
+response 200 OK
+{
+  "username": "TestUser1",
+  "company": "company",
+  "gender": "male",
+  "telephone": "13812345678",
+  "userId": "37423702-051a-46b4-bf2b-f190759cc0b8",
+  "permissions": [
+    {
+      "platform": "APPSTORE",
+      "role": "GUEST"
+    }
+  ]
+}
+
+response 400 Bad Request
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
+}
+
+response 403 FORBIDDEN
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
 }
 ```
 
