@@ -201,6 +201,120 @@ response 200 OK
 }
 ```
 
+### 2.4 查询用户
+
+用户管理员查询所有的用户信息
+
+```
+Resource URI: /v1/users
+Method: GET
+Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
+```
+
+| Name      | Definition |type   | Required|Describe |
+| --------- | ---------- |-------|---------|-------- |
+
+
+Example request:
+```json
+{
+  "username": "TestUser1",
+  "telephone": "13812345678"
+}
+```
+
+Example response:
+```json
+response 200 OK
+[
+  {
+    "username": "TestUser1",
+    "company": "company",
+    "gender": "male",
+    "telephone": "13812345678",
+    "userId": "37423702-051a-46b4-bf2b-f190759cc0b8",
+    "permissions": [
+      {
+        "platform": "APPSTORE",
+        "role": "GUEST"
+      }
+    ]
+  }
+]
+```
+
+### 2.5 删除用户
+
+用户管理员可以根据用户ID删除任何用户
+
+```
+Resource URI: /v1/users/{userId}
+Method: DELETE
+Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
+```
+
+| Name      | Definition |type   | Required|Describe |
+| --------- | ---------- |-------|---------|-------- |
+| userId    | 用户ID      | path  | 是      |uuid     |
+
+Example request:
+```json
+```
+
+Example response:
+```json
+response 200 OK
+```
+
+
+### 2.5 修改用户
+
+用户管理员可以根据用户ID修改用户信息，返回修改后的信息。
+
+```
+Resource URI: /v1/users/{userId}
+Method: DELETE
+Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
+```
+
+| Name      | Definition |type   | Required|Describe |
+| --------- | ---------- |-------|---------|-------- |
+| userId    | 用户ID      | path  | 是      |uuid     |
+
+Example request:
+```json
+{
+  "username": "TestUser1",
+  "company": "company",
+  "gender": "male",
+  "telephone": "13812345678",
+  "permissions": [
+    {
+      "platform": "APPSTORE",
+      "role": "GUEST"
+    }
+  ]
+}
+```
+
+Example response:
+```json
+response 200 OK
+{
+  "username": "TestUser1",
+  "company": "company",
+  "gender": "male",
+  "telephone": "13812345678",
+  "userId": "37423702-051a-46b4-bf2b-f190759cc0b8",
+  "permissions": [
+    {
+      "platform": "APPSTORE",
+      "role": "GUEST"
+    }
+  ]
+}
+```
+
 
 ## 3 IDENTITY 
 
