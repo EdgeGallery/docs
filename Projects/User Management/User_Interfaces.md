@@ -276,7 +276,7 @@ response 200 OK
 
 ```
 Resource URI: /v1/users/{userId}
-Method: DELETE
+Method: PUT
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 ```
 
