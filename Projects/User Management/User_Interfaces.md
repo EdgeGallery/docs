@@ -244,6 +244,20 @@ response 200 OK
     ]
   }
 ]
+
+response 400 Bad Request
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
+}
+
+response 403 FORBIDDEN
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
+}
 ```
 
 ### 2.5 删除用户
@@ -267,6 +281,20 @@ Example request:
 Example response:
 ```json
 response 200 OK
+
+response 400 Bad Request
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
+}
+
+response 403 FORBIDDEN
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
+}
 ```
 
 
@@ -315,6 +343,20 @@ response 200 OK
       "role": "GUEST"
     }
   ]
+}
+
+response 400 Bad Request
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
+}
+
+response 403 FORBIDDEN
+{
+  "code": 0,
+  "message": "string",
+  "detail": "string"
 }
 ```
 
