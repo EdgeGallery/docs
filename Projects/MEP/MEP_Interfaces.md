@@ -23,6 +23,9 @@
       - [2. 注册终止事件订阅](#2-注册终止事件订阅)
       - [3. 删除终止事件订阅](#3-删除终止事件订阅)
       - [4. 查询指定终止事件订阅](#4-查询指定终止事件订阅)
+    - [Heartbeat related interfaces](#heartbeat-related-interfaces)
+      - [1. Query service liveness info](#1-query-service-liveness-info)
+      - [2. Update liveness info](#2-update-liveness-info)
     - [DNS rule configuration interfaces](#dns-rule-configuration-interfaces)
       - [1. Mp1 Interface for DNS configurations](#1-mp1-interface-for-dns-configurations)
         - [1.1 Query all dns rules](#11-query-all-dns-rules)
@@ -287,6 +290,10 @@ OK
   |scopeOfLocality  |            String   |         地域范围（MEC\_SYSTEM/MEC\_HOST/NFVI\_POP/ZONE/ZONE\_GROUP/NFVI\_NODE），默认值MEC\_HOST   |                           否|
   |consumedLocalOnly  |          boolean    |       是否只被本地域APP消费（true/false）    |                                                                               否|
   |isLocal                  |    boolean |          是否在本地域（true/false）       |                                                                                     否|
+  |livenessInterval         |    integer |          Interval (in seconds) between two consecutive heartbeat messages |                                                否|
+  |\_links                  |    Object  |         Links to resources related to this resource. Shall be absent in HTTP requests. |                                     否|
+  |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
+  |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
 
 返回示例：
 
@@ -326,7 +333,13 @@ HTTP/1.1 200 OK
     "serializer": "JSON",
     "scopeOfLocality": "MEC_SYSTEM",
     "consumedLocalOnly": false,
-    "isLocal": true
+    "isLocal": true,
+    "livenessInterval": 60,
+    "_links": {
+      "self": {
+        "liveness" : "/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/service/0bc92b06cc213d2ad8beda71bd0e1460/liveness"
+      }
+    }
   }
 ]
 }
@@ -409,6 +422,10 @@ OK
   |scopeOfLocality              String   |         地域范围（MEC\_SYSTEM/MEC\_HOST/NFVI\_POP/ZONE/ZONE\_GROUP/NFVI\_NODE），默认值MEC\_HOST  |                            |否|
  | consumedLocalOnly |           boolean   |        是否只被本地域APP消费（true/false）  |                                                                                 否|
 |isLocal |                     boolean  |         是否在本地域（true/false）|                                                                                            否|
+  |livenessInterval         |    integer |          Interval (in seconds) between two consecutive heartbeat messages |                                                否|
+  |\_links                  |    Object  |         Links to resources related to this resource. Shall be absent in HTTP requests. |                                     否|
+  |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
+  |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
 
 返回示例：
 
@@ -446,7 +463,13 @@ HTTP/1.1 200 OK
     "serializer": "JSON",
     "scopeOfLocality": "MEC_SYSTEM",
     "consumedLocalOnly": false,
-    "isLocal": true
+    "isLocal": true,
+    "livenessInterval": 60,
+    "_links": {
+      "self": {
+        "liveness" : "/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/service/0bc92b06cc213d2ad8beda71bd0e1460/liveness"
+      }
+    }
  }
 ```
 
@@ -503,6 +526,7 @@ Body参数：
   | scopeOfLocality   |            String   |          地域范围（MEC\_SYSTEM/MEC\_HOST/NFVI\_POP/ZONE/ZONE\_GROUP/NFVI\_NODE），默认值MEC\_HOST  |                             否| 
   | consumedLocalOnly   |          boolean |           是否只被本地域APP消费（true/false） |                                                                                   否
   | isLocal     |                  boolean  |          是否在本地域（true/false）     |                                                                                        否|
+  | livenessInterval          |    integer |          Interval (in seconds) between two consecutive heartbeat messages |                                                否|
 
 请求示例：
 
@@ -549,7 +573,8 @@ POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/
      "serializer": "JSON",
      "scopeOfLocality": "MEC_SYSTEM",
      "consumedLocalOnly": false,
-     "isLocal": true
+     "isLocal": true,
+     "livenessInterval": 60
   }
 }
 ```
@@ -593,6 +618,10 @@ OK
   | scopeOfLocality |              String   |          地域范围（MEC\_SYSTEM/MEC\_HOST/NFVI\_POP/ZONE/ZONE\_GROUP/NFVI\_NODE），默认值MEC\_HOST       |                        否| 
  |  consumedLocalOnly   |          boolean   |         是否只被本地域APP消费（true/false）   |                                                                                 否| 
   | isLocal        |               boolean     |       是否在本地域（true/false） |                                                                                            否|
+  |livenessInterval         |    integer |          Interval (in seconds) between two consecutive heartbeat messages |                                                否|
+  |\_links                  |    Object  |         Links to resources related to this resource. Shall be absent in HTTP requests. |                                     否|
+  |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
+  |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
 
 返回示例：
 
@@ -631,7 +660,13 @@ HTTP/1.1 201 OK
     "serializer": "JSON",
     "scopeOfLocality": "MEC_SYSTEM",
     "consumedLocalOnly": false,
-    "isLocal": true
+    "isLocal": true,
+    "livenessInterval": 60,
+    "_links": {
+      "self": {
+        "liveness" : "/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/service/0bc92b06cc213d2ad8beda71bd0e1460/liveness"
+      }
+    }    
 }
 ```
 
@@ -691,6 +726,7 @@ Body参数：
  | scopeOfLocality     |         String |           地域范围（MEC\_SYSTEM/MEC\_HOST/NFVI\_POP/ZONE/ZONE\_GROUP/NFVI\_NODE），默认值MEC\_HOST     |                         否|
   |consumedLocalOnly|            boolean  |         是否只被本地域APP消费（true/false）   |                                                                                否|
 |  isLocal |                    boolean |          是否在本地域（true/false）      |                                                                                      否|
+|  livenessInterval         |      integer |          Interval (in seconds) between two consecutive heartbeat messages |                                                否|
 
 请求示例：
 
@@ -737,7 +773,8 @@ PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
             "serializer": "JSON",
             "scopeOfLocality": "MEC_SYSTEM",
             "consumedLocalOnly": false,
-            "isLocal": true
+            "isLocal": true,
+            "livenessInterval": 60
         }
 }
 
@@ -783,6 +820,10 @@ OK
 |  scopeOfLocality    |          String      |      地域范围（MEC\_SYSTEM/MEC\_HOST/NFVI\_POP/ZONE/ZONE\_GROUP/NFVI\_NODE），默认值MEC\_HOST   |                           否|
 |  consumedLocalOnly  |         boolean   |        是否只被本地域APP消费（true/false） |                                                                                  否|
  | isLocal   |                   boolean    |       是否在本地域（true/false）  |                                                                                          否|
+ |livenessInterval         |    integer |          Interval (in seconds) between two consecutive heartbeat messages |                                                否|
+ |\_links                  |    Object  |         Links to resources related to this resource. Shall be absent in HTTP requests. |                                     否|
+ |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
+ |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
 
 返回示例：
 
@@ -821,7 +862,13 @@ HTTP/1.1 200 OK
     "serializer": "JSON",
     "scopeOfLocality": "MEC_SYSTEM",
     "consumedLocalOnly": false,
-    "isLocal": true
+    "isLocal": true,
+    "livenessInterval": 60,
+    "_links": {
+      "self": {
+        "liveness" : "/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/service/0bc92b06cc213d2ad8beda71bd0e1460/liveness"
+      }
+    }    
 }
 
 ```
@@ -1516,6 +1563,122 @@ HTTP/1.1 200 OK
 }
 
 ```
+
+### Heartbeat related interfaces
+#### 1. Query service liveness info
+This method retrieves information about an individual mec service liveness resource
+
+URL
+```
+GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}/liveness
+```
+
+Request parameters:
+
+| **Name** | **Type** | **Description** | **IN** | **Required** |
+| --- | --- | --- | --- | --- |
+| Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
+| appInstanceId  | String | APP实例ID（UUID）  | path |  Yes   |
+| serviceId      | String   |APP服务实例ID                      | path |    是|
+
+Body parameters:
+
+None
+
+Example Request:
+
+```
+GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460/liveness
+```
+
+Return Parameters:
+
+| Name          | Type                        | Description              |
+| ------------- | --------------------------- | ------------------------ |
+| state     | enum **{ACTIVE, INACTIVE, SUSPENDED}**                      | State                  |
+| timeStamp    | object                      | The time when the last heartbeat message was received      |
+| &gt;seconds | int32     | The seconds partof the time  |
+| &gt;nanoseconds     | int32                      | The nano seconds part of the time       |
+| interval           | int         | Interval between two consecutive hearbeat message                |
+
+Return Code: 200 OK
+
+Example Response:
+```
+HTTP/1.1 200 OK
+{
+    "state": "ACTIVE",
+    "timeStamp": {
+        "seconds": 1605249472,
+        "nanoseconds": 436892745
+      }
+    "interval": 60
+}
+```
+
+Exception status code
+
+| **HTTP Status Code** | **Description** |
+| --- | --- |
+| 400  | Bad request, used to indicate that the requested parameters are incorrect. |
+| 403   | The current operation is forbidden. |
+| 404  | The requested resource was not found. |
+
+#### 2. Update liveness info
+This method update liveness staus about an individual mec service. It indicates the activeness of the service.
+NOTE: As per ETSI doc, this message should be a PATCH message. Since we use servicecomb rest server which doesn't support PATCH message. we kept it as PUT. But behviour will be similar to patch.
+URL
+```
+PUT /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}/liveness
+```
+
+Request parameters:
+
+| **Name** | **Type** | **Description** | **IN** | **Required** |
+| --- | --- | --- | --- | --- |
+| Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
+| appInstanceId  | String | APP实例ID（UUID）  | path |  Yes   |
+| serviceId      | String   |APP服务实例ID                      | path |    是|
+
+Body parameters:
+
+| Name          | Type                        | Description              | Required      |
+| ------------- | --------------------------- | ------------------------ | ------------- |
+| state     | enum **{ACTIVE}**                      | service state                 | Yes |
+
+Example Request:
+
+```
+PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460/liveness
+{
+  state: "ACTIVE"
+}
+```
+
+Return Parameters:
+
+| Name          | Type                        | Description              |
+| ------------- | --------------------------- | ------------------------ |
+| state     | enum **{ACTIVE, INACTIVE, SUSPENDED}**                      | State                  |
+| timeStamp    | object                      | The time when the last heartbeat message was received      |
+| &gt;seconds | int32     | The seconds partof the time  |
+| &gt;nanoseconds     | int32                      | The nano seconds part of the time       |
+| interval           | int         | Interval between two consecutive hearbeat message                |
+
+Return Code: 204 OK
+
+Example Response:
+Empty response
+
+Exception status code
+
+| **HTTP Status code** | **Description** |
+| ----- | ----- |
+| 400   | Bad request, used to indicate that the requested parameters are incorrect. |
+| 403   | The current operation is forbidden. |
+| 404  | The requested resource was not found. |
+| 409  | conflict state. |
+
 
 
 ### DNS rule configuration interfaces
