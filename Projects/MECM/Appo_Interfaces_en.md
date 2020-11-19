@@ -79,7 +79,7 @@ Method: POST
 |appInstanceDescription|appInstanceDescription|RequestPart|yes|Valid UUID|64|
 |appName|appName|RequestPart|yes|Alphanumeric characters,special characters are hypen and underscore|128|
 |appPackageId|appPackageId|RequestPart|yes|Alphanumeric in lower case|64|
-|appdId|appdId|RequestPart|yes|Alphanumeric in lower case|64|
+|appId|appId|RequestPart|yes|Alphanumeric in lower case|64|
 |mecHost|mecHost|RequestPart |yes|Valid IP Address|15|
 |tenant_id |tenant_id|path|yes|Valid UUID|64|
 
@@ -89,7 +89,7 @@ Example request body:
   "appInstanceDescription": "string",
   "appName": "string",
   "appPackageId": "string",
-  "appdId": "string",
+  "appId": "string",
   "mecHost": "string"
 }
 
