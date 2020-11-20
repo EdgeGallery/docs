@@ -51,7 +51,6 @@ Method: GET
 Example response:
 ```
 200 OK
-[
   {
      "appInstanceId": "string",
      "appPackageId": "string",
@@ -63,7 +62,6 @@ Example response:
      "operationalStatus": "string",
      "operationInfo":"string"
   }
-]
 ```
 
 ### Create AppInstance 
@@ -122,7 +120,6 @@ Method: GET
 Example response:
 ```
 200 OK
-[
   {
      "appInstanceId": "string",
      "appPackageId": "string",
@@ -134,7 +131,6 @@ Example response:
      "operationalStatus": "string",
      "operationInfo":"string"
   }
-]
 ```
 
 ### Instantiate Application
@@ -275,7 +271,6 @@ Method: GET
 Example response:
 ```
 200 OK
-  [
    {
      "capabilityId": "string",
      "capabilityName": "string",
@@ -290,5 +285,4 @@ Example response:
         },
       ]
    }
-  ]
 ```

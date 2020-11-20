@@ -621,6 +621,175 @@ Example response:
 ]
 ```
 
+### Add Application record
+Adds new application record. 
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps
+Method: POST
+```
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|appInstanceId |appInstance id|body |yes|Valid UUID|64|
+|tenant_id |tenant identifier|path|yes|Valid UUID|64|
+|mechost_ip |mechost ip|path|yes|Valid IP Address|15|
+|appName |appName|body|yes|AlphaNumeric,special characters allowed are hypen and underscore|128|
+|capabilities |capabilities|body|yes|capabilities |10|
+|packageId |packageId|body|yes|AlphaNumeric,special characters allowed are hypen and underscore|64|
+|status |status|body|yes|AlphaNumeric,special characters allowed are hypen and underscore|128|
+
+Example request body:
+```
+{
+  "appInstanceId": "string",
+  "appName": "string",
+  "capabilities": [
+    "string"
+  ],
+  "packageId": "string",
+  "status": "string"
+}
+```
+
+Example response:
+```
+200 OK
+[
+  {
+    "Saved"
+  }
+]
+```
+
+### Update Application record
+Updates Application record. 
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps/{app_id}
+Method: PUT
+```
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|appInstanceId |appInstance id|body |yes|Valid UUID|64|
+|tenant_id |tenant identifier|path|yes|Valid UUID|64|
+|mechost_ip |mechost ip|path|yes|Valid IP Address|15|
+|appName |appName|body|yes|AlphaNumeric,special characters allowed are hypen and underscore|128|
+|capabilities |capabilities|body|yes|capabilities |10|
+|packageId |packageId|body|yes|AlphaNumeric,special characters allowed are hypen and underscore|64|
+|status |status|body|yes|AlphaNumeric,special characters allowed are hypen and underscore|128|
+
+Example request body:
+```
+{
+  "appInstanceId": "string",
+  "appName": "string",
+  "capabilities": [
+    "string"
+  ],
+  "packageId": "string",
+  "status": "string"
+}
+```
+
+Example response:
+```
+200 OK
+[
+  {
+    "Updated"
+  }
+]
+```
+
+### Delete Application record
+Delete application record
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps/{app_id}
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|mechost_ip |mechost_ip|path |yes|Valid IP address|15|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|app_id|application id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+[
+  {
+    "Deleted"
+  }
+]
+```
+
+### Retrieves MEC host record
+Retrieves MEC host record for specific capabilities
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/capabilities
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|mechost_ip |mechost_ip|path |yes|Valid IP address|15|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|capabilities |capabilities|path|yes|capabilities |10|
+
+Example response:
+```
+200 OK
+{
+      "hwcapabilities": [
+          {
+              "hwType": "string",
+              "hwVendor": "string",
+              "hwModel": "string"
+          },
+          {
+              "hwType": "string",
+              "hwVendor": "string",
+              "hwModel": "string"
+          }
+      ]
+  }
+```
+
+### Retrieves MEC application record
+Retrieves applications matching capability in a specific MEC host record.
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/capabilities/{capability_type}/applications
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|mechost_ip |mechost_ip|path |yes|Valid IP address|15|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|capabilities |capabilities|path|yes|capabilities |10|
+|capabilityType |capability type|path|yes|AlphaNumeric,special characters allowed are hypen and underscore|128|
+
+Example response:
+```
+200 OK
+{
+      "apps": [
+          {
+              "appInstanceId": "string",
+              "appName": "string",
+              "packageId": "string"
+              "capabilities": [
+                  "string"
+              ],
+              "status": "Created"
+      ]
+  }
+```
+
 ### Upload K8s Configuration File
 Upload K8s configuration file to applcm
 
