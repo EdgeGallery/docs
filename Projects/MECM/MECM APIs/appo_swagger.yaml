@@ -1,378 +1,384 @@
-swagger: "2.0"
-info: 
- description: "Application Orchestrator REST API"
- version: "1.0.0"
- title: "Application Orchestrator REST API"
- license: 
-  name: "Apache 2.0"
-  url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "127.0.0.1:30201"
+---
+swagger: '2.0'
+info:
+  description: Application Orchestrator REST API
+  version: 1.0.0
+  title: Application Orchestrator REST API
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: 127.0.0.1:30201
 basePath: "/"
-tags: 
- - 
-   name: "app-instance-info-handler"
-  description: "App Instance Info Handler"
- - 
-   name: "app-orchestrator-handler"
-  description: "App Orchestrator Handler"
-paths: 
- "/appo/v1/tenants/{tenant_id}/app_instance_infos": 
-  get: 
-   tags: 
-    - 
-   "app-instance-info-handler"
-   summary: "Retrieves application instance info"
-   operationId: getAllAppInstanceInfoUsingGET
-   produces: 
-    - 
-   "application/json"
-   parameters: 
-    - 
-   name: tenant_id
-     in: path
-     description: "tenant id"
-     required: false
-     type: string
-   responses: 
-    200: 
-     description: OK
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-    401: 
-     description: Unauthorized
-    403: 
-     description: Forbidden
-    404: 
-     description: "Not Found"
-   deprecated: false
- "/appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_id}": 
-  get: 
-   tags: 
-    - 
-   "app-instance-info-handler"
-   summary: "Retrieves application instance info"
-   operationId: getAppInstanceInfoUsingGET
-   produces: 
-    - 
-   "application/json"
-   parameters: 
-    - 
-   name: appInstance_id
-     in: path
-     description: "application instance id"
-     required: false
-     type: string
-    - 
-   name: tenant_id
-     in: path
-     description: "tenant id"
-     required: false
-     type: string
-   responses: 
-    200: 
-     description: OK
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-    401: 
-     description: Unauthorized
-    403: 
-     description: Forbidden
-    404: 
-     description: "Not Found"
-   deprecated: false
- "/appo/v1/tenants/{tenant_id}/app_instances": 
-  post: 
-   tags: 
-    - 
-   "app-orchestrator-handler"
-   summary: "Creates application instance"
-   operationId: createAppInstanceUsingPOST
-   consumes: 
-    - 
-   "application/json"
-   produces: 
-    - 
-   "application/json"
-   parameters: 
-    - 
-   name: access_token
-     in: header
-     description: "access token"
-     required: false
-     type: string
-    - 
-   in: body
-     name: createParam
-     description: "create application instance"
-     required: false
-     schema: 
-      "$ref": "#/definitions/CreateParam"
-    - 
-   name: tenant_id
-     in: path
-     description: "tenant id"
-     required: false
-     type: string
-   responses: 
-    200: 
-     description: OK
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-    201: 
-     description: "request accepted "
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-    401: 
-     description: Unauthorized
-    403: 
-     description: Forbidden
-    404: 
-     description: "Not Found"
-    500: 
-     description: "internal server error"
-     schema: 
-      type: string
-   deprecated: false
- "/appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}": 
-  get: 
-   tags: 
-    - 
-   "app-orchestrator-handler"
-   summary: "Retrieves application instance information"
-   operationId: getAppInstanceUsingGET
-   produces: 
-    - 
-   "application/json"
-   parameters: 
-    - 
-   name: access_token
-     in: header
-     description: "access token"
-     required: false
-     type: string
-    - 
-   name: app_instance_id
-     in: path
-     description: "application instance id"
-     required: false
-     type: string
-    - 
-   name: tenant_id
-     in: path
-     description: "tenant id"
-     required: false
-     type: string
-   responses: 
-    200: 
-     description: OK
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-    401: 
-     description: Unauthorized
-    403: 
-     description: Forbidden
-    404: 
-     description: "Not Found"
-   deprecated: false
-  post: 
-   tags: 
-    - 
-   "app-orchestrator-handler"
-   summary: "Instantiate application instance"
-   operationId: instantiateAppInstanceUsingPOST
-   consumes: 
-    - 
-   "application/json"
-   produces: 
-    - 
-   "application/json"
-   parameters: 
-    - 
-   name: access_token
-     in: header
-     description: "access token"
-     required: false
-     type: string
-    - 
-   name: app_instance_id
-     in: path
-     description: "application instance id"
-     required: false
-     type: string
-    - 
-   name: tenant_id
-     in: path
-     description: "tenant id"
-     required: false
-     type: string
-   responses: 
-    200: 
-     description: OK
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-    201: 
-     description: "request accepted "
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-    401: 
-     description: Unauthorized
-    403: 
-     description: Forbidden
-    404: 
-     description: "Not Found"
-    500: 
-     description: "internal server error"
-     schema: 
-      type: string
-   deprecated: false
-  delete: 
-   tags: 
-    - 
-   "app-orchestrator-handler"
-   summary: "Terminates application instance"
-   operationId: terminateAppInstanceUsingDELETE
-   produces: 
-    - 
-   "application/json"
-   parameters: 
-    - 
-   name: access_token
-     in: header
-     description: "access token"
-     required: false
-     type: string
-    - 
-   name: app_instance_id
-     in: path
-     description: "application instance id"
-     required: false
-     type: string
-    - 
-   name: tenant_id
-     in: path
-     description: "tenant id"
-     required: false
-     type: string
-   responses: 
-    200: 
-     description: OK
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-    201: 
-     description: "request accepted "
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-    204: 
-     description: "No Content"
-    401: 
-     description: Unauthorized
-    403: 
-     description: Forbidden
-    500: 
-     description: "internal server error"
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-   deprecated: false
- "/appo/v1/tenants/{tenant_id}/hosts/{host_ip}/kpi": 
-  get: 
-   tags: 
-    - 
-   "app-orchestrator-handler"
-   summary: "Retrieves edge host performance statistics"
-   operationId: queryKpiUsingGET
-   produces: 
-    - 
-   "application/json"
-   parameters: 
-    - 
-   name: access_token
-     in: header
-     description: "access token"
-     required: false
-     type: string
-    - 
-   name: host_ip
-     in: path
-     description: "edge host ip"
-     required: false
-     type: string
-    - 
-   name: tenant_id
-     in: path
-     description: tenant_id
-     required: true
-     type: string
-   responses: 
-    200: 
-     description: OK
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-    401: 
-     description: Unauthorized
-    403: 
-     description: Forbidden
-    404: 
-     description: "Not Found"
-   deprecated: false
- "/appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities": 
-  get: 
-   tags: 
-    - 
-   "app-orchestrator-handler"
-   summary: "Retrieves edge host platform capabilities"
-   operationId: queryEdgehostCapabilitiesUsingGET
-   produces: 
-    - 
-   "application/json"
-   parameters: 
-    - 
-   name: access_token
-     in: header
-     description: "access token"
-     required: false
-     type: string
-    - 
-   name: host_ip
-     in: path
-     description: "edge host ip"
-     required: false
-     type: string
-    - 
-   name: tenant_id
-     in: path
-     description: "tenant id"
-     required: false
-     type: string
-   responses: 
-    200: 
-     description: OK
-     schema: 
-      "$ref": "#/definitions/AppoResponse"
-    401: 
-     description: Unauthorized
-    403: 
-     description: Forbidden
-    404: 
-     description: "Not Found"
-   deprecated: false
-definitions: 
- AppoResponse: 
-  type: object
-  properties: 
-   response: 
+tags:
+- name: app-instance-info-handler
+  description: App Instance Info Handler
+- name: app-orchestrator-handler
+  description: App Orchestrator Handler
+paths:
+  "/appo/v1/tenants/{tenant_id}/app_instance_infos":
+    get:
+      tags:
+      - app-instance-info-handler
+      summary: Retrieves application instance info
+      operationId: getAllAppInstanceInfoUsingGET
+      produces:
+      - application/json
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  "/appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_id}":
+    get:
+      tags:
+      - app-instance-info-handler
+      summary: Retrieves application instance info
+      operationId: getAppInstanceInfoUsingGET
+      produces:
+      - application/json
+      parameters:
+      - name: appInstance_id
+        in: path
+        description: application instance id
+        required: false
+        type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  "/appo/v1/tenants/{tenant_id}/app_instances":
+    post:
+      tags:
+      - app-orchestrator-handler
+      summary: Creates application instance
+      operationId: createAppInstanceUsingPOST
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - name: access_token
+        in: header
+        description: access token
+        required: false
+        type: string
+      - in: body
+        name: createParam
+        description: create application instance
+        required: false
+        schema:
+          "$ref": "#/definitions/CreateParam"
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '201':
+          description: 'request accepted '
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: internal server error
+          schema:
+            type: string
+      deprecated: false
+  "/appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}":
+    get:
+      tags:
+      - app-orchestrator-handler
+      summary: Retrieves application instance information
+      operationId: getAppInstanceUsingGET
+      produces:
+      - application/json
+      parameters:
+      - name: access_token
+        in: header
+        description: access token
+        required: false
+        type: string
+      - name: app_instance_id
+        in: path
+        description: application instance id
+        required: false
+        type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+    post:
+      tags:
+      - app-orchestrator-handler
+      summary: Instantiate application instance
+      operationId: instantiateAppInstanceUsingPOST
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - name: access_token
+        in: header
+        description: access token
+        required: false
+        type: string
+      - name: app_instance_id
+        in: path
+        description: application instance id
+        required: false
+        type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '201':
+          description: 'request accepted '
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: internal server error
+          schema:
+            type: string
+      deprecated: false
+    delete:
+      tags:
+      - app-orchestrator-handler
+      summary: Terminates application instance
+      operationId: terminateAppInstanceUsingDELETE
+      produces:
+      - application/json
+      parameters:
+      - name: access_token
+        in: header
+        description: access token
+        required: false
+        type: string
+      - name: app_instance_id
+        in: path
+        description: application instance id
+        required: false
+        type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '201':
+          description: 'request accepted '
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '204':
+          description: No Content
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '500':
+          description: internal server error
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+      deprecated: false
+  "/appo/v1/tenants/{tenant_id}/hosts/{host_ip}/kpi":
+    get:
+      tags:
+      - app-orchestrator-handler
+      summary: Retrieves edge host performance statistics
+      operationId: queryKpiUsingGET
+      produces:
+      - application/json
+      parameters:
+      - name: access_token
+        in: header
+        description: access token
+        required: false
+        type: string
+      - name: host_ip
+        in: path
+        description: edge host ip
+        required: false
+        type: string
+      - name: tenant_id
+        in: path
+        description: tenant_id
+        required: true
+        type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  "/appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities":
+    get:
+      tags:
+      - app-orchestrator-handler
+      summary: Retrieves edge host platform capabilities
+      operationId: queryEdgehostCapabilitiesUsingGET
+      produces:
+      - application/json
+      parameters:
+      - name: access_token
+        in: header
+        description: access token
+        required: false
+        type: string
+      - name: host_ip
+        in: path
+        description: edge host ip
+        required: false
+        type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  "/appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities/{capability_id}":
+    get:
+      tags:
+      - app-orchestrator-handler
+      summary: Retrieves edge host platform capabilities
+      operationId: queryEdgehostCapabilityUsingGET
+      produces:
+      - application/json
+      parameters:
+      - name: access_token
+        in: header
+        description: access token
+        required: false
+        type: string
+      - name: capability_id
+        in: path
+        description: capability_id
+        required: true
+        type: string
+      - name: host_ip
+        in: path
+        description: edge host ip
+        required: false
+        type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: false
+        type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            "$ref": "#/definitions/AppoResponse"
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+definitions:
+  AppoResponse:
     type: object
-  title: AppoResponse
- CreateParam: 
-  type: object
-  properties: 
-   appInstanceDescription: 
-    type: string
-   appName: 
-    type: string
-   appPackageId: 
-    type: string
-   appdId: 
-    type: string
-   mecHost: 
-    type: string
-  title: CreateParam
+    properties:
+      response:
+        type: object
+    title: AppoResponse
+  CreateParam:
+    type: object
+    properties:
+      appId:
+        type: string
+      appInstanceDescription:
+        type: string
+      appName:
+        type: string
+      appPackageId:
+        type: string
+      hwCapabilities:
+        type: array
+        items:
+          type: string
+      mecHost:
+        type: string
+    title: CreateParam
+
