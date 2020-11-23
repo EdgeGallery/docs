@@ -21,6 +21,10 @@ Architecture
 ### Distributor
 
 * Responsible for distributing application package to the designated edge nodes.
+
+### Edge Repository Enablement Guide
+
+* Please refer [Edge Repository Enablement Guide](Edge Repository Enablement Guide.md)
   
 ## APPO
  Appo orchestrates application deployment by executing specified process and automated sequence of tasks, rules and

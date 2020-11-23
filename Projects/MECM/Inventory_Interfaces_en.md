@@ -419,10 +419,10 @@ Method: POST
 |mechostName|mechostName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |zipCode|zipCode|body|yes|Alpha, special characters allowed are hypen and underscore|128| 
-|hwcapabilities|hardwareCapabilities|body|yes|AlphaNumeric characters allowed|128|
-|hwType|hardwareType|body|yes|AlphaNumeric characters allowed|128|
-|hwVendor|hardwareVendor|body|yes|AlphaNumeric characters allowed|128|
-|hwModel|hardwareModel|body|yes|AlphaNumeric characters allowed|128|
+|hwcapabilities|hardwareCapabilities|body|No|AlphaNumeric characters allowed|128|
+|hwType|hardwareType|body|No|AlphaNumeric characters allowed|128|
+|hwVendor|hardwareVendor|body|No|AlphaNumeric characters allowed|128|
+|hwModel|hardwareModel|body|No|AlphaNumeric characters allowed|128|
 
 Example request body:
 ```
