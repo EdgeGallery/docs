@@ -24,7 +24,7 @@ Architecture
 
 ### Edge Repository Enablement Guide
 
-* Please refer [Edge Repository Enablement Guide](Edge Repository Enablement Guide.md)
+* Please refer [Edge Repository Enablement Guide](Edge_Repository_Enablement_Guide.md)
   
 ## APPO
  Appo orchestrates application deployment by executing specified process and automated sequence of tasks, rules and
