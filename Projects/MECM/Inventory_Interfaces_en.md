@@ -419,10 +419,10 @@ Method: POST
 |mechostName|mechostName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |zipCode|zipCode|body|yes|Alpha, special characters allowed are hypen and underscore|128| 
-|hwcapabilities|hardwareCapabilities|body|yes|AlphaNumeric characters allowed|128|
-|hwType|hardwareType|body|yes|AlphaNumeric characters allowed|128|
-|hwVendor|hardwareVendor|body|yes|AlphaNumeric characters allowed|128|
-|hwModel|hardwareModel|body|yes|AlphaNumeric characters allowed|128|
+|hwcapabilities|hardwareCapabilities|body|No|AlphaNumeric characters allowed|128|
+|hwType|hardwareType|body|No|AlphaNumeric characters allowed|128|
+|hwVendor|hardwareVendor|body|No|AlphaNumeric characters allowed|128|
+|hwModel|hardwareModel|body|No|AlphaNumeric characters allowed|128|
 
 Example request body:
 ```
@@ -554,10 +554,10 @@ Method: PUT
 |mechostName|mechostName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |zipCode|zipCode|body|yes|Alpha, special characters allowed are hypen and underscore|128|
-|hwcapabilities|hardwareCapabilities|body|yes|AlphaNumeric characters allowed|128|
-|hwType|hardwareType|body|yes|AlphaNumeric characters allowed|128|
-|hwVendor|hardwareVendor|body|yes|AlphaNumeric characters allowed|128|
-|hwModel|hardwareModel|body|yes|AlphaNumeric characters allowed|128|
+|hwcapabilities|hardwareCapabilities|body|No|AlphaNumeric characters allowed|128|
+|hwType|hardwareType|body|No|AlphaNumeric characters allowed|128|
+|hwVendor|hardwareVendor|body|No|AlphaNumeric characters allowed|128|
+|hwModel|hardwareModel|body|No|AlphaNumeric characters allowed|128|
 
 Example request body:
 ```
@@ -627,9 +627,10 @@ Adds new application record.
 Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps
 Method: POST
 ```
+
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
+|access_token|access token|header|yes|Jwt token|
 |appInstanceId |appInstance id|body |yes|Valid UUID|64|
 |tenant_id |tenant identifier|path|yes|Valid UUID|64|
 |mechost_ip |mechost ip|path|yes|Valid IP Address|15|
@@ -667,6 +668,7 @@ Updates Application record.
 Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps/{app_id}
 Method: PUT
 ```
+
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
