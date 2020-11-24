@@ -250,3 +250,39 @@ Example response:
  "success"
 }
 ```
+
+### On-boards application with package.
+On-boards application with package provided.
+```
+Resource URI: /apm/v1/tenants/{tenant_id}/packages/upload
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|appPkgName|appPkgName|body|yes|AlphaNumeric and allowed special characters hypen and underscore|255|
+|appPkgVersion|appPkgVersion|body|yes|Valid URL|1024|
+|File|file|formData|No|
+|hostList|host list|formData|yes|
+|tenant_id|tenant id|path|no|Valid UUID|64|
+
+Example request body:
+```
+{
+  "access_token": "string",
+  "appPackageName": "string",
+  "appPackageVersion": "string",
+  "file": "file",
+  "hostList": "string",
+  "tenant_id": "string",
+}
+```
+Example response:
+```
+202 Accepted
+{
+  "appId": "string",
+  "appPackageId": "string"
+}
+```
