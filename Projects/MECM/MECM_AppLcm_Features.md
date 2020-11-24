@@ -14,8 +14,9 @@ Remove Configuration:
  Remove configuration API is responsible to remove the kube configuration file from edge node.
  
 Instantiate:
- Instantiate API is responsible to deploy an application in edge node. As part of Instantiate API we also configure  
- ak sk values to MEP and ak sk values will be available to deployed application via kubernetes secret.  
+ Instantiate API is responsible to deploy an application in edge node. As part of Instantiate API lcmcontroller
+ will send request to MEP about ak sk configuration and will create a kubernetes secret for ak sk values and which 
+ can be referred by deployed application.
  
 Terminate:
  Terminate API is responsible to delete an application from edge node.
