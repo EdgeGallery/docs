@@ -3,7 +3,8 @@ LcmController is mainly responsible to provide northbound API's to upload config
 , and query an application. It also provides APIs to query mep capabilities and kpi information from prometheus
 
 
-![](/uploads/images/2020/0924/mecm-applcm-diagram.png "mecm-applcm-diagram.png") 
+![](/uploads/images/2020/0924/mecm-applcm-diagram.png "mecm-applcm-diagram.png")
+ 
 
 Upload Configuration:
  Upload configuration API is responsible to upload the kube configuration file into edge node to communicate with
@@ -13,7 +14,9 @@ Remove Configuration:
  Remove configuration API is responsible to remove the kube configuration file from edge node.
  
 Instantiate:
- Instantiate API is responsible to deploy an application in edge node.
+ Instantiate API is responsible to deploy an application in edge node. As part of Instantiate API lcmcontroller
+ will send request to MEP about ak sk configuration and will create a kubernetes secret for ak sk values and which 
+ can be referred by deployed application.
  
 Terminate:
  Terminate API is responsible to delete an application from edge node.
