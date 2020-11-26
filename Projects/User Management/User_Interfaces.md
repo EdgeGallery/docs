@@ -51,6 +51,33 @@ Example response:
 Succeed
 ```
 
+### 1.3 查询当前登录用户
+
+查询当前登录的用户信息，返回用户基本信息和用户权限。
+
+```
+Resource URI: /auth/login-info
+Method: GET
+```
+
+Example response:
+```json
+response 200 OK
+{
+    "username": "TestUser1",
+    "company": "company",
+    "gender": "male",
+    "telephone": "13812345678",
+    "userId": "37423702-051a-46b4-bf2b-f190759cc0b8",
+    "permissions": [
+        {
+            "platform": "APPSTORE",
+            "role": "GUEST"
+        }
+    ]
+}
+```
+
 
 ## 2 USER-MGMT
 
