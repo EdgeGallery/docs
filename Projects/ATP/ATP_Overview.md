@@ -7,6 +7,7 @@
 
 
 ## 架构说明
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1201/173831_7f25c651_7854857.png "architecture.PNG")
 
 1. atp-fe：开发者平台前台框架，使用VUE开发。
 
@@ -14,13 +15,8 @@
 
 3. atp DB：后台依赖Postgres数据库。
 
-## 部署视图
-![](/uploads/images/2020/0709/154053_b41b4a97_5504908.png)
-
-以上部署视图是按照K8S部署设计的， 在实际部署过程中，可以直接在虚拟机或者docker容器中启动各自的服务，部署过程中需要有一下几点注意：
-
-- appstore-fe和appstore-be都需要注册到ServiceCenter中
-- 推荐使用Chrome浏览器
+## 测试用例设计
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1201/182205_9fec23e4_7854857.png "测试用例设计.PNG")
 
 
 [1]: https://gitee.com/edgegallery/atp "atp"
