@@ -286,3 +286,166 @@ Example response:
       ]
    }
 ```
+
+### Create Batch
+Batch create application instances.
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_create
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant id|path |yes|Valid UUID|64|
+|appName|appName|RequestPart|yes|Alphanumeric characters,special characters are hypen and underscore|128|
+|appInstanceDescription|appInstanceDescription|RequestPart|yes|Valid UUID|64|
+|appPackageId|appPackageId|RequestPart|yes|Alphanumeric in lower case|64|
+|appId|appId|RequestPart|yes|Alphanumeric in lower case|64|
+|mecHost|mecHost|RequestPart |yes|Valid IP Address|15|
+|hwcapabilities|hardwareCapabilities|body|No|AlphaNumeric characters allowed|128|
+
+Example request body:
+```
+{
+  "appPackageId": "string",
+  "appName": "string",
+  "appInstanceDescription": "string",
+  "appId": "string",
+  "mecHost": "string",
+  "hwcapabilities": "string"
+}
+
+```
+
+Example response:
+
+```
+202 Accepted
+  {
+    "response": [
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            },
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            }
+          ]
+  }
+```
+
+### Batch instantiate
+Batch instantiate application instances.
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_instantiate
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant id|path |yes|Valid UUID|64|
+|appInstanceIds|application instance id|body|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+ "appInstanceIds" : ["string","string"]
+}
+
+```
+
+Example response:
+
+```
+202 Accepted
+  {
+    "response": [
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            },
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            }
+          ]
+  }
+```
+
+### Batch terminate
+Batch terminates application instances.
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_terminate
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant id|path |yes|Valid UUID|64|
+|appInstanceIds|application instance id|body|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+ "appInstanceIds" : ["string","string"]
+}
+
+```
+
+Example response:
+
+```
+202 Accepted
+  {
+    "response": [
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            },
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            }
+          ]
+  }
+```
+
+### Batch Query
+Batch Query information
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_ids}
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|appInstance_ids|application instance id|header|yes|Valid UUID|64|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+
+
+Example response:
+```
+200 OK
+  {
+     "appInstanceId": "string",
+     "appPackageId": "string",
+     "appName": "string",
+     "appId": "string",
+     "appDescriptor": "string",
+     "mecHost": "string",
+     "applcmHost": "string",
+     "operationalStatus": "string",
+     "operationInfo":"string"
+  }
+```
