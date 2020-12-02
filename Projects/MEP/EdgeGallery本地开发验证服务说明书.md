@@ -1992,7 +1992,7 @@ j7k0UwOJSsIfi3dzainoBdkcpJJJOJlzd2oBwMQxXdaZ3oCswITWUyLP4eldxdcKGmDvG1qwUEfQjAg7
 
 Please input root key component:
 
-# 提示输入证书加密密码，与证书生成过程中密码一致
+# 提示输入证书加密密码，与证书生成过程中密码一致,示例te9Fmv%qaq
 Please input tls certificates password:
 Confirm the password:
 
