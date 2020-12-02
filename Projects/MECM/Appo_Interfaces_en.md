@@ -419,3 +419,33 @@ Example response:
           ]
   }
 ```
+
+### Batch Query
+Batch Query information
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_ids}
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|appInstance_ids|application instance id|header|yes|Valid UUID|64|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+
+
+Example response:
+```
+200 OK
+  {
+     "appInstanceId": "string",
+     "appPackageId": "string",
+     "appName": "string",
+     "appId": "string",
+     "appDescriptor": "string",
+     "mecHost": "string",
+     "applcmHost": "string",
+     "operationalStatus": "string",
+     "operationInfo":"string"
+  }
+```
