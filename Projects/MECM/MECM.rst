@@ -48,6 +48,7 @@ MECM
       :maxdepth: 1
 
        MECM Product Document使用指导<MECM Product Document>
+       MECM User Interface Document<MECM_User_Interface>
 
 **How to Contribute如何贡献**
 *****************
