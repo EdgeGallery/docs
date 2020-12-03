@@ -211,3 +211,19 @@ Example response:
    }
   ]
 ```
+
+### Queries liveness & readiness
+Retrieves data for liveness & readiness
+```
+Resource URI: /lcmcontroller/v1/health
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+
+Example response:
+```
+200 OK
+```
