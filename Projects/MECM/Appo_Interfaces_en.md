@@ -468,4 +468,4 @@ Example response:
 
 ### APPO Open Api Swagger
 
-* Please refer [APPO_OPEN_API](appo-swagger-openapi.yaml)
+* Please refer [APPO_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/appo-swagger-openapi.yaml)

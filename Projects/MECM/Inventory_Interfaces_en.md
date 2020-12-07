@@ -856,4 +856,4 @@ Example response:
 
 ### Inventory Open Api Swagger
 
-* Please refer [INVENTORY_OPEN_API](inventory-swagger-openapi.yaml)
+* Please refer [INVENTORY_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/inventory-swagger-openapi.yaml)

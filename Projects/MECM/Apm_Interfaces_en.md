@@ -305,4 +305,4 @@ Example response:
 
 ### APM Open Api Swagger
 
-* Please refer [APM_OPEN_API](apm-swagger-openapi.yaml)
+* Please refer [APM_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/apm-swagger-openapi.yaml)
