@@ -853,3 +853,7 @@ Example response:
 ```
 200 OK
 ```
+
+### Inventory Open Api Swagger
+
+* Please refer [INVENTORY_OPEN_API](inventory-swagger-openapi.yaml)

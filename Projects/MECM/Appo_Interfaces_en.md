@@ -465,3 +465,7 @@ Example response:
 ```
 200 OK
 ```
+
+### APPO Open Api Swagger
+
+* Please refer [APPO_OPEN_API](appo-swagger-openapi.yaml)
