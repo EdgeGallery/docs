@@ -302,3 +302,7 @@ Example response:
 ```
 200 OK
 ```
+
+### APM Open Api Swagger
+
+* Please refer [APM_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/apm-swagger-openapi.yaml)

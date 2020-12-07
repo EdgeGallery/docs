@@ -465,3 +465,7 @@ Example response:
 ```
 200 OK
 ```
+
+### APPO Open Api Swagger
+
+* Please refer [APPO_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/appo-swagger-openapi.yaml)

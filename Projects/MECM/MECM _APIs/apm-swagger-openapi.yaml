@@ -1,0 +1,413 @@
+openapi: 3.0.1
+info:
+  title: APPLICATION PACKAGE MANAGER REST API
+  description: APPLICATION PACKAGE MANAGER REST API
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+- url: //localhost:30202/
+tags:
+- name: APM api system
+  description: Apm Handler
+paths:
+  /apm/v1/tenants/{tenant_id}/packages:
+    get:
+      tags:
+      - APM api system
+      summary: Retrieves all application packages
+      operationId: getAllAppPackageInfoUsingGET
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    post:
+      tags:
+      - APM api system
+      summary: Onboard application package
+      operationId: onBoardAppPackageUsingPOST
+      parameters:
+      - name: access_token
+        in: header
+        description: access_token
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: app package info
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppPackageDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: appPackageDto
+  /apm/v1/tenants/{tenant_id}/packages/{app_package_id}:
+    get:
+      tags:
+      - APM api system
+      summary: Retrieves application package information
+      operationId: getAppPackageInfoUsingGET
+      parameters:
+      - name: app_package_id
+        in: path
+        description: app package id
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppPackageDto'
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    delete:
+      tags:
+      - APM api system
+      summary: Deletes application package
+      operationId: deleteAppPackageUsingDELETE
+      parameters:
+      - name: app_package_id
+        in: path
+        description: app package id
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+  /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download:
+    get:
+      tags:
+      - APM api system
+      summary: Download application package CSAR
+      operationId: downloadAppPackageUsingGET
+      parameters:
+      - name: app_package_id
+        in: path
+        description: app package id
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/octet-stream:
+              schema:
+                $ref: '#/components/schemas/InputStreamResource'
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+  /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_ip}:
+    delete:
+      tags:
+      - APM api system
+      summary: Deletes an application packages
+      operationId: deleteAppPackageInHostUsingDELETE
+      parameters:
+      - name: app_package_id
+        in: path
+        description: app package id
+        required: true
+        schema:
+          type: string
+      - name: host_ip
+        in: path
+        description: host ip
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+components:
+  schemas:
+    AppPackageDto:
+      title: AppPackageDto
+      type: object
+      properties:
+        appIconUrl:
+          type: string
+        appId:
+          type: string
+        appPkgAffinity:
+          type: string
+        appPkgDesc:
+          type: string
+        appPkgId:
+          type: string
+        appPkgName:
+          type: string
+        appPkgPath:
+          type: string
+        appPkgVersion:
+          type: string
+        appProvider:
+          type: string
+        createdTime:
+          type: string
+        mecHostInfo:
+          type: array
+          items:
+            $ref: '#/components/schemas/MecHostDto'
+        modifiedTime:
+          type: string
+    File:
+      title: File
+      type: object
+      properties:
+        absolute:
+          type: boolean
+        absoluteFile:
+          $ref: '#/components/schemas/File'
+        absolutePath:
+          type: string
+        canonicalFile:
+          $ref: '#/components/schemas/File'
+        canonicalPath:
+          type: string
+        directory:
+          type: boolean
+        file:
+          type: boolean
+        freeSpace:
+          type: integer
+          format: int64
+        hidden:
+          type: boolean
+        name:
+          type: string
+        parent:
+          type: string
+        parentFile:
+          $ref: '#/components/schemas/File'
+        path:
+          type: string
+        totalSpace:
+          type: integer
+          format: int64
+        usableSpace:
+          type: integer
+          format: int64
+    InputStream:
+      title: InputStream
+      type: object
+    InputStreamResource:
+      title: InputStreamResource
+      type: object
+      properties:
+        description:
+          type: string
+        file:
+          $ref: '#/components/schemas/File'
+        filename:
+          type: string
+        inputStream:
+          $ref: '#/components/schemas/InputStream'
+        open:
+          type: boolean
+        readable:
+          type: boolean
+        uri:
+          $ref: '#/components/schemas/URI'
+        url:
+          $ref: '#/components/schemas/URL'
+    MecHostDto:
+      title: MecHostDto
+      type: object
+      properties:
+        error:
+          type: string
+        hostIp:
+          type: string
+        status:
+          type: string
+    URI:
+      title: URI
+      type: object
+      properties:
+        absolute:
+          type: boolean
+        authority:
+          type: string
+        fragment:
+          type: string
+        host:
+          type: string
+        opaque:
+          type: boolean
+        path:
+          type: string
+        port:
+          type: integer
+          format: int32
+        query:
+          type: string
+        rawAuthority:
+          type: string
+        rawFragment:
+          type: string
+        rawPath:
+          type: string
+        rawQuery:
+          type: string
+        rawSchemeSpecificPart:
+          type: string
+        rawUserInfo:
+          type: string
+        scheme:
+          type: string
+        schemeSpecificPart:
+          type: string
+        userInfo:
+          type: string
+    URL:
+      title: URL
+      type: object
+      properties:
+        authority:
+          type: string
+        content:
+          type: object
+          properties: {}
+        defaultPort:
+          type: integer
+          format: int32
+        file:
+          type: string
+        host:
+          type: string
+        path:
+          type: string
+        port:
+          type: integer
+          format: int32
+        protocol:
+          type: string
+        query:
+          type: string
+        ref:
+          type: string
+        userInfo:
+          type: string
+

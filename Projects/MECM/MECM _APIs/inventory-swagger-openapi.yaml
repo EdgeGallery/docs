@@ -1,0 +1,1679 @@
+openapi: 3.0.1
+info:
+  title: Inventory REST API
+  description: Inventory REST API
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+- url: //127.0.0.1:30203/
+tags:
+- name: app-lcm-inventory-handler
+  description: App Lcm Inventory Handler
+- name: app-rule-manager-inventory-handler
+  description: App Rule Manager Inventory Handler
+- name: app-store-inventory-handler
+  description: App Store Inventory Handler
+- name: appd-rule-inventory-handler
+  description: Appd Rule Inventory Handler
+- name: inventory-handler
+  description: Inventory Handler
+- name: mec-host-inventory-handler
+  description: Mec Host Inventory Handler
+paths:
+  /inventory/v1/health:
+    get:
+      tags:
+      - inventory-handler
+      summary: Queries liveness and readiness
+      operationId: healthCheckUsingGET
+      responses:
+        200:
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration:
+    get:
+      tags:
+      - appd-rule-inventory-handler
+      summary: Retrieves appDRule records for given tenent ID and app instance ID
+      operationId: getAppdRuleRecordUsingGET
+      parameters:
+      - name: app_instance_id
+        in: path
+        description: app instance identifier
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    put:
+      tags:
+      - appd-rule-inventory-handler
+      summary: Updates existing appDRule record
+      operationId: updateAppdRuleRecordUsingPUT
+      parameters:
+      - name: app_instance_id
+        in: path
+        description: app instance identifier
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: appD rule inventory information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppdRuleConfigDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: appDRuleConfigDto
+    post:
+      tags:
+      - appd-rule-inventory-handler
+      summary: Adds AppD rule record
+      operationId: addAppdRuleRecordUsingPOST
+      parameters:
+      - name: app_instance_id
+        in: path
+        description: app instance identifier
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: appD rule inventory information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppdRuleConfigDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: appDRuleConfigDto
+    delete:
+      tags:
+      - appd-rule-inventory-handler
+      summary: Deletes appDRule records
+      operationId: deleteAllAppdRecordsUsingDELETE
+      parameters:
+      - name: app_instance_id
+        in: path
+        description: app instance identifier
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/applcms:
+    get:
+      tags:
+      - app-lcm-inventory-handler
+      summary: Retrieves all application LCM records
+      operationId: getAllAppLcmRecordsUsingGET
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    post:
+      tags:
+      - app-lcm-inventory-handler
+      summary: Adds new application LCM record
+      operationId: addAppLcmRecordUsingPOST
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: applcm inventory information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppLcmDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: appLcmDto
+    delete:
+      tags:
+      - app-lcm-inventory-handler
+      summary: Deletes all application LCM records
+      operationId: deleteAllAppLcmRecordsUsingDELETE
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip}:
+    get:
+      tags:
+      - app-lcm-inventory-handler
+      summary: Retrieves application LCM record
+      operationId: getAppLcmRecordUsingGET
+      parameters:
+      - name: applcm_ip
+        in: path
+        description: applcm IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppLcmDto'
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    put:
+      tags:
+      - app-lcm-inventory-handler
+      summary: Updates existing application LCM record
+      operationId: updateAppLcmRecordUsingPUT
+      parameters:
+      - name: applcm_ip
+        in: path
+        description: applcm IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: applcm inventory information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppLcmDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: appLcmDto
+    delete:
+      tags:
+      - app-lcm-inventory-handler
+      summary: Deletes application LCM record
+      operationId: deleteAppLcmRecordUsingDELETE
+      parameters:
+      - name: applcm_ip
+        in: path
+        description: applcm IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/apprulemanagers:
+    get:
+      tags:
+      - app-rule-manager-inventory-handler
+      summary: Retrieves all application rule manager records
+      operationId: getAllAppLcmRecordsUsingGET_1
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    post:
+      tags:
+      - app-rule-manager-inventory-handler
+      summary: Adds new application LCM record
+      operationId: addAppRuleManagerRecordUsingPOST
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: app rule manager inventory information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppRuleDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: appRuleDto
+    delete:
+      tags:
+      - app-rule-manager-inventory-handler
+      summary: Deletes all application LCM records
+      operationId: deleteAllAppRuleManagerRecordsUsingDELETE
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/apprulemanagers/{app_rule_manager_ip}:
+    get:
+      tags:
+      - app-rule-manager-inventory-handler
+      summary: Retrieves application rule manager record
+      operationId: getAppRuleManagerRecordUsingGET
+      parameters:
+      - name: app_rule_manager_ip
+        in: path
+        description: app rule manager IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppRuleDto'
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    put:
+      tags:
+      - app-rule-manager-inventory-handler
+      summary: Updates existing application rule manager record
+      operationId: updateAppRuleManagerRecordUsingPUT
+      parameters:
+      - name: app_rule_manager_ip
+        in: path
+        description: app rule manager IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: app rule manager information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppRuleDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: appRuleDto
+    delete:
+      tags:
+      - app-rule-manager-inventory-handler
+      summary: Deletes application LCM record
+      operationId: deleteAppRuleManagerRecordUsingDELETE
+      parameters:
+      - name: app_rule_manager_ip
+        in: path
+        description: app rule manager IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/appstores:
+    get:
+      tags:
+      - app-store-inventory-handler
+      summary: Retrieves all application store records
+      operationId: getAllAppStoreRecordsUsingGET
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    post:
+      tags:
+      - app-store-inventory-handler
+      summary: Adds new application store record
+      operationId: addAppStoreRecordUsingPOST
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: appstore inventory information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppStoreDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: appStoreDto
+    delete:
+      tags:
+      - app-store-inventory-handler
+      summary: Deletes all application store records
+      operationId: deleteAllAppStoreRecordsUsingDELETE
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/appstores/{appstore_ip}:
+    get:
+      tags:
+      - app-store-inventory-handler
+      summary: Retrieves application store record
+      operationId: getAppStoreRecordUsingGET
+      parameters:
+      - name: appstore_ip
+        in: path
+        description: appstore IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MecHostDto'
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    put:
+      tags:
+      - app-store-inventory-handler
+      summary: Updates existing application store record
+      operationId: updateAppStoreRecordUsingPUT
+      parameters:
+      - name: appstore_ip
+        in: path
+        description: appstore IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: appstore inventory information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppStoreDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: appStoreDto
+    delete:
+      tags:
+      - app-store-inventory-handler
+      summary: Deletes application store record
+      operationId: deleteAppStoreRecordUsingDELETE
+      parameters:
+      - name: appstore_ip
+        in: path
+        description: appstore IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/mechosts:
+    get:
+      tags:
+      - mec-host-inventory-handler
+      summary: Retrieves all MEC host records
+      operationId: getAllMecHostRecordsUsingGET
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    post:
+      tags:
+      - mec-host-inventory-handler
+      summary: Adds new MEC host record
+      operationId: addMecHostRecordUsingPOST
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: mechost inventory information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MecHostDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: mecHostDto
+    delete:
+      tags:
+      - mec-host-inventory-handler
+      summary: Deletes all MEC host records
+      operationId: deleteAllMecHostRecordsUsingDELETE
+      parameters:
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}:
+    get:
+      tags:
+      - mec-host-inventory-handler
+      summary: Retrieves MEC host record
+      operationId: getMecHostRecordUsingGET
+      parameters:
+      - name: mechost_ip
+        in: path
+        description: mechost IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MecHostDto'
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    put:
+      tags:
+      - mec-host-inventory-handler
+      summary: Updates existing MEC host record
+      operationId: updateMecHostRecordUsingPUT
+      parameters:
+      - name: mechost_ip
+        in: path
+        description: mechost IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: mechost inventory information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MecHostDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: mecHostDto
+    delete:
+      tags:
+      - mec-host-inventory-handler
+      summary: Deletes MEC host record
+      operationId: deleteMecHostRecordUsingDELETE
+      parameters:
+      - name: mechost_ip
+        in: path
+        description: mechost IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps:
+    post:
+      tags:
+      - mec-host-inventory-handler
+      summary: Adds new Application record
+      operationId: addApplicationRecordUsingPOST
+      parameters:
+      - name: mechost_ip
+        in: path
+        description: mechost IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: application inventory information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MecApplicationDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: mecAppDto
+  /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps/{app_id}:
+    get:
+      tags:
+      - mec-host-inventory-handler
+      summary: Retrieves Application record
+      operationId: getApplicationRecordUsingGET
+      parameters:
+      - name: app_id
+        in: path
+        description: application id
+        required: true
+        schema:
+          type: string
+      - name: mechost_ip
+        in: path
+        description: mechost IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    put:
+      tags:
+      - mec-host-inventory-handler
+      summary: Updates Application record
+      operationId: updateApplicationRecordUsingPUT
+      parameters:
+      - name: app_id
+        in: path
+        description: application id
+        required: true
+        schema:
+          type: string
+      - name: mechost_ip
+        in: path
+        description: mechost IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: application inventory information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MecApplicationDto'
+        required: false
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+      x-codegen-request-body-name: mecAppDto
+    delete:
+      tags:
+      - mec-host-inventory-handler
+      summary: Deletes Application record
+      operationId: deleteApplicationRecordUsingDELETE
+      parameters:
+      - name: app_id
+        in: path
+        description: application id
+        required: true
+        schema:
+          type: string
+      - name: mechost_ip
+        in: path
+        description: mechost IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/capabilities:
+    get:
+      tags:
+      - mec-host-inventory-handler
+      summary: Retrieves MEC host record
+      operationId: getMecHostCapabilitiesUsingGET
+      parameters:
+      - name: mechost_ip
+        in: path
+        description: mechost IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/capabilities/{capability_type}/applications:
+    get:
+      tags:
+      - mec-host-inventory-handler
+      summary: Retrieves MEC application records
+      operationId: getMecApplicationsUsingGET
+      parameters:
+      - name: capability_type
+        in: path
+        description: capability type
+        required: true
+        schema:
+          type: string
+      - name: mechost_ip
+        in: path
+        description: mechost IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+  /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/k8sconfig:
+    post:
+      tags:
+      - mec-host-inventory-handler
+      summary: Upload K8s configuration file to applcm
+      operationId: uploadConfigFileUsingPOST
+      parameters:
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: mechost_ip
+        in: path
+        description: mechost IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              properties:
+                file:
+                  type: string
+                  description: config file
+                  format: binary
+      responses:
+        200:
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
+    delete:
+      tags:
+      - mec-host-inventory-handler
+      summary: Deletes K8s configuration file from applcm
+      operationId: deleteConfigFileUsingDELETE
+      parameters:
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: mechost_ip
+        in: path
+        description: mechost IP
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+            text/plain:
+              schema:
+                type: string
+        204:
+          description: No Content
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+      deprecated: false
+components:
+  schemas:
+    AppLcmDto:
+      title: AppLcmDto
+      type: object
+      properties:
+        applcmIp:
+          type: string
+        applcmPort:
+          type: string
+        userName:
+          type: string
+    AppRuleDto:
+      title: AppRuleDto
+      type: object
+      properties:
+        appRuleIp:
+          type: string
+        appRulePort:
+          type: string
+        userName:
+          type: string
+    AppStoreDto:
+      title: AppStoreDto
+      type: object
+      properties:
+        appstoreIp:
+          type: string
+        appstoreName:
+          type: string
+        appstorePort:
+          type: string
+        producer:
+          type: string
+        uri:
+          type: string
+        userName:
+          type: string
+    AppdRuleConfigDto:
+      title: AppdRuleConfigDto
+      type: object
+      properties:
+        appDnsRule:
+          type: array
+          items:
+            $ref: '#/components/schemas/DnsRuleDto'
+        appTrafficRule:
+          type: array
+          items:
+            $ref: '#/components/schemas/TrafficRuleDto'
+        status:
+          type: string
+    DnsRuleDto:
+      title: DnsRuleDto
+      type: object
+      properties:
+        dnsRuleId:
+          type: string
+        domainName:
+          type: string
+        ipAddress:
+          type: string
+        ipAddressType:
+          type: string
+        ttl:
+          type: integer
+          format: int32
+    DstInterfaceDto:
+      title: DstInterfaceDto
+      type: object
+      properties:
+        dstIpAddress:
+          type: string
+        dstMacAddress:
+          type: string
+        interfaceType:
+          type: string
+        srcMacAddress:
+          type: string
+        tunnelInfo:
+          $ref: '#/components/schemas/TunnelInfoDto'
+    MecApplicationDto:
+      title: MecApplicationDto
+      type: object
+      properties:
+        appInstanceId:
+          type: string
+        appName:
+          type: string
+        capabilities:
+          type: array
+          items:
+            type: string
+        packageId:
+          type: string
+        status:
+          type: string
+    MecHostDto:
+      title: MecHostDto
+      type: object
+      properties:
+        address:
+          type: string
+        affinity:
+          type: string
+        appRuleIp:
+          type: string
+        applcmIp:
+          type: string
+        city:
+          type: string
+        edgerepoIp:
+          type: string
+        edgerepoName:
+          type: string
+        edgerepoPort:
+          type: string
+        edgerepoUsername:
+          type: string
+        hwcapabilities:
+          type: array
+          items:
+            $ref: '#/components/schemas/MecHwCapabilityDto'
+        mechostIp:
+          type: string
+        mechostName:
+          type: string
+        userName:
+          type: string
+        zipCode:
+          type: string
+    MecHwCapabilityDto:
+      title: MecHwCapabilityDto
+      type: object
+      properties:
+        hwModel:
+          type: string
+        hwType:
+          type: string
+        hwVendor:
+          type: string
+    Status:
+      title: Status
+      type: object
+      properties:
+        response:
+          type: string
+    TrafficFilterDto:
+      title: TrafficFilterDto
+      type: object
+      properties:
+        dscp:
+          type: integer
+          format: int32
+        dstAddress:
+          type: array
+          items:
+            type: string
+        dstPort:
+          type: array
+          items:
+            type: string
+        dstTunnelAddress:
+          type: array
+          items:
+            type: string
+        dstTunnelPort:
+          type: array
+          items:
+            type: string
+        protocol:
+          type: array
+          items:
+            type: string
+        qci:
+          type: integer
+          format: int32
+        srcAddress:
+          type: array
+          items:
+            type: string
+        srcPort:
+          type: array
+          items:
+            type: string
+        srcTunnelAddress:
+          type: array
+          items:
+            type: string
+        srcTunnelPort:
+          type: array
+          items:
+            type: string
+        tag:
+          type: array
+          items:
+            type: string
+        tc:
+          type: integer
+          format: int32
+    TrafficRuleDto:
+      title: TrafficRuleDto
+      type: object
+      properties:
+        action:
+          type: string
+        dstInterface:
+          type: array
+          items:
+            $ref: '#/components/schemas/DstInterfaceDto'
+        filterType:
+          type: string
+        priority:
+          type: integer
+          format: int32
+        trafficFilter:
+          type: array
+          items:
+            $ref: '#/components/schemas/TrafficFilterDto'
+        trafficRuleId:
+          type: string
+    TunnelInfoDto:
+      title: TunnelInfoDto
+      type: object
+      properties:
+        tunnelDstAddress:
+          type: string
+        tunnelSpecificData:
+          type: string
+        tunnelSrcAddress:
+          type: string
+        tunnelType:
+          type: string
+
