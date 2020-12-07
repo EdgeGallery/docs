@@ -9,12 +9,85 @@ consumes:
 produces:
 - "application/json"
 paths:
-  /common-action/analysis-app:
+  /tasks/batch:
+    get:
+      tags:
+      - "APT Test Controller"
+      summary: "batch get all tasks by taskId and userId."
+      operationId: "batchGetTasks"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "taskList"
+        description: "task list"
+        required: true
+        schema:
+          $ref: "#/definitions/TaskIdList"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/TaskRequest"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /tasks:
+    get:
+      tags:
+      - "APT Test Controller"
+      summary: "get all tasks by userId."
+      operationId: "getAllTasks"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "appName"
+        in: "query"
+        required: false
+        type: "string"
+      - name: "status"
+        in: "query"
+        required: false
+        type: "string"
+      - name: "providerId"
+        in: "query"
+        required: false
+        type: "string"
+      - name: "appVersion"
+        in: "query"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/TaskRequest"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
     post:
       tags:
       - "APT Test Controller"
-      summary: "application dependency check."
-      operationId: "dependencyCheck"
+      summary: "create test task."
+      operationId: "createTest"
       produces:
       - "application/json"
       parameters:
@@ -23,11 +96,16 @@ paths:
         description: "application files"
         required: true
         type: "file"
+      - name: "isRun"
+        in: "query"
+        description: "isRun test task directly"
+        required: true
+        type: "boolean"
       responses:
         200:
           description: "response of 200"
           schema:
-            $ref: "#/definitions/CommonActionRes"
+            type: "string"
         404:
           description: "microservice not found"
           schema:
@@ -71,73 +149,6 @@ paths:
           description: "resource grant error"
           schema:
             type: "string"
-  /tasks:
-    get:
-      tags:
-      - "APT Test Controller"
-      summary: "get all tasks by userId."
-      operationId: "getAllTasks"
-      produces:
-      - "application/json"
-      parameters:
-      - name: "appName"
-        in: "query"
-        required: false
-        type: "string"
-      - name: "status"
-        in: "query"
-        required: false
-        type: "string"
-      responses:
-        200:
-          description: "response of 200"
-          schema:
-            $ref: "#/definitions/TaskRequest"
-        404:
-          description: "microservice not found"
-          schema:
-            type: "string"
-        415:
-          description: "Unprocessable MicroServiceInfo Entity "
-          schema:
-            type: "string"
-        500:
-          description: "resource grant error"
-          schema:
-            type: "string"
-    post:
-      tags:
-      - "APT Test Controller"
-      summary: "start test task."
-      operationId: "startTest"
-      produces:
-      - "application/json"
-      parameters:
-      - name: "file"
-        in: "query"
-        description: "application files"
-        required: true
-        type: "array"
-        items:
-          type: "file"
-        collectionFormat: "multi"
-      responses:
-        200:
-          description: "response of 200"
-          schema:
-            type: "string"
-        404:
-          description: "microservice not found"
-          schema:
-            type: "string"
-        415:
-          description: "Unprocessable MicroServiceInfo Entity "
-          schema:
-            type: "string"
-        500:
-          description: "resource grant error"
-          schema:
-            type: "string"
   /tasks/{taskId}:
     get:
       tags:
@@ -169,38 +180,69 @@ paths:
           description: "resource grant error"
           schema:
             type: "string"
+  /tasks/{taskId}/action/pre-check:
+    get:
+      tags:
+      - "APT Test Controller"
+      summary: "pre check before run test task."
+      operationId: "preCheck"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "taskId"
+        in: "path"
+        description: "task id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/CommonActionRes"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /tasks/{taskId}/action/run:
+    post:
+      tags:
+      - "APT Test Controller"
+      summary: "run test task."
+      operationId: "runTest"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "taskId"
+        in: "path"
+        description: "task id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "string"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
 definitions:
-  CommonActionRes:
-    type: "object"
-    properties:
-      dependency:
-        type: "object"
-        additionalProperties:
-          type: "string"
-    x-java-class: "org.edgegallery.atp.model.CommonActionRes"
-  InputStreamResource:
-    type: "object"
-    properties:
-      inputStream:
-        type: "string"
-        format: "byte"
-      description:
-        type: "string"
-      open:
-        type: "boolean"
-      url:
-        type: "string"
-        format: "url"
-      file:
-        type: "file"
-      readable:
-        type: "boolean"
-      uri:
-        type: "string"
-        format: "uri"
-      filename:
-        type: "string"
-    x-java-class: "org.springframework.core.io.InputStreamResource"
   TaskRequest:
     type: "object"
     properties:
@@ -223,6 +265,10 @@ definitions:
       testCaseDetail:
         $ref: "#/definitions/TestCaseDetail"
       accessToken:
+        type: "string"
+      providerId:
+        type: "string"
+      packagePath:
         type: "string"
     x-java-class: "org.edgegallery.atp.model.task.TaskRequest"
   TestCaseDetail:
@@ -263,3 +309,42 @@ definitions:
       userName:
         type: "string"
     x-java-class: "org.edgegallery.atp.model.user.User"
+  TaskIdList:
+    type: "object"
+    properties:
+      taskIdList:
+        type: "array"
+        items:
+          type: "string"
+    x-java-class: "org.edgegallery.atp.model.task.TaskIdList"
+  InputStreamResource:
+    type: "object"
+    properties:
+      inputStream:
+        type: "string"
+        format: "byte"
+      description:
+        type: "string"
+      open:
+        type: "boolean"
+      url:
+        type: "string"
+        format: "url"
+      file:
+        type: "file"
+      readable:
+        type: "boolean"
+      filename:
+        type: "string"
+      uri:
+        type: "string"
+        format: "uri"
+    x-java-class: "org.springframework.core.io.InputStreamResource"
+  CommonActionRes:
+    type: "object"
+    properties:
+      dependency:
+        type: "object"
+        additionalProperties:
+          type: "string"
+    x-java-class: "org.edgegallery.atp.model.CommonActionRes"
