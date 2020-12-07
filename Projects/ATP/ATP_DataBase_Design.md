@@ -12,6 +12,8 @@ ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前
         TESTCASEDETAIL           TEXT               NULL,
         CREATETIME               TIMESTAMP          NULL,
         ENDTIME                  TIMESTAMP          NULL,
+        PROVIDERID               VARCHAR(100)       NULL,
+        PACKAGEPATH              VARCHAR(100)       NULL,
         USERID                   VARCHAR(100)       NULL,
         USERNAME                 VARCHAR(100)       NULL,
         CONSTRAINT task_table_pkey PRIMARY KEY (ID)
