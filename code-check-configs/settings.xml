@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <localRepository>D:/Repositories/Maven</localRepository>
+  <profiles>
+	<profile>
+		<id>huawei-cloud</id>
+		<pluginRepositories>
+			<pluginRepository>
+			  <id>HuaweiCloudSDK</id>
+			  <url>https://repo.huaweicloud.com/repository/maven/huaweicloudsdk/</url>
+			  <releases>
+				<enabled>true</enabled>
+			  </releases>
+			  <snapshots>
+				<enabled>true</enabled>
+			  </snapshots>
+			</pluginRepository>
+		</pluginRepositories>
+		<repositories>
+			<repository>
+				<id>HuaweiCloudSDK</id>
+				<url>https://repo.huaweicloud.com/repository/maven/huaweicloudsdk/</url>
+				<releases>
+					<enabled>true</enabled>
+				</releases>
+				<snapshots>
+					<enabled>false</enabled>
+				</snapshots>
+			</repository>
+		</repositories>
+	</profile>
+
+	<profile>
+      <id>apache-public</id>
+      <repositories>
+		<repository>
+		    <id>central-repos</id>  
+			<name>Central Repository</name>  
+			<url>http://repo.maven.apache.org/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	  </repositories>
+    </profile>
+	<profile>
+      <id>maven-public</id>
+	  <repositories>
+		<repository>
+		    <id>central-repos1</id>  
+			<name>Central Repository 2</name>  
+			<url>http://repo1.maven.org/maven2/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	  </repositories>
+    </profile>
+  </profiles>
+
+  <activeProfiles>
+    <activeProfile>huawei-cloud</activeProfile>
+    <activeProfile>apache-public</activeProfile>
+    <activeProfile>maven-public</activeProfile>
+  </activeProfiles>
+
+</settings>
