@@ -37,5 +37,6 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
    MECM <Projects/MECM/MECM>
    MEP <Projects/MEP/MEP>
    User Management <Projects/User Management/UserManagement>
+   ATP <Projects/ATP/ATP>
 
 
