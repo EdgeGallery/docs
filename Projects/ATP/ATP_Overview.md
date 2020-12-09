@@ -7,7 +7,9 @@
 
 
 ## 架构说明
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1201/173831_7f25c651_7854857.png "architecture.PNG")
+----
+
+![](/uploads/images/2020/2020/1209/architecture.png "架构设计.png")
 
 1. atp-fe：开发者平台前台框架，使用VUE开发。
 
@@ -16,7 +18,7 @@
 3. atp DB：后台依赖Postgres数据库。
 
 ## 测试用例设计
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1201/182205_9fec23e4_7854857.png "测试用例设计.PNG")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1209/test case.png "测试用例设计.PNG")
 
 
 [1]: https://gitee.com/edgegallery/atp "atp"
