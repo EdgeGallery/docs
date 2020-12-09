@@ -44,6 +44,8 @@
   - [Dns-Server](#dns-server)
     - [1. Create/Set new entry](#1-createset-new-entry)
     - [2. Delete an entry](#2-delete-an-entry)
+  - [MEP Agent](#mep-agent)
+      - [1. Get token](#1-get-token)
 
 ## MEP 接口简介
 
@@ -1625,7 +1627,7 @@ Exception status code
 | 404  | The requested resource was not found. |
 
 #### 2. Update liveness info
-This method update liveness staus about an individual mec service. It indicates the activeness of the service.
+This method also referred as "heartbeat" message to (re)confirm the active status about an individual mec service. But not to change the state from "INACTIVE" to "ACTIVE".
 NOTE: As per ETSI doc, this message should be a PATCH message. Since we use servicecomb rest server which doesn't support PATCH message. we kept it as PUT. But behviour will be similar to patch.
 URL
 ```
@@ -2437,4 +2439,59 @@ Return Code: 200 Success
 Example Response:
 ```
 HTTP/1.1 200 Success
+```
+## MEP Agent
+Mep agent is a component which run as side car with application. It helps to get authenticaion token, do service registration, send heartbeat on behalf of application.
+
+#### 1. Get token
+Applicaiontion can call this API to get authentication token from mepauth.
+URL
+```
+GET /mep-agent/v1/token
+```
+Request parameters:
+
+ | **Name** | **Type** | **Description** | **IN** | **Required** |
+ | --- | --- | --- | --- | --- |
+ | Content-Type |   String  | MIME type, fill in "application/json"                        |               header  | Yes|
+
+Body parameters:
+
+None
+
+Example request:
+
+```
+GET /mep-agent/v1/token
+
+{
+  "header": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ]
+}
+```
+
+Return parameters:
+
+Return code: 200 OK
+
+|Name     |       Type  |   Description   |               Required|
+|---|---|---|---|
+|access\_token |  String  | Token|                 Yes|
+|token\_type     |String   |Token Type（Bearer）|   Yes|
+|expires\_in    | int     | Expire time             | Yes|
+
+Return example:
+
+```
+HTTP/1.1 200 OK
+{
+	"access_token":"xxxx",
+	"token_type":"Bearer",
+	"expires_in":"3600"
+}
+
 ```
