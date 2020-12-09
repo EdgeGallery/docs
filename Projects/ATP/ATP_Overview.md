@@ -18,7 +18,7 @@
 3. atp DB：后台依赖Postgres数据库。
 
 ## 测试用例设计
-![](/uploads/images/2020/1209/test cases.png "测试用例设计.PNG")
+![](/uploads/images/2020/1209/testCases.png "测试用例设计.PNG")
 
 
 [1]: https://gitee.com/edgegallery/atp "atp"
