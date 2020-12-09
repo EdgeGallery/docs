@@ -82,6 +82,17 @@ MEP管理应用的服务，应用需要将其服务注册到MEP中，MEP-Agent�
 
 ![](/uploads/images/2020/0804/165723_8d9be51d_5504908.png "特性3.png")
 
+Capabilities(Service) query support
+------------------------------------
+**定义**
+
+Once capabilities(services) registered to the mep, other applications can consume it. MEP support the listing of these capabilities(services) over Mm5 interface.
+
+**设计原理**
+
+The capability query interface is exposed over Mm5 interface to MECM module and it can be queried together or independently. Each capability consists of a list of the present consumers to it.
+
+![Query flow](https://images.gitee.com/uploads/images/2020/1029/152205_3918141b_7625394.png "quwery_flow1.png")
 
 ## DNS server 特性
 The MEP platform provides the domain name resolution services to the applications deployed in the EdgeGallery MEC, which can be utilized by the device applications in UE. MEC platform receives the DNS configurations from the MEC management, which includes the FQDN(Fully Qualified Domain Name), IP address and related entries. MEC applications can later query or modify the state of these configurations.
