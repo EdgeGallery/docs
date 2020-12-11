@@ -4,7 +4,8 @@ User Interfaces
 - [User-mgmt-Server](#appStore-server)
   - [1. AUTH](#1-AUTH)
     - [1.1 登录](#11-登录)
-    - [1.2 登出](#12-登出)
+    - [1.2 获取当前登录用户信息](#12-获取当前登录用户信息)
+    - [1.3 登出](#13-登出)
   - [2. USER-MGMT](#2-USER-MGMT)
     - [2.1 注册用户](#21-注册用户)
     - [2.2 找回密码](#22-找回密码)
@@ -22,7 +23,7 @@ User Interfaces
 登录系统
 
 ```
-Resource URI: /auth/login
+Resource URI: /login
 Method: POST
 ```
 
@@ -36,7 +37,35 @@ Example response:
 response 200 OK
 ```
 
-### 1.2 登出
+### 1.2 获取当前登录用户信息
+
+用户登录成功后，通过此接口获取当前登录用户的信息。
+
+```
+Resource URI: auth/login-info
+Method: GET
+```
+
+Example response:
+```
+response 200 OK
+{
+  "username": "TestUser1",
+  "company": "company",
+  "gender": "male",
+  "telephone": "13812345678",
+  "isAllowed": false,
+  "userId": "37423702-051a-46b4-bf2b-f190759cc0b8",
+  "permissions": [
+    {
+      "platform": "APPSTORE",
+      "role": "GUEST"
+    }
+  ]
+}
+```
+
+### 1.3 登出
 
 登出系统
 
@@ -128,7 +157,7 @@ response 500 INTERNAL ERROR
 使用已经注册的手机号，通过短信验证码的方式重置密码。该接口需要开启短线功能才能访问。
 
 ```
-Resource URI: /password
+Resource URI: /v1/users/password
 Method: PUT
 ```
 
@@ -178,7 +207,7 @@ response 500 INTERNAL ERROR
 判断用户名或手机号是否已经注册过，不允许重复注册。
 
 ```
-Resource URI: /action/uniqueness
+Resource URI: /v1/users/action/uniqueness
 Method: POST
 ```
 
