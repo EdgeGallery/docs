@@ -854,6 +854,165 @@ Example response:
 200 OK
 ```
 
+### Add application rule
+Adds a new application rule manager record entry into the Inventory.
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|appRulePort|appRulePort|body|yes|Valid Port Number|5|
+|appRuleIp|appRuleIp|body|yes|Valid IP Address|15|
+|userName|userName|body|no|AlphaNumeric,special characters allowed are hypen and underscore|128|
+
+Example request body:
+```
+{
+  "appRuleIp": "string",
+  "appRulePort": "string",
+  "userName": "string",
+}
+```
+
+Example response:
+```
+200 OK
+{
+    "Saved"
+}
+```
+
+### Update application rule
+Updates an exiting application rule manager record in the Inventory matching the given tenant ID &
+appRuleManager IP.
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers/{app_rule_manager_ip}
+Method: PUT
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|app_rule_manager_ip|app rule manager IP|path|yes|Valid IP Address|15|
+|appRulePort|appRulePort|body|yes|Valid Port Number|5|
+|appRuleIp|appRuleIp|body|yes|Valid IP Address|15|
+|userName|userName|body|no|AlphaNumeric,special characters allowed are hypen and underscore|128|
+
+Example request body:
+```
+{
+  "appRuleIp": "string",
+  "appRulePort": "string",
+  "userName": "string",
+}
+```
+
+Example response:
+```
+200 OK
+{
+    "Updated"
+}
+```
+
+### Get all application rule manager records
+Retrieves all application rule manager records .
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+
+
+Example response:
+```
+200 OK
+[
+  {
+    "appRuleIp": "string",
+    "appRulePort": "string",
+     "userName": "string",
+  }
+]
+```
+
+### Get specific application rule manager record
+ Retrieves a specific application rule manager record in the Inventory matching the given tenant ID &
+ app rule manager IP
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers/{app_rule_manager_ip}
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|app_rule_manager_ip|app rule manager IP|path|yes|Valid IP Address|15|
+
+
+Example response:
+```
+200 OK
+{
+  "appRuleIp": "string",
+  "appRulePort": "string",
+  "userName": "string",
+}
+```
+
+### Delete all application rule manager records
+Deletes all records for a given tenant
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+
+
+Example response:
+```
+200 OK
+{
+    "Deleted"
+}
+```
+
+### Delete all application rule manager records
+Deletes a specific application rule manager record in the Inventory matching the given tenant ID
+& app rule manager IP.
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers/{app_rule_manager_ip}
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|app_rule_manager_ip|app rule manager IP|path|yes|Valid IP Address|15|
+
+Example response:
+```
+200 OK
+{
+    "Deleted"
+}
+```
+
 ### Inventory Open Api Swagger
 
 * Please refer [INVENTORY_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/inventory-swagger-openapi.yaml)
