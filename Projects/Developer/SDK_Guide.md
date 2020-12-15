@@ -24,6 +24,7 @@ SDK installation and use guide Guide
 
 不要着急打包，这里有个小的环节需要注意下，不然你打的jar是不用在其他项目引用的！
 在你的项目pom文件底部把这个东西plugin注释掉，这个是创建项目原带的
+
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/184520_07df5a09_7625288.png "屏幕截图.png")
 
 然后进行打包
