@@ -10,7 +10,7 @@
 |github.com/dgrijalva/jwt-go/v4| v4.0.0-preview1
 |github.com/go-playground/validator/v10| v10.2.0
 |github.com/natefinch/lumberjack| v2.0.0
-|github.com/sirupsen/logrus| v1.7.0
+|github.com/lib/pq | v1.7.0
 |github.com/sirupsen/logrus | v1.6.0
 |github.com/smartystreets/goconvey| v1.6.4
 |golang.org/x/crypto| v0.0.0-20200302210943-78000ba7a073
