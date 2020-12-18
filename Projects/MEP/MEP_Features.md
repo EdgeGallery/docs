@@ -92,7 +92,7 @@ Once capabilities(services) registered to the mep, other applications can consum
 
 The capability query interface is exposed over Mm5 interface to MECM module and it can be queried together or independently. Each capability consists of a list of the present consumers to it.
 
-![Query flow](/uploads/images/2020/1029/152205_3918141b_7625394.png "quwery_flow1.png")
+![Query flow](/uploads/images/2020/1209/152205_3918141b_7625394.png "quwery_flow1.png")
 
 ## DNS server 特性
 The MEP platform provides the domain name resolution services to the applications deployed in the EdgeGallery MEC, which can be utilized by the device applications in UE. MEC platform receives the DNS configurations from the MEC management, which includes the FQDN(Fully Qualified Domain Name), IP address and related entries. MEC applications can later query or modify the state of these configurations.
