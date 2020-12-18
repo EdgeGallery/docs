@@ -991,8 +991,8 @@ Example response:
 }
 ```
 
-### Delete all application rule manager records
-Deletes a specific application rule manager record in the Inventory matching the given tenant ID
+### Delete application rule manager record
+Delete a specific application rule manager record in the Inventory matching the given tenant ID
 & app rule manager IP.
 ```
 Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers/{app_rule_manager_ip}
