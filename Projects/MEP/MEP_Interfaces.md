@@ -1658,14 +1658,7 @@ PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 ```
 
 Return Parameters:
-
-| Name          | Type                        | Description              |
-| ------------- | --------------------------- | ------------------------ |
-| state     | enum **{ACTIVE, INACTIVE, SUSPENDED}**                      | State                  |
-| timeStamp    | object                      | The time when the last heartbeat message was received      |
-| &gt;seconds | int32     | The seconds partof the time  |
-| &gt;nanoseconds     | int32                      | The nano seconds part of the time       |
-| interval           | int         | Interval between two consecutive hearbeat message                |
+None
 
 Return Code: 204 OK
 
