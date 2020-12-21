@@ -1977,28 +1977,16 @@ root@ubuntu:~# docker run -itd --name mepserver \
             --cap-drop All \
             --network=mep-net \
             -e "SSL_ROOT=/usr/mep/ssl/" \
+            -e "MEPSERVER_APIGW_HOST=kong-service" \
+            -e "MEPSERVER_APIGW_PORT=8444" \
+            -e "MEPSERVER_CERT_DOMAIN_NAME=edgegallery" \
+            -e "ROOT_KEY=j7k0UwOJSsIfi3dzainoBdkcpJJJOJlzd2oBwMQxXdaZ3oCswITWUyLP4eldxdcKGmDvG1qwUEfQjAg71ZeFYyHgXa5OpBlmug3z06bs7ssr2XYTuPydK6y4K34UfsgRKEwMgGP1Ieo8x20lbjXcq0tJG4Q7xgakXs59NwnBeNg2N8R1FgfqD0z9weWgxd7DdJZkDpbJgdANT31y4KDeDCpJXld6XQOxi99mO2xQdMcH6OUyIfgDP7dPaJU57D33" \ # 根加密组件要求大于256位
+            -e "TLS_KEY=te9Fmv%qaq" \
             -v /home/EG-LDVS/mepserver/mepserver_tls.crt:/usr/mep/ssl/server.cer:ro\
             -v /home/EG-LDVS/mepserver/mepserver_encryptedtls.key:/usr/mep/ssl/server_key.pem:ro\
             -v /home/EG-LDVS/mepserver/ca.crt:/usr/mep/ssl/trust.cer:ro \
             -v /home/EG-LDVS/mepserver/mepserver_cert_pwd:/usr/mep/ssl/cert_pwd:ro\
             edgegallery/mep:1.0 sh
-
-# 登陆mepserver容器并启动mepserver程序
-docker exec -it -u eguser mepserver sh
-bin/start.sh
-
-# 提示输入根加密组件，要求大于256位，示例：
-j7k0UwOJSsIfi3dzainoBdkcpJJJOJlzd2oBwMQxXdaZ3oCswITWUyLP4eldxdcKGmDvG1qwUEfQjAg71ZeFYyHgXa5OpBlmug3z06bs7ssr2XYTuPydK6y4K34UfsgRKEwMgGP1Ieo8x20lbjXcq0tJG4Q7xgakXs59NwnBeNg2N8R1FgfqD0z9weWgxd7DdJZkDpbJgdANT31y4KDeDCpJXld6XQOxi99mO2xQdMcH6OUyIfgDP7dPaJU57D33
-
-Please input root key component:
-
-# 提示输入证书加密密码，与证书生成过程中密码一致,示例te9Fmv%qaq
-Please input tls certificates password:
-Confirm the password:
-
-# 至此，mepserver正常启动，退出容器
-exit
-
 ```
 #### 部署mepauth
 
