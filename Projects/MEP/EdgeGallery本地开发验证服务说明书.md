@@ -1744,7 +1744,7 @@ root@ubuntu:/home/EG-LDVS/mepserver# openssl genrsa -out mepserver_tls.key 2048
 root@ubuntu:/home/EG-LDVS/mepserver# openssl rsa -in mepserver_tls.key -aes256 -out mepserver_encryptedtls.key
 # 用户需通过交互式命令设置加密密码，并将密码保存到mepserver_cert_pwd文件中（请确保mepserver_cert_pwd文件中密码后无换行符），此处假定密码设置为te9Fmv%qaq
 root@ubuntu:/home/EG-LDVS/mepserver# openssl req -new -key mepserver_tls.key -subj /C=CN/ST=Beijing/L=Beijing/O=edgegallery/CN=edgegallery -out mepserver_tls.csr
-root@ubuntu:/home/EG-LDVS/mepserver# openssl x509 -req -in mepserver_tls.csr -extfile /etc/ssl/openssl.cnf -extensions v3_req -CA ca.crt -CAkey ca.key -CAcreateserial -out mepserver_tls.crt
+root@ubuntu:/home/EG-LDVS/mepserver# openssl x509 -req -days 365 -in mepserver_tls.csr -extfile /etc/ssl/openssl.cnf -extensions v3_req -CA ca.crt -CAkey ca.key -CAcreateserial -out mepserver_tls.crt
 
 # Generate mepauth jwt keypair
 root@ubuntu:/home/EG-LDVS/mepserver# openssl genrsa -out jwt_privatekey 2048
