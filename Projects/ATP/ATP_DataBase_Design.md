@@ -6,16 +6,16 @@ ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前
 ```
     CREATE TABLE TASK_TABLE (
         ID                       VARCHAR(200)       NOT NULL,
-        APPNAME                  VARCHAR(100)       NULL,
-        APPVERSION               VARCHAR(100)       NULL,
-        STATUS                   VARCHAR(100)       NULL,
+        APPNAME                  VARCHAR(200)       NULL,
+        APPVERSION               VARCHAR(200)       NULL,
+        STATUS                   VARCHAR(200)       NULL,
         TESTCASEDETAIL           TEXT               NULL,
         CREATETIME               TIMESTAMP          NULL,
         ENDTIME                  TIMESTAMP          NULL,
-        PROVIDERID               VARCHAR(100)       NULL,
-        PACKAGEPATH              VARCHAR(100)       NULL,
-        USERID                   VARCHAR(100)       NULL,
-        USERNAME                 VARCHAR(100)       NULL,
+        PROVIDERID               VARCHAR(200)       NULL,
+        PACKAGEPATH              VARCHAR(200)       NULL,
+        USERID                   VARCHAR(200)       NULL,
+        USERNAME                 VARCHAR(200)       NULL,
         CONSTRAINT task_table_pkey PRIMARY KEY (ID)
     );
 ```
@@ -24,11 +24,15 @@ ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前
 ```
     CREATE TABLE TEST_CASE_TABLE (
         ID                       VARCHAR(200)       NOT NULL,
-        NAME                     VARCHAR(100)       NULL,
-        TYPE                     VARCHAR(100)       NULL,
-        CLASSNAME                VARCHAR(100)       NULL,
-        CONTENT                  TEXT               NULL, 
+        NAME                     VARCHAR(200)       NULL,
+        TYPE                     VARCHAR(200)       NULL,
+        CLASSNAME                VARCHAR(200)       NULL,
+        HASHCODE                 TEXT               NULL, 
         DESCRIPTION              TEXT               NULL,
+        FILEPATH                 VARCHAR(200)       NULL,
+        CODELANGUAGE             VARCHAR(200)       NULL,
+        EXPECTRESULT             VARCHAR(200)       NULL,
+        VERIFICATIONMODEL        VARCHAR(200)       NULL,
         CONSTRAINT test_case_table_pkey PRIMARY KEY (ID)
     );
 ```
