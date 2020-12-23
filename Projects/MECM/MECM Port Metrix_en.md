@@ -9,4 +9,4 @@ MECM port matrix
 |applcm controller| 8094|30204|Provide external service port for application lifecycle management|
 |aplcm k8splugin|8095|30205|Provide external service port for application lifecycle management|
 |FE|8443|30093|Provide external service port for front-end module|
-|AppRule|8096|30206|Provide external service port for application rule management|
+|AppRuleManager|8096|30206|Provide external service port for application rule management|
