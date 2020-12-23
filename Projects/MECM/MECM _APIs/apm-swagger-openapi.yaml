@@ -7,24 +7,47 @@ info:
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.0
 servers:
-- url: //localhost:30202/
+  - url: //127.0.0.1:8092/
 tags:
-- name: APM api system
-  description: Apm Handler
+  - name: APM api system
+    description: Apm Handler
 paths:
+  /apm/v1/health:
+    get:
+      tags:
+        - APM api system
+      summary: Queries liveness and readiness
+      operationId: healthCheckUsingGET
+      responses:
+        200:
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
   /apm/v1/tenants/{tenant_id}/packages:
     get:
       tags:
-      - APM api system
+        - APM api system
       summary: Retrieves all application packages
       operationId: getAllAppPackageInfoUsingGET
       parameters:
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: true
-        schema:
-          type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: true
+          schema:
+            type: string
       responses:
         200:
           description: OK
@@ -47,22 +70,22 @@ paths:
       deprecated: false
     post:
       tags:
-      - APM api system
+        - APM api system
       summary: Onboard application package
       operationId: onBoardAppPackageUsingPOST
       parameters:
-      - name: access_token
-        in: header
-        description: access_token
-        required: true
-        schema:
-          type: string
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: true
-        schema:
-          type: string
+        - name: access_token
+          in: header
+          description: access_token
+          required: true
+          schema:
+            type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: true
+          schema:
+            type: string
       requestBody:
         description: app package info
         content:
@@ -91,25 +114,84 @@ paths:
           content: {}
       deprecated: false
       x-codegen-request-body-name: appPackageDto
+  /apm/v1/tenants/{tenant_id}/packages/upload:
+    post:
+      tags:
+        - APM api system
+      summary: Onboard application package
+      operationId: onBoardApplicationUsingPOST
+      parameters:
+        - name: access_token
+          in: header
+          description: access_token
+          required: true
+          schema:
+            type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              required:
+                - appPackageName
+                - appPackageVersion
+                - hostList
+              properties:
+                appPackageName:
+                  description: appPackageName
+                appPackageVersion:
+                  description: appPackageVersion
+                file:
+                  type: string
+                  description: app package
+                  format: binary
+                hostList:
+                  description: hostList
+        required: true
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        201:
+          description: Created
+          content: {}
+        401:
+          description: Unauthorized
+          content: {}
+        403:
+          description: Forbidden
+          content: {}
+        404:
+          description: Not Found
+          content: {}
+      deprecated: false
   /apm/v1/tenants/{tenant_id}/packages/{app_package_id}:
     get:
       tags:
-      - APM api system
+        - APM api system
       summary: Retrieves application package information
       operationId: getAppPackageInfoUsingGET
       parameters:
-      - name: app_package_id
-        in: path
-        description: app package id
-        required: true
-        schema:
-          type: string
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: true
-        schema:
-          type: string
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: true
+          schema:
+            type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: true
+          schema:
+            type: string
       responses:
         200:
           description: OK
@@ -129,22 +211,22 @@ paths:
       deprecated: false
     delete:
       tags:
-      - APM api system
+        - APM api system
       summary: Deletes application package
       operationId: deleteAppPackageUsingDELETE
       parameters:
-      - name: app_package_id
-        in: path
-        description: app package id
-        required: true
-        schema:
-          type: string
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: true
-        schema:
-          type: string
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: true
+          schema:
+            type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: true
+          schema:
+            type: string
       responses:
         200:
           description: OK
@@ -165,22 +247,22 @@ paths:
   /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download:
     get:
       tags:
-      - APM api system
+        - APM api system
       summary: Download application package CSAR
       operationId: downloadAppPackageUsingGET
       parameters:
-      - name: app_package_id
-        in: path
-        description: app package id
-        required: true
-        schema:
-          type: string
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: true
-        schema:
-          type: string
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: true
+          schema:
+            type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: true
+          schema:
+            type: string
       responses:
         200:
           description: OK
@@ -201,28 +283,28 @@ paths:
   /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_ip}:
     delete:
       tags:
-      - APM api system
+        - APM api system
       summary: Deletes an application packages
       operationId: deleteAppPackageInHostUsingDELETE
       parameters:
-      - name: app_package_id
-        in: path
-        description: app package id
-        required: true
-        schema:
-          type: string
-      - name: host_ip
-        in: path
-        description: host ip
-        required: true
-        schema:
-          type: string
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: true
-        schema:
-          type: string
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: true
+          schema:
+            type: string
+        - name: host_ip
+          in: path
+          description: host ip
+          required: true
+          schema:
+            type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: true
+          schema:
+            type: string
       responses:
         200:
           description: OK
@@ -288,6 +370,8 @@ components:
           type: string
         directory:
           type: boolean
+        executable:
+          type: boolean
         file:
           type: boolean
         freeSpace:
@@ -295,6 +379,9 @@ components:
           format: int64
         hidden:
           type: boolean
+        lastModified:
+          type: integer
+          format: int64
         name:
           type: string
         parent:
@@ -303,12 +390,16 @@ components:
           $ref: '#/components/schemas/File'
         path:
           type: string
+        readable:
+          type: boolean
         totalSpace:
           type: integer
           format: int64
         usableSpace:
           type: integer
           format: int64
+        writable:
+          type: boolean
     InputStream:
       title: InputStream
       type: object
@@ -342,6 +433,26 @@ components:
           type: string
         status:
           type: string
+    Resource:
+      title: Resource
+      type: object
+      properties:
+        description:
+          type: string
+        file:
+          $ref: '#/components/schemas/File'
+        filename:
+          type: string
+        inputStream:
+          $ref: '#/components/schemas/InputStream'
+        open:
+          type: boolean
+        readable:
+          type: boolean
+        uri:
+          $ref: '#/components/schemas/URI'
+        url:
+          $ref: '#/components/schemas/URL'
     URI:
       title: URI
       type: object
@@ -393,6 +504,8 @@ components:
         defaultPort:
           type: integer
           format: int32
+        deserializedFields:
+          $ref: '#/components/schemas/URLStreamHandler'
         file:
           type: string
         host:
@@ -408,6 +521,11 @@ components:
           type: string
         ref:
           type: string
+        serializedHashCode:
+          type: integer
+          format: int32
         userInfo:
           type: string
-
+    URLStreamHandler:
+      title: URLStreamHandler
+      type: object
