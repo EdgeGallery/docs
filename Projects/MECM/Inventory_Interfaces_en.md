@@ -23,7 +23,8 @@ Example response:
   {
     "applcmIp": "string",
     "applcmPort": "string",
-    "userName": "string"
+    "userName": "string",
+    "applcmName": "string"
   }
 ]
 ```
@@ -867,6 +868,7 @@ Method: POST
 |tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |appRulePort|appRulePort|body|yes|Valid Port Number|5|
 |appRuleIp|appRuleIp|body|yes|Valid IP Address|15|
+|appRuleName|appRuleName|body|yes|AlphaNumeric,special characters allowed are hypen and underscore|128|
 |userName|userName|body|no|AlphaNumeric,special characters allowed are hypen and underscore|128|
 
 Example request body:

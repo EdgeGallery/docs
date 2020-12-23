@@ -62,7 +62,7 @@ Method: POST
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
 |hostIp|host Ip|string|yes|Valid IP|15|
-|appName|appName|string|yes|AlphaNumeric|32|
+|appName|appName|string|yes|AlphaNumeric|128|
 |file|file|formData|yes|
 
 Example response:
