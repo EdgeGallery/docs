@@ -59,9 +59,21 @@ The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in t
 ### K8s Plugin
  K8s plugin is responsible for interaction with kubernetes infra for LCM operations.
 
+##App Rule Manager
+
+The APP Rule Manager sends configuration request to the MEP. It includes the traffic rules and DNS to be configured.
+
+![.](/uploads/images/2020/0924/mecm-app-rule-architecture.png "mecm-app-rule-architecture.png")
+
+### API Handler: 
+Provides north bound interfaces for app rule manager
+
+### Rule Manager:
+Sends app rule configuration request to MEP
 
 ## Deployment view
 ![.](/uploads/images/2020/0924/mecm-deployment-overview.png "mecm-deployment-overview.png")
 
 The deployment view shown is based on k8s deployment. MECM modules supports deployment on virtual
  machine or docker container to start respective service.
+ 
