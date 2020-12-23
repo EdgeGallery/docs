@@ -61,6 +61,7 @@ MECM
        Contribute to APPLCM如何贡献<MECM_LCM_controller_Contribution>
        Contribute to APPO如何贡献<MECM_Appo_Contribution>
        Contribute to Inventory如何贡献<MECM_Inventory_Contribution>
+       Contribute to AppRuleManager<MECM_App_Rule_Contribution>
 
 **Port Matrix端口矩阵**
 ******************
