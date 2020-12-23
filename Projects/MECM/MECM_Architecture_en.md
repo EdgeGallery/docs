@@ -72,7 +72,7 @@ The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in t
 
 The APP Rule Manager sends configuration request to the MEP. It includes the traffic rules and DNS to be configured.
 
-![.](/uploads/images/2020/0924/app-rule-architecture.png "mecm-app-rule-architecture.png")
+![.](/uploads/images/2020/0924/app-rule-architecture-diagram.png "app-rule-architecture-diagram.png")
 
 ### API Handler: 
 Provides north bound interfaces for app rule manager
