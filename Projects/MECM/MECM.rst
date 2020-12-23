@@ -29,6 +29,7 @@ MECM
        Applcm Interfaces<Applcm_Interfaces_en>
        Appo Interfaces<Appo_Interfaces_en>
        Inventory Interfaces<Inventory_Interfaces_en>
+       AppRule Manager Interfaces<MECM_AppRule_Manager>
 
 **Database Designs数据库设计**
 *************************
