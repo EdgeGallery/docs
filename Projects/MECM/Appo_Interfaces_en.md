@@ -699,8 +699,8 @@ Example response:
 }
 ```
 
-### Get AppRule Config
-Queries the existing app rule
+### Get AppRule Config Status
+Queries app rule config status
 ```
 Resource URI: /appo/v1/tenants/{{tenant-id}}/apprule_task_infos/9ab2eb45-8a35-41bc-a319-bc9305cc494b
 Method: GET

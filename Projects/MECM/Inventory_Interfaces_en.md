@@ -1015,6 +1015,234 @@ Example response:
 }
 ```
 
+### Add APPDRule record to Inventory.
+Adds a new APPDRule record entry into the Inventory.
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|appInstanceIds|application instance id|path|yes|Valid UUID|64|
+
+
+Example request body:
+```
+{
+  "appTrafficRule": [
+    {
+      "trafficRuleId": "string",
+      "filterType": "string",
+      "priority": int,
+      "trafficFilter": [
+        {
+          "srcAddress": [
+            "string"
+          ],
+          "dstAddress": [
+            "string"
+          ],
+          "srcPort": [
+            "string"
+          ],
+          "dstPort": [
+            "string"
+          ],
+          "protocol": [
+            "string"
+          ],
+          "qCI": int,
+          "dSCP": int,
+          "tC": int
+        }
+      ],
+      "action": "string",
+      "state": "string"
+    }
+  ],
+  "appDNSRule": [
+    {
+      "dnsRuleId": "string",
+      "domainName": "string",
+      "ipAddressType": "string",
+      "ipAddress": "string",
+      "ttl": int,
+      "state": "string"
+    }
+  ],
+  "appSupportMp1": true,
+  "appName": "abcd"
+}
+```
+
+Example response:
+```
+200 OK
+{
+    "Saved"
+}
+```
+
+### Update APPDRule record to Inventory.
+Updates a existing APPDRule record entry into the Inventory matching the given tenant ID & app instance ID.
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration
+Method: PUT
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|appInstanceIds|application instance id|path|yes|Valid UUID|64|
+
+
+Example request body:
+```
+{
+  "appTrafficRule": [
+    {
+      "trafficRuleId": "string",
+      "filterType": "string",
+      "priority": int,
+      "trafficFilter": [
+        {
+          "srcAddress": [
+            "string"
+          ],
+          "dstAddress": [
+            "string"
+          ],
+          "srcPort": [
+            "string"
+          ],
+          "dstPort": [
+            "string"
+          ],
+          "protocol": [
+            "string"
+          ],
+          "qCI": int,
+          "dSCP": int,
+          "tC": int
+        }
+      ],
+      "action": "string",
+      "state": "string"
+    }
+  ],
+  "appDNSRule": [
+    {
+      "dnsRuleId": "string",
+      "domainName": "string",
+      "ipAddressType": "string",
+      "ipAddress": "string",
+      "ttl": int,
+      "state": "string"
+    }
+  ],
+  "appSupportMp1": true,
+  "appName": "abcd"
+}
+```
+
+Example response:
+```
+200 OK
+{
+    "Updated"
+}
+```
+
+### Get APPDRule record to Inventory.
+Retrieves appDRule records for given tenant ID and app instance ID.
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|appInstanceIds|application instance id|path|yes|Valid UUID|64|
+
+
+Example response body:
+```
+200 OK
+{
+  "appTrafficRule": [
+    {
+      "trafficRuleId": "string",
+      "filterType": "string",
+      "priority": int,
+      "trafficFilter": [
+        {
+          "srcAddress": [
+            "string"
+          ],
+          "dstAddress": [
+            "string"
+          ],
+          "srcPort": [
+            "string"
+          ],
+          "dstPort": [
+            "string"
+          ],
+          "protocol": [
+            "string"
+          ],
+          "qCI": int,
+          "dSCP": int,
+          "tC": int
+        }
+      ],
+      "action": "string",
+      "state": "string"
+    }
+  ],
+  "appDNSRule": [
+    {
+      "dnsRuleId": "string",
+      "domainName": "string",
+      "ipAddressType": "string",
+      "ipAddress": "string",
+      "ttl": int,
+      "state": "string"
+    }
+  ],
+  "appSupportMp1": true,
+  "appName": "abcd"
+}
+```
+
+### Delete APPDRule record .
+Deletes appDRule records for a given tenant and app instance.
+```
+Resource URI: /inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|appInstanceIds|application instance id|path|yes|Valid UUID|64|
+
+
+Example response body:
+```
+200 OK
+{
+"DELETED"
+}
+```
+
 ### Inventory Open Api Swagger
 
 * Please refer [INVENTORY_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/inventory-swagger-openapi.yaml)
