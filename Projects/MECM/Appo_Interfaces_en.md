@@ -680,6 +680,14 @@ Method: DELETE
 |tenant_id|tenant id|path|yes|Valid UUID|64|
 |appInstanceIds|application instance id|path|yes|Valid UUID|64|
 
+Example request body:
+```
+{
+  "appTrafficRule": ["string", "string"],
+  "appDNSRule": ["string", "string"]
+}
+
+```
 Example response:
 ```
 202 Accepted
