@@ -56,7 +56,7 @@ The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in t
 ### Resource Service
  Resource service communicates with K8s plugin to perform LCM operation on K8s environment.
 
-### K8s Plugin
+## K8s Plugin
  K8s plugin is responsible for interaction with kubernetes infra for LCM operations.
  
 ![.](/uploads/images/2020/0924/k8splugin.png "k8splugin.png") 
@@ -68,7 +68,7 @@ The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in t
 
  K8s Adapter communicates with Kuberenetes API server to perform LCM operation on K8s environment.
 
-### App Rule Manager
+## App Rule Manager
 
 The APP Rule Manager sends configuration request to the MEP. It includes the traffic rules and DNS to be configured.
 
