@@ -48,22 +48,31 @@ The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in t
  LCM controller enables edgegallery to deploy and run applications on multiple infrastructure environments (ex. VM, K8s
   etc...) by selecting appropriate plugin adapter. 
 
-![.](/uploads/images/2020/0924/mecm-applcm-diagram.png "mecm-applcm-diagram.png") 
+![.](/uploads/images/2020/0924/mecm-applcm-architecture.png "mecm-applcm-architecture.png") 
 
 ### API Handler
  Provides northbound interfaces for application LCM operations.
 
-### K8s Plugin adapter
- K8s plugin adapter communicates with K8s plugin to perform LCM operation on K8s environment.
+### Resource Service
+ Resource service communicates with K8s plugin to perform LCM operation on K8s environment.
 
 ### K8s Plugin
  K8s plugin is responsible for interaction with kubernetes infra for LCM operations.
+ 
+![.](/uploads/images/2020/0924/k8splugin.png "k8splugin.png") 
+
+### API Handler: 
+ Provides north bound interfaces for K8s plugin.
+
+### K8s Adapter:
+
+ K8s Adapter communicates with Kuberenetes API server to perform LCM operation on K8s environment.
 
 ### App Rule Manager
 
 The APP Rule Manager sends configuration request to the MEP. It includes the traffic rules and DNS to be configured.
 
-![.](/uploads/images/2020/0924/mecm-app-rule-architecture.png "mecm-app-rule-architecture.png")
+![.](/uploads/images/2020/0924/app-rule-architecture.png "mecm-app-rule-architecture.png")
 
 ### API Handler: 
 Provides north bound interfaces for app rule manager
