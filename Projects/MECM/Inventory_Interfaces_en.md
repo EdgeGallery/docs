@@ -49,7 +49,8 @@ Example request body:
 {
   "applcmIp": "string",
   "applcmPort": "string",
-  "userName": "string"
+  "userName": "string",
+  "applcmName": "string"
 }
 ```
 
@@ -104,7 +105,8 @@ Example response:
 {
   "applcmIp": "string",
   "applcmPort": "string",
-  "userName": "string"
+  "userName": "string",
+  "applcmName": "string"
 }
 ```
 
@@ -128,7 +130,8 @@ Example request body:
 {
   "appstoreIp": "string",
   "appstorePort": "string",
-  "userName": "string"
+  "userName": "string",
+  "applcmName": "string"
 }
 ```
 
@@ -189,7 +192,6 @@ Example response:
       "uri": "string",
       "userName": "string"
     }
-    ```
   }
 ```
 
@@ -271,18 +273,12 @@ Example response:
 ```
 200 OK
   {
-    "address": "string",
-    "affinity": "string",
-    "applcmIp": "string",
-    "city": "string",
-    "edgeName": "string",
-    "edgerepoIp": "string",
-    "edgerepoPort": "string",
-    "edgerepoUsername": "string",
-    "mechostIp": "string",
-    "mechostName": "string",
-    "userName": "string",
-    "zipCode": "string"
+    "appstoreIp" : "string"   
+    "appstorePort" : "string"   
+    "uri" : "string"
+    "userName" : "string"   
+    "appstoreName" : "string" 
+    "producer" : "string"
   }
 ```
 
@@ -877,6 +873,7 @@ Example request body:
   "appRuleIp": "string",
   "appRulePort": "string",
   "userName": "string",
+  "appRuleName": "string"
 }
 ```
 
@@ -911,6 +908,7 @@ Example request body:
   "appRuleIp": "string",
   "appRulePort": "string",
   "userName": "string",
+  "appRuleName": "string"
 }
 ```
 
@@ -942,7 +940,8 @@ Example response:
   {
     "appRuleIp": "string",
     "appRulePort": "string",
-     "userName": "string",
+    "userName": "string",
+    "appRuleName": "string"
   }
 ]
 ```
@@ -969,6 +968,7 @@ Example response:
   "appRuleIp": "string",
   "appRulePort": "string",
   "userName": "string",
+  "appRuleName": "string"
 }
 ```
 

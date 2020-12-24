@@ -79,6 +79,7 @@ Method: POST
 |appPackageId|appPackageId|RequestPart|yes|Alphanumeric in lower case|64|
 |appId|appId|RequestPart|yes|Alphanumeric in lower case|64|
 |mecHost|mecHost|RequestPart |yes|Valid IP Address|15|
+|hwcapabilities|hardwareCapabilities|body|No|AlphaNumeric characters allowed|128|
 |tenant_id |tenant_id|path|yes|Valid UUID|64|
 
 Example request body:
@@ -88,6 +89,9 @@ Example request body:
   "appName": "string",
   "appPackageId": "string",
   "appId": "string",
+  "hwCapabilities": [
+      "string"
+    ],
   "mecHost": "string"
 }
 
@@ -312,8 +316,12 @@ Example request body:
   "appName": "string",
   "appInstanceDescription": "string",
   "appId": "string",
-  "mecHost": "string",
-  "hwcapabilities": "string"
+  "hwCapabilities": [
+     "string"
+   ],
+   "mecHost": [
+     "string"
+   ]
 }
 
 ```
@@ -702,7 +710,7 @@ Example response:
 ### Get AppRule Config Status
 Queries app rule config status
 ```
-Resource URI: /appo/v1/tenants/{{tenant-id}}/apprule_task_infos/9ab2eb45-8a35-41bc-a319-bc9305cc494b
+Resource URI: /appo/v1/tenants/{{tenant-id}}/apprule_task_infos/{apprule_task_id}
 Method: GET
 ```
 
