@@ -78,6 +78,7 @@ Note: For details of service register message please check the interface doc.
 #### How to send heartbeat message
 Services who already set livenessinterval in its register message should send hearbeat message to MEP. When service registers, its response message will carry the URL (liveness), using which service should send the heartbeat to MEP.
 Note: For details of hearbeat message please check the interface document.
+
 EG-LDVS应用集成插件mep-agent
 ------------------------------------
 
