@@ -39,7 +39,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 * PoC 特性
     * MEP服务治理增强
-    * TBA
+    * 引入插件式应用框架[Crane-framework](https://gitee.com/edgegallery/crane-framework)
 
 
  **Bug Fixes**
