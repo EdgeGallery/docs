@@ -7,7 +7,7 @@ MECM管理面主要提供边缘节点、APPLCM的注册以及应用的分发部�
 
 #### 1. 概述  
 ##### 1.1概述界面主要分为三个功能区，右边点击地图区域可以进行不同地域Node节点的切换展示地域节点信息，同时支持江苏和广东省份下钻 
-![首页-overview](https://images.gitee.com/uploads/images/2020/1226/142007_7994b117_7625361.png "屏幕截图.png" =100x100)  
+![首页-overview](https://images.gitee.com/uploads/images/2020/1226/142007_7994b117_7625361.png "屏幕截图.png  =100x100")  
 ![首页-地图下钻到市](https://images.gitee.com/uploads/images/2020/1226/142044_7574ce1b_7625361.png "屏幕截图.png") 
 ![街道地图](https://images.gitee.com/uploads/images/2020/1226/142208_2c659e39_7625361.png "屏幕截图.png")<br>
 ##### 1.2显示具体街道信息左边根据当前选择的节点，进行KPI、MEP能力以及应用能力详情展示  
