@@ -100,19 +100,11 @@ EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自�
 
 | Component                                             | Version       | CVE                         |
 | ----------------------------------------------------- | ------------- | --------------------------- |
-| tomcat-embed-core                         | 9.0.37         | CVE-2020-17527               |
-| vertx-core | 3.6.3  | CVE-2019-17640               |
 | spring-security-core                                  |5.3.4.RELEASE  | CVE-2018-1258               |
 | bcprov-jdk15on                                        | 1.66          | CVE-2020-28052               |
-| foundation-ssl                                        | 1.3.0         | CVE-2004-0009               |
 | jackson-databind                                      | 2.10.5         | CVE-2020-25649       |
-| mybatis                                             | 3.5.3         | CVE-2020-26945                     |
-| mybatis                                             | 3.5.3         | CVE-2020-26945                     |
-| mybatis-spring                                             | 2.0.3         | CVE-2020-26945                |
 |  mybatis-spring-boot-starter                             | 2.1.1         | CVE-2020-26945                |
 |  spring-security-oauth2                             | 2.3.3.RELEAS         | CVE-2018-15758                |
-|  spring-core                             | 5.2.8.RELEASE         | CVE-2020-5421                |
-
 
 - Website-gateway:
 
