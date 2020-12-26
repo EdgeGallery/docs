@@ -70,17 +70,11 @@ EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自�
 
 | Component                                  | Version       | CVE                                                          |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
-| netty-transport (indirect dependency)      | 4.1.36.Final  | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
 | log4j (indirect dependency)                | 1.2.17        | CVE-2019-17571                                               |
-| spring-jdbc (indirect dependency)          | 5.1.8.RELEASE | CVE-2020-5398                                                |
-| spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258                                                |
 | bcprov-jdk15on-1.66.jar | 1.66 | CVE-2020-28052                                                |
-| foundation-ssl | 1.3.0 | CVE-2004-0009                                                |
 | jackson-databind | 2.10.5 | CVE-2020-25649                                                |
-| mybatis | 3.5.3 | CVE-2020-25645                                                |
 | spring-security-oauth2 | 2.3.3.RELEASE | CVE-2018-15758                                                |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17525                                                |
-| vertx-core | 3.6.3 | CVE-2019-17640                                                |
 
 
 - Developer:
