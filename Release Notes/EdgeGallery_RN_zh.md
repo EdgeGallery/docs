@@ -29,12 +29,17 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 [ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
 
-* 【Developer】优化APP开发测试发布流程，优化API界面，集成多语言SDK
-* 【AppStore】界面易用性优化，EdgeGallery生态能力优化
-* 【MECM】优化拓扑、应用管理及边缘节点管理，新增获取MEP能力功能，AK/SK配置接口
-* 【MEP】支持APP服务心跳，新增获取MEP能力接口，AK/SK配置接口
-* 【ATP】APP应用的测试能力增强
-* 【Test】提供健康检查功能，优化安装包，开发测试平台支持测试例管理
+* 版本规划特性
+    * 【Developer】优化APP开发测试发布流程，优化API界面，集成多语言SDK
+    * 【AppStore】界面易用性优化，EdgeGallery生态能力优化
+    * 【MECM】优化拓扑、应用管理及边缘节点管理，新增获取MEP能力功能，AK/SK配置接口
+    * 【MEP】支持APP服务心跳，新增获取MEP能力接口，AK/SK配置接口
+    * 【ATP】APP应用的测试能力增强
+    * 【Test】提供健康检查功能，优化安装包，开发测试平台支持测试例管理
+
+* PoC 特性
+    * MEP服务治理增强
+    * TBA
 
 
  **Bug Fixes**
@@ -57,7 +62,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  *Known Vulnerabilities in Used Modules*
 
-EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自行修复：
+EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
 
 - Appstore:
 
@@ -98,7 +103,7 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
 | swagger-codegen-cli | 3.0.21 |CVE-2020-25649，CVE-2019-10086，CVE-2017-1000207，CVE-2017-1000208，CVE-2018-8088，，CVE-2017-18640，CVE-2016-6199，CVE-2019-15052  |
 
 
-- Atp
+- ATP
 
 | Component  | Version  | CVE  |
 |---|---|---|
