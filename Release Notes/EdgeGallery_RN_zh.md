@@ -63,11 +63,6 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
 | log4j (indirect dependency)                | 1.2.17        | CVE-2019-17571                                               |
 | spring-jdbc (indirect dependency)          | 5.1.8.RELEASE | CVE-2020-5398                                                |
 | spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258                                                |
-
-- EdgeGalelry v1.0版本appstore第三方开源组件新增以下漏洞
-
-| Component                                  | Version       | CVE                                                          |
-| ------------------------------------------ | ------------- | ------------------------------------------------------------ |
 | bcprov-jdk15on-1.66.jar | 1.66 | CVE-2020-28052                                                |
 | foundation-ssl | 1.3.0 | CVE-2004-0009                                                |
 | jackson-databind | 2.10.5 | CVE-2020-25649                                                |
