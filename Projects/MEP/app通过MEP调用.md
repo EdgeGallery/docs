@@ -60,7 +60,7 @@ response: [
         }
     }
 ]
-响应中关注transportInfo->endpoint->uris的值
+响应中关注transportInfo->endpoint->uris[0]的值
 ```
 ### 3.appB调用appA的接口
 appB使用服务发现接口获取的appA的endpoint信息，调用appA，header中添加获取到的token的值，body添加调用appA需要的参数
