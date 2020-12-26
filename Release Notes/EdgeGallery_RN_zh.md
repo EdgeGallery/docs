@@ -29,7 +29,12 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 [ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
 
-* To be refreshed
+* 【Developer】优化APP开发测试发布流程，优化API界面，集成多语言SDK
+* 【AppStore】界面易用性优化，EdgeGallery生态能力优化
+* 【MECM】优化拓扑、应用管理及边缘节点管理，新增获取MEP能力功能，AK/SK配置接口
+* 【MEP】支持APP服务心跳，新增获取MEP能力接口，AK/SK配置接口
+* 【ATP】APP应用的测试能力增强
+* 【Test】提供健康检查功能，优化安装包，开发测试平台支持测试例管理
 
 
  **Bug Fixes**
