@@ -71,11 +71,11 @@ MEP管理应用服务的状态，应用通过MEP进行服务的注册，当服�
 ### MEP Service hearbeat
 Each MEC service instance that has previously registered in MEC platform and is configured for heartbeat shall send heartbeat message to the MEC platform periodically in order to show that the MEC service instance is still operational. When the MEC platform has not received the heartbeat for a configurable amount of time, the MEC platform considers that the service instance can no longer be discovered and The service state will change to SUSPEND if it was ACTIVE before.
 
-####How to configure hearbeat for a service
+#### How to configure hearbeat for a service
 Service register message will carry the livenessinterval field in it. It is an option field. If it is configured that indicate this service want to send heartbeat message. MEP platform support livenessinterval value is 60s. It will overwrite any value set by the service.
 Note: For details of service register message please check the interface doc.
 
-####How to send heartbeat message
+#### How to send heartbeat message
 Services who already set livenessinterval in its register message should send hearbeat message to MEP. When service registers, its response message will carry the URL (liveness), using which service should send the heartbeat to MEP.
 Note: For details of hearbeat message please check the interface document.
 EG-LDVS应用集成插件mep-agent
@@ -92,7 +92,7 @@ MEP管理应用的服务，应用需要将其服务注册到MEP中，MEP-Agent�
 
 ![](/uploads/images/2020/0804/165723_8d9be51d_5504908.png "特性3.png")
 
-###MEP-Agent Get token API
+### MEP-Agent Get token API
 MEP-Agent will run as sidecar along with application. If Apllication need to obtain token from mep for communication with services, it can query mep-agent api.
 ```
 GET /mep-agent/v1/token
