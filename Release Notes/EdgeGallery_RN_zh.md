@@ -143,7 +143,12 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
 | Component            | Version       | CVE            |
 | -------------------- | ------------- | -------------- |
 | log4j                | 1.2.17        | CVE-2019-17571 |
+| foundation-ssl | 1.3.0 | CVE-2004-0009  |
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258  |
+| jackson-databind | 2.10.5 | CVE-2020-26945  |
+| spring-security-oauth2 | 2.3.3 | CVE-2018-15758  |
+| tomcat-embed-core | 9.0.37 | CVE-2020-17527  |
+| vertx-core | 3.6.3 | CVE-2019-17640  |
 
 - MECM:
 
