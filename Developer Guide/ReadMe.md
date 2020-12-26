@@ -3,7 +3,7 @@
 
 ## EdgeGallery 安装指导
 
-[All In One](https://gitee.com/edgegallery/platform-mgmt/blob/master/README%2Emd)
+[All In One](https://gitee.com/edgegallery/installer/blob/master/README%2Emd)
 
 ## 如何贡献
 - [APPStore](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_Contribution%2Emd)
@@ -19,3 +19,5 @@
 - [MEP](https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/MEP_Contribution%2Emd)
 
 - [User Management](https://gitee.com/edgegallery/docs/blob/master/Projects/User%20Management/User_Contribution%2Emd)
+
+- [ATP](https://gitee.com/edgegallery/docs/blob/master/Projects/ATP/ATP_Contribution%2Emd)

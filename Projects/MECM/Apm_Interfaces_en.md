@@ -286,3 +286,23 @@ Example response:
   "appPackageId": "string"
 }
 ```
+
+### Queries liveness & readiness
+Retrieves data for liveness & readiness
+```
+Resource URI: /apm/v1/health
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+
+Example response:
+```
+200 OK
+```
+
+### APM Open Api Swagger
+
+* Please refer [APM_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/apm-swagger-openapi.yaml)

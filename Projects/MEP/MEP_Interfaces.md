@@ -44,6 +44,8 @@
   - [Dns-Server](#dns-server)
     - [1. Create/Set new entry](#1-createset-new-entry)
     - [2. Delete an entry](#2-delete-an-entry)
+  - [MEP Agent](#mep-agent)
+      - [1. Get token](#1-get-token)
 
 ## MEP 接口简介
 
@@ -1625,7 +1627,7 @@ Exception status code
 | 404  | The requested resource was not found. |
 
 #### 2. Update liveness info
-This method update liveness staus about an individual mec service. It indicates the activeness of the service.
+This method also referred as "heartbeat" message to (re)confirm the active status about an individual mec service. But not to change the state from "INACTIVE" to "ACTIVE".
 NOTE: As per ETSI doc, this message should be a PATCH message. Since we use servicecomb rest server which doesn't support PATCH message. we kept it as PUT. But behviour will be similar to patch.
 URL
 ```
@@ -1656,14 +1658,7 @@ PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 ```
 
 Return Parameters:
-
-| Name          | Type                        | Description              |
-| ------------- | --------------------------- | ------------------------ |
-| state     | enum **{ACTIVE, INACTIVE, SUSPENDED}**                      | State                  |
-| timeStamp    | object                      | The time when the last heartbeat message was received      |
-| &gt;seconds | int32     | The seconds partof the time  |
-| &gt;nanoseconds     | int32                      | The nano seconds part of the time       |
-| interval           | int         | Interval between two consecutive hearbeat message                |
+None
 
 Return Code: 204 OK
 
@@ -2326,16 +2321,16 @@ HTTP/1.1 200 OK
 ```
 
 ### 异常状态码
-| **HTTP状态码** | **描述** |
-| --- | --- |
-| 400  | 错误的请求，用来表示请求的参数不正确。 |
-| 401  | 当前请求需要鉴权认证。 |
-| 403   | 禁止当前操作。 |
-| 404  | 请求的资源未被发现。 |
-| 412  | 请求中的先决条件验证失败。 |
-| 414  | 请求的URI超长，服务器拒绝处理请求。 |
-| 500  | 内部服务器错误。 |
-| 503  | 服务不可用。 |
+|**HTTP状态码**|**描述**|
+|---|---|
+|400|错误的请求，用来表示请求的参数不正确。|
+|401|当前请求需要鉴权认证。|
+|403|禁止当前操作。|
+|404|请求的资源未被发现。|
+|412|请求中的先决条件验证失败。|
+|414|请求的URI超长，服务器拒绝处理请求。|
+|500|内部服务器错误。|
+|503|服务不可用。|
 
 ## Dns-Server
 
@@ -2437,4 +2432,59 @@ Return Code: 200 Success
 Example Response:
 ```
 HTTP/1.1 200 Success
+```
+## MEP Agent
+Mep agent is a component which run as side car with application. It helps to get authenticaion token, do service registration, send heartbeat on behalf of application.
+
+#### 1. Get token
+Applicaiontion can call this API to get authentication token from mepauth.
+URL
+```
+GET /mep-agent/v1/token
+```
+Request parameters:
+
+ | **Name** | **Type** | **Description** | **IN** | **Required** |
+ | --- | --- | --- | --- | --- |
+ | Content-Type |   String  | MIME type, fill in "application/json"                        |               header  | Yes|
+
+Body parameters:
+
+None
+
+Example request:
+
+```
+GET /mep-agent/v1/token
+
+{
+  "header": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ]
+}
+```
+
+Return parameters:
+
+Return code: 200 OK
+
+|Name     |       Type  |   Description   |               Required|
+|---|---|---|---|
+|access\_token |  String  | Token|                 Yes|
+|token\_type     |String   |Token Type（Bearer）|   Yes|
+|expires\_in    | int     | Expire time             | Yes|
+
+Return example:
+
+```
+HTTP/1.1 200 OK
+{
+	"access_token":"xxxx",
+	"token_type":"Bearer",
+	"expires_in":"3600"
+}
+
 ```

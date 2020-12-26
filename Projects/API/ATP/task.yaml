@@ -1,0 +1,286 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.edgegallery.atp.interfaces.TaskController"
+  x-java-interface: "cse.gen.edgegallery.mec_atp.testTask.TaskControllerIntf"
+basePath: "/edgegallery/atp/v1"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /tasks:
+    get:
+      tags:
+      - "APT Test Controller"
+      summary: "get all tasks by userId."
+      operationId: "getAllTasks"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "appName"
+        in: "query"
+        required: false
+        type: "string"
+      - name: "status"
+        in: "query"
+        required: false
+        type: "string"
+      - name: "providerId"
+        in: "query"
+        required: false
+        type: "string"
+      - name: "appVersion"
+        in: "query"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/TaskRequest"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+    post:
+      tags:
+      - "APT Test Controller"
+      summary: "create test task."
+      operationId: "createTest"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "file"
+        in: "formData"
+        description: "application files"
+        required: true
+        type: "file"
+      - name: "isRun"
+        in: "query"
+        description: "isRun test task directly"
+        required: true
+        type: "boolean"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "string"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /tasks/{taskId}/action/download:
+    get:
+      tags:
+      - "APT Test Controller"
+      summary: "download test report"
+      operationId: "downloadTestReport"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "taskId"
+        in: "path"
+        description: "task id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/InputStreamResource"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /tasks/{taskId}:
+    get:
+      tags:
+      - "APT Test Controller"
+      summary: "get tasks by taskId and userId."
+      operationId: "getTaskById"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "taskId"
+        in: "path"
+        description: "task id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/TaskRequest"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /tasks/{taskId}/action/pre-check:
+    get:
+      tags:
+      - "APT Test Controller"
+      summary: "pre check before run test task."
+      operationId: "preCheck"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "taskId"
+        in: "path"
+        description: "task id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/CommonActionRes"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /tasks/{taskId}/action/run:
+    post:
+      tags:
+      - "APT Test Controller"
+      summary: "run test task."
+      operationId: "runTest"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "taskId"
+        in: "path"
+        description: "task id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "string"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+definitions:
+  InputStreamResource:
+    type: "object"
+    properties:
+      inputStream:
+        type: "string"
+        format: "byte"
+      description:
+        type: "string"
+      open:
+        type: "boolean"
+      url:
+        type: "string"
+        format: "url"
+      file:
+        type: "file"
+      readable:
+        type: "boolean"
+      uri:
+        type: "string"
+        format: "uri"
+      filename:
+        type: "string"
+    x-java-class: "org.springframework.core.io.InputStreamResource"
+  TaskRequest:
+    type: "object"
+    properties:
+      id:
+        type: "string"
+      appName:
+        type: "string"
+      appVersion:
+        type: "string"
+      status:
+        type: "string"
+      createTime:
+        type: "string"
+        format: "date-time"
+      endTime:
+        type: "string"
+        format: "date-time"
+      user:
+        $ref: "#/definitions/User"
+      testCaseDetail:
+        $ref: "#/definitions/TestCaseDetail"
+      accessToken:
+        type: "string"
+      providerId:
+        type: "string"
+    x-java-class: "org.edgegallery.atp.model.task.TaskRequest"
+  TestCaseDetail:
+    type: "object"
+    properties:
+      securityTest:
+        type: "array"
+        items:
+          type: "object"
+          additionalProperties:
+            $ref: "#/definitions/TestCaseResult"
+      complianceTest:
+        type: "array"
+        items:
+          type: "object"
+          additionalProperties:
+            $ref: "#/definitions/TestCaseResult"
+      sandboxTest:
+        type: "array"
+        items:
+          type: "object"
+          additionalProperties:
+            $ref: "#/definitions/TestCaseResult"
+    x-java-class: "org.edgegallery.atp.model.testcase.TestCaseDetail"
+  TestCaseResult:
+    type: "object"
+    properties:
+      result:
+        type: "string"
+      reason:
+        type: "string"
+      verificationModel:
+        type: "string"
+    x-java-class: "org.edgegallery.atp.model.testcase.TestCaseResult"
+  User:
+    type: "object"
+    properties:
+      userId:
+        type: "string"
+      userName:
+        type: "string"
+    x-java-class: "org.edgegallery.atp.model.user.User"
+  CommonActionRes:
+    type: "object"
+    properties:
+      dependency:
+        type: "object"
+        additionalProperties:
+          type: "string"
+    x-java-class: "org.edgegallery.atp.model.CommonActionRes"

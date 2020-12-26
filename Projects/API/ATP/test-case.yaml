@@ -1,0 +1,312 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.edgegallery.atp.interfaces.TestCaseController"
+  x-java-interface: "cse.gen.edgegallery.mec_atp.testCase.TestCaseControllerIntf"
+basePath: "/edgegallery/atp/v1"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /testcases:
+    get:
+      tags:
+      - "APT Test Case Controller"
+      summary: "get all test cases."
+      operationId: "getAllTestCases"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "type"
+        in: "query"
+        required: false
+        type: "string"
+      - name: "name"
+        in: "query"
+        required: false
+        type: "string"
+      - name: "verificationModel"
+        in: "query"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/TaskRequest"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+    post:
+      tags:
+      - "APT Test Case Controller"
+      summary: "create test case."
+      operationId: "createTestCase"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "file"
+        in: "formData"
+        description: "test case file"
+        required: true
+        type: "file"
+      - name: "name"
+        in: "query"
+        description: "test case name"
+        required: true
+        type: "string"
+      - name: "type"
+        in: "query"
+        description: "test case type"
+        required: true
+        type: "string"
+      - name: "description"
+        in: "query"
+        description: "test case description"
+        required: true
+        type: "string"
+      - name: "codeLanguage"
+        in: "query"
+        description: "test case code language"
+        required: true
+        type: "string"
+      - name: "expectResult"
+        in: "query"
+        description: "test case expect result"
+        required: true
+        type: "string"
+      - name: "verificationModel"
+        in: "query"
+        description: "test case verification model"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/TestCase"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+    put:
+      tags:
+      - "APT Test Case Controller"
+      summary: "modify test case."
+      operationId: "updateTestCase"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "query"
+        description: "test case id"
+        required: true
+        type: "string"
+      - name: "file"
+        in: "formData"
+        description: "test case file"
+        required: true
+        type: "file"
+      - name: "description"
+        in: "query"
+        description: "test case description"
+        required: true
+        type: "string"
+      - name: "codeLanguage"
+        in: "query"
+        description: "test case code language"
+        required: true
+        type: "string"
+      - name: "expectResult"
+        in: "query"
+        description: "test case expect result"
+        required: true
+        type: "string"
+      - name: "verificationModel"
+        in: "query"
+        description: "test case verification model"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/TestCase"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+  /testcases/{id}:
+    get:
+      tags:
+      - "APT Test Case Controller"
+      summary: "get one test case."
+      operationId: "queryTestCase"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "test case id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/TestCase"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+    delete:
+      tags:
+      - "APT Test Case Controller"
+      summary: "delete test case."
+      operationId: "deleteTestCase"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "test case id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "boolean"
+        404:
+          description: "microservice not found"
+          schema:
+            type: "string"
+        415:
+          description: "Unprocessable MicroServiceInfo Entity "
+          schema:
+            type: "string"
+        500:
+          description: "resource grant error"
+          schema:
+            type: "string"
+definitions:
+  TestCase:
+    type: "object"
+    properties:
+      id:
+        type: "string"
+      name:
+        type: "string"
+      type:
+        type: "string"
+      description:
+        type: "string"
+      hashCode:
+        type: "string"
+      codeLanguage:
+        type: "string"
+      expectResult:
+        type: "string"
+      verificationModel:
+        type: "string"
+    x-java-class: "org.edgegallery.atp.model.testcase.TestCase"
+  TaskRequest:
+    type: "object"
+    properties:
+      id:
+        type: "string"
+      appName:
+        type: "string"
+      appVersion:
+        type: "string"
+      status:
+        type: "string"
+      createTime:
+        type: "string"
+        format: "date-time"
+      endTime:
+        type: "string"
+        format: "date-time"
+      user:
+        $ref: "#/definitions/User"
+      testCaseDetail:
+        $ref: "#/definitions/TestCaseDetail"
+      accessToken:
+        type: "string"
+      providerId:
+        type: "string"
+    x-java-class: "org.edgegallery.atp.model.task.TaskRequest"
+  TestCaseDetail:
+    type: "object"
+    properties:
+      securityTest:
+        type: "array"
+        items:
+          type: "object"
+          additionalProperties:
+            $ref: "#/definitions/TestCaseResult"
+      complianceTest:
+        type: "array"
+        items:
+          type: "object"
+          additionalProperties:
+            $ref: "#/definitions/TestCaseResult"
+      sandboxTest:
+        type: "array"
+        items:
+          type: "object"
+          additionalProperties:
+            $ref: "#/definitions/TestCaseResult"
+    x-java-class: "org.edgegallery.atp.model.testcase.TestCaseDetail"
+  TestCaseResult:
+    type: "object"
+    properties:
+      result:
+        type: "string"
+      reason:
+        type: "string"
+      verificationModel:
+        type: "string"
+    x-java-class: "org.edgegallery.atp.model.testcase.TestCaseResult"
+  User:
+    type: "object"
+    properties:
+      userId:
+        type: "string"
+      userName:
+        type: "string"
+    x-java-class: "org.edgegallery.atp.model.user.User"

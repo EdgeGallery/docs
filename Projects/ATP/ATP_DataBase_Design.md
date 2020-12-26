@@ -1,0 +1,38 @@
+数据库设计
+=========================
+ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用了两张数据库表格：
+
+- TABLE TASK_TABLE: 存储测试任务信息
+```
+    CREATE TABLE TASK_TABLE (
+        ID                       VARCHAR(200)       NOT NULL,
+        APPNAME                  VARCHAR(200)       NULL,
+        APPVERSION               VARCHAR(200)       NULL,
+        STATUS                   VARCHAR(200)       NULL,
+        TESTCASEDETAIL           TEXT               NULL,
+        CREATETIME               TIMESTAMP          NULL,
+        ENDTIME                  TIMESTAMP          NULL,
+        PROVIDERID               VARCHAR(200)       NULL,
+        PACKAGEPATH              VARCHAR(200)       NULL,
+        USERID                   VARCHAR(200)       NULL,
+        USERNAME                 VARCHAR(200)       NULL,
+        CONSTRAINT task_table_pkey PRIMARY KEY (ID)
+    );
+```
+
+- TEST_CASE_TABLE : 存储测试用例信息
+```
+    CREATE TABLE TEST_CASE_TABLE (
+        ID                       VARCHAR(200)       NOT NULL,
+        NAME                     VARCHAR(200)       NULL,
+        TYPE                     VARCHAR(200)       NULL,
+        CLASSNAME                VARCHAR(200)       NULL,
+        HASHCODE                 TEXT               NULL, 
+        DESCRIPTION              TEXT               NULL,
+        FILEPATH                 VARCHAR(200)       NULL,
+        CODELANGUAGE             VARCHAR(200)       NULL,
+        EXPECTRESULT             VARCHAR(200)       NULL,
+        VERIFICATIONMODEL        VARCHAR(200)       NULL,
+        CONSTRAINT test_case_table_pkey PRIMARY KEY (ID)
+    );
+```

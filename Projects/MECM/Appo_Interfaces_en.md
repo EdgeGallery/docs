@@ -79,6 +79,7 @@ Method: POST
 |appPackageId|appPackageId|RequestPart|yes|Alphanumeric in lower case|64|
 |appId|appId|RequestPart|yes|Alphanumeric in lower case|64|
 |mecHost|mecHost|RequestPart |yes|Valid IP Address|15|
+|hwcapabilities|hardwareCapabilities|body|No|AlphaNumeric characters allowed|128|
 |tenant_id |tenant_id|path|yes|Valid UUID|64|
 
 Example request body:
@@ -88,6 +89,9 @@ Example request body:
   "appName": "string",
   "appPackageId": "string",
   "appId": "string",
+  "hwCapabilities": [
+      "string"
+    ],
   "mecHost": "string"
 }
 
@@ -286,3 +290,453 @@ Example response:
       ]
    }
 ```
+
+### Create Batch
+Batch create application instances.
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_create
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant id|path |yes|Valid UUID|64|
+|appName|appName|RequestPart|yes|Alphanumeric characters,special characters are hypen and underscore|128|
+|appInstanceDescription|appInstanceDescription|RequestPart|yes|Valid UUID|64|
+|appPackageId|appPackageId|RequestPart|yes|Alphanumeric in lower case|64|
+|appId|appId|RequestPart|yes|Alphanumeric in lower case|64|
+|mecHost|mecHost|RequestPart |yes|Valid IP Address|15|
+|hwcapabilities|hardwareCapabilities|body|No|AlphaNumeric characters allowed|128|
+
+Example request body:
+```
+{
+  "appPackageId": "string",
+  "appName": "string",
+  "appInstanceDescription": "string",
+  "appId": "string",
+  "hwCapabilities": [
+     "string"
+   ],
+   "mecHost": [
+     "string"
+   ]
+}
+
+```
+
+Example response:
+
+```
+202 Accepted
+  {
+    "response": [
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            },
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            }
+          ]
+  }
+```
+
+### Batch instantiate
+Batch instantiate application instances.
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_instantiate
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant id|path |yes|Valid UUID|64|
+|appInstanceIds|application instance id|body|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+ "appInstanceIds" : ["string","string"]
+}
+
+```
+
+Example response:
+
+```
+202 Accepted
+  {
+    "response": [
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            },
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            }
+          ]
+  }
+```
+
+### Batch terminate
+Batch terminates application instances.
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_terminate
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant id|path |yes|Valid UUID|64|
+|appInstanceIds|application instance id|body|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+ "appInstanceIds" : ["string","string"]
+}
+
+```
+
+Example response:
+
+```
+202 Accepted
+  {
+    "response": [
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            },
+            {
+              "applicationInstanceId": "string",
+              "host": "string",
+              "status": "string"
+            }
+          ]
+  }
+```
+
+### Batch Query
+Batch Query information
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_ids}
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|appInstance_ids|application instance id|header|yes|Valid UUID|64|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+
+
+Example response:
+```
+200 OK
+  {
+     "appInstanceId": "string",
+     "appPackageId": "string",
+     "appName": "string",
+     "appId": "string",
+     "appDescriptor": "string",
+     "mecHost": "string",
+     "applcmHost": "string",
+     "operationalStatus": "string",
+     "operationInfo":"string"
+  }
+```
+
+### Queries liveness & readiness
+Retrieves data for liveness & readiness
+```
+Resource URI: /appo/v1/health
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+
+Example response:
+```
+200 OK
+```
+
+### Create AppRule Config
+Configures the app rule
+```
+Resource URI:  /appo/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|appInstance_id|application instance id|path|yes|Valid UUID|64|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+|appInstanceIds|application instance id|path|yes|Valid UUID|64|
+
+Example request body:
+```
+ "appTrafficRule": [
+    {
+      "trafficRuleId": "string",
+      "filterType": "string",
+      "priority": int,
+      "action": "DROP",
+      "trafficFilter": [
+        {
+          "srcAddress": [
+            "string"
+          ],
+          "dstAddress": [
+            "string"
+          ],
+          "tag": [
+             "string"
+          ],
+          "srcTunnelAddress": [
+             "string"
+          ],
+          "dstTunnelAddress": [
+             "string"
+          ],
+          "srcTunnelPort": [
+             "string"
+          ],
+           "dstTunnelPort": [
+              "string"
+          ],
+          "dstPort": [
+            "string"
+          ],
+          "protocol": [
+            "string"
+          ],
+          "qCI": int,
+          "dSCP": int,
+          "tC": int
+        }
+      ],
+      "action": "string",
+      "state": "string"
+    }
+  ],
+    "dstInterface": [
+      {
+       "interfaceType": "string",
+       "tunnelInfo": 
+         {
+           "tunnelType": "string",
+           "tunnelDstAddress": "string",
+           "tunnelSrcAddress": "string",
+           "tunnelSpecificData": "string"
+         },
+           "srcMacAddress": "string",
+           "dstMacAddress": "string",
+           "dstIpAddress": "string"
+           }
+     ],
+    "appDNSRule": [
+     {
+       "dnsRuleId": "string",
+       "domainName": "string",
+       "ipAddressType": "string",
+       "ipAddress": "string",
+       "ttl": int,
+     }
+  ],
+  "appSupportMp1": bool,
+  "appName": "string"
+
+```
+
+Example response:
+```
+200 OK
+{
+  "response": 
+    {
+       "apprule_task_id": "string"
+    }
+}
+```
+
+### Update AppRule Config
+Update the app rule
+```
+Resource URI:  /appo/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
+Method: PUT
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|appInstance_id|application instance id|path|yes|Valid UUID|64|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+|appInstanceIds|application instance id|path|yes|Valid UUID|64|
+
+Example request body:
+```
+ "appTrafficRule": [
+    {
+      "trafficRuleId": "string",
+      "filterType": "string",
+      "priority": int,
+      "action": "DROP",
+      "trafficFilter": [
+        {
+          "srcAddress": [
+            "string"
+          ],
+          "dstAddress": [
+            "string"
+          ],
+          "tag": [
+             "string"
+          ],
+          "srcTunnelAddress": [
+             "string"
+          ],
+          "dstTunnelAddress": [
+             "string"
+          ],
+          "srcTunnelPort": [
+             "string"
+          ],
+           "dstTunnelPort": [
+              "string"
+          ],
+          "dstPort": [
+            "string"
+          ],
+          "protocol": [
+            "string"
+          ],
+          "qCI": int,
+          "dSCP": int,
+          "tC": int
+        }
+      ],
+      "action": "string",
+      "state": "string"
+    }
+  ],
+    "dstInterface": [
+      {
+       "interfaceType": "string",
+       "tunnelInfo": 
+         {
+           "tunnelType": "string",
+           "tunnelDstAddress": "string",
+           "tunnelSrcAddress": "string",
+           "tunnelSpecificData": "string"
+         },
+           "srcMacAddress": "string",
+           "dstMacAddress": "string",
+           "dstIpAddress": "string"
+           }
+     ],
+    "appDNSRule": [
+     {
+       "dnsRuleId": "string",
+       "domainName": "string",
+       "ipAddressType": "string",
+       "ipAddress": "string",
+       "ttl": int,
+     }
+  ],
+  "appSupportMp1": bool,
+  "appName": "string"
+
+```
+
+Example response:
+```
+202 OK
+{
+  "response": 
+    {
+       "apprule_task_id": "string"
+    }
+}
+```
+
+### Delete AppRule Config
+Deletes the existing app rule
+```
+Resource URI:  /appo/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|appInstance_id|application instance id|path|yes|Valid UUID|64|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+|appInstanceIds|application instance id|path|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+  "appTrafficRule": ["string", "string"],
+  "appDNSRule": ["string", "string"]
+}
+
+```
+Example response:
+```
+202 Accepted
+{
+  "response": 
+    {
+       "apprule_task_id": "string"
+    }
+}
+```
+
+### Get AppRule Config Status
+Queries app rule config status
+```
+Resource URI: /appo/v1/tenants/{{tenant-id}}/apprule_task_infos/{apprule_task_id}
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|appInstance_id|application instance id|path|yes|Valid UUID|64|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+|appInstanceIds|application instance id|path|yes|Valid UUID|64|
+
+Example Response body:
+```
+200 OK 
+
+{
+  "response":
+    {
+        "taskId": "string",
+        "appInstanceId": "string",
+        "detailed": "string",
+        "configResult": "string"
+    }
+}
+
+```
+
+### APPO Open Api Swagger
+
+* Please refer [APPO_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/appo-swagger-openapi.yaml)

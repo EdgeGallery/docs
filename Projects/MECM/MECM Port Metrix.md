@@ -9,3 +9,4 @@ MECM端口矩阵
 |applcm controller| 8094|30204|applcm中对外提供应用生命周期管理的服务端口|
 |aplcm k8splugin|8095|30205|applcm中的k8s插件对外提供k8s的服务端口|
 |FE|8443|30093|前台模块的对外开放端口|
+|AppRuleManager|8096|30206|提供用于应用程序规则管理的外部服务端口|

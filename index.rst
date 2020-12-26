@@ -37,5 +37,12 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
    MECM <Projects/MECM/MECM>
    MEP <Projects/MEP/MEP>
    User Management <Projects/User Management/UserManagement>
+   ATP <Projects/ATP/ATP>
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Documentation Bug Report
+   
+   Please raise issue here <https://gitee.com/edgegallery/docs/issues>.
+   And you also can submit PR here <https://gitee.com/edgegallery/docs/>.
 

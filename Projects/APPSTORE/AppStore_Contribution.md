@@ -69,7 +69,9 @@
 
 1、下载appstore-be代码
 
-2、在编译器（此处以IDEA为例）中配置MainServer的运行时环境变量
+2、修改appstore-be中/src/main/resources/application.yaml 文件内的`servicecomb.rest.address`为`127.0.0.1:8099`
+
+3、在编译器（此处以IDEA为例）中配置MainServer的运行时环境变量
 
 ![](/uploads/images/2020/0908/154023_9c49d20c_7625245.jpeg "appstore-be1.jpg")
 

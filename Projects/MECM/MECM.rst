@@ -29,6 +29,7 @@ MECM
        Applcm Interfaces<Applcm_Interfaces_en>
        Appo Interfaces<Appo_Interfaces_en>
        Inventory Interfaces<Inventory_Interfaces_en>
+       AppRule Manager Interfaces<MECM_AppRule_Manager>
 
 **Database Designs数据库设计**
 *************************
@@ -48,6 +49,7 @@ MECM
       :maxdepth: 1
 
        MECM Product Document使用指导<MECM Product Document>
+       MECM User Interface Document<MECM_User_Interface>
 
 **How to Contribute如何贡献**
 *****************
@@ -59,6 +61,7 @@ MECM
        Contribute to APPLCM如何贡献<MECM_LCM_controller_Contribution>
        Contribute to APPO如何贡献<MECM_Appo_Contribution>
        Contribute to Inventory如何贡献<MECM_Inventory_Contribution>
+       Contribute to AppRuleManager<MECM_App_Rule_Contribution>
 
 **Port Matrix端口矩阵**
 ******************

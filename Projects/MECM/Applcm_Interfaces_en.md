@@ -62,6 +62,7 @@ Method: POST
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
 |hostIp|host Ip|string|yes|Valid IP|15|
+|appName|appName|string|yes|AlphaNumeric|128|
 |file|file|formData|yes|
 
 Example response:
@@ -210,4 +211,41 @@ Example response:
       ]
    }
   ]
+```
+
+### Queries liveness & readiness
+Retrieves data for liveness & readiness
+```
+Resource URI: /lcmcontroller/v1/health
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+
+Example response:
+```
+200 OK
+```
+
+### App Deployment Status
+Retrieves status of the application deployment
+```
+Resource URI: /lcmcontroller/v1/hosts/{hostIp}/packages/{packageId}/status
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|packageId|package Id|path|yes|Valid UUID without hypen|64|
+
+Example response:
+```
+200 OK
+{
+  true
+}
 ```
