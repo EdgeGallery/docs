@@ -11,6 +11,116 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 - [项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)
 - [开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
 
+ Version: v1.0.0
+--------------
+
+ - Release Date: 2020-12-31
+ - Image Version: v1.0.0
+
+**新开源仓库列表**
+
+| 模块                           |      名称       | 类型   | URL                                           | 说明                                   |
+| ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
+| ATP(Application Test Platform) |       atp       | 产品仓 | https://gitee.com/edgegallery/atp             | 应用测试平台，为应用认证提供测试支撑   |
+| ATP(Application Test Platform) |     atp-fe      | 产品仓 | https://gitee.com/edgegallery/atp-fe          | 提供应用测试认证平台前台支撑           |
+| Developer                      | crane-framework | 产品仓 | https://gitee.com/edgegallery/crane-framework | 为应用开发提供轻量化，插件是的开发框架 |
+
+**New Features**
+
+[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
+
+* To be refreshed
+
+
+ **Bug Fixes**
+
+  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report.md)
+
+ **Known Issues**
+
+  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report.md)
+
+ **Security Notes**
+
+ *Fixed Security Issues*
+
+  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report.md)
+
+ *Known Security Issues*
+
+  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report.md)
+
+ *Known Vulnerabilities in Used Modules*
+
+EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自行修复：
+
+- Appstore:
+
+
+| Component                                  | Version       | CVE                                                          |
+| ------------------------------------------ | ------------- | ------------------------------------------------------------ |
+| netty-transport (indirect dependency)      | 4.1.36.Final  | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
+| log4j (indirect dependency)                | 1.2.17        | CVE-2019-17571                                               |
+| spring-jdbc (indirect dependency)          | 5.1.8.RELEASE | CVE-2020-5398                                                |
+| spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258                                                |
+
+
+- Developer:
+
+
+| Component                                    | Version       | CVE                                                          |
+| -------------------------------------------- | ------------- | ------------------------------------------------------------ |
+| netty-transport (indirect dependency)        | 4.1.36.Final  | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
+| spring-beans (indirect dependency)           | 5.1.8.RELEASE | CVE-2020-5398                                                |
+| spring-security-config (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258, CVE-2020-5398                                 |
+| spring-security-core                         | 5.3.4.RELEASE | CVE-2018-1258                                                |
+| lodash                                       | 4.17.13       | CVE-2020-8203                                                |
+| minimatch                                    | 3.0.4         | NPM-118                                                      |
+
+- User-mgmt:
+
+
+| Component                                             | Version       | CVE                         |
+| ----------------------------------------------------- | ------------- | --------------------------- |
+| rxnetty (indirect dependency)                         | 0.4.9         | CVE-2015-2156               |
+| netty-tcnative-boringssl-static (indirect dependency) | 2.0.31.Final  | CVE-2015-2156               |
+| spring-security-core                                  | 5.2.6.RELEASE | CVE-2018-1258               |
+| lodash                                                | 4.17.20       | NPM-1065, NPM-557, NPM-7823 |
+| minimatch                                             | 3.0.4         | NPM-118                     |
+
+- Website-gateway:
+
+
+| Component            | Version       | CVE            |
+| -------------------- | ------------- | -------------- |
+| log4j                | 1.2.17        | CVE-2019-17571 |
+| spring-security-core | 5.2.6.RELEASE | CVE-2018-1258  |
+
+- MECM:
+
+
+| Component | Version | CVE           |
+| --------- | ------- | ------------- |
+| lodash    | 4.17.13 | CVE-2020-8203 |
+| minimatch | 3.0.4   | NPM-118       |
+
+
+ **Upgrade Notes**
+
+ N/A
+
+ **Deprecation Notes**
+
+ N/A
+
+ **Other**
+
+N/A
+
+-----------------------------------------------------------------------------
+
+
+
  Version: v0.9.1
 --------------
 
@@ -60,52 +170,52 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
 - Appstore:
 
 
-  | Component  | Version  | CVE  |
-  |---|---|---|
-  | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
-  | log4j (indirect dependency) | 1.2.17 | CVE-2019-17571 |
-  | spring-jdbc (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
-  | spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258 |
+| Component  | Version  | CVE  |
+|---|---|---|
+| netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
+| log4j (indirect dependency) | 1.2.17 | CVE-2019-17571 |
+| spring-jdbc (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
+| spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258 |
 
 
 - Developer:
 
 
-  | Component  | Version  | CVE  |
-  |---|---|---|
-  | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
-  | spring-beans (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
-  | spring-security-config (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258, CVE-2020-5398 |
-  | spring-security-core | 5.3.4.RELEASE | CVE-2018-1258 |
-  | lodash | 4.17.13 | CVE-2020-8203 |
-  | minimatch | 3.0.4 | NPM-118 |
+| Component  | Version  | CVE  |
+|---|---|---|
+| netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
+| spring-beans (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
+| spring-security-config (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258, CVE-2020-5398 |
+| spring-security-core | 5.3.4.RELEASE | CVE-2018-1258 |
+| lodash | 4.17.13 | CVE-2020-8203 |
+| minimatch | 3.0.4 | NPM-118 |
 
 - User-mgmt:
 
 
-  | Component  | Version  | CVE  |
-  |---|---|---|
-  | rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
-  | netty-tcnative-boringssl-static (indirect dependency) | 2.0.31.Final | CVE-2015-2156 |
-  | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
-  | lodash | 4.17.20 | NPM-1065, NPM-557, NPM-7823 |
-  | minimatch | 3.0.4 | NPM-118 |
+| Component  | Version  | CVE  |
+|---|---|---|
+| rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
+| netty-tcnative-boringssl-static (indirect dependency) | 2.0.31.Final | CVE-2015-2156 |
+| spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
+| lodash | 4.17.20 | NPM-1065, NPM-557, NPM-7823 |
+| minimatch | 3.0.4 | NPM-118 |
 
 - Website-gateway:
 
 
-  | Component  | Version  | CVE  |
-  |---|---|---|
-  | log4j | 1.2.17 | CVE-2019-17571 |
-  | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
+| Component  | Version  | CVE  |
+|---|---|---|
+| log4j | 1.2.17 | CVE-2019-17571 |
+| spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
 
 - MECM:
 
 
-  | Component  | Version  | CVE  |
-  |---|---|---|
-  | lodash | 4.17.13 | CVE-2020-8203 |
-  | minimatch | 3.0.4 | NPM-118 |
+| Component  | Version  | CVE  |
+|---|---|---|
+| lodash | 4.17.13 | CVE-2020-8203 |
+| minimatch | 3.0.4 | NPM-118 |
 
 
  **Upgrade Notes**
@@ -121,7 +231,7 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
  经过安全工作组评审，Plugins仓库遗留问题单[I1XA0N](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N)将在v0.9版本发布后通过补丁形式修复，详细情况请参见安全工作组[会议纪要](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)
 
 -----------------------------------------------------------------------------
-   
+
 Version: v0.9
 --------------
 
@@ -187,52 +297,52 @@ EdgeGalelry v0.9版本第三方开源组件存在以下漏洞需要用户自行�
 - Appstore:
 
 
-  | Component  | Version  | CVE  |
-  |---|---|---|
-  | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
-  | log4j (indirect dependency) | 1.2.17 | CVE-2019-17571 |
-  | spring-jdbc (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
-  | spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258 |
+| Component  | Version  | CVE  |
+|---|---|---|
+| netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
+| log4j (indirect dependency) | 1.2.17 | CVE-2019-17571 |
+| spring-jdbc (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
+| spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258 |
 
 
 - Developer:
 
 
-  | Component  | Version  | CVE  |
-  |---|---|---|
-  | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
-  | spring-beans (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
-  | spring-security-config (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258, CVE-2020-5398 |
-  | spring-security-core | 5.3.4.RELEASE | CVE-2018-1258 |
-  | lodash | 4.17.13 | CVE-2020-8203 |
-  | minimatch | 3.0.4 | NPM-118 |
+| Component  | Version  | CVE  |
+|---|---|---|
+| netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
+| spring-beans (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
+| spring-security-config (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258, CVE-2020-5398 |
+| spring-security-core | 5.3.4.RELEASE | CVE-2018-1258 |
+| lodash | 4.17.13 | CVE-2020-8203 |
+| minimatch | 3.0.4 | NPM-118 |
 
 - User-mgmt:
 
 
-  | Component  | Version  | CVE  |
-  |---|---|---|
-  | rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
-  | netty-tcnative-boringssl-static (indirect dependency) | 2.0.31.Final | CVE-2015-2156 |
-  | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
-  | lodash | 4.17.20 | NPM-1065, NPM-557, NPM-7823 |
-  | minimatch | 3.0.4 | NPM-118 |
+| Component  | Version  | CVE  |
+|---|---|---|
+| rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
+| netty-tcnative-boringssl-static (indirect dependency) | 2.0.31.Final | CVE-2015-2156 |
+| spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
+| lodash | 4.17.20 | NPM-1065, NPM-557, NPM-7823 |
+| minimatch | 3.0.4 | NPM-118 |
 
 - Website-gateway:
 
 
-  | Component  | Version  | CVE  |
-  |---|---|---|
-  | log4j | 1.2.17 | CVE-2019-17571 |
-  | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
+| Component  | Version  | CVE  |
+|---|---|---|
+| log4j | 1.2.17 | CVE-2019-17571 |
+| spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
 
 - MECM:
 
 
-  | Component  | Version  | CVE  |
-  |---|---|---|
-  | lodash | 4.17.13 | CVE-2020-8203 |
-  | minimatch | 3.0.4 | NPM-118 |
+| Component  | Version  | CVE  |
+|---|---|---|
+| lodash | 4.17.13 | CVE-2020-8203 |
+| minimatch | 3.0.4 | NPM-118 |
 
 
  **Upgrade Notes**
