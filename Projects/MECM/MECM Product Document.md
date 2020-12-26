@@ -3,7 +3,7 @@ MECM Product Document
 
 
 ## MECM管理面
-### MECM管理面主要提供边缘节点、APPLCM的注册以及应用的分发部署功能。  
+### MECM管理面主要提供边缘节点、APPLCM注册以及应用的分发部署功能。  
 
 #### 1. 概述  
 ##### 1.1概述界面主要分为三个功能区，右边点击地图区域可以进行不同地域Node节点的切换展示地域节点信息，同时支持江苏和广东省份下钻  
@@ -28,13 +28,13 @@ MECM Product Document
 ###### 集成详情、删除、规则配置和操作信息功能。
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/145049_1872bbf7_7625361.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/145149_cde11690_7625361.png "屏幕截图.png")
-###### 规则配置-DNS规则配置 
+###### 规则配置->DNS规则配置 
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/145226_9c4453fc_7625361.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/145258_0349b939_7625361.png "屏幕截图.png")
-###### 规则配置-分流规则配置
+###### 规则配置->分流规则配置
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/145313_1fa40729_7625361.png "屏幕截图.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/145329_53255c08_7625361.png "屏幕截图.png")
-###### 规则配置-分流规则配置-过滤规则配置 
+###### 规则配置->分流规则配置->过滤规则配置 
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/145344_cd8d1dea_7625361.png "屏幕截图.png")
 ###### 规则配置-分流规则配置-接口信息配置 
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/145438_a753b694_7625361.png "屏幕截图.png")
