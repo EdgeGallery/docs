@@ -75,14 +75,22 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
 - Developer:
 
 
-| Component                                    | Version       | CVE                                                          |
-| -------------------------------------------- | ------------- | ------------------------------------------------------------ |
-| netty-transport (indirect dependency)        | 4.1.36.Final  | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
-| spring-beans (indirect dependency)           | 5.1.8.RELEASE | CVE-2020-5398                                                |
-| spring-security-config (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258, CVE-2020-5398                                 |
-| spring-security-core                         | 5.3.4.RELEASE | CVE-2018-1258                                                |
-| lodash                                       | 4.17.13       | CVE-2020-8203                                                |
-| minimatch                                    | 3.0.4         | NPM-118                                                      |
+| Component  | Version  | CVE  |
+|---|---|---|
+| netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
+| spring-beans (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
+| spring-security-config (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258, CVE-2020-5398 |
+| spring-security-core | 5.3.4.RELEASE | CVE-2018-1258 |
+| lodash | 4.17.13 | CVE-2020-8203 |
+| minimatch | 3.0.4 | NPM-118 |
+| spring-security-oauth2 | 2.3.3 | CVE-2018-15758，CVE-2019-11269，CVE-2018-3778 |
+| foundation-ssl | 1.3.0 | CVE-2004-0009 |
+| jackson-databind | 2.10.5 | CVE-2020-25649 |
+| mybatis-spring | 2.0.3 | CVE-2020-26945 |
+| mybatis-spring-boot-starter | 2.1.1 | CVE-2020-26945 |
+| tomcat-embed-core | 9.0.37 | CVE-2020-17527 |
+| vertx-core | 3.6.3 | CVE-2019-17640 |
+| swagger-codegen-cli | 3.0.21 |CVE-2020-25649，CVE-2019-10086，CVE-2017-1000207，CVE-2017-1000208，CVE-2018-8088，，CVE-2017-18640，CVE-2016-6199，CVE-2019-15052  |
 
 - User-mgmt:
 
