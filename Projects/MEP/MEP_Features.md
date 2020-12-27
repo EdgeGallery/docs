@@ -30,7 +30,7 @@ MEP-auth模块在初始化，会首先对API网关（kong）进行初始化:
 3. 为MEP-server配置servcie和route
 4. 为MEP-auth和MEP-server配置并启用kong插件
 
-截止到v0.9版本，MEP-auth在初始化kong过程中开启的插件包括：
+MEP-auth在初始化kong过程中开启的插件包括：
 
 - JWT插件：为相应接口提供token校验能力
 - Appid-header插件：在接口request中插入X-AppinstanceID头，以供MEP-server校验；校验申请token的client ip与调用接口的client ip一致
