@@ -24,6 +24,12 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
 
 .. toctree::
    :maxdepth: 1
+   :caption: Architecture
+
+   Architecture introduction <Architecture/Architecture>
+
+.. toctree::
+   :maxdepth: 1
    :caption: Developer Guide
 
    Developer Guide <Developer Guide/ReadMe>

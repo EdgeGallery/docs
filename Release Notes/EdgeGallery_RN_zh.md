@@ -38,12 +38,12 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
         - 应用发布环节对接认证测试平台；
     * 【AppStore】界面易用性优化，EdgeGallery生态能力优化
     * 【MECM】优化拓扑、应用管理及边缘节点管理，新增获取MEP能力功能，AK/SK配置接口
-    * 【MEP】支持APP服务心跳，新增获取MEP能力接口，AK/SK配置接口
+    * 【MEP】支持APP心跳检测，新增获取MEP能力接口，AK/SK配置接口，MEP-agent新增获取token接口
     * 【ATP】APP应用的测试能力增强
     * 【Test】提供健康检查功能，优化安装包，开发测试平台支持测试例管理
 
 * PoC 特性
-    * MEP服务治理增强
+    * MEP服务治理页面展示
     * 引入插件式应用框架[Crane-framework](https://gitee.com/edgegallery/crane-framework)
     * AppStore联邦，可注册外部AppStore，应用在不同AppStore间可相互推送和拉取
 
@@ -75,17 +75,11 @@ EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自�
 
 | Component                                  | Version       | CVE                                                          |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
-| netty-transport (indirect dependency)      | 4.1.36.Final  | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
 | log4j (indirect dependency)                | 1.2.17        | CVE-2019-17571                                               |
-| spring-jdbc (indirect dependency)          | 5.1.8.RELEASE | CVE-2020-5398                                                |
-| spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258                                                |
 | bcprov-jdk15on-1.66.jar | 1.66 | CVE-2020-28052                                                |
-| foundation-ssl | 1.3.0 | CVE-2004-0009                                                |
 | jackson-databind | 2.10.5 | CVE-2020-25649                                                |
-| mybatis | 3.5.3 | CVE-2020-25645                                                |
 | spring-security-oauth2 | 2.3.3.RELEASE | CVE-2018-15758                                                |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17525                                                |
-| vertx-core | 3.6.3 | CVE-2019-17640                                                |
 
 
 - Developer:
@@ -104,53 +98,28 @@ EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自�
 
 | Component  | Version  | CVE  |
 |---|---|---|
-| bcprov-jdk15on | 1.56 | CVE-2018-1000180，CVE-2018-1000613 |
-| foundation-ssl |1.3.0 | CVE-2004-0009|
-| jackson-databind |2.9.9 |CVE-2019-14379，CVE-2019-14439,CVE-2019-14540,CVE-2019-14892,CVE-2019-14893,CVE-2019-16335,CVE-2019-16942,CVE-2019-16943,CVE-2019-17267,CVE-2019-17531,CVE-2019-20330,CVE-2020-10672,CVE-2020-10673,CVE-2020-10968,CVE-2020-10969,CVE-2020-11111,CVE-2020-11112,CVE-2020-11113,CVE-2020-11619,CVE-2020-11620,CVE-2020-14060,CVE-2020-14061,CVE-2020-14062,CVE-2020-14195,CVE-2020-24616,CVE-2020-24750,CVE-2020-25649,CVE-2020-35490,CVE-2020-35491,CVE-2020-8840,CVE-2020-9546,CVE-2020-9547,CVE-2020-9548 |
-| application-test-platform.jar: jackson-mapper-asl |1.9.13 |CVE-2017-15095,CVE-2017-17485,CVE-2017-7525,CVE-2018-14718,CVE-2018-5968,CVE-2018-7489,CVE-2019-10172,CVE-2019-14540,CVE-2019-14893,CVE-2019-16335,CVE-2019-17267,CVE-2020-10672,CVE-2020-10673,CVE-2020-25649 |
-| log4j |1.2.17 | CVE-2019-17571,CVE-2020-9488|
-| mybatis |3.5.3 | CVE-2020-26945|
-| mybatis-spring |2.0.3 | CVE-2020-26945|
 | mybatis-spring-boot-starter |2.1.1 | CVE-2020-26945|
-| netty-transport |4.1.36.Final | CVE-2019-16869,CVE-2019-20444,CVE-2019-20445,CVE-2020-11612|
-| snakeyaml |1.23 | CVE-2017-18640|
-| spring-core |5.1.8.RELEASE | CVE-2020-5398,CVE-2020-5421,|
-| spring-security-core |5.1.5.RELEASE | CVE-2018-1258|
-| tomcat-embed-core |9.0.21 | CVE-2019-12418,CVE-2019-17563,CVE-2020-11996,CVE-2020-13934,CVE-2020-13935,CVE-2020-17527,CVE-2020-1938,CVE-2020-8022,CVE-2020-9484|
-| vertx-core |3.6.3 | CVE-2019-17640|
-
 
 - User-mgmt:
 
 
 | Component                                             | Version       | CVE                         |
 | ----------------------------------------------------- | ------------- | --------------------------- |
-| tomcat-embed-core                         | 9.0.37         | CVE-2020-17527               |
-| vertx-core | 3.6.3  | CVE-2019-17640               |
 | spring-security-core                                  |5.3.4.RELEASE  | CVE-2018-1258               |
 | bcprov-jdk15on                                        | 1.66          | CVE-2020-28052               |
-| foundation-ssl                                        | 1.3.0         | CVE-2004-0009               |
 | jackson-databind                                      | 2.10.5         | CVE-2020-25649       |
-| mybatis                                             | 3.5.3         | CVE-2020-26945                     |
-| mybatis                                             | 3.5.3         | CVE-2020-26945                     |
-| mybatis-spring                                             | 2.0.3         | CVE-2020-26945                |
 |  mybatis-spring-boot-starter                             | 2.1.1         | CVE-2020-26945                |
 |  spring-security-oauth2                             | 2.3.3.RELEAS         | CVE-2018-15758                |
-|  spring-core                             | 5.2.8.RELEASE         | CVE-2020-5421                |
-
 
 - Website-gateway:
 
 
 | Component            | Version       | CVE            |
 | -------------------- | ------------- | -------------- |
-| log4j                | 1.2.17        | CVE-2019-17571 |
-| foundation-ssl | 1.3.0 | CVE-2004-0009  |
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258  |
 | jackson-databind | 2.10.5 | CVE-2020-26945  |
 | spring-security-oauth2 | 2.3.3 | CVE-2018-15758  |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17527  |
-| vertx-core | 3.6.3 | CVE-2019-17640  |
 
 - MECM:
 
