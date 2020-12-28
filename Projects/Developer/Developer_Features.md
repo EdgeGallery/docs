@@ -14,12 +14,12 @@ Developer 特性清单
 
 #### 插件列表
 
-![](/uploads/images/2020/v1.0/插件列表.PNG "屏幕截图.png")
+![](/uploads/images/2020/v1.0/Plug-inList.PNG "Plug-inList.PNG")
 
 
 #### 插件上传
 
-![](/uploads/images/2020/v1.0/上传插件.PNG "屏幕截图.png")
+![](/uploads/images/2020/v1.0/UploadPlug-in.PNG "UploadPlug-in.PNG")
 
 
 ### 能力中心
@@ -27,7 +27,7 @@ Developer 特性清单
 MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery，Location service，Bandwidth service等能力。MEC-ECO（MEC Ecosystem）是MEC生态能力App的简称，开发者在完成一个MEC APP开发的时候，
 如果需要将这个APP的能力开放给其他用户使用，可以通过上传到MEC-ECO实现。EdgeGallery会将该APP的对外接口提供给其他开发人员使用，并且将该服务通过MECM部署在需要的边缘侧，供其他APP能够使用。
 
-![能力中心](/uploads/images/2020/v1.0/能力中心.PNG "能力中心.png")
+![能力中心](/uploads/images/2020/v1.0/CompetenceCenter.PNG "CompetenceCenter.PNG")
 
 
 ### 工作空间
@@ -40,7 +40,7 @@ MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery�
 
 开发集成平台提供的端到端开发流程如下：
 
-![](/uploads/images/2020/v1.0/应用开发流程.PNG "应用开发流程.PNG")
+![](/uploads/images/2020/v1.0/ApplicationDevelopmentProcess.PNG "ApplicationDevelopmentProcess.PNG")
 
 #### 创建项目
 创建项目时，需要输入项目基本信息和选择需要依赖的生态能力。
@@ -51,12 +51,12 @@ MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery�
 
 针对每个能力服务，还提供SDK下载功能，开发者可以将SDK直接集成到代码中。
 
-![](/uploads/images/2020/v1.0/能力详情.png "能力详情.PNG")
+![](/uploads/images/2020/v1.0/CapabilityDetails.png "CapabilityDetails.png")
 
 
 #### 应用开发
 针对选择依赖的能力API，提供调用的样例代码，帮助开发者将依赖API快速集成到自己的代码中。
-![](/uploads/images/2020/v1.0/应用开发.png "应用开发.PNG")
+![](/uploads/images/2020/v1.0/ApplicationDevelopment.png "ApplicationDevelopment.png")
 
 #### 部署调测
 部署调测分为三个部署：
@@ -67,7 +67,7 @@ MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery�
     - 上传到EdgeGallery的镜像仓库（v1.0版本暂未提供）
     - 如果您不想开放自己的应用镜像，可以自己搭建一个EdgeGallery边缘节点，需要安装的软件和安装指导，请参考：
 
-![](/uploads/images/2020/v1.0/部署调测-上传镜像.png "部署调测-上传镜像.PNG")
+![](/uploads/images/2020/v1.0/DeploymentTest-UploadImage.png "DeploymentTest-UploadImage.png")
 
 - 配置部署文件
 
@@ -75,7 +75,7 @@ MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery�
     - 用户在本地编辑好后直接上传，平台提供基本的校验功能；有关配置文件的格式，可以参考界面提供的demo样例，该样例可以直接上传使用。
     - 可视化配置文件（v1.0版本暂未提供）
 
-![](/uploads/images/2020/v1.0/部署调测-配置文件.png "部署调测-配置文件.PNG")
+![](/uploads/images/2020/v1.0/DeploymentTest-ConfigurationFile.png "DeploymentTest-ConfigurationFile.png")
 
 - 部署调测
 
@@ -85,7 +85,9 @@ MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery�
     - Step4 应用开发者通过链接对应用进行测试，修改镜像后，循环以上Step1->Step2->Step3操作，对应用进行反复测试
     - Step5 测试完成后，通过【资源回收】按钮释放测试环境
 
-![](/uploads/images/2020/v1.0/部署调测-环境选择.png "部署调测-环境选择.PNG")
+![](/uploads/images/2020/v1.0/DeploymentTest-EnvironmentSelection.png "DeploymentTest-EnvironmentSelection.png")
+
+![](/uploads/images/2020/v1.0/DeploymentTest-EnvironmentSelection.png "DeploymentTest-DeploySuccess.png")
 
 
 #### 应用发布
@@ -93,15 +95,15 @@ MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery�
 - 应用配置
     - 【可选】流规则配置
     - 【可选】应用服务发布配置：如果该应用需要成为生态能力服务，需要进行该配置。需要上传对应的API接口文档和MD说明文档，具体配置如下
-![](/uploads/images/2020/v1.0/应用发布-规则配置.png "应用发布-规则配置.PNG")
+![](/uploads/images/2020/v1.0/ApplicationRelease-RuleConfiguration.png "ApplicationRelease-RuleConfiguration.png")
 
 - 应用认证
 
 对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。
-![](/uploads/images/2020/v1.0/应用发布-认证测试.png "应用发布-认证测试.png")
+![](/uploads/images/2020/v1.0/ApplicationRelease-AuthenticationTest.png "ApplicationRelease-AuthenticationTest.png")
 
 - 应用发布
 
 认证通过的应用，通过这里可以直接发布到EdgeGallery的AppStore平台，同时如果在【应用配置】时填写了应用服务发布配置，该应用同样会做为能力服务，被收录到能力中心里，可以被其他应用开发者使用。
-
+![](/uploads/images/2020/v1.0/ApplicationRelease.png "ApplicationRelease.png")
 
