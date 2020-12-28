@@ -1,4 +1,4 @@
-How to contribute
+Contribution to Lcm Controller and K8s Plugin (Applcm)
 ==========================
 
 This section provides details on how to participate/contribute to the LCM controller project. 

@@ -1,4 +1,4 @@
-How to contribute
+Contribution to APM
 ==========================
 
 This section provides details on how to participate/contribute to the APM(Application package manager) project. 
