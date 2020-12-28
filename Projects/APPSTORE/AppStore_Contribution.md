@@ -3,7 +3,7 @@
 
 本文将向用户展示如何参与到AppStore项目的贡献中，内容分为两个部分，将分别介绍如何搭建本地开发环境和AppStore的操作指导。
 
-## 搭建本地开发环境
+## 搭建本地开发环境-Release 1.0
 
 本节将指导用户如何在本地搭建AppStore-be和AppStore-fe模块，从而帮助开发者快速理解、开发代码。
 
@@ -41,13 +41,7 @@
 
 ![](/uploads/images/2020/0908/153833_89c54e53_7625245.jpeg "db1.jpg")
 
-4、根据[appstore部署文件](https://gitee.com/EdgeGallery_group/helm-charts/blob/master/appstore/templates/appstore-be/appstore-be-configmap.yaml) 中的数据库语句创建表结构
-
-![](/uploads/images/2020/0908/153843_47080502_7625245.jpeg "db2.jpg")
-
-5、创建名为usermgmtdb的数据库
-
-6、根据[usermgmt部署文件](https://gitee.com/EdgeGallery_group/helm-charts/blob/master/user-mgmt/templates/user-mgmt-configmap.yaml)中的数据库语句创建表结构
+4、创建名为usermgmtdb的数据库
 
 ### UserManagement
 
@@ -89,7 +83,7 @@
 
 5、将appstore-fe编译出的dist文件夹中的内容拷贝到website-gateway的static文件夹中
 
-6、修改website-gateway中/src/main/resources/application.yaml 文件内的`server.port`为`8080`
+6、修改website-gateway中/src/main/resources/application.yaml 文件内的`server.port`为`8080`(与usermgmt启动时填写的`OAUTH_APPSTORE_CLIENT_URL`变量中的端口保持一致)
 
 7、在编译器（此处以IDEA为例）中配置GatewayApplication的运行时环境变量
 
