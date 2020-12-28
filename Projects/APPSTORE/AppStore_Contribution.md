@@ -98,9 +98,9 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 ### 登录注册
  进入网址后，默认为guest用户，可以查看信息，注册账号，注册完成之后，登录之后才可以上传应用；
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/195453_1d5997db_5416924.png "1.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/195623_16ea5577_5416924.png "1.1.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/195637_ac33b966_5416924.png "1.2.png")
+![](/uploads/images/2020/1228/195453_1d5997db_5416924.png "1.png")
+![](/uploads/images/2020/1228/195623_16ea5577_5416924.png "1.1.png")
+![](/uploads/images/2020/1228/195637_ac33b966_5416924.png "1.2.png")
 
 ### 商店首页
 登陆成功后进入商店首页
@@ -161,3 +161,4 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/203929_3f6bc356_5416924.png "20.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/203949_86da9907_5416924.png "21.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/204002_09a23fed_5416924.png "22.png")
+[输入链接说明](http://)
