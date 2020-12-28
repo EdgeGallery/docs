@@ -1,6 +1,6 @@
 AppStore Interfaces
 ==============
-The document is for the appstore-be project, there are five parts of interfaces in the project.
+The document is for the appstore-be project, there are six parts of interfaces in the project.
 
 - [AppStore Interfaces](#appstore-interfaces)
   - [1. APP](#1-app)
