@@ -39,7 +39,7 @@ The document is for the appstore-be project, there are five parts of interfaces 
     - [6.3 Get Message](#63-Get-Message)
     - [6.4 Delete Message](#64-Delete-Message)
     - [6.5 Accept Message](#65-Accept-Message)
-    - [6.6 Update Status](#65-Update-Status)
+    - [6.6 Update Status](#66-Update-Status)
 
 
 ## 1. APP
