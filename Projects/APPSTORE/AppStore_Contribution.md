@@ -96,36 +96,61 @@
 AppStore是开发者发布和上线App应用的市场，由Developer平台开发的边缘应用，经过测试可以直接分享到AppStore应用商店。也可直接上传符合平台规范的应用包，应用包文件类型为csar。一个APP对应多个Package，使用者可直接下载APP的最新版本Package或者下载指定版本的Package。
 
 ### 登录注册
- 进入网址后，注册账号，注册完成之后，登录界面
-![](/uploads/images/2020/0908/163000_767c7da4_5416924.png "注册.PNG")
-![](/uploads/images/2020/0908/163022_fe7cc972_5416924.png "登录.PNG")
+ 进入网址后，默认为guest用户，可以查看信息，注册账号，注册完成之后，登录之后才可以上传应用；
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/195453_1d5997db_5416924.png "1.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/195623_16ea5577_5416924.png "1.1.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/195637_ac33b966_5416924.png "1.2.png")
 
 ### 商店首页
 登陆成功后进入商店首页
 
-![](/uploads/images/2020/0908/162506_099b5658_5416924.png "首页.PNG")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/195719_67b7d8fb_5416924.png "2.png")
 
 ### 应用详情
-1. 点击应用查看应用详情，详情界面展示应用版本，行业，类型等基本信息，下侧展示具体介绍，基本信息中的右侧操作中，可以鼠标点击下载按钮，下载csar包；
-
-![](/uploads/images/2020/0908/163133_ad521f54_5416924.png "应用详情.PNG")
-
+1. 点击应用查看应用详情，详情界面展示应用版本，行业，类型等基本信息，下侧展示具体介绍，基本信息中的右侧操作中，右侧下载按钮有权限设置，只能下载自己上传的包，屏幕右下侧为包的结构，点击结构文件，弹框显示具体信息。
 2. 如需对APP进行评论，可使用鼠标左键点击APP详情右侧下方的评论按钮，在弹出的评论框输入评论，设置评分，鼠标左键点击按钮后，评论提交成功。
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/195922_952890b9_5416924.png "3.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/200018_310f51c1_5416924.png "4.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/200028_2fd0a416_5416924.png "5.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/200044_bd4c352e_5416924.png "6.png")
 
-![](/uploads/images/2020/0908/163237_9f574a3d_5416924.png "评论界面.PNG")
 
 ### 上传应用
 1.上传APP，打开APP Store主界面，点击右侧上传图标，打开上传APP对话框。
 
-![](/uploads/images/2020/0908/163449_f7591d08_5416924.png "首页上传.PNG")
-
 2.在上传对话框中选择需要上传的APP，上传或选择系统默认提供的APP图标，选择APP行业、类型、架构，填写APP简单描述，点击确认完成上传。
 
-![](/uploads/images/2020/0908/163540_358bd2b9_5416924.png "上传界面.PNG")
+3.应用上传后，会自动跳转至我的应用界面下，上传的应用需要经过平台的atp测试之后才可以发布到仓库；
 
-### 我的应用
-1.如需查看用户所上传的所有APP 列表，在主页点击 “我的应用/My APP”。
+4.我的应用下是上传的包的基本信息，表格右侧为基本操作，点击测试按钮，会开始创建测试任务，页面为嵌套的atp测试页面，点击开始测试按钮，解析包的依赖，可以看到具体的测试用例有多少条，点击确定后开始测试，页面为测试进展页面，可以返回到我的应用页面，等待测完成，测试状态变为Test_success,表示测试完成，点击右侧的发布按钮，发布成功后，在首页可以看待你上传的应用。
 
-2.删除应用可通过点击我的应用列表最右侧操作一栏的功能完成。
+5.查看报告：在右侧的查看历史测试任务，可以看到刚才的测试任务，右侧可以查看任务的报告；
 
-![](/uploads/images/2020/0908/163634_86ff98f2_5416924.png "我的应用.PNG")
+6.报告页面：报告页面为atp测试报告，报告显示具体的用例详情，是否失败，可以点击下载报告；
+
+7: 在我的应用下也可以查看应用详情。
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/201714_d8d3f733_5416924.png "8.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/201727_025bb324_5416924.png "9.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/201737_c70265b0_5416924.png "10.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/201750_a4bc685f_5416924.png "11.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/201800_a27ac18b_5416924.png "12.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/201811_2e74f064_5416924.png "13.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/201823_ce0f2bb1_5416924.png "14.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/201857_681d7cba_5416924.png "15.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/201920_17990db8_5416924.png "16.png")
+
+### 应用共享
+1.应用共享导航下分为应用推广，消息中心，外部仓库管理；
+
+2.应用推广下，
+3.外部仓库管理页面，可以添加，删除仓库。
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/204016_4bb84419_5416924.png "23.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/203849_49ff76de_5416924.png "17.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/203904_238a73ca_5416924.png "18.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/203913_356abb63_5416924.png "19.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/203929_3f6bc356_5416924.png "20.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/203949_86da9907_5416924.png "21.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1228/204002_09a23fed_5416924.png "22.png")
