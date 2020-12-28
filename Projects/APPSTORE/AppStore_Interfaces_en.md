@@ -21,10 +21,10 @@ The document is for the appstore-be project, there are four parts of interfaces 
   - [3. Comment](#3-comment)
     - [3.1 Get Comments Of App](#31-get-comments-of-app)
     - [3.2 Submit Comment To App](#32-submit-comment-to-app)
-  - [4. APP Push](#4-app push)
+  - [4. APP Push](#4-app-push)
     - [4.1 Query Push App List](#41-query-push-app-list)
     - [4.2 Get Push App Package](#42-get-push-app-package)
-    - [4.3 Push App Package](#43-push-app package)
+    - [4.3 Push App Package](#43-push-app-package)
     - [4.4 Download Push App Package](#44-download-push-app-package)
     - [4.5 Download Push App Icon](#45-download-push-app-icon)
 
