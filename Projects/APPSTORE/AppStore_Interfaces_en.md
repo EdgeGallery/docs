@@ -1,6 +1,6 @@
 AppStore Interfaces
 ==============
-The document is for the appstore-be project, there are three parts of interfaces in the project.
+The document is for the appstore-be project, there are four parts of interfaces in the project.
 
 - [AppStore Interfaces](#appstore-interfaces)
   - [1. APP](#1-app)
@@ -16,9 +16,17 @@ The document is for the appstore-be project, there are three parts of interfaces
     - [2.3 Delete One Package](#23-delete-one-package)
     - [2.4 Download One Package](#24-download-one-package)
     - [2.5 Get File Content](#25-get-file-content)
+    - [2.6 APP Publish](#26-app-publish)
+    - [2.7 APP Test](#27-app-test)
   - [3. Comment](#3-comment)
     - [3.1 Get Comments Of App](#31-get-comments-of-app)
     - [3.2 Submit Comment To App](#32-submit-comment-to-app)
+  - [4. APP Push](#4-app push)
+    - [4.1 Query Push App List](#41-query-push-app-list)
+    - [4.2 Get Push App Package](#42-get-push-app-package)
+    - [4.3 Push App Package](#43-push-app package)
+    - [4.4 Download Push App Package](#44-download-push-app-package)
+    - [4.5 Download Push App Icon](#45-download-push-app-icon)
 
 
 ## 1. APP
@@ -200,6 +208,7 @@ Method: GET
 |Name|Definition|type|Required|
 |---|---|---|---|
 |appId |app id |type|yes|
+|userId|user id|request param|yes|
 
 Example response:
 ```
@@ -219,7 +228,8 @@ Example response:
     "affinity": "string",
     "industry": "string",
     "contact": "string",
-    "appId": "string"
+    "appId": "string",
+    "userId": "string"
   }
 ]
 ```
@@ -297,13 +307,12 @@ Example response:
 Get file content by app id package id and file path.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
-Method: GET
+Method: POST
 ```
 
 |Name|Definition|type|Required|
 |---|---|---|---|
-|userId |user id|request param |yes|
-|userName |app name|request param |yes|
+|packageId |package id|path |yes|
 |appId |app id|path |yes|
 |filePath |file path|FormParam |yes|
 
@@ -312,6 +321,49 @@ Example response:
 200 OK
   file content output.
 ```
+
+### 2.6 APP Publis
+Publish APP by app id and package id.
+```
+Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/publish
+Method: POST
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appId |app id|path |yes|
+|packageId |package id|path |yes|
+
+Example response:
+```
+
+200 OK
+  Publish Success.
+```
+
+### 2.7 APP Test
+Test APP by app id and package id.
+```
+Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/test
+Method: POST
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appId |app id|path |yes|
+|packageId |package id|path |yes|
+|request |request|request param |yes|
+
+Example response:
+```
+
+200 OK
+  {
+  "atpTaskId": "string",
+  "status": "string"
+  }
+```
+
 ## 3. Comment
 
 User can submit comments to an app. 
@@ -387,4 +439,127 @@ Example response:
 ```
 200 OK
  "comments success."
+```
+
+## 4. APP Push
+
+User can push an app to other. 
+
+
+### 4.1 Query Push App List
+Query the app list which can push
+```
+URI： /mec/appstore/poke/pushable/packages
+Method: GET
+```
+
+Example response:
+```
+200 OK
+  [
+  {
+    "appId": "string",
+    "packageId": "string",
+    "name": "string",
+    "provider": "string",
+    "version": "string",
+    "atpTestStatus": "string",
+    "atpTestTaskId": "string",
+    "atpTestReportUrl": "string",
+    "latestPushTime": "string",
+    "pushTimes": "string",
+    "targetPlatform": "string",
+    "affinity": "string",
+    "shortDesc": "string",
+    "industry": "string",
+    "type": "string",
+  }
+]
+```
+
+### 4.2 Get Push App Package
+Get push app package by packageId.
+```
+URI： /mec/appstore/poke/pushable/packages/{packageId}
+Method: GET
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|packageId |package id|path |yes|
+
+Example response:
+```
+200 OK
+  [
+  {
+    "appId": "string",
+    "packageId": "string",
+    "name": "string",
+    "provider": "string",
+    "version": "string",
+    "atpTestStatus": "string",
+    "atpTestTaskId": "string",
+    "atpTestReportUrl": "string",
+    "latestPushTime": "string",
+    "pushTimes": "string",
+    "targetPlatform": "string",
+    "affinity": "string",
+    "shortDesc": "string",
+    "industry": "string",
+    "type": "string",
+  }
+]
+```
+
+### 4.3 Push App Package
+Push app package by packageId
+```
+URI： /mec/appstore/poke/pushable/packages/{packageId}/action/push
+Method: POST
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|packageId |package id|path |yes|
+|dto |provider list|request param |yes|
+
+Example response:
+```
+200 OK
+  [true, false, true]
+```
+
+### 4.4 Download Push App Package
+Download push appp package by packageId
+```
+URI： /mec/appstore/poke/pushable/packages/{packageId}/action/download-package
+Method: GET
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|packageId |package id|path |yes|
+
+Example response:
+```
+200 OK
+  binary output.
+```
+
+### 4.5 Download Push App Icon
+Download push app icon by packageId.
+```
+URI： /mec/appstore/poke/pushable/packages/{packageId}/action/download-icon
+Method: GET
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|packageId |package id|path |yes|
+
+Example response:
+```
+200 OK
+  binary output.
 ```

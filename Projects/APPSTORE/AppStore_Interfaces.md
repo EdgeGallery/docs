@@ -1,6 +1,6 @@
 接口设计
 ==============
-文档中介绍了appstore-be模块的接口设计详情，共有三个部分，分别对应于app管理、包管理、评论管理。
+文档中介绍了appstore-be模块的接口设计详情，共有四个部分，分别对应于app管理、包管理、评论管理、应用推送。
 
 - [AppStore 接口列表](#接口列表)
   - [1. 应用](#1-应用)
@@ -16,9 +16,17 @@
     - [2.3 删除应用包](#23-删除应用包)
     - [2.4 下载应用包](#24-下载应用包)
     - [2.5 获取文件内容](#25-获取文件内容)
+    - [2.6 应用发布](#26-应用发布)
+    - [2.7 应用测试](#27-应用测试)
   - [3. 评论](#3-评论)
     - [3.1 获取评论列表](#31-获取评论列表)
     - [3.2 提交评论](#32-提交评论)
+  - [4. 应用推送](#4-应用推送)
+    - [4.1 查询可推送应用列表](#41-获取可推送应用列表)
+    - [4.2 获取推送应用包](#42-获取推送应用包)
+    - [4.3 推送应用包](#43-推送应用包)
+    - [4.4 下载推送应用包](#44-下载推送应用包)
+    - [4.5 下载推送应用图标](#45-下载推送应用图标)
 
 
 ## 1. 应用
@@ -200,6 +208,7 @@ URI： /mec/appstore/v1/apps/{appId}/packages
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID |path|yes|
+|userId|用户ID|request param|yes|
 
 响应示例:
 ```
@@ -219,7 +228,8 @@ URI： /mec/appstore/v1/apps/{appId}/packages
     "affinity": "string",
     "industry": "string",
     "contact": "string",
-    "appId": "string"
+    "appId": "string",
+    "userId": "string"
   }
 ]
 ```
@@ -297,13 +307,12 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download
 通过应用ID和应用包ID以及文件路径获取应用包中文件内容。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
-方法类型: GET
+方法类型: POST
 ```
 
 |名称|描述|IN|必选|
 |---|---|---|---|
-|userId |用户ID|request param |yes|
-|userName |应用名|request param |yes|
+|packageId |package id|path |yes|
 |appId |应用ID|path |yes|
 |filePath |file path|FormParam |yes|
 
@@ -312,6 +321,47 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
 200 OK
   file content output.
 ```
+
+### 2.6 应用发布
+通过应用ID和应用包ID发布应用。
+```
+URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/publish
+方法类型: POST
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|appId |应用ID|path |yes|
+|packageId |应用包ID|path |yes|
+
+响应示例:
+```
+200 OK
+  Publish Success.
+```
+
+### 2.7 应用测试
+通过应用ID和应用包ID测试应用。
+```
+URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/test
+方法类型: POST
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|appId |应用ID|path |yes|
+|packageId |应用包ID|path |yes|
+|request |请求|request param |yes|
+
+响应示例:
+```
+200 OK
+  {
+  "atpTaskId": "string",
+  "status": "string"
+  }
+```
+
 ## 3. 评论
 
 User can submit comments to an app. 
@@ -382,9 +432,131 @@ Example request body:
 
 ```
 
-
 响应示例:
 ```
 200 OK
  "comments success."
+```
+
+## 4. 应用推送
+
+用户可以推送应用到运营商或第三方。 
+
+
+### 4.1 查询可推送应用列表
+查询可推送的应用列表。
+```
+URI： /mec/appstore/poke/pushable/packages
+方法类型: GET
+```
+
+响应示例:
+```
+200 OK
+  [
+  {
+    "appId": "string",
+    "packageId": "string",
+    "name": "string",
+    "provider": "string",
+    "version": "string",
+    "atpTestStatus": "string",
+    "atpTestTaskId": "string",
+    "atpTestReportUrl": "string",
+    "latestPushTime": "string",
+    "pushTimes": "string",
+    "targetPlatform": "string",
+    "affinity": "string",
+    "shortDesc": "string",
+    "industry": "string",
+    "type": "string",
+  }
+]
+```
+
+### 4.2 获取推送应用包
+根据packageId获取推送应用包。
+```
+URI： /mec/appstore/poke/pushable/packages/{packageId}
+方法类型: GET
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|packageId |应用包ID|path |yes|
+
+响应示例:
+```
+200 OK
+  [
+  {
+    "appId": "string",
+    "packageId": "string",
+    "name": "string",
+    "provider": "string",
+    "version": "string",
+    "atpTestStatus": "string",
+    "atpTestTaskId": "string",
+    "atpTestReportUrl": "string",
+    "latestPushTime": "string",
+    "pushTimes": "string",
+    "targetPlatform": "string",
+    "affinity": "string",
+    "shortDesc": "string",
+    "industry": "string",
+    "type": "string",
+  }
+]
+```
+
+### 4.3 推送应用包
+根据packageId推送应用包。
+```
+URI： /mec/appstore/poke/pushable/packages/{packageId}/action/push
+方法类型: POST
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|packageId |应用包ID|path |yes|
+|dto |运营商列表|request param |yes|
+
+响应示例:
+```
+200 OK
+  [true, false, true]
+```
+
+### 4.4 下载推送应用包
+根据packageId下载推送应用包。
+```
+URI： /mec/appstore/poke/pushable/packages/{packageId}/action/download-package
+方法类型: GET
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|packageId |应用包ID|path |yes|
+
+响应示例:
+```
+200 OK
+  binary output.
+```
+
+### 4.5 下载推送应用图标
+根据packageId下载推送应用包。
+```
+URI： /mec/appstore/poke/pushable/packages/{packageId}/action/download-icon
+方法类型: GET
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|packageId |应用包ID|path |yes|
+
+响应示例:
+```
+200 OK
+  binary output.
 ```
