@@ -38,7 +38,8 @@ MECM
       :maxdepth: 3
 
        Apm Database<MECM_Apm_Database_Design>
-       Applcm Database<MECM_AppLcm_Database_Design>
+       Lcm Controller Database<MECM_AppLcm_Database_Design>
+       K8s Plugin Database<MECM_k8s_Database_Design>
        Appo Database<MECM_Appo_Database_Design>
        Inventory Database<MECM_Inventory_Database_Design>
 
