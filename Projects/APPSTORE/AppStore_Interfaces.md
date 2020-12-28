@@ -139,7 +139,7 @@ URI： /mec/appstore/v1/apps
 |icon|应用图标文件|RequestPart|yes|
 |type|应用类型|RequestPart|yes|
 |shortDesc |应用简述|RequestPart |yes|
-|affinity |应用亲和性|RequestPart |yes|
+|affinity |架构|RequestPart |yes|
 |industry |应用所属行业|RequestPart |yes|
 |testTaskId |测试任务id|request param |no|
 
