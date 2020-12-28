@@ -1,6 +1,6 @@
 AppStore Interfaces
 ==============
-The document is for the appstore-be project, there are four parts of interfaces in the project.
+The document is for the appstore-be project, there are five parts of interfaces in the project.
 
 - [AppStore Interfaces](#appstore-interfaces)
   - [1. APP](#1-app)
@@ -27,6 +27,19 @@ The document is for the appstore-be project, there are four parts of interfaces 
     - [4.3 Push App Package](#43-push-app-package)
     - [4.4 Download Push App Package](#44-download-push-app-package)
     - [4.5 Download Push App Icon](#45-download-push-app-icon)
+  - [5. APPStore Manager](#5-APPStore-Manager)
+    - [5.1 Add AppStore](#51-Add AppStore)
+    - [5.2 Delete AppStore](#52-Delete AppStore)
+    - [5.3 Modify AppStore](#53-Modify AppStore)
+    - [5.4 Query AppStore List](#54-Query AppStore List)
+    - [5.5 Query AppStore](#55-Query AppStore)
+  - [6. Message](#6-Message)
+    - [6.1 Add Message](#61-Add-Message)
+    - [6.2 Get All Message](#62-Get-All-Message)
+    - [6.3 Get Message](#63-Get-Message)
+    - [6.4 Delete Message](#64-Delete-Message)
+    - [6.5 Accept Message](#65-Accept-Message)
+    - [6.6 Update Status](#65-Update-Status)
 
 
 ## 1. APP
@@ -562,4 +575,317 @@ Example response:
 ```
 200 OK
   binary output.
+```
+
+## 5. APPStore Manager
+
+Add, delete, modify and query the APPStore. 
+
+
+### 5.1 Add AppStore
+add external AppStore.
+```
+URI： /mec/appstore/poke/appstores
+Method: POST
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appStoreName |appStore name|request param |yes|
+|appStoreVersion |appStore version|request param |yes|
+|company |company name|request param |yes|
+|url |url addr|request param |yes|
+|schema |schema|request param |no|
+|appPushIntf |appPush type|request param |no|
+|appdTransId |appdTrans id|request param |yes|
+|description |description information|request param |no|
+
+Example response:
+```
+200 OK
+  {
+    "appStoreId": "string",
+    "appStoreName": "string",
+    "appStoreVersion": "string",
+    "company": "string",
+    "url": "string",
+    "schema": "string",
+    "appPushIntf": "string",
+    "appdTransId": "string",
+    "description": "string",
+    "addedTime": "string",
+    "modifiedTime": "string",
+  }
+```
+
+### 5.2 Delete AppStore
+Delete external AppStore.
+```
+URI： /mec/appstore/poke/appstores/{appStoreId}
+Method: DELETE
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appStoreId |appStore id|path |yes|
+
+Example response:
+```
+200 OK
+  delete success
+```
+
+### 5.3 Modify AppStore
+Modify external AppStore.
+```
+URI： /mec/appstore/poke/appstores/{appStoreId}
+Method: PUT
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appStoreId |appStore id|path |yes|
+|appStoreName |appStore name|request param |yes|
+|appStoreVersion |appStore version|request param |yes|
+|company |company name|request param |yes|
+|url |url addr|request param |yes|
+|schema |schema|request param |no|
+|appPushIntf |appPush type|request param |no|
+|appdTransId |appdTrans id|request param |yes|
+|description |description information|request param |no|
+
+Example response:
+```
+200 OK
+  {
+    "appStoreId": "string",
+    "appStoreName": "string",
+    "appStoreVersion": "string",
+    "company": "string",
+    "url": "string",
+    "schema": "string",
+    "appPushIntf": "string",
+    "appdTransId": "string",
+    "description": "string",
+    "addedTime": "string",
+    "modifiedTime": "string",
+  }
+```
+
+### 5.4 Query AppStore List
+Query external appStore list.
+```
+URI： /mec/appstore/poke/appstores
+Method: GET
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appStoreName |appStore name|request param |yes|
+|company |company name|request param |yes|
+
+Example response:
+```
+200 OK
+  [
+    {
+    "appStoreId": "string",
+    "appStoreName": "string",
+    "appStoreVersion": "string",
+    "company": "string",
+    "url": "string",
+    "schema": "string",
+    "appPushIntf": "string",
+    "appdTransId": "string",
+    "description": "string",
+    "addedTime": "string",
+    "modifiedTime": "string",
+  }
+]
+```
+
+### 5.5 Query AppStore
+Query external appStore.
+```
+URI： /mec/appstore/poke/appstores/{appStoreId}
+Method: GET
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appStoreId |appStore id|path |yes|
+
+Example response:
+```
+200 OK
+  {
+    "appStoreId": "string",
+    "appStoreName": "string",
+    "appStoreVersion": "string",
+    "company": "string",
+    "url": "string",
+    "schema": "string",
+    "appPushIntf": "string",
+    "appdTransId": "string",
+    "description": "string",
+    "addedTime": "string",
+    "modifiedTime": "string",
+  }
+```
+
+## 6. Message
+
+The message contains information such as APP push, download, notice, pull. 
+
+
+### 6.1 Add Message
+Add a APP operation message.
+```
+URI： /mec/appstore/poke/messages
+Method: POST
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|basicInfo |basic information|request param |yes|
+|sourceAppStore |source AppStore|request param |yes|
+|targetAppStore |target AppStore|request param |yes|
+|atpTestStatus |ATP test result|request param |yes|
+|atpTestTaskId |ATP test taskId|request param |yes|
+|atpTestReportUrl |ATP test reportUrl|request param |yes|
+|packageDownloadUrl |package download url|request param |yes|
+|iconDownloadUrl |app icon download url|request param |yes|
+
+Example response:
+```
+200 OK
+  add a message success
+```
+
+### 6.2 Get All Message
+Get messages by message type.
+```
+URI： /mec/appstore/poke/messages
+Method: GET
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|messageType |message type|request param |no|
+
+Example response:
+```
+200 OK
+  [
+  {
+    "messageId": "string",
+    "basicInfo": {
+      "name": "string",
+      "provider": "string",
+      "version": "string",
+      "affinity": "string",
+      "shortDesc": "string",
+      "industry": "string",
+      "type": "string"
+    },
+    "messageType": "string",
+    "sourceAppStore": "string",
+    "targetAppStore": "string",
+    "time": "string",
+    "description": "string",
+    "atpTestStatus": "string",
+    "atpTestTaskId": "string",
+    "atpTestReportUrl": "string",
+    "readed": true,
+  }
+]
+```
+
+### 6.3 Get Message
+Get message by message id.
+```
+URI： /mec/appstore/poke/messages/{messageId}
+Method: GET
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|messageId |message id|request param |yes|
+
+Example response:
+```
+200 OK
+  {
+    "messageId": "string",
+    "basicInfo": {
+      "name": "string",
+      "provider": "string",
+      "version": "string",
+      "affinity": "string",
+      "shortDesc": "string",
+      "industry": "string",
+      "type": "string"
+    },
+    "messageType": "string",
+    "sourceAppStore": "string",
+    "targetAppStore": "string",
+    "time": "string",
+    "description": "string",
+    "atpTestStatus": "string",
+    "atpTestTaskId": "string",
+    "atpTestReportUrl": "string",
+    "readed": true,
+  }
+```
+
+### 6.4 Delete Message
+Delete message by message id.
+```
+URI： /mec/appstore/poke/messages/{messageId}
+Method: DELETE
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|messageId |message id|request param |yes|
+
+Example response:
+```
+200 OK
+  delete success
+```
+
+### 6.5 Accept Message
+download message by message id.
+```
+URI： /mec/appstore/poke/messages/{messageId}/action/download
+Method: GET
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|messageId |message id|request param |yes|
+|request |request body|request param |yes|
+
+Example response:
+```
+200 OK
+  success
+```
+
+### 6.6 Update Status
+Update message status by message id.
+```
+URI： /mec/appstore/poke/messages/{messageId}/action/readed
+Method: PUT
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|messageId |message id|request param |yes|
+
+Example response:
+```
+200 OK
+  success
 ```
