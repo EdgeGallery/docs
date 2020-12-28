@@ -879,7 +879,7 @@ URI： /mec/appstore/poke/messages/{messageId}/action/download
 ```
 
 ### 6.6 更新状态
-根据message id下载app相关信息。
+根据message id更新消息状态。
 ```
 URI： /mec/appstore/poke/messages/{messageId}/action/readed
 方法类型: PUT
