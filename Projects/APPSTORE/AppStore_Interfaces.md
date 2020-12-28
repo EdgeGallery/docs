@@ -59,11 +59,11 @@ URI： /mec/appstore/v1/apps
 
 |名称|描述|IN|必选|
 |---|---|---|---|
-|name|应用名|request param|no|
-|provider|应用提供商|request param|no|
-|type|应用类型|request param|no|
-|affinity|亲和性|request param|no|
-|userId|应用创建人|request param|no|
+|name|应用名|request param|yes|
+|provider|应用提供商|request param|yes|
+|type|应用类型|request param|yes|
+|affinity|架构|request param|yes|
+|userId|应用创建人|request param|yes|
 
 响应示例:
 ```
@@ -84,7 +84,8 @@ URI： /mec/appstore/v1/apps
     "contact": "string",
     "score": 0,
     "userId": "string",
-    "userName": "string"
+    "userName": "string",
+    "status": "string"
   }
 ]
 ```
@@ -98,7 +99,7 @@ URI： /mec/appstore/v1/apps/{appId}
 
 |名称|描述|IN|必选|
 |---|---|---|---|
-|appId|应用名|path|yes|
+|appId|app id|path|yes|
 
 
 响应示例:
@@ -140,11 +141,18 @@ URI： /mec/appstore/v1/apps
 |shortDesc |应用简述|RequestPart |yes|
 |affinity |应用亲和性|RequestPart |yes|
 |industry |应用所属行业|RequestPart |yes|
+|testTaskId |测试任务id|request param |no|
 
 响应示例:
 ```
 200 OK
-  "add app and upload package success."
+  {
+    "appName": "string",
+    "appId": "string",
+    "packageId": "string",
+    "provider": "string",
+    "version": "string"
+  }
 ```
 
 ### 1.4 删除应用 

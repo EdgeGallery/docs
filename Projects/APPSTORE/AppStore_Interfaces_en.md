@@ -58,11 +58,11 @@ Method: GET
 
 |Name|Definition|type|Required|
 |---|---|---|---|
-|name|app name.|request param|no|
-|provider|app provider.|request param|no|
-|type|app type.|request param|no|
-|affinity|app affinity.|request param|no|
-|userId|app creater.|request param|no|
+|name|app name.|request param|yes|
+|provider|app provider.|request param|yes|
+|type|app type.|request param|yes|
+|affinity|app affinity.|request param|yes|
+|userId|app creater.|request param|yes|
 
 Example response:
 ```
@@ -83,7 +83,8 @@ Example response:
     "contact": "string",
     "score": 0,
     "userId": "string",
-    "userName": "string"
+    "userName": "string",
+    "status": "string"
   }
 ]
 ```
@@ -97,7 +98,7 @@ Method: GET
 
 |Name|Definition|type|Required|
 |---|---|---|---|
-|appId|app name.|path|yes|
+|appId|app id|path|yes|
 
 
 Example response:
@@ -139,11 +140,18 @@ Method: POST
 |shortDesc |short desc of input|RequestPart |yes|
 |affinity |affinity of app|RequestPart |yes|
 |industry |industry of app|RequestPart |yes|
+|testTaskId |test task id|request param |no|
 
 Example response:
 ```
 200 OK
-  "add app and upload package success."
+  {
+    "appName": "string",
+    "appId": "string",
+    "packageId": "string",
+    "provider": "string",
+    "version": "string"
+  }
 ```
 
 ### 1.4 Delete One App 
