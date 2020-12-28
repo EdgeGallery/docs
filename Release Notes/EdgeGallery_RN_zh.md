@@ -24,6 +24,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 | ATP(Application Test Platform) |       atp       | 产品仓 | https://gitee.com/edgegallery/atp             | 应用测试平台，为应用认证提供测试支撑   |
 | ATP(Application Test Platform) |     atp-fe      | 产品仓 | https://gitee.com/edgegallery/atp-fe          | 提供应用测试认证平台前台支撑           |
 | Developer                      | crane-framework | 产品仓 | https://gitee.com/edgegallery/crane-framework | 为应用开发提供轻量化，插件是的开发框架 |
+| MECM                           | mecm-apprulemgr | 产品仓 | https://gitee.com/edgegallery/mecm-apprulemgr | 管理面提供应用规则配置下发和管理的能力    |
 
 **New Features**
 
