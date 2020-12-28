@@ -51,10 +51,10 @@ The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in t
 ## K8s Plugin
  K8s plugin is responsible for interaction with kubernetes infra for LCM operations.
  
-### API Handler: 
+### API Handler 
  Provides north bound interfaces for K8s plugin.
 
-### K8s Adapter:
+### K8s Adapter
 
  K8s Adapter communicates with Kuberenetes API server to perform LCM operation on K8s environment.
 
@@ -62,10 +62,10 @@ The BPMN process can be designed through the CAMUNDA Modeler tool, as shown in t
 
 The APP Rule Manager sends configuration request to the MEP. It includes the traffic rules and DNS to be configured.
 
-### API Handler: 
+### API Handler 
 Provides north bound interfaces for app rule manager
 
-### Rule Manager:
+### Rule Manager
 Sends app rule configuration request to MEP
 
 ## Deployment view
