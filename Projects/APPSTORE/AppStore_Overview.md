@@ -1,26 +1,25 @@
 概述
 =================
 
-AppStore是开发者发布和上线App应用的市场，由Developer平台开发的边缘应用，经过测试可以直接分享到AppStore应用商店。AppStore分为前后台两个部分，[appstore-be][1]是后台部分，提供主要功能接口供前台或其他三方系统调用，[appstore-fe][2]是前台部分，提供界面展示。
+AppStore是开发者发布和上线App应用的边缘应用市场，由Developer平台开发的边缘应用，经过ATP测试后可以直接发布到AppStore应用商店。
+用户也可以在AppStore直接上传边缘应用，经过ATP测试后可以发布到AppStore，对外展示。
+
+AppStore分为前后台两个部分，[AppStore BE][1]是后台部分，提供主要功能接口供前台或其他三方系统调用，[AppStore FE][2]是前台部分，提供界面展示。
+
+## 整体框架说明
+
+![](/uploads/images/2020/v1.0/all-the-arch.png)
 
 
-## 架构说明
-![](/uploads/images/2020/0709/154041_a4c3a9ba_5504908.png)
+## 代码架构说明
 
-1. appstore-fe：开发者平台前台框架，使用VUE开发。
+![](/uploads/images/2020/v1.0/appstore-code-arch.png)
 
-2. appstore-be：开发者平台后台框架，使用SpringBoot+ServiceComb开发。（有关ServiceComb请参考这里：https://servicecomb.apache.org/cn/）
+1. AppStore FE：开发者平台前台框架，使用VUE开发。
 
-3. appstore DB：后台依赖Postgres数据库。
+2. AppStore BE：开发者平台后台框架，使用SpringBoot+ServiceComb开发。（有关ServiceComb请参考这里：https://servicecomb.apache.org/cn/）
 
-## 部署视图
-![](/uploads/images/2020/0709/154053_b41b4a97_5504908.png)
+3. AppStore DB：后台依赖Postgres数据库。
 
-以上部署视图是按照K8S部署设计的， 在实际部署过程中，可以直接在虚拟机或者docker容器中启动各自的服务，部署过程中需要有一下几点注意：
-
-- appstore-fe和appstore-be都需要注册到ServiceCenter中
-- 推荐使用Chrome浏览器
-
-
-[1]: https://gitee.com/edgegallery/appstore-be "appstore-be"
-[2]: https://gitee.com/edgegallery/appstore-fe "appstore-fe"
+[1]: https://gitee.com/edgegallery/appstore-be "AppStore BE"
+[2]: https://gitee.com/edgegallery/appstore-fe "AppStore FE"
