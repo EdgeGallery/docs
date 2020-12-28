@@ -1,4 +1,4 @@
-How to contribute
+Contribution to App Rule Manager
 ==========================
 
 This section provides details on how to participate/contribute to the App Rule Manager project. 

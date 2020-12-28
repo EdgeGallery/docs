@@ -1,4 +1,4 @@
-How to contribute
+Contribution to Inventory
 ==========================
 
 This section provides details on how to participate/contribute to the inventory project. 

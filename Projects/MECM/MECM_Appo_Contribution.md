@@ -1,4 +1,4 @@
-How to contribute
+Contribution to Appo
 ==========================
 
 This section provides details on how to participate/contribute to the application orchestrator project. 
