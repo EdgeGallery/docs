@@ -38,6 +38,7 @@ Architecture
 
 
 ## Deployment view
+![.](/uploads/images/2020/0924/mecm-deployment-overview.png "mecm-deployment-overview.png")
 
 The deployment view shown is based on k8s deployment. MECM modules supports deployment on virtual
  machine or docker container to start respective service.
