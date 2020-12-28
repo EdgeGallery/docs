@@ -87,7 +87,7 @@ MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery�
 
 ![](/uploads/images/2020/v1.0/DeploymentTest-EnvironmentSelection.png "DeploymentTest-EnvironmentSelection.png")
 
-![](/uploads/images/2020/v1.0/DeploymentTest-EnvironmentSelection.png "DeploymentTest-DeploySuccess.png")
+![](/uploads/images/2020/v1.0/DeploymentTest-DeploySuccess.png "DeploymentTest-DeploySuccess.png")
 
 
 #### 应用发布
