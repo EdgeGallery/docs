@@ -59,7 +59,7 @@ MECM
       :maxdepth: 1
 
        Contribute to APM<MECM_Apm_Contribution>
-       Contribute to Lcm Controller and K8s Plugin<MECM_LCM_controller_Contribution>
+       Contribute to Lcm Controller and K8s Plugin(Applcm)<MECM_LCM_controller_Contribution>
        Contribute to APPO<MECM_Appo_Contribution>
        Contribute to Inventory<MECM_Inventory_Contribution>
        Contribute to AppRuleManager<MECM_App_Rule_Contribution>
