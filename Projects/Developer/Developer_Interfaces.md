@@ -1605,6 +1605,22 @@ Example response:
 }
 ```
 
+### 3.17 GET project atp task 
+GET project atp task
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/action/atp
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|pathparam|yes|
+
+Example response:
+```
+200 OK
+true
+```
+
 ## 4. Host
 Server of build and test or deploy app
 ### 4.1 GET all host
