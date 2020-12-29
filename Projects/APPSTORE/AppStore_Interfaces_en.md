@@ -119,7 +119,8 @@ Example response:
     "contact": "string",
     "score": 0,
     "userId": "string",
-    "userName": "string"
+    "userName": "string",
+    "status": "string"
   }
 ```
 
@@ -140,7 +141,7 @@ Method: POST
 |shortDesc |short desc of input|RequestPart |yes|
 |affinity |affinity of app|RequestPart |yes|
 |industry |industry of app|RequestPart |yes|
-|testTaskId |test task id|request param |no|
+|testTaskId |test task id|RequestPart |no|
 
 Example response:
 ```
@@ -182,8 +183,6 @@ Method: GET
 
 |Name|Definition|type|Required|
 |---|---|---|---|
-|userId |user id|request param |yes|
-|userName |app name|request param |yes|
 |appId |app id|path |yes|
 
 Example response:
@@ -201,8 +200,6 @@ Method: GET
 
 |Name|Definition|type|Required|
 |---|---|---|---|
-|userId |user id|request param |yes|
-|userName |app name|request param |yes|
 |appId |app id|path |yes|
 
 Example response:
@@ -230,15 +227,19 @@ Method: GET
 |---|---|---|---|
 |appId |app id |type|yes|
 |userId|user id|request param|yes|
+|request|request|request param|yes|
 
 Example response:
 ```
 200 OK
 [
   {
-    "csarId": "string",
-    "downloadUrl": "string",
-    "iconUrl": "string",
+    "packageId": "string",
+    "userName": "string",
+    "status": "string",
+    "shortDesc": "string",
+    "provider": "string",
+    "testTaskId": "string",
     "size": "string",
     "format": "string",
     "createTime": "string",

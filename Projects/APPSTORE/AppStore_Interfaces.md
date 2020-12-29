@@ -121,6 +121,7 @@ URI： /mec/appstore/v1/apps/{appId}
     "score": 0,
     "userId": "string",
     "userName": "string"
+    "status": "string"
   }
 ```
 
@@ -141,7 +142,7 @@ URI： /mec/appstore/v1/apps
 |shortDesc |应用简述|RequestPart |yes|
 |affinity |架构|RequestPart |yes|
 |industry |应用所属行业|RequestPart |yes|
-|testTaskId |测试任务id|request param |no|
+|testTaskId |测试任务id|RequestPart |no|
 
 响应示例:
 ```
@@ -156,7 +157,7 @@ URI： /mec/appstore/v1/apps
 ```
 
 ### 1.4 删除应用 
-根据应用ID删除应用 。
+根据应用ID删除应用。
 ```
 URI： /mec/appstore/v1/apps/{appId}
 方法类型: DELETE
@@ -183,8 +184,6 @@ URI： /mec/appstore/v1/apps/{appId}/action/download
 
 |名称|描述|IN|必选|
 |---|---|---|---|
-|userId |用户ID|request param |yes|
-|userName |应用名|request param |yes|
 |appId |应用ID|path |yes|
 
 响应示例:
@@ -202,8 +201,6 @@ URI： /mec/appstore/v1/apps/{appId}/icon
 
 |名称|描述|IN|必选|
 |---|---|---|---|
-|userId |用户ID|request param |yes|
-|userName |应用名|request param |yes|
 |appId |应用ID|path |yes|
 
 响应示例:
@@ -230,15 +227,19 @@ URI： /mec/appstore/v1/apps/{appId}/packages
 |---|---|---|---|
 |appId |应用ID |path|yes|
 |userId|用户ID|request param|yes|
+|request|请求体|request param|yes|
 
 响应示例:
 ```
 200 OK
 [
   {
-    "csarId": "string",
-    "downloadUrl": "string",
-    "iconUrl": "string",
+    "packageId": "string",
+    "userName": "string",
+    "status": "string",
+    "shortDesc": "string",
+    "provider": "string",
+    "testTaskId": "string",
     "size": "string",
     "format": "string",
     "createTime": "string",
