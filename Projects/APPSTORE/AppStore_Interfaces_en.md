@@ -350,7 +350,7 @@ Example response:
   file content output.
 ```
 
-### 2.6 APP Publis
+### 2.6 APP Publish
 Publish APP by app id and package id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/publish
