@@ -427,14 +427,7 @@ Example response:
 200 OK
 {
   "tasks": [
-    {
-      "taskId": "string",
-      "taskNo": "string",
-      "status": "string",
-      "beginTime": "2020-09-11T06:26:46.351Z",
-      "endTime": "2020-09-11T06:26:46.351Z",
-      "appId": "string"
-    }
+   "string"
   ]
   }
 ```
