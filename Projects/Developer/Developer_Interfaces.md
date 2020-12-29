@@ -64,8 +64,9 @@ Developer Interfaces
     - [7.1 GET one api file](#71-get-one-api-file)
   - [8. Health](#8-health)
     - [8.1 GET health](#81-get-health)
-  - [9. Health](#8-health)
-    - [8.1 GET health](#81-get-health)
+  - [9. AppRelease(#9-apprelease)
+    - [9.1 GET pkg structure](#91-get-pkg-structure)
+    - [9.2 GET file content](#92-get-file-content)
   - [8. Health](#8-health)
     - [8.1 GET health](#81-get-health)
   - [8. Health](#8-health)
@@ -2331,6 +2332,49 @@ Resource URI: /mec/developer/v1/health
 
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
+
+Example response:
+```
+200 OK
+string output
+```
+
+## 9. AppRelease
+Get pkg structure and file content
+### 9.1 GET pkg structure
+Get pkg structure
+```
+Resource URI: /mec/developer/v1/apprelease/{projectId}/{csarId}/action/get-pkg-structure
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|project id|pathparam|yes|
+|csarId|csar id|pathparam|yes|
+
+Example response:
+```
+200 OK
+{
+  "name": "string",
+  "id": "string",
+  "children": [
+    {}
+  ],
+  "parent": false
+}
+```
+
+### 9.2 GET file content
+Get file content
+```
+Resource URI: /mec/developer/v1/apprelease/{projectId}/action/get-pkg-content
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|project id|pathparam|yes|
+|fileName|pkg file name|requestparam|yes|
 
 Example response:
 ```
