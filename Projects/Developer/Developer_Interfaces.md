@@ -59,6 +59,7 @@ Developer Interfaces
     - [6.5 DELETE helm yaml](#65-delete-helm-yaml)
     - [6.6 POST get sample code](#66-post-get-sample-code)
     - [6.7 GET one file return object](#67-get-one-file-return-object)
+    - [6.8 GET sdk code](#68-get-sdk-code)
   - [7. LocalApi](#7-localapi)
     - [7.1 GET one api file](#71-get-one-api-file)
 	
@@ -2132,6 +2133,7 @@ Resource URI: /mec/developer/v1/files/{fileId}
 |-------------|-------------|------------|------------|
 |fileId|fileid|pathparam|yes|
 |userId|theauthoridofuploadfile|requestparam|yes|
+|type|file type|requestparam|yes|
 
 Example response:
 ```
@@ -2181,8 +2183,13 @@ Example response:
 200 OK
 {
   "fileId": "string",
-  "fileName": "string"
-  }
+  "fileName": "string",
+  "fileContent": "string",
+  "formatSuccess": false,
+  "imageSuccess": false,
+  "serviceSuccess": false,
+  "mepAgentSuccess": false
+}
 ```
 
 ### 6.4 GET helm yaml
@@ -2265,6 +2272,24 @@ Example response:
     uploadDate:xxxx-xx-xx,
     filePath:"xxx"
 }
+```
+
+### 6.8 GET sdk code
+GET sdk code
+```
+Resource URI: /mec/developer/v1/files/sdk/{fileId}/download/{lan}
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|fileId|file id|path param |yes|
+|lan|sdk codeLanguage|path param |yes|
+
+
+Example response:
+```
+200 OK
+binary output
 ```
 
 
