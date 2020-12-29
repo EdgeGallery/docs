@@ -100,16 +100,20 @@ Example response:
   "logoFile": {
     "originalFileName": "string",
     "storageAddress": "string",
+    "fileSize": 0,
+    "hashCode": "string",
     "name": "string",
     "size": 0
   },
   "pluginFile": {
     "originalFileName": "string",
     "storageAddress": "string",
+    "fileSize": 0,
+    "hashCode": "string",
     "name": "string",
     "size": 0
   },
-  "uploadTime": "2020-09-11T03:26:42.140Z",
+  "uploadTime": "2020-12-29T01:38:05.596Z",
   "user": {
     "userId": "string",
     "userName": "string"
@@ -117,10 +121,12 @@ Example response:
   "apiFile": {
     "originalFileName": "string",
     "storageAddress": "string",
+    "fileSize": 0,
+    "hashCode": "string",
     "name": "string",
     "size": 0
   }
-  }
+}
 ```
 
 ### 1.2 GET all
@@ -245,16 +251,20 @@ Example response:
   "logoFile": {
     "originalFileName": "string",
     "storageAddress": "string",
+    "fileSize": 0,
+    "hashCode": "string",
     "name": "string",
     "size": 0
   },
   "pluginFile": {
     "originalFileName": "string",
     "storageAddress": "string",
+    "fileSize": 0,
+    "hashCode": "string",
     "name": "string",
     "size": 0
   },
-  "uploadTime": "2020-09-11T03:40:03.789Z",
+  "uploadTime": "2020-12-29T01:38:05.596Z",
   "user": {
     "userId": "string",
     "userName": "string"
@@ -262,10 +272,12 @@ Example response:
   "apiFile": {
     "originalFileName": "string",
     "storageAddress": "string",
+    "fileSize": 0,
+    "hashCode": "string",
     "name": "string",
     "size": 0
   }
-  }
+}
 ```
 ### 1.8 PUT mark plugin
 update plugin satisfaction by pluginId
@@ -296,16 +308,20 @@ Example response:
   "logoFile": {
     "originalFileName": "string",
     "storageAddress": "string",
+    "fileSize": 0,
+    "hashCode": "string",
     "name": "string",
     "size": 0
   },
   "pluginFile": {
     "originalFileName": "string",
     "storageAddress": "string",
+    "fileSize": 0,
+    "hashCode": "string",
     "name": "string",
     "size": 0
   },
-  "uploadTime": "2020-09-11T06:14:56.484Z",
+  "uploadTime": "2020-12-29T01:38:05.596Z",
   "user": {
     "userId": "string",
     "userName": "string"
@@ -313,10 +329,12 @@ Example response:
   "apiFile": {
     "originalFileName": "string",
     "storageAddress": "string",
+    "fileSize": 0,
+    "hashCode": "string",
     "name": "string",
     "size": 0
   }
-  }
+}
 ```
 
 ## 2. App
