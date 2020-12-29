@@ -1540,6 +1540,71 @@ Example response:
   }
 ```
 
+### 3.16 POST open project api 
+POST open project api
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/action/open-api
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|path param|yes|
+|userId|user id|request param|yes|
+|AbilityOpenConfig|entity class|body param|yes|
+
+```
+AbilityOpenConfig:
+{
+  "detailId": "string",
+  "groupId": "string",
+  "service": "string",
+  "version": "string",
+  "description": "string",
+  "provider": "string",
+  "apiFileId": "string",
+  "guideFileId": "string",
+  "uploadTime": "2020-12-29T01:51:11.028Z",
+  "port": 0,
+  "host": "string",
+  "protocol": "string",
+  "appId": "string",
+  "packageId": "string",
+  "userId": "string"
+}
+```
+
+Example response:
+```
+200 OK
+{
+  "groupId": "string",
+  "oneLevelName": "string",
+  "twoLevelName": "string",
+  "threeLevelName": "string",
+  "type": "OPENMEP",
+  "description": "string",
+  "capabilityDetailList": [
+    {
+      "detailId": "string",
+      "groupId": "string",
+      "service": "string",
+      "version": "string",
+      "description": "string",
+      "provider": "string",
+      "apiFileId": "string",
+      "guideFileId": "string",
+      "uploadTime": "2020-12-29T01:51:11.028Z",
+      "port": 0,
+      "host": "string",
+      "protocol": "string",
+      "appId": "string",
+      "packageId": "string",
+      "userId": "string"
+    }
+  ]
+}
+```
+
 ## 4. Host
 Server of build and test or deploy app
 ### 4.1 GET all host
