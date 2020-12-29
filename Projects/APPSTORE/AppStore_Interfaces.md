@@ -403,7 +403,7 @@ URI： /mec/appstore/v1/apps/{appId}/comments
 响应示例:
 ```
 200 OK
-  [
+[
   {
     "commentId": 0,
     "user": {
@@ -474,7 +474,7 @@ URI： /mec/appstore/poke/pushable/packages
 响应示例:
 ```
 200 OK
-  [
+[
   {
     "appId": "string",
     "packageId": "string",
@@ -509,7 +509,7 @@ URI： /mec/appstore/poke/pushable/packages/{packageId}
 响应示例:
 ```
 200 OK
-  [
+[
   {
     "appId": "string",
     "packageId": "string",
@@ -692,8 +692,8 @@ URI： /mec/appstore/poke/appstores
 响应示例:
 ```
 200 OK
-  [
-    {
+[
+  {
     "appStoreId": "string",
     "appStoreName": "string",
     "appStoreVersion": "string",
@@ -781,7 +781,7 @@ URI： /mec/appstore/poke/messages
 响应示例:
 ```
 200 OK
-  [
+[
   {
     "messageId": "string",
     "basicInfo": {

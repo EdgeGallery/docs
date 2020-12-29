@@ -405,7 +405,7 @@ Method: GET
 Example response:
 ```
 200 OK
-  [
+[
   {
     "commentId": 0,
     "user": {
@@ -477,7 +477,7 @@ Method: GET
 Example response:
 ```
 200 OK
-  [
+[
   {
     "appId": "string",
     "packageId": "string",
@@ -512,7 +512,7 @@ Method: GET
 Example response:
 ```
 200 OK
-  [
+[
   {
     "appId": "string",
     "packageId": "string",
@@ -695,8 +695,8 @@ Method: GET
 Example response:
 ```
 200 OK
-  [
-    {
+[
+  {
     "appStoreId": "string",
     "appStoreName": "string",
     "appStoreVersion": "string",
@@ -784,7 +784,7 @@ Method: GET
 Example response:
 ```
 200 OK
-  [
+[
   {
     "messageId": "string",
     "basicInfo": {
