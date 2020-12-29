@@ -67,10 +67,12 @@ Developer Interfaces
   - [9. AppRelease](#9-apprelease)
     - [9.1 GET pkg structure](#91-get-pkg-structure)
     - [9.2 GET file content](#92-get-file-content)
-  - [8. Health](#8-health)
-    - [8.1 GET health](#81-get-health)
-  - [8. Health](#8-health)
-    - [8.1 GET health](#81-get-health)
+  - [10. ReleaseConfig](#10-releaseconfig)
+    - [10.1 GET release config](#101-get-release-config)
+    - [10.2 POST release config](#102-post-release-config)
+    - [10.3 PUT release config](#103-put-release-config)
+  - [11. DeployConfig](#11-deployconfig)
+    - [11.1 GET health](#81-get-health)
  
 
 
@@ -2380,4 +2382,566 @@ Example response:
 ```
 200 OK
 string output
+```
+
+
+## 10. ReleaseConfig
+Do some configuration before release app 
+### 10.1 GET release config
+Get release config
+```
+Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|project id|pathparam|yes|
+
+
+Example response:
+```
+200 OK
+{
+  "releaseId": "string",
+  "projectId": "string",
+  "guideFileId": "string",
+  "appInstanceId": "string",
+  "capabilitiesDetail": {
+    "appTrafficRule": [
+      {
+        "trafficRuleId": "string",
+        "action": "string",
+        "priority": "string",
+        "filterType": "string",
+        "trafficFilter": [
+          {
+            "protocal": [
+              "string"
+            ],
+            "srcAddress": [
+              "string"
+            ],
+            "srcPort": [
+              "string"
+            ],
+            "dstAddress": [
+              "string"
+            ],
+            "dstPort": [
+              "string"
+            ],
+            "tag": [
+              "string"
+            ],
+            "srcTunnelAddress": [
+              "string"
+            ],
+            "tgtTunnelAddress": [
+              "string"
+            ],
+            "srcTunnelPort": [
+              "string"
+            ],
+            "dstTunnelPort": [
+              "string"
+            ],
+            "qci": 0,
+            "dscp": 0,
+            "tc": 0
+          }
+        ],
+        "dstInterface": [
+          {
+            "interfaceType": "string",
+            "srcMacAddress": "string",
+            "dstMacAddress": "string",
+            "dstIpAddress": "string",
+            "tunnelInfo": {
+              "tunnelType": "string",
+              "tunnelDstAddress": "string",
+              "tunnelSrcAddress": "string",
+              "tunnelSpecificData": "string"
+            }
+          }
+        ]
+      }
+    ],
+    "appDNSRule": [
+      {
+        "dnsRuleId": "string",
+        "domainName": "string",
+        "ipAddressType": "string",
+        "ipAddress": "string",
+        "ttl": "string"
+      }
+    ],
+    "serviceDetails": [
+      {
+        "groupId": "string",
+        "serviceName": "string",
+        "internalPort": 0,
+        "version": "string",
+        "protocol": "string",
+        "apiJson": "string",
+        "apiMd": "string",
+        "dnsRulesList": [
+          "string"
+        ],
+        "trafficRulesList": [
+          "string"
+        ]
+      }
+    ]
+  },
+  "atpTest": {
+    "id": "string",
+    "appName": "string",
+    "status": "string",
+    "createTime": "string"
+  },
+  "testStatus": "string",
+  "createTime": "2020-12-29T03:31:13.204Z"
+}
+```
+
+### 10.2 POST release config
+POST release config
+```
+Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|project id|pathparam|yes|
+|ReleaseConfig|entityclass|bodyparam|yes|
+
+```
+ReleaseConfig:
+{
+  "releaseId": "string",
+  "projectId": "string",
+  "guideFileId": "string",
+  "appInstanceId": "string",
+  "capabilitiesDetail": {
+    "appTrafficRule": [
+      {
+        "trafficRuleId": "string",
+        "action": "string",
+        "priority": "string",
+        "filterType": "string",
+        "trafficFilter": [
+          {
+            "protocal": [
+              "string"
+            ],
+            "srcAddress": [
+              "string"
+            ],
+            "srcPort": [
+              "string"
+            ],
+            "dstAddress": [
+              "string"
+            ],
+            "dstPort": [
+              "string"
+            ],
+            "tag": [
+              "string"
+            ],
+            "srcTunnelAddress": [
+              "string"
+            ],
+            "tgtTunnelAddress": [
+              "string"
+            ],
+            "srcTunnelPort": [
+              "string"
+            ],
+            "dstTunnelPort": [
+              "string"
+            ],
+            "qci": 0,
+            "dscp": 0,
+            "tc": 0
+          }
+        ],
+        "dstInterface": [
+          {
+            "interfaceType": "string",
+            "srcMacAddress": "string",
+            "dstMacAddress": "string",
+            "dstIpAddress": "string",
+            "tunnelInfo": {
+              "tunnelType": "string",
+              "tunnelDstAddress": "string",
+              "tunnelSrcAddress": "string",
+              "tunnelSpecificData": "string"
+            }
+          }
+        ]
+      }
+    ],
+    "appDNSRule": [
+      {
+        "dnsRuleId": "string",
+        "domainName": "string",
+        "ipAddressType": "string",
+        "ipAddress": "string",
+        "ttl": "string"
+      }
+    ],
+    "serviceDetails": [
+      {
+        "groupId": "string",
+        "serviceName": "string",
+        "internalPort": 0,
+        "version": "string",
+        "protocol": "string",
+        "apiJson": "string",
+        "apiMd": "string",
+        "dnsRulesList": [
+          "string"
+        ],
+        "trafficRulesList": [
+          "string"
+        ]
+      }
+    ]
+  },
+  "atpTest": {
+    "id": "string",
+    "appName": "string",
+    "status": "string",
+    "createTime": "string"
+  },
+  "testStatus": "string",
+  "createTime": "2020-12-29T03:31:13.204Z"
+}
+```
+Example response:
+```
+200 OK
+{
+  "releaseId": "string",
+  "projectId": "string",
+  "guideFileId": "string",
+  "appInstanceId": "string",
+  "capabilitiesDetail": {
+    "appTrafficRule": [
+      {
+        "trafficRuleId": "string",
+        "action": "string",
+        "priority": "string",
+        "filterType": "string",
+        "trafficFilter": [
+          {
+            "protocal": [
+              "string"
+            ],
+            "srcAddress": [
+              "string"
+            ],
+            "srcPort": [
+              "string"
+            ],
+            "dstAddress": [
+              "string"
+            ],
+            "dstPort": [
+              "string"
+            ],
+            "tag": [
+              "string"
+            ],
+            "srcTunnelAddress": [
+              "string"
+            ],
+            "tgtTunnelAddress": [
+              "string"
+            ],
+            "srcTunnelPort": [
+              "string"
+            ],
+            "dstTunnelPort": [
+              "string"
+            ],
+            "qci": 0,
+            "dscp": 0,
+            "tc": 0
+          }
+        ],
+        "dstInterface": [
+          {
+            "interfaceType": "string",
+            "srcMacAddress": "string",
+            "dstMacAddress": "string",
+            "dstIpAddress": "string",
+            "tunnelInfo": {
+              "tunnelType": "string",
+              "tunnelDstAddress": "string",
+              "tunnelSrcAddress": "string",
+              "tunnelSpecificData": "string"
+            }
+          }
+        ]
+      }
+    ],
+    "appDNSRule": [
+      {
+        "dnsRuleId": "string",
+        "domainName": "string",
+        "ipAddressType": "string",
+        "ipAddress": "string",
+        "ttl": "string"
+      }
+    ],
+    "serviceDetails": [
+      {
+        "groupId": "string",
+        "serviceName": "string",
+        "internalPort": 0,
+        "version": "string",
+        "protocol": "string",
+        "apiJson": "string",
+        "apiMd": "string",
+        "dnsRulesList": [
+          "string"
+        ],
+        "trafficRulesList": [
+          "string"
+        ]
+      }
+    ]
+  },
+  "atpTest": {
+    "id": "string",
+    "appName": "string",
+    "status": "string",
+    "createTime": "string"
+  },
+  "testStatus": "string",
+  "createTime": "2020-12-29T03:31:13.204Z"
+}
+```
+
+### 10.3 PUT release config
+PUT release config
+```
+Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|project id|pathparam|yes|
+|ReleaseConfig|entityclass|bodyparam|yes|
+
+```
+ReleaseConfig:
+{
+  "releaseId": "string",
+  "projectId": "string",
+  "guideFileId": "string",
+  "appInstanceId": "string",
+  "capabilitiesDetail": {
+    "appTrafficRule": [
+      {
+        "trafficRuleId": "string",
+        "action": "string",
+        "priority": "string",
+        "filterType": "string",
+        "trafficFilter": [
+          {
+            "protocal": [
+              "string"
+            ],
+            "srcAddress": [
+              "string"
+            ],
+            "srcPort": [
+              "string"
+            ],
+            "dstAddress": [
+              "string"
+            ],
+            "dstPort": [
+              "string"
+            ],
+            "tag": [
+              "string"
+            ],
+            "srcTunnelAddress": [
+              "string"
+            ],
+            "tgtTunnelAddress": [
+              "string"
+            ],
+            "srcTunnelPort": [
+              "string"
+            ],
+            "dstTunnelPort": [
+              "string"
+            ],
+            "qci": 0,
+            "dscp": 0,
+            "tc": 0
+          }
+        ],
+        "dstInterface": [
+          {
+            "interfaceType": "string",
+            "srcMacAddress": "string",
+            "dstMacAddress": "string",
+            "dstIpAddress": "string",
+            "tunnelInfo": {
+              "tunnelType": "string",
+              "tunnelDstAddress": "string",
+              "tunnelSrcAddress": "string",
+              "tunnelSpecificData": "string"
+            }
+          }
+        ]
+      }
+    ],
+    "appDNSRule": [
+      {
+        "dnsRuleId": "string",
+        "domainName": "string",
+        "ipAddressType": "string",
+        "ipAddress": "string",
+        "ttl": "string"
+      }
+    ],
+    "serviceDetails": [
+      {
+        "groupId": "string",
+        "serviceName": "string",
+        "internalPort": 0,
+        "version": "string",
+        "protocol": "string",
+        "apiJson": "string",
+        "apiMd": "string",
+        "dnsRulesList": [
+          "string"
+        ],
+        "trafficRulesList": [
+          "string"
+        ]
+      }
+    ]
+  },
+  "atpTest": {
+    "id": "string",
+    "appName": "string",
+    "status": "string",
+    "createTime": "string"
+  },
+  "testStatus": "string",
+  "createTime": "2020-12-29T03:31:13.204Z"
+}
+```
+Example response:
+```
+200 OK
+{
+  "releaseId": "string",
+  "projectId": "string",
+  "guideFileId": "string",
+  "appInstanceId": "string",
+  "capabilitiesDetail": {
+    "appTrafficRule": [
+      {
+        "trafficRuleId": "string",
+        "action": "string",
+        "priority": "string",
+        "filterType": "string",
+        "trafficFilter": [
+          {
+            "protocal": [
+              "string"
+            ],
+            "srcAddress": [
+              "string"
+            ],
+            "srcPort": [
+              "string"
+            ],
+            "dstAddress": [
+              "string"
+            ],
+            "dstPort": [
+              "string"
+            ],
+            "tag": [
+              "string"
+            ],
+            "srcTunnelAddress": [
+              "string"
+            ],
+            "tgtTunnelAddress": [
+              "string"
+            ],
+            "srcTunnelPort": [
+              "string"
+            ],
+            "dstTunnelPort": [
+              "string"
+            ],
+            "qci": 0,
+            "dscp": 0,
+            "tc": 0
+          }
+        ],
+        "dstInterface": [
+          {
+            "interfaceType": "string",
+            "srcMacAddress": "string",
+            "dstMacAddress": "string",
+            "dstIpAddress": "string",
+            "tunnelInfo": {
+              "tunnelType": "string",
+              "tunnelDstAddress": "string",
+              "tunnelSrcAddress": "string",
+              "tunnelSpecificData": "string"
+            }
+          }
+        ]
+      }
+    ],
+    "appDNSRule": [
+      {
+        "dnsRuleId": "string",
+        "domainName": "string",
+        "ipAddressType": "string",
+        "ipAddress": "string",
+        "ttl": "string"
+      }
+    ],
+    "serviceDetails": [
+      {
+        "groupId": "string",
+        "serviceName": "string",
+        "internalPort": 0,
+        "version": "string",
+        "protocol": "string",
+        "apiJson": "string",
+        "apiMd": "string",
+        "dnsRulesList": [
+          "string"
+        ],
+        "trafficRulesList": [
+          "string"
+        ]
+      }
+    ]
+  },
+  "atpTest": {
+    "id": "string",
+    "appName": "string",
+    "status": "string",
+    "createTime": "string"
+  },
+  "testStatus": "string",
+  "createTime": "2020-12-29T03:31:13.204Z"
+}
 ```
