@@ -6,9 +6,9 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
 - tbl_plugin: 存储开发者上传的插件信息，如名字、满意度、插件保存路径等
 ```
   CREATE TABLE tbl_plugin (
-    	pluginid              varchar(255)       NOT NULL,    --插件ID
-    	pluginname            varchar(255)       NOT NULL,    --插件名字
-    	introduction          varchar(500)       NULL,        --插件简介
+    	  pluginid              varchar(255)       NOT NULL,    --插件ID
+    	  pluginname            varchar(255)       NOT NULL,    --插件名字
+    	  introduction          varchar(500)       NULL,        --插件简介
         satisfaction          float4             NOT NULL,    --满意度（评分）
         codelanguage          varchar(255)       NOT NULL,    --插件代表的编程语言
         plugintype            int4               NOT NULL,    --插件类型（1：plugin 2:sdk）
@@ -22,6 +22,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
         pluginsize            int4               NOT NULL,    --插件大小（字节）
         apifile               varchar(500)       NOT NULL,    --插件API文件的保存路径
         scorecount            int4               NOT NULL,    --插件的评分次数
+        pluginfilehashcode    varchar(50)        DEFAULT NULL --插件哈希值，校验文件
         CONSTRAINT tbl_plugin_pkey PRIMARY KEY (pluginid)
   );
 ```
@@ -113,6 +114,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
        project_type        varchar(10)   DEFAULT NULL,  --项目类型（新建/迁移）
        icon_file_id        varchar(50)   DEFAULT NULL,  --项目图标文件的ID
        open_capability_id  varchar(50)   DEFAULT NULL,  --开发者平台本身提供的以及其他开发者共享的能力ID
+       deploy_platform     varchar(100)  DEFAULT NULL,  --部署方式：虚机、容器部署
        CONSTRAINT  tbl_app_project_pkey  PRIMARY KEY ( id )
   );
 ```
@@ -120,8 +122,10 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
 - tbl_openmep_capability: 存储开发者在开发者平台自构建应用项目时，平台提供的全部能力的信息
 ```
   CREATE TABLE  tbl_openmep_capability  (
-       group_id      varchar(50)     NOT NULL,      --能力组ID
-       name          varchar(255)    DEFAULT NULL,  --能力名称
+       group_id          varchar(50)     NOT NULL,      --能力组ID
+       one_level_name    varchar(255)    DEFAULT NULL,  --能力名称：一级菜单
+       two_level_name    varchar(255)    DEFAULT NULL,  --能力名称：二级菜单
+       three_level_name  varchar(255)    DEFAULT NULL,  --能力名称：三级菜单
        type          varchar(20)     DEFAULT NULL,  --能力类型
        description   text            DEFAULT NULL,  --能力描述
        CONSTRAINT  tbl_openmep_capability_pkey  PRIMARY KEY ( group_id )
@@ -138,6 +142,14 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
        provider       varchar(100)    DEFAULT NULL,   --服务提供者
        group_id       varchar(50)     DEFAULT NULL,   --能力ID（对应tbl_openmep_capability的group_id）
        api_file_id    varchar(255)    DEFAULT NULL,   --服务API文件ID
+       guide_file_id  varchar(255)    DEFAULT NULL,   --服务说明文档
+       upload_time    timestamptz(6)  NOT NULL,       --上传时间
+       host           varchar(50)     DEFAULT NULL,   --注册的服务名
+       port           int4            DEFAULT NULL,   --服务端口
+       protocol       varchar(20)     DEFAULT NULL,   --THHP,HTTPS
+       app_id         varchar(255)    DEFAULT NULL,   --发布到appstore的id
+       package_id     varchar(255)    DEFAULT NULL,   --发布到appstore的packageId
+       user_id        varchar(255)    DEFAULT NULL,   --用户Id
       CONSTRAINT  tbl_openmep_capability_detail_pkey  PRIMARY KEY ( detail_id )
   );
 ```
@@ -163,14 +175,21 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
        project_id          varchar(50)      NOT NULL,        --项目ID（对应tbl_app_project中的id）
        agent_config        text             DEFAULT NULL,    --MEP AGENT配置项
        image_file_id       varchar(255)     NOT NULL,        --镜像文件ID
-       app_api_file_id     varchar(50)      DEFAULT NULL,        --项目API文件ID
+       app_api_file_id     varchar(50)      DEFAULT NULL,    --项目API文件ID
        status              varchar(100)     DEFAULT NULL,    --项目状态
        access_url          varchar(200)     DEFAULT NULL,    --项目可访问的URl
        error_log           text             DEFAULT NULL,    --项目部署测试失败的日志
        deploy_date         timestamptz(6)   DEFAULT NULL,    --项目部署时间
        hosts               varchar(255)     DEFAULT NULL,    --项目部署选择的服务器信息
        app_instance_id     varchar(50)      DEFAULT NULL,    --项目部署成功上传到应用商店生成的实例ID
-       work_load_id        varchar(255)     DEFAULT NULL,    --部署项目到applcm用到
+       work_load_id        varchar(255)     DEFAULT NULL,    --部署项目到applcm用
+       deploy_file_id      varchar(50)      DEFAULT NULL,    --部署文件ID
+       private_host        bool             DEFAULT FALSE,   --节点是否私有
+       platform            varchar(100)     DEFAULT NULL,    --部署方式
+       pods                text             DEFAULT NULL,    --部署pods信息
+       deploy_status       varchar(255)     DEFAULT NULL,    --部署状态
+       stage_status        varchar(255)     DEFAULT NULL,    --部署步骤
+       lcm_token           varchar(1000)    DEFAULT NULL,    --lcm token
        CONSTRAINT  tbl_project_test_config_pkey  PRIMARY KEY ( test_id )
   );
 ```
@@ -179,6 +198,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
 ```
   CREATE TABLE  tbl_service_host  (
        host_id           varchar(50)    NOT NULL,        --服务器ID
+       user_id           varchar(50)    DEFAULT NULL，   --用户Id
        name              varchar(100)   DEFAULT NULL,    --服务器名称
        address           varchar(255)   DEFAULT NULL,    --地址
        architecture      varchar(100)   DEFAULT NULL,    --架构
@@ -228,5 +248,20 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
        port          int4         NOT NULL,  --端口
        workload_id   varchar(50)  NOT NULL,  --模拟部署的ID
        create_time   varchar(50)  NOT NULL   --创建时间
+  );
+```
+
+- tbl_release_config: 存储应用发布对应的配置信息
+```
+  CREATE TABLE IF NOT EXISTS tbl_release_config (
+         release_id            varchar(255)     NOT NULL,             --应用发布id
+         project_id            varchar(255)     NOT NULL,             --项目id
+         guide_file_id         varchar(255)     DEFAULT NULL,         --指导文档ID
+         appinstance_id        varchar(255)     DEFAULT NULL,         --实例化ID
+         capabilities_detail   text             DEFAULT NULL,         --应用配置信息
+         atp_test              text             DEFAULT NULL,         --atp测试结果
+         test_status           varchar(255)     DEFAULT NULL,         --测试状态
+         create_time           timestamptz(0)   NOT NULL DEFAULT NULL,--创建时间
+         CONSTRAINT tbl_release_config_pkey PRIMARY KEY (release_id)
   );
 ```
