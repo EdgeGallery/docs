@@ -72,7 +72,8 @@ Developer Interfaces
     - [10.2 POST release config](#102-post-release-config)
     - [10.3 PUT release config](#103-put-release-config)
   - [11. DeployConfig](#11-deployconfig)
-    - [11.1 GET health](#81-get-health)
+    - [11.1 GET deploy platform](#111-get-deploy-platform)
+    - [11.2 PUT deploy platform](#112-put-deploy-platform)
  
 
 
@@ -2943,5 +2944,52 @@ Example response:
   },
   "testStatus": "string",
   "createTime": "2020-12-29T03:31:13.204Z"
+}
+```
+
+
+## 11. DeployConfig
+Get some config about deploy platform
+### 11.1 GET deploy platform
+Get deploy platform
+```
+Resource URI: /mec/developer/v1/config/deploy-platform
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+
+Example response:
+```
+200 OK
+{
+  "isVirtualMachine": false,
+  "virtualMachineUrl": "string"
+}
+```
+
+### 11.2 PUT deploy platform
+PUT deploy platform
+```
+Resource URI: /mec/developer/v1/config/deploy-platform
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|DeployPlatformConfig|entityclass|bodyparam|yes|
+
+```
+DeployPlatformConfig:
+{
+  "isVirtualMachine": false,
+  "virtualMachineUrl": "string"
+}
+```
+Example response:
+```
+200 OK
+{
+  "isVirtualMachine": false,
+  "virtualMachineUrl": "string"
 }
 ```
