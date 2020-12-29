@@ -49,7 +49,9 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
     * AppStore联邦，可注册外部AppStore，应用在不同AppStore间可相互推送和拉取
 
  **PoC Test Report**
-  参加[EdgeGallery v1.0.0 PoC Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)
+
+  参见[EdgeGallery v1.0.0 PoC Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)
+
  **Bug Fixes**
 
   参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)
