@@ -272,9 +272,12 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
 ```
 200 OK
   {
-    "csarId": "string",
-    "downloadUrl": "string",
-    "iconUrl": "string",
+    "packageId": "string",
+    "userName": "string",
+    "status": "string",
+    "shortDesc": "string",
+    "provider": "string",
+    "testTaskId": "string",
     "size": "string",
     "format": "string",
     "createTime": "string",
@@ -285,7 +288,8 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
     "affinity": "string",
     "industry": "string",
     "contact": "string",
-    "appId": "string"
+    "appId": "string",
+    "userId": "string"
   }
 ```
 
@@ -298,6 +302,8 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
 
 |名称|描述|IN|必选|
 |---|---|---|---|
+|userId |用户Id|request param|yes|
+|userName |用户名|request param|yes|
 |appId |应用ID|path |yes|
 |packageId |应用包ID|path |yes|
 
@@ -335,8 +341,8 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |package id|path |yes|
-|appId |应用ID|path |yes|
 |filePath |file path|FormParam |yes|
+|appId |应用ID|path |yes|
 
 响应示例:
 ```

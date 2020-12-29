@@ -272,9 +272,12 @@ Example response:
 ```
 200 OK
   {
-    "csarId": "string",
-    "downloadUrl": "string",
-    "iconUrl": "string",
+    "packageId": "string",
+    "userName": "string",
+    "status": "string",
+    "shortDesc": "string",
+    "provider": "string",
+    "testTaskId": "string",
     "size": "string",
     "format": "string",
     "createTime": "string",
@@ -285,7 +288,8 @@ Example response:
     "affinity": "string",
     "industry": "string",
     "contact": "string",
-    "appId": "string"
+    "appId": "string",
+    "userId": "string"
   }
 ```
 
@@ -298,6 +302,8 @@ Method: DELETE
 
 |Name|Definition|type|Required|
 |---|---|---|---|
+|userId |user id|request param|yes|
+|userName |user name|request param|yes|
 |appId |app id|path |yes|
 |packageId |package id|path |yes|
 
@@ -335,8 +341,8 @@ Method: POST
 |Name|Definition|type|Required|
 |---|---|---|---|
 |packageId |package id|path |yes|
-|appId |app id|path |yes|
 |filePath |file path|FormParam |yes|
+|appId |app id|path |yes|
 
 Example response:
 ```
