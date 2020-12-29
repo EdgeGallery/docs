@@ -48,8 +48,9 @@ Developer Interfaces
 	- [5.4 DELETE one EdgeGalleryCapability](#54-delete-one-edgegallerycapability)
 	- [5.5 GET all EdgeGalleryCapability](#55-get-all-edgegallerycapability)
 	- [5.6 GET all EdgeGalleryCapability by groupid](#56-get-all-edgegallerycapability-by-groupid)
-	- [5.7 GET all EdgeGallery API](#57-get-all-edgegallery-api)
+	- [5.7 GET all EdgeGallery API by fileId](#57-get-all-edgegallery-api-by-fileId)
 	- [5.8 GET all EdgeGallery ECO API](#58-get-all-edgegallery-eco-api)
+  - [5.9 GET all EdgeGallery API](#59-get-all-edgegallery-api)
   - [6. File](#6-file)
     - [6.1 GET one file](#61-get-one-file)
     - [6.2 POST upload one file](#62-post-upload-one-file)
@@ -1921,6 +1922,7 @@ Resource URI: /mec/developer/v1/capability-groups/capabilities/{capabilityId}
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |capabilityId|capabilityid|pathparam|yes|
+|userId|userId|requestparam|yes|
 
 Example response:
 ```
@@ -1944,7 +1946,9 @@ Example response:
 [
   {
     "groupId": "string",
-    "name": "string",
+    "oneLevelName": "string",
+    "twoLevelName": "string",
+    "threeLevelName": "string",
     "type": "OPENMEP",
     "description": "string",
     "capabilityDetailList": [
@@ -1955,11 +1959,19 @@ Example response:
         "version": "string",
         "description": "string",
         "provider": "string",
-        "apiFileId": "string"
+        "apiFileId": "string",
+        "guideFileId": "string",
+        "uploadTime": "2020-12-29T02:12:28.030Z",
+        "port": 0,
+        "host": "string",
+        "protocol": "string",
+        "appId": "string",
+        "packageId": "string",
+        "userId": "string"
       }
     ]
   }
-  ]
+]
 ```
 
 ### 5.6 GET all EdgeGalleryCapability by groupid
@@ -1977,7 +1989,9 @@ Example response:
 200 OK
 {
   "groupId": "string",
-  "name": "string",
+  "oneLevelName": "string",
+  "twoLevelName": "string",
+  "threeLevelName": "string",
   "type": "OPENMEP",
   "description": "string",
   "capabilityDetailList": [
@@ -1988,34 +2002,50 @@ Example response:
       "version": "string",
       "description": "string",
       "provider": "string",
-      "apiFileId": "string"
+      "apiFileId": "string",
+      "guideFileId": "string",
+      "uploadTime": "2020-12-29T02:12:28.030Z",
+      "port": 0,
+      "host": "string",
+      "protocol": "string",
+      "appId": "string",
+      "packageId": "string",
+      "userId": "string"
     }
   ]
-  }
+}
 ```
 
-### 5.7 GET all EdgeGallery API
+### 5.7 GET all EdgeGallery API by fileId
 Gey all EdgeGallery  API
 ```
-Resource URI: /mec/developer/v1/capability-groups/openmep-api
+Resource URI: /mec/developer/v1/capability-groups/openmep-api/{fileId}
 ```
 
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
+|fileId|file id|pathparam|yes|
 
 Example response:
 ```
 200 OK
 {
-  "openMeps": [
-    {
-      "name": "string",
-      "service": "string",
-      "description": "string",
-      "apiFileId": "string"
-    }
-  ]
-  }
+  "detailId": "string",
+  "groupId": "string",
+  "service": "string",
+  "version": "string",
+  "description": "string",
+  "provider": "string",
+  "apiFileId": "string",
+  "guideFileId": "string",
+  "uploadTime": "2020-12-29T02:12:28.030Z",
+  "port": 0,
+  "host": "string",
+  "protocol": "string",
+  "appId": "string",
+  "packageId": "string",
+  "userId": "string"
+}
 ```
 
 ### 5.8 GET all EdgeGallery ECO API
@@ -2040,6 +2070,52 @@ Example response:
     }
   ]
   }
+```
+
+### 5.9 GET all EdgeGallery API
+Gey all EdgeGallery ECO API
+```
+Resource URI: /mec/developer/v1/capability-groups/open-api/{type}
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|type|api type|pathparam|yes|
+
+Example response:
+```
+200 OK
+{
+  "openCapability": [
+    {
+      "groupId": "string",
+      "oneLevelName": "string",
+      "twoLevelName": "string",
+      "threeLevelName": "string",
+      "type": "OPENMEP",
+      "description": "string",
+      "capabilityDetailList": [
+        {
+          "detailId": "string",
+          "groupId": "string",
+          "service": "string",
+          "version": "string",
+          "description": "string",
+          "provider": "string",
+          "apiFileId": "string",
+          "guideFileId": "string",
+          "uploadTime": "2020-12-29T02:12:28.030Z",
+          "port": 0,
+          "host": "string",
+          "protocol": "string",
+          "appId": "string",
+          "packageId": "string",
+          "userId": "string"
+        }
+      ]
+    }
+  ]
+}
 ```
 
 
