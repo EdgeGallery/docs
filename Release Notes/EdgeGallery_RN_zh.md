@@ -48,24 +48,25 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
     * 引入插件式应用框架[Crane-framework](https://gitee.com/edgegallery/crane-framework)
     * AppStore联邦，可注册外部AppStore，应用在不同AppStore间可相互推送和拉取
 
-
+ **PoC Test Report**
+  参加[EdgeGallery v1.0.0 PoC Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)
  **Bug Fixes**
 
-  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report.md)
+  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)
 
  **Known Issues**
 
-  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report.md)
+  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)
 
  **Security Notes**
 
  *Fixed Security Issues*
 
-  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report.md)
+  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)
 
  *Known Security Issues*
 
-  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report.md)
+  参见 [Edgeggallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)
 
  *Known Vulnerabilities in Used Modules*
 
