@@ -1618,19 +1618,7 @@ Resource URI: /mec/developer/v1/projects/{projectId}/action/atp
 Example response:
 ```
 200 OK
-{
-  "images": [
-    {
-      "id": "string",
-      "name": "string",
-      "port": 0,
-      "version": "string",
-      "projectId": "string",
-      "type": "PLATFORM",
-      "nodePort": 0
-    }
-  ]
-  }
+true
 ```
 
 ## 4. Host
