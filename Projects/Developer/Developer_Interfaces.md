@@ -1878,8 +1878,16 @@ OpenMepCapabilityDetail
   "version": "string",
   "description": "string",
   "provider": "string",
-  "apiFileId": "string"
-  }
+  "apiFileId": "string",
+  "guideFileId": "string",
+  "uploadTime": "2020-12-29T02:12:28.030Z",
+  "port": 0,
+  "host": "string",
+  "protocol": "string",
+  "appId": "string",
+  "packageId": "string",
+  "userId": "string"
+}
 ```
 
 Example response:
@@ -1892,8 +1900,16 @@ Example response:
   "version": "string",
   "description": "string",
   "provider": "string",
-  "apiFileId": "string"
-  }
+  "apiFileId": "string",
+  "guideFileId": "string",
+  "uploadTime": "2020-12-29T02:12:28.030Z",
+  "port": 0,
+  "host": "string",
+  "protocol": "string",
+  "appId": "string",
+  "packageId": "string",
+  "userId": "string"
+}
 ```
 
 ### 5.4 DELETE one EdgeGalleryCapability
