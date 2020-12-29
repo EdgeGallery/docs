@@ -62,7 +62,8 @@ Developer Interfaces
     - [6.8 GET sdk code](#68-get-sdk-code)
   - [7. LocalApi](#7-localapi)
     - [7.1 GET one api file](#71-get-one-api-file)
-	
+	- [8. Health](#8-health)
+    - [8.1 GET health](#81-get-health)
 
  
 
@@ -2312,4 +2313,22 @@ Example response:
 ```
 200 OK
 binary output
+```
+
+
+## 8. Health
+Get health
+### 8.1 GET health
+Get health
+```
+Resource URI: /mec/developer/v1/health
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+
+Example response:
+```
+200 OK
+string output
 ```
