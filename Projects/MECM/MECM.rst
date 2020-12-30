@@ -30,6 +30,7 @@ MECM
        Appo Interfaces<Appo_Interfaces_en>
        Inventory Interfaces<Inventory_Interfaces_en>
        AppRule Manager Interfaces<MECM_AppRule_Manager>
+       K8s plugin Interface<K8s_Interfaces>
 
 **Database Designs数据库设计**
 *************************
