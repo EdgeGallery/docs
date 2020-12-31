@@ -2,9 +2,9 @@ K8s plugin Interfaces
 ==============
 The document is for the K8s plugin project.
 
-###InstantiateRequest
+### InstantiateRequest
 
-Application instantiated 
+Application instantiated
 
 |Field|Type|Label|Description
 |---|---|---|---|
@@ -15,7 +15,7 @@ Application instantiated
 |ak|string|required|Alphanumeric characters|
 |sk|string|required|Alphanumeric characters|
 
-###InstantiateResponse
+### InstantiateResponse
 
 Represents the InstantiateRequest status.
 
@@ -23,7 +23,7 @@ Represents the InstantiateRequest status.
 |---|---|---|---|
 |status|string|required|Status of the instantiate request|
 
-###TerminateRequest
+### TerminateRequest
 
 Terminates application instance id
 
@@ -33,7 +33,7 @@ Terminates application instance id
 |appInstanceId|string|required|Valid UUID|
 |hostIp|string|required|Valid IP|
 
-###TerminateResponse
+### TerminateResponse
 
 Represents the TerminateRequest status.
 
@@ -41,7 +41,7 @@ Represents the TerminateRequest status.
 |---|---|---|---|
 |status|string|required|Status of the terminate request|
 
-###QueryRequest
+### QueryRequest
 
 Get statistics information 
 
@@ -51,7 +51,7 @@ Get statistics information
 |appInstanceId|string|required|Valid UUID|
 |hostIp|string|required|Valid IP|
 
-###QueryResponse 
+### QueryResponse 
 
 Represents the QueryRequest status.
 
@@ -60,7 +60,7 @@ Represents the QueryRequest status.
 |status|string|required|Status of the Query request|
 
 
-###UploadCfgRequest
+### UploadCfgRequest
 
 Upload Config File
 
@@ -70,7 +70,7 @@ Upload Config File
 |hostIp|string|required|Valid IP|
 |configFile|formData|required|Provide valid config file|
 
-###UploadCfgResponse
+### UploadCfgResponse
 
 Represents the UploadCfgRequest status.
 
@@ -78,7 +78,7 @@ Represents the UploadCfgRequest status.
 |---|---|---|---|
 |status|string|required|Status of the UploadCfgRequest|
 
-###RemoveCfgRequest
+### RemoveCfgRequest
 
 Removes the config file 
 
@@ -87,7 +87,7 @@ Removes the config file
 |accessToken|string|required|Provide the required access token|
 |hostIp|string|required|Valid IP|
 
-###RemoveCfgResponse
+### RemoveCfgResponse
 
 |Field|Type|Label|Description
 |---|---|---|---|
