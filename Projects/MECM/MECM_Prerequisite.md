@@ -17,7 +17,7 @@ Prerequisite
 
 2. Configure the runtime environment variables of MainServer in the compiler (here in IDEA as an example)
 
-![](/uploads/images/2020/0924/mecm-usr-env.png.png "mecm-usr-env.png.png")
+![](/uploads/images/2020/0924/mecm-usr-env.png "mecm-usr-env.png.png")
 
 3. Run the MainServer function and start UserManagement
 
