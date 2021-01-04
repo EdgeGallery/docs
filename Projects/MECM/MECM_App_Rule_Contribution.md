@@ -14,4 +14,4 @@ This section will guide developers to build App Rule Manager module locally and 
 
 ![](/uploads/images/2020/0924/mepm-applcm-ssl.png "mepm-applcm-ssl.png")
 
-4. Run main to start App Rule Manager
+3. Run main to start App Rule Manager

@@ -10,6 +10,7 @@ This section will guide developers to build Inventory module locally and help de
  code 
 
 The local startup of Inventory depends on：
+
 ```
 - DataBase
 ```
