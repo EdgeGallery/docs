@@ -85,7 +85,7 @@ MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery�
     - Step4 应用开发者通过链接对应用进行测试，修改镜像后，循环以上Step1->Step2->Step3操作，对应用进行反复测试
     - Step5 测试完成后，通过【资源回收】按钮释放测试环境
 
-![](/uploads/images/2020/v1.0/DeploymentTest-EnvironmentSelection.png "DeploymentTest-EnvironmentSelection.png")
+![](/uploads/images/2020/v1.0/DeploymentTest.png "DeploymentTest.png")
 
 ![](/uploads/images/2020/v1.0/DeploymentTest-DeploySuccess.png "DeploymentTest-DeploySuccess.png")
 
