@@ -7,7 +7,7 @@ User Management模块是为EdgeGallery项目提供用户管理的基本能力，
 
 ## 部署关系
 
-![部署图](/uploads/images/2020/user-mgmt/user-mgmt关系图.PNG)
+![部署图](/uploads/images/2020/user-mgmt/user-mgmt-overview.PNG)
 
 User-mgmt模块主要包含四个模块：
 - Portal：提供登录/登出的界面操作
