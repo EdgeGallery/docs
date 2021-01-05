@@ -28,8 +28,8 @@ https://daily.developer.edgegallery.org/<br><br>
 ![](/uploads/images/2020/v1.0/AbilitySelection.png "AbilitySelection.png")
 
 ## 本地开发
-* 下载依赖的插件-pythonPlugin，并导入到本地IDE<br>
-![](/uploads/images/2020/0927/download_plugin.png "下载插件.png")
+* 下载依赖的插件-BashSupport，并导入到本地IDE<br>
+![](/uploads/images/2020/v1.0/Plug-in.png "Plug-in.png")
 * 执行插件，会自动生成示例代码<br>
 ![](/uploads/images/2020/0927/execute_plugin.png "执行插件生成示例代码.png")
 * 编写APP代码<br>
