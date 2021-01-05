@@ -11,7 +11,7 @@ MEC管理平台：<br>
 
 # APP开发流程
 -------------------
-![](/uploads/images/2020/0927/development_flow.png "开发流程图.png")<br>
+![](/uploads/images/2020/v1.0/FlowChart.png "FlowChart.png")<br>
 
 # Demo介绍
 -------------------
