@@ -1,13 +1,13 @@
 # EdgeGallery界面一览
 -------------------
 开发者平台：<br>
-![](/uploads/images/2020/0927/developer_home_page.png "开发者平台.png")<br>
+![](/uploads/images/2020/v1.0/Developer.png "Developer.png")<br>
 
 应用商城：<br>
-![](/uploads/images/2020/0927/appstore_home_page.png "应用商城.png")<br>
+![](/uploads/images/2020/v1.0/AppStore.png "AppStore.png")<br>
 
 MEC管理平台：<br>
-![](/uploads/images/2020/0927/mecm_home_page.png "MECM管理平台.png")<br>
+![](/uploads/images/2020/v1.0/Mecm.png "Mecm.png")<br>
 
 # APP开发流程
 -------------------
