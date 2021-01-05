@@ -34,28 +34,27 @@ https://daily.developer.edgegallery.org/<br><br>
 ![](/uploads/images/2020/0927/execute_plugin.png "执行插件生成示例代码.png")
 * 编写APP代码<br>
 * 构建docker image<br><br>
-## 部署测试
-* 回到EdgeGallery开发者平台上传image<br>
-![](/uploads/images/2020/0927/upload_image.png "上传image.png")
-* 配置依赖参数<br>
-![](/uploads/images/2020/0927/config_params.png "配置依赖参数.png")
-* 选择部署节点<br>
-![](/uploads/images/2020/0927/select_server.png "选择部署节点.png")<br>
-部署成功后可以使用对应的URL进行应用测试。<br>
-![](/uploads/images/2020/0927/deployment.png "部署成功.png")<br><br>
-## 应用发布
-点击“测试完成”按钮，选择是否发布应用到APPStore、是否发布应用API能力到EdgeGallery生态系统<br>
-![](/uploads/images/2020/0927/111041_c5004536_7625241.png "屏幕截图.png")<br>
-访问APPStore：https://daily.appstore.edgegallery.org/，可以找到发布的应用。<br>
-![](/uploads/images/2020/0927/111833_bb36fd2b_7625241.png "屏幕截图.png")<br><br>
-## 应用部署管理
-访问MECM：https://daily.mecm.edgegallery.org/<br>
-![](/uploads/images/2020/0927/112141_2f32426e_7625241.png "屏幕截图.png")<br>
-* 分发应用到边缘节点<br>
-![](/uploads/images/2020/0927/161230_821e2b70_7625241.png "屏幕截图.png")
-* 应用部署<br>
-![](/uploads/images/2020/0927/161426_0814bb76_7625241.png "屏幕截图.png")<br>
-![](/uploads/images/2020/0927/161505_1d05c04b_7625241.png "屏幕截图.png")<br><br><br>
+## 部署调测
+* 部署调测页面可进行应用的部署测试
+
+ 第一步：上传App镜像，此页面提供了集中上传App镜像的方式，目前未实现。目前版本实现的是通过上传Yaml方式来部署镜像，或通过用户使用公网连接边缘节点进行部署
+![](/uploads/images/2020/v1.0/DeploymentTest-UploadImage.png "DeploymentTest-UploadImage.png")
+
+ 第二步：配置部署文件，此页面提供Yaml文件上传入口，以及可视化配置（此版本未实现）。并对上传的Yaml文件进行可用性校验，校验通过后可选择下一步进行部署测试
+![](/uploads/images/2020/v1.0/DeploymentTest-ConfigurationFile.png "DeploymentTest-ConfigurationFile.png")
+
+ 第三步：部署调测
+![](/uploads/images/2020/v1.0/DeploymentTest.png "DeploymentTest.png")
+
+
+##  应用发布
+* 应用发布页面可进行应用配置、应用认证测试，测试通过后可将应用发布至应用仓库。
+
+![](/uploads/images/2020/v1.0/ApplicationRelease-1.png "ApplicationRelease-1.png")
+
+![](/uploads/images/2020/v1.0/ApplicationRelease-2.png "ApplicationRelease-2.png")
+
+![](/uploads/images/2020/v1.0/ApplicationRelease-3.png "ApplicationRelease-3.png")
 
 详细信息可参考：
 [视频](https://gitee.com/edgegallery/community/blob/master/TSC/Release/v0.9/EdgeGallery%20Demo%20Recording.mp4)
