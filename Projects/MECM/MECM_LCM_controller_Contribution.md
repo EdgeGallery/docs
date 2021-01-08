@@ -54,11 +54,11 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 ### How to generate swagger documentation for Lcm Controller
 
-    Download [LCM Controller Code](https://gitee.com/edgegallery/mecm-applcm)
+ Download [LCM Controller Code](https://gitee.com/edgegallery/mecm-applcm)
 
 ### Prerequisites
 
-Step 1 - Install go lang
+####Step 1 - Install go lang
 
     cd ~
 
@@ -84,7 +84,7 @@ Step 1 - Install go lang
 
     source ~/.profile
 
-Step 2 - Install bee
+####Step 2 - Install bee
 
     You will need to install or upgrade Beego and the Bee dev tool:
 
@@ -98,7 +98,7 @@ Step 2 - Install bee
 
     Change runmode configuration to dev from prod in app.conf file
 
-    Now coming to the auto-generation of documentation, end the server’s session and use this command :
+    Now coming to the auto-generation of documentation, end the server’s session and use this command:
 
     bee run -gendoc=true -downdoc=true
 
