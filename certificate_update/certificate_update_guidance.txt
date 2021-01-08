@@ -1,7 +1,7 @@
 
 Edgegallery证书更新
 
- 由于edgegallery ca证书有效期仅为365天，在365天后edgegallery 环境日志会提示‘certificate have expired’，这是edgegallery 证书过期的提示，这事就需要去手动更新证书。
+ 由于edgegallery ca证书有效期仅为365天，在环境运行365天后edgegallery 环境日志会提示‘certificate have expired’，这是edgegallery 证书过期的提示，就需要去手动更新证书。
  证书更行步骤：
  cd  conf/keys    //cd到安装包的 conf/keys
  rm -rf ca.crt    //删除ca.crt证书
@@ -76,7 +76,7 @@ Edgegallery证书更新
     --from-file=jwt_publickey=jwt_publickey \
     --from-file=jwt_encrypted_privatekey=jwt_encrypted_privatekey
 
-
+secret更新完成后环境就可以正常使用
 
 
 
