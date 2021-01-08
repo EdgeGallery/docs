@@ -1,5 +1,6 @@
 
- Edgegallery证书更新
+Edgegallery证书更新
+
  由于edgegallery ca证书有效期仅为365天，在365天后edgegallery 环境日志会提示‘certificate have expired’，这是edgegallery 证书过期的提示，这事就需要去手动更新证书。
  证书更行步骤：
  cd  conf/keys    //cd到安装包的 conf/keys
@@ -27,7 +28,7 @@
       --from-file=server_key.pem=encryptedtls.key \
       --from-literal=cert_pwd=te9Fmv%qaq
 	  
-  更新mep secret,下面是生成证书的步骤
+  更新mep secret,以下是生成证书的步骤
   mkdir /root/mep_key
   cd   /root/mep_key
   执行以下命令生成mep证书
