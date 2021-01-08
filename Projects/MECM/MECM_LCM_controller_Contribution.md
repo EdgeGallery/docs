@@ -58,7 +58,7 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 ### Prerequisites
 
-####Step 1 - Install go lang
+Step 1 - Install go lang
 
     cd ~
 
@@ -84,7 +84,7 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
     source ~/.profile
 
-####Step 2 - Install bee
+Step 2 - Install bee
 
     You will need to install or upgrade Beego and the Bee dev tool:
 
@@ -102,6 +102,6 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
     bee run -gendoc=true -downdoc=true
 
-    Now, go to the browser and type :
-
+    Now, go to the browser and type: 
+    
     https://localhost:8094/swagger/
