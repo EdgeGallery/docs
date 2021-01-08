@@ -54,54 +54,54 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 ### How to generate swagger documentation for Lcm Controller
 
-1. Download [LCM Controller Code](https://gitee.com/edgegallery/mecm-applcm)
+    Download [LCM Controller Code](https://gitee.com/edgegallery/mecm-applcm)
 
 ### Prerequisites
 
 Step 1 - Install go lang
 
-cd ~
+    cd ~
 
-curl -O https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
+    curl -O https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
 
-tar xvf go1.10.3.linux-amd64.tar.gz
+    tar xvf go1.10.3.linux-amd64.tar.gz
 
-sudo chown -R root:root ./go
+    sudo chown -R root:root ./go
 
-sudo mv go /usr/local
+    sudo mv go /usr/local
 
-sudo nano ~/.profile
+    sudo nano ~/.profile
 
-export GOPATH=$HOME/mecm-applcm
+    export GOPATH=$HOME/mecm-applcm
 
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+    export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
-export GOROOT=$HOME/go
+    export GOROOT=$HOME/go
 
-export GOPATH=$HOME/mecm-applcm
+    export GOPATH=$HOME/mecm-applcm
 
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+    export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
-source ~/.profile
+    source ~/.profile
 
 Step 2 - Install bee
 
-You will need to install or upgrade Beego and the Bee dev tool:
+    You will need to install or upgrade Beego and the Bee dev tool:
 
-go get -u github.com/beego/beego/v2
+    go get -u github.com/beego/beego/v2
 
-go get -u github.com/beego/bee/v2
+    go get -u github.com/beego/bee/v2
 
-bee 
+    bee 
 
 ![](/uploads/images/2020/0924/bee-output.png "bee-output.png")
 
-Change runmode configuration to dev from prod in app.conf file
+    Change runmode configuration to dev from prod in app.conf file
 
-Now coming to the auto-generation of documentation, end the server’s session and use this command :
+    Now coming to the auto-generation of documentation, end the server’s session and use this command :
 
-bee run -gendoc=true -downdoc=true
+    bee run -gendoc=true -downdoc=true
 
-Now, go to the browser and type :
+    Now, go to the browser and type :
 
-https://localhost:8484/swagger/
+    https://localhost:8484/swagger/
