@@ -104,4 +104,4 @@ Step 2 - Install bee
 
     Now, go to the browser and type :
 
-    https://localhost:8484/swagger/
+    https://localhost:8094/swagger/
