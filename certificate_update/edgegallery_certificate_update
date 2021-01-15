@@ -6,7 +6,9 @@ Edgegallery证书更新
  rm -rf ca.crt    //删除ca.crt证书
  rm -rf tls.crt   //删除tls.crt证书
  docker images | grep deploy-tool  检查deploy-tool镜像是否存在
- docker run 365 -v  /root/eg/conf/keys/:/certs edgegallery/deploy-tool:latest     //把/root/eg/conf/keys/目录替换为自己环境目录，需要是绝对路径,运行此命令生成新的证书
+ export CERT_VALIDITY_IN_DAYS=365
+ env="-e CERT_VALIDITY_IN_DAYS=$CERT_VALIDITY_IN_DAYS"
+ docker run $env -v  /root/eg/conf/keys/:/certs edgegallery/deploy-tool:latest     //把/root/eg/conf/keys/目录替换为自己环境目录，需要是绝对路径,运行此命令生成新的证书
  kubectl  get secret | grep mecm-mepm-ssl-secret     //检查mecm-mepm-ssl-secret是否存在
  kubectl  delete secret mecm-mepm-ssl-secret         //删除mecm-mepm-ssl-secret
  kubectl  get secret | grep edgegallery-ssl-secret   //检查edgegallery-ssl-secret是否存在
