@@ -56,6 +56,7 @@ https://daily.developer.edgegallery.org/<br><br>
 
 ![](/uploads/images/2020/v1.0/ApplicationRelease-3.png "ApplicationRelease-3.png")
 
+
 详细信息可参考：
 [视频](https://gitee.com/edgegallery/community/blob/master/TSC/Release/v0.9/EdgeGallery%20Demo%20Recording.mp4)
 
