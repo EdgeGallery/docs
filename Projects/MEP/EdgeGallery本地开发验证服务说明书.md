@@ -2099,14 +2099,9 @@ root@ubuntu:/home/EG-LDVSmep-agent# docker build --no-cache -t edgegallery/mep-a
 ```
 root@ubuntu:/home/EG-LDVS/mep-agent# mkdir –p /tmp/mepagent-conf/
 root@ubuntu:/home/EG-LDVS/mep-agent# cp conf/app_conf.yaml /tmp/mepagent-conf/
-root@ubuntu:~# cat > /tmp/mepagent-conf/mepagent.properties << EOF
-ACCESS_KEY=QVUJMSUMgS0VZLS0tLS0
-SECRET_KEY=DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc
-EOF
 root@ubuntu:/home/EG-LDVS/mep-agent# chown -R eguser:eggroup /tmp/mepagent-conf/
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod -R 640 /tmp/mepagent-conf/
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /tmp/mepagent-conf/app_conf.yaml
-root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /tmp/mepagent-conf/mepagent.properties
 
 # 运行mep-agent容器，完成mec app服务注册（注：运行前请先获取AK及SK，并完成MEC APP部署，根据部署的MEC APP的实际信息修改app_instance_info配置文件，此次假定app_instance_info.yaml保存在/home/EG-LDVS/mep-agent/conf路径下。）
 root@ubuntu:/home/EG-LDVS/mep-agent# chown -R eguser:eggroup /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml
@@ -2123,17 +2118,13 @@ root@ubuntu:/home/EG-LDVS/mep-agent/conf# docker run -itd --name mepagent \
          -e "CA_CERT=/usr/mep/ssl/ca.crt" \
          -e "CA_CERT_DOMAIN_NAME=edgegallery " \
          -v /tmp/mepagent-conf/app_conf.yaml:/usr/mep/conf/app\_conf.yaml:ro \
-         -v /tmp/mepagent-conf/mepagent.properties:/usr/mep/mepagent.properties\
          -v /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml:/usr/mep/conf/app_instance_info.yaml:ro\ #可选， mep-agent默认自带一份样例app_instance_info.yaml用于注册
          edgegallery/mep-agent:1.0
 ```
 注：
-出于安全性考虑，mepagent容器启动后会将/tmp/mepagent-conf/mepagent.properties文件的内容删除，以防信息泄露。
-
-同时我们建议用户在mepagent容器正常启动后删除/tmp/mepagent-conf目录下的app_conf.yaml文件及mepagent.properties文件。
+出于安全性考虑，我们建议用户在mepagent容器正常启动后删除/tmp/mepagent-conf目录下的app_conf.yaml文件。
 ```
 root@ubuntu:~# rm –f /tmp/mepagent-conf/app_conf.yaml
-root@ubuntu:~# rm –f /tmp/mepagent-conf/mepagent.properties
 ```
 
 Mep-agent执行MEC App服务注册的流程：
