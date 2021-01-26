@@ -2183,9 +2183,6 @@ serAvailabilityNotificationSubscriptions:
       isLocal: true
 ```
 
-其中serName为注册到Mep的MEC APP服务名称，uris为与Mep-agent一同部署的MEC
-APP的url路径，需要用户根据MEC App的实际信息与部署情况填写。
-
 **注：单个应用注册的服务数量以及可用/终止事件订阅数量均应不超过50个，超出后服务将报错。**
 
 Mep-agent容器内日志路径为/usr/mep/log/mep-agent.log，用户可以根据日志内容可查看Mep-agent
