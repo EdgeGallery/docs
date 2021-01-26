@@ -2105,8 +2105,7 @@ root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /tmp/mepagent-conf/app_conf.yaml
 
 # 运行mep-agent容器，完成mec app服务注册（注：运行前请先获取AK及SK，并完成MEC APP部署，根据部署的MEC APP的实际信息修改app_instance_info配置文件，此次假定app_instance_info.yaml保存在/home/EG-LDVS/mep-agent/conf路径下。）
 root@ubuntu:/home/EG-LDVS/mep-agent# chown -R eguser:eggroup /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml
-#可选，mep-agent默认自带一份样例app_instance_info.yaml用于注册
-root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml #可选，mep-agent默认自带一份样例app_instance_info.yaml用于注册**
+root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml
 root@ubuntu:/home/EG-LDVS/mep-agent# cd conf
 root@ubuntu:/home/EG-LDVS/mep-agent/conf# docker run -itd --name mepagent \
          --cap-drop All \
@@ -2114,8 +2113,9 @@ root@ubuntu:/home/EG-LDVS/mep-agent/conf# docker run -itd --name mepagent \
          -e MEP_APIGW_PORT=8443 \
          -e MEP_AUTH_ROUTE=mepauth \
          -e ENABLE_WAIT=true \
-         -e AK=QVUJMSUMgS0VZLS0tLS0
-         -e SK=DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc
+         -e AK=QVUJMSUMgS0VZLS0tLS0 \
+         -e SK=DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc \
+         -e APPINSTID=5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f \
          -v /home/EG-LDVS/mepserver/ca.crt:/usr/mep/ssl/ca.crt:ro \
          -e "CA_CERT=/usr/mep/ssl/ca.crt" \
          -e "CA_CERT_DOMAIN_NAME=edgegallery " \
@@ -2142,54 +2142,42 @@ Mep-agent执行MEC App服务注册的流程：
 Mep-agent 配置文件 app_instance_info.yaml样例：
 
 ```
-# sample config yaml
-appInstanceId: 5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f
 serviceInfoPosts:
-  - serName: ExampleService10
+  - serName: position-service
     serCategory:
       href: "/example/catalogue1"
-      id: 57d75ef9-ca6a-47b7-bc3e-93b9d15d8efb
-      name: RNI
-      version: 1.0.2
-    version: 1.0.1
+      id: id12345
+      name: position-service
+      version: 1.0
+    version: 1.0
     state: ACTIVE
-    transportId: 6aca7e8c-d7f0-4a92-9374-b582d60ff104
+    transportId: Rest1
     transportInfo:
-      id: 6aca7e8c-d7f0-4a92-9374-b582d60ff104
+      id: 33b13d69-79ff-4d4f-bb61-eb7d81f59b44
       name: REST
       description: REST API
       type: REST_HTTP
       protocol: HTTP
       version: '2.0'
       endpoint:
-        uris:
-         - http://ExampleService:30005
-      security:
-        oAuth2Info:
-          tokenEndpoint: /mecSerMgmtApi/security/TokenEndPoint
-          grantTypes:
-            - OAUTH2_CLIENT_CREDENTIALS
+        addresses:
+          - host: position-service.default
+            port: 9997
       implSpecificInfo: {}
     serializer: JSON
     scopeOfLocality: MEC_SYSTEM
     consumedLocalOnly: false
     isLocal: true
+    livenessInterval: 60
 serAvailabilityNotificationSubscriptions:
   - subscriptionType: SerAvailabilityNotificationSubscription
-    callbackReference: string
+    callbackReference: "http://positioning-service:9997/mep-agent/v1/servicestate"
     links:
       self:
         href: /mecSerMgmtApi/example
     filteringCriteria:
-      serInstanceIds:
-        - a4fab6fa-9ac7-4e29-8af6-082223cd13fc
       serNames:
-        - ExampleService
-      serCategories:
-        - href: /example/catalogue1
-          id: 57d75ef9-ca6a-47b7-bc3e-93b9d15d8efb
-          name: RNI
-          version: v1
+        - faceRecog101
       states:
         - ACTIVE
       isLocal: true
