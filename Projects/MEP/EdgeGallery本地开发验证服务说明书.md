@@ -2103,7 +2103,7 @@ root@ubuntu:/home/EG-LDVS/mep-agent# chown -R eguser:eggroup /tmp/mepagent-conf/
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod -R 640 /tmp/mepagent-conf/
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /tmp/mepagent-conf/app_conf.yaml
 
-# 运行mep-agent容器，完成mec app服务注册（注：运行前请先获取AK及SK，并完成MEC APP部署，根据部署的MEC APP的实际信息修改app_instance_info配置文件，此次假定app_instance_info.yaml保存在/home/EG-LDVS/mep-agent/conf路径下。）
+# 运行mep-agent容器，完成mec app服务注册（注：运行前请先获取AK及SK，并完成MEC APP部署，根据部署的MEC APP的实际信息修改app_instance_info配置文件，内容见Mep-agent 配置文件 app_instance_info.yaml样例，此次假定app_instance_info.yaml保存在/home/EG-LDVS/mep-agent/conf路径下。）
 root@ubuntu:/home/EG-LDVS/mep-agent# chown -R eguser:eggroup /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml
 root@ubuntu:/home/EG-LDVS/mep-agent# cd conf
@@ -2139,7 +2139,7 @@ Mep-agent执行MEC App服务注册的流程：
 
 请求头header携带token，Mep-Agent读取app_instance_info.yaml文件中的配置参数，转化为对象，放在body中，EG-LDVS MEP通过携带的token来进行鉴权，完成服务注册
 
-Mep-agent 配置文件 app_instance_info.yaml样例：
+##### Mep-agent 配置文件 app_instance_info.yaml样例：
 
 ```
 serviceInfoPosts:
