@@ -2118,7 +2118,7 @@ root@ubuntu:/home/EG-LDVS/mep-agent/conf# docker run -itd --name mepagent \
          -e APPINSTID=5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f \
          -v /home/EG-LDVS/mepserver/ca.crt:/usr/mep/ssl/ca.crt:ro \
          -e "CA_CERT=/usr/mep/ssl/ca.crt" \
-         -e "CA_CERT_DOMAIN_NAME=edgegallery " \
+         -e "CA_CERT_DOMAIN_NAME=edgegallery" \
          -v /tmp/mepagent-conf/app_conf.yaml:/usr/mep/conf/app\_conf.yaml:ro \
          -v /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml:/usr/mep/conf/app_instance_info.yaml:ro\ #可选， mep-agent默认自带一份样例app_instance_info.yaml用于注册
          edgegallery/mep-agent:1.0
