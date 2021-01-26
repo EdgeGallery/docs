@@ -2247,7 +2247,7 @@ root@ubuntu:~# rm -rf /tmp/kong-conf/
 
 #### 删除eguser用户及eggroup用户组
 ```
-# delete ‘eguser’ user and ‘eggroup’ user group
+# delete 'eguser' user and 'eggroup' user group
 root@ubuntu:~# userdel eguser
 root@ubuntu:~# groupdel eggroup
 ```
