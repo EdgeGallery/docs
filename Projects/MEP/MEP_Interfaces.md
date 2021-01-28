@@ -27,19 +27,18 @@
       - [1. Query service liveness info](#1-query-service-liveness-info)
       - [2. Update liveness info](#2-update-liveness-info)
     - [DNS rule configuration interfaces](#dns-rule-configuration-interfaces)
-      - [1. Mp1 Interface for DNS configurations](#1-mp1-interface-for-dns-configurations)
-        - [1.1 Query all dns rules](#11-query-all-dns-rules)
-        - [1.2 Query a specific dns rule](#12-query-a-specific-dns-rule)
-        - [1.3 Update a specific dns rule](#13-update-a-specific-dns-rule)
-      - [2. Mm5 Interface for DNS configurations](#2-mm5-interface-for-dns-configurations)
-        - [2.1 Create a new dns rule](#21-create-a-new-dns-rule)
-        - [2.2 Query all dns rules](#22-query-all-dns-rules)
-        - [2.3 Query a specific dns rule](#23-query-a-specific-dns-rule)
-        - [2.4 Modify a dns rule](#24-modify-a-dns-rule)
-        - [2.5 Delete a dns rule](#25-delete-a-dns-rule)
+      - [1. Query all dns rules](#1-query-all-dns-rules)
+      - [2. Query a specific dns rule](#2-query-a-specific-dns-rule)
+      - [3. Update a specific dns rule](#3-update-a-specific-dns-rule)
+    - [Mm5 Interface for appd configurations](#mm5-interface-for-appd-configurations)
+      - [1. Create a new appd configurations](#1-create-a-new-appd-configurations)
+      - [2. Query appd configuration](#2-query-appd-configuration)
+      - [3. Modify appd configuration](#3-modify-appd-configuration)
+      - [4. Delete appd configuration](#4-delete-appd-configuration)
+      - [5. Query task status](#5-query-task-status)
     - [Query Platform Capabilities(Services)](#query-platform-capabilitiesservices)
-      - [1.1 Query all capabilities](#11-query-all-capabilities)
-      - [1.2 Query individual capability](#12-query-individual-capability)
+      - [1. Query all capabilities](#1-query-all-capabilities)
+      - [2. Query individual capability](#2-query-individual-capability)
     - [异常状态码](#异常状态码)
   - [Dns-Server](#dns-server)
     - [1. Create/Set new entry](#1-createset-new-entry)
@@ -1677,13 +1676,9 @@ Exception status code
 
 ### DNS rule configuration interfaces
 
-DNS rules can be configured using both Mp1 and Mm5 interfaces.
-
-#### 1. Mp1 Interface for DNS configurations
-
 Uisng the Mp1 interfaces mec apps can query and activate/deactivate dns rules associated to it. Implementation of this interface are as per the *ETSI GS MEC 011 V2.1.1* document.
 
-##### 1.1 Query all dns rules
+#### 1. Query all dns rules
 
 Query all DNS rules associated with an application.
 
@@ -1746,7 +1741,7 @@ HTTP/1.1 200 OK
 ]
 ```
 
-##### 1.2 Query a specific dns rule
+#### 2. Query a specific dns rule
 
 Query single DNS rule associated with an application.
 
@@ -1800,7 +1795,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-##### 1.3 Update a specific dns rule
+#### 3. Update a specific dns rule
 
 Modify the state of a rule associated with an application. This interface can modify the state from **ACTIVE** to **INACTIVE** or vice versa. No other field can be modified using this interface.
 
@@ -1877,12 +1872,12 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### 2. Mm5 Interface for DNS configurations
+### Mm5 Interface for appd configurations
 
 
-Uisng the Mm5 interfaces MECM can create, query, update or delete the appd configurations which includes multiple dns and traffic rules associated to an application. Implementation of this interface are specified in *ETSI GS MEC 010-1 V1.1.1* and *ETSI GS MEC 010-2 V2.1.1* documents.
+Using the Mm5 interfaces MECM can create, query, update or delete the appd configurations which includes multiple dns and traffic rules associated to an application. Implementation of this interface are specified in *ETSI GS MEC 010-1 V1.1.1* and *ETSI GS MEC 010-2 V2.1.1* documents.
 
-##### 2.1 Create a new appd configurations
+#### 1. Create a new appd configurations
 
 Create a new appd configuration and associate it with a MEC application. Each configuration can have thirty-two DNS rules and sixteen Traffic rules. There can be only one appd configuration per application at a time and the appd configuration is an asynchronous in nature. Once the request is received in the mep, after validation mep will start a task to handle multiple dns and traffic rules and return a task id to the caller of the API. Using the task-id the caller can check the status of the operation at any time.
 
@@ -2018,7 +2013,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-##### 2.2 Query appd configuration
+#### 2. Query appd configuration
 
 Query appd configuration associated with an application.
 
@@ -2154,7 +2149,7 @@ HTTP/1.1 200 OK
   "appName": "abc1"
 }
 ```
-##### 2.3 Modify appd configuration
+#### 3. Modify appd configuration
 
 Appd configuration for each applications can be configured using this interface. MEP will take the difference of existing configuration and the new modification input and then act on create/modify/delete of dns and/or traffic rules.
 
@@ -2288,7 +2283,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-##### 2.4 Delete appd configuration
+#### 4. Delete appd configuration
 
 Delete appd configuration request.
 
@@ -2339,7 +2334,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-##### 2.5 Query task status
+#### 5. Query task status
 
 Once the appd configuration create, modify or delete is submitted, mep will create a task and return a task id to the caller and the caller can periodically check the status of the task using this id. This interface calls the mep for the task status.
 
@@ -2394,7 +2389,7 @@ HTTP/1.1 200 OK
 
 MEP supports for querying the capabilities(services) registered with it. These capability information will be used by the MECM to display it to the user on its portal. MECM send the capability query to MEP over Mm5 interface.
 
-#### 1.1 Query all capabilities
+#### 1. Query all capabilities
 
 Interface to query all capabilities. This interface return the capability list registered to the queried MEP server along with the consumers of it.
 
@@ -2466,7 +2461,7 @@ HTTP/1.1 200 OK
 ]
 ```
 
-#### 1.2 Query individual capability
+#### 2. Query individual capability
 
 Interface to query an individual capability from MEP. This interface return a capability along with the consumers of it.
 
