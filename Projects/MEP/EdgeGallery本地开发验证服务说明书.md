@@ -1986,7 +1986,7 @@ root@ubuntu:~# docker run -itd --name mepserver \
             -v /home/EG-LDVS/mepserver/mepserver_encryptedtls.key:/usr/mep/ssl/server_key.pem:ro\
             -v /home/EG-LDVS/mepserver/ca.crt:/usr/mep/ssl/trust.cer:ro \
             -v /home/EG-LDVS/mepserver/mepserver_cert_pwd:/usr/mep/ssl/cert_pwd:ro\
-            edgegallery/mep:1.0 sh
+            edgegallery/mep:1.0
 ```
 #### 部署mepauth
 
