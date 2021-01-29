@@ -30,6 +30,10 @@
       - [1. Query all dns rules](#1-query-all-dns-rules)
       - [2. Query a specific dns rule](#2-query-a-specific-dns-rule)
       - [3. Update a specific dns rule](#3-update-a-specific-dns-rule)
+    - [Traffic rule configuration interfaces](#traffic-rule-configuration-interfaces)
+      - [1. Query all traffic rules](#1-query-all-traffic-rules)
+      - [2. Query a specific traffic rule](#2-query-a-specific-traffic-rule)
+      - [3. Update a specific traffic rule](#3-update-a-specific-traffic-rule)
     - [Mm5 Interface for appd configurations](#mm5-interface-for-appd-configurations)
       - [1. Create a new appd configurations](#1-create-a-new-appd-configurations)
       - [2. Query appd configuration](#2-query-appd-configuration)
@@ -1676,7 +1680,7 @@ Exception status code
 
 ### DNS rule configuration interfaces
 
-Uisng the Mp1 interfaces mec apps can query and activate/deactivate dns rules associated to it. Implementation of this interface are as per the *ETSI GS MEC 011 V2.1.1* document.
+Using the Mp1 interfaces mec apps can query and activate/deactivate dns rules associated to it. Implementation of this interface are as per the *ETSI GS MEC 011 V2.1.1* document.
 
 #### 1. Query all dns rules
 
@@ -1836,14 +1840,6 @@ PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dn
     "ttl": 30,
     "state": "ACTIVE"
 }
-
-or
-
-PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
-{
-    "state": "ACTIVE"
-}
-
 ```
 
 Return Parameters:
@@ -1869,6 +1865,384 @@ HTTP/1.1 200 OK
     "ipAddress": "192.168.147.240",
     "ttl": 30,
     "state": "ACTIVE"
+}
+```
+
+### Traffic rule configuration interfaces
+
+Using the Mp1 interfaces mec apps can query and modify the traffic rules associated to it. Implementation of this interface are as per the *ETSI GS MEC 011 V2.1.1* document.
+
+#### 1. Query all traffic rules
+
+Query all traffic rules associated with an application.
+
+URL
+
+```
+GET /mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules
+```
+
+Request parameters:
+
+| **Name** | **Type** | **Description** | **IN** | **Required** |
+| --- | --- | --- | --- | --- |
+| Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
+| appInstanceId  | String | APP实例ID（UUID）  | path |  Yes   |
+
+Body parameters:
+
+None
+
+Example Request:
+
+```
+GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/traffic_rules
+```
+
+Return Parameters:
+
+| Name                  | Type                        | Description              |
+| --------------------- | --------------------------- | ------------------------ |
+| trafficRuleId         | string                      | Traffic rule ID.         |
+| filterType            | enum **{FLOW, PACKET}**     | Filter type.             |
+| priority              | number (1 ~ 256)            | Priority of the traffic rule. If any conflict in the traffic rules, then higher the priority higher the precedence.       |
+| trafficFilter         | list                        | List of traffic filters. |
+| &gt; srcAddress       | list                        | List of source ip address.|
+| &gt; dstAddress       | list                        | List of destination ip address.|
+| &gt; srcPort          | list                        | List of source port address.|
+| &gt; dstPort          | list                        | List of destination port address.|
+| &gt; protocol         | list                        | List of protocols.       |
+| &gt; tag              | list                        | List of tags.            |
+| &gt; srcTunnelAddress | list                        | List of source tunnel address.   |
+| &gt; tgtTunnelAddress | list                        | List of target tunnel address.   |
+| &gt; srcTunnelPort    | list                        | List of source tunnel ports.     |
+| &gt; dstTunnelPort    | list                        | List of destination tunnel ports.|
+| &gt; qCI              | number                      | Match packets with same QCI.     |
+| &gt; dSCP             | number                      | Match packets with same DSCP.    |
+| &gt; tC               | number                      | Match packets with same TC.      |
+| action                | enum **{DROP, FORWARD_DECAPSULATED, FORWARD_AS_IS, PASSTHROUGH, DUPLICATE_DECAPSULATED, DUPLICATE_AS_IS}** | Action when traffic rule matches. |
+| dstInterface          | list                        | Destination interface parameters.|
+| &gt; interfaceType    | enum **{TUNNEL, MAC, IP}**  | Match packets with same TC.      |
+| &gt; tunnelInfo       | object                      | Tunnel parameters.       |
+| &gt;&gt; tunnelType   | enum **{GTP_U, GRE}**       | Tunnel type.             |
+| &gt;&gt; tunnelDstAddress | string                  | Destination IP address.  |
+| &gt;&gt; tunnelSrcAddress | string                  | Source IP address.       |
+| &gt; srcMacAddress    | string                      | Source MAC address       |
+| &gt; dstMacAddress    | string                      | Destination MAC address. |
+| &gt; dstIpAddress     | string                      | Destination IP address.  |
+| state                 | enum **{ACTIVE, INACTIVE}** | State of the rule.       |
+
+Return Code: 200 OK
+
+Example Response:
+```
+HTTP/1.1 200 OK
+[
+  {
+    "trafficRuleId": "TrafficRule1",
+    "filterType": "FLOW",
+    "priority": 1,
+    "trafficFilter": [
+      {
+        "srcAddress": [
+          "192.158.1.1/28"
+        ],
+        "dstAddress": [
+          "192.168.1.1/28"
+        ],
+        "srcPort": [
+          "8080"
+        ],
+        "dstPort": [
+          "8080"
+        ],
+        "protocol": [
+          "TCP"
+        ],
+        "tag": null,
+        "srcTunnelAddress": null,
+        "tgtTunnelAddress": null,
+        "srcTunnelPort": null,
+        "dstTunnelPort": null,
+        "qCI": 2,
+        "dSCP": 0,
+        "tC": 1
+      }
+    ],
+    "action": "DROP",
+    "dstInterface": [],
+    "state": "ACTIVE"
+  }
+]
+```
+
+#### 2. Query a specific traffic rule
+
+Query single traffic rule associated with an application.
+
+URL
+
+```
+GET /mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules/{trafficRuleId}
+```
+
+Request parameters:
+
+| **Name** | **Type** | **Description** | **IN** | **Required** |
+| --- | --- | --- | --- | --- |
+| Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
+| appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
+| trafficRuleId  | String | Traffic rule identifier(UUID) | path | Yes| 
+
+Body parameters:
+
+None
+
+Example Request:
+
+```
+GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/traffic_rules/TrafficRule1
+```
+
+Return Parameters:
+
+| Name                  | Type                        | Description              |
+| --------------------- | --------------------------- | ------------------------ |
+| trafficRuleId         | string                      | Traffic rule ID.         |
+| filterType            | enum **{FLOW, PACKET}**     | Filter type.             |
+| priority              | number (1 ~ 256)            | Priority of the traffic rule. If any conflict in the traffic rules, then higher the priority higher the precedence.       |
+| trafficFilter         | list                        | List of traffic filters. |
+| &gt; srcAddress       | list                        | List of source ip address.|
+| &gt; dstAddress       | list                        | List of destination ip address.|
+| &gt; srcPort          | list                        | List of source port address.|
+| &gt; dstPort          | list                        | List of destination port address.|
+| &gt; protocol         | list                        | List of protocols.       |
+| &gt; tag              | list                        | List of tags.            |
+| &gt; srcTunnelAddress | list                        | List of source tunnel address.   |
+| &gt; tgtTunnelAddress | list                        | List of target tunnel address.   |
+| &gt; srcTunnelPort    | list                        | List of source tunnel ports.     |
+| &gt; dstTunnelPort    | list                        | List of destination tunnel ports.|
+| &gt; qCI              | number                      | Match packets with same QCI.     |
+| &gt; dSCP             | number                      | Match packets with same DSCP.    |
+| &gt; tC               | number                      | Match packets with same TC.      |
+| action                | enum **{DROP, FORWARD_DECAPSULATED, FORWARD_AS_IS, PASSTHROUGH, DUPLICATE_DECAPSULATED, DUPLICATE_AS_IS}** | Action when traffic rule matches. |
+| dstInterface          | list                        | Destination interface parameters.|
+| &gt; interfaceType    | enum **{TUNNEL, MAC, IP}**  | Match packets with same TC.      |
+| &gt; tunnelInfo       | object                      | Tunnel parameters.       |
+| &gt;&gt; tunnelType   | enum **{GTP_U, GRE}**       | Tunnel type.             |
+| &gt;&gt; tunnelDstAddress | string                  | Destination IP address.  |
+| &gt;&gt; tunnelSrcAddress | string                  | Source IP address.       |
+| &gt; srcMacAddress    | string                      | Source MAC address       |
+| &gt; dstMacAddress    | string                      | Destination MAC address. |
+| &gt; dstIpAddress     | string                      | Destination IP address.  |
+| state                 | enum **{ACTIVE, INACTIVE}** | State of the rule.       |
+
+Return Code: 200 OK
+
+Example Response:
+```
+HTTP/1.1 200 OK
+{
+  "trafficRuleId": "TrafficRule1",
+  "filterType": "FLOW",
+  "priority": 1,
+  "trafficFilter": [
+    {
+      "srcAddress": [
+        "192.158.1.1/28"
+      ],
+      "dstAddress": [
+        "192.168.1.1/28"
+      ],
+      "srcPort": [
+        "8080"
+      ],
+      "dstPort": [
+        "8080"
+      ],
+      "protocol": [
+        "TCP"
+      ],
+      "tag": null,
+      "srcTunnelAddress": null,
+      "tgtTunnelAddress": null,
+      "srcTunnelPort": null,
+      "dstTunnelPort": null,
+      "qCI": 2,
+      "dSCP": 0,
+      "tC": 1
+    }
+  ],
+  "action": "DROP",
+  "dstInterface": [],
+  "state": "ACTIVE"
+}
+```
+
+#### 3. Update a specific traffic rule
+
+Modify the traffic rule associated with an application. 
+
+URL
+
+```
+PUT /mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules/{trafficRuleId}
+```
+
+Request parameters:
+
+| **Name** | **Type** | **Description** | **IN** | **Required** |
+| --- | --- | --- | --- | --- |
+| Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
+| appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
+| trafficRuleId  | String | Traffic rule identifier(UUID) | path | Yes| 
+
+Body parameters:
+
+| Name                  | Type                        | Description              |
+| --------------------- | --------------------------- | ------------------------ |
+| trafficRuleId         | string                      | Traffic rule ID.         |
+| filterType            | enum **{FLOW, PACKET}**     | Filter type.             |
+| priority              | number (1 ~ 256)            | Priority of the traffic rule. If any conflict in the traffic rules, then higher the priority higher the precedence.       |
+| trafficFilter         | list                        | List of traffic filters. |
+| &gt; srcAddress       | list                        | List of source ip address.|
+| &gt; dstAddress       | list                        | List of destination ip address.|
+| &gt; srcPort          | list                        | List of source port address.|
+| &gt; dstPort          | list                        | List of destination port address.|
+| &gt; protocol         | list                        | List of protocols.       |
+| &gt; tag              | list                        | List of tags.            |
+| &gt; srcTunnelAddress | list                        | List of source tunnel address.   |
+| &gt; tgtTunnelAddress | list                        | List of target tunnel address.   |
+| &gt; srcTunnelPort    | list                        | List of source tunnel ports.     |
+| &gt; dstTunnelPort    | list                        | List of destination tunnel ports.|
+| &gt; qCI              | number                      | Match packets with same QCI.     |
+| &gt; dSCP             | number                      | Match packets with same DSCP.    |
+| &gt; tC               | number                      | Match packets with same TC.      |
+| action | enum **{DROP, FORWARD_DECAPSULATED, FORWARD_AS_IS, PASSTHROUGH, DUPLICATE_DECAPSULATED, DUPLICATE_AS_IS}** | Action when traffic rule matches. |
+| dstInterface          | list                        | Destination interface parameters.|
+| &gt; interfaceType    | enum **{TUNNEL, MAC, IP}**  | Match packets with same TC.      |
+| &gt; tunnelInfo       | object                      | Tunnel parameters.       |
+| &gt;&gt; tunnelType   | enum **{GTP_U, GRE}**       | Tunnel type.             |
+| &gt;&gt; tunnelDstAddress | string                  | Destination IP address.  |
+| &gt;&gt; tunnelSrcAddress | string                  | Source IP address.       |
+| &gt; srcMacAddress    | string                      | Source MAC address       |
+| &gt; dstMacAddress    | string                      | Destination MAC address. |
+| &gt; dstIpAddress     | string                      | Destination IP address.  |
+| state                 | enum **{ACTIVE, INACTIVE}** | State of the rule.       |
+
+Example Request:
+
+```
+PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/traffic_rules/TrafficRule1
+{
+  "trafficRuleId": "TrafficRule1",
+  "filterType": "FLOW",
+  "priority": 1,
+  "trafficFilter": [
+    {
+      "srcAddress": [
+        "192.158.1.1/28"
+      ],
+      "dstAddress": [
+        "192.168.1.1/28"
+      ],
+      "srcPort": [
+        "8080"
+      ],
+      "dstPort": [
+        "8080"
+      ],
+      "protocol": [
+        "TCP"
+      ],
+      "tag": null,
+      "srcTunnelAddress": null,
+      "tgtTunnelAddress": null,
+      "srcTunnelPort": null,
+      "dstTunnelPort": null,
+      "qCI": 2,
+      "dSCP": 0,
+      "tC": 1
+    }
+  ],
+  "action": "DROP",
+  "dstInterface": [],
+  "state": "ACTIVE"
+}
+```
+
+Return Parameters:
+
+| Name                  | Type                        | Description              |
+| --------------------- | --------------------------- | ------------------------ |
+| trafficRuleId         | string                      | Traffic rule ID.         |
+| filterType            | enum **{FLOW, PACKET}**     | Filter type.             |
+| priority              | number (1 ~ 256)            | Priority of the traffic rule. If any conflict in the traffic rules, then higher the priority higher the precedence.       |
+| trafficFilter         | list                        | List of traffic filters. |
+| &gt; srcAddress       | list                        | List of source ip address.|
+| &gt; dstAddress       | list                        | List of destination ip address.|
+| &gt; srcPort          | list                        | List of source port address.|
+| &gt; dstPort          | list                        | List of destination port address.|
+| &gt; protocol         | list                        | List of protocols.       |
+| &gt; tag              | list                        | List of tags.            |
+| &gt; srcTunnelAddress | list                        | List of source tunnel address.   |
+| &gt; tgtTunnelAddress | list                        | List of target tunnel address.   |
+| &gt; srcTunnelPort    | list                        | List of source tunnel ports.     |
+| &gt; dstTunnelPort    | list                        | List of destination tunnel ports.|
+| &gt; qCI              | number                      | Match packets with same QCI.     |
+| &gt; dSCP             | number                      | Match packets with same DSCP.    |
+| &gt; tC               | number                      | Match packets with same TC.      |
+| action                | enum **{DROP, FORWARD_DECAPSULATED, FORWARD_AS_IS, PASSTHROUGH, DUPLICATE_DECAPSULATED, DUPLICATE_AS_IS}** | Action when traffic rule matches. |
+| dstInterface          | list                        | Destination interface parameters.|
+| &gt; interfaceType    | enum **{TUNNEL, MAC, IP}**  | Match packets with same TC.      |
+| &gt; tunnelInfo       | object                      | Tunnel parameters.       |
+| &gt;&gt; tunnelType   | enum **{GTP_U, GRE}**       | Tunnel type.             |
+| &gt;&gt; tunnelDstAddress | string                  | Destination IP address.  |
+| &gt;&gt; tunnelSrcAddress | string                  | Source IP address.       |
+| &gt; srcMacAddress    | string                      | Source MAC address       |
+| &gt; dstMacAddress    | string                      | Destination MAC address. |
+| &gt; dstIpAddress     | string                      | Destination IP address.  |
+| state                 | enum **{ACTIVE, INACTIVE}** | State of the rule.       |
+
+Return Code: 200 OK
+
+Example Response:
+```
+HTTP/1.1 200 OK
+{
+  "trafficRuleId": "TrafficRule1",
+  "filterType": "FLOW",
+  "priority": 1,
+  "trafficFilter": [
+    {
+      "srcAddress": [
+        "192.158.1.1/28"
+      ],
+      "dstAddress": [
+        "192.168.1.1/28"
+      ],
+      "srcPort": [
+        "8080"
+      ],
+      "dstPort": [
+        "8080"
+      ],
+      "protocol": [
+        "TCP"
+      ],
+      "tag": null,
+      "srcTunnelAddress": null,
+      "tgtTunnelAddress": null,
+      "srcTunnelPort": null,
+      "dstTunnelPort": null,
+      "qCI": 2,
+      "dSCP": 0,
+      "tC": 1
+    }
+  ],
+  "action": "DROP",
+  "dstInterface": [],
+  "state": "ACTIVE"
 }
 ```
 
@@ -2121,17 +2495,7 @@ HTTP/1.1 200 OK
         }
       ],
       "action": "DROP",
-      "dstInterface": {
-        "interfaceType": "",
-        "tunnelInfo": {
-          "tunnelType": "",
-          "tunnelDstAddress": "",
-          "tunnelSrcAddress": ""
-        },
-        "srcMacAddress": "",
-        "dstMacAddress": "",
-        "dstIpAddress": ""
-      },
+      "dstInterface": [],
       "state": "ACTIVE"
     }
   ],
