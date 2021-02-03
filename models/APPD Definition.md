@@ -242,8 +242,8 @@ VnfVirtualLink节点的定义样例如下：
 |transportDependencies |  否        | tosca.datatypes.nfv.app.TransportDependency                           | -            | 应用实例提供服务需要平台提供的传输能力    |
 |appSupportMp1     | 是        | boolean  | -            | app是否支持Mp1接口           |
 |appName     | 是        | string  | -            | 应用名称           |
-|appTrafficRule     | 是        | tosca.datatypes.nfv.app.TrafficRule  | -            | 应用分流规则信息          |
-|appDNSRule     | 是        | tosca.datatypes.nfv.app.DNSRule  | -            | 应用DNS分流规则信息          |
+|appTrafficRule     | 是        | tosca.datatypes.nfv.app.TrafficRuleDescriptor  | -            | 应用分流规则信息          |
+|appDNSRule     | 是        | tosca.datatypes.nfv.app.DNSRuleDescriptor  | -            | 应用DNS分流规则信息          |
 
 定义样例如下：
 ```
