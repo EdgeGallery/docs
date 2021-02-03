@@ -89,5 +89,146 @@ inputs:
 ```
 
 ## 节点类型定义
+本章节此处只描述目前已经用到的部分节点类型。EdgeGallery使用ETSI NFV SOL001相关规范定义的类型，具体可以参考ETSI NFV SOL001相关规范。
 ###  APP(tosca.nodes.nfv.VNF)
-APP在APPD描述文件中对应tosca.nodes.nfv.VNF节点，具体定义
+APP在APPD描述文件中对应tosca.nodes.nfv.VNF节点，参数定义如下：
+
+|名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
+|-----------------------|-----------|----------|-----------|---------------------|
+|vnfd_id                | 是        | string   | -         | app描述id            |
+|vnfd_version           | 是        | string   | -         | app描述的版本         |
+|provider               | 是        | string   | -         | app的提供方            |
+|product_name           | 是        | string   | -         | 用来标识app产品的产品类型 |
+|software_version       | 是        | string   | -         | app的软件版本          |
+|product_info_name      | 是        | string   | -         | app的可读名称          |
+|product_info_description| 否        | string   | -        | app的可读描述          |
+|flavour_id             | 是        | string   | -         | 部署的flavour，当前app只支持单一flavour    |
+|flavour_descripotion   | 是        | string   | -         | flavour的描述        |
+
+同时对于APP对象，在虚机场景下，EdgeGallery将app的helm部署脚本作为其artifact。  
+APP节点的样例如下：
+
+```
+  node_templates:
+    Simple_VNF:
+      type: "tosca.nodes.nfv.VNF"
+      properties:
+        vnfd_id: "EdgeGallery-positioning-service"
+        vnfd_version: "v1.0"
+        provider: "EdgeGallery"
+        product_name: "MEC"
+        software_version: "v1.0.0"
+        product_info_name: "vMEC_APP"
+        product_info_description: "EdgeGallery MEC APP"
+        flavour_id: "default"
+        flavour_description: "default flavor"
+      artifacts:
+        app_deployment:
+          file: "/artifacts/Deployments/charts/monitoring_service.zip" # app的helm chart部署包
+          type: tosca.artifacts.Deployment
+```
+
+### Pod/VM(tosca.nodes.nfv.Compute)
+对于容器场景下的Pod，以及虚机场景下的VM，采用tosca.nodes.nfv.Vdu.Compute节点，参数定义如下：
+
+|名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
+|-----------------------|-----------|----------|-----------|---------------------|
+|name                   | 是        | string   | -         | VDU的名称            |
+|descriptioon           | 是        | string   | -         | VDU的描述            |
+|boot_order             | 否        | map      | -         | 镜像盘的启动顺序          |
+|nfvi_constraints       | 否        | string   | -         | 计算AZ ID，确定该VDU实例的创建位置|
+|bootdata               | 否        | tosca.data.types.nfv.bootdata   | -         | 注入配置信息          |
+|vdu_profile            | 是        | tosca.data.types.nfv.VduProfile   | -         | 定义VDU相关的其他实例化数据          |
+|sw_image_data          | 否        | tosca.data.types.nfv.SwImageData   | -        | 镜像信息，对应名称在SwImageDesc.json中的描述，对于虚机为虚机镜像，对于容器为容器镜像且可能为列表，此时采用逗号分隔          |
+
+tosca.nodes.nfv.Compute节点提供的能力如下所示：
+
+| 名称                  |  数据类型                             | 取值范围             |描述                  |
+|-----------------------|------------------------------------|----------------------|----------------------|
+|virtual_compute | tosca.capabilities.nfv.virtualCompute     | -                    | 虚机计算资源          |
+|virtual_binding | tosca.capabilities.nfv.VirtualBindable    | -                    | 定义连接绑定的能力     |
+
+Pod/VM节点的定义样例如下：
+
+```
+   logic0:
+      type: "tosca.nodes.nfv.Vdu.Compute"
+      properties:
+        name: "logic0"
+        description: "node logic template"
+        sw_image_data:
+          name: "mep-agent:1.0,monitoring-service-be:1.0" #定义Pod的镜像列表，名称取自SwImageDesc.json
+        vdu_profile:
+          min_number_of_instances: 1
+          max_number_of_instances: 2
+          initial_number_of_instances: 1
+          flavor_extra_specs:
+            X86_HA: "true"
+      capabilities:
+        virtual_compute:
+          properties:
+            virtual_memory:
+              virtual_mem_size: 4096
+            virtual_cpu:
+              num_virtual_cpu: 4
+            virtual_local_storage:
+              size_of_storage: 20
+```
+### 网口（tosca.nodes.nfv.VduCp）
+对于Pod/VM的网口，采用tosca.nodes.nfv.VduCp节点进行定义，参数定义如下：
+
+|名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
+|-----------------------|-----------|----------|-----------|---------------------|
+|vnic_type              | 是        | string   | normal,direct        | 网口类型            |
+|order                  | 是        | integer   | greater_or_equal:0         | 网口的顺序           |
+|vnic_name              | 否        | string      | -         | 网口的名字          |
+|description              | 否        | string      | -         | 网口的描述        |
+Cp节点定义了需求如下:
+| 名称                  |是否必选  |  类型                             | 取值范围             |描述                  |
+|-----------------------|---------|---------------------------|----------------------|----------------------|
+|virtual_binding |是      | tosca.capabilities.nfv.VirtualBindable    | -                    | 绑定到的VDU的需求     |
+|virtual_link   | 否      |tosca.capabilities.nfv.VirtualLinkable     | -                    | 连接到虚拟网络的需求     |
+
+网口节点的定义样例如下：
+
+```
+    MEC_APP_CP0:
+      type: "tosca.nodes.nfv.VduCp"
+      properties:
+        description: "network definition"
+        vnic_name: "eth0"
+        order: 0
+        vnic_type: "normal"
+      requirements:
+      - virtual_binding: "logic0"
+      - virtual_link: "MEC_APP_VL0"
+```
+
+### 网络（tosca.nodes.nfv.VnfVirtualLink）
+对于Pod/VM的网络，采用tosca.nodes.nfv.VnfVirtualLink节点进行定义，参数定义如下：
+
+|名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
+|-----------------------|-----------|----------|-----------|---------------------|
+|vl_profile             | 是        | tosca.datatypes.nfv.VlProfile   | -       | 定义网络的信息，名称，子网等            |
+|description            | 否        | string   | -            | VL的描述           |
+
+Cp节点定义了需求如下:
+| 名称                  |是否必选  |  类型                             | 取值范围             |描述                  |
+|-----------------------|---------|---------------------------|----------------------|----------------------|
+|virtual_binding |是      | tosca.capabilities.nfv.VirtualBindable    | -                    | 绑定到的VDU的需求     |
+|virtual_link   | 否      |tosca.capabilities.nfv.VirtualLinkable     | -                    | 连接到虚拟网络的需求     |
+
+网口节点的定义样例如下：
+
+```
+    MEC_APP_CP0:
+      type: "tosca.nodes.nfv.VduCp"
+      properties:
+        description: "network definition"
+        vnic_name: "eth0"
+        order: 0
+        vnic_type: "normal"
+      requirements:
+      - virtual_binding: "logic0"
+      - virtual_link: "MEC_APP_VL0"
+```
