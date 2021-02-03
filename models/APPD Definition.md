@@ -89,7 +89,7 @@ inputs:
 ```
 
 ## 节点类型定义
-本章节此处只描述目前已经用到的部分节点类型。EdgeGallery使用ETSI NFV SOL001相关规范定义的类型，具体可以参考ETSI NFV SOL001相关规范。
+本章节此处只描述目前已经用到的部分节点类型。EdgeGallery节点类型基于ETSI NFV SOL001相关规范定义，具体可以参考ETSI NFV SOL001相关规范。
 ###  APP(tosca.nodes.nfv.VNF)
 APP在APPD描述文件中对应tosca.nodes.nfv.VNF节点，参数定义如下：
 
@@ -212,23 +212,34 @@ Cp节点定义了需求如下:
 |vl_profile             | 是        | tosca.datatypes.nfv.VlProfile   | -       | 定义网络的信息，名称，子网等            |
 |description            | 否        | string   | -            | VL的描述           |
 
-Cp节点定义了需求如下:
-| 名称                  |是否必选  |  类型                             | 取值范围             |描述                  |
-|-----------------------|---------|---------------------------|----------------------|----------------------|
-|virtual_binding |是      | tosca.capabilities.nfv.VirtualBindable    | -                    | 绑定到的VDU的需求     |
-|virtual_link   | 否      |tosca.capabilities.nfv.VirtualLinkable     | -                    | 连接到虚拟网络的需求     |
+VnfVirtualLink节点定义了能力如下:
+| 名称                  |  类型                             | 取值范围             |描述                  |
+|----------------------|---------------------------|----------------------|----------------------|
+|virtual_linkable      |tosca.capabilities.nfv.VirtualLinkable     | -                    | 描述虚拟网络连接网口的能力     |
 
-网口节点的定义样例如下：
+VnfVirtualLink节点的定义样例如下：
 
 ```
-    MEC_APP_CP0:
-      type: "tosca.nodes.nfv.VduCp"
+    MEC_APP_VL0:
+      type: "tosca.nodes.nfv.VnfVirtualLink"
       properties:
-        description: "network definition"
-        vnic_name: "eth0"
-        order: 0
-        vnic_type: "normal"
-      requirements:
-      - virtual_binding: "logic0"
-      - virtual_link: "MEC_APP_VL0"
+        vl_profile:
+          network_name: "network_n6"
+          network_type: "vlan"
+          physical_network: "network_physnet"
+          provider_segmentation_id: "1001"
 ```
+### APP配置 (tosca.nodes.nfv.app.configuration)
+对于APP相关配置，如服务发布，服务依赖，以及应用认证信息，分流规则配置等。通过APP配置节点进行配置。参数定义如下：
+
+|名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
+|-----------------------|-----------|----------|-----------|---------------------|
+|appServiceRequired     | 否        | tosca.datatypes.nfv.app.ServiceProfile  | -       | app依赖的服务信息           |
+|appServiceOptional     | 否        | tosca.datatypes.nfv.app.ServiceProfile   | -            | app的可选依赖服务信息           |
+|appServiceProduced     | 否        | tosca.datatypes.nfv.app.ServiceProfile   | -            | app的服务发布信息           |
+|appFeatureRequired     | 否        | tosca.datatypes.nfv.app.FeatureProfile  | -       | app依赖的特性信息           |
+|appFeatureOptional     | 否        | tosca.datatypes.nfv.app.FeatureProfile   | -            | app的可选依赖特性信息           |
+|appSupportMp1     | 是        | boolean  | -            | app是否支持Mp1接口           |
+|appName     | 是        | string  | -            | 应用名称           |
+|appTrafficRule     | 是        | tosca.datatypes.nfv.app.TrafficRule  | -            | 应用分流规则信息          |
+|appDNSRule     | 是        | tosca.datatypes.nfv.app.DNSRule  | -            | 应用DNS分流规则信息          |
