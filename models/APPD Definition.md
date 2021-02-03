@@ -230,15 +230,16 @@ VnfVirtualLink节点的定义样例如下：
           provider_segmentation_id: "1001"
 ```
 ### APP配置 (tosca.nodes.nfv.app.configuration)
-对于APP相关配置，如服务发布，服务依赖，以及应用认证信息，分流规则配置等。通过APP配置节点进行配置。参数定义如下：
+对于APP相关配置，如服务发布，服务依赖，以及应用认证信息，分流规则配置等。通过APP配置节点进行配置。相关定义参考了ETSI MEC011 ，参数定义如下：
 
 |名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
 |-----------------------|-----------|----------|-----------|---------------------|
-|appServiceRequired     | 否        | tosca.datatypes.nfv.app.ServiceProfile  | -       | app依赖的服务信息           |
-|appServiceOptional     | 否        | tosca.datatypes.nfv.app.ServiceProfile   | -            | app的可选依赖服务信息           |
-|appServiceProduced     | 否        | tosca.datatypes.nfv.app.ServiceProfile   | -            | app的服务发布信息           |
-|appFeatureRequired     | 否        | tosca.datatypes.nfv.app.FeatureProfile  | -       | app依赖的特性信息           |
-|appFeatureOptional     | 否        | tosca.datatypes.nfv.app.FeatureProfile   | -            | app的可选依赖特性信息           |
+|appServiceRequired     | 否        | tosca.datatypes.nfv.app.ServiceDependency  | -       | app依赖的服务信息           |
+|appServiceOptional     | 否        | tosca.datatypes.nfv.app.ServiceDependency   | -            | app的可选依赖服务信息           |
+|appServiceProduced     | 否        | tosca.datatypes.nfv.app.ServiceDescriptor   | -            | app的服务发布信息           |
+|appFeatureRequired     | 否        | tosca.datatypes.nfv.app.FeatureDependency  | -       | app正常运行必须的特性信息           |
+|appFeatureOptional     | 否        | tosca.datatypes.nfv.app.FeatureDependency   | -            | app正常运行可能会用到的特性信息           |
+|transportDependencies |  否        | tosca.datatypes.nfv.app.TransportDependency                           | -            | 应用实例提供服务需要平台提供的传输能力    |
 |appSupportMp1     | 是        | boolean  | -            | app是否支持Mp1接口           |
 |appName     | 是        | string  | -            | 应用名称           |
 |appTrafficRule     | 是        | tosca.datatypes.nfv.app.TrafficRule  | -            | 应用分流规则信息          |
