@@ -243,3 +243,121 @@ VnfVirtualLink节点的定义样例如下：
 |appName     | 是        | string  | -            | 应用名称           |
 |appTrafficRule     | 是        | tosca.datatypes.nfv.app.TrafficRule  | -            | 应用分流规则信息          |
 |appDNSRule     | 是        | tosca.datatypes.nfv.app.DNSRule  | -            | 应用DNS分流规则信息          |
+
+定义样例如下：
+```
+    app_configuration:
+      type: tosca.nodes.nfv.app.configuration
+      properties:
+        certification_info:
+          access_key_id: {get_input: ak}
+          secret_key: {get_input: sk}
+        appServiceRequired:
+          - serName: appService1
+            serCategory: qos
+            version: 2.0
+            serTransportDependencies:
+              - transport:
+                  type: REST_HTTP
+                  protocol: HTTP
+                  version: 2.0
+                  security:
+                serializers:
+                  - JSON
+                labels:
+                  - test
+            requestedPermissions: true
+        appServiceOptional:
+          - serName: appService2
+            serCategory: qos
+            version: 3.0
+            serTransportDependencies:
+              - transport:
+                  type: REST_HTTP
+                  protocol: HTTP
+                  version: 2.0
+                  security:
+                serializers:
+                  - JSON
+                labels:
+                  - test
+            requestedPermissions: true
+        appServiceProduced:
+          - serName: appService3
+            serCategory: video encoding
+            version: 2.0
+            transportsSupported:
+              - transport:
+                  type: REST_HTTP
+                  protocol: HTTP
+                  version: 2.0
+                  security: string
+                serializers:
+                  - JSON
+            dnsRuleIdList:
+              - dnsRule1
+            trafficRuleIdList:
+              - trafficRule1
+        appFeatureRequired:
+          - featureName: UserApps
+            version: 3.0
+        appFeatureOptional:
+          - featureName: UserApps
+            version: 3.0
+        transportDependencies:
+          - transport:
+              type: REST_HTTP
+              protocol: HTTP
+              version: 2.0
+              security:
+            serializers:
+              - JSON
+            labels:
+              - test
+        appSupportMp1: true
+        appName: filter01
+        appTrafficRule:
+          - trafficRuleId: trafficRule1
+            filterType: FLOW
+            priority: 1
+            trafficFilter:
+              - srcAddress:
+                  - 0.0.0.0/0
+                dstAddress:
+                  - 172.30.2.0/28
+                srcPort:
+                  - 8080
+                dstPort:
+                  - 8080
+                protocol:
+                  - ANY
+                tag:
+                  - 1234
+                srcTunnelAddress:
+                  - 10.10.10.10
+                tgtTunnelAddress:
+                  - 10.10.10.10
+                srcTunnelPort:
+                  - 8080
+                dstTunnelPort:
+                  - 8080
+                qCI: 1
+                dSCP: 0
+                tC: 1
+            action: PASSTHROUGH
+            dstInterface:
+              interfaceType: TUNNEL
+              tunnelInfo:
+                tunnelType: GTP_U
+                tunnelDstAddress: 10.10.10.10
+                tunnelSrcAddress: 11.11.11.11
+              srcMacAddress: 02-00-00-00-00-00
+              dstMacAddress: 02-00-00-00-00-00
+              dstIpAddress: 192.0.2.0
+        appDNSRule:
+          - dnsRuleId: dnsRule1
+            domainName: mec.huawei.com
+            ipAddressType: IP_V4
+            ipAddress: 172.30.2.17
+            ttl: 100
+```
