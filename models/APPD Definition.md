@@ -229,7 +229,7 @@ VnfVirtualLink节点的定义样例如下：
           physical_network: "network_physnet"
           provider_segmentation_id: "1001"
 ```
-### APP配置 (tosca.nodes.nfv.app.configuration)
+### APP配置 (tosca.nodes.nfv.app.configuration)--待修订
 对于APP相关配置，如服务发布，服务依赖，以及应用认证信息，分流规则配置等。通过APP配置节点进行配置。相关定义参考了ETSI MEC011 ，参数定义如下：
 
 |名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
