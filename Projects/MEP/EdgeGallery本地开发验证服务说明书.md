@@ -219,9 +219,7 @@ EG-LDVS采用和华为公有云相同的签名认证算法，相关指导说明�
 Authorization: SDK-HMAC-SHA256 Access=QVUJMSUMgS0VZLS0tLS0, SignedHeaders=content-type;host;x-sdk-date, Signature=142b0dc3feaeb3662b2033a8e6425596546e08a231aa39179b4060867dd15d3d
 ```
 
-具体获取token方法请参考*服务认证接口*。
-
-注：服务认证接口实现中没有使用CanonicalQueryString和RequestPayload（body体）信息，故签名算法中也不要使用这两个信息。[](#_导入应用认证信息接口)
+具体获取token方法请参考*服务认证接口*([可以直接使用token-generator小工具获得签名和token](https://gitee.com/edgegallery/docs/tree/master/Projects/MEP/token-generator))。
 
 ### API接口说明
 
@@ -272,8 +270,6 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPAUTH_ROUTE}/mepauth/v1/token
 Body参数：
 
 无
-
-注：当前接口实现没有使用CanonicalQueryString和RequestPayloa（body体）信息。
 
 请求示例：
 
