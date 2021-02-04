@@ -19,7 +19,8 @@ export CA_CERT_DOMAIN_NAME=edgegallery
 ```
 ./token_generator 
 ```
-![token](https://images.gitee.com/uploads/images/2021/0204/161201_3db17e7c_4991354.png "token.png")
+签名（Authorization）和token都可以通过日志看到
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0204/165822_77d3c5d4_4991354.png "屏幕截图.png")
 
 # How to modify token-generator
 
@@ -55,6 +56,14 @@ func GetMepToken(auth model.Auth) error {
 	log.Infof("token: %s", token) // add
 	log.Info("get token success.")
 ```
+
+request.go
+```
+	req.Header.Set("Authorization", authorization)
+	log.Info("Authorization : ", authorization) // add
+	log.Info("PostRegisterRequest : ", req) // add
+```
+
 
 
 
