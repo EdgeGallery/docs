@@ -97,7 +97,7 @@ SwImageDesc.json文件样例：
 [
     //镜像在APP包内
     {
-        "id":"12345777",
+        "id":"1",
         "name":"monitoring-service-fe:1.0",
         "version":"1.0",
         "checksum":"1",
@@ -112,7 +112,7 @@ SwImageDesc.json文件样例：
     }
     //镜像不在APP包内
     {
-        "id":"12345777",
+        "id":"2",
         "name":"monitoring-service-be:1.0",
         "version":"1.0",
         "checksum":"1",
