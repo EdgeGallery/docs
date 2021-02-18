@@ -1,4 +1,4 @@
-#接口URI变更
+# 接口URI变更
 
 | 原URI | 现URI | 方法 | API说明 |
 | --- | --- | --- | --- |
@@ -19,7 +19,7 @@
 | /mec/appstore/poke/messages/{messageId}/action/download | /mec/appstore/v1/messages/{messageId}/action/download | GET | 根据message id下载app相关信息 |
 | /mec/appstore/poke/messages/{messageId}/action/readed | /mec/appstore/v1/messages/{messageId}/action/readed | PUT | 根据message id更新消息状态 |
 
-#删除接口
+# 删除接口
 
 | API | 方法 | API说明 |
 | --- | --- | --- |
