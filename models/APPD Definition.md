@@ -201,7 +201,7 @@ Cp节点定义了需求如下:
         vnic_type: normal
       requirements:
       - virtual_binding: logic0
-      - virtual_link: "MEC_APP_VL0"
+      - virtual_link: MEC_APP_VL0
 ```
 
 ### 网络（tosca.nodes.nfv.VnfVirtualLink）
