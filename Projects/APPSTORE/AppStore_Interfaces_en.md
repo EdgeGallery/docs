@@ -477,7 +477,7 @@ User can push an app to other.
 ### 4.1 Query Push App List
 Query the app list which can push
 ```
-URI： /mec/appstore/poke/pushable/packages
+URI： /mec/appstore/v1/packages/pushable
 Method: GET
 ```
 
@@ -508,7 +508,7 @@ Example response:
 ### 4.2 Get Push App Package
 Get push app package by packageId.
 ```
-URI： /mec/appstore/poke/pushable/packages/{packageId}
+URI： /mec/appstore/v1/packages/{packageId}/pushable
 Method: GET
 ```
 
@@ -543,7 +543,7 @@ Example response:
 ### 4.3 Push App Package
 Push app package by packageId
 ```
-URI： /mec/appstore/poke/pushable/packages/{packageId}/action/push
+URI： /mec/appstore/v1/packages/{packageId}/action/push
 Method: POST
 ```
 
@@ -561,7 +561,7 @@ Example response:
 ### 4.4 Download Push App Package
 Download push appp package by packageId
 ```
-URI： /mec/appstore/poke/pushable/packages/{packageId}/action/download-package
+URI： /mec/appstore/v1/packages/{packageId}/action/download-package
 Method: GET
 ```
 
@@ -578,7 +578,7 @@ Example response:
 ### 4.5 Download Push App Icon
 Download push app icon by packageId.
 ```
-URI： /mec/appstore/poke/pushable/packages/{packageId}/action/download-icon
+URI： /mec/appstore/v1/packages/{packageId}/action/download-icon
 Method: GET
 ```
 
@@ -600,7 +600,7 @@ Add, delete, modify and query the APPStore.
 ### 5.1 Add AppStore
 add external AppStore.
 ```
-URI： /mec/appstore/poke/appstores
+URI： /mec/appstore/v1/appstores
 Method: POST
 ```
 
@@ -636,7 +636,7 @@ Example response:
 ### 5.2 Delete AppStore
 Delete external AppStore.
 ```
-URI： /mec/appstore/poke/appstores/{appStoreId}
+URI： /mec/appstore/v1/appstores/{appStoreId}
 Method: DELETE
 ```
 
@@ -653,7 +653,7 @@ Example response:
 ### 5.3 Modify AppStore
 Modify external AppStore.
 ```
-URI： /mec/appstore/poke/appstores/{appStoreId}
+URI： /mec/appstore/v1/appstores/{appStoreId}
 Method: PUT
 ```
 
@@ -690,7 +690,7 @@ Example response:
 ### 5.4 Query AppStore List
 Query external appStore list.
 ```
-URI： /mec/appstore/poke/appstores
+URI： /mec/appstore/v1/appstores
 Method: GET
 ```
 
@@ -722,7 +722,7 @@ Example response:
 ### 5.5 Query AppStore
 Query external appStore.
 ```
-URI： /mec/appstore/poke/appstores/{appStoreId}
+URI： /mec/appstore/v1/appstores/{appStoreId}
 Method: GET
 ```
 
@@ -756,7 +756,7 @@ The message contains information such as APP push, download, notice, pull.
 ### 6.1 Add Message
 Add a APP operation message.
 ```
-URI： /mec/appstore/poke/messages
+URI： /mec/appstore/v1/messages
 Method: POST
 ```
 
@@ -780,7 +780,7 @@ Example response:
 ### 6.2 Get All Message
 Get messages by message type.
 ```
-URI： /mec/appstore/poke/messages
+URI： /mec/appstore/v1/messages
 Method: GET
 ```
 
@@ -819,7 +819,7 @@ Example response:
 ### 6.3 Get Message
 Get message by message id.
 ```
-URI： /mec/appstore/poke/messages/{messageId}
+URI： /mec/appstore/v1/messages/{messageId}
 Method: GET
 ```
 
@@ -856,7 +856,7 @@ Example response:
 ### 6.4 Delete Message
 Delete message by message id.
 ```
-URI： /mec/appstore/poke/messages/{messageId}
+URI： /mec/appstore/v1/messages/{messageId}
 Method: DELETE
 ```
 
@@ -873,7 +873,7 @@ Example response:
 ### 6.5 Accept Message
 download message by message id.
 ```
-URI： /mec/appstore/poke/messages/{messageId}/action/download
+URI： /mec/appstore/v1/messages/{messageId}/action/download
 Method: GET
 ```
 
@@ -891,7 +891,7 @@ Example response:
 ### 6.6 Update Status
 Update message status by message id.
 ```
-URI： /mec/appstore/poke/messages/{messageId}/action/readed
+URI： /mec/appstore/v1/messages/{messageId}/action/readed
 Method: PUT
 ```
 

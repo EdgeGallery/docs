@@ -474,7 +474,7 @@ Example request body:
 ### 4.1 查询可推送应用列表
 查询可推送的应用列表。
 ```
-URI： /mec/appstore/poke/pushable/packages
+URI： /mec/appstore/v1/packages/pushable
 方法类型: GET
 ```
 
@@ -505,7 +505,7 @@ URI： /mec/appstore/poke/pushable/packages
 ### 4.2 获取推送应用包
 根据packageId获取推送应用包。
 ```
-URI： /mec/appstore/poke/pushable/packages/{packageId}
+URI： /mec/appstore/v1/packages/{packageId}/pushable
 方法类型: GET
 ```
 
@@ -540,7 +540,7 @@ URI： /mec/appstore/poke/pushable/packages/{packageId}
 ### 4.3 推送应用包
 根据packageId推送应用包。
 ```
-URI： /mec/appstore/poke/pushable/packages/{packageId}/action/push
+URI： /mec/appstore/v1/packages/{packageId}/action/push
 方法类型: POST
 ```
 
@@ -558,7 +558,7 @@ URI： /mec/appstore/poke/pushable/packages/{packageId}/action/push
 ### 4.4 下载推送应用包
 根据packageId下载推送应用包。
 ```
-URI： /mec/appstore/poke/pushable/packages/{packageId}/action/download-package
+URI： /mec/appstore/v1/packages/{packageId}/action/download-package
 方法类型: GET
 ```
 
@@ -573,9 +573,9 @@ URI： /mec/appstore/poke/pushable/packages/{packageId}/action/download-package
 ```
 
 ### 4.5 下载推送应用图标
-根据packageId下载推送应用包。
+根据packageId下载推送应用图标。
 ```
-URI： /mec/appstore/poke/pushable/packages/{packageId}/action/download-icon
+URI： /mec/appstore/v1/packages/{packageId}/action/download-icon
 方法类型: GET
 ```
 
@@ -597,7 +597,7 @@ URI： /mec/appstore/poke/pushable/packages/{packageId}/action/download-icon
 ### 5.1 添加仓库
 新增外部应用仓库。
 ```
-URI： /mec/appstore/poke/appstores
+URI： /mec/appstore/v1/appstores
 方法类型: POST
 ```
 
@@ -633,7 +633,7 @@ URI： /mec/appstore/poke/appstores
 ### 5.2 删除仓库
 删除外部应用仓库。
 ```
-URI： /mec/appstore/poke/appstores/{appStoreId}
+URI： /mec/appstore/v1/appstores/{appStoreId}
 方法类型: DELETE
 ```
 
@@ -650,7 +650,7 @@ URI： /mec/appstore/poke/appstores/{appStoreId}
 ### 5.3 修改仓库
 修改外部应用仓库。
 ```
-URI： /mec/appstore/poke/appstores/{appStoreId}
+URI： /mec/appstore/v1/appstores/{appStoreId}
 方法类型: PUT
 ```
 
@@ -687,7 +687,7 @@ URI： /mec/appstore/poke/appstores/{appStoreId}
 ### 5.4 查询仓库列表
 查询外部应用仓库列表。
 ```
-URI： /mec/appstore/poke/appstores
+URI： /mec/appstore/v1/appstores
 方法类型: GET
 ```
 
@@ -719,7 +719,7 @@ URI： /mec/appstore/poke/appstores
 ### 5.5 查询仓库
 查询外部应用仓库。
 ```
-URI： /mec/appstore/poke/appstores/{appStoreId}
+URI： /mec/appstore/v1/appstores/{appStoreId}
 方法类型: GET
 ```
 
@@ -753,7 +753,7 @@ URI： /mec/appstore/poke/appstores/{appStoreId}
 ### 6.1 添加消息
 新增一条消息。
 ```
-URI： /mec/appstore/poke/messages
+URI： /mec/appstore/v1/messages
 方法类型: POST
 ```
 
@@ -777,7 +777,7 @@ URI： /mec/appstore/poke/messages
 ### 6.2 获取所有消息
 根据消息类型获取消息。
 ```
-URI： /mec/appstore/poke/messages
+URI： /mec/appstore/v1/messages
 方法类型: GET
 ```
 
@@ -816,7 +816,7 @@ URI： /mec/appstore/poke/messages
 ### 6.3 获取消息
 根据message id获取消息。
 ```
-URI： /mec/appstore/poke/messages/{messageId}
+URI： /mec/appstore/v1/messages/{messageId}
 方法类型: GET
 ```
 
@@ -853,7 +853,7 @@ URI： /mec/appstore/poke/messages/{messageId}
 ### 6.4 删除消息
 根据message id删除消息。
 ```
-URI： /mec/appstore/poke/messages/{messageId}
+URI： /mec/appstore/v1/messages/{messageId}
 方法类型: DELETE
 ```
 
@@ -870,7 +870,7 @@ URI： /mec/appstore/poke/messages/{messageId}
 ### 6.5 接收消息
 根据message id下载app相关信息。
 ```
-URI： /mec/appstore/poke/messages/{messageId}/action/download
+URI： /mec/appstore/v1/messages/{messageId}/action/download
 方法类型: GET
 ```
 
@@ -888,7 +888,7 @@ URI： /mec/appstore/poke/messages/{messageId}/action/download
 ### 6.6 更新状态
 根据message id更新消息状态。
 ```
-URI： /mec/appstore/poke/messages/{messageId}/action/readed
+URI： /mec/appstore/v1/messages/{messageId}/action/readed
 方法类型: PUT
 ```
 
