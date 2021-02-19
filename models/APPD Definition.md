@@ -22,8 +22,8 @@ APPD最开始需要包含最基本的信息，包含tosca_definition_version,  d
 样例如下：
 
 ```
-tosca_definitions_version: "tosca_simple_profile_yaml_1_2"
-description: "EdgeGallery APPD definition"
+tosca_definitions_version: tosca_simple_profile_yaml_1_2
+description: EdgeGallery APPD definition
 imports:
   - nfv_vnfd_types_v1_0.yaml
 ```
@@ -48,14 +48,14 @@ Metadata的样例如下：
 
 ```
 metadata:
-  template_name: "EdgeGallery-Template"
-  template_author: "EdgeGallery"
-  template_version: "1.0.0"
-  vnfm_type: "MEPM"
-  vnfd_id: "EdgeGallery-monitoring-service"
-  vnfd_version: "v1.0"
-  vnfd_name: "EdgeGallery_MEC_Sample_APPD"
-  vnfd_description: "EdgeGallery MEC sample for APP"
+  template_name: EdgeGallery-Template
+  template_author: EdgeGallery
+  template_version: 1.0.0
+  vnfm_type: MEPM
+  vnfd_id: EdgeGallery-monitoring-service
+  vnfd_version: v1.0
+  vnfd_name: EdgeGallery_MEC_Sample_APPD
+  vnfd_description: EdgeGallery MEC sample for APP
 ```
 
 ## Inputs参数
@@ -76,9 +76,9 @@ Inputs样例如下：
 ```
 inputs:
     INTERNAL_IP_VERSION:
-      type: "string"
-      default: "IPV4"
-      description: "INTERNAL_IP_VERSION"
+      type: string
+      default: IPV4
+      description: INTERNAL_IP_VERSION
     cpuNumber:
       type: integer
       description: Number of CPUs
@@ -111,20 +111,20 @@ APP节点的样例如下：
 ```
   node_templates:
     Simple_VNF:
-      type: "tosca.nodes.nfv.VNF"
+      type: tosca.nodes.nfv.VNF
       properties:
-        vnfd_id: "EdgeGallery-positioning-service"
-        vnfd_version: "v1.0"
-        provider: "EdgeGallery"
-        product_name: "MEC"
-        software_version: "v1.0.0"
-        product_info_name: "vMEC_APP"
-        product_info_description: "EdgeGallery MEC APP"
-        flavour_id: "default"
-        flavour_description: "default flavor"
+        vnfd_id: EdgeGallery-positioning-service
+        vnfd_version: v1.0
+        provider: EdgeGallery
+        product_name: MEC
+        software_version: v1.0.0
+        product_info_name: vMEC_APP
+        product_info_description: EdgeGallery MEC APP
+        flavour_id: default
+        flavour_description: default flavor
       artifacts:
         app_deployment:
-          file: "/artifacts/Deployments/charts/monitoring_service.zip" # app的helm chart部署包
+          file: /artifacts/Deployments/charts/monitoring_service.zip # app的helm chart部署包
           type: tosca.artifacts.Deployment
 ```
 
@@ -152,18 +152,18 @@ Pod/VM节点的定义样例如下：
 
 ```
    logic0:
-      type: "tosca.nodes.nfv.Vdu.Compute"
+      type: tosca.nodes.nfv.Vdu.Compute
       properties:
-        name: "logic0"
-        description: "node logic template"
+        name: logic0
+        description: node logic template
         sw_image_data:
-          name: "mep-agent:1.0,monitoring-service-be:1.0" #定义Pod的镜像列表，名称取自SwImageDesc.json
+          name: mep-agent:1.0,monitoring-service-be:1.0 #定义Pod的镜像列表，名称取自SwImageDesc.json
         vdu_profile:
           min_number_of_instances: 1
           max_number_of_instances: 2
           initial_number_of_instances: 1
           flavor_extra_specs:
-            X86_HA: "true"
+            X86_HA: true
       capabilities:
         virtual_compute:
           properties:
@@ -193,15 +193,15 @@ Cp节点定义了需求如下:
 
 ```
     MEC_APP_CP0:
-      type: "tosca.nodes.nfv.VduCp"
+      type: tosca.nodes.nfv.VduCp
       properties:
-        description: "network definition"
-        vnic_name: "eth0"
+        description: network definition
+        vnic_name: eth0
         order: 0
-        vnic_type: "normal"
+        vnic_type: normal
       requirements:
-      - virtual_binding: "logic0"
-      - virtual_link: "MEC_APP_VL0"
+      - virtual_binding: logic0
+      - virtual_link: MEC_APP_VL0
 ```
 
 ### 网络（tosca.nodes.nfv.VnfVirtualLink）
@@ -221,13 +221,13 @@ VnfVirtualLink节点的定义样例如下：
 
 ```
     MEC_APP_VL0:
-      type: "tosca.nodes.nfv.VnfVirtualLink"
+      type: tosca.nodes.nfv.VnfVirtualLink
       properties:
         vl_profile:
-          network_name: "network_n6"
-          network_type: "vlan"
-          physical_network: "network_physnet"
-          provider_segmentation_id: "1001"
+          network_name: network_n6
+          network_type: vlan
+          physical_network: network_physnet
+          provider_segmentation_id: 1001
 ```
 ### APP配置 (tosca.nodes.nfv.app.configuration)--待修订
 对于APP相关配置，如服务发布，服务依赖，以及应用认证信息，分流规则配置等。通过APP配置节点进行配置。相关定义参考了ETSI MEC011 ，参数定义如下：
