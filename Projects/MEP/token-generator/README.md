@@ -16,13 +16,18 @@ export CA_CERT_DOMAIN_NAME=edgegallery
 ```
 
 ## Run the token generator
+If the MEP version is 1.0.1 and before use token_generator
 ```
 ./token_generator 
+```
+If the MEP version is after 1.0.1 use token_generator_url_unify
+```
+./token_generator_url_unify 
 ```
 签名（Authorization）和token都可以通过日志看到
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0204/165822_77d3c5d4_4991354.png "屏幕截图.png")
 
-# How to modify token-generator
+# How to modify token-generator code
 
 Token-generator is modified from mep-agent code. Only add log to record token and return after get token.
 
@@ -62,6 +67,12 @@ request.go
 	req.Header.Set("Authorization", authorization)
 	log.Info("Authorization : ", authorization) // add
 	log.Info("PostRegisterRequest : ", req) // add
+```
+# How to build token-generator 
+
+```
+set GOOS=linux
+go build -o token_generator -ldflags "-s -w" main.go
 ```
 
 
