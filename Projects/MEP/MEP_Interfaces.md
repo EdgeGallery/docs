@@ -40,6 +40,8 @@
       - [3. Modify appd configuration](#3-modify-appd-configuration)
       - [4. Delete appd configuration](#4-delete-appd-configuration)
       - [5. Query task status](#5-query-task-status)
+    - [Application Termination](#application-termination)
+      - [1. App Instance Termination](#1-app-instance-termination)
     - [Query Platform Capabilities(Services)](#query-platform-capabilitiesservices)
       - [1. Query all capabilities](#1-query-all-capabilities)
       - [2. Query individual capability](#2-query-individual-capability)
@@ -2747,6 +2749,44 @@ HTTP/1.1 200 OK
   "configPhase": "100",
   "Detailed": ""
 }
+```
+
+### Application Termination
+
+MEP support termination/stop of instance of an application after MEP receive the request from MECM.
+
+#### 1. App Instance Termination
+
+Interface to remove the application's ak/sk values, unregister the services and delete the DNS and traffic rule.
+
+URL
+
+```
+DELETE /mep/mec_app_support/v1/applications/{appInstanceId}/AppInstanceTermination
+```
+Request parameters:
+
+Request parameters:
+
+| **Name** | **Type** | **Description** | **IN** | **Required** |
+| --- | --- | --- | --- | --- |
+| appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
+
+Example Request:
+
+```
+DELETE /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/AppInstanceTermination
+```
+
+Body parameters:
+
+None
+
+Return Code: 200 OK
+
+Example Response:
+```
+""
 ```
 
 ### Query Platform Capabilities(Services)
