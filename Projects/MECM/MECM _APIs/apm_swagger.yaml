@@ -1,4 +1,3 @@
----
 swagger: '2.0'
 info:
   description: APPLICATION PACKAGE MANAGER REST API
@@ -6,27 +5,184 @@ info:
   title: APPLICATION PACKAGE MANAGER REST API
   license:
     name: Apache 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0.html
-host: localhost:30202
-basePath: "/"
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+host: '127.0.0.1:30202'
+basePath: /
 tags:
-- name: APM api system
-  description: Apm Handler
+  - name: APM api system
+    description: Apm Handler
 paths:
-  "/apm/v1/tenants/{tenant_id}/packages":
+  '/apm/v1/apps/info/appstores/{appstore_ip}':
     get:
       tags:
-      - APM api system
+        - APM api system
+      summary: Retrieves all application packages info from app store
+      operationId: getAllAppPackageInfoFromAppStoreUsingGET
+      produces:
+        - application/json
+      parameters:
+        - name: access_token
+          in: header
+          description: access_token
+          required: true
+          type: string
+        - name: appstore_ip
+          in: path
+          description: appstore ip
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              type: object
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  /apm/v1/apps/sync:
+    post:
+      tags:
+        - APM api system
+      summary: Sync application packages
+      operationId: syncApplicationPackagesUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: access_token
+          in: header
+          description: access_token
+          required: true
+          type: string
+        - in: body
+          name: syncAppPackageDtos
+          description: sync app package info
+          required: false
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/SyncAppPackageDto'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              type: object
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  /apm/v1/apps/syncstatus:
+    get:
+      tags:
+        - APM api system
+      summary: Retrieves all application packages sync status
+      operationId: getAllAppPackageSyncStatusUsingGET
+      produces:
+        - application/json
+      parameters:
+        - name: access_token
+          in: header
+          description: access_token
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              type: object
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  '/apm/v1/apps/{app_id}/packages/{package_id}/syncstatus':
+    get:
+      tags:
+        - APM api system
+      summary: Retrieve  application packages sync status
+      operationId: getAllAppPackageSyncStatusUsingGET_1
+      produces:
+        - application/json
+      parameters:
+        - name: access_token
+          in: header
+          description: access_token
+          required: true
+          type: string
+        - name: app_id
+          in: path
+          description: app id
+          required: false
+          type: string
+        - name: package_id
+          in: path
+          description: app package id
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/AppPackageSyncStatusDto'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  /apm/v1/health:
+    get:
+      tags:
+        - APM api system
+      summary: Queries liveness and readiness
+      operationId: healthCheckUsingGET
+      produces:
+        - text/plain
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  '/apm/v1/tenants/{tenant_id}/packages':
+    get:
+      tags:
+        - APM api system
       summary: Retrieves all application packages
       operationId: getAllAppPackageInfoUsingGET
       produces:
-      - application/json
+        - application/json
       parameters:
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: false
-        type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
       responses:
         '200':
           description: OK
@@ -43,30 +199,30 @@ paths:
       deprecated: false
     post:
       tags:
-      - APM api system
+        - APM api system
       summary: Onboard application package
       operationId: onBoardAppPackageUsingPOST
       consumes:
-      - application/json
+        - application/json
       produces:
-      - application/json
+        - application/json
       parameters:
-      - name: access_token
-        in: header
-        description: access_token
-        required: true
-        type: string
-      - in: body
-        name: appPackageDto
-        description: app package info
-        required: false
-        schema:
-          "$ref": "#/definitions/AppPackageDto"
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: false
-        type: string
+        - name: access_token
+          in: header
+          description: access_token
+          required: true
+          type: string
+        - in: body
+          name: appPackageDto
+          description: app package info
+          required: false
+          schema:
+            $ref: '#/definitions/AppPackageDto'
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
       responses:
         '200':
           description: OK
@@ -81,30 +237,88 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  "/apm/v1/tenants/{tenant_id}/packages/{app_package_id}":
-    get:
+  '/apm/v1/tenants/{tenant_id}/packages/upload':
+    post:
       tags:
-      - APM api system
-      summary: Retrieves application package information
-      operationId: getAppPackageInfoUsingGET
+        - APM api system
+      summary: Onboard application package
+      operationId: onBoardApplicationUsingPOST
+      consumes:
+        - multipart/form-data
       produces:
-      - application/json
+        - application/json
       parameters:
-      - name: app_package_id
-        in: path
-        description: app package id
-        required: false
-        type: string
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: false
-        type: string
+        - name: access_token
+          in: header
+          description: access_token
+          required: true
+          type: string
+        - in: formData
+          name: appPackageName
+          description: appPackageName
+          required: true
+          schema:
+            type: string
+        - in: formData
+          name: appPackageVersion
+          description: appPackageVersion
+          required: true
+          schema:
+            type: string
+        - name: file
+          in: formData
+          description: app package
+          required: false
+          type: file
+        - in: formData
+          name: hostList
+          description: hostList
+          required: true
+          schema:
+            type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
       responses:
         '200':
           description: OK
           schema:
-            "$ref": "#/definitions/AppPackageDto"
+            type: object
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+      deprecated: false
+  '/apm/v1/tenants/{tenant_id}/packages/{app_package_id}':
+    get:
+      tags:
+        - APM api system
+      summary: Retrieves application package information
+      operationId: getAppPackageInfoUsingGET
+      produces:
+        - application/json
+      parameters:
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/AppPackageDto'
         '401':
           description: Unauthorized
         '403':
@@ -114,22 +328,22 @@ paths:
       deprecated: false
     delete:
       tags:
-      - APM api system
+        - APM api system
       summary: Deletes application package
       operationId: deleteAppPackageUsingDELETE
       produces:
-      - text/plain
+        - text/plain
       parameters:
-      - name: app_package_id
-        in: path
-        description: app package id
-        required: false
-        type: string
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: false
-        type: string
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
       responses:
         '200':
           description: OK
@@ -142,30 +356,30 @@ paths:
         '403':
           description: Forbidden
       deprecated: false
-  "/apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download":
+  '/apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download':
     get:
       tags:
-      - APM api system
+        - APM api system
       summary: Download application package CSAR
       operationId: downloadAppPackageUsingGET
       produces:
-      - application/octet-stream
+        - application/octet-stream
       parameters:
-      - name: app_package_id
-        in: path
-        description: app package id
-        required: false
-        type: string
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: false
-        type: string
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
       responses:
         '200':
           description: OK
           schema:
-            "$ref": "#/definitions/InputStreamResource"
+            $ref: '#/definitions/InputStreamResource'
         '401':
           description: Unauthorized
         '403':
@@ -173,30 +387,30 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  "/apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_ip}":
+  '/apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_ip}':
     delete:
       tags:
-      - APM api system
+        - APM api system
       summary: Deletes an application packages
       operationId: deleteAppPackageInHostUsingDELETE
       produces:
-      - text/plain
+        - text/plain
       parameters:
-      - name: app_package_id
-        in: path
-        description: app package id
-        required: false
-        type: string
-      - name: host_ip
-        in: path
-        description: host ip
-        required: false
-        type: string
-      - name: tenant_id
-        in: path
-        description: tenant id
-        required: false
-        type: string
+        - name: app_package_id
+          in: path
+          description: app package id
+          required: false
+          type: string
+        - name: host_ip
+          in: path
+          description: host ip
+          required: false
+          type: string
+        - name: tenant_id
+          in: path
+          description: tenant id
+          required: false
+          type: string
       responses:
         '200':
           description: OK
@@ -236,24 +450,80 @@ definitions:
       mecHostInfo:
         type: array
         items:
-          "$ref": "#/definitions/MecHostDto"
+          $ref: '#/definitions/MecHostDto'
       modifiedTime:
         type: string
     title: AppPackageDto
+  AppPackageInfoDto:
+    type: object
+    properties:
+      affinity:
+        type: string
+      appId:
+        type: string
+      contact:
+        type: string
+      createTime:
+        type: string
+      details:
+        type: string
+      format:
+        type: string
+      industry:
+        type: string
+      name:
+        type: string
+      packageId:
+        type: string
+      provider:
+        type: string
+      shortDesc:
+        type: string
+      size:
+        type: string
+      status:
+        type: string
+      testTaskId:
+        type: string
+      type:
+        type: string
+      userId:
+        type: string
+      userName:
+        type: string
+      version:
+        type: string
+    title: AppPackageInfoDto
+  AppPackageSyncStatusDto:
+    type: object
+    properties:
+      appId:
+        type: string
+      name:
+        type: string
+      operationalInfo:
+        type: string
+      packageId:
+        type: string
+      syncStatus:
+        type: string
+    title: AppPackageSyncStatusDto
   File:
     type: object
     properties:
       absolute:
         type: boolean
       absoluteFile:
-        "$ref": "#/definitions/File"
+        $ref: '#/definitions/File'
       absolutePath:
         type: string
       canonicalFile:
-        "$ref": "#/definitions/File"
+        $ref: '#/definitions/File'
       canonicalPath:
         type: string
       directory:
+        type: boolean
+      executable:
         type: boolean
       file:
         type: boolean
@@ -262,20 +532,27 @@ definitions:
         format: int64
       hidden:
         type: boolean
+      lastModified:
+        type: integer
+        format: int64
       name:
         type: string
       parent:
         type: string
       parentFile:
-        "$ref": "#/definitions/File"
+        $ref: '#/definitions/File'
       path:
         type: string
+      readable:
+        type: boolean
       totalSpace:
         type: integer
         format: int64
       usableSpace:
         type: integer
         format: int64
+      writable:
+        type: boolean
     title: File
   InputStream:
     type: object
@@ -286,20 +563,25 @@ definitions:
       description:
         type: string
       file:
-        "$ref": "#/definitions/File"
+        $ref: '#/definitions/File'
       filename:
         type: string
       inputStream:
-        "$ref": "#/definitions/InputStream"
+        $ref: '#/definitions/InputStream'
       open:
         type: boolean
       readable:
         type: boolean
       uri:
-        "$ref": "#/definitions/URI"
+        $ref: '#/definitions/URI'
       url:
-        "$ref": "#/definitions/URL"
+        $ref: '#/definitions/URL'
     title: InputStreamResource
+  'Map«string,string»':
+    type: object
+    title: 'Map«string,string»'
+    additionalProperties:
+      type: string
   MecHostDto:
     type: object
     properties:
@@ -310,6 +592,36 @@ definitions:
       status:
         type: string
     title: MecHostDto
+  Resource:
+    type: object
+    properties:
+      description:
+        type: string
+      file:
+        $ref: '#/definitions/File'
+      filename:
+        type: string
+      inputStream:
+        $ref: '#/definitions/InputStream'
+      open:
+        type: boolean
+      readable:
+        type: boolean
+      uri:
+        $ref: '#/definitions/URI'
+      url:
+        $ref: '#/definitions/URL'
+    title: Resource
+  SyncAppPackageDto:
+    type: object
+    properties:
+      appId:
+        type: string
+      appstoreIp:
+        type: string
+      packageId:
+        type: string
+    title: SyncAppPackageDto
   URI:
     type: object
     properties:
@@ -359,6 +671,8 @@ definitions:
       defaultPort:
         type: integer
         format: int32
+      deserializedFields:
+        $ref: '#/definitions/URLStreamHandler'
       file:
         type: string
       host:
@@ -374,6 +688,13 @@ definitions:
         type: string
       ref:
         type: string
+      serializedHashCode:
+        type: integer
+        format: int32
       userInfo:
         type: string
     title: URL
+  URLStreamHandler:
+    type: object
+    title: URLStreamHandler
+

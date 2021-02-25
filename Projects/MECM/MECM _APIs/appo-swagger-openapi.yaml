@@ -7,19 +7,19 @@ info:
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.0
 servers:
-  - url: //127.0.0.1:8091/
+- url: //127.0.0.1:30201/
 tags:
-  - name: app-orchestrator-handler
-    description: App Orchestrator Handler
-  - name: app-rule-handler
-    description: App Rule Handler
-  - name: appo-db-handler
-    description: Appo Db Handler
+- name: app-orchestrator-handler
+  description: App Orchestrator Handler
+- name: app-rule-handler
+  description: App Rule Handler
+- name: appo-db-handler
+  description: Appo Db Handler
 paths:
   /appo/v1/health:
     get:
       tags:
-        - app-orchestrator-handler
+      - app-orchestrator-handler
       summary: Queries liveness and readiness
       operationId: healthCheckUsingGET
       responses:
@@ -42,25 +42,25 @@ paths:
   /appo/v1/tenants/{tenant_id}/app_instance_infos:
     get:
       tags:
-        - appo-db-handler
+      - appo-db-handler
       summary: Retrieves application instance info
       operationId: getAllAppInstanceInfoUsingGET
       parameters:
-        - name: appinstanceids
-          in: query
-          description: appinstanceids
-          style: form
-          explode: true
-          schema:
-            type: array
-            items:
-              type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
+      - name: appinstanceids
+        in: query
+        description: appinstanceids
+        style: form
+        explode: true
+        schema:
+          type: array
+          items:
             type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       responses:
         200:
           description: OK
@@ -81,22 +81,22 @@ paths:
   /appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_id}:
     get:
       tags:
-        - appo-db-handler
+      - appo-db-handler
       summary: Retrieves application instance info
       operationId: getAppInstanceInfoUsingGET
       parameters:
-        - name: appInstance_id
-          in: path
-          description: application instance id
-          required: true
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
-            type: string
+      - name: appInstance_id
+        in: path
+        description: application instance id
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       responses:
         200:
           description: OK
@@ -117,21 +117,21 @@ paths:
   /appo/v1/tenants/{tenant_id}/app_instances:
     post:
       tags:
-        - app-orchestrator-handler
+      - app-orchestrator-handler
       summary: Creates application instance
       operationId: createAppInstanceUsingPOST
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       requestBody:
         description: create application instance
         content:
@@ -172,21 +172,21 @@ paths:
   /appo/v1/tenants/{tenant_id}/app_instances/batch_create:
     post:
       tags:
-        - app-orchestrator-handler
+      - app-orchestrator-handler
       summary: Batch creates application instances
       operationId: batchCreateAppInstanceUsingPOST
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       requestBody:
         description: create application instance
         content:
@@ -227,21 +227,21 @@ paths:
   /appo/v1/tenants/{tenant_id}/app_instances/batch_instantiate:
     post:
       tags:
-        - app-orchestrator-handler
+      - app-orchestrator-handler
       summary: Batch instantiate application instances
       operationId: batchInstantiateAppInstanceUsingPOST
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       requestBody:
         description: Instantiate application instances
         content:
@@ -282,21 +282,21 @@ paths:
   /appo/v1/tenants/{tenant_id}/app_instances/batch_terminate:
     post:
       tags:
-        - app-orchestrator-handler
+      - app-orchestrator-handler
       summary: Batch terminate application instances
       operationId: batchTerminateAppInstancesUsingPOST
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       requestBody:
         description: Batch terminate application instances
         content:
@@ -337,27 +337,27 @@ paths:
   /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}:
     get:
       tags:
-        - app-orchestrator-handler
+      - app-orchestrator-handler
       summary: Retrieves application instance information
       operationId: getAppInstanceUsingGET
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: app_instance_id
-          in: path
-          description: application instance id
-          required: true
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: app_instance_id
+        in: path
+        description: application instance id
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       responses:
         200:
           description: OK
@@ -377,27 +377,27 @@ paths:
       deprecated: false
     post:
       tags:
-        - app-orchestrator-handler
+      - app-orchestrator-handler
       summary: Instantiate application instance
       operationId: instantiateAppInstanceUsingPOST
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: app_instance_id
-          in: path
-          description: application instance id
-          required: true
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: app_instance_id
+        in: path
+        description: application instance id
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       responses:
         200:
           description: OK
@@ -429,27 +429,27 @@ paths:
       deprecated: false
     delete:
       tags:
-        - app-orchestrator-handler
+      - app-orchestrator-handler
       summary: Terminates application instance
       operationId: terminateAppInstanceUsingDELETE
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: app_instance_id
-          in: path
-          description: application instance id
-          required: true
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: app_instance_id
+        in: path
+        description: application instance id
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       responses:
         200:
           description: OK
@@ -482,27 +482,27 @@ paths:
   /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration:
     put:
       tags:
-        - app-rule-handler
+      - app-rule-handler
       summary: Updates application rules
       operationId: updateApplicationRulesUsingPUT
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: app_instance_id
-          in: path
-          description: app instance identifier
-          required: true
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant identifier
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: app_instance_id
+        in: path
+        description: app instance identifier
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
       requestBody:
         description: appD rule inventory information
         content:
@@ -533,27 +533,27 @@ paths:
       x-codegen-request-body-name: appRuleConfigDto
     post:
       tags:
-        - app-rule-handler
+      - app-rule-handler
       summary: Configure application rules
       operationId: addAppRulesUsingPOST
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: app_instance_id
-          in: path
-          description: app instance identifier
-          required: true
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant identifier
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: app_instance_id
+        in: path
+        description: app instance identifier
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
       requestBody:
         description: appD rule inventory information
         content:
@@ -584,27 +584,27 @@ paths:
       x-codegen-request-body-name: appRuleConfigDto
     delete:
       tags:
-        - app-rule-handler
+      - app-rule-handler
       summary: Deletes application rules
       operationId: deleteApplicationRulesUsingDELETE
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: app_instance_id
-          in: path
-          description: app instance identifier
-          required: true
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant identifier
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: app_instance_id
+        in: path
+        description: app instance identifier
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant identifier
+        required: true
+        schema:
+          type: string
       requestBody:
         description: app rule information
         content:
@@ -633,22 +633,22 @@ paths:
   /appo/v1/tenants/{tenant_id}/apprule_task_infos/{apprule_task_id}:
     get:
       tags:
-        - appo-db-handler
+      - appo-db-handler
       summary: Retrieves application rule task info
       operationId: getAppRuletaskInfoUsingGET
       parameters:
-        - name: apprule_task_id
-          in: path
-          description: application instance id
-          required: true
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
-            type: string
+      - name: apprule_task_id
+        in: path
+        description: application instance id
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       responses:
         200:
           description: OK
@@ -669,27 +669,27 @@ paths:
   /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/kpi:
     get:
       tags:
-        - app-orchestrator-handler
+      - app-orchestrator-handler
       summary: Retrieves edge host performance statistics
       operationId: queryKpiUsingGET
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: host_ip
-          in: path
-          description: edge host ip
-          required: true
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant_id
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: host_ip
+        in: path
+        description: edge host ip
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant_id
+        required: true
+        schema:
+          type: string
       responses:
         200:
           description: OK
@@ -710,27 +710,27 @@ paths:
   /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities:
     get:
       tags:
-        - app-orchestrator-handler
+      - app-orchestrator-handler
       summary: Retrieves edge host platform capabilities
       operationId: queryEdgehostCapabilitiesUsingGET
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: host_ip
-          in: path
-          description: edge host ip
-          required: true
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: host_ip
+        in: path
+        description: edge host ip
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       responses:
         200:
           description: OK
@@ -751,33 +751,33 @@ paths:
   /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities/{capability_id}:
     get:
       tags:
-        - app-orchestrator-handler
+      - app-orchestrator-handler
       summary: Retrieves edge host platform capabilities
       operationId: queryEdgehostCapabilityUsingGET
       parameters:
-        - name: access_token
-          in: header
-          description: access token
-          schema:
-            type: string
-        - name: capability_id
-          in: path
-          description: capability_id
-          required: true
-          schema:
-            type: string
-        - name: host_ip
-          in: path
-          description: edge host ip
-          required: true
-          schema:
-            type: string
-        - name: tenant_id
-          in: path
-          description: tenant id
-          required: true
-          schema:
-            type: string
+      - name: access_token
+        in: header
+        description: access token
+        schema:
+          type: string
+      - name: capability_id
+        in: path
+        description: capability_id
+        required: true
+        schema:
+          type: string
+      - name: host_ip
+        in: path
+        description: edge host ip
+        required: true
+        schema:
+          type: string
+      - name: tenant_id
+        in: path
+        description: tenant id
+        required: true
+        schema:
+          type: string
       responses:
         200:
           description: OK
@@ -890,6 +890,9 @@ components:
           type: string
         ipAddressType:
           type: string
+          enum:
+          - IP_V4
+          - IP_V6
         ttl:
           type: integer
           format: int32
@@ -966,12 +969,22 @@ components:
       properties:
         action:
           type: string
+          enum:
+          - DROP
+          - FORWARD_DECAPSULATED
+          - FORWARD_AS_IS
+          - PASSTHROUGH
+          - DUPLICATED_DECAPSULATED
+          - DUPLICATE_AS_IS
         dstInterface:
           type: array
           items:
             $ref: '#/components/schemas/DstInterfaceDto'
         filterType:
           type: string
+          enum:
+          - FLOW
+          - PACKET
         priority:
           type: integer
           format: int32
@@ -993,3 +1006,4 @@ components:
           type: string
         tunnelType:
           type: string
+
