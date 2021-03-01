@@ -2771,6 +2771,7 @@ Request parameters:
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
+| appInstanceId  | String | APP实例ID(UUID)  | header |  Yes   |
 
 Example Request:
 
