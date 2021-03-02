@@ -40,6 +40,10 @@ The document is for the appstore-be project, there are six parts of interfaces i
     - [6.4 Delete Message](#64-Delete-Message)
     - [6.5 Accept Message](#65-Accept-Message)
     - [6.6 Update Status](#66-Update-Status)
+  - [7. APP Pull](#7-app-pull)
+    - [7.1 Query Pull App List](#71-query-pull-app-list)
+    - [7.2 Get Pull App Packages](#72-get-pull-app-packages-by-platfromId)
+    - [7.3 Pull App Package](#73-pull-app-package)
 
 
 ## 1. APP
@@ -501,6 +505,7 @@ Example response:
     "shortDesc": "string",
     "industry": "string",
     "type": "string",
+    "createTime": "string"
   }
 ]
 ```
@@ -536,6 +541,7 @@ Example response:
     "shortDesc": "string",
     "industry": "string",
     "type": "string",
+    "createTime": "string"
   }
 ]
 ```
@@ -903,4 +909,95 @@ Example response:
 ```
 200 OK
   success
+```
+
+## 7. APP Push
+
+User can pull an app from other appstore. 
+
+
+### 7.1 Query Pull App List
+Query the app list which can pull
+```
+URI： /mec/appstore/v1/packages/pullable
+Method: GET
+```
+
+Example response:
+```
+200 OK
+[
+  {
+    "appId": "string",
+    "packageId": "string",
+    "name": "string",
+    "provider": "string",
+    "version": "string",
+    "atpTestStatus": "string",
+    "atpTestTaskId": "string",
+    "atpTestReportUrl": "string",
+    "latestPushTime": "string",
+    "pushTimes": "string",
+    "targetPlatform": "string",
+    "affinity": "string",
+    "shortDesc": "string",
+    "industry": "string",
+    "type": "string",
+    "createTime": "string"
+  }
+]
+```
+
+### 7.2 Get Pull App Packages
+Get pull app packages by platfromId.
+```
+URI： /mec/appstore/v1/packages/{platfromId}/pullable
+Method: GET
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|platfromId |external appstore id|path |yes|
+
+Example response:
+```
+200 OK
+[
+  {
+    "appId": "string",
+    "packageId": "string",
+    "name": "string",
+    "provider": "string",
+    "version": "string",
+    "atpTestStatus": "string",
+    "atpTestTaskId": "string",
+    "atpTestReportUrl": "string",
+    "latestPushTime": "string",
+    "pushTimes": "string",
+    "targetPlatform": "string",
+    "affinity": "string",
+    "shortDesc": "string",
+    "industry": "string",
+    "type": "string",
+    "createTime": "string"
+  }
+]
+```
+
+### 7.3 Pull App Package
+Pull app package by packageId
+```
+URI： /mec/appstore/v1/packages/{packageId}/action/pull
+Method: POST
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|packageId |package id|path |yes|
+|dto |pull request dto|request param |yes|
+
+Example response:
+```
+200 OK
+  true
 ```

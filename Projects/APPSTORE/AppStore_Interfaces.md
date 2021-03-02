@@ -40,6 +40,11 @@
     - [6.4 删除消息](#64-删除消息)
     - [6.5 接收消息](#65-接收消息)
     - [6.6 更新状态](#66-更新状态)
+  - [7. 应用拉取](#7-应用拉取)
+    - [7.1 查询可拉取应用列表](#71-查询可推送应用列表)
+    - [7.2 获取外部仓库可拉取应用列表](#72-根据仓库id获取该仓库可拉取应用列表)
+    - [7.3 拉取应用包](#73-拉取应用包)
+
 
 
 ## 1. 应用
@@ -498,6 +503,7 @@ URI： /mec/appstore/v1/packages/pushable
     "shortDesc": "string",
     "industry": "string",
     "type": "string",
+    "createTime": "string"
   }
 ]
 ```
@@ -533,6 +539,7 @@ URI： /mec/appstore/v1/packages/{packageId}/pushable
     "shortDesc": "string",
     "industry": "string",
     "type": "string",
+    "createTime": "string"
   }
 ]
 ```
@@ -626,7 +633,7 @@ URI： /mec/appstore/v1/appstores
     "appdTransId": "string",
     "description": "string",
     "addedTime": "string",
-    "modifiedTime": "string",
+    "modifiedTime": "string"
   }
 ```
 
@@ -680,7 +687,7 @@ URI： /mec/appstore/v1/appstores/{appStoreId}
     "appdTransId": "string",
     "description": "string",
     "addedTime": "string",
-    "modifiedTime": "string",
+    "modifiedTime": "string"
   }
 ```
 
@@ -711,7 +718,7 @@ URI： /mec/appstore/v1/appstores
     "appdTransId": "string",
     "description": "string",
     "addedTime": "string",
-    "modifiedTime": "string",
+    "modifiedTime": "string"
   }
 ]
 ```
@@ -741,7 +748,7 @@ URI： /mec/appstore/v1/appstores/{appStoreId}
     "appdTransId": "string",
     "description": "string",
     "addedTime": "string",
-    "modifiedTime": "string",
+    "modifiedTime": "string"
   }
 ```
 
@@ -808,7 +815,8 @@ URI： /mec/appstore/v1/messages
     "atpTestStatus": "string",
     "atpTestTaskId": "string",
     "atpTestReportUrl": "string",
-    "readed": true,
+    "iconDownloadUrl": "string",
+    "readed": true
   }
 ]
 ```
@@ -846,7 +854,8 @@ URI： /mec/appstore/v1/messages/{messageId}
     "atpTestStatus": "string",
     "atpTestTaskId": "string",
     "atpTestReportUrl": "string",
-    "readed": true,
+    "iconDownloadUrl": "string",
+    "readed": true
   }
 ```
 
@@ -900,4 +909,95 @@ URI： /mec/appstore/v1/messages/{messageId}/action/readed
 ```
 200 OK
   success
+```
+
+## 7. 应用拉取
+
+用户可以从运营商或第三方仓库拉取应用。 
+
+
+### 7.1 查询可拉取应用列表
+查询可拉取的应用列表。
+```
+URI： /mec/appstore/v1/packages/pullable
+方法类型: GET
+```
+
+响应示例:
+```
+200 OK
+[
+  {
+    "appId": "string",
+    "packageId": "string",
+    "name": "string",
+    "provider": "string",
+    "version": "string",
+    "atpTestStatus": "string",
+    "atpTestTaskId": "string",
+    "atpTestReportUrl": "string",
+    "latestPushTime": "string",
+    "pushTimes": "string",
+    "targetPlatform": "string",
+    "affinity": "string",
+    "shortDesc": "string",
+    "industry": "string",
+    "type": "string",
+    "createTime": "string"
+  }
+]
+```
+
+### 7.2 获取外部应用仓库可拉取应用列表
+根据platfromId获取外部仓库可拉取应用列表。
+```
+URI： /mec/appstore/v1/packages/{platfromId}/pullable
+方法类型: GET
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|platformId |外部应用仓库ID|path |yes|
+
+响应示例:
+```
+200 OK
+[
+  {
+    "appId": "string",
+    "packageId": "string",
+    "name": "string",
+    "provider": "string",
+    "version": "string",
+    "atpTestStatus": "string",
+    "atpTestTaskId": "string",
+    "atpTestReportUrl": "string",
+    "latestPushTime": "string",
+    "pushTimes": "string",
+    "targetPlatform": "string",
+    "affinity": "string",
+    "shortDesc": "string",
+    "industry": "string",
+    "type": "string",
+    "createTime": "string"
+  }
+]
+```
+
+### 7.3 拉取应用包
+根据packageId拉取应用包。
+```
+URI： /mec/appstore/v1/packages/{packageId}/action/pull
+方法类型: POST
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|packageId |应用包ID|path |yes|
+|dto |拉取请求|request param |yes|
+
+响应示例:
+```
+200 OK
+  true
 ```
