@@ -635,7 +635,7 @@ Example response:
     "appdTransId": "string",
     "description": "string",
     "addedTime": "string",
-    "modifiedTime": "string",
+    "modifiedTime": "string"
   }
 ```
 
@@ -689,7 +689,7 @@ Example response:
     "appdTransId": "string",
     "description": "string",
     "addedTime": "string",
-    "modifiedTime": "string",
+    "modifiedTime": "string"
   }
 ```
 
@@ -720,7 +720,7 @@ Example response:
     "appdTransId": "string",
     "description": "string",
     "addedTime": "string",
-    "modifiedTime": "string",
+    "modifiedTime": "string"
   }
 ]
 ```
@@ -750,7 +750,7 @@ Example response:
     "appdTransId": "string",
     "description": "string",
     "addedTime": "string",
-    "modifiedTime": "string",
+    "modifiedTime": "string"
   }
 ```
 
@@ -817,7 +817,8 @@ Example response:
     "atpTestStatus": "string",
     "atpTestTaskId": "string",
     "atpTestReportUrl": "string",
-    "readed": true,
+    "iconDownloadUrl": "string",
+    "readed": true
   }
 ]
 ```
@@ -855,7 +856,8 @@ Example response:
     "atpTestStatus": "string",
     "atpTestTaskId": "string",
     "atpTestReportUrl": "string",
-    "readed": true,
+    "iconDownloadUrl": "string",
+    "readed": true
   }
 ```
 
