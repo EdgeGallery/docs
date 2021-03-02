@@ -97,37 +97,31 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 
 ### 登录应用平台
  进入网址后，默认为guest用户，可以查看信息。如果要进行更多操作（如上传应用）还需注册账号，注册完成，使用该账户登录之后便可进入应用平台首页：
-
-![](/uploads/images/2020/v1.0/appstore_guide/1.png "1.png")
-![](/uploads/images/2020/v1.0/appstore_guide/1.1.png "1.1.png")
-![](/uploads/images/2020/v1.0/appstore_guide/1.2.png "1.2.png")
-![](/uploads/images/2020/v1.0/appstore_guide/2.png "2.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/191718_ef8795f1_8354563.png "guest.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/191742_8a60ed36_8354563.png "register user.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/191807_268a5d77_8354563.png "login.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/191822_a972dd9f_8354563.png "login appstore.png")
 
 ### 查看应用
 1. 点击应用查看应用详情，详情界面展示应用版本，行业，类型等基本信息，下侧展示具体介绍，基本信息中的右侧操作中，右侧下载按钮有权限设置，只能下载自己上传的包，屏幕右下侧为包的结构，点击结构文件，弹框显示具体信息。
 2. 如需对APP进行评论，可使用鼠标左键点击APP详情右侧下方的评论按钮，在弹出的评论框输入评论，设置评分，鼠标左键点击按钮后，评论提交成功。
 ![](/uploads/images/2020/v1.0/appstore_guide/3.png "3.png")
 ![](/uploads/images/2020/v1.0/appstore_guide/4.png "4.png")
-![](/uploads/images/2020/v1.0/appstore_guide/5.png "5.png")
-![](/uploads/images/2020/v1.0/appstore_guide/6.png "6.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/191909_ca4c6443_8354563.png "comments.png")
 
 
 ### 发布应用
 1.上传APP，打开APP Store主界面，点击右侧上传图标，打开上传APP对话框。在上传对话框中选择需要上传的APP，上传或选择系统默认提供的APP图标，选择APP行业、类型、架构，填写APP简单描述，点击确认完成上传。
-
-![](/uploads/images/2020/v1.0/appstore_guide/7.png "7.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/191952_e64a965f_8354563.png "upload.png")
 
 2.应用上传后，会自动跳转至我的应用界面下，上传的应用需要经过平台的atp测试之后才可以发布到仓库。我的应用下是上传的包的基本信息，表格右侧为基本操作，点击测试按钮，会开始创建测试任务，页面为嵌套的atp测试页面，点击开始测试按钮，解析包的依赖，可以看到具体的测试用例有多少条，点击确定后开始测试，页面为测试进展页面，可以返回到我的应用页面，等待测完成
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192019_b0cf0e9a_8354563.png "totest.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192039_302d7c98_8354563.png "test task.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192103_280845a9_8354563.png "test success.png")
 
 3.我的应用中测试状态为Test_success（即测试成功）时才能发布应用，点击右侧的发布按钮，发布成功后，在首页可以看到你上传的应用。
-
-![](/uploads/images/2020/v1.0/appstore_guide/8.png "8.png")
-![](/uploads/images/2020/v1.0/appstore_guide/9.png "9.png")
-![](/uploads/images/2020/v1.0/appstore_guide/10.png "10.png")
-![](/uploads/images/2020/v1.0/appstore_guide/11.png "11.png")
-![](/uploads/images/2020/v1.0/appstore_guide/12.png "12.png")
-![](/uploads/images/2020/v1.0/appstore_guide/13.png "13.png")
-
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192122_8c007fdc_8354563.png "to publish.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192135_8433f303_8354563.png "published.png")
 
 ### 共享应用
 1.应用共享导航下分为外部应用仓库管理、应用推广、应用拉取、消息中心和操作分析；
