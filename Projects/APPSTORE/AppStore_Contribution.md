@@ -112,15 +112,16 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 
 ### 发布应用
 1.上传APP，打开APP Store主界面，点击右侧上传图标，打开上传APP对话框。在上传对话框中选择需要上传的APP，上传或选择系统默认提供的APP图标，选择APP行业、类型、架构，填写APP简单描述，点击确认完成上传。
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/191952_e64a965f_8354563.png "upload.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192640_64bd3779_8354563.png "upload.png")
 
 2.应用上传后，会自动跳转至我的应用界面下，上传的应用需要经过平台的atp测试之后才可以发布到仓库。我的应用下是上传的包的基本信息，表格右侧为基本操作，点击测试按钮，会开始创建测试任务，页面为嵌套的atp测试页面，点击开始测试按钮，解析包的依赖，可以看到具体的测试用例有多少条，点击确定后开始测试，页面为测试进展页面，可以返回到我的应用页面，等待测完成
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192019_b0cf0e9a_8354563.png "totest.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192605_91d29395_8354563.png "totest.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192039_302d7c98_8354563.png "test task.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192103_280845a9_8354563.png "test success.png")
 
 3.我的应用中测试状态为Test_success（即测试成功）时才能发布应用，点击右侧的发布按钮，发布成功后，在首页可以看到你上传的应用。
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192122_8c007fdc_8354563.png "to publish.png")
+
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/192135_8433f303_8354563.png "published.png")
 
 ### 共享应用
