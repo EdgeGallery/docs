@@ -126,21 +126,21 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 
 ### 共享应用
 1.应用共享导航下分为外部应用仓库管理、应用推广、应用拉取、消息中心和操作分析；
-![](/uploads/images/2020/v1.0/appstore_guide/23.png "23.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/195855_58a0fae6_8354563.png "app share.png")
 
 2.外部应用仓库管理页面，可以添加、修改和删除仓库。
-![](/uploads/images/2020/v1.0/appstore_guide/21.png "21.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/195911_6a3b0e79_8354563.png "third appstores.png")
 
 3.点击应用共享主菜单下的应用推送菜单查看可推送的应用信息，选择需要推送给运营商或者第三方的应用，打开应用推送操作对话框。点击推送操作对话框左下角执行按钮，触发推送任务，然后查看应用推送到运营商或者第三方的结果。
-![](/uploads/images/2020/v1.0/appstore_guide/17.png "17.png")
-![](/uploads/images/2020/v1.0/appstore_guide/18.png "18.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/195929_495a77ac_8354563.png "to push.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/195946_0b730700_8354563.png "pushed.png")
 
 4.点击应用共享主菜单下的应用拉取菜单查看各个外部仓库可拉取的应用信息，选择需要拉取的应用可进行批量拉取。
 ![](/uploads/images/2020/v1.0/appstore_guide/17.png "17.png")
 ![](/uploads/images/2020/v1.0/appstore_guide/18.png "18.png")
 
-5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。通过单击消息中心右侧面板右上角的接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在APP推送界面查看。
-![](/uploads/images/2020/v1.0/appstore_guide/22.png "22.png")
+5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。通过单击消息中心右侧面板右上角的接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在APP推送界面查看，点击删除按钮则删除该条消息。
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/200006_86868cf9_8354563.png "messages.png")
 
 6.应用推送成功后切换到右边操作分析tab，在操作分析界面查看对应的信息，同时操作分析界面可以查看不同操作如：拉取、下载、通知、推送等类型的消息。
 ![](/uploads/images/2020/v1.0/appstore_guide/20.png "20.png")
