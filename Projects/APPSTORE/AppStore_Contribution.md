@@ -142,6 +142,6 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/200006_86868cf9_8354563.png "messages.png")
 
 6.应用推送成功后切换到右边操作分析tab，在操作分析界面查看对应的信息，同时操作分析界面可以查看不同操作如：拉取、下载、通知、推送等类型的消息。
-![](/uploads/images/2020/v1.0/appstore_guide/20.png "20.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0303/153318_8c213d5c_8354563.png "operations.png")
 
 
