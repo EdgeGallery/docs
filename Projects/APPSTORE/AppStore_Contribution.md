@@ -97,7 +97,7 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 
 ### 登录应用平台
  进入网址后，默认为guest用户，可以查看信息。如果要进行更多操作（如上传应用）还需注册账号，注册完成，使用该账户登录之后便可进入应用平台首页：
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/191718_ef8795f1_8354563.png "guest.png")
+![](/uploads/images/2021/appstore/guest.png "1.1")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/191742_8a60ed36_8354563.png "register user.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/191807_268a5d77_8354563.png "login.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/191822_a972dd9f_8354563.png "login appstore.png")
