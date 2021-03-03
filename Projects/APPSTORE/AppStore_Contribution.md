@@ -136,7 +136,8 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/195946_0b730700_8354563.png "pushed.png")
 
 4.点击应用共享主菜单下的应用拉取菜单查看各个外部仓库可拉取的应用信息，选择需要拉取的应用可进行批量拉取。
-
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0303/153439_8710e2e9_8354563.png "to pull.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0303/153452_73286397_8354563.png "pulled.png")
 
 5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。通过单击消息中心右侧面板右上角的接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在APP推送界面查看，点击删除按钮则删除该条消息。
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0302/200006_86868cf9_8354563.png "messages.png")
