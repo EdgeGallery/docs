@@ -31,6 +31,7 @@ ATP Dependency
 |com.h2database|h2|1.4.199 |MPL 2.0 or EPL 1.0|Y|
 |commons-fileupload|commons-fileupload|1.3.3 |Apache License, Version 2.0|Y|
 |org.python|jython|2.5.3 |Python Software Foudation License V2|Y|
+|com.alibaba|fastjson|1.2.70 |Apache License, Version 2.0|Y|
 
 
 ## ATP-fe 三方件使用清单
