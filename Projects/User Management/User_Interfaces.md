@@ -153,7 +153,7 @@ response 500 INTERNAL ERROR
 
 ### 2.2 修改密码（个人修改密码 & 找回密码）
 
-1. 用户在个人中心通过原密码验证方式修改个人密码。
+1. 用户登录后在个人中心通过原密码验证方式修改个人密码。
 2. 如果用户注册时提供了真实的邮箱地址或手机号（也可以在个人中心填写这两项信息），可以通过邮箱或手机验证码的方式重置密码。需要开启邮件服务或短信服务才能使用。
 
 ```
@@ -165,7 +165,6 @@ Method: PUT
 | ------------- | ---------- |-------|---------| -------- |
 | type | 修改密码的类型 |body|是| 1--原密码验证修改; 2--密码找回 |
 | newPassword | 修改后的新密码 |body|是| 必须满足复杂度要求，必须是数字/字母/特数字符的组合，长度在6~18个字符之间  |
-| userId | 用户ID |body|否| 当type=1时必填 |
 | oldPassword | 原密码 |body|否| 当type=1时必填 |
 | telephone | 手机号码 |body|否| 当type=2时，且需要通过手机号找回时，填写已经注册过的手机号码。与mailAddress有效性互斥 |
 | mailAddress | 邮箱地址 |body|否| 当type=2时，且需要通过邮箱找回时，填写已经注册过的邮箱地址。与telephone有效性互斥 |
@@ -176,7 +175,6 @@ Example request:
 {
   "type": 2,
   "newPassword": "123.qwe",
-  "userId": "",
   "oldPassword": "",
   "telephone": "",
   "mailAddress": "test@edgegallery.org",
