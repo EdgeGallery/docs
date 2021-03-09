@@ -1,6 +1,7 @@
 数据库设计
 =========================
-ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用了两张数据库表格：
+ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用的数据库表格如下：
+在V1.1版本中，较v1.0版本，TASK_TABLE表中TESTCASEDETAIL字段存储内容发生变化，TEST_CASE_TABLE表中存储字段发生变化，因此升级V1.1版本需要清除TASK_TABLE表和TEST_CASE_TABLE表中所有数据，否则功能会有问题。
 
 - TABLE TASK_TABLE: 存储测试任务信息
 ```
