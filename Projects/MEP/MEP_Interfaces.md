@@ -69,7 +69,7 @@ URL为服务自己的URL，PORT为服务自己的PORT。如果经过KONG，PORT�
 URL：
 
 ```
-POST /mepauth/v1/token
+POST /mep/token
 ```
 
 请求参数：
@@ -90,7 +90,7 @@ Body参数：
 请求示例：
 
 ```
-POST /mepauth/v1/token
+POST /mep/token
 
 {
   "header": [
@@ -149,7 +149,7 @@ HTTP/1.1 200 OK
 URL：
 
 ```
-PUT /mepauth/v1/applications/{appInstanceId}/confs
+PUT /mep/appMng/v1/applications/{appInstanceId}/confs
 ```
 
 请求参数：
@@ -171,7 +171,7 @@ Body参数：
 请求示例：
 
 ```
-PUT /mepauth/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confs
+PUT /mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confs
 {
     "header": [
         {
