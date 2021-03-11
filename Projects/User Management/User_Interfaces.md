@@ -57,7 +57,7 @@ response 200 OK
   "username": "TestUser1",
   "mailAddress": "test@edgegallery.org",
   "telephone": "13812345678",
-  "createTime":"2021-02-24 04:39:23.640688",
+  "createTime":"2021-02-24 04:39:23",
   "allowed": true,
   "userId": "37423702-051a-46b4-bf2b-f190759cc0b8",
   "permissions": [
@@ -340,6 +340,7 @@ response 500 INTERNAL SERVER ERROR
 Resource URI: /v1/users/{userId}
 Method: DELETE
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
+User: admin
 ```
 
 | Name      | Definition |type   | Required|Describe |
@@ -376,7 +377,6 @@ response 403 FORBIDDEN
 ```
 Resource URI: /v1/users/{userId}
 Method: PUT
-Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 ```
 
 | Name      | Definition |type   | Required|Describe |
