@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-15 06:29+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:2
+msgid "数据库设计"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:3
+msgid "在V1.1版本中，较v1.0版本，TASK_TABLE表中TESTCASEDETAIL字段存储内容发生变化，TEST_CASE_TABLE表中存储字段发生变化，因此升级V1.1版本需要清除TASK_TABLE表和TEST_CASE_TABLE表中所有数据，否则功能会有问题。"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:4
+msgid "ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用的数据库表格如下："
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:6
+msgid "TABLE TASK_TABLE: 存储测试任务信息"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:20
+#: ../../Projects/ATP/ATP_DataBase_Design.md:22
+#: ../../Projects/ATP/ATP_DataBase_Design.md:42
+#: ../../Projects/ATP/ATP_DataBase_Design.md:44
+#: ../../Projects/ATP/ATP_DataBase_Design.md:55
+#: ../../Projects/ATP/ATP_DataBase_Design.md:57
+#: ../../Projects/ATP/ATP_DataBase_Design.md:68
+#: ../../Projects/ATP/ATP_DataBase_Design.md:70
+#: ../../Projects/ATP/ATP_DataBase_Design.md:79
+#: ../../Projects/ATP/ATP_DataBase_Design.md:81
+#: ../../Projects/ATP/ATP_DataBase_Design.md:94
+#: ../../Projects/ATP/ATP_DataBase_Design.md:96
+msgid "```"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:19
+msgid "CREATE TABLE TASK_TABLE ("
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:9
+msgid ""
+"ID                       VARCHAR(200)       NOT NULL, APPNAME"
+"                  VARCHAR(200)       NULL, APPVERSION               "
+"VARCHAR(200)       NULL, STATUS                   VARCHAR(200)       "
+"NULL, TESTCASEDETAIL           TEXT               NULL, CREATETIME"
+"               TIMESTAMP          NULL, ENDTIME                  "
+"TIMESTAMP          NULL, PROVIDERID               VARCHAR(200)       "
+"NULL, PACKAGEPATH              VARCHAR(200)       NULL, USERID"
+"                   VARCHAR(200)       NULL, USERNAME                 "
+"VARCHAR(200)       NULL, CONSTRAINT task_table_pkey PRIMARY KEY (ID)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:21
+#: ../../Projects/ATP/ATP_DataBase_Design.md:43
+#: ../../Projects/ATP/ATP_DataBase_Design.md:56
+#: ../../Projects/ATP/ATP_DataBase_Design.md:69
+#: ../../Projects/ATP/ATP_DataBase_Design.md:95
+msgid ");"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:24
+msgid "TEST_CASE_TABLE : 存储测试用例信息"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:41
+msgid "CREATE TABLE TEST_CASE_TABLE ("
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:27
+msgid ""
+"ID                       VARCHAR(200)       NOT NULL, NAMECH"
+"                   VARCHAR(200)       NULL, NAMEEN                   "
+"VARCHAR(200)       NULL, TYPE                     VARCHAR(200)       "
+"NULL, CLASSNAME                VARCHAR(200)       NULL, HASHCODE"
+"                 TEXT               NULL, DESCRIPTIONCH            TEXT"
+"               NULL, DESCRIPTIONEN            TEXT               NULL, "
+"FILEPATH                 VARCHAR(200)       NULL, CODELANGUAGE"
+"             VARCHAR(200)       NULL, EXPECTRESULTCH           "
+"VARCHAR(200)       NULL, EXPECTRESULTEN           VARCHAR(200)       "
+"NULL, TESTSUITEIDLIST          TEXT               NULL, TESTSTEPCH"
+"               TEXT               NULL, TESTSTEPEN               TEXT"
+"               NULL, CONSTRAINT test_case_table_pkey PRIMARY KEY (ID)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:46
+msgid "TEST_SCENARIO_TABLE: 存储测试场景信息"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:54
+msgid "CREATE TABLE TEST_SCENARIO_TABLE ("
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:49
+msgid ""
+"ID                       VARCHAR(200)       NOT NULL, NAMECH"
+"                   VARCHAR(200)       NULL, NAMEEN                   "
+"VARCHAR(200)       NULL, DESCRIPTIONCh            TEXT               "
+"NULL, DESCRIPTIONEN            TEXT               NULL, LABEL"
+"                    VARCHAR(200)       NULL, CONSTRAINT "
+"test_scenario_table_pkey PRIMARY KEY (ID)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:59
+msgid "TEST_SUITE_TABLE: 存储测试套信息"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:67
+msgid "CREATE TABLE TEST_SUITE_TABLE ("
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:62
+msgid ""
+"ID                       VARCHAR(200)       NOT NULL, NAMECH"
+"                   VARCHAR(200)       NULL, NAMEEN                   "
+"VARCHAR(200)       NULL, DESCRIPTIONCh            TEXT               "
+"NULL, DESCRIPTIONEN            TEXT               NULL, SCENARIOIDLIST"
+"           VARCHAR(255)       NULL, CONSTRAINT test_suite_table_pkey "
+"PRIMARY KEY (ID)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:72
+msgid "FILE_TABLE: 存储图标文件信息"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:77
+msgid "CREATE TABLE FILE_TABLE ("
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:75
+msgid ""
+"FILEID                   VARCHAR(200)       NOT NULL, TYPE"
+"                     VARCHAR(200)       NOT NULL, CREATETIME"
+"               TIMESTAMP          NULL, FILEPATH                 "
+"VARCHAR(200)       NULL"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:79
+msgid ""
+"); alter table FILE_TABLE add constraint file_table_pkey "
+"unique(FILEID,TYPE);"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:83
+msgid "CONTRIBUTION_TABLE: 存储贡献的测试用例信息"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:93
+msgid "CREATE TABLE CONTRIBUTION_TABLE ("
+msgstr ""
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:86
+msgid ""
+"ID                       VARCHAR(200)       NOT NULL, NAME"
+"                     VARCHAR(200)       NULL, OBJECTIVE                "
+"VARCHAR(200)       NULL, STEP                     TEXT               "
+"NULL, EXPECTRESULT             TEXT               NULL, TYPE"
+"                     VARCHAR(255)       NULL, CREATETIME               "
+"TIMESTAMP          NULL, FILEPATH                 VARCHAR(200)       "
+"NULL, CONSTRAINT contribution_table_pkey PRIMARY KEY (ID)"
+msgstr ""
+

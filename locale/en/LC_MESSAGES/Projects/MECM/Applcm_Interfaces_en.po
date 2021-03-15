@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-15 06:29+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:2
+msgid "Applcm Interface"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:3
+msgid ""
+"The document is for the Applcm project, there is one part of interfaces "
+"in the project."
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:5
+msgid "### Upload Config File"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:7
+msgid "Upload Config File"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:9
+msgid "``` Resource URI: /lcmcontroller/v1/configuration Method: POST ```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:14
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> "
+"<td></td> </tr> <tr> <td>hostIp</td> <td>host Ip</td> <td>string</td> "
+"<td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> <tr> "
+"<td>configFile</td> <td>configFile</td> <td>formData</td> <td>yes</td> "
+"<td></td> <td></td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:53
+msgid "Example response: ``` 200 OK ["
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:57
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:64
+msgid "\"response\": {}"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:59
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:66
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:410
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:421
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:423
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:496
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:498
+msgid "]"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:61
+msgid "``` 201 Created ["
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:68
+msgid ""
+"### Delete Config File Removes the config file ``` Resource URI: "
+"/lcmcontroller/v1/configuration Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:75
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> "
+"<td></td> </tr> <tr> <td>hostIp</td> <td>host Ip</td> <td>string</td> "
+"<td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> </tbody> "
+"</table>"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:106
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:235
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:531
+msgid "Example response: ``` 200 OK ```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:111
+msgid ""
+"### Instantiate Application Application instantiated ``` Resource URI: "
+"/lcmcontroller/v1/app_instance/{appInstanceId}/instantiate Method: POST "
+"```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:118
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> "
+"<td></td> </tr> <tr> <td>appInstanceId</td> <td>appInstance Id</td> "
+"<td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>tenantId</td> <td>tenant Id</td> <td>path</td> <td>yes</td> <td>Valid"
+" UUID</td> <td>64</td> </tr> <tr> <td>hostIp</td> <td>host Ip</td> "
+"<td>string</td> <td>yes</td> <td>Valid IP</td> <td>15</td> </tr> <tr> "
+"<td>appName</td> <td>appName</td> <td>string</td> <td>yes</td> "
+"<td>AlphaNumeric</td> <td>128</td> </tr> <tr> <td>file</td> <td>file</td>"
+" <td>formData</td> <td>yes</td> <td></td> <td></td> </tr> </tbody> "
+"</table>"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:181
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:286
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:340
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:394
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:480
+msgid "Example response: ``` 200 OK"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:184
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:289
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:343
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:404
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:409
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:418
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:490
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:495
+msgid "{"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:185
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:290
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:344
+msgid "{}"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:186
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:291
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:345
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:420
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:422
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:497
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:588
+msgid "}"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:187
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:292
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:346
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:424
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:499
+msgid "```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:189
+msgid ""
+"### Terminates Application Terminates application instance id ``` "
+"Resource URI: "
+"/lcmcontroller/v1/tenants/{tenantId}/app_instances/{appInstanceId}/terminate"
+" Method: POST ```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:196
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:247
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> "
+"<td></td> </tr> <tr> <td>appInstanceId</td> <td>appInstance Id</td> "
+"<td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>tenantId</td> <td>tenant Id</td> <td>path</td> <td>yes</td> <td>Valid"
+" UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:240
+msgid ""
+"### Query Get the statistics information ``` Resource URI: "
+"/lcmcontroller/v1/tenants/{tenantId}/app_instances/{appInstanceId} "
+"Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:294
+msgid ""
+"### Query Kpi Get cpu , memory and file system size ``` Resource URI: "
+"/lcmcontroller/v1/tenants/{tenantId}/hosts/{hostIp}/kpi Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:301
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:355
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> "
+"<td></td> </tr> <tr> <td>hostIp</td> <td>host Ip</td> <td>path</td> "
+"<td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> <tr> "
+"<td>tenantId</td> <td>tenant Id</td> <td>path</td> <td>yes</td> <td>Valid"
+" UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:348
+msgid ""
+"### Query MepCapabilities Get Mep Capabilities ``` Resource URI: "
+"/lcmcontroller/v1/tenants/{tenantId}/hosts/{hostIp}/mep_capabilities "
+"Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:421
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:496
+msgid "["
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:399
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:413
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:485
+msgid ""
+"\"capabilityId\": \"string\", \"capabilityName\": \"string\", \"status\":"
+" \"string\", \"version\": \"string\","
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:408
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:419
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:494
+msgid "\"consumers\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:405
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:408
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:419
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:491
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:494
+msgid "\"applicationInstanceId\": \"string\""
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:406
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:411
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:492
+msgid "}, {"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:409
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:495
+msgid "},"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:426
+msgid ""
+"### Get Mep Capability Retrieves edge host performance statistics based "
+"on capability id ``` Resource URI: "
+"/lcmcontroller/v1/tenants/{tenantId}/hosts/{hostIp}/mep_capabilities/{capability_id}"
+" Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:433
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>host_ip</td> <td>edge host ip</td> <td>path</td>"
+" <td>yes</td> <td>Valid IP</td> <td>15</td> </tr> <tr> <td>tenant_id</td>"
+" <td>tenant_id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> "
+"<td>64</td> </tr> <tr> <td>capability_id</td> <td>capability_id</td> "
+"<td>path</td> <td>yes</td> <td>Alphanumeric characters,special characters"
+" are hypen and underscore</td> <td>128</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:501
+msgid ""
+"### Queries liveness & readiness Retrieves data for liveness & readiness "
+"``` Resource URI: /lcmcontroller/v1/health Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:508
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:536
+msgid ""
+"### App Deployment Status Retrieves status of the application deployment "
+"``` Resource URI: "
+"/lcmcontroller/v1/hosts/{hostIp}/packages/{packageId}/status Method: GET "
+"```"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:543
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>host_ip</td> <td>edge host ip</td> <td>path</td>"
+" <td>yes</td> <td>Valid IP</td> <td>15</td> </tr> <tr> <td>packageId</td>"
+" <td>package Id</td> <td>path</td> <td>yes</td> <td>Valid UUID without "
+"hypen</td> <td>64</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:582
+msgid "Example response: ``` 200 OK {"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:586
+msgid "true"
+msgstr ""
+

@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-15 06:29+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/ATP/ATP_Overview.md:1
+msgid "## 概述"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Overview.md:3
+msgid "应用测试服务对于应用包，提供了检测的功能，只有通过了应用测试服务的测试用例，才能将应用包发布到应用商城中。"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Overview.md:4
+msgid ""
+"应用测试服务分为前后台两个部分，[atp][1]是后台部分，提供主要功能接口供前台或其他三方系统调用，[atp-"
+"fe][2]是前台部分，提供界面展示。"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Overview.md:5
+msgid "应用测试服务目前分为管理面功能和用户面功能，管理面功能包括测试场景的管理、测试套的管理、测试用例的管理和测试任务的管理。管理员可以在管理面动态的新增测试场景、测试套和测试用例，也可以修改测试任务中手工用例的状态。用户面功能包括选择要测试的场景、测试过程可视化、测试报告展示以及贡献测试用例。目前用户面的功能主要集成在开发者平台和应用商店中，对于生成的应用包进行测试。"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Overview.md:8
+msgid ""
+"## 整体框架说明 EdgeGallery整体框架流程如下，应用测试平台主要对应图中的认证测试部分。 "
+"![](/uploads/images/2020/v1.0/all-the-arch.png)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Overview.md:13
+msgid "atp-fe：开发者平台前台框架，使用VUE开发。"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Overview.md:15
+msgid "atp：开发者平台后台框架，使用SpringBoot+ServiceComb开发。（有关ServiceComb请参考这里：https://servicecomb.apache.org/cn/）"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Overview.md:17
+msgid "atp DB：后台依赖Postgres数据库。"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Overview.md:20
+msgid "## 测试套、测试场景和测试用例的对应关系 ![](/uploads/images/2021/atp/relation.png)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Overview.md:24
+msgid ""
+"[1]: https://gitee.com/edgegallery/atp \"atp\" [2]: "
+"https://gitee.com/edgegallery/atp-fe \"atp-fe\""
+msgstr ""
+

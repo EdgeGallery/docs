@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-15 06:29+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:2
+msgid "How to contribute"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:4
+msgid ""
+"This section provides details on how to participate/contribute to the k8s"
+" plugin project."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:6
+msgid "## Build local development environment"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:9
+msgid ""
+"This section will guide developers to build k8s plugin module locally and"
+" help developers to quickly understand and"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:9
+msgid "develop code"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:11
+msgid "The local startup of k8s plugin depends on："
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:13
+msgid ""
+"``` - DataBase ``` In order to build a local environment, the final "
+"startup sequence is DataBase -> K8sPlugin"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:18
+msgid "### DataBase"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:20
+msgid "Download and install postgres 12.3 database"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:22
+msgid "Set login name and password, such as k8splugin"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:24
+msgid "Create a database named k8splugindb"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:26
+msgid "![](/uploads/images/2020/0924/k8sPlugin-db.png \"k8sPlugin-db.png\")"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:28
+msgid "### K8s plugin"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:30
+msgid "Download k8s plugin code"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:32
+msgid "Configure the runtime environment variables (using GO Land as an example)"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:34
+msgid ""
+"![](/uploads/images/2020/0924/k8sPlugin-contribution.png \"k8sPlugin-"
+"contribution.png\")"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:36
+msgid "Update certificates path in app.conf"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:38
+msgid "![](/uploads/images/2020/0924/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:40
+msgid "Run main to start k8s plugin"
+msgstr ""
+

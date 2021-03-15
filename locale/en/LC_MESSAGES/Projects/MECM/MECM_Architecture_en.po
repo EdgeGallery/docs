@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-15 06:29+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:2
+msgid "Architecture"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:5
+msgid ""
+"![.](/uploads/images/2020/0924/mecm-architecture.png \"mecm-"
+"architecture.png\")"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:11
+msgid "## Application Package Manager"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:11
+msgid ""
+"Application Package Manager(APM) enables edgegallery to distribute/on-"
+"board applications to edge repositories by"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:10
+msgid "downloading application packages from appstore."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:17
+msgid "## Application Orchestrator"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:17
+msgid ""
+"Application Orchestrator(APPO) is mainly responsible for MEC application "
+"orchestration by requesting for life cycle"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:15
+msgid ""
+"management of MEC application on the edge host by executing specified "
+"workflow while maintaining the life cycle state. Orchestration workflows "
+"are modeled using Camunda modeler tool and workflows are executed by "
+"camunda engine."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:22
+msgid "## Inventory"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:22
+msgid ""
+"Inventory provides realtime view of deployed applications on the edge "
+"hosts and applications configurations. Inventory"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:21
+msgid "is also used for external system registrations."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:27
+msgid "## LCM Controller"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:27
+msgid ""
+"LCM Controller is responsible MEC application life cycle management "
+"operations by sending requests to appropriate"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:26
+msgid "pluggable plugin adapters based on the infrastructure."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:33
+msgid "## K8s Plugin"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:33
+msgid ""
+"K8s Plugin is responsible for MEC application life cycle management "
+"operations on kubernetes infrastructure. K8s plugin"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:31
+msgid "use helm client to perform application life cycle management operations."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:38
+msgid "## App Rule Manager"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:38
+msgid ""
+"APP Rule Manager is responsible for configuring application rules by "
+"sending application rule configurations to MEP."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:37
+msgid ""
+"Application rule configurations includes the traffic rules and DNS to be "
+"configured."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:40
+msgid ""
+"## Deployment view ![.](/uploads/images/2020/0924/mecm-deployment-"
+"overview.png \"mecm-deployment-overview.png\")"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:44
+msgid ""
+"The deployment view shown is based on k8s deployment. MECM modules "
+"supports deployment on virtual"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:44
+msgid "machine or docker container to start respective service."
+msgstr ""
+

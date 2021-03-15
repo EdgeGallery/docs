@@ -1,0 +1,1167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-15 06:29+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2
+msgid "Inventory Interfaces"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:3
+msgid ""
+"The document is for the Inventory project, there are three parts of "
+"interfaces in the project."
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:5
+msgid "### Get All Application LCM records"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:7
+msgid "Retrieves all application LCM records"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:9
+msgid ""
+"``` Resource URI: /inventory/v1/tenants/{tenant_id}/applcms Method: GET "
+"```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:14
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:147
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:390
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:550
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1110
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2260
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2371
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>tenant_id</td> <td>tenant identifier</td> "
+"<td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody>"
+" </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:45
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:130
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:178
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:317
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:373
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:533
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:581
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:756
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:812
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:862
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1093
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1141
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1423
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1478
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1587
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1696
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1760
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2031
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2292
+msgid "Example response: ``` 200 OK ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:52
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:134
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:182
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:321
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:377
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:430
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:431
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:537
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:585
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:645
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:760
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:816
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:882
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:890
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1080
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1087
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1097
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1145
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1216
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1411
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1427
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1482
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1591
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1700
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1764
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1831
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1916
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2035
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2299
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2539
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2543
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2553
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2643
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2647
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2657
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2748
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2752
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2762
+msgid "{"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:50
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:123
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:238
+msgid ""
+"\"applcmIp\": \"string\", \"applcmPort\": \"string\", \"userName\": "
+"\"string\", \"applcmName\": \"string\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:54
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:128
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:136
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:184
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:243
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:315
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:323
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:379
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:432
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:433
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:532
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:539
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:587
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:647
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:754
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:762
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:818
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:889
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:891
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1087
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1089
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1099
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1147
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1223
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1225
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1418
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1420
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1429
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1484
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1585
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1593
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1694
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1702
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1766
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1838
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1840
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1919
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2037
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2154
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2162
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2243
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2251
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2301
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2362
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2409
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2464
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2541
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2545
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2555
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2560
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2568
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2645
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2649
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2659
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2664
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2672
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2750
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2754
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2764
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2769
+msgid "}"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:56
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:138
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:186
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:325
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:381
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:541
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:589
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:764
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:820
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:890
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:893
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1088
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1091
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1101
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1149
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1224
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1419
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1431
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1486
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1595
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1704
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1768
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1839
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1918
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1982
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2039
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2303
+msgid "]"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:58
+msgid ""
+"### Add Applcm Record Adds new application LCM record ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/applcms Method: POST ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:65
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>tenant_id</td> <td>tenant identifier</td> "
+"<td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>applcmIp</td> <td>applcmIp</td> <td>body</td> <td>yes</td> <td>Valid "
+"URL</td> <td>15</td> </tr> <tr> <td>applcmPort</td> <td>applcmPort</td> "
+"<td>body</td> <td>yes</td> <td>Valid Port</td> <td></td> </tr> <tr> "
+"<td>userName</td> <td>userName</td> <td>body</td> <td>yes</td> "
+"<td>AlphaNumeric, special characters allowed are hypen and "
+"underscore</td> <td>128</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:120
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:307
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:522
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:744
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1393
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1574
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1683
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2146
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2235
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2513
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2617
+msgid "Example request body: ``` {"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:135
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:538
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1098
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1592
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2160
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2566
+msgid "\"Saved\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:140
+msgid ""
+"### Delete All Applcm Record Deletes all application LCM Records. ``` "
+"Resource URI: /inventory/v1/tenants/{tenant_id}/applcms Method: DELETE "
+"```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:183
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:378
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:586
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:817
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1146
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1483
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1765
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2036
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2407
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2462
+msgid "\"Deleted\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:188
+msgid ""
+"### Get Application LCM Record Retrieves application LCM Record ``` "
+"Resource URI: /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip} "
+"Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:195
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:334
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>applcm_ip</td> <td>applcm ip</td> <td>path</td> "
+"<td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> <tr> "
+"<td>tenant_id</td> <td>tenant identifier</td> <td>path</td> <td>yes</td> "
+"<td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:234
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1824
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1905
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2156
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2245
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2353
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2403
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2458
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2562
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2666
+msgid "Example response: ``` 200 OK {"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:245
+msgid ""
+"### Update Application LCM Record Updates existing application LCM record"
+" ``` Resource URI: /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip} "
+"Method: PUT ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:252
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>applcm_ip</td> <td>applcm IP</td> <td>path</td> "
+"<td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> <tr> "
+"<td>tenant_id</td> <td>tenant identifier</td> <td>path</td> <td>yes</td> "
+"<td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appstorePort</td> "
+"<td>appstorePort</td> <td>body</td> <td>yes</td> <td>Valid Port</td> "
+"<td>5</td> </tr> <tr> <td>userName</td> <td>userName</td> <td>body</td> "
+"<td>yes</td> <td>AlphaNumeric, special characters allowed are hypen and "
+"underscore</td> <td>128</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:310
+msgid ""
+"\"appstoreIp\": \"string\", \"appstorePort\": \"string\", \"userName\": "
+"\"string\", \"applcmName\": \"string\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:322
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:761
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1428
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1701
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2249
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2670
+msgid "\"Updated\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:327
+msgid ""
+"### Delete Application LCM Record Deletes application LCM record ``` "
+"Resource URI: /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip} "
+"Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:383
+msgid ""
+"### Get All Application Records Retrieves all application store records "
+"``` Resource URI: /inventory/v1/tenants/{tenant_id}/appstores Method: GET"
+" ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:421
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:637
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1977
+msgid "Example response: ``` 200 OK"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:426
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:525
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:747
+msgid ""
+"\"appstoreIp\": \"string\", \"appstoreName\": \"string\", "
+"\"appstorePort\": \"string\", \"producer\": \"string\", \"uri\": "
+"\"string\", \"userName\": \"string\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:434
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:648
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1421
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1841
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1920
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1983
+msgid "```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:436
+msgid ""
+"### Add Application Store Record Adds new application store record ``` "
+"Resource URI: /inventory/v1/tenants/{tenant_id}/appstores Method: POST "
+"```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:443
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>tenant_id</td> <td>tenant identifier</td> "
+"<td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>appstoreIp</td> <td>appstoreIp</td> <td>body</td> <td>yes</td> "
+"<td>Valid IP Address</td> <td>15</td> </tr> <tr> <td>appstoreName</td> "
+"<td>appstoreName</td> <td>body</td> <td>yes</td> <td>AlphaNumeric, "
+"special characters allowed are hypen and underscore</td> <td>128</td> "
+"</tr> <tr> <td>appstorePort</td> <td>appstorePort</td> <td>body</td> "
+"<td>yes</td> <td>Valid Port</td> <td>5</td> </tr> <tr> <td>producer</td> "
+"<td>producer</td> <td>body</td> <td>yes</td> <td>AlphaNumeric, special "
+"characters allowed are hypen and underscore</td> <td>128</td> </tr> <tr> "
+"<td>uri</td> <td>uri</td> <td>body</td> <td>yes</td> <td>Valid UUID</td> "
+"<td>128</td> </tr> <tr> <td>userName</td> <td>userName</td> <td>body</td>"
+" <td>yes</td> <td>AlphaNumeric, special characters allowed are hypen and "
+"underscore</td> <td>128</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:543
+msgid ""
+"### Delete All Application Records Deletes all application stores records"
+" ``` Resource URI: /inventory/v1/tenants/{tenant_id}/appstores Method: "
+"DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:591
+msgid ""
+"### Get Application Stores Record Retrieves application store record ``` "
+"Resource URI: /inventory/v1/tenants/{tenant_id}/appstores/{appstore_ip} "
+"Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:598
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>appstore_ip</td> <td>appstore IP</td> "
+"<td>path</td> <td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> "
+"<tr> <td>tenant_id</td> <td>tenant identifier</td> <td>path</td> "
+"<td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:641
+msgid ""
+"\"appstoreIp\" : \"string\" \"appstorePort\" : \"string\" \"uri\" : "
+"\"string\" \"userName\" : \"string\" \"appstoreName\" : \"string\" "
+"\"producer\" : \"string\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:650
+msgid ""
+"### Update App Store Record Updates existing application store record ```"
+" Resource URI: /inventory/v1/tenants/{tenant_id}/appstores/{appstore_ip} "
+"Method: PUT ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:657
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>appstore_ip</td> <td>appstore IP</td> "
+"<td>path</td> <td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> "
+"<tr> <td>tenant_id</td> <td>tenant identifier</td> <td>path</td> "
+"<td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>appstoreIp</td> <td>appstoreIp</td> <td>body</td> <td>yes</td> "
+"<td>Valid IP Address</td> <td>15</td> </tr> <tr> <td>appstoreName</td> "
+"<td>appstoreName</td> <td>body</td> <td>yes</td> <td>AlphaNumeric, "
+"special characters allowed are hypen and underscore</td> <td>128</td> "
+"</tr> <tr> <td>appstorePort</td> <td>appstorePort</td> <td>body</td> "
+"<td>yes</td> <td>Valid Port</td> <td>5</td> </tr> <tr> <td>producer</td> "
+"<td>producer</td> <td>body</td> <td>yes</td> <td>AlphaNumeric, special "
+"characters allowed are hypen and underscore</td> <td>128</td> </tr> <tr> "
+"<td>uri</td> <td>uri</td> <td>body</td> <td>yes</td> <td>Valid UUID</td> "
+"<td>128</td> </tr> <tr> <td>userName</td> <td>userName</td> <td>body</td>"
+" <td>yes</td> <td>AlphaNumeric, special characters allowed are hypen and "
+"underscore</td> <td>128</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:766
+msgid ""
+"### Deletes Application Record Deletes application store record ``` "
+"Resource URI: /inventory/v1/tenants/{tenant_id}/appstores/{appstore_ip} "
+"Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:773
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>appstore_ip</td> <td>appstore IP</td> "
+"<td>path</td> <td>yes</td> <td>Valid IP address</td> <td>15</td> </tr> "
+"<tr> <td>tenant_id</td> <td>tenant identifier</td> <td>path</td> "
+"<td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:822
+msgid "### Get All MEC Host Records"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:824
+msgid "Retrieves all MEC host records"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:826
+msgid ""
+"``` Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts Method: GET "
+"```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:831
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>tenant_id</td> <td>tenant identifier</td> "
+"<td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64 characters</td> "
+"</tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:867
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1065
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1201
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1396
+msgid ""
+"\"mechostIp\": \"string\", \"mechostName\": \"string\", \"zipCode\": "
+"\"string\", \"city\": \"string\", \"address\": \"string\", \"affinity\": "
+"\"string\", \"userName\": \"string\", \"edgerepoName\": null, "
+"\"edgerepoIp\": \"string\", \"edgerepoPort\": \"string\", "
+"\"edgerepoUsername\": \"string\", \"applcmIp\": \"string\", "
+"\"hwcapabilities\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:881
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:886
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1079
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1084
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1215
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1220
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1410
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1415
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1830
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1835
+msgid "\"hwType\": \"string\", \"hwVendor\": \"string\", \"hwModel\": \"string\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:884
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1082
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1218
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1413
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1833
+msgid "}, {"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:895
+msgid ""
+"### Add MEC Host Record Adds new MEC host record ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/mechosts Method: POST ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:902
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1234
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>mechost_ip</td> <td>mechost IP</td> "
+"<td>path</td> <td>yes</td> <td>Valid IP address</td> <td>15</td> </tr> "
+"<tr> <td>tenant_id</td> <td>tenant identifier</td> <td>path</td> "
+"<td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>address</td> "
+"<td>address</td> <td>body</td> <td>yes</td> <td>Valid IP address</td> "
+"<td>255</td> </tr> <tr> <td>affinity</td> <td>affinity</td> <td>body</td>"
+" <td>yes</td> <td>AlphaNumeric, special characters allowed are "
+"hypen,underscore and comma</td> <td>128</td> </tr> <tr> <td>applcmIp</td>"
+" <td>applcmIp</td> <td>body</td> <td>yes</td> <td>Valid IP address</td> "
+"<td>15</td> </tr> <tr> <td>city</td> <td>city</td> <td>body</td> "
+"<td>yes</td> <td>AlphaNumeric, special characters allowed are slash and "
+"space</td> <td>128</td> </tr> <tr> <td>edgeName</td> <td>edgeName</td> "
+"<td>body</td> <td>yes</td> <td>AlphaNumeric, special characters allowed "
+"are slash and space</td> <td>128</td> </tr> <tr> <td>edgerepoIp</td> "
+"<td>edgerepoIp</td> <td>body</td> <td>yes</td> <td>Valid IP address</td> "
+"<td>255</td> </tr> <tr> <td>edgerepoUsername</td> "
+"<td>edgerepoUsername</td> <td>body</td> <td>yes</td> <td>AlphaNumeric, "
+"special characters allowed are hypen and underscore</td> <td>128</td> "
+"</tr> <tr> <td>mechostIp</td> <td>mechostIp</td> <td>body</td> "
+"<td>yes</td> <td>Valid IP address</td> <td>15</td> </tr> <tr> "
+"<td>mechostName</td> <td>mechostName</td> <td>body</td> <td>yes</td> "
+"<td>AlphaNumeric, special characters allowed are hypen and "
+"underscore</td> <td>128</td> </tr> <tr> <td>userName</td> "
+"<td>userName</td> <td>body</td> <td>yes</td> <td>AlphaNumeric, special "
+"characters allowed are hypen and underscore</td> <td>128</td> </tr> <tr> "
+"<td>zipCode</td> <td>zipCode</td> <td>body</td> <td>yes</td> <td>Alpha, "
+"special characters allowed are hypen and underscore</td> <td>128</td> "
+"</tr> <tr> <td>hwcapabilities</td> <td>hardwareCapabilities</td> "
+"<td>body</td> <td>No</td> <td>AlphaNumeric characters allowed</td> "
+"<td>128</td> </tr> <tr> <td>hwType</td> <td>hardwareType</td> "
+"<td>body</td> <td>No</td> <td>AlphaNumeric characters allowed</td> "
+"<td>128</td> </tr> <tr> <td>hwVendor</td> <td>hardwareVendor</td> "
+"<td>body</td> <td>No</td> <td>AlphaNumeric characters allowed</td> "
+"<td>128</td> </tr> <tr> <td>hwModel</td> <td>hardwareModel</td> "
+"<td>body</td> <td>No</td> <td>AlphaNumeric characters allowed</td> "
+"<td>128</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1061
+msgid "Example request body: ``` ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1103
+msgid ""
+"### Delete All MEC Host Records Deletes all application stores records "
+"``` Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts Method: "
+"DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1150
+msgid "### Get MEC Host Record"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1152
+msgid "Retrieves MEC host records"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1154
+msgid ""
+"``` Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}"
+" Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1159
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>mechost_ip</td> <td>mechost_ip</td> "
+"<td>path</td> <td>yes</td> <td>Valid IP address</td> <td>15</td> </tr> "
+"<tr> <td>tenant_id</td> <td>tenant identifier</td> <td>path</td> "
+"<td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1198
+msgid "``` 200 OK {"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1226
+msgid ""
+"``` ### Update MEC Host Record Updates existing MEC host record ``` "
+"Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip} "
+"Method: PUT ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1432
+msgid ""
+"### Delete MEC Host Record Deletes application stores record ``` Resource"
+" URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip} Method: "
+"DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1439
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1992
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>mechost_ip</td> <td>mechost IP</td> "
+"<td>path</td> <td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> "
+"<tr> <td>tenant_id</td> <td>tenant identifier</td> <td>path</td> "
+"<td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1488
+msgid ""
+"### Add Application record Adds new application record. ``` Resource URI:"
+" /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps Method: "
+"POST ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1495
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1604
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>appInstanceId</td> <td>appInstance id</td> "
+"<td>body</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>tenant_id</td> <td>tenant identifier</td> <td>path</td> <td>yes</td> "
+"<td>Valid UUID</td> <td>64</td> </tr> <tr> <td>mechost_ip</td> "
+"<td>mechost ip</td> <td>path</td> <td>yes</td> <td>Valid IP Address</td> "
+"<td>15</td> </tr> <tr> <td>appName</td> <td>appName</td> <td>body</td> "
+"<td>yes</td> <td>AlphaNumeric,special characters allowed are hypen and "
+"underscore</td> <td>128</td> </tr> <tr> <td>capabilities</td> "
+"<td>capabilities</td> <td>body</td> <td>yes</td> <td>capabilities</td> "
+"<td>10</td> </tr> <tr> <td>packageId</td> <td>packageId</td> "
+"<td>body</td> <td>yes</td> <td>AlphaNumeric,special characters allowed "
+"are hypen and underscore</td> <td>64</td> </tr> <tr> <td>status</td> "
+"<td>status</td> <td>body</td> <td>yes</td> <td>AlphaNumeric,special "
+"characters allowed are hypen and underscore</td> <td>128</td> </tr> "
+"</tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1577
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1686
+msgid ""
+"\"appInstanceId\": \"string\", \"appName\": \"string\", \"capabilities\":"
+" ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1580
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1689
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1915
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2524
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2527
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2530
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2533
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2536
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2628
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2631
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2634
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2637
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2640
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2733
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2736
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2739
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2742
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2745
+msgid "\"string\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1581
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1690
+msgid "], \"packageId\": \"string\", \"status\": \"string\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1597
+msgid ""
+"### Update Application record Updates Application record. ``` Resource "
+"URI: "
+"/inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps/{app_id} "
+"Method: PUT ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1706
+msgid ""
+"### Delete Application record Delete application record ``` Resource URI:"
+" /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps/{app_id} "
+"Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1713
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>mechost_ip</td> <td>mechost_ip</td> "
+"<td>path</td> <td>yes</td> <td>Valid IP address</td> <td>15</td> </tr> "
+"<tr> <td>tenant_id</td> <td>tenant identifier</td> <td>path</td> "
+"<td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>app_id</td> "
+"<td>application id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> "
+"<td>64</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1770
+msgid ""
+"### Retrieves MEC host record Retrieves MEC host record for specific "
+"capabilities ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/capabilities "
+"Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1777
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>mechost_ip</td> <td>mechost_ip</td> "
+"<td>path</td> <td>yes</td> <td>Valid IP address</td> <td>15</td> </tr> "
+"<tr> <td>tenant_id</td> <td>tenant identifier</td> <td>path</td> "
+"<td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>capabilities</td> <td>capabilities</td> <td>path</td> <td>yes</td> "
+"<td>capabilities</td> <td>10</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1837
+msgid "\"hwcapabilities\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1843
+msgid ""
+"### Retrieves MEC application record Retrieves applications matching "
+"capability in a specific MEC host record. ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/capabilities/{capability_type}/applications"
+" Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1850
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>mechost_ip</td> <td>mechost_ip</td> "
+"<td>path</td> <td>yes</td> <td>Valid IP address</td> <td>15</td> </tr> "
+"<tr> <td>tenant_id</td> <td>tenant identifier</td> <td>path</td> "
+"<td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>capabilities</td> <td>capabilities</td> <td>path</td> <td>yes</td> "
+"<td>capabilities</td> <td>10</td> </tr> <tr> <td>capabilityType</td> "
+"<td>capability type</td> <td>path</td> <td>yes</td> "
+"<td>AlphaNumeric,special characters allowed are hypen and underscore</td>"
+" <td>128</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1916
+msgid "\"apps\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1911
+msgid ""
+"\"appInstanceId\": \"string\", \"appName\": \"string\", \"packageId\": "
+"\"string\" \"capabilities\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1916
+msgid "], \"status\": \"Created\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1922
+msgid "### Upload K8s Configuration File Upload K8s configuration file to applcm"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1925
+msgid ""
+"``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/k8sconfig Method:"
+" POST ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1930
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>file</td> <td>file</td> <td>formData</td> "
+"<td>yes</td> <td></td> <td></td> </tr> <tr> <td>mechost_ip</td> "
+"<td>mechost IP</td> <td>path</td> <td>yes</td> <td>Valid IP Address</td> "
+"<td>15</td> </tr> <tr> <td>tenant_id</td> <td>tenant identifier</td> "
+"<td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody>"
+" </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1980
+msgid "["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1981
+msgid "\"response\": {}"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1985
+msgid ""
+"### Delete K8s Configuration File Deletes K8s configuration file from "
+"applcm ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/k8sconfig Method:"
+" DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2041
+msgid ""
+"### Queries liveness & readiness Retrieves data for liveness & readiness "
+"``` Resource URI: /inventory/v1/health Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2048
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2071
+msgid "Example response: ``` 200 OK ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2076
+msgid ""
+"### Add application rule Adds a new application rule manager record entry"
+" into the Inventory. ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/apprulemanagers Method: POST ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2083
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>tenant_id</td> <td>tenant identifier</td> "
+"<td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>appRulePort</td> <td>appRulePort</td> <td>body</td> <td>yes</td> "
+"<td>Valid Port Number</td> <td>5</td> </tr> <tr> <td>appRuleIp</td> "
+"<td>appRuleIp</td> <td>body</td> <td>yes</td> <td>Valid IP Address</td> "
+"<td>15</td> </tr> <tr> <td>appRuleName</td> <td>appRuleName</td> "
+"<td>body</td> <td>yes</td> <td>AlphaNumeric,special characters allowed "
+"are hypen and underscore</td> <td>128</td> </tr> <tr> <td>userName</td> "
+"<td>userName</td> <td>body</td> <td>no</td> <td>AlphaNumeric,special "
+"characters allowed are hypen and underscore</td> <td>128</td> </tr> "
+"</tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2149
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2238
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2297
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2357
+msgid ""
+"\"appRuleIp\": \"string\", \"appRulePort\": \"string\", \"userName\": "
+"\"string\", \"appRuleName\": \"string\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2164
+msgid ""
+"### Update application rule Updates an exiting application rule manager "
+"record in the Inventory matching the given tenant ID & appRuleManager IP."
+" ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/apprulemanagers/{app_rule_manager_ip} "
+"Method: PUT ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2172
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>tenant_id</td> <td>tenant identifier</td> "
+"<td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>app_rule_manager_ip</td> <td>app rule manager IP</td> <td>path</td> "
+"<td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> <tr> "
+"<td>appRulePort</td> <td>appRulePort</td> <td>body</td> <td>yes</td> "
+"<td>Valid Port Number</td> <td>5</td> </tr> <tr> <td>appRuleIp</td> "
+"<td>appRuleIp</td> <td>body</td> <td>yes</td> <td>Valid IP Address</td> "
+"<td>15</td> </tr> <tr> <td>userName</td> <td>userName</td> <td>body</td> "
+"<td>no</td> <td>AlphaNumeric,special characters allowed are hypen and "
+"underscore</td> <td>128</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2253
+msgid ""
+"### Get all application rule manager records Retrieves all application "
+"rule manager records . ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/apprulemanagers Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2306
+msgid "### Get specific application rule manager record"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2306
+msgid ""
+"Retrieves a specific application rule manager record in the Inventory "
+"matching the given tenant ID & app rule manager IP"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2308
+msgid ""
+"``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/apprulemanagers/{app_rule_manager_ip} "
+"Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2313
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2419
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>tenant_id</td> <td>tenant identifier</td> "
+"<td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>app_rule_manager_ip</td> <td>app rule manager IP</td> <td>path</td> "
+"<td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> </tbody> "
+"</table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2364
+msgid ""
+"### Delete all application rule manager records Deletes all records for a"
+" given tenant ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/apprulemanagers Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2411
+msgid ""
+"### Delete application rule manager record Delete a specific application "
+"rule manager record in the Inventory matching the given tenant ID & app "
+"rule manager IP. ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/apprulemanagers/{app_rule_manager_ip} "
+"Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2466
+msgid ""
+"### Add APPDRule record to Inventory. Adds a new APPDRule record entry "
+"into the Inventory. ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration"
+" Method: POST ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2473
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2577
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2681
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2778
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>tenant_id</td> <td>tenant identifier</td> "
+"<td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> "
+"<td>appInstanceIds</td> <td>application instance id</td> <td>path</td> "
+"<td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2544
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2648
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2753
+msgid "\"appTrafficRule\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2518
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2622
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2727
+msgid ""
+"\"trafficRuleId\": \"string\", \"filterType\": \"string\", \"priority\": "
+"int, \"trafficFilter\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2523
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2627
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2732
+msgid "\"srcAddress\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2525
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2629
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2734
+msgid "], \"dstAddress\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2528
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2632
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2737
+msgid "], \"srcPort\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2531
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2635
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2740
+msgid "], \"dstPort\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2534
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2638
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2743
+msgid "], \"protocol\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2537
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2641
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2746
+msgid "], \"qCI\": int, \"dSCP\": int, \"tC\": int"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2542
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2646
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2751
+msgid "], \"action\": \"string\", \"state\": \"string\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2546
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2650
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2755
+msgid "], \"appDNSRule\": ["
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2549
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2653
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2758
+msgid ""
+"\"dnsRuleId\": \"string\", \"domainName\": \"string\", \"ipAddressType\":"
+" \"string\", \"ipAddress\": \"string\", \"ttl\": int, \"state\": "
+"\"string\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2556
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2660
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2765
+msgid "], \"appSupportMp1\": true, \"appName\": \"abcd\""
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2570
+msgid ""
+"### Update APPDRule record to Inventory. Updates a existing APPDRule "
+"record entry into the Inventory matching the given tenant ID & app "
+"instance ID. ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration"
+" Method: PUT ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2674
+msgid ""
+"### Get APPDRule record to Inventory. Retrieves appDRule records for "
+"given tenant ID and app instance ID. ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration"
+" Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2721
+msgid "Example response body: ``` 200 OK {"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2771
+msgid ""
+"### Delete APPDRule record . Deletes appDRule records for a given tenant "
+"and app instance. ``` Resource URI: "
+"/inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration"
+" Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2818
+msgid "Example response body: ``` 200 OK { \"DELETED\" } ```"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2826
+msgid "### Inventory Open Api Swagger"
+msgstr ""
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2828
+msgid ""
+"Please refer "
+"[INVENTORY_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs"
+"/inventory-swagger-openapi.yaml)"
+msgstr ""
+
