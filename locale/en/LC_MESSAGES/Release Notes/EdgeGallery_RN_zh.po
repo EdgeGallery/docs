@@ -1,0 +1,582 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-15 06:29+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:6
+msgid "Release Notes"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:9
+msgid "EdgeGallery Introduction"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:10
+#, python-format
+msgid ""
+"EdgeGallery 是一个5G "
+"MEC开源边缘计算平台，它是一个面向应用和应用开发者的端到端解决方案，对于APP应用来说除支持应用运行的基础MEP平台外，还提供APP应用管理系统（MEC"
+" "
+"Manager，极简管理面，包括MEPM以及MEAO的部分功能），能够对应用进行端到端生命周期管理，提供X86应用向ARM迁移的工具链，支持应用平滑的跨平台迁移和调优。对应用开发者来说，提供完整的应用开发IDE环境和集成验证环境，为应用开发者提供一站式开发体验，同时通过APP"
+" Store功能，对应用开发者开发的APP提供标准的准入验证流程。 - "
+"[项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)"
+" - "
+"[开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:14
+msgid "Version: v1.0.0"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:17
+msgid "Release Date: 2020-12-31"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:18
+msgid "Image Version: v1.0.0"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:20 Notes/EdgeGallery_RN_zh.md:336
+#: Notes/EdgeGallery_RN_zh.md:679
+msgid "**新开源仓库列表**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:22
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>模块</th> <th "
+"align=\"center\">名称</th> <th>类型</th> <th>URL</th> <th>说明</th> </tr> "
+"</thead> <tbody> <tr> <td>ATP(Application Test Platform)</td> <td "
+"align=\"center\">atp</td> <td>产品仓</td> "
+"<td>https://gitee.com/edgegallery/atp</td> <td>应用测试平台，为应用认证提供测试支撑</td> "
+"</tr> <tr> <td>ATP(Application Test Platform)</td> <td align=\"center"
+"\">atp-fe</td> <td>产品仓</td> <td>https://gitee.com/edgegallery/atp-fe</td>"
+" <td>提供应用测试认证平台前台支撑</td> </tr> <tr> <td>Developer</td> <td align=\"center"
+"\">crane-framework</td> <td>产品仓</td> <td>https://gitee.com/edgegallery"
+"/crane-framework</td> <td>为应用开发提供轻量化，插件是的开发框架</td> </tr> <tr> "
+"<td>MECM</td> <td align=\"center\">mecm-apprulemgr</td> <td>产品仓</td> "
+"<td>https://gitee.com/edgegallery/mecm-apprulemgr</td> "
+"<td>管理面提供应用规则配置下发和管理的能力</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:64 Notes/EdgeGallery_RN_zh.md:374
+#: Notes/EdgeGallery_RN_zh.md:801
+msgid "**New Features**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:66
+msgid ""
+"[ **需求/发布计划详细说明** "
+"](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:79
+msgid "版本规划特性"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:73
+msgid "【Developer】优化APP开发测试发布流程，优化API界面，集成多语言SDK"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:70
+msgid "优化首页设计，增加应用开发生命周期流程图；"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:71
+msgid "优化项目开发流程，全新界面设计；"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:72
+msgid "优化部署调测环节，增加可视化展示部署过程展示，增加部署结果POD展示；"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:73
+msgid "优化能力中心界面，增加能力分类选择；"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:74
+msgid "应用发布环节对接认证测试平台；"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:75
+msgid "【AppStore】界面易用性优化，EdgeGallery生态能力优化"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:76
+msgid "【MECM】优化拓扑、应用管理及边缘节点管理，新增获取MEP能力功能，AK/SK配置接口"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:77
+msgid "【MEP】支持APP心跳检测，新增获取MEP能力接口，AK/SK配置接口，MEP-agent新增获取token接口"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:78
+msgid "【ATP】APP应用的测试能力增强"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:79
+msgid "【Test】提供健康检查功能，优化安装包，开发测试平台支持测试例管理"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:84
+msgid "PoC 特性"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:82
+msgid "MEP服务治理页面展示"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:83
+msgid "引入插件式应用框架[Crane-framework](https://gitee.com/edgegallery/crane-framework)"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:84
+msgid "AppStore联邦，可注册外部AppStore，应用在不同AppStore间可相互推送和拉取"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:86
+msgid "**PoC Test Report**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:88
+#, python-format
+msgid ""
+"参见[EdgeGallery v1.0.0 PoC Test "
+"Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:90 Notes/EdgeGallery_RN_zh.md:383
+#: Notes/EdgeGallery_RN_zh.md:814
+msgid "**Bug Fixes**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:92 Notes/EdgeGallery_RN_zh.md:96
+#, python-format
+msgid ""
+"参见 [EdgeGallery v1.0.0 Test "
+"Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:94 Notes/EdgeGallery_RN_zh.md:387
+#: Notes/EdgeGallery_RN_zh.md:818
+msgid "**Known Issues**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:98 Notes/EdgeGallery_RN_zh.md:391
+#: Notes/EdgeGallery_RN_zh.md:822
+msgid "**Security Notes**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:100 Notes/EdgeGallery_RN_zh.md:393
+#: Notes/EdgeGallery_RN_zh.md:824
+msgid "*Fixed Security Issues*"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:102 Notes/EdgeGallery_RN_zh.md:106
+#, python-format
+msgid ""
+"参见 [EdgeGallery v1.0.0 Test "
+"Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report.md)"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:104 Notes/EdgeGallery_RN_zh.md:397
+#: Notes/EdgeGallery_RN_zh.md:828
+msgid "*Known Security Issues*"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:108 Notes/EdgeGallery_RN_zh.md:401
+#: Notes/EdgeGallery_RN_zh.md:832
+msgid "*Known Vulnerabilities in Used Modules*"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:110
+msgid "EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自行修复："
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:112 Notes/EdgeGallery_RN_zh.md:405
+#: Notes/EdgeGallery_RN_zh.md:836
+msgid "Appstore:"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:115
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>log4j "
+"(indirect dependency)</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> "
+"<tr> <td>bcprov-jdk15on-1.66.jar</td> <td>1.66</td> "
+"<td>CVE-2020-28052</td> </tr> <tr> <td>jackson-databind</td> "
+"<td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td>spring-security-"
+"oauth2</td> <td>2.3.3.RELEASE</td> <td>CVE-2018-15758</td> </tr> <tr> <td"
+">tomcat-embed-core</td> <td>9.0.37</td> <td>CVE-2020-17525</td> </tr> "
+"</tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:153 Notes/EdgeGallery_RN_zh.md:478
+#: Notes/EdgeGallery_RN_zh.md:872
+msgid "Developer:"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:156
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>spring-"
+"beans (indirect dependency)</td> <td>5.1.8.RELEASE</td> "
+"<td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-core</td> "
+"<td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>jackson-"
+"databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td"
+">mybatis-spring-boot-starter</td> <td>2.1.1</td> <td>CVE-2020-26945</td> "
+"</tr> <tr> <td>tomcat-embed-core</td> <td>9.0.37</td> "
+"<td>CVE-2020-17527</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:194
+msgid "ATP"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:196
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>mybatis-"
+"spring-boot-starter</td> <td>2.1.1</td> <td>CVE-2020-26945</td> </tr> "
+"</tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:213 Notes/EdgeGallery_RN_zh.md:568
+#: Notes/EdgeGallery_RN_zh.md:917
+msgid "User-mgmt:"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:216
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>spring-"
+"security-core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> "
+"<tr> <td>bcprov-jdk15on</td> <td>1.66</td> <td>CVE-2020-28052</td> </tr> "
+"<tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> "
+"</tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.1</td> "
+"<td>CVE-2020-26945</td> </tr> <tr> <td>spring-security-oauth2</td> "
+"<td>2.3.3.RELEAS</td> <td>CVE-2018-15758</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:253 Notes/EdgeGallery_RN_zh.md:608
+#: Notes/EdgeGallery_RN_zh.md:957
+msgid "Website-gateway:"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:256
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>spring-"
+"security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> "
+"<tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-26945</td> "
+"</tr> <tr> <td>spring-security-oauth2</td> <td>2.3.3</td> "
+"<td>CVE-2018-15758</td> </tr> <tr> <td>tomcat-embed-core</td> "
+"<td>9.0.37</td> <td>CVE-2020-17527</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:288 Notes/EdgeGallery_RN_zh.md:633
+#: Notes/EdgeGallery_RN_zh.md:982
+msgid "MECM:"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:291 Notes/EdgeGallery_RN_zh.md:636
+#: Notes/EdgeGallery_RN_zh.md:985
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>lodash</td>"
+" <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> <td>minimatch</td> "
+"<td>3.0.4</td> <td>NPM-118</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:314 Notes/EdgeGallery_RN_zh.md:659
+#: Notes/EdgeGallery_RN_zh.md:1008
+msgid "**Upgrade Notes**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:316 Notes/EdgeGallery_RN_zh.md:320
+#: Notes/EdgeGallery_RN_zh.md:324 Notes/EdgeGallery_RN_zh.md:661
+#: Notes/EdgeGallery_RN_zh.md:665 Notes/EdgeGallery_RN_zh.md:1010
+#: Notes/EdgeGallery_RN_zh.md:1014
+msgid "N/A"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:318 Notes/EdgeGallery_RN_zh.md:663
+#: Notes/EdgeGallery_RN_zh.md:1012
+msgid "**Deprecation Notes**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:322 Notes/EdgeGallery_RN_zh.md:667
+#: Notes/EdgeGallery_RN_zh.md:1016
+msgid "**Other**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:330
+msgid "Version: v0.9.1"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:333
+msgid "Release Date: 2020-11-11"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:334
+msgid "Image Version: v0.9.1"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:338
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>模块</th> "
+"<th>名称</th> <th>类型</th> <th>URL</th> <th>说明</th> </tr> </thead> <tbody> "
+"<tr> <td>Developer</td> <td>api-emulator</td> <td>产品仓</td> "
+"<td>https://gitee.com/edgegallery/api-emulator</td> <td>提供基本能力的模拟api</td>"
+" </tr> <tr> <td>Mep</td> <td>Plugins</td> <td>产品仓</td> "
+"<td>https://gitee.com/edgegallery/plugins</td> <td>plugins仓</td> </tr> "
+"<tr> <td>Developer</td> <td>toolchain</td> <td>产品仓</td> "
+"<td>https://gitee.com/edgegallery/toolchain</td> "
+"<td>提供x86平台应用上车ARM时源码分析功能</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:376
+msgid ""
+"[ **需求/发布计划详细说明** "
+"](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:378
+msgid "安全设计排查问题汇总"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:379
+msgid "api模拟器和工具链、plugin仓库开源"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:380
+msgid "【MEP/MEP Agent】ak/sk配置接口"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:385 Notes/EdgeGallery_RN_zh.md:389
+#: Notes/EdgeGallery_RN_zh.md:395 Notes/EdgeGallery_RN_zh.md:399
+#, python-format
+msgid ""
+"参见 [EdgeGallery v0.9.1 Test "
+"Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:403
+msgid "EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自行修复："
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:408
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-"
+"transport (indirect dependency)</td> <td>4.1.36.Final</td> "
+"<td>CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869</td> "
+"</tr> <tr> <td>log4j (indirect dependency)</td> <td>1.2.17</td> "
+"<td>CVE-2019-17571</td> </tr> <tr> <td>spring-jdbc (indirect "
+"dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr>"
+" <td>spring-security-core (indirect dependency)</td> "
+"<td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>bcprov-"
+"jdk15on-1.66.jar</td> <td>1.66</td> <td>CVE-2020-28052</td> </tr> <tr> "
+"<td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> "
+"<td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> "
+"<tr> <td>mybatis</td> <td>3.5.3</td> <td>CVE-2020-25645</td> </tr> <tr> "
+"<td>spring-security-oauth2</td> <td>2.3.3.RELEASE</td> "
+"<td>CVE-2018-15758</td> </tr> <tr> <td>tomcat-embed-core</td> "
+"<td>9.0.37</td> <td>CVE-2020-17525</td> </tr> <tr> <td>vertx-core</td> "
+"<td>3.6.3</td> <td>CVE-2019-17640</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:481
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-"
+"transport (indirect dependency)</td> <td>4.1.36.Final</td> "
+"<td>CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869</td> "
+"</tr> <tr> <td>spring-beans (indirect dependency)</td> "
+"<td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-"
+"security-config (indirect dependency)</td> <td>5.1.5.RELEASE</td> "
+"<td>CVE-2018-1258, CVE-2020-5398</td> </tr> <tr> <td>spring-security-"
+"core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> "
+"<td>lodash</td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> "
+"<td>minimatch</td> <td>3.0.4</td> <td>NPM-118</td> </tr> <tr> <td>spring-"
+"security-oauth2</td> <td>2.3.3</td> "
+"<td>CVE-2018-15758，CVE-2019-11269，CVE-2018-3778</td> </tr> <tr> <td"
+">swagger-codegen-cli (shaded: com.fasterxml.jackson.core.jackson-"
+"databind:2.10.3)</td> <td>3.0.21</td> <td>CVE-2020-25649</td> </tr> <tr> "
+"<td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> "
+"<td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> "
+"<tr> <td>mybatis-spring</td> <td>2.0.3</td> <td>CVE-2020-26945</td> </tr>"
+" <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.1</td> "
+"<td>CVE-2020-26945</td> </tr> <tr> <td>swagger-codegen-cli</td> "
+"<td>3.0.21</td> "
+"<td>CVE-2017-1000207，CVE-2017-1000208，CVE-2019-10086，CVE-2018-8088，CVE-2017-18640，CVE-2016-6199，CVE-2019-11065，CVE-2019-15052，</td>"
+" </tr> <tr> <td>tomcat-embed-core</td> <td>9.0.37</td> "
+"<td>CVE-2020-17527</td> </tr> <tr> <td>vertx-core</td> <td>3.6.3</td> "
+"<td>CVE-2019-17640</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:571 Notes/EdgeGallery_RN_zh.md:920
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>rxnetty "
+"(indirect dependency)</td> <td>0.4.9</td> <td>CVE-2015-2156</td> </tr> "
+"<tr> <td>netty-tcnative-boringssl-static (indirect dependency)</td> "
+"<td>2.0.31.Final</td> <td>CVE-2015-2156</td> </tr> <tr> <td>spring-"
+"security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> "
+"<tr> <td>lodash</td> <td>4.17.20</td> <td>NPM-1065, NPM-557, "
+"NPM-7823</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> "
+"<td>NPM-118</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:611 Notes/EdgeGallery_RN_zh.md:960
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>log4j</td> "
+"<td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>spring-security-"
+"core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> "
+"</table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:669 Notes/EdgeGallery_RN_zh.md:1018
+#, python-format
+msgid "经过安全工作组评审，Plugins仓库遗留问题单[I1XA0N](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N)将在v0.9版本发布后通过补丁形式修复，详细情况请参见安全工作组[会议纪要](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:674
+msgid "Version: v0.9"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:676
+msgid "Release Date: 2020-09-30"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:677
+msgid "Image Version: v0.9"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:681
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>模块</th> "
+"<th>名称</th> <th>类型</th> <th>URL</th> <th>说明</th> </tr> </thead> <tbody> "
+"<tr> <td>helm-charts</td> <td>helm-charts</td> <td>部署</td> "
+"<td>https://gitee.com/edgegallery/helm-charts</td> "
+"<td>EdgeGallery部署脚本</td> </tr> <tr> <td>website-gateway</td> <td>website-"
+"gateway</td> <td>产品仓</td> <td>https://gitee.com/edgegallery/website-"
+"gateway</td> <td>前台封装</td> </tr> <tr> <td>user-mgmt</td> <td>user-"
+"mgmt</td> <td>产品仓</td> <td>https://gitee.com/edgegallery/user-mgmt</td> "
+"<td>usermgmt后台</td> </tr> <tr> <td>user-mgmt</td> <td>user-mgmt-fe</td> "
+"<td>产品仓</td> <td>https://gitee.com/edgegallery/user-mgmt-fe</td> "
+"<td>usermgmt前台</td> </tr> <tr> <td>mecm</td> <td>mecm-fe</td> "
+"<td>产品仓</td> <td>https://gitee.com/edgegallery/mecm-fe</td> "
+"<td>MECM前台</td> </tr> <tr> <td>mecm</td> <td>mecm-applcm</td> "
+"<td>产品仓</td> <td>https://gitee.com/edgegallery/mecm-applcm</td> "
+"<td>MECM应用生命周期管理</td> </tr> <tr> <td>mecm</td> <td>mecm-apm</td> "
+"<td>产品仓</td> <td>https://gitee.com/edgegallery/mecm-apm</td> "
+"<td>MECM应用包管理</td> </tr> <tr> <td>mecm</td> <td>mecm-inventory</td> "
+"<td>产品仓</td> <td>https://gitee.com/edgegallery/mecm-inventory</td> "
+"<td>MECM存量管理</td> </tr> <tr> <td>mecm</td> <td>mecm-appo</td> "
+"<td>产品仓</td> <td>https://gitee.com/edgegallery/mecm-appo</td> "
+"<td>MECM应用编排</td> </tr> <tr> <td>developer</td> <td>developer-be</td> "
+"<td>产品仓</td> <td>https://gitee.com/edgegallery/developer-be</td> "
+"<td>developer后台</td> </tr> <tr> <td>developer</td> <td>developer-fe</td> "
+"<td>产品仓</td> <td>https://gitee.com/edgegallery/developer-fe</td> "
+"<td>developer前台</td> </tr> <tr> <td>appstore</td> <td>appstore-fe</td> "
+"<td>产品仓</td> <td>https://gitee.com/edgegallery/appstore-fe</td> "
+"<td>appstore前台</td> </tr> <tr> <td>appstore</td> <td>appstore-be</td> "
+"<td>产品仓</td> <td>https://gitee.com/edgegallery/appstore-be</td> "
+"<td>appstore后台</td> </tr> <tr> <td>platform-mgmt</td> <td>platform-"
+"mgmt</td> <td>产品仓</td> <td>https://gitee.com/edgegallery/platform-"
+"mgmt</td> <td>安装k8/docker</td> </tr> <tr> <td>docs</td> <td>docs</td> "
+"<td>产品仓</td> <td>https://gitee.com/edgegallery/docs</td> <td>文档</td> "
+"</tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:803
+msgid ""
+"[ **需求/发布计划详细说明** "
+"](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:805
+msgid "All-in-One MEP/MECM网络隔离"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:806
+msgid "MEP支持DNS配置"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:807
+msgid "支持All-in-One部署"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:808
+msgid "多节点离线部署"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:809
+msgid "九大维度安全优化"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:810
+msgid "MECM界面/拓扑管理/资源管理优化"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:811
+msgid "（PoC）kubeedge集成验证"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:816 Notes/EdgeGallery_RN_zh.md:820
+#: Notes/EdgeGallery_RN_zh.md:826 Notes/EdgeGallery_RN_zh.md:830
+#, python-format
+msgid ""
+"参见 [EdgeGallery v0.9 Test "
+"Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:834
+msgid "EdgeGalelry v0.9版本第三方开源组件存在以下漏洞需要用户自行修复："
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:839
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-"
+"transport (indirect dependency)</td> <td>4.1.36.Final</td> "
+"<td>CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869</td> "
+"</tr> <tr> <td>log4j (indirect dependency)</td> <td>1.2.17</td> "
+"<td>CVE-2019-17571</td> </tr> <tr> <td>spring-jdbc (indirect "
+"dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr>"
+" <td>spring-security-core (indirect dependency)</td> "
+"<td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:875
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> "
+"<th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-"
+"transport (indirect dependency)</td> <td>4.1.36.Final</td> "
+"<td>CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869</td> "
+"</tr> <tr> <td>spring-beans (indirect dependency)</td> "
+"<td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-"
+"security-config (indirect dependency)</td> <td>5.1.5.RELEASE</td> "
+"<td>CVE-2018-1258, CVE-2020-5398</td> </tr> <tr> <td>spring-security-"
+"core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> "
+"<td>lodash</td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> "
+"<td>minimatch</td> <td>3.0.4</td> <td>NPM-118</td> </tr> </tbody> "
+"</table>"
+msgstr ""
+

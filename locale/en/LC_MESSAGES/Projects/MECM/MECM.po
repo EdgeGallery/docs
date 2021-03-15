@@ -9,16 +9,128 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edgegallery \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-14 09:59+0530\n"
+"POT-Creation-Date: 2021-03-15 06:29+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/MECM.rst:9
+msgid " MECM Overview概述"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:17
+msgid " MECM Architecture架构"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:25
+msgid " Apm Interfaces"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:25
+msgid " Applcm Interfaces"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:25
+msgid " Appo Interfaces"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:25
+msgid " Inventory Interfaces"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:25
+msgid " AppRule Manager Interfaces"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:25
+msgid " K8s plugin Interface"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:39
+msgid " Apm Database"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:39
+msgid " Lcm Controller Database"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:39
+msgid " K8s Plugin Database"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:39
+msgid " Appo Database"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:39
+msgid " Inventory Database"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:51
+msgid " MECM Product Document使用指导"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:51
+msgid " MECM User Interface Document"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:60
+msgid " Contribute to APM"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:60
+msgid " Contribute to Lcm Controller and K8s Plugin(Applcm)"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:60
+msgid " Contribute to APPO"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:60
+msgid " Contribute to Inventory"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:60
+msgid " Contribute to AppRuleManager"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:72
+msgid " MECM port matrix端口矩阵"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:2
 msgid "MECM"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:7
+msgid "**Overview概述**"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:15
+msgid "**Architecture**"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:23
+msgid "**Interface Designs界面设计**"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:37
+msgid "**Database Designs数据库设计**"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:49
+msgid "**User Guides使用指导**"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:58
+msgid "**How to Contribute如何贡献**"
+msgstr ""
+
+#: ../../Projects/MECM/MECM.rst:70
+msgid "**Port Matrix端口矩阵**"
 msgstr ""
 

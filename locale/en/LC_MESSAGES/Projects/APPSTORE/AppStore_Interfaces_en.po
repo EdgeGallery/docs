@@ -1,0 +1,936 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-15 06:29+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2
+msgid "AppStore Interfaces"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3
+msgid ""
+"The document is for the appstore-be project, there are six parts of "
+"interfaces in the project."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:5
+msgid "[AppStore Interfaces](#appstore-interfaces) - [1. APP](#1-app)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:7
+msgid "[1.1 Get All Apps](#11-get-all-apps)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:8
+msgid "[1.2 Get One App](#12-get-one-app)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:9
+msgid "[1.3 Register App](#13-register-app)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:10
+msgid "[1.4 Delete One App](#14-delete-one-app)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:11
+msgid "[1.5 Get Latest Version Of App](#15-get-latest-version-of-app)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:12
+msgid "[1.6 Get Icon Of App](#16-get-icon-of-app)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:13
+msgid ""
+"[2. Package](#2-package) - [2.1 Get All Packages Of APP](#21-get-all-"
+"packages-of-app) - [2.2 Get One Package](#22-get-one-package) - [2.3 "
+"Delete One Package](#23-delete-one-package) - [2.4 Download One "
+"Package](#24-download-one-package) - [2.5 Get File Content](#25-get-file-"
+"content) - [2.6 APP Publish](#26-app-publish) - [2.7 APP Test](#27-app-"
+"test)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:21
+msgid ""
+"[3. Comment](#3-comment) - [3.1 Get Comments Of App](#31-get-comments-of-"
+"app) - [3.2 Submit Comment To App](#32-submit-comment-to-app)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:24
+msgid ""
+"[4. APP Push](#4-app-push) - [4.1 Query Push App List](#41-query-push-"
+"app-list) - [4.2 Get Push App Package](#42-get-push-app-package) - [4.3 "
+"Push App Package](#43-push-app-package) - [4.4 Download Push App "
+"Package](#44-download-push-app-package) - [4.5 Download Push App "
+"Icon](#45-download-push-app-icon)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:30
+msgid ""
+"[5. APPStore Manager](#5-APPStore-Manager) - [5.1 Add AppStore](#51-Add-"
+"AppStore) - [5.2 Delete AppStore](#52-Delete-AppStore) - [5.3 Modify "
+"AppStore](#53-Modify-AppStore) - [5.4 Query AppStore List](#54-Query-"
+"AppStore-List) - [5.5 Query AppStore](#55-Query-AppStore)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:36
+msgid ""
+"[6. Message](#6-Message) - [6.1 Add Message](#61-Add-Message) - [6.2 Get "
+"All Message](#62-Get-All-Message) - [6.3 Get Message](#63-Get-Message) - "
+"[6.4 Delete Message](#64-Delete-Message) - [6.5 Accept Message](#65"
+"-Accept-Message) - [6.6 Update Status](#66-Update-Status)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:43
+msgid ""
+"[7. APP Pull](#7-app-pull) - [7.1 Query Pull App List](#71-query-pull-"
+"app-list) - [7.2 Get Pull App Packages](#72-get-pull-app-packages-by-"
+"platfromId) - [7.3 Pull App Package](#73-pull-app-package)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:49
+msgid "## 1. APP"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:51
+msgid "APP is the basic publishing unit of APP Store."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:54
+msgid "### 1.1 Get All Apps"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:56
+msgid "Query all apps by condation."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:58
+msgid "``` Resource URI: /mec/appstore/v1/apps Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:63
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>name</td> <td>app name.</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>provider</td> <td>app provider.</td> "
+"<td>request param</td> <td>yes</td> </tr> <tr> <td>type</td> <td>app "
+"type.</td> <td>request param</td> <td>yes</td> </tr> <tr> "
+"<td>affinity</td> <td>app affinity.</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>userId</td> <td>app creater.</td> <td>request"
+" param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:106
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:421
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:756
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:858
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:909
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1283
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1452
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1648
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1699
+msgid "Example response: ``` 200 OK ["
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:125
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:176
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:262
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:442
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:500
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:770
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:780
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:877
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:928
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1122
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1246
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1297
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1342
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1475
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1529
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1667
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1718
+msgid "{"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:111
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:162
+msgid ""
+"\"appId\": \"string\", \"iconUrl\": \"string\", \"name\": \"string\", "
+"\"provider\": \"string\", \"type\": \"string\", \"shortDesc\": "
+"\"string\", \"createTime\": \"string\", \"details\": \"string\", "
+"\"downloadCount\": 0, \"affinity\": \"string\", \"industry\": \"string\","
+" \"contact\": \"string\", \"score\": 0, \"userId\": \"string\", "
+"\"userName\": \"string\", \"status\": \"string\""
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:127
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:178
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:264
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:444
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:502
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:772
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:782
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:835
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:879
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:930
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1124
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1248
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1299
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1344
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1477
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1531
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1669
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1720
+msgid "}"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:129
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:446
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:771
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:784
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:881
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:932
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1301
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1479
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1671
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1722
+msgid "]"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:131
+msgid ""
+"### 1.2 Get One App Query app by app id. ``` Resource URI: "
+"/mec/appstore/v1/apps/{appId} Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:138
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:318
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:350
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:736
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>appId</td> <td>app id</td> <td>path</td> <td>yes</td> "
+"</tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:158
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:255
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:305
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:337
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:369
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:480
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:549
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:587
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:631
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:840
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:966
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:998
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1030
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1109
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1153
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1233
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1329
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1420
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1507
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1560
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1598
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1630
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1756
+msgid "Example response: ``` 200 OK"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:179
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:265
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:309
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:341
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:373
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:503
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:553
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:591
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:635
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:674
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:722
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:837
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:844
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:970
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1002
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1034
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1125
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1157
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1249
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1345
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1424
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1532
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1564
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1602
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1634
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1760
+msgid "```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:181
+msgid ""
+"### 1.3 Register App registe a app. ``` Resource URI: "
+"/mec/appstore/v1/apps Method: POST ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:188
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>userId</td> <td>user id</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>userName</td> <td>app name</td> <td>request "
+"param</td> <td>yes</td> </tr> <tr> <td>file</td> <td>package file</td> "
+"<td>RequestPart</td> <td>yes</td> </tr> <tr> <td>icon</td> <td>app icon "
+"file</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>type</td> "
+"<td>application type</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> "
+"<td>shortDesc</td> <td>short desc of input</td> <td>RequestPart</td> "
+"<td>yes</td> </tr> <tr> <td>affinity</td> <td>affinity of app</td> "
+"<td>RequestPart</td> <td>yes</td> </tr> <tr> <td>industry</td> "
+"<td>industry of app</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> "
+"<td>testTaskId</td> <td>test task id</td> <td>RequestPart</td> "
+"<td>no</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:259
+msgid ""
+"\"appName\": \"string\", \"appId\": \"string\", \"packageId\": "
+"\"string\", \"provider\": \"string\", \"version\": \"string\""
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:267
+msgid ""
+"### 1.4 Delete One App delete a app. ``` Resource URI: "
+"/mec/appstore/v1/apps/{appId} Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:274
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>userId</td> <td>user id</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>userName</td> <td>app name</td> <td>request "
+"param</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>app id</td> "
+"<td>path</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:308
+msgid "\"delete App success.\""
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:311
+msgid ""
+"### 1.5 Get Latest Version Of App get latest version package of app. ``` "
+"Resource URI: /mec/appstore/v1/apps/{appId}/action/download Method: GET "
+"```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:340
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:372
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:590
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1001
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1033
+msgid "binary output."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:343
+msgid ""
+"### 1.6 Get Icon Of App get app icon by app id. ``` Resource URI: "
+"/mec/appstore/v1/apps/{appId}/icon Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:375
+msgid "## 2. Package"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:377
+msgid "Package belong to App, etch App have at least one Package."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:380
+msgid "### 2.1 Get All Packages Of APP"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:382
+msgid "Query all packages by app id."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:384
+msgid "``` Resource URI: /mec/appstore/v1/apps/{appId}/packages Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:390
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>appId</td> <td>app id</td> <td>type</td> <td>yes</td> "
+"</tr> <tr> <td>userId</td> <td>user id</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>request</td> <td>request</td> <td>request "
+"param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:426
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:484
+msgid ""
+"\"packageId\": \"string\", \"userName\": \"string\", \"status\": "
+"\"string\", \"shortDesc\": \"string\", \"provider\": \"string\", "
+"\"testTaskId\": \"string\", \"size\": \"string\", \"format\": \"string\","
+" \"createTime\": \"string\", \"name\": \"string\", \"version\": "
+"\"string\", \"type\": \"string\", \"details\": \"string\", \"affinity\": "
+"\"string\", \"industry\": \"string\", \"contact\": \"string\", \"appId\":"
+" \"string\", \"userId\": \"string\""
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:448
+msgid ""
+"### 2.2 Get One Package Query app by app id. ``` Resource URI: "
+"/mec/appstore/v1/apps/{appId}/packages/{packageId} Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:455
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:562
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:644
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>appId</td> <td>app id</td> <td>path</td> <td>yes</td> "
+"</tr> <tr> <td>packageId</td> <td>package id</td> <td>path</td> "
+"<td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:505
+msgid ""
+"### 2.3 Delete One Package delete a package of app. ``` Resource URI: "
+"/mec/appstore/v1/apps/{appId}/packages/{packageId} Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:512
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>userId</td> <td>user id</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>userName</td> <td>user name</td> <td>request "
+"param</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>app id</td> "
+"<td>path</td> <td>yes</td> </tr> <tr> <td>packageId</td> <td>package "
+"id</td> <td>path</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:552
+msgid "delete package success."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:555
+msgid ""
+"### 2.4 Download One Package download one package by appId and packageId."
+" ``` Resource URI: "
+"/mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download "
+"Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:593
+msgid ""
+"### 2.5 Get File Content Get file content by app id package id and file "
+"path. ``` Resource URI: "
+"/mec/appstore/v1/apps/{appId}/packages/{packageId}/files Method: POST ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:600
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>packageId</td> <td>package id</td> <td>path</td> "
+"<td>yes</td> </tr> <tr> <td>filePath</td> <td>file path</td> "
+"<td>FormParam</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>app id</td>"
+" <td>path</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:634
+msgid "file content output."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:637
+msgid ""
+"### 2.6 APP Publish Publish APP by app id and package id. ``` Resource "
+"URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/publish "
+"Method: POST ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:669
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:714
+msgid "Example response: ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:672
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:720
+msgid "200 OK"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:673
+msgid "Publish Success."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:676
+msgid ""
+"### 2.7 APP Test Test APP by app id and package id. ``` Resource URI: "
+"/mec/appstore/v1/apps/{appId}/packages/{packageId}/action/test Method: "
+"POST ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:683
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>appId</td> <td>app id</td> <td>path</td> <td>yes</td> "
+"</tr> <tr> <td>packageId</td> <td>package id</td> <td>path</td> "
+"<td>yes</td> </tr> <tr> <td>request</td> <td>request</td> <td>request "
+"param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:718
+msgid "{ \"atpTaskId\": \"string\", \"status\": \"string\" }"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:724
+msgid "## 3. Comment"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:726
+msgid "User can submit comments to an app."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:729
+msgid ""
+"### 3.1 Get Comments Of App Get comments by app id. ``` Resource URI: "
+"/mec/appstore/v1/apps/{appId}/comments Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:761
+msgid "\"commentId\": 0, \"user\": {"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:763
+msgid "\"userId\": \"string\", \"userName\": \"string\", \"permissions\": ["
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:767
+msgid "\"platform\": \"string\", \"role\": \"string\", \"pageIds\": ["
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:770
+msgid "\"string\""
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:773
+msgid ""
+"], \"company\": \"string\", \"gender\": \"string\", \"telephone\": "
+"\"string\""
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:777
+msgid ""
+"}, \"appId\": \"string\", \"body\": \"string\", \"score\": 0, "
+"\"commentTime\": \"string\""
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:786
+msgid ""
+"### 3.2 Submit Comment To App User submit comment to app by app id. ``` "
+"Resource URI: /mec/appstore/v1/apps/{appId}/comments Method: POST ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:793
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>userId</td> <td>user id</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>userName</td> <td>app name</td> <td>request "
+"param</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>app id</td> "
+"<td>path</td> <td>yes</td> </tr> <tr> <td>entity</td> <td>comment "
+"entity</td> <td>RequestBody</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:830
+msgid "Example request body: ``` {"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:833
+msgid "\"body\": \"string\", \"score\": 0"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:843
+msgid "\"comments success.\""
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:846
+msgid "## 4. APP Push"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:848
+msgid "User can push an app to other."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:851
+msgid ""
+"### 4.1 Query Push App List Query the app list which can push ``` URI： "
+"/mec/appstore/v1/packages/pushable Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:863
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:914
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1653
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1704
+msgid ""
+"\"appId\": \"string\", \"packageId\": \"string\", \"name\": \"string\", "
+"\"provider\": \"string\", \"version\": \"string\", \"atpTestStatus\": "
+"\"string\", \"atpTestTaskId\": \"string\", \"atpTestReportUrl\": "
+"\"string\", \"latestPushTime\": \"string\", \"pushTimes\": \"string\", "
+"\"targetPlatform\": \"string\", \"affinity\": \"string\", \"shortDesc\": "
+"\"string\", \"industry\": \"string\", \"type\": \"string\", "
+"\"createTime\": \"string\""
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:883
+msgid ""
+"### 4.2 Get Push App Package Get push app package by packageId. ``` URI： "
+"/mec/appstore/v1/packages/{packageId}/pushable Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:890
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:979
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1011
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>packageId</td> <td>package id</td> <td>path</td> "
+"<td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:934
+msgid ""
+"### 4.3 Push App Package Push app package by packageId ``` URI： "
+"/mec/appstore/v1/packages/{packageId}/action/push Method: POST ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:941
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>packageId</td> <td>package id</td> <td>path</td> "
+"<td>yes</td> </tr> <tr> <td>dto</td> <td>provider list</td> <td>request "
+"param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:969
+msgid "[true, false, true]"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:972
+msgid ""
+"### 4.4 Download Push App Package Download push appp package by packageId"
+" ``` URI： /mec/appstore/v1/packages/{packageId}/action/download-package "
+"Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1004
+msgid ""
+"### 4.5 Download Push App Icon Download push app icon by packageId. ``` "
+"URI： /mec/appstore/v1/packages/{packageId}/action/download-icon Method: "
+"GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1036
+msgid "## 5. APPStore Manager"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1038
+msgid "Add, delete, modify and query the APPStore."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1041
+msgid ""
+"### 5.1 Add AppStore add external AppStore. ``` URI： "
+"/mec/appstore/v1/appstores Method: POST ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1048
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>appStoreName</td> <td>appStore name</td> <td>request "
+"param</td> <td>yes</td> </tr> <tr> <td>appStoreVersion</td> <td>appStore "
+"version</td> <td>request param</td> <td>yes</td> </tr> <tr> "
+"<td>company</td> <td>company name</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>url</td> <td>url addr</td> <td>request "
+"param</td> <td>yes</td> </tr> <tr> <td>schema</td> <td>schema</td> "
+"<td>request param</td> <td>no</td> </tr> <tr> <td>appPushIntf</td> "
+"<td>appPush type</td> <td>request param</td> <td>no</td> </tr> <tr> "
+"<td>appdTransId</td> <td>appdTrans id</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>description</td> <td>description "
+"information</td> <td>request param</td> <td>no</td> </tr> </tbody> "
+"</table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1113
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1237
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1288
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1333
+msgid ""
+"\"appStoreId\": \"string\", \"appStoreName\": \"string\", "
+"\"appStoreVersion\": \"string\", \"company\": \"string\", \"url\": "
+"\"string\", \"schema\": \"string\", \"appPushIntf\": \"string\", "
+"\"appdTransId\": \"string\", \"description\": \"string\", \"addedTime\": "
+"\"string\", \"modifiedTime\": \"string\""
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1127
+msgid ""
+"### 5.2 Delete AppStore Delete external AppStore. ``` URI： "
+"/mec/appstore/v1/appstores/{appStoreId} Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1134
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1310
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>appStoreId</td> <td>appStore id</td> <td>path</td> "
+"<td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1156
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1563
+msgid "delete success"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1159
+msgid ""
+"### 5.3 Modify AppStore Modify external AppStore. ``` URI： "
+"/mec/appstore/v1/appstores/{appStoreId} Method: PUT ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1166
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>appStoreId</td> <td>appStore id</td> <td>path</td> "
+"<td>yes</td> </tr> <tr> <td>appStoreName</td> <td>appStore name</td> "
+"<td>request param</td> <td>yes</td> </tr> <tr> <td>appStoreVersion</td> "
+"<td>appStore version</td> <td>request param</td> <td>yes</td> </tr> <tr> "
+"<td>company</td> <td>company name</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>url</td> <td>url addr</td> <td>request "
+"param</td> <td>yes</td> </tr> <tr> <td>schema</td> <td>schema</td> "
+"<td>request param</td> <td>no</td> </tr> <tr> <td>appPushIntf</td> "
+"<td>appPush type</td> <td>request param</td> <td>no</td> </tr> <tr> "
+"<td>appdTransId</td> <td>appdTrans id</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>description</td> <td>description "
+"information</td> <td>request param</td> <td>no</td> </tr> </tbody> "
+"</table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1251
+msgid ""
+"### 5.4 Query AppStore List Query external appStore list. ``` URI： "
+"/mec/appstore/v1/appstores Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1258
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>appStoreName</td> <td>appStore name</td> <td>request "
+"param</td> <td>yes</td> </tr> <tr> <td>company</td> <td>company name</td>"
+" <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1303
+msgid ""
+"### 5.5 Query AppStore Query external appStore. ``` URI： "
+"/mec/appstore/v1/appstores/{appStoreId} Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1347
+msgid "## 6. Message"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1349
+msgid "The message contains information such as APP push, download, notice, pull."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1352
+msgid ""
+"### 6.1 Add Message Add a APP operation message. ``` URI： "
+"/mec/appstore/v1/messages Method: POST ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1359
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>basicInfo</td> <td>basic information</td> <td>request "
+"param</td> <td>yes</td> </tr> <tr> <td>sourceAppStore</td> <td>source "
+"AppStore</td> <td>request param</td> <td>yes</td> </tr> <tr> "
+"<td>targetAppStore</td> <td>target AppStore</td> <td>request param</td> "
+"<td>yes</td> </tr> <tr> <td>atpTestStatus</td> <td>ATP test result</td> "
+"<td>request param</td> <td>yes</td> </tr> <tr> <td>atpTestTaskId</td> "
+"<td>ATP test taskId</td> <td>request param</td> <td>yes</td> </tr> <tr> "
+"<td>atpTestReportUrl</td> <td>ATP test reportUrl</td> <td>request "
+"param</td> <td>yes</td> </tr> <tr> <td>packageDownloadUrl</td> "
+"<td>package download url</td> <td>request param</td> <td>yes</td> </tr> "
+"<tr> <td>iconDownloadUrl</td> <td>app icon download url</td> <td>request "
+"param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1423
+msgid "add a message success"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1426
+msgid ""
+"### 6.2 Get All Message Get messages by message type. ``` URI： "
+"/mec/appstore/v1/messages Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1433
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>messageType</td> <td>message type</td> <td>request "
+"param</td> <td>no</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1457
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1511
+msgid "\"messageId\": \"string\", \"basicInfo\": {"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1459
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1513
+msgid ""
+"\"name\": \"string\", \"provider\": \"string\", \"version\": \"string\", "
+"\"affinity\": \"string\", \"shortDesc\": \"string\", \"industry\": "
+"\"string\", \"type\": \"string\""
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1466
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1520
+msgid ""
+"}, \"messageType\": \"string\", \"sourceAppStore\": \"string\", "
+"\"targetAppStore\": \"string\", \"time\": \"string\", \"description\": "
+"\"string\", \"atpTestStatus\": \"string\", \"atpTestTaskId\": \"string\","
+" \"atpTestReportUrl\": \"string\", \"iconDownloadUrl\": \"string\", "
+"\"readed\": true"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1481
+msgid ""
+"### 6.3 Get Message Get message by message id. ``` URI： "
+"/mec/appstore/v1/messages/{messageId} Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1488
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1541
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1611
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>messageId</td> <td>message id</td> <td>request "
+"param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1534
+msgid ""
+"### 6.4 Delete Message Delete message by message id. ``` URI： "
+"/mec/appstore/v1/messages/{messageId} Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1566
+msgid ""
+"### 6.5 Accept Message download message by message id. ``` URI： "
+"/mec/appstore/v1/messages/{messageId}/action/download Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1573
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>messageId</td> <td>message id</td> <td>request "
+"param</td> <td>yes</td> </tr> <tr> <td>request</td> <td>request body</td>"
+" <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1601
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1633
+msgid "success"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1604
+msgid ""
+"### 6.6 Update Status Update message status by message id. ``` URI： "
+"/mec/appstore/v1/messages/{messageId}/action/readed Method: PUT ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1636
+msgid "## 7. APP Push"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1638
+msgid "User can pull an app from other appstore."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1641
+msgid ""
+"### 7.1 Query Pull App List Query the app list which can pull ``` URI： "
+"/mec/appstore/v1/packages/pullable Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1673
+msgid ""
+"### 7.2 Get Pull App Packages Get pull app packages by platfromId. ``` "
+"URI： /mec/appstore/v1/packages/{platfromId}/pullable Method: GET ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1680
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>platfromId</td> <td>external appstore id</td> "
+"<td>path</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1724
+msgid ""
+"### 7.3 Pull App Package Pull app package by packageId ``` URI： "
+"/mec/appstore/v1/packages/{packageId}/action/pull Method: POST ```"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1731
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>packageId</td> <td>package id</td> <td>path</td> "
+"<td>yes</td> </tr> <tr> <td>dto</td> <td>pull request dto</td> "
+"<td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1759
+msgid "true"
+msgstr ""
+

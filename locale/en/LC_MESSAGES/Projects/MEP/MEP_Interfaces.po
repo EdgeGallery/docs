@@ -9,199 +9,3213 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edgegallery \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-14 09:59+0530\n"
+"POT-Creation-Date: 2021-03-15 06:29+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
 
-#: ../../Projects/MEP/MEP_Interfaces.md:1
-#: ../../Projects/MEP/MEP_Interfaces.md:3
-msgid "MEP Interfaces"
+#: ../../Projects/MEP/MEP_Interfaces.md:2
+msgid "接口设计"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:4
-#: ../../Projects/MEP/MEP_Interfaces.md:21
-msgid "Mep-Server"
-msgstr ""
-
-#: ../../Projects/MEP/MEP_Interfaces.md:5
-#: ../../Projects/MEP/MEP_Interfaces.md:24
-msgid "1. DNS rule configurations"
-msgstr ""
-
-#: ../../Projects/MEP/MEP_Interfaces.md:6
-#: ../../Projects/MEP/MEP_Interfaces.md:28
-msgid "1.1 Mp1 Interface for DNS configurations"
+msgid "[接口设计](#接口设计) - [MEP 接口简介](#mep-接口简介) - [MEP-auth模块接口](#mep-auth模块接口)"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:7
-#: ../../Projects/MEP/MEP_Interfaces.md:32
-msgid "1.1.1 GET all"
+msgid "[服务认证接口](#服务认证接口)"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:8
-#: ../../Projects/MEP/MEP_Interfaces.md:78
-msgid "1.1.2 GET one"
+msgid "[AK/SK配置接口](#aksk配置接口)"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:9
-#: ../../Projects/MEP/MEP_Interfaces.md:118
-msgid "1.1.2 PUT"
-msgstr ""
-
-#: ../../Projects/MEP/MEP_Interfaces.md:10
-#: ../../Projects/MEP/MEP_Interfaces.md:185
-msgid "1.2 Mm5 Interface for DNS configurations"
+msgid "[MEP-server 接口](#mep-server-接口) - [应用服务管理相关接口](#应用服务管理相关接口)"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:11
-#: ../../Projects/MEP/MEP_Interfaces.md:189
-msgid "1.2.1 POST"
+msgid "[1. 查询应用服务](#1-查询应用服务)"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:12
-#: ../../Projects/MEP/MEP_Interfaces.md:245
-msgid "1.2.2 GET all"
+msgid "[2. 查询应用指定服务](#2-查询应用指定服务)"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:13
-#: ../../Projects/MEP/MEP_Interfaces.md:292
-msgid "1.2.3 GET one"
+msgid "[3. 注册应用服务](#3-注册应用服务)"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:14
-#: ../../Projects/MEP/MEP_Interfaces.md:332
-msgid "1.2.4 PUT"
+msgid "[4. 更新应用服务](#4-更新应用服务)"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:15
-#: ../../Projects/MEP/MEP_Interfaces.md:399
-msgid "1.2.5 DELETE"
+msgid "[5. 删除应用服务](#5-删除应用服务)"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:16
-#: ../../Projects/MEP/MEP_Interfaces.md:432
-msgid "Dns-Server"
+msgid ""
+"[可用事件订阅相关接口](#可用事件订阅相关接口) - [1. 查询可用事件订阅](#1-查询可用事件订阅) - [2. "
+"注册可用事件订阅](#2-注册可用事件订阅) - [3. 删除可用事件订阅](#3-删除可用事件订阅) - [4. "
+"查询指定可用事件订阅](#4-查询指定可用事件订阅)"
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:17
-#: ../../Projects/MEP/MEP_Interfaces.md:436
-msgid "1. DNS management"
-msgstr ""
-
-#: ../../Projects/MEP/MEP_Interfaces.md:18
-#: ../../Projects/MEP/MEP_Interfaces.md:438
-msgid "1.1 Create/Set new entry"
-msgstr ""
-
-#: ../../Projects/MEP/MEP_Interfaces.md:19
-#: ../../Projects/MEP/MEP_Interfaces.md:485
-msgid "1.2. Delete an entry"
-msgstr ""
-
-#: ../../Projects/MEP/MEP_Interfaces.md:22
-msgid "This section cover the mep-server interfaces."
+#: ../../Projects/MEP/MEP_Interfaces.md:21
+msgid ""
+"[终止事件订阅相关接口](#终止事件订阅相关接口) - [1. 查询终止事件订阅](#1-查询终止事件订阅) - [2. "
+"注册终止事件订阅](#2-注册终止事件订阅) - [3. 删除终止事件订阅](#3-删除终止事件订阅) - [4. "
+"查询指定终止事件订阅](#4-查询指定终止事件订阅)"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:26
-msgid "DNS rules can be configured using both Mp1 and Mm5 interfaces."
-msgstr ""
-
-#: ../../Projects/MEP/MEP_Interfaces.md:30
 msgid ""
-"Uisng the Mp1 interfaces mec apps can query and activate/deactivate dns "
-"rules associated to it. Implementation of this interface are as per the "
-"ETSI GS MEC 011 V2.1.1 document."
+"[Heartbeat related interfaces](#heartbeat-related-interfaces) - [1. Query"
+" service liveness info](#1-query-service-liveness-info) - [2. Update "
+"liveness info](#2-update-liveness-info)"
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:34
-#: ../../Projects/MEP/MEP_Interfaces.md:247
-msgid "Query all DNS rules associated with an application."
+#: ../../Projects/MEP/MEP_Interfaces.md:29
+msgid ""
+"[DNS rule configuration interfaces](#dns-rule-configuration-interfaces) -"
+" [1. Query all dns rules](#1-query-all-dns-rules) - [2. Query a specific "
+"dns rule](#2-query-a-specific-dns-rule) - [3. Update a specific dns "
+"rule](#3-update-a-specific-dns-rule)"
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:55
-#: ../../Projects/MEP/MEP_Interfaces.md:105
-#: ../../Projects/MEP/MEP_Interfaces.md:172
-#: ../../Projects/MEP/MEP_Interfaces.md:232
-#: ../../Projects/MEP/MEP_Interfaces.md:269
-#: ../../Projects/MEP/MEP_Interfaces.md:319
-#: ../../Projects/MEP/MEP_Interfaces.md:386
-#: ../../Projects/MEP/MEP_Interfaces.md:426
-#: ../../Projects/MEP/MEP_Interfaces.md:480
-#: ../../Projects/MEP/MEP_Interfaces.md:514
-msgid "Example response:"
+#: ../../Projects/MEP/MEP_Interfaces.md:33
+msgid ""
+"[Traffic rule configuration interfaces](#traffic-rule-configuration-"
+"interfaces) - [1. Query all traffic rules](#1-query-all-traffic-rules) - "
+"[2. Query a specific traffic rule](#2-query-a-specific-traffic-rule) - "
+"[3. Update a specific traffic rule](#3-update-a-specific-traffic-rule)"
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:80
-#: ../../Projects/MEP/MEP_Interfaces.md:294
-msgid "Query single DNS rule associated with an application."
+#: ../../Projects/MEP/MEP_Interfaces.md:37
+msgid ""
+"[Mm5 Interface for appd configurations](#mm5-interface-for-appd-"
+"configurations) - [1. Create a new appd configurations](#1-create-a-new-"
+"appd-configurations) - [2. Query appd configuration](#2-query-appd-"
+"configuration) - [3. Modify appd configuration](#3-modify-appd-"
+"configuration) - [4. Delete appd configuration](#4-delete-appd-"
+"configuration) - [5. Query task status](#5-query-task-status)"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:43
+msgid ""
+"[Application Termination](#application-termination) - [1. App Instance "
+"Termination](#1-app-instance-termination)"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:45
+msgid ""
+"[Query Platform Capabilities(Services)](#query-platform-"
+"capabilitiesservices) - [1. Query all capabilities](#1-query-all-"
+"capabilities) - [2. Query individual capability](#2-query-individual-"
+"capability)"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:48
+msgid "[异常状态码](#异常状态码)"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:49
+msgid ""
+"[Dns-Server](#dns-server) - [1. Create/Set new entry](#1-createset-new-"
+"entry) - [2. Delete an entry](#2-delete-an-entry)"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:54
+msgid "[MEP Agent](#mep-agent)"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:53
+msgid "[1. Get token](#1-get-token)"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:54
+msgid ""
+"[2. Get producer endpoint by service name](#2-get-producer-endpoint-by-"
+"service-name)"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:56
+msgid "## MEP 接口简介"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:58
+msgid ""
+"MEP主要包含MEP-server和MEP-auth两个主要功能模块。MEP server接口分为两类，一类为遵循ETSI MEC 011 "
+"v2.1.1标准的Mp1接口，主要为App提供服务注册发现，App状态通知订阅，Dns规则获取等功能；另一类为Mm5接口，主要为MECM/MEPM提供配置管理功能。MEP"
+" auth目前主要作为鉴权模块，为App提供token申请发放功能。 "
+"URL为服务自己的URL，PORT为服务自己的PORT。如果经过KONG，PORT变成KONG的PORT，URL需要添加对应的路由。mepauth直接添加{KONG_MEPAUTH_ROUTE}（当前值为/mepauth），mepserver把/mep用{KONG_MEPSERVER_ROUTE}（当前值为/mepserver）替换。"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:61
+msgid "## MEP-auth模块接口"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:65
+msgid "### 服务认证接口"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:67
+msgid "应用通过AK/SK向LDVS进行鉴权认证，认证通过后返回token，每个token具有有效期（1小时），token分配方在有效期结束后将收回token，当携带过期的token的HTTP请求到达的时候，将被以状态码401返回；此时token携带方需要重新进行token获取。当token还在有效期内，token携带方再次使用相同的用户获取token时返回当前仍然有效的token。"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:69
+#: ../../Projects/MEP/MEP_Interfaces.md:209
+msgid "URL："
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:71
+msgid "``` POST /mep/token ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:75
+#: ../../Projects/MEP/MEP_Interfaces.md:215
+#: ../../Projects/MEP/MEP_Interfaces.md:377
+#: ../../Projects/MEP/MEP_Interfaces.md:717
+#: ../../Projects/MEP/MEP_Interfaces.md:1058
+#: ../../Projects/MEP/MEP_Interfaces.md:1641
+#: ../../Projects/MEP/MEP_Interfaces.md:2232
+#: ../../Projects/MEP/MEP_Interfaces.md:2317
+#: ../../Projects/MEP/MEP_Interfaces.md:2450
+#: ../../Projects/MEP/MEP_Interfaces.md:2778
+#: ../../Projects/MEP/MEP_Interfaces.md:2859
+#: ../../Projects/MEP/MEP_Interfaces.md:3071
+#: ../../Projects/MEP/MEP_Interfaces.md:3205
+#: ../../Projects/MEP/MEP_Interfaces.md:3388
+#: ../../Projects/MEP/MEP_Interfaces.md:3469
+msgid "请求参数："
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:77
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> "
+"<tr> <td>Content-Type</td> <td>String</td> <td>MIME类型，  "
+"填\"application/json\"</td> <td>header</td> <td>是</td> </tr> <tr> "
+"<td>Authorization</td> <td>String</td> <td>认证信息</td> <td>header</td> "
+"<td>是</td> </tr> <tr> <td>x-sdk-date</td> <td>String</td> "
+"<td>签名时间（当前时间戳，格式：YYYYMMDDTHHMMSSZ）</td> <td>header</td> <td>是</td> </tr>"
+" <tr> <td>Host</td> <td>String</td> <td>与生成认证信息签名用到的host字段保持一致</td> "
+"<td>header</td> <td>是</td> </tr> </tbody> </table>"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:120
-#: ../../Projects/MEP/MEP_Interfaces.md:334
+#: ../../Projects/MEP/MEP_Interfaces.md:245
+#: ../../Projects/MEP/MEP_Interfaces.md:407
+#: ../../Projects/MEP/MEP_Interfaces.md:754
+#: ../../Projects/MEP/MEP_Interfaces.md:1095
+#: ../../Projects/MEP/MEP_Interfaces.md:1685
+#: ../../Projects/MEP/MEP_Interfaces.md:2269
+#: ../../Projects/MEP/MEP_Interfaces.md:2347
+#: ../../Projects/MEP/MEP_Interfaces.md:2487
+#: ../../Projects/MEP/MEP_Interfaces.md:2815
+#: ../../Projects/MEP/MEP_Interfaces.md:2896
+#: ../../Projects/MEP/MEP_Interfaces.md:3101
+#: ../../Projects/MEP/MEP_Interfaces.md:3242
+#: ../../Projects/MEP/MEP_Interfaces.md:3425
+#: ../../Projects/MEP/MEP_Interfaces.md:3506
+msgid "Body参数："
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:122
+#: ../../Projects/MEP/MEP_Interfaces.md:409
+#: ../../Projects/MEP/MEP_Interfaces.md:756
+#: ../../Projects/MEP/MEP_Interfaces.md:2271
+#: ../../Projects/MEP/MEP_Interfaces.md:2349
+#: ../../Projects/MEP/MEP_Interfaces.md:2817
+#: ../../Projects/MEP/MEP_Interfaces.md:2898
+#: ../../Projects/MEP/MEP_Interfaces.md:3103
+#: ../../Projects/MEP/MEP_Interfaces.md:3427
+#: ../../Projects/MEP/MEP_Interfaces.md:3508
+msgid "无"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:125
+#: ../../Projects/MEP/MEP_Interfaces.md:284
+#: ../../Projects/MEP/MEP_Interfaces.md:411
+#: ../../Projects/MEP/MEP_Interfaces.md:758
+#: ../../Projects/MEP/MEP_Interfaces.md:1302
+#: ../../Projects/MEP/MEP_Interfaces.md:1892
+#: ../../Projects/MEP/MEP_Interfaces.md:2273
+#: ../../Projects/MEP/MEP_Interfaces.md:2351
+#: ../../Projects/MEP/MEP_Interfaces.md:2574
+#: ../../Projects/MEP/MEP_Interfaces.md:2819
+#: ../../Projects/MEP/MEP_Interfaces.md:2900
+#: ../../Projects/MEP/MEP_Interfaces.md:3105
+#: ../../Projects/MEP/MEP_Interfaces.md:3275
+#: ../../Projects/MEP/MEP_Interfaces.md:3429
+#: ../../Projects/MEP/MEP_Interfaces.md:3510
+msgid "请求示例："
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:127
+msgid "``` POST /mep/token"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:133
+#: ../../Projects/MEP/MEP_Interfaces.md:149
+#: ../../Projects/MEP/MEP_Interfaces.md:291
+#: ../../Projects/MEP/MEP_Interfaces.md:418
+#: ../../Projects/MEP/MEP_Interfaces.md:699
+#: ../../Projects/MEP/MEP_Interfaces.md:765
+#: ../../Projects/MEP/MEP_Interfaces.md:1311
+#: ../../Projects/MEP/MEP_Interfaces.md:1901
+#: ../../Projects/MEP/MEP_Interfaces.md:2280
+#: ../../Projects/MEP/MEP_Interfaces.md:2358
+#: ../../Projects/MEP/MEP_Interfaces.md:2432
+#: ../../Projects/MEP/MEP_Interfaces.md:2583
+#: ../../Projects/MEP/MEP_Interfaces.md:2601
+#: ../../Projects/MEP/MEP_Interfaces.md:2753
+#: ../../Projects/MEP/MEP_Interfaces.md:2826
+#: ../../Projects/MEP/MEP_Interfaces.md:2907
+#: ../../Projects/MEP/MEP_Interfaces.md:3047
+#: ../../Projects/MEP/MEP_Interfaces.md:3112
+#: ../../Projects/MEP/MEP_Interfaces.md:3186
+#: ../../Projects/MEP/MEP_Interfaces.md:3284
+#: ../../Projects/MEP/MEP_Interfaces.md:3436
+#: ../../Projects/MEP/MEP_Interfaces.md:3517
+#: ../../Projects/MEP/MEP_Interfaces.md:3955
+#: ../../Projects/MEP/MEP_Interfaces.md:4497
+#: ../../Projects/MEP/MEP_Interfaces.md:4502
+#: ../../Projects/MEP/MEP_Interfaces.md:4751
+#: ../../Projects/MEP/MEP_Interfaces.md:4993
+#: ../../Projects/MEP/MEP_Interfaces.md:5189
+#: ../../Projects/MEP/MEP_Interfaces.md:5509
+#: ../../Projects/MEP/MEP_Interfaces.md:5513
+#: ../../Projects/MEP/MEP_Interfaces.md:5523
+#: ../../Projects/MEP/MEP_Interfaces.md:5867
+#: ../../Projects/MEP/MEP_Interfaces.md:5872
+#: ../../Projects/MEP/MEP_Interfaces.md:5882
+#: ../../Projects/MEP/MEP_Interfaces.md:6194
+#: ../../Projects/MEP/MEP_Interfaces.md:6198
+#: ../../Projects/MEP/MEP_Interfaces.md:6208
+#: ../../Projects/MEP/MEP_Interfaces.md:6610
+#: ../../Projects/MEP/MEP_Interfaces.md:6618
+#: ../../Projects/MEP/MEP_Interfaces.md:6627
+#: ../../Projects/MEP/MEP_Interfaces.md:6733
+#: ../../Projects/MEP/MEP_Interfaces.md:6843
+#: ../../Projects/MEP/MEP_Interfaces.md:6845
+#: ../../Projects/MEP/MEP_Interfaces.md:6966
+#: ../../Projects/MEP/MEP_Interfaces.md:6968
+#: ../../Projects/MEP/MEP_Interfaces.md:7068
+#: ../../Projects/MEP/MEP_Interfaces.md:7070
+msgid "{"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:148
+#: ../../Projects/MEP/MEP_Interfaces.md:292
+#: ../../Projects/MEP/MEP_Interfaces.md:419
+#: ../../Projects/MEP/MEP_Interfaces.md:766
+#: ../../Projects/MEP/MEP_Interfaces.md:1312
+#: ../../Projects/MEP/MEP_Interfaces.md:1902
+#: ../../Projects/MEP/MEP_Interfaces.md:2281
+#: ../../Projects/MEP/MEP_Interfaces.md:2359
+#: ../../Projects/MEP/MEP_Interfaces.md:2584
+#: ../../Projects/MEP/MEP_Interfaces.md:2827
+#: ../../Projects/MEP/MEP_Interfaces.md:2908
+#: ../../Projects/MEP/MEP_Interfaces.md:3113
+#: ../../Projects/MEP/MEP_Interfaces.md:3285
+#: ../../Projects/MEP/MEP_Interfaces.md:3437
+#: ../../Projects/MEP/MEP_Interfaces.md:3518
+#: ../../Projects/MEP/MEP_Interfaces.md:6967
+#: ../../Projects/MEP/MEP_Interfaces.md:7069
+msgid "\"header\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:133
+#: ../../Projects/MEP/MEP_Interfaces.md:291
+#: ../../Projects/MEP/MEP_Interfaces.md:6966
+#: ../../Projects/MEP/MEP_Interfaces.md:7068
+msgid "\"key\": \"Content-Type\", \"value\": \"application/json\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:135
+#: ../../Projects/MEP/MEP_Interfaces.md:141
+#: ../../Projects/MEP/MEP_Interfaces.md:145
+#: ../../Projects/MEP/MEP_Interfaces.md:3957
+#: ../../Projects/MEP/MEP_Interfaces.md:6612
+#: ../../Projects/MEP/MEP_Interfaces.md:6615
+#: ../../Projects/MEP/MEP_Interfaces.md:6620
+#: ../../Projects/MEP/MEP_Interfaces.md:6735
+#: ../../Projects/MEP/MEP_Interfaces.md:6738
+msgid "}, {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:137
+msgid ""
+"\"key\": \"Authorization\", \"value\": \"SDK-HMAC-SHA256 Access= "
+"QVUJMSUMgS0VZLS0tLS0=, SignedHeaders=content-type;host;x-sdk-date, "
+"Signature=142b0dc3feaeb3662b2033a8e6425596546e08a231aa39179b4060867dd15d3d\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:143
+msgid "\"key\": \"x-sdk-date\", \"value\": \"20060102T150405Z\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:147
+msgid "\"key\":\"Host\", \"value\":\"xxx\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:149
+#: ../../Projects/MEP/MEP_Interfaces.md:152
+#: ../../Projects/MEP/MEP_Interfaces.md:200
+#: ../../Projects/MEP/MEP_Interfaces.md:293
+#: ../../Projects/MEP/MEP_Interfaces.md:300
+#: ../../Projects/MEP/MEP_Interfaces.md:301
+#: ../../Projects/MEP/MEP_Interfaces.md:302
+#: ../../Projects/MEP/MEP_Interfaces.md:304
+#: ../../Projects/MEP/MEP_Interfaces.md:358
+#: ../../Projects/MEP/MEP_Interfaces.md:359
+#: ../../Projects/MEP/MEP_Interfaces.md:361
+#: ../../Projects/MEP/MEP_Interfaces.md:420
+#: ../../Projects/MEP/MEP_Interfaces.md:422
+#: ../../Projects/MEP/MEP_Interfaces.md:687
+#: ../../Projects/MEP/MEP_Interfaces.md:699
+#: ../../Projects/MEP/MEP_Interfaces.md:700
+#: ../../Projects/MEP/MEP_Interfaces.md:701
+#: ../../Projects/MEP/MEP_Interfaces.md:767
+#: ../../Projects/MEP/MEP_Interfaces.md:769
+#: ../../Projects/MEP/MEP_Interfaces.md:1031
+#: ../../Projects/MEP/MEP_Interfaces.md:1043
+#: ../../Projects/MEP/MEP_Interfaces.md:1044
+#: ../../Projects/MEP/MEP_Interfaces.md:1045
+#: ../../Projects/MEP/MEP_Interfaces.md:1313
+#: ../../Projects/MEP/MEP_Interfaces.md:1340
+#: ../../Projects/MEP/MEP_Interfaces.md:1349
+#: ../../Projects/MEP/MEP_Interfaces.md:1351
+#: ../../Projects/MEP/MEP_Interfaces.md:1612
+#: ../../Projects/MEP/MEP_Interfaces.md:1624
+#: ../../Projects/MEP/MEP_Interfaces.md:1625
+#: ../../Projects/MEP/MEP_Interfaces.md:1627
+#: ../../Projects/MEP/MEP_Interfaces.md:1903
+#: ../../Projects/MEP/MEP_Interfaces.md:1930
+#: ../../Projects/MEP/MEP_Interfaces.md:1939
+#: ../../Projects/MEP/MEP_Interfaces.md:1940
+#: ../../Projects/MEP/MEP_Interfaces.md:2204
+#: ../../Projects/MEP/MEP_Interfaces.md:2216
+#: ../../Projects/MEP/MEP_Interfaces.md:2217
+#: ../../Projects/MEP/MEP_Interfaces.md:2218
+#: ../../Projects/MEP/MEP_Interfaces.md:2282
+#: ../../Projects/MEP/MEP_Interfaces.md:2286
+#: ../../Projects/MEP/MEP_Interfaces.md:2360
+#: ../../Projects/MEP/MEP_Interfaces.md:2362
+#: ../../Projects/MEP/MEP_Interfaces.md:2434
+#: ../../Projects/MEP/MEP_Interfaces.md:2436
+#: ../../Projects/MEP/MEP_Interfaces.md:2438
+#: ../../Projects/MEP/MEP_Interfaces.md:2585
+#: ../../Projects/MEP/MEP_Interfaces.md:2603
+#: ../../Projects/MEP/MEP_Interfaces.md:2609
+#: ../../Projects/MEP/MEP_Interfaces.md:2610
+#: ../../Projects/MEP/MEP_Interfaces.md:2612
+#: ../../Projects/MEP/MEP_Interfaces.md:2740
+#: ../../Projects/MEP/MEP_Interfaces.md:2755
+#: ../../Projects/MEP/MEP_Interfaces.md:2761
+#: ../../Projects/MEP/MEP_Interfaces.md:2762
+#: ../../Projects/MEP/MEP_Interfaces.md:2828
+#: ../../Projects/MEP/MEP_Interfaces.md:2830
+#: ../../Projects/MEP/MEP_Interfaces.md:2909
+#: ../../Projects/MEP/MEP_Interfaces.md:2911
+#: ../../Projects/MEP/MEP_Interfaces.md:3034
+#: ../../Projects/MEP/MEP_Interfaces.md:3049
+#: ../../Projects/MEP/MEP_Interfaces.md:3055
+#: ../../Projects/MEP/MEP_Interfaces.md:3057
+#: ../../Projects/MEP/MEP_Interfaces.md:3114
+#: ../../Projects/MEP/MEP_Interfaces.md:3116
+#: ../../Projects/MEP/MEP_Interfaces.md:3188
+#: ../../Projects/MEP/MEP_Interfaces.md:3190
+#: ../../Projects/MEP/MEP_Interfaces.md:3191
+#: ../../Projects/MEP/MEP_Interfaces.md:3286
+#: ../../Projects/MEP/MEP_Interfaces.md:3292
+#: ../../Projects/MEP/MEP_Interfaces.md:3293
+#: ../../Projects/MEP/MEP_Interfaces.md:3369
+#: ../../Projects/MEP/MEP_Interfaces.md:3372
+#: ../../Projects/MEP/MEP_Interfaces.md:3438
+#: ../../Projects/MEP/MEP_Interfaces.md:3440
+#: ../../Projects/MEP/MEP_Interfaces.md:3457
+#: ../../Projects/MEP/MEP_Interfaces.md:3519
+#: ../../Projects/MEP/MEP_Interfaces.md:3521
+#: ../../Projects/MEP/MEP_Interfaces.md:3590
+#: ../../Projects/MEP/MEP_Interfaces.md:3593
+#: ../../Projects/MEP/MEP_Interfaces.md:3702
+#: ../../Projects/MEP/MEP_Interfaces.md:3705
+#: ../../Projects/MEP/MEP_Interfaces.md:3805
+#: ../../Projects/MEP/MEP_Interfaces.md:3965
+#: ../../Projects/MEP/MEP_Interfaces.md:4083
+#: ../../Projects/MEP/MEP_Interfaces.md:4195
+#: ../../Projects/MEP/MEP_Interfaces.md:4254
+#: ../../Projects/MEP/MEP_Interfaces.md:4499
+#: ../../Projects/MEP/MEP_Interfaces.md:4504
+#: ../../Projects/MEP/MEP_Interfaces.md:4753
+#: ../../Projects/MEP/MEP_Interfaces.md:4759
+#: ../../Projects/MEP/MEP_Interfaces.md:4995
+#: ../../Projects/MEP/MEP_Interfaces.md:5001
+#: ../../Projects/MEP/MEP_Interfaces.md:5191
+#: ../../Projects/MEP/MEP_Interfaces.md:5197
+#: ../../Projects/MEP/MEP_Interfaces.md:5511
+#: ../../Projects/MEP/MEP_Interfaces.md:5515
+#: ../../Projects/MEP/MEP_Interfaces.md:5525
+#: ../../Projects/MEP/MEP_Interfaces.md:5530
+#: ../../Projects/MEP/MEP_Interfaces.md:5584
+#: ../../Projects/MEP/MEP_Interfaces.md:5869
+#: ../../Projects/MEP/MEP_Interfaces.md:5874
+#: ../../Projects/MEP/MEP_Interfaces.md:5884
+#: ../../Projects/MEP/MEP_Interfaces.md:5889
+#: ../../Projects/MEP/MEP_Interfaces.md:6196
+#: ../../Projects/MEP/MEP_Interfaces.md:6200
+#: ../../Projects/MEP/MEP_Interfaces.md:6210
+#: ../../Projects/MEP/MEP_Interfaces.md:6215
+#: ../../Projects/MEP/MEP_Interfaces.md:6268
+#: ../../Projects/MEP/MEP_Interfaces.md:6365
+#: ../../Projects/MEP/MEP_Interfaces.md:6462
+#: ../../Projects/MEP/MEP_Interfaces.md:6618
+#: ../../Projects/MEP/MEP_Interfaces.md:6629
+#: ../../Projects/MEP/MEP_Interfaces.md:6631
+#: ../../Projects/MEP/MEP_Interfaces.md:6741
+#: ../../Projects/MEP/MEP_Interfaces.md:6744
+#: ../../Projects/MEP/MEP_Interfaces.md:6845
+#: ../../Projects/MEP/MEP_Interfaces.md:6847
+#: ../../Projects/MEP/MEP_Interfaces.md:6968
+#: ../../Projects/MEP/MEP_Interfaces.md:6971
+#: ../../Projects/MEP/MEP_Interfaces.md:7016
+#: ../../Projects/MEP/MEP_Interfaces.md:7070
+#: ../../Projects/MEP/MEP_Interfaces.md:7073
+#: ../../Projects/MEP/MEP_Interfaces.md:7139
+#: ../../Projects/MEP/MEP_Interfaces.md:7141
+msgid "}"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:150
+#: ../../Projects/MEP/MEP_Interfaces.md:421
+#: ../../Projects/MEP/MEP_Interfaces.md:703
+#: ../../Projects/MEP/MEP_Interfaces.md:768
+#: ../../Projects/MEP/MEP_Interfaces.md:2361
+#: ../../Projects/MEP/MEP_Interfaces.md:2435
+#: ../../Projects/MEP/MEP_Interfaces.md:2829
+#: ../../Projects/MEP/MEP_Interfaces.md:2910
+#: ../../Projects/MEP/MEP_Interfaces.md:3115
+#: ../../Projects/MEP/MEP_Interfaces.md:3189
+#: ../../Projects/MEP/MEP_Interfaces.md:3439
+#: ../../Projects/MEP/MEP_Interfaces.md:3520
+#: ../../Projects/MEP/MEP_Interfaces.md:3967
+#: ../../Projects/MEP/MEP_Interfaces.md:4506
+#: ../../Projects/MEP/MEP_Interfaces.md:6619
+#: ../../Projects/MEP/MEP_Interfaces.md:6630
+#: ../../Projects/MEP/MEP_Interfaces.md:6633
+#: ../../Projects/MEP/MEP_Interfaces.md:6742
+#: ../../Projects/MEP/MEP_Interfaces.md:6844
+#: ../../Projects/MEP/MEP_Interfaces.md:6846
+#: ../../Projects/MEP/MEP_Interfaces.md:6849
+#: ../../Projects/MEP/MEP_Interfaces.md:6969
+#: ../../Projects/MEP/MEP_Interfaces.md:7071
+msgid "]"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:155
+#: ../../Projects/MEP/MEP_Interfaces.md:306
+#: ../../Projects/MEP/MEP_Interfaces.md:427
+#: ../../Projects/MEP/MEP_Interfaces.md:773
+#: ../../Projects/MEP/MEP_Interfaces.md:1353
+#: ../../Projects/MEP/MEP_Interfaces.md:1945
+#: ../../Projects/MEP/MEP_Interfaces.md:2290
+#: ../../Projects/MEP/MEP_Interfaces.md:2366
+#: ../../Projects/MEP/MEP_Interfaces.md:2614
+#: ../../Projects/MEP/MEP_Interfaces.md:2834
+#: ../../Projects/MEP/MEP_Interfaces.md:2915
+#: ../../Projects/MEP/MEP_Interfaces.md:3120
+#: ../../Projects/MEP/MEP_Interfaces.md:3297
+#: ../../Projects/MEP/MEP_Interfaces.md:3444
+#: ../../Projects/MEP/MEP_Interfaces.md:3525
+msgid "返回参数："
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:157
+#: ../../Projects/MEP/MEP_Interfaces.md:308
+#: ../../Projects/MEP/MEP_Interfaces.md:429
+#: ../../Projects/MEP/MEP_Interfaces.md:775
+#: ../../Projects/MEP/MEP_Interfaces.md:1947
+#: ../../Projects/MEP/MEP_Interfaces.md:2368
+#: ../../Projects/MEP/MEP_Interfaces.md:2917
+#: ../../Projects/MEP/MEP_Interfaces.md:3122
+#: ../../Projects/MEP/MEP_Interfaces.md:3527
+msgid "返回码：200"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:159
+#: ../../Projects/MEP/MEP_Interfaces.md:310
+#: ../../Projects/MEP/MEP_Interfaces.md:431
+#: ../../Projects/MEP/MEP_Interfaces.md:777
+#: ../../Projects/MEP/MEP_Interfaces.md:1357
+#: ../../Projects/MEP/MEP_Interfaces.md:1949
+#: ../../Projects/MEP/MEP_Interfaces.md:2294
+#: ../../Projects/MEP/MEP_Interfaces.md:2370
+#: ../../Projects/MEP/MEP_Interfaces.md:2618
+#: ../../Projects/MEP/MEP_Interfaces.md:2838
+#: ../../Projects/MEP/MEP_Interfaces.md:2919
+#: ../../Projects/MEP/MEP_Interfaces.md:3124
+#: ../../Projects/MEP/MEP_Interfaces.md:3301
+#: ../../Projects/MEP/MEP_Interfaces.md:3448
+#: ../../Projects/MEP/MEP_Interfaces.md:3529
+msgid "OK"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:161
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>必选</th> </tr> </thead> <tbody> <tr> "
+"<td>access_token</td> <td>String</td> <td>Token</td> <td>是</td> </tr> "
+"<tr> <td>token_type</td> <td>String</td> <td>Token类型（Bearer）</td> "
+"<td>是</td> </tr> <tr> <td>expires_in</td> <td>int</td> <td>失效时间</td> "
+"<td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:192
+#: ../../Projects/MEP/MEP_Interfaces.md:349
+#: ../../Projects/MEP/MEP_Interfaces.md:656
+#: ../../Projects/MEP/MEP_Interfaces.md:1002
+#: ../../Projects/MEP/MEP_Interfaces.md:1582
+#: ../../Projects/MEP/MEP_Interfaces.md:2174
+#: ../../Projects/MEP/MEP_Interfaces.md:2296
+#: ../../Projects/MEP/MEP_Interfaces.md:2421
+#: ../../Projects/MEP/MEP_Interfaces.md:2729
+#: ../../Projects/MEP/MEP_Interfaces.md:2840
+#: ../../Projects/MEP/MEP_Interfaces.md:3024
+#: ../../Projects/MEP/MEP_Interfaces.md:3175
+#: ../../Projects/MEP/MEP_Interfaces.md:3358
+#: ../../Projects/MEP/MEP_Interfaces.md:3450
+#: ../../Projects/MEP/MEP_Interfaces.md:3580
+msgid "返回示例："
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:194
+#: ../../Projects/MEP/MEP_Interfaces.md:351
+#: ../../Projects/MEP/MEP_Interfaces.md:1004
+#: ../../Projects/MEP/MEP_Interfaces.md:2176
+#: ../../Projects/MEP/MEP_Interfaces.md:2423
+#: ../../Projects/MEP/MEP_Interfaces.md:3026
+#: ../../Projects/MEP/MEP_Interfaces.md:3177
+#: ../../Projects/MEP/MEP_Interfaces.md:3582
+#: ../../Projects/MEP/MEP_Interfaces.md:7010
+#: ../../Projects/MEP/MEP_Interfaces.md:7130
+msgid "``` HTTP/1.1 200 OK {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:197
+#: ../../Projects/MEP/MEP_Interfaces.md:7013
+msgid ""
+"\"access_token\":\"xxxx\", \"token_type\":\"Bearer\", "
+"\"expires_in\":\"3600\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:202
+#: ../../Projects/MEP/MEP_Interfaces.md:424
+#: ../../Projects/MEP/MEP_Interfaces.md:705
+#: ../../Projects/MEP/MEP_Interfaces.md:771
+#: ../../Projects/MEP/MEP_Interfaces.md:1046
+#: ../../Projects/MEP/MEP_Interfaces.md:1943
+#: ../../Projects/MEP/MEP_Interfaces.md:2220
+#: ../../Projects/MEP/MEP_Interfaces.md:2288
+#: ../../Projects/MEP/MEP_Interfaces.md:2303
+#: ../../Projects/MEP/MEP_Interfaces.md:2364
+#: ../../Projects/MEP/MEP_Interfaces.md:2764
+#: ../../Projects/MEP/MEP_Interfaces.md:2832
+#: ../../Projects/MEP/MEP_Interfaces.md:2847
+#: ../../Projects/MEP/MEP_Interfaces.md:2913
+#: ../../Projects/MEP/MEP_Interfaces.md:3118
+#: ../../Projects/MEP/MEP_Interfaces.md:3193
+#: ../../Projects/MEP/MEP_Interfaces.md:3295
+#: ../../Projects/MEP/MEP_Interfaces.md:3374
+#: ../../Projects/MEP/MEP_Interfaces.md:3442
+#: ../../Projects/MEP/MEP_Interfaces.md:3523
+#: ../../Projects/MEP/MEP_Interfaces.md:3595
+#: ../../Projects/MEP/MEP_Interfaces.md:7018
+msgid "```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:205
+msgid ""
+"注：在测试时，请确保启动EG-LDVS时使用的AK/SK和获取token时使用的AK/SK相同。基于AK/SK的认证，EG-"
+"LDVS对于相同的AK若5分钟内三次认证失败，对应AK将被锁定15分钟。"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:207
+msgid "### AK/SK配置接口"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:211
+msgid "``` PUT /mep/appMng/v1/applications/{appInstanceId}/confs ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:217
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> "
+"<tr> <td>Content-Type</td> <td>String</td> "
+"<td>MIME类型，填\"application/json\"</td> <td>header</td> <td>是</td> </tr> "
+"<tr> <td>appInstanceId</td> <td>String</td> <td>APP实例ID（UUID）</td> "
+"<td>path</td> <td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:247
+#: ../../Projects/MEP/MEP_Interfaces.md:312
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>必选</th> </tr> </thead> <tbody> <tr> "
+"<td>authInfo</td> <td>Object</td> <td>用户信息</td> <td>是</td> </tr> <tr> "
+"<td>&gt;credentials</td> <td>Object</td> <td>证书信息</td> <td>是</td> </tr> "
+"<tr> <td>&gt;&gt;accessKeyId</td> <td>String</td> <td>AK</td> <td>是</td> "
+"</tr> <tr> <td>&gt;&gt;secretKey</td> <td>String</td> <td>SK</td> "
+"<td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:286
+msgid ""
+"``` PUT /mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/confs {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:294
+#: ../../Projects/MEP/MEP_Interfaces.md:1314
+#: ../../Projects/MEP/MEP_Interfaces.md:1904
+msgid "], \"body\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:299
+#: ../../Projects/MEP/MEP_Interfaces.md:357
+msgid "\"authInfo\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:298
+#: ../../Projects/MEP/MEP_Interfaces.md:356
+msgid "\"credentials\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:298
+#: ../../Projects/MEP/MEP_Interfaces.md:356
+msgid ""
+"\"accessKeyId\": \"QVUJMSUMgS0VZLS0tLS0\", \"secretKey\": "
+"\"DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:363
+msgid "## MEP-server 接口"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:365
+msgid "### 应用服务管理相关接口"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:367
+msgid "#### 1. 查询应用服务"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:369
+msgid "查询指定APP的服务列表"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:371
+#: ../../Projects/MEP/MEP_Interfaces.md:711
+#: ../../Projects/MEP/MEP_Interfaces.md:1052
+#: ../../Projects/MEP/MEP_Interfaces.md:1635
+#: ../../Projects/MEP/MEP_Interfaces.md:2226
+#: ../../Projects/MEP/MEP_Interfaces.md:2311
+#: ../../Projects/MEP/MEP_Interfaces.md:2444
+#: ../../Projects/MEP/MEP_Interfaces.md:2772
+#: ../../Projects/MEP/MEP_Interfaces.md:2853
+#: ../../Projects/MEP/MEP_Interfaces.md:3065
+#: ../../Projects/MEP/MEP_Interfaces.md:3199
+#: ../../Projects/MEP/MEP_Interfaces.md:3382
+#: ../../Projects/MEP/MEP_Interfaces.md:3463
+#: ../../Projects/MEP/MEP_Interfaces.md:3602
+#: ../../Projects/MEP/MEP_Interfaces.md:3854
+#: ../../Projects/MEP/MEP_Interfaces.md:3973
+#: ../../Projects/MEP/MEP_Interfaces.md:4089
+#: ../../Projects/MEP/MEP_Interfaces.md:4264
+#: ../../Projects/MEP/MEP_Interfaces.md:4512
+#: ../../Projects/MEP/MEP_Interfaces.md:4765
+#: ../../Projects/MEP/MEP_Interfaces.md:5208
+#: ../../Projects/MEP/MEP_Interfaces.md:5590
+#: ../../Projects/MEP/MEP_Interfaces.md:5894
+#: ../../Projects/MEP/MEP_Interfaces.md:6274
+#: ../../Projects/MEP/MEP_Interfaces.md:6371
+#: ../../Projects/MEP/MEP_Interfaces.md:6472
+#: ../../Projects/MEP/MEP_Interfaces.md:6534
+#: ../../Projects/MEP/MEP_Interfaces.md:6639
+#: ../../Projects/MEP/MEP_Interfaces.md:6768
+#: ../../Projects/MEP/MEP_Interfaces.md:6866
+msgid "URL"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:373
+msgid "``` GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:379
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> "
+"<tr> <td>Authorization</td> <td>String</td> <td>Token信息，格式：Bearer "
+"token信息</td> <td>header</td> <td>是</td> </tr> <tr> <td>appInstanceId</td>"
+" <td>String</td> <td>APP实例ID（UUID）</td> <td>path</td> <td>是</td> </tr> "
+"</tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:413
+msgid ""
+"``` GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/services {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:418
+#: ../../Projects/MEP/MEP_Interfaces.md:765
+#: ../../Projects/MEP/MEP_Interfaces.md:2280
+#: ../../Projects/MEP/MEP_Interfaces.md:2358
+#: ../../Projects/MEP/MEP_Interfaces.md:2826
+#: ../../Projects/MEP/MEP_Interfaces.md:2907
+#: ../../Projects/MEP/MEP_Interfaces.md:3112
+#: ../../Projects/MEP/MEP_Interfaces.md:3436
+#: ../../Projects/MEP/MEP_Interfaces.md:3517
+msgid "\"key\": \"Authorization\", \"value\": \"Bearer xxx\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:433
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>必选</th> </tr> </thead> <tbody> <tr> "
+"<td>serInstanceId</td> <td>String</td> <td>服务实例ID</td> <td>是</td> </tr> "
+"<tr> <td>serName</td> <td>String</td> <td>服务名称</td> <td>是</td> </tr> <tr>"
+" <td>serCategory</td> <td>Object</td> <td>服务类别</td> <td>否</td> </tr> <tr>"
+" <td>&gt;href</td> <td>String</td> <td>目录参考</td> <td>否</td> </tr> <tr> "
+"<td>&gt;id</td> <td>String</td> <td>类别ID</td> <td>否</td> </tr> <tr> "
+"<td>&gt;name</td> <td>String</td> <td>类别名称</td> <td>否</td> </tr> <tr> "
+"<td>&gt;version</td> <td>String</td> <td>类别版本号</td> <td>否</td> </tr> <tr>"
+" <td>version</td> <td>String</td> <td>服务版本号</td> <td>是</td> </tr> <tr> "
+"<td>state</td> <td>String</td> <td>服务状态（ACTIVE/INACTIVE）</td> <td>是</td> "
+"</tr> <tr> <td>transportInfo</td> <td>Object</td> <td>服务信息</td> "
+"<td>否</td> </tr> <tr> <td>&gt;id</td> <td>String</td> <td>ID</td> "
+"<td>否</td> </tr> <tr> <td>&gt;name</td> <td>String</td> <td>名称</td> "
+"<td>否</td> </tr> <tr> <td>&gt; description</td> <td>String</td> "
+"<td>描述</td> <td>否</td> </tr> <tr> <td>&gt; type</td> <td>String</td> "
+"<td>类型（REST_HTTP/MB_TOPIC_BASED/MB_ROUTING/MB_PUBSUB/RPC/RPC_STREAMING/WEBSOCKET）</td>"
+" <td>否</td> </tr> <tr> <td>&gt; protocol</td> <td>String</td> "
+"<td>协议名称</td> <td>否</td> </tr> <tr> <td>&gt; version</td> <td>String</td>"
+" <td>版本号</td> <td>否</td> </tr> <tr> <td>&gt; endpoint</td> "
+"<td>Ojbect</td> <td>Endpoint，三种信息其中的一个（uris/addresses/alternative）</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;uris</td> <td>Array[String]</td> "
+"<td>URI格式的服务入口信息列表</td> <td>否</td> </tr> <tr> <td>&gt;&gt;addresses</td> "
+"<td>Array[Object]</td> <td>服务入口信息地址列表（IP地址+端口号）</td> <td>否</td> </tr> "
+"<tr> <td>&gt;&gt;&gt;host</td> <td>String</td> <td>IP地址</td> <td>否</td> "
+"</tr> <tr> <td>&gt;&gt;&gt;port</td> <td>String</td> <td>端口号</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;alternative</td> <td>String</td> "
+"<td>已实现格式或者外部规范定义的服务入口信息</td> <td>否</td> </tr> <tr> <td>&gt; "
+"security</td> <td>Object</td> <td>安全信息</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt; oAuth2Info</td> <td>Object</td> <td>OAuth2.0参数</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;&gt; grantTypes</td> "
+"<td>Array[String]</td> "
+"<td>准予类型（OAUTH2_AUTHORIZATION_CODE/OAUTH2_IMPLICIT_GRANT/OAUTH2_RESOURCE_OWNER/OAUTH2_CLIENT_CREDENTIALS）</td>"
+" <td>否</td> </tr> <tr> <td>&gt;&gt;&gt; tokenEndpoint</td> "
+"<td>String</td> <td>Token endpoint</td> <td>否</td> </tr> <tr> <td>&gt; "
+"implSpecificInfo</td> <td>String</td> <td>其他实现信息</td> <td>否</td> </tr> "
+"<tr> <td>serializer</td> <td>String</td> "
+"<td>序列化类型（JSON/XML/PROTOBUF3）</td> <td>是</td> </tr> <tr> "
+"<td>scopeOfLocality</td> <td>String</td> "
+"<td>地域范围（MEC_SYSTEM/MEC_HOST/NFVI_POP/ZONE/ZONE_GROUP/NFVI_NODE），默认值MEC_HOST</td>"
+" <td>否</td> </tr> <tr> <td>consumedLocalOnly</td> <td>boolean</td> "
+"<td>是否只被本地域APP消费（true/false）</td> <td>否</td> </tr> <tr> <td>isLocal</td> "
+"<td>boolean</td> <td>是否在本地域（true/false）</td> <td>否</td> </tr> <tr> "
+"<td>livenessInterval</td> <td>integer</td> <td>Interval (in seconds) "
+"between two consecutive heartbeat messages</td> <td>否</td> </tr> <tr> "
+"<td>_links</td> <td>Object</td> <td>Links to resources related to this "
+"resource. Shall be absent in HTTP requests.</td> <td>否</td> </tr> <tr> "
+"<td>&gt;self</td> <td>object</td> <td>Link to this resource. Shall be "
+"present in HTTP responses.</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt;liveness</td> <td>string</td> <td>Link to the resource where "
+"the MEC platform expects the service instance to send the liveness "
+"information.</td> <td>否</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:658
+msgid "``` HTTP/1.1 200 OK { ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:663
+#: ../../Projects/MEP/MEP_Interfaces.md:1007
+msgid ""
+"\"serInstanceId\": \"0bc92b06cc213d2ad8beda71bd0e1460\", \"serName\": "
+"\"ExampleService\", \"serCategory\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:666
+#: ../../Projects/MEP/MEP_Interfaces.md:1010
+msgid ""
+"\"href\": \"/example/catalogue1\", \"id\": \"id12345\", \"name\": "
+"\"RNI\", \"version\": \"version1\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:670
+#: ../../Projects/MEP/MEP_Interfaces.md:1014
+msgid ""
+"}, \"version\": \"ServiceVersion1\", \"state\": \"ACTIVE\", "
+"\"transportInfo\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:674
+#: ../../Projects/MEP/MEP_Interfaces.md:1018
+#: ../../Projects/MEP/MEP_Interfaces.md:1599
+#: ../../Projects/MEP/MEP_Interfaces.md:1917
+#: ../../Projects/MEP/MEP_Interfaces.md:2191
+msgid ""
+"\"id\": \"TransId12345\", \"name\": \"REST\", \"description\": \"REST "
+"API\", \"type\": \"REST_HTTP\", \"protocol\": \"HTTP\", \"version\": "
+"\"2.0\", \"endpoint\": {}, \"security\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:685
+#: ../../Projects/MEP/MEP_Interfaces.md:1029
+#: ../../Projects/MEP/MEP_Interfaces.md:1338
+#: ../../Projects/MEP/MEP_Interfaces.md:1610
+#: ../../Projects/MEP/MEP_Interfaces.md:1928
+#: ../../Projects/MEP/MEP_Interfaces.md:2202
+msgid "\"oAuth2Info\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:683
+#: ../../Projects/MEP/MEP_Interfaces.md:1027
+#: ../../Projects/MEP/MEP_Interfaces.md:1926
+#: ../../Projects/MEP/MEP_Interfaces.md:2200
+msgid "\"grantTypes\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:684
+#: ../../Projects/MEP/MEP_Interfaces.md:1028
+#: ../../Projects/MEP/MEP_Interfaces.md:1927
+#: ../../Projects/MEP/MEP_Interfaces.md:2201
+msgid "\"OAUTH2_CLIENT_CREDENTIALS\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:685
+#: ../../Projects/MEP/MEP_Interfaces.md:1029
+#: ../../Projects/MEP/MEP_Interfaces.md:1928
+#: ../../Projects/MEP/MEP_Interfaces.md:2202
+msgid "], \"tokenEndpoint\": \"/mecSerMgmtApi/security/TokenEndPoint\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:688
+#: ../../Projects/MEP/MEP_Interfaces.md:1032
+#: ../../Projects/MEP/MEP_Interfaces.md:1341
+#: ../../Projects/MEP/MEP_Interfaces.md:1613
+#: ../../Projects/MEP/MEP_Interfaces.md:1931
+#: ../../Projects/MEP/MEP_Interfaces.md:2205
+msgid "}, \"implSpecificInfo\": {}"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:690
+#: ../../Projects/MEP/MEP_Interfaces.md:1034
+#: ../../Projects/MEP/MEP_Interfaces.md:1615
+#: ../../Projects/MEP/MEP_Interfaces.md:2207
+msgid ""
+"}, \"serializer\": \"JSON\", \"scopeOfLocality\": \"MEC_SYSTEM\", "
+"\"consumedLocalOnly\": false, \"isLocal\": true, \"livenessInterval\": "
+"60, \"_links\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:697
+#: ../../Projects/MEP/MEP_Interfaces.md:1041
+#: ../../Projects/MEP/MEP_Interfaces.md:1622
+#: ../../Projects/MEP/MEP_Interfaces.md:2214
+#: ../../Projects/MEP/MEP_Interfaces.md:2427
+#: ../../Projects/MEP/MEP_Interfaces.md:2738
+#: ../../Projects/MEP/MEP_Interfaces.md:3032
+#: ../../Projects/MEP/MEP_Interfaces.md:3181
+#: ../../Projects/MEP/MEP_Interfaces.md:3367
+#: ../../Projects/MEP/MEP_Interfaces.md:3588
+msgid "\"self\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:698
+#: ../../Projects/MEP/MEP_Interfaces.md:1042
+#: ../../Projects/MEP/MEP_Interfaces.md:1623
+#: ../../Projects/MEP/MEP_Interfaces.md:2215
+msgid ""
+"\"liveness\" : \"/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47"
+"-9a4e-0ee3a1a0fd1f/service/0bc92b06cc213d2ad8beda71bd0e1460/liveness\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:707
+msgid "#### 2. 查询应用指定服务"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:709
+msgid "查询对应APP的指定服务"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:713
+msgid ""
+"``` GET "
+"/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:719
+#: ../../Projects/MEP/MEP_Interfaces.md:2234
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> "
+"<tr> <td>Authorization</td> <td>String</td> <td>Token信息，格式：Bearer "
+"token信息</td> <td>header</td> <td>是</td> </tr> <tr> <td>appInstanceId</td>"
+" <td>String</td> <td>APP实例ID（UUID）</td> <td>path</td> <td>是</td> </tr> "
+"<tr> <td>serviceId</td> <td>String</td> <td>APP服务实例ID</td> <td>path</td> "
+"<td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:760
+msgid ""
+"``` GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460 {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:779
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>必选</th> </tr> </thead> <tbody> <tr> "
+"<td>serInstanceId</td> <td>String</td> <td>服务实例ID</td> <td>是</td> </tr> "
+"<tr> <td>serName</td> <td>String</td> <td>服务名称</td> <td>是</td> </tr> <tr>"
+" <td>serCategory</td> <td>Object</td> <td>服务类别</td> <td>否</td> </tr> <tr>"
+" <td>&gt;href</td> <td>String</td> <td>目录参考</td> <td>否</td> </tr> <tr> "
+"<td>&gt;id</td> <td>String</td> <td>类别ID</td> <td>否</td> </tr> <tr> "
+"<td>&gt;name</td> <td>String</td> <td>类别名称</td> <td>否</td> </tr> <tr> "
+"<td>&gt;version</td> <td>String</td> <td>类别版本号</td> <td>否</td> </tr> <tr>"
+" <td>version</td> <td>String</td> <td>服务版本号</td> <td>是</td> </tr> <tr> "
+"<td>state</td> <td>String</td> <td>服务状态（ACTIVE/INACTIVE）</td> <td>是</td> "
+"</tr> <tr> <td>transportInfo</td> <td>Object</td> <td>服务信息</td> "
+"<td>否</td> </tr> <tr> <td>&gt;id</td> <td>String</td> <td>ID</td> "
+"<td>否</td> </tr> <tr> <td>&gt;name</td> <td>String</td> <td>名称</td> "
+"<td>否</td> </tr> <tr> <td>&gt; description</td> <td>String</td> "
+"<td>描述</td> <td>否</td> </tr> <tr> <td>&gt; type</td> <td>String</td> "
+"<td>类型（REST_HTTP/MB_TOPIC_BASED/MB_ROUTING/MB_PUBSUB/RPC/RPC_STREAMING/WEBSOCKET）</td>"
+" <td>否</td> </tr> <tr> <td>&gt; protocol</td> <td>String</td> "
+"<td>协议名称</td> <td>否</td> </tr> <tr> <td>&gt; version</td> <td>String</td>"
+" <td>版本号</td> <td>否</td> </tr> <tr> <td>&gt; endpoint</td> "
+"<td>Ojbect</td> <td>Endpoint，三种信息其中的一个（uris/addresses/alternative）</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;uris</td> <td>Array[String]</td> "
+"<td>URI格式的服务入口信息列表</td> <td>否</td> </tr> <tr> <td>&gt;&gt;addresses</td> "
+"<td>Array[Object]</td> <td>服务入口信息地址列表（IP地址+端口号）</td> <td>否</td> </tr> "
+"<tr> <td>&gt;&gt;&gt;host</td> <td>String</td> <td>IP地址</td> <td>否</td> "
+"</tr> <tr> <td>&gt;&gt;&gt;port</td> <td>String</td> <td>端口号</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;alternative</td> <td>String</td> "
+"<td>已实现格式或者外部规范定义的服务入口信息</td> <td>否</td> </tr> <tr> <td>&gt; "
+"security</td> <td>Object</td> <td>安全信息</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt; oAuth2Info</td> <td>Object</td> <td>OAuth2.0参数</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;&gt; grantTypes</td> "
+"<td>Array[String]</td> "
+"<td>准予类型（OAUTH2_AUTHORIZATION_CODE/OAUTH2_IMPLICIT_GRANT/OAUTH2_RESOURCE_OWNER/OAUTH2_CLIENT_CREDENTIALS）</td>"
+" <td>否</td> </tr> <tr> <td>&gt;&gt;&gt; tokenEndpoint</td> "
+"<td>String</td> <td>Token endpoint</td> <td>否</td> </tr> <tr> <td>&gt; "
+"implSpecificInfo</td> <td>String</td> <td>其他实现信息</td> <td>否</td> </tr> "
+"<tr> <td>serializer</td> <td>String</td> "
+"<td>序列化类型（JSON/XML/PROTOBUF3）</td> <td>是</td> </tr> <tr> "
+"<td>scopeOfLocality              String</td> "
+"<td>地域范围（MEC_SYSTEM/MEC_HOST/NFVI_POP/ZONE/ZONE_GROUP/NFVI_NODE），默认值MEC_HOST</td>"
+" <td></td> <td>否</td> </tr> <tr> <td>consumedLocalOnly</td> "
+"<td>boolean</td> <td>是否只被本地域APP消费（true/false）</td> <td>否</td> </tr> <tr> "
+"<td>isLocal</td> <td>boolean</td> <td>是否在本地域（true/false）</td> <td>否</td> "
+"</tr> <tr> <td>livenessInterval</td> <td>integer</td> <td>Interval (in "
+"seconds) between two consecutive heartbeat messages</td> <td>否</td> </tr>"
+" <tr> <td>_links</td> <td>Object</td> <td>Links to resources related to "
+"this resource. Shall be absent in HTTP requests.</td> <td>否</td> </tr> "
+"<tr> <td>&gt;self</td> <td>object</td> <td>Link to this resource. Shall "
+"be present in HTTP responses.</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt;liveness</td> <td>string</td> <td>Link to the resource where "
+"the MEC platform expects the service instance to send the liveness "
+"information.</td> <td>否</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1048
+msgid "#### 3. 注册应用服务"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1050
+msgid "为指定APP注册服务。"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1054
+msgid ""
+"``` POST /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services "
+"```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1060
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> "
+"<tr> <td>Content-Type</td> <td>String</td> "
+"<td>MIME类型，填\"application/json\"</td> <td>header</td> <td>是</td> </tr> "
+"<tr> <td>Authorization</td> <td>String</td> <td>Token信息，格式：Bearer "
+"token信息</td> <td>header</td> <td>是</td> </tr> <tr> <td>appInstanceId</td>"
+" <td>String</td> <td>APP实例ID（UUID）</td> <td>path</td> <td>是</td> </tr> "
+"</tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1097
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>必选</th> </tr> </thead> <tbody> <tr> "
+"<td>serName</td> <td>String</td> "
+"<td>服务名称（字母/数字/_/-的组合，但不能以_和-开头或结尾），最大长度128</td> <td>是</td> </tr> <tr> "
+"<td>serCategory</td> <td>Object</td> <td>服务类别</td> <td>否</td> </tr> <tr> "
+"<td>&gt;href</td> <td>String</td> <td>目录参考</td> <td>否</td> </tr> <tr> "
+"<td>&gt;id</td> <td>String</td> <td>类别ID，字母与数字组合，最大长度64</td> <td>否</td> "
+"</tr> <tr> <td>&gt;name</td> <td>String</td> <td>类别名称</td> <td>否</td> "
+"</tr> <tr> <td>&gt;version</td> <td>String</td> <td>类别版本号</td> <td>否</td>"
+" </tr> <tr> <td>version</td> <td>String</td> "
+"<td>服务版本号（格式为x[.y[.z]]，xyz取值范围0\\~32767，例如：1；1.2；1.2.3）</td> <td>是</td> "
+"</tr> <tr> <td>state</td> <td>String</td> <td>服务状态（ACTIVE/INACTIVE）</td> "
+"<td>是</td> </tr> <tr> <td>transportId</td> <td>String</td> "
+"<td>服务信息ID，字母与数字组合，最大长度64</td> <td>否</td> </tr> <tr> "
+"<td>transportInfo</td> <td>Object</td> <td>服务信息</td> <td>否</td> </tr> "
+"<tr> <td>&gt;id</td> <td>String</td> <td>ID，字母与数字组合，最大长度64</td> "
+"<td>否</td> </tr> <tr> <td>&gt;name</td> <td>String</td> "
+"<td>名称（字母/数字/_/-的组合，但不能以_和-开头或结尾），最大长度128</td> <td>否</td> </tr> <tr> "
+"<td>&gt; description</td> <td>String</td> <td>描述，最大长度128</td> <td>否</td> "
+"</tr> <tr> <td>&gt; type</td> <td>String</td> "
+"<td>类型（REST_HTTP/MB_TOPIC_BASED/MB_ROUTING/MB_PUBSUB/RPC/RPC_STREAMING/WEBSOCKET）</td>"
+" <td>否</td> </tr> <tr> <td>&gt; protocol</td> <td>String</td> "
+"<td>协议名称，最大长度32</td> <td>否</td> </tr> <tr> <td>&gt; version</td> "
+"<td>String</td> <td>版本号</td> <td>否</td> </tr> <tr> <td>&gt; endpoint</td>"
+" <td>Object</td> <td>Endpoint，三种信息其中的一个（uris/addresses/alternative）</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;uris</td> <td>Array[String]</td> "
+"<td>URI格式的服务入口信息列表</td> <td>否</td> </tr> <tr> <td>&gt;&gt;addresses</td> "
+"<td>Array[Object]</td> <td>服务入口信息地址列表（IP地址+端口号）</td> <td>否</td> </tr> "
+"<tr> <td>&gt;&gt;&gt;host</td> <td>String</td> "
+"<td>IP地址。例如：192.168.0.1</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt;&gt;port</td> <td>String</td> "
+"<td>端口号（&lt;=65535）。例如：8080</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt;alternative</td> <td>String</td> "
+"<td>已实现格式或者外部规范定义的服务入口信息</td> <td>否</td> </tr> <tr> <td>&gt; "
+"security</td> <td>Object</td> <td>安全信息</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt; oAuth2Info</td> <td>Object</td> <td>OAuth2.0参数</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;&gt; grantTypes</td> <td>String</td> "
+"<td>准予类型（OAUTH2_AUTHORIZATION_CODE/OAUTH2_IMPLICIT_GRANT/OAUTH2_RESOURCE_OWNER/OAUTH2_CLIENT_CREDENTIALS）</td>"
+" <td>否</td> </tr> <tr> <td>&gt;&gt;&gt; tokenEndpoint</td> "
+"<td>String</td> <td>Token endpoint</td> <td>否</td> </tr> <tr> <td>&gt; "
+"implSpecificInfo</td> <td>String</td> <td>其他实现信息</td> <td>否</td> </tr> "
+"<tr> <td>serializer</td> <td>String</td> "
+"<td>序列化类型（JSON/XML/PROTOBUF3）</td> <td>是</td> </tr> <tr> "
+"<td>scopeOfLocality</td> <td>String</td> "
+"<td>地域范围（MEC_SYSTEM/MEC_HOST/NFVI_POP/ZONE/ZONE_GROUP/NFVI_NODE），默认值MEC_HOST</td>"
+" <td>否</td> </tr> <tr> <td>consumedLocalOnly</td> <td>boolean</td> "
+"<td>是否只被本地域APP消费（true/false）</td> <td>否</td> </tr> <tr> <td>isLocal</td> "
+"<td>boolean</td> <td>是否在本地域（true/false）</td> <td>否</td> </tr> <tr> "
+"<td>livenessInterval</td> <td>integer</td> <td>Interval (in seconds) "
+"between two consecutive heartbeat messages</td> <td>否</td> </tr> </tbody>"
+" </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1304
+msgid ""
+"``` POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/services {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1309
+#: ../../Projects/MEP/MEP_Interfaces.md:1899
+#: ../../Projects/MEP/MEP_Interfaces.md:2581
+#: ../../Projects/MEP/MEP_Interfaces.md:3282
+msgid ""
+"\"key\": \"Content-Type\", \"value\": \"application/json\", \"key\": "
+"\"Authorization\", \"value\": \"Bearer xxx\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1316
+msgid ""
+"\"serName\": \"FaceRegService\", \"serCategory\": { \"href\": "
+"\"/example/catalogue1\", \"id\": \"id12345\", \"name\": \"RNI\", "
+"\"version\": \"1.2.4\" }, \"version\": \"4.5.7\", \"state\": \"ACTIVE\", "
+"\"transportId\": \"Rest1\", \"transportInfo\": { \"id\": "
+"\"TransId12345\", \"name\": \"REST\", \"description\": \"REST API\", "
+"\"type\": \"REST_HTTP\", \"protocol\": \"HTTP\", \"version\": \"2.0\", "
+"\"endpoint\": {}, \"security\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1336
+#: ../../Projects/MEP/MEP_Interfaces.md:1608
+msgid ""
+"\"grantTypes\": [ \"OAUTH2_CLIENT_CREDENTIALS\" ], \"tokenEndpoint\": "
+"\"/mecSerMgmtApi/security/TokenEndPoint\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1343
+#: ../../Projects/MEP/MEP_Interfaces.md:1933
+msgid ""
+"}, \"serializer\": \"JSON\", \"scopeOfLocality\": \"MEC_SYSTEM\", "
+"\"consumedLocalOnly\": false, \"isLocal\": true, \"livenessInterval\": 60"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1355
+#: ../../Projects/MEP/MEP_Interfaces.md:2616
+#: ../../Projects/MEP/MEP_Interfaces.md:3299
+msgid "返回码：201"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1359
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>必选</th> </tr> </thead> <tbody> <tr> "
+"<td>serInstanceId</td> <td>String</td> <td>服务实例ID</td> <td>是</td> </tr> "
+"<tr> <td>serName</td> <td>String</td> <td>服务名称</td> <td>是</td> </tr> <tr>"
+" <td>serCategory</td> <td>Object</td> <td>服务类别</td> <td>否</td> </tr> <tr>"
+" <td>&gt;href</td> <td>String</td> <td>目录参考</td> <td>否</td> </tr> <tr> "
+"<td>&gt;id</td> <td>String</td> <td>类别ID</td> <td>否</td> </tr> <tr> "
+"<td>&gt;name</td> <td>String</td> <td>类别名称</td> <td>否</td> </tr> <tr> "
+"<td>&gt;version</td> <td>String</td> <td>类别版本号</td> <td>否</td> </tr> <tr>"
+" <td>version</td> <td>String</td> <td>服务版本号</td> <td>是</td> </tr> <tr> "
+"<td>state</td> <td>String</td> <td>服务状态（ACTIVE/INACTIVE）</td> <td>是</td> "
+"</tr> <tr> <td>transportInfo</td> <td>Object</td> <td></td> <td>否</td> "
+"</tr> <tr> <td>&gt;id</td> <td>String</td> <td>ID</td> <td>否</td> </tr> "
+"<tr> <td>&gt;name</td> <td>String</td> <td>名称</td> <td>否</td> </tr> <tr> "
+"<td>&gt; description</td> <td>String</td> <td>描述</td> <td>否</td> </tr> "
+"<tr> <td>&gt; type</td> <td>String</td> "
+"<td>类型（REST_HTTP/MB_TOPIC_BASED/MB_ROUTING/MB_PUBSUB/RPC/RPC_STREAMING/WEBSOCKET）</td>"
+" <td>否</td> </tr> <tr> <td>&gt; protocol</td> <td>String</td> "
+"<td>协议名称</td> <td>否</td> </tr> <tr> <td>&gt; version</td> <td>String</td>"
+" <td>版本号</td> <td>否</td> </tr> <tr> <td>&gt; endpoint</td> "
+"<td>Ojbect</td> <td>endpoint，三种信息其中的一个（uris/addresses/alternative）</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;uris</td> <td>Array[String]</td> "
+"<td>URI格式的服务入口信息列表</td> <td>否</td> </tr> <tr> <td>&gt;&gt;addresses</td> "
+"<td>Array[Object]</td> <td>服务入口信息地址列表（IP地址+端口号）</td> <td>否</td> </tr> "
+"<tr> <td>&gt;&gt;&gt;host</td> <td>String</td> <td>IP地址</td> <td>否</td> "
+"</tr> <tr> <td>&gt;&gt;&gt;port</td> <td>String</td> <td>端口号</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;alternative</td> <td>String</td> "
+"<td>已实现格式或者外部规范定义的服务入口信息</td> <td>否</td> </tr> <tr> <td>&gt; "
+"security</td> <td>Object</td> <td>安全信息</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt; oAuth2Info</td> <td>Object</td> <td>OAuth2.0参数</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;&gt; grantTypes</td> "
+"<td>Array[String]</td> "
+"<td>准予类型（OAUTH2_AUTHORIZATION_CODE/OAUTH2_IMPLICIT_GRANT/OAUTH2_RESOURCE_OWNER/OAUTH2_CLIENT_CREDENTIALS）</td>"
+" <td>否</td> </tr> <tr> <td>&gt;&gt;&gt; tokenEndpoint</td> "
+"<td>String</td> <td>Token endpoint</td> <td>否</td> </tr> <tr> <td>&gt; "
+"implSpecificInfo</td> <td>String</td> <td>其他实现信息</td> <td>否</td> </tr> "
+"<tr> <td>serializer</td> <td>String</td> "
+"<td>序列化类型（JSON/XML/PROTOBUF3）</td> <td>是</td> </tr> <tr> "
+"<td>scopeOfLocality</td> <td>String</td> "
+"<td>地域范围（MEC_SYSTEM/MEC_HOST/NFVI_POP/ZONE/ZONE_GROUP/NFVI_NODE），默认值MEC_HOST</td>"
+" <td>否</td> </tr> <tr> <td>consumedLocalOnly</td> <td>boolean</td> "
+"<td>是否只被本地域APP消费（true/false）</td> <td>否</td> </tr> <tr> <td>isLocal</td> "
+"<td>boolean</td> <td>是否在本地域（true/false）</td> <td>否</td> </tr> <tr> "
+"<td>livenessInterval</td> <td>integer</td> <td>Interval (in seconds) "
+"between two consecutive heartbeat messages</td> <td>否</td> </tr> <tr> "
+"<td>_links</td> <td>Object</td> <td>Links to resources related to this "
+"resource. Shall be absent in HTTP requests.</td> <td>否</td> </tr> <tr> "
+"<td>&gt;self</td> <td>object</td> <td>Link to this resource. Shall be "
+"present in HTTP responses.</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt;liveness</td> <td>string</td> <td>Link to the resource where "
+"the MEC platform expects the service instance to send the liveness "
+"information.</td> <td>否</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1584
+#: ../../Projects/MEP/MEP_Interfaces.md:2731
+#: ../../Projects/MEP/MEP_Interfaces.md:3360
+msgid "``` HTTP/1.1 201 OK {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1587
+#: ../../Projects/MEP/MEP_Interfaces.md:2179
+msgid ""
+"\"serInstanceId\": \"0bc92b06cc213d2ad8beda71bd0e1460\", \"serName\": "
+"\"FaceRegService\", \"serCategory\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1590
+#: ../../Projects/MEP/MEP_Interfaces.md:1908
+#: ../../Projects/MEP/MEP_Interfaces.md:2182
+msgid ""
+"\"href\": \"/example/catalogue1\", \"id\": \"id12345\", \"name\": "
+"\"RNI\", \"version\": \"1.2.4\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1594
+#: ../../Projects/MEP/MEP_Interfaces.md:1912
+#: ../../Projects/MEP/MEP_Interfaces.md:2186
+msgid ""
+"}, \"version\": \"4.5.7\", \"state\": \"ACTIVE\", \"transportId\": "
+"\"Rest1\", \"transportInfo\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1629
+msgid "**注：单个应用注册的服务数量应不超过50个，超出后服务将报错。**"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1631
+msgid "#### 4. 更新应用服务"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1633
+msgid "更新APP指定服务信息。"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1637
+msgid ""
+"``` PUT "
+"/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1643
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> "
+"<tr> <td>Content-Type</td> <td>String</td> <td>MIME类型，  "
+"填\"application/json\"</td> <td>header</td> <td>是</td> </tr> <tr> "
+"<td>Authorization</td> <td>String</td> <td>Token信息，格式：Bearer token信息</td>"
+" <td>header</td> <td>是</td> </tr> <tr> <td>appInstanceId</td> "
+"<td>String</td> <td>APP实例ID（UUID）</td> <td>path</td> <td>是</td> </tr> "
+"<tr> <td>serviceId</td> <td>String</td> <td>APP服务实例ID</td> <td>path</td> "
+"<td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1687
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>必选</th> </tr> </thead> <tbody> <tr> "
+"<td>serName</td> <td>String</td> "
+"<td>服务名称（字母/数字/_/-的组合，但不能以_和-开头或结尾），最大长度128</td> <td>是</td> </tr> <tr> "
+"<td>serCategory</td> <td>Object</td> <td>服务类别</td> <td>否</td> </tr> <tr> "
+"<td>&gt;href</td> <td>String</td> <td>目录参考</td> <td>否</td> </tr> <tr> "
+"<td>&gt;id</td> <td>String</td> <td>类别ID，字母与数字组合，最大长度64</td> <td>否</td> "
+"</tr> <tr> <td>&gt;name</td> <td>String</td> <td>类别名称</td> <td>否</td> "
+"</tr> <tr> <td>&gt;version</td> <td>String</td> <td>类别版本号</td> <td>否</td>"
+" </tr> <tr> <td>version</td> <td>String</td> "
+"<td>服务版本号（例如：1；1.0；1.0.2）</td> <td>是</td> </tr> <tr> <td>state</td> "
+"<td>String</td> <td>服务状态（ACTIVE/INACTIVE）</td> <td>是</td> </tr> <tr> "
+"<td>transportId</td> <td>String</td> <td>服务信息ID，字母与数字组合，最大长度64</td> "
+"<td>否</td> </tr> <tr> <td>transportInfo</td> <td>Object</td> "
+"<td>服务信息</td> <td>否</td> </tr> <tr> <td>&gt;id</td> <td>String</td> "
+"<td>ID，字母与数字组合，最大长度64</td> <td>否</td> </tr> <tr> <td>&gt;name</td> "
+"<td>String</td> <td>名称（字母/数字/_/-的组合，但不能以_和-开头或结尾），最大长度128</td> <td>否</td>"
+" </tr> <tr> <td>&gt; description</td> <td>String</td> <td>描述，最大长度128</td>"
+" <td>否</td> </tr> <tr> <td>&gt; type</td> <td>String</td> "
+"<td>类型（REST_HTTP/MB_TOPIC_BASED/MB_ROUTING/MB_PUBSUB/RPC/RPC_STREAMING/WEBSOCKET）</td>"
+" <td>否</td> </tr> <tr> <td>&gt; protocol</td> <td>String</td> "
+"<td>协议名称，最大长度32</td> <td>否</td> </tr> <tr> <td>&gt; version</td> "
+"<td>String</td> <td>版本号</td> <td>否</td> </tr> <tr> <td>&gt; endpoint</td>"
+" <td>Object</td> <td>Endpoint，三种信息其中的一个（uris/addresses/alternative）</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;uris</td> <td>Array[String]</td> "
+"<td>URI格式的服务入口信息列表</td> <td>否</td> </tr> <tr> <td>&gt;&gt;addresses</td> "
+"<td>Array[Object]</td> <td>服务入口信息地址列表（IP地址+端口号）</td> <td>否</td> </tr> "
+"<tr> <td>&gt;&gt;&gt;host</td> <td>String</td> "
+"<td>IP地址。例如：192.168.0.1</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt;&gt;port</td> <td>String</td> "
+"<td>端口号（&lt;=65535）。例如：8080</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt;alternative</td> <td>String</td> "
+"<td>已实现格式或者外部规范定义的服务入口信息</td> <td>否</td> </tr> <tr> <td>&gt; "
+"security</td> <td>Object</td> <td>安全信息</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt; oAuth2Info</td> <td>Object</td> <td>OAuth2.0参数</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;&gt; grantTypes</td> <td>String</td> "
+"<td>准予类型（OAUTH2_AUTHORIZATION_CODE/OAUTH2_IMPLICIT_GRANT/OAUTH2_RESOURCE_OWNER/OAUTH2_CLIENT_CREDENTIALS）</td>"
+" <td>否</td> </tr> <tr> <td>&gt;&gt;&gt; tokenEndpoint</td> "
+"<td>String</td> <td>Token endpoint</td> <td>否</td> </tr> <tr> <td>&gt; "
+"implSpecificInfo</td> <td>String</td> <td>其他实现信息</td> <td>否</td> </tr> "
+"<tr> <td>serializer</td> <td>String</td> "
+"<td>序列化类型（JSON/XML/PROTOBUF3）</td> <td>是</td> </tr> <tr> "
+"<td>scopeOfLocality</td> <td>String</td> "
+"<td>地域范围（MEC_SYSTEM/MEC_HOST/NFVI_POP/ZONE/ZONE_GROUP/NFVI_NODE），默认值MEC_HOST</td>"
+" <td>否</td> </tr> <tr> <td>consumedLocalOnly</td> <td>boolean</td> "
+"<td>是否只被本地域APP消费（true/false）</td> <td>否</td> </tr> <tr> <td>isLocal</td> "
+"<td>boolean</td> <td>是否在本地域（true/false）</td> <td>否</td> </tr> <tr> "
+"<td>livenessInterval</td> <td>integer</td> <td>Interval (in seconds) "
+"between two consecutive heartbeat messages</td> <td>否</td> </tr> </tbody>"
+" </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1894
+msgid ""
+"``` PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460 {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1906
+msgid "\"serName\": \"FaceRegService\", \"serCategory\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:1951
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> "
+"<th>类型</th> <th>描述</th> <th>必选</th> </tr> </thead> <tbody> <tr> "
+"<td>serInstanceId</td> <td>String</td> <td>服务实例ID</td> <td>是</td> </tr> "
+"<tr> <td>serName</td> <td>String</td> <td>服务名称</td> <td>是</td> </tr> <tr>"
+" <td>serCategory</td> <td>Object</td> <td>服务类别</td> <td>否</td> </tr> <tr>"
+" <td>&gt;href</td> <td>String</td> <td>目录参考</td> <td>否</td> </tr> <tr> "
+"<td>&gt;id</td> <td>String</td> <td>类别ID</td> <td>否</td> </tr> <tr> "
+"<td>&gt;name</td> <td>String</td> <td>类别名称</td> <td>否</td> </tr> <tr> "
+"<td>&gt;version</td> <td>String</td> <td>类别版本号</td> <td>否</td> </tr> <tr>"
+" <td>version</td> <td>String</td> <td>服务版本号</td> <td>是</td> </tr> <tr> "
+"<td>state</td> <td>String</td> <td>服务状态（ACTIVE/INACTIVE）</td> <td>是</td> "
+"</tr> <tr> <td>transportInfo</td> <td>Object</td> <td>服务信息</td> "
+"<td>否</td> </tr> <tr> <td>&gt;id</td> <td>String</td> <td>ID</td> "
+"<td>否</td> </tr> <tr> <td>&gt;name</td> <td>String</td> <td>名称</td> "
+"<td>否</td> </tr> <tr> <td>&gt; description</td> <td>String</td> "
+"<td>描述</td> <td>否</td> </tr> <tr> <td>&gt; type</td> <td>String</td> "
+"<td>类型（REST_HTTP/MB_TOPIC_BASED/MB_ROUTING/MB_PUBSUB/RPC/RPC_STREAMING/WEBSOCKET）</td>"
+" <td>否</td> </tr> <tr> <td>&gt; protocol</td> <td>String</td> "
+"<td>协议名称</td> <td>否</td> </tr> <tr> <td>&gt; version</td> <td>String</td>"
+" <td>版本号</td> <td>否</td> </tr> <tr> <td>&gt; endpoint</td> "
+"<td>Object</td> <td>endpoint，三种信息其中的一个（uris/addresses/alternative）</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;uris</td> <td>Array[String]</td> "
+"<td>URI格式的服务入口信息列表</td> <td>否</td> </tr> <tr> <td>&gt;&gt;addresses</td> "
+"<td>Array[Object]</td> <td>服务入口信息地址列表（IP地址+端口号）</td> <td>否</td> </tr> "
+"<tr> <td>&gt;&gt;&gt;host</td> <td>String</td> <td>IP地址</td> <td>否</td> "
+"</tr> <tr> <td>&gt;&gt;&gt;port</td> <td>String</td> <td>端口号</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;alternative</td> <td>String</td> "
+"<td>已实现格式或者外部规范定义的服务入口信息</td> <td>否</td> </tr> <tr> <td>&gt; "
+"security</td> <td>Object</td> <td>安全信息</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt; oAuth2Info</td> <td>Object</td> <td>OAuth2.0参数</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;&gt; grantTypes</td> <td>String</td> "
+"<td>准予类型（OAUTH2_AUTHORIZATION_CODE/OAUTH2_IMPLICIT_GRANT/OAUTH2_RESOURCE_OWNER/OAUTH2_CLIENT_CREDENTIALS）</td>"
+" <td>否</td> </tr> <tr> <td>&gt;&gt;&gt; tokenEndpoint</td> "
+"<td>String</td> <td>Token endpoint</td> <td>否</td> </tr> <tr> <td>&gt; "
+"implSpecificInfo</td> <td>String</td> <td>其他实现信息</td> <td>否</td> </tr> "
+"<tr> <td>serializer</td> <td>String</td> "
+"<td>序列化类型（JSON/XML/PROTOBUF3）</td> <td>是</td> </tr> <tr> "
+"<td>scopeOfLocality</td> <td>String</td> "
+"<td>地域范围（MEC_SYSTEM/MEC_HOST/NFVI_POP/ZONE/ZONE_GROUP/NFVI_NODE），默认值MEC_HOST</td>"
+" <td>否</td> </tr> <tr> <td>consumedLocalOnly</td> <td>boolean</td> "
+"<td>是否只被本地域APP消费（true/false）</td> <td>否</td> </tr> <tr> <td>isLocal</td> "
+"<td>boolean</td> <td>是否在本地域（true/false）</td> <td>否</td> </tr> <tr> "
+"<td>livenessInterval</td> <td>integer</td> <td>Interval (in seconds) "
+"between two consecutive heartbeat messages</td> <td>否</td> </tr> <tr> "
+"<td>_links</td> <td>Object</td> <td>Links to resources related to this "
+"resource. Shall be absent in HTTP requests.</td> <td>否</td> </tr> <tr> "
+"<td>&gt;self</td> <td>object</td> <td>Link to this resource. Shall be "
+"present in HTTP responses.</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt;liveness</td> <td>string</td> <td>Link to the resource where "
+"the MEC platform expects the service instance to send the liveness "
+"information.</td> <td>否</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2222
+msgid "#### 5. 删除应用服务"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2224
+msgid "删除APP指定服务。"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2228
+msgid ""
+"``` DELETE "
+"/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2275
+msgid ""
+"``` DELETE /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460 {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2283
+msgid "], \"body\": { }"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2292
+#: ../../Projects/MEP/MEP_Interfaces.md:2836
+#: ../../Projects/MEP/MEP_Interfaces.md:3446
+msgid "返回码：204"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2298
+#: ../../Projects/MEP/MEP_Interfaces.md:2842
+msgid "``` HTTP/1.1 204 OK { }"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2305
+msgid "### 可用事件订阅相关接口"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2307
+msgid "#### 1. 查询可用事件订阅"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2309
+msgid "查询指定APP的可用事件订阅信息"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2313
+msgid ""
+"``` GET "
+"/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2319
+#: ../../Projects/MEP/MEP_Interfaces.md:3073
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>必选</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>Authorization</td> <td>String</td> <td>Token信息，格式：Bearer token信息</td>"
+" <td>header</td> <td>是</td> </tr> <tr> <td>appInstanceId</td> "
+"<td>String</td> <td>APP实例ID（UUID）</td> <td>path</td> <td>是</td> </tr> "
+"</tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2353
+msgid ""
+"``` GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2372
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>必选</strong></th> </tr> </thead> "
+"<tbody> <tr> <td>_links</td> <td>Object</td> <td>结果信息</td> <td>是</td> "
+"</tr> <tr> <td>&gt;self</td> <td>Object</td> <td>调用者信息</td> <td>是</td> "
+"</tr> <tr> <td>&gt;&gt;href</td> <td>String</td> <td>调用者URL</td> "
+"<td>是</td> </tr> <tr> <td>&gt;subscriptions</td> <td>Array[Object]</td> "
+"<td>订阅者列表</td> <td>是</td> </tr> <tr> <td>&gt;&gt;href</td> "
+"<td>String</td> <td>订阅者URI</td> <td>是</td> </tr> <tr> "
+"<td>&gt;&gt;rel</td> <td>String</td> "
+"<td>固定值SerAvailabilityNotificationSubscription</td> <td>是</td> </tr> "
+"</tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2434
+#: ../../Projects/MEP/MEP_Interfaces.md:3188
+msgid "\"_links\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2428
+msgid ""
+"\"href\":\"/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f /subscriptions\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2429
+#: ../../Projects/MEP/MEP_Interfaces.md:3183
+msgid "}, \"subscriptions\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2432
+msgid ""
+"\"href\":\"/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731\", "
+"\"rel\": \"SerAvailabilityNotificationSubscription\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2440
+msgid "#### 2. 注册可用事件订阅"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2442
+msgid "为指定APP注册可用事件订阅"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2446
+msgid ""
+"``` POST "
+"/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2452
+#: ../../Projects/MEP/MEP_Interfaces.md:3207
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>必选</strong></th> </tr> </thead> <tbody> <tr> <td>Content-"
+"Type</td> <td>String</td> <td>MIME类型，填\"application/json\"</td> "
+"<td>header</td> <td>是</td> </tr> <tr> <td>Authorization</td> "
+"<td>String</td> <td>Token信息，格式：Bearer token信息</td> <td>header</td> "
+"<td>是</td> </tr> <tr> <td>appInstanceId</td> <td>String</td> "
+"<td>APP实例ID（UUID）</td> <td>path</td> <td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2489
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>必选</strong></th> </tr> </thead> "
+"<tbody> <tr> <td>subscriptionType</td> <td>String</td> "
+"<td>订阅类型（SerAvailabilityNotificationSubscription）</td> <td>是</td> </tr> "
+"<tr> <td>callbackReference</td> <td>String</td> "
+"<td>用于接收通知的回调URI，不支持域名格式，仅支持IP地址+URL，且不能包含localhost、127.x.x.x、mepserver容器IP网段，例如：https://159.138.1.2:8080/xxx</td>"
+" <td>是</td> </tr> <tr> <td>filteringCriteria</td> <td>Object</td> "
+"<td>过滤条件列表</td> <td>否</td> </tr> <tr> <td>&gt;serInstanceIds</td> "
+"<td>Array[String]</td> <td>上报事件的应用服务实例ID列表</td> <td>否</td> </tr> <tr> "
+"<td>&gt;serNames</td> <td>Array[String]</td> "
+"<td>上报事件的应用服务实例名称列表（每个服务实例名称都是字母/数字/_/-的组合，但不能以_和-开头或结尾，最大长度128）</td> "
+"<td>否</td> </tr> <tr> <td>&gt;serCategories</td> <td>Array[Object]</td> "
+"<td>上报事件的应用服务类别列表</td> <td>否</td> </tr> <tr> <td>&gt;&gt;href</td> "
+"<td>String</td> <td>类别参考</td> <td>否</td> </tr> <tr> <td>&gt;&gt;id</td> "
+"<td>String</td> <td>类别ID，最大长度64</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt;name</td> <td>String</td> "
+"<td>类别名称（字母/数字/_/-的组合，但不能以_和-开头或结尾），最大长度128</td> <td>否</td> </tr> <tr> "
+"<td>&gt;&gt;version</td> <td>String</td> <td>类别版本号</td> <td>否</td> </tr> "
+"<tr> <td>&gt;states</td> <td>Array[String]</td> "
+"<td>上报事件的应用服务状态（ACTIVE/INACTIVE）</td> <td>否</td> </tr> <tr> "
+"<td>&gt;isLocal</td> <td>boolean</td> <td>是否在本地域（true/false）</td> "
+"<td>否</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2576
+msgid ""
+"``` POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2586
+#: ../../Projects/MEP/MEP_Interfaces.md:3287
+msgid "] \"body\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2588
+msgid ""
+"\"subscriptionType\": \"SerAvailabilityNotificationSubscription\", "
+"\"callbackReference\": \"https://159.138.1.2:8080/callback\", "
+"\"filteringCriteria\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2591
+#: ../../Projects/MEP/MEP_Interfaces.md:2743
+#: ../../Projects/MEP/MEP_Interfaces.md:3037
+msgid "\"serInstanceIds\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2592
+#: ../../Projects/MEP/MEP_Interfaces.md:2744
+#: ../../Projects/MEP/MEP_Interfaces.md:3038
+msgid "\"0bc92b06cc213d2ad8beda71bd0e1460\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2593
+#: ../../Projects/MEP/MEP_Interfaces.md:2745
+#: ../../Projects/MEP/MEP_Interfaces.md:3039
+msgid "], \"serNames\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2595
+#: ../../Projects/MEP/MEP_Interfaces.md:2747
+#: ../../Projects/MEP/MEP_Interfaces.md:3041
+msgid "\"FaceRegService5\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2596
+#: ../../Projects/MEP/MEP_Interfaces.md:2748
+#: ../../Projects/MEP/MEP_Interfaces.md:3042
+msgid "], \"serCategories\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2599
+#: ../../Projects/MEP/MEP_Interfaces.md:2751
+#: ../../Projects/MEP/MEP_Interfaces.md:3045
+msgid ""
+"\"href\": \"/example/catalogue1\", \"id\": \"id12345\", \"name\": "
+"\"RNI\", \"version\": \"1.2.2\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2604
+#: ../../Projects/MEP/MEP_Interfaces.md:2756
+#: ../../Projects/MEP/MEP_Interfaces.md:3050
+msgid "], \"states\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2606
+#: ../../Projects/MEP/MEP_Interfaces.md:2758
+#: ../../Projects/MEP/MEP_Interfaces.md:3052
+msgid "\"ACTIVE\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2607
+#: ../../Projects/MEP/MEP_Interfaces.md:2759
+#: ../../Projects/MEP/MEP_Interfaces.md:3053
+msgid "], \"isLocal\": true"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2620
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>必选</strong></th> </tr> </thead> "
+"<tbody> <tr> <td>subscriptionId</td> <td>String</td> <td>订阅Id</td> "
+"<td>是</td> </tr> <tr> <td>subscriptionType</td> <td>String</td> "
+"<td>订阅类型（SerAvailabilityNotificationSubscription）</td> <td>是</td> </tr> "
+"<tr> <td>callbackReference</td> <td>String</td> "
+"<td>用于接收通知的回调URI，不支持域名格式，仅支持IP地址+URL，且不能包含localhost、127.x.x.x、mepserver容器IP网段，例如：https://159.138.1.2:8080/xxx</td>"
+" <td>是</td> </tr> <tr> <td>_links</td> <td>Object</td> <td>调用者自身信息</td> "
+"<td>是</td> </tr> <tr> <td>&gt;self</td> <td>Object</td> <td>调用者自身信息</td> "
+"<td>是</td> </tr> <tr> <td>&gt;&gt;href</td> <td>String</td> "
+"<td>调用者自身URI</td> <td>是</td> </tr> <tr> <td>filteringCriteria</td> "
+"<td>Object</td> <td>过滤条件列表</td> <td>否</td> </tr> <tr> "
+"<td>&gt;serInstanceIds</td> <td>Array[String]</td> "
+"<td>上报事件的应用服务实例ID列表</td> <td>否</td> </tr> <tr> <td>&gt;serNames</td> "
+"<td>Array[String]</td> <td>上报事件的应用服务实例名称列表</td> <td>否</td> </tr> <tr> "
+"<td>&gt;serCategories</td> <td>Array[Object]</td> <td>上报事件的应用服务类别列表</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;href</td> <td>String</td> <td>类别参考</td>"
+" <td>否</td> </tr> <tr> <td>&gt;&gt;id</td> <td>String</td> <td>类别ID</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;name</td> <td>String</td> <td>类别名称</td>"
+" <td>否</td> </tr> <tr> <td>&gt;&gt;version</td> <td>String</td> "
+"<td>类别版本号</td> <td>否</td> </tr> <tr> <td>&gt;states</td> "
+"<td>Array[String]</td> <td>上报事件的应用服务状态（ACTIVE/INACTIVE）</td> <td>否</td> "
+"</tr> <tr> <td>&gt;isLocal</td> <td>boolean</td> "
+"<td>是否在本地域（true/false）</td> <td>否</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2734
+msgid ""
+"\"subscriptionId\": \"826a3890-8b05-416f-8d24-7a87e9eca731\", "
+"\"subscriptionType\": \"SerAvailabilityNotificationSubscription\", "
+"\"callbackReference\": \"https://159.138.1.2:8080/callback\", \"_links\":"
+" {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2739
+#: ../../Projects/MEP/MEP_Interfaces.md:3033
+msgid ""
+"\"href\":\"/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2741
+#: ../../Projects/MEP/MEP_Interfaces.md:3035
+msgid "}, \"filteringCriteria\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2766
+msgid "**注：单个应用注册的可用事件订阅数量应不超过50个，超出后服务将报错。**"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2768
+msgid "#### 3. 删除可用事件订阅"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2770
+msgid "删除指定可用事件订阅信息"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2774
+msgid ""
+"``` DELETE "
+"/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2780
+#: ../../Projects/MEP/MEP_Interfaces.md:2861
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>必选</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>Authorization</td> <td>String</td> <td>Token信息，格式：Bearer token信息</td>"
+" <td>header</td> <td>是</td> </tr> <tr> <td>appInstanceId</td> "
+"<td>String</td> <td>APP实例ID（UUID）</td> <td>path</td> <td>是</td> </tr> "
+"<tr> <td>subscriptionId</td> <td>String</td> <td>事件订阅ID</td> "
+"<td>path</td> <td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2821
+msgid ""
+"``` DELETE /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731 {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2849
+msgid "#### 4. 查询指定可用事件订阅"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2851
+msgid "查询指定ID的可用事件订阅信息"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2855
+msgid ""
+"``` GET "
+"/mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2902
+msgid ""
+"``` GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731 {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:2921
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>必选</strong></th> </tr> </thead> "
+"<tbody> <tr> <td>subscriptionType</td> <td>String</td> "
+"<td>订阅类型（SerAvailabilityNotificationSubscription）</td> <td>是</td> </tr> "
+"<tr> <td>callbackReference</td> <td>String</td> "
+"<td>用于接收通知的回调URI，不支持域名格式，仅支持IP地址+URL，且不能包含localhost、127.x.x.x、mepserver容器IP网段，例如：https://159.138.1.2:8080/xxx</td>"
+" <td>是</td> </tr> <tr> <td>_links</td> <td>Object</td> <td>调用者自身信息</td> "
+"<td>是</td> </tr> <tr> <td>&gt;self</td> <td>Object</td> <td>调用者自身信息</td> "
+"<td>是</td> </tr> <tr> <td>&gt;&gt;href</td> <td>String</td> "
+"<td>调用者自身URI</td> <td>是</td> </tr> <tr> <td>filteringCriteria</td> "
+"<td>Object</td> <td>过滤条件列表</td> <td>否</td> </tr> <tr> "
+"<td>&gt;serInstanceIds</td> <td>Array[String]</td> "
+"<td>上报事件的应用服务实例ID列表</td> <td>否</td> </tr> <tr> <td>&gt;serNames</td> "
+"<td>Array[String]</td> <td>上报事件的应用服务实例名称列表</td> <td>否</td> </tr> <tr> "
+"<td>&gt;serCategories</td> <td>Array[Object]</td> <td>上报事件的应用服务类别列表</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;href</td> <td>String</td> <td>类别参考</td>"
+" <td>否</td> </tr> <tr> <td>&gt;&gt;id</td> <td>String</td> <td>类别ID</td> "
+"<td>否</td> </tr> <tr> <td>&gt;&gt;name</td> <td>String</td> <td>类别名称</td>"
+" <td>否</td> </tr> <tr> <td>&gt;&gt;version</td> <td>String</td> "
+"<td>类别版本号</td> <td>否</td> </tr> <tr> <td>&gt;states</td> "
+"<td>Array[String]</td> <td>上报事件的应用服务状态（ACTIVE/INACTIVE）</td> <td>否</td> "
+"</tr> <tr> <td>&gt;isLocal</td> <td>boolean</td> "
+"<td>是否在本地域（true/false）</td> <td>否</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3029
+msgid ""
+"\"subscriptionType\": \"SerAvailabilityNotificationSubscription\", "
+"\"callbackReference\": \"https://159.138.1.2:8080/callback\", \"_links\":"
+" {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3059
+msgid "### 终止事件订阅相关接口"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3061
+msgid "#### 1. 查询终止事件订阅"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3063
+msgid "查询指定APP的终止事件订阅信息"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3067
+msgid ""
+"``` GET "
+"/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3107
+msgid ""
+"``` GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3126
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>必选</strong></th> </tr> </thead> "
+"<tbody> <tr> <td>_links</td> <td>Object</td> <td>结果信息</td> <td>是</td> "
+"</tr> <tr> <td>&gt;self</td> <td>Object</td> <td>调用者信息</td> <td>是</td> "
+"</tr> <tr> <td>&gt;&gt;href</td> <td>String</td> <td>调用者URL</td> "
+"<td>是</td> </tr> <tr> <td>&gt;subscriptions</td> <td>Array[Object]</td> "
+"<td>订阅者列表</td> <td>是</td> </tr> <tr> <td>&gt;&gt;href</td> "
+"<td>String</td> <td>订阅者URI</td> <td>是</td> </tr> <tr> "
+"<td>&gt;&gt;rel</td> <td>String</td> "
+"<td>固定值AppTerminationNotificationSubscription</td> <td>是</td> </tr> "
+"</tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3182
+msgid ""
+"\"href\":\"/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f /subscriptions\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3186
+msgid ""
+"\"href\":\"/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731\", "
+"\"rel\": \"AppTerminationNotificationSubscription\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3195
+msgid "#### 2. 注册终止事件订阅"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3197
+msgid "为指定APP注册终止事件订阅"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3201
+msgid ""
+"``` POST "
+"/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3244
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>必选</strong></th> </tr> </thead> "
+"<tbody> <tr> <td>subscriptionType</td> <td>String</td> "
+"<td>订阅类型（AppTerminationNotificationSubscription）</td> <td>是</td> </tr> "
+"<tr> <td>callbackReference</td> <td>String</td> "
+"<td>用于接收通知的回调URI，不支持域名格式，仅支持IP地址+URL，且不能包含localhost、127.x.x.x、mepserver容器IP网段，例如：https://159.138.1.2:8080/xxx</td>"
+" <td>是</td> </tr> <tr> <td>appInstanceId</td> <td>String</td> "
+"<td>APP实例ID（UUID）</td> <td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3277
+msgid ""
+"``` POST /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3289
+msgid ""
+"\"subscriptionType\": \"AppTerminationNotificationSubscription\", "
+"\"callbackReference\": \"https://159.138.1.2:8080/callback\", "
+"\"appInstanceId\": \"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3303
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>必选</strong></th> </tr> </thead> "
+"<tbody> <tr> <td>subscriptionId</td> <td>String</td> <td>订阅Id</td> "
+"<td>是</td> </tr> <tr> <td>subscriptionType</td> <td>String</td> "
+"<td>订阅类型（AppTerminationNotificationSubscription）</td> <td>是</td> </tr> "
+"<tr> <td>callbackReference</td> <td>String</td> "
+"<td>用于接收通知的回调URI，不支持域名格式，仅支持IP地址+URL，且不能包含localhost、127.x.x.x、mepserver容器IP网段，例如：https://159.138.1.2:8080/xxx</td>"
+" <td>是</td> </tr> <tr> <td>_links</td> <td>Object</td> <td>调用者自身信息</td> "
+"<td>是</td> </tr> <tr> <td>&gt;self</td> <td>Object</td> <td>调用者自身信息</td> "
+"<td>是</td> </tr> <tr> <td>&gt;&gt;href</td> <td>String</td> "
+"<td>调用者自身URI</td> <td>是</td> </tr> <tr> <td>appInstanceId</td> "
+"<td>String</td> <td></td> <td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3363
+msgid ""
+"\"subscriptionId\": \"826a3890-8b05-416f-8d24-7a87e9eca731\", "
+"\"subscriptionType\": \"AppTerminationNotificationSubscription\", "
+"\"callbackReference\": \"https://159.138.1.2:8080/callback\", \"_links\":"
+" {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3368
+#: ../../Projects/MEP/MEP_Interfaces.md:3589
+msgid ""
+"\"href\":\"/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3370
+msgid "}, \"appInstanceId\": \"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3376
+msgid "**注：单个应用注册的终止事件订阅数量应不超过50个，超出后服务将报错。**"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3378
+msgid "#### 3. 删除终止事件订阅"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3380
+msgid "删除指定终止事件订阅信息"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3384
+msgid ""
+"``` DELETE "
+"/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3390
+#: ../../Projects/MEP/MEP_Interfaces.md:3471
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>必选</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>Authorization</td> <td>String</td> <td>Token信息，格式：Bearer token信息</td>"
+" <td>header</td> <td>是</td> </tr> <tr> <td>appInstanceId</td> "
+"<td>String</td> <td>APP实例ID（UUID）</td> <td>path</td> <td>是</td> </tr> "
+"<tr> <td>subscriptionId</td> <td>String</td> <td>事件订阅ID（UUID）</td> "
+"<td>path</td> <td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3431
+msgid ""
+"``` DELETE /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731 {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3452
+msgid "``` HTTP/1.1 204 OK {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3459
+msgid "#### 4. 查询指定终止事件订阅"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3461
+msgid "查询指定ID的终止事件订阅信息"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3465
+msgid ""
+"``` GET "
+"/mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3512
+msgid ""
+"``` GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731 {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3531
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>名称</strong></th> <th><strong>类型</strong></th> "
+"<th><strong>描述</strong></th> <th><strong>必选</strong></th> </tr> </thead> "
+"<tbody> <tr> <td>subscriptionType</td> <td>String</td> <td>订阅类型（ "
+"AppTerminationNotificationSubscription）</td> <td>是</td> </tr> <tr> "
+"<td>callbackReference</td> <td>String</td> "
+"<td>用于接收通知的回调URI，不支持域名格式，仅支持IP地址+URL，且不能包含localhost、127.x.x.x、mepserver容器IP网段，例如：https://159.138.1.2:8080/xxx</td>"
+" <td>是</td> </tr> <tr> <td>_links</td> <td>Object</td> <td>调用者自身信息</td> "
+"<td>是</td> </tr> <tr> <td>&gt;self</td> <td>Object</td> <td>调用者自身信息</td> "
+"<td>是</td> </tr> <tr> <td>&gt;&gt;href</td> <td>String</td> "
+"<td>调用者自身URI</td> <td>是</td> </tr> <tr> <td>appInstanceId</td> "
+"<td>String</td> <td></td> <td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3585
+msgid ""
+"\"subscriptionType\": \"AppTerminationNotificationSubscription\", "
+"\"callbackReference\": \"https://159.138.1.2:8080/callback\", \"_links\":"
+" {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3591
+msgid "}, \"appInstanceId\": \"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f \""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3597
+msgid ""
+"### Heartbeat related interfaces #### 1. Query service liveness info This"
+" method retrieves information about an individual mec service liveness "
+"resource"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3603
+msgid ""
+"GET "
+"/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}/liveness"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3606
+#: ../../Projects/MEP/MEP_Interfaces.md:3740
+#: ../../Projects/MEP/MEP_Interfaces.md:3860
+#: ../../Projects/MEP/MEP_Interfaces.md:3979
+#: ../../Projects/MEP/MEP_Interfaces.md:4095
+#: ../../Projects/MEP/MEP_Interfaces.md:4270
+#: ../../Projects/MEP/MEP_Interfaces.md:4518
+#: ../../Projects/MEP/MEP_Interfaces.md:4771
+#: ../../Projects/MEP/MEP_Interfaces.md:5214
+#: ../../Projects/MEP/MEP_Interfaces.md:5596
+#: ../../Projects/MEP/MEP_Interfaces.md:5900
+#: ../../Projects/MEP/MEP_Interfaces.md:6280
+#: ../../Projects/MEP/MEP_Interfaces.md:6377
+#: ../../Projects/MEP/MEP_Interfaces.md:6479
+#: ../../Projects/MEP/MEP_Interfaces.md:6540
+#: ../../Projects/MEP/MEP_Interfaces.md:6645
+#: ../../Projects/MEP/MEP_Interfaces.md:6774
+#: ../../Projects/MEP/MEP_Interfaces.md:6872
+msgid "Request parameters:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3608
+#: ../../Projects/MEP/MEP_Interfaces.md:3742
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>Name</strong></th> <th><strong>Type</strong></th> "
+"<th><strong>Description</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>Required</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>Authorization</td> <td>String</td> <td>Token信息，格式：Bearer token信息</td>"
+" <td>header</td> <td>Yes</td> </tr> <tr> <td>appInstanceId</td> "
+"<td>String</td> <td>APP实例ID（UUID）</td> <td>path</td> <td>Yes</td> </tr> "
+"<tr> <td>serviceId</td> <td>String</td> <td>APP服务实例ID</td> <td>path</td> "
+"<td>是</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3643
+#: ../../Projects/MEP/MEP_Interfaces.md:3777
+#: ../../Projects/MEP/MEP_Interfaces.md:3890
+#: ../../Projects/MEP/MEP_Interfaces.md:4016
+#: ../../Projects/MEP/MEP_Interfaces.md:4132
+#: ../../Projects/MEP/MEP_Interfaces.md:4300
+#: ../../Projects/MEP/MEP_Interfaces.md:4555
+#: ../../Projects/MEP/MEP_Interfaces.md:4808
+#: ../../Projects/MEP/MEP_Interfaces.md:5237
+#: ../../Projects/MEP/MEP_Interfaces.md:5619
+#: ../../Projects/MEP/MEP_Interfaces.md:5923
+#: ../../Projects/MEP/MEP_Interfaces.md:6303
+#: ../../Projects/MEP/MEP_Interfaces.md:6400
+#: ../../Projects/MEP/MEP_Interfaces.md:6515
+#: ../../Projects/MEP/MEP_Interfaces.md:6544
+#: ../../Projects/MEP/MEP_Interfaces.md:6668
+#: ../../Projects/MEP/MEP_Interfaces.md:6778
+#: ../../Projects/MEP/MEP_Interfaces.md:6902
+#: ../../Projects/MEP/MEP_Interfaces.md:6954
+#: ../../Projects/MEP/MEP_Interfaces.md:7056
+msgid "Body parameters:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3645
+#: ../../Projects/MEP/MEP_Interfaces.md:3892
+#: ../../Projects/MEP/MEP_Interfaces.md:4018
+#: ../../Projects/MEP/MEP_Interfaces.md:4302
+#: ../../Projects/MEP/MEP_Interfaces.md:4557
+#: ../../Projects/MEP/MEP_Interfaces.md:5621
+#: ../../Projects/MEP/MEP_Interfaces.md:6305
+#: ../../Projects/MEP/MEP_Interfaces.md:6402
+#: ../../Projects/MEP/MEP_Interfaces.md:6517
+#: ../../Projects/MEP/MEP_Interfaces.md:6542
+#: ../../Projects/MEP/MEP_Interfaces.md:6546
+#: ../../Projects/MEP/MEP_Interfaces.md:6670
+#: ../../Projects/MEP/MEP_Interfaces.md:6776
+#: ../../Projects/MEP/MEP_Interfaces.md:6853
+#: ../../Projects/MEP/MEP_Interfaces.md:6904
+#: ../../Projects/MEP/MEP_Interfaces.md:6914
+#: ../../Projects/MEP/MEP_Interfaces.md:6956
+#: ../../Projects/MEP/MEP_Interfaces.md:7058
+msgid "None"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3647
+#: ../../Projects/MEP/MEP_Interfaces.md:3798
+#: ../../Projects/MEP/MEP_Interfaces.md:3894
+#: ../../Projects/MEP/MEP_Interfaces.md:4020
+#: ../../Projects/MEP/MEP_Interfaces.md:4183
+#: ../../Projects/MEP/MEP_Interfaces.md:4304
+#: ../../Projects/MEP/MEP_Interfaces.md:4559
+#: ../../Projects/MEP/MEP_Interfaces.md:4962
+#: ../../Projects/MEP/MEP_Interfaces.md:5481
+#: ../../Projects/MEP/MEP_Interfaces.md:5623
+#: ../../Projects/MEP/MEP_Interfaces.md:6166
+#: ../../Projects/MEP/MEP_Interfaces.md:6307
+#: ../../Projects/MEP/MEP_Interfaces.md:6404
+#: ../../Projects/MEP/MEP_Interfaces.md:6509
+#: ../../Projects/MEP/MEP_Interfaces.md:6548
+#: ../../Projects/MEP/MEP_Interfaces.md:6672
+#: ../../Projects/MEP/MEP_Interfaces.md:6829
+#: ../../Projects/MEP/MEP_Interfaces.md:6906
+msgid "Example Request:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3649
+msgid ""
+"``` GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460/liveness ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3653
+#: ../../Projects/MEP/MEP_Interfaces.md:3900
+#: ../../Projects/MEP/MEP_Interfaces.md:4026
+#: ../../Projects/MEP/MEP_Interfaces.md:4197
+#: ../../Projects/MEP/MEP_Interfaces.md:4310
+#: ../../Projects/MEP/MEP_Interfaces.md:4565
+#: ../../Projects/MEP/MEP_Interfaces.md:5003
+#: ../../Projects/MEP/MEP_Interfaces.md:5532
+#: ../../Projects/MEP/MEP_Interfaces.md:5629
+#: ../../Projects/MEP/MEP_Interfaces.md:6217
+#: ../../Projects/MEP/MEP_Interfaces.md:6313
+#: ../../Projects/MEP/MEP_Interfaces.md:6410
+#: ../../Projects/MEP/MEP_Interfaces.md:6554
+#: ../../Projects/MEP/MEP_Interfaces.md:6678
+#: ../../Projects/MEP/MEP_Interfaces.md:6851
+#: ../../Projects/MEP/MEP_Interfaces.md:6912
+msgid "Return Parameters:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3655
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> </tr> </thead> <tbody> <tr> "
+"<td>state</td> <td>enum <strong>{ACTIVE, INACTIVE, "
+"SUSPENDED}</strong></td> <td>State</td> </tr> <tr> <td>timeStamp</td> "
+"<td>object</td> <td>The time when the last heartbeat message was "
+"received</td> </tr> <tr> <td>&gt;seconds</td> <td>int32</td> <td>The "
+"seconds partof the time</td> </tr> <tr> <td>&gt;nanoseconds</td> "
+"<td>int32</td> <td>The nano seconds part of the time</td> </tr> <tr> "
+"<td>interval</td> <td>int</td> <td>Interval between two consecutive "
+"hearbeat message</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3692
+#: ../../Projects/MEP/MEP_Interfaces.md:3944
+#: ../../Projects/MEP/MEP_Interfaces.md:4070
+#: ../../Projects/MEP/MEP_Interfaces.md:4241
+#: ../../Projects/MEP/MEP_Interfaces.md:4464
+#: ../../Projects/MEP/MEP_Interfaces.md:4719
+#: ../../Projects/MEP/MEP_Interfaces.md:5157
+#: ../../Projects/MEP/MEP_Interfaces.md:5572
+#: ../../Projects/MEP/MEP_Interfaces.md:5833
+#: ../../Projects/MEP/MEP_Interfaces.md:6256
+#: ../../Projects/MEP/MEP_Interfaces.md:6353
+#: ../../Projects/MEP/MEP_Interfaces.md:6450
+#: ../../Projects/MEP/MEP_Interfaces.md:6519
+#: ../../Projects/MEP/MEP_Interfaces.md:6598
+#: ../../Projects/MEP/MEP_Interfaces.md:6722
+msgid "Return Code: 200 OK"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3694
+#: ../../Projects/MEP/MEP_Interfaces.md:4072
+#: ../../Projects/MEP/MEP_Interfaces.md:4243
+#: ../../Projects/MEP/MEP_Interfaces.md:4721
+#: ../../Projects/MEP/MEP_Interfaces.md:5159
+#: ../../Projects/MEP/MEP_Interfaces.md:5574
+#: ../../Projects/MEP/MEP_Interfaces.md:5835
+#: ../../Projects/MEP/MEP_Interfaces.md:6258
+#: ../../Projects/MEP/MEP_Interfaces.md:6355
+#: ../../Projects/MEP/MEP_Interfaces.md:6452
+#: ../../Projects/MEP/MEP_Interfaces.md:6724
+msgid "Example Response: ``` HTTP/1.1 200 OK {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3698
+msgid "\"state\": \"ACTIVE\", \"timeStamp\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3700
+msgid "\"seconds\": 1605249472, \"nanoseconds\": 436892745"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3703
+msgid "\"interval\": 60"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3707
+#: ../../Projects/MEP/MEP_Interfaces.md:3815
+msgid "Exception status code"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3709
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th><strong>HTTP "
+"Status Code</strong></th> <th><strong>Description</strong></th> </tr> "
+"</thead> <tbody> <tr> <td>400</td> <td>Bad request, used to indicate that"
+" the requested parameters are incorrect.</td> </tr> <tr> <td>403</td> "
+"<td>The current operation is forbidden.</td> </tr> <tr> <td>404</td> "
+"<td>The requested resource was not found.</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3732
+msgid ""
+"#### 2. Update liveness info This method also referred as \"heartbeat\" "
+"message to (re)confirm the active status about an individual mec service."
+" But not to change the state from \"INACTIVE\" to \"ACTIVE\". NOTE: As "
+"per ETSI doc, this message should be a PATCH message. Since we use "
+"servicecomb rest server which doesn't support PATCH message. we kept it "
+"as PUT. But behviour will be similar to patch. URL ``` PUT "
+"/mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}/liveness"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3779
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>state</td> <td>enum <strong>{ACTIVE}</strong></td> "
+"<td>service state</td> <td>Yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3800
+msgid ""
+"``` PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460/liveness {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3803
+msgid "state: \"ACTIVE\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3807
+msgid "Return Parameters: None"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3810
+msgid "Return Code: 204 OK"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3812
+msgid "Example Response: Empty response"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3817
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th><strong>HTTP "
+"Status code</strong></th> <th><strong>Description</strong></th> </tr> "
+"</thead> <tbody> <tr> <td>400</td> <td>Bad request, used to indicate that"
+" the requested parameters are incorrect.</td> </tr> <tr> <td>403</td> "
+"<td>The current operation is forbidden.</td> </tr> <tr> <td>404</td> "
+"<td>The requested resource was not found.</td> </tr> <tr> <td>409</td> "
+"<td>conflict state.</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3846
+msgid "### DNS rule configuration interfaces"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3848
+msgid ""
+"Using the Mp1 interfaces mec apps can query and activate/deactivate dns "
+"rules associated to it. Implementation of this interface are as per the "
+"*ETSI GS MEC 011 V2.1.1* document."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3850
+msgid "#### 1. Query all dns rules"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3852
+msgid "Query all DNS rules associated with an application."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3856
+msgid "``` GET /mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3862
+#: ../../Projects/MEP/MEP_Interfaces.md:4272
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>Name</strong></th> <th><strong>Type</strong></th> "
+"<th><strong>Description</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>Required</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>Authorization</td> <td>String</td> <td>Token信息，格式：Bearer token信息</td>"
+" <td>header</td> <td>Yes</td> </tr> <tr> <td>appInstanceId</td> "
+"<td>String</td> <td>APP实例ID（UUID）</td> <td>path</td> <td>Yes</td> </tr> "
+"</tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3896
+msgid ""
+"``` GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/dns_rules ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3902
+#: ../../Projects/MEP/MEP_Interfaces.md:4028
+#: ../../Projects/MEP/MEP_Interfaces.md:4199
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> </tr> </thead> <tbody> <tr> "
+"<td>dnsRuleId</td> <td>string</td> <td>Rule Id</td> </tr> <tr> "
+"<td>domainName</td> <td>string</td> <td>MEC app domain name</td> </tr> "
+"<tr> <td>ipAddressType</td> <td>enum <strong>{IP_V4, IP_V6}</strong></td>"
+" <td>MEC app ip address type</td> </tr> <tr> <td>ipAddress</td> "
+"<td>string</td> <td>MEC app ip address</td> </tr> <tr> <td>ttl</td> "
+"<td>int (non-zero value)</td> <td>TTL value</td> </tr> <tr> "
+"<td>state</td> <td>enum <strong>{ACTIVE, INACTIVE}</strong></td> "
+"<td>State</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3946
+#: ../../Projects/MEP/MEP_Interfaces.md:4466
+#: ../../Projects/MEP/MEP_Interfaces.md:6600
+msgid "Example Response: ``` HTTP/1.1 200 OK ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3951
+msgid ""
+"\"dnsRuleId\": \"20a19292-384c-4d44-ba64-a8e8269f0f25\", \"domainName\": "
+"\"voicerecgservice.com\", \"ipAddressType\": \"IP_V4\", \"ipAddress\": "
+"\"192.168.27.48\", \"ttl\": 30, \"state\": \"ACTIVE\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3959
+#: ../../Projects/MEP/MEP_Interfaces.md:4076
+msgid ""
+"\"dnsRuleId\": \"bbc14ed1-92f4-457f-95e8-93aa723a9f12\", \"domainName\": "
+"\"facerecgservice.com\", \"ipAddressType\": \"IP_V4\", \"ipAddress\": "
+"\"192.168.147.240\", \"ttl\": 30, \"state\": \"INACTIVE\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3969
+msgid "#### 2. Query a specific dns rule"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3971
+msgid "Query single DNS rule associated with an application."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3975
+msgid ""
+"``` GET "
+"/mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:3981
+#: ../../Projects/MEP/MEP_Interfaces.md:4097
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>Name</strong></th> <th><strong>Type</strong></th> "
+"<th><strong>Description</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>Required</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>Authorization</td> <td>String</td> <td>Token信息，格式：Bearer token信息</td>"
+" <td>header</td> <td>Yes</td> </tr> <tr> <td>appInstanceId</td> "
+"<td>String</td> <td>APP实例ID(UUID)</td> <td>path</td> <td>Yes</td> </tr> "
+"<tr> <td>dnsRuleId</td> <td>String</td> <td>DNS rule "
+"identifier(UUID)</td> <td>path</td> <td>Yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4022
+msgid ""
+"``` GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12 ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4085
+msgid "#### 3. Update a specific dns rule"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4087
 msgid ""
 "Modify the state of a rule associated with an application. This interface"
-" can modify the state from ACTIVE to INACTIVE or vice versa. No other "
-"field can be modified using this interface."
+" can modify the state from **ACTIVE** to **INACTIVE** or vice versa. No "
+"other field can be modified using this interface."
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:145
-#: ../../Projects/MEP/MEP_Interfaces.md:359
+#: ../../Projects/MEP/MEP_Interfaces.md:4091
 msgid ""
-"Request body can be as following. | Field  Name   | Values"
-"                      | Mandatory?    | | ------------- | "
-"--------------------------- | ------------- | | dnsRuleId     | string"
-"                      | No, if present must be same with actual | | "
-"domainName    | string                      | No, if present must be same"
-" with actual | | ipAddressType | enum {IP_V4, IP_V6}     | No, if present"
-" must be same with actual | | ipAddress     | string"
-"                      | No, if present must be same with actual | | ttl"
-"           | int (non-zero value)        | No, if present must be same "
-"with actual | | state         | enum {ACTIVE, INACTIVE} | Yes |"
+"``` PUT "
+"/mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}"
+" ```"
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:156
-#: ../../Projects/MEP/MEP_Interfaces.md:221
-#: ../../Projects/MEP/MEP_Interfaces.md:370
-#: ../../Projects/MEP/MEP_Interfaces.md:447
-msgid "Example request body:"
-msgstr ""
-
-#: ../../Projects/MEP/MEP_Interfaces.md:187
+#: ../../Projects/MEP/MEP_Interfaces.md:4134
 msgid ""
-"Uisng the Mm5 interfaces MECM can create, query, update or delete the dns"
-" rules associated to and application. Implementation of this interface "
-"are specified in ETSI GS MEC 010-1 V1.1.1 and ETSI GS MEC 010-2 V2.1.1 "
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>dnsRuleId</td> <td>string</td> <td>Rule Id</td> <td>No, "
+"if present must be same with actual</td> </tr> <tr> <td>domainName</td> "
+"<td>string</td> <td>MEC app domain name</td> <td>No, if present must be "
+"same with actual</td> </tr> <tr> <td>ipAddressType</td> <td>enum "
+"<strong>{IP_V4, IP_V6}</strong></td> <td>MEC app ip address type</td> "
+"<td>No, if present must be same with actual</td> </tr> <tr> "
+"<td>ipAddress</td> <td>string</td> <td>MEC app ip address</td> <td>No, if"
+" present must be same with actual</td> </tr> <tr> <td>ttl</td> <td>int "
+"(non-zero value)</td> <td>TTL value</td> <td>No, if present must be same "
+"with actual</td> </tr> <tr> <td>state</td> <td>enum <strong>{ACTIVE, "
+"INACTIVE}</strong></td> <td>State</td> <td>Yes</td> </tr> </tbody> "
+"</table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4185
+msgid ""
+"``` PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12 {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4188
+#: ../../Projects/MEP/MEP_Interfaces.md:4247
+msgid ""
+"\"dnsRuleId\": \"bbc14ed1-92f4-457f-95e8-93aa723a9f12\", \"domainName\": "
+"\"facerecgservice.com\", \"ipAddressType\": \"IP_V4\", \"ipAddress\": "
+"\"192.168.147.240\", \"ttl\": 30, \"state\": \"ACTIVE\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4256
+msgid "### Traffic rule configuration interfaces"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4258
+msgid ""
+"Using the Mp1 interfaces mec apps can query and modify the traffic rules "
+"associated to it. Implementation of this interface are as per the *ETSI "
+"GS MEC 011 V2.1.1* document."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4260
+msgid "#### 1. Query all traffic rules"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4262
+msgid "Query all traffic rules associated with an application."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4266
+msgid ""
+"``` GET "
+"/mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4306
+msgid ""
+"``` GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/traffic_rules ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4312
+#: ../../Projects/MEP/MEP_Interfaces.md:4567
+#: ../../Projects/MEP/MEP_Interfaces.md:4810
+#: ../../Projects/MEP/MEP_Interfaces.md:5005
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> </tr> </thead> <tbody> <tr> "
+"<td>trafficRuleId</td> <td>string</td> <td>Traffic rule ID.</td> </tr> "
+"<tr> <td>filterType</td> <td>enum <strong>{FLOW, PACKET}</strong></td> "
+"<td>Filter type.</td> </tr> <tr> <td>priority</td> <td>number (1 ~ "
+"256)</td> <td>Priority of the traffic rule. If any conflict in the "
+"traffic rules, then higher the priority higher the precedence.</td> </tr>"
+" <tr> <td>trafficFilter</td> <td>list</td> <td>List of traffic "
+"filters.</td> </tr> <tr> <td>&gt; srcAddress</td> <td>list</td> <td>List "
+"of source ip address.</td> </tr> <tr> <td>&gt; dstAddress</td> "
+"<td>list</td> <td>List of destination ip address.</td> </tr> <tr> "
+"<td>&gt; srcPort</td> <td>list</td> <td>List of source port address.</td>"
+" </tr> <tr> <td>&gt; dstPort</td> <td>list</td> <td>List of destination "
+"port address.</td> </tr> <tr> <td>&gt; protocol</td> <td>list</td> "
+"<td>List of protocols.</td> </tr> <tr> <td>&gt; tag</td> <td>list</td> "
+"<td>List of tags.</td> </tr> <tr> <td>&gt; srcTunnelAddress</td> "
+"<td>list</td> <td>List of source tunnel address.</td> </tr> <tr> <td>&gt;"
+" tgtTunnelAddress</td> <td>list</td> <td>List of target tunnel "
+"address.</td> </tr> <tr> <td>&gt; srcTunnelPort</td> <td>list</td> "
+"<td>List of source tunnel ports.</td> </tr> <tr> <td>&gt; "
+"dstTunnelPort</td> <td>list</td> <td>List of destination tunnel "
+"ports.</td> </tr> <tr> <td>&gt; qCI</td> <td>number</td> <td>Match "
+"packets with same QCI.</td> </tr> <tr> <td>&gt; dSCP</td> <td>number</td>"
+" <td>Match packets with same DSCP.</td> </tr> <tr> <td>&gt; tC</td> "
+"<td>number</td> <td>Match packets with same TC.</td> </tr> <tr> "
+"<td>action</td> <td>enum <strong>{DROP, FORWARD_DECAPSULATED, "
+"FORWARD_AS_IS, PASSTHROUGH, DUPLICATE_DECAPSULATED, "
+"DUPLICATE_AS_IS}</strong></td> <td>Action when traffic rule matches.</td>"
+" </tr> <tr> <td>dstInterface</td> <td>list</td> <td>Destination interface"
+" parameters.</td> </tr> <tr> <td>&gt; interfaceType</td> <td>enum "
+"<strong>{TUNNEL, MAC, IP}</strong></td> <td>Match packets with same "
+"TC.</td> </tr> <tr> <td>&gt; tunnelInfo</td> <td>object</td> <td>Tunnel "
+"parameters.</td> </tr> <tr> <td>&gt;&gt; tunnelType</td> <td>enum "
+"<strong>{GTP_U, GRE}</strong></td> <td>Tunnel type.</td> </tr> <tr> "
+"<td>&gt;&gt; tunnelDstAddress</td> <td>string</td> <td>Destination IP "
+"address.</td> </tr> <tr> <td>&gt;&gt; tunnelSrcAddress</td> "
+"<td>string</td> <td>Source IP address.</td> </tr> <tr> <td>&gt; "
+"srcMacAddress</td> <td>string</td> <td>Source MAC address</td> </tr> <tr>"
+" <td>&gt; dstMacAddress</td> <td>string</td> <td>Destination MAC "
+"address.</td> </tr> <tr> <td>&gt; dstIpAddress</td> <td>string</td> "
+"<td>Destination IP address.</td> </tr> <tr> <td>state</td> <td>enum "
+"<strong>{ACTIVE, INACTIVE}</strong></td> <td>State of the rule.</td> "
+"</tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4471
+#: ../../Projects/MEP/MEP_Interfaces.md:4725
+#: ../../Projects/MEP/MEP_Interfaces.md:4967
+#: ../../Projects/MEP/MEP_Interfaces.md:5163
+#: ../../Projects/MEP/MEP_Interfaces.md:5488
+#: ../../Projects/MEP/MEP_Interfaces.md:5841
+#: ../../Projects/MEP/MEP_Interfaces.md:6173
+msgid ""
+"\"trafficRuleId\": \"TrafficRule1\", \"filterType\": \"FLOW\", "
+"\"priority\": 1, \"trafficFilter\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4476
+#: ../../Projects/MEP/MEP_Interfaces.md:4730
+#: ../../Projects/MEP/MEP_Interfaces.md:4972
+#: ../../Projects/MEP/MEP_Interfaces.md:5168
+#: ../../Projects/MEP/MEP_Interfaces.md:5493
+#: ../../Projects/MEP/MEP_Interfaces.md:5846
+#: ../../Projects/MEP/MEP_Interfaces.md:6178
+msgid "\"srcAddress\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4477
+#: ../../Projects/MEP/MEP_Interfaces.md:4731
+#: ../../Projects/MEP/MEP_Interfaces.md:4973
+#: ../../Projects/MEP/MEP_Interfaces.md:5169
+#: ../../Projects/MEP/MEP_Interfaces.md:5494
+#: ../../Projects/MEP/MEP_Interfaces.md:5847
+#: ../../Projects/MEP/MEP_Interfaces.md:6179
+msgid "\"192.158.1.1/28\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4478
+#: ../../Projects/MEP/MEP_Interfaces.md:4732
+#: ../../Projects/MEP/MEP_Interfaces.md:4974
+#: ../../Projects/MEP/MEP_Interfaces.md:5170
+#: ../../Projects/MEP/MEP_Interfaces.md:5495
+#: ../../Projects/MEP/MEP_Interfaces.md:5848
+#: ../../Projects/MEP/MEP_Interfaces.md:6180
+msgid "], \"dstAddress\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4480
+#: ../../Projects/MEP/MEP_Interfaces.md:4734
+#: ../../Projects/MEP/MEP_Interfaces.md:4976
+#: ../../Projects/MEP/MEP_Interfaces.md:5172
+#: ../../Projects/MEP/MEP_Interfaces.md:5497
+#: ../../Projects/MEP/MEP_Interfaces.md:5850
+#: ../../Projects/MEP/MEP_Interfaces.md:6182
+msgid "\"192.168.1.1/28\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4481
+#: ../../Projects/MEP/MEP_Interfaces.md:4735
+#: ../../Projects/MEP/MEP_Interfaces.md:4977
+#: ../../Projects/MEP/MEP_Interfaces.md:5173
+#: ../../Projects/MEP/MEP_Interfaces.md:5498
+#: ../../Projects/MEP/MEP_Interfaces.md:5851
+#: ../../Projects/MEP/MEP_Interfaces.md:6183
+msgid "], \"srcPort\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4483
+#: ../../Projects/MEP/MEP_Interfaces.md:4486
+#: ../../Projects/MEP/MEP_Interfaces.md:4737
+#: ../../Projects/MEP/MEP_Interfaces.md:4740
+#: ../../Projects/MEP/MEP_Interfaces.md:4979
+#: ../../Projects/MEP/MEP_Interfaces.md:4982
+#: ../../Projects/MEP/MEP_Interfaces.md:5175
+#: ../../Projects/MEP/MEP_Interfaces.md:5178
+#: ../../Projects/MEP/MEP_Interfaces.md:5500
+#: ../../Projects/MEP/MEP_Interfaces.md:5503
+#: ../../Projects/MEP/MEP_Interfaces.md:5853
+#: ../../Projects/MEP/MEP_Interfaces.md:5856
+#: ../../Projects/MEP/MEP_Interfaces.md:6185
+#: ../../Projects/MEP/MEP_Interfaces.md:6188
+msgid "\"8080\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4484
+#: ../../Projects/MEP/MEP_Interfaces.md:4738
+#: ../../Projects/MEP/MEP_Interfaces.md:4980
+#: ../../Projects/MEP/MEP_Interfaces.md:5176
+#: ../../Projects/MEP/MEP_Interfaces.md:5501
+#: ../../Projects/MEP/MEP_Interfaces.md:5854
+#: ../../Projects/MEP/MEP_Interfaces.md:6186
+msgid "], \"dstPort\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4487
+#: ../../Projects/MEP/MEP_Interfaces.md:4741
+#: ../../Projects/MEP/MEP_Interfaces.md:4983
+#: ../../Projects/MEP/MEP_Interfaces.md:5179
+#: ../../Projects/MEP/MEP_Interfaces.md:5504
+#: ../../Projects/MEP/MEP_Interfaces.md:5857
+#: ../../Projects/MEP/MEP_Interfaces.md:6189
+msgid "], \"protocol\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4489
+#: ../../Projects/MEP/MEP_Interfaces.md:4743
+#: ../../Projects/MEP/MEP_Interfaces.md:4985
+#: ../../Projects/MEP/MEP_Interfaces.md:5181
+#: ../../Projects/MEP/MEP_Interfaces.md:5506
+#: ../../Projects/MEP/MEP_Interfaces.md:5859
+#: ../../Projects/MEP/MEP_Interfaces.md:6191
+msgid "\"TCP\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4490
+#: ../../Projects/MEP/MEP_Interfaces.md:4744
+#: ../../Projects/MEP/MEP_Interfaces.md:4986
+#: ../../Projects/MEP/MEP_Interfaces.md:5182
+#: ../../Projects/MEP/MEP_Interfaces.md:5860
+msgid ""
+"], \"tag\": null, \"srcTunnelAddress\": null, \"tgtTunnelAddress\": null,"
+" \"srcTunnelPort\": null, \"dstTunnelPort\": null, \"qCI\": 2, \"dSCP\": "
+"0, \"tC\": 1"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4500
+#: ../../Projects/MEP/MEP_Interfaces.md:4754
+#: ../../Projects/MEP/MEP_Interfaces.md:4996
+#: ../../Projects/MEP/MEP_Interfaces.md:5192
+#: ../../Projects/MEP/MEP_Interfaces.md:5870
+msgid "], \"action\": \"DROP\", \"dstInterface\": [], \"state\": \"ACTIVE\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4508
+msgid "#### 2. Query a specific traffic rule"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4510
+msgid "Query single traffic rule associated with an application."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4514
+msgid ""
+"``` GET "
+"/mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules/{trafficRuleId}"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4520
+#: ../../Projects/MEP/MEP_Interfaces.md:4773
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>Name</strong></th> <th><strong>Type</strong></th> "
+"<th><strong>Description</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>Required</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>Authorization</td> <td>String</td> <td>Token信息，格式：Bearer token信息</td>"
+" <td>header</td> <td>Yes</td> </tr> <tr> <td>appInstanceId</td> "
+"<td>String</td> <td>APP实例ID(UUID)</td> <td>path</td> <td>Yes</td> </tr> "
+"<tr> <td>trafficRuleId</td> <td>String</td> <td>Traffic rule "
+"identifier(UUID)</td> <td>path</td> <td>Yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4561
+msgid ""
+"``` GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/traffic_rules/TrafficRule1 ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4761
+msgid "#### 3. Update a specific traffic rule"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4763
+msgid "Modify the traffic rule associated with an application."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4767
+msgid ""
+"``` PUT "
+"/mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules/{trafficRuleId}"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:4964
+msgid ""
+"``` PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/traffic_rules/TrafficRule1 {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5199
+msgid "### Mm5 Interface for appd configurations"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5202
+msgid ""
+"Using the Mm5 interfaces MECM can create, query, update or delete the "
+"appd configurations which includes multiple dns and traffic rules "
+"associated to an application. Implementation of this interface are "
+"specified in *ETSI GS MEC 010-1 V1.1.1* and *ETSI GS MEC 010-2 V2.1.1* "
 "documents."
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:191
+#: ../../Projects/MEP/MEP_Interfaces.md:5204
+msgid "#### 1. Create a new appd configurations"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5206
 msgid ""
-"Create a new DNS rule and associate it with a MEC application. DNS rule "
-"id will be generated by the mep-server, thus no need to pass this field "
-"during the creation."
+"Create a new appd configuration and associate it with a MEC application. "
+"Each configuration can have thirty-two DNS rules and sixteen Traffic "
+"rules. There can be only one appd configuration per application at a time"
+" and the appd configuration is an asynchronous in nature. Once the "
+"request is received in the mep, after validation mep will start a task to"
+" handle multiple dns and traffic rules and return a task id to the caller"
+" of the API. Using the task-id the caller can check the status of the "
+"operation at any time."
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:212
+#: ../../Projects/MEP/MEP_Interfaces.md:5210
 msgid ""
-"Request body can be as following. | Field  Name   | Values"
-"                      | Mandatory? | | ------------- | "
-"--------------------------- | ---------- | | domainName    | string"
-"                      | Yes | | ipAddressType | enum {IP_V4, IP_V6}     |"
-" Yes | | ipAddress     | string                      | Yes | | ttl"
-"           | int (non-zero value)        | Yes | | state         | enum "
-"{ACTIVE, INACTIVE} | Yes |"
+"``` POST "
+"/mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration ```"
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:401
-msgid "Delete a DNS rule associated to an application."
+#: ../../Projects/MEP/MEP_Interfaces.md:5216
+#: ../../Projects/MEP/MEP_Interfaces.md:5598
+#: ../../Projects/MEP/MEP_Interfaces.md:5902
+#: ../../Projects/MEP/MEP_Interfaces.md:6282
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>Name</strong></th> <th><strong>Type</strong></th> "
+"<th><strong>Description</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>Required</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>appInstanceId</td> <td>String</td> <td>APP实例ID(UUID)</td> "
+"<td>path</td> <td>Yes</td> </tr> </tbody> </table>"
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:434
+#: ../../Projects/MEP/MEP_Interfaces.md:5239
+#: ../../Projects/MEP/MEP_Interfaces.md:5925
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>appTrafficRule</td> <td>list</td> <td>List of traffic "
+"rules. Max 16.</td> <td>No</td> </tr> <tr> <td>&gt; trafficRuleId</td> "
+"<td>string</td> <td>Traffic rule ID.</td> <td>Yes</td> </tr> <tr> "
+"<td>&gt; filterType</td> <td>enum <strong>{FLOW, PACKET}</strong></td> "
+"<td>Filter type.</td> <td>Yes</td> </tr> <tr> <td>&gt; priority</td> "
+"<td>number (1 ~ 256)</td> <td>Priority of the traffic rule. If any "
+"conflict in the traffic rules, then higher the priority higher the "
+"precedence.</td> <td>Yes</td> </tr> <tr> <td>&gt; trafficFilter</td> "
+"<td>list</td> <td>List of traffic filters. Max 16.</td> <td>No</td> </tr>"
+" <tr> <td>&gt;&gt; srcAddress</td> <td>list</td> <td>List of source ip "
+"address. Max 64.</td> <td>No</td> </tr> <tr> <td>&gt;&gt; dstAddress</td>"
+" <td>list</td> <td>List of destination ip address. Max 64.</td> "
+"<td>No</td> </tr> <tr> <td>&gt;&gt; srcPort</td> <td>list</td> <td>List "
+"of source port address.</td> <td>No</td> </tr> <tr> <td>&gt;&gt; "
+"dstPort</td> <td>list</td> <td>List of destination port address.</td> "
+"<td>No</td> </tr> <tr> <td>&gt;&gt; protocol</td> <td>list</td> <td>List "
+"of protocols. Max 8.</td> <td>Yes</td> </tr> <tr> <td>&gt;&gt; tag</td> "
+"<td>list</td> <td>List of tags. Max 8.</td> <td>Yes</td> </tr> <tr> "
+"<td>&gt;&gt; srcTunnelAddress</td> <td>list</td> <td>List of source "
+"tunnel address.</td> <td>No</td> </tr> <tr> <td>&gt;&gt; "
+"tgtTunnelAddress</td> <td>list</td> <td>List of target tunnel "
+"address.</td> <td>No</td> </tr> <tr> <td>&gt;&gt; srcTunnelPort</td> "
+"<td>list</td> <td>List of source tunnel ports.</td> <td>No</td> </tr> "
+"<tr> <td>&gt;&gt; dstTunnelPort</td> <td>list</td> <td>List of "
+"destination tunnel ports.</td> <td>No</td> </tr> <tr> <td>&gt;&gt; "
+"qCI</td> <td>number</td> <td>Match packets with same QCI.</td> "
+"<td>No</td> </tr> <tr> <td>&gt;&gt; dSCP</td> <td>number</td> <td>Match "
+"packets with same DSCP.</td> <td>No</td> </tr> <tr> <td>&gt;&gt; tC</td> "
+"<td>number</td> <td>Match packets with same TC.</td> <td>No</td> </tr> "
+"<tr> <td>&gt; action</td> <td>enum <strong>{DROP, FORWARD_DECAPSULATED, "
+"FORWARD_AS_IS, PASSTHROUGH, DUPLICATE_DECAPSULATED, "
+"DUPLICATE_AS_IS}</strong></td> <td>Action when traffic rule matches.</td>"
+" <td>Yes</td> </tr> <tr> <td>&gt; dstInterface</td> <td>list</td> "
+"<td>Destination interface parameters. Max 2.</td> <td>No</td> </tr> <tr> "
+"<td>&gt;&gt; interfaceType</td> <td>enum <strong>{TUNNEL, MAC, "
+"IP}</strong></td> <td>Match packets with same TC.</td> <td>Yes</td> </tr>"
+" <tr> <td>&gt;&gt; tunnelInfo</td> <td>object</td> <td>Tunnel "
+"parameters.</td> <td>No</td> </tr> <tr> <td>&gt;&gt;&gt; tunnelType</td> "
+"<td>enum <strong>{GTP_U, GRE}</strong></td> <td>Tunnel type.</td> "
+"<td>Yes</td> </tr> <tr> <td>&gt;&gt;&gt; tunnelDstAddress</td> "
+"<td>string</td> <td>Destination IP address.</td> <td>No</td> </tr> <tr> "
+"<td>&gt;&gt;&gt; tunnelSrcAddress</td> <td>string</td> <td>Source IP "
+"address.</td> <td>No</td> </tr> <tr> <td>&gt;&gt; srcMacAddress</td> "
+"<td>string</td> <td>Source MAC address</td> <td>No</td> </tr> <tr> "
+"<td>&gt;&gt; dstMacAddress</td> <td>string</td> <td>Destination MAC "
+"address.</td> <td>No</td> </tr> <tr> <td>&gt;&gt; dstIpAddress</td> "
+"<td>string</td> <td>Destination IP address.</td> <td>No</td> </tr> <tr> "
+"<td>&gt; state</td> <td>enum <strong>{ACTIVE, INACTIVE}</strong></td> "
+"<td>State of the rule.</td> <td>No</td> </tr> <tr> <td>appDNSRule</td> "
+"<td>list</td> <td>List of DNS rules. Max 32.</td> <td>No</td> </tr> <tr> "
+"<td>&gt; dnsRuleId</td> <td>string</td> <td>DNS rule ID.</td> "
+"<td>Yes</td> </tr> <tr> <td>&gt; domainName</td> <td>string</td> "
+"<td>Domain name.</td> <td>Yes</td> </tr> <tr> <td>&gt; ipAddressType</td>"
+" <td>enum <strong>{IPv4, IPv6}</strong></td> <td>IP address type.</td> "
+"<td>Yes</td> </tr> <tr> <td>&gt; ipAddress</td> <td>string</td> <td>IP "
+"address.</td> <td>Yes</td> </tr> <tr> <td>&gt; ttl</td> <td>number</td> "
+"<td>Time To Live value.</td> <td>Yes</td> </tr> <tr> <td>&gt; state</td> "
+"<td>enum <strong>{ACTIVE, INACTIVE}</strong></td> <td>Rule state.</td> "
+"<td>Yes</td> </tr> <tr> <td>appSupportMp1</td> <td>bool</td> <td>Whether "
+"Mp1 interface is supported.</td> <td>No</td> </tr> <tr> <td>appName</td> "
+"<td>string</td> <td>Application name.</td> <td>Yes</td> </tr> </tbody> "
+"</table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5483
+msgid ""
+"``` POST /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/appd_configuration {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5514
+#: ../../Projects/MEP/MEP_Interfaces.md:5873
+#: ../../Projects/MEP/MEP_Interfaces.md:6199
+msgid "\"appTrafficRule\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5507
+#: ../../Projects/MEP/MEP_Interfaces.md:6192
+msgid "], \"qCI\": 1, \"dSCP\": 0, \"tC\": 1"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5512
+#: ../../Projects/MEP/MEP_Interfaces.md:6197
+msgid "], \"action\": \"DROP\", \"state\": \"ACTIVE\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5516
+#: ../../Projects/MEP/MEP_Interfaces.md:5875
+#: ../../Projects/MEP/MEP_Interfaces.md:6201
+msgid "], \"appDNSRule\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5519
+#: ../../Projects/MEP/MEP_Interfaces.md:5878
+#: ../../Projects/MEP/MEP_Interfaces.md:6204
+msgid ""
+"\"dnsRuleId\": \"dnsRule1\", \"domainName\": \"facerecgservice.com\", "
+"\"ipAddressType\": \"IP_V4\", \"ipAddress\": \"192.168.147.240\", "
+"\"ttl\": 30, \"state\": \"ACTIVE\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5526
+#: ../../Projects/MEP/MEP_Interfaces.md:5885
+#: ../../Projects/MEP/MEP_Interfaces.md:6211
+msgid "], \"appSupportMp1\": true, \"appName\": \"abc1\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5534
+#: ../../Projects/MEP/MEP_Interfaces.md:6219
+#: ../../Projects/MEP/MEP_Interfaces.md:6315
+#: ../../Projects/MEP/MEP_Interfaces.md:6412
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> </tr> </thead> <tbody> <tr> "
+"<td>taskId</td> <td>string</td> <td>Task ID</td> </tr> <tr> "
+"<td>appInstanceId</td> <td>string</td> <td>Application instance ID</td> "
+"</tr> <tr> <td>configResult</td> <td>string</td> <td>Configuration "
+"result</td> </tr> <tr> <td>configPhase</td> <td>string</td> <td>Progress "
+"percentage</td> </tr> <tr> <td>Detailed</td> <td>string</td> <td>Detailed"
+" reason</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5578
+#: ../../Projects/MEP/MEP_Interfaces.md:6262
+#: ../../Projects/MEP/MEP_Interfaces.md:6359
+msgid ""
+"\"taskId\": \"d464dd0a-d927-4baf-bc2c-d902fb0b2c73\", \"appInstanceId\": "
+"\"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f\", \"configResult\": "
+"\"PROCESSING\", \"configPhase\": \"0\", \"Detailed\": \"Operation In "
+"progress\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5586
+msgid "#### 2. Query appd configuration"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5588
+msgid "Query appd configuration associated with an application."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5592
+msgid ""
+"``` GET "
+"/mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5625
+msgid ""
+"``` GET /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/appd_configuration ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5631
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> </tr> </thead> <tbody> <tr> "
+"<td>appTrafficRule</td> <td>list</td> <td>List of traffic rules.</td> "
+"</tr> <tr> <td>&gt; trafficRuleId</td> <td>string</td> <td>Traffic rule "
+"ID.</td> </tr> <tr> <td>&gt; filterType</td> <td>enum <strong>{FLOW, "
+"PACKET}</strong></td> <td>Filter type.</td> </tr> <tr> <td>&gt; "
+"priority</td> <td>number (1 ~ 256)</td> <td>Priority of the traffic rule."
+" If any conflict in the traffic rules, then higher the priority higher "
+"the precedence.</td> </tr> <tr> <td>&gt; trafficFilter</td> <td>list</td>"
+" <td>List of traffic filters.</td> </tr> <tr> <td>&gt;&gt; "
+"srcAddress</td> <td>list</td> <td>List of source ip address.</td> </tr> "
+"<tr> <td>&gt;&gt; dstAddress</td> <td>list</td> <td>List of destination "
+"ip address.</td> </tr> <tr> <td>&gt;&gt; srcPort</td> <td>list</td> "
+"<td>List of source port address.</td> </tr> <tr> <td>&gt;&gt; "
+"dstPort</td> <td>list</td> <td>List of destination port address.</td> "
+"</tr> <tr> <td>&gt;&gt; protocol</td> <td>list</td> <td>List of "
+"protocols.</td> </tr> <tr> <td>&gt;&gt; tag</td> <td>list</td> <td>List "
+"of tags.</td> </tr> <tr> <td>&gt;&gt; srcTunnelAddress</td> <td>list</td>"
+" <td>List of source tunnel address.</td> </tr> <tr> <td>&gt;&gt; "
+"tgtTunnelAddress</td> <td>list</td> <td>List of target tunnel "
+"address.</td> </tr> <tr> <td>&gt;&gt; srcTunnelPort</td> <td>list</td> "
+"<td>List of source tunnel ports.</td> </tr> <tr> <td>&gt;&gt; "
+"dstTunnelPort</td> <td>list</td> <td>List of destination tunnel "
+"ports.</td> </tr> <tr> <td>&gt;&gt; qCI</td> <td>number</td> <td>Match "
+"packets with same QCI.</td> </tr> <tr> <td>&gt;&gt; dSCP</td> "
+"<td>number</td> <td>Match packets with same DSCP.</td> </tr> <tr> "
+"<td>&gt;&gt; tC</td> <td>number</td> <td>Match packets with same TC.</td>"
+" </tr> <tr> <td>&gt; action</td> <td>enum <strong>{DROP, "
+"FORWARD_DECAPSULATED, FORWARD_AS_IS, PASSTHROUGH, DUPLICATE_DECAPSULATED,"
+" DUPLICATE_AS_IS}</strong></td> <td>Action when traffic rule "
+"matches.</td> </tr> <tr> <td>&gt; dstInterface</td> <td>list</td> "
+"<td>Destination interface parameters.</td> </tr> <tr> <td>&gt;&gt; "
+"interfaceType</td> <td>enum <strong>{TUNNEL, MAC, IP}</strong></td> "
+"<td>Match packets with same TC.</td> </tr> <tr> <td>&gt;&gt; "
+"tunnelInfo</td> <td>object</td> <td>Tunnel parameters.</td> </tr> <tr> "
+"<td>&gt;&gt;&gt; tunnelType</td> <td>enum <strong>{GTP_U, "
+"GRE}</strong></td> <td>Tunnel type.</td> </tr> <tr> <td>&gt;&gt;&gt; "
+"tunnelDstAddress</td> <td>string</td> <td>Destination IP address.</td> "
+"</tr> <tr> <td>&gt;&gt;&gt; tunnelSrcAddress</td> <td>string</td> "
+"<td>Source IP address.</td> </tr> <tr> <td>&gt;&gt; srcMacAddress</td> "
+"<td>string</td> <td>Source MAC address</td> </tr> <tr> <td>&gt;&gt; "
+"dstMacAddress</td> <td>string</td> <td>Destination MAC address.</td> "
+"</tr> <tr> <td>&gt;&gt; dstIpAddress</td> <td>string</td> <td>Destination"
+" IP address.</td> </tr> <tr> <td>&gt; state</td> <td>enum "
+"<strong>{ACTIVE, INACTIVE}</strong></td> <td>State of the rule.</td> "
+"</tr> <tr> <td>appDNSRule</td> <td>list</td> <td>List of DNS rules.</td> "
+"</tr> <tr> <td>&gt; dnsRuleId</td> <td>string</td> <td>DNS rule ID.</td> "
+"</tr> <tr> <td>&gt; domainName</td> <td>string</td> <td>Domain name.</td>"
+" </tr> <tr> <td>&gt; ipAddressType</td> <td>enum <strong>{IPv4, "
+"IPv6}</strong></td> <td>IP address type.</td> </tr> <tr> <td>&gt; "
+"ipAddress</td> <td>string</td> <td>IP address.</td> </tr> <tr> <td>&gt; "
+"ttl</td> <td>number</td> <td>Time To Live value.</td> </tr> <tr> <td>&gt;"
+" state</td> <td>enum <strong>{ACTIVE, INACTIVE}</strong></td> <td>Rule "
+"state.</td> </tr> <tr> <td>appSupportMp1</td> <td>bool</td> <td>Whether "
+"Mp1 interface is supported.</td> </tr> <tr> <td>appName</td> "
+"<td>string</td> <td>Application name.</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5890
+msgid "#### 3. Modify appd configuration"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5892
+msgid ""
+"Appd configuration for each applications can be configured using this "
+"interface. MEP will take the difference of existing configuration and the"
+" new modification input and then act on create/modify/delete of dns "
+"and/or traffic rules."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:5896
+msgid ""
+"``` PUT "
+"/mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6168
+msgid ""
+"``` PUT /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/appd_configuration {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6270
+msgid "#### 4. Delete appd configuration"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6272
+msgid "Delete appd configuration request."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6276
+msgid ""
+"``` DELETE "
+"/mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6309
+msgid ""
+"``` DELETE /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/appd_configuration ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6367
+msgid "#### 5. Query task status"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6369
+msgid ""
+"Once the appd configuration create, modify or delete is submitted, mep "
+"will create a task and return a task id to the caller and the caller can "
+"periodically check the status of the task using this id. This interface "
+"calls the mep for the task status."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6373
+msgid "``` GET /mepcfg/app_lcm/v1/tasks/{taskId}/appd_configuration ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6379
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>Name</strong></th> <th><strong>Type</strong></th> "
+"<th><strong>Description</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>Required</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>taskId</td> <td>String</td> <td>Task ID(UUID)</td> <td>path</td> "
+"<td>Yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6406
+msgid ""
+"``` GET /mepcfg/app_lcm/v1/tasks/d464dd0a-d927-4baf-bc2c-"
+"d902fb0b2c73/appd_configuration ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6456
+msgid ""
+"\"taskId\": \"d464dd0a-d927-4baf-bc2c-d902fb0b2c73\", \"appInstanceId\": "
+"\"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f\", \"configResult\": \"SUCCESS\", "
+"\"configPhase\": \"100\", \"Detailed\": \"\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6464
+msgid "### Application Termination"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6466
+msgid ""
+"MEP support termination/stop of instance of an application after MEP "
+"receive the request from MECM."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6468
+msgid "#### 1. App Instance Termination"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6470
+msgid ""
+"Interface to remove the application's ak/sk values, unregister the "
+"services and delete the DNS and traffic rule."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6474
+msgid ""
+"``` DELETE "
+"/mep/mec_app_support/v1/applications/{appInstanceId}/AppInstanceTermination"
+" ``` Request parameters:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6481
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>Name</strong></th> <th><strong>Type</strong></th> "
+"<th><strong>Description</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>Required</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>appInstanceId</td> <td>String</td> <td>APP实例ID(UUID)</td> "
+"<td>path</td> <td>Yes</td> </tr> <tr> <td>appInstanceId</td> "
+"<td>String</td> <td>APP实例ID(UUID)</td> <td>header</td> <td>Yes</td> </tr>"
+" </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6511
+msgid ""
+"``` DELETE /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-"
+"0ee3a1a0fd1f/AppInstanceTermination ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6521
+msgid "Example Response: ``` \"\" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6526
+msgid "### Query Platform Capabilities(Services)"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6528
+msgid ""
+"MEP supports for querying the capabilities(services) registered with it. "
+"These capability information will be used by the MECM to display it to "
+"the user on its portal. MECM send the capability query to MEP over Mm5 "
+"interface."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6530
+msgid "#### 1. Query all capabilities"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6532
+msgid ""
+"Interface to query all capabilities. This interface return the capability"
+" list registered to the queried MEP server along with the consumers of "
+"it."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6536
+#: ../../Projects/MEP/MEP_Interfaces.md:6550
+msgid "``` GET /mepcfg/mec_platform_config/v1/capabilities ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6556
+#: ../../Projects/MEP/MEP_Interfaces.md:6680
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> </tr> </thead> <tbody> <tr> "
+"<td>capabilityId</td> <td>String</td> <td>Capability/Service id</td> "
+"</tr> <tr> <td>capabilityName</td> <td>String</td> <td>Capability/Service"
+" name</td> </tr> <tr> <td>status</td> <td>Enum <strong>{ACTIVE, "
+"INACTIVE}</strong></td> <td>Status</td> </tr> <tr> <td>version</td> "
+"<td>String</td> <td>Version info</td> </tr> <tr> <td>consumers</td> "
+"<td>Array[Object]</td> <td>Consumer object list</td> </tr> <tr> "
+"<td>&gt;applicationInstanceId</td> <td>String</td> <td>Consumer "
+"application id</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6605
+#: ../../Projects/MEP/MEP_Interfaces.md:6728
+msgid ""
+"\"capabilityId\": \"16384563dca094183778a41ea7701d15\", "
+"\"capabilityName\": \"FaceRegService\", \"status\": \"ACTIVE\", "
+"\"version\": \"4.5.8\", \"consumers\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6611
+#: ../../Projects/MEP/MEP_Interfaces.md:6734
+msgid "\"applicationInstanceId\": \"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6614
+#: ../../Projects/MEP/MEP_Interfaces.md:6737
+msgid "\"applicationInstanceId\": \"f05a5591-d8f2-4f89-8c0b-8cea6d45712e\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6617
+#: ../../Projects/MEP/MEP_Interfaces.md:6740
+msgid "\"applicationInstanceId\": \"86dfc97d-325e-4feb-ac4f-280a0ba42513\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6622
+msgid ""
+"\"capabilityId\": \"f7e898d1c9ea9edd05e1181bc09afc5e\", "
+"\"capabilityName\": \"Location\", \"status\": \"ACTIVE\", \"version\": "
+"\"v1.19\", \"consumers\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6628
+msgid "\"applicationInstanceId\": \"88922760-861b-4578-aae5-77b8fcb06142\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6635
+msgid "#### 2. Query individual capability"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6637
+msgid ""
+"Interface to query an individual capability from MEP. This interface "
+"return a capability along with the consumers of it."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6641
+msgid "``` GET /mepcfg/mec_platform_config/v1/capabilities/{capabilityId} ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6647
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>Name</strong></th> <th><strong>Type</strong></th> "
+"<th><strong>Description</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>Required</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>capabilityId</td> <td>String</td> <td>Capability ID（UUID）</td> "
+"<td>path</td> <td>Yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6674
+msgid ""
+"``` GET "
+"/mepcfg/mec_platform_config/v1/capabilities/16384563dca094183778a41ea7701d15"
+" ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6746
+msgid ""
+"### 异常状态码 |**HTTP状态码**|**描述**| |---|---| |400|错误的请求，用来表示请求的参数不正确。| "
+"|401|当前请求需要鉴权认证。| |403|禁止当前操作。| |404|请求的资源未被发现。| |412|请求中的先决条件验证失败。| "
+"|414|请求的URI超长，服务器拒绝处理请求。| |500|内部服务器错误。| |503|服务不可用。|"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6758
+msgid "## Dns-Server"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6760
 msgid ""
 "Mep has a programmable dns server which can perform the name resolution "
 "of the MEC applications. This management interface of the dns server is "
@@ -209,35 +3223,372 @@ msgid ""
 " interface."
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:440
+#: ../../Projects/MEP/MEP_Interfaces.md:6762
+msgid "### 1. Create/Set new entry"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6764
 msgid ""
 "DNS entry can be added or modified using this interface. Once a record is"
 " added/modified, the resource will be available for the device "
 "application to query."
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:467
+#: ../../Projects/MEP/MEP_Interfaces.md:6766
 msgid ""
 "Using this interface multiple records on multiple zones can be submitted "
 "together."
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:469
-msgid ""
-"Details about the request fields: | Field  Name   | Values"
-"                      | Mandatory?    | Description | | ------------- | "
-"--------------------------- | ------------- | ----------- | | zone"
-"          | string                      | Yes | Zone name | | name"
-"          | string                      | Yes | Domain name | | type"
-"          | enum {A, AAAA}          | Yes | DNS resource type, A in case "
-"of Ipv4 and AAAA for Ipv6 | | class         | enum {IN}               | "
-"Yes on create | Resource record class | | ttl           | int (non-zero "
-"value)        | Yes on create | Record TTL value | | rData         | "
-"list(string)                | Yes on create | IP Address list, Ip type "
-"must match with the type field |"
+#: ../../Projects/MEP/MEP_Interfaces.md:6770
+msgid "``` PUT /mep/dns_server_mgmt/v1/rrecord ```"
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:487
+#: ../../Projects/MEP/MEP_Interfaces.md:6780
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>zone</td> <td>string</td> <td>Zone name</td> "
+"<td>Yes</td> </tr> <tr> <td>name</td> <td>string</td> <td>Domain "
+"name</td> <td>Yes</td> </tr> <tr> <td>type</td> <td>enum <strong>{A, "
+"AAAA}</strong></td> <td>DNS resource type, A in case of Ipv4 and AAAA for"
+" Ipv6</td> <td>Yes</td> </tr> <tr> <td>class</td> <td>enum "
+"<strong>{IN}</strong></td> <td>Resource record class</td> <td>Yes on "
+"create</td> </tr> <tr> <td>ttl</td> <td>int (non-zero value)</td> "
+"<td>Record TTL value</td> <td>Yes on create</td> </tr> <tr> "
+"<td>rData</td> <td>list(string)</td> <td>IP Address list, Ip type must "
+"match with the <strong>type</strong> field</td> <td>Yes on create</td> "
+"</tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6831
+msgid "``` PUT /mep/dns_server_mgmt/v1/rrecord ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6835
+msgid "\"zone\": \".\", \"rr\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6838
+msgid ""
+"\"name\": \"www.example.com.\", \"type\": \"A\", \"class\": \"IN\", "
+"\"ttl\": 30, \"rData\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6843
+msgid "\"172.168.15.101\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6855
+#: ../../Projects/MEP/MEP_Interfaces.md:6916
+msgid "Return Code: 200 Success"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6857
+msgid "Example Response: ``` HTTP/1.1 200 Success ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6862
+msgid "### 2. Delete an entry"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6864
 msgid "DNS entry can be deleted from the dns-server using this interface."
 msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6868
+msgid "``` DELETE /mep/dns_server_mgmt/v1/rrecord/{fqdn}/{rrtype} ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6874
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>Name</strong></th> <th><strong>Type</strong></th> "
+"<th><strong>Description</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>Required</strong></th> </tr> </thead> <tbody> <tr> "
+"<td>fqdn</td> <td>String</td> <td>Fully Qualified Domain Name</td> "
+"<td>path</td> <td>Yes</td> </tr> <tr> <td>rrtype</td> <td>String</td> "
+"<td>Resource record type of the entry(A or AAAA).</td> <td>path</td> "
+"<td>Yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6908
+msgid "``` DELETE /mep/dns_server_mgmt/v1/rrecord/www.example.com./A ```"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6918
+msgid ""
+"Example Response: ``` HTTP/1.1 200 Success ``` ## MEP Agent Mep agent is "
+"a component which run as side car with application. It helps to get "
+"authenticaion token, do service registration, send heartbeat on behalf of"
+" application."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6925
+msgid ""
+"#### 1. Get token Applicaiontion can call this API to get authentication "
+"token from mepauth. URL ``` GET /mep-agent/v1/token ``` Request "
+"parameters:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6933
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>Name</strong></th> <th><strong>Type</strong></th> "
+"<th><strong>Description</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>Required</strong></th> </tr> </thead> <tbody> <tr> <td"
+">Content-Type</td> <td>String</td> <td>MIME type, fill in "
+"\"application/json\"</td> <td>header</td> <td>Yes</td> </tr> </tbody> "
+"</table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6958
+#: ../../Projects/MEP/MEP_Interfaces.md:7060
+msgid "Example request:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6960
+msgid "``` GET /mep-agent/v1/token"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6973
+#: ../../Projects/MEP/MEP_Interfaces.md:7075
+msgid "Return parameters:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6975
+#: ../../Projects/MEP/MEP_Interfaces.md:7077
+msgid "Return code: 200 OK"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:6977
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>access_token</td> <td>String</td> <td>Token</td> "
+"<td>Yes</td> </tr> <tr> <td>token_type</td> <td>String</td> <td>Token "
+"Type（Bearer）</td> <td>Yes</td> </tr> <tr> <td>expires_in</td> "
+"<td>int</td> <td>Expire time</td> <td>Yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:7008
+#: ../../Projects/MEP/MEP_Interfaces.md:7128
+msgid "Return example:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:7020
+msgid ""
+"#### 2. Get producer endpoint by service name Applicaiontion can call "
+"this API to get producer endpoint from mepserver. URL ``` GET /mep-"
+"agent/v1/endpoint/:serName ``` Request parameters:"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:7028
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> "
+"<th><strong>Name</strong></th> <th><strong>Type</strong></th> "
+"<th><strong>Description</strong></th> <th><strong>IN</strong></th> "
+"<th><strong>Required</strong></th> </tr> </thead> <tbody> <tr> <td"
+">Content-Type</td> <td>String</td> <td>MIME type, fill in "
+"\"application/json\"</td> <td>header</td> <td>Yes</td> </tr> <tr> "
+"<td>serName</td> <td>String</td> <td>service name</td> <td>path</td> "
+"<td>Yes</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:7062
+msgid "``` GET /mep-agent/v1/endpoint/serviceName"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:7079
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Type</th> <th>Description</th> <th>Required</th> </tr> </thead> "
+"<tbody> <tr> <td>endpoint</td> <td>Object</td> <td>endpoint</td> "
+"<td>Yes</td> </tr> <tr> <td>&gt;uris</td> <td>Array[String]</td> "
+"<td>URI格式的服务入口信息列表</td> <td>Yes</td> </tr> <tr> <td>&gt;addresses</td> "
+"<td>Array[Object]</td> <td>服务入口信息地址列表（IP地址+端口号）</td> <td>No</td> </tr> "
+"<tr> <td>&gt;&gt;host</td> <td>String</td> <td>IP地址</td> <td>No</td> "
+"</tr> <tr> <td>&gt;&gt;port</td> <td>String</td> <td>端口号</td> <td>No</td>"
+" </tr> <tr> <td>&gt;alternative</td> <td>String</td> "
+"<td>已实现格式或者外部规范定义的服务入口信息</td> <td>No</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:7137
+msgid "\"endpoint\": {"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:7134
+msgid "\"uris\": ["
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:7135
+msgid "\"https://mep-api-gw.mep:8443/VideoService145da803354a611ebb15e\""
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Interfaces.md:7136
+msgid "], \"addresses\": null, \"alternative\": null"
+msgstr ""
+
+#~ msgid "MEP Interfaces"
+#~ msgstr ""
+
+#~ msgid "Mep-Server"
+#~ msgstr ""
+
+#~ msgid "1. DNS rule configurations"
+#~ msgstr ""
+
+#~ msgid "1.1 Mp1 Interface for DNS configurations"
+#~ msgstr ""
+
+#~ msgid "1.1.1 GET all"
+#~ msgstr ""
+
+#~ msgid "1.1.2 GET one"
+#~ msgstr ""
+
+#~ msgid "1.1.2 PUT"
+#~ msgstr ""
+
+#~ msgid "1.2 Mm5 Interface for DNS configurations"
+#~ msgstr ""
+
+#~ msgid "1.2.1 POST"
+#~ msgstr ""
+
+#~ msgid "1.2.2 GET all"
+#~ msgstr ""
+
+#~ msgid "1.2.3 GET one"
+#~ msgstr ""
+
+#~ msgid "1.2.4 PUT"
+#~ msgstr ""
+
+#~ msgid "1.2.5 DELETE"
+#~ msgstr ""
+
+#~ msgid "Dns-Server"
+#~ msgstr ""
+
+#~ msgid "1. DNS management"
+#~ msgstr ""
+
+#~ msgid "1.1 Create/Set new entry"
+#~ msgstr ""
+
+#~ msgid "1.2. Delete an entry"
+#~ msgstr ""
+
+#~ msgid "This section cover the mep-server interfaces."
+#~ msgstr ""
+
+#~ msgid "DNS rules can be configured using both Mp1 and Mm5 interfaces."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Uisng the Mp1 interfaces mec apps "
+#~ "can query and activate/deactivate dns "
+#~ "rules associated to it. Implementation "
+#~ "of this interface are as per the"
+#~ " ETSI GS MEC 011 V2.1.1 document."
+#~ msgstr ""
+
+#~ msgid "Example response:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Modify the state of a rule "
+#~ "associated with an application. This "
+#~ "interface can modify the state from "
+#~ "ACTIVE to INACTIVE or vice versa. "
+#~ "No other field can be modified "
+#~ "using this interface."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Request body can be as following. "
+#~ "| Field  Name   | Values"
+#~ "                      | Mandatory?    | | "
+#~ "------------- | --------------------------- | "
+#~ "------------- | | dnsRuleId     | string"
+#~ "                      | No, if present must"
+#~ " be same with actual | | "
+#~ "domainName    | string                      | "
+#~ "No, if present must be same with"
+#~ " actual | | ipAddressType | enum "
+#~ "{IP_V4, IP_V6}     | No, if present "
+#~ "must be same with actual | | "
+#~ "ipAddress     | string                      | "
+#~ "No, if present must be same with"
+#~ " actual | | ttl           | int "
+#~ "(non-zero value)        | No, if "
+#~ "present must be same with actual |"
+#~ " | state         | enum {ACTIVE, "
+#~ "INACTIVE} | Yes |"
+#~ msgstr ""
+
+#~ msgid "Example request body:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Uisng the Mm5 interfaces MECM can "
+#~ "create, query, update or delete the "
+#~ "dns rules associated to and application."
+#~ " Implementation of this interface are "
+#~ "specified in ETSI GS MEC 010-1 "
+#~ "V1.1.1 and ETSI GS MEC 010-2 "
+#~ "V2.1.1 documents."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create a new DNS rule and "
+#~ "associate it with a MEC application. "
+#~ "DNS rule id will be generated by"
+#~ " the mep-server, thus no need "
+#~ "to pass this field during the "
+#~ "creation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Request body can be as following. "
+#~ "| Field  Name   | Values"
+#~ "                      | Mandatory? | | "
+#~ "------------- | --------------------------- | "
+#~ "---------- | | domainName    | string"
+#~ "                      | Yes | | "
+#~ "ipAddressType | enum {IP_V4, IP_V6}     "
+#~ "| Yes | | ipAddress     | string"
+#~ "                      | Yes | | ttl"
+#~ "           | int (non-zero value)"
+#~ "        | Yes | | state         | "
+#~ "enum {ACTIVE, INACTIVE} | Yes |"
+#~ msgstr ""
+
+#~ msgid "Delete a DNS rule associated to an application."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Details about the request fields: | "
+#~ "Field  Name   | Values                      |"
+#~ " Mandatory?    | Description | | "
+#~ "------------- | --------------------------- | "
+#~ "------------- | ----------- | | zone"
+#~ "          | string                      | Yes "
+#~ "| Zone name | | name          |"
+#~ " string                      | Yes | Domain"
+#~ " name | | type          | enum "
+#~ "{A, AAAA}          | Yes | DNS "
+#~ "resource type, A in case of Ipv4"
+#~ " and AAAA for Ipv6 | | class"
+#~ "         | enum {IN}               | Yes"
+#~ " on create | Resource record class"
+#~ " | | ttl           | int (non-"
+#~ "zero value)        | Yes on create "
+#~ "| Record TTL value | | rData"
+#~ "         | list(string)                | Yes "
+#~ "on create | IP Address list, Ip"
+#~ " type must match with the type "
+#~ "field |"
+#~ msgstr ""
 

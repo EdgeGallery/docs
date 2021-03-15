@@ -1,0 +1,259 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-15 06:29+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:2
+msgid "MECM App Rule Manager Interfaces"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:3
+msgid "The document is for the MECM App Rule Manager Interfaces project ."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:5
+msgid "### Queries liveness & readiness Retrieves data for liveness & readiness"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:8
+msgid "``` Resource URI: /apprulemgr/v1/health Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:13
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:36
+msgid "Example response: ``` 200 OK ```"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:41
+msgid ""
+"### Create AppRule Config Configures the app rule ``` Resource URI:  "
+"/apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration"
+" Method: POST ```"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:48
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:162
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:276
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:380
+msgid ""
+"<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> "
+"<th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> "
+"<th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> "
+"<td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> "
+"<td></td> </tr> <tr> <td>appInstance_id</td> <td>application instance "
+"id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> "
+"<tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> "
+"<td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appInstanceIds</td> "
+"<td>application instance id</td> <td>path</td> <td>yes</td> <td>Valid "
+"UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:95
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:209
+msgid "Example request body: ```"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:139
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:253
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:369
+msgid "\"appTrafficRule\": ["
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:120
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:124
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:134
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:234
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:238
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:248
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:350
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:354
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:364
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:432
+msgid "{"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:99
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:213
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:329
+msgid ""
+"\"trafficRuleId\": \"string\", \"filterType\": \"string\", \"priority\": "
+"int, \"trafficFilter\": ["
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:104
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:218
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:334
+msgid "\"srcAddress\": ["
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:105
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:108
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:111
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:114
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:117
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:219
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:222
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:225
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:228
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:231
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:335
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:338
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:341
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:344
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:347
+msgid "\"string\""
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:106
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:220
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:336
+msgid "], \"dstAddress\": ["
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:109
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:223
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:339
+msgid "], \"srcPort\": ["
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:112
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:226
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:342
+msgid "], \"dstPort\": ["
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:115
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:229
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:345
+msgid "], \"protocol\": ["
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:118
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:232
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:348
+msgid "], \"qCI\": int, \"dSCP\": int, \"tC\": int"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:122
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:126
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:136
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:153
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:236
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:240
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:250
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:267
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:352
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:356
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:366
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:434
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:435
+msgid "}"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:123
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:237
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:353
+msgid "], \"action\": \"string\", \"state\": \"string\""
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:127
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:241
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:357
+msgid "], \"appDNSRule\": ["
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:130
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:244
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:360
+msgid ""
+"\"dnsRuleId\": \"string\", \"domainName\": \"string\", \"ipAddressType\":"
+" \"string\", \"ipAddress\": \"string\", \"ttl\": int, \"state\": "
+"\"string\""
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:137
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:251
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:367
+msgid "], \"appSupportMp1\": bool, \"appName\": \"string\""
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:141
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:255
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:371
+msgid "```"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:143
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:257
+msgid "Example response: ``` 200 OK {"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:147
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:261
+msgid ""
+"\"taskId\":\"string\", \"appInstanceId\":\"string\", "
+"\"configResult\":\"string\", \"configPhase\":\"string\", "
+"\"detailed\":\"string\""
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:155
+msgid ""
+"### Update AppRule Config Updates the existing app rule ``` Resource URI:"
+" "
+"/apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration"
+" Method: PUT ```"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:269
+msgid ""
+"### Get AppRule Config Queries the existing app rule ``` Resource URI: "
+"/apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration"
+" Method: GET ```"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:323
+msgid "Example Response body: ``` 200 OK"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:373
+msgid ""
+"### Delete AppRule Config Delete the existing app rule ``` Resource URI: "
+"/apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration"
+" Method: DELETE ```"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:427
+msgid "Example Response body: ``` 200 OK {"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:433
+msgid "\"response\" :"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:433
+msgid "\"apprule_task_id\" : \"string\""
+msgstr ""
+
