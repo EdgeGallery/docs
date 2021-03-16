@@ -11,7 +11,7 @@
 |password | string |- | 注册时设置的密码，注册时需要满足密码复杂度要求，满足数字/字母/特殊字符 至少两种以上的组合，[6-18]个字符之间。数据库中的密码使用PBKDF2加盐值后存储 |
 |company | string |- | 用户公司名称 |
 |telephonenumber | string | -| 用户手机号码，用于找回密码时短信验证用户身份，必须满足11位有效数字|
-|maiaddress | string | -| 用户邮箱地址，用于找回密码时邮箱验证用户身份，必须为有效的邮箱格式|
+|mailaddress | string | -| 用户邮箱地址，用于找回密码时邮箱验证用户身份，必须为有效的邮箱格式|
 |gender| string |- | 用户性别|
 |isallowed| boolean |- | 帐号是否允许登录|
 |createtime| timestamp|- | 创建时间（即注册时间）|
@@ -25,7 +25,7 @@
  39937079-99fe-4cd8-881f-04ca8c4fe09d | admin          | 472645ad1af0101adaa6769cc865fec3b29fedeba6dc912900a59b1364b7a6bb17bb9a0575854547 | company | 13800000001     | 13800000001@edgegallery.org | 1      | t | 初始数据入库时间(now函数值) | 初始数据入库时间(now函数值)
 
 guest账号的默认密码是：guest
-admin账号的默认密码是：admin
+admin账号的默认密码是：Admin@321
 请部署前修改默认密码
 ```
 
