@@ -42,4 +42,4 @@ ATP Guide
 ![](/uploads/images/2021/atp/process.png "测试进展.png")
 
 点击右上角的查看报告，会进入该测试任务的报告页面，报告页面显示测试任务的基本信息、各测试场景的测试用例通过率以及测试用例的详细信息。
-![](/uploads/images/2020/1209/testReport.PNG "测试报告.PNG")
+![](/uploads/images/2021/atp/testReport.png "测试报告.png ")
