@@ -20,7 +20,7 @@ MEC管理平台：<br>
 * 定位服务应用作为服务供应者发布“定位服务”，对外提供生态API，其他服务可以消费“定位服务”<br>
 
 ## 登录EdgeGallery开发者平台
-https://daily.developer.edgegallery.org/<br><br>
+https://developer.edgegallery.org/<br><br>
 ## 开发准备
 * 新建一个项目<br>
 ![](/uploads/images/2020/v1.0/CreateProject.png "CreateProject.png")
