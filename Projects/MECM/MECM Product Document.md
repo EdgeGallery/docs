@@ -39,18 +39,17 @@ MECM Product Document
 ###### 规则配置-分流规则配置-接口信息配置 
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/145438_a753b694_7625361.png)
 #### 3. 边缘节点  
-##### 展示边缘节点列表以及节点监控信息 
+##### 3.1展示边缘节点列表以及节点监控信息 
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/145533_a4ba8487_7625361.png)
+##### 3.2边缘节点注册
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/150556_e75c2d7c_7625361.png) 
+##### 3.3上传k8s config文件
+![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/150617_51890e07_7625361.png)
 #### 4.系统管理
 ##### 包含：APPLCM注册、APP Rule MGR注册、边缘节点注册和应用仓库注册
 ##### 4.1 APPLCM注册
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/150449_a2f3edb9_7625361.png) 
 ##### 4.2 APP Rule MGR注册
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/150512_8d96e99b_7625361.png) 
-##### 4.3 边缘节点注册
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/150542_65f9325a_7625361.png)
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/150556_e75c2d7c_7625361.png)
-###### 上传k8s config文件
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/150617_51890e07_7625361.png)
 ##### 4.4 应用仓库注册
-![输入图片说明](https://images.gitee.com/uploads/images/2020/1226/150644_064dccb6_7625361.png)
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0324/162715_deb5a6ad_7625361.png) 
