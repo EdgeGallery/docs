@@ -10,6 +10,10 @@
     - [1.4 删除应用](#14-删除应用)
     - [1.5 获取应用最新版本](#15-获取应用最新版本)
     - [1.6 获取应用图标](#16-获取应用图标)
+	- [1.7 分片上传应用包](#17-分片上传应用包)
+	- [1.8 合并应用包](#18-合并应用包)
+	- [1.9 注册虚机应用](#19-注册虚机应用)
+	- [1.10 获取应用视频](#110-获取应用视频)
   - [2. 应用包](#2-应用包)
     - [2.1 获取应用包列表](#21-获取应用包列表)
     - [2.2 获取应用包](#22-获取应用包)
@@ -143,6 +147,7 @@ URI： /mec/appstore/v1/apps
 |userName|应用名|request param|yes|
 |file|应用包文件|RequestPart|yes|
 |icon|应用图标文件|RequestPart|yes|
+|demoVideo|应用视频文件|RequestPart|no|
 |type|应用类型|RequestPart|yes|
 |shortDesc |应用简述|RequestPart |yes|
 |affinity |架构|RequestPart |yes|
@@ -198,9 +203,107 @@ URI： /mec/appstore/v1/apps/{appId}/action/download
 ```
 
 ### 1.6 获取应用图标
-应用ID获取应用图标。
+根据应用ID获取应用图标。
 ```
 URI： /mec/appstore/v1/apps/{appId}/icon
+方法类型: GET
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|appId |应用ID|path |yes|
+
+响应示例:
+```
+200 OK
+  binary output.
+```
+
+### 1.7 分片上传应用包
+分片上传应用包。
+```
+URI： /mec/appstore/v1/apps/upload
+方法类型: POST
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|id|分包ID|RequestPart|no|
+|chunkNumber|当前文件块编号|RequestPart|yes|
+|chunkSize|分块大小|RequestPart|no|
+|currentChunkSize|当前分块大小|RequestPart|no|
+|totalSize|总大小|RequestPart|no|
+|identifier |文件表示|RequestPart|yes|
+|filename |文件名|RequestPart|no|
+|relativePath |文件相对路径|RequestPart|no|
+|totalChunks |总块数|RequestPart|no|
+|type |文件类型|RequestPart|no|
+|file |文件|RequestPart|yes|
+
+响应示例:
+```
+200 OK
+  {
+    "upload package block success"
+  }
+```
+
+### 1.8 合并应用包
+合并应用包。
+```
+URI： /mec/appstore/v1/apps/merge
+方法类型: GET
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|fileName|文件名|request param|yes|
+|guid|文件标识|request param|yes|
+
+响应示例:
+```
+200 OK
+  {
+    "file address"
+  }
+```
+
+### 1.9 注册虚机应用 
+注册虚机应用。
+```
+URI： /mec/appstore/v1/apps/vm-register
+方法类型: POST
+```
+
+|名称|描述|IN|必选|
+|---|---|---|---|
+|userId|用户ID|request param|yes|
+|userName|应用名|request param|yes|
+|fileAddress|应用包文件|RequestPart|yes|
+|icon|应用图标文件|RequestPart|yes|
+|demoVideo|应用视频文件|RequestPart|no|
+|type|应用类型|RequestPart|yes|
+|shortDesc |应用简述|RequestPart |yes|
+|affinity |架构|RequestPart |yes|
+|industry |应用所属行业|RequestPart |yes|
+|testTaskId |测试任务id|RequestPart |no|
+
+响应示例:
+```
+200 OK
+  {
+    "appName": "string",
+    "appId": "string",
+    "packageId": "string",
+    "provider": "string",
+    "version": "string"
+  }
+```
+
+### 1.10 获取应用视频
+根据应用ID获取应用视频。
+```
+URI： /mec/appstore/v1/apps/{appId}/demoVideo
 方法类型: GET
 ```
 

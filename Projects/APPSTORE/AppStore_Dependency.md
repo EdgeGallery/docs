@@ -91,7 +91,7 @@
 |javax.inject|javax.inject|1 |The Apache Software License, Version 2.0|N|
 |javax.servlet|javax.servlet-api|4.0.1 |CDDL + GPLv2 with classpath exception|N|
 |javax.validation|validation-api|2.0.1.Final |Apache License 2.0|N|
-|javax.ws.rs|javax.ws.rs-api|2.0.1 |CDDL 1.1 & GPL2 w/ CPE|N|
+|javax.ws.rs|javax.ws.rs-api|2.1 |CDDL 1.1 & GPL2 w/ CPE|N|
 |javax.xml.bind|jaxb-api|2.3.1 |CDDL 1.1 & GPL2 w/ CPE|N|
 |junit|junit|4.12 |Eclipse Public License 1.0|Y|
 |log4j|log4j|1.2.17 |The Apache Software License, Version 2.0|     N|
@@ -172,7 +172,7 @@
 |org.mybatis|mybatis|3.5.3 |The Apache Software License, Version 2.0|N|
 |org.mybatis|mybatis-spring|2.0.3 |The Apache Software License, Version 2.0|N|
 |org.mybatis.spring.boot|mybatis-spring-boot-autoconfigure|2.1.1 |The Apache Software License, Version 2.0|N|
-|org.mybatis.spring.boot|mybatis-spring-boot-starter|2.1.1 |The Apache Software License, Version 2.0|Y|
+|org.mybatis.spring.boot|mybatis-spring-boot-starter|2.1.4 |The Apache Software License, Version 2.0|Y|
 |org.objenesis|objenesis|2.6 |Apache 2|N|
 |org.osgi|org.osgi.core|4.3.1 |Apache License, Version 2.0|N|
 |org.osgi|org.osgi.enterprise|4.2.0 - no url defined)|Unknown license|N|
@@ -190,7 +190,7 @@
 |org.springframework|spring-expression|5.1.8.RELEASE |Apache License, Version 2.0|N|
 |org.springframework|spring-jcl|5.1.13.RELEASE |Apache License, Version 2.0|Y|
 |org.springframework|spring-jdbc|5.1.8.RELEASE |Apache License, Version 2.0|N|
-|org.springframework|spring-test|5.1.8.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-test|5.1.13.RELEASE |Apache License, Version 2.0|N|
 |org.springframework|spring-tx|5.1.13.RELEASE |Apache License, Version 2.0|Y|
 |org.springframework|spring-web|5.1.13.RELEASE |Apache License, Version 2.0|Y|
 |org.springframework|spring-webmvc|5.1.8.RELEASE |Apache License, Version 2.0|N|
@@ -210,10 +210,12 @@
 |org.springframework.security|spring-security-jwt|1.1.1.RELEASE |Apache 2.0|Y|
 |org.springframework.security|spring-security-test|4.2.2.RELEASE |The Apache Software License, Version 2.0|Y|
 |org.springframework.security|spring-security-web|5.1.5.RELEASE |The Apache Software License, Version 2.0|N|
-|org.springframework.security.oauth|spring-security-oauth2|2.2.6.RELEASE |Apache 2.0|Y|
+|org.springframework.security.oauth|spring-security-oauth2|2.5.0.RELEASE |Apache 2.0|Y|
 |org.springframework.security.oauth.boot|spring-security-oauth2-autoconfigure|2.1.10.RELEASE |The Apache Software License, Version 2.0|Y|
 |org.xmlunit|xmlunit-core|2.6.2 |The Apache Software License, Version 2.0|N|
 |org.yaml|snakeyaml|1.26 |Apache License, Version 2.0|Y|
+|com.github.docker-java|docker-java|3.2.7 |Apache License, Version 2.0|N|
+|org.modelmapper|modelmapper|1.1.0 |Apache License, Version 2.0|Y|
 
 
 ## AppStore-fe 三方件使用清单

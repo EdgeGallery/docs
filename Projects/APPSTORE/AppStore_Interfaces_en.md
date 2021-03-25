@@ -10,6 +10,10 @@ The document is for the appstore-be project, there are six parts of interfaces i
     - [1.4 Delete One App](#14-delete-one-app)
     - [1.5 Get Latest Version Of App](#15-get-latest-version-of-app)
     - [1.6 Get Icon Of App](#16-get-icon-of-app)
+	- [1.7 Upload Package by Segment](#17-upload-package-by-segment)
+	- [1.8 Merge App package](#18-merge-App-package)
+	- [1.9 Register Virtual Machine App](#19-register-vitual-machine-app)
+	- [1.10 Get Video of App](#110-get-video-of-app)
   - [2. Package](#2-package)
     - [2.1 Get All Packages Of APP](#21-get-all-packages-of-app)
     - [2.2 Get One Package](#22-get-one-package)
@@ -141,6 +145,7 @@ Method: POST
 |userName|app name|request param|yes|
 |file|package file|RequestPart|yes|
 |icon|app icon file|RequestPart|yes|
+|demoVideo|app demo video file|RequestPart|no|
 |type|application type|RequestPart|yes|
 |shortDesc |short desc of input|RequestPart |yes|
 |affinity |affinity of app|RequestPart |yes|
@@ -211,6 +216,103 @@ Example response:
 200 OK
   binary output.
 ```
+
+### 1.7 Upload Package by Segment
+upload package by segment.
+```
+Resource URI: /mec/appstore/v1/apps/upload
+Method: POST
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|id|block id|RequestPart|no|
+|chunkNumber|current file block number|RequestPart|yes|
+|chunkSize|block size|RequestPart|no|
+|currentChunkSize|urrent file block size|RequestPart|no|
+|totalSize|total size|RequestPart|no|
+|identifier |file identifier|RequestPart|yes|
+|filename |file name|RequestPart|no|
+|relativePath |file relative path|RequestPart|no|
+|totalChunks |total blocks|RequestPart|no|
+|type |file type|RequestPart|no|
+|file |package file|RequestPart|yes|
+
+Example response:
+```
+200 OK
+  {
+    "upload package block success"
+  }
+```
+
+### 1.8 Merge App Package
+merge app package.
+```
+Resource URI: /mec/appstore/v1/apps/merge
+Method: GET
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|fileName|file name|request param|yes|
+|guid|file identifier|request param|yes|
+
+Example response:
+```
+200 OK
+  {
+    "file address",
+  }
+```
+
+### 1.9 Register Virtual Machine APP 
+register vitual machine app.
+```
+Resource URI: /mec/appstore/v1/apps/vm-register
+Method: POST
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|userId|user id|request param|yes|
+|userName|app name|request param|yes|
+|fileAddress|package file relative path|RequestPart|yes|
+|icon|app icon file|RequestPart|yes|
+|demoVideo|app demo video file|RequestPart|no|
+|type|application type|RequestPart|yes|
+|shortDesc |short desc of input|RequestPart |yes|
+|affinity |affinity of app|RequestPart |yes|
+|industry |industry of app|RequestPart |yes|
+|testTaskId |test task id|RequestPart |no|
+
+Example response:
+```
+200 OK
+  {
+    "appName": "string",
+    "appId": "string",
+    "packageId": "string",
+    "provider": "string",
+    "version": "string"
+  }
+```
+
+### 1.10 GET APP Video
+get app video by app id.
+```
+Resource URI: /mec/appstore/v1/apps/{appId}/demoVideo
+Method: GET
+```
+
+|Name|Definition|type|Required|
+|---|---|---|---|
+|appId |app id|path |yes|
+
+Example response:
+```
+200 OK
+  binary output.
 
 ## 2. Package
 
