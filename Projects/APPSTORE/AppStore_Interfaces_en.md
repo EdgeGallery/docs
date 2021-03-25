@@ -248,6 +248,7 @@ Example response:
 
 ### 1.8 Merge App Package
 merge app package.
+
 ```
 Resource URI: /mec/appstore/v1/apps/merge
 Method: GET
@@ -298,7 +299,7 @@ Example response:
   }
 ```
 
-### 1.10 GET APP Video
+### 1.10 Get APP Video
 get app video by app id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/demoVideo
@@ -313,6 +314,7 @@ Example response:
 ```
 200 OK
   binary output.
+```
 
 ## 2. Package
 

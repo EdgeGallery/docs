@@ -104,10 +104,10 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 
 
 ### 查看应用
-1. 点击应用查看应用详情，详情界面展示应用版本，行业，类型等基本信息，下侧展示具体介绍，基本信息中的右侧操作中，右侧下载按钮有权限设置，只能下载自己上传的包，屏幕右下侧为包的结构，点击结构文件，弹框显示具体信息。
-2. 如需对APP进行评论，可使用鼠标左键点击APP详情右侧下方的评论按钮，在弹出的评论框输入评论，设置评分，鼠标左键点击按钮后，评论提交成功。
-![](/uploads/images/2020/v1.0/appstore_guide/3.png "2.1")
-![](/uploads/images/2020/v1.0/appstore_guide/4.png "2.2")
+1. 点击应用查看应用详情，详情界面展示应用版本，行业，类型等基本信息，下侧展示具体介绍，基本信息中的右侧操作中，右侧下载按钮有权限设置，只能下载自己上传的包，管理员用户可以下载所有发布的包和自己上传的包。
+2. 如需对APP进行评论，可以在评论区输入评论，设置评分，鼠标左键点击按钮后，评论提交成功。
+![](/uploads/images/2021/appstore/app_detail.png "2.1")
+![](/uploads/images/2021/appstore/comment.png "2.2")
 ![](/uploads/images/2021/appstore/comments.png "2.3")
 
 
@@ -141,10 +141,11 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 ![](/uploads/images/2021/appstore/topull.png "4.5")
 ![](/uploads/images/2021/appstore/pulled.png "4.6")
 
-5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。通过单击消息中心右侧面板右上角的接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在APP推送界面查看，点击删除按钮则删除该条消息。
+5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。通过单击消息中心右侧面板右上角的接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在APP推送界面查看，点击删除按钮则删除该条消息，双击可查看消息详情。
 ![](/uploads/images/2021/appstore/messages.png "4.7")
+![](/uploads/images/2021/appstore/message_detail.png "4.8")
 
 6.应用推送成功后切换到右边操作分析tab，在操作分析界面查看对应的信息，同时操作分析界面可以查看不同操作如：拉取、下载、通知、推送等类型的消息。
-![](/uploads/images/2021/appstore/operations.png "4.8")
+![](/uploads/images/2021/appstore/operations.png "4.9")
 
 

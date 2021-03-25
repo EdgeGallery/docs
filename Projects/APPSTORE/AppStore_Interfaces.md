@@ -279,7 +279,7 @@ URI： /mec/appstore/v1/apps/vm-register
 |---|---|---|---|
 |userId|用户ID|request param|yes|
 |userName|应用名|request param|yes|
-|fileAddress|应用包文件|RequestPart|yes|
+|fileAddress|应用包文件相对路径|RequestPart|yes|
 |icon|应用图标文件|RequestPart|yes|
 |demoVideo|应用视频文件|RequestPart|no|
 |type|应用类型|RequestPart|yes|
