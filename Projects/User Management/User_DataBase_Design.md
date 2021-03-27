@@ -91,6 +91,7 @@ admin账号的默认密码是：Admin@321
  39937079-99fe-4cd8-881f-04ca8c4fe09d |     12
  39937079-99fe-4cd8-881f-04ca8c4fe09d |     15
 
-对照tbl_tenant的初始化数据，de3565b1-a7c2-42b9-b281-3f032af29ff7是guest用户，默认拥有各平台的GUEST角色；
-39937079-99fe-4cd8-881f-04ca8c4fe09d是admin用户，默认用户各平台的ADMIN角色；
+对照tbl_tenant的初始化数据，
+de3565b1-a7c2-42b9-b281-3f032af29ff7是guest用户，默认拥有各平台的GUEST角色；
+39937079-99fe-4cd8-881f-04ca8c4fe09d是admin用户，默认拥有各平台的ADMIN角色；
 ```
