@@ -140,35 +140,35 @@ user-mgmt下配置文件application.properties，设置sms.enabled=false
 
 #### 忘记密码后找回密码界面
 
-1. 当只开启了邮箱服务时，只能通过邮箱找回
+（1）当只开启了邮箱服务时，只能通过邮箱找回
 
 ![](https://images.gitee.com/uploads/images/2021/0327/174104_14acc1f4_8279549.jpeg "忘记密码--邮箱找回.jpg")
 
-2. 当只开启了短信服务时，只能通过手机找回
+（2）当只开启了短信服务时，只能通过手机找回
 
 ![](https://images.gitee.com/uploads/images/2021/0327/174252_b29af3db_8279549.jpeg "忘记密码--手机找回.jpg")
 
-3. 当邮箱服务和短信服务同时开启时，可以二选一
+（3）当邮箱服务和短信服务同时开启时，可以二选一
 
 ![](https://images.gitee.com/uploads/images/2021/0327/174302_0c7b7b1e_8279549.jpeg "忘记密码--邮箱+手机.jpg")
 
 #### 用户中心界面
 
-1. 主界面
+（1）主界面
 
 ![](https://images.gitee.com/uploads/images/2021/0327/174519_3bd25f38_8279549.jpeg "用户中心.JPG")
 
-2. 修改密码
+（2）修改密码
 
 ![](https://images.gitee.com/uploads/images/2021/0327/174547_1e802089_8279549.jpeg "用户中心--修改密码.JPG")
 
 #### 用户列表管理界面
 
-1. 主界面
+（1）主界面
 
 ![](https://images.gitee.com/uploads/images/2021/0327/174603_116b7bbb_8279549.jpeg "用户列表.JPG")
 
-2. 设置用户角色
+（2）设置用户角色
 
 ![](https://images.gitee.com/uploads/images/2021/0327/174617_685aca73_8279549.jpeg "用户列表--设置角色.JPG")
 
