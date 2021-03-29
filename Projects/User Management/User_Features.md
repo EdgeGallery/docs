@@ -33,7 +33,9 @@
 
 ### 单点登录
 
-单点登录系统是基于ServiceComb、Spring Security、Oauth2、JWT、Vue等技术实现，采用OAuth2协议的授权码模式（authorization code），MECM、AppStore、Developer作为客户端，与认证服务器user-mgmt-be进行交互，实现单点登陆与单点注销功能。使用Cookie+Session机制实现用户认证鉴权和超时退出功能，使用JWT存储用户基本信息，减轻认证服务器压力。
+单点登录系统是基于ServiceComb、Spring Security、Oauth2、JWT、Vue等技术实现，采用OAuth2协议的授权码模式（authorization code）。MECM、AppStore、Developer、Atp、Lab应用平台作为客户端，与认证服务器user-mgmt-be进行交互，实现单点登陆与单点注销功能。使用Cookie+Session机制实现用户认证鉴权和超时退出功能，使用JWT存储用户基本信息，减轻认证服务器压力。
+
+这里以MECM和AppStore两个应用平台作为客户端为例来说明单点登录和单点注销的处理时序。
 
 #### 单点登录时序图
 
