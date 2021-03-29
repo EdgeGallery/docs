@@ -37,9 +37,9 @@
 
 这里以MECM和AppStore两个应用平台作为客户端为例来说明单点登录和单点注销的处理时序。
 
-![单点登录时序图](/uploads/images/2020/0709/165324_cdda101c_5504908.png)
+![单点登录时序图](https://images.gitee.com/uploads/images/2021/0329/150921_4a66e0ac_8279549.png "单点登录.png")
 
-![单点注销时序图](/uploads/images/2020/0709/165333_fa1db216_5504908.png)
+![单点注销时序图](https://images.gitee.com/uploads/images/2021/0329/150931_c030397c_8279549.png "单点注销.png")
 
 ### 用户中心
 
