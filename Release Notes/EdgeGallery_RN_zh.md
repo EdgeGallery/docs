@@ -36,10 +36,10 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
     * 【跨平台支持】支持基于Openstack的虚机应用和基于K8S容器应用的孵化集成
     * 【体验优化】
         - APP分类、APP推荐、爆款动态刷新
-        - 提供EdgeGallery小程序、设计态等
     * 【EdgeNative支持】
         - IaaS/PaaS/应用都支持按需部署、应用框架自动生成
         - MEP微服务管理架构可视化
+        - 提供EdgeGallery小程序、设计态等
     * 【API管理】ETSI MEC API、3GPP CAPIF以及昇腾能力支持情况匹配
     * 【安全、用户管理】
         - 分权分域，对关键操作和数据进行权限控制
