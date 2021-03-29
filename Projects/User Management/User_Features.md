@@ -29,7 +29,7 @@
 2. 如果提供了邮箱地址，校验其是否符合格式要求的邮箱地址，同时会校验邮箱地址是否已经被注册。
 3. 如果提供了手机号码，校验其是否符合格式要求的中国大陆手机号码，同时会校验手机号码是否已经被注册。
     
-![用户注册处理时序图](https://images.gitee.com/uploads/images/2021/0329/142211_54c78eb7_8279549.png "用户注册.png")
+![用户注册处理时序图](/uploads/images/2021/usermgmt/Sequence_Register.png "Sequence_Register.png")
 
 ### 单点登录
 
