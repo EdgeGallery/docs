@@ -29,7 +29,7 @@
 2. 如果提供了邮箱地址，校验其是否符合格式要求的邮箱地址，同时会校验邮箱地址是否已经被注册。
 3. 如果提供了手机号码，校验其是否符合格式要求的中国大陆手机号码，同时会校验手机号码是否已经被注册。
     
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0329/142211_54c78eb7_8279549.png "用户注册.png")
+![用户注册处理时序图](https://images.gitee.com/uploads/images/2021/0329/142211_54c78eb7_8279549.png "用户注册.png")
 
 ### 单点登录
 
@@ -64,7 +64,7 @@
 2.  用户输入收到的验证码和新密码，修改成功后，返回登录界面。
 
 通过邮箱地址找回密码处理时序图如下：
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0329/142251_480c0670_8279549.png "根据邮箱地址找回密码.png")
+![根据邮箱地址找回密码处理时序图](https://images.gitee.com/uploads/images/2021/0329/142251_480c0670_8279549.png "根据邮箱地址找回密码.png")
 
 #### 通过手机号码找回密码
 
@@ -74,7 +74,7 @@
 2.  用户输入收到的验证码和新密码，修改成功后，返回登录界面。
 
 通过手机号码找回密码处理时序图如下：
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0329/142633_99343255_8279549.png "根据手机号找回密码.png")
+![根据手机号码找回密码处理时序图](https://images.gitee.com/uploads/images/2021/0329/142633_99343255_8279549.png "根据手机号找回密码.png")
 
 ### 访客登录
 
@@ -124,7 +124,7 @@
 user-mgmt下配置文件application.properties，设置sms.enabled=false
 ```
 
-## 界面设计
+### 界面设计
 
 - [用户注册界面](#用户注册界面)
 - [用户登录界面](#用户登录界面)
@@ -132,45 +132,45 @@ user-mgmt下配置文件application.properties，设置sms.enabled=false
 - [用户中心界面](#用户中心界面)
 - [用户列表管理界面](#用户列表管理界面)
 
-### 用户注册界面
+#### 用户注册界面
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0327/174046_5049d49f_8279549.jpeg "注册.jpg")
+![用户注册界面](https://images.gitee.com/uploads/images/2021/0327/174046_5049d49f_8279549.jpeg "注册.jpg")
 
-### 用户登录界面
+#### 用户登录界面
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0327/174033_c4a6d9e7_8279549.jpeg "登录.jpg")
+![用户登录界面](https://images.gitee.com/uploads/images/2021/0327/174033_c4a6d9e7_8279549.jpeg "登录.jpg")
 
-### 忘记密码后找回密码界面
+#### 忘记密码后找回密码界面
 
 1. 当只开启了邮箱服务时，只能通过邮箱找回
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0327/174104_14acc1f4_8279549.jpeg "忘记密码--邮箱找回.jpg")
+![通过邮箱地址找回密码](https://images.gitee.com/uploads/images/2021/0327/174104_14acc1f4_8279549.jpeg "忘记密码--邮箱找回.jpg")
 
 2. 当只开启了短信服务时，只能通过手机找回
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0327/174252_b29af3db_8279549.jpeg "忘记密码--手机找回.jpg")
+![通过手机号码找回密码](https://images.gitee.com/uploads/images/2021/0327/174252_b29af3db_8279549.jpeg "忘记密码--手机找回.jpg")
 
 3. 当邮箱服务和短信服务同时开启时，可以二选一
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0327/174302_0c7b7b1e_8279549.jpeg "忘记密码--邮箱+手机.jpg")
+![通过邮箱地址或手机号码找回密码](https://images.gitee.com/uploads/images/2021/0327/174302_0c7b7b1e_8279549.jpeg "忘记密码--邮箱+手机.jpg")
 
-### 用户中心界面
+#### 用户中心界面
 
 1. 主界面
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0327/174519_3bd25f38_8279549.jpeg "用户中心.JPG")
+![用户中心主界面](https://images.gitee.com/uploads/images/2021/0327/174519_3bd25f38_8279549.jpeg "用户中心.JPG")
 
 2. 修改密码
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0327/174547_1e802089_8279549.jpeg "用户中心--修改密码.JPG")
+![在用户中心修改密码](https://images.gitee.com/uploads/images/2021/0327/174547_1e802089_8279549.jpeg "用户中心--修改密码.JPG")
 
-### 用户列表管理界面
+#### 用户列表管理界面
 
 1. 主界面
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0327/174603_116b7bbb_8279549.jpeg "用户列表.JPG")
+![用户列表界面](https://images.gitee.com/uploads/images/2021/0327/174603_116b7bbb_8279549.jpeg "用户列表.JPG")
 
 2. 设置用户角色
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0327/174617_685aca73_8279549.jpeg "用户列表--设置角色.JPG")
+![设置用户角色](https://images.gitee.com/uploads/images/2021/0327/174617_685aca73_8279549.jpeg "用户列表--设置角色.JPG")
 
