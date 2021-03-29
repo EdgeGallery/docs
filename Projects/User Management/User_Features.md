@@ -37,9 +37,9 @@
 
 这里以MECM和AppStore两个应用平台作为客户端为例来说明单点登录和单点注销的处理时序。
 
-![单点登录时序图](https://images.gitee.com/uploads/images/2021/0329/150921_4a66e0ac_8279549.png "单点登录.png")
+![单点登录时序图](/uploads/images/2021/usermgmt/Sequence_SingleSignOn.png "Sequence_SingleSignOn.png")
 
-![单点注销时序图](https://images.gitee.com/uploads/images/2021/0329/150931_c030397c_8279549.png "单点注销.png")
+![单点注销时序图](/uploads/images/2021/usermgmt/Sequence_SingleSignOut.png "Sequence_SingleSignOut.png")
 
 ### 用户中心
 
@@ -59,7 +59,7 @@
 1.  用户输入邮箱地址，完成滑动块验证，然后请求获取验证码。此时前端调用后台接口，判断邮箱地址是否已注册，如果已注册，则发送验证码到邮箱。如果没有注册，提示用户邮箱地址不存在。
 2.  用户输入收到的验证码和新密码，修改成功后，返回登录界面。
 
-![根据邮箱地址找回密码处理时序图](https://images.gitee.com/uploads/images/2021/0329/142251_480c0670_8279549.png "根据邮箱地址找回密码.png")
+![根据邮箱地址找回密码处理时序图](/uploads/images/2021/usermgmt/Sequence_RetrievePwByMail.png "Sequence_RetrievePwByMail.png")
 
 #### 通过手机号码找回密码
 
@@ -68,7 +68,7 @@
 1.  用户输入手机号码，完成滑动块验证，然后请求获取验证码。此时前端调用后台接口，判断手机号码是否已注册，如果已注册，则通过手机短信发送验证码。如果没有注册，提示用户手机号码不存在。
 2.  用户输入收到的验证码和新密码，修改成功后，返回登录界面。
 
-![根据手机号码找回密码处理时序图](https://images.gitee.com/uploads/images/2021/0329/142633_99343255_8279549.png "根据手机号找回密码.png")
+![根据手机号码找回密码处理时序图](/uploads/images/2021/usermgmt/Sequence_RetrievePwByPhone.png "Sequence_RetrievePwByPhone.png")
 
 ### 访客登录
 
@@ -128,43 +128,43 @@ user-mgmt下配置文件application.properties，设置sms.enabled=false
 
 #### 用户注册界面
 
-![](https://images.gitee.com/uploads/images/2021/0327/174046_5049d49f_8279549.jpeg "注册.jpg")
+![](/uploads/images/2021/usermgmt/UI_Register.png "UI_Register.png")
 
 #### 用户登录界面
 
-![](https://images.gitee.com/uploads/images/2021/0327/174033_c4a6d9e7_8279549.jpeg "登录.jpg")
+![](/uploads/images/2021/usermgmt/UI_Login.png "UI_Login.png")
 
 #### 忘记密码后找回密码界面
 
 （1）当只开启了邮箱服务时，只能通过邮箱找回
 
-![](https://images.gitee.com/uploads/images/2021/0327/174104_14acc1f4_8279549.jpeg "忘记密码--邮箱找回.jpg")
+![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail.png "UI_RetrievePwByMail.png")
 
 （2）当只开启了短信服务时，只能通过手机找回
 
-![](https://images.gitee.com/uploads/images/2021/0327/174252_b29af3db_8279549.jpeg "忘记密码--手机找回.jpg")
+![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone.png "UI_RetrievePwByPhone.png")
 
 （3）当邮箱服务和短信服务同时开启时，可以二选一
 
-![](https://images.gitee.com/uploads/images/2021/0327/174302_0c7b7b1e_8279549.jpeg "忘记密码--邮箱+手机.jpg")
+![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhoneOrMail.png "UI_RetrievePwByPhoneOrMail.png")
 
 #### 用户中心界面
 
 （1）主界面
 
-![](https://images.gitee.com/uploads/images/2021/0327/174519_3bd25f38_8279549.jpeg "用户中心.JPG")
+![](/uploads/images/2021/usermgmt/UI_AccountCenter.png "UI_AccountCenter.png")
 
 （2）修改密码
 
-![](https://images.gitee.com/uploads/images/2021/0327/174547_1e802089_8279549.jpeg "用户中心--修改密码.JPG")
+![](/uploads/images/2021/usermgmt/UI_AccountCenter_ModifyPw.png "UI_AccountCenter_ModifyPw.png")
 
 #### 用户列表管理界面
 
 （1）主界面
 
-![](https://images.gitee.com/uploads/images/2021/0327/174603_116b7bbb_8279549.jpeg "用户列表.JPG")
+![](/uploads/images/2021/usermgmt/UI_UserList.png "UI_UserList.png")
 
 （2）设置用户角色
 
-![](https://images.gitee.com/uploads/images/2021/0327/174617_685aca73_8279549.jpeg "用户列表--设置角色.JPG")
+![](/uploads/images/2021/usermgmt/UI_UserList_Setting.png "UI_UserList_Setting.png")
 
