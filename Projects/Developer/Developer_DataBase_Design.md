@@ -292,3 +292,101 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
          CONSTRAINT tbl_release_config_pkey PRIMARY KEY (release_id)
   );
 ```
+
+-tbl_vm_regulation： 虚机规则，虚机属性说明（虚机部署时提供选择）
+```
+  CREATE TABLE IF NOT EXISTS  tbl_vm_regulation  (
+       regulation_id  SERIAL,                         --规则id
+       architecture  varchar(50) DEFAULT NULL,        --虚机架构
+       name_zh  varchar(50) NOT NULL DEFAULT NULL,    --虚机中文名称
+       name_en  varchar(50) NOT NULL DEFAULT NULL,    --虚机英文名称
+       scene_zh  varchar(255) DEFAULT NULL,           --虚机使用场景
+       scene_en  varchar(255) DEFAULT NULL,           --虚机使用场景英文说明
+       memory  int4  DEFAULT NULL,                    --虚拟内存
+       cpu  int4  DEFAULT NULL,                       --虚机cpu   
+       system_disk  int4  DEFAULT NULL,               --虚机系统盘大小
+       data_disk  int4  DEFAULT NULL,                 --虚机数据盘大小
+       gpu  varchar(50)  DEFAULT NULL,                --虚机gpu
+       other_ability  varchar(255)  DEFAULT NULL      --虚机其他能力
+    );
+```
+
+-tbl_vm_network：虚机网络配置
+```
+  CREATE TABLE IF NOT EXISTS  tbl_vm_network  (
+       network_type  varchar(50) DEFAULT NULL,    --网络类型
+       description_zh  varchar(255) DEFAULT NULL, --网络中文描述
+       description_en  varchar(255) DEFAULT NULL, --网络英文描述
+       network_name  varchar(50) DEFAULT NULL     --网络名称
+    );
+```
+
+-tbl_vm_system：虚机系统属性说明
+```
+  CREATE TABLE IF NOT EXISTS  tbl_vm_system  (
+       system_id  SERIAL,                          --系统id
+       type  varchar(50) DEFAULT NULL,             --系统类型
+       operate_system  varchar(50) DEFAULT NULL,   --系统名称
+       version  varchar(50) NOT NULL DEFAULT NULL, --系统版本
+       system_bit  varchar(50) DEFAULT NULL,       --系统大小
+       system_disk  int4  DEFAULT NULL             --系统盘说明
+    );
+```
+
+-tbl_vm_flavor：虚机规格模板说明
+```
+  CREATE TABLE IF NOT EXISTS  tbl_vm_flavor  (
+       architecture  varchar(50) DEFAULT NULL,  --虚机架构规格
+       flavor  varchar(50) DEFAULT NULL,        --虚机规格模板
+       constraints  varchar(50) DEFAULT NULL    --虚机约束条件
+    );
+```
+
+-tbl_project_vm_create_config：app项目虚机部署，创建虚机的配置说明
+```
+    CREATE TABLE IF NOT EXISTS  tbl_project_vm_create_config  (
+       vm_id   varchar(255) NOT NULL DEFAULT NULL,                 --虚机id
+       project_id  varchar(50) DEFAULT NULL,                       --项目id
+       vm_regulation_desc  varchar(512) DEFAULT NULL,              --虚机规则描述
+       vm_system_desc  varchar(512) NOT NULL DEFAULT NULL,         --虚机系统说明
+       vm_network_desc  varchar(512) DEFAULT NULL,                 --虚机网络说明
+       vm_name  varchar(50)  DEFAULT NULL,                         --虚机名称
+       host  varchar(512)  DEFAULT NULL,                           --虚机主机说明
+       status  varchar(50)  DEFAULT NULL,                          --虚机状态
+       stage_status  varchar(500)  DEFAULT NULL,                   --虚机部署步骤状态
+       lcm_token  varchar(1024)  DEFAULT NULL,                     --lcm token
+       vm_info  varchar(512)  DEFAULT NULL,                        --虚机信息
+       app_instance_id  varchar(50)  DEFAULT NULL,                 --部署的app实例id
+       package_id  varchar(100)  DEFAULT NULL,                     --部署生成的csar包id
+       create_time   timestamptz(6)  DEFAULT NULL,                 --创建时间
+       log  text  DEFAULT NULL,                                    --操作日志
+       CONSTRAINT  tbl_vm_create_config_pkey  PRIMARY KEY ( vm_id )
+    );
+```
+
+-tbl_project_vm_image_config: app项目虚机部署，镜像配置说明
+```
+    CREATE TABLE IF NOT EXISTS  tbl_project_vm_image_config  (
+       vm_id   varchar(255) NOT NULL DEFAULT NULL,              --虚机id
+       image_id  varchar(50) DEFAULT NULL,                      --镜像id
+       project_id  varchar(50) DEFAULT NULL,                    --项目id
+       vm_name  varchar(50) NOT NULL DEFAULT NULL,              --虚机名称
+       image_name  varchar(50) DEFAULT NULL,                    --镜像名称
+       app_instance_id  varchar(50)  DEFAULT NULL,              --实例id
+       host_ip  varchar(50)  DEFAULT NULL,                      --主机ip
+       sum_chunk_num  varchar(50)  DEFAULT NULL,                --镜像块数
+       chunk_size  varchar(50)  DEFAULT NULL,                   --镜像块大小
+       stage_status  varchar(500)  DEFAULT NULL,                --部署状态
+       status  varchar(512)  DEFAULT NULL,                      --状态
+       lcm_token  varchar(1024)  DEFAULT NULL,                  --lcm token
+       create_time   timestamptz(6)  DEFAULT NULL,              --创建时间
+       log  text  DEFAULT NULL,                                 --日志
+      CONSTRAINT  tbl_vm_image_config_pkey  PRIMARY KEY ( vm_id )
+    );
+```
+
+
+
+
+
+
