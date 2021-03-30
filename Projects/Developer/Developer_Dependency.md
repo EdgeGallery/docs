@@ -68,18 +68,18 @@ Developer Dependency
 |commons-io|commons-io|2.6|Apache 2.0|Y|
 |commons-lang|commons-lang|2.6|Apache  2.0|N|
 |commons-net|commons-net|3.3|Apache  2.0|Y|
-|io.lettuce|lettuce-core|5.1.8.RELEASE |Apache License, Version 2.0|Y|
-|io.netty|netty-buffer|4.1.36.Final |Apache License, Version 2.0|N|
-|io.netty|netty-codec|4.1.36.Final |Apache License, Version 2.0|N|
-|io.netty|netty-codec-dns|4.1.36.Final |Apache License, Version 2.0|N|
-|io.netty|netty-codec-http|4.1.36.Final |Apache License, Version 2.0|N|
-|io.netty|netty-codec-http2|4.1.36.Final |Apache License, Version 2.0|N|
-|io.netty|netty-codec-socks|4.1.36.Final |Apache License, Version 2.0|N|
-|io.netty|netty-common|4.1.36.Final |Apache License, Version 2.0|N|
-|io.netty|netty-handler|4.1.36.Final |Apache License, Version 2.0|N|
-|io.netty|netty-handler-proxy|4.1.36.Final |Apache License, Version 2.0|N|
-|io.netty|netty-resolver|4.1.36.Final |Apache License, Version 2.0|N|
-|io.netty|netty-resolver-dns|4.1.36.Final |Apache License, Version 2.0|N|
+|io.lettuce|lettuce-core|5.1.8.RELEASE |Apache 2.0|Y|
+|io.netty|netty-buffer|4.1.36.Final |Apache 2.0|N|
+|io.netty|netty-codec|4.1.36.Final |Apache 2.0|N|
+|io.netty|netty-codec-dns|4.1.36.Final |Apache 2.0|N|
+|io.netty|netty-codec-http|4.1.36.Final |Apache 2.0|N|
+|io.netty|netty-codec-http2|4.1.36.Final |Apache 2.0|N|
+|io.netty|netty-codec-socks|4.1.36.Final |Apache 2.0|N|
+|io.netty|netty-common|4.1.36.Final |Apache 2.0|N|
+|io.netty|netty-handler|4.1.36.Final |Apache 2.0|N|
+|io.netty|netty-handler-proxy|4.1.36.Final |Apache 2.0|N|
+|io.netty|netty-resolver|4.1.36.Final |Apache 2.0|N|
+|io.netty|netty-resolver-dns|4.1.36.Final |Apache 2.0|N|
 |io.netty|netty-tcnative-boringssl-static|2.0.25.Final |Apache License, Version 2.0|N|
 |io.netty|netty-transport|4.1.36.Final |Apache License, Version 2.0|N|
 |io.projectreactor|reactor-core|3.2.8.RELEASE |The Apache Software License, Version 2.0|Y|
