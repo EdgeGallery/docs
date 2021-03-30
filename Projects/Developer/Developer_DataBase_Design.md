@@ -6,9 +6,9 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
 - tbl_plugin: 存储开发者上传的插件信息，如名字、满意度、插件保存路径等
 ```
   CREATE TABLE tbl_plugin (
-    	  pluginid              varchar(255)       NOT NULL,    --插件ID
-    	  pluginname            varchar(255)       NOT NULL,    --插件名字
-    	  introduction          varchar(500)       NULL,        --插件简介
+    	pluginid              varchar(255)       NOT NULL,    --插件ID
+    	pluginname            varchar(255)       NOT NULL,    --插件名字
+    	introduction          varchar(500)       NULL,        --插件简介
         satisfaction          float4             NOT NULL,    --满意度（评分）
         codelanguage          varchar(255)       NOT NULL,    --插件代表的编程语言
         plugintype            int4               NOT NULL,    --插件类型（1：plugin 2:sdk）
@@ -122,12 +122,14 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
 - tbl_openmep_capability: 存储开发者在开发者平台自构建应用项目时，平台提供的全部能力的信息
 ```
   CREATE TABLE  tbl_openmep_capability  (
-       group_id          varchar(50)     NOT NULL,      --能力组ID
-       one_level_name    varchar(255)    DEFAULT NULL,  --能力名称：一级菜单
-       two_level_name    varchar(255)    DEFAULT NULL,  --能力名称：二级菜单
-       three_level_name  varchar(255)    DEFAULT NULL,  --能力名称：三级菜单
-       type          varchar(20)     DEFAULT NULL,  --能力类型
-       description   text            DEFAULT NULL,  --能力描述
+       group_id          varchar(50)     NOT NULL,         --能力组ID
+       one_level_name    varchar(255)    DEFAULT NULL,     --能力名称：一级菜单名称
+       one_level_name_en    varchar(255)    DEFAULT NULL,  --能力名称：一级菜单英文名称
+       two_level_name    varchar(255)    DEFAULT NULL,     --能力名称：二级菜单名称
+       two_level_name_en  varchar(255)    DEFAULT NULL,    --能力名称：二级菜单英文名称
+       type          varchar(20)     DEFAULT NULL,         --能力类型
+       description   text            DEFAULT NULL,         --能力描述
+       description_en   text            DEFAULT NULL,      --能力英文描述
        CONSTRAINT  tbl_openmep_capability_pkey  PRIMARY KEY ( group_id )
   );
 ```
@@ -137,12 +139,15 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   CREATE TABLE  tbl_openmep_capability_detail  (
        detail_id      varchar(50)     NOT NULL,       --能力详情ID
        service        varchar(100)    DEFAULT NULL,   --服务名称
+       service_en     varchar(100)    DEFAULT NULL,   --服务英文名称  
        version        varchar(100)    DEFAULT NULL,   --服务版本
        description    text            DEFAULT NULL,   --服务描述
+       description_en text         DEFAULT NULL,      --服务英文描述
        provider       varchar(100)    DEFAULT NULL,   --服务提供者
        group_id       varchar(50)     DEFAULT NULL,   --能力ID（对应tbl_openmep_capability的group_id）
        api_file_id    varchar(255)    DEFAULT NULL,   --服务API文件ID
        guide_file_id  varchar(255)    DEFAULT NULL,   --服务说明文档
+       guide_file_id_en  varchar(255)    DEFAULT NULL,   --服务说明文档-英文
        upload_time    timestamptz(6)  NOT NULL,       --上传时间
        host           varchar(50)     DEFAULT NULL,   --注册的服务名
        port           int4            DEFAULT NULL,   --服务端口
@@ -157,13 +162,13 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
 - tbl_project_image: 存储开发者在开发者平台对自构建的应用项目进行部署测试时，开发者上传或者填写的镜像信息，一个项目的可以利用不同的镜像构建多次
 ```
   CREATE TABLE  tbl_project_image  (
-       id            varchar(50)      NOT NULL,       --镜像ID
-       name          varchar(100)     NOT NULL,       --镜像名称
-       version       varchar(50)      NOT NULL,       --镜像版本
-       project_id    varchar(50)      NOT NULL,       --项目ID（对应tbl_app_project中的id）
-       type          varchar(50)      NOT NULL,       --镜像类型
-       port          int4             DEFAULT '-1',   --镜像端口  
-       node_port     int4             DEFAULT '-1',   --镜像对外暴露的端口
+       id                 varchar(255)       NOT NULL,           --镜像ID
+       pod_name           varchar(255)       DEFAULT NULL,       --镜像名称(项目名称)
+       pod_containers     text               DEFAULT NULL,       --镜像信息
+       project_id         varchar(255)       DEFAULT NULL,       --项目ID（对应tbl_app_project中的id）
+       svc_type           varchar(255)       DEFAULT NULL,       --镜像类型（可能多个）
+       svc_port           varchar(255)       DEFAULT NULL,       --镜像端口 （可能多个）
+       svc_node_port      varchar(255)       DEFAULT NULL,       --镜像对外暴露的端口
       CONSTRAINT  tbl_project_image_pkey  PRIMARY KEY ( id )
   );
 ```
@@ -176,20 +181,20 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
        agent_config        text             DEFAULT NULL,    --MEP AGENT配置项
        image_file_id       varchar(255)     NOT NULL,        --镜像文件ID
        app_api_file_id     varchar(50)      DEFAULT NULL,    --项目API文件ID
-       status              varchar(100)     DEFAULT NULL,    --项目状态
+       deploy_file_id      varchar(50)      DEFAULT NULL,    --部署文件ID
+       private_host        bool             DEFAULT FALSE,   --节点是否私有
+       platform            varchar(100)     DEFAULT NULL,    --部署方式
        access_url          varchar(200)     DEFAULT NULL,    --项目可访问的URl
        error_log           text             DEFAULT NULL,    --项目部署测试失败的日志
        deploy_date         timestamptz(6)   DEFAULT NULL,    --项目部署时间
        hosts               varchar(255)     DEFAULT NULL,    --项目部署选择的服务器信息
        app_instance_id     varchar(50)      DEFAULT NULL,    --项目部署成功上传到应用商店生成的实例ID
        work_load_id        varchar(255)     DEFAULT NULL,    --部署项目到applcm用
-       deploy_file_id      varchar(50)      DEFAULT NULL,    --部署文件ID
-       private_host        bool             DEFAULT FALSE,   --节点是否私有
-       platform            varchar(100)     DEFAULT NULL,    --部署方式
        pods                text             DEFAULT NULL,    --部署pods信息
        deploy_status       varchar(255)     DEFAULT NULL,    --部署状态
        stage_status        varchar(255)     DEFAULT NULL,    --部署步骤
        lcm_token           varchar(1000)    DEFAULT NULL,    --lcm token
+       package_id          varchar(255)     DEFAULT NULL,    --生成的csar包ID
        CONSTRAINT  tbl_project_test_config_pkey  PRIMARY KEY ( test_id )
   );
 ```
@@ -204,11 +209,14 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
        architecture      varchar(100)   DEFAULT NULL,    --架构
        status            varchar(20)    DEFAULT NULL,    --状态
        protocol          varchar(20)    DEFAULT NULL,    --协议
-       ip                varchar(20)    DEFAULT NULL,    --IP地址
+       lcm_ip            varchar(20)    DEFAULT NULL,    --IP地址
+       mec_host          varchar(20)    DEFAULT NULL,    --mec主机地址
        os                varchar(255)   DEFAULT NULL,    --操作系统名称
        port_range_min    int            DEFAULT '-1',    --端口最小值
        port_range_max    int            DEFAULT '-1',    --端口最大值
        port              int4           DEFAULT '-1',    --端口值
+       user_name         varchar(50)    DEFAULT NULL,    --登录host所需的用户名  
+       password          varchar(50)    DEFAULT NULL,    --登录host所需的密码
        delete            bool           DEFAULT NULL     --是否删除  
   );
 ```
@@ -235,6 +243,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
        project_id         varchar(50)  DEFAULT NULL,  --项目ID(对应tbl_app_project中的id)
        content            text         DEFAULT NULL,  --文件内容
        upload_time_stamp  bigint       DEFAULT NULL,  --上传时间
+       config_type        varchar(50)  DEFAULT NULL,  --区别部署类型（部署文件/可视化配置）
       CONSTRAINT  tbl_helm_template_yaml_pkey  PRIMARY KEY ( file_id )
   );
 ```
@@ -249,6 +258,24 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
        workload_id   varchar(50)  NOT NULL,  --模拟部署的ID
        create_time   varchar(50)  NOT NULL   --创建时间
   );
+```
+
+-tbl_host_log： 记录app项目在边缘节点上部署的日志
+```
+   CREATE TABLE IF NOT EXISTS  tbl_host_log  (
+       log_id  varchar(50) NOT NULL,               --日志ID
+       host_ip  varchar(50) NOT NULL,              --host IP
+       user_name  varchar(50) DEFAULT NULL,        --用户名
+       user_id  varchar(50) DEFAULT NULL,          --用户ID
+       project_id  varchar(50) DEFAULT NULL,       --项目ID
+       project_name  varchar(50) DEFAULT NULL,     --项目名称
+       app_instances_id  varchar(50) DEFAULT NULL, --app项目的实例ID
+       deploy_time  varchar(50) DEFAULT NULL,      --项目部署时间
+       status  varchar(50) DEFAULT NULL,           --host状态
+       operation  varchar(50) DEFAULT NULL,        --操作
+       host_id  varchar(50) DEFAULT NULL           --host ID
+    );
+     
 ```
 
 - tbl_release_config: 存储应用发布对应的配置信息
