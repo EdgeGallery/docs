@@ -6,54 +6,68 @@ Developer Dependency
 
 |groupId|artifactId|version|license|direct import (Y/N)|
 |---|---|---|---|---|
-|aopalliance|aopalliance|1|Public Domain|N|
-|com.fasterxml|classmate|1.4.0 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.core|jackson-annotations|2.9.0 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.core|jackson-core|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.core|jackson-databind|2.9.10.6 |The Apache Software License, Version 2.0|Y|
-|com.fasterxml.jackson.dataformat|jackson-dataformat-xml|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.dataformat|jackson-dataformat-yaml|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.datatype|jackson-datatype-jdk8|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.datatype|jackson-datatype-jsr310|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.module|jackson-module-jaxb-annotations|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.module|jackson-module-parameter-names|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.woodstox|woodstox-core|5.0.3 |The Apache License, Version 2.0|N|
-|com.github.ben-manes.caffeine|caffeine|2.6.2 |Apache License, Version 2.0|N|
-|com.github.waffle|waffle-jna|1.9.1 |Eclipse Public License|N|
-|com.google.code.findbugs|jsr305|3.0.2 |The Apache Software License, Version 2.0|N|
-|com.google.code.gson|gson|2.8.2 |Apache 2.0|Y|
-|com.google.errorprone|error_prone_annotations|2.1.3 |Apache 2.0|N|
-|com.google.guava|guava|26.0-jre |The Apache Software License, Version 2.0|N|
-|com.google.inject|guice|4.2.0 |The Apache Software License, Version 2.0|N|
-|com.google.inject.extensions|guice-assistedinject|4.1.0 |The Apache Software License, Version 2.0|N|
-|com.google.inject.extensions|guice-multibindings|4.1.0 |The Apache Software License, Version 2.0|N|
-|com.google.j2objc|j2objc-annotations|1.1|The Apache Software License, Version 2.0|N|
-|com.google.protobuf|protobuf-java|3.7.1 |3-Clause BSD License|N|
-|com.h2database|h2|1.4.199 |MPL 2.0 or EPL 1.0|Y|
-|com.ibm.icu|icu4j|58.2|Unicode/ICU License|N|
-|com.jayway.jsonpath|json-path|2.4.0 |The Apache Software License, Version 2.0|N|
-|com.mikesamuel|json-sanitizer|1.2.1 |Apache License, Version 2.0|Y|
-|com.netflix.archaius|archaius-core|0.7.6 |The Apache Software License, Version 2.0|N|
-|com.netflix.hystrix|hystrix-core|1.5.18 |The Apache Software License, Version 2.0|N|
-|com.netflix.netflix-commons|netflix-commons-util|0.3.0 |The Apache Software License, Version 2.0|N|
-|com.netflix.netflix-commons|netflix-statistics|0.1.1 |The Apache Software License, Version 2.0|N|
-|com.netflix.ribbon|ribbon|2.3.0 |The Apache Software License, Version 2.0|N|
-|com.netflix.ribbon|ribbon-core|2.3.0 |The Apache Software License, Version 2.0|N|
-|com.netflix.ribbon|ribbon-loadbalancer|2.3.0 |The Apache Software License, Version 2.0|N|
-|com.netflix.ribbon|ribbon-transport|2.3.0 |The Apache Software License, Version 2.0|N|
-|com.netflix.servo|servo-core|0.12.21 |The Apache Software License, Version 2.0|N|
-|com.netflix.spectator|spectator-api|0.83.0 |The Apache Software License, Version 2.0|N|
-|com.netflix.spectator|spectator-reg-servo|0.83.0 |The Apache Software License, Version 2.0|N|
-|com.spencerwi|Either.java|2.1.0 |The MIT License |Y|
-|com.sun.istack|istack-commons-runtime|3.0.7 |CDDL 1.1GPL 1.1|N|
-|com.sun.xml.fastinfoset|FastInfoset|1.2.15 |Apache License, Version 2.0|N|
-|com.vaadin.external.google|android-json|0.0.20131108.vaadin1 |Apache License 2.0|N|
-|com.zaxxer|HikariCP|3.2.0 |The Apache Software License, Version 2.0|N|
-|commons-codec|commons-codec|1.11|Apache License, Version 2.0|N|
-|commons-configuration|commons-configuration|1.1|The Apache Software License, Version 2.0|N|
-|commons-fileupload|commons-fileupload|1.3.3 |Apache License, Version 2.0|Y|
-|commons-io|commons-io|2.6|Apache License, Version 2.0|Y|
-|commons-lang|commons-lang|2.6|The Apache Software License, Version 2.0|N|
+|ch.ethz.ganymed|ganymed-ssh2|262|BSD|Y|
+|ch.qos.logback|logback-classic|1.2.3 |EPL 1.0,LGPL 2.1|N|
+|ch.qos.logback|logback-core|1.2.3 |EPL 1.0,LGPL 2.1|N|
+|com.esotericsoftware.yamlbeans|yamlbeans|1.13 |BSD 2-clause|Y|
+|com.fasterxml.jackson.core|jackson-annotations|2.10.0 |Apache 2.0|N|
+|com.fasterxml.jackson.core|jackson-core|2.10.5 |Apache 2.0|Y|
+|com.fasterxml.jackson.core|jackson-databind|2.10.5.1 |Apache 2.0|Y|
+|com.fasterxml.jackson.dataformat|jackson-dataformat-xml|2.10.0 |Apache 2.0|N|
+|com.fasterxml.jackson.dataformat|jackson-dataformat-yaml|2.10.0 |Apache 2.0|N|
+|com.fasterxml.jackson.datatype|jackson-datatype-jdk8|2.10.0 |Apache 2.0|N|
+|com.fasterxml.jackson.datatype|jackson-datatype-jsr310|2.10.0 |Apache 2.0|N|
+|com.fasterxml.jackson.jaxrs|jackson-jaxrs-base|2.9.9 |Apache |N|
+|com.fasterxml.jackson.jaxrs|jackson-jaxrs-json-provider|2.9.9 |Apache |N|
+|com.fasterxml.jackson.module|jackson-module-jaxb-annotations|2.10.0 |Apache 2.0|N|
+|com.fasterxml.jackson.module|jackson-module-parameter-names|2.10.0 |Apache 2.0|N|
+|com.fasterxml|classmate|1.4.0 |Apache 2.0|N|
+|com.github.docker-java|docker-java-api|3.2.7 |Apache 2.0|N|
+|com.github.docker-java|docker-java-core|3.2.7 |Apache 2.0|N|
+|com.github.docker-java|docker-java-transport-jersey|3.2.7 |Apache 2.0|N|
+|com.github.docker-java|docker-java-transport-netty|3.2.7 |Apache 2.0|N|
+|com.github.docker-java|docker-java-transport|3.2.7 |Apache 2.0|N|
+|com.github.docker-java|docker-java|3.2.7 |Apache 2.0|Y|
+|com.github.jsqlparser|jsqlparser|2.0 |Apache 2.0,LGPL 2.1|N|
+|com.github.pagehelper|pagehelper-spring-boot-autoconfigure|1.2.13 |MIT|N|
+|com.github.pagehelper|pagehelper-spring-boot-starter|1.2.13|MIT|Y|
+|com.github.pagehelper|pagehelper|5.1.11|MIT|N|
+|com.google.code.findbugs|jsr305|3.0.2 |Apache 2.0|N|
+|com.google.code.gson|gson|2.8.5 |Apache 2.0|Y|
+|com.google.guava|guava|26.0-jre |Apache 2.0|N|
+|com.google.inject|guice|4.2.0 |Apache 2.0|N|
+|com.google.inject.extensions|guice-assistedinject|4.1.0 |Apache 2.0|N|
+|com.google.inject.extensions|guice-multibindings|4.1.0 |Apache 2.0|N|
+|com.google.protobuf|protobuf-java|3.7.1 |BSD 3-Clause|N|
+|com.h2database|h2|1.4.199 |MPL 2.0,EPL 1.0|Y|
+|com.ibm.icu|icu4j|58.2|ICU |N|
+|com.jayway.jsonpath|json-path|2.4.0 |Apache 2.0|N|
+|com.jcraft|jsch|0.1.54 |BSD|Y|
+|com.kohlschutter.junixsocket|junixsocket-common|2.3.2 |Apache 2.0|N|
+|com.kohlschutter.junixsocket|junixsocket-native-common|2.3.2 |Apache 2.0|N|
+|com.mikesamuel|json-sanitizer|1.2.2 |Apache 2.0|Y|
+|com.netflix.archaius|archaius-core|0.7.6 |Apache 2.0|N|
+|com.netflix.hystrix|hystrix-core|1.5.18 | Apache 2.0|N|
+|com.netflix.netflix-commons|netflix-commons-util|0.3.0 |Apache 2.0|N|
+|com.netflix.netflix-commons|netflix-statistics|0.1.1 | Apache 2.0|N|
+|com.netflix.ribbon|ribbon|2.3.0 |Apache 2.0|N|
+|com.netflix.ribbon|ribbon-core|2.3.0 |Apache 2.0|N|
+|com.netflix.ribbon|ribbon-loadbalancer|2.3.0 |Apache 2.0|N|
+|com.netflix.ribbon|ribbon-transport|2.3.0 |Apache 2.0|N|
+|com.netflix.servo|servo-core|0.12.21 |Apache 2.0|N|
+|com.netflix.spectator|spectator-api|0.83.0 |Apache 2.0|N|
+|com.netflix.spectator|spectator-reg-servo|0.83.0 | Apache 2.0|N|
+|com.spencerwi|Either.java|2.1.0 |MIT |Y|
+|com.sun.istack|istack-commons-runtime|3.0.7 |CDDL 1.1,GPL 1.1|N|
+|com.sun.xml.fastinfoset|FastInfoset|1.2.15 |Apache 2.0|N|
+|com.vaadin.external.google|android-json|0.0.20131108.vaadin1 |Apache 2.0|N|
+|com.zaxxer|HikariCP|3.2.0 |Apache  2.0|N|
+|commons-codec|commons-codec|1.11|Apache 2.0|N|
+|commons-configuration|commons-configuration|1.10|Apache 2.0|N|
+|commons-fileupload|commons-fileupload|1.3.3 |Apache 2.0|Y|
+|commons-io|commons-io|2.6|Apache 2.0|Y|
+|commons-lang|commons-lang|2.6|Apache  2.0|N|
+|commons-net|commons-net|3.3|Apache  2.0|Y|
 |io.lettuce|lettuce-core|5.1.8.RELEASE |Apache License, Version 2.0|Y|
 |io.netty|netty-buffer|4.1.36.Final |Apache License, Version 2.0|N|
 |io.netty|netty-codec|4.1.36.Final |Apache License, Version 2.0|N|
