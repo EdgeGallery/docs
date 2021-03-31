@@ -2320,8 +2320,8 @@ String output
 ```
 
 
-### 6.10  POST pkg structure
-  POST pkg structure
+### 6.10 POST pkg structure
+POST pkg structure
 ```
 Resource URI: /mec/developer/v1/files/samplecode/get-pkg-structure
 ```
