@@ -127,8 +127,11 @@ Developer 特性清单
 #### 沙箱管理
 沙箱节点列表
 ![](/uploads/images/2021/developer/sys-saxbox.PNG "sys-saxbox.PNG")
-沙箱节点新增
+新增沙箱节点
 ![](/uploads/images/2021/developer/sys-saxbox-new.PNG "sys-saxbox-new.PNG")
 
 #### 能力中心管理
+能力中心列表
 ![](/uploads/images/2021/developer/sys-ability.PNG "sys-ability.PNG")
+新增能力中心
+![](/uploads/images/2021/developer/sys-ability-new.PNG "sys-ability-new.PNG")
