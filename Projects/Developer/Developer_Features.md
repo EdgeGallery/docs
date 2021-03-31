@@ -125,6 +125,9 @@ Developer 特性清单
 ### 社区实验室
 社区实验室平台主要负责测试沙箱节点的管理，监控等。
 
+![](/uploads/images/2021/developer/lab-index.PNG "lab-index.PNG")
 #### 资源管理
+![](/uploads/images/2021/developer/lab-man.PNG "lab-man.PNG")
 
 #### 资源使用统计
+![](/uploads/images/2021/developer/lab-use.PNG "lab-use.PNG")
