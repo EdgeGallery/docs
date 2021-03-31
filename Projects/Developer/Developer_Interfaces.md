@@ -92,6 +92,16 @@ Developer Interfaces
     - [13.8 DELETE one host](#138-delete-one-host)
     - [13.9 GET capability detail](#139-get-capability-detail)
     - [13.10 GET host log](#1310-get-host-log)
+  - [14. VirtualMachine](#14-virtualvachine)
+    - [14.1 POST one vm](#141-post-one-vm)
+    - [14.2 DELETE vm config](#142-delete-vm-config)
+    - [14.3 GET image config](#143-get-image-config)
+    - [14.4 POST image config](#144-post-image-config)
+    - [14.5 delete image config](#145-delete-image-config)
+    - [14.6 GET image config By ProjectId](#146-get-image-config-by-projectid)
+    - [14.7 GET csar pkg](#147-get-csar-pkg)
+    - [14.8 GET vm resources](#148-get-vm-resources)
+    - [14.9 POST vm file](#149-post-vm-file)
 
 ## 1. Plugin
 Development environment plug-in or sdk
