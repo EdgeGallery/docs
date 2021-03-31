@@ -125,9 +125,10 @@ Developer 特性清单
 系统菜单主要对管理员权限的用户开放，提供沙箱节点以及平台能力的管理。
 
 #### 沙箱管理
-提供沙箱节点的新增，详情查看等
+沙箱节点列表
 ![](/uploads/images/2021/developer/sys-saxbox.PNG "sys-saxbox.PNG")
+沙箱节点新增
+![](/uploads/images/2021/developer/sys-saxbox-new.PNG "sys-saxbox-new.PNG")
 
 #### 能力中心管理
-提供能力的新增，删除等
 ![](/uploads/images/2021/developer/sys-ability.PNG "sys-ability.PNG")
