@@ -27,6 +27,8 @@ Developer 特性清单
 ![](/uploads/images/2021/developer/toolchain.PNG "toolchain.PNG")
 
 
+#### 文档
+![](/uploads/images/2021/developer/docu.PNG "docu.PNG")
 
 ### 能力中心
 能力中心包含MEP API和MEP-ECO生态服务介绍。包含详细的API描述文档，供开发者查看。
