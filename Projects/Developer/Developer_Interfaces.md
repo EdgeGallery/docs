@@ -76,7 +76,11 @@ Developer Interfaces
   - [11. DeployConfig](#11-deployconfig)
     - [11.1 GET deploy platform](#111-get-deploy-platform)
     - [11.2 PUT deploy platform](#112-put-deploy-platform)
- 
+  - [12. Deploy](#12-deploy)
+    - [12.1 GET deploy yaml](#121-get-deploy-yaml)
+    - [12.2 PUT deploy yaml](#122-put-deploy-yaml)
+    - [12.3 GET deploy json](#123-get-deploy-json)
+    - [12.4 POST deploy yaml](#124-post-deploy-yaml)
 
 
 ## 1. Plugin
@@ -3032,5 +3036,105 @@ Example response:
 {
   "isVirtualMachine": false,
   "virtualMachineUrl": "string"
+}
+```
+
+## 12. Deploy
+API to manipulate deployment files
+### 12.1 GET deploy yaml
+get deploy yaml
+```
+Resource URI: mec/developer/v1/deploy/{fileId}
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|fileId|fileId|path param|yes|
+
+```
+Example response:
+```
+200 OK
+{
+  "fileId": "string",
+  "fileName": "string",
+  "userId": "string",
+  "projectId": "string",
+  "content": "string",
+  "uploadTimeStamp": 0,
+  "configType": "string"
+}
+```
+
+### 12.2 PUT deploy yaml
+modify deploy yaml by file id
+```
+Resource URI: mec/developer/v1/deploy/{fileId}
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|fileId|fileId|path param|yes|
+|fileContent|file content|body param|yes|
+
+```
+Example response:
+```
+200 OK
+{
+  "fileId": "string",
+  "fileName": "string",
+  "userId": "string",
+  "projectId": "string",
+  "content": "string",
+  "uploadTimeStamp": 0,
+  "configType": "string"
+}
+```
+
+### 12.3 GET deploy json
+Get file content with json format
+```
+Resource URI: mec/developer/v1/deploy/{fileId}/action/get-json
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|fileId|fileId|path param|yes|
+
+```
+Example response:
+```
+200 OK
+[
+  {}
+]
+```
+
+### 12.4 POST deploy yaml
+upload deploy yaml
+```
+Resource URI: mec/developer/v1/deploy/{projectId}/action/save-yaml
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|jsonStr|deploy yaml content|body param|yes|
+|userId|userId|request param|yes|
+|projectId|projectId|path param|yes|
+|configType|Fields that distinguish deployment types|request param|yes|
+
+```
+Example response:
+```
+200 OK
+{
+  "fileId": "string",
+  "fileName": "string",
+  "userId": "string",
+  "projectId": "string",
+  "content": "string",
+  "uploadTimeStamp": 0,
+  "configType": "string"
 }
 ```
