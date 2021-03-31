@@ -102,6 +102,9 @@ Developer Interfaces
     - [14.7 GET csar pkg](#147-get-csar-pkg)
     - [14.8 GET vm resources](#148-get-vm-resources)
     - [14.9 POST vm file](#149-post-vm-file)
+  - [15. Image](#15-image)
+    - [15.1 POST upload image](#151-post-upload-image)
+    - [15.2 GET merge image](#152-GET-merge-image)
 
 ## 1. Plugin
 Development environment plug-in or sdk
@@ -4006,4 +4009,67 @@ Example response:
 ```
 200 OK
 boolean output
+```
+
+## 15. Image
+This part is about the api for deploying APP image
+### 15.1 POST upload image 
+POST upload image
+```
+Resource URI: /mec/appstore/v1/image/upload
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|id|image chunk id|query param|yes|
+|chunkNumber|file chunk Number|query param|yes|
+|chunkSize|the size of every chunk|query param|yes|
+|currentChunkSize|the length of current file chunk|query param|yes|
+|totalSize|the totalSize of file|query param|yes|
+|identifier|file identifier|query param|yes|
+|filename|fil ename|query param|yes|
+|relativePath|the relative Path of file|query param|yes|
+|totalChunks|Total number of file blocks|query param|yes|
+|type|file type|query param|yes|
+|file|the file to upload|query param|yes|
+
+Example response:
+```
+200 OK
+  {
+  "headers": {
+    "string": [
+      "string"
+    ]
+  },
+  "body": {},
+  "statusCode": "CONTINUE",
+  "statusCodeValue": 0
+}
+```
+
+### 15.2 GET merge image 
+after every file chunk uploaded, then merge to a file with same as you uploaded
+```
+Resource URI: /mec/appstore/v1/image/merge
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|guid|the file id of need to merge|query param|yes|
+|fileName|file name|query param|yes|
+
+Example response:
+```
+200 OK
+ {
+  "headers": {
+    "string": [
+      "string"
+    ]
+  },
+  "body": {},
+  "statusCode": "CONTINUE",
+  "statusCodeValue": 0
+}
 ```
