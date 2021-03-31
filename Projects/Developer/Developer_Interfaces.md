@@ -60,6 +60,8 @@ Developer Interfaces
     - [6.6 POST get sample code](#66-post-get-sample-code)
     - [6.7 GET one file return object](#67-get-one-file-return-object)
     - [6.8 GET sdk code](#68-get-sdk-code)
+    - [6.9 GET file content](#69-get-file-content)
+    - [6.10 POST pkg structure](#610-post-pkg-structure)
   - [7. LocalApi](#7-localapi)
     - [7.1 GET one api file](#71-get-one-api-file)
   - [8. Health](#8-health)
@@ -2300,6 +2302,45 @@ Example response:
 ```
 200 OK
 binary output
+```
+
+### 6.9 GET file content
+GET file content
+```
+Resource URI: /mec/developer/v1/files/samplecode/get-file-content
+```
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|fileName|file name|request param |yes|
+
+Example response:
+```
+200 OK
+String output
+```
+
+
+### 6.10  POST pkg structure
+ get structure of samplecode file
+```
+Resource URI: /mec/developer/v1/files/samplecode/get-pkg-structure
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|apiFileIds|file id arrays|body param |yes|
+
+Example response:
+```
+200 OK
+{
+  "name": "string",
+  "id": "string",
+  "children": [
+    {}
+  ],
+  "parent": false
+}
 ```
 
 
