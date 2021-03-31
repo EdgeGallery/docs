@@ -81,7 +81,17 @@ Developer Interfaces
     - [12.2 PUT deploy yaml](#122-put-deploy-yaml)
     - [12.3 GET deploy json](#123-get-deploy-json)
     - [12.4 POST deploy yaml](#124-post-deploy-yaml)
-
+  - [13. System](#13-system)
+    - [13.1 GET all capability](#131-get-all-capability)
+    - [13.2 POST one capability](#132-post-one-capability)
+    - [13.3 DELETE one capability](#133-delete-one-capability)
+    - [13.4 GET all host](#134-get-all-host)
+    - [13.5 POST one host](#135-post-one-host)
+    - [13.6 GET one host](#136-get-one-host)
+    - [13.7 PUT one host](#137-put-one-host)
+    - [13.8 DELETE one host](#138-delete-one-host)
+    - [13.9 GET capability detail](#139-get-capability-detail)
+    - [13.10 GET host log](#1310-get-host-log)
 
 ## 1. Plugin
 Development environment plug-in or sdk
@@ -3044,7 +3054,7 @@ API to manipulate deployment files
 ### 12.1 GET deploy yaml
 get deploy yaml
 ```
-Resource URI: mec/developer/v1/deploy/{fileId}
+Resource URI: /mec/developer/v1/deploy/{fileId}
 ```
 
 |Name|Definition|type|Required|
@@ -3068,7 +3078,7 @@ Example response:
 ### 12.2 PUT deploy yaml
 modify deploy yaml by file id
 ```
-Resource URI: mec/developer/v1/deploy/{fileId}
+Resource URI: /mec/developer/v1/deploy/{fileId}
 ```
 
 |Name|Definition|type|Required|
@@ -3093,7 +3103,7 @@ Example response:
 ### 12.3 GET deploy json
 Get file content with json format
 ```
-Resource URI: mec/developer/v1/deploy/{fileId}/action/get-json
+Resource URI: /mec/developer/v1/deploy/{fileId}/action/get-json
 ```
 
 |Name|Definition|type|Required|
@@ -3111,7 +3121,7 @@ Example response:
 ### 12.4 POST deploy yaml
 upload deploy yaml
 ```
-Resource URI: mec/developer/v1/deploy/{projectId}/action/save-yaml
+Resource URI: /mec/developer/v1/deploy/{projectId}/action/save-yaml
 ```
 
 |Name|Definition|type|Required|
@@ -3133,4 +3143,422 @@ Example response:
   "uploadTimeStamp": 0,
   "configType": "string"
 }
+```
+
+## 13. System
+About the api with system functions on the developer platform
+### 13.1 GET all capability
+GET all capability
+```
+Resource URI: /mec/developer/v1/system/capability
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|userId|userId|request param|no|
+|twoLevelName|the name of two level name|request param|no|
+|twoLevelNameEn|the name of two level english name|request param|no|
+|limit|the max count of one page|request param|yes|
+|offset|start index of the page|request param|yes|
+
+Example response:
+```
+200 OK
+[
+  {
+    "groupId": "string",
+    "oneLevelName": "string",
+    "oneLevelNameEn": "string",
+    "twoLevelName": "string",
+    "twoLevelNameEn": "string",
+    "type": "OPENMEP",
+    "description": "string",
+    "descriptionEn": "string",
+    "capabilityDetailList": [
+      {
+        "detailId": "string",
+        "groupId": "string",
+        "service": "string",
+        "serviceEn": "string",
+        "version": "string",
+        "description": "string",
+        "descriptionEn": "string",
+        "provider": "string",
+        "apiFileId": "string",
+        "guideFileId": "string",
+        "guideFileIdEn": "string",
+        "uploadTime": "string",
+        "port": 0,
+        "host": "string",
+        "protocol": "string",
+        "appId": "string",
+        "packageId": "string",
+        "userId": "string"
+      }
+    ]
+  }
+]
+```
+
+### 13.2 POST one capability
+create one capability
+```
+Resource URI: /mec/developer/v1/system/capability
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|group|CapabilityGroup|body param|yes|
+
+```
+CapabilityGroup
+{
+  "groupId": "string",
+  "oneLevelName": "string",
+  "oneLevelNameEn": "string",
+  "twoLevelName": "string",
+  "twoLevelNameEn": "string",
+  "type": "OPENMEP",
+  "description": "string",
+  "descriptionEn": "string",
+  "capabilityDetailList": [
+    {
+      "detailId": "string",
+      "groupId": "string",
+      "service": "string",
+      "serviceEn": "string",
+      "version": "string",
+      "description": "string",
+      "descriptionEn": "string",
+      "provider": "string",
+      "apiFileId": "string",
+      "guideFileId": "string",
+      "guideFileIdEn": "string",
+      "uploadTime": "string",
+      "port": 0,
+      "host": "string",
+      "protocol": "string",
+      "appId": "string",
+      "packageId": "string",
+      "userId": "string"
+    }
+  ]
+}
+
+```
+
+Example response:
+```
+200 OK
+{
+  "groupId": "string",
+  "oneLevelName": "string",
+  "oneLevelNameEn": "string",
+  "twoLevelName": "string",
+  "twoLevelNameEn": "string",
+  "type": "OPENMEP",
+  "description": "string",
+  "descriptionEn": "string",
+  "capabilityDetailList": [
+    {
+      "detailId": "string",
+      "groupId": "string",
+      "service": "string",
+      "serviceEn": "string",
+      "version": "string",
+      "description": "string",
+      "descriptionEn": "string",
+      "provider": "string",
+      "apiFileId": "string",
+      "guideFileId": "string",
+      "guideFileIdEn": "string",
+      "uploadTime": "string",
+      "port": 0,
+      "host": "string",
+      "protocol": "string",
+      "appId": "string",
+      "packageId": "string",
+      "userId": "string"
+    }
+  ]
+}
+]
+```
+
+### 13.3 DELETE one capability
+DELETE one capability
+```
+Resource URI: /mec/developer/v1/system/capability
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|groupId|groupId|request param|yes|
+
+
+Example response:
+```
+200 OK
+boolean output
+```
+
+### 13.4 GET all host
+GET all host
+```
+Resource URI: /mec/developer/v1/system/hosts
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|userId|userId|request param|no|
+|name|the name of host|request param|no|
+|ip|the ip of host|request param|no|
+|limit|the max count of one page|request param|yes|
+|offset|start index of the page|request param|yes|
+
+
+Example response:
+```
+200 OK
+[
+  {
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "lcmIp": "string",
+    "mecHost": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0,
+    "userId": "string",
+    "configId": "string",
+    "userName": "string"
+  }
+]
+```
+
+### 13.5 POST one host
+create one host
+```
+Resource URI: /mec/developer/v1/system/hosts
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|host|Entity class|body param|yes|
+
+```
+MepHost
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "lcmIp": "string",
+  "mecHost": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0,
+  "userId": "string",
+  "configId": "string",
+  "userName": "string",
+  "password": "string"
+}
+```
+
+
+Example response:
+```
+200 OK
+boolean output
+```
+
+### 13.6 GET one host
+GET one host
+```
+Resource URI: /mec/developer/v1/system/hosts/{hostId}
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|hostId|hostId|path param|yes|
+
+Example response:
+```
+200 OK
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "lcmIp": "string",
+  "mecHost": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0,
+  "userId": "string",
+  "configId": "string",
+  "userName": "string"
+}
+```
+
+### 13.7 PUT one host
+modify one host
+```
+Resource URI: /mec/developer/v1/system/hosts/{hostId}
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|hostId|hostId|path param|yes|
+|host|Entity class|body param|yes|
+
+```
+host
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "lcmIp": "string",
+  "mecHost": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0,
+  "userId": "string",
+  "configId": "string",
+  "userName": "string"
+}
+```
+
+Example response:
+```
+200 OK
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "lcmIp": "string",
+  "mecHost": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0,
+  "userId": "string",
+  "configId": "string",
+  "userName": "string"
+}
+```
+
+### 13.8 DELETE one host
+DELETE one host
+```
+Resource URI: /mec/developer/v1/system/hosts/{hostId}
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|hostId|hostId|path param|yes|
+
+Example response:
+```
+200 OK
+boolean output
+```
+
+### 13.9 GET capability detail
+GET capability detail
+```
+Resource URI: /mec/developer/v1/system/capability/{groupId}
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|groupId|groupId|path param|yes|
+
+Example response:
+```
+200 OK
+{
+  "groupId": "string",
+  "oneLevelName": "string",
+  "oneLevelNameEn": "string",
+  "twoLevelName": "string",
+  "twoLevelNameEn": "string",
+  "type": "OPENMEP",
+  "description": "string",
+  "descriptionEn": "string",
+  "capabilityDetailList": [
+    {
+      "detailId": "string",
+      "groupId": "string",
+      "service": "string",
+      "serviceEn": "string",
+      "version": "string",
+      "description": "string",
+      "descriptionEn": "string",
+      "provider": "string",
+      "apiFileId": "string",
+      "guideFileId": "string",
+      "guideFileIdEn": "string",
+      "uploadTime": "string",
+      "port": 0,
+      "host": "string",
+      "protocol": "string",
+      "appId": "string",
+      "packageId": "string",
+      "userId": "string"
+    }
+  ]
+}
+```
+
+### 13.10 GET host log
+GET host log
+```
+Resource URI: /mec/developer/v1/system/hosts/{hostId}/log
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|hostId|hostId|path param|yes|
+
+Example response:
+```
+200 OK
+[
+  {
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "lcmIp": "string",
+    "mecHost": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0,
+    "userId": "string",
+    "configId": "string",
+    "userName": "string"
+  }
+]
 ```
