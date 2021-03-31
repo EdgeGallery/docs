@@ -83,7 +83,7 @@ Developer 特性清单
     
 ![](/uploads/images/2021/developer/deploy-two-file.PNG "deploy-two-file.PNG")
 
-    - 可视化配置文件，目前版本支持的部署类型为POD和Service
+    - 可视化配置文件，目前版本支持的部署类型为Pod和Service。
 ![](/uploads/images/2021/developer/deploy-two-config.PNG "deploy-two-config.PNG")
     
 
