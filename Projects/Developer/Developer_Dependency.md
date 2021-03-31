@@ -268,28 +268,33 @@ Developer Dependency
 
 |type|name|version|license|direct import (Y/N)|
 |---|---|---|---|---|
-|dependencies|auth0-js|9.11.3|MIT|Y|
-|dependencies|axios|0.19.0 |MIT|Y|
+|dependencies|acorn|7.2.0|MIT|Y|
+|dependencies|auth0-js|9.13.2|MIT|Y|
+|dependencies|axios|0.21.1 |MIT|Y|
 |dependencies|core-js|3.3.2 |MIT|Y|
 |dependencies|dot-prop|4.2.1 |MIT|Y|
 |dependencies|echarts|4.4.0 |Apache-2.0|Y|
+|dependencies|eg-view|0.0.12 ||Y|
 |dependencies|el-table-pagination|0.4.38 |MIT|Y|
 |dependencies|element-china-area-data|4.1.2 |MIT|Y|
 |dependencies|element-ui|2.12.0 |MIT|Y|
-|dependencies|elliptic|6.5.3 |MIT|Y|
+|dependencies|elliptic|6.5.4 |MIT|Y|
 |dependencies|http-proxy|1.18.1 |MIT|Y|
 |dependencies|http-proxy-agent|4.0.1 |MIT|Y|
+|dependencies|kity|2.0.4 ||Y|
+|dependencies|kityminder-core|1.4.50 |BSD-3-Clause|Y|
 |dependencies|less-loader|5.0.0 |MIT|Y|
 |dependencies|local-storage|2.0.0 |MIT|Y|
-|dependencies|lodash|4.17.19 |MIT|Y|
-|dependencies|mavon-editor|2.7.7 |MIT|Y|
-|dependencies|swagger-ui|3.25.0 |Apache-2.0|Y|
+|dependencies|lodash|4.17.21 |MIT|Y|
+|dependencies|mavon-editor|2.9.1 |MIT|Y|
+|dependencies|serialize-javascript|4.0.0 |BSD-3-Clause|Y|
+|dependencies|swagger-ui|3.39.0 |Apache-2.0|Y|
 |dependencies|v-charts|1.19.0 |MIT|Y|
 |dependencies|vue|2.6.11 |MIT|Y|
 |dependencies|vue-cookies|1.7.0 |MIT|Y|
-|dependencies|vue-generate-component|2.1.1 |ISC|Y|
 |dependencies|vue-i18n|8.15.3 |MIT|Y|
 |dependencies|vue-router|3.1.3 |MIT|Y|
+|dependencies|vue-simple-uploader|0.7.6 |MIT|Y|
 |dependencies|vuex|3.0.1 |MIT|Y|
 |devDependencies|@vue/cli-plugin-babel|4.0.0 |MIT|Y|
 |devDependencies|@vue/cli-plugin-eslint|4.0.5 |MIT|Y|
@@ -299,5 +304,10 @@ Developer Dependency
 |devDependencies|eslint|5.16.0 |MIT|Y|
 |devDependencies|eslint-plugin-vue|5.2.3 |MIT|Y|
 |devDependencies|less|3.10.3 |Apache-2.0|Y|
-|devDependencies|sass-loader|8.0.0 |MIT|Y|
+|devDependencies|mockjs|1.1.0 ||Y|
+|devDependencies|node-sass|5.5.0 |MIT|Y|
+|devDependencies|postcss-import|11.0.0 |MIT|Y|
+|devDependencies|postcss-loader|2.0.8 |MIT|Y|
+|devDependencies|postcss-url|7.2.1 |MIT|Y|
+|devDependencies|sass-loader|10.1.1 |MIT|Y|
 |devDependencies|vue-template-compiler|2.6.11 |MIT|Y|
