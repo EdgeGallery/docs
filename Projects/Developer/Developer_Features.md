@@ -23,6 +23,11 @@ Developer 特性清单
 ![](/uploads/images/2020/v1.0/UploadPlug-in.PNG "UploadPlug-in.PNG")
 
 
+#### 工具链
+![](/uploads/images/2021/developer/toolchain.PNG "toolchain.PNG")
+
+
+
 ### 能力中心
 能力中心包含MEP API和MEP-ECO生态服务介绍。包含详细的API描述文档，供开发者查看。
 MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery，Location service，Bandwidth service等能力。MEC-ECO（MEC Ecosystem）是MEC生态能力App的简称，开发者在完成一个MEC APP开发的时候，
