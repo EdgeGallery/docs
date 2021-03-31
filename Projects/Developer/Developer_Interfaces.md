@@ -2321,7 +2321,7 @@ String output
 
 
 ### 6.10  POST pkg structure
- get structure of samplecode file
+  POST pkg structure
 ```
 Resource URI: /mec/developer/v1/files/samplecode/get-pkg-structure
 ```
