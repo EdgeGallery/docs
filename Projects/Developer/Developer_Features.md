@@ -72,10 +72,10 @@ Developer 特性清单
     
     支持三种镜像上传方式
     - 用户上传到公共的镜像仓库，例如DockerHub 或 SWR镜像仓库，在部署时会自动从这些镜像仓库下载镜像包完成部署。
-    - 上传到EdgeGallery的镜像仓库（v1.0版本暂未提供）
+    - 上传到EdgeGallery的镜像仓库
     - 如果您不想开放自己的应用镜像，可以自己搭建一个EdgeGallery边缘节点，需要安装的软件和安装指导，请参考：
 
-![](/uploads/images/2020/v1.0/DeploymentTest-UploadImage.png "DeploymentTest-UploadImage.png")
+![](/uploads/images/2021/developer/deploy-one.png "deploy-one.png")
 
 - 配置部署文件
 
