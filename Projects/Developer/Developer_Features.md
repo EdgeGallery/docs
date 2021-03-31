@@ -15,12 +15,12 @@ Developer 特性清单
 
 #### 插件列表
 
-![](/uploads/images/2020/v1.0/Plug-inList.PNG "Plug-inList.PNG")
+![](/uploads/images/2021/developer/pluginlist.PNG "pluginlist.PNG")
 
 
 #### 插件上传
 
-![](/uploads/images/2020/v1.0/UploadPlug-in.PNG "UploadPlug-in.PNG")
+![](/uploads/images/2021/developer/pluginupload.PNG "pluginupload.PNG")
 
 
 #### 工具链
