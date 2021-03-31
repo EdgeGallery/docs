@@ -110,9 +110,9 @@ Developer 特性清单
 - 应用认证
 
 对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。
-选择测试场景
+- 选择测试场景
 ![](/uploads/images/2021/developer/atp-1.PNG "atp-1.PNG")
-执行测试用例
+- 执行测试用例
 ![](/uploads/images/2021/developer/atp-2.PNG "atp-2.PNG")
 
 - 应用发布
@@ -125,13 +125,13 @@ Developer 特性清单
 系统菜单主要对管理员权限的用户开放，提供沙箱节点以及平台能力的管理。
 
 #### 沙箱管理
-沙箱节点列表
+- 沙箱节点列表
 ![](/uploads/images/2021/developer/sys-saxbox.PNG "sys-saxbox.PNG")
-新增沙箱节点
+- 新增沙箱节点
 ![](/uploads/images/2021/developer/sys-saxbox-new.PNG "sys-saxbox-new.PNG")
 
 #### 能力中心管理
-能力中心列表
+- 能力中心列表
 ![](/uploads/images/2021/developer/sys-ability.PNG "sys-ability.PNG")
-新增能力中心
+- 新增能力中心
 ![](/uploads/images/2021/developer/sys-ability-new.PNG "sys-ability-new.PNG")
