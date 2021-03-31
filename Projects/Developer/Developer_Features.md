@@ -24,16 +24,16 @@ Developer 特性清单
 
 
 #### 工具链
+工具链是开发者平台提供给开发者分析源代码，定位出需要修改的地方，以便于在不同平台部署。
 ![](/uploads/images/2021/developer/toolchain.PNG "toolchain.PNG")
 
 
 #### 文档
+文档菜单包含平台的简介，开发工具，以及介绍如何将能力发布到开发者平台，以及常见问题集锦。
 ![](/uploads/images/2021/developer/docu.PNG "docu.PNG")
 
 ### 能力中心
-能力中心包含MEP API和MEP-ECO生态服务介绍。包含详细的API描述文档，供开发者查看。
-MEP API 是edgegallery平台自身提供的API能力，例如Service Discovery，Location service，Bandwidth service等能力。MEC-ECO（MEC Ecosystem）是MEC生态能力App的简称，开发者在完成一个MEC APP开发的时候，
-如果需要将这个APP的能力开放给其他用户使用，可以通过上传到MEC-ECO实现。EdgeGallery会将该APP的对外接口提供给其他开发人员使用，并且将该服务通过MECM部署在需要的边缘侧，供其他APP能够使用。
+能力中心展示的是开发者平台所有的能力（开发者共享的能力和平台自身提供的能力）。包含详细的API描述文档，供开发者在线查看，模拟，体验。
 
 ![能力中心](/uploads/images/2020/v1.0/CompetenceCenter.PNG "CompetenceCenter.PNG")
 
