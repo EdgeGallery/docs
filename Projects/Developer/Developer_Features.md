@@ -35,7 +35,7 @@ Developer 特性清单
 ### 能力中心
 能力中心展示的是开发者平台所有的能力（开发者共享的能力和平台自身提供的能力）。包含详细的API描述文档，供开发者在线查看，模拟，体验。
 
-![能力中心](/uploads/images/2020/v1.0/CompetenceCenter.PNG "CompetenceCenter.PNG")
+![能力中心](/uploads/images/2021/developer/abilitycenter.PNG "abilitycenter.PNG")
 
 
 ### 工作空间
