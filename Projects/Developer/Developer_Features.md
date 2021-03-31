@@ -129,5 +129,5 @@ Developer 特性清单
 ![](/uploads/images/2021/developer/sys-saxbox.PNG "sys-saxbox.PNG")
 
 #### 能力中心管理
-提供能力的删除等
+提供能力的新增，删除等
 ![](/uploads/images/2021/developer/sys-ability.PNG "sys-ability.PNG")
