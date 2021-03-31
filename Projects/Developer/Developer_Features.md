@@ -121,3 +121,10 @@ Developer 特性清单
 认证通过的应用，通过这里可以直接发布到EdgeGallery的AppStore平台，同时如果在【应用配置】时填写了应用服务发布配置，该应用同样会做为能力服务，被收录到能力中心里，可以被其他应用开发者使用。
 ![](/uploads/images/2020/v1.0/ApplicationRelease.png "ApplicationRelease.png")
 
+
+### 社区实验室
+社区实验室平台主要负责测试沙箱节点的管理，监控等。
+
+#### 资源管理
+
+#### 资源使用统计
