@@ -15,7 +15,7 @@ Developer 特性清单
 
 #### 插件列表
 
-![](/uploads/images/2021/developer/pluginlist.PNG "pluginlist.PNG")
+![](/uploads/images/2021/developer/plugin-list.PNG "plugin-list.PNG")
 
 
 #### 插件上传
