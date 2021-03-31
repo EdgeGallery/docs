@@ -3051,7 +3051,6 @@ Resource URI: mec/developer/v1/deploy/{fileId}
 |-------------|-------------|------------|------------|
 |fileId|fileId|path param|yes|
 
-```
 Example response:
 ```
 200 OK
@@ -3077,7 +3076,6 @@ Resource URI: mec/developer/v1/deploy/{fileId}
 |fileId|fileId|path param|yes|
 |fileContent|file content|body param|yes|
 
-```
 Example response:
 ```
 200 OK
@@ -3102,7 +3100,6 @@ Resource URI: mec/developer/v1/deploy/{fileId}/action/get-json
 |-------------|-------------|------------|------------|
 |fileId|fileId|path param|yes|
 
-```
 Example response:
 ```
 200 OK
@@ -3124,7 +3121,6 @@ Resource URI: mec/developer/v1/deploy/{projectId}/action/save-yaml
 |projectId|projectId|path param|yes|
 |configType|Fields that distinguish deployment types|request param|yes|
 
-```
 Example response:
 ```
 200 OK
