@@ -122,12 +122,13 @@ Developer 特性清单
 ![](/uploads/images/2020/v1.0/ApplicationRelease.png "ApplicationRelease.png")
 
 
-### 社区实验室
-社区实验室平台主要负责测试沙箱节点的管理，监控等。
+### 系统
+系统菜单主要对管理员权限的用户开放，提供沙箱节点以及平台能力的管理。
 
-![](/uploads/images/2021/developer/lab-index.PNG "lab-index.PNG")
-#### 资源管理
+#### 沙箱管理
+提供沙箱节点的新增，详情查看等
 ![](/uploads/images/2021/developer/lab-man.PNG "lab-man.PNG")
 
-#### 资源使用统计
+#### 能力中心管理
+提供能力的删除等
 ![](/uploads/images/2021/developer/lab-use.PNG "lab-use.PNG")
