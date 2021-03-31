@@ -6,7 +6,6 @@ Developer 特性清单
 |开发工具管理|提供给开发者使用的App开发工具，开发者可以下载使用，也可以将自研的工具分享给社区开发者使用。||
 |能力中心|展示所有开发者平台提供的能力，包括平台自身提供，开发者共享到此平台的能力，供开发者开发部署项目使用。||
 |工作空间|工作空间是给开发者提供的项目管理平台，开发者可以通过创建项目，完成App的开发-测试-发布的整个流程。||
-|社区实验室|社区实验室是给开发者提供的资源管理平台，开发者可以通过查看已有资源，申请新资源等。||
 |系统|系统菜单是给管理员提供的管理菜单。主要负责测试沙箱和能力中心（服务）的管理||
 
 
@@ -127,8 +126,8 @@ Developer 特性清单
 
 #### 沙箱管理
 提供沙箱节点的新增，详情查看等
-![](/uploads/images/2021/developer/lab-man.PNG "lab-man.PNG")
+![](/uploads/images/2021/developer/sys-saxbox.PNG "sys-saxbox.PNG")
 
 #### 能力中心管理
 提供能力的删除等
-![](/uploads/images/2021/developer/lab-use.PNG "lab-use.PNG")
+![](/uploads/images/2021/developer/sys-ability.PNG "sys-ability.PNG")
