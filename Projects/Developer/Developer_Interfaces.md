@@ -97,7 +97,7 @@ Developer Interfaces
     - [14.2 DELETE vm config](#142-delete-vm-config)
     - [14.3 GET image config](#143-get-image-config)
     - [14.4 POST image config](#144-post-image-config)
-    - [14.5 delete image config](#145-delete-image-config)
+    - [14.5 DELETE image config](#145-delete-image-config)
     - [14.6 GET image config By ProjectId](#146-get-image-config-by-projectid)
     - [14.7 GET csar pkg](#147-get-csar-pkg)
     - [14.8 GET vm resources](#148-get-vm-resources)
@@ -3571,4 +3571,439 @@ Example response:
     "userName": "string"
   }
 ]
+```
+
+## 14. VirtualMachine
+This part is about the api for virtual machine deployment
+### 14.1 POST one vm
+create one vm
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm-create
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+|userId|userId|query param|yes|
+|vmCreateConfig|entity class|body param|yes|
+
+```
+vmCreateConfig:
+{
+  "vmId": "string",
+  "projectId": "string",
+  "vmRegulation": {
+    "regulationId": 0,
+    "architecture": "string",
+    "nameZh": "string",
+    "nameEn": "string",
+    "sceneZh": "string",
+    "sceneEn": "string",
+    "memory": 0,
+    "cpu": 0,
+    "systemDisk": 0,
+    "dataDisk": 0,
+    "gpu": "string",
+    "otherAbility": "string"
+  },
+  "vmSystem": {
+    "systemId": 0,
+    "type": "string",
+    "operateSystem": "string",
+    "version": "string",
+    "systemBit": "string",
+    "systemDisk": 0
+  },
+  "vmNetwork": [
+    "string"
+  ],
+  "vmName": "string",
+  "status": "NOTCREATE",
+  "stageStatus": {
+    "hostInfo": "Success",
+    "csar": "Success",
+    "instantiateInfo": "Success",
+    "workStatus": "Success"
+  },
+  "host": {
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "lcmIp": "string",
+    "mecHost": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0,
+    "userId": "string",
+    "configId": "string",
+    "userName": "string"
+  },
+  "lcmToken": "string",
+  "vmInfo": [
+    {
+      "vmId": "string",
+      "vncUrl": "string",
+      "networks": [
+        {
+          "ip": "string",
+          "name": "string"
+        }
+      ]
+    }
+  ],
+  "appInstanceId": "string",
+  "packageId": "string",
+  "createTime": "2021-03-31T06:11:11.495Z",
+  "log": "string",
+  "nextStage": "string"
+}
+```
+
+Example response:
+```
+200 OK
+{
+  "vmId": "string",
+  "projectId": "string",
+  "vmRegulation": {
+    "regulationId": 0,
+    "architecture": "string",
+    "nameZh": "string",
+    "nameEn": "string",
+    "sceneZh": "string",
+    "sceneEn": "string",
+    "memory": 0,
+    "cpu": 0,
+    "systemDisk": 0,
+    "dataDisk": 0,
+    "gpu": "string",
+    "otherAbility": "string"
+  },
+  "vmSystem": {
+    "systemId": 0,
+    "type": "string",
+    "operateSystem": "string",
+    "version": "string",
+    "systemBit": "string",
+    "systemDisk": 0
+  },
+  "vmNetwork": [
+    "string"
+  ],
+  "vmName": "string",
+  "status": "NOTCREATE",
+  "stageStatus": {
+    "hostInfo": "Success",
+    "csar": "Success",
+    "instantiateInfo": "Success",
+    "workStatus": "Success"
+  },
+  "host": {
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "lcmIp": "string",
+    "mecHost": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0,
+    "userId": "string",
+    "configId": "string",
+    "userName": "string"
+  },
+  "lcmToken": "string",
+  "vmInfo": [
+    {
+      "vmId": "string",
+      "vncUrl": "string",
+      "networks": [
+        {
+          "ip": "string",
+          "name": "string"
+        }
+      ]
+    }
+  ],
+  "appInstanceId": "string",
+  "packageId": "string",
+  "createTime": "2021-03-31T06:11:11.495Z",
+  "log": "string",
+  "nextStage": "string"
+}
+```
+
+### 14.2 DELETE vm config
+DELETE vm config
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+|vmId|vmId|path param|yes|
+|userId|user id|query param|yes|
+
+Example response:
+```
+200 OK
+boolean output
+```
+
+
+### 14.3 GET image config
+GET image config
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm/image
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+|userId|user id|query param|yes|
+
+Example response:
+```
+200 OK
+{
+  "vmId": "string",
+  "imageId": "string",
+  "projectId": "string",
+  "vmName": "string",
+  "imageName": "string",
+  "appInstanceId": "string",
+  "hostIp": "string",
+  "sumChunkNum": 0,
+  "chunkSize": 0,
+  "stageStatus": {
+    "createImageInfo": "Success",
+    "imageStatus": "Success",
+    "downloadImageInfo": "Success"
+  },
+  "status": "NOTCREATE",
+  "lcmToken": "string",
+  "createTime": "2021-03-31T06:11:11.497Z",
+  "log": "string",
+  "nextStage": "string"
+}
+```
+
+### 14.4 POST image config
+create image config
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm/image
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+|userId|user id|query param|yes|
+
+Example response:
+```
+200 OK
+boolean output
+```
+
+### 14.5 DELETE image config
+delete image config
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm/image
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+|userId|user id|query param|yes|
+
+Example response:
+```
+200 OK
+boolean output
+```
+
+### 14.6 GET image config By ProjectId
+GET image config By ProjectId
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+|userId|user id|query param|yes|
+
+Example response:
+```
+200 OK
+[
+  {
+    "vmId": "string",
+    "projectId": "string",
+    "vmRegulation": {
+      "regulationId": 0,
+      "architecture": "string",
+      "nameZh": "string",
+      "nameEn": "string",
+      "sceneZh": "string",
+      "sceneEn": "string",
+      "memory": 0,
+      "cpu": 0,
+      "systemDisk": 0,
+      "dataDisk": 0,
+      "gpu": "string",
+      "otherAbility": "string"
+    },
+    "vmSystem": {
+      "systemId": 0,
+      "type": "string",
+      "operateSystem": "string",
+      "version": "string",
+      "systemBit": "string",
+      "systemDisk": 0
+    },
+    "vmNetwork": [
+      "string"
+    ],
+    "vmName": "string",
+    "status": "NOTCREATE",
+    "stageStatus": {
+      "hostInfo": "Success",
+      "csar": "Success",
+      "instantiateInfo": "Success",
+      "workStatus": "Success"
+    },
+    "host": {
+      "hostId": "string",
+      "name": "string",
+      "address": "string",
+      "architecture": "string",
+      "status": "NORMAL",
+      "lcmIp": "string",
+      "mecHost": "string",
+      "protocol": "string",
+      "port": 0,
+      "os": "string",
+      "portRangeMin": 0,
+      "portRangeMax": 0,
+      "userId": "string",
+      "configId": "string",
+      "userName": "string"
+    },
+    "lcmToken": "string",
+    "vmInfo": [
+      {
+        "vmId": "string",
+        "vncUrl": "string",
+        "networks": [
+          {
+            "ip": "string",
+            "name": "string"
+          }
+        ]
+      }
+    ],
+    "appInstanceId": "string",
+    "packageId": "string",
+    "createTime": "2021-03-31T06:11:11.495Z",
+    "log": "string",
+    "nextStage": "string"
+  }
+]
+```
+
+### 14.7 GET csar pkg
+GET csar pkg
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}/package
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+|userId|user id|query param|yes|
+|vmId|vmId|path param|yes|
+
+Example response:
+```
+200 OK
+binary output
+```
+
+### 14.8 GET vm resources
+GET vm resources
+```
+Resource URI: /mec/developer/v1/vmconfig
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+
+
+Example response:
+```
+200 OK
+{
+  "vmRegulationList": [
+    {
+      "regulationId": 0,
+      "architecture": "string",
+      "nameZh": "string",
+      "nameEn": "string",
+      "sceneZh": "string",
+      "sceneEn": "string",
+      "memory": 0,
+      "cpu": 0,
+      "systemDisk": 0,
+      "dataDisk": 0,
+      "gpu": "string",
+      "otherAbility": "string"
+    }
+  ],
+  "vmSystemList": [
+    {
+      "systemId": 0,
+      "type": "string",
+      "operateSystem": "string",
+      "version": "string",
+      "systemBit": "string",
+      "systemDisk": 0
+    }
+  ],
+  "vmNetworkList": [
+    {
+      "networkType": "string",
+      "descriptionZh": "string",
+      "descriptionEn": "string",
+      "networkName": "string"
+    }
+  ]
+}
+```
+
+### 14.9 POST vm file
+GET csar pkg
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}/files
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+|userId|user id|query param|yes|
+|vmId|vmId|path param|yes|
+|file|File |formdate param|yes|
+
+Example response:
+```
+200 OK
+boolean output
 ```
