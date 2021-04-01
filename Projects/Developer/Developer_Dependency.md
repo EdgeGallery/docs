@@ -274,7 +274,7 @@ Developer Dependency
 |dependencies|core-js|3.3.2 |MIT|Y|
 |dependencies|dot-prop|4.2.1 |MIT|Y|
 |dependencies|echarts|4.4.0 |Apache-2.0|Y|
-|dependencies|eg-view|0.0.12 ||Y|
+|dependencies|eg-view|0.0.12 |Apache-2.0|Y|
 |dependencies|el-table-pagination|0.4.38 |MIT|Y|
 |dependencies|element-china-area-data|4.1.2 |MIT|Y|
 |dependencies|element-ui|2.12.0 |MIT|Y|
