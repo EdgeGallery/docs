@@ -72,7 +72,64 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  *Known Vulnerabilities in Used Modules*
 
- N/A
+ EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
+
+- Appstore:
+
+
+| Component                                  | Version       | CVE                                                          |
+| ------------------------------------------ | ------------- | ------------------------------------------------------------ |
+| log4j                 | 1.2.17        | CVE-2019-17571                                               |
+| netty-transport | 4.1.36.Final | CVE-2019-20444  CVE-2019-20445  CVE-2019-16869  CVE-2020-11612 |
+| vertx-core | 3.9.4 | CVE-2019-17640 |
+| docker-java-core | 3.2.7 | CVE-2019-13139  CVE-2019-13509  CVE-2019-16884  CVE-2019-5736|
+| foundation-ssl | 1.3.0 | CVE-2004-0009 |
+| mybatis-spring | 2.0.6 | CVE-2020-26945 |
+| mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
+| spring-jdbc | 5.1.8.RELEASE | CVE-2020-5398 |
+| spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
+
+
+- Developer:
+
+
+| Component  | Version  | CVE  |
+|---|---|---|
+| netty-transport | 4.1.36.Final | CVE-2019-20444  CVE-2019-20445  CVE-2019-16869  CVE-2020-11612 |
+| vertx-core | 3.9.4 | CVE-2019-17640 |
+| swagger-codegen-cli | 3.0.21 | CVE-2018-8088  CVE-2016-6199  CVE-2019-15052  CVE-2020-25649  CVE-2019-10086  CVE-2017-1000207  CVE-2017-1000208  CVE-2017-18640  CVE-2020-11979 |
+| docker-java-core | 3.2.7 | CVE-2019-13139  CVE-2019-13509  CVE-2019-16884  CVE-2019-5736|
+| foundation-ssl | 1.3.0 | CVE-2004-0009 |
+| mybatis-spring | 2.0.6 | CVE-2020-26945 |
+| mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
+| spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
+
+
+- ATP
+
+
+| Component  | Version  | CVE  |
+|---|---|---|
+| netty-transport | 4.1.36.Final | CVE-2019-20444  CVE-2019-20445  CVE-2019-16869  CVE-2020-11612 |
+| vertx-core | 3.9.4 | CVE-2019-17640 |
+| foundation-ssl | 1.3.0 | CVE-2004-0009 |
+| mybatis-spring | 2.0.6 | CVE-2020-26945 |
+| mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
+| spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
+| spring-core | 5.1.8.RELEASE | CVE-2020-5398 |
+
+
+- User-mgmt:
+
+
+| Component                                             | Version       | CVE                         |
+| ----------------------------------------------------- | ------------- | --------------------------- |
+| vertx-core | 3.9.4 | CVE-2019-17640 |
+| foundation-ssl | 1.3.0 | CVE-2004-0009 |
+| mybatis-spring | 2.0.6 | CVE-2020-26945 |
+| mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
+| spring-security-core | 5.3.8.RELEASE | CVE-2018-1258 |
+
 
  **Upgrade Notes**
 
