@@ -61,4 +61,4 @@ MECM Product Document
 ##### 4.2 APP Rule MGR注册
 ![输入图片说明](/uploads/images/2021/mecm/24.png) 
 ##### 4.4 应用仓库注册
-![输入图片说明](/uploads/images/2021/0324/25.png) 
+![输入图片说明](/uploads/images/2021/mecm/25.png) 
