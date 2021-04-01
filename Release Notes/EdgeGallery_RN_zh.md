@@ -72,7 +72,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  *Known Vulnerabilities in Used Modules*
 
- EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
+ EdgeGalelry v1.1.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
 
 - Appstore:
 
