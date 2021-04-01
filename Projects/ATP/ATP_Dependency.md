@@ -69,7 +69,7 @@ ATP Dependency
 |dependencies|vuex|3.0.1|MIT|Y|
 |dependencies|html2canvas|1.0.0-rc.7|MIT|Y|
 |dependencies|jspdf|2.3.0|MIT|Y|
-|dependencies|eg-view|0.0.12||Y|
+|dependencies|eg-view|0.0.12|Apache-2.0|Y|
 |dependencies|postcss-import|11.0.0|MIT|Y|
 |dependencies|postcss-loader|4.1.0|MIT|Y|
 |dependencies|postcss-url|7.2.1|MIT|Y|
