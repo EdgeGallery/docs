@@ -26,7 +26,7 @@ Application management has two sections.  Application **package management** and
 
 ![](https://images.gitee.com/uploads/images/2021/0402/162457_7cdb15aa_7639205.png "pkg4.png")
 
-- User can upload new application package by clicking ** New Package** button
+- User can upload new application package by clicking **New Package** button
 
 ![](https://images.gitee.com/uploads/images/2021/0402/162520_ce672a82_7639205.png "pkg2.png")
 
