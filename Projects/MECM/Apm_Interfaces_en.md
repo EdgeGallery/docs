@@ -302,6 +302,101 @@ Example response:
 ```
 200 OK
 ```
+### Retrieves all application packages info from app store.
+Retrieves all application packages info from app store.
+```
+Resource URI: /apm/v1/apps/info/appstores/{appstore_ip}
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|appstore_ip|appstore_ip|body|yes|AlphaNumeric with smaller case alphabets|32|
+
+Example response:
+```
+200 OK
+```
+
+### Sync application packages
+Sync application package by downloading package from appstore.
+```
+Resource URI: /apm/v1/apps/sync
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|appId|appId|body|yes|AlphaNumeric with smaller case alphabets|32|
+|packageId|packageId|body|yes|AlphaNumeric with smaller case alphabets|32|
+
+Example request body:
+```
+[
+    {
+        "appId": "string",
+        "appstoreIp": "string",
+        "packageId": "string"
+    },
+    {
+        "appId": "string",
+        "appstoreIp": "string",
+        "packageId": "string"
+    }
+]
+```
+Example response:
+```
+200 OK
+[
+  {
+     "packageId": "string"
+  }
+]
+```
+
+### Retrieves all application packages sync status
+Retrieves all application packages sync status.
+```
+Resource URI: /apm/v1/apps/syncstatus
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+
+Example response:
+```
+200 OK
+```
+
+### Get Application Package Information
+Retrieve application packages sync status.
+```
+Resource URI: /apm/v1/apps/{app_id}/packages/{package_id}/syncstatus
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|appId|appId|body|yes|AlphaNumeric with smaller case alphabets|32|
+|packageId|packageId|body|yes|AlphaNumeric with smaller case alpha
+
+Example response:
+```
+200 OK
+{
+ "appId": "ad dolore laborum",
+ "name": "Excep",
+ "operationalInfo": "est magna",
+ "packageId": "sit n",
+ "syncStatus": "cillum exercitation quis"
+}
+```
 
 ### APM Open Api Swagger
 
