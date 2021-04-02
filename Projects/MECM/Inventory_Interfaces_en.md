@@ -281,6 +281,198 @@ Example response:
     "producer" : "string"
   }
 ```
+### Add Application record
+Adds a new application store record entry into the Inventory.
+```
+Resource URI: /inventory/v1/appstores
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|appstoreIp|appstoreIp|body|yes|Valid IP Address|15|
+|appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|appstorePort|appstorePort|body|yes|Valid Port|5|
+|appstoreRepoName|appstoreRepoName|body|yes|Valid appstoreRepoName|128|
+|appstoreRepo|appstoreRepo|body|yes|Valid appstoreRepo|128|
+|appstoreRepoUserName|appstoreRepoUserName|body|yes|Valid appstoreRepoUserName|128|
+|appstoreRepoPassword|appstoreRepoPassword|body|yes|Valid appstoreRepoPassword|15|
+|producer|producer|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+
+Example request body:
+```
+  {
+    "appstoreIp" : "string"   
+    "appstorePort" : "string"
+    "appstoreName" : "string"   
+    "appstoreRepoName" : "string"
+    "appstoreRepo" : "string"   
+    "appstoreRepoUserName" : "string"
+    "appstoreRepoPassword" : "string"
+    "producer" : "string"
+  }
+```
+
+Example response:
+```
+200 OK
+[
+  {
+    "Saved"
+  }
+]
+```
+### Update Application record
+Updates an exiting application store record in the Inventory matching the given tenant ID & application store IP
+```
+Resource URI: /inventory/v1/appstores/{appstore_ip}
+Method: PUT
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|appstoreIp|appstoreIp|body|yes|Valid IP Address|15|
+|appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|appstorePort|appstorePort|body|yes|Valid Port|5|
+|appstoreRepoName|appstoreRepoName|body|yes|Valid appstoreRepoName|128|
+|appstoreRepo|appstoreRepo|body|yes|Valid appstoreRepo|128|
+|appstoreRepoUserName|appstoreRepoUserName|body|yes|Valid appstoreRepoUserName|128|
+|appstoreRepoPassword|appstoreRepoPassword|body|yes|Valid appstoreRepoPassword|15|
+|producer|producer|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+
+Example request body:
+```
+  {
+    "appstoreIp" : "string"   
+    "appstorePort" : "string"
+    "appstoreName" : "string"   
+    "appstoreRepoName" : "string"
+    "appstoreRepo" : "string"   
+    "appstoreRepoUserName" : "string"
+    "appstoreRepoPassword" : "string"
+    "producer" : "string"
+  }
+```
+
+Example response:
+```
+200 OK
+[
+  {
+    "Updated"
+  }
+]
+```
+
+### Get App Stores Record
+Retrieves all application store record
+```
+Resource URI: /inventory/v1/appstores
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access_token|header |yes|Jwt token|
+
+Example response:
+```
+200 OK
+[
+  {
+    "appstoreIp" : "string"   
+    "appstorePort" : "string"
+    "appstoreName" : "string"   
+    "appstoreRepoName" : "string"
+    "appstoreRepo" : "string"   
+    "appstoreRepoUserName" : "string"
+    "appstoreRepoPassword" : "string"
+    "producer" : "string"
+  },
+  {
+    "appstoreIp" : "string"   
+    "appstorePort" : "string"
+    "appstoreName" : "string"   
+    "appstoreRepoName" : "string"
+    "appstoreRepo" : "string"   
+    "appstoreRepoUserName" : "string"
+    "appstoreRepoPassword" : "string"
+    "producer" : "string"
+  }  
+]
+```
+### Delete App Stores Record
+Deletes all application store records for a given tenant.
+```
+Resource URI: /inventory/v1/appstores/
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+
+Example response:
+```
+200 OK
+[
+  {
+    "Deleted"
+  }
+]
+```
+
+### Get App Stores Record
+Retrieves a specific application store record in the Inventory matching the given tenant ID & application store IP
+```
+Resource URI: /inventory/v1/appstores/{appstore_ip}
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access_token|header |yes|Jwt token|
+|appstore_ip|appstore IP|path|yes|Valid IP Address|15|
+
+Example response:
+```
+200 OK
+  {
+    "appstoreIp" : "string"   
+    "appstorePort" : "string"
+    "appstoreName" : "string"   
+    "appstoreRepoName" : "string"
+    "appstoreRepo" : "string"   
+    "appstoreRepoUserName" : "string"
+    "appstoreRepoPassword" : "string"
+    "producer" : "string"
+  }
+```
+### Delete App Stores Record
+Deletes a specific application store record in the Inventory matching the given tenant ID & application store IP
+```
+Resource URI: /inventory/v1/appstores/{appstore_ip}
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|appstore_ip|appstore IP|path|yes|Valid IP Address|15|
+
+Example response:
+```
+200 OK
+[
+  {
+    "Deleted"
+  }
+]
+```
 
 ### Update App Store Record
 Updates existing application store record

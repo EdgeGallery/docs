@@ -249,3 +249,385 @@ Example response:
   true
 }
 ```
+
+### Query
+GetWorkloadDescription
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/workload/events
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|appInstanceId|appInstance Id|path|yes|Valid UUID|64|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Query AppInstance information
+AppInstance information
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Query
+Sync app instances records
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/sync_updated
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+### Query
+Sync app instances stale records
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/sync_deleted
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Query
+Sync app instances stale records
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/sync_deleted
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Upload package
+Upload package
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|packageId|package Id|header|yes|Valid UUID without hypen|64|
+|appId|app Id|header|yes|Valid UUID without hypen|64|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+|packages|package file|formData|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Delete package
+Delete package
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt Token|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+|packageId|package Id|path|yes|Valid UUID without hypen|64|
+
+Example response:
+```
+200 OK
+```
+
+### Delete application package on host
+Delete application package on host
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId/hosts/:hostIp
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt Token|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+|packageId|package Id|path|yes|Valid UUID without hypen|64|
+|host_ip|host ip|path|yes|Valid IP|15|
+
+Example response:
+```
+200 OK
+```
+
+### Distribute package
+Distribute package
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|packageId|package Id|header|yes|Valid UUID without hypen|64|
+|packages|package file|formData|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Query
+Distribution status
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+|packageId|package Id|header|yes|Valid UUID without hypen|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Distribution status
+Distribution status
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Sync app package records
+Sync app package records
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/sync_updated
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Sync app package stale records
+Sync app package stale records
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/sync_deleted
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Add MEC host
+Add mec host information
+```
+Resource URI: /lcmcontroller/v1//hosts
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|mecHostInfo|MecHostInfo|body|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Update MEC host
+Add mec host information
+```
+Resource URI: /lcmcontroller/v1//hosts
+Method: PUT
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|mecHostInfo|MecHostInfo|body|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Query MEC hosts
+Query mec host information
+```
+Resource URI: /lcmcontroller/v1/hosts
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Delete MEC host
+Delete mec host information
+```
+Resource URI: /lcmcontroller/v1/hosts:hostIp
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt Token|
+|host_ip|host ip|path|yes|Valid IP|15|
+
+Example response:
+```
+200 OK
+```
+
+### Batch terminate application
+Batch terminate application
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/batchTerminate
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt Token|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Sync mec host records
+Sync mec host records
+```
+Resource URI: /lcmcontroller/v1/hosts/sync_updated
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Sync mec host stale records
+### Sync mec host stale recordsSync mec host stale records
+
+```
+Resource URI: /lcmcontroller/v1/hosts/sync_deleted
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
