@@ -1,6 +1,8 @@
 # MEPM User Interface document
 
-! ! ! Note: At present, due to client and server protocol issues, there may be certificate abnormalities in user access. If there is an abnormal data acquisition problem, it is recommended to visit [https://mepm.edgegallery.org:30206  in the browser first , and then agree to continue access. Then return to the MEPM portal to refresh, this problem will be resolved in the next version.
+! ! ! Note: At present, due to client and server protocol issues, there may be certificate abnormalities in user access. If there is an abnormal data acquisition problem, it is recommended to visit [https://mepm.edgegallery.org:30204  in the browser first , and then agree to continue access. Then return to the MEPM portal to refresh, this problem will be resolved in the next version.
+
+![](https://images.gitee.com/uploads/images/2021/0402/170843_7b706467_7639205.png "certificate_issue.png")
 
 ## Overview
 
