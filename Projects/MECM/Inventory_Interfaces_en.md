@@ -1435,6 +1435,147 @@ Example response body:
 }
 ```
 
+### Synchronizes mec host info from edge
+Synchronizes mec host info from edge.
+```
+Resource URI: /mepms/{mepm_ip}/mechost/sync
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|mepm_ip|mepm_ip|path|yes|Valid IP Address|15|
+
+
+Example response body:
+```
+200 OK
+{
+    "mecHostUpdatedRecs": [
+        {
+            "mechostIp": "127.0.0.2",
+            "mechostName": "edgegallery3",
+            "zipCode": "560038",
+            "city": "bangalore",
+            "address": "anadapura",
+            "affinity": "karanataka",
+            "userName": "ramasubbareddy",
+            "configUploadStatus": "false",
+            "coordinates": "1,2",
+            "vim": "openstack",
+            "origin": "MEPM",
+            "hwcapabilities": [
+                {
+                    "hwType": "type6",
+                    "hwVendor": "vendor1",
+                    "hwModel": "model"
+                }
+            ]
+        }
+    ]
+}
+```
+
+
+### Synchronizes mec host info from edge
+Synchronizes mec host info from edge.
+```
+Resource URI: /tenants/{tenant_id}/mepms/{mepm_ip}/apprule/sync
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant identifier|path|yes|Valid UUID|64|
+|mepm_ip|mepm_ip|path|yes|Valid IP Address|15|
+
+Example response body:
+```
+200 OK
+{
+    "appdRuleUpdatedRecs": [
+        {
+            "appdRuleId": "e921ce54-82c8-4532-b5c6-8516cf75f7a771ea862b-5806-4196-bce3-434bf9c95b18",
+            "tenantId": "e921ce54-82c8-4532-b5c6-8516cf75f7a7",
+            "appInstanceId": "71ea862b-5806-4196-bce3-434bf9c95b18",
+            "appName": "abcd",
+            "appSupportMp1": true,
+            "appTrafficRule": [
+                {
+                    "trafficRuleId": "TrafficRule1",
+                    "filterType": "FLOW",
+                    "priority": 1,
+                    "action": "DROP",
+                    "trafficFilter": [
+                        {
+                            "trafficFilterId": "7e302be6-253b-4d09-8d1d-ef6630db7b88",
+                            "srcAddress": [
+                                "192.168.1.1/28",
+                                "192.168.1.2/28"
+                            ],
+                            "srcPort": null,
+                            "dstAddress": [
+                                "192.168.1.1/28"
+                            ],
+                            "dstPort": [
+                                "6666666666"
+                            ],
+                            "protocol": [
+                                "TCP"
+                            ],
+                            "qCI": 1,
+                            "dSCP": 0,
+                            "tC": 1,
+                            "tag": [
+                                "1"
+                            ],
+                            "srcTunnelAddress": [
+                                "1.1.1.1/24"
+                            ],
+                            "dstTunnelAddress": null,
+                            "srcTunnelPort": [
+                                "65536"
+                            ],
+                            "dstTunnelPort": [
+                                "65537"
+                            ]
+                        }
+                    ],
+                    "dstInterface": [
+                        {
+                            "dstInterfaceId": "cf053d4c-250b-450f-a657-a30328a3b27a",
+                            "interfaceType": "",
+                            "srcMacAddress": "",
+                            "dstMacAddress": "",
+                            "dstIpAddress": "",
+                            "TunnelInfo": {
+                                "tunnelInfoId": "be36d5e2-41db-4270-b6cf-ba9e7b7a89aa",
+                                "tunnelType": "",
+                                "tunnelDstAddress": "",
+                                "tunnelSrcAddress": "",
+                                "tunnelSpecificData": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "appDnsRule": [
+                {
+                    "dnsRuleId": "dnsRule4",
+                    "domainName": "www.example.com",
+                    "ipAddressType": "IP_V4",
+                    "ipAddress": "192.0.2.0",
+                    "ttl": 30
+                }
+            ],
+            "Origin": "MEPM"
+        }
+    ]
+}
+```
+
 ### Inventory Open Api Swagger
 
 * Please refer [INVENTORY_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/inventory-swagger-openapi.yaml)
