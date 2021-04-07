@@ -398,6 +398,56 @@ Example response:
 }
 ```
 
+### Get Application Package Information
+Retrieve application packages sync status.
+```
+Resource URI: /apm/v1/tenants/{tenant_id}/app_package_infos/sync
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "appPackageRecord": [
+        {
+            "appPkgId": "8e3d6f90bad74cecb7544fc5ebf56782a5df67ab47ba40e09015136573d7bce439937079-99fe-4cd8-881f-04ca8c4fe09d",
+            "appPkgName": "Video_Surveillance_ap",
+            "appPkgVersion": "2",
+            "appPkgPath": "abc",
+            "appProvider": "",
+            "appPkgDesc": "abc",
+            "appPkgAffinity": "bangalore",
+            "appIconUrl": "",
+            "createdTime": "2021-03-12 07:59:55.695956+00",
+            "modifiedTime": "",
+            "appId": "1",
+            "tenantId": "e921ce54-82c8-4532-b5c6-8516cf75f7a7",
+            "packageId": "1",
+            "origin": "MEPM",
+            "syncStatus": false,
+            "mecHostInfo": [
+                {
+                    "pkgHostKey": "8e3d6f90bad74cecb7544fc5ebf56782a5df67ab47ba40e09015136573d7bce439937079-99fe-4cd8-881f-04ca8c4fe09d119.8.47.5",
+                    "hostIp": "119.8.47.5",
+                    "appPkgId": "8e3d6f90bad74cecb7544fc5ebf56782a5df67ab47ba40e09015136573d7bce4",
+                    "status": "",
+                    "tenantId": "e921ce54-82c8-4532-b5c6-8516cf75f7a7",
+                    "error": "success",
+                    "origin": "MEPM",
+                    "syncStatus": false
+                }
+            ]
+        }
+    ]
+}
+```
+
 ### APM Open Api Swagger
 
 * Please refer [APM_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/apm-swagger-openapi.yaml)

@@ -737,6 +737,41 @@ Example Response body:
 
 ```
 
+
+### Synchronizes application instance info from edge
+Synchronizes application instance info from all edge
+```
+Resource URI: /appo/v1/tenants/{{tenant-id}}/app_instance_infos/sync
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access_token|header|yes|Jwt token|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+
+Example Response body:
+```
+200 OK 
+
+{
+    "appInstanceUpdatedRecs": [
+        {
+            "appInstanceId": "e921ce54-82c8-4532-b5c6-8516cf75f7a6",
+            "createTime": "2021-03-12T07:59:55.695956Z",
+            "mecHost": "119.8.53.3",
+            "deployType": "helm",
+            "tenantId": "e921ce54-82c8-4532-b5c6-8516cf75f7a6",
+            "appPackageId": "",
+            "appName": "",
+            "origin": "mepm",
+            "syncStatus": false
+        }
+    ]
+}
+
+```
+
 ### APPO Open Api Swagger
 
 * Please refer [APPO_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/appo-swagger-openapi.yaml)
