@@ -31,7 +31,7 @@ Version: v1.1.0
 **New Features**
 
 
-[**detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)
+[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)
  
 
 * [AI software and hardware capability] supports the hardware of shengteng / atlas and open API
@@ -174,7 +174,7 @@ Version: v1.0.0
 **New Features**
 
 
-[**detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
+[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
 
 * [developer] optimizes app development test release process, optimizes API interface, and integrates multi language SDK
     - Optimize the home page design and add application development life cycle flow chart;
@@ -317,7 +317,7 @@ Version: v0.9.1
 
 **New Features**
 
-[**detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)
+[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)
  
 * Summary of safety design troubleshooting problems
 * API simulator, toolchain and plugin warehouse are open source
@@ -455,7 +455,7 @@ Version: v0.9
 
 **New Features**
 
-[**detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)
+[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)
 
 * All in one MEP / mecm network isolation
 * MEP supports DNS configuration
