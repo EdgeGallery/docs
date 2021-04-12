@@ -150,12 +150,12 @@ N/A
 
 
 **Other**
- 
+
 N/A
- 
+
 -----------------------------------------------------------------------------
- 
- 
+
+
 Version: v1.0.0
 --------------
 
@@ -245,7 +245,7 @@ The following vulnerabilities exist in the third-party open source components of
 | jackson-databind | 2.10.5 | CVE-2020-25649 |
 | spring-security-oauth2 | 2.3.3.RELEASE | CVE-2018-15758 |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17525 |
- 
+
 - Developer:
  
 | Component | Version | CVE |
@@ -306,53 +306,53 @@ N/A
 
 Version: v0.9.1
 --------------
- 
+
 - Release Date: 2020-11-11
 - Image Version: v0.9.1
- 
+
 **List of new open source warehouses**
- 
+
 |Module | name | type | URL | description|
 |-----------------|-----------------|--------|-----------------------------------------------|----------------------|
 |Developer | API emulator | product warehouse|https://gitee.com/edgegallery/api-emulator |Simulation API providing basic capabilities|
 |MEP | plugins | product warehouse|https://gitee.com/edgegallery/plugins |Plugins warehouse|
 |Developer | toolchain | product warehouse|https://gitee.com/edgegallery/toolchain |Provides the X86 platform application when the arm source code analysis function|
- 
- 
+
+
 **New Features**
+
+[**detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)
  
-[* * detailed description of demand / release plan * *]（https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)
- 
-*Summary of safety design troubleshooting problems
-*API simulator, tool chain and plugin warehouse are open source
-*[MEP / MEP agent] AK / SK configuration interface
- 
- 
+* Summary of safety design troubleshooting problems
+* API simulator, toolchain and plugin warehouse are open source
+* [MEP / MEP agent] AK / SK configuration interface
+
+
 **Bug Fixes**
- 
+
   See [edgegallery v0.9.1 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
- 
+
 **Known Issues**
- 
+
   See [edgegallery v0.9.1 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
- 
+
 **Security notes**
- 
+
 *Fixed Security Issues*
- 
+
   See [edgegallery v0.9.1 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
- 
+
 *Known Security Issues*
- 
+
   See [edgegallery v0.9.1 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
- 
+
 *Known Vulnerabilities in Used Modules*
- 
+
 The following vulnerabilities exist in the third-party open source components of edgegallelry v0.9.1, which need to be fixed by users themselves:
- 
+
 - Appstore:
- 
- 
+
+
 | Component | Version | CVE |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
 | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -366,13 +366,10 @@ The following vulnerabilities exist in the third-party open source components of
 | spring-security-oauth2 | 2.3.3.RELEASE | CVE-2018-15758 |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17525 |
 | vertx-core | 3.6.3 | CVE-2019-17640 |
- 
- 
- 
- 
+
+
 - Developer:
- 
- 
+
 | Component | Version | CVE |
 |---|---|---|
 | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -390,10 +387,10 @@ The following vulnerabilities exist in the third-party open source components of
 | swagger-codegen-cli | 3.0.21 | CVE-2017-1000207，CVE-2017-1000208，CVE-2019-10086，CVE-2018-8088，CVE-2017-18640，CVE-2016-6199，CVE-2019-11065，CVE-2019-15052， |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17527 |
 | vertx-core | 3.6.3 | CVE-2019-17640 |
- 
+
+
 - User-mgmt:
- 
- 
+
 | Component | Version | CVE |
 |---|---|---|
 | rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
@@ -401,35 +398,35 @@ The following vulnerabilities exist in the third-party open source components of
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
 | lodash | 4.17.20 | NPM-1065, NPM-557, NPM-7823 |
 | minimatch | 3.0.4 | NPM-118 |
- 
+
+
 - Website-gateway:
- 
- 
+
 | Component | Version | CVE |
 |---|---|---|
 | log4j | 1.2.17 | CVE-2019-17571 |
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
- 
+
+
 - MECM:
- 
  
 | Component | Version | CVE |
 |---|---|---|
 | lodash | 4.17.13 | CVE-2020-8203 |
 | minimatch | 3.0.4 | NPM-118 |
- 
- 
+
+
 **Upgrade Notes**
- 
+
 N/A
  
 **Deprecation Notes**
- 
+
 N/A
- 
+
 **Other**
- 
- After the review of the security working group, the problem sheet of plugins warehouse [i1xa0n]（https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_Id = i1xa0n) will be repaired in the form of patch after the release of version V0.9. Please refer to the security working group [minutes of meeting] for details（https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)
+
+After the review of the security working group, the problem sheet of plugins warehouse [i1xa0n](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_Id = i1xa0n) will be repaired in the form of patch after the release of version V0.9. Please refer to the security working group [minutes of meeting](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd) for details.
  
 -----------------------------------------------------------------------------
  
