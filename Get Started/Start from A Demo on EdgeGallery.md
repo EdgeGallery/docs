@@ -22,7 +22,7 @@ MEC管理平台：<br>
 ## 开发准备
 * 新建一个项目<br>
 ![](/uploads/images/2020/v1.0/CreateProject.png "CreateProject.png")
-* 选择依赖的平台能力，勾选“Service Discovery”<br>
+* 选择依赖的平台能力，勾选“服务发现”<br>
 ![](/uploads/images/2020/v1.0/AbilitySelection.png "AbilitySelection.png")
 
 ## 本地开发
@@ -35,13 +35,13 @@ MEC管理平台：<br>
 ## 部署调测
 * 部署调测页面可进行应用的部署测试
 
- 第一步：上传App镜像，此页面提供了集中上传App镜像的方式，目前未实现。目前版本实现的是通过上传Yaml方式来部署镜像，或通过用户使用公网连接边缘节点进行部署
-![](/uploads/images/2020/v1.0/DeploymentTest-UploadImage.png "DeploymentTest-UploadImage.png")
+ 第一步：上传App镜像。
+![](/uploads/images/2021/developer/deploy-one.PNG "deploy-one.PNG")
 
- 第二步：配置部署文件，此页面提供Yaml文件上传入口，以及可视化配置（此版本未实现）。并对上传的Yaml文件进行可用性校验，校验通过后可选择下一步进行部署测试
-![](/uploads/images/2020/v1.0/DeploymentTest-ConfigurationFile.png "DeploymentTest-ConfigurationFile.png")
+ 第二步：配置部署文件。
+![](/uploads/images/2021/developer/deploy-two-config.PNG "deploy-two-config.PNG")
 
- 第三步：部署调测
+ 第三步：部署调测。
 ![](/uploads/images/2020/v1.0/DeploymentTest.png "DeploymentTest.png")
 
 
