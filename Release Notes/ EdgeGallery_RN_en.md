@@ -29,12 +29,13 @@ Version: v1.1.0
 
 
 **New Features**
- 
-[**detailed description of release plan**]（https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)
+
+
+[**detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)
  
 
 * [AI software and hardware capability] supports the hardware of shengteng / atlas and open API
-        - AI image restoration, edge detection, cartoon image generation, image coloring, object classification, target detection, etc;
+    - AI image restoration, edge detection, cartoon image generation, image coloring, object classification, target detection, etc;
 * Cross-platform support supports the incubation integration of virtual machine applications based on openstack and container applications based on k8s
 * [experience optimization]
         - App classification, APP recommendation and dynamic refresh of popular products
