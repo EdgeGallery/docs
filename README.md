@@ -1,7 +1,7 @@
 # docs
 
 ## 介绍
-该仓库的文档通过文档工具编译形成[文档](http://docs.edgegallery.org/zh_CN/latest/)，链接如下：http://docs.edgegallery.org/zh_CN/latest/）
+该仓库的文档通过文档工具编译形成[文档](http://docs.edgegallery.org/zh_CN/latest/)，链接如下：http://docs.edgegallery.org/zh_CN/latest/
 
 该文档当前包含内容如下：
 
