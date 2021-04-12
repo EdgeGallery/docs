@@ -140,14 +140,12 @@ The following vulnerabilities exist in the third-party open-source components of
 
 
 **Upgrade Notes**
- 
-N/A
 
+N/A
 
 **Deprecation Notes**
- 
-N/A
 
+N/A
 
 **Other**
 
