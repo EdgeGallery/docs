@@ -58,13 +58,13 @@ Version: v1.1.0
 **Bug Fixes** 
 
 
-  See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report.md)
+  See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report%2Emd)
  
 
 **Known Issues**
 
 
-  See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report.md)
+  See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report%2Emd)
  
 
 **Security Notes**
@@ -73,13 +73,13 @@ Version: v1.1.0
 *Fixed Security Issues*
 
 
-  See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%20.md)
+  See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%20%2Emd)
 
 
 *Known Security Issues*
 
 
-  See [edgegallery V1.1.0 security test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report.md)
+  See [edgegallery V1.1.0 security test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report%2Emd)
 
 *Known Vulnerabilities in Used Modules*
 
@@ -218,13 +218,13 @@ Version: v1.0.0
 *Fixed Security Issues*
 
 
-  See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report.md)
+  See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report%2Emd)
 
 
 *Known Security Issues*
 
 
-  See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report.md)
+  See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report%2Emd)
 
 
 *Known Vulnerabilities in Used Modules*
@@ -326,21 +326,21 @@ Version: v0.9.1
 
 **Bug Fixes**
 
-  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
+  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)
 
 **Known Issues**
 
-  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
+  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)
 
 **Security notes**
 
 *Fixed Security Issues*
 
-  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
+  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)
 
 *Known Security Issues*
 
-  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
+  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)
 
 *Known Vulnerabilities in Used Modules*
 
