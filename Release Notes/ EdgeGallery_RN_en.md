@@ -405,7 +405,7 @@ The following vulnerabilities exist in the third-party open source components of
 
 
 - MECM:
- 
+
 | Component | Version | CVE |
 |---|---|---|
 | lodash | 4.17.13 | CVE-2020-8203 |
