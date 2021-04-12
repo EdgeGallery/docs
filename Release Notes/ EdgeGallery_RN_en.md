@@ -176,17 +176,17 @@ Version: v1.0.0
 
 [**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
 
-* [developer] optimizes app development test release process, optimizes API interface, and integrates multi language SDK
+* [Developer] optimizes app development test release process, optimizes API interface, and integrates multi language SDK
     - Optimize the home page design and add application development life cycle flow chart;
     - Optimize the project development process, new interface design;
     - Optimize the deployment and test link, increase the visualization display, the deployment process display and the pod display of the deployment results;
     - Optimize the interface of capability center and increase the selection of capability classification;
     - Application release link docking certification test platform;
-* [app store] interface ease of use optimization, edgegallery ecological capability optimization
-* [mecm] optimize the topology, application management and edge node management, add the function of acquiring MEP capability and AK / SK configuration interface
+* [App store] interface ease of use optimization, edgegallery ecological capability optimization
+* [Mecm] optimize the topology, application management and edge node management, add the function of acquiring MEP capability and AK / SK configuration interface
 * [MEP] supports app heartbeat detection, adding an interface to acquire MEP capability, an AK / SK configuration interface, and an interface to acquire token for MEP agent
 * Enhanced test capability of ATP app application
-* [test] provides health check function, optimizes installation package, develops test platform, and supports test case management
+* [Test] provides health check function, optimizes installation package, develops test platform, and supports test case management
  
 * POC characteristics
     - MEP service governance page display
