@@ -4,7 +4,7 @@
 ![](/uploads/images/2020/v1.0/Developer.png "Developer.png")<br>
 
 应用商城：<br>
-![](/uploads/images/2021/v1.0/AppStore.png "AppStore.png")<br>
+![](/uploads/images/2021/v1.1/AppStore.png "AppStore.png")<br>
 
 MEC管理平台：<br>
 ![](/uploads/images/2020/v1.0/Mecm.png "Mecm.png")<br>
