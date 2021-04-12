@@ -141,7 +141,7 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 ![](/uploads/images/2021/appstore/topull.png "4.5")
 ![](/uploads/images/2021/appstore/pulled.png "4.6")
 
-5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。通过单击消息中心右侧面板右上角的接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在APP推送界面查看，点击删除按钮则删除该条消息，双击可查看消息详情。
+5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。通过单击消息中心右侧面板右上角的接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在“我的应用”界面查看，点击删除按钮则删除该条消息，双击可查看消息详情。
 ![](/uploads/images/2021/appstore/messages.png "4.7")
 ![](/uploads/images/2021/appstore/message_detail.png "4.8")
 
