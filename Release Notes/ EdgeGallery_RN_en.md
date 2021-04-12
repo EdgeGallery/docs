@@ -19,7 +19,9 @@ Version: v1.1.0
 - Image Version: v1.1.0
  
 **List of new open source warehouses**
- 
+|   |   |   |   |   |   |
+|---|---|---|---|---|---|
+
 |Module | name | type | URL | description|
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
 |Example applications | example apps | POC|https://gitee.com/edgegallery/example-apps |Provide a sample app based on edgegallery|
