@@ -142,11 +142,13 @@ The following vulnerabilities exist in the third-party open-source components of
 **Upgrade Notes**
  
 N/A
- 
+
+
 **Deprecation Notes**
  
 N/A
- 
+
+
 **Other**
  
 N/A
@@ -156,13 +158,13 @@ N/A
  
 Version: v1.0.0
 --------------
- 
+
 - Release Date: 2020-12-31
 - Image Version: v1.0.0
 
 
 **List of new open source warehouses**
- 
+
 
 |Module | name | type | URL | description|
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
@@ -174,7 +176,7 @@ Version: v1.0.0
  
 **New Features**
 
- 
+
 [** detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
 
 
@@ -253,13 +255,13 @@ The following vulnerabilities exist in the third-party open source components of
 | jackson-databind | 2.10.5 | CVE-2020-25649 |
 | mybatis-spring-boot-starter | 2.1.1 | CVE-2020-26945 |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17527 | 
- 
+
 - ATP
 
 | Component | Version | CVE |
 |---|---|---|
 | mybatis-spring-boot-starter |2.1.1 | CVE-2020-26945|
- 
+
 - User-mgmt:
 
 | Component | Version | CVE |
@@ -269,7 +271,7 @@ The following vulnerabilities exist in the third-party open source components of
 | jackson-databind | 2.10.5 | CVE-2020-25649 |
 | mybatis-spring-boot-starter | 2.1.1 | CVE-2020-26945 |
 | spring-security-oauth2 | 2.3.3.RELEAS | CVE-2018-15758 |
- 
+
 - Website-gateway:
 
 | Component | Version | CVE |
@@ -285,8 +287,8 @@ The following vulnerabilities exist in the third-party open source components of
 | --------- | ------- | ------------- |
 | lodash | 4.17.13 | CVE-2020-8203 |
 | minimatch | 3.0.4 | NPM-118 |
- 
- 
+
+
 **Upgrade Notes**
 
 N/A
@@ -300,9 +302,8 @@ N/A
 N/A
 
 -----------------------------------------------------------------------------
- 
- 
- 
+
+
 Version: v0.9.1
 --------------
  
