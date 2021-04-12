@@ -78,14 +78,14 @@ Version: v1.1.0
 
 *Known Security Issues*
 
- 
+
   See [edgegallery V1.1.0 security test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report.md)
  
 *Known Vulnerabilities in Used Modules*
 
 
 The following vulnerabilities exist in the third-party open-source components of EdgeGallelry V1.1.0, which need to be fixed by users themselves:
- 
+
 - Appstore:
 
 | Component | Version | CVE |
@@ -99,10 +99,9 @@ The following vulnerabilities exist in the third-party open-source components of
 | mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
 | spring-jdbc | 5.1.8.RELEASE | CVE-2020-5398 |
 | spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
- 
+
  
 -Developer:
-
 
 | Component | Version | CVE |
 |---|---|---|
@@ -115,8 +114,8 @@ The following vulnerabilities exist in the third-party open-source components of
 | mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
 | spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
 
-- ATP
 
+- ATP
 
 | Component | Version | CVE |
 |---|---|---|
@@ -234,10 +233,8 @@ Version: v1.0.0
 
 
 The following vulnerabilities exist in the third-party open source components of edgegallelry v1.0.0, which need to be fixed by users themselves:
- 
-- Appstore:
- 
 
+- Appstore:
 
 | Component | Version | CVE |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
@@ -247,9 +244,7 @@ The following vulnerabilities exist in the third-party open source components of
 | spring-security-oauth2 | 2.3.3.RELEASE | CVE-2018-15758 |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17525 |
  
- 
 - Developer:
-
  
 | Component | Version | CVE |
 |---|---|---|
@@ -257,8 +252,7 @@ The following vulnerabilities exist in the third-party open source components of
 | spring-security-core | 5.3.4.RELEASE | CVE-2018-1258 |
 | jackson-databind | 2.10.5 | CVE-2020-25649 |
 | mybatis-spring-boot-starter | 2.1.1 | CVE-2020-26945 |
-| tomcat-embed-core | 9.0.37 | CVE-2020-17527 |
- 
+| tomcat-embed-core | 9.0.37 | CVE-2020-17527 | 
  
 - ATP
 
@@ -284,7 +278,7 @@ The following vulnerabilities exist in the third-party open source components of
 | jackson-databind | 2.10.5 | CVE-2020-26945 |
 | spring-security-oauth2 | 2.3.3 | CVE-2018-15758 |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17527 |
- 
+
 - MECM:
 
 | Component | Version | CVE |
@@ -294,17 +288,17 @@ The following vulnerabilities exist in the third-party open source components of
  
  
 **Upgrade Notes**
- 
+
 N/A
- 
+
 **Deprecation Notes**
- 
+
 N/A
- 
+
 **Other**
- 
+
 N/A
- 
+
 -----------------------------------------------------------------------------
  
  
