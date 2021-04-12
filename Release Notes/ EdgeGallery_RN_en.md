@@ -24,4 +24,4 @@ Version: v1.1.0
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
 |Example applications | example apps | POC|https://gitee.com/edgegallery/example-apps |Provide a sample app based on edgegallery|
 |Edgegallery front component | eg view | product warehouse|https://gitee.com/edgegallery/eg-view |Provide normalized edgegallery front end components|
-|Edgegallery testing platform | edget | POC|https://gitee.com/edgegallery/edgeT |Provide local testing tool chain for users|
+|Edgegallery testing platform | edget | POC|https://gitee.com/edgegallery/edgeT |Provide local testing toolchain for users|
