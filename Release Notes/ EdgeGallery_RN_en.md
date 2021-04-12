@@ -80,7 +80,7 @@ Version: v1.1.0
 
 
   See [edgegallery V1.1.0 security test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report.md)
- 
+
 *Known Vulnerabilities in Used Modules*
 
 
