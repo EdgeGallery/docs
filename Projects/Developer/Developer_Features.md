@@ -78,9 +78,11 @@ Developer 特性清单
 - 配置部署文件
 
     提供两种配置部署文件方式：
-    - 用户在本地编辑好后直接上传，平台提供基本的校验功能；有关配置文件的格式，可以参考界面提供的demo样例，该样例可以直接上传使用。![](/uploads/images/2021/developer/deploy-two-file.PNG "deploy-two-file.PNG")
-	
-    - 可视化配置文件，目前版本支持的部署类型为Pod和Service。![](/uploads/images/2021/developer/deploy-two-config.PNG "deploy-two-config.PNG")
+    - 用户在本地编辑好后直接上传，平台提供基本的校验功能；有关配置文件的格式，可以参考界面提供的demo样例，该样例可以直接上传使用。
+    ![](/uploads/images/2021/developer/deploy-two-file.PNG "deploy-two-file.PNG")
+    
+    - 可视化配置文件，目前版本支持的部署类型为Pod和Service。
+    ![](/uploads/images/2021/developer/deploy-two-config.PNG "deploy-two-config.PNG")
     
 
 - 部署调测
@@ -121,10 +123,14 @@ Developer 特性清单
 - 应用认证
 
 对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。
+
     - 选择测试场景
-![](/uploads/images/2021/developer/atp-1.PNG "atp-1.PNG")
+    
+    ![](/uploads/images/2021/developer/atp-1.PNG "atp-1.PNG")
+    
     - 执行测试用例
-![](/uploads/images/2021/developer/atp-2.PNG "atp-2.PNG")
+    
+    ![](/uploads/images/2021/developer/atp-2.PNG "atp-2.PNG")
 
 - 应用发布
 
