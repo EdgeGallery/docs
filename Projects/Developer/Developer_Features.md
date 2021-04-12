@@ -70,9 +70,8 @@ Developer 特性清单
 - 上传APP镜像
     
     支持三种镜像上传方式
-    - 用户上传到公共的镜像仓库，例如DockerHub 或 SWR镜像仓库，在部署时会自动从这些镜像仓库下载镜像包完成部署。
-    - 上传到EdgeGallery的镜像仓库
-    - 如果您不想开放自己的应用镜像，可以自己搭建一个EdgeGallery边缘节点，需要安装的软件和安装指导，请参考：
+    - 用户上传镜像打包文件。
+    - 上传到EdgeGallery的镜像仓库。
 
 ![](/uploads/images/2021/developer/deploy-one.PNG "deploy-one.PNG")
 
@@ -82,18 +81,19 @@ Developer 特性清单
     - 用户在本地编辑好后直接上传，平台提供基本的校验功能；有关配置文件的格式，可以参考界面提供的demo样例，该样例可以直接上传使用。
     
 ![](/uploads/images/2021/developer/deploy-two-file.PNG "deploy-two-file.PNG")
-
+    
     - 可视化配置文件，目前版本支持的部署类型为Pod和Service。
+	
 ![](/uploads/images/2021/developer/deploy-two-config.PNG "deploy-two-config.PNG")
     
 
 - 部署调测
 
-    - Step1 部署调测前可以根据需要选择部署环境，EdgeGallery提供‘模拟环境’和‘5G真实’两种测试环境（v1.0版本只实现模拟环境分配）；
+    - Step1 部署调测前可以根据需要选择部署环境，EdgeGallery提供‘模拟环境’和‘5G真实’两种测试环境（v1.1版本只实现模拟环境分配）；
     - Step2 启动部署，开始 生成部署文件 -> 分配测试节点 -> 实例化应用 -> 获取部署状态
     - Step3 部署成功后，会返回部署后台的测试链接，并且展示已经部署完成POD信息
-    - Step4 应用开发者通过链接对应用进行测试，修改镜像后，循环以上Step1->Step2->Step3操作，对应用进行反复测试
-    - Step5 测试完成后，通过【资源回收】按钮释放测试环境
+    - Step4 应用开发者通过链接对应用进行测试
+    - Step5 测试完成后，通过【资源回收】按钮释放测试环境，如需修改，请在完成镜像修改后，循环以上Step1->Step2->Step3->Step4操作，对应用进行反复测试
 
 ![](/uploads/images/2020/v1.0/DeploymentTest.png "DeploymentTest.png")
 
@@ -125,9 +125,9 @@ Developer 特性清单
 - 应用认证
 
 对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。
-- 选择测试场景
+    - 选择测试场景
 ![](/uploads/images/2021/developer/atp-1.PNG "atp-1.PNG")
-- 执行测试用例
+    - 执行测试用例
 ![](/uploads/images/2021/developer/atp-2.PNG "atp-2.PNG")
 
 - 应用发布
