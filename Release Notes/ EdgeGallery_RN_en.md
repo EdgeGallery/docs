@@ -88,8 +88,6 @@ The following vulnerabilities exist in the third-party open-source components of
  
 - Appstore:
 
-
-
 | Component | Version | CVE |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
 | log4j | 1.2.17 | CVE-2019-17571 |
@@ -105,6 +103,7 @@ The following vulnerabilities exist in the third-party open-source components of
  
 -Developer:
 
+
 | Component | Version | CVE |
 |---|---|---|
 | netty-transport | 4.1.36.Final | CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612 |
@@ -118,6 +117,7 @@ The following vulnerabilities exist in the third-party open-source components of
 
 - ATP
 
+
 | Component | Version | CVE |
 |---|---|---|
 | netty-transport | 4.1.36.Final | CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612 |
@@ -128,8 +128,8 @@ The following vulnerabilities exist in the third-party open-source components of
 | spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
 | spring-core | 5.1.8.RELEASE | CVE-2020-5398 |
 
-
 - User-mgmt:
+
 
 | Component | Version | CVE |
 | ----------------------------------------------------- | ------------- | --------------------------- |
