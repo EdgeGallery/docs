@@ -160,7 +160,6 @@ Version: v1.0.0
 - Release Date: 2020-12-31
 - Image Version: v1.0.0
 
-
 **List of new open source warehouses**
 
 
@@ -175,8 +174,7 @@ Version: v1.0.0
 **New Features**
 
 
-[** detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
-
+[**detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
 
 * [developer] optimizes app development test release process, optimizes API interface, and integrates multi language SDK
     - Optimize the home page design and add application development life cycle flow chart;
@@ -245,7 +243,7 @@ The following vulnerabilities exist in the third-party open source components of
 | tomcat-embed-core | 9.0.37 | CVE-2020-17525 |
 
 - Developer:
- 
+
 | Component | Version | CVE |
 |---|---|---|
 | spring-beans (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
