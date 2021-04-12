@@ -55,33 +55,41 @@ Version: v1.1.0
     - Completed 80 + application integration, landing 17 + innovation base and postgraduate courses of Xi&apos; an University of Electronic Science and technology
 
 
-**Bug Fixes**
- 
+**Bug Fixes** 
+
+
   See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report.md)
  
 
 **Known Issues**
- 
+
+
   See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report.md)
  
 
 **Security Notes**
- 
+
+
 *Fixed Security Issues*
- 
+
+
   See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%20.md)
- 
+
+
 *Known Security Issues*
+
  
   See [edgegallery V1.1.0 security test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report.md)
  
 *Known Vulnerabilities in Used Modules*
- 
+
+
 The following vulnerabilities exist in the third-party open-source components of EdgeGallelry V1.1.0, which need to be fixed by users themselves:
  
 - Appstore:
- 
- 
+
+
+
 | Component | Version | CVE |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
 | log4j | 1.2.17 | CVE-2019-17571 |
@@ -112,7 +120,8 @@ The following vulnerabilities exist in the third-party open-source components of
  
 - ATP
  
- 
+
+
 | Component | Version | CVE |
 |---|---|---|
 | netty-transport | 4.1.36.Final | CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612 |
@@ -126,7 +135,8 @@ The following vulnerabilities exist in the third-party open-source components of
  
 - User-mgmt:
  
- 
+
+
 | Component | Version | CVE |
 | ----------------------------------------------------- | ------------- | --------------------------- |
 | vertx-core | 3.9.4 | CVE-2019-17640 |
@@ -156,67 +166,85 @@ Version: v1.0.0
  
 - Release Date: 2020-12-31
 - Image Version: v1.0.0
- 
+
+
 **List of new open source warehouses**
  
+
 |Module | name | type | URL | description|
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
 |ATP (application test platform) | ATP | product warehouse|https://gitee.com/edgegallery/atp |Application testing platform provides testing support for application certification|
 |ATP (application test platform) | ATP Fe | product warehouse|https://gitee.com/edgegallery/atp-fe |Provide the foreground support of application testing and certification platform|
 |Developer | crane framework | product warehouse|https://gitee.com/edgegallery/crane-framework |To provide lightweight for application development, plug-in is the development framework|
 |Mecm | mecm approlemgr | product warehouse|https://gitee.com/edgegallery/mecm-apprulemgr |The management side provides the ability to configure, distribute and manage application rules|
+
  
 **New Features**
+
  
-[* * detailed description of demand / release plan * *]（https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
+[** detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
+
+
+* [developer] optimizes app development test release process, optimizes API interface, and integrates multi language SDK
+    - Optimize the home page design and add application development life cycle flow chart;
+    - Optimize the project development process, new interface design;
+    - Optimize the deployment and test link, increase the visualization display, the deployment process display and the pod display of the deployment results;
+    - Optimize the interface of capability center and increase the selection of capability classification;
+    - Application release link docking certification test platform;
+* [app store] interface ease of use optimization, edgegallery ecological capability optimization
+* [mecm] optimize the topology, application management and edge node management, add the function of acquiring MEP capability and AK / SK configuration interface
+* [MEP] supports app heartbeat detection, adding an interface to acquire MEP capability, an AK / SK configuration interface, and an interface to acquire token for MEP agent
+* Enhanced test capability of ATP app application
+* [test] provides health check function, optimizes installation package, develops test platform, and supports test case management
  
-*Version planning features
-*[developer] optimizes app development test release process, optimizes API interface, and integrates multi language SDK
-        - Optimize the home page design and add application development life cycle flow chart;
-        - Optimize the project development process, new interface design;
-        - Optimize the deployment and test link, increase the visualization display, the deployment process display and the pod display of the deployment results;
-        - Optimize the interface of capability center and increase the selection of capability classification;
-        - Application release link docking certification test platform;
-*[app store] interface ease of use optimization, edgegallery ecological capability optimization
-*[mecm] optimize the topology, application management and edge node management, add the function of acquiring MEP capability and AK / SK configuration interface
-*[MEP] supports app heartbeat detection, adding an interface to acquire MEP capability, an AK / SK configuration interface, and an interface to acquire token for MEP agent
-*Enhanced test capability of ATP app application
-*[test] provides health check function, optimizes installation package, develops test platform, and supports test case management
- 
-*POC characteristics
-*MEP service governance page display
-*Introducing a plug-in application framework [crane framework]（https://gitee.com/edgegallery/crane-framework)
-*Appstore federation can register external appstores, and applications can push and pull each other between different appstores
- 
+* POC characteristics
+    - MEP service governance page display
+    - Introducing a plug-in application framework [crane framework]（https://gitee.com/edgegallery/crane-framework)
+    - Appstore federation can register external appstores, and applications can push and pull each other between different appstores
+
+
 **PoC Test Report**
- 
-  See [edgegallery v1.0.0 POC test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)
+
+
+  See [edgegallery v1.0.0 POC test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)
+
  
 **Bug Fixes**
- 
-  See [edgegallery v1.0.0 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)
- 
+
+
+  See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)
+
+
 **Known Issues**
- 
-  See [edgegallery v1.0.0 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)
- 
+
+
+  See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)
+
+
 **Security Notes**
- 
+
+
 *Fixed Security Issues*
- 
-  See [edgegallery v1.0.0 test report]（https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report.md)
- 
+
+
+  See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report.md)
+
+
 *Known Security Issues*
- 
-  See [edgegallery v1.0.0 test report]（https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report.md)
- 
+
+
+  See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report.md)
+
+
 *Known Vulnerabilities in Used Modules*
- 
+
+
 The following vulnerabilities exist in the third-party open source components of edgegallelry v1.0.0, which need to be fixed by users themselves:
  
 - Appstore:
  
- 
+
+
 | Component | Version | CVE |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
 | log4j (indirect dependency) | 1.2.17 | CVE-2019-17571 |
@@ -227,7 +255,7 @@ The following vulnerabilities exist in the third-party open source components of
  
  
 - Developer:
- 
+
  
 | Component | Version | CVE |
 |---|---|---|
@@ -239,14 +267,13 @@ The following vulnerabilities exist in the third-party open source components of
  
  
 - ATP
- 
+
 | Component | Version | CVE |
 |---|---|---|
 | mybatis-spring-boot-starter |2.1.1 | CVE-2020-26945|
  
 - User-mgmt:
- 
- 
+
 | Component | Version | CVE |
 | ----------------------------------------------------- | ------------- | --------------------------- |
 | spring-security-core |5.3.4.RELEASE | CVE-2018-1258 |
@@ -256,8 +283,7 @@ The following vulnerabilities exist in the third-party open source components of
 | spring-security-oauth2 | 2.3.3.RELEAS | CVE-2018-15758 |
  
 - Website-gateway:
- 
- 
+
 | Component | Version | CVE |
 | -------------------- | ------------- | -------------- |
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
@@ -266,8 +292,7 @@ The following vulnerabilities exist in the third-party open source components of
 | tomcat-embed-core | 9.0.37 | CVE-2020-17527 |
  
 - MECM:
- 
- 
+
 | Component | Version | CVE |
 | --------- | ------- | ------------- |
 | lodash | 4.17.13 | CVE-2020-8203 |
