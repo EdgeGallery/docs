@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MEP/MEP_Dependency.md:2
+msgid "依赖"
+msgstr "rely on"
+
+#: ../../Projects/MEP/MEP_Dependency.md:4
+msgid "## MEP-auth 三方件使用清单"
+msgstr "## MEP-auth Tripartite Use List"
+
+#: ../../Projects/MEP/MEP_Dependency.md:6
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>artifact</th> <th>version</th> </tr> </thead> <tbody> <tr> <td>github.com/agiledragon/gomonkey</td> <td>v2.0.1</td> </tr> <tr> <td>github.com/astaxie/beego</td> <td>v1.12.0</td> </tr> <tr> <td>github.com/dgrijalva/jwt-go/v4</td> <td>v4.0.0-preview1</td> </tr> <tr> <td>github.com/go-playground/validator/v10</td> <td>v10.2.0</td> </tr> <tr> <td>github.com/natefinch/lumberjack</td> <td>v2.0.0</td> </tr> <tr> <td>github.com/lib/pq</td> <td>v1.7.0</td> </tr> <tr> <td>github.com/sirupsen/logrus</td> <td>v1.6.0</td> </tr> <tr> <td>github.com/smartystreets/goconvey</td> <td>v1.6.4</td> </tr> <tr> <td>golang.org/x/crypto</td> <td>v0.0.0-20200302210943-78000ba7a073</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <th>artifact</th> <th>version</th> </thead> </tr> <tbody> <tr> <td>github.com/agiledragon/gomonkey</td> <td>v2.0.1</td> </tr> <tr> <td>github.com/astaxie/beego</td> <td>v1.12.2.0</td> </tr> <tr> <td>github.com/dgrijalva/jwt-go/v4</td> <td>v4.00-preview1</td> </tr> <tr> <td>github.com/go-playground/validator/v10</td> <td>v10.2.0</td> </tr> <tr> <td>github.com/natefinch/lumberjack</td> <td>v2.0.0</td> </tr> <tr> <td>github.com/lib/pq</td> <td>v1.7.0</td> </tr> <tr> <td>github.com/sirupsen/logrus</td> <td>v1.6.0</td> </tr> <tr> <td>github.com/smartystreets/goconvey</td> </tr> <td>v1.6.4</td> </tr> <tr> <td>golang.org/x/crypto</td> <td>v0.0.0-20200302210943-78000ba7a073</td></td> </tr> </table> </table>"
+
+#: ../../Projects/MEP/MEP_Dependency.md:53
+msgid "## MEP-server 三方件使用清单"
+msgstr "## MEP-server three-way use list"
+
+#: ../../Projects/MEP/MEP_Dependency.md:55
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>artifact</th> <th>version</th> </tr> </thead> <tbody> <tr> <td>github.com/agiledragon/gomonkey</td> <td>v2.0.1</td> </tr> <tr> <td>github.com/apache/servicecomb-service-center</td> <td>v0.0.0-20191027084911-c2dc0caef706</td> </tr> <tr> <td>github.com/astaxie/beego</td> <td>v1.12.0</td> </tr> <tr> <td>github.com/go-playground/validator/v10</td> <td>v10.2.0</td> </tr> <tr> <td>github.com/satori/go.uuid</td> <td>v1.2.0</td> </tr> <tr> <td>github.com/stretchr/testify</td> <td>v1.6.1</td> </tr> <tr> <td>golang.org/x/crypto</td> <td>v0.0.0-20200302210943-78000ba7a073</td> </tr> <tr> <td>golang.org/x/net</td> <td>v0.0.0-20200301022130-244492dfa37a</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>artifact</th> <th>version</th> </thead> </tr> <tbody> <tr> <td>github.com/agiledragon/gomonkey</td> <td>v2.0.1</td> </tr> <tr> <td>github.com/apache/servicecomb-service-center</td> <td>v0.0.0-20191027084911-c2dc0caef706</td> </tr> <tr> <td>github.com/astaxie/beego</td> <td>v1.12.0</td> </tr> <tr> <td>github.com/go-playground/validator/v10</td> <td>v10.2.0</td> </tr> <tr> <td>github.com/satori/go.uuid</td> <td>v1.2.0</td> </tr> <tr> <td>github.com/stretchr/testify</td> <td>v1.6.1</td> </tr> <tr> <td>golang.org/x/crypto</td> <td>v0.0.0-20200302210943-78000ba7a073</td> </tr> <tr> <td>golang.org/x/net</td> <td>v0.0.0-20200301022130-244492dfa37a</td> </tbody> </table> </table> </table>"
+
+#: ../../Projects/MEP/MEP_Dependency.md:98
+msgid "## dns-server 三方件使用清单"
+msgstr "## dns-server three-way use list"
+
+#: ../../Projects/MEP/MEP_Dependency.md:100
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>artifact</th> <th>version</th> </tr> </thead> <tbody> <tr> <td>github.com/agiledragon/gomonkey</td> <td>v2.0.1</td> </tr> <tr> <td>github.com/labstack/echo/v4</td> <td>v4.1.16</td> </tr> <tr> <td>github.com/miekg/dns</td> <td>v1.1.29</td> </tr> <tr> <td>github.com/sirupsen/logrus</td> <td>v1.6.0</td> </tr> <tr> <td>github.com/stretchr/testify</td> <td>v1.6.1</td> </tr> <tr> <td>go.etcd.io/bbolt</td> <td>v1.3.4</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <th>artifact</th> <th>version</th> </thead> </tr> <tbody> <tr> <td>github.com/agiledragon/gomonkey</td> <td>v2.0.1</td> </tr> <tr> <td>github.com/labstack/echo/v4</td> <td>v4.1.16</td> </tr> <tr> <td>github.com/miekg/dns</td> <td>v1.1.29</td> </tr> <tr> <td>github.com/sirupsen/logrus</td> <td>v1.6.0</td> </tr> <tr> <td>github.com/stretchr/testify</td> <td>v1.6.1</td> </tr> <tr> <td>go.etcd.io/bbolt</td> <td>v1.3.4</td> </tbody> </table> </table>"
+
+#: ../../Projects/MEP/MEP_Dependency.md:135
+msgid "## MEP-agent 三方件使用清单"
+msgstr "## MEP-agent three-way use list"
+
+#: ../../Projects/MEP/MEP_Dependency.md:137
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>artifact</th> <th>version</th> </tr> </thead> <tbody> <tr> <td>github.com/agiledragon/gomonkey</td> <td>v2.0.1</td> </tr> <tr> <td>github.com/astaxie/beego</td> <td>v1.12.0</td> </tr> <tr> <td>github.com/go-playground/validator/v10</td> <td>v10.2.0</td> </tr> <tr> <td>github.com/natefinch/lumberjack</td> <td>v2.0.0</td> </tr> <tr> <td>github.com/sirupsen/logrus</td> <td>v1.6.0</td> </tr> <tr> <td>github.com/smartystreets/goconvey</td> <td>v1.6.4</td> </tr> <tr> <td>github.com/stretchr/testify</td> <td>v1.6.1</td> </tr> <tr> <td>gopkg.in/yaml.v2</td> <td>v2.2.8</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <th>artifact</th> <th>version</th> </thead> </tr> <tbody> <tr> <td>github.com/agiledragon/gomonkey</td> <td>v2.0.1</td> </tr> <tr> <td>github.com/astaxie/beego</td> <td>v1.12.2.0</td> </tr> <tr> <td>github.com/go-playground/validator/v10</td> <td>v10.2.0</td> </tr> <tr> <td>github.com/natefinch/lumberjack</td> <td>v2.0.0</td> </tr> <tr> <td>github.com/sirupsen/logrus</td> <td>v1.6.0</td> </tr> <tr> <td>github.com/smartystreets/goconvey</td> <td>v1.6.4</td> </tr> <tr> <td>github.com/stretchr/testify</td> <td>v1.6.1</td> </tr> <tr> <td>gopkg.in/yaml.v2</td> <td>v2.2.8</td> </tr> </tbody> </table>"
+

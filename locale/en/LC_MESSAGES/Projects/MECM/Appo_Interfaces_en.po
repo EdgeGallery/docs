@@ -1,0 +1,419 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:2
+msgid "Application Orchestrator Interfaces"
+msgstr "Application Orchestrator Interfaces"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:3
+msgid "The document is for the Application Orchestrator project, there are two parts of interfaces in the project."
+msgstr "The document is for the Application Orchestrator project, there are two parts of interfaces in the project."
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:5
+msgid "### Get All Application Instances"
+msgstr "### Get All Application Instances"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:7
+msgid "Retrieves application instances information"
+msgstr "Retrieves application instances information"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:9
+msgid "``` Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos Method: GET ```"
+msgstr "` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /app_instance_infos Method: GET ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:14 ../../Projects/MECM/Appo_Interfaces_en.md:1421
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </table> </tbody> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:45
+msgid "Example response: ``` 200 OK ["
+msgstr "Example response: ` ` 200 OK ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:57 ../../Projects/MECM/Appo_Interfaces_en.md:120 ../../Projects/MECM/Appo_Interfaces_en.md:231 ../../Projects/MECM/Appo_Interfaces_en.md:294 ../../Projects/MECM/Appo_Interfaces_en.md:349 ../../Projects/MECM/Appo_Interfaces_en.md:404 ../../Projects/MECM/Appo_Interfaces_en.md:528 ../../Projects/MECM/Appo_Interfaces_en.md:533 ../../Projects/MECM/Appo_Interfaces_en.md:542 ../../Projects/MECM/Appo_Interfaces_en.md:613 ../../Projects/MECM/Appo_Interfaces_en.md:618 ../../Projects/MECM/Appo_Interfaces_en.md:734 ../../Projects/MECM/Appo_Interfaces_en.md:741 ../../Projects/MECM/Appo_Interfaces_en.md:808 ../../Projects/MECM/Appo_Interfaces_en.md:815 ../../Projects/MECM/Appo_Interfaces_en.md:882 ../../Projects/MECM/Appo_Interfaces_en.md:889 ../../Projects/MECM/Appo_Interfaces_en.md:951 ../../Projects/MECM/Appo_Interfaces_en.md:1083 ../../Projects/MECM/Appo_Interfaces_en.md:1087 ../../Projects/MECM/Appo_Interfaces_en.md:1098 ../../Projects/MECM/Appo_Interfaces_en.md:1103 ../../Projects/MECM/Appo_Interfaces_en.md:1111 ../../Projects/MECM/Appo_Interfaces_en.md:1125 ../../Projects/MECM/Appo_Interfaces_en.md:1223 ../../Projects/MECM/Appo_Interfaces_en.md:1227 ../../Projects/MECM/Appo_Interfaces_en.md:1238 ../../Projects/MECM/Appo_Interfaces_en.md:1243 ../../Projects/MECM/Appo_Interfaces_en.md:1251 ../../Projects/MECM/Appo_Interfaces_en.md:1265 ../../Projects/MECM/Appo_Interfaces_en.md:1338 ../../Projects/MECM/Appo_Interfaces_en.md:1407 ../../Projects/MECM/Appo_Interfaces_en.md:1408 ../../Projects/MECM/Appo_Interfaces_en.md:1466 ../../Projects/MECM/Appo_Interfaces_en.md:1468
+msgid "{"
+msgstr "{"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:50 ../../Projects/MECM/Appo_Interfaces_en.md:113 ../../Projects/MECM/Appo_Interfaces_en.md:287 ../../Projects/MECM/Appo_Interfaces_en.md:944
+msgid "\"appInstanceId\": \"string\", \"appPackageId\": \"string\", \"appName\": \"string\", \"appId\": \"string\", \"appDescriptor\": \"string\", \"mecHost\": \"string\", \"applcmHost\": \"string\", \"operationalStatus\": \"string\", \"operationInfo\":\"string\""
+msgstr "\" appInstanceId \": \" appPackageId \": \" string \", \" appName \": \" appId \": \" string \", \" appDescriptor \": \" string \", \" mecHost \": \" string \", \" applcHost \": \" string \", \" operationalStatus \": \" string \", \" operationInfo \" :\"string \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:59 ../../Projects/MECM/Appo_Interfaces_en.md:122 ../../Projects/MECM/Appo_Interfaces_en.md:222 ../../Projects/MECM/Appo_Interfaces_en.md:233 ../../Projects/MECM/Appo_Interfaces_en.md:296 ../../Projects/MECM/Appo_Interfaces_en.md:351 ../../Projects/MECM/Appo_Interfaces_en.md:406 ../../Projects/MECM/Appo_Interfaces_en.md:544 ../../Projects/MECM/Appo_Interfaces_en.md:546 ../../Projects/MECM/Appo_Interfaces_en.md:620 ../../Projects/MECM/Appo_Interfaces_en.md:722 ../../Projects/MECM/Appo_Interfaces_en.md:741 ../../Projects/MECM/Appo_Interfaces_en.md:743 ../../Projects/MECM/Appo_Interfaces_en.md:796 ../../Projects/MECM/Appo_Interfaces_en.md:815 ../../Projects/MECM/Appo_Interfaces_en.md:817 ../../Projects/MECM/Appo_Interfaces_en.md:870 ../../Projects/MECM/Appo_Interfaces_en.md:889 ../../Projects/MECM/Appo_Interfaces_en.md:891 ../../Projects/MECM/Appo_Interfaces_en.md:953 ../../Projects/MECM/Appo_Interfaces_en.md:1085 ../../Projects/MECM/Appo_Interfaces_en.md:1089 ../../Projects/MECM/Appo_Interfaces_en.md:1113 ../../Projects/MECM/Appo_Interfaces_en.md:1127 ../../Projects/MECM/Appo_Interfaces_en.md:1129 ../../Projects/MECM/Appo_Interfaces_en.md:1225 ../../Projects/MECM/Appo_Interfaces_en.md:1229 ../../Projects/MECM/Appo_Interfaces_en.md:1253 ../../Projects/MECM/Appo_Interfaces_en.md:1267 ../../Projects/MECM/Appo_Interfaces_en.md:1269 ../../Projects/MECM/Appo_Interfaces_en.md:1330 ../../Projects/MECM/Appo_Interfaces_en.md:1340 ../../Projects/MECM/Appo_Interfaces_en.md:1342 ../../Projects/MECM/Appo_Interfaces_en.md:1409 ../../Projects/MECM/Appo_Interfaces_en.md:1410 ../../Projects/MECM/Appo_Interfaces_en.md:1468 ../../Projects/MECM/Appo_Interfaces_en.md:1470
+msgid "}"
+msgstr "}"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:61 ../../Projects/MECM/Appo_Interfaces_en.md:235 ../../Projects/MECM/Appo_Interfaces_en.md:469 ../../Projects/MECM/Appo_Interfaces_en.md:534 ../../Projects/MECM/Appo_Interfaces_en.md:545 ../../Projects/MECM/Appo_Interfaces_en.md:547 ../../Projects/MECM/Appo_Interfaces_en.md:619 ../../Projects/MECM/Appo_Interfaces_en.md:721 ../../Projects/MECM/Appo_Interfaces_en.md:742 ../../Projects/MECM/Appo_Interfaces_en.md:816 ../../Projects/MECM/Appo_Interfaces_en.md:890 ../../Projects/MECM/Appo_Interfaces_en.md:1469
+msgid "]"
+msgstr "]"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:63
+msgid "### Get Application Instance Retrieves application instance information ``` Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_id} Method: GET ```"
+msgstr "### Get Application Instance Retrieves application instance information ` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /app_instance_infos/ {appInstance_id} Method: GET ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:70
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appInstance_id</td> <td>application instance id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appInstance_id</td> <td>application instance id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tbody> </table> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:109 ../../Projects/MECM/Appo_Interfaces_en.md:283 ../../Projects/MECM/Appo_Interfaces_en.md:455 ../../Projects/MECM/Appo_Interfaces_en.md:518 ../../Projects/MECM/Appo_Interfaces_en.md:604 ../../Projects/MECM/Appo_Interfaces_en.md:940
+msgid "Example response: ``` 200 OK"
+msgstr "Example response: ` ` ` 200 OK"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:123 ../../Projects/MECM/Appo_Interfaces_en.md:224 ../../Projects/MECM/Appo_Interfaces_en.md:297 ../../Projects/MECM/Appo_Interfaces_en.md:352 ../../Projects/MECM/Appo_Interfaces_en.md:407 ../../Projects/MECM/Appo_Interfaces_en.md:470 ../../Projects/MECM/Appo_Interfaces_en.md:548 ../../Projects/MECM/Appo_Interfaces_en.md:621 ../../Projects/MECM/Appo_Interfaces_en.md:724 ../../Projects/MECM/Appo_Interfaces_en.md:744 ../../Projects/MECM/Appo_Interfaces_en.md:798 ../../Projects/MECM/Appo_Interfaces_en.md:818 ../../Projects/MECM/Appo_Interfaces_en.md:872 ../../Projects/MECM/Appo_Interfaces_en.md:892 ../../Projects/MECM/Appo_Interfaces_en.md:954 ../../Projects/MECM/Appo_Interfaces_en.md:1118 ../../Projects/MECM/Appo_Interfaces_en.md:1258 ../../Projects/MECM/Appo_Interfaces_en.md:1412 ../../Projects/MECM/Appo_Interfaces_en.md:1472
+msgid "```"
+msgstr "` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:125
+msgid "### Create AppInstance Creates App Instance ``` Resource URI: /appo/v1/tenants/{tenant_id}/app_instances Method: POST ```"
+msgstr "### Create AppInstance Creates App Instance ` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /app_instances Method: POST ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:132
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appInstanceDescription</td> <td>appInstanceDescription</td> <td>RequestPart</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appName</td> <td>appName</td> <td>RequestPart</td> <td>yes</td> <td>Alphanumeric characters,special characters are hypen and underscore</td> <td>128</td> </tr> <tr> <td>appPackageId</td> <td>appPackageId</td> <td>RequestPart</td> <td>yes</td> <td>Alphanumeric in lower case</td> <td>64</td> </tr> <tr> <td>appId</td> <td>appId</td> <td>RequestPart</td> <td>yes</td> <td>Alphanumeric in lower case</td> <td>64</td> </tr> <tr> <td>mecHost</td> <td>mecHost</td> <td>RequestPart</td> <td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> <tr> <td>hwcapabilities</td> <td>hardwareCapabilities</td> <td>body</td> <td>No</td> <td>AlphaNumeric characters allowed</td> <td>128</td> </tr> <tr> <td>tenant_id</td> <td>tenant_id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appInstanceDescription</td> <td>appInstanceDescription</td> <td>RequestPart</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appName</td> <td>appName</td> <td>RequestPart</td> <td>yes</td> <td>Alphaumeric characters, special characters are hipgen and underscore</td> <td>128</td> </tr> <tr> <td>appPackageId</td> <td>appPackageId</td> <td>RequestPart</td> <td>yes</td> <td>Alphanumeric in lower case</td> <td>64</td> </tr> <tr> <td>appId</td> <td>appId</td> <td>RequestPart</td> <td>yes</td> <td>Alphanumeric in lower case</td> <td>64</td> </tr> <tr> <td>mecHost</td> <td>mecHost</td> <td>RequestPart</td> <td>yes</td> <td>Valid IP Address</td> <td>15 </tr></td> <tr> <td>hwcapabilities</td> <td>hardwareCapabilities</td> <td>body</td> <td>No</td> <td>AlphaNumeric characters allowed</td> <td>128</td> </tr> <tr> <td>tenant_id</td> <td>tenant_id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </table> </tbody> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:211 ../../Projects/MECM/Appo_Interfaces_en.md:709 ../../Projects/MECM/Appo_Interfaces_en.md:792 ../../Projects/MECM/Appo_Interfaces_en.md:866 ../../Projects/MECM/Appo_Interfaces_en.md:1325
+msgid "Example request body: ``` {"
+msgstr "Example request body: ` ` ` {"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:214
+msgid "\"appInstanceDescription\": \"string\", \"appName\": \"string\", \"appPackageId\": \"string\", \"appId\": \"string\", \"hwCapabilities\": ["
+msgstr "\" appInstanceDescription \": \" string \", \" appName \": \" string \", \" appPackageId \": \" string \", \" appId \": \" string \", \" hwCapabilities \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:219 ../../Projects/MECM/Appo_Interfaces_en.md:717 ../../Projects/MECM/Appo_Interfaces_en.md:720 ../../Projects/MECM/Appo_Interfaces_en.md:1056 ../../Projects/MECM/Appo_Interfaces_en.md:1059 ../../Projects/MECM/Appo_Interfaces_en.md:1062 ../../Projects/MECM/Appo_Interfaces_en.md:1065 ../../Projects/MECM/Appo_Interfaces_en.md:1068 ../../Projects/MECM/Appo_Interfaces_en.md:1071 ../../Projects/MECM/Appo_Interfaces_en.md:1074 ../../Projects/MECM/Appo_Interfaces_en.md:1077 ../../Projects/MECM/Appo_Interfaces_en.md:1080 ../../Projects/MECM/Appo_Interfaces_en.md:1196 ../../Projects/MECM/Appo_Interfaces_en.md:1199 ../../Projects/MECM/Appo_Interfaces_en.md:1202 ../../Projects/MECM/Appo_Interfaces_en.md:1205 ../../Projects/MECM/Appo_Interfaces_en.md:1208 ../../Projects/MECM/Appo_Interfaces_en.md:1211 ../../Projects/MECM/Appo_Interfaces_en.md:1214 ../../Projects/MECM/Appo_Interfaces_en.md:1217 ../../Projects/MECM/Appo_Interfaces_en.md:1220
+msgid "\"string\""
+msgstr "\" string \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:220 ../../Projects/MECM/Appo_Interfaces_en.md:1073 ../../Projects/MECM/Appo_Interfaces_en.md:1105 ../../Projects/MECM/Appo_Interfaces_en.md:1112 ../../Projects/MECM/Appo_Interfaces_en.md:1213 ../../Projects/MECM/Appo_Interfaces_en.md:1245 ../../Projects/MECM/Appo_Interfaces_en.md:1252
+msgid "],"
+msgstr "],"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:221
+msgid "\"mecHost\": \"string\""
+msgstr "\" mecHost \": \" string \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:226 ../../Projects/MECM/Appo_Interfaces_en.md:345 ../../Projects/MECM/Appo_Interfaces_en.md:400 ../../Projects/MECM/Appo_Interfaces_en.md:726 ../../Projects/MECM/Appo_Interfaces_en.md:800 ../../Projects/MECM/Appo_Interfaces_en.md:874
+msgid "Example response:"
+msgstr "Example response:"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:228
+msgid "``` 202 Request Accepted ["
+msgstr "` ` ` 202 Request Accepted ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:232
+msgid "\"app_instance_id\":\"string\""
+msgstr "\" app_instance_id \" :\"string \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:237
+msgid "### Get App Instance Information Retrieves application instance information ``` Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id} Method: GET ```"
+msgstr "### Get App Instance Information Retrieves application instance information ` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /app_instances/ {app_instance_id} Method: GET ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:244
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_instance_id</td> <td>application instance id</td> <td>header</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_instance_id</td> <td>application instance id</td> <td>header</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tbody> </table> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:299
+msgid "### Instantiate Application Instantiate application instance. ``` Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id} Method: POST ```"
+msgstr "### Instantiate Application Instantiate application instance. ` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /app_instances/ {app_instance_id} Method: POST ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:306
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_instance_id</td> <td>application instance id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_instance_id</td> <td>application instance id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tbody> </table> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:347 ../../Projects/MECM/Appo_Interfaces_en.md:402
+msgid "``` 202 Request Accepted"
+msgstr "` ` ` 202 Request Accepted"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:350 ../../Projects/MECM/Appo_Interfaces_en.md:405
+msgid "\"response\": {}"
+msgstr "\" response \": {}"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:354
+msgid "### Delete Application Instance Terminates application instance. ``` Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id} Method: DELETE ```"
+msgstr "### Delete Application Instance Terminates application instance. ` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /app_instances/ {app_instance_id} Method: DELETE ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:361
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_instance_id</td> <td>application instance id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_instance_id</td> <td>application instance id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tbody> </table> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:409
+msgid "### Get Query Kpi Retrieves edge host performance statistics ``` Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/kpi Method: GET ```"
+msgstr "### Get Query Kpi Retrieves edit host performance statistics ` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /hosts/ {host_ip} /kpi Method: GET ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:416 ../../Projects/MECM/Appo_Interfaces_en.md:479
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>host_ip</td> <td>edge host ip</td> <td>path</td> <td>yes</td> <td>Valid IP</td> <td>15</td> </tr> <tr> <td>tenant_id</td> <td>tenant_id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>host_ip</td> <td>edge host ip</td> <td>path</td> <td>yes</td> <td>Valid IP</td> <td>15 </tr></td> <tr> <td>tenant_id</td> <td>tenant_id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tbody> </table> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:467 ../../Projects/MECM/Appo_Interfaces_en.md:545
+msgid "["
+msgstr "["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:459
+msgid "\"response\": \"{ \"pods \":[{ \"podstatus\":\"String\",\" \"podname\":\"String\", \"containers\":[{ \"containername\": \"String\", \"metricsusage\":{ \"cpuusage\" : \"String\", \"memusage\" : \"String\", \"diskusage\" : \"String\"}}]}\""
+msgstr "\" response \":\" {\" podstatus \" :\" String \", \" \" podname \" :\" String \": [{\" containername \": \" String \", \" metricusage \": {\" cpuusage \": \" String \", \" memusage \": \" String \", \" diskusage \": \" String \"}}]} \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:472
+msgid "### Get Mep Capabilities Retrieves edge host performance statistics ``` Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities Method: GET ```"
+msgstr "### Get Mep Capabilities Retrieves host host performance statistics ` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /hosts/ {host_ip} /mep_capabilities Method: GET ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:523 ../../Projects/MECM/Appo_Interfaces_en.md:537 ../../Projects/MECM/Appo_Interfaces_en.md:608
+msgid "\"capabilityId\": \"string\", \"capabilityName\": \"string\", \"status\": \"string\", \"version\": \"string\","
+msgstr "\" capabilityId \": \" string \", \" capabilityName \": \" string \", \" status \": \" string \", \" version \": \" string \","
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:532 ../../Projects/MECM/Appo_Interfaces_en.md:543 ../../Projects/MECM/Appo_Interfaces_en.md:617
+msgid "\"consumers\": ["
+msgstr "\" consumerers \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:529 ../../Projects/MECM/Appo_Interfaces_en.md:532 ../../Projects/MECM/Appo_Interfaces_en.md:543 ../../Projects/MECM/Appo_Interfaces_en.md:614 ../../Projects/MECM/Appo_Interfaces_en.md:617
+msgid "\"applicationInstanceId\": \"string\""
+msgstr "\" applicationInstanceId \": \" string \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:530 ../../Projects/MECM/Appo_Interfaces_en.md:535 ../../Projects/MECM/Appo_Interfaces_en.md:615 ../../Projects/MECM/Appo_Interfaces_en.md:736 ../../Projects/MECM/Appo_Interfaces_en.md:810 ../../Projects/MECM/Appo_Interfaces_en.md:884
+msgid "}, {"
+msgstr "}, {"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:533 ../../Projects/MECM/Appo_Interfaces_en.md:618 ../../Projects/MECM/Appo_Interfaces_en.md:1103 ../../Projects/MECM/Appo_Interfaces_en.md:1243
+msgid "},"
+msgstr "},"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:550
+msgid "### Get Mep Capability Retrieves edge host performance statistics based on capability id ``` Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities/{capability_id} Method: GET ```"
+msgstr "### Get Mehp Capability Retrieves host host performance statistics based on capability id ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /hosts/ {host_ip} /mep_capabilities/ {capability_id} Method: GET ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:557
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>host_ip</td> <td>edge host ip</td> <td>path</td> <td>yes</td> <td>Valid IP</td> <td>15</td> </tr> <tr> <td>tenant_id</td> <td>tenant_id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>capability_id</td> <td>capability_id</td> <td>path</td> <td>yes</td> <td>Alphanumeric characters,special characters are hypen and underscore</td> <td>128</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>host_ip</td> <td>edge host ip</td> <td>path</td> <td>yes</td> <td>Valid IP</td> <td>15 </tr></td> <tr> <td>tenant_id</td> <td>tenant_id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>capability_id</td> <td>capability_id</td> <td>path</td> <td>yes</td> <td>Alphanumeric characters, special characters are hipgen and underscore</td> <td>128</td> </tbody> </table> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:623
+msgid "### Create Batch Batch create application instances. ``` Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_create Method: POST ```"
+msgstr "### Create Batch Batch create application instances. ` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /app_instances/batch_create Method: POST ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:630
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appName</td> <td>appName</td> <td>RequestPart</td> <td>yes</td> <td>Alphanumeric characters,special characters are hypen and underscore</td> <td>128</td> </tr> <tr> <td>appInstanceDescription</td> <td>appInstanceDescription</td> <td>RequestPart</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appPackageId</td> <td>appPackageId</td> <td>RequestPart</td> <td>yes</td> <td>Alphanumeric in lower case</td> <td>64</td> </tr> <tr> <td>appId</td> <td>appId</td> <td>RequestPart</td> <td>yes</td> <td>Alphanumeric in lower case</td> <td>64</td> </tr> <tr> <td>mecHost</td> <td>mecHost</td> <td>RequestPart</td> <td>yes</td> <td>Valid IP Address</td> <td>15</td> </tr> <tr> <td>hwcapabilities</td> <td>hardwareCapabilities</td> <td>body</td> <td>No</td> <td>AlphaNumeric characters allowed</td> <td>128</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64 </tr></td> <tr> <td>appName</td> <td>appName</td> <td>RequestPart</td> <td>yes</td> <td>Alphanumeric characters, special characters are hipgen and underscore</td> <td>128</td> </tr> <tr> <td>appInstanceDescription</td> <td>appInstanceDescription</td> <td>RequestPart</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appPackageId</td> <td>appPackageId</td> <td>RequestPart</td> <td>yes</td> <td>Alphanumeric in lower case</td> <td>64</td> </tr> <tr> <td>appId</td> <td>appId</td> <td>RequestPart</td> <td>yes</td> <td>Alphanumeric in lower case</td> <td>64</td> </tr> <tr> <td>mecHost</td> <td>mecHost</td> <td>RequestPart</td> <td>yes</td> <td>Valid IP Address</td> <td>15 </tr></td> <tr> <td>hwcapabilities</td> <td>hardwareCapabilities</td> <td>body</td> <td>No</td> <td>AlphaNumeric characters allowed</td> <td>128</td> </table> </tr> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:712
+msgid "\"appPackageId\": \"string\", \"appName\": \"string\", \"appInstanceDescription\": \"string\", \"appId\": \"string\", \"hwCapabilities\": ["
+msgstr "\" appPackageId \": \" string \", \" appName \": \" string \", \" appInstanceDescription \": \" string \", \" appId \": \" string \", \" hwCapabilities \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:718
+msgid "], \"mecHost\": ["
+msgstr "], \" mecHost \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:728 ../../Projects/MECM/Appo_Interfaces_en.md:802 ../../Projects/MECM/Appo_Interfaces_en.md:876
+msgid "``` 202 Accepted"
+msgstr "` ` ` 202 Accepted"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:741 ../../Projects/MECM/Appo_Interfaces_en.md:815 ../../Projects/MECM/Appo_Interfaces_en.md:889
+msgid "\"response\": ["
+msgstr "\" response \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:733 ../../Projects/MECM/Appo_Interfaces_en.md:738 ../../Projects/MECM/Appo_Interfaces_en.md:807 ../../Projects/MECM/Appo_Interfaces_en.md:812 ../../Projects/MECM/Appo_Interfaces_en.md:881 ../../Projects/MECM/Appo_Interfaces_en.md:886
+msgid "\"applicationInstanceId\": \"string\", \"host\": \"string\", \"status\": \"string\""
+msgstr "\" applicationInstanceId \": \" string \", \" host \": \" string \", \" status \": \" string \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:746
+msgid "### Batch instantiate Batch instantiate application instances. ``` Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_instantiate Method: POST ```"
+msgstr "### Batch instantiate Batch instantiate application instances. ` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /app_instances/batch_instantiate Method: POST ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:753 ../../Projects/MECM/Appo_Interfaces_en.md:827
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appInstanceIds</td> <td>application instance id</td> <td>body</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appInstanceIds</td> <td>application instance id</td> <td>body</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tbody> </table> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:795 ../../Projects/MECM/Appo_Interfaces_en.md:869
+msgid "\"appInstanceIds\" : [\"string\",\"string\"]"
+msgstr "\" appInstanceIds \": [\" string \" ,\"string \"]"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:820
+msgid "### Batch terminate Batch terminates application instances. ``` Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_terminate Method: POST ```"
+msgstr "### Batch terminate Batch terminates application instances. ` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /app_instances/batch_terminate Method: POST ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:894
+msgid "### Batch Query Batch Query information ``` Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_ids} Method: GET ```"
+msgstr "### Batch Query Batch Query information ` ` ` Resource URI: /appo /v1/tenants/ {tenant_id} /app_instance_infos/ {appInstance_ids} Method: GET ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:901
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appInstance_ids</td> <td>application instance id</td> <td>header</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appInstance_ids</td> <td>application instance id</td> <td>header</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tbody> </table> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:956
+msgid "### Queries liveness & readiness Retrieves data for liveness & readiness ``` Resource URI: /appo/v1/health Method: GET ```"
+msgstr "### Queries liveness & readiness Retrieves data for revenue & readiness ` ` ` Resource URI: /app/v1/health Method: GET ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:963
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td></td> <td></td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:986
+msgid "Example response: ``` 200 OK ```"
+msgstr "Example response: ` ` 200 OK ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:991
+msgid "### Create AppRule Config Configures the app rule ``` Resource URI:  /appo/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration Method: POST ```"
+msgstr "### Create AppRule Config Configurations the app rule ` ` Resource URI: /appo /v1/tenants/ {tenantId} /app_instances/ {appInstanceId} /appd_configuration Method: POST ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:998 ../../Projects/MECM/Appo_Interfaces_en.md:1138 ../../Projects/MECM/Appo_Interfaces_en.md:1278 ../../Projects/MECM/Appo_Interfaces_en.md:1351
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appInstance_id</td> <td>application instance id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appInstanceIds</td> <td>application instance id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appInstance_id</td> <td>application instance id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appInstanceIds</td> <td>application instance id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1045 ../../Projects/MECM/Appo_Interfaces_en.md:1185
+msgid "Example request body: ```"
+msgstr "Example request body: ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1116 ../../Projects/MECM/Appo_Interfaces_en.md:1256
+msgid "\"appTrafficRule\": ["
+msgstr "\" appTrafficRule \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1049 ../../Projects/MECM/Appo_Interfaces_en.md:1189
+msgid "\"trafficRuleId\": \"string\", \"filterType\": \"string\", \"priority\": int, \"action\": \"DROP\", \"trafficFilter\": ["
+msgstr "\" trafficRuleId \": \" string \", \" filterType \": \" string \", \" priority \": int, \" action \": \" DROP \", \" trafficFilter \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1055 ../../Projects/MECM/Appo_Interfaces_en.md:1195
+msgid "\"srcAddress\": ["
+msgstr "\" srcAddress \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1057 ../../Projects/MECM/Appo_Interfaces_en.md:1197
+msgid "], \"dstAddress\": ["
+msgstr "], \" dstAddress \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1060 ../../Projects/MECM/Appo_Interfaces_en.md:1200
+msgid "], \"tag\": ["
+msgstr "], \" tag \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1063 ../../Projects/MECM/Appo_Interfaces_en.md:1203
+msgid "], \"srcTunnelAddress\": ["
+msgstr "], \" srcTunnelAddress \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1066 ../../Projects/MECM/Appo_Interfaces_en.md:1206
+msgid "], \"dstTunnelAddress\": ["
+msgstr "], \" dstTunnelAddress \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1069 ../../Projects/MECM/Appo_Interfaces_en.md:1209
+msgid "], \"srcTunnelPort\": ["
+msgstr "], \" srcTunnelPort \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1073 ../../Projects/MECM/Appo_Interfaces_en.md:1213
+msgid "\"dstTunnelPort\": ["
+msgstr "\" dstTunnelPort \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1075 ../../Projects/MECM/Appo_Interfaces_en.md:1215
+msgid "], \"dstPort\": ["
+msgstr "], \" dstPort \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1078 ../../Projects/MECM/Appo_Interfaces_en.md:1218
+msgid "], \"protocol\": ["
+msgstr "], \" protocol \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1081 ../../Projects/MECM/Appo_Interfaces_en.md:1221
+msgid "], \"qCI\": int, \"dSCP\": int, \"tC\": int"
+msgstr "], \" qCI \": int, \" dSCP \": int, \" tC \": int"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1086 ../../Projects/MECM/Appo_Interfaces_en.md:1226
+msgid "], \"action\": \"string\", \"state\": \"string\""
+msgstr "], \" action \": \" string \", \" state \": \" string \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1104 ../../Projects/MECM/Appo_Interfaces_en.md:1244
+msgid "\"dstInterface\": ["
+msgstr "\" dstInterface \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1093 ../../Projects/MECM/Appo_Interfaces_en.md:1233
+msgid "\"interfaceType\": \"string\", \"tunnelInfo\":"
+msgstr "\" interfaceType \": \" string \", \" tunnelInfo \":"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1096 ../../Projects/MECM/Appo_Interfaces_en.md:1236
+msgid "\"tunnelType\": \"string\", \"tunnelDstAddress\": \"string\", \"tunnelSrcAddress\": \"string\", \"tunnelSpecificData\": \"string\""
+msgstr "\" tunnelType \": \" string \", \" tunnelDstAddress \": \" string \", \" tunnelSrcAddress \": \" string \", \" tunnelSpecificData \": \" string \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1101 ../../Projects/MECM/Appo_Interfaces_en.md:1241
+msgid "\"srcMacAddress\": \"string\", \"dstMacAddress\": \"string\", \"dstIpAddress\": \"string\" }"
+msgstr "\" srcMacAddress \": \" string \", \" dstMacAddress \": \" string \", \" dstIpAddress \": \" string \"}"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1112 ../../Projects/MECM/Appo_Interfaces_en.md:1252
+msgid "\"appDNSRule\": ["
+msgstr "\" appDNSRule \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1108 ../../Projects/MECM/Appo_Interfaces_en.md:1248
+msgid "\"dnsRuleId\": \"string\", \"domainName\": \"string\", \"ipAddressType\": \"string\", \"ipAddress\": \"string\", \"ttl\": int,"
+msgstr "\" dnsRuleId \": \" string \", \" domainName \": \" string \", \" ipAddressType \": \" string \", \" ipAddress \": \" string \", \" ttl \": int,"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1114 ../../Projects/MECM/Appo_Interfaces_en.md:1254
+msgid "], \"appSupportMp1\": bool, \"appName\": \"string\""
+msgstr "], \" appSupportMp1\": bool, \" appName \": \" string \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1120
+msgid "Example response: ``` 200 OK {"
+msgstr "Example response: ` ` 200 OK {"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1126 ../../Projects/MECM/Appo_Interfaces_en.md:1266 ../../Projects/MECM/Appo_Interfaces_en.md:1339 ../../Projects/MECM/Appo_Interfaces_en.md:1408
+msgid "\"response\":"
+msgstr "\" response \":"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1126 ../../Projects/MECM/Appo_Interfaces_en.md:1266 ../../Projects/MECM/Appo_Interfaces_en.md:1339
+msgid "\"apprule_task_id\": \"string\""
+msgstr "\" apprule_task_id \": \" string \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1131
+msgid "### Update AppRule Config Update the app rule ``` Resource URI:  /appo/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration Method: PUT ```"
+msgstr "### Update AppRule Config Update the app rule ` ` Resource URI: /appo /v1/tenants/ {tenantId} /app_instances/ {appInstanceId} /appd_configuration Method: PUT ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1260
+msgid "Example response: ``` 202 OK {"
+msgstr "Example response: ` ` 202 OK {"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1271
+msgid "### Delete AppRule Config Deletes the existing app rule ``` Resource URI:  /appo/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration Method: DELETE ```"
+msgstr "### Delete AppRule Config Deletes the existing app rule ` ` ` Resource URI: /appo /v1/tenants/ {tenantId} /app_instances/ {appInstanceId} /appd_configuration Method: DELETE ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1328
+msgid "\"appTrafficRule\": [\"string\", \"string\"], \"appDNSRule\": [\"string\", \"string\"]"
+msgstr "\" appTrafficRule \": [\" string \", \" string \"], \" appDNSRule \": [\" string \", \" string \"]"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1332
+msgid "``` Example response: ``` 202 Accepted {"
+msgstr "` ` ` Example response: ` ` 202 Accepted {"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1344
+msgid "### Get AppRule Config Status Queries app rule config status ``` Resource URI: /appo/v1/tenants/{{tenant-id}}/apprule_task_infos/{apprule_task_id} Method: GET ```"
+msgstr "### Get AppRule Config Status Queries app rule config status ` ` ` Resource URI: /appo /v1/tenants/ {{tenant-id}} /apprule_task_infos/ {apprule_task_id} Method: GET ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1398 ../../Projects/MECM/Appo_Interfaces_en.md:1452
+msgid "Example Response body: ``` 200 OK"
+msgstr "Example Response body: ` ` ` 200 OK"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1405
+msgid "\"taskId\": \"string\", \"appInstanceId\": \"string\", \"detailed\": \"string\", \"configResult\": \"string\""
+msgstr "\" taskId \": \" string \", \" appInstanceId \": \" string \", \" detailed \": \" string \", \" configResult \": \" string \""
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1414
+msgid "### Synchronizes application instance info from edge Synchronizes application instance info from all edge ``` Resource URI: /appo/v1/tenants/{{tenant-id}}/app_instance_infos/sync Method: POST ```"
+msgstr "### Synchronizes application instance info from end Synchronizes application instance info from all edit ` ` ` Resource URI: /appo /v1/tenants/ {{tenant-id}} /app_instance_infos/sync Method: POST ` ` `"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1467
+msgid "\"appInstanceUpdatedRecs\": ["
+msgstr "\" appInstanceUpdatedRecs \": ["
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1459
+msgid "\"appInstanceId\": \"e921ce54-82c8-4532-b5c6-8516cf75f7a6\", \"createTime\": \"2021-03-12T07:59:55.695956Z\", \"mecHost\": \"119.8.53.3\", \"deployType\": \"helm\", \"tenantId\": \"e921ce54-82c8-4532-b5c6-8516cf75f7a6\", \"appPackageId\": \"\", \"appName\": \"\", \"origin\": \"mepm\", \"syncStatus\": false"
+msgstr "\" appInstanceId \": \" e921ce54-82c8-4532-b5c6-8516cf75f7a6\", \" createTime \":\" 2021-03-12T07:59:55.695956Z \", \" mecHost \": \" 119.8.53.3\", \" deployType \": \" helm \", \" tenantId \": \" e921ce54-82c8-4532-b5c6-8516cf75f7a6\", \" appPackageId \": \" \", \" appName \": \" \", \" origin \": \" mepm \", \" syncStatus \": false"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1474
+msgid "### APPO Open Api Swagger"
+msgstr "### APPO Open Api Swagger"
+
+#: ../../Projects/MECM/Appo_Interfaces_en.md:1476
+msgid "Please refer [APPO_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/appo-swagger-openapi.yaml)"
+msgstr "Please review [APPO_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/appo-swagger-openapi.yaml)"
+

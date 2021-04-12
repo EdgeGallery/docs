@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:2
+msgid "Lcm Controller Database Design"
+msgstr "Lcm Controller Database Design"
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:4
+msgid "The LcmController database uses an open source PostgreSQL database, and the recommended version is 12.2. Two database"
+msgstr "The LcmController database uses an open source PostgreSQL database, and the recommended version is 12.2. Two database"
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:4
+msgid "tables currently designed and applied:"
+msgstr "tables currently assigned and applied:"
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:6
+msgid "app_info_record: Store app information, such as appInsId, hostIp, deployType and tenantId."
+msgstr "app_info_record: Store app information, such as appInsId, hostIp, deployType and tenantId."
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:7
+msgid "``` CREATE TABLE app_info_record ("
+msgstr "` ` ` CREATE TABLE app_info_record ("
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:9
+msgid "APPINSID               VARCHAR(200)       NOT NULL, HOSTIP                 VARCHAR(200)       NULL, DEPLOYTYPE             VARCHAR(200)       NULL, TENANTID               VARCHAR(200)       NULL, CONSTRAINT app_info_record_pkey PRIMARY KEY (APPINSID)"
+msgstr "APPINSID VARCHAR (200) NOT NULL, HOSTIP VARCHAR (200)       NULL, DEPLOYTYPE VARCHAR (200)       NULL, TENANTID VARCHAR (200)       NULL, CONSTRAINT app_info_record_key PRIMARY KEY (APPINSID)"
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:14 ../../Projects/MECM/MECM_AppLcm_Database_Design.md:21
+msgid ");"
+msgstr ");"
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:15
+msgid "``` - tenant_info_record: Store tenant information, such as tenantId. ``` CREATE TABLE app_info_record ("
+msgstr "` ` - tenant_info_record: Store tenant information, such as tenantId. ` ` ` CREATE TABLE app_info_record ("
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:19
+msgid "TENANTID               VARCHAR(200)       NOT NULL, CONSTRAINT app_info_record_pkey PRIMARY KEY (TENANTID)"
+msgstr "TENANTID VARCHAR (200) NOT NULL, CONSTRAINT app_info_record_key PRIMARY KEY (TENANTID)"
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:22
+msgid "```"
+msgstr "` ` `"
+

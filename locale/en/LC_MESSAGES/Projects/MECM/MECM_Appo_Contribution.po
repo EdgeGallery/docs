@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:2
+msgid "Contribution to Appo"
+msgstr "Contribution to Appo"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:4
+msgid "This section provides details on how to participate/contribute to the application orchestrator project."
+msgstr "This section provides details on how to participate/contribute to the application orchestrator project."
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:6
+msgid "## Build local development environment"
+msgstr "## Build local development environment"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:9
+msgid "This section will guide developers to build Appo module locally and help developers to quickly understand and develop"
+msgstr "This section will guide developers to build Appo module locally and help developers to quickly unerstand and develop"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:9
+msgid "code"
+msgstr "code"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:11
+msgid "The local startup of Appo depends on："
+msgstr "The local startup of Appendons on:"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:13
+msgid "``` - DataBase ``` In order to build a local environment, the final startup sequence is [Mecm-Prerequisite](MECM_Prerequisite.md) -> DataBase -> Appo"
+msgstr "` ` ` - DataBase ` ` In order to build a local environment, the final startup sequence is [Mecm-Prerequisite] (MECM_Prerequisite]-> DataBase - > Appo"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:18
+msgid "### DataBase"
+msgstr "### DataBase"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:20
+msgid "Download and install postgres 12.3 database"
+msgstr "Download and install postgres 12.3 database"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:22
+msgid "Set login name and password, such as appo"
+msgstr "Set login name and password, such as appo"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:24
+msgid "Create a database named appodb"
+msgstr "Create a database named appodb"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:26
+msgid "![](/uploads/images/2020/0924/appodb.png \"appodb.png\")"
+msgstr "! [](/uploads/images/2020/0924/appodb.png \" appodb.png \")"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:28
+msgid "### Application orchestrator"
+msgstr "### Application orchestrator"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:30
+msgid "Download [Appo(application orchestrator) code](https://gitee.com/edgegallery/mecm-appo/)"
+msgstr "Download [Appo (application orchestrator) code] (https: //gitee.com/edgegallery/mecm-appo/)"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:32
+msgid "Configure the runtime environment variables (using IDEA as an example)"
+msgstr "Configure the runtime environment variables (using IDEA as an example)"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:34
+msgid "![](/uploads/images/2020/0924/appo-contribution.png \"appo-contribution.png\")"
+msgstr "! [](/uploads/images/2020/0924/appo - contribution.png \" appo-contribution.png \")"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:36
+msgid "Update key-store and trust-store path in application.yaml"
+msgstr "Update key-store and trust-store path in application.yaml"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:38
+msgid "![](/uploads/images/2020/0924/key-store.png \"key-store.png\")"
+msgstr "! [](/uploads/images/2020/0924/key-store.png \" key-store.png \")"
+
+#: ../../Projects/MECM/MECM_Appo_Contribution.md:40
+msgid "Run AppOrchestratorApplication to start application orchestrator"
+msgstr "Run AppOrchestratorApplication to start application orchestrator"
+

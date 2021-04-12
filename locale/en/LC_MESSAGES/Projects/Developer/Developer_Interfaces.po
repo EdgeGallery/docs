@@ -1,0 +1,1459 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2
+msgid "Developer Interfaces"
+msgstr "Developer Interfaces"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3
+msgid "[Developer Interfaces](#developer-interfaces) - [1. Plugin](#1-plugin)"
+msgstr "[Developer Interfaces] (#developer-interfaces)-[1. Plugin] (#1-plugin)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5
+msgid "[1.1 POST upload plugin](#11-post-upload-plugin)"
+msgstr "[1.1 POST upload plugin] (#11-post-upload-plugin)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:6
+msgid "[1.2 GET all](#12-get-all)"
+msgstr "[1.2 GET all] (#12-get-all)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:11
+msgid "[1.3 DELETE one](#13-delete-one)"
+msgstr "[1.3 DELETE one] (#13-delete-one)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:8
+msgid "[1.4 GET download plugin](#14-get-download-plugin)"
+msgstr "[1.4 GET download plugin] (#14-get-download-plugin)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:9
+msgid "[1.5 GET download logo](#15-get-download-logo)"
+msgstr "[1.5 GET download logo] (#15-get-download-logo)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:10
+msgid "[1.6 GET download plugin](#16-get-download-api)"
+msgstr "[1.6 GET download plugin] (#16-get-download-api)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:11
+msgid "[1.7 PUT update plugin](#17-put-update-plugin)"
+msgstr "[1.7 PUT update plugin] (#17-put-update-plugin)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:12
+msgid "[1.8 PUT mark plugin](#18-put-mark-plugin)"
+msgstr "[1.8 PUT markplugin] (#18-put-mark-plugin)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:18
+msgid "[2. App](#2-app)"
+msgstr "[2. App] (#2-app)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:14
+msgid "[2.1 POST upload app](#21-post-upload-app)"
+msgstr "[2.1 POST upload app] (#21-post-upload-app)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:15
+msgid "[2.2 GET all test task](#22-get-all-test-task)"
+msgstr "[2.2 GET all test task] (#22-get-all-test-task)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:16
+msgid "[2.3 GET all app tags](#23-get-all-app-tags)"
+msgstr "[2.3 GET all app tags] (#23-get-all-app-tags)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:17
+msgid "[2.4 POST upload app to store](#24-post-upload-app-to-store)"
+msgstr "[2.4 POST upload app to store] (#24-post-upload-app-to-store)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:18
+msgid "[2.5 GET start test](#25-get-start-test)"
+msgstr "[2.5 GET start test] (#25-get-start-test)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:19
+msgid "[2.6 GET subtask list](#26-get-subtask-list)"
+msgstr "[2.6 GET subtask list] (#26-get-subtask-list)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:34
+msgid "[3. App Project](#3-app-project)"
+msgstr "[3. App Project] (#3-app-project)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:21
+msgid "[3.1 GET all project](#31-get-all-project)"
+msgstr "[3.1 GET all project] (#31-get-all-project)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:22
+msgid "[3.2 GET one project](#32-get-one-project)"
+msgstr "[3.2 GET one project] (#32-get-one-project)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:23
+msgid "[3.3 POST create one project](#33-post-create-one-project)"
+msgstr "[3.3 POST create one project] (#33-post-create-one-project)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:24
+msgid "[3.4 DELETE one project](#34-delete-one-project)"
+msgstr "[3.4 DELETE one project] (#34-delete-one-project)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:25
+msgid "[3.5 PUT modify one project](#35-put-modify-one-project)"
+msgstr "[3.5 PUT modify one project] (#35-put-modify-one-project)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:26
+msgid "[3.6 POST deploy one project](#36-post-deploy-one-project)"
+msgstr "[3.6 POST deploy one project] (#36-post-deploy-one-project)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:27
+msgid "[3.7 POST clean test env](#37-post-clean-test-env)"
+msgstr "[3.7 POST clean test env] (#37-post-clean-test-env)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:28
+msgid "[3.8 POST create test config](#38-post-create-test-config)"
+msgstr "[3.8 POST create test config] (#38-post-create-test-config)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:29
+msgid "[3.9 PUT modify test config](#39-put-modify-test-config)"
+msgstr "[3.9 PUT modify test config] (#39-put-modify-test-config)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:30
+msgid "[3.10 GET one test-config](#310-get-one-test-config)"
+msgstr "[3.10 GET one test-config] (#310-get-one-test-config)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:31
+msgid "[3.11 POST upload to store](#311-post-upload-to-store)"
+msgstr "[3.11 POST upload to store] (#311-post-upload-to-store)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:32
+msgid "[3.12 POST open project to eco](#312-post-open-project-to-eco)"
+msgstr "[3.12 POST open project to eco] (#312-post-open-project-to-eco)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:33
+msgid "[3.13 POST add image to project](#313-post-add-image-to-project)"
+msgstr "[3.13 POST add image to project] (#313-post-add-image-to-project)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:34
+msgid "[3.14 DELETE image of project](#314-delete-image-of-project)"
+msgstr "[3.14 DELETE image of project] (#314-delete-image-of-project)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:35
+msgid "[3.15 GET image of project](#315-get-image-of-project)"
+msgstr "[3.15 GET image of project] (#315-get-image-of-project)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:36
+msgid "[3.16 POST open project api](#316-post-open-project-api)"
+msgstr "[3.16 POST open project api] (#316-post-open-project-api)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:37
+msgid "[3.17 GET project atp task](#317-get-project-atp-task)"
+msgstr "[3.17 GET project atp task] (#317-get-project-atp-task)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:38
+msgid "[4. Host](#4-host) - [4.1 GET all host](#41-get-all-host) - [4.2 GET one host](#42-get-one-host)"
+msgstr "[4. Host] (#4-host)-[4.1 GET all host] (#41-get-all-host)-[4.2 GET one host] (#42-get-one-host)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:41
+msgid "[4.3 POST create one host](#43-post-create-one-host)"
+msgstr "[4.3 POST create one host] (#43-post-create-one-host)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:42
+msgid "[4.4 DELETE one host](#44-delete-one-host)"
+msgstr "[4.4 DELETE one host] (#44-delete-one-host)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:43
+msgid "[4.5 PUT modify one host](#45-put-modify-one-host)"
+msgstr "[4.5 PUT modify one host] (#45-put-modify-one-host)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:44
+msgid "[5. Capability-groups](#5-capability-groups)"
+msgstr "[5. Capability-groups] (#5-capability-groups)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:45
+msgid "[5.1 POST create one EdgeGalleryCapabilityGroup](#51-post-create-one-edgegallerycapabilitygroup)"
+msgstr "[5.1 POST create one EdgeGalleryCapabilityGroup] (#51-post-create-one-edgegalerycapabilitygroup)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:51
+msgid "[5.2 DELETE one EdgeGalleryCapabilityGroup](#52-delete-one-edgegallerycapabilitygroup)"
+msgstr "[5.2 DELETE one EdgeGalleryCapabilityGroup] (#52-delete-one-edgegalerycapabilitygroup)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:47
+msgid "[5.3 POST create one EdgeGalleryCapability](#53-post-create-one-edgegallerycapability)"
+msgstr "[5.3 POST create one EdgeGalleryCapability] (#53-post-create-one-edgegallycability)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:48
+msgid "[5.4 DELETE one EdgeGalleryCapability](#54-delete-one-edgegallerycapability)"
+msgstr "[5.4 DELETE one EdgeGalleryCapability] (#54-delete-one-edgegallycability)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:49
+msgid "[5.5 GET all EdgeGalleryCapability](#55-get-all-edgegallerycapability)"
+msgstr "[5.5 GET all EdgeGalleryCapability] (#55-get-all-edgegallerycability)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:50
+msgid "[5.6 GET all EdgeGalleryCapability by groupid](#56-get-all-edgegallerycapability-by-groupid)"
+msgstr "[5.6 GET all EdgeGalleryCapability by groupid] (#56-get-all-edgeegalleriability-by-groupid)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:51
+msgid "[5.7 GET all EdgeGallery API by fileId](#57-get-all-edgegallery-api-by-fileid)"
+msgstr "[5.7 GET all EdgeGallery API by fileId] (#57-get-all-edgegallery-api-by-fileid)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:52
+msgid "[5.8 GET all EdgeGallery ECO API](#58-get-all-edgegallery-eco-api)"
+msgstr "[5.8 GET all EdgeGallery ECO API] (#58-get-all-edgegallery-eco-api)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:53
+msgid "[5.9 GET all EdgeGallery API](#59-get-all-edgegallery-api)"
+msgstr "[5.9 GET all EdgeGallery API] (#59-get-all-edgeegallery-api)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:54
+msgid "[6. File](#6-file) - [6.1 GET one file](#61-get-one-file) - [6.2 POST upload one file](#62-post-upload-one-file) - [6.3 POST upload helm yaml](#63-post-upload-helm-yaml) - [6.4 GET helm yaml](#64-get-helm-yaml) - [6.5 DELETE helm yaml](#65-delete-helm-yaml) - [6.6 POST get sample code](#66-post-get-sample-code) - [6.7 GET one file return object](#67-get-one-file-return-object) - [6.8 GET sdk code](#68-get-sdk-code) - [6.9 GET file content](#69-get-file-content) - [6.10 POST pkg structure](#610-post-pkg-structure)"
+msgstr "[6. File] (#6-file)-[6.1 GET one file] (#61get-one-file)-[6.2 POST upload one file] (#62-post-upload-one-file)-[6.3 POST upload helm yaml] (#63-post-upload-helm-yaml)-[6.4 GET helm yaml] (#64-get-helm-yaml)-[6.5 DELETE helm yaml] (#65-delete-helm-yaml)-[6.6 POST get sample code] (#66-post-get-sample-code)-[6.7 GET one filereturnobject] (#67-get-one-file-return-object)-[6.8 GET sdk code] (#68-get-sdk-code)-[6.9 GET file content] (#69-get-file-content)-[6.10 POST pkg structure] (#610-post-pkg-structure)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:65
+msgid "[7. LocalApi](#7-localapi) - [7.1 GET one api file](#71-get-one-api-file)"
+msgstr "[7. LocalApi] (#7-localapi)-[7.1 GET one api file] (#71-get-one-api-file)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:67
+msgid "[8. Health](#8-health) - [8.1 GET health](#81-get-health)"
+msgstr "[8. Health] (#8-health)-[8.1 GET health] (#81-get-health)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:69
+msgid "[9. AppRelease](#9-apprelease) - [9.1 GET pkg structure](#91-get-pkg-structure) - [9.2 GET file content](#92-get-file-content)"
+msgstr "[9. AppRelease] (#9-apprelease)-[9.1 GET pkg structure] (#91-get-pkg-structure)-[9.2 GET filecontent] (#92-get-file-content)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:72
+msgid "[10. ReleaseConfig](#10-releaseconfig) - [10.1 GET release config](#101-get-release-config) - [10.2 POST release config](#102-post-release-config) - [10.3 PUT release config](#103-put-release-config)"
+msgstr "[10. ReleaseConfig] (#10-releaseconfig)-[10.1 GET release config] (#101-get-release-config)-[10.2 POST release config] (#102-post-release-config)-[10.3 PUT release config] (#103-put-release-config)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:76
+msgid "[11. DeployConfig](#11-deployconfig) - [11.1 GET deploy platform](#111-get-deploy-platform) - [11.2 PUT deploy platform](#112-put-deploy-platform)"
+msgstr "[11. DeployConfig] (#11-deployconfig)-[11.1 GET deploy platform] (#111-get-deploy-platform)-[11.2 PUT deploy platform] (#112-put-deploy-platform)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:79
+msgid "[12. Deploy](#12-deploy) - [12.1 GET deploy yaml](#121-get-deploy-yaml) - [12.2 PUT deploy yaml](#122-put-deploy-yaml) - [12.3 GET deploy json](#123-get-deploy-json) - [12.4 POST deploy yaml](#124-post-deploy-yaml)"
+msgstr "[12. Deploy] (#12-deploy)-[12.1 GET deploy yaml] (#121-get - deploy-yaml)-[12.2 PUT deploy yaml] (#122-put-deploy-yaml)-[12.3 GET deploy json] (#123-get-deploy-json)-[12.4 POST deploy yaml] (#124-post-deploy-yaml)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:84
+msgid "[13. System](#13-system) - [13.1 GET all capability](#131-get-all-capability) - [13.2 POST one capability](#132-post-one-capability) - [13.3 DELETE one capability](#133-delete-one-capability) - [13.4 GET all host](#134-get-all-host) - [13.5 POST one host](#135-post-one-host) - [13.6 GET one host](#136-get-one-host) - [13.7 PUT one host](#137-put-one-host) - [13.8 DELETE one host](#138-delete-one-host) - [13.9 GET capability detail](#139-get-capability-detail) - [13.10 GET host log](#1310-get-host-log)"
+msgstr "[13. System] (#13-system)-[13.1 GET all capability] (#131-get-all-capability)-[13.2 POST one capability] (#132-post-one-capability)-[13.3 DELETE one capability] (#133-delete-one-capability)-[13.4 GET all host] (#134-get-all-host)-[#135POST one-host)-[13.6 GET one host] (#136-get-one-host)-[13.7 PUT one host] (#137-put-one-host)-[13.8 DELETE one host] (#138-delete-one-host)-[13.9 GET capability detail] (#139-get-capability-detail)-[13.10 GET host log] (#1310-get-host-log)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:95
+msgid "[14. VirtualMachine](#14-virtualvachine) - [14.1 POST one vm](#141-post-one-vm) - [14.2 DELETE vm config](#142-delete-vm-config) - [14.3 GET image config](#143-get-image-config) - [14.4 POST image config](#144-post-image-config) - [14.5 DELETE image config](#145-delete-image-config) - [14.6 GET image config By ProjectId](#146-get-image-config-by-projectid) - [14.7 GET csar pkg](#147-get-csar-pkg) - [14.8 GET vm resources](#148-get-vm-resources) - [14.9 POST vm file](#149-post-vm-file)"
+msgstr "[14. VirtualMachine] (#14-virtualvachine)-[14.1 POST one vm] (#141-post-one-vm)-[14.2 DELETE vm config] (#142-delete-vm-config)-[14.3 GET image config] (#143-get-image-config)-[14.4 POST image config] (#144-post-image-config)-[#145DELETE image-config]-[14.6 GET image-config By ProjectId] (#146-get-image-config-by-projectid)-[14.7 GET csr pkg] (#147-get-csar-pkg)-[14.8 GET vm resources] (#148-get-vm-resources)-[14.9 POST vm file] (#149-post-vm-file)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:105
+msgid "[15. Image](#15-image) - [15.1 POST upload image](#151-post-upload-image) - [15.2 GET merge image](#152-GET-merge-image)"
+msgstr "[15. Image] (#15-image)-[15.1 POST upload image] (#151-post-upload-image)-[15.2 GET merge image] (#152-GET-merge-image)"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:109
+msgid "## 1. Plugin Development environment plug-in or sdk ### 1.1 POST upload plugin Upload one plugin with some params. ``` Resource URI: /mec/developer/v1/plugins/ ```"
+msgstr "# # 1. Plugin Development environment plug-in or sdk ### 1.1 POST upload plugin Uploaded one plugin with some params. ` ` ` Resource URI: /met/developer/v1/plugins/ ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:117
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>pluginFile</td> <td>pluginfile</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>logoFile</td> <td>pluginlogofile</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>apiFile</td> <td>pluginapifile</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>pluginName</td> <td>pluginname</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>codeLanguage</td> <td>languagerepresentedbytheplugin</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>pluginType</td> <td>1plugin2sdk</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>version</td> <td>pluginversion</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>introduction</td> <td>pluginbrief</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthor'sidofuploadplugin</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>theauthor'snameofuploadplugin</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>pluginFile</td> <td>pluginfile</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>logoFile</td> <td>pluginlogofile</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>apiFile</td> <td>pluginifile</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>pluginName</td> <td>pluginname</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>codeLanguage</td> <td>languagerepresdedbipyplugin</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>pluginType</td> <td>1plugin2sdk</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>version</td> <td>pluginversion</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>int reduction</td> <td>pluginbrief</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthor's plugin plugin</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>theauthor's uploadplugin</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:190 ../../Projects/Developer/Developer_Interfaces.md:676 ../../Projects/Developer/Developer_Interfaces.md:751 ../../Projects/Developer/Developer_Interfaces.md:793 ../../Projects/Developer/Developer_Interfaces.md:914 ../../Projects/Developer/Developer_Interfaces.md:1035 ../../Projects/Developer/Developer_Interfaces.md:1394 ../../Projects/Developer/Developer_Interfaces.md:1951 ../../Projects/Developer/Developer_Interfaces.md:2120 ../../Projects/Developer/Developer_Interfaces.md:2261 ../../Projects/Developer/Developer_Interfaces.md:2337 ../../Projects/Developer/Developer_Interfaces.md:2534 ../../Projects/Developer/Developer_Interfaces.md:2800 ../../Projects/Developer/Developer_Interfaces.md:2943 ../../Projects/Developer/Developer_Interfaces.md:3000 ../../Projects/Developer/Developer_Interfaces.md:3047 ../../Projects/Developer/Developer_Interfaces.md:3087 ../../Projects/Developer/Developer_Interfaces.md:3199 ../../Projects/Developer/Developer_Interfaces.md:3250 ../../Projects/Developer/Developer_Interfaces.md:3401 ../../Projects/Developer/Developer_Interfaces.md:3492 ../../Projects/Developer/Developer_Interfaces.md:3607 ../../Projects/Developer/Developer_Interfaces.md:3684 ../../Projects/Developer/Developer_Interfaces.md:3925 ../../Projects/Developer/Developer_Interfaces.md:4166 ../../Projects/Developer/Developer_Interfaces.md:4299 ../../Projects/Developer/Developer_Interfaces.md:4340 ../../Projects/Developer/Developer_Interfaces.md:4376 ../../Projects/Developer/Developer_Interfaces.md:4421 ../../Projects/Developer/Developer_Interfaces.md:4511 ../../Projects/Developer/Developer_Interfaces.md:4677 ../../Projects/Developer/Developer_Interfaces.md:4897 ../../Projects/Developer/Developer_Interfaces.md:4971 ../../Projects/Developer/Developer_Interfaces.md:5049 ../../Projects/Developer/Developer_Interfaces.md:5250 ../../Projects/Developer/Developer_Interfaces.md:5401 ../../Projects/Developer/Developer_Interfaces.md:5679
+msgid "Example response: ``` 200 OK {"
+msgstr "Example response: ` ` 200 OK {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:194 ../../Projects/Developer/Developer_Interfaces.md:485 ../../Projects/Developer/Developer_Interfaces.md:572
+msgid "\"pluginId\": \"string\", \"pluginName\": \"string\", \"introduction\": \"string\", \"satisfaction\": 0, \"codeLanguage\": \"string\", \"pluginType\": \"string\", \"version\": \"string\", \"scoreCount\": 0, \"downloadCount\": 0, \"logoFile\": {"
+msgstr "\" pluginId \": \" pluginName \": \" string \", \" string \", \" sativaction \": 0, \" codeLanguage \": \" pluginType \": \" string \", \" version \": \" string \", \" scoreCount \": 0, \" downloadCount \": 0, \" logoFile \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:204 ../../Projects/Developer/Developer_Interfaces.md:212 ../../Projects/Developer/Developer_Interfaces.md:225 ../../Projects/Developer/Developer_Interfaces.md:495 ../../Projects/Developer/Developer_Interfaces.md:503 ../../Projects/Developer/Developer_Interfaces.md:516 ../../Projects/Developer/Developer_Interfaces.md:582 ../../Projects/Developer/Developer_Interfaces.md:590 ../../Projects/Developer/Developer_Interfaces.md:603
+msgid "\"originalFileName\": \"string\", \"storageAddress\": \"string\", \"fileSize\": 0, \"hashCode\": \"string\", \"name\": \"string\", \"size\": 0"
+msgstr "\" originalFileName \": \" string \", \" storageAddress \": \" string \", \" fileSize \": 0, \" hashCode \": \" string \", \" name \": \" string \", \" size \": 0"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:210 ../../Projects/Developer/Developer_Interfaces.md:501 ../../Projects/Developer/Developer_Interfaces.md:588
+msgid "}, \"pluginFile\": {"
+msgstr "}, \" pluginFile \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:218 ../../Projects/Developer/Developer_Interfaces.md:509 ../../Projects/Developer/Developer_Interfaces.md:596
+msgid "}, \"uploadTime\": \"2020-12-29T01:38:05.596Z\", \"user\": {"
+msgstr "}, \" uploadTime \":\" 2020-12-29T01:38:05.596Z \", \" user \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:221 ../../Projects/Developer/Developer_Interfaces.md:512 ../../Projects/Developer/Developer_Interfaces.md:599
+msgid "\"userId\": \"string\", \"userName\": \"string\""
+msgstr "\" userId \": \" string \", \" userName \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:223 ../../Projects/Developer/Developer_Interfaces.md:514 ../../Projects/Developer/Developer_Interfaces.md:601
+msgid "}, \"apiFile\": {"
+msgstr "}, \" apiFile \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:231 ../../Projects/Developer/Developer_Interfaces.md:233 ../../Projects/Developer/Developer_Interfaces.md:522 ../../Projects/Developer/Developer_Interfaces.md:524 ../../Projects/Developer/Developer_Interfaces.md:609 ../../Projects/Developer/Developer_Interfaces.md:611 ../../Projects/Developer/Developer_Interfaces.md:763 ../../Projects/Developer/Developer_Interfaces.md:925 ../../Projects/Developer/Developer_Interfaces.md:991 ../../Projects/Developer/Developer_Interfaces.md:993 ../../Projects/Developer/Developer_Interfaces.md:1001 ../../Projects/Developer/Developer_Interfaces.md:1069 ../../Projects/Developer/Developer_Interfaces.md:1071 ../../Projects/Developer/Developer_Interfaces.md:1145 ../../Projects/Developer/Developer_Interfaces.md:1147 ../../Projects/Developer/Developer_Interfaces.md:1189 ../../Projects/Developer/Developer_Interfaces.md:1191 ../../Projects/Developer/Developer_Interfaces.md:1308 ../../Projects/Developer/Developer_Interfaces.md:1310 ../../Projects/Developer/Developer_Interfaces.md:1352 ../../Projects/Developer/Developer_Interfaces.md:1354 ../../Projects/Developer/Developer_Interfaces.md:1428 ../../Projects/Developer/Developer_Interfaces.md:1430 ../../Projects/Developer/Developer_Interfaces.md:1542 ../../Projects/Developer/Developer_Interfaces.md:1549 ../../Projects/Developer/Developer_Interfaces.md:1556 ../../Projects/Developer/Developer_Interfaces.md:1558 ../../Projects/Developer/Developer_Interfaces.md:1570 ../../Projects/Developer/Developer_Interfaces.md:1577 ../../Projects/Developer/Developer_Interfaces.md:1584 ../../Projects/Developer/Developer_Interfaces.md:1586 ../../Projects/Developer/Developer_Interfaces.md:1601 ../../Projects/Developer/Developer_Interfaces.md:1636 ../../Projects/Developer/Developer_Interfaces.md:1643 ../../Projects/Developer/Developer_Interfaces.md:1650 ../../Projects/Developer/Developer_Interfaces.md:1652 ../../Projects/Developer/Developer_Interfaces.md:1664 ../../Projects/Developer/Developer_Interfaces.md:1671 ../../Projects/Developer/Developer_Interfaces.md:1678 ../../Projects/Developer/Developer_Interfaces.md:1680 ../../Projects/Developer/Developer_Interfaces.md:1695 ../../Projects/Developer/Developer_Interfaces.md:1761 ../../Projects/Developer/Developer_Interfaces.md:1768 ../../Projects/Developer/Developer_Interfaces.md:1775 ../../Projects/Developer/Developer_Interfaces.md:1777 ../../Projects/Developer/Developer_Interfaces.md:1789 ../../Projects/Developer/Developer_Interfaces.md:1796 ../../Projects/Developer/Developer_Interfaces.md:1803 ../../Projects/Developer/Developer_Interfaces.md:1805 ../../Projects/Developer/Developer_Interfaces.md:1820 ../../Projects/Developer/Developer_Interfaces.md:1855 ../../Projects/Developer/Developer_Interfaces.md:1862 ../../Projects/Developer/Developer_Interfaces.md:1869 ../../Projects/Developer/Developer_Interfaces.md:1871 ../../Projects/Developer/Developer_Interfaces.md:1883 ../../Projects/Developer/Developer_Interfaces.md:1890 ../../Projects/Developer/Developer_Interfaces.md:1897 ../../Projects/Developer/Developer_Interfaces.md:1899 ../../Projects/Developer/Developer_Interfaces.md:1914 ../../Projects/Developer/Developer_Interfaces.md:1975 ../../Projects/Developer/Developer_Interfaces.md:1982 ../../Projects/Developer/Developer_Interfaces.md:1989 ../../Projects/Developer/Developer_Interfaces.md:1991 ../../Projects/Developer/Developer_Interfaces.md:2003 ../../Projects/Developer/Developer_Interfaces.md:2010 ../../Projects/Developer/Developer_Interfaces.md:2017 ../../Projects/Developer/Developer_Interfaces.md:2019 ../../Projects/Developer/Developer_Interfaces.md:2034 ../../Projects/Developer/Developer_Interfaces.md:2137 ../../Projects/Developer/Developer_Interfaces.md:2274 ../../Projects/Developer/Developer_Interfaces.md:2335 ../../Projects/Developer/Developer_Interfaces.md:2364 ../../Projects/Developer/Developer_Interfaces.md:2367 ../../Projects/Developer/Developer_Interfaces.md:2691 ../../Projects/Developer/Developer_Interfaces.md:2712 ../../Projects/Developer/Developer_Interfaces.md:2798 ../../Projects/Developer/Developer_Interfaces.md:2820 ../../Projects/Developer/Developer_Interfaces.md:2912 ../../Projects/Developer/Developer_Interfaces.md:2914 ../../Projects/Developer/Developer_Interfaces.md:2970 ../../Projects/Developer/Developer_Interfaces.md:2973 ../../Projects/Developer/Developer_Interfaces.md:3020 ../../Projects/Developer/Developer_Interfaces.md:3057 ../../Projects/Developer/Developer_Interfaces.md:3116 ../../Projects/Developer/Developer_Interfaces.md:3118 ../../Projects/Developer/Developer_Interfaces.md:3121 ../../Projects/Developer/Developer_Interfaces.md:3262 ../../Projects/Developer/Developer_Interfaces.md:3413 ../../Projects/Developer/Developer_Interfaces.md:3503 ../../Projects/Developer/Developer_Interfaces.md:3618 ../../Projects/Developer/Developer_Interfaces.md:3734 ../../Projects/Developer/Developer_Interfaces.md:3747 ../../Projects/Developer/Developer_Interfaces.md:3748 ../../Projects/Developer/Developer_Interfaces.md:3750 ../../Projects/Developer/Developer_Interfaces.md:3759 ../../Projects/Developer/Developer_Interfaces.md:3776 ../../Projects/Developer/Developer_Interfaces.md:3788 ../../Projects/Developer/Developer_Interfaces.md:3870 ../../Projects/Developer/Developer_Interfaces.md:3883 ../../Projects/Developer/Developer_Interfaces.md:3884 ../../Projects/Developer/Developer_Interfaces.md:3886 ../../Projects/Developer/Developer_Interfaces.md:3895 ../../Projects/Developer/Developer_Interfaces.md:3912 ../../Projects/Developer/Developer_Interfaces.md:3924 ../../Projects/Developer/Developer_Interfaces.md:3975 ../../Projects/Developer/Developer_Interfaces.md:3988 ../../Projects/Developer/Developer_Interfaces.md:3989 ../../Projects/Developer/Developer_Interfaces.md:3991 ../../Projects/Developer/Developer_Interfaces.md:4000 ../../Projects/Developer/Developer_Interfaces.md:4017 ../../Projects/Developer/Developer_Interfaces.md:4029 ../../Projects/Developer/Developer_Interfaces.md:4111 ../../Projects/Developer/Developer_Interfaces.md:4124 ../../Projects/Developer/Developer_Interfaces.md:4125 ../../Projects/Developer/Developer_Interfaces.md:4127 ../../Projects/Developer/Developer_Interfaces.md:4136 ../../Projects/Developer/Developer_Interfaces.md:4153 ../../Projects/Developer/Developer_Interfaces.md:4165 ../../Projects/Developer/Developer_Interfaces.md:4216 ../../Projects/Developer/Developer_Interfaces.md:4229 ../../Projects/Developer/Developer_Interfaces.md:4230 ../../Projects/Developer/Developer_Interfaces.md:4232 ../../Projects/Developer/Developer_Interfaces.md:4241 ../../Projects/Developer/Developer_Interfaces.md:4258 ../../Projects/Developer/Developer_Interfaces.md:4270 ../../Projects/Developer/Developer_Interfaces.md:4306 ../../Projects/Developer/Developer_Interfaces.md:4339 ../../Projects/Developer/Developer_Interfaces.md:4347 ../../Projects/Developer/Developer_Interfaces.md:4388 ../../Projects/Developer/Developer_Interfaces.md:4433 ../../Projects/Developer/Developer_Interfaces.md:4523 ../../Projects/Developer/Developer_Interfaces.md:4609 ../../Projects/Developer/Developer_Interfaces.md:4611 ../../Projects/Developer/Developer_Interfaces.md:4671 ../../Projects/Developer/Developer_Interfaces.md:4673 ../../Projects/Developer/Developer_Interfaces.md:4709 ../../Projects/Developer/Developer_Interfaces.md:4712 ../../Projects/Developer/Developer_Interfaces.md:4815 ../../Projects/Developer/Developer_Interfaces.md:4864 ../../Projects/Developer/Developer_Interfaces.md:4917 ../../Projects/Developer/Developer_Interfaces.md:4969 ../../Projects/Developer/Developer_Interfaces.md:4991 ../../Projects/Developer/Developer_Interfaces.md:5081 ../../Projects/Developer/Developer_Interfaces.md:5084 ../../Projects/Developer/Developer_Interfaces.md:5131 ../../Projects/Developer/Developer_Interfaces.md:5238 ../../Projects/Developer/Developer_Interfaces.md:5240 ../../Projects/Developer/Developer_Interfaces.md:5248 ../../Projects/Developer/Developer_Interfaces.md:5315 ../../Projects/Developer/Developer_Interfaces.md:5317 ../../Projects/Developer/Developer_Interfaces.md:5325 ../../Projects/Developer/Developer_Interfaces.md:5425 ../../Projects/Developer/Developer_Interfaces.md:5598 ../../Projects/Developer/Developer_Interfaces.md:5600 ../../Projects/Developer/Developer_Interfaces.md:5607 ../../Projects/Developer/Developer_Interfaces.md:5697 ../../Projects/Developer/Developer_Interfaces.md:5707 ../../Projects/Developer/Developer_Interfaces.md:5715 ../../Projects/Developer/Developer_Interfaces.md:5718 ../../Projects/Developer/Developer_Interfaces.md:5869 ../../Projects/Developer/Developer_Interfaces.md:5915
+msgid "}"
+msgstr "}"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:235
+msgid "### 1.2 GET all"
+msgstr "### 1.2 GET all"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:237
+msgid "Query all plugin or sdk ``` Resource URI: /mec/appstore/v1/plugins/ ```"
+msgstr "Query all plugin or sdk ` ` Resource URI: /sec/appstore/v1/plugins/ ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:242
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>pluginType</td> <td>plugin type</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>limit</td> <td>the max count of one page</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>offset</td> <td>start index of the page</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th></th></th> </thead> </tr> <tbody> <tr> <td> <td>pluginType</td> <td>plugin type</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>limit</td> <td>the max count of one page</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>offset</td> <td>start index of the page</td> <td>request param</td> <td>yes</td> </tr> </table> </tbody> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:273 ../../Projects/Developer/Developer_Interfaces.md:311 ../../Projects/Developer/Developer_Interfaces.md:342 ../../Projects/Developer/Developer_Interfaces.md:373 ../../Projects/Developer/Developer_Interfaces.md:403 ../../Projects/Developer/Developer_Interfaces.md:481 ../../Projects/Developer/Developer_Interfaces.md:568 ../../Projects/Developer/Developer_Interfaces.md:5856 ../../Projects/Developer/Developer_Interfaces.md:5902
+msgid "Example response: ``` 200 OK"
+msgstr "Example response: ` ` ` 200 OK"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:282 ../../Projects/Developer/Developer_Interfaces.md:521 ../../Projects/Developer/Developer_Interfaces.md:608 ../../Projects/Developer/Developer_Interfaces.md:761 ../../Projects/Developer/Developer_Interfaces.md:923 ../../Projects/Developer/Developer_Interfaces.md:989 ../../Projects/Developer/Developer_Interfaces.md:991 ../../Projects/Developer/Developer_Interfaces.md:997 ../../Projects/Developer/Developer_Interfaces.md:1067 ../../Projects/Developer/Developer_Interfaces.md:1069 ../../Projects/Developer/Developer_Interfaces.md:1143 ../../Projects/Developer/Developer_Interfaces.md:1145 ../../Projects/Developer/Developer_Interfaces.md:1187 ../../Projects/Developer/Developer_Interfaces.md:1189 ../../Projects/Developer/Developer_Interfaces.md:1306 ../../Projects/Developer/Developer_Interfaces.md:1308 ../../Projects/Developer/Developer_Interfaces.md:1350 ../../Projects/Developer/Developer_Interfaces.md:1352 ../../Projects/Developer/Developer_Interfaces.md:1426 ../../Projects/Developer/Developer_Interfaces.md:1428 ../../Projects/Developer/Developer_Interfaces.md:1540 ../../Projects/Developer/Developer_Interfaces.md:1547 ../../Projects/Developer/Developer_Interfaces.md:1554 ../../Projects/Developer/Developer_Interfaces.md:1556 ../../Projects/Developer/Developer_Interfaces.md:1568 ../../Projects/Developer/Developer_Interfaces.md:1575 ../../Projects/Developer/Developer_Interfaces.md:1582 ../../Projects/Developer/Developer_Interfaces.md:1584 ../../Projects/Developer/Developer_Interfaces.md:1599 ../../Projects/Developer/Developer_Interfaces.md:1634 ../../Projects/Developer/Developer_Interfaces.md:1641 ../../Projects/Developer/Developer_Interfaces.md:1648 ../../Projects/Developer/Developer_Interfaces.md:1650 ../../Projects/Developer/Developer_Interfaces.md:1662 ../../Projects/Developer/Developer_Interfaces.md:1669 ../../Projects/Developer/Developer_Interfaces.md:1676 ../../Projects/Developer/Developer_Interfaces.md:1678 ../../Projects/Developer/Developer_Interfaces.md:1693 ../../Projects/Developer/Developer_Interfaces.md:1759 ../../Projects/Developer/Developer_Interfaces.md:1766 ../../Projects/Developer/Developer_Interfaces.md:1773 ../../Projects/Developer/Developer_Interfaces.md:1775 ../../Projects/Developer/Developer_Interfaces.md:1787 ../../Projects/Developer/Developer_Interfaces.md:1794 ../../Projects/Developer/Developer_Interfaces.md:1801 ../../Projects/Developer/Developer_Interfaces.md:1803 ../../Projects/Developer/Developer_Interfaces.md:1818 ../../Projects/Developer/Developer_Interfaces.md:1853 ../../Projects/Developer/Developer_Interfaces.md:1860 ../../Projects/Developer/Developer_Interfaces.md:1867 ../../Projects/Developer/Developer_Interfaces.md:1869 ../../Projects/Developer/Developer_Interfaces.md:1881 ../../Projects/Developer/Developer_Interfaces.md:1888 ../../Projects/Developer/Developer_Interfaces.md:1895 ../../Projects/Developer/Developer_Interfaces.md:1897 ../../Projects/Developer/Developer_Interfaces.md:1912 ../../Projects/Developer/Developer_Interfaces.md:1973 ../../Projects/Developer/Developer_Interfaces.md:1980 ../../Projects/Developer/Developer_Interfaces.md:1987 ../../Projects/Developer/Developer_Interfaces.md:1989 ../../Projects/Developer/Developer_Interfaces.md:2001 ../../Projects/Developer/Developer_Interfaces.md:2008 ../../Projects/Developer/Developer_Interfaces.md:2015 ../../Projects/Developer/Developer_Interfaces.md:2017 ../../Projects/Developer/Developer_Interfaces.md:2032 ../../Projects/Developer/Developer_Interfaces.md:2135 ../../Projects/Developer/Developer_Interfaces.md:2272 ../../Projects/Developer/Developer_Interfaces.md:2362 ../../Projects/Developer/Developer_Interfaces.md:2441 ../../Projects/Developer/Developer_Interfaces.md:2486 ../../Projects/Developer/Developer_Interfaces.md:2689 ../../Projects/Developer/Developer_Interfaces.md:2710 ../../Projects/Developer/Developer_Interfaces.md:2910 ../../Projects/Developer/Developer_Interfaces.md:2912 ../../Projects/Developer/Developer_Interfaces.md:2968 ../../Projects/Developer/Developer_Interfaces.md:3055 ../../Projects/Developer/Developer_Interfaces.md:3114 ../../Projects/Developer/Developer_Interfaces.md:3116 ../../Projects/Developer/Developer_Interfaces.md:3732 ../../Projects/Developer/Developer_Interfaces.md:3746 ../../Projects/Developer/Developer_Interfaces.md:3748 ../../Projects/Developer/Developer_Interfaces.md:3757 ../../Projects/Developer/Developer_Interfaces.md:3774 ../../Projects/Developer/Developer_Interfaces.md:3868 ../../Projects/Developer/Developer_Interfaces.md:3882 ../../Projects/Developer/Developer_Interfaces.md:3884 ../../Projects/Developer/Developer_Interfaces.md:3893 ../../Projects/Developer/Developer_Interfaces.md:3910 ../../Projects/Developer/Developer_Interfaces.md:3973 ../../Projects/Developer/Developer_Interfaces.md:3987 ../../Projects/Developer/Developer_Interfaces.md:3989 ../../Projects/Developer/Developer_Interfaces.md:3998 ../../Projects/Developer/Developer_Interfaces.md:4015 ../../Projects/Developer/Developer_Interfaces.md:4109 ../../Projects/Developer/Developer_Interfaces.md:4123 ../../Projects/Developer/Developer_Interfaces.md:4125 ../../Projects/Developer/Developer_Interfaces.md:4134 ../../Projects/Developer/Developer_Interfaces.md:4151 ../../Projects/Developer/Developer_Interfaces.md:4214 ../../Projects/Developer/Developer_Interfaces.md:4228 ../../Projects/Developer/Developer_Interfaces.md:4230 ../../Projects/Developer/Developer_Interfaces.md:4239 ../../Projects/Developer/Developer_Interfaces.md:4256 ../../Projects/Developer/Developer_Interfaces.md:4607 ../../Projects/Developer/Developer_Interfaces.md:4609 ../../Projects/Developer/Developer_Interfaces.md:4669 ../../Projects/Developer/Developer_Interfaces.md:4707 ../../Projects/Developer/Developer_Interfaces.md:4813 ../../Projects/Developer/Developer_Interfaces.md:5079 ../../Projects/Developer/Developer_Interfaces.md:5129 ../../Projects/Developer/Developer_Interfaces.md:5236 ../../Projects/Developer/Developer_Interfaces.md:5238 ../../Projects/Developer/Developer_Interfaces.md:5313 ../../Projects/Developer/Developer_Interfaces.md:5315 ../../Projects/Developer/Developer_Interfaces.md:5596 ../../Projects/Developer/Developer_Interfaces.md:5598 ../../Projects/Developer/Developer_Interfaces.md:5605 ../../Projects/Developer/Developer_Interfaces.md:5695 ../../Projects/Developer/Developer_Interfaces.md:5705 ../../Projects/Developer/Developer_Interfaces.md:5713 ../../Projects/Developer/Developer_Interfaces.md:5912
+msgid "{"
+msgstr "{"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:277
+msgid "\"results\": ["
+msgstr "\" results \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:278 ../../Projects/Developer/Developer_Interfaces.md:3499 ../../Projects/Developer/Developer_Interfaces.md:3614 ../../Projects/Developer/Developer_Interfaces.md:4464
+msgid "{}"
+msgstr "{}"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:279
+msgid "], \"limit\": 0, \"offset\": 0, \"total\": 0 }"
+msgstr "], \" limit \": 0, \" offset \": 0, \" total \": 0}"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:284 ../../Projects/Developer/Developer_Interfaces.md:315 ../../Projects/Developer/Developer_Interfaces.md:346 ../../Projects/Developer/Developer_Interfaces.md:700 ../../Projects/Developer/Developer_Interfaces.md:766 ../../Projects/Developer/Developer_Interfaces.md:801 ../../Projects/Developer/Developer_Interfaces.md:1002 ../../Projects/Developer/Developer_Interfaces.md:1079 ../../Projects/Developer/Developer_Interfaces.md:1199 ../../Projects/Developer/Developer_Interfaces.md:1361 ../../Projects/Developer/Developer_Interfaces.md:1437 ../../Projects/Developer/Developer_Interfaces.md:1705 ../../Projects/Developer/Developer_Interfaces.md:1924 ../../Projects/Developer/Developer_Interfaces.md:2044 ../../Projects/Developer/Developer_Interfaces.md:2140 ../../Projects/Developer/Developer_Interfaces.md:2197 ../../Projects/Developer/Developer_Interfaces.md:2277 ../../Projects/Developer/Developer_Interfaces.md:2445 ../../Projects/Developer/Developer_Interfaces.md:2490 ../../Projects/Developer/Developer_Interfaces.md:2532 ../../Projects/Developer/Developer_Interfaces.md:2550 ../../Projects/Developer/Developer_Interfaces.md:2646 ../../Projects/Developer/Developer_Interfaces.md:2715 ../../Projects/Developer/Developer_Interfaces.md:3060 ../../Projects/Developer/Developer_Interfaces.md:3211 ../../Projects/Developer/Developer_Interfaces.md:3301 ../../Projects/Developer/Developer_Interfaces.md:4675 ../../Projects/Developer/Developer_Interfaces.md:4713
+msgid "```"
+msgstr "` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:286
+msgid "### 1.3 DELETE one Delete one plugin by pluginId ``` Resource URI: /mec/appstore/v1/plugins/{pluginId} ```"
+msgstr "### 1.3 DELETE one Delete one plugin by pluginId ` ` ` Resource URI: /sec/appstore/v1/plugins/ {pluginId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:292 ../../Projects/Developer/Developer_Interfaces.md:323 ../../Projects/Developer/Developer_Interfaces.md:354 ../../Projects/Developer/Developer_Interfaces.md:384
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>pluginId</td> <td>plugin id</td> <td>path param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>pluginId</td> <td>plugin id</td> <td>path param</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:314
+msgid "true"
+msgstr "true"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:317
+msgid "### 1.4 GET download plugin download one plugin ``` Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/download ```"
+msgstr "### 1.4 GET download plugin download one plugin ` ` ` Resource URI: /sec/appstore/v1/plugins/ {pluginId} /action/download ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:345 ../../Projects/Developer/Developer_Interfaces.md:376 ../../Projects/Developer/Developer_Interfaces.md:406
+msgid "binary output."
+msgstr "binary output."
+
+#: ../../Projects/Developer/Developer_Interfaces.md:348
+msgid "### 1.5 GET download logo download plugin's logo file ``` Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/get-logofile ```"
+msgstr "### 1.5 GET download logo download plugin's logofile ` ` ` Resource URI: /sec/appstore/v1/plugins/ {pluginId} /action/get-logofile ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:377
+msgid "``` ### 1.6 GET download api download plugin's api file ``` Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/get-apifile ```"
+msgstr "` ` ` ` ### 1.6 GET download api download plugin's api file ` ` ` Resource URI: /sec/appstore/v1/plugins/ {pluginId} /action/get-apifile ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:407
+msgid "``` ### 1.7 PUT update plugin update api by id ``` Resource URI: /mec/appstore/v1/plugins/{pluginId} ```"
+msgstr "` ` ` ### 1.7 PUT update plugin update api by id ` ` Resource URI: /sec/appstore/v1/plugins/ {pluginId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:414
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>pluginId</td> <td>pluginid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>pluginFile</td> <td>pluginfile</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>logoFile</td> <td>pluginlogofile</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>apiFile</td> <td>pluginapifile</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>pluginName</td> <td>pluginname</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>codeLanguage</td> <td>languagerepresentedbytheplugin</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>pluginType</td> <td>1plugin2sdk</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>version</td> <td>pluginversion</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>introduction</td> <td>pluginbrief</td> <td>requestpart</td> <td>no</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>pluginId</td> <td>pluginid</td> <td>pathparam</td> <td>yes</td> </tr> <td> <tr> pluginFile</td> <td>pluginfile</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>logoFile</td> <td>pluginlogofile</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>apiFile</td> <td>pluginapifile</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>pluginName</td> <td>pluginname</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>codeLanguage</td> <td>languagerepresdedbipyluin</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>pluginType</td> <td>1plugin2sdk</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>version</td> <td>pluginversion</td> <td>requestpart</td> <td>no</td> </tr> <tr> <td>int ducking</td> <td>pluginbrief</td> <td>requestpart</td> <td>no</td> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:525
+msgid "### 1.8 PUT mark plugin update plugin satisfaction by pluginId ``` Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/score ```"
+msgstr "### 1.8 PUT markplugin update plugin sativaction by pluginId ` ` Resource URI: /ec/appstore/v1/plugins/ {pluginId} /action/score ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:531
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>pluginId</td> <td>pluginid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>score</td> <td>pluginsatisfaction</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>raterid</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>ratername</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>pluginId</td> <td>pluginid</td> <td>pathparam</td> <td>yes</td> </tr> <td> <tr> score</td> <td>pluginsativaction</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>raterid</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>ratername</td> <td>requestparam</td> <td>yes</td> </tr> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:613
+msgid "## 2. App Edge applications on the car ### 2.1 POST upload app Upload app with some params. ``` Resource URI: /mec/developer/v1/apps/ ```"
+msgstr "# # 2. App Edge applications on the car ### 2.1 POST upload app Upload app with some params. ` ` ` Resource URI: /met/developer/v1/apps/ ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:621
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>appFile</td> <td>appfile</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>logoFile</td> <td>applogofile</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>affinity</td> <td>appaffinity</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>industry</td> <td>appindustry</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>type</td> <td>apptype</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>appDesc</td> <td>appbrief</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofuploadapp</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </thead> <tbody> <tr> <tr> appFile</td> <td>appfile</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>logoFile</td> <td>applogofile</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>affinity</td> <td>appaffinity</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>industry</td> <td>appindustry</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>type</td> <td>apptype</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>appDesc</td> <td>appbrief</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofloadapp</td> <td>requestparam</td> <td>yes</td> </tr> </tr> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:680
+msgid "\"appId\": \"string\", \"appName\": \"string\", \"appFile\": \"string\", \"logoFile\": \"string\", \"affinity\": \"string\", \"industry\": \"string\", \"appDesc\": \"string\", \"uploadTime\": \"2020-09-11T06:26:46.351Z\", \"userId\": \"string\", \"appVersion\": \"string\", \"type\": \"string\", \"task\": {"
+msgstr "\" appId \": \" appName \": \" string \", \" appFile \": \" logoFile \": \" string \", \" affinity \": \" industry \": \" string \", \" appDesc \": \" string \", \" uploadTime \": \" 2020-09-11T06:26:46.351Z \", \" userId \": \" string \", \" appVersion \": \" string \", \" type \": \" string \", \" task \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:692 ../../Projects/Developer/Developer_Interfaces.md:757
+msgid "\"taskId\": \"string\", \"taskNo\": \"string\", \"status\": \"string\", \"beginTime\": \"2020-09-11T06:26:46.351Z\", \"endTime\": \"2020-09-11T06:26:46.351Z\", \"appId\": \"string\""
+msgstr "\" taskId \": \" taskNo \": \" string \": \" string \": \" 2020-09-11T06:26:46.351Z \", \" endTime \":\" 2020-09-11T06:26:46.351Z \", \" appId \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:702
+msgid "### 2.2 GET all test task Query all test task by condtions ``` Resource URI: /mec/developer/v1/apps/ ```"
+msgstr "### 2.2 GET all test task Query all test task by the conditions ` ` Resource URI: /dec/developer/v1/apps/ ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:708
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>appName</td> <td>appname</td> <td>requestparam</td> <td>no</td> </tr> <tr> <td>status</td> <td>testtaskstatus</td> <td>requestparam</td> <td>no</td> </tr> <tr> <td>beginTime</td> <td>taskbegintime</td> <td>requestparam</td> <td>no</td> </tr> <tr> <td>endTime</td> <td>taskendtime</td> <td>requestparam</td> <td>no</td> </tr> <tr> <td>userId</td> <td>theauthoridofuploadapp</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> appName</td> <td>appname</td> <td>requestparam</td> <td>no</td> </tr> <tr> <td>status</td> <td>testtaskstatus</td> <td>requestparam</td> <td>no</td> </tr> <tr> <td>begin Time</td> <td>taskbegintime</td> <td>requestparam</td> <td>no</td> </tr> <tr> <td>endTime</td> <td>taskendtime</td> <td>requestparam</td> <td>no</td> </tr> <tr> <td>userId</td> <td>theauthoridofloadapp</td> <td>requestparam</td> <td>yes </tr></td> </tr> </table> </tbody>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:762 ../../Projects/Developer/Developer_Interfaces.md:797
+msgid "\"tasks\": ["
+msgstr "\" tasks \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:768
+msgid "### 2.3 GET all app tags Query app function tags ``` Resource URI: /mec/developer/v1/apps/tags ```"
+msgstr "### 2.3 GET all app tags Query app function tags ` ` Resource URI: /met/developer/v1/apps/tags ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:774 ../../Projects/Developer/Developer_Interfaces.md:2408 ../../Projects/Developer/Developer_Interfaces.md:3028 ../../Projects/Developer/Developer_Interfaces.md:3549 ../../Projects/Developer/Developer_Interfaces.md:4280 ../../Projects/Developer/Developer_Interfaces.md:5660
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td></td> <td></td> <td></td> <td></td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td></td> <td></td> <td></td> <td></td> <td></td></td> </tr></td> </tr> </table> </table> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:798 ../../Projects/Developer/Developer_Interfaces.md:967 ../../Projects/Developer/Developer_Interfaces.md:971 ../../Projects/Developer/Developer_Interfaces.md:1045 ../../Projects/Developer/Developer_Interfaces.md:1049 ../../Projects/Developer/Developer_Interfaces.md:1121 ../../Projects/Developer/Developer_Interfaces.md:1125 ../../Projects/Developer/Developer_Interfaces.md:1165 ../../Projects/Developer/Developer_Interfaces.md:1169 ../../Projects/Developer/Developer_Interfaces.md:1284 ../../Projects/Developer/Developer_Interfaces.md:1288 ../../Projects/Developer/Developer_Interfaces.md:1328 ../../Projects/Developer/Developer_Interfaces.md:1332 ../../Projects/Developer/Developer_Interfaces.md:1404 ../../Projects/Developer/Developer_Interfaces.md:1408 ../../Projects/Developer/Developer_Interfaces.md:1530 ../../Projects/Developer/Developer_Interfaces.md:1624 ../../Projects/Developer/Developer_Interfaces.md:1749 ../../Projects/Developer/Developer_Interfaces.md:1843 ../../Projects/Developer/Developer_Interfaces.md:1963 ../../Projects/Developer/Developer_Interfaces.md:3702 ../../Projects/Developer/Developer_Interfaces.md:3705 ../../Projects/Developer/Developer_Interfaces.md:3708 ../../Projects/Developer/Developer_Interfaces.md:3711 ../../Projects/Developer/Developer_Interfaces.md:3714 ../../Projects/Developer/Developer_Interfaces.md:3717 ../../Projects/Developer/Developer_Interfaces.md:3720 ../../Projects/Developer/Developer_Interfaces.md:3723 ../../Projects/Developer/Developer_Interfaces.md:3726 ../../Projects/Developer/Developer_Interfaces.md:3729 ../../Projects/Developer/Developer_Interfaces.md:3771 ../../Projects/Developer/Developer_Interfaces.md:3774 ../../Projects/Developer/Developer_Interfaces.md:3838 ../../Projects/Developer/Developer_Interfaces.md:3841 ../../Projects/Developer/Developer_Interfaces.md:3844 ../../Projects/Developer/Developer_Interfaces.md:3847 ../../Projects/Developer/Developer_Interfaces.md:3850 ../../Projects/Developer/Developer_Interfaces.md:3853 ../../Projects/Developer/Developer_Interfaces.md:3856 ../../Projects/Developer/Developer_Interfaces.md:3859 ../../Projects/Developer/Developer_Interfaces.md:3862 ../../Projects/Developer/Developer_Interfaces.md:3865 ../../Projects/Developer/Developer_Interfaces.md:3907 ../../Projects/Developer/Developer_Interfaces.md:3910 ../../Projects/Developer/Developer_Interfaces.md:3943 ../../Projects/Developer/Developer_Interfaces.md:3946 ../../Projects/Developer/Developer_Interfaces.md:3949 ../../Projects/Developer/Developer_Interfaces.md:3952 ../../Projects/Developer/Developer_Interfaces.md:3955 ../../Projects/Developer/Developer_Interfaces.md:3958 ../../Projects/Developer/Developer_Interfaces.md:3961 ../../Projects/Developer/Developer_Interfaces.md:3964 ../../Projects/Developer/Developer_Interfaces.md:3967 ../../Projects/Developer/Developer_Interfaces.md:3970 ../../Projects/Developer/Developer_Interfaces.md:4012 ../../Projects/Developer/Developer_Interfaces.md:4015 ../../Projects/Developer/Developer_Interfaces.md:4079 ../../Projects/Developer/Developer_Interfaces.md:4082 ../../Projects/Developer/Developer_Interfaces.md:4085 ../../Projects/Developer/Developer_Interfaces.md:4088 ../../Projects/Developer/Developer_Interfaces.md:4091 ../../Projects/Developer/Developer_Interfaces.md:4094 ../../Projects/Developer/Developer_Interfaces.md:4097 ../../Projects/Developer/Developer_Interfaces.md:4100 ../../Projects/Developer/Developer_Interfaces.md:4103 ../../Projects/Developer/Developer_Interfaces.md:4106 ../../Projects/Developer/Developer_Interfaces.md:4148 ../../Projects/Developer/Developer_Interfaces.md:4151 ../../Projects/Developer/Developer_Interfaces.md:4184 ../../Projects/Developer/Developer_Interfaces.md:4187 ../../Projects/Developer/Developer_Interfaces.md:4190 ../../Projects/Developer/Developer_Interfaces.md:4193 ../../Projects/Developer/Developer_Interfaces.md:4196 ../../Projects/Developer/Developer_Interfaces.md:4199 ../../Projects/Developer/Developer_Interfaces.md:4202 ../../Projects/Developer/Developer_Interfaces.md:4205 ../../Projects/Developer/Developer_Interfaces.md:4208 ../../Projects/Developer/Developer_Interfaces.md:4211 ../../Projects/Developer/Developer_Interfaces.md:4253 ../../Projects/Developer/Developer_Interfaces.md:4256 ../../Projects/Developer/Developer_Interfaces.md:5202 ../../Projects/Developer/Developer_Interfaces.md:5279 ../../Projects/Developer/Developer_Interfaces.md:5562 ../../Projects/Developer/Developer_Interfaces.md:5862 ../../Projects/Developer/Developer_Interfaces.md:5908
+msgid "\"string\""
+msgstr "\" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:803
+msgid "### 2.4 POST upload app to store upload app to store ``` Resource URI: /mec/developer/v1/apps/{appId}/action/upload ```"
+msgstr "### 2.4 POST upload app to store upload app to store ` ` Resource URI: /ec/developer/v1/apps/ {appId} /action/upload ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:809
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>appId</td> <td>appid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofuploadapp</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>theauthornameofuploadapp</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </thead> <tr> <tbody> <tr> appId</td> <td>appid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofuploadapp</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>theauthornameofuploadapp</td> <td>requestparam</td> <td>yes </tr></td> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:840
+msgid "Example response: ``` 200 OK \"csar id\" ```"
+msgstr "Example response: ` ` 200 OK \" csar id\" ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:846
+msgid "### 2.5 GET start test start to test app ``` Resource URI: /mec/developer/v1/apps/{appId}/action/start-test ```"
+msgstr "### 2.5 GET start test start to test app ` ` ` Resource URI: /sec/developer/v1/apps/ {appId} /action/start - test ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:852
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>appId</td> <td>appid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofuploadapp</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </thead> <tr> <tbody> <tr> appId</td> <td>appid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofloadapp</td> <td>requestparam</td> <td>yes</td> </tr> </tr> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:877 ../../Projects/Developer/Developer_Interfaces.md:1232 ../../Projects/Developer/Developer_Interfaces.md:1476 ../../Projects/Developer/Developer_Interfaces.md:2230 ../../Projects/Developer/Developer_Interfaces.md:2394 ../../Projects/Developer/Developer_Interfaces.md:2577 ../../Projects/Developer/Developer_Interfaces.md:2742 ../../Projects/Developer/Developer_Interfaces.md:2853
+msgid "Example response: ``` 200 OK true ```"
+msgstr "Example response: ` ` 200 OK true ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:883
+msgid "### 2.6 GET subtask list query test subtask list ``` Resource URI: /mec/developer/v1/apps/{appId}/task/{taskId}/subtasks ```"
+msgstr "### 2.6 GET subtask list query test subtask list ` ` ` Resource URI: /msec/developer/v1/apps/ {appId} /task/ {taskId} /subtasks ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:889
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>appId</td> <td>appid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>taskId</td> <td>maintaskid</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </thead> <tr> <tbody> <tr> appId</td> <td>appid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>taskId</td> <td>maintaskid</td> <td>pathparam</td> <td>yes</td> </tr> </tr> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:924
+msgid "\"subTasks\": ["
+msgstr "\" subTasks \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:920
+msgid "\"executionid\": \"string\", \"taskid\": \"string\", \"testcaseid\": 0, \"status\": \"string\", \"parameters\": \"string\""
+msgstr "\" executionid \": \" string \", \" taskid \": \" string \", \" testcaseid \": 0, \" status \": \" string \", \" parameters \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:928
+msgid "``` ## 3. App Project Edge application projects created by the developer platform ### 3.1 GET all project Query all app project with userId. ``` Resource URI: /mec/developer/v1/projects/ ```"
+msgstr "` ` ` # # 3. App Project Edge application projects created by the developer platform ### 3.1 GET all project Query all app project with userId. ` ` ` Resource URI: /mec/developer/v1/projects/ ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:937
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>theauthoridofcreateprocject</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </thead> <tbody> <tr> <td> <td>userId</td> <td>theauthoridofcreateprocject</td> <td>requestparam</td> <td>yes</td> </tr> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:956 ../../Projects/Developer/Developer_Interfaces.md:2427 ../../Projects/Developer/Developer_Interfaces.md:2472 ../../Projects/Developer/Developer_Interfaces.md:2884 ../../Projects/Developer/Developer_Interfaces.md:3295 ../../Projects/Developer/Developer_Interfaces.md:4460 ../../Projects/Developer/Developer_Interfaces.md:4576 ../../Projects/Developer/Developer_Interfaces.md:4795 ../../Projects/Developer/Developer_Interfaces.md:5111 ../../Projects/Developer/Developer_Interfaces.md:5532
+msgid "Example response: ``` 200 OK ["
+msgstr "Example response: ` ` 200 OK ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:961 ../../Projects/Developer/Developer_Interfaces.md:1039 ../../Projects/Developer/Developer_Interfaces.md:1115 ../../Projects/Developer/Developer_Interfaces.md:1159 ../../Projects/Developer/Developer_Interfaces.md:1278 ../../Projects/Developer/Developer_Interfaces.md:1322 ../../Projects/Developer/Developer_Interfaces.md:1398
+msgid "\"id\": \"string\", \"projectType\": \"CREATE_NEW\", \"name\": \"string\", \"version\": \"string\", \"provider\": \"string\", \"platform\": ["
+msgstr "\" id \": \" string \", \" projectType \": \" CREATE_NEW \", \" name \": \" string \", \" version \": \" string \", \" provider \": \" string \", \" platform \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:968 ../../Projects/Developer/Developer_Interfaces.md:1046 ../../Projects/Developer/Developer_Interfaces.md:1122 ../../Projects/Developer/Developer_Interfaces.md:1166 ../../Projects/Developer/Developer_Interfaces.md:1285 ../../Projects/Developer/Developer_Interfaces.md:1329 ../../Projects/Developer/Developer_Interfaces.md:1405
+msgid "], \"type\": \"string\", \"industry\": ["
+msgstr "], \" type \": \" string \", \" industry \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:972 ../../Projects/Developer/Developer_Interfaces.md:1050 ../../Projects/Developer/Developer_Interfaces.md:1126 ../../Projects/Developer/Developer_Interfaces.md:1170 ../../Projects/Developer/Developer_Interfaces.md:1289 ../../Projects/Developer/Developer_Interfaces.md:1333 ../../Projects/Developer/Developer_Interfaces.md:1409
+msgid "], \"description\": \"string\", \"iconFileId\": \"string\", \"status\": \"ONLINE\", \"capabilityList\": ["
+msgstr "], \" description \": \" string \", \" iconFileId \": \" string \", \" status \": \" ONLINE \", \" capabilityList \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:978 ../../Projects/Developer/Developer_Interfaces.md:1056 ../../Projects/Developer/Developer_Interfaces.md:1132 ../../Projects/Developer/Developer_Interfaces.md:1176 ../../Projects/Developer/Developer_Interfaces.md:1295 ../../Projects/Developer/Developer_Interfaces.md:1339 ../../Projects/Developer/Developer_Interfaces.md:1415 ../../Projects/Developer/Developer_Interfaces.md:2124 ../../Projects/Developer/Developer_Interfaces.md:2678 ../../Projects/Developer/Developer_Interfaces.md:2699
+msgid "\"groupId\": \"string\", \"name\": \"string\", \"type\": \"OPENMEP\", \"description\": \"string\", \"capabilityDetailList\": ["
+msgstr "\" groupId \": \" string \", \" name \": \" string \", \" type \": \" OPENMEP \", \" description \": \" string \", \" capabilityDetailList \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:984 ../../Projects/Developer/Developer_Interfaces.md:1062 ../../Projects/Developer/Developer_Interfaces.md:1138 ../../Projects/Developer/Developer_Interfaces.md:1182 ../../Projects/Developer/Developer_Interfaces.md:1301 ../../Projects/Developer/Developer_Interfaces.md:1345 ../../Projects/Developer/Developer_Interfaces.md:1421 ../../Projects/Developer/Developer_Interfaces.md:2130 ../../Projects/Developer/Developer_Interfaces.md:2684 ../../Projects/Developer/Developer_Interfaces.md:2705
+msgid "\"detailId\": \"string\", \"groupId\": \"string\", \"service\": \"string\", \"version\": \"string\", \"description\": \"string\", \"provider\": \"string\", \"apiFileId\": \"string\""
+msgstr "\" detailId \": \" string \", \" groupId \": \" string \": \" string \", \" string \": \" description \": \" provider \": \" string \", \" apiFileId \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:992 ../../Projects/Developer/Developer_Interfaces.md:1070 ../../Projects/Developer/Developer_Interfaces.md:1146 ../../Projects/Developer/Developer_Interfaces.md:1190 ../../Projects/Developer/Developer_Interfaces.md:1309 ../../Projects/Developer/Developer_Interfaces.md:1353 ../../Projects/Developer/Developer_Interfaces.md:1429 ../../Projects/Developer/Developer_Interfaces.md:1557 ../../Projects/Developer/Developer_Interfaces.md:1585 ../../Projects/Developer/Developer_Interfaces.md:1651 ../../Projects/Developer/Developer_Interfaces.md:1679 ../../Projects/Developer/Developer_Interfaces.md:1776 ../../Projects/Developer/Developer_Interfaces.md:1804 ../../Projects/Developer/Developer_Interfaces.md:1870 ../../Projects/Developer/Developer_Interfaces.md:1898 ../../Projects/Developer/Developer_Interfaces.md:1990 ../../Projects/Developer/Developer_Interfaces.md:2365 ../../Projects/Developer/Developer_Interfaces.md:2913 ../../Projects/Developer/Developer_Interfaces.md:2916 ../../Projects/Developer/Developer_Interfaces.md:2971 ../../Projects/Developer/Developer_Interfaces.md:3117 ../../Projects/Developer/Developer_Interfaces.md:3119 ../../Projects/Developer/Developer_Interfaces.md:3749 ../../Projects/Developer/Developer_Interfaces.md:3775 ../../Projects/Developer/Developer_Interfaces.md:3777 ../../Projects/Developer/Developer_Interfaces.md:3885 ../../Projects/Developer/Developer_Interfaces.md:3911 ../../Projects/Developer/Developer_Interfaces.md:3913 ../../Projects/Developer/Developer_Interfaces.md:3990 ../../Projects/Developer/Developer_Interfaces.md:4016 ../../Projects/Developer/Developer_Interfaces.md:4018 ../../Projects/Developer/Developer_Interfaces.md:4126 ../../Projects/Developer/Developer_Interfaces.md:4152 ../../Projects/Developer/Developer_Interfaces.md:4154 ../../Projects/Developer/Developer_Interfaces.md:4231 ../../Projects/Developer/Developer_Interfaces.md:4257 ../../Projects/Developer/Developer_Interfaces.md:4259 ../../Projects/Developer/Developer_Interfaces.md:4466 ../../Projects/Developer/Developer_Interfaces.md:4610 ../../Projects/Developer/Developer_Interfaces.md:4613 ../../Projects/Developer/Developer_Interfaces.md:4672 ../../Projects/Developer/Developer_Interfaces.md:4710 ../../Projects/Developer/Developer_Interfaces.md:4817 ../../Projects/Developer/Developer_Interfaces.md:5082 ../../Projects/Developer/Developer_Interfaces.md:5133 ../../Projects/Developer/Developer_Interfaces.md:5239 ../../Projects/Developer/Developer_Interfaces.md:5316 ../../Projects/Developer/Developer_Interfaces.md:5599 ../../Projects/Developer/Developer_Interfaces.md:5609 ../../Projects/Developer/Developer_Interfaces.md:5716 ../../Projects/Developer/Developer_Interfaces.md:5863 ../../Projects/Developer/Developer_Interfaces.md:5909
+msgid "]"
+msgstr "]"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:994
+msgid "], \"lastTestId\": \"string\", \"userId\": \"string\", \"createDate\": \"2020-09-14T01:38:48.361Z\", \"openCapabilityId\": \"string\""
+msgstr "], \" lastTestId \": \" string \", \" userId \": \" string \", \" createDate \":\" 2020-09-14T01:38:48.361Z \", \" openCapabilityId \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1004
+msgid "### 3.2 GET one project Query project by id ``` Resource URI:  /mec/developer/v1/projects/{projectId} ```"
+msgstr "### 3.2 GET one project Query project by id ` ` Resource URI: //sec/developer/v1/projects/ {projectId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1010 ../../Projects/Developer/Developer_Interfaces.md:1369 ../../Projects/Developer/Developer_Interfaces.md:2095
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> </tr> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1072
+msgid "], \"lastTestId\": \"string\", \"userId\": \"string\", \"createDate\": \"2020-09-14T01:45:11.950Z\", \"openCapabilityId\": \"string\" }"
+msgstr "], \" lastTestId \": \" string \", \" userId \": \" string \", \" createDate \":\" 2020-09-14T01:45:11.950Z \", \" openCapabilityId \": \" string \"}"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1081
+msgid "### 3.3 POST create one project Create one project with some params ``` Resource URI: /mec/developer/v1/projects/ ```"
+msgstr "### 3.3 POST create one project Create one project with some params ` ` ` Resource URI: /sec/developer/v1/projects/ ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1087
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>ApplicationProject</td> <td>Entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <td> <td> <td>ApplicationProject</td> <td>Entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1112
+msgid "``` Application {"
+msgstr "` ` ` Application {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1148 ../../Projects/Developer/Developer_Interfaces.md:1311 ../../Projects/Developer/Developer_Interfaces.md:1355 ../../Projects/Developer/Developer_Interfaces.md:1431
+msgid "], \"lastTestId\": \"string\", \"userId\": \"string\", \"createDate\": \"2020-09-14T01:48:09.468Z\", \"openCapabilityId\": \"string\" }"
+msgstr "], \" lastTestId \": \" string \", \" userId \": \" string \", \" createDate \":\" 2020-09-14T01:48:09.468Z \", \" openCapabilityId \": \" string \"}"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1154 ../../Projects/Developer/Developer_Interfaces.md:1317 ../../Projects/Developer/Developer_Interfaces.md:1611 ../../Projects/Developer/Developer_Interfaces.md:1830 ../../Projects/Developer/Developer_Interfaces.md:2184 ../../Projects/Developer/Developer_Interfaces.md:2629 ../../Projects/Developer/Developer_Interfaces.md:2694
+msgid "``` Example response: ``` 200 OK {"
+msgstr "` ` ` Example response: ` ` 200 OK {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1192
+msgid "], \"lastTestId\": \"string\", \"userId\": \"string\", \"createDate\": \"2020-09-14T01:48:09.468Z\", \"openCapabilityId\": \"string\" } }"
+msgstr "], \" lastTestId \": \" string \", \" userId \": \" string \", \" createDate \":\" 2020-09-14T01:48:09.468Z \", \" openCapabilityId \": \" string \"}}"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1201
+msgid "### 3.4 Delete one project Delete one project by id ``` Resource URI: /mec/developer/v1/projects/{projectId} ```"
+msgstr "### 3.4 Delete one project Delete one project by id ` ` Resource URI: /met/developer/v1/projects/ {projectId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1207
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>project id</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>the author id of create project</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th></th></th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>project id</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>the author id of create project</td> <td>request param</td> <td>yes</td> </tr> </tr> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1238
+msgid "### 3.5 PUT modify one project modify one project by id ``` Resource URI: /mec/developer/v1/projects/{projectId} ```"
+msgstr "### 3.5 PUT modify one project modify one project by id ` ` Resource URI: /met/developer/v1/projects/ {projectId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1244
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthornameofuploadapp</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>ApplicationProject</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthornameofuploadapp</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>ApplicationProject</td> <td>entityclass</td> <td>bodyparam</td> <td>yes </tr></td> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1275
+msgid "``` ApplicationProject {"
+msgstr "` ` ` ApplicationProject {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1363
+msgid "### 3.6 POST deploy one project Deploy one project by id ``` Resource URI: /mec/developer/v1/projects/{projectId}/action/deploy ```"
+msgstr "### 3.6 POST deploy one project Deploy one project by id ` ` Resource URI: /sec/developer/v1/projects/ {projectId} /action/deploy ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1439
+msgid "### 3.7 POST clean test env clean test env ``` Resource URI: /mec/developer/v1/projects/{projectId}/action/clean ```"
+msgstr "### 3.7 POST clean test env clean test env ` ` ` Resource URI: /dec/developer/v1/projects/ {projectId} /action/a ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1445
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>completed</td> <td>teststatus</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>completed</td> <td>teststatus</td> <td>requestparam</td> <td>yes </tr></td> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1482
+msgid "### 3.8 POST create test config create test config of one project ``` Resource URI: /mec/developer/v1/projects/{projectId}/test-config ```"
+msgstr "### 3.8 POST create test config create test config of one project ` ` ` Resource URI: /dec/developer/v1/projects/ {projectId} /test-config ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1488
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>ProjectTestConfig</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>ProjectTestConfig</td> <td>entityclass</td> <td>bodyparam</td> <td>yes </tr></td> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1519 ../../Projects/Developer/Developer_Interfaces.md:1738
+msgid "``` ProjectTestConfig {"
+msgstr "` ` ` ProjectTestConfig {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1522 ../../Projects/Developer/Developer_Interfaces.md:1616 ../../Projects/Developer/Developer_Interfaces.md:1741 ../../Projects/Developer/Developer_Interfaces.md:1835 ../../Projects/Developer/Developer_Interfaces.md:1955
+msgid "\"testId\": \"string\", \"projectId\": \"string\", \"agentConfig\": {"
+msgstr "\" testId \": \" string \", \" projectId \": \" string \", \" agentConfig \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1525 ../../Projects/Developer/Developer_Interfaces.md:1619 ../../Projects/Developer/Developer_Interfaces.md:1744 ../../Projects/Developer/Developer_Interfaces.md:1838 ../../Projects/Developer/Developer_Interfaces.md:1958
+msgid "\"serviceName\": \"string\", \"href\": \"string\", \"port\": 0"
+msgstr "\" serviceName \": \" string \", \" href \": \" string \", \" port \": 0"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1528 ../../Projects/Developer/Developer_Interfaces.md:1622 ../../Projects/Developer/Developer_Interfaces.md:1747 ../../Projects/Developer/Developer_Interfaces.md:1841 ../../Projects/Developer/Developer_Interfaces.md:1961
+msgid "}, \"imageFileIds\": ["
+msgstr "}, \" imageFileIds \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1531 ../../Projects/Developer/Developer_Interfaces.md:1625 ../../Projects/Developer/Developer_Interfaces.md:1750 ../../Projects/Developer/Developer_Interfaces.md:1844 ../../Projects/Developer/Developer_Interfaces.md:1964
+msgid "], \"appImages\": ["
+msgstr "], \" appImages \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1534 ../../Projects/Developer/Developer_Interfaces.md:1562 ../../Projects/Developer/Developer_Interfaces.md:1628 ../../Projects/Developer/Developer_Interfaces.md:1656 ../../Projects/Developer/Developer_Interfaces.md:1753 ../../Projects/Developer/Developer_Interfaces.md:1781 ../../Projects/Developer/Developer_Interfaces.md:1847 ../../Projects/Developer/Developer_Interfaces.md:1875 ../../Projects/Developer/Developer_Interfaces.md:1967 ../../Projects/Developer/Developer_Interfaces.md:1995
+msgid "\"imageId\": \"string\", \"serviceName\": \"string\", \"imageName\": \"string\", \"version\": \"string\", \"env\": ["
+msgstr "\" imageId \": \" string \", \" serviceName \": \" string \", \" imageName \": \" string \", \" version \": \" string \", \" env \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1540 ../../Projects/Developer/Developer_Interfaces.md:1568 ../../Projects/Developer/Developer_Interfaces.md:1634 ../../Projects/Developer/Developer_Interfaces.md:1662 ../../Projects/Developer/Developer_Interfaces.md:1759 ../../Projects/Developer/Developer_Interfaces.md:1787 ../../Projects/Developer/Developer_Interfaces.md:1853 ../../Projects/Developer/Developer_Interfaces.md:1881 ../../Projects/Developer/Developer_Interfaces.md:1973 ../../Projects/Developer/Developer_Interfaces.md:2001
+msgid "\"name\": \"string\", \"value\": \"string\""
+msgstr "\" name \": \" string \", \" value \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1543 ../../Projects/Developer/Developer_Interfaces.md:1571 ../../Projects/Developer/Developer_Interfaces.md:1637 ../../Projects/Developer/Developer_Interfaces.md:1665 ../../Projects/Developer/Developer_Interfaces.md:1762 ../../Projects/Developer/Developer_Interfaces.md:1790 ../../Projects/Developer/Developer_Interfaces.md:1856 ../../Projects/Developer/Developer_Interfaces.md:1884 ../../Projects/Developer/Developer_Interfaces.md:1976 ../../Projects/Developer/Developer_Interfaces.md:2004
+msgid "], \"ports\": ["
+msgstr "], \" ports \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1546 ../../Projects/Developer/Developer_Interfaces.md:1574 ../../Projects/Developer/Developer_Interfaces.md:1640 ../../Projects/Developer/Developer_Interfaces.md:1668 ../../Projects/Developer/Developer_Interfaces.md:1765 ../../Projects/Developer/Developer_Interfaces.md:1793 ../../Projects/Developer/Developer_Interfaces.md:1859 ../../Projects/Developer/Developer_Interfaces.md:1887 ../../Projects/Developer/Developer_Interfaces.md:1979 ../../Projects/Developer/Developer_Interfaces.md:2007
+msgid "\"containerPort\": 0, \"protocol\": \"string\", \"nodePort\": 0"
+msgstr "\" containerPort \": 0, \" protocol \": \" string \", \" nodePort \": 0"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1550 ../../Projects/Developer/Developer_Interfaces.md:1578 ../../Projects/Developer/Developer_Interfaces.md:1644 ../../Projects/Developer/Developer_Interfaces.md:1672 ../../Projects/Developer/Developer_Interfaces.md:1769 ../../Projects/Developer/Developer_Interfaces.md:1797 ../../Projects/Developer/Developer_Interfaces.md:1863 ../../Projects/Developer/Developer_Interfaces.md:1891 ../../Projects/Developer/Developer_Interfaces.md:1983 ../../Projects/Developer/Developer_Interfaces.md:2011
+msgid "], \"imagePullPolicy\": \"IF_NOT_PRESENT\", \"volumeMounts\": ["
+msgstr "], \" imagePullPolicy \": \" IF_NOT_PRESENT \", \" volumeMounts \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1554 ../../Projects/Developer/Developer_Interfaces.md:1582 ../../Projects/Developer/Developer_Interfaces.md:1648 ../../Projects/Developer/Developer_Interfaces.md:1676 ../../Projects/Developer/Developer_Interfaces.md:1773 ../../Projects/Developer/Developer_Interfaces.md:1801 ../../Projects/Developer/Developer_Interfaces.md:1867 ../../Projects/Developer/Developer_Interfaces.md:1895 ../../Projects/Developer/Developer_Interfaces.md:1987 ../../Projects/Developer/Developer_Interfaces.md:2015
+msgid "\"name\": \"string\", \"mountPath\": \"string\""
+msgstr "\" name \": \" string \", \" mountPath \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1559 ../../Projects/Developer/Developer_Interfaces.md:1653 ../../Projects/Developer/Developer_Interfaces.md:1778 ../../Projects/Developer/Developer_Interfaces.md:1872 ../../Projects/Developer/Developer_Interfaces.md:1992
+msgid "], \"otherImages\": ["
+msgstr "], \" otherImages \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1587 ../../Projects/Developer/Developer_Interfaces.md:1681 ../../Projects/Developer/Developer_Interfaces.md:1806 ../../Projects/Developer/Developer_Interfaces.md:1900 ../../Projects/Developer/Developer_Interfaces.md:2020
+msgid "], \"hosts\": ["
+msgstr "], \" hosts \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1590 ../../Projects/Developer/Developer_Interfaces.md:1684 ../../Projects/Developer/Developer_Interfaces.md:1809 ../../Projects/Developer/Developer_Interfaces.md:1903 ../../Projects/Developer/Developer_Interfaces.md:2023 ../../Projects/Developer/Developer_Interfaces.md:2432 ../../Projects/Developer/Developer_Interfaces.md:2477
+msgid "\"hostId\": \"string\", \"name\": \"string\", \"address\": \"string\", \"architecture\": \"string\", \"status\": \"NORMAL\", \"ip\": \"string\", \"protocol\": \"string\", \"port\": 0, \"os\": \"string\", \"portRangeMin\": 0, \"portRangeMax\": 0"
+msgstr "\" hostId \": \" name \": \" string \", \" string \": \" string \", \" NORMAL \", \" NORMAL \": \" string \": \" protocol \": \" string \", \" port \": 0, \" os \": \" string \", \" portRangeMin\": 0, \" portRangeMax \": 0"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1602 ../../Projects/Developer/Developer_Interfaces.md:1696 ../../Projects/Developer/Developer_Interfaces.md:1821 ../../Projects/Developer/Developer_Interfaces.md:1915 ../../Projects/Developer/Developer_Interfaces.md:2035
+msgid "], \"appApiFileId\": \"string\", \"status\": \"NETWORK_ERROR\", \"accessUrl\": \"string\", \"errorLog\": \"string\", \"workLoadId\": \"string\", \"appInstanceId\": \"string\", \"deployDate\": \"2020-09-14T01:48:09.469Z\" }"
+msgstr "], \" appApiFileId \": \" string \": \" NETWORK_ERROR \", \" accessUrl \": \" string \", \" errorLog \": \" workLoadId \": \" string \", \" appInstanceId \": \" string \", \" deployDate \": \" 2020-09-14T01:48:09.469Z \"}"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1707
+msgid "### 3.9 PUT modify test config modify test config of one project ``` Resource URI: /mec/developer/v1/projects/{projectId}/test-config ```"
+msgstr "### 3.9 PUT modify test config modify test config of one project ` ` ` Resource URI: /dec/developer/v1/projects/ {projectId} /test-config ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1713
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>ProjectTestConfig</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>ProjectTestConfig</td> <td>entityclass</td> <td>bodybaram</td> <td>yes</td> </tr> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1926
+msgid "### 3.10 GET one test-config Query one test config by projectId ``` Resource URI: /mec/developer/v1/projects/{projectId}/test-config ```"
+msgstr "### 3.10 GET one test-config Query one test config by projectId ` ` ` Resource URI: /dec/developer/v1/projects/ {projectId} /test-config ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1932 ../../Projects/Developer/Developer_Interfaces.md:2242 ../../Projects/Developer/Developer_Interfaces.md:2375
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2018
+msgid "],"
+msgstr "],"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2046
+msgid "### 3.11 POST upload to store upload app project to appstore ``` Resource URI: /mec/developer/v1/projects/{projectId}/action/upload ```"
+msgstr "### 3.11 POST upload to store upload app project to appstore ` ` Resource URI: /ec/developer/v1/projects/ {projectId} /action/upload ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2052
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>theauthornameofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>theauthornameofcreateproject</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2083
+msgid "Example response: ``` 200 OK \"csarId\" ```"
+msgstr "Example response: ` ` 200 OK \" csarId \" ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2089
+msgid "### 3.12 POST open project to eco Open project to eco ``` Resource URI: /mec/developer/v1/projects/{projectId}/action/open-api ```"
+msgstr "### 3.12 POST open project to eco Open project to eco ` ` ` Resource URI: /sec/developer/v1/projects/ {projectId} /action/open-api ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2142
+msgid "### 3.13 POST add image to project Add image to project ``` Resource URI: /mec/developer/v1/projects/{projectId}/image ```"
+msgstr "### 3.13 POST add image to project Add image to project ` ` Resource URI: /sec/developer/v1/projects/ {projectId} /image ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2148
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>ProjectImageConfig</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>ProjectImageConfig</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tr> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2173
+msgid "``` ProjectImageConfig {"
+msgstr "` ` ` ProjectImageConfig {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2176 ../../Projects/Developer/Developer_Interfaces.md:2189
+msgid "\"id\": \"string\", \"name\": \"string\", \"port\": 0, \"version\": \"string\", \"projectId\": \"string\", \"type\": \"PLATFORM\", \"nodePort\": 0 }"
+msgstr "\" id \": \" string \", \" name \": \" string \", \" port \": 0, \" version \": \" projectId \": \" string \", \" type \": \" PLATFORM \", \" nodePort \": 0}"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2199
+msgid "### 3.14 DELETE image of project DELETE image of project ``` Resource URI: /mec/developer/v1/projects/{projectId}/image/{imageId} ```"
+msgstr "### 3.14 DELETE image of project DELETE image of project ` ` Resource URI: /sec/developer/v1/projects/ {projectId} /image/ {imageId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2205
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>imageId</td> <td>imageId</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>imageId</td> <td>imageId</td> <td>pathparam</td> <td>yes</td> </tr> </tr> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2236
+msgid "### 3.15 GET image of project GET image of project ``` Resource URI: /mec/developer/v1/projects/{projectId}/image ```"
+msgstr "### 3.15 GET image of project GET image of project ` ` Resource URI: /sec/developer/v1/projects/ {projectId} /image ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2273
+msgid "\"images\": ["
+msgstr "\" images \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2267
+msgid "\"id\": \"string\", \"name\": \"string\", \"port\": 0, \"version\": \"string\", \"projectId\": \"string\", \"type\": \"PLATFORM\", \"nodePort\": 0"
+msgstr "\" id \": \" string \", \" name \": \" string \", \" port \": 0, \" version \": \" projectId \": \" string \", \" type \": \" PLATFORM \", \" nodePort \": 0"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2279
+msgid "### 3.16 POST open project api POST open project api ``` Resource URI: /mec/developer/v1/projects/{projectId}/action/open-api ```"
+msgstr "### 3.16 POST open project api POST open project api ` ` ` Resource URI: /sec/developer/v1/projects/ {projectId} /action/open-api ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2285
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectid</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>user id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>AbilityOpenConfig</td> <td>entity class</td> <td>body param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectid</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>user id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>AbilityOpenConfig</td> <td>entity class</td> <td>body param</td> <td>yes </tr></td> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2316
+msgid "``` AbilityOpenConfig: {"
+msgstr "` ` ` AbilityOpenConfig: {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2319 ../../Projects/Developer/Developer_Interfaces.md:2349
+msgid "\"detailId\": \"string\", \"groupId\": \"string\", \"service\": \"string\", \"version\": \"string\", \"description\": \"string\", \"provider\": \"string\", \"apiFileId\": \"string\", \"guideFileId\": \"string\", \"uploadTime\": \"2020-12-29T01:51:11.028Z\", \"port\": 0, \"host\": \"string\", \"protocol\": \"string\", \"appId\": \"string\", \"packageId\": \"string\", \"userId\": \"string\""
+msgstr "\" detailId \": \" groupId \": \" string \", \" service \": \" string \": \" description \": \" provider \": \" string \", \" apiFileId \": \" string \", \" guideFileId \": \" string \", \" uploadTime \":\" 2020-12-29T01:51:11.028Z \", \" port \": 0, \" host \": \" string \": \" appId \": \" string \", \" packageId \": \" string \", \" userId \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2341 ../../Projects/Developer/Developer_Interfaces.md:2889 ../../Projects/Developer/Developer_Interfaces.md:2947 ../../Projects/Developer/Developer_Interfaces.md:3093
+msgid "\"groupId\": \"string\", \"oneLevelName\": \"string\", \"twoLevelName\": \"string\", \"threeLevelName\": \"string\", \"type\": \"OPENMEP\", \"description\": \"string\", \"capabilityDetailList\": ["
+msgstr "\" groupId \": \" string \", \" oneLevelName \": \" string \", \" twoLevelName \": \" string \": \" OPENMEP \", \" type \": \" string \", \" string \", \" capabilityDetailList \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2369
+msgid "### 3.17 GET project atp task GET project atp task ``` Resource URI: /mec/developer/v1/projects/{projectId}/action/atp ```"
+msgstr "### 3.17 GET project atp task GET project atp task ` ` ` Resource URI: /sec/developer/v1/projects/ {projectId} /action/atp ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2400
+msgid "## 4. Host Server of build and test or deploy app ### 4.1 GET all host Query all host. ``` Resource URI: /mec/developer/v1/hosts ```"
+msgstr "# # 4. Host Server of build and test or deploy app ### 4.1 GET all host Query all host. ` ` ` Resource URI: /mec/developer/v1/hosts ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2447
+msgid "### 4.2 GET one host Query  host by id. ``` Resource URI: /mec/developer/v1/hosts/{hostId} ```"
+msgstr "### 4.2 GET one host Query host by id. ` ` ` Resource URI: /met/developer/v1/hosts/ {hostId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2453 ../../Projects/Developer/Developer_Interfaces.md:2558
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>hostId</td> <td>hostid</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <td>hostId</td> <td>hostid</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2492
+msgid "### 4.3 POST create one host Create one host. ``` Resource URI: /mec/developer/v1/hosts/ ```"
+msgstr "### 4.3 POST create one host Create one host. ` ` ` Resource URI: /met/developer/v1/hosts/ ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2498
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>MepHost</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>MepHost</td> <td>entityclass</td> <td>bodybaram</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2517 ../../Projects/Developer/Developer_Interfaces.md:2614 ../../Projects/Developer/Developer_Interfaces.md:4844
+msgid "``` MepHost {"
+msgstr "` ` ` MepHost {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2520 ../../Projects/Developer/Developer_Interfaces.md:2538 ../../Projects/Developer/Developer_Interfaces.md:2617 ../../Projects/Developer/Developer_Interfaces.md:2634
+msgid "\"hostId\": \"string\", \"name\": \"string\", \"address\": \"string\", \"architecture\": \"string\", \"status\": \"NORMAL\", \"ip\": \"string\", \"protocol\": \"string\", \"port\": 0, \"os\": \"string\", \"portRangeMin\": 0, \"portRangeMax\": 0 }"
+msgstr "\" hostId \": \" name \": \" string \", \" string \": \" string \", \" NORMAL \", \" NORMAL \": \" string \": \" protocol \": \" string \", \" port \": 0, \" os \": \" string \", \" portRangeMin\": 0, \" portRangeMax \": 0}"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2552
+msgid "### 4.4 DELETE one host Delete one host. ``` Resource URI: /mec/developer/v1/hosts/{hostId} ```"
+msgstr "### 4.4 DELETE one host Delete one host. ` ` ` Resource URI: /met/developer/v1/hosts/ {hostId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2583
+msgid "### 4.5 PUT modify one host Create one host. ``` Resource URI: /mec/developer/v1/hosts/{hostId} ```"
+msgstr "### 4.5 PUT modify one host Create one host. ` ` ` Resource URI: /met/developer/v1/hosts/ {hostId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2589
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>hostId</td> <td>hostid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>MepHost</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <td>hostId</td> <td>hostid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>MepHost</td> <td>entityclass</td> <td>bodybaram</td> <td>yes</td> </tr> </tr> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2648
+msgid "## 5. Capability-groups Services or capabilities of edge applications ### 5.1 POST create one EdgeGalleryCapabilityGroup Create one Capability group. ``` Resource URI: /mec/developer/v1/capability-groups/ ```"
+msgstr "# # 5. Capability-groups Services or capabilities of dge applications ### 5.1 POST create one EdgeGalleryCapabilityGroup Create one Capability group. ` ` ` Resource URI: /mes/developer/v1/capability-groups/ ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2656
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>OpenMepCapabilityGroup</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td> <td>OpenMepCapabilityGroup</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2675
+msgid "``` OpenMepCapabilityGroup {"
+msgstr "` ` ` OpenMepCapabilityGroup {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2717
+msgid "### 5.2 DELETE one EdgeGalleryCapabilityGroup Delete one Capability group by id. ``` Resource URI: /mec/developer/v1/capability-groups/{groupId} ```"
+msgstr "### 5.2 DELETE one EdgeGalleryCapabilityGroup Delete one Capability group by id. ` ` ` Resource URI: /mes/developer/v1/capability-groups/ {groupId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2723
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>groupId</td> <td>groupid</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <tr> <td>groupId</td> <td>groupid</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2748
+msgid "### 5.3 POST create one EdgeGalleryCapability Create one EdgeGalleryCapability ``` Resource URI: /mec/developer/v1/capability-groups/{groupId} ```"
+msgstr "### 5.3 POST create one EdgeGalleryCapability Create one EdgeGalleryCapability ` ` ` Resource URI: /sec/developer/v1/capability-groups/ {groupId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2754
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>OpenMepCapabilityDetail</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> <tr> <td>groupId</td> <td>groupid</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td> <td>OpenMepCapabilityDetail</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> <tr> <td>groupId</td> <td>groupid</td> <td>pathparam</td> <td>yes</td> </tr> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2779
+msgid "``` OpenMepCapabilityDetail {"
+msgstr "` ` ` OpenMepCapabilityDetail {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2782 ../../Projects/Developer/Developer_Interfaces.md:2804 ../../Projects/Developer/Developer_Interfaces.md:2897 ../../Projects/Developer/Developer_Interfaces.md:2955 ../../Projects/Developer/Developer_Interfaces.md:3004 ../../Projects/Developer/Developer_Interfaces.md:3101
+msgid "\"detailId\": \"string\", \"groupId\": \"string\", \"service\": \"string\", \"version\": \"string\", \"description\": \"string\", \"provider\": \"string\", \"apiFileId\": \"string\", \"guideFileId\": \"string\", \"uploadTime\": \"2020-12-29T02:12:28.030Z\", \"port\": 0, \"host\": \"string\", \"protocol\": \"string\", \"appId\": \"string\", \"packageId\": \"string\", \"userId\": \"string\""
+msgstr "\" detailId \": \" groupId \": \" string \", \" service \": \" string \": \" description \": \" provider \": \" string \", \" apiFileId \": \" string \", \" guideFileId \": \" string \", \" uploadTime \":\" 2020-12-29T02:12:28.030Z \", \" port \": 0, \" host \": \" protocol \": \" appId \": \" string \", \" packageId \": \" string \", \" userId \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2822
+msgid "### 5.4 DELETE one EdgeGalleryCapability Delete one EdgeGalleryCapability by id ``` Resource URI: /mec/developer/v1/capability-groups/capabilities/{capabilityId} ```"
+msgstr "### 5.4 DELETE one EdgeGalleryCapability Delete one EdgeGalleryCapability by id ` ` Resource URI: /mes/developer/v1/capability-groups/capability/ {capabilityId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2828
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>capabilityId</td> <td>capabilityid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>userId</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td> <td>capabilityId</td> <td>capabilityid</td> <td>pathparam</td> <td> <td>yes</td> </tr> <tr> <td>userId</td> <td>userId</td> <td>requestparam</td> <td>yes</td> </tr> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2859
+msgid "### 5.5 GET all EdgeGalleryCapability Gey all EdgeGalleryCapability ``` Resource URI: /mec/developer/v1/capability-groups ```"
+msgstr "### 5.5 GET all EdgeGalleryCapability Gey all EdgeGalleryCapability ` ` ` Resource URI: /met/developer/v1/capability - groups ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2865
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>capabilityId</td> <td>capabilityid</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td> <td>capabilityId</td> <td>capabilityid</td> <td>pathparam</td> <td> <td>yes</td> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2918
+msgid "### 5.6 GET all EdgeGalleryCapability by groupid Gey all EdgeGalleryCapability by  groupid ``` Resource URI: /mec/developer/v1/capability-groups/{groupId} ```"
+msgstr "### 5.6 GET all EdgeGalleryCapability by groupid Gey all EdgeGalleryCapability by groupid ` ` Resource URI: /sec/developer/v1/capability-groups/ {groupId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2924
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>groupId</td> <td>capabilitygroupid</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>groupId</td> <td>capabilitygroupid</td> <td>pathparam</td> <td> <td>yes</td> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2975
+msgid "### 5.7 GET all EdgeGallery API by fileId Gey all EdgeGallery  API ``` Resource URI: /mec/developer/v1/capability-groups/openmep-api/{fileId} ```"
+msgstr "### 5.7 GET all EdgeGallery API by fileIdGeyallEdgeGalleryAPI ` ` Resource URI: /mes/developer/v1/capability-groups/openmep-api/ {fileId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2981
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>fileId</td> <td>file id</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> fileId <tr></td> <td>fileid</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3022
+msgid "### 5.8 GET all EdgeGallery ECO API Gey all EdgeGallery ECO API ``` Resource URI: /mec/developer/v1/capability-groups/openmepeco-api ```"
+msgstr "### 5.8 GET all EdgeGallery ECO API Gey all EdgeGallery ECO API ` ` ` Resource URI: /sec/developer/v1/capability-groups/openmepeco-api ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3056
+msgid "\"openMepEcos\": ["
+msgstr "\" openMepEcos \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3053
+msgid "\"name\": \"string\", \"service\": \"string\", \"description\": \"string\", \"apiFileId\": \"string\""
+msgstr "\" name \": \" string \", \" service \": \" string \", \" description \": \" string \", \" apiFileId \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3062
+msgid "### 5.9 GET all EdgeGallery API Gey all EdgeGallery ECO API ``` Resource URI: /mec/developer/v1/capability-groups/open-api/{type} ```"
+msgstr "### 5.9 GET all EdgeGallery API Gey all EdgeGallery ECO API ` ` ` Resource URI: /mes/developer/v1/capability-groups/open-api/ {type} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3068
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>type</td> <td>api type</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th></th></th> </thead> </tr> <tbody> <tr> <tr></td> <td>api type</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3117
+msgid "\"openCapability\": ["
+msgstr "\" openCapability \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3123
+msgid "## 6. File This part is to configure the app, perform app deployment, and test the api for file operations ### 6.1 GET one file Get one file ``` Resource URI: /mec/developer/v1/files/{fileId} ```"
+msgstr "# # 6. FileThispartistoconfiguretheapp,performappdeployment,andtesttheapiforfileoperations###6.1GETonefileGetonefile ` ` ` Resource URI: /met/developer/v1/files/ {fileId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3131
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>fileId</td> <td>fileid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofuploadfile</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>type</td> <td>file type</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> fileId <tr></td> <td>fileid</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofuploadfile</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>type</td> <td>filetype</td> <td>requestparam</td> <td>yes </tr></td> </tr> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3162 ../../Projects/Developer/Developer_Interfaces.md:3446 ../../Projects/Developer/Developer_Interfaces.md:5648
+msgid "Example response: ``` 200 OK binary output ```"
+msgstr "Example response: ` ` 200 OK binary output ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3168
+msgid "### 6.2 POST upload one file Upload  file ``` Resource URI: /mec/developer/v1/files ```"
+msgstr "### 6.2 POST upload one fileUploadfile ` ` Resource URI: /sec/developer/v1/files ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3174
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>file</td> <td>MultipartFileclass</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofuploadfile</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </thead> <tbody> <tr> <tr> <td></td> <td>MultipartFieleclass</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofuploadfile</td> <td>requestparam</td> <td>yes</td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3203
+msgid "\"fileId\": \"string\", \"fileName\": \"string\", \"url\": \"string\", \"userId\": \"string\", \"uploadDate\": \"2020-09-14T09:03:17.084Z\", \"filePath\": \"string\", \"temp\": false }"
+msgstr "\" fileId \": \" string \": \" fileName \": \" string \": \" string \": \" uploadDate \":\" 2020-09-14T09:03:17.084Z \", \" filePath \": \" string \", \" temp \": false}"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3213
+msgid "### 6.3 POST upload helm yaml Upload helm template yaml. ``` Resource URI: /mec/developer/v1/files/helm-template-yaml ```"
+msgstr "### 6.3 POST upload helm yaml Upload helm template yaml. ` ` ` Resource URI: /mes/developer/v1/files/helm - template-yaml ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3219
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>file</td> <td>MultipartFileclass</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofuploadfile</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>projectId</td> <td>projectid</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </thead> <tbody> <tr> <tr> <td></td> <td>MultipartFieleclass</td> <td>requestpart</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>theauthoridofuploadfile</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>projectId</td> <td>projectid</td> <td>requestparam</td> <td>yes </tr></td> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3254
+msgid "\"fileId\": \"string\", \"fileName\": \"string\", \"fileContent\": \"string\", \"formatSuccess\": false, \"imageSuccess\": false, \"serviceSuccess\": false, \"mepAgentSuccess\": false"
+msgstr "\" fileId \": \" string \", \" fileName \": \" fileContent \": \" fileContent \": false, \" imageSuccess \": false, \" serviceSuccess \": false, \" mepAgentSuccess \": false"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3264
+msgid "### 6.4 GET helm yaml Query helm template yaml. ``` Resource URI: /mec/developer/v1/files/helm-template-yaml ```"
+msgstr "### 6.4 GET helm yaml Query helm template yaml. ` ` ` Resource URI: /mes/developer/v1/files/helm - template-yaml ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3270
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>theauthoridofuploadfile</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>projectId</td> <td>projectid</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <td> <td>userId</td> <td>theauthoridofuploadfile</td> <td>requestparam</td> <td>yes</td> </tr> <tr> <td>projectId</td> <td>projectid</td> <td>requestparam</td> <td>yes</td> </tr> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3299
+msgid "{} ]"
+msgstr "{}]"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3303
+msgid "### 6.5 DELETE helm yaml Delete helm template yaml. ``` Resource URI: /mec/developer/v1/files/helm-template-yaml ```"
+msgstr "### 6.5 DELETE helm yaml Delete helm template yaml. ` ` ` Resource URI: /mes/developer/v1/files/helm - template-yaml ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3309
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>fileId</td> <td>fileid</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> fileId <tr></td> <td>fileid</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3328
+msgid "Example response: ``` 200 OK \"string\" ```"
+msgstr "Example response: ` ` 200 OK \" string \" ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3334
+msgid "### 6.6 POST get sample code Get sample code. ``` Resource URI: /mec/developer/v1/files/samplecode ```"
+msgstr "### 6.6 POST get sample code Get sample code. ` ` ` Resource URI: /mec/developer/v1/files/samecode ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3340
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>apiFileIds</td> <td>apifileid list</td> <td>body param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>apiFileIds</td> <td>apifileid list</td> <td>body param</td> <td>yes</td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3359
+msgid "``` List<String> ["
+msgstr "` ` ` List<String> ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3362
+msgid "\"string\" ]"
+msgstr "\" string \"]"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3364
+msgid "``` Example response: ``` 200 OK byte array output ``` ### 6.7 GET one file return object Get file return one object ``` Resource URI: /mec/developer/v1/files/api-info/{fileId} ```"
+msgstr "` ` ` Example response: ` ` 200 OK byte by array output ` ` ` ### 6.7 GET one filereturnobjectGetfilereturnoneobject ` ` Resource URI: /met/developer/v1/files/api-info/ {fileId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3376
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>fileId</td> <td>file id</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>the author id of upload file</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> fileId <tr></td> <td>fileid</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>the author id of upload file</td> <td>request param</td> <td>yes</td> </tr> </tr> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3405
+msgid "fileId:\"xxx\", fileName:\"xxx\", url:\"xxx\", userId:\"xxx\", isTemp:false, uploadDate:xxxx-xx-xx, filePath:\"xxx\""
+msgstr "fileId: \"xxx \", fileName: \"xxx \", url: \"xxx \", userId: \"xxx \", isTemp:false, uploadDate:xxxx-xx-xx, filePath: \"xxx \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3415
+msgid "### 6.8 GET sdk code GET sdk code ``` Resource URI: /mec/developer/v1/files/sdk/{fileId}/download/{lan} ```"
+msgstr "### 6.8 GET sdk code GET sdk code ` ` ` Resource URI: /msec/developer/v1/files/sdk/ {fileId}/download/{lan} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3421
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>fileId</td> <td>file id</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>lan</td> <td>sdk codeLanguage</td> <td>path param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> fileId <tr></td> <td>fileid</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>lan</td> <td>sdk codeLanguage</td> <td>path param</td> <td>yes</td> </tr> </tr> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3452
+msgid "### 6.9 GET file content GET file content ``` Resource URI: /mec/developer/v1/files/samplecode/get-file-content ``` |Name|Definition|type|Required| |-------------|-------------|------------|------------| |fileName|file name|request param |yes|"
+msgstr "### 6.9 GET filecontentGETfilecontent ` ` Resource URI: /ec/developer/v1/files/samplecode/get - file-content ` ` ` | Name | Definition|type | Required | | ------------- | ------------ | ------------ | ------------ | |fileName|file name|request param |yes |"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3461
+msgid "Example response: ``` 200 OK String output ```"
+msgstr "Example response: ` ` 200 OK String output ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3467
+msgid "### 6.10 POST pkg structure POST pkg structure ``` Resource URI: /mec/developer/v1/files/samplecode/get-pkg-structure ```"
+msgstr "### 6.10 POST pkg structure POST pkg structure ` ` Resource URI: /sec/developer/v1/files/samplecode/get - pkg-structure ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3473
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>apiFileIds</td> <td>file id arrays</td> <td>body param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>apiFileIds</td> <td>fileidarrays</td> <td>body param</td> <td>yes</td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3496 ../../Projects/Developer/Developer_Interfaces.md:3611
+msgid "\"name\": \"string\", \"id\": \"string\", \"children\": ["
+msgstr "\" name \": \" string \", \" id \": \" string \", \" children \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3500 ../../Projects/Developer/Developer_Interfaces.md:3615
+msgid "], \"parent\": false"
+msgstr "], \" parent \": false"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3505
+msgid "## 7. LocalApi Get the APIs of all functional modules of developer platform ### 7.1 GET one api file Get one api file ``` Resource URI: /mec/developer/v1/localapi/{fileName} ```"
+msgstr "# # 7. LocalApi Get the APIs of all functional modules of developer platform ### 7.1 GET one api fileGetoneapifile ` ` ` Resource URI: /msec/developer/v1/localapi/ {fileName} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3513
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>fileName</td> <td>apifilename</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>fileName</td> <td>apifilename</td> <td>pathparam</td> <td>yes</td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3532
+msgid "``` filename: \"plugin\", \"testapp\", \"hosts\", \"files\", \"capability-groups\", \"projects\" ``` Example response: ``` 200 OK binary output ```"
+msgstr "` ` ` filename: \" plugin \", \" testapp \", \" hosts \", \" files \", \" capability-groups \", \" projects \" ` ` ` Example response: ` ` 200 OK binary output ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3541
+msgid "## 8. Health Get health ### 8.1 GET health Get health ``` Resource URI: /mec/developer/v1/health ```"
+msgstr "# # 8. Health Get health ### 8.1 GET health Get health ` ` ` Resource URI: /met/developer/v1/health ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3568 ../../Projects/Developer/Developer_Interfaces.md:3651
+msgid "Example response: ``` 200 OK string output ```"
+msgstr "Example response: ` ` 200 OK string output ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3574
+msgid "## 9. AppRelease Get pkg structure and file content ### 9.1 GET pkg structure Get pkg structure ``` Resource URI: /mec/developer/v1/apprelease/{projectId}/{csarId}/action/get-pkg-structure ```"
+msgstr "# # 9. AppRelease Get pkg structure and filecontent###9.1GETpkgstructureGetpkgstructure ` ` Resource URI: /sec/developer/v1/apprelease/ {projectId}/{csarId} /action/get - pkg-structure ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3582
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>project id</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>csarId</td> <td>csar id</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th></th></th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>project id</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>csarId</td> <td>csar id</td> <td>pathparam</td> <td>yes</td> </tr> </tr> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3620
+msgid "### 9.2 GET file content Get file content ``` Resource URI: /mec/developer/v1/apprelease/{projectId}/action/get-pkg-content ```"
+msgstr "### 9.2 GET filecontentGetfilecontent ` ` Resource URI: /sec/developer/v1/apprelease/ {projectId} /action/get - pkg-content ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3626
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>project id</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>fileName</td> <td>pkg file name</td> <td>requestparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th></th></th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>project id</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>fileName</td> <td>pkg filename</td> <td>requestparam</td> <td>yes</td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3657
+msgid "## 10. ReleaseConfig Do some configuration before release app ### 10.1 GET release config Get release config ``` Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config ```"
+msgstr "# # 10. ReleaseConfig Do some configuration before release app ### 10.1 GET release config Get release config ` ` Resource URI: /sec/developer/v1/releaseconfig/ {projectId} /action/release-config ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3665
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>project id</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th></th></th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>project id</td> <td>pathparam</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3688 ../../Projects/Developer/Developer_Interfaces.md:3824 ../../Projects/Developer/Developer_Interfaces.md:3929 ../../Projects/Developer/Developer_Interfaces.md:4065 ../../Projects/Developer/Developer_Interfaces.md:4170
+msgid "\"releaseId\": \"string\", \"projectId\": \"string\", \"guideFileId\": \"string\", \"appInstanceId\": \"string\", \"capabilitiesDetail\": {"
+msgstr "\" releaseId \": \" string \", \" projectId \": \" string \", \" guideFileId \": \" string \", \" appInstanceId \": \" string \", \" capabilitiesDetail \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3749 ../../Projects/Developer/Developer_Interfaces.md:3885 ../../Projects/Developer/Developer_Interfaces.md:3990 ../../Projects/Developer/Developer_Interfaces.md:4126 ../../Projects/Developer/Developer_Interfaces.md:4231
+msgid "\"appTrafficRule\": ["
+msgstr "\" appTrafficRule \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3695 ../../Projects/Developer/Developer_Interfaces.md:3831 ../../Projects/Developer/Developer_Interfaces.md:3936 ../../Projects/Developer/Developer_Interfaces.md:4072 ../../Projects/Developer/Developer_Interfaces.md:4177
+msgid "\"trafficRuleId\": \"string\", \"action\": \"string\", \"priority\": \"string\", \"filterType\": \"string\", \"trafficFilter\": ["
+msgstr "\" trafficRuleId \": \" string \", \" action \": \" string \", \" priority \": \" string \", \" filterType \": \" string \", \" trafficFilter \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3701 ../../Projects/Developer/Developer_Interfaces.md:3837 ../../Projects/Developer/Developer_Interfaces.md:3942 ../../Projects/Developer/Developer_Interfaces.md:4078 ../../Projects/Developer/Developer_Interfaces.md:4183
+msgid "\"protocal\": ["
+msgstr "\" protection \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3703 ../../Projects/Developer/Developer_Interfaces.md:3839 ../../Projects/Developer/Developer_Interfaces.md:3944 ../../Projects/Developer/Developer_Interfaces.md:4080 ../../Projects/Developer/Developer_Interfaces.md:4185
+msgid "], \"srcAddress\": ["
+msgstr "], \" srcAddress \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3706 ../../Projects/Developer/Developer_Interfaces.md:3842 ../../Projects/Developer/Developer_Interfaces.md:3947 ../../Projects/Developer/Developer_Interfaces.md:4083 ../../Projects/Developer/Developer_Interfaces.md:4188
+msgid "], \"srcPort\": ["
+msgstr "], \" srcPort \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3709 ../../Projects/Developer/Developer_Interfaces.md:3845 ../../Projects/Developer/Developer_Interfaces.md:3950 ../../Projects/Developer/Developer_Interfaces.md:4086 ../../Projects/Developer/Developer_Interfaces.md:4191
+msgid "], \"dstAddress\": ["
+msgstr "], \" dstAddress \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3712 ../../Projects/Developer/Developer_Interfaces.md:3848 ../../Projects/Developer/Developer_Interfaces.md:3953 ../../Projects/Developer/Developer_Interfaces.md:4089 ../../Projects/Developer/Developer_Interfaces.md:4194
+msgid "], \"dstPort\": ["
+msgstr "], \" dstPort \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3715 ../../Projects/Developer/Developer_Interfaces.md:3851 ../../Projects/Developer/Developer_Interfaces.md:3956 ../../Projects/Developer/Developer_Interfaces.md:4092 ../../Projects/Developer/Developer_Interfaces.md:4197
+msgid "], \"tag\": ["
+msgstr "], \" tag \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3718 ../../Projects/Developer/Developer_Interfaces.md:3854 ../../Projects/Developer/Developer_Interfaces.md:3959 ../../Projects/Developer/Developer_Interfaces.md:4095 ../../Projects/Developer/Developer_Interfaces.md:4200
+msgid "], \"srcTunnelAddress\": ["
+msgstr "], \" srcTunnelAddress \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3721 ../../Projects/Developer/Developer_Interfaces.md:3857 ../../Projects/Developer/Developer_Interfaces.md:3962 ../../Projects/Developer/Developer_Interfaces.md:4098 ../../Projects/Developer/Developer_Interfaces.md:4203
+msgid "], \"tgtTunnelAddress\": ["
+msgstr "], \" tgtTunnelAddress \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3724 ../../Projects/Developer/Developer_Interfaces.md:3860 ../../Projects/Developer/Developer_Interfaces.md:3965 ../../Projects/Developer/Developer_Interfaces.md:4101 ../../Projects/Developer/Developer_Interfaces.md:4206
+msgid "], \"srcTunnelPort\": ["
+msgstr "], \" srcTunnelPort \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3727 ../../Projects/Developer/Developer_Interfaces.md:3863 ../../Projects/Developer/Developer_Interfaces.md:3968 ../../Projects/Developer/Developer_Interfaces.md:4104 ../../Projects/Developer/Developer_Interfaces.md:4209
+msgid "], \"dstTunnelPort\": ["
+msgstr "], \" dstTunnelPort \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3730 ../../Projects/Developer/Developer_Interfaces.md:3866 ../../Projects/Developer/Developer_Interfaces.md:3971 ../../Projects/Developer/Developer_Interfaces.md:4107 ../../Projects/Developer/Developer_Interfaces.md:4212
+msgid "], \"qci\": 0, \"dscp\": 0, \"tc\": 0"
+msgstr "], \" qci \": 0, \" dscp \": 0, \" tc \": 0"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3735 ../../Projects/Developer/Developer_Interfaces.md:3871 ../../Projects/Developer/Developer_Interfaces.md:3976 ../../Projects/Developer/Developer_Interfaces.md:4112 ../../Projects/Developer/Developer_Interfaces.md:4217
+msgid "], \"dstInterface\": ["
+msgstr "], \" dstInterface \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3738 ../../Projects/Developer/Developer_Interfaces.md:3874 ../../Projects/Developer/Developer_Interfaces.md:3979 ../../Projects/Developer/Developer_Interfaces.md:4115 ../../Projects/Developer/Developer_Interfaces.md:4220
+msgid "\"interfaceType\": \"string\", \"srcMacAddress\": \"string\", \"dstMacAddress\": \"string\", \"dstIpAddress\": \"string\", \"tunnelInfo\": {"
+msgstr "\" interfaceType \": \" string \", \" srcMacAddress \": \" string \", \" dstMacAddress \": \" string \", \" dstIpAddress \": \" string \", \" tunnelInfo \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3743 ../../Projects/Developer/Developer_Interfaces.md:3879 ../../Projects/Developer/Developer_Interfaces.md:3984 ../../Projects/Developer/Developer_Interfaces.md:4120 ../../Projects/Developer/Developer_Interfaces.md:4225
+msgid "\"tunnelType\": \"string\", \"tunnelDstAddress\": \"string\", \"tunnelSrcAddress\": \"string\", \"tunnelSpecificData\": \"string\""
+msgstr "\" tunnelType \": \" string \", \" tunnelDstAddress \": \" string \", \" tunnelSrcAddress \": \" string \", \" tunnelSpecificData \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3751 ../../Projects/Developer/Developer_Interfaces.md:3887 ../../Projects/Developer/Developer_Interfaces.md:3992 ../../Projects/Developer/Developer_Interfaces.md:4128 ../../Projects/Developer/Developer_Interfaces.md:4233
+msgid "], \"appDNSRule\": ["
+msgstr "], \" appDNSRule \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3754 ../../Projects/Developer/Developer_Interfaces.md:3890 ../../Projects/Developer/Developer_Interfaces.md:3995 ../../Projects/Developer/Developer_Interfaces.md:4131 ../../Projects/Developer/Developer_Interfaces.md:4236
+msgid "\"dnsRuleId\": \"string\", \"domainName\": \"string\", \"ipAddressType\": \"string\", \"ipAddress\": \"string\", \"ttl\": \"string\""
+msgstr "\" dnsRuleId \": \" string \", \" domainName \": \" string \", \" ipAddressType \": \" string \", \" ipAddress \": \" string \", \" ttl \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3760 ../../Projects/Developer/Developer_Interfaces.md:3896 ../../Projects/Developer/Developer_Interfaces.md:4001 ../../Projects/Developer/Developer_Interfaces.md:4137 ../../Projects/Developer/Developer_Interfaces.md:4242
+msgid "], \"serviceDetails\": ["
+msgstr "], \" serviceDetails \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3763 ../../Projects/Developer/Developer_Interfaces.md:3899 ../../Projects/Developer/Developer_Interfaces.md:4004 ../../Projects/Developer/Developer_Interfaces.md:4140 ../../Projects/Developer/Developer_Interfaces.md:4245
+msgid "\"groupId\": \"string\", \"serviceName\": \"string\", \"internalPort\": 0, \"version\": \"string\", \"protocol\": \"string\", \"apiJson\": \"string\", \"apiMd\": \"string\", \"dnsRulesList\": ["
+msgstr "\" groupId \": \" serviceName \": \" string \", \" internalPort \": 0, \" protocol \": \" string \", \" apiJson \": \" string \", \" apiMd \": \" string \", \" dnsRulesList \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3772 ../../Projects/Developer/Developer_Interfaces.md:3908 ../../Projects/Developer/Developer_Interfaces.md:4013 ../../Projects/Developer/Developer_Interfaces.md:4149 ../../Projects/Developer/Developer_Interfaces.md:4254
+msgid "], \"trafficRulesList\": ["
+msgstr "], \" trafficRulesList \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3778 ../../Projects/Developer/Developer_Interfaces.md:3914 ../../Projects/Developer/Developer_Interfaces.md:4019 ../../Projects/Developer/Developer_Interfaces.md:4155 ../../Projects/Developer/Developer_Interfaces.md:4260
+msgid "}, \"atpTest\": {"
+msgstr "}, \" atpTest \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3780 ../../Projects/Developer/Developer_Interfaces.md:3916 ../../Projects/Developer/Developer_Interfaces.md:4021 ../../Projects/Developer/Developer_Interfaces.md:4157 ../../Projects/Developer/Developer_Interfaces.md:4262
+msgid "\"id\": \"string\", \"appName\": \"string\", \"status\": \"string\", \"createTime\": \"string\""
+msgstr "\" id \": \" string \", \" appName \": \" string \", \" status \": \" string \", \" createTime \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3784 ../../Projects/Developer/Developer_Interfaces.md:3920 ../../Projects/Developer/Developer_Interfaces.md:4025 ../../Projects/Developer/Developer_Interfaces.md:4161 ../../Projects/Developer/Developer_Interfaces.md:4266
+msgid "}, \"testStatus\": \"string\", \"createTime\": \"2020-12-29T03:31:13.204Z\""
+msgstr "}, \" testStatus \": \" string \", \" createTime \":\" 2020-12-29T03:31:13.204Z \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3790
+msgid "### 10.2 POST release config POST release config ``` Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config ```"
+msgstr "### 10.2 POST release config POST release config ` ` ` Resource URI: /dec/developer/v1/releaseconfig/ {projectId} /action/release-config ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3796 ../../Projects/Developer/Developer_Interfaces.md:4037
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>project id</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>ReleaseConfig</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th></th></th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>project id</td> <td>pathparam</td> <td>yes</td> </tr> <tr> <td>ReleaseConfig</td> <td>entityclass</td> <td>bodybaram</td> <td>yes</td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3821 ../../Projects/Developer/Developer_Interfaces.md:4062
+msgid "``` ReleaseConfig: {"
+msgstr "` ` ` ReleaseConfig: {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4031
+msgid "### 10.3 PUT release config PUT release config ``` Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config ```"
+msgstr "### 10.3 PUT release config PUT release config ` ` ` Resource URI: /dec/developer/v1/releaseconfig/ {projectId} /action/release-config ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4272
+msgid "## 11. DeployConfig Get some config about deploy platform ### 11.1 GET deploy platform Get deploy platform ``` Resource URI: /mec/developer/v1/config/deploy-platform ```"
+msgstr "# # 11. DeployConfig Get some config about deploy platform ### 11.1 GET deploy platform Get deploy platform ` ` ` Resource URI: /sec/developer/v1/config/deploy - platform ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4303 ../../Projects/Developer/Developer_Interfaces.md:4336 ../../Projects/Developer/Developer_Interfaces.md:4344
+msgid "\"isVirtualMachine\": false, \"virtualMachineUrl\": \"string\""
+msgstr "\" isVirtualMachine \": false, \" virtualMachineUrl \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4308
+msgid "### 11.2 PUT deploy platform PUT deploy platform ``` Resource URI: /mec/developer/v1/config/deploy-platform ```"
+msgstr "### 11.2 PUT deploy platform PUT deploy platform ` ` ` Resource URI: /sec/developer/v1/config/deploy - platform ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4314
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>DeployPlatformConfig</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <td> <td>DeployPlatformConfig</td> <td>entityclass</td> <td>bodyparam</td> <td>yes</td> </tr> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4333
+msgid "``` DeployPlatformConfig: {"
+msgstr "` ` ` DeployPlatformConfig: {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4349
+msgid "## 12. Deploy API to manipulate deployment files ### 12.1 GET deploy yaml get deploy yaml ``` Resource URI: /mec/developer/v1/deploy/{fileId} ```"
+msgstr "# # 12. Deploy API to manage deployment files###12.1GETdeployyamlgetdeployyaml ` ` ` Resource URI: /sec/developer/v1/deploy/ {fileId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4357 ../../Projects/Developer/Developer_Interfaces.md:4441
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>fileId</td> <td>fileId</td> <td>path param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> fileId <tr></td> <td>fileId</td> <td>path param</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4380 ../../Projects/Developer/Developer_Interfaces.md:4425 ../../Projects/Developer/Developer_Interfaces.md:4515
+msgid "\"fileId\": \"string\", \"fileName\": \"string\", \"userId\": \"string\", \"projectId\": \"string\", \"content\": \"string\", \"uploadTimeStamp\": 0, \"configType\": \"string\""
+msgstr "\" fileId \": \" string \", \" fileName \": \" string \", \" userId \": \" string \", \" content \": \" string \", \" uploadTimeStamp \": 0, \" configType \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4390
+msgid "### 12.2 PUT deploy yaml modify deploy yaml by file id ``` Resource URI: /mec/developer/v1/deploy/{fileId} ```"
+msgstr "### 12.2 PUT deploy yaml modify deploy yaml by fileid ` ` ` Resource URI: /sec/developer/v1/deploy/ {fileId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4396
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>fileId</td> <td>fileId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>fileContent</td> <td>file content</td> <td>body param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> fileId <tr></td> <td>fileId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>fileContent</td> <td>filecontent</td> <td>body param</td> <td>yes</td> </tr> </tr> </tbody> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4435
+msgid "### 12.3 GET deploy json Get file content with json format ``` Resource URI: /mec/developer/v1/deploy/{fileId}/action/get-json ```"
+msgstr "### 12.3 GET deploy json Get filecontentwithjsonformat ` ` ` Resource URI: /medec/developer/v1/deploy/ {fileId}/action/get-json ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4468
+msgid "### 12.4 POST deploy yaml upload deploy yaml ``` Resource URI: /mec/developer/v1/deploy/{projectId}/action/save-yaml ```"
+msgstr "### 12.4 POST deploy yaml upload deploy yaml ` ` ` Resource URI: /sec/developer/v1/deploy/ {projectId} /action/save-yaml ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4474
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>jsonStr</td> <td>deploy yaml content</td> <td>body param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>userId</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>configType</td> <td>Fields that distinguish deployment types</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td> <td>jsonStr</td> <td>deploy yaml content</td> <td>body param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>userId</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>configType</td> <td>Fields that distinguish deployment types</td> <td>request param</td> <td>yes</td> </tr> </tr> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4525
+msgid "## 13. System About the api with system functions on the developer platform ### 13.1 GET all capability GET all capability ``` Resource URI: /mec/developer/v1/system/capability ```"
+msgstr "# # 13. System About the api with system functions on the developer platform ### 13.1 GET all capability GET all capability ` ` ` Resource URI: /mes/developer/v1/system/capability ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4533
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>userId</td> <td>request param</td> <td>no</td> </tr> <tr> <td>twoLevelName</td> <td>the name of two level name</td> <td>request param</td> <td>no</td> </tr> <tr> <td>twoLevelNameEn</td> <td>the name of two level english name</td> <td>request param</td> <td>no</td> </tr> <tr> <td>limit</td> <td>the max count of one page</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>offset</td> <td>start index of the page</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td> <td>userId</td> <td>userId</td> <td>request param</td> <td>no</td> </tr> <td> <tr> twoLevelName</td> <td>the name of two level name</td> <td>request param</td> <td>no</td> </tr> <tr> <td>twoLevelNameEn</td> <td>the name of two level english name</td> <td>request param</td> <td>no</td> </tr> <tr> <td>limit</td> <td>the max count of one page</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>offset</td> <td>start index of the page</td> <td>request param</td> <td>yes</td> </tr> </table> </tbody> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4581 ../../Projects/Developer/Developer_Interfaces.md:4643 ../../Projects/Developer/Developer_Interfaces.md:4681 ../../Projects/Developer/Developer_Interfaces.md:5053
+msgid "\"groupId\": \"string\", \"oneLevelName\": \"string\", \"oneLevelNameEn\": \"string\", \"twoLevelName\": \"string\", \"twoLevelNameEn\": \"string\", \"type\": \"OPENMEP\", \"description\": \"string\", \"descriptionEn\": \"string\", \"capabilityDetailList\": ["
+msgstr "\" groupId \": \" string \": \" string \", \" oneLevelNameEn \": \" string \": \" string \", \" twoLevelNameEn \": \" string \", \" type \": \" OPENMEP \", \" description \": \" string \", \" descriptionEn \": \" string \", \" capabilityDetailList \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4591 ../../Projects/Developer/Developer_Interfaces.md:4653 ../../Projects/Developer/Developer_Interfaces.md:4691 ../../Projects/Developer/Developer_Interfaces.md:5063
+msgid "\"detailId\": \"string\", \"groupId\": \"string\", \"service\": \"string\", \"serviceEn\": \"string\", \"version\": \"string\", \"description\": \"string\", \"descriptionEn\": \"string\", \"provider\": \"string\", \"apiFileId\": \"string\", \"guideFileId\": \"string\", \"guideFileIdEn\": \"string\", \"uploadTime\": \"string\", \"port\": 0, \"host\": \"string\", \"protocol\": \"string\", \"appId\": \"string\", \"packageId\": \"string\", \"userId\": \"string\""
+msgstr "\" detailId \": \" groupId \": \" string \", \" service \": \" string \": \" string \": \" string \": \" description \": \" string \": \" descriptionEn \": \" string \", \" provider \": \" string \", \" apiFileId \": \" guideFileId \": \" string \", \" string \", \" uploadTime \": \" port \": 0, \" host \": \" protocol \": \" string \", \" appId \": \" string \", \" packageId \": \" string \", \" userId \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4615
+msgid "### 13.2 POST one capability create one capability ``` Resource URI: /mec/developer/v1/system/capability ```"
+msgstr "### 13.2 POST one capability create one capability ` ` ` Resource URI: /mes/developer/v1/system/capability ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4621
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>group</td> <td>CapabilityGroup</td> <td>body param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>group</td> <td>CapabilityGroup</td> <td>body param</td> <td>yes</td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4640
+msgid "``` CapabilityGroup {"
+msgstr "` ` ` CapabilityGroup {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4715
+msgid "### 13.3 DELETE one capability DELETE one capability ``` Resource URI: /mec/developer/v1/system/capability ```"
+msgstr "### 13.3 DELETE one capability DELETE one capability ` ` Resource URI: /mes/developer/v1/system/capability ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4721
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>groupId</td> <td>groupId</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>groupId</td> <td>groupId</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4740 ../../Projects/Developer/Developer_Interfaces.md:4866 ../../Projects/Developer/Developer_Interfaces.md:5018 ../../Projects/Developer/Developer_Interfaces.md:5364 ../../Projects/Developer/Developer_Interfaces.md:5458 ../../Projects/Developer/Developer_Interfaces.md:5495 ../../Projects/Developer/Developer_Interfaces.md:5763
+msgid "Example response: ``` 200 OK boolean output ```"
+msgstr "Example response: ` ` 200 OK boolean output ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4746
+msgid "### 13.4 GET all host GET all host ``` Resource URI: /mec/developer/v1/system/hosts ```"
+msgstr "### 13.4 GET all host GET all host ` ` ` Resource URI: /mes/developer/v1/system/hosts ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4752
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>userId</td> <td>request param</td> <td>no</td> </tr> <tr> <td>name</td> <td>the name of host</td> <td>request param</td> <td>no</td> </tr> <tr> <td>ip</td> <td>the ip of host</td> <td>request param</td> <td>no</td> </tr> <tr> <td>limit</td> <td>the max count of one page</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>offset</td> <td>start index of the page</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td> <td>userId</td> <td>userId</td> <td>request param</td> <td>no</td> </tr> <tr> <td>name</td> <td>the name of host</td> <td>request param</td> <td>no </tr></td> <tr> <td>ip</td> <td>the ip of host</td> <td>request param</td> <td>no</td> </tr> <tr> <td>limit</td> <td>the max count of one page</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>offset</td> <td>start index of the page</td> <td>request param</td> <td>yes </tr></td> </tr> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4800 ../../Projects/Developer/Developer_Interfaces.md:4901 ../../Projects/Developer/Developer_Interfaces.md:4953 ../../Projects/Developer/Developer_Interfaces.md:4975 ../../Projects/Developer/Developer_Interfaces.md:5116 ../../Projects/Developer/Developer_Interfaces.md:5213 ../../Projects/Developer/Developer_Interfaces.md:5290 ../../Projects/Developer/Developer_Interfaces.md:5573
+msgid "\"hostId\": \"string\", \"name\": \"string\", \"address\": \"string\", \"architecture\": \"string\", \"status\": \"NORMAL\", \"lcmIp\": \"string\", \"mecHost\": \"string\", \"protocol\": \"string\", \"port\": 0, \"os\": \"string\", \"portRangeMin\": 0, \"portRangeMax\": 0, \"userId\": \"string\", \"configId\": \"string\", \"userName\": \"string\""
+msgstr "\" hostId \": \" name \": \" string \": \" string \": \" string \": \" NORMAL \", \" lcmIp \": \" mecHost \": \" string \", \" protocol \": \" string \", \" port \": 0, \" os \": \" string \", \" portRaneMin\": 0, \" portRangeMax \": 0, \" userId \": \" string \", \" configId \": \" string \", \" userName \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4819
+msgid "### 13.5 POST one host create one host ``` Resource URI: /mec/developer/v1/system/hosts ```"
+msgstr "### 13.5 POST one host create one host ` ` ` Resource URI: /sec/developer/v1/system/hosts ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4825
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>host</td> <td>Entity class</td> <td>body param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>host</td> <td>Entity class</td> <td>body param</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4847
+msgid "\"hostId\": \"string\", \"name\": \"string\", \"address\": \"string\", \"architecture\": \"string\", \"status\": \"NORMAL\", \"lcmIp\": \"string\", \"mecHost\": \"string\", \"protocol\": \"string\", \"port\": 0, \"os\": \"string\", \"portRangeMin\": 0, \"portRangeMax\": 0, \"userId\": \"string\", \"configId\": \"string\", \"userName\": \"string\", \"password\": \"string\""
+msgstr "\" hostId \": \" name \": \" string \": \" string \": \" string \": \" NORMAL \", \" lcmIp \": \" mecHost \": \" string \", \" protocol \": \" string \", \" port \": 0, \" os \": \" string \", \" portRangeMin\": 0, \" portRangeMax \": 0, \" userId \": \" string \", \" configId \": \" userName \": \" string \", \" password \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4872
+msgid "### 13.6 GET one host GET one host ``` Resource URI: /mec/developer/v1/system/hosts/{hostId} ```"
+msgstr "### 13.6 GET one host GET one host ` ` ` Resource URI: /mes/developer/v1/system/hosts/ {hostId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4878 ../../Projects/Developer/Developer_Interfaces.md:4999 ../../Projects/Developer/Developer_Interfaces.md:5092
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>hostId</td> <td>hostId</td> <td>path param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <td>hostId</td> <td>hostId</td> <td>path param</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4919
+msgid "### 13.7 PUT one host modify one host ``` Resource URI: /mec/developer/v1/system/hosts/{hostId} ```"
+msgstr "### 13.7 PUT one host modify one host ` ` ` Resource URI: /dec/developer/v1/system/hosts/ {hostId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4925
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>hostId</td> <td>hostId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>host</td> <td>Entity class</td> <td>body param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <td>hostId</td> <td>hostId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>host</td> <td>Entity class</td> <td>body param</td> <td>yes</td> </tr> </tr> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4950
+msgid "``` host {"
+msgstr "` ` ` host {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:4993
+msgid "### 13.8 DELETE one host DELETE one host ``` Resource URI: /mec/developer/v1/system/hosts/{hostId} ```"
+msgstr "### 13.8 DELETE one host DELETE one host ` ` ` Resource URI: /mes/developer/v1/system/hosts/ {hostId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5024
+msgid "### 13.9 GET capability detail GET capability detail ``` Resource URI: /mec/developer/v1/system/capability/{groupId} ```"
+msgstr "### 13.9 GET capability detail GET capability detail ` ` ` Resource URI: /sec/developer/v1/system/capability/ {groupId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5030
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>groupId</td> <td>groupId</td> <td>path param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <tr> <td>groupId</td> <td>groupId</td> <td>path param</td> <td>yes</td> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5086
+msgid "### 13.10 GET host log GET host log ``` Resource URI: /mec/developer/v1/system/hosts/{hostId}/log ```"
+msgstr "### 13.10 GET host log GET host log ` ` ` Resource URI: /fec/developer/v1/system/hosts/ {hostId} /log ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5135
+msgid "## 14. VirtualMachine This part is about the api for virtual machine deployment ### 14.1 POST one vm create one vm ``` Resource URI: /mec/developer/v1/projects/{projectId}/vm-create ```"
+msgstr "# # 14. VirtualMachine This part is about the api for virtual machine deployment ### 14.1 POST one vm create one vm ` ` ` Resource URI: /sec/developer/v1/projects/ {projectId} /vm - create ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5143
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>userId</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>vmCreateConfig</td> <td>entity class</td> <td>body param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>userId</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>vmCreateConfig</td> <td>entity class</td> <td>body param</td> <td>yes </tr></td> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5174
+msgid "``` vmCreateConfig: {"
+msgstr "` ` ` vmCreateConfig: {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5177 ../../Projects/Developer/Developer_Interfaces.md:5254 ../../Projects/Developer/Developer_Interfaces.md:5537
+msgid "\"vmId\": \"string\", \"projectId\": \"string\", \"vmRegulation\": {"
+msgstr "\" vmId \": \" string \", \" projectId \": \" string \", \" vmRegulation \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5180 ../../Projects/Developer/Developer_Interfaces.md:5257 ../../Projects/Developer/Developer_Interfaces.md:5540 ../../Projects/Developer/Developer_Interfaces.md:5685
+msgid "\"regulationId\": 0, \"architecture\": \"string\", \"nameZh\": \"string\", \"nameEn\": \"string\", \"sceneZh\": \"string\", \"sceneEn\": \"string\", \"memory\": 0, \"cpu\": 0, \"systemDisk\": 0, \"dataDisk\": 0, \"gpu\": \"string\", \"otherAbility\": \"string\""
+msgstr "\" regulationId \": 0, \" architecture \": \" nameZh \": \" string \": \" string \": \" string \": \" string \": 0, \" cpu \": 0, \" systemDisk \": 0, \" dataDisk \": 0, \" gpu \": 0, \" gpu \": 0, \" gpu \": 0, \" gpu \": 0, \" gpu \": 0, \" gpu \": 0, \" gpu \": 0, \" dataDisk \": 0, \" gpu \": 0, \" gpu \": 0, \" gpu \": 0, \" dataDisk \": 0, \" gpu \": 0, \" gpu \": 0, \" gpu \": 0, \" dataDisk \": 0, \" gpu \": \" string \", \" otherAility \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5192 ../../Projects/Developer/Developer_Interfaces.md:5269 ../../Projects/Developer/Developer_Interfaces.md:5552
+msgid "}, \"vmSystem\": {"
+msgstr "}, \" vmSystem \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5194 ../../Projects/Developer/Developer_Interfaces.md:5271 ../../Projects/Developer/Developer_Interfaces.md:5554 ../../Projects/Developer/Developer_Interfaces.md:5701
+msgid "\"systemId\": 0, \"type\": \"string\", \"operateSystem\": \"string\", \"version\": \"string\", \"systemBit\": \"string\", \"systemDisk\": 0"
+msgstr "\" systemId \": 0, \" type \": \" string \", \" operateSystem \": \" string \", \" version \": \" string \", \" systemBit \": \" string \", \" systemDisk \": 0"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5200 ../../Projects/Developer/Developer_Interfaces.md:5277 ../../Projects/Developer/Developer_Interfaces.md:5560
+msgid "}, \"vmNetwork\": ["
+msgstr "}, \" vmNetwork \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5203 ../../Projects/Developer/Developer_Interfaces.md:5280 ../../Projects/Developer/Developer_Interfaces.md:5563
+msgid "], \"vmName\": \"string\", \"status\": \"NOTCREATE\", \"stageStatus\": {"
+msgstr "], \" vmName \": \" string \", \" status \": \" NOTCREATE \", \" stageStatus \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5207 ../../Projects/Developer/Developer_Interfaces.md:5284 ../../Projects/Developer/Developer_Interfaces.md:5567
+msgid "\"hostInfo\": \"Success\", \"csar\": \"Success\", \"instantiateInfo\": \"Success\", \"workStatus\": \"Success\""
+msgstr "\" hostInfo \": \" Success \", \" csar \": \" Success \", \" instantiateInfo \": \" Success \", \" workStatus \": \" Success \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5211 ../../Projects/Developer/Developer_Interfaces.md:5288 ../../Projects/Developer/Developer_Interfaces.md:5571
+msgid "}, \"host\": {"
+msgstr "}, \" host \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5228 ../../Projects/Developer/Developer_Interfaces.md:5305 ../../Projects/Developer/Developer_Interfaces.md:5588
+msgid "}, \"lcmToken\": \"string\", \"vmInfo\": ["
+msgstr "}, \" lcmToken \": \" string \", \" vmInfo \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5232 ../../Projects/Developer/Developer_Interfaces.md:5309 ../../Projects/Developer/Developer_Interfaces.md:5592
+msgid "\"vmId\": \"string\", \"vncUrl\": \"string\", \"networks\": ["
+msgstr "\" vmId \": \" string \", \" vncUrl \": \" string \", \" networks \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5236 ../../Projects/Developer/Developer_Interfaces.md:5313 ../../Projects/Developer/Developer_Interfaces.md:5596
+msgid "\"ip\": \"string\", \"name\": \"string\""
+msgstr "\" ip \": \" string \", \" name \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5241 ../../Projects/Developer/Developer_Interfaces.md:5318 ../../Projects/Developer/Developer_Interfaces.md:5601
+msgid "], \"appInstanceId\": \"string\", \"packageId\": \"string\", \"createTime\": \"2021-03-31T06:11:11.495Z\", \"log\": \"string\", \"nextStage\": \"string\""
+msgstr "], \" appInstanceId \": \" string \", \" packageId \": \" string \", \" createTime \":\" 2021-03-31T06:11:11.495Z \", \" log \": \" string \", \" nextStage \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5327
+msgid "### 14.2 DELETE vm config DELETE vm config ``` Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId} ```"
+msgstr "### 14.2 DELETE vm config DELETE vm config ` ` Resource URI: /dec/developer/v1/projects/ {projectId} /vm/ {vmId} ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5333
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>vmId</td> <td>vmId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>user id</td> <td>query param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>vmId</td> <td>vmId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>user id</td> <td>query param</td> <td>yes </tr></td> </tr> </table> </tbody>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5370
+msgid "### 14.3 GET image config GET image config ``` Resource URI: /mec/developer/v1/projects/{projectId}/vm/image ```"
+msgstr "### 14.3 GET image config GET image config ` ` ` Resource URI: /dec/developer/v1/projects/ {projectId} /vm/image ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5376 ../../Projects/Developer/Developer_Interfaces.md:5433 ../../Projects/Developer/Developer_Interfaces.md:5470 ../../Projects/Developer/Developer_Interfaces.md:5507
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>user id</td> <td>query param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>user id</td> <td>query param</td> <td>yes</td> </tr> </tr> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5405
+msgid "\"vmId\": \"string\", \"imageId\": \"string\", \"projectId\": \"string\", \"vmName\": \"string\", \"imageName\": \"string\", \"appInstanceId\": \"string\", \"hostIp\": \"string\", \"sumChunkNum\": 0, \"chunkSize\": 0, \"stageStatus\": {"
+msgstr "\" vmId \": \" imageId \": \" string \", \" projectId \": \" string \", \" vmName \": \" appInstanceId \": \" string \", \" string \": \" string \", \" sumChunkNum \": 0, \" chunkSize \": 0, \" stageStatus \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5415
+msgid "\"createImageInfo\": \"Success\", \"imageStatus\": \"Success\", \"downloadImageInfo\": \"Success\""
+msgstr "\" createImageInfo \": \" Success \", \" imageStatus \": \" Success \", \" downloadImageInfo \": \" Success \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5418
+msgid "}, \"status\": \"NOTCREATE\", \"lcmToken\": \"string\", \"createTime\": \"2021-03-31T06:11:11.497Z\", \"log\": \"string\", \"nextStage\": \"string\""
+msgstr "}, \" status \": \" NOTCREATE \", \" lcmToken \": \" string \", \" createTime \":\" 2021-03-31T06:11:11.497Z \", \" log \": \" string \", \" nextStage \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5427
+msgid "### 14.4 POST image config create image config ``` Resource URI: /mec/developer/v1/projects/{projectId}/vm/image ```"
+msgstr "### 14.4 POST image config create image config ` ` ` Resource URI: /ec/developer/v1/projects/ {projectId} /vm/image ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5464
+msgid "### 14.5 DELETE image config delete image config ``` Resource URI: /mec/developer/v1/projects/{projectId}/vm/image ```"
+msgstr "### 14.5 DELETE image config delete image config ` ` ` Resource URI: /ec/developer/v1/projects/ {projectId} /vm/image ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5501
+msgid "### 14.6 GET image config By ProjectId GET image config By ProjectId ``` Resource URI: /mec/developer/v1/projects/{projectId}/vm ```"
+msgstr "### 14.6 GET image config By ProjectId GET image config By ProjectId ` ` ` Resource URI: /dec/developer/v1/projects/ {projectId} /vm ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5611
+msgid "### 14.7 GET csar pkg GET csar pkg ``` Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}/package ```"
+msgstr "### 14.7 GET csar pkg GET csr pkg ` ` ` Resource URI: /dec/developer/v1/projects/ {projectId} /vm/ {vmId} /package ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5617
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>user id</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>vmId</td> <td>vmId</td> <td>path param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>user id</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>vmId</td> <td>vmId</td> <td>path param</td> <td>yes </tr></td> </tr> </table> </tbody>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5654
+msgid "### 14.8 GET vm resources GET vm resources ``` Resource URI: /mec/developer/v1/vmconfig ```"
+msgstr "### 14.8 GET vm resources GET vm resources ` ` ` Resource URI: /met/developer/v1/vmconfig ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5696
+msgid "\"vmRegulationList\": ["
+msgstr "\" vmRegulationList \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5698
+msgid "], \"vmSystemList\": ["
+msgstr "], \" vmSystemList \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5708
+msgid "], \"vmNetworkList\": ["
+msgstr "], \" vmNetworkList \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5711
+msgid "\"networkType\": \"string\", \"descriptionZh\": \"string\", \"descriptionEn\": \"string\", \"networkName\": \"string\""
+msgstr "\" networkType \": \" string \", \" descriptionZh \": \" string \", \" descriptionEn \": \" string \", \" networkName \": \" string \""
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5720
+msgid "### 14.9 POST vm file GET csar pkg ``` Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}/files ```"
+msgstr "### 14.9 POST vm fileGETcsarpkg ` ` ` Resource URI: /sec/developer/v1/projects/ {projectId} /vm/ {vmId} /files ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5726
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>user id</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>vmId</td> <td>vmId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>file</td> <td>File</td> <td>formdate param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <tr> <td>projectId</td> <td>projectId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>user id</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>vmId</td> <td>vmId</td> <td>path param</td> <td>yes</td> </tr> <tr> <td>file</td> <td>File</td> <td>formdate param</td> <td>yes</td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5769
+msgid "## 15. Image This part is about the api for deploying APP image ### 15.1 POST upload image POST upload image ``` Resource URI: /mec/appstore/v1/image/upload ```"
+msgstr "# # 15. Image This part is about the api for deploying APP image ### 15.1 POST upload image POST upload image ` ` ` Resource URI: /ec/appstore/v1/image/upload ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5777
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>id</td> <td>image chunk id</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>chunkNumber</td> <td>file chunk Number</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>chunkSize</td> <td>the size of every chunk</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>currentChunkSize</td> <td>the length of current file chunk</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>totalSize</td> <td>the totalSize of file</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>identifier</td> <td>file identifier</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>filename</td> <td>fil ename</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>relativePath</td> <td>the relative Path of file</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>totalChunks</td> <td>Total number of file blocks</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>type</td> <td>file type</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>file</td> <td>the file to upload</td> <td>query param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required </thead></th> </thead> <tbody> <td> <td> <td></td> <td>image chunk id</td> <td>query param</td> <td>yes</td> </tr> <tr> <td></td> <td>filechunkNumber</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>chunkSize</td> <td>the size of every chunk</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>currentChunkSize</td> <td>the length of current filechunk</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>totalSize</td> <td>the totalSize of file</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>identifier</td> <td>file identifier</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>filename</td> <td>filename</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>relativePath</td> <td>the relative Path of file</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>totalChunks</td> <td>Total number of fileblocks</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>type</td> <td>filetype</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>file</td> <td>the filetoupload</td> <td>query param</td> <td>yes</td> </tr> </tr> </table> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5859
+msgid "{ \"headers\": {"
+msgstr "{\" headers \": {"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5861 ../../Projects/Developer/Developer_Interfaces.md:5907
+msgid "\"string\": ["
+msgstr "\" string \": ["
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5864 ../../Projects/Developer/Developer_Interfaces.md:5910
+msgid "}, \"body\": {}, \"statusCode\": \"CONTINUE\", \"statusCodeValue\": 0"
+msgstr "}, \" body \": {}, \" statusCode \": \" CONTINUE \", \" statusCodeValue \": 0"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5871
+msgid "### 15.2 GET merge image after every file chunk uploaded, then merge to a file with same as you uploaded ``` Resource URI: /mec/appstore/v1/image/merge ```"
+msgstr "### 15.2 GET merge image after every filechunkuploaded,thenmergetoafilewithsameasyouuploaded ` ` ` Resource URI: /sec/appstore/v1/image/merge ` ` `"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5877
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </tr> </thead> <tbody> <tr> <td>guid</td> <td>the file id of need to merge</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>fileName</td> <td>file name</td> <td>query param</td> <td>yes</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> </thead> </tr> <tbody> <tr> <td>guid</td> <td>the fileidofneedtomerge</td> <td>query param</td> <td>yes</td> </tr> <tr> <td>fileName</td> <td>filename</td> <td>query param</td> <td>yes </tr></td> </tr> </table>"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:5908
+msgid "\"headers\": {"
+msgstr "\" headers \": {"
+
