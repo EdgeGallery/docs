@@ -1,0 +1,2 @@
+msgid "# EdgeGallery PTs & WGs"
+msgstr "# EdgeGallery PTs & WGs"

@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MEP/MEP_Overview.md:2
+msgid "概述"
+msgstr "Overview"
+
+#: ../../Projects/MEP/MEP_Overview.md:4
+msgid "## MEP 项目整体介绍"
+msgstr "## MEP Item Overall Presentation"
+
+#: ../../Projects/MEP/MEP_Overview.md:6
+msgid "随着物联网、人工智能、云计算、移动互联网、大数据和大视频等产业技术的蓬勃发展，以及围绕ICT开放生态的成熟，网络资源和计算能力逐步朝着资源集中化和边缘化方向演进。"
+msgstr "With the Internet of Things, artificial intelligence, cloud computing, mobile Internet, big data, and big video, as well as the maturity, network resources and computing power of the ICT-open ecosystem, the evolution of resource concentration and marginalization is gradual."
+
+#: ../../Projects/MEP/MEP_Overview.md:8
+msgid "多接入边缘计算MEC（Multi-access Edge Computing）为典型的资源边缘化模式，在移动网络边缘提供IT服务环境和云计算能力，实时完成移动网络边缘的业务处理。MEC将随着CT和IT深度融合趋势，物联网的兴起、人工智能技术的发展，以及企业对生产数据的安全性、实时性的诉求，持续快速的发展。"
+msgstr "Multiaccess Edge Computing MEC (Multi-access Edge Computing) is a typical resource marginalisation mode, providing IT service environments and cloud computing capabilities on the edge of the mobile network to complete business processing of mobile network edges in real time.The MEC will continue to develop rapidly with the convergence of CT and IT depth, the rise of the Internet of Things, the development of artificial intelligence technology, and the safety and real-time nature of the enterprise's production data."
+
+#: ../../Projects/MEP/MEP_Overview.md:11
+msgid "在MEC场景下，海量的应用将运行在网络边缘进行业务处理，并且应用能够使用网络的开放能力，应用之间也能够互相进行能力提供和消费。"
+msgstr "Under the MEC scenario, big applications will operate on the edge of the network for business processing, and the application can use the network's open ability, and the application can also provide and consume each other."
+
+#: ../../Projects/MEP/MEP_Overview.md:13
+msgid "![](/uploads/images/2020/0805/102832_c7372e58_5504908.png)"
+msgstr "! [](/uploads/images/2020/0805/102832_c7372e58_5504908 .png)"
+
+#: ../../Projects/MEP/MEP_Overview.md:15
+msgid "EdgeGallery MEP项目旨在打造一个边缘侧的开源、开放的参考MEP平台，MEP项目当前包含MEP和MEP-Agent两个组件。"
+msgstr "The EdgeGallery MEP project aims to create an open source, open reference MEP platform on the edge side, and MEP projects currently include both MEP and MEP-Agent components."
+
+#: ../../Projects/MEP/MEP_Overview.md:17
+msgid "![](/uploads/images/2020/0804/164331_49cda7cd_5504908.png \"系统架构.png\")"
+msgstr "! [](/uploads/images/2020/0804/164331_49cda7cd_5504908 .png \" System Architect .png \")"
+
+#: ../../Projects/MEP/MEP_Overview.md:19
+msgid "MEP（MEC Platform, MEC平台）是ETSI MEC标准定义的MEC平台网元，部署位置在边缘侧，主要涵盖如下功能："
+msgstr "MEP (MEC Platform, MEC Platform) is the MEC platform network element defined by the ETSI MEC standard. The deployment location is on the edge side, mainly covering the following functions:"
+
+#: ../../Projects/MEP/MEP_Overview.md:21
+msgid "为ME APP提供服务治理能力（注册、发现、订阅、通知）。"
+msgstr "Provide service governance capabilities for ME APP (registration, discovery, subscription, notification)."
+
+#: ../../Projects/MEP/MEP_Overview.md:22
+msgid "接收MEPM下发的流规则（Traffice Rules）配置。"
+msgstr "Receive a flow rule (Traffice Rules) configuration issued by MEPM."
+
+#: ../../Projects/MEP/MEP_Overview.md:23
+msgid "接收MEPM下发的DNS规则（DNS Rules）配置。"
+msgstr "Receive DNS Rules (DNS Rules) configurations issued by MEPM."
+
+#: ../../Projects/MEP/MEP_Overview.md:24
+msgid "为MEC APP提供DNS等MEC公共服务。"
+msgstr "Provide MEC public services such as DNS for the MEC APP."
+
+#: ../../Projects/MEP/MEP_Overview.md:26
+msgid "MEP组件运行时包含如下微服务："
+msgstr "The MEP component runs with the following microservices:"
+
+#: ../../Projects/MEP/MEP_Overview.md:28
+msgid "mepauth：为应用提供认证鉴权，同时承担部分配置管理的能力。"
+msgstr "mepauth: Provides the authentication authentication for the application while taking part of the configuration management capability."
+
+#: ../../Projects/MEP/MEP_Overview.md:29
+msgid "mep：提供服务治理，app订阅通知管理的相关功能。"
+msgstr "mep: Provides functions related to service governance, app subscription notification management."
+
+#: ../../Projects/MEP/MEP_Overview.md:30
+msgid "kong：采用了开源网关软件kong，负责相关路由转发和插件配置等功能。"
+msgstr "kong: Using open-source gateway software pong, it is responsible for the relevant route forwarding and plug-in configuration."
+
+#: ../../Projects/MEP/MEP_Overview.md:31
+msgid "postgres：postgres为kong和mepauth提供数据存储能力。"
+msgstr "postgres: postgres provide data storage capabilities for kong and mepauth."
+
+#: ../../Projects/MEP/MEP_Overview.md:33
+msgid "MEP-Agent组件：应用集成适配器，这个组件在实际使用时，应用开发者可以将其作为应用的一部分。它实现了实例配置信息导入，服务注册等相关基础功能，可以简化应用与平台的集成。"
+msgstr "MEP-Agent Assembly: The application of an integrated adapter, which the application developer can use as part of the application when it is actually used.The invention realizes the related basic functions of the instance configuration information leading-in, service registration and so on, which can simplify the integration of the application and the platform."
+
+#: ../../Projects/MEP/MEP_Overview.md:35
+msgid "## MEP 整体架构"
+msgstr "## MEP overall architecture"
+
+#: ../../Projects/MEP/MEP_Overview.md:37
+msgid "![](/uploads/images/2020/0915/144714_23890cda_7624956.png \"MEP arch.png\")"
+msgstr "! [](/uploads/images/2020/0915/144714_23890cda_7624956 .png \" MEP arch.png \")"
+
+#: ../../Projects/MEP/MEP_Overview.md:39
+msgid "图中涉及的MEP关联主要接口有： - Mp1：APP与MEP之间，提供APP服务注册发现，APP状态通知订阅等能力。 - Mp2：MEP与UPF之间，提供数据面的配置能力。 - Mm3：MEO与MEPM之间，提供包管理，APP生命周期管理能力 - Mm5：MEPM与MEP之间，执行MEP平台配置管理，配置APP规则等能力。"
+msgstr "The MEP associated major interfaces in the figure are: - Mp1: between APP and MEP, providing the APP service registration discovery, the APP status notification subscription and so on. -Mp2: Provides the configuration capability of the data side between MEP and UPF. -Mm3: between MEO and MEPM, providing packet management, APP life cycle management capability-Mm5: between MEPM and MEP, performing MEP platform configuration management, configuring APP rules, and so on."
+
+#: ../../Projects/MEP/MEP_Overview.md:45
+msgid "对于应用App来说，Mp1是APP与MEP交互最重要的接口，APP能通过Mp1将自身服务注册到MEP平台，同时也能够通过服务发现调用MEP对外提供的服务。"
+msgstr "For the App App, Mp1 is the most important interface between APP and MEP, and APP can register its own services to MEP via Mp1, while the MEP can be found to be called MEP services by service."
+

@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:2
+msgid "Prerequisite"
+msgstr "Prerequisite"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:4
+msgid "### Service Center"
+msgstr "### Service Center"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:6
+msgid "1、Download [Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)"
+msgstr "1, Download [Service Center] (http://servicecomb.apache.org/cn/release/service-center-downloads/)"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:8
+msgid "![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
+msgstr "! [](/uploads/images/2020/0908/153700_b069cf5f_7625245 .jpeg \" service center1.jpg \")"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:10
+msgid "2、Run start-service-center.sh  and start-frontend.sh"
+msgstr "2, Run start-service-center.sh and start-frontend.sh"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:12
+msgid "![](/uploads/images/2020/0924/service-comb.png \"service-comb.png\")"
+msgstr "! [](/uploads/images/2020/0924/service-comb.png \" service-comb.png \")"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:14
+msgid "### UserManagement"
+msgstr "### UserManagement"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:16
+msgid "Download [user-mgmt-be code](https://gitee.com/edgegallery/user-mgmt/)"
+msgstr "Download [user-mgmt-be code] (https: //gitee.com/edgegallery/user-mgmt/)"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:18
+msgid "Configure the runtime environment variables of MainServer in the compiler (here in IDEA as an example)"
+msgstr "Configure the runtime environment variables of MainServer in the compiler (here in IDEA as an example)"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:20
+msgid "![](/uploads/images/2020/0924/mecm-usr-env.png \"mecm-usr-env.png\")"
+msgstr "! [](/uploads/images/2020/0924/mecm - usr-env.png \" mecm-usr-env.png \")"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:22
+msgid "Run the MainServer function and start UserManagement"
+msgstr "Run the MainServer function and start UserManagement"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:24
+msgid "Download the [jwt token generation script](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Jwt_Token_Generation.sh) and need to give rsa private key and payload file path in the field provided."
+msgstr "Download the [jwt token generation script] (https: //gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Jwt_Token_Generation.sh) and need to give rsa private key and payload filepathinthefieldprovided."
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:27
+msgid "Example Payload ``` ["
+msgstr "Example Payload ` ` ` `"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:30
+msgid "\"userName\": \"sample user name\", \"userId\": \"example user id\", \"scope\": \"sample scope\", \"ssoSessionId\": \"ssoSession id to be given\", \"authorities\": [ Example of authorities to be given ], \"jti\": \"unique id\", \"client_id\": \"enter client id\""
+msgstr "\" userName \": \" sample user name\": \" example user id\", \" sample scope\", \" ssoSessionId \": \" ssoSession id to be given\", \" authorities \": [Example of authorities to be given], \" jti \": \" unique id\", \" client_id \": \" enter client id\""
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:39
+msgid "]"
+msgstr "]"
+
+#: ../../Projects/MECM/MECM_Prerequisite.md:41
+msgid "Generate the jwt token and can be used to test the api."
+msgstr "Generate the jwt token and can be used to test the api."
+

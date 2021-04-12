@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/MECM Archetecture.md:2
+msgid "MECM架构"
+msgstr "MECM architecture"
+
+#: ../../Projects/MECM/MECM Archetecture.md:4
+msgid "![输入图片说明](/uploads/images/2020/0709/163347_f2c0fdc4_5504908.png \"mecm.png\")"
+msgstr "! [Enter picture description] (/uploads/images/2020/0709/163347_f2c0fdc4_5504908 .png \" mecm.png \")"
+
+#: ../../Projects/MECM/MECM Archetecture.md:6
+msgid "## AppO组件"
+msgstr "## AppO Part"
+
+#: ../../Projects/MECM/MECM Archetecture.md:8
+msgid "应用编排器。AppO 是采用ONAP的SO模块进行定制后实现的。对外提供应用生命周期管理功能，同时维护应用的整体视图，在应用部署时，编排器基于应用的部署策略，选择合适的边缘节点进行部署。 ![输入图片说明](/uploads/images/2020/0709/163805_0bb62e3c_5504908.png \"appo.png\")"
+msgstr "Application Choreographer.The AppO is implemented after customization using the ONAP's SO module.The invention provides the application life cycle management function while maintaining the overall view of the application, when the application is deployed, the orchestrator selects the right edge node to deploy based on the application deployment strategy. ! [Enter picture description] (/uploads/images/2020/0709/163805_0bb62e3c_5504908 .png \" appo .png \")"
+
+#: ../../Projects/MECM/MECM Archetecture.md:11 Archetecture.md:40 Archetecture.md:62
+msgid "### API Handler"
+msgstr "### API Handler"
+
+#: ../../Projects/MECM/MECM Archetecture.md:13
+msgid "对外提供北向接口."
+msgstr "the north-to-port interface is provided."
+
+#: ../../Projects/MECM/MECM Archetecture.md:15
+msgid "处理应用相关生命周期管理请求."
+msgstr "Processing of application related life cycle management requests."
+
+#: ../../Projects/MECM/MECM Archetecture.md:18
+msgid "### BPMN Execution Engine"
+msgstr "### BPMN Execution Engine"
+
+#: ../../Projects/MECM/MECM Archetecture.md:20
+msgid "BPMN执行引擎，管理和执行应用生命周期管理相关工作流."
+msgstr "BPMN executes engine, manages and performs application life cycle management related work streams."
+
+#: ../../Projects/MECM/MECM Archetecture.md:22
+msgid "管理应用生命周期状态。"
+msgstr "Manage the application life cycle status."
+
+#: ../../Projects/MECM/MECM Archetecture.md:25
+msgid "### Adapters"
+msgstr "### Adapters"
+
+#: ../../Projects/MECM/MECM Archetecture.md:27
+msgid "南向接口适配器，对接其它南向APPLCM等模块."
+msgstr "South-to-interface adapter, docking with other South-to-APPLCM modules."
+
+#: ../../Projects/MECM/MECM Archetecture.md:30
+msgid "BPMN工作流可以通过CAMUNDA Modler工具进行设计，如图所示："
+msgstr "The BPMN workflow can be designed with the CAMUNDA Modler tool as shown in the figure:"
+
+#: ../../Projects/MECM/MECM Archetecture.md:32
+msgid "![输入图片说明](/uploads/images/2020/0709/163844_b7433e0e_5504908.png \"ada.png\")"
+msgstr "! [Enter picture description] (/uploads/images/2020/0709/163844_b7433e0e_5504908 .png \" ada.png \")"
+
+#: ../../Projects/MECM/MECM Archetecture.md:34
+msgid "## APM组件"
+msgstr "## APM Part"
+
+#: ../../Projects/MECM/MECM Archetecture.md:36
+msgid "应用包管理模块。通过对ONAP的VF-C Catalog模块进行定制后实现。负责管理应用包的上载和维护，以及分发功能。同时和APPStore集成，能够从APPStore获取相关应用包。"
+msgstr "Application package management module.It is realized by customizing the VF-C Catalog module of ONAP.Responsible for managing the upload and maintenance of the application package, as well as the distribution function.Also integrated with the APPStore, the relevant application package can be obtained from the APPStore."
+
+#: ../../Projects/MECM/MECM Archetecture.md:38
+msgid "![输入图片说明](/uploads/images/2020/0709/163908_9a86e921_5504908.png \"apm.png\")"
+msgstr "! [Enter picture description] (/uploads/images/2020/0709/163908_9a86e921_5504908 .png \" apm.png \")"
+
+#: ../../Projects/MECM/MECM Archetecture.md:42
+msgid "对外提供API接口发布."
+msgstr "API interface is provided."
+
+#: ../../Projects/MECM/MECM Archetecture.md:44
+msgid "处理应用包管理相关接口请求."
+msgstr "Processing of application packet management related interface requests."
+
+#: ../../Projects/MECM/MECM Archetecture.md:47
+msgid "### Manager"
+msgstr "### Manager"
+
+#: ../../Projects/MECM/MECM Archetecture.md:49
+msgid "负责从APPStore获取应用包，处理应用上载和维护应用包状态。"
+msgstr "Responsible for obtaining application package from APPStore, processing application upload and maintenance application package status."
+
+#: ../../Projects/MECM/MECM Archetecture.md:52
+msgid "### Distributor"
+msgstr "### Distributor"
+
+#: ../../Projects/MECM/MECM Archetecture.md:54
+msgid "分发器负责将应用包分发到指定的边缘节点。"
+msgstr "The dispenser is responsible for distributing the application package to the specified edge node."
+
+#: ../../Projects/MECM/MECM Archetecture.md:57
+msgid "## AppLCM组件"
+msgstr "## AppLCM Part"
+
+#: ../../Projects/MECM/MECM Archetecture.md:59
+msgid "APPLCM组件会被部署在边缘节点，，负责单节点上的应用的生命周期管理。 ![输入图片说明](/uploads/images/2020/0709/163928_da6bb6c3_5504908.png \"applcm.png\")"
+msgstr "The APPLCM component is deployed on the edge node, responsible for the life cycle management of the application on the single node. ! [Enter picture description] (/uploads/images/2020/0709/163928_da6bb6c3_5504908 .png \" applcm.png \")"
+
+#: ../../Projects/MECM/MECM Archetecture.md:64
+msgid "对外发布API接口."
+msgstr "API interface is published."
+
+#: ../../Projects/MECM/MECM Archetecture.md:67
+msgid "处理中心MECM发送的应用生命周期管理请求。"
+msgstr "Application life cycle management request sent by processing centre MECM."
+
+#: ../../Projects/MECM/MECM Archetecture.md:70
+msgid "### BROKER"
+msgstr "### BROKER"
+
+#: ../../Projects/MECM/MECM Archetecture.md:72
+msgid "负责根据应用的形态和部署要求，选择对应的部署插件，进行应用的部署。"
+msgstr "The invention is responsible for selecting the corresponding deployment plug-in according to the application form and the deployment requirement to deploy the application."
+
+#: ../../Projects/MECM/MECM Archetecture.md:74
+msgid "## Policy组件"
+msgstr "## Policy Part"
+
+#: ../../Projects/MECM/MECM Archetecture.md:76
+msgid "![输入图片说明](/uploads/images/2020/0709/163949_7f01208e_5504908.png \"policy.png\")"
+msgstr "! [Enter picture description] (/uploads/images/2020/0709/16394949_7f01208e_5504908 .png \" policy.png \")"
+
+#: ../../Projects/MECM/MECM Archetecture.md:78
+msgid "APEX引擎中运行配置好的策略."
+msgstr "The APEX engine runs a configured strategy."
+
+#: ../../Projects/MECM/MECM Archetecture.md:80
+msgid "策略通过事件触发，并执行设置好的动作"
+msgstr "strategies are triggered by events and do a setup good"
+

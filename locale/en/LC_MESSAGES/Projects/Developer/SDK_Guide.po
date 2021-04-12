@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/Developer/SDK_Guide.md:2
+msgid "SDK installation and use guide Guide"
+msgstr "SDK installation and use guide Guide"
+
+#: ../../Projects/Developer/SDK_Guide.md:4
+msgid "### 概述"
+msgstr "### Overview"
+
+#: ../../Projects/Developer/SDK_Guide.md:6
+msgid "开发者平台集成了API多语言SDK的生成，通过Swagger Codegen组件自动生成API的客户端源码，本地安装后更加方便的调用edgegallery平台提供的API能力，目前支持python、java、go语言。"
+msgstr "The developer platform integrates the API multi-language SDK generation, automatically generating the API's client source code via the Swagger Codegen component, the API capability provided by the locally installed and more convenient call edgegrelery platform, and currently supports python, java, go language."
+
+#: ../../Projects/Developer/SDK_Guide.md:8
+msgid "### 安装指导 #### 源码下载"
+msgstr "### Install Guidance #### Source Download"
+
+#: ../../Projects/Developer/SDK_Guide.md:11
+msgid "登录edgegallery一站式集成开发平台，进入能力中心，打开需要的服务，选择语言进行SDK下载。"
+msgstr "Registering the edgegallery one-stop integrated development platform, entering the capability center, opening the required service, choosing the language for SDK download."
+
+#: ../../Projects/Developer/SDK_Guide.md:13
+msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/184412_af3b54ee_7625288.png \"屏幕截图.png\")"
+msgstr "! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/184412_af3b54ee_7625288.png \" Screen screenshot .png \")"
+
+#: ../../Projects/Developer/SDK_Guide.md:15
+msgid "#### JAVA语言SDK源码安装"
+msgstr "#### JAVA Language SDK Source Installation"
+
+#: ../../Projects/Developer/SDK_Guide.md:17
+msgid "你要先将maven安装到电脑上，配置上环境变量，path直接为maven地址/bin即可 修改maven的setting文件 目录自己对应：D:\\apache-maven-3.5.0-bin\\apache-maven-3.5.0\\conf下的settings.xml 大概在56行左右"
+msgstr "You have to install maven onto your computer, configure an environment variable, path directly to the maven address /bin to modify the maven settings document directory itself: settings.xml under D:\\apache-maven-3.5.0-bin \\apache-maven-3.5.0\\conf approximately 56 lines"
+
+#: ../../Projects/Developer/SDK_Guide.md:22
+msgid "<!-- 设置本地地址 -->"
+msgstr "<! -- set local address -- >"
+
+#: ../../Projects/Developer/SDK_Guide.md:22
+msgid "<localRepository>D:\\apache-maven-3.5.0-bin\\repostory</localRepository>"
+msgstr "<localRepository>D: \\apache-maven-3.5.0-bin \\repostory</localRepository>"
+
+#: ../../Projects/Developer/SDK_Guide.md:24
+msgid "不要着急打包，这里有个小的环节需要注意下，不然你打的jar是不用在其他项目引用的！ 在你的项目pom文件底部把这个东西plugin注释掉，这个是创建项目原带的"
+msgstr "Don't rush to pack. There is a small link here that needs attention. Otherwise, you don't have to quote from other projects! At the bottom of your project pod document, this thing is pluggable. This is the original version of the project"
+
+#: ../../Projects/Developer/SDK_Guide.md:27
+msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/184520_07df5a09_7625288.png \"屏幕截图.png\")"
+msgstr "! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/184520_07df5a09_7625288.png \" Screen screenshot .png \")"
+
+#: ../../Projects/Developer/SDK_Guide.md:29
+msgid "然后进行打包"
+msgstr "and pack it."
+
+#: ../../Projects/Developer/SDK_Guide.md:31
+msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/184540_8bf0f0f1_7625288.png \"屏幕截图.png\")"
+msgstr "! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/184540_8bf0f0f1_7625288.png \" Screen screenshot .png \")"
+
+#: ../../Projects/Developer/SDK_Guide.md:33
+msgid "打包完事之后，我们在我们项目的target找到我们的jar"
+msgstr "After the packaging is done, we find our jar at the target of our project"
+
+#: ../../Projects/Developer/SDK_Guide.md:35
+msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/184555_effdac74_7625288.png \"屏幕截图.png\")"
+msgstr "! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/184555_effdac74_7625288.png \" Screen screenshot .png \")"
+
+#: ../../Projects/Developer/SDK_Guide.md:37
+msgid "mvn命令打包的jar放入到我们的本地mvn仓库。"
+msgstr "The mvn command packaged jar is put in to our local mvn warehouse."
+
+#: ../../Projects/Developer/SDK_Guide.md:39
+msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/184636_9e80e525_7625288.png \"屏幕截图.png\") ![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/184717_f4f21403_7625288.png \"屏幕截图.png\")"
+msgstr "! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/184636_9e80e525_7625288.png \" Screen screenshot .png \") ! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/184717_f4f21403_7625288.png \" Screen screenshot .png \")"
+
+#: ../../Projects/Developer/SDK_Guide.md:42
+msgid "这里我们写完注意以下几个我们填写的参数记住，我们去我们的仓库中查看一下：发现已经将包准备好了"
+msgstr "So here we are finished with a few of the following parameters that we fill in, remember, we go to our warehouse and look at it, and find that the bag is ready."
+
+#: ../../Projects/Developer/SDK_Guide.md:44
+msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/184732_9a81c89e_7625288.png \"屏幕截图.png\")"
+msgstr "! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/184732_9a81c89e_7625288.png \" Screen screenshot .png \")"
+
+#: ../../Projects/Developer/SDK_Guide.md:46
+msgid "第四步 在使用项目中进行引用 在我们目标项目中pom下放入以下依赖"
+msgstr "The fourth step is to be used in the use of the project to be placed under the pom under our target item"
+
+#: ../../Projects/Developer/SDK_Guide.md:51
+msgid "<dependency>"
+msgstr "<dependency>"
+
+#: ../../Projects/Developer/SDK_Guide.md:50
+msgid "<groupId>com.edgegallery.test</groupId> <artifactId>edgegallery-test</artifactId> <version>1.0</version>"
+msgstr "<groupId>com.edgegallery.est</groupId> <artifactId>edgegallery-test</artifactId> <version>1.0</version>"
+
+#: ../../Projects/Developer/SDK_Guide.md:53
+msgid "</dependency>"
+msgstr "</dependency>"
+
+#: ../../Projects/Developer/SDK_Guide.md:55
+msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/184931_603429e9_7625288.png \"屏幕截图.png\")"
+msgstr "! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/184931_603429e9_7625288.png \" Screen screenshot .png \")"
+
+#: ../../Projects/Developer/SDK_Guide.md:57
+msgid "这下我们就可以直接使用里面的方法然后导包就ok了"
+msgstr "Now we can just use the method inside and then guide the bag."
+
+#: ../../Projects/Developer/SDK_Guide.md:59
+msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/184947_ec120e7b_7625288.png \"屏幕截图.png\")"
+msgstr "! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/184947_ec120e7b_7625288.png \" Screen screenshot .png \")"
+
+#: ../../Projects/Developer/SDK_Guide.md:61
+msgid "#### PYTHON语言SDK源码安装"
+msgstr "#### PYTHON Language SDK Source Installation"
+
+#: ../../Projects/Developer/SDK_Guide.md:63
+msgid "打开相应的目录，执行以下命令："
+msgstr "Open the appropriate directory and execute the following command:"
+
+#: ../../Projects/Developer/SDK_Guide.md:65
+msgid "python setup.py install"
+msgstr "python setup.py install"
+
+#: ../../Projects/Developer/SDK_Guide.md:67
+msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/185809_0440a8be_7625288.png \"屏幕截图.png\") ![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/185836_d50b27ef_7625288.png \"屏幕截图.png\")"
+msgstr "! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/185809_0440a8be_7625288.png \" Screen screenshot .png \") ! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/185836_d50b27ef_7625288.png \" Screen screenshot .png \")"
+
+#: ../../Projects/Developer/SDK_Guide.md:70
+msgid "安装成功后，直接导入包名即可使用"
+msgstr "When the installation is successful, it can be used directly in the bag name"
+
+#: ../../Projects/Developer/SDK_Guide.md:72
+msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1215/190011_c58957d6_7625288.png \"屏幕截图.png\")"
+msgstr "! [Enter picture description] (https://images.gitee.com/uploads/images/2020/1215/190011_c58957d6_7625288.png \" Screen screenshot .png \")"
+
