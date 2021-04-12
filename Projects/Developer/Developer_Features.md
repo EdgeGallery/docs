@@ -78,13 +78,9 @@ Developer 特性清单
 - 配置部署文件
 
     提供两种配置部署文件方式：
-    - 用户在本地编辑好后直接上传，平台提供基本的校验功能；有关配置文件的格式，可以参考界面提供的demo样例，该样例可以直接上传使用。
-    
-![](/uploads/images/2021/developer/deploy-two-file.PNG "deploy-two-file.PNG")
-    
-    - 可视化配置文件，目前版本支持的部署类型为Pod和Service。
+    - 用户在本地编辑好后直接上传，平台提供基本的校验功能；有关配置文件的格式，可以参考界面提供的demo样例，该样例可以直接上传使用。![](/uploads/images/2021/developer/deploy-two-file.PNG "deploy-two-file.PNG")
 	
-![](/uploads/images/2021/developer/deploy-two-config.PNG "deploy-two-config.PNG")
+    - 可视化配置文件，目前版本支持的部署类型为Pod和Service。![](/uploads/images/2021/developer/deploy-two-config.PNG "deploy-two-config.PNG")
     
 
 - 部署调测
