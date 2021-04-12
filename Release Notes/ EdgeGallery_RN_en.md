@@ -104,8 +104,7 @@ The following vulnerabilities exist in the third-party open-source components of
  
  
 -Developer:
- 
- 
+
 | Component | Version | CVE |
 |---|---|---|
 | netty-transport | 4.1.36.Final | CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612 |
@@ -116,11 +115,8 @@ The following vulnerabilities exist in the third-party open-source components of
 | mybatis-spring | 2.0.6 | CVE-2020-26945 |
 | mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
 | spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
- 
- 
-- ATP
- 
 
+- ATP
 
 | Component | Version | CVE |
 |---|---|---|
@@ -131,11 +127,9 @@ The following vulnerabilities exist in the third-party open-source components of
 | mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
 | spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
 | spring-core | 5.1.8.RELEASE | CVE-2020-5398 |
- 
- 
-- User-mgmt:
- 
 
+
+- User-mgmt:
 
 | Component | Version | CVE |
 | ----------------------------------------------------- | ------------- | --------------------------- |
@@ -144,8 +138,8 @@ The following vulnerabilities exist in the third-party open-source components of
 | mybatis-spring | 2.0.6 | CVE-2020-26945 |
 | mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
 | spring-security-core | 5.3.8.RELEASE | CVE-2018-1258 |
- 
- 
+
+
 **Upgrade Notes**
  
 N/A
