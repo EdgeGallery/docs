@@ -11,7 +11,7 @@ MECM Product Document
 
 ### 用户指南 
 ！！！注意事项：目前由于客户端和服务端协议问题，用户访问可能存在证书异常，如存在数据获取异常问题，建议先在浏览器访问[https://mecm.edgegallery.org:30202](https://mecm.edgegallery.org:30202)，然后同意继续访问，然后回到MECM界面刷新即可，此问题会在下个版本解决。
-![输入图片说明](/uploads/images/2021/mecm/1.png) 
+![](/uploads/images/2021/mecm/1.png) 
 ![输入图片说明](/uploads/images/2021/mecm/2.png) 
 
 #### 1. 概述  
