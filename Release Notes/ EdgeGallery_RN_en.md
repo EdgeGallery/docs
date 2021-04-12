@@ -422,7 +422,7 @@ N/A
 
 **Other**
 
-After the review of the security working group, the problem sheet of plugins warehouse [i1xa0n](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_Id = i1xa0n) will be repaired in the form of patch after the release of version V0.9. Please refer to the security working group [minutes of meeting](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd) for details.
+After the review of the security working group, the problem sheet of plugins warehouse [i1xa0n](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_Id=i1xa0n) will be repaired in the form of patch after the release of version V0.9. Please refer to the security working group [minutes of meeting](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd) for details.
 
 -----------------------------------------------------------------------------
 
@@ -509,7 +509,7 @@ The following vulnerabilities exist in the third-party open source components of
 | lodash | 4.17.13 | CVE-2020-8203 |
 | minimatch | 3.0.4 | NPM-118 |
 
- 
+
 - User-mgmt:
 
 | Component | Version | CVE |
@@ -530,7 +530,7 @@ The following vulnerabilities exist in the third-party open source components of
 
 
 - MECM:
- 
+
 | Component | Version | CVE |
 |---|---|---|
 | lodash | 4.17.13 | CVE-2020-8203 |
