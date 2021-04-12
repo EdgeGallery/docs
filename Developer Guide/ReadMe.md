@@ -3,11 +3,11 @@
 
 ## EdgeGallery 安装指导
 
-[EdgeGallery离线安装指导](https://gitee.com/OSDT/dashboard/projects/edgegallery/installer/blob/Release-v1.0/offline/README_cn.md)
+[EdgeGallery离线安装指导](https://gitee.com/edgegallery/installer/blob/master/offline/README-cn.md)
 
 ## EdgeGallery 证书更新
 
-[EdgeGallery证书更新指导](https://gitee.com/OSDT/dashboard/projects/edgegallery/docs/blob/Release-v1.0/certificate_update/edgegallery_certificate_update)
+[EdgeGallery证书更新指导](https://gitee.com/edgegallery/docs/blob/master/certificate_update/edgegallery_certificate_update)
 
 ## 如何贡献
 - [APPStore](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_Contribution%2Emd)
