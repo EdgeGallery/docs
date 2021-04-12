@@ -326,25 +326,25 @@ Version: v0.9.1
 
 **Bug Fixes**
 
-  See [edgegallery v0.9.1 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
+  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
 
 **Known Issues**
 
-  See [edgegallery v0.9.1 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
+  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
 
 **Security notes**
 
 *Fixed Security Issues*
 
-  See [edgegallery v0.9.1 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
+  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
 
 *Known Security Issues*
 
-  See [edgegallery v0.9.1 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
+  See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)
 
 *Known Vulnerabilities in Used Modules*
 
-The following vulnerabilities exist in the third-party open source components of edgegallelry v0.9.1, which need to be fixed by users themselves:
+The following vulnerabilities exist in the third-party open source components of EdgeGallelry v0.9.1, which need to be fixed by users themselves:
 
 - Appstore:
 
@@ -425,15 +425,15 @@ N/A
 After the review of the security working group, the problem sheet of plugins warehouse [i1xa0n](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_Id = i1xa0n) will be repaired in the form of patch after the release of version V0.9. Please refer to the security working group [minutes of meeting](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd) for details.
  
 -----------------------------------------------------------------------------
- 
+
 Version: v0.9
 --------------
- 
+
 - Release Date: 2020-09-30
 - Image Version: v0.9
- 
+
 **List of new open source warehouses**
- 
+
 |Module | name | type | URL | description|
 |-----------------|-----------------|--------|-----------------------------------------------|----------------------|
 |Helm charts | helm charts | deployment|https://gitee.com/edgegallery/helm-charts |Edgegallery deployment script|
@@ -451,46 +451,45 @@ Version: v0.9
 |Appstore | Appstore be | product warehouse|https://gitee.com/edgegallery/appstore-be |App store background|
 |Platform Mgmt | platform Mgmt | product warehouse|https://gitee.com/edgegallery/platform-mgmt |Install K8 / docker|
 |Doc | doc | product warehouse|https://gitee.com/edgegallery/docs |Documentation|
- 
- 
+
+
 **New Features**
- 
-[* * detailed description of demand / release plan * *]（https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)
- 
-*All in one MEP / mecm network isolation
-*MEP supports DNS configuration
-*Support all in one deployment
-*Multi node offline deployment
-*Nine dimensions of security optimization
-*Mecm interface / topology management / resource management optimization
-*(POC) kubeedge integration verification
- 
- 
+
+[**detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)
+
+* All in one MEP / mecm network isolation
+* MEP supports DNS configuration
+* Support all in one deployment
+* Multi node offline deployment
+* Nine dimensions of security optimization
+* Mecm interface / topology management / resource management optimization
+* (POC) kubeedge integration verification
+
 **Bug Fixes**
- 
-  See [edgegallery V0.9 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)
- 
+
+  See [edgegallery V0.9 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)
+
 **Known Issues**
- 
-  See [edgegallery V0.9 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)
- 
+
+  See [edgegallery V0.9 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)
+
 **Security notes**
- 
+
 *Fixed Security Issues*
- 
-  See [edgegallery V0.9 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)
- 
+
+  See [edgegallery V0.9 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)
+
 *Known Security Issues*
- 
-  See [edgegallery V0.9 test report]（https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)
- 
+
+  See [edgegallery V0.9 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)
+
 *Known Vulnerabilities in Used Modules*
- 
+
 The following vulnerabilities exist in the third-party open source components of edgegallelry V0.9, which need to be fixed by users themselves:
- 
+
+
 - Appstore:
- 
- 
+
 | Component | Version | CVE |
 |---|---|---|
 | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -521,32 +520,32 @@ The following vulnerabilities exist in the third-party open source components of
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
 | lodash | 4.17.20 | NPM-1065, NPM-557, NPM-7823 |
 | minimatch | 3.0.4 | NPM-118 |
- 
+
+
 - Website-gateway:
- 
- 
+
 | Component | Version | CVE |
 |---|---|---|
 | log4j | 1.2.17 | CVE-2019-17571 |
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
- 
+
+
 - MECM:
- 
  
 | Component | Version | CVE |
 |---|---|---|
 | lodash | 4.17.13 | CVE-2020-8203 |
 | minimatch | 3.0.4 | NPM-118 |
- 
- 
+
+
 **Upgrade Notes**
- 
+
 N/A
- 
+
 **Deprecation Notes**
- 
+
 N/A
- 
+
 **Other**
- 
- After the review of the security working group, the problem sheet of plugins warehouse [i1xa0n]（https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_Id = i1xa0n) will be repaired in the form of patch after the release of version V0.9. Please refer to the security working group [minutes of meeting] for details（https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)
+
+ After the review of the security working group, the problem sheet of plugins warehouse [i1xa0n](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_Id = i1xa0n) will be repaired in the form of patch after the release of version V0.9. Please refer to the security working group [minutes of meeting](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd) for details.
