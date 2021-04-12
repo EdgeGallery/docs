@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MECM/AppRule_Interface.md:2
+msgid "Application rule manager Interface"
+msgstr "Application rule manager Interface"
+
+#: ../../Projects/MECM/AppRule_Interface.md:3
+msgid "The document is for the Application rule manager project, there is one part of interfaces in the project."
+msgstr "The document is for the Application rule manager project, there is one part of interfaces in the project."
+
+#: ../../Projects/MECM/AppRule_Interface.md:5
+msgid "### Queries liveness & readiness Retrieves data for liveness & readiness ``` Resource URI: /apprulemgr/v1/health Method: GET ```"
+msgstr "### Queries liveness & readiness Retrieves data for revenue & readiness ` ` ` Resource URI: /apprulemgr/v1/health Method: GET ` ` `"
+
+#: ../../Projects/MECM/AppRule_Interface.md:12
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td></td> <td></td> </tr> </tr> </tbody> </table>"
+
+#: ../../Projects/MECM/AppRule_Interface.md:35 ../../Projects/MECM/AppRule_Interface.md:148 ../../Projects/MECM/AppRule_Interface.md:199
+msgid "Example response: ``` 200 OK ```"
+msgstr "Example response: ` ` 200 OK ` ` `"
+
+#: ../../Projects/MECM/AppRule_Interface.md:40
+msgid "### Configures app rule Application Rule Config create request"
+msgstr "### Configurations app rule Application Rule Config create request"
+
+#: ../../Projects/MECM/AppRule_Interface.md:43
+msgid "``` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration Method: POST ```"
+msgstr "` ` ` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration Method: POST ` ` `"
+
+#: ../../Projects/MECM/AppRule_Interface.md:48 ../../Projects/MECM/AppRule_Interface.md:109
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> <td></td> </tr> <tr> <td>tenantId</td> <td>tenant Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appInstanceId</td> <td>appInstance Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> <td></td> </tr> <tr> <td>tenantId</td> <td>tenant Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appInstanceId</td> <td>appInstance Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tbody> </table> </table>"
+
+#: ../../Projects/MECM/AppRule_Interface.md:87
+msgid "Example response: ``` 200 OK ["
+msgstr "Example response: ` ` 200 OK ["
+
+#: ../../Projects/MECM/AppRule_Interface.md:91 ../../Projects/MECM/AppRule_Interface.md:98
+msgid "\"response\": {}"
+msgstr "\" response \": {}"
+
+#: ../../Projects/MECM/AppRule_Interface.md:93 ../../Projects/MECM/AppRule_Interface.md:100
+msgid "]"
+msgstr "]"
+
+#: ../../Projects/MECM/AppRule_Interface.md:95
+msgid "``` 201 Created ["
+msgstr "` ` ` 201 Created ["
+
+#: ../../Projects/MECM/AppRule_Interface.md:102
+msgid "### Updates app rule configuration Updates app rule configuration ``` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration Method: PUT ```"
+msgstr "### Updates app rule configuration Updates app rule configuration ` ` ` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration Method: PUT ` ` `"
+
+#: ../../Projects/MECM/AppRule_Interface.md:153
+msgid "### Deletes app rule configuration Deletes app rule configuration ``` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration Method: DELETE ```"
+msgstr "### Deletes app rule configuration The rule configuration ` ` ` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration Method: DELETE ` ` `"
+
+#: ../../Projects/MECM/AppRule_Interface.md:160
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> <td></td> </tr> <tr> <td>tenantId</td> <td>tenant Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appInstanceId</td> <td>appInstance Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> <td></td> </tr></td> <tr> <td>tenantId</td> <td>tenant Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appInstanceId</td> <td>appInstance Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tbody> </table> </table>"
+
+#: ../../Projects/MECM/AppRule_Interface.md:204
+msgid "### Query Returns app rule configuration ``` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration Method: GET ```"
+msgstr "### Query Returnsapp rule configuration ` ` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration Method: GET ` ` `"
+
+#: ../../Projects/MECM/AppRule_Interface.md:211
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> <td></td> </tr> <tr> <td>appInstanceId</td> <td>appInstance Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenantId</td> <td>tenant Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> <td></td> </tr> <tr> <td>appInstanceId</td> <td>appInstance Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>tenantId</td> <td>tenant Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tbody> </table> </table>"
+
+#: ../../Projects/MECM/AppRule_Interface.md:250 ../../Projects/MECM/AppRule_Interface.md:296 ../../Projects/MECM/AppRule_Interface.md:342
+msgid "Example response: ``` 200 OK"
+msgstr "Example response: ` ` ` 200 OK"
+
+#: ../../Projects/MECM/AppRule_Interface.md:253 ../../Projects/MECM/AppRule_Interface.md:299 ../../Projects/MECM/AppRule_Interface.md:345
+msgid "{"
+msgstr "{"
+
+#: ../../Projects/MECM/AppRule_Interface.md:254 ../../Projects/MECM/AppRule_Interface.md:300 ../../Projects/MECM/AppRule_Interface.md:346
+msgid "{}"
+msgstr "{}"
+
+#: ../../Projects/MECM/AppRule_Interface.md:255 ../../Projects/MECM/AppRule_Interface.md:301 ../../Projects/MECM/AppRule_Interface.md:347
+msgid "}"
+msgstr "}"
+
+#: ../../Projects/MECM/AppRule_Interface.md:256 ../../Projects/MECM/AppRule_Interface.md:302 ../../Projects/MECM/AppRule_Interface.md:348
+msgid "```"
+msgstr "` ` `"
+
+#: ../../Projects/MECM/AppRule_Interface.md:258
+msgid "### Synchronize added or update records Synchronize added or update records ``` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/appd_configuration/sync_updated Method: GET ```"
+msgstr "### Synchronize added or update records Synchronize added or update records ` ` ` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/appd_configuration/sync_updated Method: GET ` ` `"
+
+#: ../../Projects/MECM/AppRule_Interface.md:265 ../../Projects/MECM/AppRule_Interface.md:311
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> <td></td> </tr> <tr> <td>tenantId</td> <td>tenant Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt Token</td> <td></td> </tr> <tr> <td>tenantId</td> <td>tenant Id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </table> </tbody> </table>"
+
+#: ../../Projects/MECM/AppRule_Interface.md:304
+msgid "### Synchronize deleted records Synchronize deleted records ``` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/appd_configuration/sync_deleted Method: GET ```"
+msgstr "### Synchronize deleted records Synchronize deleted records ` ` ` Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/appd_configuration/sync_deleted Method: GET ` ` `"
+

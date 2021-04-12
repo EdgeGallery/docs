@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../index.rst:8
+msgid "EdgeGallery Home"
+msgstr "EdgeGallery Home"
+
+#: ../../index.rst:11
+msgid "Get Started"
+msgstr "Get Started"
+
+#: ../../index.rst:11
+msgid "Getting Started"
+msgstr "Getting Started"
+
+#: ../../index.rst:17
+msgid "Release Details"
+msgstr "Release Details"
+
+#: ../../index.rst:17
+msgid "Release Notes"
+msgstr "Release Notes"
+
+#: ../../index.rst:23
+msgid "Architecture introduction"
+msgstr "Architecture introductions"
+
+#: ../../index.rst:23
+msgid "Architecture"
+msgstr "Architecture"
+
+#: ../../index.rst:29
+msgid "Developer Guide"
+msgstr "Developer Guide"
+
+#: ../../index.rst:35
+msgid "AppStore"
+msgstr "AppStore"
+
+#: ../../index.rst:35
+msgid "Developer"
+msgstr "Developer"
+
+#: ../../index.rst:35
+msgid "MECM"
+msgstr "MECM"
+
+#: ../../index.rst:35
+msgid "MEP"
+msgstr "MEP"
+
+#: ../../index.rst:35
+msgid "User Management"
+msgstr "User Management"
+
+#: ../../index.rst:35
+msgid "ATP"
+msgstr "ATP"
+
+#: ../../index.rst:35
+msgid "Projects"
+msgstr "Projects"
+
+#: ../../index.rst:46
+msgid "Documentation Bug Report"
+msgstr "Documentation Bug Report"
+
+#: ../../index.rst:2
+msgid "Welcome to EdgeGallery's documentation!"
+msgstr "Welcombe to EdgeGallery's documentation!"
+
+#: ../../index.rst:4
+msgid "EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边缘的资源、应 用、安全、管理的基础框架和网络开放服务的事实标准，并实现同公有云的互联互通。 在兼容边缘基础设施异构差异化的基础上，构建起统一的MEC应用生态系统。"
+msgstr "The EdgeGallery community focuses on the 5G edge computing scenario, building up resources for the MEC edge through open source collaboration, the fact that it should be used, secure, managed infrastructure and network open services, and achieve connectivity to public clouds. Building a unified MEC application ecosystem on the basis of heterogeneous infrastructure heterogeneous differentiation."
+

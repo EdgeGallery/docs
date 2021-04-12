@@ -1,0 +1,23 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/MEP/MEP Matrix.md:1 Port
+msgid "# MEP Port Matrix | Module              | Port number   | Description                          | | ------------------- | ------------- | ------------------------------------ | | mep-server | 8088 | mep-app related configurations | | mep-auth | 10443 | app can apply token | | dns-server | 53 | dns resolution | | dns-server | 8080 | dns resource management interface |"
+msgstr "# MEP Port Matrix | Module | Port number | Description | | ------------------- | ------------- | ------------------------------------ | | | mep-server | 8088 | mep-app related configurations | | mep-auth | 10443 | app can apply token | | dns-server | 53 | dns resolution | | dns-server | 8080 | dns resource management interface |"
+

@@ -1,0 +1,491 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Release EdgeGallery_RN_en.md:6 Notes/
+msgid "Release Notes"
+msgstr "Release Notes"
+
+#: ../../Release EdgeGallery_RN_en.md:9 Notes/
+msgid "EdgeGallery Introduction"
+msgstr "EdgeGallery Introduction"
+
+#: ../../Release EdgeGallery_RN_en.md:10 Notes/
+#, python-format
+msgid "Edgegallery is a 5g MEC open source edge computing platform. It is an end-to-end solution for MEC applications. In addition to providing the basic MEP platform to support running applications, it also provides a management system (MEC Manager), i.e., minimal supports for some functions of MEPM and MEAO. EdgeGallery can manage the end-to-end life cycle of applications, provides toolchains to easy application development, and support smooth cross-platform migration and tuning. For application developers, it provides a complete ide and integrated verification environment for application development and provides a one-stop-dev experience. At the same time, the app store component provides a standard verification process for applications developed by EdgeGallery developers. - [Project Introduction](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd) - [Developer's Guide](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
+msgstr "Edgegallery is a 5 g MEC open source edge computing platform. It is an end-to-end solution for MEC applications. In addition to providing the basic MEP platform to support running applications, it also provides a management system (MEC Manager), i.e., minimum supports for some functions of MEPM and MEAO. EdgeGallery can manage the end-end life cycle of applications, provides toolchaines to easy application development, and support small cross-platform migration and uning. For application developers, it provides a complete ide and integrated verification environment for application development and provides a one-stop-dev experience. At the same time, the app store component provides a standard verification process for applications developed by EdgeGallery developers. - [Project Introduction] (https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)-[Developer 's Guide] (https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
+
+#: ../../Release EdgeGallery_RN_en.md:15 Notes/
+msgid "Version: v1.1.0"
+msgstr "Version: v1.1.0"
+
+#: ../../Release EdgeGallery_RN_en.md:17 Notes/
+msgid "Release Date: 2020-04-02"
+msgstr "Release Date: 2020-04-02"
+
+#: ../../Release EdgeGallery_RN_en.md:18 Notes/
+msgid "Image Version: v1.1.0"
+msgstr "Image Version: v1.1.0"
+
+#: ../../Release EdgeGallery_RN_en.md:20 EdgeGallery_RN_en.md:327 EdgeGallery_RN_en.md:634 EdgeGallery_RN_en.md:966 Notes/
+msgid "**List of new open source warehouses**"
+msgstr "** List of new open source warehouuses * *"
+
+#: ../../Release EdgeGallery_RN_en.md:22 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Module</th> <th align=\"center\">name</th> <th>type</th> <th>URL</th> <th>description</th> </tr> </thead> <tbody> <tr> <td>Example applications</td> <td align=\"center\">example apps</td> <td>POC</td> <td>https://gitee.com/edgegallery/example-apps</td> <td>Provide a sample app based on edgegallery</td> </tr> <tr> <td>Edgegallery front component</td> <td align=\"center\">eg view</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/eg-view</td> <td>Provide normalized edgegallery front end components</td> </tr> <tr> <td>Edgegallery testing platform</td> <td align=\"center\">edget</td> <td>POC</td> <td>https://gitee.com/edgegallery/edgeT</td> <td>Provide local testing toolchain for users</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Module</th> <th sign =\"center \" >name</th> <th>type</th> <th>URL</th> <th>description</th> </tr> </thead> <tbody> <tr> <td> <td>applications</td> <td align =\"center \" >example apps</td> <td>POC</td> <td>https://gitee.com/edgegallery/example-apps</td> <td>Provide a sample app based on edgeegallery</td> </tr> <tr> <td>Edgegallery front component</td> <td align =\"center \" >eg view</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/eg-view</td> <td>Provide normalized edgeegalery front end components</td> </tr> <tr> <td>Edgegrid testing platform</td> <td align =\"center \" >edget</td> <td>POC</td> <td>https://gitee.com/edgegallery/edgeT</td> <td>Provide local testing toolchain for</td></td> </tr> </tr> </tbody> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:57 EdgeGallery_RN_en.md:372 EdgeGallery_RN_en.md:671 EdgeGallery_RN_en.md:1087 Notes/
+msgid "**New Features**"
+msgstr "** New Features * *"
+
+#: ../../Release EdgeGallery_RN_en.md:59 Notes/
+msgid "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)"
+msgstr "[* * * Detailed description of release plan** ](https: //gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)"
+
+#: ../../Release EdgeGallery_RN_en.md:62 Notes/
+msgid "[AI software and hardware capability] supports the hardware of shengteng / atlas and open API"
+msgstr "[AI software and hardware capability] supports the hardware of shengteng/atlas and open API"
+
+#: ../../Release EdgeGallery_RN_en.md:63 Notes/
+msgid "AI image restoration, edge detection, cartoon image generation, image coloring, object classification, target detection, etc;"
+msgstr "AI image restoreation, edge detection, cardon image generation, image coloration, object classification, target detection, etc;"
+
+#: ../../Release EdgeGallery_RN_en.md:64 Notes/
+msgid "Cross-platform support supports the incubation integration of virtual machine applications based on openstack and container applications based on k8s"
+msgstr "Cross-platform support supports the incident integration of virtual machine applications based on openstack and container applications based on k8s"
+
+#: ../../Release EdgeGallery_RN_en.md:65 Notes/
+msgid "[Experience optimization]"
+msgstr "[Experience optimization]"
+
+#: ../../Release EdgeGallery_RN_en.md:66 Notes/
+msgid "App classification, APP recommendation and dynamic refresh of popular products"
+msgstr "App classification, APP revision and dynamic refresh of opiular products"
+
+#: ../../Release EdgeGallery_RN_en.md:69 Notes/
+msgid "[Edge native support]"
+msgstr "[Edge native support]"
+
+#: ../../Release EdgeGallery_RN_en.md:68 Notes/
+msgid "IAAs / PAAS / applications support on-demand deployment and automatic generation of application framework"
+msgstr "IAds/PAAS/applications support on demand and automatic generation of application framework"
+
+#: ../../Release EdgeGallery_RN_en.md:69 Notes/
+msgid "Visualization of MEP microservice Management Architecture"
+msgstr "Visualization of MEP microservice Management Architecture"
+
+#: ../../Release EdgeGallery_RN_en.md:70 Notes/
+msgid "Provide edgegallery applet, design state, etc"
+msgstr "Provide edgegallery applet, design state, etc"
+
+#: ../../Release EdgeGallery_RN_en.md:71 Notes/
+msgid "[API management] matching of ETSI MEC API, 3GPP CAPIF and ascension capability"
+msgstr "[API management] matching of ETSI MEC API, 3GPP CAPIF and ascendsion capability"
+
+#: ../../Release EdgeGallery_RN_en.md:73 Notes/
+msgid "[Security, user management]"
+msgstr "[Security, user management]"
+
+#: ../../Release EdgeGallery_RN_en.md:73 Notes/
+msgid "Divide power and domain to control the key operation and data"
+msgstr "Divide power and domain to control the key operation and data"
+
+#: ../../Release EdgeGallery_RN_en.md:74 Notes/
+msgid "Application remote login (such as VNC) supports security protocol login"
+msgstr "Application remote login (such as VNC) supportts security protocol login"
+
+#: ../../Release EdgeGallery_RN_en.md:76 Notes/
+msgid "[Community laboratory enhancement]"
+msgstr "[Community collaboratory enhanancement]"
+
+#: ../../Release EdgeGallery_RN_en.md:76 Notes/
+msgid "Provide real E2E 5g verification environment"
+msgstr "Provide real E2E 5g verification environment"
+
+#: ../../Release EdgeGallery_RN_en.md:77 Notes/
+msgid "One-click application, one-click release and visual management of resources"
+msgstr "One-click application, one-click release and virtual management of resources"
+
+#: ../../Release EdgeGallery_RN_en.md:80 Notes/
+msgid "[Application innovation]"
+msgstr "[Application innovation]"
+
+#: ../../Release EdgeGallery_RN_en.md:79 EdgeGallery_RN_en.md:391 Notes/
+msgid "Appstore federation can register external appstores, and applications can push and pull each other between different appstores"
+msgstr "Appstore fefcan register external appstores, and applications can push and pull each other between different appstores"
+
+#: ../../Release EdgeGallery_RN_en.md:80 Notes/
+msgid "Completed 80 + application integration, landing 17 + innovation base and postgraduate courses of Xi&apos; an University of Electronic Science and technology"
+msgstr "Completed 80 + application integration, lading 17 + intrusion base and postgradeate courses of Xi ' an University of Electronic Science and technology"
+
+#: ../../Release EdgeGallery_RN_en.md:82 EdgeGallery_RN_en.md:398 EdgeGallery_RN_en.md:679 EdgeGallery_RN_en.md:1099 Notes/
+msgid "**Bug Fixes**"
+msgstr "** Bug Fixes * *"
+
+#: ../../Release EdgeGallery_RN_en.md:84 EdgeGallery_RN_en.md:89 Notes/
+msgid "See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report.md)"
+msgstr "See [edgeegalery V1.1.0 test report] (https: //gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1 .1%20Test%20Report.md)"
+
+#: ../../Release EdgeGallery_RN_en.md:87 EdgeGallery_RN_en.md:402 EdgeGallery_RN_en.md:683 EdgeGallery_RN_en.md:1103 Notes/
+msgid "**Known Issues**"
+msgstr "** Known Isses * *"
+
+#: ../../Release EdgeGallery_RN_en.md:92 EdgeGallery_RN_en.md:406 Notes/
+msgid "**Security Notes**"
+msgstr "** Security Notes * *"
+
+#: ../../Release EdgeGallery_RN_en.md:94 EdgeGallery_RN_en.md:408 EdgeGallery_RN_en.md:689 EdgeGallery_RN_en.md:1109 Notes/
+msgid "*Fixed Security Issues*"
+msgstr "*Fixed Security Issues *"
+
+#: ../../Release EdgeGallery_RN_en.md:96 Notes/
+msgid "See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%20.md)"
+msgstr "See [edgeegalery V1.1.0 test report] (https: //gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1 .1/EG%20R1 .1%20Security%20Test%20Plan%20.md)"
+
+#: ../../Release EdgeGallery_RN_en.md:98 EdgeGallery_RN_en.md:412 EdgeGallery_RN_en.md:693 EdgeGallery_RN_en.md:1113 Notes/
+msgid "*Known Security Issues*"
+msgstr "*Known Security Issues *"
+
+#: ../../Release EdgeGallery_RN_en.md:100 Notes/
+#, python-format
+msgid "See [edgegallery V1.1.0 security test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report.md)"
+msgstr "See [edgeegalery V1.1.0 security test report] (https: //gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report.md)"
+
+#: ../../Release EdgeGallery_RN_en.md:102 EdgeGallery_RN_en.md:416 EdgeGallery_RN_en.md:697 EdgeGallery_RN_en.md:1117 Notes/
+msgid "*Known Vulnerabilities in Used Modules*"
+msgstr "*Known Vulnerabilities in Used Modules *"
+
+#: ../../Release EdgeGallery_RN_en.md:104 Notes/
+msgid "The following vulnerabilities exist in the third-party open-source components of EdgeGallelry V1.1.0, which need to be fixed by users themselves:"
+msgstr "The following Vulnerabilities exist in the third-party open-source components of EdgeGallary V1.1.0, which need to be fixed by users themselves:"
+
+#: ../../Release EdgeGallery_RN_en.md:106 EdgeGallery_RN_en.md:420 EdgeGallery_RN_en.md:701 EdgeGallery_RN_en.md:1121 Notes/
+msgid "Appstore:"
+msgstr "Appstore:"
+
+#: ../../Release EdgeGallery_RN_en.md:108 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>log4j</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>netty-transport</td> <td>4.1.36.Final</td> <td>CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612</td> </tr> <tr> <td>vertx-core</td> <td>3.9.4</td> <td>CVE-2019-17640</td> </tr> <tr> <td>docker-java-core</td> <td>3.2.7</td> <td>CVE-2019-13139 CVE-2019-13509 CVE-2019-16884 CVE-2019-5736</td> </tr> <tr> <td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>mybatis-spring</td> <td>2.0.6</td> <td>CVE-2020-26945</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.4</td> <td>CVE-2020-26945</td> </tr> <tr> <td>spring-jdbc</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-core</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td> <td>log4j</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>netty-transport</td> <td>4.1.36.Final</td> <td>CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2019-11612</td> </tr> <tr> <td>Vtx-core</td> <td>3.9.4</td> <td>CVE-2019-17640</td> </tr> <tr> <td>docker-java-core</td> <td>3.2.7</td> <td>CVE-2019-13139 CVE-2019-13509 CVE-2019-16884 CVE-2019-5736</td> </tr> <tr> <td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>mybatis-spring</td> <td>2.0.6</td> <td>CVE-2020-26945</td> </tr> <tr> <td>mybatis-spring-boot-boot</td> <td>2.1.4</td> <td>CVE-2020-26945</td> </tr> <tr> <td>spring-jdbc</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>sparing-security-core</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tr> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:165 EdgeGallery_RN_en.md:459 EdgeGallery_RN_en.md:770 Notes/
+msgid "Developer:"
+msgstr "Developer:"
+
+#: ../../Release EdgeGallery_RN_en.md:167 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-transport</td> <td>4.1.36.Final</td> <td>CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612</td> </tr> <tr> <td>vertx-core</td> <td>3.9.4</td> <td>CVE-2019-17640</td> </tr> <tr> <td>swagger-codegen-cli</td> <td>3.0.21</td> <td>CVE-2018-8088 CVE-2016-6199 CVE-2019-15052 CVE-2020-25649 CVE-2019-10086 CVE-2017-1000207 CVE-2017-1000208 CVE-2017-18640 CVE-2020-11979</td> </tr> <tr> <td>docker-java-core</td> <td>3.2.7</td> <td>CVE-2019-13139 CVE-2019-13509 CVE-2019-16884 CVE-2019-5736</td> </tr> <tr> <td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>mybatis-spring</td> <td>2.0.6</td> <td>CVE-2020-26945</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.4</td> <td>CVE-2020-26945</td> </tr> <tr> <td>spring-security-core</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td>netty-transport</td> <td>4.1.36.Final</td> <td>CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612</td> </tr> <tr> Overx <td>core</td> <td>3.9.4</td> <td>CVE-2019-17640</td> </tr> <tr> <td>swagger-codegen-cli</td> <td>3.0.21</td> <td>CVE-2018-8088 CVE-2019-6199 CVE-2019-15052 CVE-2020-25649 CVE-2019-10086 CVE-2017-1000207 CVE-2017-1000208 CVE-2017-11979</td> </tr> <tr> <td>docker-java-core</td> <td>3.2.7</td> <td>CVE-2019-13139 CVE-2019-13509 CVE-2019-16884 CVE-2019-5736</td> </tr> <tr> <td>-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>mybatis-spring</td> <td>2.0.6</td> <td>CVE-2020-26945</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.4</td> <td>CVE-2020-26945</td> </tr> <tr> <td>sparing-security-core</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:219 EdgeGallery_RN_en.md:498 Notes/
+msgid "ATP"
+msgstr "ATP"
+
+#: ../../Release EdgeGallery_RN_en.md:221 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-transport</td> <td>4.1.36.Final</td> <td>CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612</td> </tr> <tr> <td>vertx-core</td> <td>3.9.4</td> <td>CVE-2019-17640</td> </tr> <tr> <td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>mybatis-spring</td> <td>2.0.6</td> <td>CVE-2020-26945</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.4</td> <td>CVE-2020-26945</td> </tr> <tr> <td>spring-security-core</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>spring-core</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td>netty-transport</td> <td>4.1.36.Final</td> <td>CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612</td> </tr> <tr> Overx <td>core</td> <td>3.9.4</td> <td>CVE-2019-17640</td> </tr> <tr> <td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>mybatis-spring</td> <td>2.0.6</td> <td>CVE-2020-2645</td> </tr> <tr> <td>mybatis-spring-boot-boot</td> <td>2.1.4</td> <td>CVE-2020-26945</td> </tr> <tr> <td>spiring-security-core</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>sparing-core</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> </tbody> </table> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:268 EdgeGallery_RN_en.md:517 EdgeGallery_RN_en.md:859 EdgeGallery_RN_en.md:1199 Notes/
+msgid "User-mgmt:"
+msgstr "User-mgmt:"
+
+#: ../../Release EdgeGallery_RN_en.md:270 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>vertx-core</td> <td>3.9.4</td> <td>CVE-2019-17640</td> </tr> <tr> <td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>mybatis-spring</td> <td>2.0.6</td> <td>CVE-2020-26945</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.4</td> <td>CVE-2020-26945</td> </tr> <tr> <td>spring-security-core</td> <td>5.3.8.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td>verticx-core</td> <td>3.9.4</td> <td>CVE-2019-17640</td> </tr> <tr> <td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>mybatis-spring</td> <td>2.0.6</td> <td>CVE-2020-26945</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.4</td> <td>CVE-2020-26945</td> </tr> <tr> <td>sparing-security-core</td> <td>5.3.8.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:307 EdgeGallery_RN_en.md:614 EdgeGallery_RN_en.md:946 EdgeGallery_RN_en.md:1286 Notes/
+msgid "**Upgrade Notes**"
+msgstr "** Upgrade Notes * *"
+
+#: ../../Release EdgeGallery_RN_en.md:309 EdgeGallery_RN_en.md:313 EdgeGallery_RN_en.md:317 EdgeGallery_RN_en.md:616 EdgeGallery_RN_en.md:620 EdgeGallery_RN_en.md:624 EdgeGallery_RN_en.md:948 EdgeGallery_RN_en.md:952 EdgeGallery_RN_en.md:1288 EdgeGallery_RN_en.md:1292 Notes/
+msgid "N/A"
+msgstr "N/A"
+
+#: ../../Release EdgeGallery_RN_en.md:311 EdgeGallery_RN_en.md:618 EdgeGallery_RN_en.md:950 EdgeGallery_RN_en.md:1290 Notes/
+msgid "**Deprecation Notes**"
+msgstr "* * Deprecation Notes * *"
+
+#: ../../Release EdgeGallery_RN_en.md:315 EdgeGallery_RN_en.md:622 EdgeGallery_RN_en.md:954 EdgeGallery_RN_en.md:1294 Notes/
+msgid "**Other**"
+msgstr "** Other**"
+
+#: ../../Release EdgeGallery_RN_en.md:322 Notes/
+msgid "Version: v1.0.0"
+msgstr "Version: v1.0.0"
+
+#: ../../Release EdgeGallery_RN_en.md:324 Notes/
+msgid "Release Date: 2020-12-31"
+msgstr "Release Date: 2020-12-31"
+
+#: ../../Release EdgeGallery_RN_en.md:325 Notes/
+msgid "Image Version: v1.0.0"
+msgstr "Image Version: v1.0.0"
+
+#: ../../Release EdgeGallery_RN_en.md:329 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Module</th> <th align=\"center\">name</th> <th>type</th> <th>URL</th> <th>description</th> </tr> </thead> <tbody> <tr> <td>ATP (application test platform)</td> <td align=\"center\">ATP</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/atp</td> <td>Application testing platform provides testing support for application certification</td> </tr> <tr> <td>ATP (application test platform)</td> <td align=\"center\">ATP Fe</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/atp-fe</td> <td>Provide the foreground support of application testing and certification platform</td> </tr> <tr> <td>Developer</td> <td align=\"center\">crane framework</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/crane-framework</td> <td>To provide lightweight for application development, plug-in is the development framework</td> </tr> <tr> <td>Mecm</td> <td align=\"center\">mecm approlemgr</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-apprulemgr</td> <td>The management side provides the ability to configure, distribute and manage application rules</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> <th>Module</th> <th sign =\"center \" >name</th> <th>type</th> <th>URL</th> <th>description </thead></th> </thead> <tbody> <tr> <td> <td>(application test platform)</td> <td align =\"center \" >ATP</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/atp</td> <td>Application testing platform provides testing support for application notification</td> </tr> <tr> <td>ATP (application test platform)</td> <td align =\"center \" >ATP Fe</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/atp-fe</td> <td>Provide the forehand support of application testing and notification platform</td> </tr> <tr> <td>Developer</td> <td align =\"center \" >crane framework</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/crane-framework</td> <td>To provide lightweights for application development, plug-in is the development framework</td> </tr> <tr> <td>Mecm</td> <td align =\"center \" >mecm approlemgr</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-apprulemgr</td> <td>The management side provides the ability to configure, distribute and manage application rules</td> </tr> </tr> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:374 Notes/
+msgid "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)"
+msgstr "[* * * Detailed description of release plan** ](https: //gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)"
+
+#: ../../Release EdgeGallery_RN_en.md:380 Notes/
+msgid "[Developer] optimizes app development test release process, optimizes API interface, and integrates multi language SDK"
+msgstr "[Developer] optimes app development test release process, optimizes API interface, and integrates multlanguage SDK"
+
+#: ../../Release EdgeGallery_RN_en.md:377 Notes/
+msgid "Optimize the home page design and add application development life cycle flow chart;"
+msgstr "Optimize the home page design and add application development life cycle flow chart;"
+
+#: ../../Release EdgeGallery_RN_en.md:378 Notes/
+msgid "Optimize the project development process, new interface design;"
+msgstr "Optimize the project development process, new interface design;"
+
+#: ../../Release EdgeGallery_RN_en.md:379 Notes/
+msgid "Optimize the deployment and test link, increase the visualization display, the deployment process display and the pod display of the deployment results;"
+msgstr "Optimize the deployment and test link, increase the visualization display, the deployment process display and the pod display of the deployment results;"
+
+#: ../../Release EdgeGallery_RN_en.md:380 Notes/
+msgid "Optimize the interface of capability center and increase the selection of capability classification;"
+msgstr "Optimize the interface of capability center and increase the selection of capability classification;"
+
+#: ../../Release EdgeGallery_RN_en.md:381 Notes/
+msgid "Application release link docking certification test platform;"
+msgstr "Application release link notification test test platform;"
+
+#: ../../Release EdgeGallery_RN_en.md:382 Notes/
+msgid "[App store] interface ease of use optimization, edgegallery ecological capability optimization"
+msgstr "[App store] interface ase of use optimization, edgegallery ecologic capability optimizations"
+
+#: ../../Release EdgeGallery_RN_en.md:383 Notes/
+msgid "[Mecm] optimize the topology, application management and edge node management, add the function of acquiring MEP capability and AK / SK configuration interface"
+msgstr "[Mecm] optimize the topology, application management and end node management, add the function of accounting MEP capability and AK/SK configuration interface"
+
+#: ../../Release EdgeGallery_RN_en.md:384 Notes/
+msgid "[MEP] supports app heartbeat detection, adding an interface to acquire MEP capability, an AK / SK configuration interface, and an interface to acquire token for MEP agent"
+msgstr "[MEP] supports app heartbeat detections, adding an interface to acquire MEP capability, an AK/SK configuration interface, and an interface to acquire token for MEP agent"
+
+#: ../../Release EdgeGallery_RN_en.md:385 Notes/
+msgid "Enhanced test capability of ATP app application"
+msgstr "Enhanced test capability of ATP app application"
+
+#: ../../Release EdgeGallery_RN_en.md:386 Notes/
+msgid "[Test] provides health check function, optimizes installation package, develops test platform, and supports test case management"
+msgstr "[Test] provides health check function, optimizes installation package, developps test platform, and supports test case management"
+
+#: ../../Release EdgeGallery_RN_en.md:391 Notes/
+msgid "POC characteristics"
+msgstr "POC characteristics"
+
+#: ../../Release EdgeGallery_RN_en.md:389 Notes/
+msgid "MEP service governance page display"
+msgstr "MEP service government page display"
+
+#: ../../Release EdgeGallery_RN_en.md:390 Notes/
+msgid "Introducing a plug-in application framework [crane framework]（https://gitee.com/edgegallery/crane-framework)"
+msgstr "Introducting a plug-in application framework [crane framework] (https: //gitee.com/edgegallery/crane-framework)"
+
+#: ../../Release EdgeGallery_RN_en.md:393 Notes/
+msgid "**PoC Test Report**"
+msgstr "** PoC Test Report * *"
+
+#: ../../Release EdgeGallery_RN_en.md:395 Notes/
+#, python-format
+msgid "See [edgegallery v1.0.0 POC test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)"
+msgstr "See [edgeegallery v1.0.0 POC test report] (https: //gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1 .0%20Poc%20Requirement%20Test%20Report%2Emd)"
+
+#: ../../Release EdgeGallery_RN_en.md:400 EdgeGallery_RN_en.md:404 Notes/
+#, python-format
+msgid "See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)"
+msgstr "See [edgeegallery v1.0.0 test report] (https: //gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1 .0%20Test%20Report%2Emd)"
+
+#: ../../Release EdgeGallery_RN_en.md:410 EdgeGallery_RN_en.md:414 Notes/
+#, python-format
+msgid "See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report.md)"
+msgstr "See [edgeegalery v1.0.0 test report] (https: //gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report.md)"
+
+#: ../../Release EdgeGallery_RN_en.md:418 Notes/
+msgid "The following vulnerabilities exist in the third-party open source components of edgegallelry v1.0.0, which need to be fixed by users themselves:"
+msgstr "The following vagnerabilities exist in the third-party open source components of edgegalleyry v1.0.0, which need to be fixed by users themselves:"
+
+#: ../../Release EdgeGallery_RN_en.md:422 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>log4j (indirect dependency)</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>bcprov-jdk15on-1.66.jar</td> <td>1.66</td> <td>CVE-2020-28052</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td>spring-security-oauth2</td> <td>2.3.3.RELEASE</td> <td>CVE-2018-15758</td> </tr> <tr> <td>tomcat-embed-core</td> <td>9.0.37</td> <td>CVE-2020-17525</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td> <td>log4j (indirect dependency)</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>bcprov-jdk15on -1.66.jar</td> <td>1.66</td> <td>CVE-2020-28052</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td>spelling-security-oauth2</td> <td>2.3.3.RELEASE</td> <td>CVE-2018-15758</td> </tr> <tr> <td>tomcat-embedded-core</td> <td>9.0.37</td> <td>CVE-2020-17525</td> </tbody> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:461 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>spring-beans (indirect dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.1</td> <td>CVE-2020-26945</td> </tr> <tr> <td>tomcat-embed-core</td> <td>9.0.37</td> <td>CVE-2020-17527</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <th> <th></th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td>spring-beans (direct dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>-security-core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.1</td> <td>CVE-2020-26945</td> </tr> <tr> <td>tomcat-embedded-core</td> <td>9.0.37</td> <td>CVE-2020-17527</td> </tbody> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:500 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.1</td> <td>CVE-2020-26945</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.1</td> <td>CVE-2020-26945</td> </tr> </tbody> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:519 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>spring-security-core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>bcprov-jdk15on</td> <td>1.66</td> <td>CVE-2020-28052</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.1</td> <td>CVE-2020-26945</td> </tr> <tr> <td>spring-security-oauth2</td> <td>2.3.3.RELEAS</td> <td>CVE-2018-15758</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td> <td>-security-core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>bcprov-jdk15on</td> <td>1.66</td> <td>CVE-2020-28052</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.1</td> <td>CVE-2020-26945</td> </tr> <tr> <td>sparing-security-oauth2</td> <td>2.3.3.RELEAS</td> <td>CVE-2018-15758</td> </tr> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:556 EdgeGallery_RN_en.md:898 EdgeGallery_RN_en.md:1238 Notes/
+msgid "Website-gateway:"
+msgstr "Website-gateway:"
+
+#: ../../Release EdgeGallery_RN_en.md:558 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>spring-security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-26945</td> </tr> <tr> <td>spring-security-oauth2</td> <td>2.3.3</td> <td>CVE-2018-15758</td> </tr> <tr> <td>tomcat-embed-core</td> <td>9.0.37</td> <td>CVE-2020-17527</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td> <td>-security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-26945</td> </tr> <tr> <td>spiring-security-oauth2</td> <td>2.3.3</td> <td>CVE-2018-15758</td> </tr> <tr> <td>tomcat-embedded-core</td> <td>9.0.37</td> <td>CVE-2020-17527</td></td> </table> </tr> </tbody>"
+
+#: ../../Release EdgeGallery_RN_en.md:590 EdgeGallery_RN_en.md:922 EdgeGallery_RN_en.md:1262 Notes/
+msgid "MECM:"
+msgstr "MECM:"
+
+#: ../../Release EdgeGallery_RN_en.md:592 EdgeGallery_RN_en.md:924 EdgeGallery_RN_en.md:1264 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>lodash</td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPM-118</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td></td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> <td>minatch</td> <td>3.0.4</td> <td>NPPM-118</td></td> </tr> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:629 Notes/
+msgid "Version: v0.9.1"
+msgstr "Version: v0.9.1"
+
+#: ../../Release EdgeGallery_RN_en.md:631 Notes/
+msgid "Release Date: 2020-11-11"
+msgstr "Release Date: 2020-11-11"
+
+#: ../../Release EdgeGallery_RN_en.md:632 Notes/
+msgid "Image Version: v0.9.1"
+msgstr "Image Version: v0.9.1"
+
+#: ../../Release EdgeGallery_RN_en.md:636 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Module</th> <th>name</th> <th>type</th> <th>URL</th> <th>description</th> </tr> </thead> <tbody> <tr> <td>Developer</td> <td>API emulator</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/api-emulator</td> <td>Simulation API providing basic capabilities</td> </tr> <tr> <td>MEP</td> <td>plugins</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/plugins</td> <td>Plugins warehouse</td> </tr> <tr> <td>Developer</td> <td>toolchain</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/toolchain</td> <td>Provides the X86 platform application when the arm source code analysis function</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> <th>Module</th> <th>name</th> <th>type</th> <th>URL</th> <th>description </thead></th> </thead> <tbody> <tr> <tr> <td>Developer</td> <td>API emulator</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/api-emulator</td> <td>Simulation API providing basic capabilities</td> </tr> <tr> <td>MEP</td> <td>plugins</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/plugins</td> <td>Plugins warehouse</td> </tr> <tr> <td>Developer</td> <td>toolchain</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/toolchain</td> <td>Provides the X86 platform application when the arm source code analysis function</td> </tr> </tr> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:673 Notes/
+msgid "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)"
+msgstr "[* * * Detailed description of release plan** ](https: //gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)"
+
+#: ../../Release EdgeGallery_RN_en.md:675 Notes/
+msgid "Summary of safety design troubleshooting problems"
+msgstr "Summary of safety design troubleshorting problems"
+
+#: ../../Release EdgeGallery_RN_en.md:676 Notes/
+msgid "API simulator, toolchain and plugin warehouse are open source"
+msgstr "API simulator, toolchain and plugin warehouse are open source"
+
+#: ../../Release EdgeGallery_RN_en.md:677 Notes/
+msgid "[MEP / MEP agent] AK / SK configuration interface"
+msgstr "[MEP/MEP agent] AK/SK configuration interface"
+
+#: ../../Release EdgeGallery_RN_en.md:681 EdgeGallery_RN_en.md:685 EdgeGallery_RN_en.md:691 EdgeGallery_RN_en.md:695 Notes/
+#, python-format
+msgid "See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)"
+msgstr "See [edgeegallery v0.9.1 test report] (https: //gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/ %20EdgeGallery%20R0 .9.1%20Test%20Report.md)"
+
+#: ../../Release EdgeGallery_RN_en.md:687 EdgeGallery_RN_en.md:1107 Notes/
+msgid "**Security notes**"
+msgstr "** Security notes * *"
+
+#: ../../Release EdgeGallery_RN_en.md:699 Notes/
+msgid "The following vulnerabilities exist in the third-party open source components of EdgeGallelry v0.9.1, which need to be fixed by users themselves:"
+msgstr "The following vagnerabilities exist in the third-party open source components of EdgeGallary v0.9.1, which need to be fixed by users themselves:"
+
+#: ../../Release EdgeGallery_RN_en.md:703 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-transport (indirect dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869</td> </tr> <tr> <td>log4j (indirect dependency)</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>spring-jdbc (indirect dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-core (indirect dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>bcprov-jdk15on-1.66.jar</td> <td>1.66</td> <td>CVE-2020-28052</td> </tr> <tr> <td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td>mybatis</td> <td>3.5.3</td> <td>CVE-2020-25645</td> </tr> <tr> <td>spring-security-oauth2</td> <td>2.3.3.RELEASE</td> <td>CVE-2018-15758</td> </tr> <tr> <td>tomcat-embed-core</td> <td>9.0.37</td> <td>CVE-2020-17525</td> </tr> <tr> <td>vertx-core</td> <td>3.6.3</td> <td>CVE-2019-17640</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th>Component</th> <th>Version</th> <th>CVE</th> </thead> </thead> <tbody> <tr> <td>netty-transport (direct dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-11645, CVE-2019-16869</td> </tr> <tr> <td>log4j (indirect dependency)</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>spring-jdbc (indirect dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spiring-security-core (indirect dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>bcprov-jdk15on-1.66.jar</td> <td>1.66</td> <td>CVE-2020-28052</td> </tr> <tr> <td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td>mybatis</td> <td>3.5.3</td> <td>CVE-2020-25645</td> </tr> <tr> <td>spring-security-oauth2</td> <td>2.3.3.RELEASE</td> <td>CVE-2018-15758</td> </tr> <tr> <td>tomcat-embedded-core</td> <td>9.0.37</td> <td>CVE-2020-17525</td> </tr> <tr> <td>vertx-core</td> <td>3.6.3</td> <td>CVE-2019-17640</td> </tr> </tr> </tbody> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:772 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-transport (indirect dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869</td> </tr> <tr> <td>spring-beans (indirect dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-config (indirect dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258, CVE-2020-5398</td> </tr> <tr> <td>spring-security-core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>lodash</td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPM-118</td> </tr> <tr> <td>spring-security-oauth2</td> <td>2.3.3</td> <td>CVE-2018-15758，CVE-2019-11269，CVE-2018-3778</td> </tr> <tr> <td>swagger-codegen-cli (shaded: com.fasterxml.jackson.core.jackson-databind:2.10.3)</td> <td>3.0.21</td> <td>CVE-2020-25649</td> </tr> <tr> <td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td>mybatis-spring</td> <td>2.0.3</td> <td>CVE-2020-26945</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.1</td> <td>CVE-2020-26945</td> </tr> <tr> <td>swagger-codegen-cli</td> <td>3.0.21</td> <td>CVE-2017-1000207，CVE-2017-1000208，CVE-2019-10086，CVE-2018-8088，CVE-2017-18640，CVE-2016-6199，CVE-2019-11065，CVE-2019-15052，</td> </tr> <tr> <td>tomcat-embed-core</td> <td>9.0.37</td> <td>CVE-2020-17527</td> </tr> <tr> <td>vertx-core</td> <td>3.6.3</td> <td>CVE-2019-17640</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th>Component</th> <th>Version</th> <th>CVE</th> </thead> </thead> <tbody> <tr> <td>netty-transport (direct dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-20445, CVE-2019-16869</td> </tr> <tr> <td>spring-beans (direct dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-config (direct dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258, CVE-2020-5398 </tr></td> <tr> <td>spring-security-core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>lodash</td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPPM-118</td> </tr> <tr> <td>spring-security-oauth2</td> <td>2.3.3</td> <td>CVE-2018-15758, CVE-2019-11269, CVE-2018-3778</td> </tr> <tr> <td>swagger-codegen-cli (com.fasterxml.jackson.core.jackson-databind: 2.10.3)</td> <td>3.0.21</td> <td>CVE-2020-25649</td> </tr> <tr> <td>foundation-ssl</td> <td>1.3.0</td> <td>CVE-2004-0009</td> </tr> <tr> <td>jackson-databind</td> <td>2.10.5</td> <td>CVE-2020-25649</td> </tr> <tr> <td>mybatis-spring</td> <td>2.0.3</td> <td>CVE-2020-26945</td> </tr> <tr> <td>mybatis-spring-boot-starter</td> <td>2.1.1</td> <td>CVE-2020-26945</td> </tr> <tr> <td>swagger-codegen-cli</td> <td>3.0.21</td> <td>CVE-2017-1000207, CVE-2017-10086, CVE-2018-8088, CVE-2017-18640, CVE-2016-6199, CVE-2019-11065,CVE-2019-15052, </tr></td> <tr> <td>tomcat-embedded-core</td> <td>9.0.37</td> <td>CVE-2020-17527</td> </tr> <tr> <td>vertx-core</td> <td>3.6.3</td> <td>CVE-2019-17640</td> </table> </tr> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:861 EdgeGallery_RN_en.md:1201 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>rxnetty (indirect dependency)</td> <td>0.4.9</td> <td>CVE-2015-2156</td> </tr> <tr> <td>netty-tcnative-boringssl-static (indirect dependency)</td> <td>2.0.31.Final</td> <td>CVE-2015-2156</td> </tr> <tr> <td>spring-security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>lodash</td> <td>4.17.20</td> <td>NPM-1065, NPM-557, NPM-7823</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPM-118</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td>rxnetty (indirect dependency)</td> <td>0.4.9</td> <td>CVE-2015 -2156</td> </tr> <tr> <td>netty-tcnative-boringssl-static (indirect dependency)</td> <td>2.0.31.Final</td> <td>CVE-2015 -2156</td> </tr> <tr> <td>spring-security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>lodash</td> <td>4.17.20</td> <td>NPM-1065, NPM-557, NPM-7823</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPPM-118 </tr></td> </tr> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:900 EdgeGallery_RN_en.md:1240 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>log4j</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>spring-security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td> <td>log4j</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>sparing-security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tr> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:956 EdgeGallery_RN_en.md:1296 Notes/
+#, python-format
+msgid "After the review of the security working group, the problem sheet of plugins warehouse [i1xa0n](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_Id=i1xa0n) will be repaired in the form of patch after the release of version V0.9. Please refer to the security working group [minutes of meeting](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd) for details."
+msgstr "After the review of the security working group, the problem sheet of plugins warehouse [i1xa0n] (https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_Id=i1xa0n) will be repaired in the form of patch after the release of version V0.9. Please refer to the security working group [minutes of meeting] (https: //gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd) for details."
+
+#: ../../Release EdgeGallery_RN_en.md:961 Notes/
+msgid "Version: v0.9"
+msgstr "Version: v0.9"
+
+#: ../../Release EdgeGallery_RN_en.md:963 Notes/
+msgid "Release Date: 2020-09-30"
+msgstr "Release Date: 2020-09-30"
+
+#: ../../Release EdgeGallery_RN_en.md:964 Notes/
+msgid "Image Version: v0.9"
+msgstr "Image Version: v0.9"
+
+#: ../../Release EdgeGallery_RN_en.md:968 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Module</th> <th>name</th> <th>type</th> <th>URL</th> <th>description</th> </tr> </thead> <tbody> <tr> <td>Helm charts</td> <td>helm charts</td> <td>deployment</td> <td>https://gitee.com/edgegallery/helm-charts</td> <td>Edgegallery deployment script</td> </tr> <tr> <td>Website gateway</td> <td>website gateway</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/website-gateway</td> <td>Front desk packaging</td> </tr> <tr> <td>User Mgmt</td> <td>user Mgmt</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/user-mgmt</td> <td>Background of usermgmt</td> </tr> <tr> <td>User Mgmt</td> <td>user MGMT Fe</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/user-mgmt-fe</td> <td>Usermgmt front desk</td> </tr> <tr> <td>Mecm</td> <td>mecm Fe</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-fe</td> <td>Mecm front desk</td> </tr> <tr> <td>Mecm</td> <td>mecm applcm</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-applcm</td> <td>Mecm application lifecycle management</td> </tr> <tr> <td>Mecm</td> <td>mecm APM</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-apm</td> <td>Mecm application package management</td> </tr> <tr> <td>Mecm</td> <td>mecm inventory</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-inventory</td> <td>Mecm stock management</td> </tr> <tr> <td>Mecm</td> <td>mecm app</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-appo</td> <td>Mecm application choreography</td> </tr> <tr> <td>Developer</td> <td>developer be</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/developer-be</td> <td>Developer background</td> </tr> <tr> <td>Developer</td> <td>developer Fe</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/developer-fe</td> <td>Developer front desk</td> </tr> <tr> <td>Appstore</td> <td>Appstore Fe</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/appstore-fe</td> <td>Front desk of Appstore</td> </tr> <tr> <td>Appstore</td> <td>Appstore be</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/appstore-be</td> <td>App store background</td> </tr> <tr> <td>Platform Mgmt</td> <td>platform Mgmt</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/platform-mgmt</td> <td>Install K8 / docker</td> </tr> <tr> <td>Doc</td> <td>doc</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/docs</td> <td>Documentation</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Module</th> <th>name</th> <th>type</th> <th>URL</th> <th>description </thead></th> </thead> <tbody> <tr> <td> <td>Helm charts</td> <td>helm charts</td> <td>deployment</td> <td>https://gitee.com/edgegallery/helm-charts</td> <td>Edgeballery deployment script</td> </tr> <tr> <td>Website gateway</td> <td>website gateway</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/website-gateway</td> <td>Front desk packaging</td> </tr> <tr> <td>User Mgmt</td> <td>user Mgmt</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/user-mgmt</td> <td>Background of usermgmt</td> </tr> <tr> <td>User Mgmt</td> <td>user MGMT Fe</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/user-mgmt-fe</td> <td>Usermgmt front desk</td> </tr> <tr> <td>Mecm</td> <td>mecm Fe</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-fe</td> <td>Mecm front desk</td> </tr> <tr> <td>Mecm</td> <td>mecm applcm</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-applcm</td> <td>Mecm application lifecycle management</td> </tr> <tr> <td>Mecm</td> <td>mecm APM</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-apm</td> <td>Mecm application package management</td> </tr> <tr> <td>Mecm</td> <td>mecm inventory</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-inventory</td> <td>Mecm stock management</td> </tr> <tr> <td>Mecm</td> <td>mecm app</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/mecm-appo</td> <td>Mecm application Choreography</td> </tr> <tr> <td>Developer</td> <td>develop be</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/developer-be</td> <td>Developer background</td> </tr> <tr> <td>Developer</td> <td>developer Fe</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/developer-fe</td> <td>Developer front desk</td> </tr> <tr> <td>Appstore</td> <td>Appstore Fe</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/appstore-fe</td> <td>Front desk of Appstore</td> </tr> <tr> <td>Appstore</td> <td>Appstore be</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/appstore-be</td> <td>App store background</td></td> </tr> <tr> <td>Platform Mgmt</td> <td>platform Mgmt</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/platform-mgmt</td> <td>Install K8/docker</td> </tr> <tr> <td>Doc</td> <td>doc</td> <td>product warehouse</td> <td>https://gitee.com/edgegallery/docs</td> <td></td></td> </tr> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:1089 Notes/
+msgid "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)"
+msgstr "[* * * Detailed description of release plan** ](https: //gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)"
+
+#: ../../Release EdgeGallery_RN_en.md:1091 Notes/
+msgid "All in one MEP / mecm network isolation"
+msgstr "All in one MEP/mecm network isolation"
+
+#: ../../Release EdgeGallery_RN_en.md:1092 Notes/
+msgid "MEP supports DNS configuration"
+msgstr "MEP supports DNS configuration"
+
+#: ../../Release EdgeGallery_RN_en.md:1093 Notes/
+msgid "Support all in one deployment"
+msgstr "Support all in one deployment"
+
+#: ../../Release EdgeGallery_RN_en.md:1094 Notes/
+msgid "Multi node offline deployment"
+msgstr "Multi node offline deployment"
+
+#: ../../Release EdgeGallery_RN_en.md:1095 Notes/
+msgid "Nine dimensions of security optimization"
+msgstr "N dimension of security optimization"
+
+#: ../../Release EdgeGallery_RN_en.md:1096 Notes/
+msgid "Mecm interface / topology management / resource management optimization"
+msgstr "Mecm interface/topology management/resource management optimizations"
+
+#: ../../Release EdgeGallery_RN_en.md:1097 Notes/
+msgid "(POC) kubeedge integration verification"
+msgstr "(POC) kubheedge integration verification"
+
+#: ../../Release EdgeGallery_RN_en.md:1101 EdgeGallery_RN_en.md:1105 EdgeGallery_RN_en.md:1111 EdgeGallery_RN_en.md:1115 Notes/
+#, python-format
+msgid "See [edgegallery V0.9 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)"
+msgstr "See [edgeegalery V0.9 test report] (https: //gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0 .9%20Test%20%20Report%20%2Emd)"
+
+#: ../../Release EdgeGallery_RN_en.md:1119 Notes/
+msgid "The following vulnerabilities exist in the third-party open source components of edgegallelry V0.9, which need to be fixed by users themselves:"
+msgstr "The following Vulnerabilities exist in the third-party open source components of edgegalledry V0.9, which need to be fixed by users themselves:"
+
+#: ../../Release EdgeGallery_RN_en.md:1123 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-transport (indirect dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869</td> </tr> <tr> <td>log4j (indirect dependency)</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>spring-jdbc (indirect dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-core (indirect dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th>Component</th> <th>Version</th> <th>CVE</th> </thead> </thead> <tbody> <tr> <td>netty-transport (direct dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-11645, CVE-2019-16869</td> </tr> <tr> <td>log4j (indirect dependency)</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>spring-jdbc (indirect dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-core (direct dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table> </table> </table>"
+
+#: ../../Release EdgeGallery_RN_en.md:1155 Notes/
+msgid "-Developer:"
+msgstr "-Developer:"
+
+#: ../../Release EdgeGallery_RN_en.md:1157 Notes/
+msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-transport (indirect dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869</td> </tr> <tr> <td>spring-beans (indirect dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-config (indirect dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258, CVE-2020-5398</td> </tr> <tr> <td>spring-security-core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>lodash</td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPM-118</td> </tr> </tbody> </table>"
+msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th>Component</th> <th>Version</th> <th>CVE</th> </thead> </thead> <tbody> <tr> <td>netty-transport (direct dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-20445, CVE-2019-16869</td> </tr> <tr> <td>spring-beans (direct dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-config (direct dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258, CVE-2020-5398 </tr></td> <tr> <td>spring-security-core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>lodash</td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPPM-118</td> </tr> </tr> </table> </table>"
+

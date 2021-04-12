@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../Projects/ATP/ATP_Guide.md:2
+msgid "ATP Guide"
+msgstr "ATP Guide"
+
+#: ../../Projects/ATP/ATP_Guide.md:4
+msgid "### 概述 - 应用测试认证服务目前分为管理面功能和用户面功能。 - 在管理面，管理员可以管理测试场景、测试套、测试用例和测试任务。平台内置了4种测试场景：社区场景、中国移动场景、中国联通场景和中国电信场景。对于社区场景，平台内置了安全性测试测试套、遵从性测试测试套和沙箱测试测试套，每个测试套下面都有对应的测试用例。对于有手工用例的测试任务，管理员可以在后台手动更改测试用例状态，完成手工测试用例状态的更新。 - 在用户面（即集成在开发者平台和应用商店中的功能），对于开发者，在开发者平台开发app以后，对生成的csar包，要经过应用测试认证服务测试通过后才可以发布到应用商店；对于已经有应用包的供应商或者厂商，在应用商店中上传应用包以后，也要经过应用测试认证服务测试通过后才可以发布到应用商店。用户可以选择要进行测试的场景，其中社区场景是必选的，然后系统会动态展示出测试用例的执行过程。当测试完成后，会生成测试报告，给出测试结果的分析，用户也可以下载测试报告，格式为pdf格式。用户面也为用户提供了贡献测试用例的入口，用户可以通过填写对测试用例的描述或者上传脚本的方式，完成对测试用例的贡献。"
+msgstr "### Overview-The application test authentication service is currently divided into management side functions and user facial features. -On the management side, administrators can manage test scenarios, test suites, test cases, and test tasks.The platform is built with four test scenarios: community scene, China Mobile Scene, China Unicom scene and China Telecom scene.For community scenes, the platform is built with a safety test test sleeve, a compliance test test sleeve and a sandbox test test sleeve, and each test sleeve is provided with a corresponding test case.For test tasks with manual use cases, the administrator can manually change the test case status in the background and complete the updating of the manual test case state. -For developers, after the developer platform develops apps, the generated csars will not be published to the app store until after the application test is passed. For suppliers or manufacturers who already have applications, after the app is uploaded in the app store, the app can be released to the app store after the test passes.The user can select the scene to be tested, wherein the community scene is selected, and then the system dynamically displays the execution process of the test case.When the test is complete, a test report is generated and an analysis of the test results is given, and the user can download the test report in pdf format.the user can finish the contribution to the test case by filling the description of the test case or the way of uploading the script."
+
+#: ../../Projects/ATP/ATP_Guide.md:9
+msgid "### 管理面首页 首页会对过去6个月的测试任务数量进行统计显示。 ![](/uploads/images/2021/atp/management-portal.png \"首页.png\")"
+msgstr "### The Admin Face Home Home page displays a statistical display of the number of test tasks over the past 6 months. ! [](/uploads/images/2021/atp/management-portal.png \" Home .png \")"
+
+#: ../../Projects/ATP/ATP_Guide.md:13
+msgid "### 管理面测试场景管理 测试场景页面显示平台包含的所有测试场景，管理员可以新增测试场景，编辑已有的测试场景，也可以删除已有的测试场景。 ![](/uploads/images/2021/atp/testScenario.png \"测试场景.png\")"
+msgstr "### The Manage Face Test Scene Management Test Scene page displays all the test scenarios that the platform contains, the administrator can add test scenes, edit existing test scenes, and delete already existing test scenarios. ! [](/uploads/images/2021/atp/testScenario.png \" Test Scene .png \")"
+
+#: ../../Projects/ATP/ATP_Guide.md:17
+msgid "### 管理面测试套管理 测试套页面显示平台包含的所有测试套，一个测试套属于一个或者多个测试场景，管理员可以新增测试套、编辑已有的测试套，也可以删除已有的测试套。 ![](/uploads/images/2021/atp/testSuite.png \"测试套.png\")"
+msgstr "### The management test suite management test suite page displays all test suites that the platform contains, one test suite belongs to one or more test scenarios, the administrator can add test suites, edit existing test suites, and also delete existing test suites. ! [](/uploads/images/2021/atp/testSuite.png \" Test Suite .png \")"
+
+#: ../../Projects/ATP/ATP_Guide.md:21
+msgid "### 管理面测试用例管理 测试用例页面显示平台包含的所有测试用例，一个测试用例属于一个或者多个测试套，管理员可以新增测试用例、编辑已有的测试用例，也可以删除已有的测试用例。 ![](/uploads/images/2021/atp/testCase.png \"测试用例.png\")"
+msgstr "### Managing test case page display platform includes all test cases, one test case belongs to one or more test cases, administrator can add test case, edit existing test case, and also can delete existing test case. ! [](/uploads/images/2021/atp/testCase.png \" Test case .png \")"
+
+#: ../../Projects/ATP/ATP_Guide.md:25
+msgid "### 管理面测试任务管理 任务管理显示了所有的测试任务，管理员可以对测试任务进行批量删除，也可以修改手工用例的状态。 ![](/uploads/images/2021/atp/task.png \"测试任务.png\") ![](/uploads/images/2021/atp/modifyStatus.png \"修改手工用例状态.png\")"
+msgstr "### management surface test task management task management shows all test tasks, the administrator can delete the test task in batch, or modify the state of the manual use case. ! [](/uploads/images/2021/atp/task.png \" Test Task .png \") ! [](/uploads/images/2021/atp/modifyStatus.png \" Modify Hand Case Status .png \")"
+
+#: ../../Projects/ATP/ATP_Guide.md:30
+msgid "### 应用商店测试认证入口 在应用商店首页上传应用包以后，在我的应用中，在对应的应用包右边点击测试，进入应用测试流程。 ![](/uploads/images/2020/1209/myApp.PNG \"我的应用.PNG\")"
+msgstr "### The app store test credential entrance is in my application after the app store home page is uploaded, and in my application, tap the test on the right side of the app to enter the application test process. ! [](/uploads/images/2020/1209/myApp.PNG \" My application .PNG \")"
+
+#: ../../Projects/ATP/ATP_Guide.md:34
+msgid "### 测试场景选择&测试用例贡献 用户可以选择想要测试的场景，社区场景是必选的，其余场景根据用户需要自行选择。 ![](/uploads/images/2021/atp/selectScenario.png \"选择测试场景.png\") 页面右上方有贡献测试用例的入口，点击测试用例，支持用户用描述的方式或者脚本的方式贡献测试用例。 ![](/uploads/images/2021/atp/contribution.png \"贡献测试用例.png\")"
+msgstr "### The test scenario selection & test case contribution user can choose the scene that you want to test, the community scene is mandatory, and the rest of the scene is chosen by itself based on the user's needs. ! [](/uploads/images/2021/atp/selectScenario.png \" Choose Test Scene .png \") The upper right side of the page is provided with an inlet for contributing test case, click test case, and supporting the user to contribute test case in the way of description or script. ! [](/uploads/images/2021/atp/contribution.png \" Contribution test case .png \")"
+
+#: ../../Projects/ATP/ATP_Guide.md:40
+msgid "### 测试进展可视化&报告查看 测试进展页面动态地展示用例的执行情况，所有自动化类型的测试用例都会自动执行，手工类型的测试用例需要管理员在管理面修改测试用例状态。 ![](/uploads/images/2021/atp/process.png \"测试进展.png\")"
+msgstr "### The test progress visualisation & report looks at the implementation of the test progress page dynamically, and all automation types of test cases are automatically executed, and manual types of test cases require administrators to modify the test case status on the management side. ! [](/uploads/images/2021/atp/process.png \" Test Progress .png \")"
+
+#: ../../Projects/ATP/ATP_Guide.md:44
+msgid "点击右上角的查看报告，会进入该测试任务的报告页面，报告页面显示测试任务的基本信息、各测试场景的测试用例通过率以及测试用例的详细信息。 ![](/uploads/images/2021/atp/testReport.png \"测试报告.png \")"
+msgstr "the report page displays the basic information of the test task, the test case pass rate of each test scene and the detailed information of the test case. ! [](/uploads/images/2021/atp/testReport.png \" Test Report .png \")"
+
