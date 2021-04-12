@@ -1,7 +1,7 @@
 ATP Contribution
 ============
 
-### 本地开发环境搭建
+## 搭建本地开发环境
 
 本文将指导用户如何在本地搭建atp和atp-fe模块，从而帮助开发者快速理解、开发代码。
 
@@ -19,9 +19,8 @@ ATP Contribution
 ```
 所以为了搭建本地开发环境，最终的启动顺序为 Service Center -> DataBase -> UserManagement -> atp -> WebsiteGateway(atp-fe)
 
-### 流程详解
 
-- #### Service Center
+### Service Center
 
 1、下载[Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)
 
@@ -31,7 +30,7 @@ ATP Contribution
 
 ![](/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg "service center2.jpg")
 
-- #### DataBase
+### DataBase
 
 1、下载、安装、启动 Postgresql 最新版本
 
@@ -45,7 +44,7 @@ ATP Contribution
 
 6、根据[usermgmt部署文件](https://gitee.com/edgegallery/helm-charts/blob/master/user-mgmt/templates/user-mgmt-configmap.yaml)中的数据库语句创建表结构
 
-- #### UserManagement
+### UserManagement
 
 1、下载user-mgmt-be代码和user-mgmt-fe代码
 
@@ -61,7 +60,7 @@ ATP Contribution
 
 6、运行MainServer函数，启动UserManagement
 
-- #### atp
+### atp
 
 1、下载atp代码
 
@@ -71,7 +70,7 @@ ATP Contribution
 
 3、运行atpApp函数，启动atp
 
-- #### atp-fe
+### atp-fe
 
 1、下载atp-fe代码
 
