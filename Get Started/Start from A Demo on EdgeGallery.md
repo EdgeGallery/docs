@@ -1,7 +1,7 @@
 # EdgeGallery界面一览
 -------------------
 开发者平台：<br>
-![](/uploads/images/2020/v1.0/Developer.png "Developer.png")<br>
+![](/uploads/images/2021/v1.1/Developer.png "Developer.png")<br>
 
 应用商城：<br>
 ![](/uploads/images/2021/v1.1/AppStore.png "AppStore.png")<br>
@@ -19,8 +19,6 @@ MEC管理平台：<br>
 * 定位服务应用作为服务消费者依赖EdgeGallery平台的“人脸识别服务”<br>
 * 定位服务应用作为服务供应者发布“定位服务”，对外提供生态API，其他服务可以消费“定位服务”<br>
 
-## 登录EdgeGallery开发者平台
-https://developer.edgegallery.org/<br><br>
 ## 开发准备
 * 新建一个项目<br>
 ![](/uploads/images/2020/v1.0/CreateProject.png "CreateProject.png")
