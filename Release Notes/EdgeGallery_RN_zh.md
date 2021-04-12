@@ -1,6 +1,6 @@
 .. This work is licensed under a Creative Commons Attribution 4.0 International License. <br>
 .. http://creativecommons.org/licenses/by/4.0 <br>
-.. Copyright 2019-2020 Huawei Technologies Co., Ltd. <br>
+.. Copyright 2019-2021 Huawei Technologies Co., Ltd. <br>
 
 Release Notes
 =============
@@ -15,7 +15,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
  Version: v1.1.0
 --------------
 
- - Release Date: 2020-04-02
+ - Release Date: 2020-04-09
  - Image Version: v1.1.0
 
 **新开源仓库列表**
@@ -54,21 +54,21 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  **Bug Fixes**
 
-  参见 [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report.md)
+  参见 [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report%2Emd)
 
  **Known Issues**
 
-  参见 [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report.md)
+  参见 [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report%2Emd)
 
  **Security Notes**
 
  *Fixed Security Issues*
 
-  参见 [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%20.md)
+  参见 [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%2Emd)
 
  *Known Security Issues*
 
-  参见 [EdgeGallery v1.1.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report.md)
+  参见 [EdgeGallery v1.1.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report%2Emd)
 
  *Known Vulnerabilities in Used Modules*
 
