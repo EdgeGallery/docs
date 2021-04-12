@@ -33,24 +33,24 @@ Version: v1.1.0
 [**detailed description of release plan**]（https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)
  
 
-*[AI software and hardware capability] supports the hardware of shengteng / atlas and open API
-        -AI image restoration, edge detection, cartoon image generation, image coloring, object classification, target detection, etc;
-*Cross-platform support supports the incubation integration of virtual machine applications based on openstack and container applications based on k8s
-*[experience optimization]
-        -App classification, APP recommendation and dynamic refresh of popular products
-*[edgeenational support]
-        -IAAs / PAAS / applications support on-demand deployment and automatic generation of application framework
-        -Visualization of MEP microservice Management Architecture
+* [AI software and hardware capability] supports the hardware of shengteng / atlas and open API
+        - AI image restoration, edge detection, cartoon image generation, image coloring, object classification, target detection, etc;
+* Cross-platform support supports the incubation integration of virtual machine applications based on openstack and container applications based on k8s
+* [experience optimization]
+        - App classification, APP recommendation and dynamic refresh of popular products
+* [edgeenational support]
+        - IAAs / PAAS / applications support on-demand deployment and automatic generation of application framework
+        - Visualization of MEP microservice Management Architecture
         - Provide edgegallery applet, design state, etc
-*[API management] matching of ETSI MEC API, 3GPP CAPIF and ascension capability
-*[security, user management]
+* [API management] matching of ETSI MEC API, 3GPP CAPIF and ascension capability
+* [security, user management]
         - Divide power and domain to control the key operation and data
         - Application remote login (such as VNC) supports security protocol login
-*[community laboratory enhancement]
+* [community laboratory enhancement]
         - Provide real E2E 5g verification environment
         - One-click application, one-click release and visual management of resources
-*[application innovation]
-        -Appstore federation can register external appstores, and applications can push and pull each other between different appstores
+* [application innovation]
+        - Appstore federation can register external appstores, and applications can push and pull each other between different appstores
         - Completed 80 + application integration, landing 17 + innovation base and postgraduate courses of Xi&apos; an University of Electronic Science and technology
 
 
