@@ -8,8 +8,8 @@ Release Notes
 EdgeGallery Introduction
 ------------------------
 Edgegallery is a 5g MEC open source edge computing platform. It is an end-to-end solution for MEC applications. In addition to providing the basic MEP platform to support running applications, it also provides a management system (MEC Manager), i.e., minimal supports for some functions of MEPM and MEAO. EdgeGallery can manage the end-to-end life cycle of applications, provides toolchains to easy application development, and support smooth cross-platform migration and tuning. For application developers, it provides a complete ide and integrated verification environment for application development and provides a one-stop-dev experience. At the same time, the app store component provides a standard verification process for applications developed by EdgeGallery developers.
-- [project introduction](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)
-- [developer's Guide](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
+- [Project Introduction](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)
+- [Developer's Guide](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
 
 
 Version: v1.1.0
