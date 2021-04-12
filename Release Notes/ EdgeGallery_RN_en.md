@@ -100,7 +100,7 @@ The following vulnerabilities exist in the third-party open-source components of
 | spring-jdbc | 5.1.8.RELEASE | CVE-2020-5398 |
 | spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
 
- 
+
 -Developer:
 
 | Component | Version | CVE |
