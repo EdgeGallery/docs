@@ -13,7 +13,7 @@ Edgegallery is a 5g MEC open source edge computing platform. It is an end-to-end
 
 
 Version: v1.1.0
--------------- 
+---------------
 
 - Release Date: 2020-04-02
 - Image Version: v1.1.0
