@@ -55,7 +55,7 @@ MEC管理平台：<br>
 ![](/uploads/images/2020/v1.0/ApplicationRelease-3.png "ApplicationRelease-3.png")
 
 
-详细信息可参考：
-[视频](https://gitee.com/edgegallery/community/blob/master/TSC/Release/v0.9/EdgeGallery%20Demo%20Recording.mp4)
+EdgeGallery v1.1新特性：
+[EdgeGallery v1.1新特性](https://gitee.com/edgegallery/community/blob/master/TSC/Release/v1.1/EdgeGallery%20v1.1NewFeature.mp4)
 
 
