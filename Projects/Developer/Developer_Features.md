@@ -122,14 +122,11 @@ Developer 特性清单
 
 - 应用认证
 
-对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。
-
+	对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。
     - 选择测试场景
-    
     ![](/uploads/images/2021/developer/atp-1.PNG "atp-1.PNG")
     
     - 执行测试用例
-    
     ![](/uploads/images/2021/developer/atp-2.PNG "atp-2.PNG")
 
 - 应用发布
