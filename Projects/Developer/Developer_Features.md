@@ -69,7 +69,7 @@ Developer 特性清单
 容器应用部署调测分为三个部署：
 - 上传APP镜像
     
-    支持三种镜像上传方式
+    支持两种镜像上传方式
     - 用户上传镜像打包文件。
     - 上传到EdgeGallery的镜像仓库。
 
@@ -128,6 +128,7 @@ Developer 特性清单
     
     - 执行测试用例
     ![](/uploads/images/2021/developer/atp-2.PNG "atp-2.PNG")
+	
 
 - 应用发布
 
