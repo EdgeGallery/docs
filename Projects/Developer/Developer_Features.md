@@ -28,7 +28,7 @@ Developer 特性清单
 
 
 #### 文档
-文档菜单包含平台的简介，开发工具，以及介绍如何将能力发布到开发者平台，以及常见问题集锦。
+文档菜单包含平台的简介，开发工具，以及介绍如何将能力发布到开发者平台。
 ![](/uploads/images/2021/developer/docu.PNG "docu.PNG")
 
 ### 能力中心
@@ -99,19 +99,28 @@ Developer 特性清单
 
 虚机应用部署调测分为以下三个步骤：
 - 选择虚机资源
-    
+![](/uploads/images/2021/v1.1/ApplyingVm.png "ApplyingVm.png")
     配置虚机的规格、镜像、网络等信息
+
     - 输入虚机名称
+![](/uploads/images/2021/v1.1/BasicVmInformation.png "BasicVmInformation.png)
+
     - 配置虚机资源大小，镜像源
+![](/uploads/images/2021/v1.1/SettingVmSpecification.png "SettingVmSpecification.png")
+
     - 设置虚机网络类型，默认勾选N6网络
+![](/uploads/images/2021/v1.1/NetworkSettings.png "NetworkSettings.png")
 
 - 申请虚机
+![](/uploads/images/2021/v1.1/VmDeployment.png "VmDeployment.png")
 
     申请到的虚机可以远程登录进行应用开发调测：
+![](/uploads/images/2021/v1.1/VmVNC.png "VmVNC.png")
 
 - 导出镜像
 
     - 将镜像分片下载并打包在csar包中
+![](/uploads/images/2021/v1.1/VmImage.png "VmImage.png")
 
 #### 应用发布
 应用发布分为三个步骤：
