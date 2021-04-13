@@ -50,5 +50,5 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
    :caption: Documentation Bug Report
    
    Raise issue <https://gitee.com/edgegallery/docs/issues>
-   Submit PR <https://gitee.com/edgegallery/docs/>
+   Submit PR <https://gitee.com/edgegallery/docs/pulls>
 

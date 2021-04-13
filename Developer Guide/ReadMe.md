@@ -3,7 +3,7 @@
 
 ## EdgeGallery 安装指导
 
-[EdgeGallery离线安装指导](https://gitee.com/edgegallery/installer/blob/master/offline/README-cn.md)
+[EdgeGallery离线安装指导](https://gitee.com/edgegallery/installer/blob/master/offline/README-cn%2Emd)
 
 ## EdgeGallery 证书更新
 
