@@ -14,47 +14,38 @@ MECM Product Document
 ![](/uploads/images/2021/mecm/1.png) 
 ![](/uploads/images/2021/mecm/2.png) 
 
-#### 1. 概述  
-##### 概述界面主要分为两部分：地图区域&详情展示（节点以及KPI、MEP能力以及硬件能力），MEP详情  
-##### 1.1地图&详情：点击地图上的节点，可显示节点以及KPI、MEP能力以及硬件能力详情
-![](/uploads/images/2021/mecm/3.png)  
-![](/uploads/images/2021/mecm/4.png) 
+#### 1. 概述：地图区域&详情展示（节点以及KPI、MEP能力以及硬件能力），MEP详情
+##### 1.1 地图&详情：点击地图上的节点，可显示节点以及KPI、MEP能力以及硬件能力详情
+![](/uploads/images/2021/mecm/3.png)
 ![](/uploads/images/2021/mecm/5.png)  
-##### 1.2点击管理按钮，跳转至MEP详情界面 
+##### 1.2 MEP详情：点击管理按钮，跳转至MEP详情界面 
 ![](/uploads/images/2021/mecm/7.png) 
-#### 2. 应用管理  
-##### 应用管理界面主要分为两部分：应用包管理，应用实例管理。  
-###### 应用包管理：显示的是从应用商城同步过来的应用，在这个界面可以进行应用下发，部署能力。 
-###### 应用实例管理：展示的已经部署或者正在部署的应用实例列表，此处可以查看当前实例的部署状态以及详情，并且进行规则配置，以及失败原因查看。  
+#### 2. 应用管理：应用包管理，应用实例管理
 ##### 2.1 应用包管理 
-###### 集成下发、部署和详情查看功能。  
+集成应用同步，下发以及部署功能。  
 ![](/uploads/images/2021/mecm/8.png)
 ![](/uploads/images/2021/mecm/9.png)
 ![](/uploads/images/2021/mecm/10.png)
 ![](/uploads/images/2021/mecm/11.png)
-##### 2.2 应用实例管理 
-###### 集成详情、删除、规则配置和操作信息功能。
+##### 2.2 应用实例管理
+集成应用实例列表，此处可以查看当前实例的部署状态以及详情，并且进行规则配置，以及失败原因查看等功能
 ![](/uploads/images/2021/mecm/12.png)
 ![](/uploads/images/2021/mecm/13.png)
-###### 规则配置->DNS规则配置 
+规则配置->DNS规则配置 
 ![](/uploads/images/2021/mecm/14.png)
 ![](/uploads/images/2021/mecm/15.png)
-###### 规则配置->分流规则配置
+ 规则配置->分流规则配置
 ![](/uploads/images/2021/mecm/16.png)
 ![](/uploads/images/2021/mecm/17.png)
-###### 规则配置->分流规则配置->过滤规则配置 
+规则配置->分流规则配置->过滤规则配置 
 ![](/uploads/images/2021/mecm/18.png)
-###### 规则配置-分流规则配置-接口信息配置 
+规则配置-分流规则配置-接口信息配置 
 ![](/uploads/images/2021/mecm/19.png)
-#### 3. 边缘节点  
-##### 3.1展示边缘节点列表以及节点监控信息 
-![](/uploads/images/2021/mecm/20.png)
-##### 3.2边缘节点注册
+#### 3. 边缘节点：边缘节点列表，边缘节点注册，上传k8s config文件
+![](/uploads/images/2021/mecm/20.png) 
 ![](/uploads/images/2021/mecm/21.png) 
-##### 3.3上传k8s config文件
-![](/uploads/images/2021/mecm/22.png)
-#### 4.系统管理
-##### 包含：APPLCM注册、APP Rule MGR注册、应用仓库注册
+![](/uploads/images/2021/mecm/22.png) 
+#### 4.系统管理：APPLCM注册、APP Rule MGR注册、应用仓库注册
 ##### 4.1 APPLCM注册
 ![](/uploads/images/2021/mecm/23.png) 
 ##### 4.2 APP Rule MGR注册
