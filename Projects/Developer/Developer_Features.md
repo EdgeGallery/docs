@@ -103,7 +103,7 @@ Developer 特性清单
     配置虚机的规格、镜像、网络等信息
 
     - 输入虚机名称
-![](/uploads/images/2021/v1.1/BasicVmInformation.png "BasicVmInformation.png)
+![](/uploads/images/2021/v1.1/BasicVmInformation.png "BasicVmInformation.png")
 
     - 配置虚机资源大小，镜像源
 ![](/uploads/images/2021/v1.1/SettingVmSpecification.png "SettingVmSpecification.png")
