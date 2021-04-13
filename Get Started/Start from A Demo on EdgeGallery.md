@@ -55,7 +55,5 @@ MEC管理平台：<br>
 ![](/uploads/images/2020/v1.0/ApplicationRelease-3.png "ApplicationRelease-3.png")
 
 
-EdgeGallery v1.1新特性：
-[EdgeGallery v1.1新特性](https://gitee.com/edgegallery/community/blob/master/TSC/Release/v1.1/EdgeGallery%20v1.1NewFeature.mp4)
 
 
