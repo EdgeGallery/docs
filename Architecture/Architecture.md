@@ -1,6 +1,6 @@
 ## EdgeGallery v1.1 版本 架构图
 
-![EdgeGallery v1.1 Architecture](/uploads/images/2021/v1.1/EdgeGallery v1.1 Architecture.png "EdgeGallery v1.1 Architecture.png")
+![EdgeGallery v1.1 Architecture](/uploads/images/2021/v1.1/EdgeGallery_Architecture.png "EdgeGallery_Architecture.png")
 
 
 ## 参与EdgeGallery 架构讨论
