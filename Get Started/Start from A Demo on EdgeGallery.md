@@ -21,9 +21,9 @@ MEC管理平台：<br>
 
 ## 开发准备
 * 新建一个项目<br>
-![](/uploads/images/2020/v1.0/CreateProject.png "CreateProject.png")
+![](/uploads/images/2021/v1.1/CreateProject.png "CreateProject.png")
 * 选择依赖的平台能力，勾选“服务发现”<br>
-![](/uploads/images/2020/v1.0/AbilitySelection.png "AbilitySelection.png")
+![](/uploads/images/2021/v1.1/AbilitySelection.png "AbilitySelection.png")
 
 ## 本地开发
 * 下载依赖的插件-BashSupport，并导入到本地IDE<br>
