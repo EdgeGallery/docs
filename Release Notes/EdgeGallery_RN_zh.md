@@ -51,6 +51,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
         - AppStore联邦，可注册外部AppStore，应用在不同AppStore间可相互推送和拉取
         - 完成80+应用集成、落地17+创新基地、西安电子科技大学研究生课程
 
+ <img src="https://images.gitee.com/uploads/images/2021/0414/151645_e09f9b1b_7520247.png" width = "30%" height = "30%" alt="版本竞争力特性" align=center />
 ![版本竞争力特性](https://images.gitee.com/uploads/images/2021/0414/151645_e09f9b1b_7520247.png "微信图片_20210414151624.png"){:height="30%" width="30%"}
 
  **Bug Fixes**
