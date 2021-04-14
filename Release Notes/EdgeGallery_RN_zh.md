@@ -31,6 +31,8 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 [ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)
 
 
+<img src="https://images.gitee.com/uploads/images/2021/0414/151645_e09f9b1b_7520247.png" width = "50%" height = "50%" alt="版本竞争力特性" align=center />
+
 * 【AI软硬件能力】支撑昇腾/Atlas硬件以及开放API
     - AI图像修复、边缘检测、卡通图像生成、图像上色、对象分类、目标检测等；
 * 【跨平台支持】支持基于Openstack的虚机应用和基于K8S容器应用的孵化集成
@@ -51,7 +53,6 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
     - AppStore联邦，可注册外部AppStore，应用在不同AppStore间可相互推送和拉取
     - 完成80+应用集成、落地17+创新基地、西安电子科技大学研究生课程
 
- <img src="https://images.gitee.com/uploads/images/2021/0414/151645_e09f9b1b_7520247.png" width = "30%" height = "30%" alt="版本竞争力特性" align=center />
 
  **Bug Fixes**
 
