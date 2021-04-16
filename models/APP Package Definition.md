@@ -156,6 +156,7 @@ app_provider_id: EdgeGallery
 app_package_version: 1.0
 app_release_data_time: 1611217260210
 app_type: monitoring_service
+app_class: vm/container
 app_package_description: EdgeGallery Demo application
 
 Source: APPD/monitoring_service.zip
