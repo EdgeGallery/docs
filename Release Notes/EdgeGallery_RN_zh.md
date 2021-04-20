@@ -31,8 +31,8 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 [ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)
 
 
-<br>
-![](/uploads/images/2021/v1.1/NewFeature.png "NewFeature.png")<br>
+![](/uploads/images/2021/v1.1/NewFeature.png "NewFeature.png")
+
 
 * 【AI软硬件能力】支撑昇腾/Atlas硬件以及开放API
     - AI图像修复、边缘检测、卡通图像生成、图像上色、对象分类、目标检测等；
