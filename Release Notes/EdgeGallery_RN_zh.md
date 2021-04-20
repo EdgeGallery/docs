@@ -30,26 +30,29 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 [ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)
 
-* 版本规划特性
-    * 【AI软硬件能力】支撑昇腾/Atlas硬件以及开放API
-        - AI图像修复、边缘检测、卡通图像生成、图像上色、对象分类、目标检测等；
-    * 【跨平台支持】支持基于Openstack的虚机应用和基于K8S容器应用的孵化集成
-    * 【体验优化】
-        - APP分类、APP推荐、爆款动态刷新
-    * 【EdgeNative支持】
-        - IaaS/PaaS/应用都支持按需部署、应用框架自动生成
-        - MEP微服务管理架构可视化
-        - 提供EdgeGallery小程序、设计态等
-    * 【API管理】ETSI MEC API、3GPP CAPIF以及昇腾能力支持情况匹配
-    * 【安全、用户管理】
-        - 分权分域，对关键操作和数据进行权限控制
-        - 应用远程登录（如VNC）支持安全协议登录
-    * 【社区实验室增强】
-        - 提供真实E2E 5G验证环境
-        - 资源一键申请，一键释放，可视化管理
-    * 【应用创新】
-        - AppStore联邦，可注册外部AppStore，应用在不同AppStore间可相互推送和拉取
-        - 完成80+应用集成、落地17+创新基地、西安电子科技大学研究生课程
+
+![](/uploads/images/2021/v1.1/NewFeature.png "NewFeature.png")
+
+
+* 【AI软硬件能力】支撑昇腾/Atlas硬件以及开放API
+    - AI图像修复、边缘检测、卡通图像生成、图像上色、对象分类、目标检测等；
+* 【跨平台支持】支持基于Openstack的虚机应用和基于K8S容器应用的孵化集成
+* 【体验优化】
+    - APP分类、APP推荐、爆款动态刷新
+* 【EdgeNative支持】
+    - IaaS/PaaS/应用都支持按需部署、应用框架自动生成
+    - MEP微服务管理架构可视化
+    - 提供EdgeGallery小程序、设计态等
+* 【API管理】ETSI MEC API、3GPP CAPIF以及昇腾能力支持情况匹配
+* 【安全、用户管理】
+    - 分权分域，对关键操作和数据进行权限控制
+    - 应用远程登录（如VNC）支持安全协议登录
+* 【社区实验室增强】
+    - 提供真实E2E 5G验证环境
+    - 资源一键申请，一键释放，可视化管理
+* 【应用创新】
+    - AppStore联邦，可注册外部AppStore，应用在不同AppStore间可相互推送和拉取
+    - 完成80+应用集成、落地17+创新基地、西安电子科技大学研究生课程
 
 
  **Bug Fixes**

@@ -33,6 +33,7 @@ Version: v1.1.0
 
 [**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)
  
+![](/uploads/images/2021/v1.1/NewFeature.png "NewFeature.png")
 
 * [AI software and hardware capability] supports the hardware of shengteng / atlas and open API
     - AI image restoration, edge detection, cartoon image generation, image coloring, object classification, target detection, etc;
