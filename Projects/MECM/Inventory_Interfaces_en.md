@@ -529,14 +529,13 @@ Example response:
 Retrieves all MEC host records
 
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts
+Resource URI: /inventory/v1/mechosts
 Method: GET
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64 characters|
 
 Example response:
 ```
@@ -574,7 +573,7 @@ Example response:
 ### Add MEC Host Record
 Adds new MEC host record
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts
+Resource URI: /inventory/v1/mechosts
 Method: POST
 ```
 
@@ -582,7 +581,6 @@ Method: POST
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
 |mechost_ip|mechost IP|path|yes|Valid IP address|15|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |address|address|body|yes|Valid IP address|255|
 |affinity|affinity|body|yes|AlphaNumeric, special characters allowed are hypen,underscore and comma|128|
 |applcmIp|applcmIp|body|yes|Valid IP address|15|
@@ -644,14 +642,13 @@ Example response:
 ### Delete All MEC Host Records
 Deletes all application stores records
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts
+Resource URI: /inventory/v1/mechosts
 Method: DELETE
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id |tenant identifier|path   |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -667,7 +664,7 @@ Example response:
 Retrieves MEC host records
 
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}
+Resource URI: /inventory/v1/mechosts/{mechost_ip}
 Method: GET
 ```
 
@@ -675,7 +672,6 @@ Method: GET
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |mechost_ip |mechost_ip|path |yes|Valid IP address|15|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 ```
 200 OK
@@ -709,7 +705,7 @@ Method: GET
 ### Update MEC Host Record
 Updates existing MEC host record
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}
+Resource URI: /inventory/v1/mechosts/{mechost_ip}
 Method: PUT
 ```
 
@@ -717,7 +713,6 @@ Method: PUT
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
 |mechost_ip|mechost IP|path|yes|Valid IP address|15|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |address|address|body|yes|Valid IP address|255|
 |affinity|affinity|body|yes|AlphaNumeric, special characters allowed are hypen,underscore and comma|128|
 |applcmIp|applcmIp|body|yes|Valid IP address|15|
@@ -776,7 +771,7 @@ Example response:
 ### Delete MEC Host Record
 Deletes application stores record
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}
+Resource URI: /inventory/v1/mechosts/{mechost_ip}
 Method: DELETE
 ```
 
@@ -784,7 +779,6 @@ Method: DELETE
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |mechost_ip |mechost IP|path |yes|Valid IP Address|15|
-|tenant_id |tenant identifier|path   |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -807,7 +801,6 @@ Method: POST
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
 |appInstanceId |appInstance id|body |yes|Valid UUID|64|
-|tenant_id |tenant identifier|path|yes|Valid UUID|64|
 |mechost_ip |mechost ip|path|yes|Valid IP Address|15|
 |appName |appName|body|yes|AlphaNumeric,special characters allowed are hypen and underscore|128|
 |capabilities |capabilities|body|yes|capabilities |10|
