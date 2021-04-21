@@ -7,14 +7,13 @@ The document is for the Inventory project, there are three parts of interfaces i
 Retrieves all application LCM records
 
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/applcms
+Resource URI: /inventory/v1/applcms
 Method: GET
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -32,14 +31,13 @@ Example response:
 ### Add Applcm Record
 Adds new application LCM record
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/applcms
+Resource URI: /inventory/v1/applcms
 Method: POST
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |applcmIp|applcmIp|body|yes|Valid URL|15|
 |applcmPort|applcmPort|body|yes|Valid Port|
 |userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
@@ -67,14 +65,13 @@ Example response:
 ### Delete All Applcm Record
 Deletes all application LCM Records.
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/applcms
+Resource URI: /inventory/v1/applcms
 Method: DELETE
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -89,7 +86,7 @@ Example response:
 ### Get Application LCM Record
 Retrieves application LCM Record
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip}
+Resource URI: /inventory/v1/applcms/{applcm_ip}
 Method: GET
 ```
 
@@ -97,7 +94,6 @@ Method: GET
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |applcm_ip|applcm ip|path |yes|Valid IP Address|15|
-|tenant_id|tenant identifier|path |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -113,7 +109,7 @@ Example response:
 ### Update Application LCM Record
 Updates existing application LCM record
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip}
+Resource URI: /inventory/v1/applcms/{applcm_ip}
 Method: PUT
 ```
 
@@ -121,7 +117,6 @@ Method: PUT
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |applcm_ip|applcm IP|path |yes|Valid IP Address|15|
-|tenant_id |tenant identifier|path |yes|Valid UUID|64|
 |appstorePort|appstorePort|body|yes|Valid Port|5|
 |userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 
@@ -148,7 +143,7 @@ Example response:
 ### Delete Application LCM Record
 Deletes application LCM record
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/applcms/{applcm_ip}
+Resource URI: /inventory/v1/applcms/{applcm_ip}
 Method: DELETE
 ```
 
@@ -156,7 +151,6 @@ Method: DELETE
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |applcm_ip |applcm ip|path |yes|Valid IP Address|15|
-|tenant_id |tenant identifier|path |yes|Valid UUID|64|
 
 Example response:
 ```
