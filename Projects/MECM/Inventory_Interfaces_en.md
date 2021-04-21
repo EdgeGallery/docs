@@ -1023,14 +1023,13 @@ Example response:
 ### Add application rule
 Adds a new application rule manager record entry into the Inventory.
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers
+Resource URI: /inventory/v1/apprulemanagers
 Method: POST
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |appRulePort|appRulePort|body|yes|Valid Port Number|5|
 |appRuleIp|appRuleIp|body|yes|Valid IP Address|15|
 |appRuleName|appRuleName|body|yes|AlphaNumeric,special characters allowed are hypen and underscore|128|
@@ -1058,14 +1057,13 @@ Example response:
 Updates an exiting application rule manager record in the Inventory matching the given tenant ID &
 appRuleManager IP.
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers/{app_rule_manager_ip}
+Resource URI: /inventory/v1/apprulemanagers/{app_rule_manager_ip}
 Method: PUT
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |app_rule_manager_ip|app rule manager IP|path|yes|Valid IP Address|15|
 |appRulePort|appRulePort|body|yes|Valid Port Number|5|
 |appRuleIp|appRuleIp|body|yes|Valid IP Address|15|
@@ -1092,14 +1090,13 @@ Example response:
 ### Get all application rule manager records
 Retrieves all application rule manager records .
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers
+Resource URI: /inventory/v1/apprulemanagers
 Method: GET
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 
 Example response:
@@ -1119,14 +1116,13 @@ Example response:
  Retrieves a specific application rule manager record in the Inventory matching the given tenant ID &
  app rule manager IP
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers/{app_rule_manager_ip}
+Resource URI: /inventory/v1/apprulemanagers/{app_rule_manager_ip}
 Method: GET
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |app_rule_manager_ip|app rule manager IP|path|yes|Valid IP Address|15|
 
 
@@ -1144,14 +1140,13 @@ Example response:
 ### Delete all application rule manager records
 Deletes all records for a given tenant
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers
+Resource URI: /inventory/v1/apprulemanagers
 Method: DELETE
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 
 Example response:
@@ -1166,14 +1161,13 @@ Example response:
 Delete a specific application rule manager record in the Inventory matching the given tenant ID
 & app rule manager IP.
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/apprulemanagers/{app_rule_manager_ip}
+Resource URI: /inventory/v1/apprulemanagers/{app_rule_manager_ip}
 Method: DELETE
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |app_rule_manager_ip|app rule manager IP|path|yes|Valid IP Address|15|
 
 Example response:
