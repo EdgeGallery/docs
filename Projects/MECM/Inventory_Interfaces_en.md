@@ -165,14 +165,13 @@ Example response:
 ### Get All Application Records 
 Retrieves all application store records
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/appstores
+Resource URI: /inventory/v1/appstores
 Method: GET
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -192,14 +191,13 @@ Example response:
 ### Add Application Store Record
 Adds new application store record
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/appstores
+Resource URI: /inventory/v1/appstores
 Method: POST
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |appstoreIp|appstoreIp|body|yes|Valid IP Address|15|
 |appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |appstorePort|appstorePort|body|yes|Valid Port|5|
@@ -231,14 +229,13 @@ Example response:
 ### Delete All Application Records
 Deletes all application stores records
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/appstores
+Resource URI: /inventory/v1/appstores
 Method: DELETE
 ```
 
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
-|tenant_id |tenant identifier|path   |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -253,7 +250,7 @@ Example response:
 ### Get Application Stores Record
 Retrieves application store record
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/appstores/{appstore_ip}
+Resource URI: /inventory/v1/appstores/{appstore_ip}
 Method: GET
 ```
 
@@ -261,7 +258,6 @@ Method: GET
 |---|---|---|---|---|---|
 |access_token |access_token|header |yes|Jwt token|
 |appstore_ip |appstore IP|path |yes|Valid IP Address|15|
-|tenant_id |tenant identifier|path |yes|Valid UUID|64|
 
 Example response:
 ```
@@ -285,7 +281,6 @@ Method: POST
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |appstoreIp|appstoreIp|body|yes|Valid IP Address|15|
 |appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |appstorePort|appstorePort|body|yes|Valid Port|5|
@@ -328,7 +323,6 @@ Method: PUT
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |appstoreIp|appstoreIp|body|yes|Valid IP Address|15|
 |appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |appstorePort|appstorePort|body|yes|Valid Port|5|
@@ -471,7 +465,7 @@ Example response:
 ### Update App Store Record
 Updates existing application store record
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/appstores/{appstore_ip}
+Resource URI: /inventory/v1/appstores/{appstore_ip}
 Method: PUT
 ```
 
@@ -479,7 +473,6 @@ Method: PUT
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
 |appstore_ip|appstore IP|path|yes|Valid IP Address|15|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 |appstoreIp|appstoreIp|body|yes|Valid IP Address|15|
 |appstoreName|appstoreName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
 |appstorePort|appstorePort|body|yes|Valid Port|5|
@@ -512,7 +505,7 @@ Example response:
 ### Deletes Application Record
 Deletes application store record
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/appstores/{appstore_ip}
+Resource URI: /inventory/v1/appstores/{appstore_ip}
 Method: DELETE
 ```
 
@@ -520,7 +513,6 @@ Method: DELETE
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
 |appstore_ip|appstore IP|path|yes|Valid IP address|15|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
