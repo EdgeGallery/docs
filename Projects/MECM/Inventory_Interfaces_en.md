@@ -964,7 +964,7 @@ Example response:
 Upload K8s configuration file to applcm
 
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/k8sconfig
+Resource URI: /inventory/v1/mechosts/{mechost_ip}/k8sconfig
 Method: POST
 ```
 
@@ -973,7 +973,6 @@ Method: POST
 |access_token |access token|header |yes|Jwt token|
 |file|file|formData|yes|
 |mechost_ip|mechost IP|path|yes|Valid IP Address|15|
-|tenant_id|tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -986,7 +985,7 @@ Example response:
 ### Delete K8s Configuration File
 Deletes K8s configuration file from applcm
 ```
-Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/k8sconfig
+Resource URI: /inventory/v1/mechosts/{mechost_ip}/k8sconfig
 Method: DELETE
 ```
 
@@ -994,7 +993,6 @@ Method: DELETE
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |mechost_ip |mechost IP|path |yes|Valid IP Address|15|
-|tenant_id |tenant identifier|path   |yes|Valid UUID|64|
 
 Example response:
 ```
