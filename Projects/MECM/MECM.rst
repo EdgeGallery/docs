@@ -3,7 +3,7 @@ MECM
 .. toctree::
    :maxdepth: 3
 
-**Overview概述**
+Overview概述
 ************
 
    .. toctree::
@@ -11,7 +11,7 @@ MECM
 
        MECM Overview概述<MECM_Overview_en>
 
-**Architecture**
+Architecture
 *************
 
    .. toctree::
@@ -19,7 +19,7 @@ MECM
 
        MECM Architecture架构<MECM_Architecture_en>
 
-**Interface Designs界面设计**
+Interface Designs界面设计
 *************************
 
    .. toctree::
@@ -33,7 +33,7 @@ MECM
        K8s plugin Interface<K8s_Interfaces_en>
 
 
-**Database Designs数据库设计**
+Database Designs数据库设计
 *************************
 
    .. toctree::
@@ -45,7 +45,7 @@ MECM
        Appo Database<MECM_Appo_Database_Design>
        Inventory Database<MECM_Inventory_Database_Design>
 
-**User Guides使用指导**
+User Guides使用指导
 ******************
 
     .. toctree::
@@ -54,7 +54,7 @@ MECM
        MECM Product Document使用指导<MECM Product Document>
        MECM User Interface Document<MECM_User_Interface>
 
-**How to Contribute如何贡献**
+How to Contribute如何贡献
 *****************
 
     .. toctree::
@@ -66,7 +66,7 @@ MECM
        Contribute to Inventory<MECM_Inventory_Contribution>
        Contribute to AppRuleManager<MECM_App_Rule_Contribution>
 
-**Port Matrix端口矩阵**
+Port Matrix端口矩阵
 ******************
 
     .. toctree::
