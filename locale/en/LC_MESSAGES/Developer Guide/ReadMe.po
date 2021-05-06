@@ -22,8 +22,8 @@ msgid "开发者指导"
 msgstr "Developer guidance"
 
 #: ../../Developer Guide/ReadMe.md:4
-msgid "## EdgeGallery 安装指导"
-msgstr "## EdgeGallery Installation Guidance"
+msgid "\#\# EdgeGallery 安装指导"
+msgstr "\#\# EdgeGallery Installation Guidance"
 
 #: ../../Developer Guide/ReadMe.md:6
 msgid "[EdgeGallery离线安装指导](https://gitee.com/OSDT/dashboard/projects/edgegallery/installer/blob/Release-v1.0/offline/README_cn.md)"
