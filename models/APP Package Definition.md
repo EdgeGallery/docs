@@ -140,6 +140,7 @@ metadata中主要包含以下参数：
 |app_release_data_time | app发布时间 | 是 |
 |app_package_version | 用"."分隔的字符串，取值要和APPD描述文件中的metadata下的vnfd_version保持一致 |是 |
 |app_type | app类型，取值要和APPD描述文件中欧冠的metadata下的vnfd_id一致| 否|
+|app_class | app类型，区分容器应用和虚机应用| 是|
 |app_package_description| APP描述信息 | 否 |
 
 完整性保护上主要包含3个参数，具体定义参考ETSI NFV SOL004。  
