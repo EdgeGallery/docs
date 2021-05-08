@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "1da8ddee-e1f6-4174-911c-d53eda1c418d",
+		"name": "(MEP)mepauth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "apply for a real token (kong proxy - mepauth)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"description": "$AccessKeyID is ak value\n$Signature is generate with sk and date and other things\n",
+						"key": "Authorization",
+						"type": "text",
+						"value": "SDK-HMAC-SHA256 Access=QVUJMSUMgS0VZLS0tLS0, SignedHeaders=content-type;host;x-sdk-date, Signature=508b096b5131ac8d80b35b8bd6433306acb2fffe428385ca2417a40f9adac593"
+					},
+					{
+						"key": "x-sdk-date",
+						"type": "text",
+						"value": "20210222T195818Z"
+					},
+					{
+						"key": "Host",
+						"type": "text",
+						"value": "119.8.47.5:30443"
+					}
+				],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:{{KONG_PROXY_SSL}}/mep/token",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{KONG_PROXY_SSL}}",
+					"path": [
+						"mep",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "s6BhdRkqt3",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "7Fjfp0ZBr1KtDRbnfVdmIw",
+							"disabled": true
+						}
+					]
+				},
+				"description": "result:\r\n{\r\n    \"access_token\": \"mF_9.B5f-4.1JqM\",\r\n    \"token_type\": \"Bearer\",\r\n    \"expires_in\": 3600,\r\n    \"public_key\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsOhMFz3x6kUddhlgF78j2dCDHpUaWgKcTQmnh++v/at9wAvOo9De2dDnPXQzm/cebff6hwKyV4LY66/+Pg5ikPvlmG9KXuJEzwXYUODQBzalCjlBzN2p1355FmsAWWEljwL0ncmmm67oetw/1RiB9ueROdzuF8zUnuo0YrvswjWHchI+2Z3QS9KXuYNmotIzwTyWdY2H7nyNV3t10CDsipT0ckrzB2kErUSANob1w8lt0pIefXIeiAHQprIJ7a6TD8vc7IvDUaQ/1ANTigskJJ5xq6gXQgFT4e07jPVn/bRMshbiw4+2JaljTqGykmSH8El3qC9ZyeHBiGJz6BDVCQIDAQAB\"\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "confs ak/sk (kong proxy - mepauth)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"authInfo\":{\r\n        \"credentials\":{\r\n            \"accessKeyId\":\"HCY8BGCN3\",\r\n            \"secretKey\":\"9zYwf1uabSQY0JTn\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{MEP_HOST}}:{{MEP_PORT}}/mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd3f/confs",
+					"protocol": "https",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"appMng",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd3f",
+						"confs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "confs query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{MEP_HOST}}:{{MEP_PORT}}/mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd3f/confs",
+					"protocol": "https",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"appMng",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd3f",
+						"confs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete ak/sd",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://{{MEP_HOST}}:{{MEP_PORT}}/mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confs",
+					"protocol": "https",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"appMng",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"confs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
