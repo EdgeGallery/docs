@@ -1,0 +1,673 @@
+{
+	"info": {
+		"_postman_id": "243cfd73-cab1-40fe-b213-5e5a6430f1d7",
+		"name": "(MEP)mepserver",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http-log",
+			"item": [
+				{
+					"name": "kongLog query(kong proxy)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{KONG_HOST}}:{{K8S_MEPSERVER_PORT}}/mep/service_govern/v1/kong_log",
+							"protocol": "https",
+							"host": [
+								"{{KONG_HOST}}"
+							],
+							"port": "{{K8S_MEPSERVER_PORT}}",
+							"path": [
+								"mep",
+								"service_govern",
+								"v1",
+								"kong_log"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subscribeStatistic(kong proxy)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{KONG_HOST}}:{{K8S_MEPSERVER_PORT}}/mep/service_govern/v1/subscribe_statistic",
+							"protocol": "https",
+							"host": [
+								"{{KONG_HOST}}"
+							],
+							"port": "{{K8S_MEPSERVER_PORT}}",
+							"path": [
+								"mep",
+								"service_govern",
+								"v1",
+								"subscribe_statistic"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "app service register(kong proxy - mep)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{AUTH_TOKEN}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"serName\": \"facerecognition_service\",\n  \"serCategory\": {\n    \"href\": \"/example/catalogue1\",\n    \"id\": \"id12345\",\n    \"name\": \"RNI\",\n    \"version\": \"1.2.3\"\n  },\n  \"version\": \"4.5.8\",\n  \"state\": \"ACTIVE\",\n  \"transportId\": \"Rest1\",\n  \"transportInfo\": {\n    \"id\": \"TransId12345\",\n    \"name\": \"REST\",\n    \"description\": \"REST API\",\n    \"type\": \"REST_HTTP\",\n    \"protocol\": \"HTTP\",\n    \"version\": \"2.0\",\n    \"endpoint\": {\n        \"addresses\":[{\n            \"host\":\"face-recognition.default\",\n            \"port\":9999\n        }]\n    },\n    \"security\": {\n      \"oAuth2Info\": {\n        \"grantTypes\": [\n          \"OAUTH2_CLIENT_CREDENTIALS\"\n        ],\n        \"tokenEndpoint\": \"/mecSerMgmtApi/security/TokenEndPoint\"\n      }\n    },\n    \"implSpecificInfo\": {}\n  },\n  \"serializer\": \"JSON\",\n  \"scopeOfLocality\": \"MEC_SYSTEM\",\n  \"consumedLocalOnly\": false,\n  \"isLocal\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{KONG_HOST}}:{{KONG_PROXY_SSL}}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{KONG_PROXY_SSL}}",
+					"path": [
+						"mep",
+						"mec_service_mgmt",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app services all get(kong proxy)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{AUTH_TOKEN}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:{{KONG_PROXY_SSL}}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services?ser_name=facerecognition_service",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{KONG_PROXY_SSL}}",
+					"path": [
+						"mep",
+						"mec_service_mgmt",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"services"
+					],
+					"query": [
+						{
+							"key": "ser_name",
+							"value": "facerecognition_service"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app service modify",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4="
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"serName\": \"FaceRegService5\",\n  \"serCategory\": {\n    \"href\": \"/example/catalogue1\",\n    \"id\": \"id12345\",\n    \"name\": \"RNI\",\n    \"version\": \"5.5.5\"\n  },\n  \"version\": \"4.5.7\",\n  \"state\": \"INACTIVE\",\n  \"transportId\": \"Rest1\",\n  \"transportInfo\": {\n    \"id\": \"TransId12345\",\n    \"name\": \"REST\",\n    \"description\": \"REST API\",\n    \"type\": \"REST_HTTP\",\n    \"protocol\": \"HTTP\",\n    \"version\": \"2.0\",\n    \"endpoint\": {},\n    \"security\": {\n      \"oAuth2Info\": {\n        \"grantTypes\": [\n          \"OAUTH2_CLIENT_CREDENTIALS\"\n        ],\n        \"tokenEndpoint\": \"/mecSerMgmtApi/security/TokenEndPoint\"\n      }\n    },\n    \"implSpecificInfo\": {}\n  },\n  \"serializer\": \"JSON\",\n  \"scopeOfLocality\": \"MEC_SYSTEM\",\n  \"consumedLocalOnly\": false,\n  \"isLocal\": true\n}"
+				},
+				"url": {
+					"raw": "http://{{MEP_HOST}}:{{MEP_PORT}}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/f7e898d1c9ea9eddc454d5ae95610021",
+					"protocol": "http",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"mec_service_mgmt",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"services",
+						"f7e898d1c9ea9eddc454d5ae95610021"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app service one del(kong proxy)",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{AUTH_TOKEN}}"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:{{KONG_PROXY_SSL}}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/03bbf7e4db242a5d7d79e778fa6bec54",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{KONG_PROXY_SSL}}",
+					"path": [
+						"mep",
+						"mec_service_mgmt",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"services",
+						"03bbf7e4db242a5d7d79e778fa6bec54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app one service one get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{AUTH_TOKEN}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:{{KONG_PROXY_SSL}}/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0beea0f8c99be12fa9440bec75000a35",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{KONG_PROXY_SSL}}",
+					"path": [
+						"mepserver",
+						"mec_service_mgmt",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"services",
+						"0beea0f8c99be12fa9440bec75000a35"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "services get(kong proxy)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{AUTH_TOKEN}}"
+					}
+				],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:{{KONG_PROXY_SSL}}/mep/mec_service_mgmt/v1/services?ser_name=facerecognition_service",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{KONG_PROXY_SSL}}",
+					"path": [
+						"mep",
+						"mec_service_mgmt",
+						"v1",
+						"services"
+					],
+					"query": [
+						{
+							"key": "ser_name",
+							"value": "FaceRegService3",
+							"disabled": true
+						},
+						{
+							"key": "ser_name",
+							"value": "facerecognition_service"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "service one get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{MEP_HOST}}:{{MEP_PORT}}/mep/mec_service_mgmt/v1/services/f7e898d1c9ea9edd5507a90abc7149c4",
+					"protocol": "https",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"mec_service_mgmt",
+						"v1",
+						"services",
+						"f7e898d1c9ea9edd5507a90abc7149c4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "end app subscribe add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"subscriptionType\": \"AppTerminationNotificationSubscription\",\r\n  \"callbackReference\": \"http://example.com\",\r\n  \"appInstanceId\": \"6abe4782-2c70-4e47-9a4e-0ee3a1a0fd1e\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{MEP_HOST}}:{{MEP_PORT}}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions",
+					"protocol": "https",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"mec_app_support",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "end app subscribes get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{MEP_HOST}}:{{MEP_PORT}}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions",
+					"protocol": "https",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"mec_app_support",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "end app sbuscribe one del",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{MEP_HOST}}:{{MEP_PORT}}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/bcace461-22cf-4b39-bad6-6f62312df3a4",
+					"protocol": "https",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"mec_app_support",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"subscriptions",
+						"bcace461-22cf-4b39-bad6-6f62312df3a4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "end app sbuscribe one get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{MEP_HOST}}:{{MEP_PORT}}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/bcace461-22cf-4b39-bad6-6f62312df3a4",
+					"protocol": "https",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"mec_app_support",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"subscriptions",
+						"bcace461-22cf-4b39-bad6-6f62312df3a4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "avail app subscribe add(kong proxy)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppinstanceID",
+						"type": "text",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{AUTH_TOKEN}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"subscriptionType\": \"SerAvailabilityNotificationSubscription\",\r\n  \"callbackReference\": \"http://example.com\",\r\n  \"filteringCriteria\": {\r\n    \"serInstanceIds\": [\r\n      \"f7e898d1c9ea9eddb603b4669625dacd\"\r\n    ],\r\n    \"serNames\": [\r\n      \"FaceRegService5\"\r\n    ],\r\n    \"serCategories\": [\r\n      {\r\n        \"href\": \"/example/catalogue1\",\r\n        \"id\": \"id12345\",\r\n        \"name\": \"RNI\",\r\n        \"version\": \"1.2.2\"\r\n      }\r\n    ],\r\n    \"states\": [\r\n      \"ACTIVE\"\r\n    ],\r\n    \"isLocal\": true\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{KONG_HOST}}:{{KONG_PROXY_SSL}}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{KONG_PROXY_SSL}}",
+					"path": [
+						"mep",
+						"mec_service_mgmt",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "avail app subscribes get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{AUTH_TOKEN}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{MEP_HOST}}:{{MEP_PORT}}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions",
+					"protocol": "https",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"mec_service_mgmt",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "avail app subscribe one del",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"serName\": \"FaceRecognizeService\",\r\n  \"serCategory\": {\r\n    \"href\": \"/example/catalogue1\",\r\n    \"id\": \"id12345\",\r\n    \"name\": \"RNI\",\r\n    \"version\": \"5.2.3\"\r\n  },\r\n  \"version\": \"1.8.2\",\r\n  \"state\": \"ACTIVE\",\r\n  \"transportId\": \"Rest1\",\r\n  \"transportInfo\": {\r\n    \"id\": \"TransId12345\",\r\n    \"name\": \"REST\",\r\n    \"description\": \"REST API\",\r\n    \"type\": \"REST_HTTP\",\r\n    \"protocol\": \"HTTP\",\r\n    \"version\": \"2.0\",\r\n    \"endpoint\": {},\r\n    \"security\": {\r\n      \"oAuth2Info\": {\r\n        \"grantTypes\": [\r\n          \"OAUTH2_CLIENT_CREDENTIALS\"\r\n        ],\r\n        \"tokenEndpoint\": \"/mecSerMgmtApi/security/TokenEndPoint\"\r\n      }\r\n    },\r\n    \"implSpecificInfo\": {}\r\n  },\r\n  \"serializer\": \"JSON\",\r\n  \"scopeOfLocality\": \"MEC_SYSTEM\",\r\n  \"consumedLocalOnly\": false,\r\n  \"isLocal\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{MEP_HOST}}:{{MEP_PORT}}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/b2c726a7-4e32-4ec4-b27c-67750ef3ec0f",
+					"protocol": "https",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"mec_service_mgmt",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"subscriptions",
+						"b2c726a7-4e32-4ec4-b27c-67750ef3ec0f"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "avail app subscribe one get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"serName\": \"FaceRecognizeService\",\r\n  \"serCategory\": {\r\n    \"href\": \"/example/catalogue1\",\r\n    \"id\": \"id12345\",\r\n    \"name\": \"RNI\",\r\n    \"version\": \"5.2.3\"\r\n  },\r\n  \"version\": \"1.8.2\",\r\n  \"state\": \"ACTIVE\",\r\n  \"transportId\": \"Rest1\",\r\n  \"transportInfo\": {\r\n    \"id\": \"TransId12345\",\r\n    \"name\": \"REST\",\r\n    \"description\": \"REST API\",\r\n    \"type\": \"REST_HTTP\",\r\n    \"protocol\": \"HTTP\",\r\n    \"version\": \"2.0\",\r\n    \"endpoint\": {},\r\n    \"security\": {\r\n      \"oAuth2Info\": {\r\n        \"grantTypes\": [\r\n          \"OAUTH2_CLIENT_CREDENTIALS\"\r\n        ],\r\n        \"tokenEndpoint\": \"/mecSerMgmtApi/security/TokenEndPoint\"\r\n      }\r\n    },\r\n    \"implSpecificInfo\": {}\r\n  },\r\n  \"serializer\": \"JSON\",\r\n  \"scopeOfLocality\": \"MEC_SYSTEM\",\r\n  \"consumedLocalOnly\": false,\r\n  \"isLocal\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{MEP_HOST}}:{{MEP_PORT}}/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/b2c726a7-4e32-4ec4-b27c-67750ef3ec0f",
+					"protocol": "https",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"mec_service_mgmt",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"subscriptions",
+						"b2c726a7-4e32-4ec4-b27c-67750ef3ec0f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all services by appId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppinstanceID",
+						"value": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{MEP_HOST}}:{{MEP_PORT}}/mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/AppInstanceTermination",
+					"protocol": "http",
+					"host": [
+						"{{MEP_HOST}}"
+					],
+					"port": "{{MEP_PORT}}",
+					"path": [
+						"mep",
+						"mec_app_support",
+						"v1",
+						"applications",
+						"5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f",
+						"AppInstanceTermination"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
