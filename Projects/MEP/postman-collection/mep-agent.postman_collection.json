@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "340e3ff1-95dc-4d9d-945c-b05e66c5f590",
+		"name": "mep-agent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Query service by name",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/mep-agent/v1/endpoint/facerecognition",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"mep-agent",
+						"v1",
+						"endpoint",
+						"facerecognition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/mep-agent/v1/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"mep-agent",
+						"v1",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

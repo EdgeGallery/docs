@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "f6f7701e-82fa-408e-abdc-a2db63f340db",
+		"name": "kong",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "查询节点信息",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:8444/",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "8444",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询节点状态",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:8444/status",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "8444",
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:8444/services",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "8444",
+					"path": [
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query services(k8s)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{KONG_HOST}}:{{K8S_KONG_ADMIN_PORT}}/services",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{K8S_KONG_ADMIN_PORT}}",
+					"path": [
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query routes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:8444/routes/",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "8444",
+					"path": [
+						"routes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query plugins",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:8444/plugins/",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "8444",
+					"path": [
+						"plugins",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete service",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:8444/services/prometheusEndpoint",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "8444",
+					"path": [
+						"services",
+						"prometheusEndpoint"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete route",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:8444/routes/7df02045-c36e-477f-a1da-7aaf8c10b5e5",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "8444",
+					"path": [
+						"routes",
+						"7df02045-c36e-477f-a1da-7aaf8c10b5e5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query metrics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{KONG_HOST}}:8444/metrics",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "8444",
+					"path": [
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update plugins",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"http-log\",\r\n    \"config\": {\r\n        \"flush_timeout\": 2,\r\n        \"http_endpoint\": \"http://logstash:5044\",\r\n        \"retry_count\": 10,\r\n        \"timeout\": 1000,\r\n        \"queue_size\": 1,\r\n        \"keepalive\": 1000,\r\n        \"content_type\": \"application/json\",\r\n        \"method\": \"POST\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{KONG_HOST}}:8444/plugins/03b14d7e-f307-40ba-a849-f0730dce1e46",
+					"protocol": "https",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "8444",
+					"path": [
+						"plugins",
+						"03b14d7e-f307-40ba-a849-f0730dce1e46"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

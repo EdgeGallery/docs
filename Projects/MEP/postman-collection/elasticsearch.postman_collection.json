@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "85a51651-8883-489d-9eb2-97361686d0aa",
+		"name": "elasticsearch",
+		"description": "elasticsearch api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "query ES",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "elastic",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{KONG_HOST}}:{{ES_PORT}}/",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{ES_PORT}}",
+					"path": [
+						""
+					]
+				},
+				"description": "Basic Auth\r\nUsername: elastic\r\nPassword: 123456"
+			},
+			"response": []
+		},
+		{
+			"name": "query ES doc(k8s)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": { \r\n                \"range\": {\r\n                    \"started_at\": {\r\n                        \"gte\": \"now-1d/d\"\r\n                    }\r\n                }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{KONG_HOST}}:{{K8S_ES_PORT}}/http-log/_search",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{K8S_ES_PORT}}",
+					"path": [
+						"http-log",
+						"_search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query ES settings",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "elastic",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{KONG_HOST}}:9200/_cluster/settings",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "9200",
+					"path": [
+						"_cluster",
+						"settings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query ES indices",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "elastic",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{KONG_HOST}}:{{K8S_ES_PORT}}/_cat/indices?v",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{K8S_ES_PORT}}",
+					"path": [
+						"_cat",
+						"indices"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query ES index doc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "elastic",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"size\": 0,\r\n    \"query\": {\r\n        \"bool\": {\r\n            \"must\": [\r\n                {\r\n                    \"regexp\": {\r\n                        \"upstream_uri.keyword\": \"/mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services\"\r\n                    }\r\n                },\r\n                {\r\n                    \"range\": {\r\n                        \"started_at\": {\r\n                            \"gte\": \"now-7d/d\",\r\n                            \"lt\": \"now/d\"\r\n                        }\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    },\r\n    \"aggs\": {\r\n        \"result\": {\r\n            \"date_histogram\": {\r\n                \"field\": \"started_at\",\r\n                \"interval\": \"day\",\r\n                \"format\": \"yyyy-MM-dd\",\r\n                \"min_doc_count\":0,\r\n                \"extended_bounds\":{\r\n                    \"min\":\"now-6d/d\",\r\n                    \"max\":\"now/d\"\r\n                },\r\n                \"order\":{\r\n                    \"_key\":\"desc\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{KONG_HOST}}:9200/http-log/_search",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "9200",
+					"path": [
+						"http-log",
+						"_search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query ES index doc count",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "elastic",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": {\r\n        \"bool\": {\r\n            \"must\": [\r\n                {\r\n                    \"term\": {\r\n                        \"service.name\": \"mepserver\"\r\n                    }\r\n                }\r\n            ],\r\n            \"filter\": {\r\n                \"range\": {\r\n                    \"@timestamp\": {\r\n                        \"gte\": \"now-1d\",\r\n                        \"lt\": \"now\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{KONG_HOST}}:9200/kong-log/_count",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "9200",
+					"path": [
+						"kong-log",
+						"_count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete ES index",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://{{KONG_HOST}}:9200/http-log",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "9200",
+					"path": [
+						"http-log"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query ES indices(k8s)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{KONG_HOST}}:32009/_cat/indices?v",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "32009",
+					"path": [
+						"_cat",
+						"indices"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query ES mappings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{KONG_HOST}}:9200/http-log/_mappings",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "9200",
+					"path": [
+						"http-log",
+						"_mappings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query ES mappings(k8s)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{KONG_HOST}}:{{K8S_ES_PORT}}/http-log/_mappings",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{K8S_ES_PORT}}",
+					"path": [
+						"http-log",
+						"_mappings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create ES index",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mappings\": {\r\n        \"properties\": {\r\n            \"started_at\": {\r\n                \"type\": \"date\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{KONG_HOST}}:{{ES_PORT}}/http-log",
+					"protocol": "http",
+					"host": [
+						"{{KONG_HOST}}"
+					],
+					"port": "{{ES_PORT}}",
+					"path": [
+						"http-log"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
