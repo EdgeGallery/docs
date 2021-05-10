@@ -55,7 +55,7 @@ MEP
 ************
 
    .. toctree::
-      :maxdepth: 3
+      :maxdepth: 1
 
        MEP 如何贡献 <MEP_Contribution>
        Contribute to mep-agent<MEP_agent_Contribution>
