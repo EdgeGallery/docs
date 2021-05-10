@@ -19,5 +19,6 @@ APPINSTID=5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f;
 CA_CERT_DOMAIN_NAME=edgegallery</br>
 
 ![](/uploads/images/2021/mep/mep-agent_config_env_variables.png "env variables")
+
 4. Run main.go to start mep-agent
 5. After start, can call the api by postman
