@@ -1,0 +1,6 @@
+Error fix for Header #,##,### and links with [], and ()
+    a) In local setup, add myst_parser in extensions of conf.py file.
+    b) myst_parser version is 0.14.0 for proper working.
+    c) Run make gettext in docs folder of the project to create fresh .pot files.
+    d) Now, use "sphinx-intl update -p build/gettext -l en --line-width=99999999999999999999999" to update .po files
+    e) Translate/Auto-translate the po files and push in the po code.
