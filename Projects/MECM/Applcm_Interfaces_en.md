@@ -330,26 +330,6 @@ Example response:
   }
 ```
 
-### Query
-Sync app instances stale records
-```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/sync_deleted
-Method: GET
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt Token|
-|tenantId|tenant Id|path|yes|Valid UUID|64|
-
-Example response:
-```
-200 OK
-  {
-    {}    
-  }
-```
-
 ### Upload package
 Upload package
 ```
