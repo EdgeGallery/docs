@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-11 12:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/APPSTORE/AppStore_Overview.md:2
+#: ../../Projects/APPSTORE/AppStore_Overview.md:1
 msgid "概述"
 msgstr "Overview"
 
@@ -30,34 +30,30 @@ msgid "AppStore分为前后台两个部分，[AppStore BE][1]是后台部分，�
 msgstr "The AppStore is divided into two parts, and the [AppStore BE] [1] is a backstage part that provides the main functional interface for the foreground or other three-way system calls, [AppStore FE] [2] is the foreground part and provides an interface display."
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:9
-msgid "## 整体框架说明"
-msgstr "## Overall Framework Description"
+msgid "整体框架说明"
+msgstr "Overall Framework Description"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:11
 msgid "![](/uploads/images/2020/v1.0/all-the-arch.png)"
-msgstr "! [](/uploads/images/2020/v1.0/all - the-arch.png)"
+msgstr "![](/uploads/images/2020/0805/102832_c7372e58_5504908.png)"
 
-#: ../../Projects/APPSTORE/AppStore_Overview.md:13
-msgid "## 代码架构说明"
-msgstr "## Code Architecture Description"
+#: ../../Projects/APPSTORE/AppStore_Overview.md:14
+msgid "代码架构说明"
+msgstr "Code Architecture Description"
 
-#: ../../Projects/APPSTORE/AppStore_Overview.md:15
+#: ../../Projects/APPSTORE/AppStore_Overview.md:16
 msgid "![](/uploads/images/2020/v1.0/appstore-code-arch.png)"
-msgstr "! [](/uploads/images/2020/v1.0/appstore - code-arch.png)"
+msgstr "![](/uploads/images/2020/v1.0/appstore-code-arch.png)"
 
-#: ../../Projects/APPSTORE/AppStore_Overview.md:17
+#: ../../Projects/APPSTORE/AppStore_Overview.md:18
 msgid "AppStore FE：开发者平台前台框架，使用VUE开发。"
 msgstr "AppStore FE: Developer Platform foreground framework, developed using VUE."
 
-#: ../../Projects/APPSTORE/AppStore_Overview.md:19
+#: ../../Projects/APPSTORE/AppStore_Overview.md:20
 msgid "AppStore BE：开发者平台后台框架，使用SpringBoot+ServiceComb开发。（有关ServiceComb请参考这里：https://servicecomb.apache.org/cn/）"
 msgstr "AppStore BE: Developer Platform Backstage Framework, developed using SpringBot + ServiceComb.(For ServiceComb, please refer to this: //servicecomb.apache.org/cn/)"
 
-#: ../../Projects/APPSTORE/AppStore_Overview.md:21
+#: ../../Projects/APPSTORE/AppStore_Overview.md:22
 msgid "AppStore DB：后台依赖Postgres数据库。"
 msgstr "AppStore DB: Backstage relies on Postgres database."
-
-#: ../../Projects/APPSTORE/AppStore_Overview.md:23
-msgid "[1]: https://gitee.com/edgegallery/appstore-be \"AppStore BE\" [2]: https://gitee.com/edgegallery/appstore-fe \"AppStore FE\""
-msgstr "[1]: https://gitee.com/edgegallery/appstore-be \" AppStore BE \" [2]: https://gitee.com/edgegallery/appstore-fe \" AppStore FE \""
 
