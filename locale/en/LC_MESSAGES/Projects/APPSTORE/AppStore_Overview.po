@@ -35,7 +35,7 @@ msgstr "Overall Framework Description"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:11
 msgid "![](/uploads/images/2020/v1.0/all-the-arch.png)"
-msgstr "![](/uploads/images/2020/0805/102832_c7372e58_5504908.png)"
+msgstr "![](/uploads/images/2020/v1.0/all-the-arch.png)"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:14
 msgid "代码架构说明"
