@@ -93,6 +93,83 @@ Removes the config file
 |---|---|---|---|
 |status|string|required|Status of the RemoveCfgRequest|
 
+
+### CreateVmImageRequest
+
+Create VM image request 
+
+|Field|Type|Label|Description
+|---|---|---|---|
+|accessToken|string|required|Provide the required access token|
+|appInstanceId|string|required|Valid UUID|
+|hostIp|string|required|Valid IP|
+|vmId|string|required|Valid UUID|
+
+
+### CreateVmImageResponse
+
+|Field|Type|Label|Description
+|---|---|---|---|
+|response|string|required|response of the CreateVmImageResponse|
+
+
+### QueryVmImageRequest
+
+Query VM image request 
+
+|Field|Type|Label|Description
+|---|---|---|---|
+|accessToken|string|required|Provide the required access token|
+|appInstanceId|string|required|Valid UUID|
+|hostIp|string|required|Valid IP|
+|imageId|string|required|Valid UUID|
+
+### QueryVmImageResponse
+
+|Field|Type|Label|Description
+|---|---|---|---|
+|response|string|required|response of the QueryVmImageResponse|
+
+
+### DeleteVmImageRequest
+
+Delete VM image request 
+
+|Field|Type|Label|Description
+|---|---|---|---|
+|accessToken|string|required|Provide the required access token|
+|appInstanceId|string|required|Valid UUID|
+|hostIp|string|required|Valid IP|
+|imageId|string|required|Valid UUID|
+
+
+### DeleteVmImageResponse
+
+|Field|Type|Label|Description
+|---|---|---|---|
+|response|string|required|response of the DeleteVmImageResponse|
+
+
+### DownloadVmImageRequest
+
+Download VM image request 
+
+|Field|Type|Label|Description
+|---|---|---|---|
+|accessToken|string|required|Provide the required access token|
+|appInstanceId|string|required|Valid UUID|
+|hostIp|string|required|Valid IP|
+|imageId|string|required|Valid UUID|
+|chunkNum|int32|required|Valid integer|
+
+
+### DownloadVmImageResponse
+
+|Field|Type|Label|Description
+|---|---|---|---|
+|content|byte|required|response of the DownloadVmImageResponse|
+
+
 ### AppLCM Service
 
 Service for handling requests.

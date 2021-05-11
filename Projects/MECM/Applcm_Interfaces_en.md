@@ -330,26 +330,6 @@ Example response:
   }
 ```
 
-### Query
-Sync app instances stale records
-```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/sync_deleted
-Method: GET
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt Token|
-|tenantId|tenant Id|path|yes|Valid UUID|64|
-
-Example response:
-```
-200 OK
-  {
-    {}    
-  }
-```
-
 ### Upload package
 Upload package
 ```
@@ -623,6 +603,100 @@ Method: GET
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Create Image
+### Create Image
+
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/images
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|appInstanceId|appInstance Id|path|yes|Valid UUID|64|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+|vmId|vm Id|body|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Delete Image
+### Delete Image
+
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/images/:imageId
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|appInstanceId|appInstance Id|path|yes|Valid UUID|64|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+|imageId|image Id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+### Get Image
+### Get Image
+
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/images/:imageId
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|appInstanceId|appInstance Id|path|yes|Valid UUID|64|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+|imageId|image Id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    {}    
+  }
+```
+
+
+### Get Image file
+### Get Image file
+
+```
+Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/images/:imageId/file
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|appInstanceId|appInstance Id|path|yes|Valid UUID|64|
+|tenantId|tenant Id|path|yes|Valid UUID|64|
+|imageId|image Id|path|yes|Valid UUID|64|
+|chunk_num|chunk num|header|yes|Valid int|64|
 
 Example response:
 ```
