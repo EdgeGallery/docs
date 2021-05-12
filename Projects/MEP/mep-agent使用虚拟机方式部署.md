@@ -34,7 +34,7 @@ export CA_CERT_DOMAIN_NAME=edgegallery
 wq保存后，source /etc/profile生效
 
 
-### 拷贝可执行文件和配置文件到虚拟机
+### 运行程序
 虚拟机创建/usr/mep目录，创建/usr/mep/log/mep-agent.log日志文件，拷贝代码中的conf、views目录到/usr/mep下，拷贝可执行文件到此目录（没有指定名词则为main）
 
 设置可执行权限
