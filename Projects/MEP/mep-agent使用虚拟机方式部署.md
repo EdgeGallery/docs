@@ -22,6 +22,7 @@ go build -buildmode=pie -ldflags '-linkmode="external"' src/main/main.go
 
 ### 设置环境变量
 
+vi /etc/profile 添加下面的环境变量，环境变量的值根据实际环境的值修改
 ```
 export MEP_IP=192.168.100.177
 export MEP_APIGW_PORT=30443
@@ -30,6 +31,7 @@ export SK=DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc
 export APPINSTID=5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f
 export CA_CERT_DOMAIN_NAME=edgegallery
 ```
+wq保存后，source /etc/profile生效
 
 
 ### 拷贝可执行文件和配置文件到虚拟机
@@ -51,7 +53,7 @@ root@test-os:/usr/mep# ./main
 
 ```
 appname = mep-agent
-httpport = 8089
+httpport = 8080
 runmode = prod
 ```
 
