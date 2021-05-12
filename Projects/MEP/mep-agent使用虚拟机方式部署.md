@@ -20,6 +20,18 @@ go build -buildmode=pie -ldflags '-linkmode "external" -extldflags "-static"' sr
 go build -buildmode=pie -ldflags '-linkmode="external"' src/main/main.go
 ```
 
+### 设置环境变量
+
+```
+export MEP_IP=192.168.100.177
+export MEP_APIGW_PORT=30443
+export AK=QVUJMSUMgS0VZLS0tLS0
+export SK=DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc
+export APPINSTID=5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f
+export CA_CERT_DOMAIN_NAME=edgegallery
+```
+
+
 ### 拷贝可执行文件和配置文件到虚拟机
 虚拟机创建/usr/mep目录，创建/usr/mep/log/mep-agent.log日志文件，拷贝代码中的conf、views目录到/usr/mep下，拷贝可执行文件到此目录（没有指定名词则为main）
 
