@@ -26,48 +26,52 @@ msgid "文档中介绍了appstore-be模块的接口设计详情，共有六个�
 msgstr "The document describes the interface design details for the appstore-be module, with a total of six parts, which correspond to app management, packet management, comment management, application push, warehouse management, and message center."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:5
-msgid "[AppStore 接口列表](#接口列表) - [1. 应用](#1-应用)"
-msgstr "[AppStore Interface List] (#接口列表)-[1. Application] (#1-Application)"
+msgid "[AppStore 接口列表](#接口列表)"
+msgstr "[AppStore Interface List](#InterfaceList)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:6
+msgid "[1. 应用](#1-应用)"
+msgstr "[1. Application](#1-Application)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:7
 msgid "[1.1 获取应用列表](#11-获取应用列表)"
-msgstr "[1.1 Get Application List] (#11-Get Application List)"
+msgstr "[1.1 Get Application List](#11-GetApplicationList)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:8
 msgid "[1.2 获取应用](#12-获取应用)"
-msgstr "[1.2 Get Application] (#12-Get Application)"
+msgstr "[1.2 Get Application](#12-GetApplication)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:9
 msgid "[1.3 注册应用](#13-注册应用)"
-msgstr "[1.3 Registration Application] (#13-Register Application)"
+msgstr "[1.3 Registration Application](#13-RegisterApplication)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:10
 msgid "[1.4 删除应用](#14-删除应用)"
-msgstr "[1.4 Delete Application] (#14-Delete Application)"
+msgstr "[1.4 Delete Application](#14-DeleteApplication)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:11
 msgid "[1.5 获取应用最新版本](#15-获取应用最新版本)"
-msgstr "[1.5 Get the latest version of the app] (#15-Get the latest version of the app)"
+msgstr "[1.5 Get the latest version of the app](#15-Getthelatestversionoftheapp)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:15
 msgid "[1.6 获取应用图标](#16-获取应用图标)"
-msgstr "[1.6 Get Application Icon] (#16-Get Application Icon)"
+msgstr "[1.6 Get Application Icon](#16-GetApplicationIcon)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:13
 msgid "[1.7 分片上传应用包](#17-分片上传应用包)"
-msgstr "[1.7 Shards Upload App] (#17-Shards Upload App"
+msgstr "[1.7 Shards Upload App](#17-ShardsUploadApp)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:14
 msgid "[1.8 合并应用包](#18-合并应用包)"
-msgstr "[1.8 Combined application package] (#18-combined application package)"
+msgstr "[1.8 Combined application package](#18-combinedapplicationpackage)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:15
 msgid "[1.9 注册虚机应用](#19-注册虚机应用)"
-msgstr "[1.9 Registered Virtual Machine Applications] (#19-Registered Virtual Machine Applications)"
+msgstr "[1.9 Registered Virtual Machine Applications](#19-RegisteredVirtualMachineApplications)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:16
 msgid "[1.10 获取应用视频](#110-获取应用视频)"
-msgstr "[1.10 Get Application Video] (#110-Get Applied Video)"
+msgstr "[1.10 Get Application Video](#110-GetAppliedVideo)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:17
 msgid "[2. 应用包](#2-应用包) - [2.1 获取应用包列表](#21-获取应用包列表) - [2.2 获取应用包](#22-获取应用包) - [2.3 删除应用包](#23-删除应用包) - [2.4 下载应用包](#24-下载应用包) - [2.5 获取文件内容](#25-获取文件内容) - [2.6 应用发布](#26-应用发布) - [2.7 应用测试](#27-应用测试)"
