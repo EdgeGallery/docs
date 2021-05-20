@@ -705,3 +705,111 @@ Example response:
     {}    
   }
 ```
+
+### Get Services
+### Get Services
+
+```
+Resource URI: /lcmcontroller/v1/mep/subscribe_statistic
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+
+
+Example response:
+```
+200 OK
+  [{
+	"serInstanceId": "xxx",
+	"serName": "xxx",
+	"serCategory": {
+		"href": "/example/catalogue1",
+		"id": "id12345",
+		"name": "RNI",
+		"version": "1.2.3"
+	},
+	"version": "4.5.8",
+	"state": "INACTIVE",
+	"transportId": "Rest1",
+	"transportInfo": {
+		"id": "TransId12345",
+		"name": "REST",
+		"description": "REST API",
+		"type": "REST_HTTP",
+		"protocol": "HTTP",
+		"version": "2.0",
+		"endpoint": {
+			"uris": null,
+			"addresses": null,
+			"alternative": null
+		},
+		"security": {
+			"oAuth2Info": {
+				"grantTypes": ["OAUTH2_CLIENT_CREDENTIALS"],
+				"tokenEndpoint": "/mecSerMgmtApi/security/TokenEndPoint"
+			}
+		}
+	},
+	"serializer": "JSON",
+	"scopeOfLocality": "MEC_SYSTEM",
+	"isLocal": true,
+	"livenessInterval": 60,
+	"_links": {
+		"self": {
+			"liveness": "/mepserver/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/31fe525ee3dbccbf25a234f8e81d696c/liveness"
+		},
+		"appInstanceId": "5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f"
+	}
+}]
+```
+
+### Get Kong Logs
+### Get Kong Logs
+
+```
+Resource URI: /lcmcontroller/v1/mep/kong_log
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+
+```
+200 OK
+{
+	"appServices": [{
+		"callTimes": [0, 0, 0, 0, 0, 0, 0],
+		"desc": "",
+		"name": "hehe5"
+	}],
+	"mepServices": [{
+		"callTimes": [0, 0, 0, 3, 0, 0, 0],
+		"desc": "",
+		"name": "serviceRegister"
+	}]
+}
+```
+
+### Get Subscribe Statistic
+### Get Subscribe Statistic
+
+```
+Resource URI: /lcmcontroller/v1/mep/subscribe_statistic
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+
+```
+200 OK
+{
+	"subscribeNum": {
+		"appSubscribeNum": 0,
+		"serviceSubscribedNum": 0
+	},
+	"subscribeRelations": []
+}
+```
