@@ -19,12 +19,16 @@ User Interfaces
   - [3. IDENTITY](#3-IDENTITY)
     - [3.1 获取短信验证码](#31-获取短信验证码)
     - [3.2 获取邮件验证码](#32-获取邮件验证码)
+    - [3.3 获取图形验证码](#32-获取图形验证码)
+    - [3.4 预校验图形验证码正确性](#32-预校验图形验证码正确性)
 
 ## 1. AUTH
 
 ### 1.1 登录
 
 登录系统
+
+登录前需要先获取图形验证码，通过verifyCode参数传递。
 
 ```
 Resource URI: /login
@@ -33,6 +37,7 @@ Method: POST
 
 | Name    | Definition |type   | Required| Describe |
 | ------- | ---------- |-------|---------| ---------|
+| verifyCode | 图形验证码 |query|是| |
 | username | 用户名/邮箱/手机号 |body|是| |
 | password | 密码 |body|是| |
 
@@ -91,6 +96,8 @@ Succeed
 
 注册用户接口，注册成功返回200，并返回已经注册成功的用户信息；接口数据不全返回400。
 
+注册前需要先获取图形验证码，通过verifyCode参数传递。
+
 ```
 Resource URI: /v1/users
 Method: POST
@@ -98,6 +105,7 @@ Method: POST
 
 | Name     | Definition |type   | Required| Describe |
 | -------- | -----------|-------|---------| ---------|
+| verifyCode | 图形验证码 |query|是| |
 | username | 用户名 |body|是| 必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间 |
 | password | 密码 |body|是| 必须满足复杂度要求，必须是数字/字母/特数字符的组合，长度在6~18个字符之间 |
 | mailAddress | 邮箱地址 |body|否| 如果填写，必须符合邮箱地址的格式要求 |
@@ -556,6 +564,8 @@ response 403 FORBIDDEN
 
 发送验证码到指定的手机号上，发送成功返回200，发送失败返回417。
 
+发送短信验证码前需要先获取图形验证码，通过verifyCode参数传递。
+
 ```
 Resource URI: /v1/identity/sms
 Method: POST
@@ -563,6 +573,7 @@ Method: POST
 
 | Name          | Definition |type   | Required|Describe |
 | ------------- | ---------- |-------|---------|-------- |
+| verifyCode | 图形验证码 |query|是| |
 | telephone | 电话号码 |body|是|11位有效数字，必须以1开头 |
 
 
@@ -588,7 +599,9 @@ response 417 Expectation Failed
 
 ### 3.2 获取邮件验证码
 
-发送验证码到指定的邮箱，发送成功返回200，发送失败返回417
+发送验证码到指定的邮箱，发送成功返回200，发送失败返回417。
+
+发送邮件验证码前需要先获取图形验证码，通过verifyCode参数传递。
 
 ```
 Resource URI: /v1/identity/mail
@@ -597,6 +610,7 @@ Method: POST
 
 | Name      | Definition |type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
+| verifyCode | 图形验证码 |query|是| |
 | mailAddress    | 邮箱地址      | body  | 是      |用以接收验证码的邮箱地址     |
 
 Example request:
@@ -622,5 +636,38 @@ response 417 Expectation Failed
   "code": 0,
   "message": "string",
   "detail": "string"
+}
+```
+
+### 3.3 获取图形验证码
+
+获取带验证码的图片数据流
+
+```
+Resource URI: /v1/identity/verifycode-image
+Method: GET
+```
+
+- 该接口不带任何请求参数，返回二进制的图片数据流
+- 验证码3分钟内有效
+
+### 3.4 预校验图形验证码正确性
+
+预校验用户输入的验证码是否正确
+
+```
+Resource URI: /v1/identity/verifycode-image/precheck
+Method: GET
+
+```
+| Name      | Definition |type   | Required|Describe |
+| --------- | ---------- |-------|---------|-------- |
+| verifyCode | 图形验证码 |query|是| |
+
+Example response:
+```json
+response 200 OK
+{
+  "checkResult": true
 }
 ```
