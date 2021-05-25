@@ -139,15 +139,21 @@ user-mgmt下配置文件application.properties，设置sms.enabled=false
 
 （1）当只开启了邮箱服务时，只能通过邮箱找回
 
-![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail.png "UI_RetrievePwByMail.png")
+![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-1.png "UI_RetrievePwByMail-1.png")
+
+![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-2.png "UI_RetrievePwByMail-2.png")
 
 （2）当只开启了短信服务时，只能通过手机找回
 
-![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone.png "UI_RetrievePwByPhone.png")
+![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-1.png "UI_RetrievePwByPhone-1.png")
+
+![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-2.png "UI_RetrievePwByPhone-2.png")
 
 （3）当邮箱服务和短信服务同时开启时，可以二选一
 
 ![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhoneOrMail.png "UI_RetrievePwByPhoneOrMail.png")
+
+点击“下一步”后的界面，与前面的界面一样。
 
 #### 用户中心界面
 
