@@ -18,14 +18,13 @@ msgstr ""
 "Generated-By: Babel 2.9.0\n"
 
 #: ../../Architecture/Architecture.md:1
-msgid "## EdgeGallery v1.0 版本 架构图"
-msgstr "## EdgeGallery v1.0 Architecture diagram"
+msgid "EdgeGallery v1.0 版本 架构图"
+msgstr "EdgeGallery v1.0 Architecture diagram"
 
 #: ../../Architecture/Architecture.md:3
 msgid "![EdgeGallery v1.0 Architecture](/uploads/images/2020/v1.0/162303_04fb85ee_7624977.png \"EdgeGallery v1.0 Architecture.png\")"
-msgstr "! [EdgeGallery v1.0 Architecture] (/uploads/images/2020/v1.0/162303_04fb85ee_7624977.png \" EdgeGallery v1.0 Architecture.png \")"
+msgstr "![EdgeGallery v1.0 Architecture](/uploads/images/2020/v1.0/162303_04fb85ee_7624977.png \" EdgeGallery v1.0 Architecture.png \")"
 
 #: ../../Architecture/Architecture.md:5
-msgid "## 参与EdgeGallery 架构讨论 - 架构工作组[会议纪要](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Meetings) - 架构工作组[需求讨论](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements) - 项目[架构Review](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Architecture%20Review)"
-msgstr "## Participation in the EdgeGallery Framework Discussion-Framework Working Group [minutes] (https: //gitee.com/edgegallery/community/tree/master/Architecture%20WG/Meetings) - Framework Working Group [Requirements Discussion] (https: //gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements) - Project [Framework Review] (https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Architecture%20Review)"
-
+msgid "参与EdgeGallery 架构讨论 - 架构工作组[会议纪要](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Meetings) - 架构工作组[需求讨论](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements) - 项目[架构Review](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Architecture%20Review)"
+msgstr "Participation in the EdgeGallery Framework Discussion-Framework Working Group [minutes](https: //gitee.com/edgegallery/community/tree/master/Architecture%20WG/Meetings) - Framework Working Group [Requirements Discussion](https: //gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements) - Project [Framework Review](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Architecture%20Review)"
