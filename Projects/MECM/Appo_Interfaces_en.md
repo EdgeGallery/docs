@@ -159,12 +159,7 @@ Example request body:
         "mepPort"        : "mep port",
         "ak"             : "ak",
         "sk"             : "sk" ,
-        "abalityZone"    : "zone",
-        "ServerGroup"    : "serverGroup",
-        "Net_n6_ip"      : "net_n6_ip",
-        "Net_n6_mask"    : "net_n6_mask",
-        "Net_n6_vlan_id" : "net_n6_vlan_id",
-        "Net_n6_phy_name": "net_n6_phy_name"
+        "..."            : "..."
     }
 }
 ```
@@ -389,12 +384,7 @@ Example request body:
                           "mepPort"        : "mep port",
                           "ak"             : "ak",
                           "sk"             : "sk",  
-                          "abilityZone"    : "Zone",
-                          "ServerGroup"    : "serverGroup",
-                          "Net_n6_ip"      : "net_n6_i",
-                          "Net_n6_mask"    : "net_n6_mask",
-                          "Net_n6_vlan_id" : "net_n6_vlan_id",
-                          "Net_n6_phy_name": "net_n6_phy_name"
+                          "..."            : "..."
           }
         }
     ]
