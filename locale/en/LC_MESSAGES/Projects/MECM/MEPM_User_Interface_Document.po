@@ -8,22 +8,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:1
-msgid "# MEPM User Interface document"
-msgstr "# MEPM User Interface document"
+msgid "MEPM User Interface document"
+msgstr "MEPM User Interface document"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:3
-msgid "## Overview"
-msgstr "## Overview"
+msgid "Overview"
+msgstr "Overview"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:5
 msgid "It is mainly divided into three sections. Application statistics, Application list and EdgeNodes List"
@@ -31,7 +31,7 @@ msgstr "It is mainly dived into three sections. Application statistics, Applicat
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:7
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/162039_bcb71c24_7639205.png \"dashboard.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/162039_bcb71c24_7639205.png \" dashboard.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/162039_bcb71c24_7639205.png \"dashboard.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:9
 msgid "Application statistics shows number of packages available currently, number of packages distributed and number of packages deployed."
@@ -43,23 +43,23 @@ msgstr "Application List displays list of applications deployed."
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:13
 msgid "Edgenodes List displays number of edgenodes available in system. User can also view edge node details by clicking on **node details** button and **application details** button will redirect to mep portal to view application details."
-msgstr "Edgenodes List displays number of edgenodes available in system. User can also view edge node details by clicking on ** node details * * button and ** application details * * button will redirect to mean portal to view application details."
+msgstr "Edgenodes List displays number of edgenodes available in system. User can also view edge node details by clicking on **node details** button and **application details** button will redirect to mep portal to view application details."
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:15
-msgid "## Application Management"
-msgstr "## Application Management"
+msgid "Application Management"
+msgstr "Application Management"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:17
 msgid "Application management has two sections.  Application **package management** and **instance management**"
-msgstr "Application management has two sections.  Application ** package management * and ** instance management * *"
+msgstr "Application management has two sections.  Application **package management** and **instance management**"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:19
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/162405_4c39ed6c_7639205.png \"pkg1.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/162405_4c39ed6c_7639205.png \" pkg1.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/162405_4c39ed6c_7639205.png \"pkg1.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:21
-msgid "### Application Package Management"
-msgstr "### Application Package Management"
+msgid "Application Package Management"
+msgstr "Application Package Management"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:23
 msgid "Displays the list of applications available"
@@ -67,157 +67,165 @@ msgstr "Displays the list of applications available"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:25
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/162457_7cdb15aa_7639205.png \"pkg4.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/162457_7cdb15aa_7639205.png \" pkg4.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/162457_7cdb15aa_7639205.png \"pkg4.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:27
 msgid "User can upload new application package by clicking **New Package** button"
-msgstr "User can upload new application package by clicking ** New Package * * button"
+msgstr "User can upload new application package by clicking **New Package** button"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:29
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/162520_ce672a82_7639205.png \"pkg2.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/162520_ce672a82_7639205.png \" pkg2.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/162520_ce672a82_7639205.png \"pkg2.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:31
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/162537_9e7a6bd9_7639205.png \"pkg3.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/162537_9e7a6bd9_7639205.png \" pkg3.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/162537_9e7a6bd9_7639205.png \"pkg3.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:33
 msgid "User can distribute the application to edge nodes by clicking **distribute** button"
-msgstr "User can distribute the application to edge nodes by clicking ** distribute** button"
+msgstr "User can distribute the application to edge nodes by clicking **distribute** button"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:35
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/162600_39fae6b9_7639205.png \"pkg_distribute.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/162600_39fae6b9_7639205.png \" pkg_distribute.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/162600_39fae6b9_7639205.png \"pkg_distribute.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:37
 msgid "User can click on **detail** button to view status of distribution"
-msgstr "User can click on ** detail** button to view status of distribution"
+msgstr "User can click on **detail** button to view status of distribution"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:39
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/162626_3681a485_7639205.png \"pkg_detail.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/162626_3681a485_7639205.png \" pkg_detail.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/162626_3681a485_7639205.png \"pkg_detail.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:41
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/162721_b459a773_7639205.png \"pkg_list.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/162721_b459a773_7639205.png \" pkg_list.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/162721_b459a773_7639205.png \"pkg_list.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:43
 msgid "Once the application is distributed to edge, User can deploy application using **deploy** button"
-msgstr "Once the application is distributed to age, User can deploy application using ** deploy** button"
+msgstr "Once the application is distributed to edge, User can deploy application using **deploy** button"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:45
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/162647_21807129_7639205.png \"pkg_deploy.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/162647_21807129_7639205.png \" pkg_deploy.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/162647_21807129_7639205.png \"pkg_deploy.png\")" 
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:47
-msgid "### Application Instance Management - User can view status application deployed in this page"
-msgstr "### Application Instance Management-User can view status application deployed in this page"
+msgid "Application Instance Management"
+msgstr "Application Instance Management"
+
+#: ../../Projects/MECM/MEPM_User_Interface_Document.md:48
+msgid "User can view status application deployed in this page"
+msgstr "User can view status application deployed in this page"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:50
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/163234_05080a4b_7639205.png \"list.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/163234_05080a4b_7639205.png \" list.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/163234_05080a4b_7639205.png \"list.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:52
 msgid "User can delete the application instantiated by clicking on **delete** button"
-msgstr "User can delete the application instantiated by clicking on ** delete** button"
+msgstr "User can delete the application instantiated by clicking on **delete** button"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:54
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/163253_a0482ba1_7639205.png \"delete.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/163253_a0482ba1_7639205.png \" delete.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/163253_a0482ba1_7639205.png \"delete.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:56
 msgid "User can view the application pod status by clicking on **detail** button"
-msgstr "User can view the application pod status by clicking on ** detail** button"
+msgstr "User can view the application pod status by clicking on **detail** button"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:58
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/163312_cc245a21_7639205.png \"detail.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/163312_cc245a21_7639205.png \" detail.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/163312_cc245a21_7639205.png \"detail.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:60
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/163326_5ef8be11_7639205.png \"detail2.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/163326_5ef8be11_7639205.png \" detail2.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/163326_5ef8be11_7639205.png \"detail2.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:62
 msgid "User can configure DNS and traffic rule for the application by clicking on **rule configuration** button"
-msgstr "User can configure DNS and trafffic rule for the application by clicking on ** rule configuration * * button"
+msgstr "User can configure DNS and traffic rule for the application by clicking on **rule configuration** button"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:64
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/163341_20560adc_7639205.png \"rule1.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/163341_20560adc_7639205.png \" rule1.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/163341_20560adc_7639205.png \"rule1.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:66
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/163401_561700ce_7639205.png \"rule2.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/163401_561700ce_7639205.png \" rule2.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/163401_561700ce_7639205.png \"rule2.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:68
-msgid "## Edge Node"
-msgstr "## Edge Node"
+msgid "Edge Node"
+msgstr "Edge Node"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:70
 msgid "Displays the list of edge nodes and node monitoring information"
-msgstr "Displays the list of end nodes and node monitoring information"
+msgstr "Displays the list of edge nodes and node monitoring information"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:72
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/164410_7e391ac5_7639205.png \"list.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/164410_7e391ac5_7639205.png \" list.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/164410_7e391ac5_7639205.png \"list.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:74
 msgid "User can configure new edge node by clicking **New Edge** button"
-msgstr "User can configure new edge node by clicking ** New Edge * * button"
+msgstr "User can configure new edge node by clicking **New Edge** button"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:76
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/163856_c8d007ba_7639205.png \"newedge1.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/163856_c8d007ba_7639205.png \" newedge1.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/163856_c8d007ba_7639205.png \"newedge1.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:78
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/163909_6fe615c8_7639205.png \"newedge2.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/163909_6fe615c8_7639205.png \" newedge2.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/163909_6fe615c8_7639205.png \"newedge2.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:80
 msgid "User must upload k8s config file by clicking **upload config file** button before distributing application"
-msgstr "User must upload k8s config filebyclicking ** upload config file * * button before Distributing application"
+msgstr "User must upload k8s config file by clicking **upload config file** button before distributing application"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:82
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/163926_b03cb198_7639205.png \"configfile1.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/163926_b03cb198_7639205.png \" configfile1.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/163926_b03cb198_7639205.png \"configfile1.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:84
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/163938_03e89734_7639205.png \"configfile2.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/163938_03e89734_7639205.png \" configfile2.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/163938_03e89734_7639205.png \"configfile2.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:86
 msgid "User can monitor the edgenode by clicking on **monitor** button"
-msgstr "User can monitor the edgenode by clicking on ** monitor** button"
+msgstr "User can monitor the edgenode by clicking on **monitor** button"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:88
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/163954_922d8d32_7639205.png \"monitor1.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/163954_922d8d32_7639205.png \" monitor1.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/163954_922d8d32_7639205.png \"monitor1.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:90
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/164007_7e0ad751_7639205.png \"monitor2.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/164007_7e0ad751_7639205.png \" monitor2.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/164007_7e0ad751_7639205.png \"monitor2.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:92
 msgid "User can view the details of edge node by clicking on **detail** button"
-msgstr "User can view the details of dge node by clicking on ** detail** button"
+msgstr "User can view the details of edge node by clicking on **detail** button"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:94
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/164020_4e206a56_7639205.png \"detail1.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/164020_4e206a56_7639205.png \" detail1.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/164020_4e206a56_7639205.png \"detail1.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:96
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/164032_2acc8264_7639205.png \"detail2.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/164032_2acc8264_7639205.png \" detail2.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/164032_2acc8264_7639205.png \"detail2.png\")"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:98
-msgid "## About About page will redirect to edgegallery website to view more information on edge gallery platform"
-msgstr "## About About page will redirect to edgegallery website to view more information on edge gallery platform"
+msgid "About"
+msgstr "About"
+
+#: ../../Projects/MECM/MEPM_User_Interface_Document.md:99
+msgid "About page will redirect to edgegallery website to view more information on edge gallery platform"
+msgstr "About page will redirect to edgegallery website to view more information on edge gallery platform"
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:101
-msgid "> Note: At present, due to client and server protocol issues, there may be certificate abnormalities in user access. If there is an abnormal data acquisition problem, it is recommended to visit [https://mepm.edgegallery.org:30204  in the browser first , and then agree to continue access. Then return to the MEPM portal to refresh, this problem will be resolved in the next version."
-msgstr "> Note: At present, due to client and server protocol issues, there may be certificate abnormalities in user access. If there is an abnormal data acquiition problem, it is recommended to visit [https://mepm.edgegallery.org:30204inthebrowserfirst,andthenagreetocontinueaccess. Then return to the MEPM portal to refresh, this problem will be resolved in the next version."
+msgid "Note: At present, due to client and server protocol issues, there may be certificate abnormalities in user access. If there is an abnormal data acquisition problem, it is recommended to visit [https://mepm.edgegallery.org:30204  in the browser first , and then agree to continue access. Then return to the MEPM portal to refresh, this problem will be resolved in the next version."
+msgstr "Note: At present, due to client and server protocol issues, there may be certificate abnormalities in user access. If there is an abnormal data acquisition problem, it is recommended to visit [https://mepm.edgegallery.org:30204  in the browser first , and then agree to continue access. Then return to the MEPM portal to refresh, this problem will be resolved in the next version."
 
 #: ../../Projects/MECM/MEPM_User_Interface_Document.md:103
 msgid "![](https://images.gitee.com/uploads/images/2021/0402/170843_7b706467_7639205.png \"certificate_issue.png\")"
-msgstr "! [] (https://images.gitee.com/uploads/images/2021/0402/170843_7b706467_7639205.png \" certificate_issue.png \")"
+msgstr "![](https://images.gitee.com/uploads/images/2021/0402/170843_7b706467_7639205.png \"certificate_issue.png\")"
 

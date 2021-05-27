@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:2
+#: ../../Projects/MECM/Apm_Interfaces_en.md:1
 msgid "Application Package Manager Interface"
 msgstr "Application Package Manager Interface"
 
@@ -26,232 +26,104 @@ msgid "The document is for the Application Package Manager project, there is one
 msgstr "The document is for the Application Package Manager project, there is one part of interfaces in the project."
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:5
-msgid "### Get All Application Packages"
-msgstr "### Get All Application Packages"
+msgid "Get All Application Packages"
+msgstr "Get All Application Packages"
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:7
 msgid "Retrieves all application packages"
 msgstr "Retrieves all application packages"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:9
-msgid "``` Resource URI: /apm/v1/tenants/{tenant_id}/packages Method: GET ```"
-msgstr "` ` ` Resource URI: /apm/v1/tenants/ {tenant_id} /packages Method: GET ` ` `"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:14 ../../Projects/MECM/Apm_Interfaces_en.md:860
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </table> </tbody> </table>"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:45 ../../Projects/MECM/Apm_Interfaces_en.md:221 ../../Projects/MECM/Apm_Interfaces_en.md:750
-msgid "Example response: ``` 200 OK ["
-msgstr "Example response: ` ` 200 OK ["
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:63 ../../Projects/MECM/Apm_Interfaces_en.md:67 ../../Projects/MECM/Apm_Interfaces_en.md:214 ../../Projects/MECM/Apm_Interfaces_en.md:225 ../../Projects/MECM/Apm_Interfaces_en.md:294 ../../Projects/MECM/Apm_Interfaces_en.md:297 ../../Projects/MECM/Apm_Interfaces_en.md:455 ../../Projects/MECM/Apm_Interfaces_en.md:740 ../../Projects/MECM/Apm_Interfaces_en.md:754 ../../Projects/MECM/Apm_Interfaces_en.md:920 ../../Projects/MECM/Apm_Interfaces_en.md:922
-msgid "{"
-msgstr "{"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:50 ../../Projects/MECM/Apm_Interfaces_en.md:201 ../../Projects/MECM/Apm_Interfaces_en.md:281
-msgid "\"appIconUrl\": \"string\", \"appId\": \"string\", \"appPkgAffinity\": \"string\", \"appPkgDesc\": \"string\", \"appPkgId\": \"string\", \"appPkgName\": \"string\", \"appPkgPath\": \"string\", \"appPkgVersion\": \"string\", \"appProvider\": \"string\", \"createdTime\": \"string\", \"mecHostInfo\": ["
-msgstr "\" appIconUrl \": \" appId \": \" string \", \" appPkgAffinity \": \" appPkDesc \": \" appPkgId \": \" apppkgName \": \" appkgName \": \" string \", \" apppkgPath \": \" string \", \" appPkgVersion \": \" string \", \" appProvider \": \" string \", \" createdTime \": \" string \", \" mecHostInfo \": ["
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:62 ../../Projects/MECM/Apm_Interfaces_en.md:213 ../../Projects/MECM/Apm_Interfaces_en.md:293
-msgid "\"error\": \"string\", \"hostIp\": \"string\", \"status\": \"string\""
-msgstr "\" error \": \" string \", \" hostImp \": \" string \", \" status \": \" string \""
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:65 ../../Projects/MECM/Apm_Interfaces_en.md:68 ../../Projects/MECM/Apm_Interfaces_en.md:216 ../../Projects/MECM/Apm_Interfaces_en.md:220 ../../Projects/MECM/Apm_Interfaces_en.md:227 ../../Projects/MECM/Apm_Interfaces_en.md:296 ../../Projects/MECM/Apm_Interfaces_en.md:299 ../../Projects/MECM/Apm_Interfaces_en.md:362 ../../Projects/MECM/Apm_Interfaces_en.md:456 ../../Projects/MECM/Apm_Interfaces_en.md:457 ../../Projects/MECM/Apm_Interfaces_en.md:520 ../../Projects/MECM/Apm_Interfaces_en.md:602 ../../Projects/MECM/Apm_Interfaces_en.md:610 ../../Projects/MECM/Apm_Interfaces_en.md:747 ../../Projects/MECM/Apm_Interfaces_en.md:756 ../../Projects/MECM/Apm_Interfaces_en.md:851 ../../Projects/MECM/Apm_Interfaces_en.md:922 ../../Projects/MECM/Apm_Interfaces_en.md:924 ../../Projects/MECM/Apm_Interfaces_en.md:927
-msgid "}"
-msgstr "}"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:66 ../../Projects/MECM/Apm_Interfaces_en.md:217 ../../Projects/MECM/Apm_Interfaces_en.md:297
-msgid "], \"modifiedTime\": \"string\""
-msgstr "], \" modifiedTime \": \" string \""
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:70 ../../Projects/MECM/Apm_Interfaces_en.md:229 ../../Projects/MECM/Apm_Interfaces_en.md:749 ../../Projects/MECM/Apm_Interfaces_en.md:758 ../../Projects/MECM/Apm_Interfaces_en.md:923 ../../Projects/MECM/Apm_Interfaces_en.md:925
-msgid "]"
-msgstr "]"
+#: ../../Projects/MECM/Apm_Interfaces_en.md:45 ../../Projects/MECM/Apm_Interfaces_en.md:221 ../../Projects/MECM/Apm_Interfaces_en.md:277 ../../Projects/MECM/Apm_Interfaces_en.md:356 ../../Projects/MECM/Apm_Interfaces_en.md:402 ../../Projects/MECM/Apm_Interfaces_en.md:514 ../../Projects/MECM/Apm_Interfaces_en.md:603 ../../Projects/MECM/Apm_Interfaces_en.md:642 ../../Projects/MECM/Apm_Interfaces_en.md:684 ../../Projects/MECM/Apm_Interfaces_en.md:750 ../../Projects/MECM/Apm_Interfaces_en.md:790 ../../Projects/MECM/Apm_Interfaces_en.md:841 ../../Projects/MECM/Apm_Interfaces_en.md:891
+msgid "Example response:"
+msgstr "Example response:"
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:72
-msgid "### Onboard Application Package Onboard application package ``` Resource URI: /apm/v1/tenants/{tenant_id}/packages Method: POST ```"
-msgstr "### Onboard Application Package Onboard application package ` ` ` Resource URI: /apm/v1/tenants/ {tenant_id} /packages Method: POST ` ` `"
+msgid "Onboard Application Package"
+msgstr "Onboard Application Package"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:79
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appIconUrl</td> <td>appIconUrl</td> <td>body</td> <td>yes</td> <td>Valid URL</td> <td>1024</td> </tr> <tr> <td>appId</td> <td>appId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smaller case alphabets</td> <td>32</td> </tr> <tr> <td>appPkgAffinity</td> <td>appPkgAffinity</td> <td>body</td> <td>yes</td> <td>AlhpaNumeric</td> <td>255</td> </tr> <tr> <td>appPkgDesc</td> <td>appPkgDesc</td> <td>body</td> <td>yes</td> <td>AlhpaNumeric</td> <td>1024</td> </tr> <tr> <td>appPkgId</td> <td>appPkgId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smaller case alphabets</td> <td>32</td> </tr> <tr> <td>appPkgName</td> <td>appPkgName</td> <td>body</td> <td>yes</td> <td>AlphaNumeric and allowed special characters hypen and underscore</td> <td>255</td> </tr> <tr> <td>appPkgPath</td> <td>appPkgPath</td> <td>body</td> <td>yes</td> <td>Valid URL</td> <td>1024</td> </tr> <tr> <td>appPkgVersion</td> <td>appPkgVersion</td> <td>body</td> <td>yes</td> <td>Valid URL</td> <td>1024</td> </tr> <tr> <td>appProvider</td> <td>appProvider</td> <td>body</td> <td>yes</td> <td>AlphaNumeric</td> <td>1024</td> </tr> <tr> <td>createdTime</td> <td>createdTime</td> <td>body</td> <td>yes</td> <td>Valid time</td> <td>255</td> </tr> <tr> <td>mecHostInfo</td> <td>mecHostInfo</td> <td>body</td> <td>yes</td> <td>Valid URL</td> <td>15</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64 </tr></td> <tr> <td>appIconUrl</td> <td>appIconUrl</td> <td>body</td> <td>yes</td> <td>Valid URL</td> <td>1024 </tr></td> <tr> <td>appId</td> <td>appId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smallercase alphabets</td> <td>32</td> </tr> <tr> <td>appPkgAffinity</td> <td>appPkgAffinity</td> <td>body</td> <td>yes</td> <td>AlhpaNumeric</td> <td>255 </tr></td> <tr> <td>appPkgDesc</td> <td>appPkgDesc</td> <td>body</td> <td>yes</td> <td>AlhpaNumeric</td> <td>1024</td> </tr> <tr> <td>appPkgId</td> <td>appPkgId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smallercase alphabets</td> <td>32 </tr></td> <tr> <td>appPkgName</td> <td>appPkgName</td> <td>body</td> <td>yes</td> <td>AlphaNumeric and allowed special characters then and underscore</td> <td>255 </tr></td> <tr> <td>appPkgPath</td> <td>appPkgPath</td> <td>body</td> <td>yes</td> <td>Valid URL</td> <td>1024</td> </tr> <tr> <td>appPkgVersion</td> <td>appPkgVersion</td> <td>body</td> <td>yes</td> <td>Valid URL</td> <td>1024</td> </tr> <tr> <td>appProvider</td> <td>appProvider</td> <td>body</td> <td>yes</td> <td>AlphaNumeric</td> <td>1024</td> </tr> <tr> <td>createdTime</td> <td>createdTime</td> <td>body</td> <td>yes</td> <td>Valid time</td> <td>255 </tr></td> <tr> <td>mecHostInfo</td> <td>mecHostInfo</td> <td>body</td> <td>yes</td> <td>Valid URL</td> <td></td></td> </tbody> </table> </table>"
+#: ../../Projects/MECM/Apm_Interfaces_en.md:73
+msgid "Onboard application package"
+msgstr "Onboard application package"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:198 ../../Projects/MECM/Apm_Interfaces_en.md:592
-msgid "Example request body: ``` {"
-msgstr "Example request body: ` ` ` {"
+#: ../../Projects/MECM/Apm_Interfaces_en.md:198 ../../Projects/MECM/Apm_Interfaces_en.md:592 ../../Projects/MECM/Apm_Interfaces_en.md:735
+msgid "Example request body:"
+msgstr "Example request body:"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:226 ../../Projects/MECM/Apm_Interfaces_en.md:755
-msgid "\"packageId\": \"string\""
-msgstr "\" packageId \": \" string \""
+#: ../../Projects/MECM/Apm_Interfaces_en.md:231 ../../Projects/MECM/Apm_Interfaces_en.md:795 ../../Projects/MECM/Apm_Interfaces_en.md:853
+msgid "Get Application Package Information"
+msgstr "Get Application Package Information"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:231
-msgid "### Get Application Package Information Retrieves application package information. ``` Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id} Method: GET ```"
-msgstr "### Get Application Package Information Retrieves application package information. ` ` ` Resource URI: /apm/v1/tenants/ {tenant_id} /packages/ {app_package_id} Method: GET ` ` `"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:238
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_package_id</td> <td>app package id</td> <td>path</td> <td>yes</td> <td>Alphanumeric and must be smaller case</td> <td>32</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_package_id</td> <td>app package id</td> <td>path</td> <td>yes</td> <td>Alphanimuric and must be smallercase</td> <td>32</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tbody> </table> </table>"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:277 ../../Projects/MECM/Apm_Interfaces_en.md:402
-msgid "Example response: ``` 200 OK"
-msgstr "Example response: ` ` ` 200 OK"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:300 ../../Projects/MECM/Apm_Interfaces_en.md:458
-msgid "```"
-msgstr "` ` `"
+#: ../../Projects/MECM/Apm_Interfaces_en.md:232
+msgid "Retrieves application package information."
+msgstr "Retreeves application package information."
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:302
-msgid "### Delete Application Packages Deletes application package ``` Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id} Method: DELETE ```"
-msgstr "### Delete Application Packages application package ` ` ` Resource URI: /apm/v1/tenants/ {tenant_id} /packages/ {app_package_id} Method: DELETE ` ` `"
+msgid "Delete Application Packages"
+msgstr "Delete Application Packages"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:309
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_package_id</td> <td>app package id</td> <td>path</td> <td>yes</td> <td>Alphanumeric and must be smaller case</td> <td>32</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> <tr> <td>appId</td> <td>app id</td> <td>path</td> <td>yes</td> <td>Alphanumeric and must be smaller case</td> <td>32</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_package_id</td> <td>app package id</td> <td>path</td> <td>yes</td> <td>Alphanimuric and must be smallercase</td> <td>32</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64 </tr></td> <tr> <td>appId</td> <td>app id</td> <td>path</td> <td>yes</td> <td>Alphanimuric and must be smallcase</td> <td>32</td></td> </tbody> </table>"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:356 ../../Projects/MECM/Apm_Interfaces_en.md:514 ../../Projects/MECM/Apm_Interfaces_en.md:841 ../../Projects/MECM/Apm_Interfaces_en.md:891
-msgid "Example response: ``` 200 OK {"
-msgstr "Example response: ` ` 200 OK {"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:360 ../../Projects/MECM/Apm_Interfaces_en.md:518
-msgid "\"success\""
-msgstr "\" success \""
+#: ../../Projects/MECM/Apm_Interfaces_en.md:303
+msgid "Deletes application package"
+msgstr "Deletes application package"
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:364
-msgid "### Download Csar Download application package CSAR ``` Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download Method: GET ```"
-msgstr "### Download Csar Download application package CSAR ` ` Resource URI: /apm/v1/tenants/ {tenant_id} /packages/ {app_package_id} /download Method: GET ` ` `"
+msgid "Download Csar"
+msgstr "Download Csar"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:371
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>app_package_id</td> <td>app package id</td> <td>path</td> <td>yes</td> <td>Alphanumeric and must be smaller case</td> <td>32</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>app_package_id</td> <td>app package id</td> <td>path</td> <td>yes</td> <td>Alphanumeric and must be smallercase</td> <td>32</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:406
-msgid "\"description\": \"string\", \"file\": {"
-msgstr "\" description \": \" string \", \" file \": {"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:408
-msgid "\"absolute\": true, \"absolutePath\": \"string\", \"canonicalPath\": \"string\", \"directory\": true, \"file\": true, \"freeSpace\": 0, \"hidden\": true, \"name\": \"string\", \"parent\": \"string\", \"path\": \"string\", \"totalSpace\": 0, \"usableSpace\": 0"
-msgstr "\" absolute \": true, \" absolutePath \": \" canonicalPath \": \" string \": true, \" file \": true, \" freeSpace \": 0, \" hidden \": true, \" name \": \" string \", \" parent \": \" string \", \" path \": \" string \", \" totalSpace \": 0, \" usableSpace \": 0"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:420
-msgid "}, \"filename\": \"string\", \"inputStream\": {}, \"open\": true, \"readable\": true, \"uri\": {"
-msgstr "}, \" filename \": \" string \", \" inputStream \": {}, \" open \": true, \" readable \": true, \" uri \": {"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:426
-msgid "\"absolute\": true, \"authority\": \"string\", \"fragment\": \"string\", \"host\": \"string\", \"opaque\": true, \"path\": \"string\", \"port\": 0, \"query\": \"string\", \"rawAuthority\": \"string\", \"rawFragment\": \"string\", \"rawPath\": \"string\", \"rawQuery\": \"string\", \"rawSchemeSpecificPart\": \"string\", \"rawUserInfo\": \"string\", \"scheme\": \"string\", \"schemeSpecificPart\": \"string\", \"userInfo\": \"string\""
-msgstr "\" absolute \": true, \" authority \": \" fragment \": \" string \": \" string \": true, \" path \": \" port \": 0, \" query \": \" string \", \" raw_priority \": \" string \", \" rawFragment \": \" string \", \" rawPath \": \" rawQuery \": \" string \", \" rawSchemeSpecificPart \": \" string \", \" rawUserInfo \": \" string \": \" string \", \" schemeSpecificPart \": \" string \", \" userInfo \": \" string \""
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:443
-msgid "}, \"url\": {"
-msgstr "}, \" url \": {"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:445
-msgid "\"authority\": \"string\", \"content\": {}, \"defaultPort\": 0, \"file\": \"string\", \"host\": \"string\", \"path\": \"string\", \"port\": 0, \"protocol\": \"string\", \"query\": \"string\", \"ref\": \"string\", \"userInfo\": \"string\""
-msgstr "\" authority \": \" content \": {}, \" defaultPort \": 0, \" file \": \" string \": \" string \": \" port \": 0, \" protocol \": \" string \", \" query \": \" string \", \" ref \": \" string \", \" userInfo \": \" string \""
+#: ../../Projects/MECM/Apm_Interfaces_en.md:365
+msgid "Download application package CSAR"
+msgstr "Download application package CSAR"
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:460
-msgid "### Delete Application Package Deletes an application packages ``` Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_ip} Method: DELETE ```"
-msgstr "### Delete Application Package Deles an application packages ` ` ` Resource URI: /apm/v1/tenants/ {tenant_id} /packages/ {app_package_id} /hosts/ {host_ip} Method: DELETE ` ` `"
+msgid "Delete Application Package"
+msgstr "Delete Application Package"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:467
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_package_id</td> <td>app package id</td> <td>path</td> <td>yes</td> <td>Alphanumeric and must be smaller case</td> <td>32</td> </tr> <tr> <td>host_ip</td> <td>host ip</td> <td>path</td> <td>yes</td> <td>Valid IP address</td> <td>15</td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>app_package_id</td> <td>app package id</td> <td>path</td> <td>yes</td> <td>Alphanimuric and must be smallercase</td> <td>32</td> </tr> <tr> <td>host_ip</td> <td>host ip</td> <td>path</td> <td>yes</td> <td>Valid IP address</td> <td>15 </tr></td> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>yes</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
+#: ../../Projects/MECM/Apm_Interfaces_en.md:461
+msgid "Deletes an application packages"
+msgstr "Deleees an application packages"
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:522
-msgid "### On-boards application with package. On-boards application with package provided. ``` Resource URI: /apm/v1/tenants/{tenant_id}/packages/upload Method: POST ```"
-msgstr "### On-boards application with package. On-boards application with package provided. ` ` ` Resource URI: /apm/v1/tenants/ {tenant_id} /packages/upload Method: POST ` ` `"
+msgid "On-boards application with package."
+msgstr "On-boards application with package."
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:529
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appPkgName</td> <td>appPkgName</td> <td>body</td> <td>yes</td> <td>AlphaNumeric and allowed special characters hypen and underscore</td> <td>255</td> </tr> <tr> <td>appPkgVersion</td> <td>appPkgVersion</td> <td>body</td> <td>yes</td> <td>Valid URL</td> <td>1024</td> </tr> <tr> <td>File</td> <td>file</td> <td>formData</td> <td>No</td> <td></td> <td></td> </tr> <tr> <td>hostList</td> <td>host list</td> <td>formData</td> <td>yes</td> <td></td> <td></td> </tr> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>no</td> <td>Valid UUID</td> <td>64</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appPkgName</td> <td>appPkgName</td> <td>body</td> <td>yes</td> <td>AlphaNumeric and allowed special characters hyphen and underscore</td> <td>255</td> </tr> <tr> <td>appPkgVersion</td> <td>appPkgVersion</td> <td>body</td> <td>yes</td> <td>Valid URL</td> <td>1024</td> </tr> <tr> <td>File</td> <td>file</td> <td>formData</td> <td>No</td> <td></td> <td></td> </tr> <tr> <td>hostList</td> <td>host list</td> <td>formData</td> <td>yes</td> <td></td> <td> </tr></td> <tr> <td>tenant_id</td> <td>tenant id</td> <td>path</td> <td>no</td> <td>Valid UUID</td> <td>64</td> </tr> </tr> </tbody> </table>"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:595
-msgid "\"access_token\": \"string\", \"appPackageName\": \"string\", \"appPackageVersion\": \"string\", \"file\": \"file\", \"hostList\": \"string\", \"tenant_id\": \"string\","
-msgstr "\" access_token \": \" string \", \" appPackageName \": \" string \", \" appPackageVersion \": \" string \", \" file \": \" file \", \" hostList \": \" string \", \" tenant_id \": \" string \","
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:603
-msgid "Example response: ``` 202 Accepted {"
-msgstr "Example response: ` ` ` 202 Accepted {"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:607
-msgid "\"appId\": \"string\", \"appPackageId\": \"string\""
-msgstr "\" appId \": \" string \", \" appPackageId \": \" string \""
+#: ../../Projects/MECM/Apm_Interfaces_en.md:523
+msgid "On-boards application with package provided."
+msgstr "On-boards application with package provided."
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:612
-msgid "### Queries liveness & readiness Retrieves data for liveness & readiness ``` Resource URI: /apm/v1/health Method: GET ```"
-msgstr "### Queries liveness & readiness Retrieves data for revenue & readiness ` ` ` Resource URI: /apm/v1/health Method: GET ` ` `"
+msgid "Queries liveness & readiness"
+msgstr "Queries liveness & readiness"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:619 ../../Projects/MECM/Apm_Interfaces_en.md:767
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td></td> <td></td> </tr> </tr> </tbody> </table>"
+#: ../../Projects/MECM/Apm_Interfaces_en.md:613
+msgid "Retrieves data for liveness & readiness"
+msgstr "Retreeves data for liveness & readiness"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:642
-msgid "Example response: ``` 200 OK ``` ### Retrieves all application packages info from app store. Retrieves all application packages info from app store. ``` Resource URI: /apm/v1/apps/info/appstores/{appstore_ip} Method: GET ```"
-msgstr "Example response: ` ` 200 OK ` ` ` ### Retreeves all application packages info from app store. Retreeves all application packages info from app store. ` ` ` Resource URI: /apm/v1/apps/info/appstores/ {appstore_ip} Method: GET ` ` `"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:653
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appstore_ip</td> <td>appstore_ip</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smaller case alphabets</td> <td>32</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appstore_ip</td> <td>appstore_ip</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smallercase alphabets</td> <td>32</td> </tr> </tbody> </table>"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:684 ../../Projects/MECM/Apm_Interfaces_en.md:790
-msgid "Example response: ``` 200 OK ```"
-msgstr "Example response: ` ` 200 OK ` ` `"
+#: ../../Projects/MECM/Apm_Interfaces_en.md:646 ../../Projects/MECM/Apm_Interfaces_en.md:647
+msgid "Retrieves all application packages info from app store."
+msgstr "Retreeves all application packages info from app store."
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:689
-msgid "### Sync application packages Sync application package by downloading package from appstore. ``` Resource URI: /apm/v1/apps/sync Method: POST ```"
-msgstr "### Sync application packages Sync application package by downloading package from appstore. ` ` ` Resource URI: /apm/v1/apps/sync Method: POST ` ` `"
+msgid "Sync application packages"
+msgstr "Sync application packages"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:696
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appId</td> <td>appId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smaller case alphabets</td> <td>32</td> </tr> <tr> <td>packageId</td> <td>packageId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smaller case alphabets</td> <td>32</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td> <td>access_token</td> <td>access_token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appId</td> <td>appId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smallercase alphabets</td> <td>32</td> </tr> <tr> <td>packageId</td> <td>packageId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smallercase alphabets</td> <td>32</td> </tr> </table> </table>"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:735
-msgid "Example request body: ``` ["
-msgstr "Example request body: ` ` `"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:739 ../../Projects/MECM/Apm_Interfaces_en.md:744
-msgid "\"appId\": \"string\", \"appstoreIp\": \"string\", \"packageId\": \"string\""
-msgstr "\" appId \": \" string \", \" appstoreIp \": \" string \", \" packageId \": \" string \""
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:742
-msgid "}, {"
-msgstr "}, {"
+#: ../../Projects/MECM/Apm_Interfaces_en.md:690
+msgid "Sync application package by downloading package from appstore."
+msgstr "Sync application package by download package from appstore."
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:760
-msgid "### Retrieves all application packages sync status Retrieves all application packages sync status. ``` Resource URI: /apm/v1/apps/syncstatus Method: GET ```"
-msgstr "### Retrieves all application packages sync status Retriever all application packages sync status. ` ` ` Resource URI: /apm/v1/apps/syncstatus Method: GET ` ` `"
+msgid "Retrieves all application packages sync status"
+msgstr "Retreeves all application packages sync status"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:795
-msgid "### Get Application Package Information Retrieve application packages sync status. ``` Resource URI: /apm/v1/apps/{app_id}/packages/{package_id}/syncstatus Method: GET ```"
-msgstr "### Get Application Package Information Retriever application packages sync status. ` ` ` Resource URI: /apm/v1/apps/ {app_id} /packages/ {package_id} /syncstatus Method: GET ` ` `"
+#: ../../Projects/MECM/Apm_Interfaces_en.md:761
+msgid "Retrieves all application packages sync status."
+msgstr "Retreeves all application packages sync status."
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:802
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </tr> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appId</td> <td>appId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smaller case alphabets</td> <td>32</td> </tr> <tr> <td>packageId</td> <td>packageId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smaller case alpha</td> <td></td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Allowed</th> <th>Max Length</th> </thead> </thead> <tbody> <tr> <td>access_token</td> <td>access token</td> <td>header</td> <td>yes</td> <td>Jwt token</td> <td></td> </tr> <tr> <td>appId</td> <td>appId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smallercase alphabets</td> <td>32 </tr></td> </tr> <tr> <td>packageId</td> <td>packageId</td> <td>body</td> <td>yes</td> <td>AlphaNumeric with smallercase</td></td> </tr> </tr> <td> </table> </table>"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:845
-msgid "\"appId\": \"ad dolore laborum\", \"name\": \"Excep\", \"operationalInfo\": \"est magna\", \"packageId\": \"sit n\", \"syncStatus\": \"cillum exercitation quis\""
-msgstr "\" appId \": \" ad dolum\", \" name \": \" Excep \", \" operationInfo \": \" est magna\", \" packageId \": \" side n\", \" syncStatus \": \" cillum exercitation quis\""
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:853
-msgid "### Get Application Package Information Retrieve application packages sync status. ``` Resource URI: /apm/v1/tenants/{tenant_id}/app_package_infos/sync Method: POST ```"
-msgstr "### Get Application Package Information Retriever application packages sync status. ` ` ` Resource URI: /apm/v1/tenants/ {tenant_id} /app_package_infos/sync Method: POST ` ` `"
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:923
-msgid "\"appPackageRecord\": ["
-msgstr "\" appPackageRecord \": ["
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:897
-msgid "\"appPkgId\": \"8e3d6f90bad74cecb7544fc5ebf56782a5df67ab47ba40e09015136573d7bce439937079-99fe-4cd8-881f-04ca8c4fe09d\", \"appPkgName\": \"Video_Surveillance_ap\", \"appPkgVersion\": \"2\", \"appPkgPath\": \"abc\", \"appProvider\": \"\", \"appPkgDesc\": \"abc\", \"appPkgAffinity\": \"bangalore\", \"appIconUrl\": \"\", \"createdTime\": \"2021-03-12 07:59:55.695956+00\", \"modifiedTime\": \"\", \"appId\": \"1\", \"tenantId\": \"e921ce54-82c8-4532-b5c6-8516cf75f7a7\", \"packageId\": \"1\", \"origin\": \"MEPM\", \"syncStatus\": false, \"mecHostInfo\": ["
-msgstr "\" appPkgId \": \" 8e3d6f90bad7544fc5ebf56782a5df67ab47ba40e09015136573d7bce439937079-881f-4c4fe09d \", \" appPkgName \": \" Video_Surveillance_ap \", \" appPkgVersion \": \" 2\", \" appPkgPath \": \" abc \", \" appProvider \": \" appPkgDesc \": \" abc \", \" appPkgAffinity \": \" appIconUrl \": \" createdTime \": \" 2021-03-12 07 :59:55.695956 + 00\", \" modifiedTime \": \" \", \" appId \": \" 1\", \" tenantId \": \" e921ce54-82c8-4532-b5c6-8516cf75f7a7\", \" packageId \": \" 1\", \" origin \": \" MEPM \", \" syncStatus \": false, \" mecHostInfo \": ["
-
-#: ../../Projects/MECM/Apm_Interfaces_en.md:914
-msgid "\"pkgHostKey\": \"8e3d6f90bad74cecb7544fc5ebf56782a5df67ab47ba40e09015136573d7bce439937079-99fe-4cd8-881f-04ca8c4fe09d119.8.47.5\", \"hostIp\": \"119.8.47.5\", \"appPkgId\": \"8e3d6f90bad74cecb7544fc5ebf56782a5df67ab47ba40e09015136573d7bce4\", \"status\": \"\", \"tenantId\": \"e921ce54-82c8-4532-b5c6-8516cf75f7a7\", \"error\": \"success\", \"origin\": \"MEPM\", \"syncStatus\": false"
-msgstr "\" pkgHostKey \":\"8e3d6f90bad7544fc5ebf56782a5df67ab47ba40e09015136573d7bce439937079-881f-04ca8c4fe09d119.8.47.5\", \" 119.8.47.5\", \" appPkgId \": \" 8e3d6f90bad7544fc5ebf56782a5df67ab47ba40e09015136573d7bce4\", \" status \": \" e921ce54-4532-b5c6-8516cf75f7a7\", \" error \": \" success \", \" origin \": \" MEPM \", \" syncStatus \": false"
+#: ../../Projects/MECM/Apm_Interfaces_en.md:796 ../../Projects/MECM/Apm_Interfaces_en.md:854
+msgid "Retrieve application packages sync status."
+msgstr "Retrieve application packages sync status."
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:929
-msgid "### APM Open Api Swagger"
-msgstr "### APM Open Api Swagger"
+msgid "APM Open Api Swagger"
+msgstr "APM Open Api Swagger"
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:931
 msgid "Please refer [APM_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/apm-swagger-openapi.yaml)"

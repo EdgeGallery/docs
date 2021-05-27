@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/MEP/MEP_DataBase_Design.md:2
+#: ../../Projects/MEP/MEP_DataBase_Design.md:1
 msgid "数据库设计"
 msgstr "Database design"
 
@@ -28,20 +28,3 @@ msgstr "The MEP database uses an open source PostgreSQL database, only api gatew
 #: ../../Projects/MEP/MEP_DataBase_Design.md:6
 msgid "AuthInfoRecord: Store Ak/Sk information."
 msgstr "AuthInfoRecord: Store Ak/Sk information."
-
-#: ../../Projects/MEP/MEP_DataBase_Design.md:13 ../../Projects/MEP/MEP_DataBase_Design.md:15
-msgid "```"
-msgstr "` ` `"
-
-#: ../../Projects/MEP/MEP_DataBase_Design.md:12
-msgid "create table auth_info_record ("
-msgstr "create table auth_info_record ("
-
-#: ../../Projects/MEP/MEP_DataBase_Design.md:9
-msgid "app_ins_id  varchar(255) not null, ak  varchar(255) not null, sk  varchar(255) not null, nonce  varchar(255) not null, primary key (app_ins_id)"
-msgstr "app_ins_id varchar (255) not null, ak varchar (255) not null, sk varchar (255) not null, nonce varchar (255) not null, primary key (app_ins_id)"
-
-#: ../../Projects/MEP/MEP_DataBase_Design.md:14
-msgid ");"
-msgstr ");"
-

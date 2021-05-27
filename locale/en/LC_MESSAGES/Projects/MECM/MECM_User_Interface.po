@@ -8,26 +8,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/MECM/MECM_User_Interface.md:2
+#: ../../Projects/MECM/MECM_User_Interface.md:1
 msgid "MECM User Interface Document"
 msgstr "MECM User Interface Document"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:4
-msgid "1. Register new account for the EdgeGallery in case of first time user, or else you can login with existing account, below is the example."
-msgstr "1. Register new account for the EdgeGallery in case of first time user, or else you can login with existing account, below is the example."
+msgid "Register new account for the EdgeGallery in case of first time user, or else you can login  with existing account, below is the example."
+msgstr "Register new account for the EdgeGallery in case of first time user, or else you can login with existing account, below is the example."
 
 #: ../../Projects/MECM/MECM_User_Interface.md:7
 msgid "![.](/uploads/images/2020/0924/account-Regisration.png \"account-Regisration.png\")"
-msgstr "! [.](/uploads/images/2020/0924/account-Regiration.png \" account-Regiresration.png \")"
+msgstr "![.](/uploads/images/2020/0924/account-Regisration.png \"account-Regiresration.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:9
 msgid "Upon successful login the home page is visible with map and nodes in the region."
@@ -35,31 +35,31 @@ msgstr "Upon successful login the home page is visible with map and nodes in the
 
 #: ../../Projects/MECM/MECM_User_Interface.md:11
 msgid "![.](/uploads/images/2020/0924/open-applcm.png \"open-applcm.png\")"
-msgstr "! [.](/uploads/images/2020/0924/open-applcm.png \" open-applcm.png \")"
+msgstr "![.](/uploads/images/2020/0924/open-applcm.png \"open-applcm.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:13
-msgid "3. For new applcm registration, click on the tab ie. Systems -> External System Manager -> Applcm. Then select New Registration. Enter the Applcm, IP, Port number."
-msgstr "3. For new applcm registration, click on the tab. Systems - > External System Manager - > Applecm. Then select New Registration. Enter the Applcm, IP, Port number."
+msgid "For new applcm registration, click on the tab ie. Systems -> External System Manager -> Applcm. Then select New Registration. Enter the Applcm, IP, Port number."
+msgstr "For new applcm registration, click on the tab. ie. Systems - > External System Manager - > Applecm. Then select New Registration. Enter the Applcm, IP, Port number."
 
 #: ../../Projects/MECM/MECM_User_Interface.md:16
 msgid "![.](/uploads/images/2020/0924/applcm-registration.png \"applcm-registration.png\")"
-msgstr "! [.](/uploads/images/2020/0924/applcm-registration.png \" applcm-registration.png \")"
+msgstr "![.](/uploads/images/2020/0924/applcm-registration.png \"applcm-registration.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:18
-msgid "4. Need to add Edge node deatils by navigating to Systems -> External System Manager -> EdgeNode. Then click on New Registration."
-msgstr "4. Need to add Edge node deepls by navitating to Systems - > External System Manager - > EdgeNode. Then click on New Registration."
+msgid "Need to add Edge node deatils by navigating to Systems -> External System Manager -> EdgeNode.  Then click on New Registration."
+msgstr "Need to add Edge node deadls by navating to Systems - > External System Manager - > EdgeNode.  Then click on New Registration."
 
 #: ../../Projects/MECM/MECM_User_Interface.md:21
 msgid "![.](/uploads/images/2020/0924/edge-node-registration.png \"edge-node-registration.png\")"
-msgstr "! [.](/uploads/images/2020/0924/edge - node-registration.png \" edge-node-registration.png \")"
+msgstr "![.](/uploads/images/2020/0924/edge-node-registration.png \"edge-node-registration.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:23
 msgid "Config file of the edge node should be uploaded, by selecting the upload config file under Operation."
-msgstr "Config fileoftheedgenodeshouldbeuploaded,byselectingtheuploadconfigfileunderOperation."
+msgstr "Config file of the edge node should be uploaded, by selecting the upload config file under Operation."
 
 #: ../../Projects/MECM/MECM_User_Interface.md:25
 msgid "![.](/uploads/images/2020/0924/upload-config.png \"upload-config.png\")"
-msgstr "! [.](/uploads/images/2020/0924/upload-config.png \" upload-config.png \")"
+msgstr "![.](/uploads/images/2020/0924/upload-config.png \"upload-config.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:27
 msgid "Now, need to login to the appstore portal and upload the package"
@@ -67,15 +67,15 @@ msgstr "Now, need to login to the appstore portal and upload the package"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:29
 msgid "![.](/uploads/images/2020/0924/upload-package.png \"upload-package.png\")"
-msgstr "! [.](/uploads/images/2020/0924/upload-package.png \" upload-package.png \")"
+msgstr "![.](/uploads/images/2020/0924/upload-package.png \"upload-package.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:31
-msgid "7. Nextly, Redirecting to the edge gallery mecm from appstore  navigate to AppManagement -> Package Management"
-msgstr "7. Nextly, Redirecting to the edge gallery mecm from appstore navigate to AppManagement - > Package Management"
+msgid "Nextly, Redirecting to the edge gallery mecm from appstore  navigate to  AppManagement -> Package Management"
+msgstr "Nextly, Redirecting to the edge gallery mecm from appstore  navigate to  AppManagement -> Package Management"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:34
 msgid "![.](/uploads/images/2020/0924/distribute-package.png \"distribute-package.png\")"
-msgstr "! [.](/uploads/images/2020/0924/distribute-package.png \" distribute-package.png \")"
+msgstr "![.](/uploads/images/2020/0924/distribute-package.png \"distribute-package.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:36
 msgid "Choose the appropriate package and select the Distribute and select required Edge Node."
@@ -83,7 +83,7 @@ msgstr "Chose the appropriate package and select the Distribute and select requi
 
 #: ../../Projects/MECM/MECM_User_Interface.md:38
 msgid "![.](/uploads/images/2020/0924/distribute-edge-node.png \"distribute-edge-node.png\")"
-msgstr "! [.](/uploads/images/2020/0924/distribute - ege-node.png \" distribute-age-node.png \")"
+msgstr "![.](/uploads/images/2020/0924/distribute-edge-node.png \"distribute-age-node.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:40
 msgid "Once Distribution is successfull, then the deploy the application."
@@ -91,5 +91,5 @@ msgstr "Once Distribution is successfull, then the deploy the application."
 
 #: ../../Projects/MECM/MECM_User_Interface.md:42
 msgid "![.](/uploads/images/2020/0924/deploy.png \"deploy.png\")"
-msgstr "! [.](/uploads/images/2020/0924/deploy.png \" deploy.png \")"
+msgstr "![.](/uploads/images/2020/0924/deploy.png \"deploy.png\")"
 

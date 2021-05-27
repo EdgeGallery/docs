@@ -8,20 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/MECM/MECM Metrix_en.md:2 Port
+#: ../../Projects/MECM/MECM Metrix_en.md:1 Port
 msgid "MECM port matrix"
 msgstr "MECM port matrix"
-
-#: ../../Projects/MECM/MECM Metrix_en.md:4 Port
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Module</th> <th>Port number</th> <th>External port number</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>APPO</td> <td>8091</td> <td>30201</td> <td>Provide external service port for application lifecycle management</td> </tr> <tr> <td>APM</td> <td>8092</td> <td>30202</td> <td>Provide external service port for application package management</td> </tr> <tr> <td>Inventory</td> <td>8093</td> <td>30203</td> <td>Provide external service port for inventory management</td> </tr> <tr> <td>applcm controller</td> <td>8094</td> <td>30204</td> <td>Provide external service port for application lifecycle management</td> </tr> <tr> <td>aplcm k8splugin</td> <td>8095</td> <td>30205</td> <td>Provide external service port for application lifecycle management</td> </tr> <tr> <td>FE</td> <td>8443</td> <td>30093</td> <td>Provide external service port for front-end module</td> </tr> <tr> <td>AppRuleManager</td> <td>8096</td> <td>30206</td> <td>Provide external service port for application rule management</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> <th>Module</th> <th>Port number</th> <th>External port number</th> <th>Description</th> </thead> </tr> <tbody> <tr> <td> <td>APPO</td> <td>8091</td> <td>30201</td> <td>Provide external service port for application lifecycle management</td> </tr> <tr> <td>APM</td> <td>8092</td> <td>30202</td> <td>Provide external service port for application package management</td> </tr> <tr> <td>Inventory</td> <td>8093</td> <td>30203</td> <td>Provide external service port for inventory management</td> </tr> <tr> <td>applcm controller</td> <td>8094</td> <td>30204</td> <td>Provide external service port for application lifecycle management</td> </tr> <tr> <td>aplcm k8 plugin</td> <td>8095</td> <td>30205</td> <td>Provide external service port for application lifecycle management</td> </tr> <tr> <td>FE</td> <td>8443</td> <td>30093</td> <td>Provide external service port for frontend module</td> </tr> <tr> <td>AppRuleManager</td> <td>8096</td> <td>30206</td> <td>Provide external service port for application rule management</td> </tr> </tbody> </table>"
-

@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:2
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:1
 msgid "数据库设计"
 msgstr "Database design"
 
@@ -29,79 +29,23 @@ msgstr "The AppStore database uses open-source PostgreSQL databases with a recom
 msgid "app_table: 存储app信息，如名字、提供者、描述等"
 msgstr "app_table: stores app information such as name, provider, description, etc."
 
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:6
-msgid "``` create TABLE if not exists app_table ("
-msgstr "` ` ` create TABLE if not exists app_table ("
-
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:8
-msgid "APPID                    VARCHAR(200)       NOT NULL, APPNAME                  VARCHAR(100)       NULL, APPLICATIONTYPE          VARCHAR(300)       NULL, SHORTDESC                TEXT               NULL, PROVIDER                 VARCHAR(300)       NULL, APPINTRODUCTION          TEXT               NULL, DOWNLOADCOUNT            INT                NULL, AFFINITY                 VARCHAR(100)       NULL, INDUSTRY                 VARCHAR(100)       NULL, CONTACT                  VARCHAR(100)       NULL, USERID                   VARCHAR(100)       NULL, USERNAME                 VARCHAR(100)       NULL, CREATETIME               TIMESTAMP          NULL, MODIFYTIME               TIMESTAMP          NULL, SCORE                    NUMERIC(2,1)       NULL, STATUS                   VARCHAR(50)        NULL, CONSTRAINT app_table_pkey PRIMARY KEY (APPID)"
-msgstr "APPID VARCHAR (200) NOT NULL, APPNAME VARCHAR (100)       NULL, APPLICATIONTYPE VARCHAR (300)       NULL, SHORTDESC TEXT NULL, PROVIDER VARCHAR (300)       NULL, APPENDDUCTION TEXT NULL, DOWNLOADCOUNT INT NULL, AFFINITY VARCHAR (100)       NULL, INDUSTRY VARCHAR (100)       NULL, CONTACT VARCHAR (100)       NULL, USERID VARCHAR (100)       NULL, USERNAME VARCHAR (100)       NULL, CREATETIME TIMESTAMP NULL, MODIFYTIME TIMESTAMP NULL, SCORE NUMERIC (2, 1)       NULL, STATUS VARCHAR (50)        NULL, CONSTRAINT app_table_key PRIMARY KEY (APPID)"
-
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:25 ../../Projects/APPSTORE/AppStore_DataBase_Design.md:53 ../../Projects/APPSTORE/AppStore_DataBase_Design.md:67 ../../Projects/APPSTORE/AppStore_DataBase_Design.md:85 ../../Projects/APPSTORE/AppStore_DataBase_Design.md:97 ../../Projects/APPSTORE/AppStore_DataBase_Design.md:125
-msgid ");"
-msgstr ");"
-
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:26 ../../Projects/APPSTORE/AppStore_DataBase_Design.md:54 ../../Projects/APPSTORE/AppStore_DataBase_Design.md:68 ../../Projects/APPSTORE/AppStore_DataBase_Design.md:86 ../../Projects/APPSTORE/AppStore_DataBase_Design.md:98 ../../Projects/APPSTORE/AppStore_DataBase_Design.md:126
-msgid "```"
-msgstr "` ` `"
-
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:28
 msgid "catalog_package_table: 存储应用的package信息，一个应用可以拥有多个package"
 msgstr "catalog_package_table: package information for storage applications, one application can have multiple package"
-
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:29
-msgid "``` create TABLE if not exists catalog_package_table ("
-msgstr "` ` ` create TABLE if not exists catalog_package_table ("
-
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:31
-msgid "PACKAGEID                VARCHAR(200)       NOT NULL, PACKAGEADDRESS           VARCHAR(200)       NULL, ICONADDRESS              VARCHAR(200)       NULL, DEMOVIDEOADDRESS         VARCHAR(200)       NULL, SIZE                     VARCHAR(100)       NULL, FILESTRUCTURE            TEXT               NULL, CREATETIME               TIMESTAMP          NULL, SHORTDESC                TEXT               NULL, APPNAME                  VARCHAR(100)       NULL, VERSION                  VARCHAR(20)        NULL, APPLICATIONTYPE          VARCHAR(300)       NULL, MARKDOWNCONTENT          TEXT               NULL, AFFINITY                 VARCHAR(100)       NULL, INDUSTRY                 VARCHAR(100)       NULL, CONTACT                  VARCHAR(100)       NULL, APPID                    VARCHAR(100)       NULL, USERID                   VARCHAR(100)       NULL, USERNAME                 VARCHAR(100)       NULL, TESTTASKID               VARCHAR(100)       NULL, STATUS                   VARCHAR(100)       NULL, PROVIDER                 VARCHAR(100)       NULL, CONSTRAINT catalog_package_table_pkey PRIMARY KEY (PACKAGEID)"
-msgstr "PACKAGEID VARCHAR (200) NOT NULL, PACKAGEADDRESS VARCHAR (200)       NULL, ICONADDRESS VARCHAR (200)       NULL, DEMOVIDEOADDRESS VARCHAR (200)       NULL, SIZE VARCHAR (100)       NULL, FILESTRUCTURETEXTNULL,CREATETIMETIMESTAMPNULL,SHORTDESCTEXTNULL,APPNAMEVARCHAR (100)       NULL, VERSION VARCHAR (20)        NULL, APPLICATIONTYPE VARCHAR (300)       NULL, MARKDOWNCONTENT TEXT NULL, AFFINITY VARCHAR (100)       NULL, INDUSTRY VARCHAR (100)       NULL, CONTACT VARCHAR (100)       NULL, APPID VARCHAR (100)       NULL, USERID VARCHAR (100)       NULL, USERNAME VARCHAR (100)       NULL, TESTTASKID VARCHAR (100)       NULL, STATUS VARCHAR (100)       NULL, PROVIDER VARCHAR (100)       NULL, CONSTRAINT catalog_package_table_pkey PRIMARY KEY (PACKAGEID)"
 
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:56
 msgid "csar_package_score: 存储应用的评论信息"
 msgstr "csar_package_score: Comments information for storage applications"
 
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:57
-msgid "``` create TABLE if not exists csar_package_score ("
-msgstr "` ` ` create TABLE if not exists csar_package_score ("
-
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:59
-msgid "COMMENTID                serial, USERID                   VARCHAR(100)       NULL, USERNAME                 VARCHAR(100)       NULL, APPID                    VARCHAR(200)       NOT NULL, COMMENTS                 TEXT               NULL, SCORE                    NUMERIC(2,1)       NULL, COMMENTTIME              TIMESTAMP          NULL, CONSTRAINT csar_package_score_pkey PRIMARY KEY (COMMENTID)"
-msgstr "COMMENTID serial, USERID VARCHAR (100)       NULL, USERNAME VARCHAR (100)       NULL, APPID VARCHAR (200) NOT NULL, COMMENTS TEXT NULL, SCORE NUMERIC (2, 1)       NULL, COMMENTTIME TIMESTAMP NULL, CONSTRAINT csar_package_score_pkey PRIMARY KEY (COMMENTID)"
-
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:70
 msgid "app_store_table: 存储外部appstore信息（POC特性）"
 msgstr "app_store_table: stores external appstore information (POC feature)"
-
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:71
-msgid "``` create TABLE if not exists app_store_table ("
-msgstr "` ` ` create TABLE if not exists app_store_table ("
-
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:73
-msgid "APPSTOREID               VARCHAR(64)        NOT NULL, APPSTORENAME             VARCHAR(128)       NULL, APPSTOREVERSION          VARCHAR(64)        NOT NULL, COMPANY                  VARCHAR(128)       NULL, URL                      VARCHAR(256)       NOT NULL, SCHEMA                   VARCHAR(16)        NULL, APPPUSHINTF              VARCHAR(256)       NULL, APPDTRANSID              VARCHAR(64)        NULL, DESCRIPTION              VARCHAR(256)       NULL, ADDEDTIME                TIMESTAMP          NOT NULL, MODIFIEDTIME             TIMESTAMP          NULL, CONSTRAINT app_store_table_pkey PRIMARY KEY (APPSTOREID)"
-msgstr "APPSTOREID VARCHAR (64) NOT NULL, APPSTORENAME VARCHAR (128)       NULL, APPSTOREVERSION VARCHAR (64) NOT NULL, COMPANY VARCHAR (128)       NULL, URL VARCHAR (256) NOT NULL, SCHEMA VARCHAR (16)        NULL, APPPUSHINTF VARCHAR (256)       NULL, APPDTRANSID VARCHAR (64)        NULL, DESCRIPTION VARCHAR (256)       NULL, ADDEDTIME TIMESTAMP NOT NULL, MODIFIEDTIME TIMESTAMP NULL, CONSTRAINT app_store_table_pkey PRIMARY KEY (APPSTOREID)"
 
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:88
 msgid "pushable_package_table: 存储可推送csar包的信息（POC特性）"
 msgstr "pushable_package_table: stores information that can push a cswar (POC feature)"
 
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:89
-msgid "``` create TABLE if not exists pushable_package_table ("
-msgstr "` ` ` create TABLE if not exists pushable_package_table ("
-
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:91
-msgid "PACKAGEID  VARCHAR(64) NOT NULL, ATPTESTREPORTURL VARCHAR(100) NOT NULL, LATESTPUSHTIME TIMESTAMP NOT NULL, PUSHTIMES INTEGER NOT NULL DEFAULT 0, SOURCEPLATFORM VARCHAR(100) NOT NULL, CONSTRAINT pushable_package_table_pkey PRIMARY KEY (PACKAGEID)"
-msgstr "PACKAGEID VARCHAR (64) NOT NULL, ATPTESTREPORTURL VARCHAR (100) NOT NULL, LATESTPUSHTIME TIMESTAMP NOT NULL, PUSHTIMES INTEGER NOT NULL DEFAULT 0, SOURCEPLATFORM VARCHAR (100) NOT NULL, CONSTRAINT pushable_package_table_key PRIMARY KEY (PACKAGEID)"
-
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:100
 msgid "message_table: 存储appstore间互通时的消息（POC特性）"
 msgstr "message_table: Message (POC feature) to store intercommunication between appstore"
-
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:101
-msgid "``` create TABLE if not exists message_table ("
-msgstr "` ` ` create TABLE if not exists message_table ("
-
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:103
-msgid "MESSAGEID                VARCHAR(100)       NOT NULL, RESULT                   VARCHAR(100)       NULL, READED                   boolean            default false, NAME                     VARCHAR(100)       NULL, PROVIDER                 VARCHAR(100)       NULL, VERSION                  VARCHAR(100)       NULL, MESSAGETYPE              VARCHAR(20)        NULL, SOURCEAPPSTORE           VARCHAR(100)       NULL, TARGETAPPSTORE           VARCHAR(100)       NULL, TIME                     VARCHAR(100)       NULL, DESCRIPTION              VARCHAR(255)       NULL, ATPTESTSTATUS            VARCHAR(50)        NULL, ATPTESTTASKID            VARCHAR(100)       NULL, ATPTESTREPORTURL         VARCHAR(255)       NULL, PACKAGEDOWNLOADURL       VARCHAR(255)       NULL, ICONDOWNLOADURL          VARCHAR(255)       NULL, DEMOVIDEODOWNLOADURL     VARCHAR(255)       NULL, AFFINITY                 VARCHAR(100)       NULL, SHORTDESC                TEXT               NULL, INDUSTRY                 VARCHAR(100)       NULL, TYPE                     VARCHAR(50)        NULL, CONSTRAINT message_table_pkey PRIMARY KEY (MESSAGEID)"
-msgstr "MESSAGEID VARCHAR (100) NOT NULL, RESULT VARCHAR (100)       NULL, READED boolean default false, NAME VARCHAR (100)       NULL, PROVIDER VARCHAR (100)       NULL, VERSION VARCHAR (100)       NULL, MESSAGETYPE VARCHAR (20)        NULL, SOURCEAPPSTORE VARCHAR (100)       NULL, TARGETAPSTORE VARCHAR (100)       NULL, TIME VARCHAR (100)       NULL, DESCRIPTION VARCHAR (255)       NULL, ATPTESTSTATUS VARCHAR (50)        NULL, ATPTESTTASKID VARCHAR (100)       NULL, ATPTESTREPORTURL VARCHAR (255)       NULL, PACKAGEDOWNLOADURL VARCHAR (255)       NULL, ICONDOWNLOADURL VARCHAR (255)       NULL, DEMOVIDEDOWNLOADURL VARCHAR (255)       NULL, AFFINITY VARCHAR (100)       NULL, SHORTDESC TEXT NULL, INDUSTRY VARCHAR (100)       NULL, TYPE VARCHAR (50)        NULL, CONSTRAINT message_table_key PRIMARY KEY (MESSAGEID)"
 

@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/APPSTORE/AppStore_Features.md:2
+#: ../../Projects/APPSTORE/AppStore_Features.md:1
 msgid "特性设计"
 msgstr "Feature design"
 
@@ -36,8 +36,3 @@ msgstr "The tenant user includes: application upload, application test, applicat
 #: ../../Projects/APPSTORE/AppStore_Features.md:9
 msgid "游客用户包含：应用查询、文档中心。"
 msgstr "Tourists users include: apply queries, document centers."
-
-#: ../../Projects/APPSTORE/AppStore_Features.md:11
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>特性名称</th> <th>特性描述</th> </tr> </thead> <tbody> <tr> <td>应用上传</td> <td>AppStore支持用户上传应用包（csar包）</td> </tr> <tr> <td>应用测试</td> <td>AppStore集成了ATP测试平台，用户上传应用包后可以通过ATP测试平台对应用包进行测试</td> </tr> <tr> <td>应用发布</td> <td>AppStore允许已通过ATP测试的应用进行发布，发布后的应用会展示给所有用户</td> </tr> <tr> <td>应用查询</td> <td>用户可以在“应用仓库”查看到所有已发布的应用，可以在\"我的应用\"页面查看自身上传的所有应用</td> </tr> <tr> <td>应用评论</td> <td>用户可以对“应用仓库”看到的应用进行评论、打分，不能评论自己的应用</td> </tr> <tr> <td>应用下载</td> <td>用户可以从AppStore下载应用包，租户仅可以下载本用户上传的应用包，管理员用户可以下载所有已发布的应用包和本用户上传的应用包</td> </tr> <tr> <td>应用删除</td> <td>用户可以从AppStore删除应用包，租户仅可以删除本用户上传的应用包，管理员用户可以删除所有已发布的应用包和本用户上传的应用包</td> </tr> <tr> <td>外部应用商店管理</td> <td>用户可以\"增删改查\"外部应用仓库</td> </tr> <tr> <td>应用推送</td> <td>用户可以将允许共享的应用推送到已添加的外部应用仓库</td> </tr> <tr> <td>应用拉取</td> <td>用户可以从已添加的外部应用仓库中拉取允许共享的应用到本仓库</td> </tr> <tr> <td>消息管理</td> <td>用户在\"应用共享\"中执行的推送、下载等操作均会记录一条消息日志</td> </tr> <tr> <td>应用获取</td> <td>用户可以从收到的推送消息中获取应用，上传到当前平台</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <tr> feature name</th> <th>Feature</th></th> </thead> </tr> <tbody> <tr> <td> <td>Upload</td> <td>AppStore Support User Upload App (csars) </tr></td> <tr> <td>Apply Test</td> <td>AppStore Integrated ATP Test Platform,The application </tr> <td>can be</td> by the ATP test platform after uploading the application</td></td></td> <td> </tr></td> </tr> <td>of the ATP <tr> <td>can be published via the ATP <tr> <td> <tr> platform.</td> <td>Users can comment on apps seen in the App Store, score, can't comment on their own app</td> </tr> <tr> <td>Apply Download</td> <td>Users can download apps uploaded from the AppStore, and the tenant can download all published apps and apps uploaded by this user.</td> </tr> <tr> <td>Apply Delete</td> <td>Users can delete the app from the AppStore,The tenant can delete all published application packages and the application package</td> by the user</td> </tr> <tr> <td>The external application store</td></td> </tr> <td> <tr> <td> <td>The user can push the</td> to the added external application warehouse</td> </tr> <tr> <td></td> <td> <td></td></td> </tbody> </table> </tr></td> select the application to be shared from the added external application</td> to the warehouse</td> </tr> </tr> <tr> <td> <tr> <td> <td>"
-

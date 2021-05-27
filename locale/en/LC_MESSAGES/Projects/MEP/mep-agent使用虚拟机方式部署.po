@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:1
+msgid "打包可执行文件"
+msgstr "Pack executable documents"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:2
+msgid "git clone mep-agent的代码"
+msgstr "Code for git clone mep-agent"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:7
+msgid "编译打包成可执行文件"
+msgstr "Compiled into executable documents"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:9
+msgid "如果是windows环境打包linux可执行文件，需要设置GOOS"
+msgstr "For windows environment packaging linux executable documents, GOOS needs to be set"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:14
+msgid "在mep-agent目录下执行go build命令，当前dockerfile使用的go version为1.14.2，如果是1.16版本命令参数会不一样"
+msgstr "Run the go build command under the mep-agent directory, current dockerfile uses go version 1.14.2, if it is a 1.16 version command parameter"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:23
+msgid "设置环境变量"
+msgstr "setting environment variables"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:25
+msgid "vi /etc/profile 添加下面的环境变量，环境变量的值根据实际环境的值修改"
+msgstr "vi /etc/profile adds the environment variable below, the value of the environment variable is modified based on the value of the actual environment"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:34
+msgid "wq保存后，source /etc/profile生效"
+msgstr "source /etc/profile takes effect after wq archive"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:36
+msgid "运行程序"
+msgstr "Run Process"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:37
+msgid "虚拟机创建/usr/mep目录，创建/usr/mep/log/mep-agent.log日志文件，拷贝代码中的conf、views目录到/usr/mep下，拷贝可执行文件到此目录（没有指定名词则为main）"
+msgstr "The virtual machine creates the /usr/mep directory, creates the /usr/mep/log/mep-agent.log log document, the conf in the copy code, the views directory to /usr/mep, copy executable documents to this directory (no noun is specified main)"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:39
+msgid "设置可执行权限"
+msgstr "setting executable rights"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:44
+msgid "执行可执行文件"
+msgstr "Running a executable document"
+
+#: ../../Projects/MEP/mep-agent使用虚拟机方式部署.md:51
+msgid "**如果修改启动的端口，需要添加app.conf配置文件指定端口**"
+msgstr "** If the activated port is modified, a app.conf configuration document is required to specify the port * *"
+

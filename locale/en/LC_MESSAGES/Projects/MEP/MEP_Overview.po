@@ -8,22 +8,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/MEP/MEP_Overview.md:2
+#: ../../Projects/MEP/MEP_Overview.md:1
 msgid "概述"
 msgstr "Overview"
 
 #: ../../Projects/MEP/MEP_Overview.md:4
-msgid "## MEP 项目整体介绍"
-msgstr "## MEP Item Overall Presentation"
+msgid "MEP 项目整体介绍"
+msgstr "Overall introduction to MEP projects"
 
 #: ../../Projects/MEP/MEP_Overview.md:6
 msgid "随着物联网、人工智能、云计算、移动互联网、大数据和大视频等产业技术的蓬勃发展，以及围绕ICT开放生态的成熟，网络资源和计算能力逐步朝着资源集中化和边缘化方向演进。"
@@ -39,7 +39,7 @@ msgstr "Under the MEC scenario, big applications will operate on the edge of the
 
 #: ../../Projects/MEP/MEP_Overview.md:13
 msgid "![](/uploads/images/2020/0805/102832_c7372e58_5504908.png)"
-msgstr "! [](/uploads/images/2020/0805/102832_c7372e58_5504908 .png)"
+msgstr "![](/uploads/images/2020/0805/102832_c7372e58_5504908.png)"
 
 #: ../../Projects/MEP/MEP_Overview.md:15
 msgid "EdgeGallery MEP项目旨在打造一个边缘侧的开源、开放的参考MEP平台，MEP项目当前包含MEP和MEP-Agent两个组件。"
@@ -47,7 +47,7 @@ msgstr "The EdgeGallery MEP project aims to create an open source, open referenc
 
 #: ../../Projects/MEP/MEP_Overview.md:17
 msgid "![](/uploads/images/2020/0804/164331_49cda7cd_5504908.png \"系统架构.png\")"
-msgstr "! [](/uploads/images/2020/0804/164331_49cda7cd_5504908 .png \" System Architect .png \")"
+msgstr "![](/uploads/images/2020/0804/164331_49cda7cd_5504908.png \"System Architect.png\")"
 
 #: ../../Projects/MEP/MEP_Overview.md:19
 msgid "MEP（MEC Platform, MEC平台）是ETSI MEC标准定义的MEC平台网元，部署位置在边缘侧，主要涵盖如下功能："
@@ -94,16 +94,32 @@ msgid "MEP-Agent组件：应用集成适配器，这个组件在实际使用时�
 msgstr "MEP-Agent Assembly: The application of an integrated adapter, which the application developer can use as part of the application when it is actually used.The invention realizes the related basic functions of the instance configuration information leading-in, service registration and so on, which can simplify the integration of the application and the platform."
 
 #: ../../Projects/MEP/MEP_Overview.md:35
-msgid "## MEP 整体架构"
-msgstr "## MEP overall architecture"
+msgid "MEP 整体架构"
+msgstr "MEP Overall Framework"
 
 #: ../../Projects/MEP/MEP_Overview.md:37
 msgid "![](/uploads/images/2020/0915/144714_23890cda_7624956.png \"MEP arch.png\")"
-msgstr "! [](/uploads/images/2020/0915/144714_23890cda_7624956 .png \" MEP arch.png \")"
+msgstr "![](/uploads/images/2020/0915/144714_23890cda_7624956.png \"MEP arch.png\")"
 
 #: ../../Projects/MEP/MEP_Overview.md:39
-msgid "图中涉及的MEP关联主要接口有： - Mp1：APP与MEP之间，提供APP服务注册发现，APP状态通知订阅等能力。 - Mp2：MEP与UPF之间，提供数据面的配置能力。 - Mm3：MEO与MEPM之间，提供包管理，APP生命周期管理能力 - Mm5：MEPM与MEP之间，执行MEP平台配置管理，配置APP规则等能力。"
-msgstr "The MEP associated major interfaces in the figure are: - Mp1: between APP and MEP, providing the APP service registration discovery, the APP status notification subscription and so on. -Mp2: Provides the configuration capability of the data side between MEP and UPF. -Mm3: between MEO and MEPM, providing packet management, APP life cycle management capability-Mm5: between MEPM and MEP, performing MEP platform configuration management, configuring APP rules, and so on."
+msgid "图中涉及的MEP关联主要接口有："
+msgstr "The MEP associated major interfaces involved in the graph are:"
+
+#: ../../Projects/MEP/MEP_Overview.md:40
+msgid "Mp1：APP与MEP之间，提供APP服务注册发现，APP状态通知订阅等能力。"
+msgstr "Mp1: Between APP and MEP, the ability to provide APP service registration discovery, APP status notification subscription, etc."
+
+#: ../../Projects/MEP/MEP_Overview.md:41
+msgid "Mp2：MEP与UPF之间，提供数据面的配置能力。"
+msgstr "Mp2: The configuration capability of the data surface is provided between the MEP and the UPF."
+
+#: ../../Projects/MEP/MEP_Overview.md:42
+msgid "Mm3：MEO与MEPM之间，提供包管理，APP生命周期管理能力"
+msgstr "Mm3: Provides packet management, APP life cycle management capability between MEO and MEPM"
+
+#: ../../Projects/MEP/MEP_Overview.md:43
+msgid "Mm5：MEPM与MEP之间，执行MEP平台配置管理，配置APP规则等能力。"
+msgstr "Mm5: Ability to perform MEP platform configuration management, configure APP rules, etc. between MEPM and MEP."
 
 #: ../../Projects/MEP/MEP_Overview.md:45
 msgid "对于应用App来说，Mp1是APP与MEP交互最重要的接口，APP能通过Mp1将自身服务注册到MEP平台，同时也能够通过服务发现调用MEP对外提供的服务。"

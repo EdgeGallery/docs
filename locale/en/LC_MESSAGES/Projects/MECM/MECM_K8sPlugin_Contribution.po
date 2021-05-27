@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:2
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:1
 msgid "How to contribute"
 msgstr "How to contribute"
 
@@ -26,28 +26,24 @@ msgid "This section provides details on how to participate/contribute to the k8s
 msgstr "This section provides details on how to participate/contribute to the k8s plugin project."
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:6
-msgid "## Build local development environment"
-msgstr "## Build local development environment"
+msgid "Build local development environment"
+msgstr "Build local development environment"
 
-#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:9
-msgid "This section will guide developers to build k8s plugin module locally and help developers to quickly understand and"
-msgstr "This section will guide developers to build k8s plugin module locally and help developers to quickly underhand and"
-
-#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:9
-msgid "develop code"
-msgstr "develop code"
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:8
+msgid "This section will guide developers to build k8s plugin module locally and help developers to quickly understand and  develop code"
+msgstr "This section will guide developers to build k8s plugin module locally and help developers to quickly under and develop code"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:11
 msgid "The local startup of k8s plugin depends on："
 msgstr "The local startup of k8s plugin depends on:"
 
-#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:13
-msgid "``` - DataBase ``` In order to build a local environment, the final startup sequence is DataBase -> K8sPlugin"
-msgstr "` ` ` - DataBase ` ` ` ` In order to build a local environment, the final startup sequence is DataBase - > K8sPlugin"
+#: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:16
+msgid "In order to build a local environment, the final startup sequence is DataBase -> K8sPlugin"
+msgstr "In order to build a local environment, the final startup sequence is DataBase -> K8sPlugin"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:18
-msgid "### DataBase"
-msgstr "### DataBase"
+msgid "DataBase"
+msgstr "DataBase"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:20
 msgid "Download and install postgres 12.3 database"
@@ -63,11 +59,11 @@ msgstr "Create a database named k8spludb"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:26
 msgid "![](/uploads/images/2020/0924/k8sPlugin-db.png \"k8sPlugin-db.png\")"
-msgstr "! [](/uploads/images/2020/0924/k8sPlugin-db.png \" k8sPlugin-db.png \")"
+msgstr "![](/uploads/images/2020/0924/k8sPlugin-db.png \"k8sPlugin-db.png\")"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:28
-msgid "### K8s plugin"
-msgstr "### K8s plugin"
+msgid "K8s plugin"
+msgstr "K8s plugin"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:30
 msgid "Download k8s plugin code"
@@ -79,7 +75,7 @@ msgstr "Configure the runtime environment variables (using GO Land as an example
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:34
 msgid "![](/uploads/images/2020/0924/k8sPlugin-contribution.png \"k8sPlugin-contribution.png\")"
-msgstr "! [](/uploads/images/2020/0924/k8sPlugin-contribution.png \" k8sPlugin-contribution.png \")"
+msgstr "![](/uploads/images/2020/0924/k8sPlugin-contribution.png \"k8sPlugin-contribution.png\")"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:36
 msgid "Update certificates path in app.conf"
@@ -87,7 +83,7 @@ msgstr "Update certificates path in app.conf"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:38
 msgid "![](/uploads/images/2020/0924/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
-msgstr "! [](/uploads/images/2020/0924/mepm - applcm-ssl.png \" mepm-applcm-ssl.png \")"
+msgstr "![](/uploads/images/2020/0924/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:40
 msgid "Run main to start k8s plugin"
