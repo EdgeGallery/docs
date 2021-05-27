@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../Projects/MECM/MECM.rst:9
 msgid " MECM Overview概述"
@@ -107,29 +107,29 @@ msgstr "MECM"
 
 #: ../../Projects/MECM/MECM.rst:7
 msgid "**Overview概述**"
-msgstr "OVERVIEW OVERVIEW"
+msgstr "**OVERVIEW OVERVIEW**"
 
 #: ../../Projects/MECM/MECM.rst:15
 msgid "**Architecture**"
-msgstr "** Architecture**"
+msgstr "**Architecture**"
 
 #: ../../Projects/MECM/MECM.rst:23
 msgid "**Interface Designs界面设计**"
-msgstr "** Interface DesignsInterface Design * *"
+msgstr "**Interface DesignsInterface Design**"
 
 #: ../../Projects/MECM/MECM.rst:36
 msgid "**Database Designs数据库设计**"
-msgstr "* * Database DesignsDB Design * *"
+msgstr "**Database DesignsDB Design**"
 
 #: ../../Projects/MECM/MECM.rst:48
 msgid "**User Guides使用指导**"
-msgstr "** User Guides Use Guidance * *"
+msgstr "**User Guides Use Guidance**"
 
 #: ../../Projects/MECM/MECM.rst:57
 msgid "**How to Contribute如何贡献**"
-msgstr "** How How to Contribute Contribution * *"
+msgstr "**How How to Contribute Contribution**"
 
 #: ../../Projects/MECM/MECM.rst:69
 msgid "**Port Matrix端口矩阵**"
-msgstr "** Port Matrix Port Matrix * *"
+msgstr "**Port Matrix Port Matrix**"
 

@@ -8,34 +8,46 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../Projects/MEP/token-generator/README.md:1
-msgid "# How to run?"
-msgstr "# How to run?"
+msgid "How to run?"
+msgstr "How to run?"
 
 #: ../../Projects/MEP/token-generator/README.md:3
-msgid "## Download and unzip token-generator.zip"
-msgstr "## Download and unzip token-generator.zip"
+msgid "Download and unzip token-generator.zip"
+msgstr "Download and unzip token-generator.zip"
 
 #: ../../Projects/MEP/token-generator/README.md:5
-msgid "## Set the below env variables using the correct ip ``` export AK=QVUJMSUMgS0VZLS0tLS0 export SK=DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc export APPINSTID=5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f export CA_CERT=./ca.crt export MEP_IP=159.138.129.53 export MEP_APIGW_PORT=30443 export MEP_AUTH_ROUTE=mepauth export ENABLE_WAIT=true export CA_CERT_DOMAIN_NAME=edgegallery ```"
-msgstr "## Set the below env variables using the correct ip ` ` ` export AK=QVUJMSUMgS0VZLS0tLS0 export SK=DXPb4sqE1JOjOIRomRs5wyszoCR5R7AtVa28KT3lSc export APPINSTID=5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f export CA_CERT=./ca.crt export MEP_IP=159.138.129.53 export MEP_APIGW_PORT=30443 export MEP_AUTH_ROUTE=mepiauth export ENABLE_WAIT=true export CA_CERT_DOMAIN_NAME=edgeegallery ` ` `"
+msgid "Set the below env variables using the correct ip"
+msgstr "Set the below env variables using the correct ip"
 
 #: ../../Projects/MEP/token-generator/README.md:18
-msgid "## Run the token generator If the MEP version is 1.0.1 and before use token_generator ``` ./token_generator ``` If the MEP version is after 1.0.1 use token_generator_url_unify ``` ./token_generator_url_unify ``` 签名（Authorization）和token都可以通过日志看到 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0204/165822_77d3c5d4_4991354.png \"屏幕截图.png\")"
-msgstr "## Run the token generator If the MEP version is 1.0.1 and before use token_generator ` ` ` ./token_generator ` ` ` If the MEP version is after 1.0.1 use token_generator_url_unify ` ` ` ./token_generator_url_unify ` ` ` The signature (Authorization) and token can all be seen by the log! [Enter the picture description] (https://images.gitee.com/uploads/images/2021/0204/165822_77d3c5d4_4991354.png \" Screen screenshot .png \")"
+msgid "Run the token generator"
+msgstr "Run the token generator"
+
+#: ../../Projects/MEP/token-generator/README.md:19
+msgid "If the MEP version is 1.0.1 and before use token_generator"
+msgstr "If the MEP version is 1.0.1 and before use token_generator"
+
+#: ../../Projects/MEP/token-generator/README.md:23
+msgid "If the MEP version is after 1.0.1 use token_generator_url_unify"
+msgstr "If the MEP version is after 1.0.1 use token_generator_url_unify"
+
+#: ../../Projects/MEP/token-generator/README.md:27
+msgid "签名（Authorization）和token都可以通过日志看到 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0204/165822_77d3c5d4_4991354.png \"屏幕截图.png\")"
+msgstr "The signature (Authorization) and token can all be seen by the log ![Enter the picture description](https://images.gitee.com/uploads/images/2021/0204/165822_77d3c5d4_4991354.png \"Screen screenshot.png\")"
 
 #: ../../Projects/MEP/token-generator/README.md:30
-msgid "# How to modify token-generator code"
-msgstr "# How to modify token-generator code"
+msgid "How to modify token-generator code"
+msgstr "How to modify token-generator code"
 
 #: ../../Projects/MEP/token-generator/README.md:32
 msgid "Token-generator is modified from mep-agent code. Only add log to record token and return after get token."
@@ -46,46 +58,21 @@ msgid "The change code as follows："
 msgstr "The change code as follows:"
 
 #: ../../Projects/MEP/token-generator/README.md:36
-msgid "main.go ``` // start main service //go service.BeginService().Start(\"./conf/app_instance_info.yaml\") // remove service.BeginService().Start(\"./conf/app_instance_info.yaml\") // add return // add ```"
-msgstr "main.go ` ` ` // start main service // go service.BeginService (). Start (\" ./conf/app_instance_info.yaml \") // remove service.BeginService (). Start (\" ./conf/app_instance_info.yaml \") // add return // add ` ` `"
+msgid "main.go"
+msgstr "main.go"
 
 #: ../../Projects/MEP/token-generator/README.md:44
-msgid "start.go ``` // service entrance func (ser *Ser) Start(confPath string) {"
-msgstr "start.go ` ` ` // service entrance func (ser *Ser) Start (confPath string) {"
-
-#: ../../Projects/MEP/token-generator/README.md:48
-msgid "log.Info(\"start\") // add"
-msgstr "log.Info (\" start \") // add"
-
-#: ../../Projects/MEP/token-generator/README.md:52 ../../Projects/MEP/token-generator/README.md:63
-msgid "```"
-msgstr "` ` `"
+msgid "start.go"
+msgstr "start.go"
 
 #: ../../Projects/MEP/token-generator/README.md:54
-msgid "token.go ``` // Request token from mep_auth func GetMepToken(auth model.Auth) error {"
-msgstr "token.go ` ` ` // Request token from mep_auth func GetMepToken (auth model.Auth) error {"
-
-#: ../../Projects/MEP/token-generator/README.md:58
-msgid "log.Info(\"begin to get token from mep_auth\") // add"
-msgstr "log.Info (\"begin to get token from mep_auth \") // add"
-
-#: ../../Projects/MEP/token-generator/README.md:62
-msgid "log.Info(\"get token success.\")"
-msgstr "log.Info (\"get token success. \")"
+msgid "token.go"
+msgstr "token.go"
 
 #: ../../Projects/MEP/token-generator/README.md:65
-msgid "request.go ```"
-msgstr "request.go ` ` `"
+msgid "request.go"
+msgstr "request.go"
 
-#: ../../Projects/MEP/token-generator/README.md:67
-msgid "req.Header.Set(\"Authorization\", authorization) log.Info(\"Authorization : \", authorization) // add log.Info(\"PostRegisterRequest : \", req) // add"
-msgstr "req.Header.Set (\" Authorization \", authorization) log.Info (\" Authorization: \", authorization) // add log.Info (\" PostRegisterRequest: \", req) // add"
-
-#: ../../Projects/MEP/token-generator/README.md:70
-msgid "``` # How to build token-generator"
-msgstr "` ` # How to build token-generator"
-
-#: ../../Projects/MEP/token-generator/README.md:73
-msgid "``` set GOOS=linux go build -o token_generator -ldflags \"-s -w\" main.go ```"
-msgstr "` ` ` set GOOS=linux go build -o token_generator -ldflags \" - s -w \" main.go ` ` `"
-
+#: ../../Projects/MEP/token-generator/README.md:71
+msgid "How to build token-generator"
+msgstr "How to build token-generator"

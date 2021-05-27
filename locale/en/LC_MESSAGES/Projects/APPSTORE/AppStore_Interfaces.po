@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1
 msgid "接口设计"
 msgstr "Interface design"
 
@@ -27,7 +27,7 @@ msgstr "The document describes the interface design details for the appstore-be 
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:5
 msgid "[AppStore 接口列表](#接口列表)"
-msgstr "[AppStore Interface List](#InterfaceList)"
+msgstr "[AppStore Interface List](#Interfacelist)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:6
 msgid "[1. 应用](#1-应用)"
@@ -53,7 +53,7 @@ msgstr "[1.4 Delete Application](#14-DeleteApplication)"
 msgid "[1.5 获取应用最新版本](#15-获取应用最新版本)"
 msgstr "[1.5 Get the latest version of the app](#15-Getthelatestversionoftheapp)"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:15
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:12
 msgid "[1.6 获取应用图标](#16-获取应用图标)"
 msgstr "[1.6 Get Application Icon](#16-GetApplicationIcon)"
 
@@ -74,502 +74,510 @@ msgid "[1.10 获取应用视频](#110-获取应用视频)"
 msgstr "[1.10 Get Application Video](#110-GetAppliedVideo)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:17
-msgid "[2. 应用包](#2-应用包) - [2.1 获取应用包列表](#21-获取应用包列表) - [2.2 获取应用包](#22-获取应用包) - [2.3 删除应用包](#23-删除应用包) - [2.4 下载应用包](#24-下载应用包) - [2.5 获取文件内容](#25-获取文件内容) - [2.6 应用发布](#26-应用发布) - [2.7 应用测试](#27-应用测试)"
-msgstr "[2. Application package] (#2#21-Application package)-[2.2 Get Application packs] (#22-Get Application packs) (#22-Delete App) (#23-Delete App)-[2.4 Download Application] (#24-Download App)-[2.5 Get Document Properties] (#25-Get Document Properties)-[2.6 Application Publishing] (#26-Application Publish)-[2.7 Application Test] (#27-Application Test)"
+msgid "[2. 应用包](#2-应用包)"
+msgstr "[2. Application package](#2-Applicationpackage)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:18
+msgid "[2.1 获取应用包列表](#21-获取应用包列表)"
+msgstr "[2.1 Get Application pack list](#21-GetListofApplications)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:19
+msgid "[2.2 获取应用包](#22-获取应用包)"
+msgstr "[2.2 Get Application Bac](#22-GettheApppack)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:20
+msgid "[2.3 删除应用包](#23-删除应用包)"
+msgstr "[2.3 Delete App](#23-DeleteApplicationpackage)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:21
+msgid "[2.4 下载应用包](#24-下载应用包)"
+msgstr "[2.4 Download App](#24-DownloadApplicationpack)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:22
+msgid "[2.5 获取文件内容](#25-获取文件内容)"
+msgstr "[2.5 Get document content](#25-Getdocumentcontent)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:23
+msgid "[2.6 应用发布](#26-应用发布)"
+msgstr "[2.6 Application Publishing](#26-ApplicationPublishing)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:24
+msgid "[2.7 应用测试](#27-应用测试)"
+msgstr "[2.7 Application Test](#27-ApplicationTest)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:25
-msgid "[3. 评论](#3-评论) - [3.1 获取评论列表](#31-获取评论列表) - [3.2 提交评论](#32-提交评论)"
-msgstr "[3. Comments] (#3-Comment)-[3.1 Get Comments List] (#31-Get Comments List)-[3.2 Submit Comment] (#32-Submit Comment)"
+msgid "[3. 评论](#3-评论)"
+msgstr "[3. Comment](#3-Comment)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:26
+msgid "[3.1 获取评论列表](#31-获取评论列表)"
+msgstr "[3.1 Get Comments List](#31-Getalistofcomments)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:27
+msgid "[3.2 提交评论](#32-提交评论)"
+msgstr "[3.2 Submit Comment](#32-SubmitComment)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:28
-msgid "[4. 应用推送](#4-应用推送) - [4.1 查询可推送应用列表](#41-查询可推送应用列表) - [4.2 获取推送应用包](#42-获取推送应用包) - [4.3 推送应用包](#43-推送应用包) - [4.4 下载推送应用包](#44-下载推送应用包) - [4.5 下载推送应用图标](#45-下载推送应用图标)"
-msgstr "[4. App Push] (#4-Application Push)-[4.1 Query Can Push Applications List] (#41-Query Can Push Applications)-[4.2 Get Push App Pd] (#42-Get Push App Pbb) -#434.3 Push App]-[4.4 Download Push App] (#44-Download Push App)-[4.5 Download Push Application Icon] (#45-Download Push Application Icon)"
+msgid "[4. 应用推送](#4-应用推送)"
+msgstr "[4. Application Push](#4-ApplicationPush)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:29
+msgid "[4.1 查询可推送应用列表](#41-查询可推送应用列表)"
+msgstr "[4.1 Query to Push Application List](#41-QueryPushableApplicationsList)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:30
+msgid "[4.2 获取推送应用包](#42-获取推送应用包)"
+msgstr "[4.2 Get Push App Pd](#42-GetPushAppPbb)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:31
+msgid "[4.3 推送应用包](#43-推送应用包)"
+msgstr "[4.3 Push Apps](#43-PushAppPbb)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:32
+msgid "[4.4 下载推送应用包](#44-下载推送应用包)"
+msgstr "[4.4 Download Push App](#44-Downloadpushapppackage)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:33
+msgid "[4.5 下载推送应用图标](#45-下载推送应用图标)"
+msgstr "[4.5 Download Push Application Icon](#45-DownloadPushApplicationIcon)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:34
-msgid "[5. 仓库管理](#5-仓库管理) - [5.1 添加仓库](#51-添加仓库) - [5.2 删除仓库](#52-删除仓库) - [5.3 修改仓库](#53-修改仓库) - [5.4 查询仓库列表](#54-查询仓库列表]) - [5.5 查询仓库](#55-查询仓库)"
-msgstr "[5. Warehouse Management] (#5#51-Warehouse Management)-[5.1 Add Warehouse]-[5.2 Delete Warehouse] (#52-Delete Warehouse)-[5.3 Modify Warehouse] (#53-Modify Warehouse)-[5.4 Query Warehouse List] (#54-Query Warehouse List])-[5.5 Query Warehouse] (#55-Query Warehouse)"
+msgid "[5. 仓库管理](#5-仓库管理)"
+msgstr "[5. Warehouse Management](#5-WarehouseManagement)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:35
+msgid "[5.1 添加仓库](#51-添加仓库)"
+msgstr "[5.1 Add Warehouse](#51-addedwarehouse)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:36
+msgid "[5.2 删除仓库](#52-删除仓库)"
+msgstr "[5.2 Delete Warehouse](#52-DeleteWarehouse)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:37
+msgid "[5.3 修改仓库](#53-修改仓库)"
+msgstr "[5.3 Modify Warehouse](#53-ModifyWarehouse)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:38
+msgid "[5.4 查询仓库列表](#54-查询仓库列表])"
+msgstr "[5.4 Query Warehouse List](#54-QueryWarehouseList])"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:39
+msgid "[5.5 查询仓库](#55-查询仓库)"
+msgstr "[5.5 Query Warehouse](#55-QueryWarehouse)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:40
-msgid "[6. 消息](#6-消息) - [6.1 添加消息](#61-添加消息) - [6.2 获取所有消息](#62-获取所有消息) - [6.3 获取消息](#63-获取消息) - [6.4 删除消息](#64-删除消息) - [6.5 接收消息](#65-接收消息) - [6.6 更新状态](#66-更新状态)"
-msgstr "[6. (#6#61-Message)-[6.2 Get all messages] (#62-Get all messages]-[6.3 Get information] (#63-Get information)-[6.4 delete message] (#64-delete message)-[6.6 Update Status] (#65-Update Status)-[#66-"
+msgid "[6. 消息](#6-消息)"
+msgstr "[6. Message](#6-News)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:41
+msgid "[6.1 添加消息](#61-添加消息)"
+msgstr "[6.1 Add message](#61-addmessage)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:42
+msgid "[6.2 获取所有消息](#62-获取所有消息)"
+msgstr "[6.2 Get all messages](#62-Getallmessages)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:43
+msgid "[6.3 获取消息](#63-获取消息)"
+msgstr "[6.3 Access to information](#63-Getamessage)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:44
+msgid "[6.4 删除消息](#64-删除消息)"
+msgstr "[6.4 Delete message](#64-deletemessage)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:45
+msgid "[6.5 接收消息](#65-接收消息)"
+msgstr "[6.5 receiving message](#65-receivemessage)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:46
+msgid "[6.6 更新状态](#66-更新状态)"
+msgstr "[6.6 Update Status](#66-UpdateStatus)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:47
-msgid "[7. 应用拉取](#7-应用拉取) - [7.1 查询可拉取应用列表](#71-查询可推送应用列表) - [7.2 获取外部仓库可拉取应用列表](#72-根据仓库id获取该仓库可拉取应用列表) - [7.3 拉取应用包](#73-拉取应用包)"
-msgstr "[7. Application Pull] (#7-Application Rat)-[7.1 Query Kappable Applications List] (#71-Query Can Push Applications List)-[7.2 Get External Warehouse Pull Application List] (#72-Get the warehouse according to the warehouse id)-[7.3 Lcache app] (#73-pull application package)"
+msgid "[7. 应用拉取](#7-应用拉取)"
+msgstr "[7. Application Pull](#7-ApplicationPull)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:48
+msgid "[7.1 查询可拉取应用列表](#71-查询可推送应用列表)"
+msgstr "[7.1 queries to pull the application list](#71-querytopushthelistofapps)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:49
+msgid "[7.2 获取外部仓库可拉取应用列表](#72-根据仓库id获取该仓库可拉取应用列表)"
+msgstr "[7.2 Get external warehouse to pull application list](#72-Getthewarehouseaccordingtothewarehouseidtopulltheapplicationlist)"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:50
+msgid "[7.3 拉取应用包](#73-拉取应用包)"
+msgstr "[7.3 pulling app](#73-pullapplicationpackage)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:52
-msgid "## 1. 应用"
-msgstr "# # 1. apply"
+msgid "1. 应用"
+msgstr "1.Application"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:54
 msgid "应用是应用商店基本的发布单位。"
 msgstr "The app is the app store's basic publishing unit."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:56
-msgid "### 1.1 获取应用列表"
-msgstr "### 1.1 Get Application List"
+msgid "1.1 获取应用列表"
+msgstr "1.1 Access to applications"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:58
 msgid "根据入参查询应用列表。"
 msgstr "According to the application list of the input parameter."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:60
-msgid "``` URI： /mec/appstore/v1/apps 方法类型: GET ``` 请求参数："
-msgstr "The ` ` ` URI: /met/appstore/v1/apps method type: GET ` ` a request parameter:"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:64
+msgid "请求参数："
+msgstr "Request parameters:"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:66
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>name</td> <td>应用名</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>provider</td> <td>应用提供商</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>type</td> <td>应用类型</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>affinity</td> <td>架构</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>应用创建人</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td> <td></td> <td>Application name</td> <td>request param</td> <td>yes</td> </tr> <tr> <td> <td>provider</td> <td>application provider</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>type</td> <td>The application type</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>affinity</td> <td>framework</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>Application creator</td> <td>request param</td> <td>yes</td> </tr> </tr> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:109 ../../Projects/APPSTORE/AppStore_Interfaces.md:684 ../../Projects/APPSTORE/AppStore_Interfaces.md:1015 ../../Projects/APPSTORE/AppStore_Interfaces.md:1115 ../../Projects/APPSTORE/AppStore_Interfaces.md:1166 ../../Projects/APPSTORE/AppStore_Interfaces.md:1539 ../../Projects/APPSTORE/AppStore_Interfaces.md:1707 ../../Projects/APPSTORE/AppStore_Interfaces.md:1902 ../../Projects/APPSTORE/AppStore_Interfaces.md:1953
-msgid "响应示例: ``` 200 OK ["
-msgstr "Response example: ` ` ` 200 OK ["
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:128 ../../Projects/APPSTORE/AppStore_Interfaces.md:178 ../../Projects/APPSTORE/AppStore_Interfaces.md:270 ../../Projects/APPSTORE/AppStore_Interfaces.md:472 ../../Projects/APPSTORE/AppStore_Interfaces.md:512 ../../Projects/APPSTORE/AppStore_Interfaces.md:604 ../../Projects/APPSTORE/AppStore_Interfaces.md:705 ../../Projects/APPSTORE/AppStore_Interfaces.md:763 ../../Projects/APPSTORE/AppStore_Interfaces.md:1029 ../../Projects/APPSTORE/AppStore_Interfaces.md:1039 ../../Projects/APPSTORE/AppStore_Interfaces.md:1134 ../../Projects/APPSTORE/AppStore_Interfaces.md:1185 ../../Projects/APPSTORE/AppStore_Interfaces.md:1378 ../../Projects/APPSTORE/AppStore_Interfaces.md:1502 ../../Projects/APPSTORE/AppStore_Interfaces.md:1553 ../../Projects/APPSTORE/AppStore_Interfaces.md:1598 ../../Projects/APPSTORE/AppStore_Interfaces.md:1730 ../../Projects/APPSTORE/AppStore_Interfaces.md:1784 ../../Projects/APPSTORE/AppStore_Interfaces.md:1921 ../../Projects/APPSTORE/AppStore_Interfaces.md:1972
-msgid "{"
-msgstr "{"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:114
-msgid "\"appId\": \"string\", \"iconUrl\": \"string\", \"name\": \"string\", \"provider\": \"string\", \"type\": \"string\", \"shortDesc\": \"string\", \"createTime\": \"string\", \"details\": \"string\", \"downloadCount\": 0, \"affinity\": \"string\", \"industry\": \"string\", \"contact\": \"string\", \"score\": 0, \"userId\": \"string\", \"userName\": \"string\", \"status\": \"string\""
-msgstr "\" appId \": \" string \": \" string \", \" name \": \" provider \": \" string \": \" type \": \" shortDesc \": \" createTime \": \" string \", \" details \": \" string \", \" downloadCount \": \" 0, \" affinity \": \" string \", \" string \", \" contact \": \" string \", \" score \": 0, \" userId \": \" string \", \" userName \": \" string \", \" status \": \" string \""
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:130 ../../Projects/APPSTORE/AppStore_Interfaces.md:180 ../../Projects/APPSTORE/AppStore_Interfaces.md:272 ../../Projects/APPSTORE/AppStore_Interfaces.md:474 ../../Projects/APPSTORE/AppStore_Interfaces.md:514 ../../Projects/APPSTORE/AppStore_Interfaces.md:606 ../../Projects/APPSTORE/AppStore_Interfaces.md:707 ../../Projects/APPSTORE/AppStore_Interfaces.md:765 ../../Projects/APPSTORE/AppStore_Interfaces.md:1031 ../../Projects/APPSTORE/AppStore_Interfaces.md:1041 ../../Projects/APPSTORE/AppStore_Interfaces.md:1094 ../../Projects/APPSTORE/AppStore_Interfaces.md:1136 ../../Projects/APPSTORE/AppStore_Interfaces.md:1187 ../../Projects/APPSTORE/AppStore_Interfaces.md:1380 ../../Projects/APPSTORE/AppStore_Interfaces.md:1504 ../../Projects/APPSTORE/AppStore_Interfaces.md:1555 ../../Projects/APPSTORE/AppStore_Interfaces.md:1600 ../../Projects/APPSTORE/AppStore_Interfaces.md:1732 ../../Projects/APPSTORE/AppStore_Interfaces.md:1786 ../../Projects/APPSTORE/AppStore_Interfaces.md:1923 ../../Projects/APPSTORE/AppStore_Interfaces.md:1974
-msgid "}"
-msgstr "}"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:132 ../../Projects/APPSTORE/AppStore_Interfaces.md:709 ../../Projects/APPSTORE/AppStore_Interfaces.md:1030 ../../Projects/APPSTORE/AppStore_Interfaces.md:1043 ../../Projects/APPSTORE/AppStore_Interfaces.md:1138 ../../Projects/APPSTORE/AppStore_Interfaces.md:1189 ../../Projects/APPSTORE/AppStore_Interfaces.md:1557 ../../Projects/APPSTORE/AppStore_Interfaces.md:1734 ../../Projects/APPSTORE/AppStore_Interfaces.md:1925 ../../Projects/APPSTORE/AppStore_Interfaces.md:1976
-msgid "]"
-msgstr "]"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:109 ../../Projects/APPSTORE/AppStore_Interfaces.md:160 ../../Projects/APPSTORE/AppStore_Interfaces.md:263 ../../Projects/APPSTORE/AppStore_Interfaces.md:313 ../../Projects/APPSTORE/AppStore_Interfaces.md:345 ../../Projects/APPSTORE/AppStore_Interfaces.md:377 ../../Projects/APPSTORE/AppStore_Interfaces.md:469 ../../Projects/APPSTORE/AppStore_Interfaces.md:509 ../../Projects/APPSTORE/AppStore_Interfaces.md:597 ../../Projects/APPSTORE/AppStore_Interfaces.md:635 ../../Projects/APPSTORE/AppStore_Interfaces.md:684 ../../Projects/APPSTORE/AppStore_Interfaces.md:743 ../../Projects/APPSTORE/AppStore_Interfaces.md:812 ../../Projects/APPSTORE/AppStore_Interfaces.md:850 ../../Projects/APPSTORE/AppStore_Interfaces.md:894 ../../Projects/APPSTORE/AppStore_Interfaces.md:932 ../../Projects/APPSTORE/AppStore_Interfaces.md:976 ../../Projects/APPSTORE/AppStore_Interfaces.md:1015 ../../Projects/APPSTORE/AppStore_Interfaces.md:1098 ../../Projects/APPSTORE/AppStore_Interfaces.md:1115 ../../Projects/APPSTORE/AppStore_Interfaces.md:1166 ../../Projects/APPSTORE/AppStore_Interfaces.md:1223 ../../Projects/APPSTORE/AppStore_Interfaces.md:1255 ../../Projects/APPSTORE/AppStore_Interfaces.md:1287 ../../Projects/APPSTORE/AppStore_Interfaces.md:1365 ../../Projects/APPSTORE/AppStore_Interfaces.md:1409 ../../Projects/APPSTORE/AppStore_Interfaces.md:1489 ../../Projects/APPSTORE/AppStore_Interfaces.md:1539 ../../Projects/APPSTORE/AppStore_Interfaces.md:1585 ../../Projects/APPSTORE/AppStore_Interfaces.md:1675 ../../Projects/APPSTORE/AppStore_Interfaces.md:1707 ../../Projects/APPSTORE/AppStore_Interfaces.md:1762 ../../Projects/APPSTORE/AppStore_Interfaces.md:1815 ../../Projects/APPSTORE/AppStore_Interfaces.md:1853 ../../Projects/APPSTORE/AppStore_Interfaces.md:1885 ../../Projects/APPSTORE/AppStore_Interfaces.md:1902 ../../Projects/APPSTORE/AppStore_Interfaces.md:1953 ../../Projects/APPSTORE/AppStore_Interfaces.md:2010
+msgid "响应示例:"
+msgstr "Response examples:"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:134
-msgid "### 1.2 获取应用 根据应用ID获取应用详细信息。 ``` URI： /mec/appstore/v1/apps/{appId} 方法类型: GET ```"
-msgstr "### 1.2 acquires application details based on application ID. ` ` URI: /sec/appstore/v1/apps/ {appId} method type: GET ` ` `"
+msgid "1.2 获取应用"
+msgstr "1.2 Access to applications"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:141
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>appId</td> <td>app id</td> <td>path</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <tr> <td>appId</td> <td>app id</td> <td>path</td> <td>yes</td> </tr> </tbody> </tr> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:160 ../../Projects/APPSTORE/AppStore_Interfaces.md:263 ../../Projects/APPSTORE/AppStore_Interfaces.md:313 ../../Projects/APPSTORE/AppStore_Interfaces.md:345 ../../Projects/APPSTORE/AppStore_Interfaces.md:377 ../../Projects/APPSTORE/AppStore_Interfaces.md:469 ../../Projects/APPSTORE/AppStore_Interfaces.md:509 ../../Projects/APPSTORE/AppStore_Interfaces.md:597 ../../Projects/APPSTORE/AppStore_Interfaces.md:635 ../../Projects/APPSTORE/AppStore_Interfaces.md:743 ../../Projects/APPSTORE/AppStore_Interfaces.md:812 ../../Projects/APPSTORE/AppStore_Interfaces.md:850 ../../Projects/APPSTORE/AppStore_Interfaces.md:894 ../../Projects/APPSTORE/AppStore_Interfaces.md:932 ../../Projects/APPSTORE/AppStore_Interfaces.md:976 ../../Projects/APPSTORE/AppStore_Interfaces.md:1098 ../../Projects/APPSTORE/AppStore_Interfaces.md:1223 ../../Projects/APPSTORE/AppStore_Interfaces.md:1255 ../../Projects/APPSTORE/AppStore_Interfaces.md:1287 ../../Projects/APPSTORE/AppStore_Interfaces.md:1365 ../../Projects/APPSTORE/AppStore_Interfaces.md:1409 ../../Projects/APPSTORE/AppStore_Interfaces.md:1489 ../../Projects/APPSTORE/AppStore_Interfaces.md:1585 ../../Projects/APPSTORE/AppStore_Interfaces.md:1675 ../../Projects/APPSTORE/AppStore_Interfaces.md:1762 ../../Projects/APPSTORE/AppStore_Interfaces.md:1815 ../../Projects/APPSTORE/AppStore_Interfaces.md:1853 ../../Projects/APPSTORE/AppStore_Interfaces.md:1885 ../../Projects/APPSTORE/AppStore_Interfaces.md:2010
-msgid "响应示例: ``` 200 OK"
-msgstr "Response example: ` ` ` 200 OK"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:164
-msgid "\"appId\": \"string\", \"iconUrl\": \"string\", \"name\": \"string\", \"provider\": \"string\", \"type\": \"string\", \"shortDesc\": \"string\", \"createTime\": \"string\", \"details\": \"string\", \"downloadCount\": 0, \"affinity\": \"string\", \"industry\": \"string\", \"contact\": \"string\", \"score\": 0, \"userId\": \"string\", \"userName\": \"string\" \"status\": \"string\""
-msgstr "\" appId \": \" string \": \" string \", \" name \": \" provider \": \" string \": \" type \": \" shortDesc \": \" createTime \": \" string \", \" details \": \" string \", \" downloadCount \": \" 0, \" affinity \": \" string \", \" string \", \" contact \": \" string \", \" score \": 0, \" userId \": \" string \", \" userName \": \" string \" \" status \": \" string \""
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:181 ../../Projects/APPSTORE/AppStore_Interfaces.md:273 ../../Projects/APPSTORE/AppStore_Interfaces.md:317 ../../Projects/APPSTORE/AppStore_Interfaces.md:349 ../../Projects/APPSTORE/AppStore_Interfaces.md:381 ../../Projects/APPSTORE/AppStore_Interfaces.md:475 ../../Projects/APPSTORE/AppStore_Interfaces.md:515 ../../Projects/APPSTORE/AppStore_Interfaces.md:607 ../../Projects/APPSTORE/AppStore_Interfaces.md:639 ../../Projects/APPSTORE/AppStore_Interfaces.md:766 ../../Projects/APPSTORE/AppStore_Interfaces.md:816 ../../Projects/APPSTORE/AppStore_Interfaces.md:854 ../../Projects/APPSTORE/AppStore_Interfaces.md:898 ../../Projects/APPSTORE/AppStore_Interfaces.md:936 ../../Projects/APPSTORE/AppStore_Interfaces.md:983 ../../Projects/APPSTORE/AppStore_Interfaces.md:1096 ../../Projects/APPSTORE/AppStore_Interfaces.md:1102 ../../Projects/APPSTORE/AppStore_Interfaces.md:1227 ../../Projects/APPSTORE/AppStore_Interfaces.md:1259 ../../Projects/APPSTORE/AppStore_Interfaces.md:1291 ../../Projects/APPSTORE/AppStore_Interfaces.md:1381 ../../Projects/APPSTORE/AppStore_Interfaces.md:1413 ../../Projects/APPSTORE/AppStore_Interfaces.md:1505 ../../Projects/APPSTORE/AppStore_Interfaces.md:1601 ../../Projects/APPSTORE/AppStore_Interfaces.md:1679 ../../Projects/APPSTORE/AppStore_Interfaces.md:1787 ../../Projects/APPSTORE/AppStore_Interfaces.md:1819 ../../Projects/APPSTORE/AppStore_Interfaces.md:1857 ../../Projects/APPSTORE/AppStore_Interfaces.md:1889 ../../Projects/APPSTORE/AppStore_Interfaces.md:2014
-msgid "```"
-msgstr "` ` `"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:135
+msgid "根据应用ID获取应用详细信息。"
+msgstr "obtaining application details according to application ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:183
-msgid "### 1.3 注册应用 注册应用。 ``` URI： /mec/appstore/v1/apps 方法类型: POST ```"
-msgstr "### 1.3 Registration application registration application. ` ` URI: /mis/appstore/v1/apps method type: POST ` ` `"
+msgid "1.3 注册应用"
+msgstr "1.3 Registration applications"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:190
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>用户ID</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>应用名</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>file</td> <td>应用包文件</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>icon</td> <td>应用图标文件</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>demoVideo</td> <td>应用视频文件</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>type</td> <td>应用类型</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>shortDesc</td> <td>应用简述</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>affinity</td> <td>架构</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>industry</td> <td>应用所属行业</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>testTaskId</td> <td>测试任务id</td> <td>RequestPart</td> <td>no</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> <th>name</th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tr> <tbody> <tr> <tr> userId</td> <td>User ID</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>Application name</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>file</td> <td>App package document</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>icon</td> <td>Application icon document</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>demoVideo</td> <td>Application video document</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>type</td> <td>App Type</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>shortDesc</td> <td>Application brief</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>affinity</td> <td>framework</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>industry</td> <td>The industry</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>testTaskId</td> <td>Test Task id</td> <td>RequestPart</td> <td>no</td> </tbody> </table> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:267 ../../Projects/APPSTORE/AppStore_Interfaces.md:601
-msgid "\"appName\": \"string\", \"appId\": \"string\", \"packageId\": \"string\", \"provider\": \"string\", \"version\": \"string\""
-msgstr "\" appName \": \" string \", \" appId \": \" string \", \" packageId \": \" string \", \" provider \": \" string \", \" version \": \" string \""
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:184
+msgid "注册应用。"
+msgstr "Register for the application."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:275
-msgid "### 1.4 删除应用 根据应用ID删除应用。 ``` URI： /mec/appstore/v1/apps/{appId} 方法类型: DELETE ```"
-msgstr "### 1.4 Delete application delete application based on application ID. ` ` URI: /sec/appstore/v1/apps/ {appId} method type: DELETE ` ` `"
+msgid "1.4 删除应用"
+msgstr "1.4 Delete application"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:282
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>用户ID</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>应用名</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>应用ID</td> <td>path</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> <th>name</th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tr> <tbody> <tr> <tr> userId</td> <td>User ID</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>apply name</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>App ID</td> <td>path</td> <td>yes</td> </tr> </table> </tbody> </tr>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:316
-msgid "\"delete App success.\""
-msgstr "\" delete App success. \""
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:276
+msgid "根据应用ID删除应用。"
+msgstr "The application is deleted according to the application ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:319
-msgid "### 1.5 获取应用最新版本 应用ID获取应用最新版本包文件。 ``` URI： /mec/appstore/v1/apps/{appId}/action/download 方法类型: GET ```"
-msgstr "### 1.5 Get the latest version of the application ID to get the latest version of the package document. ` ` URI: /sec/appstore/v1/apps/ {appId} /action/download method type: GET ` ` `"
+msgid "1.5 获取应用最新版本"
+msgstr "1.5 Get the latest version of the app"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:326 ../../Projects/APPSTORE/AppStore_Interfaces.md:358 ../../Projects/APPSTORE/AppStore_Interfaces.md:616 ../../Projects/APPSTORE/AppStore_Interfaces.md:996
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>appId</td> <td>应用ID</td> <td>path</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <tr> <td>appId</td> <td>Application ID</td> <td>path</td> <td>yes</td> </tr> </tbody> </tr> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:348 ../../Projects/APPSTORE/AppStore_Interfaces.md:380 ../../Projects/APPSTORE/AppStore_Interfaces.md:638 ../../Projects/APPSTORE/AppStore_Interfaces.md:853 ../../Projects/APPSTORE/AppStore_Interfaces.md:1258 ../../Projects/APPSTORE/AppStore_Interfaces.md:1290
-msgid "binary output."
-msgstr "binary output."
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:320
+msgid "应用ID获取应用最新版本包文件。"
+msgstr "Application ID Get the latest version of the package document."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:351
-msgid "### 1.6 获取应用图标 根据应用ID获取应用图标。 ``` URI： /mec/appstore/v1/apps/{appId}/icon 方法类型: GET ```"
-msgstr "### 1.6 acquires the application icon to obtain the application icon according to the application ID. ` ` URI: /mec/appstore/v1/apps/ {appId} /icon method type: GET ` ` `"
+msgid "1.6 获取应用图标"
+msgstr "1.6 Get the app icon"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:352
+msgid "根据应用ID获取应用图标。"
+msgstr "obtaining the application icon according to the application ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:383
-msgid "### 1.7 分片上传应用包 分片上传应用包。 ``` URI： /mec/appstore/v1/apps/upload 方法类型: POST ```"
-msgstr "### 1.7 Shards upload application package fragmentation upload application package. ` ` URI: /met/appstore/v1/apps/upload method type: POST ` ` `"
+msgid "1.7 分片上传应用包"
+msgstr "1.7 Sharding Upload App"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:390
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>id</td> <td>分包ID</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>chunkNumber</td> <td>当前文件块编号</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>chunkSize</td> <td>分块大小</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>currentChunkSize</td> <td>当前分块大小</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>totalSize</td> <td>总大小</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>identifier</td> <td>文件表示</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>filename</td> <td>文件名</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>relativePath</td> <td>文件相对路径</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>totalChunks</td> <td>总块数</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>type</td> <td>文件类型</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>file</td> <td>文件</td> <td>RequestPart</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td> <tr></td> <td>Subcontract ID</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td> <td>chunkNumber</td> <td>Current document block number</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>chunkSize</td> <td>block size</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>currentChunkSize</td> <td>Current block size</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>totalSize</td> <td>total size</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>identifier</td> <td>Document denotes</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>filename</td> <td>File name</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>relativePath</td> <td>Document relative path</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>totalChunks</td> <td>Total blocks</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>type</td> <td>Document Types</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>file</td> <td>Document</td> <td>RequestPart</td> <td>yes </tr></td> </tr> </table> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:473
-msgid "\"upload package block success\""
-msgstr "\" upload package block success\""
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:384
+msgid "分片上传应用包。"
+msgstr "Shards upload the application package."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:477
-msgid "### 1.8 合并应用包 合并应用包。 ``` URI： /mec/appstore/v1/apps/merge 方法类型: GET ```"
-msgstr "### 1.8 Combined application package combined application package. ` ` URI: /met/appstore/v1/apps/merge method type: GET ` ` `"
+msgid "1.8 合并应用包"
+msgstr "1.8 Combined application package"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:484
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>fileName</td> <td>文件名</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>guid</td> <td>文件标识</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> </tr> <tbody> <tr> <td> <tr> fileName</td> <td>filename</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>guid</td> <td>Document ID</td> <td>request param</td> <td>yes</td> </tr> </tr> </table> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:513
-msgid "\"file address\""
-msgstr "\" fileaddress\ ""
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:478
+msgid "合并应用包。"
+msgstr "Merger application package."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:517
-msgid "### 1.9 注册虚机应用 注册虚机应用。 ``` URI： /mec/appstore/v1/apps/vm-register 方法类型: POST ```"
-msgstr "### 1.9 Registered virtual machine application registration virtual machine application. ` ` URI: /sec/appstore/v1/apps/vm - register method type: POST ` ` `"
+msgid "1.9 注册虚机应用"
+msgstr "1.9 Registration of virtual machines"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:524
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>用户ID</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>应用名</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>fileAddress</td> <td>应用包文件相对路径</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>icon</td> <td>应用图标文件</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>demoVideo</td> <td>应用视频文件</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>type</td> <td>应用类型</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>shortDesc</td> <td>应用简述</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>affinity</td> <td>架构</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>industry</td> <td>应用所属行业</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>testTaskId</td> <td>测试任务id</td> <td>RequestPart</td> <td>no</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> <th>name</th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tr> <tbody> <tr> <tr> userId</td> <td>User ID</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>Application name</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>fileAddress</td> <td>The application package relative path</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>icon</td> <td>Application icon document</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>demoVideo</td> <td>Application video document</td> <td>RequestPart</td> <td>no</td> </tr> <tr> <td>type</td> <td>App Type</td> <td>RequestPart</td> <td>yes </tr></td> <tr> <td>ShortDesc</td> <td>Application Brief</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>affinity</td> <td>framework</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td>industry</td> <td>The industry</td> <td>RequestPart</td> <td>yes</td> </tr> <tr> <td> <td>testTaskId</td> <td>Test Task id</td> <td>RequestPart</td> <td>no</td> </tbody> </table> </table>"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:518
+msgid "注册虚机应用。"
+msgstr "Sign up for virtual machine applications."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:609
-msgid "### 1.10 获取应用视频 根据应用ID获取应用视频。 ``` URI： /mec/appstore/v1/apps/{appId}/demoVideo 方法类型: GET ```"
-msgstr "### 1.10 Get application video to get app video based on application ID. ` ` URI: /mec/appstore/v1/apps/ {appId} /demoVideo method type: GET ` ` `"
+msgid "1.10 获取应用视频"
+msgstr "1.10 Get the app video"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:610
+msgid "根据应用ID获取应用视频。"
+msgstr "obtaining the application video according to the application ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:641
-msgid "## 2. 应用包"
-msgstr "# # 2. application package"
+msgid "2. 应用包"
+msgstr "2.Application"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:643
 msgid "应用包属于应用，每个应用包含至少一个应用包。"
 msgstr "The application package belongs to the application, each application comprises at least one application package."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:645
-msgid "### 2.1 获取应用包列表"
-msgstr "### 2.1 Get App pack list"
+msgid "2.1 获取应用包列表"
+msgstr "2.1 Access to application packages"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:647
-msgid "通过应用ID获取应用包列表。 ``` URI： /mec/appstore/v1/apps/{appId}/packages 方法类型: GET ```"
-msgstr "Get the list of applications by applying ID. ` ` URI: /sec/appstore/v1/apps/ {appId} /packages method type: GET ` ` `"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:653
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>appId</td> <td>应用ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>用户ID</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>request</td> <td>请求体</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tr> <tbody> <tr> appId</td> <td>Application ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>userId</td> <td>User ID</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>request</td> <td>Request body</td> <td>request param</td> <td>yes </tr></td> </tr> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:689 ../../Projects/APPSTORE/AppStore_Interfaces.md:747
-msgid "\"packageId\": \"string\", \"userName\": \"string\", \"status\": \"string\", \"shortDesc\": \"string\", \"provider\": \"string\", \"testTaskId\": \"string\", \"size\": \"string\", \"format\": \"string\", \"createTime\": \"string\", \"name\": \"string\", \"version\": \"string\", \"type\": \"string\", \"details\": \"string\", \"affinity\": \"string\", \"industry\": \"string\", \"contact\": \"string\", \"appId\": \"string\", \"userId\": \"string\""
-msgstr "\" packageId \": \" string \": \" string \", \" string \": \" string \": \" provider \": \" string \": \" testTaskId \": \" size \": \" string \", \" format \": \" string \": \" string \", \" createTime \": \" name \": \" string \", \" string \": \" string \": \" string \", \" details \": \" industry \": \" string \", \" string \", \" string \": \" appId \", \" appId \": \" string \", \" userId \": \" string \""
+msgid "通过应用ID获取应用包列表。"
+msgstr "Get the list of applications by applying ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:711
-msgid "### 2.2 获取应用包 通过应用ID和应用包ID获取应用包。 ``` URI： /mec/appstore/v1/apps/{appId}/packages/{packageId} 方法类型: GET ```"
-msgstr "### 2.2 The acquisition application package gets the application package through the application ID and the application package ID. ` ` ` URI: /mec/appstore/v1/apps/ {appId} /packages/ {packageId} method type: GET ` ` `"
+msgid "2.2 获取应用包"
+msgstr "2.2 Access to applications"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:718 ../../Projects/APPSTORE/AppStore_Interfaces.md:825 ../../Projects/APPSTORE/AppStore_Interfaces.md:907
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>appId</td> <td>应用ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>packageId</td> <td>应用包ID</td> <td>path</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td> <tr> appId</td> <td>Application ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>packageId</td> <td>App package ID</td> <td>path</td> <td>yes</td> </tr> </tr> </tbody> </table>"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:712
+msgid "通过应用ID和应用包ID获取应用包。"
+msgstr "The application package is obtained by applying ID and application packet ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:768
-msgid "### 2.3 删除应用包 通过应用ID和应用包ID删除应用包。 ``` URI： /mec/appstore/v1/apps/{appId}/packages/{packageId} 方法类型: DELETE ```"
-msgstr "### 2.3 Delete the application package by application ID and application package ID. ` ` URI: /sec/appstore/v1/apps/ {appId} /packages/ {packageId} method type: DELETE ` ` `"
+msgid "2.3 删除应用包"
+msgstr "2.3 Delete the application package"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:775
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>用户Id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>用户名</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>应用ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>packageId</td> <td>应用包ID</td> <td>path</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>name</th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tr> <tbody> <tr> <tr> userId</td> <td>User Id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>User name</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>App ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>packageId</td> <td>App Package ID</td> <td>path</td> <td>yes</td> </tr> </tbody> </tr> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:815
-msgid "delete package success."
-msgstr "delete package success."
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:769
+msgid "通过应用ID和应用包ID删除应用包。"
+msgstr "Delete the application package by application ID and application package ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:818
-msgid "### 2.4 下载应用包 通过应用ID和应用包ID下载应用包。 ``` URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download 方法类型: GET ```"
-msgstr "### 2.4 Download the application package Download the application package via the application ID and the application package ID. ` ` URI: /sec/appstore/v1/apps/ {appId} /packages/ {packageId} /action/download method type: GET ` ` `"
+msgid "2.4 下载应用包"
+msgstr "2.4 Download the application package"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:819
+msgid "通过应用ID和应用包ID下载应用包。"
+msgstr "Download the application package via the application ID and the application package ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:856
-msgid "### 2.5 获取文件内容 通过应用ID和应用包ID以及文件路径获取应用包中文件内容。 ``` URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/files 方法类型: POST ```"
-msgstr "the ### 2.5 obtaining file content obtains the file content in the application package by application ID and application packet ID and file path. ` ` ` URI: /mec/appstore/v1/apps/ {appId} /packages/ {packageId} /files method type: POST ` ` `"
+msgid "2.5 获取文件内容"
+msgstr "2.5 Access to document content"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:863
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>packageId</td> <td>package id</td> <td>path</td> <td>yes</td> </tr> <tr> <td>filePath</td> <td>file path</td> <td>FormParam</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>应用ID</td> <td>path</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td> <tr> packageId</td> <td>package id</td> <td>path</td> <td>yes</td> </tr> <tr> <td>filePath <td></td> <td>filepath</td> <td>FormParam</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>App ID</td> <td>path</td> <td>yes</td> </tr> </tr> </tbody> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:897
-msgid "file content output."
-msgstr "filecontentoutput."
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:857
+msgid "通过应用ID和应用包ID以及文件路径获取应用包中文件内容。"
+msgstr "obtaining the file content in the application package by application ID and application packet ID and file path."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:900
-msgid "### 2.6 应用发布 通过应用ID和应用包ID发布应用。 ``` URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/publish 方法类型: POST ```"
-msgstr "### 2.6 The application publishes the application via the application ID and the application package ID. ` ` ` URI: /mec/appstore/v1/apps/ {appId} /packages/ {packageId} /action/publish method type: POST ` ` `"
+msgid "2.6 应用发布"
+msgstr "2.6 Application publishing"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:935
-msgid "Publish Success."
-msgstr "Publish Success."
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:901
+msgid "通过应用ID和应用包ID发布应用。"
+msgstr "The application is published by application ID and application packet ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:938
-msgid "### 2.7 应用测试 通过应用ID和应用包ID测试应用。 ``` URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/test 方法类型: POST ```"
-msgstr "### 2.7 The application test is tested by application ID and application package ID. ` ` URI: /sec/appstore/v1/apps/ {appId} /packages/ {packageId} /action/test method type: POST ` ` `"
+msgid "2.7 应用测试"
+msgstr "2.7 Application test"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:945
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>appId</td> <td>应用ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>packageId</td> <td>应用包ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>request</td> <td>请求</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td> <tr> appId</td> <td>Application ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>packageId</td> <td>App ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>request</td> <td>Request</td> <td>request param</td> <td>yes </tr></td> </tr> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:979
-msgid "{ \"atpTaskId\": \"string\", \"status\": \"string\" }"
-msgstr "{\" atpTaskId \": \" string \", \" status \": \" string \"}"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:939
+msgid "通过应用ID和应用包ID测试应用。"
+msgstr "Test the application by application ID and application package ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:985
-msgid "## 3. 评论"
-msgstr "# # 3. Commentary"
+msgid "3. 评论"
+msgstr "3.Comments"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:987
 msgid "User can submit comments to an app."
 msgstr "User can submit comments to an app."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:989
-msgid "### 3.1 获取评论列表 根据应用ID获取应用的评论列表。 ``` URI： /mec/appstore/v1/apps/{appId}/comments 方法类型: GET ```"
-msgstr "### 3.1 Get a comment list for a list of comments that are applied by application ID. ` ` URI: /sec/appstore/v1/apps/ {appId} /comments method type: GET ` ` `"
+msgid "3.1 获取评论列表"
+msgstr "3.1 List of acquisition comments"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1020
-msgid "\"commentId\": 0, \"user\": {"
-msgstr "\" commentId \": 0, \" user \": {"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1022
-msgid "\"userId\": \"string\", \"userName\": \"string\", \"permissions\": ["
-msgstr "\" userId \": \" string \", \" userName \": \" string \", \" permissions \": ["
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1026
-msgid "\"platform\": \"string\", \"role\": \"string\", \"pageIds\": ["
-msgstr "\" platform \": \" string \", \" role \": \" string \", \" pageIds \": ["
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1029
-msgid "\"string\""
-msgstr "\" string \""
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1032
-msgid "], \"company\": \"string\", \"gender\": \"string\", \"telephone\": \"string\""
-msgstr "], \" company \": \" string \", \" gender \": \" string \", \" telphone \": \" string \""
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1036
-msgid "}, \"appId\": \"string\", \"body\": \"string\", \"score\": 0, \"commentTime\": \"string\""
-msgstr "}, \" appId \": \" string \", \" body \": \" string \", \" score \": 0, \" commentTime \": \" string \""
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:990
+msgid "根据应用ID获取应用的评论列表。"
+msgstr "Get a list of comments that apply based on the application ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1045
-msgid "### 3.2 提交评论 用户根据应用ID提交应用评分及评论。 ``` URI： /mec/appstore/v1/apps/{appId}/comments 方法类型: POST ```"
-msgstr "### 3.2 Submitting a comment user submits application scores and comments based on the application ID. ` ` URI: /sec/appstore/v1/apps/ {appId} /comments method type: POST ` ` `"
+msgid "3.2 提交评论"
+msgstr "3.2 Submit comments"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1052
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>用户ID</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>应用名</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>应用ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>entity</td> <td>评论对象</td> <td>RequestBody</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> <th>name</th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tr> <tbody> <tr> <tr> userId</td> <td>User ID</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>userName</td> <td>apply name</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>appId</td> <td>App ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>entity</td> <td>Comments object</td> <td>RequestBody</td> <td>yes</td> </tbody> </tbody> </table>"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1046
+msgid "用户根据应用ID提交应用评分及评论。"
+msgstr "Users submit application scores and comments based on the application ID."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1089
-msgid "Example request body: ``` {"
-msgstr "Example request body: ` ` ` {"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1092
-msgid "\"body\": \"string\", \"score\": 0"
-msgstr "\" body \": \" string \", \" score \": 0"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1101
-msgid "\"comments success.\""
-msgstr "\" comments success. \""
+msgid "Example request body:"
+msgstr "Example request body:"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1104
-msgid "## 4. 应用推送"
-msgstr "# # 4. App Push"
+msgid "4. 应用推送"
+msgstr "4.Application push"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1106
 msgid "用户可以推送应用到运营商或第三方。"
 msgstr "Users can push applications to carriers or third parties."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1108
-msgid "### 4.1 查询可推送应用列表 查询可推送的应用列表。 ``` URI： /mec/appstore/v1/packages/pushable 方法类型: GET ```"
-msgstr "### 4.1 Query can push application list queries to push an application list. ` ` URI: /mis/appstore/v1/packages/pushable method type: GET ` ` `"
+msgid "4.1 查询可推送应用列表"
+msgstr "4.1 List of 4.1 queries to push applications"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1120 ../../Projects/APPSTORE/AppStore_Interfaces.md:1171 ../../Projects/APPSTORE/AppStore_Interfaces.md:1907 ../../Projects/APPSTORE/AppStore_Interfaces.md:1958
-msgid "\"appId\": \"string\", \"packageId\": \"string\", \"name\": \"string\", \"provider\": \"string\", \"version\": \"string\", \"atpTestStatus\": \"string\", \"atpTestTaskId\": \"string\", \"atpTestReportUrl\": \"string\", \"latestPushTime\": \"string\", \"pushTimes\": \"string\", \"targetPlatform\": \"string\", \"affinity\": \"string\", \"shortDesc\": \"string\", \"industry\": \"string\", \"type\": \"string\", \"createTime\": \"string\""
-msgstr "\" appId \": \" packageId \": \" string \", \" name \": \" provider \": \" string \": \" string \", \" atpTestStatus \": \" string \", \" atpTestTaskId \": \" string \", \" atpTestReportUrl \": \" string \", \" latestPushTime \": \" pushTimes \": \" string \", \" string \", \" affinity \": \" ShortDesc \": \" string \", \" industry \": \" string \", \" type \": \" string \", \" createTime \": \" string \""
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1109
+msgid "查询可推送的应用列表。"
+msgstr "Query the list of apps that can be pushed."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1140
-msgid "### 4.2 获取推送应用包 根据packageId获取推送应用包。 ``` URI： /mec/appstore/v1/packages/{packageId}/pushable 方法类型: GET ```"
-msgstr "### 4.2 Get the push app package to get the push app based on packageId. ` ` URI: /mec/appstore/v1/packages/ {packageId} /pushable method type: GET ` ` `"
+msgid "4.2 获取推送应用包"
+msgstr "4.2 Get Pushes App"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1147 ../../Projects/APPSTORE/AppStore_Interfaces.md:1236 ../../Projects/APPSTORE/AppStore_Interfaces.md:1268
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>packageId</td> <td>应用包ID</td> <td>path</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td>packageId</td> <td>App Package ID</td> <td>path</td> <td>yes</td> </tr> </tbody> </tr> </table>"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1141
+msgid "根据packageId获取推送应用包。"
+msgstr "Get the push app based on packageId."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1191
-msgid "### 4.3 推送应用包 根据packageId推送应用包。 ``` URI： /mec/appstore/v1/packages/{packageId}/action/push 方法类型: POST ```"
-msgstr "### 4.3 Push app packages to push apps based on packageId. ` ` URI: /mis/appstore/v1/packages/ {packageId} /action/push method type: POST ` ` `"
+msgid "4.3 推送应用包"
+msgstr "4.3 Push application package"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1198
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>packageId</td> <td>应用包ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>dto</td> <td>运营商列表</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td> <tr> packageId</td> <td>App Package ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>dto</td> <td>Operator list</td> <td>request param</td> <td>yes</td> </tr> </tr> </table> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1226
-msgid "[true, false, true]"
-msgstr "[true, false, true]"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1192
+msgid "根据packageId推送应用包。"
+msgstr "Push the application based on the packageId."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1229
-msgid "### 4.4 下载推送应用包 根据packageId下载推送应用包。 ``` URI： /mec/appstore/v1/packages/{packageId}/action/download-package 方法类型: GET ```"
-msgstr "### 4.4 Download push app packages to download push app based on packageId. ` ` URI: /sec/appstore/v1/packages/ {packageId} /action/download - package method type: GET ` ` `"
+msgid "4.4 下载推送应用包"
+msgstr "4.4 Download push app"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1230
+msgid "根据packageId下载推送应用包。"
+msgstr "Download the push app based on the packageId."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1261
-msgid "### 4.5 下载推送应用图标 根据packageId下载推送应用图标。 ``` URI： /mec/appstore/v1/packages/{packageId}/action/download-icon 方法类型: GET ```"
-msgstr "### 4.5 Download push app icon Download push app icon based on packageId. ` ` URI: /sec/appstore/v1/packages/ {packageId} /action/download - icon method type: GET ` ` `"
+msgid "4.5 下载推送应用图标"
+msgstr "4.5 Download push app icon"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1262
+msgid "根据packageId下载推送应用图标。"
+msgstr "Download the push app icon based on the packageId."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1293
-msgid "## 5. 仓库管理"
-msgstr "# # 5. Warehouse Management"
+msgid "5. 仓库管理"
+msgstr "5.Warehouse management"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1295
 msgid "对应用仓库的增删改查。"
 msgstr "Pruning the application warehouse."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1297
-msgid "### 5.1 添加仓库 新增外部应用仓库。 ``` URI： /mec/appstore/v1/appstores 方法类型: POST ```"
-msgstr "### 5.1 Add a warehouse to add an external application warehouse. ` ` ` URI: /mis/appstore/v1/appstoves method type: POST ` ` `"
+msgid "5.1 添加仓库"
+msgstr "5.1 Add to warehouse"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1304
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>appStoreName</td> <td>仓库名称</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>appStoreVersion</td> <td>仓库版本</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>company</td> <td>公司名称</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>url</td> <td>访问地址</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>schema</td> <td>访问协议</td> <td>request param</td> <td>no</td> </tr> <tr> <td>appPushIntf</td> <td>推送方式</td> <td>request param</td> <td>no</td> </tr> <tr> <td>appdTransId</td> <td>转换器id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>description</td> <td>描述</td> <td>request param</td> <td>no</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> <th>name</th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td> <tr> appStoreName</td> <td>Warehouse name</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>appStoreVersion</td> <td>warehouse version</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>company</td> <td>Company name</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>url</td> <td>Access address</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>schema</td> <td>Access protocol</td> <td>request param</td> <td>no</td> </tr> <tr> <td>appPushInf</td> <td>Push mode</td> <td>request param</td> <td>no</td> </tr> <tr> <td>appdTransId</td> <td>converter id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>description</td> <td>Description</td> <td>request param</td> <td>no</td> </tr> </table> </tr>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1369 ../../Projects/APPSTORE/AppStore_Interfaces.md:1493 ../../Projects/APPSTORE/AppStore_Interfaces.md:1544 ../../Projects/APPSTORE/AppStore_Interfaces.md:1589
-msgid "\"appStoreId\": \"string\", \"appStoreName\": \"string\", \"appStoreVersion\": \"string\", \"company\": \"string\", \"url\": \"string\", \"schema\": \"string\", \"appPushIntf\": \"string\", \"appdTransId\": \"string\", \"description\": \"string\", \"addedTime\": \"string\", \"modifiedTime\": \"string\""
-msgstr "\" appStoreId \": \" appStoreName \": \" string \", \" appStoreVersion \": \" string \": \" string \": \" string \", \" schema \": \" string \", \" appPushInf \": \" string \", \" appdTransId \": \" string \", \" description \": \" string \", \" addedTime \": \" string \", \" modifiedTime \": \" string \""
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1298
+msgid "新增外部应用仓库。"
+msgstr "Add an external application warehouse."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1383
-msgid "### 5.2 删除仓库 删除外部应用仓库。 ``` URI： /mec/appstore/v1/appstores/{appStoreId} 方法类型: DELETE ```"
-msgstr "### 5.2 Delete warehouse deletion external application warehouse. ` ` URI: /sec/appstore/v1/appstores/ {appStoreId} method type: DELETE ` ` `"
+msgid "5.2 删除仓库"
+msgstr "5.2 Delete warehouse"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1390
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>appStoreId</td> <td>仓库id</td> <td>path</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <tr> <td>appStoreId</td> <td>Warehouse id</td> <td>path</td> <td>yes</td> </tr> </tbody> </tr> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1412 ../../Projects/APPSTORE/AppStore_Interfaces.md:1818
-msgid "delete success"
-msgstr "delete success"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1384
+msgid "删除外部应用仓库。"
+msgstr "Deletes an external application warehouse."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1415
-msgid "### 5.3 修改仓库 修改外部应用仓库。 ``` URI： /mec/appstore/v1/appstores/{appStoreId} 方法类型: PUT ```"
-msgstr "### 5.3 Modify the warehouse to modify the external application warehouse. ` ` URI: /sec/appstore/v1/appstores/ {appStoreId} method type: PUT ` ` `"
+msgid "5.3 修改仓库"
+msgstr "5.3 Modification of warehouse"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1422
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>appStoreId</td> <td>仓库名称</td> <td>path</td> <td>yes</td> </tr> <tr> <td>appStoreName</td> <td>仓库名称</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>appStoreVersion</td> <td>仓库版本</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>company</td> <td>公司名称</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>url</td> <td>访问地址</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>schema</td> <td>访问协议</td> <td>request param</td> <td>no</td> </tr> <tr> <td>appPushIntf</td> <td>推送方式</td> <td>request param</td> <td>no</td> </tr> <tr> <td>appdTransId</td> <td>转换器id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>description</td> <td>描述</td> <td>request param</td> <td>no</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>name</th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <th> <tr> <tr> appStoreId</td> <td>Warehouse name</td> <td>path</td> <td>yes</td> </tr> <tr> <td>appStoreName</td> <td>Warehouse name</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>appStoreVersion</td> <td>warehouse version</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>company</td> <td>Company name</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>url</td> <td>access address</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>schema</td> <td>Access negotiation</td> <td>request param</td> <td>no</td> </tr> <tr> <td>appPushInf</td> <td>Push mode</td> <td>request param</td> <td>no</td> </tr> <tr> <td>appdTransId</td> <td>translator id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>description</td> <td>Description</td> <td>request param</td> <td>no</td> </tr> </table> </tr>"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1416
+msgid "修改外部应用仓库。"
+msgstr "Modify the external application warehouse."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1507
-msgid "### 5.4 查询仓库列表 查询外部应用仓库列表。 ``` URI： /mec/appstore/v1/appstores 方法类型: GET ```"
-msgstr "### 5.4 Query Warehouse List Query External Application Warehouse List. ` ` URI: /mis/appstore/v1/appstoves method type: GET ` ` `"
+msgid "5.4 查询仓库列表"
+msgstr "5.4 List of warehouse queries"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1514
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>appStoreName</td> <td>仓库名称</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>company</td> <td>公司名称</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> <th>name</th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td> <tr> appStoreName</td> <td>Warehouse name</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>company</td> <td>Company name</td> <td>request param</td> <td>yes</td> </tr> </tr> </table> </table>"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1508
+msgid "查询外部应用仓库列表。"
+msgstr "Query the list of external application warehouses."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1559
-msgid "### 5.5 查询仓库 查询外部应用仓库。 ``` URI： /mec/appstore/v1/appstores/{appStoreId} 方法类型: GET ```"
-msgstr "### 5.5 Query warehouse queries the external application warehouse. ` ` ` URI: /mec/appstore/v1/appstores/ {appStoreId} method type: GET ` ` `"
+msgid "5.5 查询仓库"
+msgstr "5.5 Query warehouse"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1566
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>appStoreId</td> <td>仓库名称</td> <td>path</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <tr> <td>appStoreId</td> <td>Warehouse Name</td> <td>path</td> <td>yes</td> </tr> </tbody> </tr> </table>"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1560
+msgid "查询外部应用仓库。"
+msgstr "Query the external application warehouse."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1603
-msgid "## 6. 消息"
-msgstr "# # 6. news"
+msgid "6. 消息"
+msgstr "6.Information"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1605
 msgid "消息包含应用推送、下载、通知等信息。"
 msgstr "The message includes information such as application push, download, notification and so on."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1607
-msgid "### 6.1 添加消息 新增一条消息。 ``` URI： /mec/appstore/v1/messages 方法类型: POST ```"
-msgstr "A message is added by the adding message. ` ` URI: /mis/appstore/v1/messages method type: POST ` ` `"
+msgid "6.1 添加消息"
+msgstr "6.1 Add message"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1614
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>basicInfo</td> <td>基本信息</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>sourceAppStore</td> <td>源AppStore</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>targetAppStore</td> <td>目标AppStore</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>atpTestStatus</td> <td>ATP测试结果</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>atpTestTaskId</td> <td>ATP测试任务Id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>atpTestReportUrl</td> <td>ATP测试报告</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>packageDownloadUrl</td> <td>应用包下载地址</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>iconDownloadUrl</td> <td>应用图标下载地址</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <td> <tr> <td>basicInfo</td> <td>Basic information</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>sourceAppStore</td> <td>source AppStore</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>targetAppStore</td> <td>Target AppStore</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>atpTestStatus</td> <td>ATP test results</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>atpTestTaskId</td> <td>ATP Test Task Id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>atpTestReportUrl</td> <td>ATP test report</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>packageDownloadUrl</td> <td>App Download Address</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>iconDownloadUrl</td> <td>Application icon Download address</td> <td>request param</td> <td>yes </tr></td> </tr> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1678
-msgid "add a message success"
-msgstr "add a message success"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1608
+msgid "新增一条消息。"
+msgstr "Add a message."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1681
-msgid "### 6.2 获取所有消息 根据消息类型获取消息。 ``` URI： /mec/appstore/v1/messages 方法类型: GET ```"
-msgstr "### 6.2 obtains all messages to obtain message according to message type. ` ` URI: /met/appstore/v1/messages method type: GET ` ` `"
+msgid "6.2 获取所有消息"
+msgstr "6.2 Get all the information"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1688
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>messageType</td> <td>消息类型</td> <td>request param</td> <td>no</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <td> <tr> <td>messageType</td> <td>Message type</td> <td>request param</td> <td>no </tr></td> </tr> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1712 ../../Projects/APPSTORE/AppStore_Interfaces.md:1766
-msgid "\"messageId\": \"string\", \"basicInfo\": {"
-msgstr "\" messageId \": \" string \", \" basicInfo \": {"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1714 ../../Projects/APPSTORE/AppStore_Interfaces.md:1768
-msgid "\"name\": \"string\", \"provider\": \"string\", \"version\": \"string\", \"affinity\": \"string\", \"shortDesc\": \"string\", \"industry\": \"string\", \"type\": \"string\""
-msgstr "\" name \": \" string \", \" provider \": \" string \": \" string \", \" affinity \": \" string \", \" shortDesc \": \" industry \": \" string \", \" type \": \" type \": \" string \""
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1721 ../../Projects/APPSTORE/AppStore_Interfaces.md:1775
-msgid "}, \"messageType\": \"string\", \"sourceAppStore\": \"string\", \"targetAppStore\": \"string\", \"time\": \"string\", \"description\": \"string\", \"atpTestStatus\": \"string\", \"atpTestTaskId\": \"string\", \"atpTestReportUrl\": \"string\", \"iconDownloadUrl\": \"string\", \"readed\": true"
-msgstr "}, \" messageType \": \" string \", \" string \", \" targetAppStore \": \" string \", \" string \", \" description \": \" string \", \" atpTestStatus \": \" string \", \" atpTestTaskId \": \" string \", \" atpTestReportUrl \": \" string \", \" iconDownloadUrl \": \" string \", \" readed \": true"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1682
+msgid "根据消息类型获取消息。"
+msgstr "obtaining information according to the message type."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1736
-msgid "### 6.3 获取消息 根据message id获取消息。 ``` URI： /mec/appstore/v1/messages/{messageId} 方法类型: GET ```"
-msgstr "### 6.3 obtains the message according to message id. ` ` URI: /mis/appstore/v1/messages/ {messageId} method type: GET ` ` `"
+msgid "6.3 获取消息"
+msgstr "6.3 Access to information"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1743 ../../Projects/APPSTORE/AppStore_Interfaces.md:1796 ../../Projects/APPSTORE/AppStore_Interfaces.md:1866
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>messageId</td> <td>消息id</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td>messageId</td> <td>Message id</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1737
+msgid "根据message id获取消息。"
+msgstr "Get the message according to message id."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1789
-msgid "### 6.4 删除消息 根据message id删除消息。 ``` URI： /mec/appstore/v1/messages/{messageId} 方法类型: DELETE ```"
-msgstr "### 6.4 The delete message deletes the message according to message id. ` ` URI: /sec/appstore/v1/messages/ {messageId} method type: DELETE ` ` `"
+msgid "6.4 删除消息"
+msgstr "6.4 Delete message"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1790
+msgid "根据message id删除消息。"
+msgstr "Deletes a message according to message id."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1821
-msgid "### 6.5 接收消息 根据message id下载app相关信息。 ``` URI： /mec/appstore/v1/messages/{messageId}/action/download 方法类型: GET ```"
-msgstr "### 6.5 The receiving message downloads the app information according to message id. ` ` URI: /mec/appstore/v1/messages/ {messageId} /action/download method type: GET ` ` `"
+msgid "6.5 接收消息"
+msgstr "6.5 Receiving information"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1828
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>messageId</td> <td>消息id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>request</td> <td>请求体</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td>messageId</td> <td>Message id</td> <td>request param</td> <td>yes</td> </tr> <tr> <td>request</td> <td>Request body</td> <td>request param</td> <td>yes</td> </tr> </tr> </tbody> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1856 ../../Projects/APPSTORE/AppStore_Interfaces.md:1888
-msgid "success"
-msgstr "success"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1822
+msgid "根据message id下载app相关信息。"
+msgstr "Download the app-related information according to message id."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1859
-msgid "### 6.6 更新状态 根据message id更新消息状态。 ``` URI： /mec/appstore/v1/messages/{messageId}/action/readed 方法类型: PUT ```"
-msgstr "### 6.6 Update status update message status based on message id. ` ` URI: /sec/appstore/v1/messages/ {messageId} /action/readed method type: PUT ` ` `"
+msgid "6.6 更新状态"
+msgstr "6.6 Update Status"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1860
+msgid "根据message id更新消息状态。"
+msgstr "Update the message status according to message id."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1891
-msgid "## 7. 应用拉取"
-msgstr "# # 7. Application Pull"
+msgid "7. 应用拉取"
+msgstr "7.Application pulling"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1893
 msgid "用户可以从运营商或第三方仓库拉取应用。"
 msgstr "Users can pull applications from operators or third-party warehouses."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1895
-msgid "### 7.1 查询可拉取应用列表 查询可拉取的应用列表。 ``` URI： /mec/appstore/v1/packages/pullable 方法类型: GET ```"
-msgstr "### 7.1 queries the list of applications that can pull the application list queries. ` ` URI: /mis/appstore/v1/packages/pllable method type: GET ` ` `"
+msgid "7.1 查询可拉取应用列表"
+msgstr "7.1 Inquivable Application List"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1896
+msgid "查询可拉取的应用列表。"
+msgstr "Query the list of applications that can be pulled."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1927
-msgid "### 7.2 获取外部应用仓库可拉取应用列表 根据platfromId获取外部仓库可拉取应用列表。 ``` URI： /mec/appstore/v1/packages/{platfromId}/pullable 方法类型: GET ```"
-msgstr "### 7.2 acquires an external application warehouse accessible application list to obtain an external warehouse accessible application list according to platfromId. ` ` URI: /met/appstore/v1/packages/ {platfromId} /lullable method type: GET ` ` `"
+msgid "7.2 获取外部应用仓库可拉取应用列表"
+msgstr "7.2 Get external application warehouse to pull application list"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1934
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>platformId</td> <td>外部应用仓库ID</td> <td>path</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td>platformId</td> <td>External application warehouse ID</td> <td>path</td> <td>yes</td> </tr> </tbody> </tr> </table>"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1928
+msgid "根据platfromId获取外部仓库可拉取应用列表。"
+msgstr "obtaining an external warehouse according to the platfromId to pull the application list."
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:1978
-msgid "### 7.3 拉取应用包 根据packageId拉取应用包。 ``` URI： /mec/appstore/v1/packages/{packageId}/action/pull 方法类型: POST ```"
-msgstr "### 7.3 The pull application package is based on the packageId pull application package. ` ` URI: /mis/appstore/v1/packages/ {packageId} /action/pull method type: POST ` ` `"
+msgid "7.3 拉取应用包"
+msgstr "7.3 Lafetch application package"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1985
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>描述</th> <th>IN</th> <th>必选</th> </tr> </thead> <tbody> <tr> <td>packageId</td> <td>应用包ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>dto</td> <td>拉取请求</td> <td>request param</td> <td>yes</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Description</th> <th>IN</th> <th></th></th> </thead> <tbody> <tr> <td> <tr> packageId</td> <td>App Package ID</td> <td>path</td> <td>yes</td> </tr> <tr> <td>dto</td> <td>pull request</td> <td>request param</td> <td>yes</td> </tr> </tr> </tbody> </table>"
-
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2013
-msgid "true"
-msgstr "true"
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1979
+msgid "根据packageId拉取应用包。"
+msgstr "According to the packageId pull application package."
 

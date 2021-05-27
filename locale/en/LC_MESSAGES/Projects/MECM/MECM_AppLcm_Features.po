@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../Projects/MECM/MECM_AppLcm_Features.md:1
 msgid "Characteristic design LcmController is mainly responsible to provide northbound API's to upload config, remove config, instantiate, terminate , and query an application. It also provides APIs to query mep capabilities and kpi information from prometheus"
@@ -23,61 +23,33 @@ msgstr "Characteristic design LcmController is mainly responsible to provide nor
 
 #: ../../Projects/MECM/MECM_AppLcm_Features.md:5
 msgid "![](/uploads/images/2020/0924/mecm-applcm-diagram.png \"mecm-applcm-diagram.png\")"
-msgstr "! [](/uploads/images/2020/0924/mecm - applcm-diagram.png \" mecm-applcm-diagram.png \")"
+msgstr "![](/uploads/images/2020/0924/mecm-applcm-diagram.png \"mecm-applcm-diagram.png\")"
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:10
-msgid "Upload Configuration:"
-msgstr "Upload Configuration:"
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:8
+msgid "Upload Configuration:  Upload configuration API is responsible to upload the kube configuration file into edge node to communicate with  kubernetes cluster."
+msgstr "Upload Configuration: Upload configuration API is responsible to upload the cube configuration ffile into edge node to communicate with  kubernetes cluster."
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:9
-msgid "Upload configuration API is responsible to upload the kube configuration file into edge node to communicate with kubernetes cluster."
-msgstr "Upload configuration API is responsible to upload the cube configuration fileintoedgenodetocommunicatewithkubernetescluster."
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:12
+msgid "Remove Configuration:  Remove configuration API is responsible to remove the kube configuration file from edge node."
+msgstr "Remove Configuration: Remove configuration API is responsible to remove the cube configuration file from edge node."
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:13
-msgid "Remove Configuration:"
-msgstr "Remove Configuration:"
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:15
+msgid "Instantiate:  Instantiate API is responsible to deploy an application in edge node. As part of Instantiate API lcmcontroller  will send request to MEP about ak sk configuration and will create a kubernetes secret for ak sk values and which   can be referred by deployed application."
+msgstr "Instantiate:  Instantiate API is responsible to deploy an application in edge node. As part of Instantiate API lcmcontroller  will send request to MEP about ak sk configuration and will create a kubernetes secret for ak sk values and which   can be referred by deployed application."
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:13
-msgid "Remove configuration API is responsible to remove the kube configuration file from edge node."
-msgstr "Remove configuration API is responsible to remove the cube configuration filefromedgenode."
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:20
+msgid "Terminate:  Terminate API is responsible to delete an application from edge node."
+msgstr "Terminate:  Terminate API is responsible to delete an application from edge node."
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:18
-msgid "Instantiate:"
-msgstr "Instantiate:"
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:23
+msgid "Query:  Query API is responsible to get the statistics of pod details such as cpu, disk and memory information."
+msgstr "Query:  Query API is responsible to get the statistics of pod details such as cpu, disk and memory information."
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:16
-msgid "Instantiate API is responsible to deploy an application in edge node. As part of Instantiate API lcmcontroller will send request to MEP about ak sk configuration and will create a kubernetes secret for ak sk values and which can be referred by deployed application."
-msgstr "Instantiate API is responsible to deploy an application in edge node. As part of Instantiate API lcmcontroller will send request to MEP about ak sk configuration and will create a kubernetes secret for ak values and which can be preferred by deployed application."
-
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:21
-msgid "Terminate:"
-msgstr "Terminate:"
-
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:21
-msgid "Terminate API is responsible to delete an application from edge node."
-msgstr "Terminate API is responsible to delete an application from edge node."
-
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:24
-msgid "Query:"
-msgstr "Query:"
-
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:24
-msgid "Query API is responsible to get the statistics of pod details such as cpu, disk and memory information."
-msgstr "Query API is responsible to get the statistics of pod details such as cpu, disk and memory information."
-
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:27
-msgid "QueryKPI:"
-msgstr "QueryKPI:"
-
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:27
-msgid "Query KPI API is responsible to get the statistics of node details by using prometheus"
-msgstr "Query KPI API is responsible to get the statistics of node details by using prometheus"
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:26
+msgid "QueryKPI:  Query KPI API is responsible to get the statistics of node details by using prometheus"
+msgstr "QueryKPI:  Query KPI API is responsible to get the statistics of node details by using prometheus"
 
 #: ../../Projects/MECM/MECM_AppLcm_Features.md:29
-msgid "QueryMEP:"
-msgstr "QueryMEP:"
-
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:30
-msgid "Query MEP API is responsible to get mep capabilities from mep server node"
-msgstr "Query MEP API is responsible to get mep capabilities from mep server node"
+msgid "QueryMEP:  Query MEP API is responsible to get mep capabilities from mep server node"
+msgstr "QueryMEP:  Query MEP API is responsible to get mep capabilities from mep server node"
 

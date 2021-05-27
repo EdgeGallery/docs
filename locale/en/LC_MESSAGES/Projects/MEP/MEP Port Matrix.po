@@ -8,16 +8,72 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../Projects/MEP/MEP Matrix.md:1 Port
-msgid "# MEP Port Matrix | Module              | Port number   | Description                          | | ------------------- | ------------- | ------------------------------------ | | mep-server | 8088 | mep-app related configurations | | mep-auth | 10443 | app can apply token | | dns-server | 53 | dns resolution | | dns-server | 8080 | dns resource management interface |"
-msgstr "# MEP Port Matrix | Module | Port number | Description | | ------------------- | ------------- | ------------------------------------ | | | mep-server | 8088 | mep-app related configurations | | mep-auth | 10443 | app can apply token | | dns-server | 53 | dns resolution | | dns-server | 8080 | dns resource management interface |"
+msgid "MEP Port Matrix"
+msgstr "MEP Port Matrix"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "Module"
+msgstr "Module"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "Port number"
+msgstr "Port number"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "Description"
+msgstr "Description"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "mep-server"
+msgstr "mep-server"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "8088"
+msgstr "8088"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "mep-app related configurations"
+msgstr "mep-app related configurations"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "mep-auth"
+msgstr "mep-auth"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "10443"
+msgstr "10443"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "app can apply token"
+msgstr "app can apply token"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "dns-server"
+msgstr "dns-server"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "53"
+msgstr "53"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "dns resolution"
+msgstr "dns resolution"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "8080"
+msgstr "8080"
+
+#: ../../Projects/MEP/MEP Matrix.md Port
+msgid "dns resource management interface"
+msgstr "dns resource management interface"
 

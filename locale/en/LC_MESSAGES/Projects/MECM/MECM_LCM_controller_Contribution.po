@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:2
+#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:1
 msgid "Contribution to Lcm Controller and K8s Plugin (Applcm)"
 msgstr "Contribution to Lcm Controller and K8s Plugin (Applcm)"
 
@@ -26,24 +26,24 @@ msgid "This section provides details on how to participate/contribute to the LCM
 msgstr "This section provides details on how to participate/contribute to the LCM controller project."
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:6
-msgid "## Build local development environment"
-msgstr "## Build local development environment"
+msgid "Build local development environment"
+msgstr "Build local development environment"
 
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:9
-msgid "This section will guide developers to build LCM controller module locally and help developers to quickly understand and"
-msgstr "This section will guide developers to build LCM controller module locally and help developers to quickly under and and"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:9
-msgid "develop code"
-msgstr "develop code"
+#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:8
+msgid "This section will guide developers to build LCM controller module locally and help developers to quickly understand and  develop code"
+msgstr "This section will guide developers to build LCM controller module locally and help developers to quickly understand and  develop code"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:11
-msgid "The local startup of LCM controller depends on： ``` - DataBase ``` In order to build a local environment, the final startup sequence is DataBase -> LCMController"
-msgstr "The local startup of LCM controller depends on: ` ` ` - DataBase ` ` In order to build a local environment, the final startup sequence is DataBase - > LCMController"
+msgid "The local startup of LCM controller depends on："
+msgstr "The local startup of LCM controller depends on:"
+
+#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:15
+msgid "In order to build a local environment, the final startup sequence is DataBase -> LCMController"
+msgstr "In order to build a local environment, the final startup sequence is DataBase -> LCMController"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:17
-msgid "### DataBase"
-msgstr "### DataBase"
+msgid "DataBase"
+msgstr "DataBase"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:19
 msgid "Download and install postgres 12.3 database"
@@ -59,15 +59,15 @@ msgstr "Create a database named lcmcontrollerdb"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:25
 msgid "![](/uploads/images/2020/0924/lcmcontroller-db.png \"lcmcontroller-db.png\")"
-msgstr "! [](/uploads/images/2020/0924/lcmcontroller-db.png \" lcmcontroller-db.png \")"
+msgstr "![](/uploads/images/2020/0924/lcmcontroller-db.png \"lcmcontroller-db.png\")"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:27
-msgid "### LCM contorller"
-msgstr "### LCM contoriller"
+msgid "LCM contorller"
+msgstr "LCM contoriller"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:29 ../../Projects/MECM/MECM_LCM_controller_Contribution.md:57
 msgid "Download [LCM Controller Code](https://gitee.com/edgegallery/mecm-applcm)"
-msgstr "Download [LCM Controller Code] (https://gitee.com/edgegallery/mecm-applcm)"
+msgstr "Download [LCM Controller Code](https://gitee.com/edgegallery/mecm-applcm)"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:31 ../../Projects/MECM/MECM_LCM_controller_Contribution.md:45
 msgid "Configure the runtime environment variables (using GO Land as an example)"
@@ -75,7 +75,7 @@ msgstr "Configure the runtime environment variables (using GO Land as an example
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:33
 msgid "![](/uploads/images/2020/0924/lcm-controller.png \"lcm-controller.png\")"
-msgstr "! [](/uploads/images/2020/0924/lcm-controller.png \" lcm-controller.png \")"
+msgstr "![](/uploads/images/2020/0924/lcm-controller.png \"lcm-controller.png\")"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:35
 msgid "Update certificates path in app.conf"
@@ -83,23 +83,23 @@ msgstr "Update certificates path in app.conf"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:37
 msgid "![](/uploads/images/2020/0924/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
-msgstr "! [](/uploads/images/2020/0924/mepm - applcm-ssl.png \" mepm-applcm-ssl.png \")"
+msgstr "![](/uploads/images/2020/0924/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:39
 msgid "Run main to start LCM controller"
 msgstr "Run main to start LCM controller"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:41
-msgid "### K8s plugin"
-msgstr "### K8s plugin"
+msgid "K8s plugin"
+msgstr "K8s plugin"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:43
 msgid "Download [K8s plugin code](https://gitee.com/edgegallery/mecm-applcm)"
-msgstr "Download [K8s plugin code] (https: //gitee.com/edgegallery/mecm-applcm)"
+msgstr "Download [K8s plugin code](https://gitee.com/edgegallery/mecm-applcm)"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:47
 msgid "![](/uploads/images/2020/0924/k8s-plugin-env.png \"k8s-plugin-env.png\")"
-msgstr "! [](/uploads/images/2020/0924/k8s - plugin-env.png \" k8s-plugin-env.png \")"
+msgstr "![](/uploads/images/2020/0924/k8s-plugin-env.png \"k8s-plugin-env.png\")"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:49
 msgid "Update certificates path in config.yaml"
@@ -107,109 +107,29 @@ msgstr "Update certificates path in config.yaml"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:51
 msgid "![](/uploads/images/2020/0924/k8s-ssl.png \"k8s-ssl.png\")"
-msgstr "! [](/uploads/images/2020/0924/k8s-ssl.png \" k8s-ssl.png \")"
+msgstr "![](/uploads/images/2020/0924/k8s-ssl.png \"k8s-ssl.png\")"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:53
 msgid "Run main to start K8s plugin."
 msgstr "Run main to start K8s plugin."
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:55
-msgid "### How to generate swagger documentation for Lcm Controller"
-msgstr "### How to generate swagger documentation for Lcm Controller"
+msgid "How to generate swagger documentation for Lcm Controller"
+msgstr "How to generate swagger documentation for Lcm Controller"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:59
-msgid "### Prerequisites"
-msgstr "### Prerequisites"
+msgid "Prerequisites"
+msgstr "Prerequisites"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:61
 msgid "Step 1 - Install go lang"
-msgstr "Step 1-Install go lang"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:63
-msgid "cd ~"
-msgstr "cd ~"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:65
-msgid "curl -O https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz"
-msgstr "curl -O https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:67
-msgid "tar xvf go1.10.3.linux-amd64.tar.gz"
-msgstr "tar xvf go1.10.3.linux-amd64.tar.gz"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:69
-msgid "sudo chown -R root:root ./go"
-msgstr "sudo chown -R root: root ./go"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:71
-msgid "sudo mv go /usr/local"
-msgstr "sudo mv go /usr/local"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:73
-msgid "sudo nano ~/.profile"
-msgstr "sudo nano ~/.profile"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:75 ../../Projects/MECM/MECM_LCM_controller_Contribution.md:81
-msgid "export GOPATH=$HOME/mecm-applcm"
-msgstr "export GOPATH=$HOME/mecm-applcm"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:77
-msgid "export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin"
-msgstr "export PATH=$PATH: /usr/local/go/bin: $GOPATH/bin"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:79
-msgid "export GOROOT=$HOME/go"
-msgstr "export GOROOT = $HOME/go"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:83
-msgid "export PATH=$PATH:$GOROOT/bin:$GOPATH/bin"
-msgstr "export PATH=$PATH: $GOROT/bin: $GOPATH/bin"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:85
-msgid "source ~/.profile"
-msgstr "source ~/.profile"
+msgstr "Step 1 - Install go lang"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:87
 msgid "Step 2 - Install bee"
-msgstr "Step 2-Install bee"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:89
-msgid "You will need to install or upgrade Beego and the Bee dev tool:"
-msgstr "You will need to install or upgrade Beiego and the Bee dev tool:"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:91
-msgid "go get -u github.com/beego/beego/v2"
-msgstr "go get -u github.com/beego/beego/v2"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:93
-msgid "go get -u github.com/beego/bee/v2"
-msgstr "go get -u github.com/beego/bee/v2"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:95
-msgid "bee"
-msgstr "bee"
+msgstr "Step 2 - Install be"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:97
 msgid "![](/uploads/images/2020/0924/bee-output.png \"bee-output.png\")"
-msgstr "! [](/uploads/images/2020/0924/bee-output.png \" bee-outpu.png \")"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:99
-msgid "Change runmode configuration to dev from prod in app.conf file"
-msgstr "Change runmode configuration to dev from prod in app.conf file"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:101
-msgid "Now coming to the auto-generation of documentation, end the server’s session and use this command:"
-msgstr "Now coming to the auto-generation of documentation, end the server's session and use this command:"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:103
-msgid "bee run -gendoc=true -downdoc=true"
-msgstr "bee run -gendoc=true -downdoc=true"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:105
-msgid "Now, go to the browser and type:"
-msgstr "Now, go to the browser and type:"
-
-#: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:107
-msgid "https://localhost:8094/swagger/"
-msgstr "https://localhost:8094/swagger/"
+msgstr "![](/uploads/images/2020/0924/bee-output.png \"bee-output.png\")"
 

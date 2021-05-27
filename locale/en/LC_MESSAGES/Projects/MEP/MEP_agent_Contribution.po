@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/MEP/MEP_agent_Contribution.md:1
+msgid "Contribution to mep-agent"
+msgstr "Contribution to mep-agent"
+
+#: ../../Projects/MEP/MEP_agent_Contribution.md:4
+msgid "This section provides details on how to participate/contribute to the mep-agent project."
+msgstr "This section provides details on how to participate/contribute to the mep-agent project."
+
+#: ../../Projects/MEP/MEP_agent_Contribution.md:6
+msgid "Build local development environment"
+msgstr "Build local development environment"
+
+#: ../../Projects/MEP/MEP_agent_Contribution.md:8
+msgid "This section will guide developers to build mep-agent module locally and help developers to quickly understand and  develop code"
+msgstr "This section will guide developers to build mep-agent module locally and help developers to quickly under and develop code"
+
+#: ../../Projects/MEP/MEP_agent_Contribution.md:11
+msgid "Clone mep-agent code"
+msgstr "Clone mep-agent code"
+
+#: ../../Projects/MEP/MEP_agent_Contribution.md:12
+msgid "Open folder by goland"
+msgstr "Open folder by goland"
+
+#: ../../Projects/MEP/MEP_agent_Contribution.md:13
+msgid "Configure the runtime environment variables</br> MEP_IP=192.168.100.177; MEP_APIGW_PORT=30443; AK=QVUJMSUMgS0VZLS0tLS0; SK=DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc; APPINSTID=5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f; CA_CERT_DOMAIN_NAME=edgegallery</br>"
+msgstr "Configure the runtime environment variables</br> MEP_IP=192.168.100.177; MEP_APIGW_PORT=30443; AK=QVUJMSUMgS0VZLS0tLS0; SK=DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc; APPINSTID=5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f; CA_CERT_DOMAIN_NAME=edgeegallery</br>"
+
+#: ../../Projects/MEP/MEP_agent_Contribution.md:21
+msgid "![](/uploads/images/2021/mep/mep-agent_config_env_variables.png \"env variables\")"
+msgstr "![](/uploads/images/2021/mep/mep-agent_config_env_variables.png \"env variables\")"
+
+#: ../../Projects/MEP/MEP_agent_Contribution.md:23
+msgid "Run main.go to start mep-agent"
+msgstr "Run main.go to start mep-agent"
+
+#: ../../Projects/MEP/MEP_agent_Contribution.md:24
+msgid "After start, can call the api by postman"
+msgstr "After start, can call the api by postman"
+

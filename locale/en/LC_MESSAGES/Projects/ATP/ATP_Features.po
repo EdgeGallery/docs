@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/ATP/ATP_Features.md:2
+#: ../../Projects/ATP/ATP_Features.md:1
 msgid "特性设计"
 msgstr "Feature design"
 
@@ -26,46 +26,82 @@ msgid "ATP当前提供的特性分为用户面特性和管理面特性。 用户
 msgstr "The features currently offered by ATP are divided into user facial features and management surface features. The user surface characteristic comprises selecting test scene, test task progress display, test report analysis, test report download, and contribution test case. Management surface features include: test scene management, test suite management, test case management, test task analysis, test task management."
 
 #: ../../Projects/ATP/ATP_Features.md:7
-msgid "## 选择测试场景 用户可以根据需要，选择要进行的测试场景，ATP服务会执行对应场景的测试用例。"
-msgstr "## Choosing a test scene user can choose the test scene to be performed as needed, and the ATP service performs the test case for the corresponding scene."
+msgid "选择测试场景"
+msgstr "Choose a test scenario"
+
+#: ../../Projects/ATP/ATP_Features.md:8
+msgid "用户可以根据需要，选择要进行的测试场景，ATP服务会执行对应场景的测试用例。"
+msgstr "The user can select the test scene to be carried out according to the need, and the ATP service executes the test case of the corresponding scene."
 
 #: ../../Projects/ATP/ATP_Features.md:10
-msgid "## 测试任务进展展示 动态展示一条测试任务的执行进展，可以动态看到各个场景下面各个用例的执行情况。"
-msgstr "## The test task progress display dynamically demonstrates the progress of the execution of a test task and can dynamically see the execution of each use case under each scene."
+msgid "测试任务进展展示"
+msgstr "Test mission, show progress."
+
+#: ../../Projects/ATP/ATP_Features.md:11
+msgid "动态展示一条测试任务的执行进展，可以动态看到各个场景下面各个用例的执行情况。"
+msgstr "The dynamic display of the implementation of a test task can dynamically see the implementation of each use case under each scene."
 
 #: ../../Projects/ATP/ATP_Features.md:13
-msgid "## 测试报告分析 展示测试报告结果。报告会给出社区场景及所选场景的测试用例结果分析，显示出各个测试套的通过率，用例数量以及具体测试用例的失败原因。"
-msgstr "## Test report analysis shows test report results.The report gives the analysis of the community scene and the test case result of the selected scene, showing the pass rate of each test sleeve, the number of the use routine and the failure reason of the specific test case."
+msgid "测试报告分析"
+msgstr "Test Report Analysis"
+
+#: ../../Projects/ATP/ATP_Features.md:14
+msgid "展示测试报告结果。报告会给出社区场景及所选场景的测试用例结果分析，显示出各个测试套的通过率，用例数量以及具体测试用例的失败原因。"
+msgstr "Show test report results.The report gives the analysis of the community scene and the test case result of the selected scene, showing the pass rate of each test sleeve, the number of the use routine and the failure reason of the specific test case."
 
 #: ../../Projects/ATP/ATP_Features.md:16
-msgid "## 测试报告下载 提供测试报告下载功能，将测试报告作为pdf格式下载。"
-msgstr "## The test report download provides a test report download function to download the test report as a pdf format."
+msgid "测试报告下载"
+msgstr "Test Report Download"
+
+#: ../../Projects/ATP/ATP_Features.md:17
+msgid "提供测试报告下载功能，将测试报告作为pdf格式下载。"
+msgstr "Provide the test report download function to download the test report as pdf format."
 
 #: ../../Projects/ATP/ATP_Features.md:19
-msgid "## 贡献测试用例 用户面支持用户贡献测试用例的入口，支持用户贡献测试用例脚本，或者贡献测试用例的文本描述。"
-msgstr "The user side of the contribution test case supports the entrance of the user contribution test case, supports the user contribution test case script, or contributes the text description of the test case."
+msgid "贡献测试用例"
+msgstr "Contribution test cases"
+
+#: ../../Projects/ATP/ATP_Features.md:20
+msgid "用户面支持用户贡献测试用例的入口，支持用户贡献测试用例脚本，或者贡献测试用例的文本描述。"
+msgstr "The user side supports the entrance of the user contribution test case, supports the user contribution test case script, or contributes the text description of the test case."
 
 #: ../../Projects/ATP/ATP_Features.md:22
-msgid "## 测试场景管理 包含测试场景的展示、新增、删除、修改操作。"
-msgstr "## Test scene management includes display of test scenes, add, delete, modify actions."
+msgid "测试场景管理"
+msgstr "Test scenario management"
+
+#: ../../Projects/ATP/ATP_Features.md:23
+msgid "包含测试场景的展示、新增、删除、修改操作。"
+msgstr "Contains the demo, add, delete, modify operation of the test scene."
 
 #: ../../Projects/ATP/ATP_Features.md:25
-msgid "## 测试套管理 包含测试套的展示、新增、删除、修改操作。"
-msgstr "## Test suite management includes display of test suites, add, delete, modify actions."
+msgid "测试套管理"
+msgstr "Test Suite Management"
+
+#: ../../Projects/ATP/ATP_Features.md:26
+msgid "包含测试套的展示、新增、删除、修改操作。"
+msgstr "Contains the demo, add, delete, modify operation of the test suite."
 
 #: ../../Projects/ATP/ATP_Features.md:28
-msgid "## 测试用例管理 包含测试用例的展示、新增、删除、修改操作。"
-msgstr "## Test case management includes display, addition, deletion, modification operation of test cases."
+msgid "测试用例管理"
+msgstr "Test Case Management"
+
+#: ../../Projects/ATP/ATP_Features.md:29
+msgid "包含测试用例的展示、新增、删除、修改操作。"
+msgstr "Contains display of test cases, add, delete, modify operations."
 
 #: ../../Projects/ATP/ATP_Features.md:31
-msgid "## 测试任务分析 ATP管理面首页展示近6个月测试任务数量的分布情况以及总数。"
-msgstr "## Test Mission Analysis ATP Management Face Home page shows the distribution of the number of test tasks in nearly 6 months and the total number."
+msgid "测试任务分析"
+msgstr "Test mission analysis"
+
+#: ../../Projects/ATP/ATP_Features.md:32
+msgid "ATP管理面首页展示近6个月测试任务数量的分布情况以及总数。"
+msgstr "The ATP Management Face home page shows the distribution of the number of test tasks in nearly 6 months and the total number."
 
 #: ../../Projects/ATP/ATP_Features.md:34
-msgid "## 测试任务管理 包含测试任务的展示、以及测试任务的批量删除操作。"
-msgstr "## Test mission management contains a display of test tasks, and batch delete operations for test tasks."
+msgid "测试任务管理"
+msgstr "Test mission management"
 
-#: ../../Projects/ATP/ATP_Features.md:37
-msgid "[1]: https://gitee.com/edgegallery/atp \"atp\" [2]: https://gitee.com/edgegallery/atp-fe \"atp-fe\""
-msgstr "[1]: https://gitee.com/edgegallery/atp \" atp \" [2]: https://gitee.com/edgegallery/atp-fe \" atp-fe \""
+#: ../../Projects/ATP/ATP_Features.md:35
+msgid "包含测试任务的展示、以及测试任务的批量删除操作。"
+msgstr "Contains the display of the test task and the batch delete operation of the test task."
 

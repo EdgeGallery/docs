@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/MECM/Images_Interfaces.md:2
+#: ../../Projects/MECM/Images_Interfaces.md:1
 msgid "Image Interfaces"
 msgstr "Image Interfaces"
 
@@ -26,46 +26,34 @@ msgid "The document is for the Image Interfaces."
 msgstr "The document is for the Image Interfaces."
 
 #: ../../Projects/MECM/Images_Interfaces.md:5
-msgid "### Create Image"
-msgstr "### Create Image"
+msgid "Create Image"
+msgstr "Create Image"
 
 #: ../../Projects/MECM/Images_Interfaces.md:7
 msgid "creation of image"
 msgstr "creation of image"
 
-#: ../../Projects/MECM/Images_Interfaces.md:9
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Field</th> <th>Type</th> <th>Label</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>accessToken</td> <td>string</td> <td>required</td> <td>Provide the required access token</td> </tr> <tr> <td>appInstanceId</td> <td>string</td> <td>required</td> <td>Valid UUID</td> </tr> <tr> <td>tenantId</td> <td>string</td> <td>path</td> <td>Valid UUID</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th>Field</th> <th>Type</th> <th>Label</th> <th>Description</th> </thead> </tr> <tbody> <tr> <td>accessToken</td> <td>string</td> <td>required</td> <td>Provide the required access token</td> </tr> <tr> <td>appInstanceId</td> <td>string</td> <td>required</td> <td>Valid UUID</td> </tr> <tr> <td>tenantId</td> <td>string</td> <td>path</td> <td>Valid UUID</td> </tr> </table> </table>"
-
 #: ../../Projects/MECM/Images_Interfaces.md:40
-msgid "### Delete Image"
-msgstr "### Delete Image"
+msgid "Delete Image"
+msgstr "Delete Image"
 
 #: ../../Projects/MECM/Images_Interfaces.md:42
 msgid "deletion of image"
 msgstr "deleave of image"
 
-#: ../../Projects/MECM/Images_Interfaces.md:44 ../../Projects/MECM/Images_Interfaces.md:85
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Field</th> <th>Type</th> <th>Label</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>accessToken</td> <td>string</td> <td>required</td> <td>Provide the required access token</td> </tr> <tr> <td>appInstanceId</td> <td>string</td> <td>required</td> <td>Valid UUID</td> </tr> <tr> <td>tenantId</td> <td>string</td> <td>path</td> <td>Valid UUID</td> </tr> <tr> <td>imageId</td> <td>string</td> <td>path</td> <td>Valid UUID</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th>Field</th> <th>Type</th> <th>Label</th> <th>Description</th> </thead> </tr> <tbody> <tr> <td>accessToken</td> <td>string</td> <td>required</td> <td>Provide the required access token</td> </tr> <tr> <td>appInstanceId</td> <td>string</td> <td>required</td> <td>Valid UUID</td> </tr> <tr> <td>tenantId</td> <td>string</td> <td> <td>Valid UUID</td></td> </tr> <tr> <td>imageId</td> <td>string</td> <td>path</td> <td>Valid UUID</td> </tr> </tr> </table>"
-
 #: ../../Projects/MECM/Images_Interfaces.md:81
-msgid "### Query Image"
-msgstr "### Query Image"
+msgid "Query Image"
+msgstr "Query Image"
 
 #: ../../Projects/MECM/Images_Interfaces.md:83
 msgid "query of image"
 msgstr "query of image"
 
 #: ../../Projects/MECM/Images_Interfaces.md:122
-msgid "### Download Image file"
-msgstr "### Download Image file"
+msgid "Download Image file"
+msgstr "Download Image file"
 
 #: ../../Projects/MECM/Images_Interfaces.md:124
 msgid "download a specific chunk of image file"
 msgstr "download a specific chunk of image file"
-
-#: ../../Projects/MECM/Images_Interfaces.md:126
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Field</th> <th>Type</th> <th>Label</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>accessToken</td> <td>string</td> <td>required</td> <td>Provide the required access token</td> </tr> <tr> <td>chunk_num</td> <td>string</td> <td>required</td> <td>Provide the required chunk_num</td> </tr> <tr> <td>appInstanceId</td> <td>string</td> <td>required</td> <td>Valid UUID</td> </tr> <tr> <td>tenantId</td> <td>string</td> <td>path</td> <td>Valid UUID</td> </tr> <tr> <td>imageId</td> <td>string</td> <td>path</td> <td>Valid UUID</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th>Field</th> <th>Type</th> <th>Label</th> <th>Description</th> </thead> </tr> <tbody> <tr> <td>accessToken</td> <td>string</td> <td>required</td> <td>Provide the required access token</td> </tr> <tr> <td>chunk_num</td> <td>string</td> <td>required</td> <td>Provide the required chunk_num</td> </tr> <tr> <td>appInstanceId</td> <td>string</td> <td>required</td> <td>Valid UUID</td> </tr> <tr> <td>tenantId</td> <td>string</td> <td>path</td> <td>Valid UUID</td> </tr> <tr> <td>imageId</td> <td>string</td> <td>path</td> <td>Valid UUID</td> </tr> </table> </tr> </table>"
 

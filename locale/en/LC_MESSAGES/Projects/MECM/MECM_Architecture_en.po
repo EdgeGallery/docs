@@ -8,104 +8,80 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:2
+#: ../../Projects/MECM/MECM_Architecture_en.md:1
 msgid "Architecture"
 msgstr "Architecture"
 
 #: ../../Projects/MECM/MECM_Architecture_en.md:4
 msgid "![.](/uploads/images/2020/0924/mecm-architecture.png \"mecm-architecture.png\")"
-msgstr "! [.](/uploads/images/2020/0924/mecm-architecture.png \" mecm-architecture.png \")"
+msgstr "![.](/uploads/images/2020/0924/mecm-architecture.png \"mecm-architecture.png\")"
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:9
-msgid "## Application Package Manager"
-msgstr "## Application Package Manager"
+#: ../../Projects/MECM/MECM_Architecture_en.md:6
+msgid "Application Package Manager"
+msgstr "Application Package Manager"
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:9
-msgid "Application Package Manager(APM) enables edgegallery to distribute/on-board applications to edge repositories by"
-msgstr "Application Package Manager (APM) enables edgeballery to distribute/on-board applications to edge repositories by"
+#: ../../Projects/MECM/MECM_Architecture_en.md:7
+msgid "Application Package Manager(APM) enables edgegallery to distribute/on-board applications to edge repositories by   downloading application packages from appstore."
+msgstr "Application Package Manager (APM) enables edgeballery to distribute/on-board applications to edit repositories by downloading application packages from appstore."
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:8
-msgid "downloading application packages from appstore."
-msgstr "downloading application packages from appstore."
+#: ../../Projects/MECM/MECM_Architecture_en.md:11
+msgid "Application Orchestrator"
+msgstr "Application Orchestrator"
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:14
-msgid "## Application Orchestrator"
-msgstr "## Application Orchestrator"
+#: ../../Projects/MECM/MECM_Architecture_en.md:12
+msgid "Application Orchestrator(APPO) is mainly responsible for MEC application orchestration by requesting for life cycle   management of MEC application on the edge host by executing specified workflow while maintaining the life cycle state.   Orchestration workflows are modeled using Camunda modeler tool and workflows are executed by camunda engine."
+msgstr "Application Orchestrator(APPO) is mainly responsible for MEC application orchestration by requesting for life cycle management of MEC application on the age host by executing specified workflow while maintaininging the life cycle state.   Orchestration workflows are modeled using Camunda modeler tool and workfloware are executed by camunda engine."
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:14
-msgid "Application Orchestrator(APPO) is mainly responsible for MEC application orchestration by requesting for life cycle"
-msgstr "Application Orchestrator (APPO) is mainly responsible for MEC application orchestration by requesting for life cycle"
+#: ../../Projects/MECM/MECM_Architecture_en.md:16
+msgid "Inventory"
+msgstr "Inventory"
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:13
-msgid "management of MEC application on the edge host by executing specified workflow while maintaining the life cycle state. Orchestration workflows are modeled using Camunda modeler tool and workflows are executed by camunda engine."
-msgstr "management of MEC application on the age host by executing specified workflow while maintainting the life cycle state. Orchestration workflows are modeled using Camunda modeler tool and workfloware are executed by camunda engine."
+#: ../../Projects/MECM/MECM_Architecture_en.md:17
+msgid "Inventory provides realtime view of deployed applications on the edge hosts and applications configurations. Inventory   is also used for external system registrations."
+msgstr "Inventory provides realtime view of deployed applications on the edge hosts and applications configurations. Inventory is also used for external system registration."
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:18
-msgid "## Inventory"
-msgstr "## Inventory"
+#: ../../Projects/MECM/MECM_Architecture_en.md:20
+msgid "LCM Controller"
+msgstr "LCM Controller"
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:18
-msgid "Inventory provides realtime view of deployed applications on the edge hosts and applications configurations. Inventory"
-msgstr "Inventory provides realtime view of deployed applications on the edge hosts and applications configurations. Inventory"
+#: ../../Projects/MECM/MECM_Architecture_en.md:21
+msgid "LCM Controller is responsible MEC application life cycle management operations by sending requests to appropriate   pluggable plugin adapters based on the infrastructure."
+msgstr "LCM Controller is responsible MEC application life cycle management operations by endingrequests to appropriate plugin plugin plugin based on the infrastructure."
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:18
-msgid "is also used for external system registrations."
-msgstr "is also used for external system registration."
+#: ../../Projects/MECM/MECM_Architecture_en.md:25
+msgid "K8s Plugin"
+msgstr "K8s Plugin"
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:23
-msgid "## LCM Controller"
-msgstr "## LCM Controller"
+#: ../../Projects/MECM/MECM_Architecture_en.md:26
+msgid "K8s Plugin is responsible for MEC application life cycle management operations on kubernetes infrastructure. K8s plugin   use helm   client to perform application life cycle management operations."
+msgstr "K8s Plugin is responsible for MEC application life cycle management operations on kubernetes infrastructure. K8s plugin use helm client to perform application life cycle management operations."
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:23
-msgid "LCM Controller is responsible MEC application life cycle management operations by sending requests to appropriate"
-msgstr "LCM Controller is responsible MEC application life cycle management operations by endingrequests to appropriate"
+#: ../../Projects/MECM/MECM_Architecture_en.md:31
+msgid "App Rule Manager"
+msgstr "App Rule Manager"
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:22
-msgid "pluggable plugin adapters based on the infrastructure."
-msgstr "plugin plugin based on the infrastructure."
-
-#: ../../Projects/MECM/MECM_Architecture_en.md:29
-msgid "## K8s Plugin"
-msgstr "## K8s Plugin"
-
-#: ../../Projects/MECM/MECM_Architecture_en.md:29
-msgid "K8s Plugin is responsible for MEC application life cycle management operations on kubernetes infrastructure. K8s plugin"
-msgstr "K8s Plugin is responsible for MEC application life cycle management operations on kubernetes infrastructure. K8s plugin"
-
-#: ../../Projects/MECM/MECM_Architecture_en.md:27
-msgid "use helm client to perform application life cycle management operations."
-msgstr "use helm client to perform application life cycle management operations."
-
-#: ../../Projects/MECM/MECM_Architecture_en.md:33
-msgid "## App Rule Manager"
-msgstr "## App Rule Manager"
-
-#: ../../Projects/MECM/MECM_Architecture_en.md:33
-msgid "APP Rule Manager is responsible for configuring application rules by sending application rule configurations to MEP."
-msgstr "APP Rule Manager is responsible for configuring application rules by sending application rule configurations to MEP."
-
-#: ../../Projects/MECM/MECM_Architecture_en.md:33
-msgid "Application rule configurations includes the traffic rules and DNS to be configured."
-msgstr "Application rule configurations includes the traffic rules and DNS to be configured."
+#: ../../Projects/MECM/MECM_Architecture_en.md:32
+msgid "APP Rule Manager is responsible for configuring application rules by sending application rule configurations to MEP.   Application rule configurations includes the traffic rules and DNS to be configured."
+msgstr "APP Rule Manager is responsible for configuring application rules by sending application rule configurations to MEP.   Application rule configurations includes the traffic rules and DNS to be configured."
 
 #: ../../Projects/MECM/MECM_Architecture_en.md:35
-msgid "## Deployment view ![.](/uploads/images/2020/0924/mecm-deployment-overview.png \"mecm-deployment-overview.png\")"
-msgstr "## Deployment view! [.](/uploads/images/2020/0924/mecm - deployment-overview.png \" mecm-deployment-overview.png \")"
+msgid "Deployment view"
+msgstr "Deployment view"
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:39
-msgid "The deployment view shown is based on k8s deployment. MECM modules supports deployment on virtual"
-msgstr "The deployment view shown is based on k8s deployment. MECM modules supports deployment on virtual"
+#: ../../Projects/MECM/MECM_Architecture_en.md:36
+msgid "![.](/uploads/images/2020/0924/mecm-deployment-overview.png \"mecm-deployment-overview.png\")"
+msgstr "![.](/uploads/images/2020/0924/mecm-deployment-overview.png \"mecm-deployment-overview.png\")"
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:39
-msgid "machine or docker container to start respective service."
-msgstr "machine or docker container to start respective service."
+#: ../../Projects/MECM/MECM_Architecture_en.md:38
+msgid "The deployment view shown is based on k8s deployment. MECM modules supports deployment on virtual  machine or docker container to start respective service."
+msgstr "The deployment view shown is based on k8s deployment. MECM modules supports deployment on virtual machine or docker container to start respective service."
 
