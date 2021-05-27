@@ -23,11 +23,11 @@ msgstr "EdgeGallery Overview"
 
 #: ../../Get A Demo EdgeGallery.md:3 Started/Start from on
 msgid "开发者平台：<br> ![](/uploads/images/2021/v1.1/Developer.png \"Developer.png\")<br>"
-msgstr "Developer Platform:<br> ![](/uploads/images/2021/v1.1/Developer.png \"Developer.png\")<br>"
+msgstr "Developer Platform:<br> ![](/uploads/images/2021/gettingstarted/devhome_en.png \"Developer.png\")<br>"
 
 #: ../../Get A Demo EdgeGallery.md:6 Started/Start from on
 msgid "应用商城：<br> ![](/uploads/images/2021/v1.1/AppStore.png \"AppStore.png\")<br>"
-msgstr "Apply Business City:<br> ![](/uploads/images/2021/v1.1/AppStore.png \"AppStore.png\")<br>"
+msgstr "Apply Business City:<br> ![](/uploads/images/2021/gettingstarted/appstorehome_en.png \"AppStore.png\")<br>"
 
 #: ../../Get A Demo EdgeGallery.md:9 Started/Start from on
 msgid "MEC管理平台：<br> ![](/uploads/images/2020/v1.0/Mecm.png \"Mecm.png\")<br>"
@@ -39,7 +39,7 @@ msgstr "APP Development Process"
 
 #: ../../Get A Demo EdgeGallery.md:14 Started/Start from on
 msgid "![](/uploads/images/2021/v1.1/FlowChart.png \"FlowChart.png\")<br>"
-msgstr "![](/uploads/images/2021/v1.1/FlowChart.png \"FlowChart.png\")<br>"
+msgstr "![](/uploads/images/2021/gettingstarted/devflow_en.png \"FlowChart.png\")<br>"
 
 #: ../../Get A Demo EdgeGallery.md:16 Started/Start from on
 msgid "Demo介绍"

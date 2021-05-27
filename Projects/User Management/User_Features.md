@@ -86,8 +86,8 @@
 系统为该用户提供一个统一的用户列表管理功能，可以查询用户、启用/停用用户、设置用户角色权限。
 
 ```
-(1) 当停用用户后，用户将无法登录。
-(2) 无法设置已停用用户的角色权限。
+(1) When the user is disabled, the user will not be able to log in.
+(2) The role permissions of disabled users cannot be set.
 ```
 
 ### 邮箱验证
@@ -114,9 +114,9 @@
 短信业务使用华为云消息&短信服务，详细信息请点击[这里](https://www.huaweicloud.com/product/msgsms.html)。
 
 ```
-说明：
-如果没有购买短信服务，手机验证功能可以通过配置屏蔽，具体步骤如下：
-user-mgmt下配置文件application.properties，设置sms.enabled=false
+Description:
+If you have not purchased the SMS service, the mobile phone verification function can be blocked by configuration. The specific steps are as follows:
+Configuration file application.properties under user-mgmt, set sms.enabled=false
 ```
 
 ### 界面设计

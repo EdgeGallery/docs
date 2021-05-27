@@ -1738,7 +1738,7 @@ root@ubuntu:/home/EG-LDVS/mepserver# openssl genrsa -out mepserver_tls.key 2048
 
 # Encrypt tls private key  
 root@ubuntu:/home/EG-LDVS/mepserver# openssl rsa -in mepserver_tls.key -aes256 -out mepserver_encryptedtls.key
-# 用户需通过交互式命令设置加密密码，并将密码保存到mepserver_cert_pwd文件中（请确保mepserver_cert_pwd文件中密码后无换行符），此处假定密码设置为te9Fmv%qaq
+# The user needs to set an encrypted password through interactive commands and save the password in the mepserver_cert_pwd file (please make sure that there is no newline after the password in the mepserver_cert_pwd file). It is assumed that the password is set to te9Fmv%qaq
 root@ubuntu:/home/EG-LDVS/mepserver# openssl req -new -key mepserver_tls.key -subj /C=CN/ST=Beijing/L=Beijing/O=edgegallery/CN=edgegallery -out mepserver_tls.csr
 root@ubuntu:/home/EG-LDVS/mepserver# openssl x509 -req -days 365 -in mepserver_tls.csr -extfile /etc/ssl/openssl.cnf -extensions v3_req -CA ca.crt -CAkey ca.key -CAcreateserial -out mepserver_tls.crt
 
@@ -1747,7 +1747,7 @@ root@ubuntu:/home/EG-LDVS/mepserver# openssl genrsa -out jwt_privatekey 2048
 root@ubuntu:/home/EG-LDVS/mepserver# openssl rsa -in jwt_privatekey -pubout -out jwt_publickey
 # Encrypt jwt private key 
 root@ubuntu:/home/EG-LDVS/mepserver# openssl rsa -in jwt_privatekey -aes256 -out jwt_encrypted_privatekey
-# 用户需通过交互式命令设置加密密码，此处假定密码设置为te9Fmv%qaq
+# The user needs to set the encryption password through interactive commands, here it is assumed that the password is set to te9Fmv%qaq
 
 ```
 
@@ -1861,7 +1861,7 @@ root@ubuntu:~# chown eguser:eggroup /data/thirdparty/kong
 root@ubuntu:~# chmod 700 /data/thirdparty/kong
 
 root@ubuntu:~# cat > /home/EG-LDVS/mepserver/init.sql <<EOF
-CREATE USER kong WITH PASSWORD '<password>';   --请用户自行设置kong用户密码
+CREATE USER kong WITH PASSWORD '<password>';   --Please set the kong user password by yourself
 REVOKE connect ON DATABASE kong FROM PUBLIC;
 GRANT ALL PRIVILEGES ON DATABASE kong TO admin;
 GRANT ALL PRIVILEGES ON DATABASE kong TO kong;
@@ -1883,7 +1883,7 @@ root@ubuntu:~# docker run -d --name postgres-db \
 --user=166:166 \
 -e "POSTGRES_USER=admin" \
 -e "POSTGRES_DB=kong" \
--e "POSTGRES_PASSWORD=<password>" \ #请用户自行设置admin用户密码
+-e "POSTGRES_PASSWORD=<password>" \ #Please set the admin user password by yourself
 -e "POSTGRES_INITDB_ARGS=--auth-local=password" \  
 -e "PGDATA=/var/lib/postgresql/data/pgdata" \
 -v "/data/thirdparty/postgres:/var/lib/postgresql/data" \
@@ -1911,7 +1911,7 @@ root@ubuntu:~# docker run --rm --link postgres-db:postgres-db \
             -e "KONG_DATABASE=postgres" \
             -e "KONG_PG_HOST=postgres-db" \
             -e "KONG_PG_USER=kong" \
-            -e "KONG_PG_PASSWORD=<password>" \ #请保持与之前设置的kong用户密码一致**
+            -e "KONG_PG_PASSWORD=<password>" \ #Please keep it consistent with the previously set kong user password**
             kong:2.0.4-alpine kong migrations bootstrap
 
 root@ubuntu:~# cp -r /home/EG-LDVS/mep/kong-plugin /tmp/kong-conf
@@ -1933,7 +1933,7 @@ root@ubuntu:~# docker run -d --name kong-service \
             -e "KONG_DATABASE=postgres" \
             -e "KONG_PG_HOST=postgres-db" \
             -e "KONG_PG_USER=kong" \
-            -e "KONG_PG_PASSWORD=<password>" \ #请保持与之前数据库部署时设置的kong用户密码一致
+            -e "KONG_PG_PASSWORD=<password>" \ #Please keep the password consistent with the Kong user password set during database deployment
             -e "KONG_PROXY_ACCESS_LOG=/tmp/access.log" \
             -e "KONG_ADMIN_ACCESS_LOG=/tmp/admin-access.log" \
             -e "KONG_PROXY_ERROR_LOG=/tmp/proxy.log" \
@@ -1952,7 +1952,7 @@ root@ubuntu:~# docker run -d --name kong-service \
             -e "KONG_NGINX_HTTP_SSL_PROTOCOLS=TLSv1.2 TLSv1.3" \
             -e "KONG_NGINX_HTTP_SSL_PREFER_SERVER_CIPHERS=on" \
             -v /data/thirdparty/kong:/var/lib/kong/data \
-            -p <host IP>:8443:8443 \ # host IP 为部署环境的IP地址
+            -p <host IP>:8443:8443 \ # host IP is the IP address of the deployment environment
             kong:2.0.4-alpine /bin/sh -c 'export ADDR=`hostname`;export KONG_ADMIN_LISTEN="$ADDR:8444 ssl";export KONG_PROXY_LISTEN="$ADDR:8443 ssl http2";./docker-entrypoint.sh kong docker-start'
 
 # Remove init.sql
@@ -1968,7 +1968,7 @@ root@ubuntu:~# chmod 600 /data/thirdparty/kong/kong.key
 ```
 #### 部署mepserver 
 ```
-# 运行mepserver容器
+# Run mepserver container
 root@ubuntu:~# docker run -itd --name mepserver \
             --cap-drop All \
             --network=mep-net \
@@ -1976,7 +1976,7 @@ root@ubuntu:~# docker run -itd --name mepserver \
             -e "MEPSERVER_APIGW_HOST=kong-service" \
             -e "MEPSERVER_APIGW_PORT=8444" \
             -e "MEPSERVER_CERT_DOMAIN_NAME=edgegallery" \
-            -e "ROOT_KEY=j7k0UwOJSsIfi3dzainoBdkcpJJJOJlzd2oBwMQxXdaZ3oCswITWUyLP4eldxdcKGmDvG1qwUEfQjAg71ZeFYyHgXa5OpBlmug3z06bs7ssr2XYTuPydK6y4K34UfsgRKEwMgGP1Ieo8x20lbjXcq0tJG4Q7xgakXs59NwnBeNg2N8R1FgfqD0z9weWgxd7DdJZkDpbJgdANT31y4KDeDCpJXld6XQOxi99mO2xQdMcH6OUyIfgDP7dPaJU57D33" \ # 根加密组件要求大于256位
+            -e "ROOT_KEY=j7k0UwOJSsIfi3dzainoBdkcpJJJOJlzd2oBwMQxXdaZ3oCswITWUyLP4eldxdcKGmDvG1qwUEfQjAg71ZeFYyHgXa5OpBlmug3z06bs7ssr2XYTuPydK6y4K34UfsgRKEwMgGP1Ieo8x20lbjXcq0tJG4Q7xgakXs59NwnBeNg2N8R1FgfqD0z9weWgxd7DdJZkDpbJgdANT31y4KDeDCpJXld6XQOxi99mO2xQdMcH6OUyIfgDP7dPaJU57D33" \ # The root encryption component requires more than 256 bits
             -e "TLS_KEY=te9Fmv%qaq" \
             -v /home/EG-LDVS/mepserver/mepserver_tls.crt:/usr/mep/ssl/server.cer:ro\
             -v /home/EG-LDVS/mepserver/mepserver_encryptedtls.key:/usr/mep/ssl/server_key.pem:ro\
@@ -2004,12 +2004,12 @@ root@ubuntu:~# docker run -itd --name mepserver \
 ```
 root@ubuntu:~# mkdir –p /tmp/mepauth-conf/
 root@ubuntu:~# cat > /tmp/mepauth-conf/mepauth.properties <<EOF
-JWT_PRIVATE_KEY=qC#4k5ibyZ #请保持与之前设置的jwt密码一致
+JWT_PRIVATE_KEY=qC#4k5ibyZ #Please keep it consistent with the previously set jwt password
 ACCESS_KEY=QVUJMSUMgS0VZLS0tLS0
 SECRET_KEY=DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc
 APP_INST_ID=5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f              
 KEY_COMPONENT=oikYVgrRbDZHZSaobOTo8ugCKsUSdVeMsg2d9b7Qr250q2HNBiET4WmecJ0MFavRA0cBzOWu8sObLha17auHoy6ULbAOgP50bDZapxOylTbr1kq8Z4m8uMztciGtq4e11GA0aEh0oLCR3kxFtV4EgOm4eZb7vmEQeMtBy4jaXl6miMJugoRqcfLo9ojDYk73lbCaP9ydUkO56fw8dUUYjeMvrzmIZPLdVjPm62R4AQFQ4CEs7vp6xafx9dRwPoym
-TRUSTED_LIST=<client_I_1>;<client_IP_2>;…… #请设置允许访问EG-LDVS的客户端IP白名单
+TRUSTED_LIST=<client_I_1>;<client_IP_2>;…… #Please set up a whitelist of client IPs allowed to access EG-LDVS
 EOF
 
 root@ubuntu:~# chown -R eguser:eggroup /tmp/mepauth-conf/
@@ -2033,7 +2033,7 @@ root@ubuntu:~# docker run -itd --name mepauth \
             -e "MEPSERVER_HOST=mepserver" \
             -e "MEPAUTH_DB_NAME=kong" \
             -e "MEPAUTH_DB_USER=kong" \
-            -e "MEPAUTH_DB_PASSWD=<password>" \ #请保持与之前数据库部署时设置的kong用户密码一致
+            -e "MEPAUTH_DB_PASSWD=<password>" \ #Please keep the password consistent with the Kong user password set during database deployment
             -e "MEPAUTH_DB_HOST=postgres-db" \
             edgegallery/mepauth:1.0
 ```
@@ -2046,15 +2046,15 @@ mepauth.properties文件中的"TRUSTED_LIST"字段用于设置允许调用EG-LDV
 提供的API服务的IP地址。如果需要修改允许调用EG-LDVS
 API服务的IP地址，需要用户进入Postgres数据库容器，然后更新Kong数据库中的plugins表数据，具体操作步骤如下：
 ```
-# 进入 Postgres 数据库容器
+# Enter the Postgres database container
 root@ubuntu:~# docker exec -it postgres-db /bin/sh
-# 登录 Kong 数据库, 登录时需要输入之前为kong用户设置的密码
+# Log in to the Kong database, you need to enter the password previously set for the Kong user when logging in
 $ psql -U kong
-# 更新plugins表数据，如果需要设置多个IP请用逗号分隔
+# Update the plugins table data, if you need to set multiple IPs, please separate them with commas
 $ update plugins set config='{"blacklist": null, "whitelist":["<client_IP_1>","<client_IP_2>"]}' where name='ip-restriction';
-# 退出 Postgres 数据库容器
+# Exit the Postgres database container
 $ exit
-# 重启kong容器
+# Restart the kong container
 root@ubuntu:~# docker restart kong-service
 ```
 ### EG-LDVS MEP-agent部署指导
@@ -2099,13 +2099,13 @@ root@ubuntu:/home/EG-LDVS/mep-agent# chown -R eguser:eggroup /tmp/mepagent-conf/
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod -R 640 /tmp/mepagent-conf/
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /tmp/mepagent-conf/app_conf.yaml
 
-# 运行mep-agent容器，完成mec app服务注册（注：运行前请先获取AK及SK，并完成MEC APP部署，根据部署的MEC APP的实际信息修改app_instance_info配置文件，内容见Mep-agent 配置文件 app_instance_info.yaml样例，此次假定app_instance_info.yaml保存在/home/EG-LDVS/mep-agent/conf路径下。）
+# Run the mep-agent container to complete the mec app service registration (Note: Please obtain the AK and SK before running, and complete the MEC APP deployment, modify the app_instance_info configuration file according to the actual information of the deployed MEC APP, see the Mep-agent configuration file for the content App_instance_info.yaml sample, this time it is assumed that app_instance_info.yaml is saved in the /home/EG-LDVS/mep-agent/conf path.)
 root@ubuntu:/home/EG-LDVS/mep-agent# chown -R eguser:eggroup /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml
 root@ubuntu:/home/EG-LDVS/mep-agent# chmod 600 /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml
 root@ubuntu:/home/EG-LDVS/mep-agent# cd conf
 root@ubuntu:/home/EG-LDVS/mep-agent/conf# docker run -itd --name mepagent \
          --cap-drop All \
-         -e MEP_IP=<host IP> \# host IP 为mep部署环境的IP地址**
+         -e MEP_IP=<host IP> \# host IP address of the mep deployment environment**
          -e MEP_APIGW_PORT=8443 \
          -e MEP_AUTH_ROUTE=mepauth \
          -e ENABLE_WAIT=true \
@@ -2116,7 +2116,7 @@ root@ubuntu:/home/EG-LDVS/mep-agent/conf# docker run -itd --name mepagent \
          -e "CA_CERT=/usr/mep/ssl/ca.crt" \
          -e "CA_CERT_DOMAIN_NAME=edgegallery" \
          -v /tmp/mepagent-conf/app_conf.yaml:/usr/mep/conf/app\_conf.yaml:ro \
-         -v /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml:/usr/mep/conf/app_instance_info.yaml:ro\ #可选， mep-agent默认自带一份样例app_instance_info.yaml用于注册
+         -v /home/EG-LDVS/mep-agent/conf/app_instance_info.yaml:/usr/mep/conf/app_instance_info.yaml:ro\ #Optional, mep-agent comes with a sample app_instance_info.yaml for registration by default
          edgegallery/mep-agent:1.0
 ```
 注：

@@ -95,7 +95,7 @@ SwImageDesc.json文件样例：
 
 ```
 [
-    //镜像在APP包内
+    //The image is in the APP package
     {
         "id":"1",
         "name":"monitoring-service-fe:1.0",
@@ -110,7 +110,7 @@ SwImageDesc.json文件样例：
         "operatingSystem":"ubuntu",
         "supportedVirtualisationEnvironment":"linux"
     }
-    //镜像不在APP包内
+    //The image is not in the APP package
     {
         "id":"2",
         "name":"monitoring-service-be:1.0",
