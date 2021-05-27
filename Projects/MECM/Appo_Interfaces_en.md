@@ -149,6 +149,21 @@ Method: POST
 |access_token |access token|header |yes|Jwt token|
 |app_instance_id |application instance id|path   |yes|Valid UUID|64|
 |tenant_id|tenant id|path |yes|Valid UUID|64|
+|parameters|map<string, string>|body |No|Valid String|255|
+
+Example request body:
+
+```
+{
+    "parameters": {    	
+        "mepIp"          : "mep ip",
+        "mepPort"        : "mep port",
+        "ak"             : "ak",
+        "sk"             : "sk" ,
+        "..."            : "..."
+    }
+}
+```
 
 Example response:
 
@@ -357,12 +372,23 @@ Method: POST
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |tenant_id|tenant id|path |yes|Valid UUID|64|
-|appInstanceIds|application instance id|body|yes|Valid UUID|64|
+|parameters|map<string, string>|body |No|Valid string|255|
 
 Example request body:
 ```
 {
- "appInstanceIds" : ["string","string"]
+    "instantiationParameters": [
+        {  
+          "appInstanceId": "d2134a3b-85e7-4bf6-b030-14c71219188a",
+          "parameters": {  
+                          "mepIp"          : "mep ip",
+                          "mepPort"        : "mep port",
+                          "ak"             : "ak",
+                          "sk"             : "sk",  
+                          "..."            : "..."
+          }
+        }
+    ]
 }
 
 ```
