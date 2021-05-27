@@ -12,7 +12,7 @@ Application instantiated
 |appInstanceId|string|required|Valid UUID|
 |hostIp|string|required|Valid IP|
 |package|bytes|required|Valid UUID without hypen|
-|parameters|map<string,string>|NA|Instantiation parameters, key-value pairs
+|parameters|key value pair|No|Instantiation parameters, key-value pairs
 
 ### InstantiateResponse
 
