@@ -27,11 +27,11 @@ msgstr "Developer Platform:<br> ![](/uploads/images/2021/gettingstarted/devhome_
 
 #: ../../Get A Demo EdgeGallery.md:6 Started/Start from on
 msgid "应用商城：<br> ![](/uploads/images/2021/v1.1/AppStore.png \"AppStore.png\")<br>"
-msgstr "Apply Business City:<br> ![](/uploads/images/2021/gettingstarted/appstorehome_en.png \"AppStore.png\")<br>"
+msgstr "Appstore: <br> ![](/uploads/images/2021/gettingstarted/appstorehome_en.png \"AppStore.png\")<br>"
 
 #: ../../Get A Demo EdgeGallery.md:9 Started/Start from on
 msgid "MEC管理平台：<br> ![](/uploads/images/2020/v1.0/Mecm.png \"Mecm.png\")<br>"
-msgstr "MEC management platform:<br> ![](/uploads/images/2020/v1.0/Mecm.png \"Mecm.png\")<br>"
+msgstr "MEC management platform:<br> ![](/uploads/images/2021/gettingstarted/mecmhome_en.png \"Mecm.png\")<br>"
 
 #: ../../Get A Demo EdgeGallery.md:12 Started/Start from on
 msgid "APP开发流程"
