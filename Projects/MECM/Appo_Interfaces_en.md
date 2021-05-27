@@ -150,6 +150,25 @@ Method: POST
 |app_instance_id |application instance id|path   |yes|Valid UUID|64|
 |tenant_id|tenant id|path |yes|Valid UUID|64|
 
+Example request body:
+
+```
+{
+    "parameters": {    	
+        "mepIp"          : "mep ip",
+        "mepPort"        : "mep port",
+        "ak"             : "ak",
+        "sk"             : "sk" ,
+        "abalityZone"    : "zone",
+        "ServerGroup"    : "serverGroup",
+        "Net_n6_ip"      : "net_n6_ip",
+        "Net_n6_mask"    : "net_n6_mask",
+        "Net_n6_vlan_id" : "net_n6_vlan_id",
+        "Net_n6_phy_name": "net_n6_phy_name"
+    }
+}
+```
+
 Example response:
 
 ```
@@ -362,7 +381,23 @@ Method: POST
 Example request body:
 ```
 {
- "appInstanceIds" : ["string","string"]
+    "instantiationParameters": [
+        {  
+          "appInstanceId": "d2134a3b-85e7-4bf6-b030-14c71219188a",
+          "parameters": {  
+                          "mepIp"          : "mep ip",
+                          "mepPort"        : "mep port",
+                          "ak"             : "ak",
+                          "sk"             : "sk",  
+                          "abilityZone"    : "Zone",
+                          "ServerGroup"    : "serverGroup",
+                          "Net_n6_ip"      : "net_n6_i",
+                          "Net_n6_mask"    : "net_n6_mask",
+                          "Net_n6_vlan_id" : "net_n6_vlan_id",
+                          "Net_n6_phy_name": "net_n6_phy_name"
+          }
+        }
+    ]
 }
 
 ```

@@ -1244,13 +1244,13 @@ Method: GET
 ```
 200 OK
 [
- {
+    {
       "mepmIp": "string",
       "mepmName": "string",
       "mepmPort": "string",
       "userName": "string"
-   }
-  ]
+    }
+]
 ```
 ### Add MEPM Record
 Adds new MEPM record
@@ -1269,14 +1269,12 @@ Method: POST
 
 Example request body:
 ```
-[
-  {
-      "mepmIp": "string",
-      "mepmName": "string",
-      "mepmPort": "string",
-      "userName": "string"
-  }
-]
+{
+    "mepmIp": "string",
+    "mepmName": "string",
+    "mepmPort": "string",
+    "userName": "string"
+}
 ```
 
 Example response:
@@ -1327,11 +1325,11 @@ Method: GET
 ```
 200 OK
 {
-      "mepmIp": "string",
-      "mepmName": "string",
-      "mepmPort": "string",
-      "userName": "string"
-  }
+    "mepmIp": "string",
+    "mepmName": "string",
+    "mepmPort": "string",
+    "userName": "string"
+}
 ```
 ### Update MEPM Record
 Updates existing mepm record
@@ -1352,11 +1350,11 @@ Method: PUT
 Example request body:
 ```
 {
-        "mepmIp": "string",
-        "mepmName": "string",
-        "mepmPort": "string",
-        "userName": "string"
-  }
+    "mepmIp": "string",
+    "mepmName": "string",
+    "mepmPort": "string",
+    "userName": "string"
+}
 ```
 
 Example response:
