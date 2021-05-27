@@ -2,166 +2,6 @@ Inventory Interfaces
 ==============
 The document is for the Inventory project, there are three parts of interfaces in the project.
 
-### Get All Application LCM records
-
-Retrieves all application LCM records
-
-```
-Resource URI: /inventory/v1/applcms
-Method: GET
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-
-Example response:
-```
-200 OK
-[
-  {
-    "applcmIp": "string",
-    "applcmPort": "string",
-    "userName": "string",
-    "applcmName": "string"
-  }
-]
-```
-
-### Add Applcm Record
-Adds new application LCM record
-```
-Resource URI: /inventory/v1/applcms
-Method: POST
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-|applcmIp|applcmIp|body|yes|Valid URL|15|
-|applcmPort|applcmPort|body|yes|Valid Port|
-|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
-
-Example request body:
-```
-{
-  "applcmIp": "string",
-  "applcmPort": "string",
-  "userName": "string",
-  "applcmName": "string"
-}
-```
-
-Example response:
-```
-200 OK
-[
-  {
-    "Saved"
-  }
-]
-```
-
-### Delete All Applcm Record
-Deletes all application LCM Records.
-```
-Resource URI: /inventory/v1/applcms
-Method: DELETE
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-
-Example response:
-```
-200 OK
-[
-  {
-    "Deleted"
-  }
-]
-```
-
-### Get Application LCM Record
-Retrieves application LCM Record
-```
-Resource URI: /inventory/v1/applcms/{applcm_ip}
-Method: GET
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-|applcm_ip|applcm ip|path |yes|Valid IP Address|15|
-
-Example response:
-```
-200 OK
-{
-  "applcmIp": "string",
-  "applcmPort": "string",
-  "userName": "string",
-  "applcmName": "string"
-}
-```
-
-### Update Application LCM Record
-Updates existing application LCM record
-```
-Resource URI: /inventory/v1/applcms/{applcm_ip}
-Method: PUT
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-|applcm_ip|applcm IP|path |yes|Valid IP Address|15|
-|appstorePort|appstorePort|body|yes|Valid Port|5|
-|userName|userName|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
-
-Example request body:
-```
-{
-  "appstoreIp": "string",
-  "appstorePort": "string",
-  "userName": "string",
-  "applcmName": "string"
-}
-```
-
-Example response:
-```
-200 OK
-[
-  {
-    "Updated"
-  }
-]
-```
-
-### Delete Application LCM Record
-Deletes application LCM record
-```
-Resource URI: /inventory/v1/applcms/{applcm_ip}
-Method: DELETE
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-|applcm_ip |applcm ip|path |yes|Valid IP Address|15|
-
-Example response:
-```
-200 OK
-[
-  {
-    "Deleted"
-  }
-]
-```
-
 ### Get All Application Records 
 Retrieves all application store records
 ```
@@ -1020,164 +860,6 @@ Example response:
 200 OK
 ```
 
-### Add application rule
-Adds a new application rule manager record entry into the Inventory.
-```
-Resource URI: /inventory/v1/apprulemanagers
-Method: POST
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-|appRulePort|appRulePort|body|yes|Valid Port Number|5|
-|appRuleIp|appRuleIp|body|yes|Valid IP Address|15|
-|appRuleName|appRuleName|body|yes|AlphaNumeric,special characters allowed are hypen and underscore|128|
-|userName|userName|body|no|AlphaNumeric,special characters allowed are hypen and underscore|128|
-
-Example request body:
-```
-{
-  "appRuleIp": "string",
-  "appRulePort": "string",
-  "userName": "string",
-  "appRuleName": "string"
-}
-```
-
-Example response:
-```
-200 OK
-{
-    "Saved"
-}
-```
-
-### Update application rule
-Updates an exiting application rule manager record in the Inventory matching the given tenant ID &
-appRuleManager IP.
-```
-Resource URI: /inventory/v1/apprulemanagers/{app_rule_manager_ip}
-Method: PUT
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-|app_rule_manager_ip|app rule manager IP|path|yes|Valid IP Address|15|
-|appRulePort|appRulePort|body|yes|Valid Port Number|5|
-|appRuleIp|appRuleIp|body|yes|Valid IP Address|15|
-|userName|userName|body|no|AlphaNumeric,special characters allowed are hypen and underscore|128|
-
-Example request body:
-```
-{
-  "appRuleIp": "string",
-  "appRulePort": "string",
-  "userName": "string",
-  "appRuleName": "string"
-}
-```
-
-Example response:
-```
-200 OK
-{
-    "Updated"
-}
-```
-
-### Get all application rule manager records
-Retrieves all application rule manager records .
-```
-Resource URI: /inventory/v1/apprulemanagers
-Method: GET
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-
-
-Example response:
-```
-200 OK
-[
-  {
-    "appRuleIp": "string",
-    "appRulePort": "string",
-    "userName": "string",
-    "appRuleName": "string"
-  }
-]
-```
-
-### Get specific application rule manager record
- Retrieves a specific application rule manager record in the Inventory matching the given tenant ID &
- app rule manager IP
-```
-Resource URI: /inventory/v1/apprulemanagers/{app_rule_manager_ip}
-Method: GET
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-|app_rule_manager_ip|app rule manager IP|path|yes|Valid IP Address|15|
-
-
-Example response:
-```
-200 OK
-{
-  "appRuleIp": "string",
-  "appRulePort": "string",
-  "userName": "string",
-  "appRuleName": "string"
-}
-```
-
-### Delete all application rule manager records
-Deletes all records for a given tenant
-```
-Resource URI: /inventory/v1/apprulemanagers
-Method: DELETE
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-
-
-Example response:
-```
-200 OK
-{
-    "Deleted"
-}
-```
-
-### Delete application rule manager record
-Delete a specific application rule manager record in the Inventory matching the given tenant ID
-& app rule manager IP.
-```
-Resource URI: /inventory/v1/apprulemanagers/{app_rule_manager_ip}
-Method: DELETE
-```
-
-|Name|Definition|type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-|access_token |access token|header |yes|Jwt token|
-|app_rule_manager_ip|app rule manager IP|path|yes|Valid IP Address|15|
-
-Example response:
-```
-200 OK
-{
-    "Deleted"
-}
-```
-
 ### Add APPDRule record to Inventory.
 Adds a new APPDRule record entry into the Inventory.
 ```
@@ -1545,6 +1227,167 @@ Example response body:
         }
     ]
 }
+```
+### Get MEPM Record
+
+Retrieves all MEPM records
+
+```
+Resource URI: /inventory/v1/mepms
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+
+```
+200 OK
+[
+ {
+      "mepmIp": "string",
+      "mepmName": "string",
+      "mepmPort": "string",
+      "userName": "string"
+   }
+  ]
+```
+### Add MEPM Record
+Adds new MEPM record
+```
+Resource URI: /inventory/v1/mepms
+Method: POST
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|mepmIp|mepm Ip|body|yes|Valid IP address|15|
+|mepmName|mepm Name|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|mepmPort|mepm Port|body|yes|Vaild Port|5|
+|userName|user Name|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+
+Example request body:
+```
+[
+  {
+      "mepmIp": "string",
+      "mepmName": "string",
+      "mepmPort": "string",
+      "userName": "string"
+  }
+]
+```
+
+Example response:
+```
+200 OK
+[
+  {
+    "Saved"
+  }
+]
+```
+
+### Delete All MEPM Records
+Deletes all mepm records
+```
+Resource URI: /inventory/v1/mepms
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+
+Example response:
+```
+200 OK
+[
+  {
+    "Deleted"
+  }
+]
+```
+
+### Get MEPM Record
+
+Retrieves mepm records
+
+```
+Resource URI: /inventory/v1/mepms/{mepm_ip}
+Method: GET
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|mepm_ip |mepm IP|path |yes|Valid IP address|15|
+
+```
+200 OK
+{
+      "mepmIp": "string",
+      "mepmName": "string",
+      "mepmPort": "string",
+      "userName": "string"
+  }
+```
+### Update MEPM Record
+Updates existing mepm record
+```
+Resource URI: /inventory/v1/mepms/{mepm_ip}
+Method: PUT
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|mepm_ip|mepm IP|path|yes|Valid IP address|15|
+|mepmIp|mepm Ip|body|yes|Vaild IP address|15|
+|mepmName|mepm Name|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+|mepmPort|mepm Port|body|yes|Vaild Port|5|
+|userName|user Name|body|yes|AlphaNumeric, special characters allowed are hypen and underscore|128|
+
+Example request body:
+```
+{
+        "mepmIp": "string",
+        "mepmName": "string",
+        "mepmPort": "string",
+        "userName": "string"
+  }
+```
+
+Example response:
+```
+200 OK
+[
+  {
+    "Updated"
+  }
+]
+```
+### Delete MEPM Record
+Deletes mepm record
+```
+Resource URI: /inventory/v1/mepms/{mepm_ip}
+Method: DELETE
+```
+
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|mepm_ip |mepm IP|path |yes|Valid IP Address|15|
+
+Example response:
+```
+200 OK
+[
+  {
+    "Deleted"
+  }
+]
 ```
 
 ### Inventory Open Api Swagger
