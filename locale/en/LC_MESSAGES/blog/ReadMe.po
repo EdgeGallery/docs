@@ -8,32 +8,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../blog/ReadMe.md:1
-msgid "# 社区blog"
-msgstr "# Community blog"
+msgid "社区blog"
+msgstr "Community blog"
 
 #: ../../blog/ReadMe.md:3
-msgid "## 博客目录"
-msgstr "## Blog directory"
+msgid "博客目录"
+msgstr "Blog"
 
 #: ../../blog/ReadMe.md:5
-msgid "### 社区技术博客"
-msgstr "### Community Technology Blog"
+msgid "社区技术博客"
+msgstr "Community technology blog"
 
 #: ../../blog/ReadMe.md:7
-msgid "### 社区运营博客"
-msgstr "### Community Operations Blog"
+msgid "社区运营博客"
+msgstr "Community operations blog"
 
 #: ../../blog/ReadMe.md:9
-msgid "## 博客写作建议 命名方式：写作日期+名称 文件存放："
-msgstr "## Blog Writing Suggsuggestions Name: Writing Date + Name Document Deposit:"
+msgid "博客写作建议"
+msgstr "Blog writing advice"
+
+#: ../../blog/ReadMe.md:10
+msgid "命名方式：写作日期+名称 文件存放："
+msgstr "Name: Writing Date + Name Document Deposit:"
 

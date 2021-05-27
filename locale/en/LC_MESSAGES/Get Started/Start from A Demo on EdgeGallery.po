@@ -8,96 +8,124 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Get A Demo EdgeGallery.md:2 Started/Start from on
-msgid "# EdgeGallery界面一览"
-msgstr "# EdgeGallery Overview"
+#: ../../Get A Demo EdgeGallery.md:1 Started/Start from on
+msgid "EdgeGallery界面一览"
+msgstr "EdgeGallery Overview"
 
 #: ../../Get A Demo EdgeGallery.md:3 Started/Start from on
-msgid "开发者平台：<br> ![](/uploads/images/2020/v1.0/Developer.png \"Developer.png\")<br>"
-msgstr "Developer Platform:<br> ! [](/uploads/images/2020/v1.0/Developer.png \" Developer.png \")<br>"
+msgid "开发者平台：<br> ![](/uploads/images/2021/v1.1/Developer.png \"Developer.png\")<br>"
+msgstr "Developer Platform:<br> ![](/uploads/images/2021/gettingstarted/devhome_en.png \"Developer.png\")<br>"
 
 #: ../../Get A Demo EdgeGallery.md:6 Started/Start from on
-msgid "应用商城：<br> ![](/uploads/images/2020/v1.0/AppStore.png \"AppStore.png\")<br>"
-msgstr "Apply Business City:<br> ! [](/uploads/images/2020/v1.0/AppStore.png \" AppStore.png \")<br>"
+msgid "应用商城：<br> ![](/uploads/images/2021/v1.1/AppStore.png \"AppStore.png\")<br>"
+msgstr "Apply Business City:<br> ![](/uploads/images/2021/gettingstarted/appstorehome_en.png \"AppStore.png\")<br>"
 
 #: ../../Get A Demo EdgeGallery.md:9 Started/Start from on
 msgid "MEC管理平台：<br> ![](/uploads/images/2020/v1.0/Mecm.png \"Mecm.png\")<br>"
-msgstr "MEC management platform:<br> ! [](/uploads/images/2020/v1.0/Mecm.png \" Mecm.png \")<br>"
+msgstr "MEC management platform:<br> ![](/uploads/images/2020/v1.0/Mecm.png \"Mecm.png\")<br>"
 
-#: ../../Get A Demo EdgeGallery.md:13 Started/Start from on
-msgid "# APP开发流程"
-msgstr "# APP Development Process"
+#: ../../Get A Demo EdgeGallery.md:12 Started/Start from on
+msgid "APP开发流程"
+msgstr "APP Development Process"
 
 #: ../../Get A Demo EdgeGallery.md:14 Started/Start from on
-msgid "![](/uploads/images/2020/v1.0/FlowChart.png \"FlowChart.png\")<br>"
-msgstr "! [](/uploads/images/2020/v1.0/FlowChart.png \" FlowChart.png \")<br>"
+msgid "![](/uploads/images/2021/v1.1/FlowChart.png \"FlowChart.png\")<br>"
+msgstr "![](/uploads/images/2021/gettingstarted/devflow_en.png \"FlowChart.png\")<br>"
 
-#: ../../Get A Demo EdgeGallery.md:17 Started/Start from on
-msgid "# Demo介绍"
-msgstr "# Demo introduction"
+#: ../../Get A Demo EdgeGallery.md:16 Started/Start from on
+msgid "Demo介绍"
+msgstr "Demo Introduction"
 
 #: ../../Get A Demo EdgeGallery.md:18 Started/Start from on
-msgid "基于EdgeGallery的定位服务开发，展示如何基于EdgeGallery开发者平台进行边缘应用开发<br> * 定位服务应用作为服务消费者依赖EdgeGallery平台的“人脸识别服务”<br> * 定位服务应用作为服务供应者发布“定位服务”，对外提供生态API，其他服务可以消费“定位服务”<br>"
-msgstr "Based on EdgeGallery's positioning service development, showing how to edge application development<br> on the EdgeGallery developer platform<br> * positioning service application as a service consumer on the EdgeGallery platform's Face Recognition Service<br> * positioning service app as a service provider publishes Location Services, provides eco-API externally, and other services can consume Location Services<br>"
+msgid "基于EdgeGallery的定位服务开发，展示如何基于EdgeGallery开发者平台进行边缘应用开发<br>"
+msgstr "Based on the EdgeGallery's positioning service development, shows how to exploit the edge application development based on the EdgeGallery developer platform<br>"
+
+#: ../../Get A Demo EdgeGallery.md:19 Started/Start from on
+msgid "定位服务应用作为服务消费者依赖EdgeGallery平台的“人脸识别服务”<br>"
+msgstr "The positioning service app as a service consumer relies on the \"face recognition service\" of the EdgeGallery platform<br>"
+
+#: ../../Get A Demo EdgeGallery.md:20 Started/Start from on
+msgid "定位服务应用作为服务供应者发布“定位服务”，对外提供生态API，其他服务可以消费“定位服务”<br>"
+msgstr "The positioning service application, as a service provider, publishes the Location Service, provides eco-API externally, and other services can consume the Location Service<br>"
 
 #: ../../Get A Demo EdgeGallery.md:22 Started/Start from on
-msgid "## 登录EdgeGallery开发者平台 https://developer.edgegallery.org/<br><br> ## 开发准备 * 新建一个项目<br> ![](/uploads/images/2020/v1.0/CreateProject.png \"CreateProject.png\") * 选择依赖的平台能力，勾选“Service Discovery”<br> ![](/uploads/images/2020/v1.0/AbilitySelection.png \"AbilitySelection.png\")"
-msgstr "## Register EdgeGallery Developer Platform https://developer.edgegallery.org/<br><br> ## Development Prepare * New One Entry<br> ! [](/uploads/images/2020/v1.0/CreateProject.png \" CreateProject.png \") * Choose the platform capability to rely on, check "Service Discovery"<br> ! [](/uploads/images/2020/v1.0/AbilitySelection.png \" AbilitySelection.png \")"
+msgid "开发准备"
+msgstr "Development preparation"
 
-#: ../../Get A Demo EdgeGallery.md:30 Started/Start from on
-msgid "## 本地开发 * 下载依赖的插件-BashSupport，并导入到本地IDE<br> ![](/uploads/images/2020/v1.0/Plug-in.png \"Plug-in.png\") * 执行插件，会自动生成示例代码<br> ![](/uploads/images/2020/0927/execute_plugin.png \"执行插件生成示例代码.png\") * 编写APP代码<br> * 构建docker image<br><br> ## 部署调测 * 部署调测页面可进行应用的部署测试"
-msgstr "## Local Development * Download the dependent plug-in -BashSupport and import into the local IDE<br> ! [](/uploads/images/2020/v1.0/Plug-in.png \" Plug-in.png \") * Running the plug-in automatically generates the example code<br> ! [](/uploads/images/2020/0927/execute_plugin.png \" Run plugin generation example code .png \") * Authoring APP code<br> * Building docker image<br><br> ## Deploy Detesting * Deploying the deployment test page for application deployment tests"
+#: ../../Get A Demo EdgeGallery.md:23 Started/Start from on
+msgid "新建一个项目<br> ![](/uploads/images/2021/v1.1/CreateProject.png \"CreateProject.png\")"
+msgstr "New one entry<br> ![](/uploads/images/2021/v1.1/CreateProject.png \"CreateProject.png\")"
 
-#: ../../Get A Demo EdgeGallery.md:40 Started/Start from on
-msgid "第一步：上传App镜像，此页面提供了集中上传App镜像的方式，目前未实现。目前版本实现的是通过上传Yaml方式来部署镜像，或通过用户使用公网连接边缘节点进行部署"
-msgstr "First step: Upload the App Mirror, this page provides a way to centrally upload the image of the App, which is not currently implemented.The current version is achieved by uploading a mirror image by uploading Yaml, or by using a public network connection edge node by a user"
+#: ../../Get A Demo EdgeGallery.md:25 Started/Start from on
+msgid "选择依赖的平台能力，勾选“服务发现”<br> ![](/uploads/images/2021/v1.1/AbilitySelection.png \"AbilitySelection.png\")"
+msgstr "Choose the platform ability to rely on, check \"Service discovery\"<br> ![](/uploads/images/2021/v1.1/AbilitySelection.png \"AbilitySelection.png\")"
+
+#: ../../Get A Demo EdgeGallery.md:28 Started/Start from on
+msgid "本地开发"
+msgstr "Local development"
+
+#: ../../Get A Demo EdgeGallery.md:29 Started/Start from on
+msgid "下载依赖的插件-BashSupport，并导入到本地IDE<br> ![](/uploads/images/2020/v1.0/Plug-in.png \"Plug-in.png\")"
+msgstr "Download the dependent plug-in -BashSupport and import into the local IDE<br> ![](/uploads/images/2020/v1.0/Plug-in.png \"Plug-in.png\")"
+
+#: ../../Get A Demo EdgeGallery.md:31 Started/Start from on
+msgid "执行插件，会自动生成示例代码<br> ![](/uploads/images/2020/0927/execute_plugin.png \"执行插件生成示例代码.png\")"
+msgstr "Running the plug-in automatically generates the example code<br> ![](/uploads/images/2020/0927/execute_plugin.png \"Run plugin generation example code.png\")"
+
+#: ../../Get A Demo EdgeGallery.md:33 Started/Start from on
+msgid "编写APP代码<br>"
+msgstr "Authoring APP code<br>"
+
+#: ../../Get A Demo EdgeGallery.md:34 Started/Start from on
+msgid "构建docker image<br><br>"
+msgstr "Building docker image<br><br>"
+
+#: ../../Get A Demo EdgeGallery.md:35 Started/Start from on
+msgid "部署调测"
+msgstr "Deploy the test."
+
+#: ../../Get A Demo EdgeGallery.md:36 Started/Start from on
+msgid "部署调测页面可进行应用的部署测试"
+msgstr "Deploying a test page for deployment tests that can be applied"
+
+#: ../../Get A Demo EdgeGallery.md:38 Started/Start from on
+msgid "第一步：上传App镜像。 ![](/uploads/images/2021/developer/deploy-one.PNG \"deploy-one.PNG\")"
+msgstr "First step: Upload the App Mirror. ![](/uploads/images/2021/developer/deploy-one.PNG \"deploy-one.PNG\")"
 
 #: ../../Get A Demo EdgeGallery.md:41 Started/Start from on
-msgid "![](/uploads/images/2020/v1.0/DeploymentTest-UploadImage.png \"DeploymentTest-UploadImage.png\")"
-msgstr "! [](/uploads/images/2020/v1.0/DeploymentTest-UploadImage.png \" DeploymentTest-UploadImage.png \")"
-
-#: ../../Get A Demo EdgeGallery.md:43 Started/Start from on
-msgid "第二步：配置部署文件，此页面提供Yaml文件上传入口，以及可视化配置（此版本未实现）。并对上传的Yaml文件进行可用性校验，校验通过后可选择下一步进行部署测试"
-msgstr "Step 2: Configure the deployment document, which provides the Yaml file upload portal and the visualization configuration (this version is not realized).carrying out usability checking for uploaded Yaml file, and selecting next step of deployment test after checking is passed"
+msgid "第二步：配置部署文件。 ![](/uploads/images/2021/developer/deploy-two-config.PNG \"deploy-two-config.PNG\")"
+msgstr "Step 2: Configure the deployment document. ![](/uploads/images/2021/developer/deploy-two-config.PNG \"deploy-two-config.PNG\")"
 
 #: ../../Get A Demo EdgeGallery.md:44 Started/Start from on
-msgid "![](/uploads/images/2020/v1.0/DeploymentTest-ConfigurationFile.png \"DeploymentTest-ConfigurationFile.png\")"
-msgstr "! [](/uploads/images/2020/v1.0/DeploymentTest-ConfigurationFile.png \" DeploymentTest-ConfigurationFile.png \")"
-
-#: ../../Get A Demo EdgeGallery.md:46 Started/Start from on
-msgid "第三步：部署调测"
-msgstr "Step three: Deploy the test."
+msgid "第三步：部署调测。 ![](/uploads/images/2020/v1.0/DeploymentTest.png \"DeploymentTest.png\")"
+msgstr "The third step is to deploy the modulation test. ![](/uploads/images/2020/v1.0/DeploymentTest.png \"DeploymentTest.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:47 Started/Start from on
-msgid "![](/uploads/images/2020/v1.0/DeploymentTest.png \"DeploymentTest.png\")"
-msgstr "! [](/uploads/images/2020/v1.0/DeploymentTest.png \" DeploymentTest.png \")"
+msgid "应用发布"
+msgstr "Application Publish"
 
-#: ../../Get A Demo EdgeGallery.md:49 Started/Start from on
-msgid "##  应用发布 * 应用发布页面可进行应用配置、应用认证测试，测试通过后可将应用发布至应用仓库。"
-msgstr "## Application Publishing * The application publishing page is available for application configuration, application authentication test, and after the test is passed, the application can be published to the application warehouse."
+#: ../../Get A Demo EdgeGallery.md:48 Started/Start from on
+msgid "应用发布页面可进行应用配置、应用认证测试，测试通过后可将应用发布至应用仓库。"
+msgstr "The application distribution page can be applied to application and test, and the application can be published to the application warehouse after the test is passed."
+
+#: ../../Get A Demo EdgeGallery.md:50 Started/Start from on
+msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-1.png \"ApplicationRelease-1.png\")"
+msgstr "![](/uploads/images/2020/v1.0/ApplicationRelease-1.png \"ApplicationRelease-1.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:52 Started/Start from on
-msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-1.png \"ApplicationRelease-1.png\")"
-msgstr "! [](/uploads/images/2020/v1.0/ApplicationRelease-1.png \" ApplicationRelease-1.png \")"
+msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-2.png \"ApplicationRelease-2.png\")"
+msgstr "![](/uploads/images/2020/v1.0/ApplicationRelease-2.png \"ApplicationRelease-2.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:54 Started/Start from on
-msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-2.png \"ApplicationRelease-2.png\")"
-msgstr "! [](/uploads/images/2020/v1.0/ApplicationRelease-2.png \" ApplicationRelease-2.png \")"
-
-#: ../../Get A Demo EdgeGallery.md:56 Started/Start from on
 msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-3.png \"ApplicationRelease-3.png\")"
-msgstr "! [](/uploads/images/2020/v1.0/ApplicationRelease-3.png \" ApplicationRelease-3.png \")"
-
-#: ../../Get A Demo EdgeGallery.md:58 Started/Start from on
-msgid "详细信息可参考： [视频](https://gitee.com/edgegallery/community/blob/master/TSC/Release/v0.9/EdgeGallery%20Demo%20Recording.mp4)"
-msgstr "Detailed information may refer to: [Video] (https: //gitee.com/edgegallery/community/blob/master/TSC/Release/v0.9/EdgeGallery%20Demo%20Recording.mp4)"
+msgstr "![](/uploads/images/2020/v1.0/ApplicationRelease-3.png \"ApplicationRelease-3.png\")"
 

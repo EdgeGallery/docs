@@ -8,22 +8,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../README.md:1
-msgid "# docs"
-msgstr "# docs"
+msgid "docs"
+msgstr "docs"
 
 #: ../../README.md:3
-msgid "## 介绍 该仓库的文档通过文档工具编译形成[文档](http://docs.edgegallery.org/zh_CN/latest/)，链接如下：http://docs.edgegallery.org/zh_CN/latest/）"
-msgstr "## The documentation on the warehouse is compiled into [document] through document tools (http://docs.edgeegalery.org/zh_CN/latest/), which is linked to :http://docs.edgegallery.org/zh_CN/latest/)"
+msgid "介绍"
+msgstr "introduction"
+
+#: ../../README.md:4
+msgid "该仓库的文档通过文档工具编译形成[文档](http://docs.edgegallery.org/zh_CN/latest/)，链接如下：http://docs.edgegallery.org/zh_CN/latest/"
+msgstr "Documents of the warehouse are compiled through document tools [Document](http://docs.edgegallery.org/zh_CN/latest/), The link is as follows :http://docs.edgegallery.org/zh_CN/latest/"
 
 #: ../../README.md:6
 msgid "该文档当前包含内容如下："
@@ -32,30 +36,34 @@ msgstr "The document currently contains the following:"
 #: ../../README.md:8
 #, python-format
 msgid "[Get Started](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery.md)"
-msgstr "[Get Started] (https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery.md)"
+msgstr "[Get Started](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery.md)"
 
 #: ../../README.md:9
 #, python-format
 msgid "[Developer Guide](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
-msgstr "[Developer Guide] (https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
+msgstr "[Developer Guide](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
 
 #: ../../README.md:10
 msgid "[Release Notes](https://gitee.com/edgegallery/docs/blob/master/Release%20Notes/EdgeGallery_RN_zh.md)"
-msgstr "[Release Notes] (https://gitee.com/edgegallery/docs/blob/master/Release%20Notes/EdgeGallery_RN_zh.md)"
+msgstr "[Release Notes](https://gitee.com/edgegallery/docs/blob/master/Release%20Notes/EdgeGallery_RN_zh.md)"
 
 #: ../../README.md:11
 msgid "[Projects](https://gitee.com/edgegallery/docs/tree/master/Projects)"
-msgstr "[Projects] (https://gitee.com/edgegallery/docs/tree/master/Projects)"
+msgstr "[Projects](https://gitee.com/edgegallery/docs/tree/master/Projects)"
 
 #: ../../README.md:12
 msgid "[blog](https://gitee.com/edgegallery/docs/blob/master/blog/ReadMe.md)"
-msgstr "[blog] (https: //gitee.com/edgegallery/docs/blob/master/blog/ReadMe.md)"
+msgstr "[blog](https://gitee.com/edgegallery/docs/blob/master/blog/ReadMe.md)"
 
 #: ../../README.md:14
-msgid "## 版权 [Apache License Version 2.0](https://gitee.com/edgegallery/docs/blob/master/license)"
-msgstr "## Copyright [Apache License Version 2.0] (https://gitee.com/edgegallery/docs/blob/master/license)"
+msgid "版权"
+msgstr "copyright"
+
+#: ../../README.md:15
+msgid "[Apache License Version 2.0](https://gitee.com/edgegallery/docs/blob/master/license)"
+msgstr "[Apache License Version 2.0](https://gitee.com/edgegallery/docs/blob/master/license)"
 
 #: ../../README.md:17
 msgid "[Creative Commons Corporation 4.0（CC-BY-4.0）](https://gitee.com/edgegallery/docs/blob/master/license-cc-by-4.0)"
-msgstr "[Creative Commons Corporation 4.0 (CC-BY-4.0)] (https://gitee.com/edgegallery/docs/blob/master/license-cc-by-4.0)"
+msgstr "[Creative Commons Corporation 4.0 (CC-BY-4.0)](https://gitee.com/edgegallery/docs/blob/master/license-cc-by-4.0)"
 

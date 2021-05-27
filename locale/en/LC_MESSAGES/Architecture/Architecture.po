@@ -8,27 +8,35 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../Architecture/Architecture.md:1
-msgid "EdgeGallery v1.0 版本 架构图"
-msgstr "EdgeGallery v1.0 Architecture diagram"
+msgid "EdgeGallery v1.1 版本 架构图"
+msgstr "EdgeGallery v1.1 version framework diagram"
+
+#: ../../Architecture/Architecture.md:3
+msgid "![EdgeGallery v1.1 Architecture](/uploads/images/2021/v1.1/EdgeGallery_Architecture.png \"EdgeGallery_Architecture.png\")"
+msgstr "![EdgeGallery v1.1 Architecture](/uploads/images/2021/v1.1/EdgeGallery_Architecture.png \"EdgeGallery_Architecture.png\")"
 
 #: ../../Architecture/Architecture.md:5
-msgid "参与EdgeGallery 架构讨论 - 架构工作组[会议纪要]"
-msgstr "Participation in the EdgeGallery Framework Discussion-Framework Working Group [minutes]"
+msgid "参与EdgeGallery 架构讨论"
+msgstr "Participation in the EdgeGallery framework discussion"
 
-#: ../../Architecture/Architecture.md:5
-msgid "架构工作组[需求讨论] 项目[架构Review]"
-msgstr "Framework Working Group [Requirements Discussion]"
+#: ../../Architecture/Architecture.md:6
+msgid "架构工作组[会议纪要](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Meetings)"
+msgstr "Framework Working Group [minutes](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Meetings)"
 
-#: ../../Architecture/Architecture.md:5
-msgid "项目[架构"
-msgstr "Project [Framework"
+#: ../../Architecture/Architecture.md:7
+msgid "架构工作组[需求讨论](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements)"
+msgstr "Framework Working Group [Requirements Discussion](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements)"
+
+#: ../../Architecture/Architecture.md:8
+msgid "项目[架构Review](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Architecture%20Review)"
+msgstr "Project [Framework Review](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Architecture%20Review)"

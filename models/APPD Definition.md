@@ -63,11 +63,11 @@ Inputs参数格式参见TOSCA Simple Profile in YAML Version 1.1。以下列出A
 
 ```
 <parameter_name>:
-  type: <parameter_type> #参数类型，支持String，Integer，Boolean
-  description: <parameter_descriptioon> #参数描述信息
-  required: <parameter_required> #定义该参数是否为必选参数
-  default: <parameter_default_value> #定义该参数的默认取值
-  constraints: #定义该参数的取值范围
+  type: <parameter_type> #Parameter type, support String, Integer, Boolean
+  description: <parameter_descriptioon> #Parameter description information
+  required: <parameter_required> #Define whether the parameter is required
+  default: <parameter_default_value> #Define the default value of this parameter
+  constraints: #Define the value range of the parameter
   -<parameter_constraints> 
 ```
 
@@ -124,7 +124,7 @@ APP节点的样例如下：
         flavour_description: default flavor
       artifacts:
         app_deployment:
-          file: /artifacts/Deployments/charts/monitoring_service.zip # app的helm chart部署包
+          file: /artifacts/Deployments/charts/monitoring_service.zip # app's helm chart deployment package
           type: tosca.artifacts.Deployment
 ```
 
@@ -157,7 +157,7 @@ Pod/VM节点的定义样例如下：
         name: logic0
         description: node logic template
         sw_image_data:
-          name: mep-agent:1.0,monitoring-service-be:1.0 #定义Pod的镜像列表，名称取自SwImageDesc.json
+          name: mep-agent:1.0,monitoring-service-be:1.0 #Define Pod mirror list, the name is taken from SwImageDesc.json
         vdu_profile:
           min_number_of_instances: 1
           max_number_of_instances: 2
