@@ -149,13 +149,13 @@ Method: POST
 |access_token |access token|header |yes|Jwt token|
 |app_instance_id |application instance id|path   |yes|Valid UUID|64|
 |tenant_id|tenant id|path |yes|Valid UUID|64|
-|parameters|map<string, string>|body |No|Valid String|255|
+|parameters|key value pair|body |No|Valid String||
 
 Example request body:
 
 ```
 {
-    "parameters": {    	
+    "parameters": { 
         "mepIp"          : "mep ip",
         "mepPort"        : "mep port",
         "ak"             : "ak",
@@ -372,7 +372,7 @@ Method: POST
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |tenant_id|tenant id|path |yes|Valid UUID|64|
-|parameters|map<string, string>|body |No|Valid string|255|
+|instantiationParameters|array of key value pair|body |No|Valid string||
 
 Example request body:
 ```
