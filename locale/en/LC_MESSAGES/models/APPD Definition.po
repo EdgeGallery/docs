@@ -8,496 +8,164 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../models/APPD Definition.md:1
-msgid "# 概述 TOSCA(Topology and Orchestration Specificatioon for Cloud Applications)是一种描述云应用组件以及组件之间关系的建模语言，Tosca采用业务模板(service templates)的概念来描述云应用的组件。 EdgeGallery采用TOSCA概念来描述APPD信息模型，基于TOSCA-Simple-Profile-yamle v1.2，参考ETSI NFV SOL001相关规范定义了对APPD的相关描述。 APPD信息模型单元和TOCSA类型定义的映射关系如下："
-msgstr "# Overview TOSCA (Topology and Orchestration Specificatioon for Cloud Applications) is a modeling language that describes the relationship between cloud applications and components, and Tosca uses the concept of service templates to describe the components of cloud applications. EdgeGallery uses the TOSCA concept to describe the APPD information model, based on the TOSCA-Simple-Profile-yamle v1.2, which references the ETSI NFV SOL001-related specification to the APPD. The mapping relationship between the APPD information model unit and the TOCSA type definition is as follows:"
+msgid "概述"
+msgstr "Overview"
 
-#: ../../models/APPD Definition.md:6
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>APPD 信息模型单元</th> <th>TOSCA 类型定义</th> </tr> </thead> <tbody> <tr> <td>APP</td> <td>tosca.nodes.nfv.VNF</td> </tr> <tr> <td>VDU（容器场景时为Pod）</td> <td>tosca.nodes.nfv.Vducp <br> tosca.nodes.nfv.Vdu.Compute <br> tosca.nodes.nfv.Vdu.VirtualStorage</td> </tr> <tr> <td>Cpd</td> <td>tosca.nodes.nfv.Cp</td> </tr> <tr> <td>VduCpd(internal connection point)</td> <td>tosca.nodes.nfv.VduCp</td> </tr> <tr> <td>Virtual Link</td> <td>tosca.nodes.nfv.VnfVirtualLink</td> </tr> <tr> <td>VirtualStorageDesc</td> <td>tosca.nodes.nfv.Vdu.VirtualStorage</td> </tr> <tr> <td>VirtualComputeDesc</td> <td>tosca.nodes.nfv.Vdu.Compute</td> </tr> <tr> <td>SwImageDesc</td> <td>tosca.artifacts.nfv.SwImage</td> </tr> <tr> <td>SecurityGroupRule</td> <td>tosca.policies.nfv.SecurityGroupRule</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th>APPD Information Model Unit</th> <th>TOSCA Type definitions</th> </tr> </tr> <tbody> <tr> <td>APP</td> <td>tosca.nos.nfv.VNF</td> </tr> <tr> <td>VDU (Pod)</td> <td>tosca.nodes.nfv.Vducp <br> tosca.nodes.nfv.Vdu.Compute <br> tosca.nodes.nfv.Vdu.VirtualStorage</td> </tr> <tr> <td>Cpd</td> <td>tosca.nodes.nfv.Cp</td> </tr> <tr> <td>VduCpd (internal connection point)</td> <td>tosca.nodes.nfv.VduCp</td> </tr> <tr> <td>Virtual Link</td> <td>tosca.nodes.nfv.VnfVirtualLink</td> </tr> <tr> <td>VirtualStorageDesc</td> <td>tosca.nodes.nfv.Vdu.VirtualStorage</td> </tr> <tr> <td>VirtualComputeDesc</td> <td>tosca.nodes.nfv.Vdu.Compute</td> </tr> <tr> <td>SwImageDesc</td> <td>tosca.artifactss.nfv.SwImage</td> </tr> <tr> <td>SecurityGroupRule</td> <td>tosca.policies.nfv.SecurityGroupRule</td> </tr> </tr> </table> </table>"
+#: ../../models/APPD Definition.md:2
+msgid "TOSCA(Topology and Orchestration Specificatioon for Cloud Applications)是一种描述云应用组件以及组件之间关系的建模语言，Tosca采用业务模板(service templates)的概念来描述云应用的组件。   EdgeGallery采用TOSCA概念来描述APPD信息模型，基于TOSCA-Simple-Profile-yamle v1.2，参考ETSI NFV SOL001相关规范定义了对APPD的相关描述。   APPD信息模型单元和TOCSA类型定义的映射关系如下："
+msgstr "The Topology and Orchestration Specificatioon for Cloud Applications is a modeling language that describes the relationship between cloud applications and components, and Tosca uses the concept of service templates to describe the components of cloud applications.   EdgeGallery uses the TOSCA concept to describe the APPD information model, based on the TOSCA-Simple-Profile-yamle v1.2, which references the ETSI NFV SOL001-related specification to the APPD.   The mapping relationship between the APPD information model unit and the TOCSA type definition is as follows:"
 
 #: ../../models/APPD Definition.md:53
 msgid "一个APPD文件包含最基本的信息，metadata，inputs参数，节点类型，数据类型，文件类型，分组类型和策略类型等。"
 msgstr "An APPD document contains the most basic information, metadata, inputs parameters, node types, data types, document types, grouping types, and policy types."
 
 #: ../../models/APPD Definition.md:55
-msgid "## 基本信息 APPD最开始需要包含最基本的信息，包含tosca_definition_version,  description, imports。 样例如下："
-msgstr "## Basic information APPD starts with the most basic information, including tosca_definition_version, description, imports. The examples are as follows:"
+msgid "基本信息"
+msgstr "Basic information"
 
-#: ../../models/APPD Definition.md:59
-msgid "``` tosca_definitions_version: tosca_simple_profile_yaml_1_2 description: EdgeGallery APPD definition imports:"
-msgstr "` ` ` tosca_definitions_version: tosca_simple_profile_yaml_1_2 description: EdgeGallery APPD definition imports:"
-
-#: ../../models/APPD Definition.md:63
-msgid "nfv_vnfd_types_v1_0.yaml"
-msgstr "nfv_vnfd_types_v1_0.yaml"
-
-#: ../../models/APPD Definition.md:64 Definition.md:152 Definition.md:165 Definition.md:182 Definition.md:285 Definition.md:287 Definition.md:405 Definition.md:499 Definition.md:501 Definition.md:548 Definition.md:754
-msgid "```"
-msgstr "` ` `"
+#: ../../models/APPD Definition.md:56
+msgid "APPD最开始需要包含最基本的信息，包含tosca_definition_version,  description, imports。   样例如下："
+msgstr "APPD begins with the most basic information, including tosca_definition_version, description, imports. The examples are as follows:"
 
 #: ../../models/APPD Definition.md:66
-msgid "## Metadata定义 Metadata为APPD的元数据。 具体参数如下："
-msgstr "## Metadata defines metadata for APPD. The specific parameters are as follows:"
+msgid "Metadata定义"
+msgstr "Metadata definition"
 
-#: ../../models/APPD Definition.md:70
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>是否必选</th> <th>数据类型</th> <th>取值范围</th> <th>描述</th> </tr> </thead> <tbody> <tr> <td>template_name</td> <td>是</td> <td>string</td> <td>-</td> <td>模板名称</td> </tr> <tr> <td>template_author</td> <td>是</td> <td>string</td> <td>-</td> <td>模板作者</td> </tr> <tr> <td>template_version</td> <td>是</td> <td>string</td> <td>-</td> <td>模板版本</td> </tr> <tr> <td>vnfm_type</td> <td>是</td> <td>string</td> <td>MEPM</td> <td>该参数用于表明APPD使用的平台，目前取值MEPM</td> </tr> <tr> <td>vnfd_id</td> <td>是</td> <td>string</td> <td>-</td> <td>该APPD对象的标识，全局唯一</td> </tr> <tr> <td>vnfd_version</td> <td>是</td> <td>string</td> <td>-</td> <td>APPD版本号</td> </tr> <tr> <td>vnfd_name</td> <td>是</td> <td>string</td> <td>-</td> <td>APPD名称</td> </tr> <tr> <td>vnfd_description</td> <td>是</td> <td>string</td> <td>-</td> <td>APPD描述</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <tr> <th>name</th> <th>Whether</th> <th>data type</th> <th>value range</th> <th></th></th> </thead> <tbody> <tr> <td>template_name</td> <td>Yes</td> <td>string</td> <td>-</td> <td>Template name</td> </tr> <tr> <td>template_author</td> <td>is</td> <td>string</td> <td>-</td> <td>template author</td> </tr> <tr> <td>template_version</td> <td>Yes</td> <td>string</td> <td>-</td> <td>Template version</td> </tr> <tr> <td>vnfm_type</td> <td>Yes</td> <td>string</td> <td>MEPM</td> <td>The parameter is used to indicate the platform used by APPD, currently value MEPM</td> </tr> <tr> <td>vnfd_id</td> <td>is</td> <td>string</td> <td>-</td> <td>The APPD object's ID, global unique</td> </tr> <tr> <td>vnfd_version</td> <td>Yes</td> <td>string</td> <td>-</td> <td>APPD version number</td> </tr> <tr> <td>vnfd_name</td> <td>is</td> <td>string</td> <td>-</td> <td>APPD name</td> </tr> <tr> <td>vnfd_description</td> <td>is</td> <td>string</td> <td>-</td> <td>APPD description</td> </tr> </tr> </tbody> </table>"
+#: ../../models/APPD Definition.md:67
+msgid "Metadata为APPD的元数据。   具体参数如下："
+msgstr "Metadata for the APPD. The specific parameters are as follows:"
 
 #: ../../models/APPD Definition.md:140
 msgid "Metadata的样例如下："
 msgstr "The following examples of Metadata are:"
 
-#: ../../models/APPD Definition.md:142
-msgid "``` metadata:"
-msgstr "` ` ` metadata:"
-
-#: ../../models/APPD Definition.md:144
-msgid "template_name: EdgeGallery-Template template_author: EdgeGallery template_version: 1.0.0 vnfm_type: MEPM vnfd_id: EdgeGallery-monitoring-service vnfd_version: v1.0 vnfd_name: EdgeGallery_MEC_Sample_APPD vnfd_description: EdgeGallery MEC sample for APP"
-msgstr "template_name: EdgeGallery-Template template_author: EdgeGallery template_version: 1.0.0 vnfm_type: MEPM vnfd_id: EdgeGallery-monitoring-service vnfd_version: v1.0 vnfd_name: EdgeGallery_MEC_Sample_APPD vnfd_description: EdgeGallery MEC sample for APP"
-
 #: ../../models/APPD Definition.md:154
-msgid "## Inputs参数 Inputs参数格式参见TOSCA Simple Profile in YAML Version 1.1。以下列出APPD涉及到的定义部分。"
-msgstr "## Inputs parameter Inputs parameter format See TOSCA Simple Profile in YAML Version 1.1.The following lists the parts of the definition that the APPD involves."
+msgid "Inputs参数"
+msgstr "Inputs parameter"
 
-#: ../../models/APPD Definition.md:157
-msgid "``` <parameter_name>:"
-msgstr "` ` ` <parameter_name>:"
-
-#: ../../models/APPD Definition.md:159
-msgid "type: <parameter_type> #参数类型，支持String，Integer，Boolean description: <parameter_descriptioon> #参数描述信息 required: <parameter_required> #定义该参数是否为必选参数 default: <parameter_default_value> #定义该参数的默认取值 constraints: #定义该参数的取值范围 -<parameter_constraints>"
-msgstr "type: <parameter_type> #参数类型, Support String, Integer, Boolean description: <parameter_descriptioon> #参数描述信息 required: <parameter_required> #定义该参数是否为必选参数 default: <parameter_default_value> #定义该参数的默认取值 constraints: #定义该参数的取值范围 -<parameter_constraints>"
+#: ../../models/APPD Definition.md:155
+msgid "Inputs参数格式参见TOSCA Simple Profile in YAML Version 1.1。以下列出APPD涉及到的定义部分。"
+msgstr "The Inputs parameter format is referred to TOSCA Simple Profile in YAML Version 1.1.The following lists the parts of the definition that the APPD involves."
 
 #: ../../models/APPD Definition.md:167
 msgid "Inputs样例如下："
 msgstr "The Inputs are as follows:"
 
-#: ../../models/APPD Definition.md:169
-msgid "``` inputs:"
-msgstr "` ` ` inputs:"
-
-#: ../../models/APPD Definition.md:173
-msgid "INTERNAL_IP_VERSION:"
-msgstr "INTERNAL_IP_VERSION:"
-
-#: ../../models/APPD Definition.md:172
-msgid "type: string default: IPV4 description: INTERNAL_IP_VERSION"
-msgstr "type: string default: IPV4 description: INTERNAL_IP_VERSION"
-
-#: ../../models/APPD Definition.md:180
-msgid "cpuNumber:"
-msgstr "cpuNumber:"
-
-#: ../../models/APPD Definition.md:176
-msgid "type: integer description: Number of CPUs required: true default: 2 constraints: -valid_values:[1,2,4,8]"
-msgstr "type: integer description: Number of CPUs required: true default: 2 constraints: -valid_values: [1,2,4,8]"
-
 #: ../../models/APPD Definition.md:184
-msgid "## 节点类型定义 本章节此处只描述目前已经用到的部分节点类型。EdgeGallery节点类型基于ETSI NFV SOL001相关规范定义，具体可以参考ETSI NFV SOL001相关规范。 ###  APP(tosca.nodes.nfv.VNF) APP在APPD描述文件中对应tosca.nodes.nfv.VNF节点，参数定义如下："
-msgstr "## node types define this section here to describe only some of the node types that are currently used.The EdgeGallery node type is based on the ETSI NFV SOL001-related specification and can refer to the ETSI NFV SOL001-related specifications. ### APP(tosca.nodes.nfv.VNF) APP corresponds to the tosca.nodes.nfv.VNF node in the APPD description document, which is defined as follows:"
+msgid "节点类型定义"
+msgstr "Node Type Definition"
 
-#: ../../models/APPD Definition.md:189
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>是否必选</th> <th>数据类型</th> <th>取值范围</th> <th>描述</th> </tr> </thead> <tbody> <tr> <td>vnfd_id</td> <td>是</td> <td>string</td> <td>-</td> <td>app描述id</td> </tr> <tr> <td>vnfd_version</td> <td>是</td> <td>string</td> <td>-</td> <td>app描述的版本</td> </tr> <tr> <td>provider</td> <td>是</td> <td>string</td> <td>-</td> <td>app的提供方</td> </tr> <tr> <td>product_name</td> <td>是</td> <td>string</td> <td>-</td> <td>用来标识app产品的产品类型</td> </tr> <tr> <td>software_version</td> <td>是</td> <td>string</td> <td>-</td> <td>app的软件版本</td> </tr> <tr> <td>product_info_name</td> <td>是</td> <td>string</td> <td>-</td> <td>app的可读名称</td> </tr> <tr> <td>product_info_description</td> <td>否</td> <td>string</td> <td>-</td> <td>app的可读描述</td> </tr> <tr> <td>flavour_id</td> <td>是</td> <td>string</td> <td>-</td> <td>部署的flavour，当前app只支持单一flavour</td> </tr> <tr> <td>flavour_descripotion</td> <td>是</td> <td>string</td> <td>-</td> <td>flavour的描述</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th>name</th> <th>Whether</th> <th>data type</th> <th>values</th> <th></th></th> </thead> <tbody> <td> <tr> <td>vnfd_id</td> <td>Yes</td> <td>string</td> <td>-</td> <td>app Description id</td> </tr> <tr> <td>vnfd_version</td> <td>is the version</td> <td>string</td> <td>-</td> <td>app description</td> </tr> <tr> <td>provider</td> <td>is the provider of</td> <td>string</td> <td>-</td> <td>app</td> </tr> <tr> <td>product_name</td> <td>Yes</td> <td>string</td> <td>-</td> <td>The product type used to identify the app product</td> </tr> <tr> <td>software_version</td> <td>is</td> <td>string</td> <td>-</td> <td>app's software version</td> </tr> <tr> <td>product_info_name</td> <td>Yes</td> <td>string</td> <td>-</td> <td>The readable name of app</td> </tr> <tr> <td>product_info_description</td> <td>No</td> <td>string</td> <td>-</td> <td>app's readable description</td> </tr> <tr> <td> <td>is flavor_id</td> <td>Yes</td> <td>string</td> <td>-</td> <td>Deployed flavor,The current app supports only a single flavor</td> </tr> <tr> <td>flavor_description</td> <td>Yes</td> <td>string</td> <td>-</td> <td></td></td> </tr> </table> </table> </table>"
+#: ../../models/APPD Definition.md:185
+msgid "本章节此处只描述目前已经用到的部分节点类型。EdgeGallery节点类型基于ETSI NFV SOL001相关规范定义，具体可以参考ETSI NFV SOL001相关规范。"
+msgstr "This section describes only some of the node types that are currently used.The EdgeGallery node type is based on the ETSI NFV SOL001-related specification and can refer to the ETSI NFV SOL001-related specifications."
+
+#: ../../models/APPD Definition.md:186
+msgid "APP(tosca.nodes.nfv.VNF)"
+msgstr "APP(tosca.nodes.nfv.VNF)"
+
+#: ../../models/APPD Definition.md:187
+msgid "APP在APPD描述文件中对应tosca.nodes.nfv.VNF节点，参数定义如下："
+msgstr "The APP corresponds to the tosca.nodes.nfv.VNF node in the APPD description document, as follows:"
 
 #: ../../models/APPD Definition.md:266
-msgid "同时对于APP对象，在虚机场景下，EdgeGallery将app的helm部署脚本作为其artifact。 APP节点的样例如下："
-msgstr "At the same time, for APP objects, in the virtual machine scenario, EdgeGallery deploys the app's helm deployment script as its artifact. The examples of APP nodes are as follows:"
-
-#: ../../models/APPD Definition.md:285
-msgid "node_templates:"
-msgstr "node_templates:"
-
-#: ../../models/APPD Definition.md:285
-msgid "Simple_VNF:"
-msgstr "Simple_VNF:"
-
-#: ../../models/APPD Definition.md:272
-msgid "type: tosca.nodes.nfv.VNF properties:"
-msgstr "type: tosca.nodes.nfv.VNF properties:"
-
-#: ../../models/APPD Definition.md:274
-msgid "vnfd_id: EdgeGallery-positioning-service vnfd_version: v1.0 provider: EdgeGallery product_name: MEC software_version: v1.0.0 product_info_name: vMEC_APP product_info_description: EdgeGallery MEC APP flavour_id: default flavour_description: default flavor"
-msgstr "vnfd_id: EdgeGallery-positioning-service vnfd_version: v1.0 provider: EdgeGallery product_name: MEC software_version: v1.0.0 product_info_name: vMEC_APP product_info_description: EdgeGallery MEC APP flavor_id: default flaour_description: default flavor"
-
-#: ../../models/APPD Definition.md:285
-msgid "artifacts:"
-msgstr "artifacts:"
-
-#: ../../models/APPD Definition.md:285
-msgid "app_deployment:"
-msgstr "app_deployment:"
-
-#: ../../models/APPD Definition.md:285
-msgid "file: /artifacts/Deployments/charts/monitoring_service.zip # app的helm chart部署包 type: tosca.artifacts.Deployment"
-msgstr "helpchart deployment package type of file:/artifacts/Deployments/charts/monitoring_service.zip#app: tosca.artifacts.Deployment"
+msgid "同时对于APP对象，在虚机场景下，EdgeGallery将app的helm部署脚本作为其artifact。   APP节点的样例如下："
+msgstr "At the same time, for APP objects, in the virtual machine scenario, EdgeGallery deploys the app's helm deployment script as its artifact.   The examples of APP nodes are as follows:"
 
 #: ../../models/APPD Definition.md:289
-msgid "### Pod/VM(tosca.nodes.nfv.Compute) 对于容器场景下的Pod，以及虚机场景下的VM，采用tosca.nodes.nfv.Vdu.Compute节点，参数定义如下："
-msgstr "### Pod/VM (tosca.nodes.nfv.Computets) For the Pod under the container scene, and the VM under the virtual machine scene, the tosca.nodes.nfv.Vdu.Compute node is defined as follows:"
+msgid "Pod/VM(tosca.nodes.nfv.Compute)"
+msgstr "Pod/VM (tosca.nodes.nfv.Compute)"
 
-#: ../../models/APPD Definition.md:292
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>是否必选</th> <th>数据类型</th> <th>取值范围</th> <th>描述</th> </tr> </thead> <tbody> <tr> <td>name</td> <td>是</td> <td>string</td> <td>-</td> <td>VDU的名称</td> </tr> <tr> <td>descriptioon</td> <td>是</td> <td>string</td> <td>-</td> <td>VDU的描述</td> </tr> <tr> <td>boot_order</td> <td>否</td> <td>map</td> <td>-</td> <td>镜像盘的启动顺序</td> </tr> <tr> <td>nfvi_constraints</td> <td>否</td> <td>string</td> <td>-</td> <td>计算AZ ID，确定该VDU实例的创建位置</td> </tr> <tr> <td>bootdata</td> <td>否</td> <td>tosca.data.types.nfv.bootdata</td> <td>-</td> <td>注入配置信息</td> </tr> <tr> <td>vdu_profile</td> <td>是</td> <td>tosca.data.types.nfv.VduProfile</td> <td>-</td> <td>定义VDU相关的其他实例化数据</td> </tr> <tr> <td>sw_image_data</td> <td>否</td> <td>tosca.data.types.nfv.SwImageData</td> <td>-</td> <td>镜像信息，对应名称在SwImageDesc.json中的描述，对于虚机为虚机镜像，对于容器为容器镜像且可能为列表，此时采用逗号分隔</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th>name</th> <th>Is a mandatory</th> <th>data type</th> <th>values range</th> <th></th></th> </thead> </tr> <tbody> <td> <tr> <td>name</td> <td>Yes</td> <td>string</td> <td>-</td> <td>VDU's name</td> </tr> <tr> <td>descriptioon</td> <td>is a description of</td></td> <td>string</td> <td>-</td> <td>VDU</td> </tr> <tr> <td>boot_order</td> <td>No</td> <td>map</td> <td>-</td> <td>The mirror disk's startup order</td> </tr> <tr> <td>nfvi_constraints</td> <td>No</td> <td>string</td> <td> <td></td> AZ ID, determine where the VDU instance is created</td> </tr> <tr> <td>bootdata</td> <td>No</td> <td>tosca.datatypes.nfv.bootdata</td> <td>-</td> <td>Injection configuration information</td> </tr> <tr> <td>vdu_profile</td> <td>Yes</td> <td>tosca.datatypes.nfv.VduProfile</td> <td>-</td> <td>Define VDU related additional instantiated data</td> </tr> <tr> <td>sw_image_data</td> <td>No</td> <td>tosca.datatypes.nfv.SwImageData</td> <td>-</td> <td>Mirror information,The description of the corresponding name in SwImageDesc.json is a mirror image of the virtual machine, which is mirror image of the container and may be a list, using a comma</td></td> </tbody> </table>"
+#: ../../models/APPD Definition.md:290
+msgid "对于容器场景下的Pod，以及虚机场景下的VM，采用tosca.nodes.nfv.Vdu.Compute节点，参数定义如下："
+msgstr "For the Pod in the container scene and the VMs under the virtual machine scene, the tosca.nodes.nfv.Vdu.Compute node is used and the parameters are defined as follows:"
 
 #: ../../models/APPD Definition.md:355
 msgid "tosca.nodes.nfv.Compute节点提供的能力如下所示："
 msgstr "The capabilities provided by the tosca.nodes.nfv.Compute node are as follows:"
 
-#: ../../models/APPD Definition.md:357
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>数据类型</th> <th>取值范围</th> <th>描述</th> </tr> </thead> <tbody> <tr> <td>virtual_compute</td> <td>tosca.capabilities.nfv.virtualCompute</td> <td>-</td> <td>虚机计算资源</td> </tr> <tr> <td>virtual_binding</td> <td>tosca.capabilities.nfv.VirtualBindable</td> <td>-</td> <td>定义连接绑定的能力</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Name</th> <th>Data Type</th> <th>Value Range</th> <th></th></th> </thead> <tbody> <tr> <td>virtual_compute</td> <td>tosca.Capabilities.nfv.virtualCompute</td> <td>-</td> <td>Virtual machine compute resources</td> </tr> <tr> <td>virtual_binding</td> <td>tosca.capabilities.nfv.VirtualBindable</td> <td>-</td> <td>Define ability to attach</td></td> </tr> </tr> </tbody> </table>"
-
 #: ../../models/APPD Definition.md:382
 msgid "Pod/VM节点的定义样例如下："
 msgstr "The following examples are defined for the Pood/VM node:"
 
-#: ../../models/APPD Definition.md:405
-msgid "logic0:"
-msgstr "logic0:"
+#: ../../models/APPD Definition.md:408
+msgid "网口（tosca.nodes.nfv.VduCp）"
+msgstr "Netport (tosca.nodes.nfv.VduCp)"
 
-#: ../../models/APPD Definition.md:386
-msgid "type: tosca.nodes.nfv.Vdu.Compute properties:"
-msgstr "type: tosca.nodes.nfv.Vdu.Compute properties:"
-
-#: ../../models/APPD Definition.md:388
-msgid "name: logic0 description: node logic template sw_image_data:"
-msgstr "name: logic0 description: node logic template sw_image_data:"
-
-#: ../../models/APPD Definition.md:391
-msgid "name: mep-agent:1.0,monitoring-service-be:1.0 #定义Pod的镜像列表，名称取自SwImageDesc.json"
-msgstr "name: mep-agent:1.0,monitoring-service-be: 1.0 #定义Pod的镜像列表, name taken from SwImageDesc.json"
-
-#: ../../models/APPD Definition.md:396
-msgid "vdu_profile:"
-msgstr "vdu_profile:"
-
-#: ../../models/APPD Definition.md:393
-msgid "min_number_of_instances: 1 max_number_of_instances: 2 initial_number_of_instances: 1 flavor_extra_specs:"
-msgstr "min_number_of_instances: 1 max_number_of_instances: 2 initial_number_of_instances: 1 flavor_extra_specs:"
-
-#: ../../models/APPD Definition.md:397
-msgid "X86_HA: true"
-msgstr "X86_HA: true"
-
-#: ../../models/APPD Definition.md:405
-msgid "capabilities:"
-msgstr "capabilities:"
-
-#: ../../models/APPD Definition.md:405
-msgid "virtual_compute:"
-msgstr "virtual_compute:"
-
-#: ../../models/APPD Definition.md:405
-msgid "properties:"
-msgstr "properties:"
-
-#: ../../models/APPD Definition.md:401
-msgid "virtual_memory:"
-msgstr "virtual_memory:"
-
-#: ../../models/APPD Definition.md:402
-msgid "virtual_mem_size: 4096"
-msgstr "virtual_mem_size: 4096"
-
-#: ../../models/APPD Definition.md:403
-msgid "virtual_cpu:"
-msgstr "virtual_cpu:"
-
-#: ../../models/APPD Definition.md:404
-msgid "num_virtual_cpu: 4"
-msgstr "num_virtual_cpu: 4"
-
-#: ../../models/APPD Definition.md:405
-msgid "virtual_local_storage:"
-msgstr "virtual_local_storage:"
-
-#: ../../models/APPD Definition.md:406
-msgid "size_of_storage: 20"
-msgstr "size_of_storage: 20"
-
-#: ../../models/APPD Definition.md:407
-msgid "``` ### 网口（tosca.nodes.nfv.VduCp） 对于Pod/VM的网口，采用tosca.nodes.nfv.VduCp节点进行定义，参数定义如下："
-msgstr "The ` ` ` ### net port (tosca.nodes.nfv.VduCp) is defined with the tosca.nodes.nfv.VduCp node for the pod/VM, which is defined as follows:"
-
-#: ../../models/APPD Definition.md:411
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>是否必选</th> <th>数据类型</th> <th>取值范围</th> <th>描述</th> </tr> </thead> <tbody> <tr> <td>vnic_type</td> <td>是</td> <td>string</td> <td>normal,direct</td> <td>网口类型</td> </tr> <tr> <td>order</td> <td>是</td> <td>integer</td> <td>greater_or_equal:0</td> <td>网口的顺序</td> </tr> <tr> <td>vnic_name</td> <td>否</td> <td>string</td> <td>-</td> <td>网口的名字</td> </tr> <tr> <td>description</td> <td>否</td> <td>string</td> <td>-</td> <td>网口的描述</td> </tr> <tr> <td>Cp节点定义了需求如下:</td> <td></td> <td></td> <td></td> <td></td> </tr> <tr> <td>名称</td> <td>是否必选</td> <td>类型</td> <td>取值范围</td> <td>描述</td> </tr> <tr> <td>-----------------------</td> <td>---------</td> <td>---------------------------</td> <td>----------------------</td> <td>----------------------</td> </tr> <tr> <td>virtual_binding</td> <td>是</td> <td>tosca.capabilities.nfv.VirtualBindable</td> <td>-</td> <td>绑定到的VDU的需求</td> </tr> <tr> <td>virtual_link</td> <td>否</td> <td>tosca.capabilities.nfv.VirtualLinkable</td> <td>-</td> <td>连接到虚拟网络的需求</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th>name</th> <th>Whether</th> <th>data type</th> <th>value range</th> <th></th></th> </thead> <tbody> <td> <tr> <td>vnic_type</td> <td>Yes</td> <td>string</td> <td>normal, direct</td> <td>Netport Type</td> </tr> <tr> <td>order</td> <td>Yes</td> <td>integer</td> <td>greater_or_equal: 0</td> <td>The order of the port </tr></td> <tr> <td>vnic_name</td> <td>No</td> <td>string</td> <td>-</td> <td>Netport's First Name</td> </tr> <tr> <td>description</td> <td>No</td> <td>string</td> <td>-</td> <td>The description </tr></td> <tr> <td>Cp node defines the requirements as follows:</td> <td></td> <td></td></td> <td> <td> </tr></td> <tr></td> <tr> <td> <td>Name</td> <td>Is a mandatory</td> <td>Type</td> <td>Value Range</td> <td>Description</td> </tr> <tr> <td>-----------------------</td> <td>---------</td> <td>---------------------------</td> <td>----------------------</td> <td>----------------------</td> </tr> <tr> <td>virtual_binding</td> <td>Yes</td> <td>tosca.caabilities.nfv.VirtualBindable</td> <td>-</td> <td>Requirements bound to VDU</td> </tr> <tr> <td>virtual_link</td> <td>No</td> <td>tosca.capabilities.nfv.VirtualLinkable</td> <td>-</td> <td>Requirements for connecting to a virtual network</td> </tr> </tbody> </table>"
+#: ../../models/APPD Definition.md:409
+msgid "对于Pod/VM的网口，采用tosca.nodes.nfv.VduCp节点进行定义，参数定义如下："
+msgstr "For the network port of the Pood/VM, the definition of the tosca.nodes.nfv.VduCp node is defined as follows:"
 
 #: ../../models/APPD Definition.md:488
 msgid "网口节点的定义样例如下："
 msgstr "The defining examples of network interface nodes are as follows:"
 
-#: ../../models/APPD Definition.md:499
-msgid "MEC_APP_CP0:"
-msgstr "MEC_APP_CP0:"
-
-#: ../../models/APPD Definition.md:492
-msgid "type: tosca.nodes.nfv.VduCp properties:"
-msgstr "type: tosca.nodes.nfv.VduCp properties:"
-
-#: ../../models/APPD Definition.md:494
-msgid "description: network definition vnic_name: eth0 order: 0 vnic_type: normal"
-msgstr "description: network definition vnic_name: eth0 order: 0 vnic_type: normal"
-
-#: ../../models/APPD Definition.md:498
-msgid "requirements: - virtual_binding: logic0 - virtual_link: MEC_APP_VL0"
-msgstr "requirements: - virtual_binding: logic0-virtual_link: MEC_APP_VL0"
-
 #: ../../models/APPD Definition.md:503
-msgid "### 网络（tosca.nodes.nfv.VnfVirtualLink） 对于Pod/VM的网络，采用tosca.nodes.nfv.VnfVirtualLink节点进行定义，参数定义如下："
-msgstr "### Network (tosca.nodes.nfv.VnfVirtualLink) For the Pod/VM network, it is defined with the tosca.nodes.nfv.VnfVirtualLink node, which is defined as follows:"
+msgid "网络（tosca.nodes.nfv.VnfVirtualLink）"
+msgstr "Network (tosca.nodes.nfv.VnfVirtualLink)"
 
-#: ../../models/APPD Definition.md:506
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>是否必选</th> <th>数据类型</th> <th>取值范围</th> <th>描述</th> </tr> </thead> <tbody> <tr> <td>vl_profile</td> <td>是</td> <td>tosca.datatypes.nfv.VlProfile</td> <td>-</td> <td>定义网络的信息，名称，子网等</td> </tr> <tr> <td>description</td> <td>否</td> <td>string</td> <td>-</td> <td>VL的描述</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th>name</th> <th>Whether</th> <th>data type</th> <th>values</th> <th></th></th> </thead> <tbody> <tr> <td>vl_profile</td> <td>Yes</td> <td>tosca.datatypes.nfv.VlProfile</td> <td>-</td> <td>Define information, name, subnet, etc</td> </tr> </tr> <tr> <td>description</td> <td>No</td> <td>string</td> <td>-</td> <td>VL's</td></td> </tbody> </table> </table>"
+#: ../../models/APPD Definition.md:504
+msgid "对于Pod/VM的网络，采用tosca.nodes.nfv.VnfVirtualLink节点进行定义，参数定义如下："
+msgstr "For the Pod/VM network, the use of the tosca.nodes.nfv.VnfVirtualLink node is defined with the following parameters:"
 
 #: ../../models/APPD Definition.md:534
-msgid "VnfVirtualLink节点定义了能力如下: | 名称                  |  类型                             | 取值范围             |描述                  | |----------------------|---------------------------|----------------------|----------------------| |virtual_linkable      |tosca.capabilities.nfv.VirtualLinkable     | -                    | 描述虚拟网络连接网口的能力     |"
-msgstr "The VnfVirtualLink node defines the ability as follows: | Name | Type | Value Range | Description | | ---------------------- | --------------------------- | ---------------------- | ---------------------- | |virtual_linkable |tosca.Capabilities.nfv.VirtualLinkable |-| ability to describe a virtual network connection network |"
+msgid "VnfVirtualLink节点定义了能力如下:"
+msgstr "The VnfVirtualLink node defines the ability as follows:"
+
+#: ../../models/APPD Definition.md
+msgid "名称"
+msgstr "name"
+
+#: ../../models/APPD Definition.md
+msgid "类型"
+msgstr "type"
+
+#: ../../models/APPD Definition.md
+msgid "取值范围"
+msgstr "Value Range"
+
+#: ../../models/APPD Definition.md
+msgid "描述"
+msgstr "describe"
+
+#: ../../models/APPD Definition.md
+msgid "virtual_linkable"
+msgstr "virtual_linkable"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.capabilities.nfv.VirtualLinkable"
+msgstr "tosca.caabilities.nfv.VirtualLinkable"
+
+#: ../../models/APPD Definition.md
+msgid "-"
+msgstr "-"
+
+#: ../../models/APPD Definition.md
+msgid "描述虚拟网络连接网口的能力"
+msgstr "Ability to describe virtual network connection network ports"
 
 #: ../../models/APPD Definition.md:539
 msgid "VnfVirtualLink节点的定义样例如下："
 msgstr "A VnfVirtualLink node is defined as follows:"
 
-#: ../../models/APPD Definition.md:548
-msgid "MEC_APP_VL0:"
-msgstr "MEC_APP_VL0:"
+#: ../../models/APPD Definition.md:551
+msgid "APP配置 (tosca.nodes.nfv.app.configuration)--待修订"
+msgstr "APP Configuration (tosca.nodes.nfv.app.configuration)--To be revised"
 
-#: ../../models/APPD Definition.md:543
-msgid "type: tosca.nodes.nfv.VnfVirtualLink properties:"
-msgstr "type: tosca.nodes.nfv.VnfVirtualLink properties:"
-
-#: ../../models/APPD Definition.md:548
-msgid "vl_profile:"
-msgstr "vl_profile:"
-
-#: ../../models/APPD Definition.md:546
-msgid "network_name: network_n6 network_type: vlan physical_network: network_physnet provider_segmentation_id: 1001"
-msgstr "network_name: network_n6 network_type: vlan physical_network: network_physnet provider_segmentation_id: 1001"
-
-#: ../../models/APPD Definition.md:550
-msgid "``` ### APP配置 (tosca.nodes.nfv.app.configuration)--待修订 对于APP相关配置，如服务发布，服务依赖，以及应用认证信息，分流规则配置等。通过APP配置节点进行配置。相关定义参考了ETSI MEC011 ，参数定义如下："
-msgstr "` ` ` ### APP configuration (tosca.nodes.nfv.app.configuration) -- To be revised for APP-related configurations such as service release, service dependency, application authentication information, streaming rule configuration, etc.Configure the nodes through the APP configuration node.The relevant definition references the ETSI MEC011, which is defined as follows:"
-
-#: ../../models/APPD Definition.md:554
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>名称</th> <th>是否必选</th> <th>数据类型</th> <th>取值范围</th> <th>描述</th> </tr> </thead> <tbody> <tr> <td>appServiceRequired</td> <td>否</td> <td>tosca.datatypes.nfv.app.ServiceDependency</td> <td>-</td> <td>app依赖的服务信息</td> </tr> <tr> <td>appServiceOptional</td> <td>否</td> <td>tosca.datatypes.nfv.app.ServiceDependency</td> <td>-</td> <td>app的可选依赖服务信息</td> </tr> <tr> <td>appServiceProduced</td> <td>否</td> <td>tosca.datatypes.nfv.app.ServiceDescriptor</td> <td>-</td> <td>app的服务发布信息</td> </tr> <tr> <td>appFeatureRequired</td> <td>否</td> <td>tosca.datatypes.nfv.app.FeatureDependency</td> <td>-</td> <td>app正常运行必须的特性信息</td> </tr> <tr> <td>appFeatureOptional</td> <td>否</td> <td>tosca.datatypes.nfv.app.FeatureDependency</td> <td>-</td> <td>app正常运行可能会用到的特性信息</td> </tr> <tr> <td>transportDependencies</td> <td>否</td> <td>tosca.datatypes.nfv.app.TransportDependency</td> <td>-</td> <td>应用实例提供服务需要平台提供的传输能力</td> </tr> <tr> <td>appSupportMp1</td> <td>是</td> <td>boolean</td> <td>-</td> <td>app是否支持Mp1接口</td> </tr> <tr> <td>appName</td> <td>是</td> <td>string</td> <td>-</td> <td>应用名称</td> </tr> <tr> <td>appTrafficRule</td> <td>是</td> <td>tosca.datatypes.nfv.app.TrafficRuleDescriptor</td> <td>-</td> <td>应用分流规则信息</td> </tr> <tr> <td>appDNSRule</td> <td>是</td> <td>tosca.datatypes.nfv.app.DNSRuleDescriptor</td> <td>-</td> <td>应用DNS分流规则信息</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th></th> <th>Is it mandatory</th> <th>Data Type</th> <th>Value Range</th> <th></th></th> </thead> <tbody> <tr> <td>appServiceRequired</td> <td>No</td> <td>tosca.datatypes.nfv.app.ServiceDependency</td> <td>-</td> <td>app dependent service information</td> </tr> <tr> <td>appServiceOptional</td> <td>No</td> <td>tosca.datatypes.nfv.app.ServiceDependency</td> <td>-</td> <td>app's optional dependency information</td> </tr> <tr> <td>appServiceProduced</td> <td>No</td> <td>tosca.datatypes.nfv.app.ServiceDescriptor</td> <td>-</td> <td>app's Services Publishing Information</td> </tr> <tr> <td>appFeatureRequired</td> <td>No</td> <td>tosca.datatypes.nfv.app.FeatureDependency</td> <td>-</td> <td>app normal run feature information</td> </tr> <tr> <td>appFeatureOptional</td> <td>No</td> <td>tosca.datatypes.nfv.app.FeatureDependency</td> <td>-</td> <td>The feature information that is likely to be used by the <td>app</td> </tr> <tr> <td>transportDependencies</td> <td>No</td> <td>tosca.datatypes.nfv.app.TransportDependency</td> <td>-</td> <td>The application instance provides the transport capacity provided by the platform</td> </tr> <tr> <td>appSupportMp1</td> <td>is</td> <td>boolean</td> <td>-</td> <td>Whether app supports Mp1 interface</td> </tr> <tr> <td>appName</td> <td>Yes</td> <td>string</td> <td>-</td> <td>The application name</td> </tr> <tr> <td>appTrafficRule</td> <td>Yes</td> <td>tosca.datatypes.nfv.app.TrafficRuleDescriptor</td> <td>-</td> <td>Application streaming rule information</td> </tr> <tr> <td> <td>appDNSRule</td> <td>Yes</td> <td>tosca.datatypes.nfv.app.DNSRleDescriptor</td> <td>-</td> <td>Application DNS streaming rule information</td> </tr> </tbody> </table>"
+#: ../../models/APPD Definition.md:552
+msgid "对于APP相关配置，如服务发布，服务依赖，以及应用认证信息，分流规则配置等。通过APP配置节点进行配置。相关定义参考了ETSI MEC011 ，参数定义如下："
+msgstr "For APP-related configurations such as service publishing, service dependence, and application authentication information, streaming rule configuration, etc.Configure the nodes through the APP configuration node.The relevant definition references the ETSI MEC011, which is defined as follows:"
 
 #: ../../models/APPD Definition.md:638
-msgid "定义样例如下： ```"
-msgstr "The following examples are defined: ` ` `"
-
-#: ../../models/APPD Definition.md:752
-msgid "app_configuration:"
-msgstr "app_configuration:"
-
-#: ../../models/APPD Definition.md:641
-msgid "type: tosca.nodes.nfv.app.configuration properties:"
-msgstr "type: tosca.nodes.nfv.app.configuration properties:"
-
-#: ../../models/APPD Definition.md:644
-msgid "certification_info:"
-msgstr "certification_info:"
-
-#: ../../models/APPD Definition.md:644
-msgid "access_key_id: {get_input: ak} secret_key: {get_input: sk}"
-msgstr "access_key_id: {get_input: ak} secret_key: {get_input: sk}"
-
-#: ../../models/APPD Definition.md:659
-msgid "appServiceRequired:"
-msgstr "appServiceRequired:"
-
-#: ../../models/APPD Definition.md:647
-msgid "serName: appService1 serCategory: qos version: 2.0 serTransportDependencies:"
-msgstr "serName: appService1 serCategory: qos version: 2.0 serTransportDependencies:"
-
-#: ../../models/APPD Definition.md:654 Definition.md:669 Definition.md:684 Definition.md:702
-msgid "transport:"
-msgstr "transport:"
-
-#: ../../models/APPD Definition.md:652 Definition.md:667 Definition.md:700
-msgid "type: REST_HTTP protocol: HTTP version: 2.0 security:"
-msgstr "type: REST_HTTP protocol: HTTPversion:2.0security:"
-
-#: ../../models/APPD Definition.md:656 Definition.md:671 Definition.md:686 Definition.md:704
-msgid "serializers:"
-msgstr "serializers:"
-
-#: ../../models/APPD Definition.md:657 Definition.md:672 Definition.md:687 Definition.md:705
-msgid "JSON"
-msgstr "JSON"
-
-#: ../../models/APPD Definition.md:658 Definition.md:673 Definition.md:706
-msgid "labels:"
-msgstr "labels:"
-
-#: ../../models/APPD Definition.md:659 Definition.md:674 Definition.md:707
-msgid "test"
-msgstr "test"
-
-#: ../../models/APPD Definition.md:660 Definition.md:675
-msgid "requestedPermissions: true"
-msgstr "requestedPermissions: true"
-
-#: ../../models/APPD Definition.md:674
-msgid "appServiceOptional:"
-msgstr "appServiceOptional:"
-
-#: ../../models/APPD Definition.md:662
-msgid "serName: appService2 serCategory: qos version: 3.0 serTransportDependencies:"
-msgstr "serName: appService2 serCategory: qos version: 3.0 serTransportDependencies:"
-
-#: ../../models/APPD Definition.md:690
-msgid "appServiceProduced:"
-msgstr "appServiceProduced:"
-
-#: ../../models/APPD Definition.md:677
-msgid "serName: appService3 serCategory: video encoding version: 2.0 transportsSupported:"
-msgstr "serName: appService3 serCategory: video encoding version: 2.0 transportsSupported:"
-
-#: ../../models/APPD Definition.md:682
-msgid "type: REST_HTTP protocol: HTTP version: 2.0 security: string"
-msgstr "type: REST_HTTP protocol: HTTPversion:2.0security:string"
-
-#: ../../models/APPD Definition.md:688
-msgid "dnsRuleIdList:"
-msgstr "dnsRuleIdList:"
-
-#: ../../models/APPD Definition.md:689
-msgid "dnsRule1"
-msgstr "dnsRule1"
-
-#: ../../models/APPD Definition.md:690
-msgid "trafficRuleIdList:"
-msgstr "trafficRuleIdList:"
-
-#: ../../models/APPD Definition.md:691
-msgid "trafficRule1"
-msgstr "trafficRule1"
-
-#: ../../models/APPD Definition.md:693
-msgid "appFeatureRequired:"
-msgstr "appFeatureRequired:"
-
-#: ../../models/APPD Definition.md:693 Definition.md:696
-msgid "featureName: UserApps version: 3.0"
-msgstr "featureName: UserApps version: 3.0"
-
-#: ../../models/APPD Definition.md:696
-msgid "appFeatureOptional:"
-msgstr "appFeatureOptional:"
-
-#: ../../models/APPD Definition.md:706
-msgid "transportDependencies:"
-msgstr "transportDependencies:"
-
-#: ../../models/APPD Definition.md:708
-msgid "appSupportMp1: true appName: filter01 appTrafficRule:"
-msgstr "appSupportMp1: true appName: filter01 appTrafficRule:"
-
-#: ../../models/APPD Definition.md:711
-msgid "trafficRuleId: trafficRule1 filterType: FLOW priority: 1 trafficFilter:"
-msgstr "trafficRuleId: trafficRule1 filterType: FLOW priority: 1 trafficFilter:"
-
-#: ../../models/APPD Definition.md:715
-msgid "srcAddress:"
-msgstr "srcAddress:"
-
-#: ../../models/APPD Definition.md:716
-msgid "0.0.0.0/0"
-msgstr "0.0.0.0/0"
-
-#: ../../models/APPD Definition.md:717
-msgid "dstAddress:"
-msgstr "dstAddress:"
-
-#: ../../models/APPD Definition.md:718
-msgid "172.30.2.0/28"
-msgstr "172.30.2.0/28"
-
-#: ../../models/APPD Definition.md:719
-msgid "srcPort:"
-msgstr "srcPort:"
-
-#: ../../models/APPD Definition.md:720 Definition.md:722 Definition.md:732 Definition.md:734
-msgid "8080"
-msgstr "8080"
-
-#: ../../models/APPD Definition.md:721
-msgid "dstPort:"
-msgstr "dstPort:"
-
-#: ../../models/APPD Definition.md:723
-msgid "protocol:"
-msgstr "protocol:"
-
-#: ../../models/APPD Definition.md:724
-msgid "ANY"
-msgstr "ANY"
-
-#: ../../models/APPD Definition.md:725
-msgid "tag:"
-msgstr "tag:"
-
-#: ../../models/APPD Definition.md:726
-msgid "1234"
-msgstr "1234"
-
-#: ../../models/APPD Definition.md:727
-msgid "srcTunnelAddress:"
-msgstr "srcTunnelAddress:"
-
-#: ../../models/APPD Definition.md:728 Definition.md:730
-msgid "10.10.10.10"
-msgstr "10.10.10.10"
-
-#: ../../models/APPD Definition.md:729
-msgid "tgtTunnelAddress:"
-msgstr "tgtTunnelAddress:"
-
-#: ../../models/APPD Definition.md:731
-msgid "srcTunnelPort:"
-msgstr "srcTunnelPort:"
-
-#: ../../models/APPD Definition.md:733
-msgid "dstTunnelPort:"
-msgstr "dstTunnelPort:"
-
-#: ../../models/APPD Definition.md:735
-msgid "qCI: 1 dSCP: 0 tC: 1"
-msgstr "qCI: 1 dSCP: 0 tC: 1"
-
-#: ../../models/APPD Definition.md:738
-msgid "action: PASSTHROUGH dstInterface:"
-msgstr "action: PASSTHROUGH dstInterface:"
-
-#: ../../models/APPD Definition.md:740
-msgid "interfaceType: TUNNEL tunnelInfo:"
-msgstr "interfaceType: TUNNEL tunnelInfo:"
-
-#: ../../models/APPD Definition.md:742
-msgid "tunnelType: GTP_U tunnelDstAddress: 10.10.10.10 tunnelSrcAddress: 11.11.11.11"
-msgstr "tunnelType: GTP_U tunnelDstAddress: 10.10.10.10 tunnelSrcAddress: 11.11.11.11"
-
-#: ../../models/APPD Definition.md:745
-msgid "srcMacAddress: 02-00-00-00-00-00 dstMacAddress: 02-00-00-00-00-00 dstIpAddress: 192.0.2.0"
-msgstr "srcMacAddress: 02-00-00-00-00 dstMacAddress: 02-00-00-00-00-00 dstIpAddress: 192.0.2.0"
-
-#: ../../models/APPD Definition.md:752
-msgid "appDNSRule:"
-msgstr "appDDNSRule:"
-
-#: ../../models/APPD Definition.md:749
-msgid "dnsRuleId: dnsRule1 domainName: mec.huawei.com ipAddressType: IP_V4 ipAddress: 172.30.2.17 ttl: 100"
-msgstr "dnsRuleId: dnsRule1 domainName: mec.huawei.com ipAddressType: IP_V4 ipAddress: 172.30.2.17 ttl: 100"
+msgid "定义样例如下："
+msgstr "The following examples are defined:"
 

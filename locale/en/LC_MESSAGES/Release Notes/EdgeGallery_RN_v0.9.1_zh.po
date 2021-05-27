@@ -8,27 +8,40 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:6
+#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:1
+msgid ".. This work is licensed under a Creative Commons Attribution 4.0 International License. <br> .. http://creativecommons.org/licenses/by/4.0 <br> .. Copyright 2019-2020 Huawei Technologies Co., Ltd. <br>"
+msgstr "... This work is licensated under a Creative Commons Attribution 4.0 International License. <br> .. http://creativecommons.org/licenses/by/4.0 <br> .. Copyright 2019-2020 Huawei Technologies Co., Ltd. <br>"
+
+#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:5
 msgid "Release Notes"
 msgstr "Release Notes"
 
-#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:9
+#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:8
 msgid "EdgeGallery Introduction"
 msgstr "EdgeGallery Introduction"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:10
+msgid "EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用和应用开发者的端到端解决方案，对于APP应用来说除支持应用运行的基础MEP平台外，还提供APP应用管理系统（MEC Manager，极简管理面，包括MEPM以及MEAO的部分功能），能够对应用进行端到端生命周期管理，提供X86应用向ARM迁移的工具链，支持应用平滑的跨平台迁移和调优。对应用开发者来说，提供完整的应用开发IDE环境和集成验证环境，为应用开发者提供一站式开发体验，同时通过APP Store功能，对应用开发者开发的APP提供标准的准入验证流程。"
+msgstr "EdgeGallery is a 5G MEC open source edge computing platform, an end-to-end solution for application and application developers, providing an APP application management system (MEC Manager, extremely simple management face, including MEPM and MEAO) for end-to-end life cycle management, providing X86 application to ARM migration tools chain.For application developers, providing a complete application development IDE environment and integrated verification environment, providing a one-stop development experience for application developers, and providing standard access verification processes for application developers through the APP Store function."
+
+#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:11
 #, python-format
-msgid "EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用和应用开发者的端到端解决方案，对于APP应用来说除支持应用运行的基础MEP平台外，还提供APP应用管理系统（MEC Manager，极简管理面，包括MEPM以及MEAO的部分功能），能够对应用进行端到端生命周期管理，提供X86应用向ARM迁移的工具链，支持应用平滑的跨平台迁移和调优。对应用开发者来说，提供完整的应用开发IDE环境和集成验证环境，为应用开发者提供一站式开发体验，同时通过APP Store功能，对应用开发者开发的APP提供标准的准入验证流程。 - [项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd) - [开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
-msgstr "EdgeGallery is a 5G MEC open source edge computing platform, an end-to-end solution for application and application developers, providing an APP application management system (MEC Manager, extremely simple management face, including MEPM and MEAO) for end-to-end life cycle management, providing X86 application to ARM migration tools chain.For application developers, providing a complete application development IDE environment and integrated verification environment, providing a one-stop development experience for application developers, and providing standard access verification processes for application developers through the APP Store function. - [Project Introduction] (https: //gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)-[Developer Guide] (https: //gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
+msgid "[项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)"
+msgstr "[Introduction to the project](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)"
+
+#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:12
+#, python-format
+msgid "[开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
+msgstr "[Developer Guide](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:14
 msgid "Version: v0.9.1"
@@ -44,19 +57,15 @@ msgstr "Image Version: v0.9.1"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:20
 msgid "**新开源仓库列表**"
-msgstr "List of newly opened warehouses * *"
-
-#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:22
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>模块</th> <th>名称</th> <th>类型</th> <th>URL</th> <th>说明</th> </tr> </thead> <tbody> <tr> <td>Developer</td> <td>api-emulator</td> <td>产品仓</td> <td>https://gitee.com/edgegallery/api-emulator</td> <td>提供基本能力的模拟api</td> </tr> <tr> <td>Mep</td> <td>Plugins</td> <td>产品仓</td> <td>https://gitee.com/edgegallery/plugins</td> <td>plugins仓</td> </tr> <tr> <td>Developer</td> <td>toolchain</td> <td>产品仓</td> <td>https://gitee.com/edgegallery/toolchain</td> <td>提供x86平台应用上车ARM时源码分析功能</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th> <th></th> <th>Name</th> <th>Type</th> <th>URL</th> <th>Description </thead></th> </thead> <tbody> <tr> <td>Developer</td> <td>api-emulator</td> <td>Product bin</td> <td>https://gitee.com/edgegallery/api-emulator</td> <td>Provide simulation of basic capabilities</td> </tr> <tr> <td>Mep</td> <td>Plugins</td> <td>Product bin</td> <td>https://gitee.com/edgegallery/plugins</td> <td>plugins</td> </tr> <tr> <td>Developer</td> <td>toolchain</td> <td>Product bin</td> <td>https://gitee.com/edgegallery/toolchain</td> <td>Providing the x86 platform application to the ARM-time-source analysis</td></td> </tr> </tr> </tbody> </table> </table>"
+msgstr "**List of newly opened warehouses**"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:57
 msgid "**New Features**"
-msgstr "** New Features * *"
+msgstr "**New Features**"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:59
 msgid "[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)"
-msgstr "[** Demand/Release Plan Long Description **] (https: //gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)"
+msgstr "[ **Demand/Release Plan Long Description** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:61
 msgid "安全设计排查问题汇总"
@@ -72,32 +81,32 @@ msgstr "[MEP/MEP Agent] ak/sk Configuration Interface"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:65
 msgid "**Bug Fixes**"
-msgstr "** Bug Fixes * *"
+msgstr "**Bug Fixes**"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:67 Notes/EdgeGallery_RN_v0.9.1_zh.md:71 Notes/EdgeGallery_RN_v0.9.1_zh.md:77 Notes/EdgeGallery_RN_v0.9.1_zh.md:81
 #, python-format
-msgid "参见 [Edgeggallery v0.9.1 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)"
-msgstr "See [Edgeegarlery v0.9.1 Test Report] (https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report.md)"
+msgid "参见 [Edgeggallery v0.9.1 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)"
+msgstr "See [Edgeegarlery v0.9.1 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:69
 msgid "**Known Issues**"
-msgstr "** Known Isses * *"
+msgstr "**Known Isses**"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:73
 msgid "**Security Notes**"
-msgstr "** Security Notes * *"
+msgstr "**Security Notes**"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:75
 msgid "*Fixed Security Issues*"
-msgstr "*Fixed Security Issues *"
+msgstr "*Fixed Security Issues*"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:79
 msgid "*Known Security Issues*"
-msgstr "*Known Security Issues *"
+msgstr "*Known Security Issues*"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:83
 msgid "*Known Vulnerabilities in Used Modules*"
-msgstr "*Known Vulnerabilities in Used Modules *"
+msgstr "*Known Vulnerabilities in Used Modules*"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:85
 msgid "EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自行修复："
@@ -107,45 +116,25 @@ msgstr "EdgeGalrry v0.9.1 The following vulnerabilities in third-party open sour
 msgid "Appstore:"
 msgstr "Appstore:"
 
-#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:89
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-transport (indirect dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869</td> </tr> <tr> <td>log4j (indirect dependency)</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>spring-jdbc (indirect dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-core (indirect dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th>Component</th> <th>Version</th> <th>CVE</th> </thead> </thead> <tbody> <tr> <td>netty-transport (direct dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-11645, CVE-2019-16869</td> </tr> <tr> <td>log4j (indirect dependency)</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>spring-jdbc (indirect dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-core (direct dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table> </table> </table>"
-
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:121
 msgid "Developer:"
 msgstr "Developer:"
-
-#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:123
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>netty-transport (indirect dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869</td> </tr> <tr> <td>spring-beans (indirect dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-config (indirect dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258, CVE-2020-5398</td> </tr> <tr> <td>spring-security-core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>lodash</td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPM-118</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <th>Component</th> <th>Version</th> <th>CVE</th> </thead> </thead> <tbody> <tr> <td>netty-transport (direct dependency)</td> <td>4.1.36.Final</td> <td>CVE-2019-20444, CVE-2019-20445, CVE-2019-16869</td> </tr> <tr> <td>spring-beans (direct dependency)</td> <td>5.1.8.RELEASE</td> <td>CVE-2020-5398</td> </tr> <tr> <td>spring-security-config (direct dependency)</td> <td>5.1.5.RELEASE</td> <td>CVE-2018-1258, CVE-2020-5398 </tr></td> <tr> <td>spring-security-core</td> <td>5.3.4.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>lodash</td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPPM-118</td> </tr> </tr> </table> </table>"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:165
 msgid "User-mgmt:"
 msgstr "User-mgmt:"
 
-#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:167
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>rxnetty (indirect dependency)</td> <td>0.4.9</td> <td>CVE-2015-2156</td> </tr> <tr> <td>netty-tcnative-boringssl-static (indirect dependency)</td> <td>2.0.31.Final</td> <td>CVE-2015-2156</td> </tr> <tr> <td>spring-security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>lodash</td> <td>4.17.20</td> <td>NPM-1065, NPM-557, NPM-7823</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPM-118</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td>rxnetty (indirect dependency)</td> <td>0.4.9</td> <td>CVE-2015 -2156</td> </tr> <tr> <td>netty-tcnative-boringssl-static (indirect dependency)</td> <td>2.0.31.Final</td> <td>CVE-2015 -2156</td> </tr> <tr> <td>spring-security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> <tr> <td>lodash</td> <td>4.17.20</td> <td>NPM-1065, NPM-557, NPM-7823</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPPM-118 </tr></td> </tr> </table> </table>"
-
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:204
 msgid "Website-gateway:"
 msgstr "Website-gateway:"
-
-#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:206
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>log4j</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>spring-security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td> <td>log4j</td> <td>1.2.17</td> <td>CVE-2019-17571</td> </tr> <tr> <td>sparing-security-core</td> <td>5.2.6.RELEASE</td> <td>CVE-2018-1258</td> </tr> </tr> </table> </table>"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:228
 msgid "MECM:"
 msgstr "MECM:"
 
-#: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:230
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE</th> </tr> </thead> <tbody> <tr> <td>lodash</td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> <td>minimatch</td> <td>3.0.4</td> <td>NPM-118</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>Component</th> <th>Version</th> <th>CVE </thead></th> </thead> <tbody> <tr> <td></td> <td>4.17.13</td> <td>CVE-2020-8203</td> </tr> <tr> <td>minatch</td> <td>3.0.4</td> <td>NPPM-118</td></td> </tr> </table> </table>"
-
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:252
 msgid "**Upgrade Notes**"
-msgstr "** Upgrade Notes * *"
+msgstr "**Upgrade Notes**"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:254 Notes/EdgeGallery_RN_v0.9.1_zh.md:258
 msgid "N/A"
@@ -153,14 +142,13 @@ msgstr "N/A"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:256
 msgid "**Deprecation Notes**"
-msgstr "* * Deprecation Notes * *"
+msgstr "**Deprecation Notes**"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:260
 msgid "**Other**"
-msgstr "** Other**"
+msgstr "**Other**"
 
 #: ../../Release Notes/EdgeGallery_RN_v0.9.1_zh.md:262
 #, python-format
 msgid "经过安全工作组评审，Plugins仓库遗留问题单[I1XA0N](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N)将在v0.9版本发布后通过补丁形式修复，详细情况请参见安全工作组[会议纪要](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)"
-msgstr "After a security working group review, the Plugins warehouse legacy ticket [I1XA0N] (https://geite.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N) will be repaired in patch form after the v0.9 release,For details, see Security Working Group [minutes] (https: //gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)"
-
+msgstr "After a security working group review, the Plugins warehouse legacy ticket [I1XA0N](https://geite.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N) will be repaired in patch form after the v0.9 release,For details, see Security Working Group [minutes](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)"

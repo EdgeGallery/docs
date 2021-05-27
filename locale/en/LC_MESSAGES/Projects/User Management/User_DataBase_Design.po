@@ -8,82 +8,42 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../Projects/User Management/User_DataBase_Design.md:1
-msgid "## 数据库设计"
-msgstr "## Database Design"
+msgid "数据库设计"
+msgstr "Database design"
 
 #: ../../Projects/User Management/User_DataBase_Design.md:3
-msgid "### tbl\\_tenant 租户表"
-msgstr "### tbl \\_tenant Tenant Table"
+msgid "tbl\\_tenant 租户表"
+msgstr "tbl\\_tenant tenant table"
 
 #: ../../Projects/User Management/User_DataBase_Design.md:5
 msgid "记录所有的租户信息"
 msgstr "Record all the tenant information."
 
-#: ../../Projects/User Management/User_DataBase_Design.md:7
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th><strong>字段</strong></th> <th><strong>类型</strong></th> <th><strong>主键</strong></th> <th><strong>描述</strong></th> </tr> </thead> <tbody> <tr> <td>tenantid</td> <td>string</td> <td>key</td> <td>主键</td> </tr> <tr> <td>username</td> <td>string</td> <td>-</td> <td>注册时的用户名，需要唯一性。[5-29]个字符之间</td> </tr> <tr> <td>password</td> <td>string</td> <td>-</td> <td>注册时设置的密码，注册时需要满足密码复杂度要求，满足数字/字母/特殊字符 至少两种以上的组合，[6-18]个字符之间。数据库中的密码使用PBKDF2加盐值后存储</td> </tr> <tr> <td>company</td> <td>string</td> <td>-</td> <td>用户公司名称</td> </tr> <tr> <td>telephonenumber</td> <td>string</td> <td>-</td> <td>用户手机号码，用于找回密码时短信验证用户身份，必须满足11位有效数字</td> </tr> <tr> <td>mailaddress</td> <td>string</td> <td>-</td> <td>用户邮箱地址，用于找回密码时邮箱验证用户身份，必须为有效的邮箱格式</td> </tr> <tr> <td>gender</td> <td>string</td> <td>-</td> <td>用户性别</td> </tr> <tr> <td>isallowed</td> <td>boolean</td> <td>-</td> <td>帐号是否允许登录</td> </tr> <tr> <td>createtime</td> <td>timestamp</td> <td>-</td> <td>创建时间（即注册时间）</td> </tr> <tr> <td>modifytime</td> <td>timestamp</td> <td>-</td> <td>修改时间</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr><strong><strong><strong></strong></strong></th></th></th> <th> <th> <th><strong><strong><strong><strong><strong><strong></strong></strong> </tr> </tr> </thead> <tbody> <tr> <td> <td>tenantid</td> <td>string</td> <td>key</td> <td>Main key</td> </tr> <tr> <td>username</td> <td>string</td> <td>-</td> <td>The user name when registering requires uniqueness.[5-29] Between characters</td> </tr> <tr> <td>password</td> <td>string</td> <td>-</td> <td>The password set when registering, the password complexity requirement is required to satisfy the combination of the number/letter/special character (6-18).The password in the database uses PBKDF2 salt value to store </tr></td> <tr> <td>company</td> <td>string</td> <td>-</td> <td>User company name</td> </tr> <tr> <td>telephonember</td> <td>string</td> <td>-</td> <td>User's cell phone number, 11 valid numbers must be satisfied if the user identity is used to retrieve the password </tr></td> <tr> <td>mailaddress</td> <td>string</td> <td>-</td> <td>The user email address, which verifies the user identity, must be valid for the mailbox format </tr></td> <tr> <td>gender</td> <td>string</td> <td>-</td> <td>User Gender</td> </tr> <tr> <td>isallowed</td> <td>boolean</td> <td>-</td> <td>Does the account number allow to register</td> </tr> <tr> <td>createtime</td> <td>timestamp</td> <td>-</td> <td>Creation time (i.e. registration time)</td> </tr> <tr> <td>modifytime</td> <td>timestamp</td> <td>-</td> <td>Modification time </tr></td> </tr> </table> </table>"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:80 Management/User_DataBase_Design.md:183
-msgid "初始值： ```"
-msgstr "Initial value: ` ` `"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:82
-msgid "tenantid               |    username    |                                     password                                     | company | telephonenumber | mailaddress | gender | isallowed | createtime | modifytime"
-msgstr "tenantid | username | password | company | telepphoneumber | mailaddress | gender | isallowed | createtime | modifytime"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:85
-msgid "--------------------------------------+----------------+----------------------------------------------------------------------------------+---------+-----------------+--------+-----------"
-msgstr "-------------------------------------- + ---------------- + --------- + --------- + ----------------- + -------- + -----------"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:84
-msgid "de3565b1-a7c2-42b9-b281-3f032af29ff7 | guest          | 59756fda85ebddee6024d5cc0e6edcde3226693257a9c1eb662c56426b8a4f232b3d56c321adbd91 | company | 13800000000     | 13800000000@edgegallery.org | 1      | t | 初始数据入库时间(now函数值) | 初始数据入库时间(now函数值) 39937079-99fe-4cd8-881f-04ca8c4fe09d | admin          | 472645ad1af0101adaa6769cc865fec3b29fedeba6dc912900a59b1364b7a6bb17bb9a0575854547 | company | 13800000001     | 13800000001@edgegallery.org | 1      | t | 初始数据入库时间(now函数值) | 初始数据入库时间(now函数值)"
-msgstr "de3565b1-a7c2-42b9-b281-3f032af29ff7 | guest | 59756fda85ebddee6024d5cc0e3226693257a9c1eb662c56426b8a4f232b3d56c321adbd91 | company | 13800000000 | 13800000000@edgegallery.org | 1 | t | Initial Data Putaway Time (now function value) | Initial data putaway (now function value) 39937079-99fe-4cd8-881f-04ca8c4fe09d | admin | 472645ad1af0101adaa6769cc865fec3b29feba6dc912900a59b1364b7a6bb17bb9a0575854547 | company | 13800000001 | 13800000001@edgegallery.org | 1 | t | Initial data putaway time (now function value) | initial data putaway time (now function value)"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:87
-msgid "guest账号的默认密码是：guest admin账号的默认密码是：Admin@321 请部署前修改默认密码 ```"
-msgstr "The default password for the guest account is: the default password for the guest admin account is: Admin@ 321 pre-modify default password ` ` `"
+#: ../../Projects/User Management/User_DataBase_Design.md:80 Management/User_DataBase_Design.md:127 Management/User_DataBase_Design.md:183
+msgid "初始值："
+msgstr "Initial value:"
 
 #: ../../Projects/User Management/User_DataBase_Design.md:92
-msgid "### tbl\\_role 用户角色表"
-msgstr "### tbl \\_role user role table"
+msgid "tbl\\_role 用户角色表"
+msgstr "tbl\\_role user role table"
 
 #: ../../Projects/User Management/User_DataBase_Design.md:94
 msgid "配置支持的平台的和用户角色，该表在启动时初始化，不支持动态添加"
 msgstr "configuration supported platform and user role, the table initializes at startup and does not support dynamic addition"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:96
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>字段</th> <th>类型</th> <th>主键</th> <th>描述</th> </tr> </thead> <tbody> <tr> <td>id</td> <td>string</td> <td>key</td> <td>主键</td> </tr> <tr> <td>platform</td> <td>string</td> <td>-</td> <td>支持的平台</td> </tr> <tr> <td>role</td> <td>string</td> <td>-</td> <td>支持的角色定义</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>field</th> <th>Type</th> <th>Master</th> <th></th></th> </thead> </tr> <tbody> <tr> <td>id</td> <td>string</td> <td>key</td> <td>Main key</td> </tr> <tr> <td> <td>platform</td> <td>string</td> <td>-</td> <td>supported platform</td> </tr> <tr> <td>role</td> <td>string</td> <td>-</td> <td>Role definition</td></td> </tr> </table> </table>"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:127
-msgid "初始值： ```sql"
-msgstr "Initial value: ` ` ` sql"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:129
-msgid "id | platform  |  role"
-msgstr "id | platform | role"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:144
-msgid "----+-----------+--------"
-msgstr "---- + ----------- + --------"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:131
-msgid "1 | APPSTORE  | GUEST 2 | APPSTORE  | TENANT 3 | APPSTORE  | ADMIN 4 | DEVELOPER | GUEST 5 | DEVELOPER | TENANT 6 | DEVELOPER | ADMIN 7 | MECM      | GUEST 8 | MECM      | TENANT 9 | MECM      | ADMIN 10 | ATP      | GUEST 11 | ATP      | TENANT 12 | ATP      | ADMIN 13 | LAB      | GUEST 14 | LAB      | TENANT 15 | LAB      | ADMIN"
-msgstr "1 | APPSTORE | GUEST 2 | APPSTORE 3 | APPSTORE | ADMIN 4 | DEVELOPER | GUEST 5 | DEVELOPER | ADMIN 7 | DEVELOPER 8 | GECM | GECM | ADMIN 10 | GEST 11 | ATP | GEST 11 | ATP | TENANT 12 | ATP | ADMIN 13 | LAB | GUEST 14 | LAB | LB | TENANT 15 | LAB | ADMIN"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:146
-msgid "``` 说明："
-msgstr "` ` ` Description:"
+#: ../../Projects/User Management/User_DataBase_Design.md:147
+msgid "说明："
+msgstr "Description:"
 
 #: ../../Projects/User Management/User_DataBase_Design.md:148
 msgid "APPSTORE：应用仓库平台"
@@ -106,30 +66,10 @@ msgid "LAB：实验室管理平台"
 msgstr "LAB: Laboratory Management Platform"
 
 #: ../../Projects/User Management/User_DataBase_Design.md:154
-msgid "### tbl\\_tenant\\_role 关系表"
-msgstr "### tbl \\_tenant\\_role relation table"
+msgid "tbl\\_tenant\\_role 关系表"
+msgstr "tbl\\_tenant\\_role relationship table"
 
 #: ../../Projects/User Management/User_DataBase_Design.md:156
 msgid "用于描述租户和角色的关系"
 msgstr "Relationship to describe tenants and roles"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:158
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>字段</th> <th>类型</th> <th>主键</th> <th>描述</th> </tr> </thead> <tbody> <tr> <td>tenantid</td> <td>string</td> <td></td> <td>租户ID</td> </tr> <tr> <td>roleid</td> <td>string</td> <td></td> <td>角色ID</td> </tr> </tbody> </table>"
-msgstr "</th> bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th> <th></th> <th> <th>Main key</th> <th></th></th> </thead> <tbody> <tr> <td>tenantid</td> <td>string</td> <td></td> <td>Tenant ID</td> </tr> <tr> <td> <td>roleid</td> <td>string</td> <td></td> <td>Role ID</td> </tr> </tbody> </table> </table>"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:185
-msgid "tenantid               | roleid"
-msgstr "tenantid | roleid"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:196
-msgid "--------------------------------------+--------"
-msgstr "-------------------------------------- +"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:187
-msgid "de3565b1-a7c2-42b9-b281-3f032af29ff7 |      1 de3565b1-a7c2-42b9-b281-3f032af29ff7 |      4 de3565b1-a7c2-42b9-b281-3f032af29ff7 |      7 de3565b1-a7c2-42b9-b281-3f032af29ff7 |     10 de3565b1-a7c2-42b9-b281-3f032af29ff7 |     13 39937079-99fe-4cd8-881f-04ca8c4fe09d |      3 39937079-99fe-4cd8-881f-04ca8c4fe09d |      6 39937079-99fe-4cd8-881f-04ca8c4fe09d |      9 39937079-99fe-4cd8-881f-04ca8c4fe09d |     12 39937079-99fe-4cd8-881f-04ca8c4fe09d |     15"
-msgstr "de3565b1-a7c2-42b9-b281-3f032af29ff7 | 1 de3565b1-a7c2-42b9-b281-3f032af29ff7 | 10 de3565b1-a7c2-42b9-b281-3f032af29ff7 | 10 de3565b1-a7c2-42b9-b281-3f032af29ff7 | 13 39937079-881f-04ca8c4fe09d | 3 39937079-99fe-4cd8-881f-04ca8c4fe09d | 9 39937079-881f-04ca8c4fe09d | 12 39937079-99fe-4cd8-881f-04ca8c4fe09d | 15"
-
-#: ../../Projects/User Management/User_DataBase_Design.md:198
-msgid "对照tbl_tenant的初始化数据， de3565b1-a7c2-42b9-b281-3f032af29ff7是guest用户，默认拥有各平台的GUEST角色； 39937079-99fe-4cd8-881f-04ca8c4fe09d是admin用户，默认拥有各平台的ADMIN角色； ```"
-msgstr "The de3565b1-a7c2-42b9-b281-3f032af29ff7 is the GUEST role for the platform; the default has the GUEST role; the 39937079-99fe-4cd8-881f-04ca8c4fe09d is the admin user, the default owning ADMIN role; ` ` `"
 
