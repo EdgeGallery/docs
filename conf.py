@@ -101,8 +101,8 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-html_logo = 'images/edgegallery-logo-only.png'
-html_favicon = 'images/favicon.png'
+html_logo = 'upload/images/common/edgegallery-logo-only.png'
+html_favicon = 'upload/images/common/favicon.png'
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
