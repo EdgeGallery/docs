@@ -63,7 +63,24 @@ Method: POST
 |tenantId|tenant Id|path|yes|Valid UUID|64|
 |hostIp|host Ip|string|yes|Valid IP|15|
 |appName|appName|string|yes|AlphaNumeric|128|
-|file|file|formData|yes|
+|parameters|key value pair|map|no|valid string
+
+Example request body:
+
+```
+{
+    "hostIp": "119.8.47.5",
+    "packageId": "ea3b8191f8a84565bd8eb5933c8bbcd560e4f65665a84cba851c93ece4fd825d",
+    "appName": "testApplication",
+    "parameters": {
+    	"mepIp": "MEP IP",
+    	"mepPort": "MEP port",
+    	"ak": "access key",
+    	"sk": "secure key",
+    	"...": "..."
+    }
+}
+```
 
 Example response:
 ```
