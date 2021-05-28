@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-05-28 18:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,349 +23,297 @@ msgstr "Inventory Interfaces"
 
 #: ../../Projects/MECM/Inventory_Interfaces_en.md:3
 msgid "The document is for the Inventory project, there are three parts of interfaces in the project."
-msgstr "The document is for the Inventory project, there are there parts of interfaces in the project."
+msgstr "The document is for the Inventory project, there are three parts of interfaces in the project."
 
 #: ../../Projects/MECM/Inventory_Interfaces_en.md:5
-msgid "Get All Application LCM records"
-msgstr "Get All Application LCM records"
+msgid "Get All Application Records"
+msgstr "Get All Application Records"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:7
-msgid "Retrieves all application LCM records"
-msgstr "Retrieves all application LCM records"
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:6
+msgid "Retrieves all application store records"
+msgstr "Retrieves all application store records"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:37 ../../Projects/MECM/Inventory_Interfaces_en.md:114 ../../Projects/MECM/Inventory_Interfaces_en.md:154 ../../Projects/MECM/Inventory_Interfaces_en.md:202 ../../Projects/MECM/Inventory_Interfaces_en.md:277 ../../Projects/MECM/Inventory_Interfaces_en.md:325 ../../Projects/MECM/Inventory_Interfaces_en.md:365 ../../Projects/MECM/Inventory_Interfaces_en.md:469 ../../Projects/MECM/Inventory_Interfaces_en.md:509 ../../Projects/MECM/Inventory_Interfaces_en.md:557 ../../Projects/MECM/Inventory_Interfaces_en.md:677 ../../Projects/MECM/Inventory_Interfaces_en.md:794 ../../Projects/MECM/Inventory_Interfaces_en.md:834 ../../Projects/MECM/Inventory_Interfaces_en.md:890 ../../Projects/MECM/Inventory_Interfaces_en.md:938 ../../Projects/MECM/Inventory_Interfaces_en.md:990 ../../Projects/MECM/Inventory_Interfaces_en.md:1098 ../../Projects/MECM/Inventory_Interfaces_en.md:1146 ../../Projects/MECM/Inventory_Interfaces_en.md:1188 ../../Projects/MECM/Inventory_Interfaces_en.md:1411 ../../Projects/MECM/Inventory_Interfaces_en.md:1451 ../../Projects/MECM/Inventory_Interfaces_en.md:1717 ../../Projects/MECM/Inventory_Interfaces_en.md:1764 ../../Projects/MECM/Inventory_Interfaces_en.md:1865 ../../Projects/MECM/Inventory_Interfaces_en.md:1974 ../../Projects/MECM/Inventory_Interfaces_en.md:2038 ../../Projects/MECM/Inventory_Interfaces_en.md:2102 ../../Projects/MECM/Inventory_Interfaces_en.md:2183 ../../Projects/MECM/Inventory_Interfaces_en.md:2247 ../../Projects/MECM/Inventory_Interfaces_en.md:2293 ../../Projects/MECM/Inventory_Interfaces_en.md:2333 ../../Projects/MECM/Inventory_Interfaces_en.md:2410 ../../Projects/MECM/Inventory_Interfaces_en.md:2491 ../../Projects/MECM/Inventory_Interfaces_en.md:2529 ../../Projects/MECM/Inventory_Interfaces_en.md:2581 ../../Projects/MECM/Inventory_Interfaces_en.md:2622 ../../Projects/MECM/Inventory_Interfaces_en.md:2669 ../../Projects/MECM/Inventory_Interfaces_en.md:2772 ../../Projects/MECM/Inventory_Interfaces_en.md:2875
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:35 ../../Projects/MECM/Inventory_Interfaces_en.md:139 ../../Projects/MECM/Inventory_Interfaces_en.md:179 ../../Projects/MECM/Inventory_Interfaces_en.md:227 ../../Projects/MECM/Inventory_Interfaces_en.md:347 ../../Projects/MECM/Inventory_Interfaces_en.md:464 ../../Projects/MECM/Inventory_Interfaces_en.md:504 ../../Projects/MECM/Inventory_Interfaces_en.md:560 ../../Projects/MECM/Inventory_Interfaces_en.md:608 ../../Projects/MECM/Inventory_Interfaces_en.md:660 ../../Projects/MECM/Inventory_Interfaces_en.md:768 ../../Projects/MECM/Inventory_Interfaces_en.md:816 ../../Projects/MECM/Inventory_Interfaces_en.md:858 ../../Projects/MECM/Inventory_Interfaces_en.md:1081 ../../Projects/MECM/Inventory_Interfaces_en.md:1121 ../../Projects/MECM/Inventory_Interfaces_en.md:1387 ../../Projects/MECM/Inventory_Interfaces_en.md:1434 ../../Projects/MECM/Inventory_Interfaces_en.md:1535 ../../Projects/MECM/Inventory_Interfaces_en.md:1644 ../../Projects/MECM/Inventory_Interfaces_en.md:1708 ../../Projects/MECM/Inventory_Interfaces_en.md:1772 ../../Projects/MECM/Inventory_Interfaces_en.md:1853 ../../Projects/MECM/Inventory_Interfaces_en.md:1917 ../../Projects/MECM/Inventory_Interfaces_en.md:1963 ../../Projects/MECM/Inventory_Interfaces_en.md:2003 ../../Projects/MECM/Inventory_Interfaces_en.md:2103 ../../Projects/MECM/Inventory_Interfaces_en.md:2206 ../../Projects/MECM/Inventory_Interfaces_en.md:2676 ../../Projects/MECM/Inventory_Interfaces_en.md:2716 ../../Projects/MECM/Inventory_Interfaces_en.md:2855 ../../Projects/MECM/Inventory_Interfaces_en.md:2902
 msgid "Example response:"
 msgstr "Example response:"
 
 #: ../../Projects/MECM/Inventory_Interfaces_en.md:50
-msgid "Add Applcm Record"
-msgstr "Add Applcm Record"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:51
-msgid "Adds new application LCM record"
-msgstr "Adds new application LCM record"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:104 ../../Projects/MECM/Inventory_Interfaces_en.md:267 ../../Projects/MECM/Inventory_Interfaces_en.md:458 ../../Projects/MECM/Inventory_Interfaces_en.md:663 ../../Projects/MECM/Inventory_Interfaces_en.md:780 ../../Projects/MECM/Inventory_Interfaces_en.md:1086 ../../Projects/MECM/Inventory_Interfaces_en.md:1379 ../../Projects/MECM/Inventory_Interfaces_en.md:1687 ../../Projects/MECM/Inventory_Interfaces_en.md:1852 ../../Projects/MECM/Inventory_Interfaces_en.md:1961 ../../Projects/MECM/Inventory_Interfaces_en.md:2400 ../../Projects/MECM/Inventory_Interfaces_en.md:2481 ../../Projects/MECM/Inventory_Interfaces_en.md:2723 ../../Projects/MECM/Inventory_Interfaces_en.md:2826
-msgid "Example request body:"
-msgstr "Example request body:"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:124
-msgid "Delete All Applcm Record"
-msgstr "Delete All Applcm Record"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:125
-msgid "Deletes all application LCM Records."
-msgstr "Deleees all application LCM Records."
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:164
-msgid "Get Application LCM Record"
-msgstr "Get Application LCM Record"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:165
-msgid "Retrieves application LCM Record"
-msgstr "Retrieves application LCM Record"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:213
-msgid "Update Application LCM Record"
-msgstr "Update Application LCM Record"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:214
-msgid "Updates existing application LCM record"
-msgstr "Updates existing application LCM record"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:287
-msgid "Delete Application LCM Record"
-msgstr "Delete Application LCM Record"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:288
-msgid "Deletes application LCM record"
-msgstr "Deletes application LCM record"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:335
-msgid "Get All Application Records"
-msgstr "Get All Application Records"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:336
-msgid "Retrieves all application store records"
-msgstr "Retreeves all application store records"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:380
 msgid "Add Application Store Record"
 msgstr "Add Application Store Record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:381
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:51
 msgid "Adds new application store record"
 msgstr "Adds new application store record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:479
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:128 ../../Projects/MECM/Inventory_Interfaces_en.md:333 ../../Projects/MECM/Inventory_Interfaces_en.md:450 ../../Projects/MECM/Inventory_Interfaces_en.md:756 ../../Projects/MECM/Inventory_Interfaces_en.md:1049 ../../Projects/MECM/Inventory_Interfaces_en.md:1357 ../../Projects/MECM/Inventory_Interfaces_en.md:1522 ../../Projects/MECM/Inventory_Interfaces_en.md:1631 ../../Projects/MECM/Inventory_Interfaces_en.md:2054 ../../Projects/MECM/Inventory_Interfaces_en.md:2157 ../../Projects/MECM/Inventory_Interfaces_en.md:2666 ../../Projects/MECM/Inventory_Interfaces_en.md:2845
+msgid "Example request body:"
+msgstr "Example request body:"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:149
 msgid "Delete All Application Records"
 msgstr "Delete All Application Records"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:480 ../../Projects/MECM/Inventory_Interfaces_en.md:1422
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:150 ../../Projects/MECM/Inventory_Interfaces_en.md:1092
 msgid "Deletes all application stores records"
 msgstr "Deletes all application stores records"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:519
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:189
 msgid "Get Application Stores Record"
 msgstr "Get Application Stores Record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:520
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:190
 msgid "Retrieves application store record"
-msgstr "Retreeves application store record"
+msgstr "Retrieves application store record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:569 ../../Projects/MECM/Inventory_Interfaces_en.md:1774
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:239 ../../Projects/MECM/Inventory_Interfaces_en.md:1444
 msgid "Add Application record"
 msgstr "Add Application record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:570
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:240
 msgid "Adds a new application store record entry into the Inventory."
 msgstr "Adds a new application store record entry into the Inventory."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:686 ../../Projects/MECM/Inventory_Interfaces_en.md:1875
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:356 ../../Projects/MECM/Inventory_Interfaces_en.md:1545
 msgid "Update Application record"
 msgstr "Update Application record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:687
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:357
 msgid "Updates an exiting application store record in the Inventory matching the given tenant ID & application store IP"
 msgstr "Updates an exiting application store record in the Inventory matching the given tenant ID & application store IP"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:804 ../../Projects/MECM/Inventory_Interfaces_en.md:900
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:474 ../../Projects/MECM/Inventory_Interfaces_en.md:570
 msgid "Get App Stores Record"
 msgstr "Get App Stores Record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:805
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:475
 msgid "Retrieves all application store record"
-msgstr "Retreeves all application store record"
+msgstr "Retrieves all application store record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:860 ../../Projects/MECM/Inventory_Interfaces_en.md:952
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:530 ../../Projects/MECM/Inventory_Interfaces_en.md:622
 msgid "Delete App Stores Record"
 msgstr "Delete App Stores Record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:861
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:531
 msgid "Deletes all application store records for a given tenant."
-msgstr "Deleees all application store records for a given tenant."
+msgstr "Deletes all application store records for a given tenant."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:901
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:571
 msgid "Retrieves a specific application store record in the Inventory matching the given tenant ID & application store IP"
-msgstr "Retreeves a specific application store record in the Inventory matching the given tenant ID & application store IP"
+msgstr "Retrieves a specific application store record in the Inventory matching the given tenant ID & application store IP"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:953
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:623
 msgid "Deletes a specific application store record in the Inventory matching the given tenant ID & application store IP"
-msgstr "Deleees a specific application store record in the Inventory matching the given tenant ID & application store IP"
+msgstr "Deletes a specific application store record in the Inventory matching the given tenant ID & application store IP"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1000
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:670
 msgid "Update App Store Record"
 msgstr "Update App Store Record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1001
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:671
 msgid "Updates existing application store record"
 msgstr "Updates existing application store record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1108
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:778
 msgid "Deletes Application Record"
 msgstr "Deletes Application Record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1109
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:779
 msgid "Deletes application store record"
 msgstr "Deletes application store record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1156
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:826
 msgid "Get All MEC Host Records"
 msgstr "Get All MEC Host Records"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1158
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:828
 msgid "Retrieves all MEC host records"
 msgstr "Retrieves all MEC host records"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1221
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:891
 msgid "Add MEC Host Record"
 msgstr "Add MEC Host Record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1222
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:892
 msgid "Adds new MEC host record"
 msgstr "Adds new MEC host record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1421
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1091
 msgid "Delete All MEC Host Records"
 msgstr "Delete All MEC Host Records"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1460
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1130
 msgid "Get MEC Host Record"
 msgstr "Get MEC Host Record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1462
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1132
 msgid "Retrieves MEC host records"
 msgstr "Retrieves MEC host records"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1529
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1199
 msgid "Update MEC Host Record"
 msgstr "Update MEC Host Record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1530
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1200
 msgid "Updates existing MEC host record"
 msgstr "Updates existing MEC host record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1726
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1396
 msgid "Delete MEC Host Record"
 msgstr "Delete MEC Host Record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1727
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1397
 msgid "Deletes application stores record"
 msgstr "Deletes application stores record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1775
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1445
 msgid "Adds new application record."
 msgstr "Adds new application record."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1876
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1546
 msgid "Updates Application record."
 msgstr "Updates Application record."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1984
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1654
 msgid "Delete Application record"
 msgstr "Delete Application record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:1985
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1655
 msgid "Delete application record"
 msgstr "Delete application record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2048
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1718
 msgid "Retrieves MEC host record"
 msgstr "Retrieves MEC host record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2049
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1719
 msgid "Retrieves MEC host record for specific capabilities"
-msgstr "Retreeves MEC host record for specific capabilities"
+msgstr "Retrieves MEC host record for specific capabilities"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2121
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1791
 msgid "Retrieves MEC application record"
 msgstr "Retrieves MEC application record"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2122
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1792
 msgid "Retrieves applications matching capability in a specific MEC host record."
-msgstr "Retreeves applications matching capability in a specific MEC host record."
+msgstr "Retrieves applications matching capability in a specific MEC host record."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2200
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1870
 msgid "Upload K8s Configuration File"
 msgstr "Upload K8s Configuration File"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2201
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1871
 msgid "Upload K8s configuration file to applcm"
-msgstr "Upload K8s configuration filetoapplcm"
+msgstr "Upload K8s configuration file to applcm"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2255
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1925
 msgid "Delete K8s Configuration File"
 msgstr "Delete K8s Configuration File"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2256
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1926
 msgid "Deletes K8s configuration file from applcm"
-msgstr "Deletes K8s configuration filefromapplcm"
+msgstr "Deletes K8s configuration file from applcm"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2303
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1973
 msgid "Queries liveness & readiness"
 msgstr "Queries liveness & readiness"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2304
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:1974
 msgid "Retrieves data for liveness & readiness"
-msgstr "Retreeves data for liveness & readiness"
+msgstr "Retrieves data for liveness & readiness"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2338
-msgid "Add application rule"
-msgstr "Add application rule"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2339
-msgid "Adds a new application rule manager record entry into the Inventory."
-msgstr "Adds a new application rule manager record entry into the Inventory."
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2418
-msgid "Update application rule"
-msgstr "Update application rule"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2419
-msgid "Updates an exiting application rule manager record in the Inventory matching the given tenant ID & appRuleManager IP."
-msgstr "Updates an exiting application rule manager record in the Inventory matching the given tenant ID & appRuleManager IP."
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2499
-msgid "Get all application rule manager records"
-msgstr "Get all application rule manager records"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2500
-msgid "Retrieves all application rule manager records ."
-msgstr "Retreeves all application rule manager records."
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2542
-msgid "Get specific application rule manager record"
-msgstr "Get specific application rule manager record"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2543
-msgid "Retrieves a specific application rule manager record in the Inventory matching the given tenant ID &  app rule manager IP"
-msgstr "Retreeves a specific application rule manager record in the Inventory matching the given tenant ID & app rule manager IP"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2592
-msgid "Delete all application rule manager records"
-msgstr "Delete all application rule manager records"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2593
-msgid "Deletes all records for a given tenant"
-msgstr "Deletes all records for a given tenant"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2630
-msgid "Delete application rule manager record"
-msgstr "Delete application rule manager record"
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2631
-msgid "Delete a specific application rule manager record in the Inventory matching the given tenant ID & app rule manager IP."
-msgstr "Delete a specific application rule manager record in the Inventory matching the given tenant ID & app rule manager IP."
-
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2677
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2008
 msgid "Add APPDRule record to Inventory."
 msgstr "Add APPDRule record to Inventory."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2678
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2009
 msgid "Adds a new APPDRule record entry into the Inventory."
 msgstr "Adds a new APPDRule record entry into the Inventory."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2780
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2111
 msgid "Update APPDRule record to Inventory."
 msgstr "Update APPDRule record to Inventory."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2781
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2112
 msgid "Updates a existing APPDRule record entry into the Inventory matching the given tenant ID & app instance ID."
 msgstr "Updates a existing APPDRule record entry into the Inventory matching the given tenant ID & app instance ID."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2883
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2214
 msgid "Get APPDRule record to Inventory."
 msgstr "Get APPDRule record to Inventory."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2884
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2215
 msgid "Retrieves appDRule records for given tenant ID and app instance ID."
 msgstr "Retrieves appDRule records for given tenant ID and app instance ID."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2929 ../../Projects/MECM/Inventory_Interfaces_en.md:3025 ../../Projects/MECM/Inventory_Interfaces_en.md:3071 ../../Projects/MECM/Inventory_Interfaces_en.md:3146
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2260 ../../Projects/MECM/Inventory_Interfaces_en.md:2356 ../../Projects/MECM/Inventory_Interfaces_en.md:2402 ../../Projects/MECM/Inventory_Interfaces_en.md:2477
 msgid "Example response body:"
 msgstr "Example response body:"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2979
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2310
 msgid "Delete APPDRule record ."
-msgstr "Delete APPDRule record."
+msgstr "Delete APPDRule record ."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:2980
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2311
 msgid "Deletes appDRule records for a given tenant and app instance."
 msgstr "Deletes appDRule records for a given tenant and app instance."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:3033 ../../Projects/MECM/Inventory_Interfaces_en.md:3100
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2364 ../../Projects/MECM/Inventory_Interfaces_en.md:2431
 msgid "Synchronizes mec host info from edge"
 msgstr "Synchronizes mec host info from edge"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:3034 ../../Projects/MECM/Inventory_Interfaces_en.md:3101
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2365 ../../Projects/MECM/Inventory_Interfaces_en.md:2432
 msgid "Synchronizes mec host info from edge."
 msgstr "Synchronizes mec host info from edge."
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:3231
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2561 ../../Projects/MECM/Inventory_Interfaces_en.md:2726
+msgid "Get MEPM Record"
+msgstr "Get MEPM Record"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2563
+msgid "Retrieves all MEPM records"
+msgstr "Retrieves all MEPM records"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2604
+msgid "Add MEPM Record"
+msgstr "Add MEPM Record"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2605
+msgid "Adds new MEPM record"
+msgstr "Adds new MEPM record"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2686
+msgid "Delete All MEPM Records"
+msgstr "Delete All MEPM Records"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2687
+msgid "Deletes all mepm records"
+msgstr "Deletes all mepm records"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2728
+msgid "Retrieves mepm records"
+msgstr "Retrieves mepm records"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2775
+msgid "Update MEPM Record"
+msgstr "Update MEPM Record"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2776
+msgid "Updates existing mepm record"
+msgstr "Updates existing mepm record"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2864
+msgid "Delete MEPM Record"
+msgstr "Delete MEPM Record"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2865
+msgid "Deletes mepm record"
+msgstr "Deletes mepm record"
+
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2912
 msgid "Inventory Open Api Swagger"
 msgstr "Inventory Open Api Swagger"
 
-#: ../../Projects/MECM/Inventory_Interfaces_en.md:3233
+#: ../../Projects/MECM/Inventory_Interfaces_en.md:2914
 msgid "Please refer [INVENTORY_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/inventory-swagger-openapi.yaml)"
-msgstr "Please review [INVENTORY_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/inventory-swagger-openapi.yaml)"
+msgstr "Please refer [INVENTORY_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/inventory-swagger-openapi.yaml)"
 
