@@ -163,10 +163,13 @@ Body参数：
 
   |  名称     |                     类型 |              描述        |             必选| 
   | ---| ---| ---| ---|
-  | authInfo|                  Object|            用户信息                        | 是| 
-  | &gt;credentials|               Object|            证书信息|   是      | 
-  | &gt;&gt;accessKeyId|                   String  |          AK          |                是|
-  | &gt;&gt;secretKey|                   String  |          SK          |                是|
+  | authInfo|                      Object|            用户信息      |         是| 
+  | &gt;credentials|               Object|            证书信息      |   是      | 
+  | &gt;&gt;accessKeyId|         String  |          AK             |                是|
+  | &gt;&gt;secretKey|           String  |          SK             |                是|
+  | appInfo|                       Object|            app信息       | 是| 
+  | &gt;appName|                 String  |            app名称       |   是      | 
+  | &gt;requiredServices| Array[String]  |         app依赖的服务列表 |   是      |
 
 请求示例：
 
@@ -185,6 +188,13 @@ PUT /mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confs
                 "accessKeyId": "QVUJMSUMgS0VZLS0tLS0",
                 "secretKey": "DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
             }
+        },
+        "appInfo": {
+            "appName": "name1",
+            "requiredServices": [
+                "serviceA",
+                "serviceB"
+            ]
         }
     }
 }
@@ -194,24 +204,41 @@ PUT /mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confs
 
 返回码：200
 
-OK
 
   |  名称     |                     类型 |              描述        |             必选| 
   | ---| ---| ---| ---|
-  | authInfo|                  Object|            用户信息                        | 是| 
-  | &gt;credentials|               Object|            证书信息|   是      | 
-  | &gt;&gt;accessKeyId|                   String  |          AK          |                是|
-  | &gt;&gt;secretKey|                   String  |          SK          |                是|
+  | authInfo|                      Object|            用户信息      |         是| 
+  | &gt;credentials|               Object|            证书信息      |   是      | 
+  | &gt;&gt;accessKeyId|         String  |          AK             |                是|
+  | &gt;&gt;secretKey|           String  |          SK             |                是|
+  | appInfo|                       Object|            app信息       | 是| 
+  | &gt;appName|                 String  |            app名称       |   是      | 
+  | &gt;requiredServices| Array[String]  |            app依赖的服务 |   是      |
 
 返回示例：
 
 ```
 HTTP/1.1 200 OK
 {
-    "authInfo": {
-        "credentials": {
-            "accessKeyId": "QVUJMSUMgS0VZLS0tLS0",
-            "secretKey": "DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
+    "header": [
+        {
+            "key": "Content-Type",
+            "value": "application/json"
+        }
+    ],
+    "body": {
+        "authInfo": {
+            "credentials": {
+                "accessKeyId": "QVUJMSUMgS0VZLS0tLS0",
+                "secretKey": "DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
+            }
+        },
+        "appInfo": {
+            "appName": "name1",
+            "requiredServices": [
+                "serviceA",
+                "serviceB"
+            ]
         }
     }
 }
