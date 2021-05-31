@@ -9,7 +9,6 @@
 - [Developer Guide](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
 - [Release Notes](https://gitee.com/edgegallery/docs/blob/master/Release%20Notes/EdgeGallery_RN_zh.md)
 - [Projects](https://gitee.com/edgegallery/docs/tree/master/Projects)
-- [blog](https://gitee.com/edgegallery/docs/blob/master/blog/ReadMe.md)
 
 
 ## 版权
