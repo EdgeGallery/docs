@@ -3154,7 +3154,7 @@ GET /mep-agent/v1/endpoint/serviceName
     },
     {
       "key": "X-AppInstanceId", // 根据AppInstanceId对服务发现进行鉴权认证，如果app没有配置依赖服务，服务发现为空
-      "value": "applicationId"
+      "value": "applicationInstanceId"
     }
   ]
 }
