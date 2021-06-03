@@ -1,5 +1,4 @@
 # 接口URI变更
-
 | 原URI | 现URI | 方法 | API说明 |
 | --- | --- | --- | --- |
 | /mec/appstore/poke/pushable/packages | /mec/appstore/v1/packages/pushable | GET | 查询可推送的应用列表 |
@@ -20,7 +19,6 @@
 | /mec/appstore/poke/messages/{messageId}/action/readed | /mec/appstore/v1/messages/{messageId}/action/readed | PUT | 根据message id更新消息状态 |
 
 # 删除接口
-
 | API | 方法 | API说明 |
 | --- | --- | --- |
 | /mec/appstore/poke/messages/{messageId}/report-data | GET | 根据message id获取测试报告 |

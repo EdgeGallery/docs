@@ -65,7 +65,6 @@ URI： /mec/appstore/v1/apps
 METHOD: GET
 ```
 请求参数：
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |name|应用名|request param|yes|
@@ -105,7 +104,6 @@ METHOD: GET
 URI： /mec/appstore/v1/apps/{appId}
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId|app id|path|yes|
@@ -140,7 +138,6 @@ METHOD: GET
 URI： /mec/appstore/v1/apps
 METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |userId|用户ID|request param|yes|
@@ -172,7 +169,6 @@ METHOD: POST
 URI： /mec/appstore/v1/apps/{appId}
 METHOD: DELETE
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |userId|用户ID|request param |yes|
@@ -191,7 +187,6 @@ METHOD: DELETE
 URI： /mec/appstore/v1/apps/{appId}/action/download
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -208,7 +203,6 @@ METHOD: GET
 URI： /mec/appstore/v1/apps/{appId}/icon
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -225,7 +219,6 @@ METHOD: GET
 URI： /mec/appstore/v1/apps/upload
 METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |id|分包ID|RequestPart|no|
@@ -254,7 +247,6 @@ METHOD: POST
 URI： /mec/appstore/v1/apps/merge
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |fileName|文件名|request param|yes|
@@ -274,7 +266,6 @@ METHOD: GET
 URI： /mec/appstore/v1/apps/vm-register
 METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |userId|用户ID|request param|yes|
@@ -306,7 +297,6 @@ METHOD: POST
 URI： /mec/appstore/v1/apps/{appId}/demoVideo
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -329,8 +319,6 @@ METHOD: GET
 URI： /mec/appstore/v1/apps/{appId}/packages
 METHOD: GET
 ```
-
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID |path|yes|
@@ -370,7 +358,6 @@ METHOD: GET
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -407,7 +394,6 @@ METHOD: GET
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
 METHOD: DELETE
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |userId |用户Id|request param|yes|
@@ -427,7 +413,6 @@ METHOD: DELETE
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -445,7 +430,6 @@ METHOD: GET
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
 METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |package id|path |yes|
@@ -464,7 +448,6 @@ METHOD: POST
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/publish
 METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -482,7 +465,6 @@ METHOD: POST
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/test
 METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -509,7 +491,6 @@ User can submit comments to an app.
 URI： /mec/appstore/v1/apps/{appId}/comments
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -551,7 +532,6 @@ METHOD: GET
 URI： /mec/appstore/v1/apps/{appId}/comments
 METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |userId |用户ID|request param |yes|
@@ -617,7 +597,6 @@ METHOD: GET
 URI： /mec/appstore/v1/packages/{packageId}/pushable
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |应用包ID|path |yes|
@@ -653,7 +632,6 @@ METHOD: GET
 URI： /mec/appstore/v1/packages/{packageId}/action/push
 METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |应用包ID|path |yes|
@@ -671,7 +649,6 @@ METHOD: POST
 URI： /mec/appstore/v1/packages/{packageId}/action/download-package
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |应用包ID|path |yes|
@@ -688,7 +665,6 @@ METHOD: GET
 URI： /mec/appstore/v1/packages/{packageId}/action/download-icon
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |应用包ID|path |yes|
@@ -710,7 +686,6 @@ METHOD: GET
 URI： /mec/appstore/v1/appstores
 METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appStoreName |仓库名称|request param |yes|
@@ -746,7 +721,6 @@ METHOD: POST
 URI： /mec/appstore/v1/appstores/{appStoreId}
 METHOD: DELETE
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appStoreId |仓库id|path |yes|
@@ -763,7 +737,6 @@ METHOD: DELETE
 URI： /mec/appstore/v1/appstores/{appStoreId}
 METHOD: PUT
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appStoreId |仓库名称|path |yes|
@@ -800,7 +773,6 @@ METHOD: PUT
 URI： /mec/appstore/v1/appstores
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appStoreName |仓库名称|request param |yes|
@@ -832,7 +804,6 @@ METHOD: GET
 URI： /mec/appstore/v1/appstores/{appStoreId}
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appStoreId |仓库名称|path |yes|
@@ -866,7 +837,6 @@ METHOD: GET
 URI： /mec/appstore/v1/messages
 METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |basicInfo |基本信息|request param |yes|
@@ -890,7 +860,6 @@ METHOD: POST
 URI： /mec/appstore/v1/messages
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |messageType |消息类型|request param |no|
@@ -930,7 +899,6 @@ METHOD: GET
 URI： /mec/appstore/v1/messages/{messageId}
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |messageId |消息id|request param |yes|
@@ -968,7 +936,6 @@ METHOD: GET
 URI： /mec/appstore/v1/messages/{messageId}
 METHOD: DELETE
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |messageId |消息id|request param |yes|
@@ -985,7 +952,6 @@ METHOD: DELETE
 URI： /mec/appstore/v1/messages/{messageId}/action/download
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |messageId |消息id|request param |yes|
@@ -1003,7 +969,6 @@ METHOD: GET
 URI： /mec/appstore/v1/messages/{messageId}/action/readed
 METHOD: PUT
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |messageId |消息id|request param |yes|
@@ -1057,7 +1022,6 @@ METHOD: GET
 URI： /mec/appstore/v1/packages/{platfromId}/pullable
 METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |platformId |外部应用仓库ID|path |yes|
@@ -1093,7 +1057,6 @@ METHOD: GET
 URI： /mec/appstore/v1/packages/{packageId}/action/pull
 METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |应用包ID|path |yes|

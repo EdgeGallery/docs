@@ -8,7 +8,6 @@ Retrieves data for liveness & readiness
 Resource URI: /apprulemgr/v1/health
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -25,7 +24,6 @@ Application Rule Config create request
 Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration
 Method: POST
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
@@ -54,7 +52,6 @@ Updates app rule configuration
 Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration
 Method: PUT
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
@@ -72,7 +69,6 @@ Deletes app rule configuration
 Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt Token|
@@ -90,7 +86,6 @@ Returns app rule configuration
 Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/:appInstanceId/appd_configuration
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
@@ -111,7 +106,6 @@ Synchronize added or update records
 Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/appd_configuration/sync_updated
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
@@ -131,7 +125,6 @@ Synchronize deleted records
 Resource URI: /apprulemgr/v1/tenants/:tenantId/app_instances/appd_configuration/sync_deleted
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|

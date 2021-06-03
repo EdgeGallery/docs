@@ -74,7 +74,6 @@ metadata文件样例如下：
 该目录下包含一个或者多个Image镜像文件和一个镜像描述文件。  
 Image镜像文件采用压缩包的方式放置于Image目录下。对于虚机应用，镜像文件为qcow2镜像，对于容器用用，镜像为容器导出的镜像tar文件。
 Image目录下包含一个SwImageDesc.json文件用来描述镜像信息。SwImageDesc.json文件定义如下表所示。具体可以参考ETSI ISG NFV IFA011。
-
 | 参数名称 | 参数类型 |  描述                              | 是否必选 |
 |---------|---------|------------------------------------|----------|
 |id       | Identifier| 镜像文件ID，作为序号使用，APP包内唯一,如果使用name区分，可以不使用该参数 | O |
@@ -132,7 +131,6 @@ SwImageDesc.json文件样例：
 manifest文件MEAO进行解析，用以进行APP包的完整性校验。文件扩展名为.mf。  
 manifest文件格式是键值对的形式，主要定义APP包的metadata信息和完整性保护相关信息，具体定义参考ETSI NFV SOL004相关规范。  
 metadata中主要包含以下参数：
-
 | 参数名称 |  参数取值 | 是否必选 |
 |---------|---------|--------|
 |app_provider_id | app供应商，该取值要和APPD描述文件中VNF节点的Provider保持一致| 是 |

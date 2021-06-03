@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-02 23:02+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,166 +121,6 @@ msgstr "Registering a system"
 msgid "登录前需要先获取图形验证码，通过verifyCode参数传递。"
 msgstr "Before logging in, a graphical verification code is required to pass through the verifyCode parameter."
 
-#: ../../Projects/User Management/User_Interfaces.md:73 Management/User_Interfaces.md:87 Management/User_Interfaces.md:115 Management/User_Interfaces.md:193 Management/User_Interfaces.md:309 Management/User_Interfaces.md:388 Management/User_Interfaces.md:519 Management/User_Interfaces.md:600 Management/User_Interfaces.md:679 Management/User_Interfaces.md:746 Management/User_Interfaces.md:801 Management/User_Interfaces.md:878 Management/User_Interfaces.md:945 Management/User_Interfaces.md:1004 Management/User_Interfaces.md:1048
-msgid "Example response:"
-msgstr "Example response:"
-
-#: ../../Projects/User Management/User_Interfaces.md:78
-msgid "1.2 获取当前登录用户信息"
-msgstr "1.2 Access to current login user information"
-
-#: ../../Projects/User Management/User_Interfaces.md:80
-msgid "用户登录成功后，通过此接口获取当前登录用户的信息。"
-msgstr "and obtaining the information of the current login user through the interface after the user login is successful."
-
-#: ../../Projects/User Management/User_Interfaces.md:106
-msgid "1.3 登出"
-msgstr "1.3 Log out"
-
-#: ../../Projects/User Management/User_Interfaces.md:108
-msgid "登出系统"
-msgstr "Logout system"
-
-#: ../../Projects/User Management/User_Interfaces.md:121
-msgid "2 USER-MGMT"
-msgstr "2 USER-MGMT"
-
-#: ../../Projects/User Management/User_Interfaces.md:123
-msgid "2.1 注册用户"
-msgstr "2.1 Registered users"
-
-#: ../../Projects/User Management/User_Interfaces.md:125
-msgid "注册用户接口，注册成功返回200，并返回已经注册成功的用户信息；接口数据不全返回400。"
-msgstr "registering the user interface, registering successfully returning 200 and returning the user information that has been registered successfully; the interface data is not fully returned to 400."
-
-#: ../../Projects/User Management/User_Interfaces.md:127
-msgid "注册前需要先获取图形验证码，通过verifyCode参数传递。"
-msgstr "Before registration, a graphical verification code is required to pass through the verifyCode parameter."
-
-#: ../../Projects/User Management/User_Interfaces.md:183 Management/User_Interfaces.md:297 Management/User_Interfaces.md:379 Management/User_Interfaces.md:500 Management/User_Interfaces.md:596 Management/User_Interfaces.md:670 Management/User_Interfaces.md:742 Management/User_Interfaces.md:797 Management/User_Interfaces.md:866 Management/User_Interfaces.md:938 Management/User_Interfaces.md:997
-msgid "Example request:"
-msgstr "Example request:"
-
-#: ../../Projects/User Management/User_Interfaces.md:231
-msgid "2.2 修改密码（个人修改密码 & 找回密码）"
-msgstr "2.2 Modify password (personal modification password & recover password)"
-
-#: ../../Projects/User Management/User_Interfaces.md:233
-msgid "用户登录后在个人中心通过原密码验证方式修改个人密码。"
-msgstr "the personal password is modified by the original password verification mode in the personal centre after the user is logged in."
-
-#: ../../Projects/User Management/User_Interfaces.md:234
-msgid "如果用户注册时提供了真实的邮箱地址或手机号（也可以在个人中心填写这两项信息），可以通过邮箱或手机验证码的方式重置密码。需要开启邮件服务或短信服务才能使用。"
-msgstr "If the user registers a real email address or cell phone number (which can also be filled in the personal center), the password can be reset by way of mailbox or mobile phone verification code.An open mail service or short message service is required to use."
-
-#: ../../Projects/User Management/User_Interfaces.md:335
-msgid "2.3 校验重复用户"
-msgstr "2.3 Check repeat user"
-
-#: ../../Projects/User Management/User_Interfaces.md:337
-msgid "判断用户名或手机号是否已经注册过，不允许重复注册。"
-msgstr "judging whether the user name or the mobile phone number has been registered, and is not allowed to re-register."
-
-#: ../../Projects/User Management/User_Interfaces.md:398
-msgid "2.4 查询用户列表"
-msgstr "2.4 List of query users"
-
-#: ../../Projects/User Management/User_Interfaces.md:400
-msgid "用户管理员查询用户列表"
-msgstr "List of user administrators"
-
-#: ../../Projects/User Management/User_Interfaces.md:564
-msgid "2.5 删除用户"
-msgstr "2.5 Delete user"
-
-#: ../../Projects/User Management/User_Interfaces.md:566
-msgid "用户管理员可以根据用户ID删除任何用户"
-msgstr "The user administrator can delete any user based on the user ID"
-
-#: ../../Projects/User Management/User_Interfaces.md:619
-msgid "2.6 修改用户个人信息"
-msgstr "2.6 Modifies user personal information"
-
-#: ../../Projects/User Management/User_Interfaces.md:621
-msgid "用户可以修改个人信息，返回修改后的信息。"
-msgstr "The user can modify the personal information and return the modified information."
-
-#: ../../Projects/User Management/User_Interfaces.md:710
-msgid "2.7 停用用户"
-msgstr "2.7 Disable user"
-
-#: ../../Projects/User Management/User_Interfaces.md:712
-msgid "用户管理员可以根据用户ID停用用户，其中用户ID为非内置用户的用户ID。用户停用后将无法登录。"
-msgstr "The user administrator can disable the user according to the user ID, wherein the user ID is the user ID of the non-built-in user.The user will not be able to register after disabling."
-
-#: ../../Projects/User Management/User_Interfaces.md:765
-msgid "2.8 启用用户"
-msgstr "2.8 Enable users"
-
-#: ../../Projects/User Management/User_Interfaces.md:767
-msgid "用户管理员可以根据用户ID启用用户，其中用户ID为非内置用户的用户ID。"
-msgstr "The user administrator can enable the user according to the user ID, wherein the user ID is the user ID of the non-built-in user."
-
-#: ../../Projects/User Management/User_Interfaces.md:820
-msgid "2.9 设置用户角色"
-msgstr "2.9 User roles are set"
-
-#: ../../Projects/User Management/User_Interfaces.md:822
-msgid "用户管理员可以根据用户ID设置其所属角色和可访问平台。"
-msgstr "The user administrator can set the role and the accessible platform thereof according to the user ID."
-
-#: ../../Projects/User Management/User_Interfaces.md:897
-msgid "3 IDENTITY"
-msgstr "3 IDENTITY"
-
-#: ../../Projects/User Management/User_Interfaces.md:899
-msgid "3.1 获取短信验证码"
-msgstr "3.1 Access to short message verification code"
-
-#: ../../Projects/User Management/User_Interfaces.md:901
-msgid "发送验证码到指定的手机号上，发送成功返回200，发送失败返回417。"
-msgstr "sending the verification code to the appointed mobile phone number, sending the successful return 200, sending the failure to return 417."
-
-#: ../../Projects/User Management/User_Interfaces.md:903
-msgid "发送短信验证码前需要先获取图形验证码，通过verifyCode参数传递。"
-msgstr "It is necessary to obtain the graphic verification code before sending the short message verification code, which is passed through the verifyCode parameter."
-
-#: ../../Projects/User Management/User_Interfaces.md:958
-msgid "3.2 获取邮件验证码"
-msgstr "3.2 Get Mail Validation Code"
-
-#: ../../Projects/User Management/User_Interfaces.md:960
-msgid "发送验证码到指定的邮箱，发送成功返回200，发送失败返回417。"
-msgstr "Send the verification code to the designated mailbox, send a successful return 200, and send the failure back to 417."
-
-#: ../../Projects/User Management/User_Interfaces.md:962
-msgid "发送邮件验证码前需要先获取图形验证码，通过verifyCode参数传递。"
-msgstr "It is necessary to obtain the graphical verification code before sending the message verification code, which is passed through the verifyCode parameter."
-
-#: ../../Projects/User Management/User_Interfaces.md:1023
-msgid "3.3 获取图形验证码"
-msgstr "3.3 Get Graph Validation Code"
-
-#: ../../Projects/User Management/User_Interfaces.md:1025
-msgid "获取带验证码的图片数据流"
-msgstr "Get picture data stream with verification code"
-
-#: ../../Projects/User Management/User_Interfaces.md:1032
-msgid "该接口不带任何请求参数，返回二进制的图片数据流"
-msgstr "The interface does not take any request parameters and returns the binary picture data stream"
-
-#: ../../Projects/User Management/User_Interfaces.md:1033
-msgid "验证码3分钟内有效"
-msgstr "Validation is valid in 3 minutes"
-
-#: ../../Projects/User Management/User_Interfaces.md:1035
-msgid "3.4 预校验图形验证码正确性"
-msgstr "3.4 Precheck Graphic Validation Code Accuracy"
-
-#: ../../Projects/User Management/User_Interfaces.md:1037
-msgid "预校验用户输入的验证码是否正确"
-msgstr "pre-checking if the verification code input by the user is correct"
-
 #: ../../Projects/User Management/User_Interfaces.md
 msgid "Name"
 msgstr "Name"
@@ -316,4 +156,424 @@ msgstr "query"
 #: ../../Projects/User Management/User_Interfaces.md
 msgid "是"
 msgstr "Yes."
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "username"
+msgstr "username"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用户名/邮箱/手机号"
+msgstr "User name/mailbox/cell phone number"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "body"
+msgstr "body"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "password"
+msgstr "password"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "密码"
+msgstr "Password."
+
+#: ../../Projects/User Management/User_Interfaces.md:43 Management/User_Interfaces.md:57 Management/User_Interfaces.md:85 Management/User_Interfaces.md:121 Management/User_Interfaces.md:189 Management/User_Interfaces.md:238 Management/User_Interfaces.md:291 Management/User_Interfaces.md:354 Management/User_Interfaces.md:397 Management/User_Interfaces.md:446 Management/User_Interfaces.md:483 Management/User_Interfaces.md:530 Management/User_Interfaces.md:573 Management/User_Interfaces.md:608 Management/User_Interfaces.md:651
+msgid "Example response:"
+msgstr "Example response:"
+
+#: ../../Projects/User Management/User_Interfaces.md:48
+msgid "1.2 获取当前登录用户信息"
+msgstr "1.2 Access to current login user information"
+
+#: ../../Projects/User Management/User_Interfaces.md:50
+msgid "用户登录成功后，通过此接口获取当前登录用户的信息。"
+msgstr "and obtaining the information of the current login user through the interface after the user login is successful."
+
+#: ../../Projects/User Management/User_Interfaces.md:76
+msgid "1.3 登出"
+msgstr "1.3 Log out"
+
+#: ../../Projects/User Management/User_Interfaces.md:78
+msgid "登出系统"
+msgstr "Logout system"
+
+#: ../../Projects/User Management/User_Interfaces.md:91
+msgid "2 USER-MGMT"
+msgstr "2 USER-MGMT"
+
+#: ../../Projects/User Management/User_Interfaces.md:93
+msgid "2.1 注册用户"
+msgstr "2.1 Registered users"
+
+#: ../../Projects/User Management/User_Interfaces.md:95
+msgid "注册用户接口，注册成功返回200，并返回已经注册成功的用户信息；接口数据不全返回400。"
+msgstr "registering the user interface, registering successfully returning 200 and returning the user information that has been registered successfully; the interface data is not fully returned to 400."
+
+#: ../../Projects/User Management/User_Interfaces.md:97
+msgid "注册前需要先获取图形验证码，通过verifyCode参数传递。"
+msgstr "Before registration, a graphical verification code is required to pass through the verifyCode parameter."
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用户名"
+msgstr "User name"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间"
+msgstr "Must be a combination of letters or letters and numbers, must start with a letter, between 6 and 30 characters in length"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "必须满足复杂度要求，必须是数字/字母/特数字符的组合，长度在6~18个字符之间"
+msgstr "Complexity requirements must be met, must be a combination of number/letter/t number characters, length between 6 and 18 characters"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "mailAddress"
+msgstr "mailAddress"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "邮箱地址"
+msgstr "Mailbox Address"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "否"
+msgstr "not"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "如果填写，必须符合邮箱地址的格式要求"
+msgstr "If completed, the format requirements of the mailbox address must be met"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "telephone"
+msgstr "telphone"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "手机号码"
+msgstr "Mobile phone number"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "如果填写，必须为11位有效数字，且以1开头"
+msgstr "If filled, must be 11 valid digits and start with 1"
+
+#: ../../Projects/User Management/User_Interfaces.md:111 Management/User_Interfaces.md:177 Management/User_Interfaces.md:229 Management/User_Interfaces.md:272 Management/User_Interfaces.md:350 Management/User_Interfaces.md:388 Management/User_Interfaces.md:442 Management/User_Interfaces.md:479 Management/User_Interfaces.md:518 Management/User_Interfaces.md:566 Management/User_Interfaces.md:601
+msgid "Example request:"
+msgstr "Example request:"
+
+#: ../../Projects/User Management/User_Interfaces.md:159
+msgid "2.2 修改密码（个人修改密码 & 找回密码）"
+msgstr "2.2 Modify password (personal modification password & recover password)"
+
+#: ../../Projects/User Management/User_Interfaces.md:161
+msgid "用户登录后在个人中心通过原密码验证方式修改个人密码。"
+msgstr "the personal password is modified by the original password verification mode in the personal centre after the user is logged in."
+
+#: ../../Projects/User Management/User_Interfaces.md:162
+msgid "如果用户注册时提供了真实的邮箱地址或手机号（也可以在个人中心填写这两项信息），可以通过邮箱或手机验证码的方式重置密码。需要开启邮件服务或短信服务才能使用。"
+msgstr "If the user registers a real email address or cell phone number (which can also be filled in the personal center), the password can be reset by way of mailbox or mobile phone verification code.An open mail service or short message service is required to use."
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "修改密码的类型"
+msgstr "Modify the type of password"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "1--原密码验证修改; 2--密码找回"
+msgstr "1 -- Password verification modification; 2 -- password recovery"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "newPassword"
+msgstr "newPassword"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "修改后的新密码"
+msgstr "New password after modification"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "oldPassword"
+msgstr "oldPassword"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "原密码"
+msgstr "original password"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "当type=1时必填"
+msgstr "Required when type= 1"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "当type=2时，且需要通过手机号找回时，填写已经注册过的手机号码。与mailAddress有效性互斥"
+msgstr "When type= 2, and need to be recovered through the cell phone number, fill out the registered cell phone number.Validity with mailAddress is mutually exclusive"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "当type=2时，且需要通过邮箱找回时，填写已经注册过的邮箱地址。与telephone有效性互斥"
+msgstr "When type= 2, and need to be recovered via the mailbox, fill out the address of the mailbox that has been registered.mutex with telphone validity"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "verificationCode"
+msgstr "verificationCode"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "验证码"
+msgstr "Verification code"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "6位有效数字。当type=2时必填"
+msgstr "6 valid numbers.Required when type= 2"
+
+#: ../../Projects/User Management/User_Interfaces.md:215
+msgid "2.3 校验重复用户"
+msgstr "2.3 Check repeat user"
+
+#: ../../Projects/User Management/User_Interfaces.md:217
+msgid "判断用户名或手机号是否已经注册过，不允许重复注册。"
+msgstr "judging whether the user name or the mobile phone number has been registered, and is not allowed to re-register."
+
+#: ../../Projects/User Management/User_Interfaces.md:248
+msgid "2.4 查询用户列表"
+msgstr "2.4 List of query users"
+
+#: ../../Projects/User Management/User_Interfaces.md:250
+msgid "用户管理员查询用户列表"
+msgstr "List of user administrators"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用于模糊查询条件的用户名关键字"
+msgstr "User name keyword for fuzzy query conditions"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用于模糊查询条件的邮箱地址关键字"
+msgstr "Mailbox address keyword for fuzzy query conditions"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "电话号码"
+msgstr "Phone number"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用于模糊查询条件的电话号码关键字"
+msgstr "Phone number keyword for fuzzy query conditions"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "role"
+msgstr "role"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "角色"
+msgstr "characters"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "ALL--全部;ADMIN--管理员;TENANT--租户;GUEST--访客"
+msgstr "ALL -- All; ADMIN -- Manager; TENANT -- Tenant; GUEST -- Visitors"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "status"
+msgstr "status"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "状态"
+msgstr "state"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "-1--全部;0--停用;1--启用"
+msgstr "-1 -- All; 0 -- Disabled; 1 -- Enable"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "createTimeBegin"
+msgstr "createTimeBegin"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "创建时间(即注册时间)范围--起始"
+msgstr "Creation Time (i.e. Enrollment Time) Range -- Initiation"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "起始时间，格式：2021-1-21"
+msgstr "From Time, Format: 2021-1-21"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "createTimeEnd"
+msgstr "createTimeEnd"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "创建时间(即注册时间)范围--终止"
+msgstr "Creation Time (i.e. Enrollment Time) Range -- Termination"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "终止时间，格式：2021-2-1"
+msgstr "Termination Time, Format: 2021-2-1"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "offset"
+msgstr "offset"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "查询起始位置"
+msgstr "Query starting position"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "分页控制参数，表示查询起始位置"
+msgstr "Paging control parameters, indicating the initial location of the query"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "limit"
+msgstr "limit"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "查询记录数"
+msgstr "Query Records"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "分页控制参数，表示每页查询记录数"
+msgstr "Paging control parameters that indicate the number of query records per page"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "sortBy"
+msgstr "sortBy"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "排序字段"
+msgstr "Sort field"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用于排序的字段名。USERNAME--按用户名排序;CREATETIME--按创建(注册)时间排序"
+msgstr "Word name for sorting.USERNAME -- Sort by username; CREATETIME -- Sort by create (registration) time"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "sortOrder"
+msgstr "sortOrder"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "排序顺序"
+msgstr "Sort Order"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "排序顺序。ASC--升序;DESC--降序"
+msgstr "Sort sequence.ASC -- Ascending; DESC -- Descending"
+
+#: ../../Projects/User Management/User_Interfaces.md:336
+msgid "2.5 删除用户"
+msgstr "2.5 Delete user"
+
+#: ../../Projects/User Management/User_Interfaces.md:338
+msgid "用户管理员可以根据用户ID删除任何用户"
+msgstr "The user administrator can delete any user based on the user ID"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "userId"
+msgstr "userId"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用户ID"
+msgstr "User ID"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "path"
+msgstr "path"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "uuid"
+msgstr "uuid"
+
+#: ../../Projects/User Management/User_Interfaces.md:373
+msgid "2.6 修改用户个人信息"
+msgstr "2.6 Modifies user personal information"
+
+#: ../../Projects/User Management/User_Interfaces.md:375
+msgid "用户可以修改个人信息，返回修改后的信息。"
+msgstr "The user can modify the personal information and return the modified information."
+
+#: ../../Projects/User Management/User_Interfaces.md:428
+msgid "2.7 停用用户"
+msgstr "2.7 Disable user"
+
+#: ../../Projects/User Management/User_Interfaces.md:430
+msgid "用户管理员可以根据用户ID停用用户，其中用户ID为非内置用户的用户ID。用户停用后将无法登录。"
+msgstr "The user administrator can disable the user according to the user ID, wherein the user ID is the user ID of the non-built-in user.The user will not be able to register after disabling."
+
+#: ../../Projects/User Management/User_Interfaces.md:465
+msgid "2.8 启用用户"
+msgstr "2.8 Enable users"
+
+#: ../../Projects/User Management/User_Interfaces.md:467
+msgid "用户管理员可以根据用户ID启用用户，其中用户ID为非内置用户的用户ID。"
+msgstr "The user administrator can enable the user according to the user ID, wherein the user ID is the user ID of the non-built-in user."
+
+#: ../../Projects/User Management/User_Interfaces.md:502
+msgid "2.9 设置用户角色"
+msgstr "2.9 User roles are set"
+
+#: ../../Projects/User Management/User_Interfaces.md:504
+msgid "用户管理员可以根据用户ID设置其所属角色和可访问平台。"
+msgstr "The user administrator can set the role and the accessible platform thereof according to the user ID."
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "platform"
+msgstr "platform"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "可访问平台"
+msgstr "Access platform"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用户可访问的平台"
+msgstr "User accessible platform"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用户所属角色"
+msgstr "The role of the user"
+
+#: ../../Projects/User Management/User_Interfaces.md:549
+msgid "3 IDENTITY"
+msgstr "3 IDENTITY"
+
+#: ../../Projects/User Management/User_Interfaces.md:551
+msgid "3.1 获取短信验证码"
+msgstr "3.1 Access to short message verification code"
+
+#: ../../Projects/User Management/User_Interfaces.md:553
+msgid "发送验证码到指定的手机号上，发送成功返回200，发送失败返回417。"
+msgstr "sending the verification code to the appointed mobile phone number, sending the successful return 200, sending the failure to return 417."
+
+#: ../../Projects/User Management/User_Interfaces.md:555
+msgid "发送短信验证码前需要先获取图形验证码，通过verifyCode参数传递。"
+msgstr "It is necessary to obtain the graphic verification code before sending the short message verification code, which is passed through the verifyCode parameter."
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "11位有效数字，必须以1开头"
+msgstr "11 valid digits, must start with 1"
+
+#: ../../Projects/User Management/User_Interfaces.md:586
+msgid "3.2 获取邮件验证码"
+msgstr "3.2 Get Mail Validation Code"
+
+#: ../../Projects/User Management/User_Interfaces.md:588
+msgid "发送验证码到指定的邮箱，发送成功返回200，发送失败返回417。"
+msgstr "Send the verification code to the designated mailbox, send a successful return 200, and send the failure back to 417."
+
+#: ../../Projects/User Management/User_Interfaces.md:590
+msgid "发送邮件验证码前需要先获取图形验证码，通过verifyCode参数传递。"
+msgstr "It is necessary to obtain the graphical verification code before sending the message verification code, which is passed through the verifyCode parameter."
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用以接收验证码的邮箱地址"
+msgstr "Mailbox address to receive verification code"
+
+#: ../../Projects/User Management/User_Interfaces.md:627
+msgid "3.3 获取图形验证码"
+msgstr "3.3 Get Graph Validation Code"
+
+#: ../../Projects/User Management/User_Interfaces.md:629
+msgid "获取带验证码的图片数据流"
+msgstr "Get picture data stream with verification code"
+
+#: ../../Projects/User Management/User_Interfaces.md:636
+msgid "该接口不带任何请求参数，返回二进制的图片数据流"
+msgstr "The interface does not take any request parameters and returns the binary picture data stream"
+
+#: ../../Projects/User Management/User_Interfaces.md:637
+msgid "验证码3分钟内有效"
+msgstr "Validation is valid in 3 minutes"
+
+#: ../../Projects/User Management/User_Interfaces.md:639
+msgid "3.4 预校验图形验证码正确性"
+msgstr "3.4 Precheck Graphic Validation Code Accuracy"
+
+#: ../../Projects/User Management/User_Interfaces.md:641
+msgid "预校验用户输入的验证码是否正确"
+msgstr "pre-checking if the verification code input by the user is correct"
 

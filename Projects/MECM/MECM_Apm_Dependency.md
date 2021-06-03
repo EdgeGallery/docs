@@ -2,7 +2,6 @@ rely
 ====================
 
 ## Apm Third-Party Use List
-
 |groupId|artifactId|version|license|direct import (Y/N)|
 |---|---|---|---|---|
 |org.springframework.boot|spring-boot-starter|2.3.3.RELEASE|Apache License, Version 2.0|Y|

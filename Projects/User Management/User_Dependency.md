@@ -1,5 +1,4 @@
 ## User-mgmt 三方件使用清单
-
 |license|project| group| artifact | version  |url|
 |---|---|---|---|---|---|
 |(Public Domain)|AOP alliance |aopalliance|aopalliance|1.0|http://aopalliance.sourceforge.net|

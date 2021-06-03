@@ -34,7 +34,6 @@ Adds new application store record
 Resource URI: /inventory/v1/appstores
 Method: POST
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
@@ -72,7 +71,6 @@ Deletes all application stores records
 Resource URI: /inventory/v1/appstores
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -93,7 +91,6 @@ Retrieves application store record
 Resource URI: /inventory/v1/appstores/{appstore_ip}
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access_token|header |yes|Jwt token|
@@ -117,7 +114,6 @@ Adds a new application store record entry into the Inventory.
 Resource URI: /inventory/v1/appstores
 Method: POST
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
@@ -159,7 +155,6 @@ Updates an exiting application store record in the Inventory matching the given 
 Resource URI: /inventory/v1/appstores/{appstore_ip}
 Method: PUT
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
@@ -202,7 +197,6 @@ Retrieves all application store record
 Resource URI: /inventory/v1/appstores
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access_token|header |yes|Jwt token|
@@ -239,7 +233,6 @@ Deletes all application store records for a given tenant.
 Resource URI: /inventory/v1/appstores/
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -260,7 +253,6 @@ Retrieves a specific application store record in the Inventory matching the give
 Resource URI: /inventory/v1/appstores/{appstore_ip}
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access_token|header |yes|Jwt token|
@@ -286,7 +278,6 @@ Deletes a specific application store record in the Inventory matching the given 
 Resource URI: /inventory/v1/appstores/{appstore_ip}
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -308,7 +299,6 @@ Updates existing application store record
 Resource URI: /inventory/v1/appstores/{appstore_ip}
 Method: PUT
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
@@ -348,7 +338,6 @@ Deletes application store record
 Resource URI: /inventory/v1/appstores/{appstore_ip}
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
@@ -372,7 +361,6 @@ Retrieves all MEC host records
 Resource URI: /inventory/v1/mechosts
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -416,7 +404,6 @@ Adds new MEC host record
 Resource URI: /inventory/v1/mechosts
 Method: POST
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
@@ -485,7 +472,6 @@ Deletes all application stores records
 Resource URI: /inventory/v1/mechosts
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -507,7 +493,6 @@ Retrieves MEC host records
 Resource URI: /inventory/v1/mechosts/{mechost_ip}
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -548,7 +533,6 @@ Updates existing MEC host record
 Resource URI: /inventory/v1/mechosts/{mechost_ip}
 Method: PUT
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
@@ -614,7 +598,6 @@ Deletes application stores record
 Resource URI: /inventory/v1/mechosts/{mechost_ip}
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -636,7 +619,6 @@ Adds new application record.
 Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps
 Method: POST
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
@@ -676,7 +658,6 @@ Updates Application record.
 Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps/{app_id}
 Method: PUT
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -717,7 +698,6 @@ Delete application record
 Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/apps/{app_id}
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -741,7 +721,6 @@ Retrieves MEC host record for specific capabilities
 Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/capabilities
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -774,7 +753,6 @@ Retrieves applications matching capability in a specific MEC host record.
 Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/capabilities/{capability_type}/applications
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -807,7 +785,6 @@ Upload K8s configuration file to applcm
 Resource URI: /inventory/v1/mechosts/{mechost_ip}/k8sconfig
 Method: POST
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -828,7 +805,6 @@ Deletes K8s configuration file from applcm
 Resource URI: /inventory/v1/mechosts/{mechost_ip}/k8sconfig
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -850,7 +826,6 @@ Retrieves data for liveness & readiness
 Resource URI: /inventory/v1/health
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -866,7 +841,6 @@ Adds a new APPDRule record entry into the Inventory.
 Resource URI: /inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration
 Method: POST
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -937,7 +911,6 @@ Updates a existing APPDRule record entry into the Inventory matching the given t
 Resource URI: /inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration
 Method: PUT
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -1008,7 +981,6 @@ Retrieves appDRule records for given tenant ID and app instance ID.
 Resource URI: /inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -1072,7 +1044,6 @@ Deletes appDRule records for a given tenant and app instance.
 Resource URI: /inventory/v1/tenants/{tenant_id}/app_instances/{app_instance_id}/appd_configuration
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -1094,7 +1065,6 @@ Synchronizes mec host info from edge.
 Resource URI: /mepms/{mepm_ip}/mechost/sync
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -1137,7 +1107,6 @@ Synchronizes mec host info from edge.
 Resource URI: /tenants/{tenant_id}/mepms/{mepm_ip}/apprule/sync
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -1236,7 +1205,6 @@ Retrieves all MEPM records
 Resource URI: /inventory/v1/mepms
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -1258,7 +1226,6 @@ Adds new MEPM record
 Resource URI: /inventory/v1/mepms
 Method: POST
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
@@ -1293,7 +1260,6 @@ Deletes all mepm records
 Resource URI: /inventory/v1/mepms
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -1316,7 +1282,6 @@ Retrieves mepm records
 Resource URI: /inventory/v1/mepms/{mepm_ip}
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -1337,7 +1302,6 @@ Updates existing mepm record
 Resource URI: /inventory/v1/mepms/{mepm_ip}
 Method: PUT
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
@@ -1372,7 +1336,6 @@ Deletes mepm record
 Resource URI: /inventory/v1/mepms/{mepm_ip}
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|

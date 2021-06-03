@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-01 22:20+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,17 +21,13 @@ msgstr ""
 msgid "接口URI变更"
 msgstr "Interface URI change"
 
-#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md:112 Interface
-msgid "删除接口"
-msgstr "Delete Interface"
-
-#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md:131 Interface
-msgid "新增或者修改的接口"
-msgstr "Add or Modify Interface"
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "原URI"
+msgstr "Original URI"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
-msgid "API"
-msgstr "API"
+msgid "现URI"
+msgstr "Now URI"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "方法"
@@ -40,6 +36,194 @@ msgstr "method"
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "API说明"
 msgstr "API Description"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/pushable/packages"
+msgstr "/mec/appstore/poke/pushable/packages"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/v1/packages/pushable"
+msgstr "/mec/appstore/v1/packages/pullable"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "GET"
+msgstr "GET"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "查询可推送的应用列表"
+msgstr "List of queries that can be pulled by queries"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/pushable/packages/{packageId}"
+msgstr "/mec/appstore/poke/pushable/packages/{packageId}"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/v1/packages/{packageId}/pushable"
+msgstr "/mec/appstore/v1/packages/{packageId}/pushable"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "根据packageId获取可推送应用包"
+msgstr "Get Pushable App Based on packageId"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/pushable/packages/{packageId}/action/push"
+msgstr "/mec/appstore/poke/pushable/packages/{packageId}/action/push"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/v1/packages/{packageId}/action/push"
+msgstr "/mec/appstore/v1/packages/{packageId}/action/push"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "POST"
+msgstr "POST"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "根据packageId推送应用包"
+msgstr "Pushing an application based on packageId"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/pushable/packages/{packageId}/action/download-package"
+msgstr "/mec/appstore/poke/pushable/packages/{packageId}/action/download-package"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/v1/packages/{packageId}/action/download-package"
+msgstr "/mec/appstore/v1/packages/{packageId}/action/download-package"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "根据packageId下载推送应用包"
+msgstr "Download push app based on packageId"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/pushable/packages/{packageId}/action/download-icon"
+msgstr "/mec/appstore/poke/pushable/packages/{packageId}/action/download-icon"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/v1/packages/{packageId}/action/download-icon"
+msgstr "/mec/appstore/v1/packages/{packageId}/action/download-icon"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "根据packageId下载推送应用图标"
+msgstr "Download push app icon based on packageId"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/appstores"
+msgstr "/mec/appstore/poke/appstores"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/v1/appstores"
+msgstr "/mec/appstore/v1/appstores"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "新增外部应用仓库"
+msgstr "Add External Application Warehouse"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/appstores/{appStoreId}"
+msgstr "/mec/appstore/poke/appstores/{appStoreId}"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/v1/appstores/{appStoreId}"
+msgstr "/mec/appstore/v1/appstores/{appStoreId}"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "DELETE"
+msgstr "DELETE"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "删除外部应用仓库"
+msgstr "Delete External Application Warehouse"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "PUT"
+msgstr "PUT"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "修改外部应用仓库"
+msgstr "Modifying an external application warehouse"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "查询外部应用仓库列表"
+msgstr "List of queries that can be pulled by queries"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "查询外部应用仓库"
+msgstr "Query external application warehouse"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/messages"
+msgstr "/mec/appstore/poke/messages"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/v1/messages"
+msgstr "/mec/appstore/v1/messages"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "新增一条消息"
+msgstr "Add a message."
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "根据消息类型获取消息"
+msgstr "Get the message based on the message type."
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/messages/{messageId}"
+msgstr "/mec/appstore/poke/messages/{messageId}"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/v1/messages/{messageId}"
+msgstr "/mec/appstore/v1/messages/{messageId}"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "根据message id获取消息"
+msgstr "Get a message based on message id"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "根据message id删除消息"
+msgstr "Delete message based on message id"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/messages/{messageId}/action/download"
+msgstr "/mec/appstore/poke/messages/{messageId}/action/download"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/v1/messages/{messageId}/action/download"
+msgstr "/mec/appstore/v1/messages/{messageId}/action/download"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "根据message id下载app相关信息"
+msgstr "Download app-related information according to message id"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/messages/{messageId}/action/readed"
+msgstr "/mec/appstore/poke/messages/{messageId}/action/readed"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/v1/messages/{messageId}/action/readed"
+msgstr "/mec/appstore/v1/messages/{messageId}/action/readed"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "根据message id更新消息状态"
+msgstr "Update message status based on message id"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md:21 Interface
+msgid "删除接口"
+msgstr "Delete Interface"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "API"
+msgstr "API"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "/mec/appstore/poke/messages/{messageId}/report-data"
+msgstr "/mec/appstore/poke/messages/{messageId}/report-data"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
+msgid "根据message id获取测试报告"
+msgstr "Get test report based on message id"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md:26 Interface
+msgid "新增或者修改的接口"
+msgstr "Add or Modify Interface"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "变更类型"
@@ -52,10 +236,6 @@ msgstr "explanation"
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/v1/apps"
 msgstr "/met/appstore/v1/apps"
-
-#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
-msgid "POST"
-msgstr "POST"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "上传app"
@@ -72,10 +252,6 @@ msgstr "Modify upload request parameters, increase optional field demoVideo, mea
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/v1/packages/pullable"
 msgstr "/mec/appstore/v1/packages/pullable"
-
-#: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
-msgid "GET"
-msgstr "GET"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "获取本平台仓库全部可拉取应用列表"

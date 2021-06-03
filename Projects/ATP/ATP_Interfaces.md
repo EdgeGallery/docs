@@ -41,7 +41,6 @@ create test task for application package.
 ```
 Resource URI: /edgegallery/atp/v1/tasks
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |file|file|requestpart|yes|
@@ -70,7 +69,6 @@ Run test task by taskId
 ```
 Resource URI: /edgegallery/atp/v1/tasks/{taskId}/action/run
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |taskId|taskId|path param|yes|
@@ -127,7 +125,6 @@ download one plugin
 ```
 Resource URI: /edgegallery/atp/v1/tasks
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |appName|appName|query param|no|
@@ -185,7 +182,6 @@ get task by taskId
 ```
 Resource URI: /edgegallery/atp/v1/tasks/{taskId}
 ```
-
 |Name| Definition|type|Required|
 |-------------|-------------|------------|------------|
 |taskId|taskId|path param|yes|
@@ -240,7 +236,6 @@ modify manual test case status
 ```
 Resource URI: edgegallery/atp/v1/tasks/{taskId}/testcase
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |taskId|taskId|path param|yes|
@@ -308,7 +303,6 @@ query all test cases
 ```
 Resource URI: /edgegallery/atp/v1/testcases
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |type|type|query param|no|
@@ -344,7 +338,6 @@ create test case
 ```
 Resource URI: /edgegallery/atp/v1/testcases
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |nameCh|nameCh|request param|yes|
@@ -387,7 +380,6 @@ update test case
 ```
 Resource URI: /edgegallery/atp/v1/testcases
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |id|id|request param|yes|
@@ -428,7 +420,6 @@ delete test case
 ```
 Resource URI: /edgegallery/atp/v1/testcases/{id}
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |id|id|path param|yes|
@@ -444,7 +435,6 @@ query one test case
 ```
 Resource URI: /edgegallery/atp/v1/testcases/{id}
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |id|id|path param|yes|
@@ -476,7 +466,6 @@ download test case
 ```
 Resource URI: edgegallery/atp/v1/testcases/{id}/action/download
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |id|id|path param|yes|
@@ -494,7 +483,6 @@ query all test scenarios
 ```
 Resource URI: edgegallery/atp/v1/testscenarios
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |name|name|query param|no|
@@ -521,7 +509,6 @@ create test scenario
 ```
 Resource URI: edgegallery/atp/v1/testscenarios
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |nameCh|nameCh|request param|yes|
@@ -549,7 +536,6 @@ update test scenario
 ```
 Resource URI: edgegallery/atp/v1/testscenarios/{id}
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |id|id|path param|yes|
@@ -577,7 +563,6 @@ delete test scenario
 ```
 Resource URI: edgegallery/atp/v1/testscenarios/{id}
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |id|id|path param|yes|
@@ -593,7 +578,6 @@ query one test scenario
 ```
 Resource URI: edgegallery/atp/v1/testscenarios/{id}
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |id|id|path param|yes|
@@ -616,7 +600,6 @@ query all test cases under one scenario
 ```
 Resource URI: edgegallery/atp/v1/testscenarios/testcases
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |scenarioids|scenarioids|request param|yes|
@@ -682,7 +665,6 @@ query all test suite
 ```
 Resource URI: edgegallery/atp/v1/testsuites
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |name|name|query param|no|
@@ -712,7 +694,6 @@ create test suite
 ```
 Resource URI: edgegallery/atp/v1/testsuites
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |nameCh|nameCh|request param|yes|
@@ -741,7 +722,6 @@ update test suite
 ```
 Resource URI: edgegallery/atp/v1/testsuites/{id}
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |id|id|path param|yes|
@@ -770,7 +750,6 @@ delete test suite
 ```
 Resource URI: edgegallery/atp/v1/testsuites/{id}
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |id|id|path param|yes|
@@ -786,7 +765,6 @@ query one test suite
 ```
 Resource URI: edgegallery/atp/v1/testsuites/{id}
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |id|id|path param|yes|
@@ -835,7 +813,6 @@ create contribution
 ```
 Resource URI: edgegallery/atp/v1/contribution
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |name|name|request param|yes|
@@ -866,7 +843,6 @@ query one file
 ```
 Resource URI: edgegallery/atp/v1/file/{id}
 ```
-
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
 |id|id|path param|yes|

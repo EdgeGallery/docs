@@ -5,7 +5,6 @@ The document is for the K8s plugin project.
 ### InstantiateRequest
 
 Application instantiated
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
@@ -17,7 +16,6 @@ Application instantiated
 ### InstantiateResponse
 
 Represents the InstantiateRequest status.
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |status|string|required|Status of the instantiate request|
@@ -25,7 +23,6 @@ Represents the InstantiateRequest status.
 ### TerminateRequest
 
 Terminates application instance id
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
@@ -35,7 +32,6 @@ Terminates application instance id
 ### TerminateResponse
 
 Represents the TerminateRequest status.
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |status|string|required|Status of the terminate request|
@@ -43,7 +39,6 @@ Represents the TerminateRequest status.
 ### QueryRequest
 
 Get statistics information 
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
@@ -53,7 +48,6 @@ Get statistics information
 ### QueryResponse 
 
 Represents the QueryRequest status.
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |status|string|required|Status of the Query request|
@@ -62,7 +56,6 @@ Represents the QueryRequest status.
 ### UploadCfgRequest
 
 Upload Config File
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
@@ -72,7 +65,6 @@ Upload Config File
 ### UploadCfgResponse
 
 Represents the UploadCfgRequest status.
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |status|string|required|Status of the UploadCfgRequest|
@@ -80,14 +72,12 @@ Represents the UploadCfgRequest status.
 ### RemoveCfgRequest
 
 Removes the config file 
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
 |hostIp|string|required|Valid IP|
 
 ### RemoveCfgResponse
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |status|string|required|Status of the RemoveCfgRequest|
@@ -96,7 +86,6 @@ Removes the config file
 ### CreateVmImageRequest
 
 Create VM image request 
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
@@ -106,7 +95,6 @@ Create VM image request
 
 
 ### CreateVmImageResponse
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |response|string|required|response of the CreateVmImageResponse|
@@ -115,7 +103,6 @@ Create VM image request
 ### QueryVmImageRequest
 
 Query VM image request 
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
@@ -124,7 +111,6 @@ Query VM image request
 |imageId|string|required|Valid UUID|
 
 ### QueryVmImageResponse
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |response|string|required|response of the QueryVmImageResponse|
@@ -133,7 +119,6 @@ Query VM image request
 ### DeleteVmImageRequest
 
 Delete VM image request 
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
@@ -143,7 +128,6 @@ Delete VM image request
 
 
 ### DeleteVmImageResponse
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |response|string|required|response of the DeleteVmImageResponse|
@@ -152,7 +136,6 @@ Delete VM image request
 ### DownloadVmImageRequest
 
 Download VM image request 
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
@@ -163,7 +146,6 @@ Download VM image request
 
 
 ### DownloadVmImageResponse
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |content|byte|required|response of the DownloadVmImageResponse|
@@ -172,7 +154,6 @@ Download VM image request
 ### AppLCM Service
 
 Service for handling requests.
-
 |Method Name|Request Type|Response Type|Description|
 |---|---|---|---|
 |instantiate|InstantiateRequest|InstantiateResponse|Instantiate application|

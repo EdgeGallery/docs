@@ -2,7 +2,6 @@
 ================
 
 ## MEP-auth 三方件使用清单
-
 | artifact | version  |
 |---|---|
 |github.com/agiledragon/gomonkey| v2.0.1
@@ -16,7 +15,6 @@
 |golang.org/x/crypto| v0.0.0-20200302210943-78000ba7a073
 
 ## MEP-server 三方件使用清单
-
 | artifact | version  |
 |---|---|
 |github.com/agiledragon/gomonkey |v2.0.1|
@@ -29,7 +27,6 @@
 |golang.org/x/net |v0.0.0-20200301022130-244492dfa37a|
 
 ## dns-server 三方件使用清单
-
 | artifact | version  |
 |---|---|
 |github.com/agiledragon/gomonkey | v2.0.1
@@ -40,7 +37,6 @@
 |go.etcd.io/bbolt | v1.3.4
 
 ## MEP-agent 三方件使用清单
-
 | artifact | version  |
 |---|---|
 | github.com/agiledragon/gomonkey | v2.0.1

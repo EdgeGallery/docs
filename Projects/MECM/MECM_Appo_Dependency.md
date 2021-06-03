@@ -2,7 +2,6 @@ rely
 ====================
 
 ## Appo Third-Party Use List
-
 |groupId|artifactId|version|license|direct import (Y/N)|
 |---|---|---|---|---|
 |org.camunda.bpm.springboot|camunda-bpm-spring-boot-starter-webapp|3.4.0|Apache License, Version 2.0|Y|

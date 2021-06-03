@@ -5,7 +5,6 @@ The document is for the Image Interfaces.
 ### Create Image
 
 creation of image
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
@@ -15,7 +14,6 @@ creation of image
 ### Delete Image
 
 deletion of image
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
@@ -26,7 +24,6 @@ deletion of image
 ### Query Image
 
 query of image
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|
@@ -37,7 +34,6 @@ query of image
 ### Download Image file
 
 download a specific chunk of image file
-
 |Field|Type|Label|Description
 |---|---|---|---|
 |accessToken|string|required|Provide the required access token|

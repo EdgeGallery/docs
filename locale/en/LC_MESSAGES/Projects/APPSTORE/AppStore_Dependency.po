@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-01 22:34+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,2091 @@ msgstr "rely on"
 msgid "AppStore-be 三方件使用清单"
 msgstr "AppStore-be Trilateral Use List"
 
-#: ../../Projects/APPSTORE/AppStore_Dependency.md:1497
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "groupId"
+msgstr "groupId"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "artifactId"
+msgstr "artifactId"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "version"
+msgstr "version"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "license"
+msgstr "license"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "direct import (Y/N)"
+msgstr "direct import (Y/N)"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "aopalliance"
+msgstr "aopalliance"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.0"
+msgstr "1.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Public Domain"
+msgstr "Public Domain"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "N"
+msgstr "N"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.fasterxml"
+msgstr "com.fasterxml"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "classmate"
+msgstr "classmate"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.4.0"
+msgstr "1.4.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "The Apache Software License, Version 2.0"
+msgstr "The Apache Software License, Version 2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.fasterxml.jackson.core"
+msgstr "com.fasterxml.jackson.core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jackson-annotations"
+msgstr "jackson-annotations"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.9.0"
+msgstr "2.9.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jackson-core"
+msgstr "jackson-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.9.9"
+msgstr "2.9.9"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jackson-databind"
+msgstr "jackson-databind"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.9.10.6"
+msgstr "2.9.10.6"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Y"
+msgstr "Y"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.fasterxml.jackson.dataformat"
+msgstr "com.fasterxml.jackson.dataformat"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jackson-dataformat-xml"
+msgstr "jackson-dataformat-xml"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jackson-dataformat-yaml"
+msgstr "jackson-dataformat-yaml"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.fasterxml.jackson.datatype"
+msgstr "com.fasterxml.jackson.datatype"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jackson-datatype-jdk8"
+msgstr "jackson-datatype-jdk8"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jackson-datatype-jsr310"
+msgstr "jackson-datatype-jsr310"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.fasterxml.jackson.module"
+msgstr "com.fasterxml.jackson.module"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jackson-module-jaxb-annotations"
+msgstr "jackson-module-jaxb-annotations"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jackson-module-parameter-names"
+msgstr "jackson-module-parameter-names"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.fasterxml.woodstox"
+msgstr "com.fasterxml.woodstox"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "woodstox-core"
+msgstr "woodstox-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "5.0.3"
+msgstr "5.0.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "The Apache License, Version 2.0"
+msgstr "The Apache License, Version 2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.github.ben-manes.caffeine"
+msgstr "com.github.ben-manes.caffeine"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "caffeine"
+msgstr "caffeine"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.6.2"
+msgstr "2.6.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Apache License, Version 2.0"
+msgstr "Apache License, Version 2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.github.waffle"
+msgstr "com.github.waffle"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "waffle-jna"
+msgstr "waffle-jna"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.9.1"
+msgstr "1.9.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Eclipse Public License"
+msgstr "Eclipse Public License"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.google.code.findbugs"
+msgstr "com.google.code.findbugs"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jsr305"
+msgstr "jsr305"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.0.2"
+msgstr "3.0.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.google.code.gson"
+msgstr "com.google.code.gson"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "gson"
+msgstr "gson"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.8.2"
+msgstr "2.8.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Apache 2.0"
+msgstr "Apache 2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.google.errorprone"
+msgstr "com.google.errorprone"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "error_prone_annotations"
+msgstr "error_prone_annotations"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.1.3"
+msgstr "2.1.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.google.guava"
+msgstr "com.google.guava"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "guava"
+msgstr "guava"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "26.0-jre"
+msgstr "26.0-jre"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.google.inject"
+msgstr "com.google.inject"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "guice"
+msgstr "guice"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.2.0"
+msgstr "4.2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.google.inject.extensions"
+msgstr "com.google.inject.extensions"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "guice-assistedinject"
+msgstr "guice-assistedinject"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.1.0"
+msgstr "4.1.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "guice-multibindings"
+msgstr "guice-multibindings"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.google.j2objc"
+msgstr "com.google.j2objc"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "j2objc-annotations"
+msgstr "j2objc-annotations"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.1"
+msgstr "1.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.google.protobuf"
+msgstr "com.google.protobuf"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "protobuf-java"
+msgstr "protobuf-java"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.7.1"
+msgstr "3.7.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3-Clause BSD License"
+msgstr "3-Clause BSD License"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.h2database"
+msgstr "com.h2database"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "h2"
+msgstr "h2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.4.199"
+msgstr "1.4.199"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "MPL 2.0 or EPL 1.0"
+msgstr "MPL 2.0 or EPL 1.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.ibm.icu"
+msgstr "com.ibm.icu"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "icu4j"
+msgstr "icu4j"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "58.2"
+msgstr "58.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Unicode/ICU License"
+msgstr "Unicode/ICU License"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.jayway.jsonpath"
+msgstr "com.jayway.jsonpath"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "json-path"
+msgstr "json-path"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.4.0"
+msgstr "2.4.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.netflix.archaius"
+msgstr "com.netflix.archaius"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "archaius-core"
+msgstr "archaius-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "0.7.6"
+msgstr "0.7.6"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.netflix.hystrix"
+msgstr "com.netflix.hystrix"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "hystrix-core"
+msgstr "hystrix-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.5.18"
+msgstr "1.5.18"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.netflix.netflix-commons"
+msgstr "com.netflix.netflix-commons"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netflix-commons-util"
+msgstr "netflix-commons-util"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "0.3.0"
+msgstr "0.3.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netflix-statistics"
+msgstr "netflix-statistics"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "0.1.1"
+msgstr "0.1.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.netflix.ribbon"
+msgstr "com.netflix.ribbon"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "ribbon"
+msgstr "ribbon"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.3.0"
+msgstr "2.3.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "ribbon-core"
+msgstr "ribbon-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "ribbon-loadbalancer"
+msgstr "ribbon-loadbalancer"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "ribbon-transport"
+msgstr "ribbon-transport"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.netflix.servo"
+msgstr "com.netflix.servo"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "servo-core"
+msgstr "servo-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "0.12.21"
+msgstr "0.12.21"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.netflix.spectator"
+msgstr "com.netflix.spectator"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spectator-api"
+msgstr "spectator-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "0.83.0"
+msgstr "0.83.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spectator-reg-servo"
+msgstr "spectator-reg-servo"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.sun.istack"
+msgstr "com.sun.istack"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "istack-commons-runtime"
+msgstr "istack-commons-runtime"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.0.7"
+msgstr "3.0.7"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "CDDL 1.1 & GPL2 w/ CPE"
+msgstr "CDDL 1.1 & GPL2 w/ CPE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.sun.xml.fastinfoset"
+msgstr "com.sun.xml.fastinfoset"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "FastInfoset"
+msgstr "FastInfoset"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.2.15"
+msgstr "1.2.15"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.vaadin.external.google"
+msgstr "com.vaadin.external.google"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "android-json"
+msgstr "android-json"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "0.0.20131108.vaadin1"
+msgstr "0.0.20131108.vaadin1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Apache License 2.0"
+msgstr "Apache License 2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.zaxxer"
+msgstr "com.zaxxer"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "HikariCP"
+msgstr "HikariCP"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.2.0"
+msgstr "3.2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "commons-codec"
+msgstr "commons-codec"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.11"
+msgstr "1.11"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "commons-configuration"
+msgstr "commons-configuration"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.10"
+msgstr "1.10"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "commons-fileupload"
+msgstr "commons-fileupload"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.3.3"
+msgstr "1.3.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "commons-io"
+msgstr "commons-io"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.6"
+msgstr "2.6"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "commons-lang"
+msgstr "commons-lang"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "io.lettuce"
+msgstr "io.lettuce"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "lettuce-core"
+msgstr "lettuce-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "5.1.8.RELEASE"
+msgstr "5.1.8.RELEASE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "io.netty"
+msgstr "io.netty"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-buffer"
+msgstr "netty-buffer"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.1.36.Final"
+msgstr "4.1.36.Final"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-codec"
+msgstr "netty-codec"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-codec-dns"
+msgstr "netty-codec-dns"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-codec-http"
+msgstr "netty-codec-http"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-codec-http2"
+msgstr "netty-codec-http2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-codec-socks"
+msgstr "netty-codec-socks"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-common"
+msgstr "netty-common"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-handler"
+msgstr "netty-handler"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-handler-proxy"
+msgstr "netty-handler-proxy"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-resolver"
+msgstr "netty-resolver"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-resolver-dns"
+msgstr "netty-resolver-dns"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-tcnative-boringssl-static"
+msgstr "netty-tcnative-boringssl-static"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.0.25.Final"
+msgstr "2.0.25.Final"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "netty-transport"
+msgstr "netty-transport"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "io.projectreactor"
+msgstr "io.projectreactor"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "reactor-core"
+msgstr "reactor-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.2.8.RELEASE"
+msgstr "3.2.8.RELEASE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "io.protostuff"
+msgstr "io.protostuff"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "protostuff-api"
+msgstr "protostuff-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.5.9"
+msgstr "1.5.9"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "protostuff-collectionschema"
+msgstr "protostuff-collectionschema"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "protostuff-core"
+msgstr "protostuff-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "protostuff-parser"
+msgstr "protostuff-parser"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.2.25"
+msgstr "2.2.25"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "protostuff-runtime"
+msgstr "protostuff-runtime"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "io.reactivex"
+msgstr "io.reactivex"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "rxjava"
+msgstr "rxjava"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.2.0"
+msgstr "1.2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "rxnetty"
+msgstr "rxnetty"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "0.4.9"
+msgstr "0.4.9"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "rxnetty-contexts"
+msgstr "rxnetty-contexts"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "rxnetty-servo"
+msgstr "rxnetty-servo"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "io.swagger"
+msgstr "io.swagger"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "swagger-annotations"
+msgstr "swagger-annotations"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.5.22"
+msgstr "1.5.22"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "swagger-core"
+msgstr "swagger-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "swagger-models"
+msgstr "swagger-models"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "io.vertx"
+msgstr "io.vertx"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vertx-auth-common"
+msgstr "vertx-auth-common"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.6.3"
+msgstr "3.6.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Eclipse Public License - v 1.0 & The Apache Software License, Version 2.0"
+msgstr "Eclipse Public License - v 1.0 & The Apache Software License, Version 2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vertx-bridge-common"
+msgstr "vertx-bridge-common"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Eclipse Public License - v 1.0 & The Apache Software License, Version 2.1"
+msgstr "Eclipse Public License - v 1.0 & The Apache Software License, Version 2.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vertx-core"
+msgstr "vertx-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Eclipse Public License - v 1.0 & The Apache Software License, Version 2.2"
+msgstr "Eclipse Public License - v 1.0 & The Apache Software License, Version 2.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vertx-web"
+msgstr "vertx-web"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Eclipse Public License - v 1.0 & The Apache Software License, Version 2.3"
+msgstr "Eclipse Public License - v 1.0 & The Apache Software License, Version 2.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vertx-web-common"
+msgstr "vertx-web-common"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Eclipse Public License - v 1.0 & The Apache Software License, Version 2.4"
+msgstr "Eclipse Public License - v 1.0 & The Apache Software License, Version 2.4"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "io.zipkin.brave"
+msgstr "io.zipkin.brave"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "brave"
+msgstr "brave"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "5.6.0"
+msgstr "5.6.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "io.zipkin.reporter2"
+msgstr "io.zipkin.reporter2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "zipkin-reporter"
+msgstr "zipkin-reporter"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.5.0"
+msgstr "2.5.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "io.zipkin.zipkin2"
+msgstr "io.zipkin.zipkin2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "zipkin"
+msgstr "zipkin"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.9.3"
+msgstr "2.9.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.activation"
+msgstr "javax.activation"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.activation-api"
+msgstr "javax.activation-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "CDDL/GPLv2+CE"
+msgstr "CDDL/GPLv2+CE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.annotation"
+msgstr "javax.annotation"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.annotation-api"
+msgstr "javax.annotation-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.3.2"
+msgstr "1.3.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "CDDL + GPLv2 with classpath exception"
+msgstr "CDDL + GPLv2 with classpath exception"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.inject"
+msgstr "javax.inject"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1"
+msgstr "1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.servlet"
+msgstr "javax.servlet"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.servlet-api"
+msgstr "javax.servlet-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.0.1"
+msgstr "4.0.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.validation"
+msgstr "javax.validation"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "validation-api"
+msgstr "validation-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.0.1.Final"
+msgstr "2.0.1.Final"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.ws.rs"
+msgstr "javax.ws.rs"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.ws.rs-api"
+msgstr "javax.ws.rs-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.1"
+msgstr "2.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.xml.bind"
+msgstr "javax.xml.bind"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jaxb-api"
+msgstr "jaxb-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.3.1"
+msgstr "2.3.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "junit"
+msgstr "junit"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.12"
+msgstr "4.12"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Eclipse Public License 1.0"
+msgstr "Eclipse Public License 1.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "log4j"
+msgstr "log4j"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.2.17"
+msgstr "1.2.17"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "net.bytebuddy"
+msgstr "net.bytebuddy"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "byte-buddy"
+msgstr "byte-buddy"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.9.13"
+msgstr "1.9.13"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "byte-buddy-agent"
+msgstr "byte-buddy-agent"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "net.java.dev.jna"
+msgstr "net.java.dev.jna"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jna"
+msgstr "jna"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.5.2"
+msgstr "4.5.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Apache License v2.0 & LGPL, version 2.1"
+msgstr "Apache License v2.0 & LGPL, version 2.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jna-platform"
+msgstr "jna-platform"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "net.minidev"
+msgstr "net.minidev"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "accessors-smart"
+msgstr "accessors-smart"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.2"
+msgstr "1.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "json-smart"
+msgstr "json-smart"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.3"
+msgstr "2.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.abego.treelayout"
+msgstr "org.abego.treelayout"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.abego.treelayout.core"
+msgstr "org.abego.treelayout.core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.0.3"
+msgstr "1.0.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "BSD 3-Clause \"New\" or \"Revised\" License BSD-3-Clause"
+msgstr "BSD 3-Clause \"New\" or \"Revised\" License BSD-3-Clause"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.antlr"
+msgstr "org.antlr"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "ST4"
+msgstr "ST4"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.0.8"
+msgstr "4.0.8"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "BSD licence"
+msgstr "BSD licence"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "antlr-runtime"
+msgstr "antlr-runtime"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.5.2"
+msgstr "3.5.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "antlr4"
+msgstr "antlr4"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.7"
+msgstr "4.7"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "The BSD License"
+msgstr "The BSD License"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "antlr4-runtime"
+msgstr "antlr4-runtime"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.apache.ant"
+msgstr "org.apache.ant"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "ant"
+msgstr "ant"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.8.2"
+msgstr "1.8.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "ant-launcher"
+msgstr "ant-launcher"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.apache.commons"
+msgstr "org.apache.commons"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "commons-lang3"
+msgstr "commons-lang3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.8.1"
+msgstr "3.8.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.apache.httpcomponents"
+msgstr "org.apache.httpcomponents"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "httpclient"
+msgstr "httpclient"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.5.9"
+msgstr "4.5.9"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "httpcore"
+msgstr "httpcore"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.4.11"
+msgstr "4.4.11"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.apache.logging.log4j"
+msgstr "org.apache.logging.log4j"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "log4j-api"
+msgstr "log4j-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.11.2"
+msgstr "2.11.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "log4j-core"
+msgstr "log4j-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "log4j-slf4j-impl"
+msgstr "log4j-slf4j-impl"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.apache.servicecomb"
+msgstr "org.apache.servicecomb"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "common-javassist"
+msgstr "common-javassist"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.3.0"
+msgstr "1.3.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "common-protobuf"
+msgstr "common-protobuf"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "common-rest"
+msgstr "common-rest"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "deployment"
+msgstr "deployment"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "foundation-common"
+msgstr "foundation-common"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "foundation-config"
+msgstr "foundation-config"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "foundation-metrics"
+msgstr "foundation-metrics"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "foundation-protobuf"
+msgstr "foundation-protobuf"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "foundation-ssl"
+msgstr "foundation-ssl"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "foundation-vertx"
+msgstr "foundation-vertx"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "handler-bizkeeper"
+msgstr "handler-bizkeeper"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "handler-flowcontrol-qps"
+msgstr "handler-flowcontrol-qps"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "handler-loadbalance"
+msgstr "handler-loadbalance"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "java-chassis-core"
+msgstr "java-chassis-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "provider-jaxrs"
+msgstr "provider-jaxrs"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "provider-pojo"
+msgstr "provider-pojo"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "provider-rest-common"
+msgstr "provider-rest-common"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "provider-springmvc"
+msgstr "provider-springmvc"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "service-registry"
+msgstr "service-registry"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot2-starter"
+msgstr "spring-boot2-starter"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot2-starter-servlet"
+msgstr "spring-boot2-starter-servlet"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "swagger-generator-core"
+msgstr "swagger-generator-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "swagger-generator-jaxrs"
+msgstr "swagger-generator-jaxrs"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "swagger-generator-springmvc"
+msgstr "swagger-generator-springmvc"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "swagger-invocation-core"
+msgstr "swagger-invocation-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "swagger-invocation-jaxrs"
+msgstr "swagger-invocation-jaxrs"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "swagger-invocation-springmvc"
+msgstr "swagger-invocation-springmvc"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "transport-common"
+msgstr "transport-common"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "transport-highway"
+msgstr "transport-highway"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "transport-rest-client"
+msgstr "transport-rest-client"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "transport-rest-servlet"
+msgstr "transport-rest-servlet"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.apache.tomcat"
+msgstr "org.apache.tomcat"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "tomcat-annotations-api"
+msgstr "tomcat-annotations-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "9.0.37"
+msgstr "9.0.37"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.apache.tomcat.embed"
+msgstr "org.apache.tomcat.embed"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "tomcat-embed-core"
+msgstr "tomcat-embed-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "tomcat-embed-el"
+msgstr "tomcat-embed-el"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "tomcat-embed-websocket"
+msgstr "tomcat-embed-websocket"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.assertj"
+msgstr "org.assertj"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "assertj-core"
+msgstr "assertj-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.11.1"
+msgstr "3.11.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.bouncycastle"
+msgstr "org.bouncycastle"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "bcpkix-jdk15on"
+msgstr "bcpkix-jdk15on"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.64"
+msgstr "1.64"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Bouncy Castle Licence"
+msgstr "Bouncy Castle Licence"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "bcprov-jdk15on"
+msgstr "bcprov-jdk15on"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.60"
+msgstr "1.60"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.checkerframework"
+msgstr "org.checkerframework"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "checker-qual"
+msgstr "checker-qual"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.5.2"
+msgstr "2.5.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "The MIT License"
+msgstr "The MIT License"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.codehaus.mojo"
+msgstr "org.codehaus.mojo"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "animal-sniffer-annotations"
+msgstr "animal-sniffer-annotations"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.14"
+msgstr "1.14"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "MIT license"
+msgstr "MIT license"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.codehaus.woodstox"
+msgstr "org.codehaus.woodstox"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "stax2-api"
+msgstr "stax2-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.1.4"
+msgstr "3.1.4"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.eclipse.persistence"
+msgstr "org.eclipse.persistence"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.persistence"
+msgstr "javax.persistence"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.1.0"
+msgstr "2.1.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Eclipse Distribution License v. 1.0 & Eclipse Public License v1.0"
+msgstr "Eclipse Distribution License v. 1.0 & Eclipse Public License v1.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.glassfish"
+msgstr "org.glassfish"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javax.json"
+msgstr "javax.json"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.0.4"
+msgstr "1.0.4"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Dual license consisting of the CDDL v1.1 and GPL v2"
+msgstr "Dual license consisting of the CDDL v1.1 and GPL v2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.glassfish.jaxb"
+msgstr "org.glassfish.jaxb"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jaxb-runtime"
+msgstr "jaxb-runtime"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "CDDL+GPL License"
+msgstr "CDDL+GPL License"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "txw2"
+msgstr "txw2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.hamcrest"
+msgstr "org.hamcrest"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "hamcrest-core"
+msgstr "hamcrest-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.3"
+msgstr "1.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "New BSD License"
+msgstr "New BSD License"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "hamcrest-library"
+msgstr "hamcrest-library"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.hdrhistogram"
+msgstr "org.hdrhistogram"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "HdrHistogram"
+msgstr "HdrHistogram"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.1.9"
+msgstr "2.1.9"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Public Domain, per Creative Commons CC0"
+msgstr "Public Domain, per Creative Commons CC0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.hibernate.validator"
+msgstr "org.hibernate.validator"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "hibernate-validator"
+msgstr "hibernate-validator"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "6.0.17.Final"
+msgstr "6.0.17.Final"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.javassist"
+msgstr "org.javassist"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "javassist"
+msgstr "javassist"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.24.0-GA"
+msgstr "3.24.0-GA"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Apache License 2.0 & LGPL 2.1 & MPL 1.1"
+msgstr "Apache License 2.0 & LGPL 2.1 & MPL 1.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.jboss.logging"
+msgstr "org.jboss.logging"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jboss-logging"
+msgstr "jboss-logging"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.3.2.Final"
+msgstr "3.3.2.Final"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Apache License, version 2.0"
+msgstr "Apache License, version 2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.jmockit"
+msgstr "org.jmockit"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jmockit"
+msgstr "jmockit"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.19"
+msgstr "1.19"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jmockit-coverage"
+msgstr "jmockit-coverage"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "The MIT LICENSE"
+msgstr "The MIT LICENSE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.jvnet.staxex"
+msgstr "org.jvnet.staxex"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "stax-ex"
+msgstr "stax-ex"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.8"
+msgstr "1.8"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.mockito"
+msgstr "org.mockito"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "mockito-core"
+msgstr "mockito-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.23.4"
+msgstr "2.23.4"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.mybatis"
+msgstr "org.mybatis"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "mybatis"
+msgstr "mybatis"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.5.3"
+msgstr "3.5.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "mybatis-spring"
+msgstr "mybatis-spring"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.0.3"
+msgstr "2.0.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.mybatis.spring.boot"
+msgstr "org.mybatis.spring.boot"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "mybatis-spring-boot-autoconfigure"
+msgstr "mybatis-spring-boot-autoconfigure"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.1.1"
+msgstr "2.1.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "mybatis-spring-boot-starter"
+msgstr "mybatis-spring-boot-starter"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.1.4"
+msgstr "2.1.4"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.objenesis"
+msgstr "org.objenesis"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "objenesis"
+msgstr "objenesis"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Apache 2"
+msgstr "Apache 2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.osgi"
+msgstr "org.osgi"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.osgi.core"
+msgstr "org.osgi.core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.3.1"
+msgstr "4.3.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.osgi.enterprise"
+msgstr "org.osgi.enterprise"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.2.0 - no url defined)"
+msgstr "4.2.0 - no url defined)"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Unknown license"
+msgstr "Unknown license"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.ow2.asm"
+msgstr "org.ow2.asm"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "asm"
+msgstr "asm"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "5.0.4"
+msgstr "5.0.4"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "BSD"
+msgstr "BSD"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.postgresql"
+msgstr "org.postgresql"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "postgresql"
+msgstr "postgresql"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "42.2.13"
+msgstr "42.2.13"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "BSD-2-Clause"
+msgstr "BSD-2-Clause"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.projectlombok"
+msgstr "org.projectlombok"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "lombok"
+msgstr "lombok"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.18.10"
+msgstr "1.18.10"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.reactivestreams"
+msgstr "org.reactivestreams"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "reactive-streams"
+msgstr "reactive-streams"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.0.0"
+msgstr "1.0.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "CC0"
+msgstr "CC0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.skyscreamer"
+msgstr "org.skyscreamer"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jsonassert"
+msgstr "jsonassert"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.5.0"
+msgstr "1.5.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.slf4j"
+msgstr "org.slf4j"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "jcl-over-slf4j"
+msgstr "jcl-over-slf4j"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.7.26"
+msgstr "1.7.26"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "MIT License"
+msgstr "MIT License"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "slf4j-api"
+msgstr "slf4j-api"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.springframework"
+msgstr "org.springframework"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-aop"
+msgstr "spring-aop"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "5.1.13.RELEASE"
+msgstr "5.1.13.RELEASE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-beans"
+msgstr "spring-beans"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-context"
+msgstr "spring-context"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-core"
+msgstr "spring-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-expression"
+msgstr "spring-expression"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-jcl"
+msgstr "spring-jcl"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-jdbc"
+msgstr "spring-jdbc"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-test"
+msgstr "spring-test"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-tx"
+msgstr "spring-tx"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-web"
+msgstr "spring-web"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-webmvc"
+msgstr "spring-webmvc"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.springframework.boot"
+msgstr "org.springframework.boot"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot"
+msgstr "spring-boot"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.1.6.RELEASE"
+msgstr "2.1.6.RELEASE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot-autoconfigure"
+msgstr "spring-boot-autoconfigure"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot-configuration-processor"
+msgstr "spring-boot-configuration-processor"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot-starter"
+msgstr "spring-boot-starter"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot-starter-jdbc"
+msgstr "spring-boot-starter-jdbc"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot-starter-json"
+msgstr "spring-boot-starter-json"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot-starter-test"
+msgstr "spring-boot-starter-test"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot-starter-tomcat"
+msgstr "spring-boot-starter-tomcat"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot-starter-web"
+msgstr "spring-boot-starter-web"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot-test"
+msgstr "spring-boot-test"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot-test-autoconfigure"
+msgstr "spring-boot-test-autoconfigure"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.springframework.security"
+msgstr "org.springframework.security"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-security-config"
+msgstr "spring-security-config"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "5.1.5.RELEASE"
+msgstr "5.1.5.RELEASE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-security-core"
+msgstr "spring-security-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-security-jwt"
+msgstr "spring-security-jwt"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.1.1.RELEASE"
+msgstr "1.1.1.RELEASE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-security-test"
+msgstr "spring-security-test"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.2.2.RELEASE"
+msgstr "4.2.2.RELEASE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-security-web"
+msgstr "spring-security-web"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.springframework.security.oauth"
+msgstr "org.springframework.security.oauth"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-security-oauth2"
+msgstr "spring-security-oauth2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.5.0.RELEASE"
+msgstr "2.5.0.RELEASE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.springframework.security.oauth.boot"
+msgstr "org.springframework.security.oauth.boot"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-security-oauth2-autoconfigure"
+msgstr "spring-security-oauth2-autoconfigure"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.1.10.RELEASE"
+msgstr "2.1.10.RELEASE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.xmlunit"
+msgstr "org.xmlunit"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "xmlunit-core"
+msgstr "xmlunit-core"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.yaml"
+msgstr "org.yaml"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "snakeyaml"
+msgstr "snakeyaml"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.26"
+msgstr "1.26"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "com.github.docker-java"
+msgstr "com.github.docker-java"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "docker-java"
+msgstr "docker-java"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.2.7"
+msgstr "3.2.7"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "org.modelmapper"
+msgstr "org.modelmapper"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "modelmapper"
+msgstr "modelmapper"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.1.0"
+msgstr "1.1.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md:219
 msgid "AppStore-fe 三方件使用清单"
 msgstr "AppStore-fe Trilateral Use List"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "type"
+msgstr "type"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "name"
+msgstr "name"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "LICENSE"
+msgstr "LICENSE"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "direct import"
+msgstr "direct import"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "dependencies"
+msgstr "dependencies"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "acorn"
+msgstr "acorn"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "7.2.0"
+msgstr "7.2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "MIT"
+msgstr "MIT"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "devDependencies"
+msgstr "devDependencies"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "@vue/cli-plugin-babel"
+msgstr "@vue/cli-plugin-babel"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.11.0"
+msgstr "3.11.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "@vue/cli-plugin-eslint"
+msgstr "@vue/cli-plugin-eslint"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "@vue/cli-service"
+msgstr "@vue/cli-service"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "@vue/eslint-config-standard"
+msgstr "@vue/eslint-config-standard"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.0.0"
+msgstr "4.0.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "axios"
+msgstr "axios"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "0.19.0"
+msgstr "0.19.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "babel-eslint"
+msgstr "babel-eslint"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "10.0.3"
+msgstr "10.0.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "core-js"
+msgstr "core-js"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.6.9"
+msgstr "2.6.9"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "dot-prop"
+msgstr "dot-prop"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.2.1"
+msgstr "4.2.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "echarts"
+msgstr "echarts"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "4.4.0"
+msgstr "4.4.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "Apache-2.0"
+msgstr "Apache-2.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "element-ui"
+msgstr "element-ui"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.12.0"
+msgstr "2.12.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "elliptic"
+msgstr "elliptic"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "6.5.3"
+msgstr "6.5.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "eslint"
+msgstr "eslint"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "5.16.0"
+msgstr "5.16.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "eslint-plugin-vue"
+msgstr "eslint-plugin-vue"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "5.2.3"
+msgstr "5.2.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "http-proxy"
+msgstr "http-proxy"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.18.1"
+msgstr "1.18.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "http-proxy-agent"
+msgstr "http-proxy-agent"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "less"
+msgstr "less"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.10.3"
+msgstr "3.10.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "less-loader"
+msgstr "less-loader"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "5.0.0"
+msgstr "5.0.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "mavon-editor"
+msgstr "mavon-editor"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "sass"
+msgstr "sass"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.23.0"
+msgstr "1.23.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "sass-loader"
+msgstr "sass-loader"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "7.3.1"
+msgstr "7.3.1"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "showdown"
+msgstr "showdown"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "BSD-3-Clause"
+msgstr "BSD-3-Clause"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "v-charts"
+msgstr "v-charts"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.19.0"
+msgstr "1.19.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vue"
+msgstr "vue"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.6.11"
+msgstr "2.6.11"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vue-cli-plugin-i18n"
+msgstr "vue-cli-plugin-i18n"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "0.6.0"
+msgstr "0.6.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vue-cookies"
+msgstr "vue-cookies"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "1.7.0"
+msgstr "1.7.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vue-i18n"
+msgstr "vue-i18n"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "8.15.0"
+msgstr "8.15.0"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vue-router"
+msgstr "vue-router"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.1.3"
+msgstr "3.1.3"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vue-template-compiler"
+msgstr "vue-template-compiler"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "vuex"
+msgstr "vuex"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "3.1.1"
+msgstr "3.1.1"
 

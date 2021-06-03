@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-01 20:37+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,376 +55,1083 @@ msgstr "Release Date: 2020-04-02"
 msgid "Image Version: v1.1.0"
 msgstr "Image Version: v1.1.0"
 
-#: ../../Release EdgeGallery_RN_en.md:20 EdgeGallery_RN_en.md:328 EdgeGallery_RN_en.md:635 EdgeGallery_RN_en.md:967 Notes/
+#: ../../Release EdgeGallery_RN_en.md:20 EdgeGallery_RN_en.md:142 EdgeGallery_RN_en.md:265 EdgeGallery_RN_en.md:377 Notes/
 msgid "**List of new open source warehouses**"
 msgstr "**List of new open source warehouuses**"
 
-#: ../../Release EdgeGallery_RN_en.md:57 EdgeGallery_RN_en.md:372 EdgeGallery_RN_en.md:672 EdgeGallery_RN_en.md:1088 Notes/
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Module"
+msgstr "Module"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "name"
+msgstr "name"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "type"
+msgstr "type"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "URL"
+msgstr "URL"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "description"
+msgstr "description"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Example applications"
+msgstr "Example applications"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "example apps"
+msgstr "example apps"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "POC"
+msgstr "POC"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/example-apps"
+msgstr "https://gitee.com/edgegallery/example-apps"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Provide a sample app based on edgegallery"
+msgstr "Provide a sample app based on edgegallery"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Edgegallery front component"
+msgstr "Edgegallery front component"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "eg view"
+msgstr "eg view"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "product warehouse"
+msgstr "product warehouse"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/eg-view"
+msgstr "https://gitee.com/edgegallery/eg-view"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Provide normalized edgegallery front end components"
+msgstr "Provide normalized edgegallery front end components"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Edgegallery testing platform"
+msgstr "Edgegallery testing platform"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "edget"
+msgstr "edget"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/edgeT"
+msgstr "https://gitee.com/edgegallery/edgeT"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Provide local testing toolchain for users"
+msgstr "Provide local testing toolchain for users"
+
+#: ../../Release EdgeGallery_RN_en.md:27 EdgeGallery_RN_en.md:150 EdgeGallery_RN_en.md:272 EdgeGallery_RN_en.md:396 Notes/
 msgid "**New Features**"
 msgstr "**New Features**"
 
-#: ../../Release EdgeGallery_RN_en.md:59 Notes/
+#: ../../Release EdgeGallery_RN_en.md:29 Notes/
 msgid "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)   ![](/uploads/images/2021/v1.1/NewFeature.png \"NewFeature.png\")"
 msgstr "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1) ![](/uploads/images/2021/v1.1/NewFeature.png \"NewFeature.png\")"
 
-#: ../../Release EdgeGallery_RN_en.md:63 Notes/
+#: ../../Release EdgeGallery_RN_en.md:33 Notes/
 msgid "[AI software and hardware capability] supports the hardware of shengteng / atlas and open API"
 msgstr "[AI software and hardware capability] supports the hardware of shengteng/atlas and open API"
 
-#: ../../Release EdgeGallery_RN_en.md:64 Notes/
+#: ../../Release EdgeGallery_RN_en.md:34 Notes/
 msgid "AI image restoration, edge detection, cartoon image generation, image coloring, object classification, target detection, etc;"
 msgstr "AI image restoration, edge detection, cartoon image generation, image coloring, object classification, target detection, etc;"
 
-#: ../../Release EdgeGallery_RN_en.md:65 Notes/
+#: ../../Release EdgeGallery_RN_en.md:35 Notes/
 msgid "Cross-platform support supports the incubation integration of virtual machine applications based on openstack and container applications based on k8s"
 msgstr "Cross-platform support supports the incubation integration of virtual machine applications based on openstack and container applications based on k8s"
 
-#: ../../Release EdgeGallery_RN_en.md:66 Notes/
+#: ../../Release EdgeGallery_RN_en.md:36 Notes/
 msgid "[Experience optimization]"
 msgstr "[Experience optimization]"
 
-#: ../../Release EdgeGallery_RN_en.md:67 Notes/
+#: ../../Release EdgeGallery_RN_en.md:37 Notes/
 msgid "App classification, APP recommendation and dynamic refresh of popular products"
 msgstr "App classification, APP recommendation and dynamic refresh of popular products"
 
-#: ../../Release EdgeGallery_RN_en.md:68 Notes/
+#: ../../Release EdgeGallery_RN_en.md:38 Notes/
 msgid "[Edge native support]"
 msgstr "[Edge native support]"
 
-#: ../../Release EdgeGallery_RN_en.md:69 Notes/
+#: ../../Release EdgeGallery_RN_en.md:39 Notes/
 msgid "IAAs / PAAS / applications support on-demand deployment and automatic generation of application framework"
-msgstr "IAAs/PAAS/applications support on-demand deployment and automatic generation of application framework"
+msgstr "IAAs / PAAS / applications support on-demand deployment and automatic generation of application framework"
 
-#: ../../Release EdgeGallery_RN_en.md:70 Notes/
+#: ../../Release EdgeGallery_RN_en.md:40 Notes/
 msgid "Visualization of MEP microservice Management Architecture"
 msgstr "Visualization of MEP microservice Management Architecture"
 
-#: ../../Release EdgeGallery_RN_en.md:71 Notes/
+#: ../../Release EdgeGallery_RN_en.md:41 Notes/
 msgid "Provide edgegallery applet, design state, etc"
 msgstr "Provide edgegallery applet, design state, etc"
 
-#: ../../Release EdgeGallery_RN_en.md:72 Notes/
+#: ../../Release EdgeGallery_RN_en.md:42 Notes/
 msgid "[API management] matching of ETSI MEC API, 3GPP CAPIF and ascension capability"
 msgstr "[API management] matching of ETSI MEC API, 3GPP CAPIF and ascendsion capability"
 
-#: ../../Release EdgeGallery_RN_en.md:73 Notes/
+#: ../../Release EdgeGallery_RN_en.md:43 Notes/
 msgid "[Security, user management]"
 msgstr "[Security, user management]"
 
-#: ../../Release EdgeGallery_RN_en.md:74 Notes/
+#: ../../Release EdgeGallery_RN_en.md:44 Notes/
 msgid "Divide power and domain to control the key operation and data"
 msgstr "Divide power and domain to control the key operation and data"
 
-#: ../../Release EdgeGallery_RN_en.md:75 Notes/
+#: ../../Release EdgeGallery_RN_en.md:45 Notes/
 msgid "Application remote login (such as VNC) supports security protocol login"
 msgstr "Application remote login (such as VNC) supportts security protocol login"
 
-#: ../../Release EdgeGallery_RN_en.md:76 Notes/
+#: ../../Release EdgeGallery_RN_en.md:46 Notes/
 msgid "[Community laboratory enhancement]"
 msgstr "[Community laboratory enhanancement]"
 
-#: ../../Release EdgeGallery_RN_en.md:77 Notes/
+#: ../../Release EdgeGallery_RN_en.md:47 Notes/
 msgid "Provide real E2E 5g verification environment"
 msgstr "Provide real E2E 5g verification environment"
 
-#: ../../Release EdgeGallery_RN_en.md:78 Notes/
+#: ../../Release EdgeGallery_RN_en.md:48 Notes/
 msgid "One-click application, one-click release and visual management of resources"
 msgstr "One-click application, one-click release and visual management of resources"
 
-#: ../../Release EdgeGallery_RN_en.md:79 Notes/
+#: ../../Release EdgeGallery_RN_en.md:49 Notes/
 msgid "[Application innovation]"
 msgstr "[Application innovation]"
 
-#: ../../Release EdgeGallery_RN_en.md:80 EdgeGallery_RN_en.md:392 Notes/
+#: ../../Release EdgeGallery_RN_en.md:50 EdgeGallery_RN_en.md:170 Notes/
 msgid "Appstore federation can register external appstores, and applications can push and pull each other between different appstores"
 msgstr "Appstore federation can register external appstores, and applications can push and pull each other between different appstores"
 
-#: ../../Release EdgeGallery_RN_en.md:81 Notes/
+#: ../../Release EdgeGallery_RN_en.md:51 Notes/
 msgid "Completed 80 + application integration, landing 17 + innovation base and postgraduate courses of Xi&apos; an University of Electronic Science and technology"
 msgstr "Completed 80 + application integration, landing 17 + innovation base and postgradeate courses of Xi&apos; an University of Electronic Science and technology"
 
-#: ../../Release EdgeGallery_RN_en.md:83 EdgeGallery_RN_en.md:398 EdgeGallery_RN_en.md:680 EdgeGallery_RN_en.md:1100 Notes/
+#: ../../Release EdgeGallery_RN_en.md:53 EdgeGallery_RN_en.md:176 EdgeGallery_RN_en.md:280 EdgeGallery_RN_en.md:408 Notes/
 msgid "**Bug Fixes**"
 msgstr "**Bug Fixes**"
 
-#: ../../Release EdgeGallery_RN_en.md:85 EdgeGallery_RN_en.md:90 Notes/
+#: ../../Release EdgeGallery_RN_en.md:55 EdgeGallery_RN_en.md:60 Notes/
 #, python-format
 msgid "See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report%2Emd)"
 msgstr "See [edgeegalery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report%2Emd)"
 
-#: ../../Release EdgeGallery_RN_en.md:88 EdgeGallery_RN_en.md:403 EdgeGallery_RN_en.md:684 EdgeGallery_RN_en.md:1104 Notes/
+#: ../../Release EdgeGallery_RN_en.md:58 EdgeGallery_RN_en.md:181 EdgeGallery_RN_en.md:284 EdgeGallery_RN_en.md:412 Notes/
 msgid "**Known Issues**"
 msgstr "**Known Isses**"
 
-#: ../../Release EdgeGallery_RN_en.md:93 EdgeGallery_RN_en.md:407 Notes/
+#: ../../Release EdgeGallery_RN_en.md:63 EdgeGallery_RN_en.md:185 Notes/
 msgid "**Security Notes**"
 msgstr "**Security Notes**"
 
-#: ../../Release EdgeGallery_RN_en.md:95 EdgeGallery_RN_en.md:409 EdgeGallery_RN_en.md:690 EdgeGallery_RN_en.md:1110 Notes/
+#: ../../Release EdgeGallery_RN_en.md:65 EdgeGallery_RN_en.md:187 EdgeGallery_RN_en.md:290 EdgeGallery_RN_en.md:418 Notes/
 msgid "*Fixed Security Issues*"
 msgstr "*Fixed Security Issues*"
 
-#: ../../Release EdgeGallery_RN_en.md:97 Notes/
+#: ../../Release EdgeGallery_RN_en.md:67 Notes/
 #, python-format
 msgid "See [edgegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%20%2Emd)"
 msgstr "See [edgeegallery V1.1.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%20%2Emd)"
 
-#: ../../Release EdgeGallery_RN_en.md:99 EdgeGallery_RN_en.md:413 EdgeGallery_RN_en.md:694 EdgeGallery_RN_en.md:1114 Notes/
+#: ../../Release EdgeGallery_RN_en.md:69 EdgeGallery_RN_en.md:191 EdgeGallery_RN_en.md:294 EdgeGallery_RN_en.md:422 Notes/
 msgid "*Known Security Issues*"
 msgstr "*Known Security Issues*"
 
-#: ../../Release EdgeGallery_RN_en.md:101 Notes/
+#: ../../Release EdgeGallery_RN_en.md:71 Notes/
 #, python-format
 msgid "See [edgegallery V1.1.0 security test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report%2Emd)"
 msgstr "See [edgeegalery V1.1.0 security test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report%2Emd)"
 
-#: ../../Release EdgeGallery_RN_en.md:103 EdgeGallery_RN_en.md:417 EdgeGallery_RN_en.md:698 EdgeGallery_RN_en.md:1118 Notes/
+#: ../../Release EdgeGallery_RN_en.md:73 EdgeGallery_RN_en.md:195 EdgeGallery_RN_en.md:298 EdgeGallery_RN_en.md:426 Notes/
 msgid "*Known Vulnerabilities in Used Modules*"
 msgstr "*Known Vulnerabilities in Used Modules*"
 
-#: ../../Release EdgeGallery_RN_en.md:105 Notes/
+#: ../../Release EdgeGallery_RN_en.md:75 Notes/
 msgid "The following vulnerabilities exist in the third-party open-source components of EdgeGallelry V1.1.0, which need to be fixed by users themselves:"
 msgstr "The following Vulnerabilities exist in the third-party open-source components of EdgeGallary V1.1.0, which need to be fixed by users themselves:"
 
-#: ../../Release EdgeGallery_RN_en.md:107 EdgeGallery_RN_en.md:421 EdgeGallery_RN_en.md:702 EdgeGallery_RN_en.md:1122 Notes/
-msgid "Appstore:"
-msgstr "Appstore:"
+#: ../../Release EdgeGallery_RN_en.md:77 EdgeGallery_RN_en.md:199 EdgeGallery_RN_en.md:302 EdgeGallery_RN_en.md:430 Notes/
+msgid "**Appstore**"
+msgstr "**Appstore**"
 
-#: ../../Release EdgeGallery_RN_en.md:166 EdgeGallery_RN_en.md:460 EdgeGallery_RN_en.md:771 Notes/
-msgid "Developer:"
-msgstr "Developer:"
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Component"
+msgstr "Component"
 
-#: ../../Release EdgeGallery_RN_en.md:220 EdgeGallery_RN_en.md:499 Notes/
-msgid "ATP"
-msgstr "ATP"
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Version"
+msgstr "Version"
 
-#: ../../Release EdgeGallery_RN_en.md:269 EdgeGallery_RN_en.md:518 EdgeGallery_RN_en.md:860 EdgeGallery_RN_en.md:1200 Notes/
-msgid "User-mgmt:"
-msgstr "User-mgmt:"
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE"
+msgstr "CVE"
 
-#: ../../Release EdgeGallery_RN_en.md:308 EdgeGallery_RN_en.md:615 EdgeGallery_RN_en.md:947 EdgeGallery_RN_en.md:1287 Notes/
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "log4j"
+msgstr "log4j"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "1.2.17"
+msgstr "1.2.17"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2019-17571"
+msgstr "CVE-2019-17571"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "netty-transport"
+msgstr "netty-transport"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "4.1.36.Final"
+msgstr "4.1.36.Final"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612"
+msgstr "CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612""
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "vertx-core"
+msgstr "vertx-core"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "3.9.4"
+msgstr "3.9.4"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2019-17640"
+msgstr "CVE-2019-17640"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "docker-java-core"
+msgstr "docker-java-core"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "3.2.7"
+msgstr "3.2.7"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2019-13139 CVE-2019-13509 CVE-2019-16884 CVE-2019-5736"
+msgstr "CVE-2019-13139 CVE-2019-13509 CVE-2019-16884 CVE-2019-5736"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "foundation-ssl"
+msgstr "foundation-ssl"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "1.3.0"
+msgstr "1.3.0"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2004-0009"
+msgstr "CVE-2004-0009"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "mybatis-spring"
+msgstr "mybatis-spring"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "2.0.6"
+msgstr "2.0.6"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2020-26945"
+msgstr "CVE-2020-26945"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "mybatis-spring-boot-starter"
+msgstr "mybatis-spring-boot-starter"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "2.1.4"
+msgstr "2.1.4"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "spring-jdbc"
+msgstr "spring-jdbc"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "5.1.8.RELEASE"
+msgstr "5.1.8.RELEASE"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2020-5398"
+msgstr "CVE-2020-5398"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "spring-security-core"
+msgstr "spring-security-core"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "5.1.5.RELEASE"
+msgstr "5.1.5.RELEASE"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2018-1258"
+msgstr "CVE-2018-1258"
+
+#: ../../Release EdgeGallery_RN_en.md:90 EdgeGallery_RN_en.md:208 EdgeGallery_RN_en.md:317 EdgeGallery_RN_en.md:438 Notes/
+msgid "**Developer**"
+msgstr "**Developer**"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "swagger-codegen-cli"
+msgstr "swagger-codegen-cli"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "3.0.21"
+msgstr "3.0.21"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2018-8088 CVE-2016-6199 CVE-2019-15052 CVE-2020-25649 CVE-2019-10086 CVE-2017-1000207 CVE-2017-1000208 CVE-2017-18640 CVE-2020-11979"
+msgstr "CVE-2018-8088 CVE-2016-6199 CVE-2019-15052 CVE-2020-25649 CVE-2019-10086 CVE-2017-1000207 CVE-2017-1000208 CVE-2017-18640 CVE-2020-11979"
+
+#: ../../Release EdgeGallery_RN_en.md:102 EdgeGallery_RN_en.md:217 Notes/
+msgid "**ATP**"
+msgstr "**ATP**"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "spring-core"
+msgstr "spring-core"
+
+#: ../../Release EdgeGallery_RN_en.md:113 EdgeGallery_RN_en.md:222 EdgeGallery_RN_en.md:336 EdgeGallery_RN_en.md:448 Notes/
+msgid "**User-mgmt**"
+msgstr "**User-mgmt**"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "5.3.8.RELEASE"
+msgstr "5.3.8.RELEASE"
+
+#: ../../Release EdgeGallery_RN_en.md:122 EdgeGallery_RN_en.md:245 EdgeGallery_RN_en.md:357 EdgeGallery_RN_en.md:469 Notes/
 msgid "**Upgrade Notes**"
 msgstr "**Upgrade Notes**"
 
-#: ../../Release EdgeGallery_RN_en.md:310 EdgeGallery_RN_en.md:314 EdgeGallery_RN_en.md:318 EdgeGallery_RN_en.md:617 EdgeGallery_RN_en.md:621 EdgeGallery_RN_en.md:625 EdgeGallery_RN_en.md:953 EdgeGallery_RN_en.md:1289 EdgeGallery_RN_en.md:1293 Notes/
+#: ../../Release EdgeGallery_RN_en.md:124 EdgeGallery_RN_en.md:128 EdgeGallery_RN_en.md:132 EdgeGallery_RN_en.md:247 EdgeGallery_RN_en.md:251 EdgeGallery_RN_en.md:255 EdgeGallery_RN_en.md:363 EdgeGallery_RN_en.md:471 EdgeGallery_RN_en.md:475 Notes/
 msgid "N/A"
 msgstr "N/A"
 
-#: ../../Release EdgeGallery_RN_en.md:312 EdgeGallery_RN_en.md:619 EdgeGallery_RN_en.md:1291 Notes/
+#: ../../Release EdgeGallery_RN_en.md:126 EdgeGallery_RN_en.md:249 EdgeGallery_RN_en.md:473 Notes/
 msgid "**Deprecation Notes**"
 msgstr "**Deprecation Notes**"
 
-#: ../../Release EdgeGallery_RN_en.md:316 EdgeGallery_RN_en.md:623 EdgeGallery_RN_en.md:955 EdgeGallery_RN_en.md:1295 Notes/
+#: ../../Release EdgeGallery_RN_en.md:130 EdgeGallery_RN_en.md:253 EdgeGallery_RN_en.md:365 EdgeGallery_RN_en.md:477 Notes/
 msgid "**Other**"
 msgstr "**Other**"
 
-#: ../../Release EdgeGallery_RN_en.md:322 Notes/
+#: ../../Release EdgeGallery_RN_en.md:136 Notes/
 msgid "Version: v1.0.0"
 msgstr "Version: v1.0.0"
 
-#: ../../Release EdgeGallery_RN_en.md:325 Notes/
+#: ../../Release EdgeGallery_RN_en.md:139 Notes/
 msgid "Release Date: 2020-12-31"
 msgstr "Release Date: 2020-12-31"
 
-#: ../../Release EdgeGallery_RN_en.md:326 Notes/
+#: ../../Release EdgeGallery_RN_en.md:140 Notes/
 msgid "Image Version: v1.0.0"
 msgstr "Image Version: v1.0.0"
 
-#: ../../Release EdgeGallery_RN_en.md:375 Notes/
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "ATP (application test platform)"
+msgstr "ATP (application test platform)"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "ATP"
+msgstr "ATP"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/atp"
+msgstr "https://gitee.com/edgegallery/atp"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Application testing platform provides testing support for application certification"
+msgstr "Application testing platform provides testing support for application certification"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "ATP Fe"
+msgstr "ATP Fe"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/atp-fe"
+msgstr "https://gitee.com/edgegallery/atp-fe"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Provide the foreground support of application testing and certification platform"
+msgstr "Provide the foreground support of application testing and certification platform"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Developer"
+msgstr "Developer"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "crane framework"
+msgstr "crane framework"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/crane-framework"
+msgstr "https://gitee.com/edgegallery/crane-framework"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "To provide lightweight for application development, plug-in is the development framework"
+msgstr "To provide lightweight for application development, plug-in is the development framework"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Mecm"
+msgstr "Mecm"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "mecm approlemgr"
+msgstr "mecm approlemgr"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/mecm-apprulemgr"
+msgstr "https://gitee.com/edgegallery/mecm-apprulemgr"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "The management side provides the ability to configure, distribute and manage application rules"
+msgstr "The management side provides the ability to configure, distribute and manage application rules"
+
+#: ../../Release EdgeGallery_RN_en.md:153 Notes/
 msgid "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)"
 msgstr "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)"
 
-#: ../../Release EdgeGallery_RN_en.md:377 Notes/
+#: ../../Release EdgeGallery_RN_en.md:155 Notes/
 msgid "[Developer] optimizes app development test release process, optimizes API interface, and integrates multi language SDK"
 msgstr "[Developer] optimizes app development test release process, optimizes API interface, and integrates multlanguage SDK"
 
-#: ../../Release EdgeGallery_RN_en.md:378 Notes/
+#: ../../Release EdgeGallery_RN_en.md:156 Notes/
 msgid "Optimize the home page design and add application development life cycle flow chart;"
 msgstr "Optimize the home page design and add application development life cycle flow chart;"
 
-#: ../../Release EdgeGallery_RN_en.md:379 Notes/
+#: ../../Release EdgeGallery_RN_en.md:157 Notes/
 msgid "Optimize the project development process, new interface design;"
 msgstr "Optimize the project development process, new interface design;"
 
-#: ../../Release EdgeGallery_RN_en.md:380 Notes/
+#: ../../Release EdgeGallery_RN_en.md:158 Notes/
 msgid "Optimize the deployment and test link, increase the visualization display, the deployment process display and the pod display of the deployment results;"
 msgstr "Optimize the deployment and test link, increase the visualization display, the deployment process display and the pod display of the deployment results;"
 
-#: ../../Release EdgeGallery_RN_en.md:381 Notes/
+#: ../../Release EdgeGallery_RN_en.md:159 Notes/
 msgid "Optimize the interface of capability center and increase the selection of capability classification;"
 msgstr "Optimize the interface of capability center and increase the selection of capability classification;"
 
-#: ../../Release EdgeGallery_RN_en.md:382 Notes/
+#: ../../Release EdgeGallery_RN_en.md:160 Notes/
 msgid "Application release link docking certification test platform;"
 msgstr "Application release link docking certification test platform;"
 
-#: ../../Release EdgeGallery_RN_en.md:383 Notes/
+#: ../../Release EdgeGallery_RN_en.md:161 Notes/
 msgid "[App store] interface ease of use optimization, edgegallery ecological capability optimization"
 msgstr "[App store] interface ase of use optimization, edgegallery ecologic capability optimizations"
 
-#: ../../Release EdgeGallery_RN_en.md:384 Notes/
+#: ../../Release EdgeGallery_RN_en.md:162 Notes/
 msgid "[Mecm] optimize the topology, application management and edge node management, add the function of acquiring MEP capability and AK / SK configuration interface"
 msgstr "[Mecm] optimize the topology, application management and end node management, add the function of accounting MEP capability and AK/SK configuration interface"
 
-#: ../../Release EdgeGallery_RN_en.md:385 Notes/
+#: ../../Release EdgeGallery_RN_en.md:163 Notes/
 msgid "[MEP] supports app heartbeat detection, adding an interface to acquire MEP capability, an AK / SK configuration interface, and an interface to acquire token for MEP agent"
 msgstr "[MEP] supports app heartbeat detections, adding an interface to acquire MEP capability, an AK/SK configuration interface, and an interface to acquire token for MEP agent"
 
-#: ../../Release EdgeGallery_RN_en.md:386 Notes/
+#: ../../Release EdgeGallery_RN_en.md:164 Notes/
 msgid "Enhanced test capability of ATP app application"
 msgstr "Enhanced test capability of ATP app application"
 
-#: ../../Release EdgeGallery_RN_en.md:387 Notes/
+#: ../../Release EdgeGallery_RN_en.md:165 Notes/
 msgid "[Test] provides health check function, optimizes installation package, develops test platform, and supports test case management"
 msgstr "[Test] provides health check function, optimizes installation package, develops test platform, and supports test case management"
 
-#: ../../Release EdgeGallery_RN_en.md:389 Notes/
+#: ../../Release EdgeGallery_RN_en.md:167 Notes/
 msgid "POC characteristics"
 msgstr "POC characteristics"
 
-#: ../../Release EdgeGallery_RN_en.md:390 Notes/
+#: ../../Release EdgeGallery_RN_en.md:168 Notes/
 msgid "MEP service governance page display"
 msgstr "MEP service government page display"
 
-#: ../../Release EdgeGallery_RN_en.md:391 Notes/
+#: ../../Release EdgeGallery_RN_en.md:169 Notes/
 msgid "Introducing a plug-in application framework [crane framework]（https://gitee.com/edgegallery/crane-framework)"
 msgstr "Introducting a plug-in application framework [crane framework](https://gitee.com/edgegallery/crane-framework)"
 
-#: ../../Release EdgeGallery_RN_en.md:394 Notes/
+#: ../../Release EdgeGallery_RN_en.md:172 Notes/
 msgid "**PoC Test Report**"
 msgstr "**PoC Test Report**"
 
-#: ../../Release EdgeGallery_RN_en.md:396 Notes/
+#: ../../Release EdgeGallery_RN_en.md:174 Notes/
 #, python-format
 msgid "See [edgegallery v1.0.0 POC test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)"
 msgstr "See [edgeegallery v1.0.0 POC test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)"
 
-#: ../../Release EdgeGallery_RN_en.md:401 EdgeGallery_RN_en.md:405 Notes/
+#: ../../Release EdgeGallery_RN_en.md:179 EdgeGallery_RN_en.md:183 Notes/
 #, python-format
 msgid "See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)"
 msgstr "See [edgeegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)"
 
-#: ../../Release EdgeGallery_RN_en.md:411 EdgeGallery_RN_en.md:415 Notes/
+#: ../../Release EdgeGallery_RN_en.md:189 EdgeGallery_RN_en.md:193 Notes/
 #, python-format
 msgid "See [edgegallery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report%2Emd)"
 msgstr "See [edgeegalery v1.0.0 test report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report%2Emd)"
 
-#: ../../Release EdgeGallery_RN_en.md:419 Notes/
+#: ../../Release EdgeGallery_RN_en.md:197 Notes/
 msgid "The following vulnerabilities exist in the third-party open source components of edgegallelry v1.0.0, which need to be fixed by users themselves:"
 msgstr "The following vagnerabilities exist in the third-party open source components of edgegalleyry v1.0.0, which need to be fixed by users themselves:"
 
-#: ../../Release EdgeGallery_RN_en.md:557 EdgeGallery_RN_en.md:899 EdgeGallery_RN_en.md:1239 Notes/
-msgid "Website-gateway:"
-msgstr "Website-gateway:"
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "log4j (indirect dependency)"
+msgstr "log4j (indirect dependency)"
 
-#: ../../Release EdgeGallery_RN_en.md:591 EdgeGallery_RN_en.md:923 EdgeGallery_RN_en.md:1263 Notes/
-msgid "MECM:"
-msgstr "MECM:"
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "bcprov-jdk15on-1.66.jar"
+msgstr "bcprov-jdk15on-1.66.jar"
 
-#: ../../Release EdgeGallery_RN_en.md:629 Notes/
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "1.66"
+msgstr "1.66"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2020-28052"
+msgstr "CVE-2020-28052"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "jackson-databind"
+msgstr "jackson-databind"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "2.10.5"
+msgstr "2.10.5"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2020-25649"
+msgstr "CVE-2020-25649"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "spring-security-oauth2"
+msgstr "spring-security-oauth2"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "2.3.3.RELEASE"
+msgstr "2.3.3.RELEASE"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2018-15758"
+msgstr "CVE-2018-15758"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "tomcat-embed-core"
+msgstr "tomcat-embed-core"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "9.0.37"
+msgstr "9.0.37"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2020-17525"
+msgstr "CVE-2020-17525"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "spring-beans (indirect dependency)"
+msgstr "spring-beans (indirect dependency)"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "5.3.4.RELEASE"
+msgstr "5.3.4.RELEASE"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "2.1.1"
+msgstr "2.1.1"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2020-17527"
+msgstr "CVE-2020-17527"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "bcprov-jdk15on"
+msgstr "bcprov-jdk15on"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "2.3.3.RELEAS"
+msgstr "2.3.3.RELEAS"
+
+#: ../../Release EdgeGallery_RN_en.md:231 EdgeGallery_RN_en.md:345 EdgeGallery_RN_en.md:457 Notes/
+msgid "**Website-gateway**"
+msgstr "**Website-gateway**"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "5.2.6.RELEASE"
+msgstr "5.2.6.RELEASE"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "2.3.3"
+msgstr "2.3.3"
+
+#: ../../Release EdgeGallery_RN_en.md:239 EdgeGallery_RN_en.md:351 EdgeGallery_RN_en.md:463 Notes/
+msgid "**MECM**"
+msgstr "**MECM**"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "lodash"
+msgstr "lodash"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "4.17.13"
+msgstr "4.17.13"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2020-8203"
+msgstr "CVE-2020-8203"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "minimatch"
+msgstr "minimatch"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "3.0.4"
+msgstr "3.0.4"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "NPM-118"
+msgstr "NPM-118"
+
+#: ../../Release EdgeGallery_RN_en.md:259 Notes/
 msgid "Version: v0.9.1"
 msgstr "Version: v0.9.1"
 
-#: ../../Release EdgeGallery_RN_en.md:632 Notes/
+#: ../../Release EdgeGallery_RN_en.md:262 Notes/
 msgid "Release Date: 2020-11-11"
 msgstr "Release Date: 2020-11-11"
 
-#: ../../Release EdgeGallery_RN_en.md:633 Notes/
+#: ../../Release EdgeGallery_RN_en.md:263 Notes/
 msgid "Image Version: v0.9.1"
 msgstr "Image Version: v0.9.1"
 
-#: ../../Release EdgeGallery_RN_en.md:674 Notes/
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "API emulator"
+msgstr "API emulator"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/api-emulator"
+msgstr "https://gitee.com/edgegallery/api-emulator"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Simulation API providing basic capabilities"
+msgstr "Simulation API providing basic capabilities"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "MEP"
+msgstr "MEP"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "plugins"
+msgstr "plugins"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/plugins"
+msgstr "https://gitee.com/edgegallery/plugins"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Plugins warehouse"
+msgstr "Plugins warehouse"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "toolchain"
+msgstr "toolchain"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/toolchain"
+msgstr "https://gitee.com/edgegallery/toolchain"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Provides the X86 platform application when the arm source code analysis function"
+msgstr "Provides the X86 platform application when the arm source code analysis function"
+
+#: ../../Release EdgeGallery_RN_en.md:274 Notes/
 msgid "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)"
 msgstr "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)"
 
-#: ../../Release EdgeGallery_RN_en.md:676 Notes/
+#: ../../Release EdgeGallery_RN_en.md:276 Notes/
 msgid "Summary of safety design troubleshooting problems"
 msgstr "Summary of safety design troubleshorting problems"
 
-#: ../../Release EdgeGallery_RN_en.md:677 Notes/
+#: ../../Release EdgeGallery_RN_en.md:277 Notes/
 msgid "API simulator, toolchain and plugin warehouse are open source"
 msgstr "API simulator, toolchain and plugin warehouse are open source"
 
-#: ../../Release EdgeGallery_RN_en.md:678 Notes/
+#: ../../Release EdgeGallery_RN_en.md:278 Notes/
 msgid "[MEP / MEP agent] AK / SK configuration interface"
-msgstr "[MEP/MEP agent] AK/SK configuration interface"
+msgstr "[MEP / MEP agent] AK / SK configuration interface"
 
-#: ../../Release EdgeGallery_RN_en.md:682 EdgeGallery_RN_en.md:686 EdgeGallery_RN_en.md:692 EdgeGallery_RN_en.md:696 Notes/
+#: ../../Release EdgeGallery_RN_en.md:282 EdgeGallery_RN_en.md:286 EdgeGallery_RN_en.md:292 EdgeGallery_RN_en.md:296 Notes/
 #, python-format
 msgid "See [edgegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)"
 msgstr "See [edgeegallery v0.9.1 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)"
 
-#: ../../Release EdgeGallery_RN_en.md:688 EdgeGallery_RN_en.md:1108 Notes/
+#: ../../Release EdgeGallery_RN_en.md:288 EdgeGallery_RN_en.md:416 Notes/
 msgid "**Security notes**"
-msgstr "**Security note**"
+msgstr "**Security notes**"
 
-#: ../../Release EdgeGallery_RN_en.md:700 Notes/
+#: ../../Release EdgeGallery_RN_en.md:300 Notes/
 msgid "The following vulnerabilities exist in the third-party open source components of EdgeGallelry v0.9.1, which need to be fixed by users themselves:"
 msgstr "The following vulnerabilities exist in the third-party open source components of EdgeGallary v0.9.1, which need to be fixed by users themselves:"
 
-#: ../../Release EdgeGallery_RN_en.md:949 Notes/
-msgid "N/A   **Deprecation Notes**"
-msgstr "N/A **Deprecation Notes**"
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "netty-transport (indirect dependency)"
+msgstr "netty-transport (indirect dependency)"
 
-#: ../../Release EdgeGallery_RN_en.md:957 EdgeGallery_RN_en.md:1297 Notes/
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869"
+msgstr "CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "spring-jdbc (indirect dependency)"
+msgstr "spring-jdbc (indirect dependency)"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "spring-security-core (indirect dependency)"
+msgstr "spring-security-core (indirect dependency)"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "mybatis"
+msgstr "mybatis"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "3.5.3"
+msgstr "3.5.3"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2020-25645"
+msgstr "CVE-2020-25645"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "3.6.3"
+msgstr "3.6.3"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "spring-security-config (indirect dependency)"
+msgstr "spring-security-config (indirect dependency)"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2018-1258, CVE-2020-5398"
+msgstr "CVE-2018-1258, CVE-2020-5398"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2018-15758，CVE-2019-11269，CVE-2018-3778"
+msgstr "CVE-2018-15758，CVE-2019-11269，CVE-2018-3778"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "swagger-codegen-cli (shaded: com.fasterxml.jackson.core.jackson-databind:2.10.3)"
+msgstr "swagger-codegen-cli (shaded: com.fasterxml.jackson.core.jackson-databind:2.10.3)"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "2.0.3"
+msgstr "2.0.3"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2017-1000207，CVE-2017-1000208，CVE-2019-10086，CVE-2018-8088，CVE-2017-18640，CVE-2016-6199，CVE-2019-11065，CVE-2019-15052，"
+msgstr "CVE-2017-1000207，CVE-2017-1000208，CVE-2019-10086，CVE-2018-8088，CVE-2017-18640，CVE-2016-6199，CVE-2019-11065，CVE-2019-15052，"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "rxnetty (indirect dependency)"
+msgstr "rxnetty (indirect dependency)"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "0.4.9"
+msgstr "0.4.9"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "CVE-2015-2156"
+msgstr "CVE-2015-2156"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "netty-tcnative-boringssl-static (indirect dependency)"
+msgstr "netty-tcnative-boringssl-static (indirect dependency)"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "2.0.31.Final"
+msgstr "2.0.31.Final"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "4.17.20"
+msgstr "4.17.20"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "NPM-1065, NPM-557, NPM-7823"
+msgstr "NPM-1065, NPM-557, NPM-7823"
+
+#: ../../Release EdgeGallery_RN_en.md:359 Notes/
+msgid "N/A   **Deprecation Notes**"
+msgstr "N/A   **Deprecation Notes**"
+
+#: ../../Release EdgeGallery_RN_en.md:367 EdgeGallery_RN_en.md:479 Notes/
 #, python-format
 msgid "After the review of the security working group, the problem sheet of plugins warehouse [i1xa0n](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_Id=i1xa0n) will be repaired in the form of patch after the release of version V0.9. Please refer to the security working group [minutes of meeting](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd) for details."
 msgstr "After the review of the security working group, the problem sheet of plugins warehouse [i1xa0n](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_Id=i1xa0n) will be repaired in the form of patch after the release of version V0.9. Please refer to the security working group [minutes of meeting](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd) for details."
 
-#: ../../Release EdgeGallery_RN_en.md:961 Notes/
+#: ../../Release EdgeGallery_RN_en.md:371 Notes/
 msgid "Version: v0.9"
 msgstr "Version: v0.9"
 
-#: ../../Release EdgeGallery_RN_en.md:964 Notes/
+#: ../../Release EdgeGallery_RN_en.md:374 Notes/
 msgid "Release Date: 2020-09-30"
 msgstr "Release Date: 2020-09-30"
 
-#: ../../Release EdgeGallery_RN_en.md:965 Notes/
+#: ../../Release EdgeGallery_RN_en.md:375 Notes/
 msgid "Image Version: v0.9"
 msgstr "Image Version: v0.9"
 
-#: ../../Release EdgeGallery_RN_en.md:1090 Notes/
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Helm charts"
+msgstr "Helm charts"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "helm charts"
+msgstr "helm charts"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "deployment"
+msgstr "deployment"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/helm-charts"
+msgstr "https://gitee.com/edgegallery/helm-charts"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Edgegallery deployment script"
+msgstr "Edgegallery deployment script"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Website gateway"
+msgstr "Website gateway"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "website gateway"
+msgstr "website gateway"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/website-gateway"
+msgstr "https://gitee.com/edgegallery/website-gateway"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Front desk packaging"
+msgstr "Front desk packaging"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "User Mgmt"
+msgstr "User Mgmt"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "user Mgmt"
+msgstr "user Mgmt"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/user-mgmt"
+msgstr "https://gitee.com/edgegallery/user-mgmt"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Background of usermgmt"
+msgstr "Background of usermgmt"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "user MGMT Fe"
+msgstr "user MGMT Fe"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/user-mgmt-fe"
+msgstr "https://gitee.com/edgegallery/user-mgmt-fe"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Usermgmt front desk"
+msgstr "Usermgmt front desk"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "mecm Fe"
+msgstr "mecm Fe"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/mecm-fe"
+msgstr "https://gitee.com/edgegallery/mecm-fe"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Mecm front desk"
+msgstr "Mecm front desk"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "mecm applcm"
+msgstr "mecm applcm"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/mecm-applcm"
+msgstr "https://gitee.com/edgegallery/mecm-applcm"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Mecm application lifecycle management"
+msgstr "Mecm application lifecycle management"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "mecm APM"
+msgstr "mecm APM"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/mecm-apm"
+msgstr "https://gitee.com/edgegallery/mecm-apm"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Mecm application package management"
+msgstr "Mecm application package management"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "mecm inventory"
+msgstr "mecm inventory"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/mecm-inventory"
+msgstr "https://gitee.com/edgegallery/mecm-inventory"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Mecm stock management"
+msgstr "Mecm stock management"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "mecm app"
+msgstr "mecm app"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/mecm-appo"
+msgstr "https://gitee.com/edgegallery/mecm-appo"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Mecm application choreography"
+msgstr "Mecm application choreography"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "developer be"
+msgstr "developer be"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/developer-be"
+msgstr "https://gitee.com/edgegallery/developer-be"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Developer background"
+msgstr "Developer background"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "developer Fe"
+msgstr "developer Fe"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/developer-fe"
+msgstr "https://gitee.com/edgegallery/developer-fe"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Developer front desk"
+msgstr "Developer front desk"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Appstore"
+msgstr "Appstore"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Appstore Fe"
+msgstr "Appstore Fe"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/appstore-fe"
+msgstr "https://gitee.com/edgegallery/appstore-fe"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Front desk of Appstore"
+msgstr "Front desk of Appstore"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Appstore be"
+msgstr "Appstore be"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/appstore-be"
+msgstr "https://gitee.com/edgegallery/appstore-be"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "App store background"
+msgstr "App store background"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Platform Mgmt"
+msgstr "Platform Mgmt"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "platform Mgmt"
+msgstr "platform Mgmt"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/platform-mgmt"
+msgstr "https://gitee.com/edgegallery/platform-mgmt"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Install K8 / docker"
+msgstr "Install K8 / docker"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Doc"
+msgstr "Doc"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "doc"
+msgstr "doc"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "https://gitee.com/edgegallery/docs"
+msgstr "https://gitee.com/edgegallery/docs"
+
+#: ../../Release EdgeGallery_RN_en.md Notes/
+msgid "Documentation"
+msgstr "Documentation"
+
+#: ../../Release EdgeGallery_RN_en.md:398 Notes/
 msgid "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)"
 msgstr "[**Detailed description of release plan**](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)"
 
-#: ../../Release EdgeGallery_RN_en.md:1092 Notes/
+#: ../../Release EdgeGallery_RN_en.md:400 Notes/
 msgid "All in one MEP / mecm network isolation"
 msgstr "All in one MEP/mecm network isolation"
 
-#: ../../Release EdgeGallery_RN_en.md:1093 Notes/
+#: ../../Release EdgeGallery_RN_en.md:401 Notes/
 msgid "MEP supports DNS configuration"
 msgstr "MEP supports DNS configuration"
 
-#: ../../Release EdgeGallery_RN_en.md:1094 Notes/
+#: ../../Release EdgeGallery_RN_en.md:402 Notes/
 msgid "Support all in one deployment"
 msgstr "Support all in one deployment"
 
-#: ../../Release EdgeGallery_RN_en.md:1095 Notes/
+#: ../../Release EdgeGallery_RN_en.md:403 Notes/
 msgid "Multi node offline deployment"
 msgstr "Multi node offline deployment"
 
-#: ../../Release EdgeGallery_RN_en.md:1096 Notes/
+#: ../../Release EdgeGallery_RN_en.md:404 Notes/
 msgid "Nine dimensions of security optimization"
 msgstr "Nine dimension of security optimization"
 
-#: ../../Release EdgeGallery_RN_en.md:1097 Notes/
+#: ../../Release EdgeGallery_RN_en.md:405 Notes/
 msgid "Mecm interface / topology management / resource management optimization"
 msgstr "Mecm interface/topology management/resource management optimizations"
 
-#: ../../Release EdgeGallery_RN_en.md:1098 Notes/
+#: ../../Release EdgeGallery_RN_en.md:406 Notes/
 msgid "(POC) kubeedge integration verification"
-msgstr "(POC) kubheedge integration verification"
+msgstr "(POC) kubeedge integration verification"
 
-#: ../../Release EdgeGallery_RN_en.md:1102 EdgeGallery_RN_en.md:1106 EdgeGallery_RN_en.md:1112 EdgeGallery_RN_en.md:1116 Notes/
+#: ../../Release EdgeGallery_RN_en.md:410 EdgeGallery_RN_en.md:414 EdgeGallery_RN_en.md:420 EdgeGallery_RN_en.md:424 Notes/
 #, python-format
 msgid "See [edgegallery V0.9 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)"
 msgstr "See [edgeegalery V0.9 test report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)"
 
-#: ../../Release EdgeGallery_RN_en.md:1120 Notes/
+#: ../../Release EdgeGallery_RN_en.md:428 Notes/
 msgid "The following vulnerabilities exist in the third-party open source components of edgegallelry V0.9, which need to be fixed by users themselves:"
 msgstr "The following Vulnerabilities exist in the third-party open source components of edgegalledry V0.9, which need to be fixed by users themselves:"
-
-#: ../../Release EdgeGallery_RN_en.md:1156 Notes/
-msgid "-Developer:"
-msgstr "-Developer:"
-

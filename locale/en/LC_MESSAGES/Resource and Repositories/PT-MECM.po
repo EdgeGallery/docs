@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-01 22:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,78 @@ msgstr "MEC Management MEC Manager"
 msgid "项目简介"
 msgstr "Introduction to the project"
 
-#: ../../Resource Repositories/PT-MECM.md:24 and
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "**Facts**"
+msgstr "**Facts**"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "**Info**"
+msgstr "**Info**"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "PTL"
+msgstr "PTL"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "Gitee Repositories URL"
+msgstr "Gitee Repositories URL"
+
+#: ../../Resource Repositories/PT-MECM.md:9 and
 msgid "仓库简介"
 msgstr "Introduction to the warehouse"
 
-#: ../../Resource Repositories/PT-MECM.md:43 and
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "**Components Name**"
+msgstr "**Components Name**"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "**Components Owner**"
+msgstr "**Components Owner**"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "**Components Description**"
+msgstr "**Components Description**"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "TBA"
+msgstr "TBA"
+
+#: ../../Resource Repositories/PT-MECM.md:14 and
 msgid "参与贡献人员 Resources committed to the Release"
 msgstr "Contributed Person Resources committed to the Release"
 
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "**Role**"
+msgstr "**Role**"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "**Name**"
+msgstr "**Name**"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "**Gitee ID**"
+msgstr "**Gitee ID**"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "**Email Address**"
+msgstr "**Email Address**"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "**Location**"
+msgstr "**Location**"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "Primary Contact"
+msgstr "Primary Contact"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "Project Manager"
+msgstr "Project Manager"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "Committers"
+msgstr "Committers"
+
+#: ../../Resource Repositories/PT-MECM.md and
+msgid "Contributors"
+msgstr "Contributors"

@@ -9,7 +9,6 @@ Retrieves data for liveness & readiness
 Resource URI: /apprulemgr/v1/health
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
@@ -25,7 +24,6 @@ Configures the app rule
 Resource URI:  /apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
 Method: POST
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
@@ -99,7 +97,6 @@ Updates the existing app rule
 Resource URI: /apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
 Method: PUT
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
@@ -173,7 +170,6 @@ Queries the existing app rule
 Resource URI: /apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
 Method: GET
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
@@ -237,7 +233,6 @@ Delete the existing app rule
 Resource URI: /apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
 Method: DELETE
 ```
-
 |Name|Definition|type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|

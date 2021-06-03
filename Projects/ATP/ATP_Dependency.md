@@ -3,7 +3,6 @@ ATP Dependency
 
 
 ## ATP-be 三方件使用清单
-
 |groupId|artifactId|version|license|direct import (Y/N)|
 |---|---|---|---|---|
 |org.apache.servicecomb|spring-boot2-starter-servlet|1.3.0 |Apache License, Version 2.0|Y|
@@ -35,7 +34,6 @@ ATP Dependency
 
 
 ## ATP-fe 三方件使用清单
-
 |type|name|version|LICENSE|direct import|
 |---|---|---|---|---|
 |dependencies|acorn|7.2.0|MIT|Y|

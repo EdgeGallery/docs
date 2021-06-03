@@ -2,7 +2,6 @@
 TOSCA(Topology and Orchestration Specificatioon for Cloud Applications)是一种描述云应用组件以及组件之间关系的建模语言，Tosca采用业务模板(service templates)的概念来描述云应用的组件。  
 EdgeGallery采用TOSCA概念来描述APPD信息模型，基于TOSCA-Simple-Profile-yamle v1.2，参考ETSI NFV SOL001相关规范定义了对APPD的相关描述。  
 APPD信息模型单元和TOCSA类型定义的映射关系如下：
-
 | APPD 信息模型单元 | TOSCA 类型定义 |
 |------------------|--------------------------------|
 | APP             | tosca.nodes.nfv.VNF |
@@ -31,7 +30,6 @@ imports:
 ## Metadata定义
 Metadata为APPD的元数据。  
 具体参数如下：
-
 | 名称 | 是否必选 |数据类型 | 取值范围 | 描述 |
 |------|---------|--------|---------|------|
 |template_name | 是 | string | - | 模板名称 |
@@ -92,7 +90,6 @@ inputs:
 本章节此处只描述目前已经用到的部分节点类型。EdgeGallery节点类型基于ETSI NFV SOL001相关规范定义，具体可以参考ETSI NFV SOL001相关规范。
 ###  APP(tosca.nodes.nfv.VNF)
 APP在APPD描述文件中对应tosca.nodes.nfv.VNF节点，参数定义如下：
-
 |名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
 |-----------------------|-----------|----------|-----------|---------------------|
 |vnfd_id                | 是        | string   | -         | app描述id            |
@@ -130,7 +127,6 @@ APP节点的样例如下：
 
 ### Pod/VM(tosca.nodes.nfv.Compute)
 对于容器场景下的Pod，以及虚机场景下的VM，采用tosca.nodes.nfv.Vdu.Compute节点，参数定义如下：
-
 |名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
 |-----------------------|-----------|----------|-----------|---------------------|
 |name                   | 是        | string   | -         | VDU的名称            |
@@ -142,7 +138,6 @@ APP节点的样例如下：
 |sw_image_data          | 否        | tosca.data.types.nfv.SwImageData   | -        | 镜像信息，对应名称在SwImageDesc.json中的描述，对于虚机为虚机镜像，对于容器为容器镜像且可能为列表，此时采用逗号分隔          |
 
 tosca.nodes.nfv.Compute节点提供的能力如下所示：
-
 | 名称                  |  数据类型                             | 取值范围             |描述                  |
 |-----------------------|------------------------------------|----------------------|----------------------|
 |virtual_compute | tosca.capabilities.nfv.virtualCompute     | -                    | 虚机计算资源          |
@@ -176,7 +171,6 @@ Pod/VM节点的定义样例如下：
 ```
 ### 网口（tosca.nodes.nfv.VduCp）
 对于Pod/VM的网口，采用tosca.nodes.nfv.VduCp节点进行定义，参数定义如下：
-
 |名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
 |-----------------------|-----------|----------|-----------|---------------------|
 |vnic_type              | 是        | string   | normal,direct        | 网口类型            |
@@ -206,7 +200,6 @@ Cp节点定义了需求如下:
 
 ### 网络（tosca.nodes.nfv.VnfVirtualLink）
 对于Pod/VM的网络，采用tosca.nodes.nfv.VnfVirtualLink节点进行定义，参数定义如下：
-
 |名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
 |-----------------------|-----------|----------|-----------|---------------------|
 |vl_profile             | 是        | tosca.datatypes.nfv.VlProfile   | -       | 定义网络的信息，名称，子网等            |
@@ -231,7 +224,6 @@ VnfVirtualLink节点的定义样例如下：
 ```
 ### APP配置 (tosca.nodes.nfv.app.configuration)--待修订
 对于APP相关配置，如服务发布，服务依赖，以及应用认证信息，分流规则配置等。通过APP配置节点进行配置。相关定义参考了ETSI MEC011 ，参数定义如下：
-
 |名称                   | 是否必选   | 数据类型  | 取值范围   |描述                 |
 |-----------------------|-----------|----------|-----------|---------------------|
 |appServiceRequired     | 否        | tosca.datatypes.nfv.app.ServiceDependency  | -       | app依赖的服务信息           |

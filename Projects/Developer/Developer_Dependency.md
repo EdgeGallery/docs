@@ -3,7 +3,6 @@ Developer Dependency
 
 
 ## Developer-be 三方件使用清单
-
 |groupId|artifactId|version|license|direct import (Y/N)|
 |---|---|---|---|---|
 |ch.ethz.ganymed|ganymed-ssh2|262|BSD|Y|
@@ -265,7 +264,6 @@ Developer Dependency
 
 
 ## Developer-fe 三方件使用清单
-
 |type|name|version|license|direct import (Y/N)|
 |---|---|---|---|---|
 |dependencies|acorn|7.2.0|MIT|Y|
