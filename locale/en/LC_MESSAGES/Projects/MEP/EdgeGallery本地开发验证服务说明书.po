@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-03 08:19+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -197,405 +197,1369 @@ msgstr "System default account number"
 msgid "MEPServer、MEP-agent、MEPAuth容器内系统默认帐号说明，如下表："
 msgstr "The MEPServer, MEP-agent, MEPAuth container system default account description, as shown in the following table:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:372
-msgid "数据库默认帐号"
-msgstr "Database default account number"
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**用户名**"
+msgstr "**username**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:375
-msgid "EG-LDVS使用开源Postgres数据库，在系统中，kong服务和mepauth服务均使用特定用户访问数据库，用户信息如下。相关密码由用户部署时自行设置，部署过程参考[*部署指南*](#部署指南)章节。"
-msgstr "The EG-LDVS uses the open-source Postgres database, where both the kong service and the mepauth service use a specific user access database, with the following user information.The relevant password is set by the user when deployed, and the deployment process references the [*deployment guide*](#Deploymentguide) chapter."
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**用户组**"
+msgstr "**user group**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:399
-msgid "特性"
-msgstr "property"
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**用途**"
+msgstr "**use**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:402
-msgid "EG-LDVS服务管理功能"
-msgstr "EG-LDVS Service Management Function"
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**远程登录**"
+msgstr "**Remote registration**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:405 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:418 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:434
-msgid "**定义**"
-msgstr "**Definition**"
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**权限**"
+msgstr "**Authority**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:407
-msgid "服务管理功能是指LDVS能够进行服务的注册，更新，删除，查询的能力。"
-msgstr "Service management function refers to the ability to register, update, delete, query for the services of the LDVS."
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**默认密码**"
+msgstr "**Default password**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:409 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:422 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:438
-msgid "**设计原理**"
-msgstr "**Design principles**"
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**密码修改策略**"
+msgstr "**Password modification strategy**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:411
-msgid "LDVS-MEP提供服务注册，更新，删除，查询相关API接口。应用能够通过LDVS-MEP进行服务的注册，更新，删除，查询。"
-msgstr "LDVS-MEP provides service registration, updates, deletion, query related API interfaces.The application is able to register, update, delete, query through the LDVS-MEP service."
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**密码修改方法**"
+msgstr "**Password modification method**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:413
-msgid "![](/uploads/images/2020/0804/165650_4eeb753e_5504908.png \"特性1.png\")"
-msgstr "![](/uploads/images/2020/0804/165650_4eeb753e_5504908.png \"feature1.png\")"
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "eguser"
+msgstr "eguser"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:415
-msgid "EG-LDVS应用服务状态订阅/通知功能"
-msgstr "EG-LDVS Application Service Status Subscription/Notification Function"
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "eggroup"
+msgstr "eggroup"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:420
-msgid "应用服务状态订阅/通知功能是指LDVS能够进行服务状态的订阅，更新，删除，通知的能力。"
-msgstr "The application service status subscription/notification function is the ability to subscribe, update, delete, notify the LDVS for service status."
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "用于启动服务的帐号"
+msgstr "account number for starting service"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:424
-msgid "LDVS MEP管理应用服务的状态，应用通过MEP进行服务的注册，当服务消费者期望使用服务供应者的服务时，需要通过MEP订阅服务供应者的服务状态。通过订阅接口，MEP能够识别服务消费者关注的服务，在服务状态发生变化时，能够将相关的服务状态通知到服务消费者。"
-msgstr "The status of the LDVS MEP management application service is applied to the MEP for service registration, and the service provider's service status needs to be subscribed to by the MEP service provider when the service consumer expects to use the service provider's service.Through the subscription interface, MEP can identify the service of the service consumer and can inform the related service state to the service consumer when the service state changes."
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "禁用"
+msgstr "disabled"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:427
-msgid "应用能够通过LDVS-MEP进行服务状态的订阅，更新，删除，查询。"
-msgstr "The application can perform subscription, update, delete, query of service state through LDVS-MEP."
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "工作用户"
+msgstr "Working User"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:429
-msgid "![](/uploads/images/2020/0804/165707_f4dbb36e_5504908.png \"特性2.png\")"
-msgstr "![](/uploads/images/2020/0804/165707_f4dbb36e_5504908.png \"feature2.png\")"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:431
-msgid "EG-LDVS应用集成插件mep-agent"
-msgstr "EG-LDVS application integrated plug-in mep-agent"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:436
-msgid "LDVS MEP-Agent作为应用快速集成适配器，实现服务配置导入和服务注册的功能。"
-msgstr "The LDVS MEP-Agent is used as the application fast integration adapter to realize the function of service configuration import and service registration."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:440
-msgid "LDVS MEP管理应用的服务，应用需要将其服务注册到MEP中，MEP-Agent作为适配器，将服务信息（包括应用实例ID）导入给应用，同时提供配置的方式将应用的服务注册到MEP中。"
-msgstr "The application needs to register the service information (including the application instance ID) into the application by the MEP-Agent in the MEP, and register the application in the MEP by providing the configuration."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:443
-msgid "![](/uploads/images/2020/0804/165723_8d9be51d_5504908.png \"特性3.png\")"
-msgstr "![](/uploads/images/2020/0804/165723_8d9be51d_5504908.png \"feature3.png\")"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:445
-msgid "使用指南"
-msgstr "User Guide"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:448
-msgid "基于EG-LDVS的应用开发指南"
-msgstr "Application development guide based on EG-LDVS"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:451
-msgid "<span id=\"_应用认证机制（责任人：陈传雨）\" class=\"anchor\"><span id=\"_应用认证机制\" class=\"anchor\"><span id=\"_应用接口调用流程\" class=\"anchor\"></span></span></span>应用接口调用流程"
-msgstr "<span id=\"_applycredentialmechanism(s)\" class=\"anchor\"><span id=\"_applycredentialmechanism\" class=\"anchor\"><span id =\"_Applicationinterfacecallflow\" class=\"anchor\"></span></span></span>interfacecallflow"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:453
-msgid "在启动应用开发验证前，开发者需要了解应用认证机制。在应用开发者基于EG-LDVS进行开发调测时，确保应用和EG-LDVS通过如下方式启动。"
-msgstr "Developers need to understand the application certification mechanism before starting the application development verification.When the application developer develops the modulation based on the EG-LDVS, ensure that the application and the EG-LDVS are started as follows."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:455
-msgid "在启动应用实例时，通过应用启动参数或输入配置得到应用的appInstanceId，AK/SK，即应用已知自身的appInstanceId和AK/SK。参考[*部署mep-agent*](#EG-LDVS-MEP-agent部署指导)章节。"
-msgstr "When the application instance is started, the appInstanceId, AK/SK, which is used by the application startup parameter or the input configuration is used to apply the appInstanceId of itself and the AK/SK.Reference [*Deploy mep-agent*](#EG-LDVS-MEP-agentdeploymentguide) chapter."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:457
-msgid "在启动EG-LDVS时，配置同样的appInstanceId，AK/SK，确保其能对该应用进行认证。参考[*部署mepauth*](#部署mepauth)章节。"
-msgstr "When starting the EG-LDVS, configure the same appInstanceId, AK/SK to ensure that it is certified for the application.Reference [*Deploy mepiauth*](#Deploymepauth) chapter."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:459
-msgid "应用调用EG-LDVS的API接口的流程如下。"
-msgstr "The process of applying an API interface called EG-LDVS is as follows."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:461
-msgid "应用使用[*服务认证接口*](#服务认证接口)，获取token"
-msgstr "Application Use [*Service Authentication Interface*](#Serviceauthenticationinterface) for token"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:463
-msgid "EG-LDVS对ak/sk进行校验并签发token"
-msgstr "EG-LDVS Check for ak/sk and issue token"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:465
-msgid "EG-LDVS返回token"
-msgstr "EG-LDVS Return token"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:467
-msgid "应用携带token进行服务接口调用。可调用[*应用服务管理相关接口*](#应用服务管理相关接口)，[*可用事件订阅相关接口*](#可用事件订阅相关接口)，[*终止事件订阅相关接口*](#终止事件订阅相关接口)。"
-msgstr "The application carrying token is used for calling the service interface.You can call [*application service management related interface*](#Applicationservicemanagementrelatedinterfaces), [*free event subscription related interface*](#Availableeventsubscriptionrelatedinterfaces), [*terminated event subscription related interface*](#Terminateeventsubscriptionrelatedinterface)."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:469
-msgid "EG-LDVS校验token并处理相关请求。"
-msgstr "The EG-LDVS check token and process the related request."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:471
-msgid "![](/uploads/images/2020/0804/165746_8ff53084_5504908.png \"接口调用.png\")"
-msgstr "![](/uploads/images/2020/0804/165746_8ff53084_5504908.png \"interface call.png\")"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:473
-msgid "应用实例ID，AK/SK的样例值如下："
-msgstr "The example values for the application instance ID, AK/SK are as follows:"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:481
-msgid "目前EG-LDVS只支持启动时设置appInstanceId，AK/SK，用户可以自行设置AK/SK，仅需确保格式正确即可。 在应用开发者进行本地开发验证时，确保部署EG-LDVS时以及在app调用EG-LDVS获取token和调用相关服务接口时，使用相同的AK/SK。"
-msgstr "Currently, the EG-LDVS supports only the appInstanceId, AK/SK, and the user can set the AK/SK on its own, only to ensure that the format is correct. When application developers conduct local development verification, ensure that you deploy the EG-LDVS and use the same AK/SK when you deploy the EG-LDVS acquisition token and call related service interfaces."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:484
-msgid "应用开发者在开发应用时，应用在启动时获得appInstanceId, AK/SK。应用需要保存该信息，在使用MEP平台服务时，使用该信息与MEP平台进行交互。"
-msgstr "When application developers are developing applications, the application gets appInstanceId, AK/SK when it starts.The application needs to preserve the information, and use the MEP platform to interact with the MEP platform when using the MEP platform service."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:487
-msgid "<span id=\"_AK/SK签名认证算法说明\" class=\"anchor\"></span>"
-msgstr "<span id=\"_AK/SKsignatureauthenticationalgorithmdescription\" class=\"anchor\"></span>"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:489
-msgid "AK/SK签名认证算法说明"
-msgstr "AK/SK signature authentication algorithm description"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:491
-msgid "应用与LDVS交互时，需要首先通过服务认证接口获取token，需要使用分配给应用的AK/SK使用签名算法获取签名结果，作为\" Authorization\"的值添加在请求header中，以获取有效token，在后续的交互接口中，携带该token进行交互。"
-msgstr "when applying to interact with LDVS, it needs to obtain the token firstly through the service authentication interface, and obtain the signature result by using AK/SK distributed to the application, and add the value as the \" Authorization\" in the request header to obtain the valid token, and carry the token to interact with the subsequent interactive interface."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:494
-msgid "EG-LDVS采用和华为公有云相同的签名认证算法，相关指导说明可以参考华为公有云AK/SK签名认证算法指导："
-msgstr "The EG-LDVS uses the same signature authentication algorithm as the Huawei public cloud, and the relevant guidance notes can be guided by the Huawei Public Cloud AK-SK signing authentication algorithm:"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:496
-msgid "[*https://support.huaweicloud.com/devg-apisign/api-sign-algorithm.html*](https://support.huaweicloud.com/devg-apisign/api-sign-algorithm.html)"
-msgstr "[*https://support.huaweicloud.com/devg-apissign/api-sign-algorithm.html*](https://support.huaweicloud.com/devg-apisign/api-sign-algorithm.html)"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:498
-msgid "签名后获取的Authorization样例："
-msgstr "Authorization example obtained after signature:"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:504
-msgid "具体获取token方法请参考*服务认证接口*([可以直接使用token-generator小工具获得签名和token](https://gitee.com/edgegallery/docs/tree/master/Projects/MEP/token-generator))。"
-msgstr "Refer to the *service authentication interface*([can directly use the token-generator gadget to obtain the signature and token](https://gitee.com/edgegallery/docs/tree/master/Projects/MEP/token-generator))."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:506
-msgid "API接口说明"
-msgstr "API Interface Description"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:508
-msgid "本小节介绍EG-LDVS的API接口。"
-msgstr "This section introduces the API interface for EG-LDVS."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:510
-msgid "<span id=\"_导入应用认证信息接口\" class=\"anchor\"><span id=\"_服务认证接口\" class=\"anchor\"></span></span>接口请求示例中的参数说明："
-msgstr "<span id=\"_importapplicationcredentialsinformationinterface\" class=\"anchor\"><span id=\"_Servicecredentialsinterface\" class=\"anchor\"></span></span>interfacerequestexamplesillustratetheparameters:"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:545
-msgid "接口使用约束"
-msgstr "Interface usage constraints"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:547
-msgid "由于EG-LDVS仅为提供给应用开发者进行平台接口调用开发与测试，所以只提供一个网络平面与应用进行交互，请调测时，直接访问部署服务器的8443端口进行API调用。"
-msgstr "As the EG-LDVS is only provided to the application developer for platform interface invocation development and test, only one network plane is provided to interact with the application, and when the request is detected, directly access the 8443 port of the deployment server for API call."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:549
-msgid "另外，为确保EG-LDVS正常工作，对接口调用存在如下限制。"
-msgstr "In addition, to ensure that EG-LDVS is working properly, the following limitations exist for interface calls."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:551
-msgid "使用服务认证接口获取token，限制为每分钟100次"
-msgstr "Get token using the service credentials interface, limited to 100 beats per minute"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:553
-msgid "使用其它服务接口，限制为不区分接口每分钟1000次"
-msgstr "using other service interfaces, limited to 1000 times per minute without distinguishing interfaces"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:555
-msgid "Request body最大长度4kb"
-msgstr "Request body maximum length 4kb"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:557
-msgid "服务认证接口"
-msgstr "Service authentication interface"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:559
-msgid "应用通过AK/SK向LDVS进行鉴权认证，认证通过后返回token，每个token具有有效期（1小时），token分配方在有效期结束后将收回token，当携带过期的token的HTTP请求到达的时候，将被以状态码401返回；此时token携带方需要重新进行token获取。当token还在有效期内，token携带方再次使用相同的用户获取token时返回当前仍然有效的token。"
-msgstr "The application is authenticated by AK/SK to LDVS, and returns token after authentication is passed, each token has validity period (1 hour), token distributor returns token after expiration, when HTTP request carrying expired token arrives, it will be returned with status code 401;When token is still valid, the token carrying party returns the token that is still valid when the same user obtains the token again."
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:561
-msgid "URL："
-msgstr "URL:"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:567 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:705 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1014 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1325 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1871 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2424 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2509 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2642 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2970 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3051 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3263 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3397 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3580 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3661
-msgid "请求参数："
-msgstr "Request parameters:"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:611 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:735 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1051 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1362 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1915 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2461 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2539 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2679 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3007 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3088 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3293 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3434 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3617 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3698
-msgid "Body参数："
-msgstr "Body Parameters:"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:613 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:737 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1053 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2463 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2541 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3009 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3090 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3295 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3619 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3700
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:266 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:340 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:460 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:944 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:998 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1203 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1254 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1349 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1500 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1551
 msgid "无"
 msgstr "no"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:615 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:739 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1055 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1563 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2116 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2465 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2543 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2766 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3011 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3092 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3297 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3467 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3621 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3702
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "无需修改"
+msgstr "No modification required"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "不涉及"
+msgstr "Not involved"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "root"
+msgstr "root"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "系统默认用户，能够控制所有资源，创建其他用户和赋予其他用户权限，执行操作系统提供的所有操作功能。"
+msgstr "The system default user can control all resources, create other users and give other user rights, and perform all the operation functions provided by the operating system."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "管理域用户"
+msgstr "Manage Domain Users"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "bin"
+msgstr "bin"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "bin帐号"
+msgstr "bin account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "daemon"
+msgstr "daemon"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "daemon帐号"
+msgstr "daemon account"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "adm"
+msgstr "adm"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "adm帐号"
+msgstr "adm account"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "lp"
+msgstr "lp"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "打印服务帐号"
+msgstr "Printing service accounts"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "sync"
+msgstr "sync"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "同步服务帐号"
+msgstr "Synchronized service account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "shutdown"
+msgstr "shutdown"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "关机服务帐号"
+msgstr "Shutdown service account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "halt"
+msgstr "halt"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "mail"
+msgstr "mail"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "邮件服务帐号"
+msgstr "Mail service account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "news"
+msgstr "news"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "news服务帐号"
+msgstr "news service account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "uucp"
+msgstr "uucp"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "UUCP服务帐号"
+msgstr "UUCP Service Account"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "operator"
+msgstr "operator"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "操作帐号"
+msgstr "Operating account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "man"
+msgstr "man"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Manual pages viewer使用"
+msgstr "Manual pages viewer use"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "postmaster"
+msgstr "postmaster"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "cron"
+msgstr "cron"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "cron服务帐号"
+msgstr "cron service account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "ftp"
+msgstr "ftp"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "FTP帐号"
+msgstr "FTP account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "sshd"
+msgstr "sshd"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "SSH服务帐号"
+msgstr "SSH service account"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "at"
+msgstr "at"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "At服务帐号"
+msgstr "At service account"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "squid"
+msgstr "squid"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Squid服务帐号"
+msgstr "Squid account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "xfs"
+msgstr "xfs"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "xfs服务帐号"
+msgstr "xfs service account"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "games"
+msgstr "games"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "users"
+msgstr "users"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "games服务帐号"
+msgstr "Games service account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "cyrus"
+msgstr "cyrus"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "vpopmail"
+msgstr "vpopmail"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "vpopmail服务帐号"
+msgstr "vpopmail service account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "ntp"
+msgstr "ntp"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "NTP帐号"
+msgstr "NTP account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "smmsp"
+msgstr "smmsp"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "smmsp服务帐号"
+msgstr "smmsp service account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "guest"
+msgstr "guest"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "游客帐号"
+msgstr "tourist account"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "nobody"
+msgstr "nobody"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "nobody帐号"
+msgstr "nobody account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:105
+msgid "数据库默认帐号"
+msgstr "Database default account number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:108
+msgid "EG-LDVS使用开源Postgres数据库，在系统中，kong服务和mepauth服务均使用特定用户访问数据库，用户信息如下。相关密码由用户部署时自行设置，部署过程参考[*部署指南*](#部署指南)章节。"
+msgstr "The EG-LDVS uses the open-source Postgres database, where both the kong service and the mepauth service use a specific user access database, with the following user information.The relevant password is set by the user when deployed, and the deployment process references the [*deployment guide*](#Deploymentguide) chapter."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**密码**"
+msgstr "**password**"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "admin"
+msgstr "admin"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "用户部署时自行设置"
+msgstr "Set up by users during deployment"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "pg的admin用户，用于创建数据库和其他业务连接用户"
+msgstr "pg's admin user for creating databases and other business connection users"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "kong"
+msgstr "kong"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "kong服务访问数据库使用的用户名"
+msgstr "The user name used by the Kong service to access the database"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:114
+msgid "特性"
+msgstr "property"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:117
+msgid "EG-LDVS服务管理功能"
+msgstr "EG-LDVS Service Management Function"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:120 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:133 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:149
+msgid "**定义**"
+msgstr "**Definition**"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:122
+msgid "服务管理功能是指LDVS能够进行服务的注册，更新，删除，查询的能力。"
+msgstr "Service management function refers to the ability to register, update, delete, query for the services of the LDVS."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:124 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:137 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:153
+msgid "**设计原理**"
+msgstr "**Design principles**"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:126
+msgid "LDVS-MEP提供服务注册，更新，删除，查询相关API接口。应用能够通过LDVS-MEP进行服务的注册，更新，删除，查询。"
+msgstr "LDVS-MEP provides service registration, updates, deletion, query related API interfaces.The application is able to register, update, delete, query through the LDVS-MEP service."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:128
+msgid "![](/uploads/images/2020/0804/165650_4eeb753e_5504908.png \"特性1.png\")"
+msgstr "![](/uploads/images/2020/0804/165650_4eeb753e_5504908.png \"feature1.png\")"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:130
+msgid "EG-LDVS应用服务状态订阅/通知功能"
+msgstr "EG-LDVS Application Service Status Subscription/Notification Function"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:135
+msgid "应用服务状态订阅/通知功能是指LDVS能够进行服务状态的订阅，更新，删除，通知的能力。"
+msgstr "The application service status subscription/notification function is the ability to subscribe, update, delete, notify the LDVS for service status."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:139
+msgid "LDVS MEP管理应用服务的状态，应用通过MEP进行服务的注册，当服务消费者期望使用服务供应者的服务时，需要通过MEP订阅服务供应者的服务状态。通过订阅接口，MEP能够识别服务消费者关注的服务，在服务状态发生变化时，能够将相关的服务状态通知到服务消费者。"
+msgstr "The status of the LDVS MEP management application service is applied to the MEP for service registration, and the service provider's service status needs to be subscribed to by the MEP service provider when the service consumer expects to use the service provider's service.Through the subscription interface, MEP can identify the service of the service consumer and can inform the related service state to the service consumer when the service state changes."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:142
+msgid "应用能够通过LDVS-MEP进行服务状态的订阅，更新，删除，查询。"
+msgstr "The application can perform subscription, update, delete, query of service state through LDVS-MEP."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:144
+msgid "![](/uploads/images/2020/0804/165707_f4dbb36e_5504908.png \"特性2.png\")"
+msgstr "![](/uploads/images/2020/0804/165707_f4dbb36e_5504908.png \"feature2.png\")"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:146
+msgid "EG-LDVS应用集成插件mep-agent"
+msgstr "EG-LDVS application integrated plug-in mep-agent"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:151
+msgid "LDVS MEP-Agent作为应用快速集成适配器，实现服务配置导入和服务注册的功能。"
+msgstr "The LDVS MEP-Agent is used as the application fast integration adapter to realize the function of service configuration import and service registration."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:155
+msgid "LDVS MEP管理应用的服务，应用需要将其服务注册到MEP中，MEP-Agent作为适配器，将服务信息（包括应用实例ID）导入给应用，同时提供配置的方式将应用的服务注册到MEP中。"
+msgstr "The application needs to register the service information (including the application instance ID) into the application by the MEP-Agent in the MEP, and register the application in the MEP by providing the configuration."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:158
+msgid "![](/uploads/images/2020/0804/165723_8d9be51d_5504908.png \"特性3.png\")"
+msgstr "![](/uploads/images/2020/0804/165723_8d9be51d_5504908.png \"feature3.png\")"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:160
+msgid "使用指南"
+msgstr "User Guide"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:163
+msgid "基于EG-LDVS的应用开发指南"
+msgstr "Application development guide based on EG-LDVS"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:166
+msgid "<span id=\"_应用认证机制（责任人：陈传雨）\" class=\"anchor\"><span id=\"_应用认证机制\" class=\"anchor\"><span id=\"_应用接口调用流程\" class=\"anchor\"></span></span></span>应用接口调用流程"
+msgstr "<span id=\"_applycredentialmechanism(s)\" class=\"anchor\"><span id=\"_applycredentialmechanism\" class=\"anchor\"><span id =\"_Applicationinterfacecallflow\" class=\"anchor\"></span></span></span>interfacecallflow"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:168
+msgid "在启动应用开发验证前，开发者需要了解应用认证机制。在应用开发者基于EG-LDVS进行开发调测时，确保应用和EG-LDVS通过如下方式启动。"
+msgstr "Developers need to understand the application certification mechanism before starting the application development verification.When the application developer develops the modulation based on the EG-LDVS, ensure that the application and the EG-LDVS are started as follows."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:170
+msgid "在启动应用实例时，通过应用启动参数或输入配置得到应用的appInstanceId，AK/SK，即应用已知自身的appInstanceId和AK/SK。参考[*部署mep-agent*](#EG-LDVS-MEP-agent部署指导)章节。"
+msgstr "When the application instance is started, the appInstanceId, AK/SK, which is used by the application startup parameter or the input configuration is used to apply the appInstanceId of itself and the AK/SK.Reference [*Deploy mep-agent*](#EG-LDVS-MEP-agentdeploymentguide) chapter."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:172
+msgid "在启动EG-LDVS时，配置同样的appInstanceId，AK/SK，确保其能对该应用进行认证。参考[*部署mepauth*](#部署mepauth)章节。"
+msgstr "When starting the EG-LDVS, configure the same appInstanceId, AK/SK to ensure that it is certified for the application.Reference [*Deploy mepiauth*](#Deploymepauth) chapter."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:174
+msgid "应用调用EG-LDVS的API接口的流程如下。"
+msgstr "The process of applying an API interface called EG-LDVS is as follows."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:176
+msgid "应用使用[*服务认证接口*](#服务认证接口)，获取token"
+msgstr "Application Use [*Service Authentication Interface*](#Serviceauthenticationinterface) for token"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:178
+msgid "EG-LDVS对ak/sk进行校验并签发token"
+msgstr "EG-LDVS Check for ak/sk and issue token"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:180
+msgid "EG-LDVS返回token"
+msgstr "EG-LDVS Return token"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:182
+msgid "应用携带token进行服务接口调用。可调用[*应用服务管理相关接口*](#应用服务管理相关接口)，[*可用事件订阅相关接口*](#可用事件订阅相关接口)，[*终止事件订阅相关接口*](#终止事件订阅相关接口)。"
+msgstr "The application carrying token is used for calling the service interface.You can call [*application service management related interface*](#Applicationservicemanagementrelatedinterfaces), [*free event subscription related interface*](#Availableeventsubscriptionrelatedinterfaces), [*terminated event subscription related interface*](#Terminateeventsubscriptionrelatedinterface)."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:184
+msgid "EG-LDVS校验token并处理相关请求。"
+msgstr "The EG-LDVS check token and process the related request."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:186
+msgid "![](/uploads/images/2020/0804/165746_8ff53084_5504908.png \"接口调用.png\")"
+msgstr "![](/uploads/images/2020/0804/165746_8ff53084_5504908.png \"interface call.png\")"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:188
+msgid "应用实例ID，AK/SK的样例值如下："
+msgstr "The example values for the application instance ID, AK/SK are as follows:"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:196
+msgid "目前EG-LDVS只支持启动时设置appInstanceId，AK/SK，用户可以自行设置AK/SK，仅需确保格式正确即可。 在应用开发者进行本地开发验证时，确保部署EG-LDVS时以及在app调用EG-LDVS获取token和调用相关服务接口时，使用相同的AK/SK。"
+msgstr "Currently, the EG-LDVS supports only the appInstanceId, AK/SK, and the user can set the AK/SK on its own, only to ensure that the format is correct. When application developers conduct local development verification, ensure that you deploy the EG-LDVS and use the same AK/SK when you deploy the EG-LDVS acquisition token and call related service interfaces."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:199
+msgid "应用开发者在开发应用时，应用在启动时获得appInstanceId, AK/SK。应用需要保存该信息，在使用MEP平台服务时，使用该信息与MEP平台进行交互。"
+msgstr "When application developers are developing applications, the application gets appInstanceId, AK/SK when it starts.The application needs to preserve the information, and use the MEP platform to interact with the MEP platform when using the MEP platform service."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:202
+msgid "<span id=\"_AK/SK签名认证算法说明\" class=\"anchor\"></span>"
+msgstr "<span id=\"_AK/SKsignatureauthenticationalgorithmdescription\" class=\"anchor\"></span>"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:204
+msgid "AK/SK签名认证算法说明"
+msgstr "AK/SK signature authentication algorithm description"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:206
+msgid "应用与LDVS交互时，需要首先通过服务认证接口获取token，需要使用分配给应用的AK/SK使用签名算法获取签名结果，作为\" Authorization\"的值添加在请求header中，以获取有效token，在后续的交互接口中，携带该token进行交互。"
+msgstr "when applying to interact with LDVS, it needs to obtain the token firstly through the service authentication interface, and obtain the signature result by using AK/SK distributed to the application, and add the value as the \" Authorization\" in the request header to obtain the valid token, and carry the token to interact with the subsequent interactive interface."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:209
+msgid "EG-LDVS采用和华为公有云相同的签名认证算法，相关指导说明可以参考华为公有云AK/SK签名认证算法指导："
+msgstr "The EG-LDVS uses the same signature authentication algorithm as the Huawei public cloud, and the relevant guidance notes can be guided by the Huawei Public Cloud AK-SK signing authentication algorithm:"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:211
+msgid "[*https://support.huaweicloud.com/devg-apisign/api-sign-algorithm.html*](https://support.huaweicloud.com/devg-apisign/api-sign-algorithm.html)"
+msgstr "[*https://support.huaweicloud.com/devg-apissign/api-sign-algorithm.html*](https://support.huaweicloud.com/devg-apisign/api-sign-algorithm.html)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:213
+msgid "签名后获取的Authorization样例："
+msgstr "Authorization example obtained after signature:"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:219
+msgid "具体获取token方法请参考*服务认证接口*([可以直接使用token-generator小工具获得签名和token](https://gitee.com/edgegallery/docs/tree/master/Projects/MEP/token-generator))。"
+msgstr "Refer to the *service authentication interface*([can directly use the token-generator gadget to obtain the signature and token](https://gitee.com/edgegallery/docs/tree/master/Projects/MEP/token-generator))."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:221
+msgid "API接口说明"
+msgstr "API Interface Description"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:223
+msgid "本小节介绍EG-LDVS的API接口。"
+msgstr "This section introduces the API interface for EG-LDVS."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:225
+msgid "<span id=\"_导入应用认证信息接口\" class=\"anchor\"><span id=\"_服务认证接口\" class=\"anchor\"></span></span>接口请求示例中的参数说明："
+msgstr "<span id=\"_importapplicationcredentialsinformationinterface\" class=\"anchor\"><span id=\"_Servicecredentialsinterface\" class=\"anchor\"></span></span>interfacerequestexamplesillustratetheparameters:"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "名称"
+msgstr "name"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "值"
+msgstr "value"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "描述"
+msgstr "description"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "LDVS\\_HOST"
+msgstr "LDVS\\_HOST"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "部署LDVS的主机IP"
+msgstr "Host IP for Deployment LDVS"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "主机IP"
+msgstr "Host IP"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "PORT"
+msgstr "PORT"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "8443"
+msgstr "8443"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "kong开放给应用的端口"
+msgstr "kong is open to the port of application"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "KONG\\_MEPAUTH\\_ROUTE"
+msgstr "KONG\\_MEPAUTH\\_ROUTE"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "mepauth"
+msgstr "mepauth"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "mepauth在kong中的路由url"
+msgstr "mpauth routing url in kong"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "KONG\\_MEPSERVER\\_ROUTE"
+msgstr "KONG\\_MEPSERVER\\_ROUTE"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "mepserver"
+msgstr "mepserver"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "mepserver在kong中的路由url"
+msgstr "mepserver route url in the kong"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:234
+msgid "接口使用约束"
+msgstr "Interface usage constraints"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:236
+msgid "由于EG-LDVS仅为提供给应用开发者进行平台接口调用开发与测试，所以只提供一个网络平面与应用进行交互，请调测时，直接访问部署服务器的8443端口进行API调用。"
+msgstr "As the EG-LDVS is only provided to the application developer for platform interface invocation development and test, only one network plane is provided to interact with the application, and when the request is detected, directly access the 8443 port of the deployment server for API call."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:238
+msgid "另外，为确保EG-LDVS正常工作，对接口调用存在如下限制。"
+msgstr "In addition, to ensure that EG-LDVS is working properly, the following limitations exist for interface calls."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:240
+msgid "使用服务认证接口获取token，限制为每分钟100次"
+msgstr "Get token using the service credentials interface, limited to 100 beats per minute"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:242
+msgid "使用其它服务接口，限制为不区分接口每分钟1000次"
+msgstr "using other service interfaces, limited to 1000 times per minute without distinguishing interfaces"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:244
+msgid "Request body最大长度4kb"
+msgstr "Request body maximum length 4kb"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:246
+msgid "服务认证接口"
+msgstr "Service authentication interface"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:248
+msgid "应用通过AK/SK向LDVS进行鉴权认证，认证通过后返回token，每个token具有有效期（1小时），token分配方在有效期结束后将收回token，当携带过期的token的HTTP请求到达的时候，将被以状态码401返回；此时token携带方需要重新进行token获取。当token还在有效期内，token携带方再次使用相同的用户获取token时返回当前仍然有效的token。"
+msgstr "The application is authenticated by AK/SK to LDVS, and returns token after authentication is passed, each token has validity period (1 hour), token distributor returns token after expiration, when HTTP request carrying expired token arrives, it will be returned with status code 401;When token is still valid, the token carrying party returns the token that is still valid when the same user obtains the token again."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:250
+msgid "URL："
+msgstr "URL:"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:256 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:332 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:451 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:566 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:750 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:935 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:990 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1058 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1194 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1245 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1341 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1410 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1491 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1542
+msgid "请求参数："
+msgstr "Request parameters:"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "类型"
+msgstr "type"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "IN"
+msgstr "IN"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "必选"
+msgstr "compulsory choice"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Content-Type"
+msgstr "Content-Type"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "String"
+msgstr "String"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "MIME类型，  填\"application/json\""
+msgstr "MIME type, fill \" application/json \""
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "header"
+msgstr "header"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "是"
+msgstr "Yes."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Authorization"
+msgstr "Authorization"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "认证信息"
+msgstr "Certification information"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "x-sdk-date"
+msgstr "x-sdk-date"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "签名时间（当前时间戳，格式：YYYYMMDDTHHMMSSZ）"
+msgstr "Signature time (current time stamp, format:YYYYMMDDTHMMSSZ)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Host"
+msgstr "Host"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "与生成认证信息签名用到的host字段保持一致"
+msgstr "It is consistent with the host field used for generating the authentication information signature."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:264 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:338 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:458 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:573 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:758 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:942 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:996 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1065 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1201 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1252 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1347 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1417 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1498 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1549
+msgid "Body参数："
+msgstr "Body Parameters:"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:268 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:342 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:462 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:608 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:793 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:946 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1000 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1081 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1205 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1256 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1351 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1424 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1502 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1553
 msgid "请求示例："
 msgstr "Example request:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:642 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:754 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1070 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1613 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2167 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2482 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2558 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2806 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3026 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3107 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3312 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3489 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3636 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3717
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:295 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:357 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:477 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:658 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:844 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:963 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1015 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1121 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1220 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1271 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1366 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1446 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1517 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1568
 msgid "返回参数："
 msgstr "Return parameter:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:644 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:756 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1072 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2169 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2560 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3109 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3314 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3719
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:297 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:359 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:479 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:846 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1017 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1273 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1368 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1570
 msgid "返回码：200"
 msgstr "Return code: 200"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:646 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:758 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1074 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1617 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2171 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2486 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2562 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2810 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3030 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3111 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3316 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3493 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3640 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3721
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:299 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:361 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:481 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:662 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:848 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:967 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1019 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1125 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1224 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1275 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1370 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1450 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1521 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1572
 msgid "OK"
 msgstr "OK"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:679 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:959 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1275 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1818 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2372 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2488 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2613 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2921 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3032 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3216 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3367 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3550 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3642 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3772
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "access\\_token"
+msgstr "access\\_token"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Token"
+msgstr "Token"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "token\\_type"
+msgstr "token\\_type"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Token类型（Bearer）"
+msgstr "Token Type (Bearer)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "expires\\_in"
+msgstr "expires\\_in"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "int"
+msgstr "int"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "失效时间"
+msgstr "Invalidate Time"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:306 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:396 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:516 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:697 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:883 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:969 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1029 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1145 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1226 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1294 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1380 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1461 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1523 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1582
 msgid "返回示例："
 msgstr "Return example:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:691
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:318
 msgid "注：在测试时，请确保启动EG-LDVS时使用的AK/SK和获取token时使用的AK/SK相同。基于AK/SK的认证，EG-LDVS对于相同的AK若5分钟内三次认证失败，对应AK将被锁定15分钟。"
 msgstr "Note: When testing, ensure that the AK/SK used when starting the EG-LDVS is the same AAK/SK used for the token acquisition.For authentication based on AK/SK, EG-LDVS fails three authentication failures within 5 minutes of the same AK, and the corresponding AK will be locked for 15 minutes."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:693
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:320
 msgid "应用服务管理相关接口"
 msgstr "Application service management related interface"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:695
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:322
 msgid "1. 查询应用服务"
 msgstr "1.Query application services"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:697
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:324
 msgid "查询指定APP的服务列表"
 msgstr "Query a list of services for the specified APP"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:699 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1008 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1319 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1865 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2418 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2503 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2636 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2964 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3045 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3257 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3391 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3574 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3655
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:326 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:445 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:560 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:744 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:929 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:984 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1052 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1188 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1239 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1335 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1404 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1485 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1536
 msgid "URL"
 msgstr "URL"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1004
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Token信息，格式：Bearer token信息"
+msgstr "Token information, format: Bearer token information"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "appInstanceId"
+msgstr "appInstanceId"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "APP实例ID（UUID）"
+msgstr "APP Instance ID (UUID)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "path"
+msgstr "path"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "serInstanceId"
+msgstr "serInstanceId"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "服务实例ID"
+msgstr "Service Instance ID"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "serName"
+msgstr "serName"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "服务名称"
+msgstr "Service Name"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "serCategory"
+msgstr "serCategory"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Object"
+msgstr "Object"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "服务类别"
+msgstr "Service Class"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "否"
+msgstr "not"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;href"
+msgstr "&gt;href"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "目录参考"
+msgstr "Directory reference"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;id"
+msgstr "&gt;id"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "类别ID"
+msgstr "Class ID"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;name"
+msgstr "&gt;name"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "类别名称"
+msgstr "Class name"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;version"
+msgstr "&gt;version"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "类别版本号"
+msgstr "class version number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "version"
+msgstr "version"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "服务版本号"
+msgstr "Service version number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "state"
+msgstr "state"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "服务状态（ACTIVE/INACTIVE）"
+msgstr "Service Status (ACTIVE/INACTIVE)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "transportInfo"
+msgstr "transportInfo"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "服务信息"
+msgstr "Service information"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "ID"
+msgstr "ID"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt; description"
+msgstr "&gt; description"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt; type"
+msgstr "&gt; type"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "类型（REST\\_HTTP/MB\\_TOPIC\\_BASED/MB\\_ROUTING/MB\\_PUBSUB/RPC/RPC\\_STREAMING/WEBSOCKET）"
+msgstr "Type (REST\\_HTTP/MB\\_TOPIC\\_BASED/MB\\_ROUTING/MB\\_PUBSUB/RPC/RPC\\_STREAMING/WEBSOCKET)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt; protocol"
+msgstr "&gt; protocol"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "协议名称"
+msgstr "Agreement Name"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt; version"
+msgstr "&gt; version"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "版本号"
+msgstr "version number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt; endpoint"
+msgstr "&gt; endpoint"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Ojbect"
+msgstr "Ojbect"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Endpoint，三种信息其中的一个（uris/addresses/alternative）"
+msgstr "Endpoint, one of the three messages (uris/addresses/alternative)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;uris"
+msgstr "&gt;&gt;uris"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Array\\[String\\]"
+msgstr "Array\\[String\\]"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "URI格式的服务入口信息列表"
+msgstr "List of service portals in URI format"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;addresses"
+msgstr "&gt;&gt;addresses"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Array\\[Object\\]"
+msgstr "Array\\[Object\\]"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "服务入口信息地址列表（IP地址+端口号）"
+msgstr "List of service entrance information addresses (IP address + port number)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;&gt;host"
+msgstr "&gt;&gt;&gt;host"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "IP地址"
+msgstr "IP Address"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;&gt;port"
+msgstr "&gt;&gt;&gt;port"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "端口号"
+msgstr "port number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;alternative"
+msgstr "&gt;&gt;alternative"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "已实现格式或者外部规范定义的服务入口信息"
+msgstr "Service entrance information for the format or external specification definition"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt; security"
+msgstr "&gt; security"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "安全信息"
+msgstr "Security information"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt; oAuth2Info"
+msgstr "&gt;&gt; oAuth2Info"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "OAuth2.0参数"
+msgstr "OAuth2.0 parameter"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;&gt; grantTypes"
+msgstr "&gt;&gt;&gt; grantTypes"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "准予类型（OAUTH2\\_AUTHORIZATION\\_CODE/OAUTH2\\_IMPLICIT\\_GRANT/OAUTH2\\_RESOURCE\\_OWNER/OAUTH2\\_CLIENT\\_CREDENTIALS）"
+msgstr "granted type (OAUTH2\\_AUTHORIZATION\\_CODE/OAUTH2\\_IMPLICIT\\_GRANT/OAUTH2\\_RESOURCE\\_OWNER/OAUTH2\\_CLIENT\\_CREDENTIALS)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;&gt; tokenEndpoint"
+msgstr "&gt;&gt;&gt; tokenEndpoint"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Token endpoint"
+msgstr "Token endpoint"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt; implSpecificInfo"
+msgstr "&gt; implSpecificInfo"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "其他实现信息"
+msgstr "Other realized information"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "serializer"
+msgstr "serializer"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "序列化类型（JSON/XML/PROTOBUF3）"
+msgstr "Serialization Type (JSON/XML/PROTOBUF3)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "scopeOfLocality"
+msgstr "scopeOfLocality"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "地域范围（MEC\\_SYSTEM/MEC\\_HOST/NFVI\\_POP/ZONE/ZONE\\_GROUP/NFVI\\_NODE），默认值MEC\\_HOST"
+msgstr "Geographical range (MEC\\_SYSTEM/MEC\\_HOST/NFVI\\_POP/ZONE/ZONE\\_GROUP/NFVI\\_NODE), default value MEC\\_HOST"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "consumedLocalOnly"
+msgstr "consumedLocalOnly"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "boolean"
+msgstr "boolean"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "是否只被本地域APP消费（true/false）"
+msgstr "Is it only consumed by local APP(true/false)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "isLocal"
+msgstr "isLocal"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "是否在本地域（true/false）"
+msgstr "Is Local Domain(true/false)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:441
 msgid "2. 查询应用指定服务"
 msgstr "2.Query application specified service"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1006
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:443
 msgid "查询对应APP的指定服务"
 msgstr "Query a specified service corresponding to APP"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1315
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "serviceId"
+msgstr "serviceId"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "APP服务实例ID"
+msgstr "APP service instance ID"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "scopeOfLocality              String"
+msgstr "scopeOfLocality              String"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:556
 msgid "3. 注册应用服务"
 msgstr "3.Registered application services"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1317
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:558
 msgid "为指定APP注册服务。"
 msgstr "Specify the APP registration service for."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1615 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2808 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3491
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "MIME类型，填\"application/json\""
+msgstr "MIME type, fill \" application/json \""
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "服务名称（字母/数字/\\_/-的组合，但不能以\\_和-开头或结尾），最大长度128"
+msgstr "Service name (letter/number/\\\\_/-, but not\\_and-start or end), maximum length 128"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "类别ID，字母与数字组合，最大长度64"
+msgstr "Class ID, letter and number combination, maximum length 64"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "服务版本号（格式为x\\[.y\\[.z\\]\\]，xyz取值范围0\\~32767，例如：1；1.2；1.2.3）"
+msgstr "Service version number (formatx\\[.y\\[.z\\]\\],xyz value range0\\~32767, for example: 1;1.2;1.2.3)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "transportId"
+msgstr "transportId"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "服务信息ID，字母与数字组合，最大长度64"
+msgstr "Service information ID, letter and number combination, maximum length 64"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "ID，字母与数字组合，最大长度64"
+msgstr "ID, letter and number combination, maximum length 64"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "名称（字母/数字/\\_/-的组合，但不能以\\_和-开头或结尾），最大长度128"
+msgstr "Name (letter/number/\\\\_/-combination but not\\_ and-start or end), maximum length 128"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "描述，最大长度128"
+msgstr "description, maximum length 128"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "协议名称，最大长度32"
+msgstr "Agreement name, maximum length 32"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "IP地址。例如：192.168.0.1"
+msgstr "IP address.For example: 192.168.0.1"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "端口号（&lt;=65535）。例如：8080"
+msgstr "The port number(&lt;=65535).For example: 8080"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:660 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1123 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1448
 msgid "返回码：201"
 msgstr "Return code: 201"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1859
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "endpoint，三种信息其中的一个（uris/addresses/alternative）"
+msgstr "endpoint, one of the three messages (uris/addresses/alternative)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:738
 msgid "**注：单个应用注册的服务数量应不超过50个，超出后服务将报错。**"
 msgstr "**Note: The number of services registered for a single application should be no more than 50, and the service will be reported incorrectly.**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1861
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:740
 msgid "4. 更新应用服务"
 msgstr "4.Update application services"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1863
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:742
 msgid "更新APP指定服务信息。"
 msgstr "Update APP specifies service information."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2414
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "服务版本号（例如：1；1.0；1.0.2）"
+msgstr "Service version number (e.g.: 1;1.0;1.0.2)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:925
 msgid "5. 删除应用服务"
 msgstr "5.Delete application services"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2416
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:927
 msgid "删除APP指定服务。"
 msgstr "Deletes an APP specified service."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2484 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3028 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3638
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:965 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1222 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1519
 msgid "返回码：204"
 msgstr "Return code: 204"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2497
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:978
 msgid "可用事件订阅相关接口"
 msgstr "Available Event Subscription Related interfaces"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2499
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:980
 msgid "1. 查询可用事件订阅"
 msgstr "1.Query available event subscriptions"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2501
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:982
 msgid "查询指定APP的可用事件订阅信息"
 msgstr "Query to specify available event subscription information for APP"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2632
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**名称**"
+msgstr "**name**"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**类型**"
+msgstr "**Types of**"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**描述**"
+msgstr "**description**"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**IN**"
+msgstr "**IN**"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "**必选**"
+msgstr "**required**"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "\\_links"
+msgstr "\\_links"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "结果信息"
+msgstr "Result information"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;self"
+msgstr "&gt;self"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "调用者信息"
+msgstr "caller information"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;href"
+msgstr "&gt;&gt;href"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "调用者URL"
+msgstr "caller URL"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;subscriptions"
+msgstr "&gt;subscriptions"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "订阅者列表"
+msgstr "List of subscribers"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "订阅者URI"
+msgstr "Subscriber URI"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;rel"
+msgstr "&gt;&gt;rel"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "固定值SerAvailabilityNotificationSubscription"
+msgstr "Fixed value SerAvailabilityNotificationSubscription"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1048
 msgid "2. 注册可用事件订阅"
 msgstr "2.Sign up for available event subscriptions"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2634
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1050
 msgid "为指定APP注册可用事件订阅"
 msgstr "To specify APP registered free event subscription"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2958
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "subscriptionType"
+msgstr "subscriptionType"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "订阅类型（SerAvailabilityNotificationSubscription）"
+msgstr "Subscription Type (SerAvailabilityNotificationSubscription)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "callbackReference"
+msgstr "callbackReference"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "用于接收通知的回调URI，不支持域名格式，仅支持IP地址+URL，且不能包含localhost、127.x.x.x、mepserver容器IP网段，例如：https://159.138.1.2:8080/xxx"
+msgstr "The callback URI for receiving the notification does not support the domain name format, supports only the IP address + URL and cannot contain localhost, 127.x.x.x, the mepserver container IP network segment, for example: https://159.138.1.2:8080/xxx"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "filteringCriteria"
+msgstr "filteringCriteria"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "过滤条件列表"
+msgstr "Filter list"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;serInstanceIds"
+msgstr "&gt;serInstanceIds"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "上报事件的应用服务实例ID列表"
+msgstr "Application service instance ID list for reported event"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;serNames"
+msgstr "&gt;serNames"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "上报事件的应用服务实例名称列表（每个服务实例名称都是字母/数字/\\_/-的组合，但不能以\\_和-开头或结尾，最大长度128）"
+msgstr "Application service instance name list reported for event (each service instance name is a combination of letter/number/\\_/-but cannot be\\_and-start or end with maximum length 128)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;serCategories"
+msgstr "&gt;serCategories"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "上报事件的应用服务类别列表"
+msgstr "List of application service classes reporting events"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "类别参考"
+msgstr "Class Reference"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;id"
+msgstr "&gt;&gt;id"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "类别ID，最大长度64"
+msgstr "Class ID, maximum length 64"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;name"
+msgstr "&gt;&gt;name"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "类别名称（字母/数字/\\_/-的组合，但不能以\\_和-开头或结尾），最大长度128"
+msgstr "Class name (letter/number/\\\\_/-,but not\\_and-start or end), maximum length 128"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;&gt;version"
+msgstr "&gt;&gt;version"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;states"
+msgstr "&gt;states"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "上报事件的应用服务状态（ACTIVE/INACTIVE）"
+msgstr "Application service status for reported events (ACTIVE/INACTIVE)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&gt;isLocal"
+msgstr "&gt;isLocal"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "subscriptionId"
+msgstr "subscriptionId"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "订阅Id"
+msgstr "Subscription Id"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "调用者自身信息"
+msgstr "The caller's own information."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "调用者自身URI"
+msgstr "caller self URI"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "上报事件的应用服务实例名称列表"
+msgstr "List of application service instance names reporting events"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1182
 msgid "**注：单个应用注册的可用事件订阅数量应不超过50个，超出后服务将报错。**"
 msgstr "**Note: The number of available event subscriptions for a single application registration should be no more than 50, and the service beyond will be reported incorrectly.**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2960
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1184
 msgid "3. 删除可用事件订阅"
 msgstr "3.Delete available event subscriptions"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2962
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1186
 msgid "删除指定可用事件订阅信息"
 msgstr "Delete the specified available event subscription information"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3041
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "事件订阅ID"
+msgstr "Event Subscription ID"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1235
 msgid "4. 查询指定可用事件订阅"
 msgstr "4.Query specifies an available event subscription"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3043
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1237
 msgid "查询指定ID的可用事件订阅信息"
 msgstr "Query the available event subscription information for the specified ID"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3251
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1329
 msgid "终止事件订阅相关接口"
 msgstr "Terminate Event Subscription Related Interface"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3253
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1331
 msgid "1. 查询终止事件订阅"
 msgstr "1.Query termination event subscription"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3255
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1333
 msgid "查询指定APP的终止事件订阅信息"
 msgstr "Query to specify the end event subscription information for APP"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3387
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "固定值AppTerminationNotificationSubscription"
+msgstr "Fixed Value AppTerminationNotificationSubscription"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1400
 msgid "2. 注册终止事件订阅"
 msgstr "2.Registration terminated event subscription"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3389
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1402
 msgid "为指定APP注册终止事件订阅"
 msgstr "To specify APP registered termination event subscription"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3568
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "订阅类型（AppTerminationNotificationSubscription）"
+msgstr "Subscription Type (AppTerminationNotificationSubscription)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1479
 msgid "**注：单个应用注册的终止事件订阅数量应不超过50个，超出后服务将报错。**"
 msgstr "**Note: The number of terminated event subscriptions for a single application registration should be no more than 50, and the service beyond will be reported incorrectly.**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3570
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1481
 msgid "3. 删除终止事件订阅"
 msgstr "3.Delete the termination event subscription"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3572
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1483
 msgid "删除指定终止事件订阅信息"
 msgstr "Delete the specified termination event subscription information"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3651
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "事件订阅ID（UUID）"
+msgstr "Event Subscription ID (UUID)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1532
 msgid "4. 查询指定终止事件订阅"
 msgstr "4.Query specifies termination event subscription"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3653
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1534
 msgid "查询指定ID的终止事件订阅信息"
 msgstr "Query terminated event subscription information for specified ID"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3789
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "订阅类型（ AppTerminationNotificationSubscription）"
+msgstr "Subscription Type (AppTerminationNotificationSubscription)"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1599
 msgid "异常状态码"
 msgstr "Abnormal status code"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "**HTTP状态码**"
 msgstr "**HTTPstatuscode**"
-
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
-msgid "**描述**"
-msgstr "**Description**"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "400"
@@ -661,331 +1625,543 @@ msgstr "503"
 msgid "服务不可用。"
 msgstr "Service is not available."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3801
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1611
 msgid "部署指南"
 msgstr "Deployment guide"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3804
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1614
 msgid "说明：EG-LDVS部署后服务即直接可用，无单独的服务启动命令。"
 msgstr "Description: The EG-LDVS post-deployment service is directly available and there is no separate service start command."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3806
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1616
 msgid "前置条件"
 msgstr "Precondition"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3808
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1618
 msgid "建议使用Ubuntu系统宿主环境进行产品部署。"
 msgstr "It is recommended to use the Ubuntu system host environment for product deployment."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3841
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "序号"
+msgstr "Serial Number"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "工具"
+msgstr "tool"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "用途"
+msgstr "use"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "说明"
+msgstr "explanation"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "1"
+msgstr "1"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "Docker Community Edition"
+msgstr "Docker Community Edition"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "容器引擎"
+msgstr "Container engine"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "获取地址（第三方软件的官方网站）：[*www.docker.com*](http://www.docker.com)，下载18.xx版本及以上版本软件及资料。"
+msgstr "Get the address (website of third party software, ):[*www.docker.com*](http://www.docker.com), download the 18.xx version and above and the software and data."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "2"
+msgstr "2"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "openssl"
+msgstr "openssl"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "用于用户准备SSL证书及密钥"
+msgstr "Used for user preparation of SSL certificates and keys"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "使用宿主环境操作系统对应包管理工具进行下载安装，如 apt-get install openssl"
+msgstr "Download the installation using the host environment operating system corresponding to the packet management tool, such as apt-get install openssl"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "3"
+msgstr "3"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "git"
+msgstr "git"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "分布式代码版本控制系统，用于用户获取EG-LDVS源码"
+msgstr "Distributed code version control system for user acquisition of EG-LDVS source"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "使用宿主环境操作系统对应包管理工具进行下载安装，如 apt-get install git"
+msgstr "Download the installation using the host environment operating system corresponding to the packet management tool, such as apt-get install git"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1625
 msgid "EG-LDVS MEP部署指导"
 msgstr "EG-LDVS MEP Deployment Guidance"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3843
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1627
 msgid "本章节介绍MEP组件的部署方式。"
 msgstr "This section introduces how MEP components are deployed."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3845
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1629
 msgid "建议使用者以容器的形式部署MEP。EG-LDVS不直接提供镜像，需要使用者基于EG-LDVS各组件的源码编译出docker镜像并进行部署。"
 msgstr "It is recommended that the user deploy the MEP in the form of a container.The EG-LDVS is not directly mirrored and requires the user to compile the docker mirror image and deploy it based on the source code of the EG-LDVS component."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3847
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1631
 msgid "EG-LDVS MEP只包含mepauth和mepserver两个组件的源码，在部署时，需要部署开源社区的kong和postgres，提供路由转发和存储数据库。"
 msgstr "The EG-LDVS MEP contains only the source code of the mepauth and mepserver components, and when deployed, the open source community's kong and postgres are required to provide routing forwarding and storage databases."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3887
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "容器名"
+msgstr "Container Name"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "容器作用"
+msgstr "Container Role"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "镜像名"
+msgstr "Mirror Name"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "镜像来源"
+msgstr "mirror source"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "kong-service"
+msgstr "kong-service"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "提供路由转发功能，由kong对外发布相关接口"
+msgstr "providing the routing forwarding function, and the related interface is externally published by the kong"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "kong:2.0.4-alpine"
+msgstr "kong:2.0.4-alpine"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "非产品交付，从开源社区获取"
+msgstr "Non-product delivery, from open source communities"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "postgres-db"
+msgstr "postgres-db"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "作为kong的数据存储和mepauth提供应用认证信息存储数据库。"
+msgstr "Data storage and mepauth as kong provide application authentication information storage database."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "postgres:12.3"
+msgstr "postgres:12.3"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "提供认证服务和提供应用信息导入服务"
+msgstr "Provision of certification services and provision of application information import services"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "edgegallery/mepauth:1.0"
+msgstr "edgegallery/mepauth:1.0"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "使用者自行编译完整镜像，产品交付组件源码"
+msgstr "User self-compiles full mirror, product delivery component source"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "提供应用服务治理，状态订阅等服务。"
+msgstr "Provides services such as application service governance, status subscription, etc."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "edgegallery/mep:1.0"
+msgstr "edgegallery/mep:1.0"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1640
 msgid "关闭history"
 msgstr "Close history"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3889
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1642
 msgid "基于安全考虑，我们建议使用者在部署过程中关闭history，避免使用者在部署过程中设置的密码等信息泄露的风险。"
 msgstr "Based on security considerations, we recommend that users close history during deployment and avoid the risk of information leaks such as passwords set by users during deployment."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3893
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1646
 msgid "准备SSL证书及密钥"
 msgstr "Prepare SSL certificates and keys"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3895
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1648
 msgid "EG-LDVS不预置SSL证书及密钥，用户需要自行准备，在测试场景下，用户可以使用openssl工具生成的临时证书，以下以在Ubuntu系统生成步骤为例，证书及密钥的准备步骤如下："
 msgstr "The EG-LDVS does not preset SSL certificates and keys, and the user needs to prepare themselves, under which the user can use the temporary certificate generated by the openssl tool, and the following steps are prepared for the Ubuntu system generation step, the certificate and key:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3897
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1650
 msgid "此处假定用户准备的证书及密钥文件名称如下，并将证书保存在 /home/EG-LDVS/mepserver/ 路径下："
 msgstr "The certificate and key document names prepared by the user are assumed here, and the certificate is kept under the /home/EG-LDVS/mepserver/ path:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3900
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1653
 msgid "SSL 根证书文件：ca.crt"
 msgstr "SSL root certificate document: ca.crt"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3902
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1655
 msgid "SSL 证书文件：mepserver_tls.crt"
-msgstr "SSL certificate document: mepserver_tls.crt"
+msgstr "SSL certificate document:mepserver_tls.crt"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3904
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1657
 msgid "SSL 证书加密密钥文件：mepserver_encryptedtls.key"
-msgstr "SSL certificate encryption key document: mepserver_encryptedtls.key"
+msgstr "SSL certificate encryption key document:mepserver_encryptedtls.key"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3906
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1659
 msgid "SSL 证书密钥加密密码：mepserver_cert\\_pwd"
-msgstr "SSL certificate key encryption password: mepserver_cert\\_pwd"
+msgstr "SSL certificate key encryption password:mepserver_cert\\_pwd"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3908
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1661
 msgid "Mepauth JWT 公钥文件：jwt_publickey"
-msgstr "Mepauth JWT Public Key Document: jwt_publickey"
+msgstr "Mepauth JWT Public Key Document:jwt_publickey"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3910
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1663
 msgid "Mepauth JWT 密钥文件：jwt_encrypted_privatekey"
-msgstr "Mepauth JWT key document: jwt_encrypted_privatekey"
+msgstr "Mepauth JWT key document:jwt_encrypted_privatekey"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3912
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1665
 msgid "备注：部署指南章节中，相关命令均在/home/EG-LDVS中执行，若用户并非在该目录下进行证书生成等操作，可在部署指导中执行相关命令时，对/home/EG-LDVS路径做相关替换。命令中其余路径相关设置，需遵照部署指南要求进行操作，若自行更改可能导致部署失败。"
 msgstr "Note: In the deployment guide section, the related commands are executed in the /home/EG-LDVS, and if the user does not perform the certificate generation operation under the directory, the /home/EG-LDVS path can be replaced when the relevant command can be executed in the deployment direction.The rest of the path in the command is set to be operated according to the requirements of the deployment guide, which may result in a failure of the deployment."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3914
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1667
 msgid "以下命令中涉及到的用于加密证书秘钥文件的密码，请用户在执行openssl命令时自行设置，并将该密码保存到相应的文件中。"
 msgstr "The following command relates to the password for encrypting the certificate key file, and requests the user to set the password when executing the openssl command, and save the password to the corresponding file."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3916 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4021
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1669 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1774
 msgid "出于安全性考虑建议用户在设置密码时考虑下列建议："
 msgstr "For security reasons, it is recommended that users consider the following suggestions when setting passwords:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3918 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4023
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1671 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1776
 msgid "口令长度至少8个字符"
 msgstr "At least eight characters in length."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3920 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4025
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1673 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1778
 msgid "口令必须包含如下至少两种字符的组合："
 msgstr "The password must contain a combination of at least two characters:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3922 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4027
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1675 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1780
 msgid "-至少一个小写字母；"
 msgstr "-at least one lowercase letter;"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3924 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4029
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1677 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1782
 msgid "-至少一个大写字母；"
 msgstr "-at least one capital letter;"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3926 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4031
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1679 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1784
 msgid "-至少一个数字；"
 msgstr "-at least one number;"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3928
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1681
 msgid "-至少一个特殊字符：\\`\\~!@\\#\\$%\\^&\\*()-\\_=+\\\\|\\[\\]{};:'\",.&lt;&gt;/? 和空格"
-msgstr "-At least one special character：\\`\\~!@\\#\\$%\\^&\\*()-\\_=+\\\\|\\[\\]{};:'\",.&lt;&gt;/? and spaces"
+msgstr "-At least one special characte：\\`\\~!@\\#\\$%\\^&\\*()-\\_=+\\\\|\\[\\]{};:'\",.&lt;&gt;/? and spaces"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3959
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1712
 msgid "**注：上述过程中生成的ca.key 及 jwt_privatekey为密钥文件。为保障安全性，请用户从环境中删除或妥善存储在安全的位置。**"
 msgstr "**Note: The ca.key and jwt_privatekey generated in the above process are key documents.To guarantee security, users are asked to delete or properly store in a secure location from the environment.**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3961
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1714
 msgid "出于安全性考虑，所有容器内由non-root用户（uid166）运行程序。同时建议用户在宿主机创建并使用non-root用户(以下命令假定用户创建了uid为166的eguser用户和eggroup用户组)运行容器命令。"
 msgstr "For security reasons, all containers are run by the non-root user(uid166).It is also recommended that users create and use the non-root user in the host machine (the following command assumes that the user creates the eguser user and egsgroup user group with uid 166) to run the container command."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3970
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1723
 msgid "将文件属主和属组设置为eguser和eggroup，并将证书及密钥文件的权限设置为600。"
 msgstr "Set the document master and genera group to eguser and eggroup, and set the authority of the certificate and key file to 600."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3975
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1728
 msgid "构建mepserver 和 mepauth 容器镜像"
 msgstr "Building a mirror image of the mepserver and mepauth containers"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3977
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1730
 msgid "本节介绍如何基于EG-LDVS源码构建mepserver和mepauth容器镜像。此处假设用户已经获取到发布的mep代码并放置到/home/EG-LDVS/mep目录下。"
 msgstr "This section introduces how to build the mepserver and mepauth container mirroring based on the EG-LDVS source.It is assumed that the user has obtained the published mep code and placed under the /home/EG-LDVS/mep directory."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:3985
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1738
 msgid "注：EG-LDVS容器镜像基于开源linux操作系统的基础镜像构建，默认使用的是Alpine Linux，用户可以根据偏好修改Dockerfile以使用其他Linux基础镜像。例如想要将mep镜像修改为基于Ubuntu18.04，对应的mep/mepserver/docker/Dockerfile 文件修改如下："
 msgstr "Note: The EG-LDVS container mirror is built on the basis of the open-source linux operating system, and by default is Alpine Linux, which allows users to modify the Dockerfile to use other Linux underlying mirrors according to their preferences.For example, to modify the mep mirror to be based on Ubuntu 18.04, the corresponding mep/mepserver/docker/Dockerfile document is modified as follows:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4014
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1767
 msgid "部署开源kong及postgres数据库"
 msgstr "Deploy open-source kong and postgres database"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4016
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1769
 msgid "EG-LDVS使用上游开源社区提供的kong作为路由转发，kong容器镜像(kong:2.0.4-alpine)需使用者直接从上游开源社区的DockerHub镜像库拉取。同时，kong运行时依赖postgres数据库，需要使用者从上游开源社区自行拉取postgres容器镜像（postgres:12.3）。"
 msgstr "The kong container mirror (kong: 2.0.4-alpine) requires users to directly mirror the DockerHub mirror of the upstream open-source community.At the same time, the kong runs on the postgres database and requires users to pull the postgres container mirrors from the upstream open source community (postgres: 12.3)."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4018
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1771
 msgid "以下命令中涉及到的数据库密码请用户在运行 docker 命令时和 init.sql中自行设置，并确保运行kong-service时密码一致。"
 msgstr "The database password involved in the following command requests the user to set themselves on the docker command and in the init.sql command and ensure that the password is consistent when running the klong-service."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4033
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1786
 msgid "-一个特殊字符：-"
-msgstr "-A special character: -"
+msgstr "-A special character:-"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4035
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1788
 msgid "数据库用户说明："
 msgstr "Database user description:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4062
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "用户名"
+msgstr "User name"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "密码"
+msgstr "Password."
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "备注"
+msgstr "Remarks"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "&lt;用户输入&gt;"
+msgstr "&lt;User input&gt;"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "super user"
+msgstr "super user"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "general user"
+msgstr "general user"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "用于kong连接pg的用户"
+msgstr "User for kong attachment pg"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1794
 msgid "\\*注：处于安全考虑，建议用户设置的密码都满足以上复杂度要求"
 msgstr "\\*Note: Security is considered, and the password set by the user is recommended to satisfy the above complexity requirements"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4064
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1796
 msgid "用户权限说明："
 msgstr "User Rights Description:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4106
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "usename"
+msgstr "usename"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "usesysid"
+msgstr "usesysid"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "usecreatedb"
+msgstr "usecreatedb"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "usesuper"
+msgstr "usesuper"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "userepl"
+msgstr "userepl"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "usebypassrls"
+msgstr "usebypassrls"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "passwd"
+msgstr "passwd"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "valuntil"
+msgstr "valuntil"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "useconfig"
+msgstr "useconfig"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "10"
+msgstr "10"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "t"
+msgstr "t"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "\\*\\*\\*\\*\\*\\*\\*\\*"
+msgstr "\\*\\*\\*\\*\\*\\*\\*\\*"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "16385"
+msgstr "16385"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
+msgid "f"
+msgstr "f"
+
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1802
 msgid "注：EG-LDVS使用上游开源社区提供的postgreSQL数据库，数据库容器镜像直接从上游开源社区的DockerHub镜像库拉取。为了提高数据库的使用安全性，EG-LDVS使用一份数据库加固脚本init.sql用于在启动数据库时进行一系列安全加固操作。用户需要将该加固脚本保存到部署环境，并通过目录映射方式映射到数据库容器中。此处假设用户将加固 init.sql 保存在 /home/EG-LDVS/mepserver/ 路径下。实际执行以下命令时请根据环境实际情况修改对应参数。"
 msgstr "Note:EG-LDVS uses the postgreSQL database provided by the upstream open-source community, and the database container mirror is directly extracted from the DockerHub mirror of the upstream open source community.To improve the use security of the database, EG-LDVS uses a database reinforcement script init.sql for a range of security reinforcement operations when starting the database.The user needs to save the reinforcement script to the deployment environment and map to the database container by the catalogue mapping mode.This assumes that the user will fortify the init.sql to the /home/EG-LDVS/mepserver/ path.When implementing the following commands, please modify the corresponding parameters according to the actual circumstances of the environment."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4164
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1860
 msgid "EG-LDVS使用上游开源社区提供的kong作为路由转发，kong容器镜像直接从上游开源社区的DockerHub镜像库拉取。"
 msgstr "EG-LDVS uses the kong provided by the upstream open source community as route forwarding, and the kong container mirror is directly from the DockerHub mirror of the upstream open source community."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4229
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1925
 msgid "部署mepserver"
 msgstr "Deploy mepserver"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4247
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1943
 msgid "部署mepauth"
 msgstr "Deploy mepauth"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4249
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1945
 msgid "下面命令中我们使用样例ACCESS_KEY、SECRET_KEY与APP_INST_ID、KEY_COMPONENT："
 msgstr "In the following command we use the example ACCESS_KEY, SECCRET_KEY and APP_INST_ID, KEY_COMPONENT:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4251
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1947
 msgid "ACCESS_KEY: QVUJMSUMgS0VZLS0tLS0"
 msgstr "ACCESS_KEY: QVUJMSUMgS0VZLS0tLS0"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4253
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1949
 msgid "SECRET_KEY: DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
 msgstr "SECCRET_KEY: DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4256
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1952
 msgid "APP_INST_ID: 5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f"
 msgstr "APP_INST_ID: 5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4258
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1954
 msgid "KEY_COMPONENT: oikYVgrRbDZHZSaobOTo8ugCKsUSdVeMsg2d9b7Qr250q2HNBiET4WmecJ0MFavRA0cBzOWu8sObLha17auHoy6ULbAOgP50bDZapxOylTbr1kq8Z4m8uMztciGtq4e11GA0aEh0oLCR3kxFtV4EgOm4eZb7vmEQeMtBy4jaXl6miMJugoRqcfLo9ojDYk73lbCaP9ydUkO56fw8dUUYjeMvrzmIZPLdVjPm62R4AQFQ4CEs7vp6xafx9dRwPoym"
 msgstr "KEY_COMPONENT: oikYVgrRbDZHZSaobOTo8ugCKsUSdVeMsg2d9b7Qr250q2HNBiET4WmecJ0MFavRA0cBzOWu8sObLha17auHoy6ULbAOgP50bDZapxOylTbr1kq8Z4m8uMztciGtq4e11GA0aEh0oLCR3kxFtV4EgOm4eZb7vmEQeMtBy4jaXl6miMJugoRqcfLo9ojDYk73lbCaP9ydUkO56fw8dUUYjeMvrzmIZPLdVjPm62R4AQFQ4CEs7vp6xafx9dRwPoym"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4261
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1957
 msgid "备注：建议对ACCESS_KEY、SECERT_KEY、KEY_COMPONENT进行设置修改，其中ACCESS_KEY、SECERT_KEY保持长度不变，KEY_COMPONENT长度不小于256。应用通过接口访问EG-LDVS时，需要保证使用的AK/SK与此处设置的ACCESS_KEY、SECERT_KEY相同。"
 msgstr "Note: A modification is recommended for ACCESS_KEY, SECCERT_KEY, KEY_COMPONENT, where ACCESS_KEY, SECCERT_KEY remains the same length, and KEY_COMPONENT length is not less than 256.When applying an EG-LDVS via an interface, an AK/SK to be used needs to be guaranteed to be the same as ACCESS_KEY set here, SECERT_KEY."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4263
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1959
 msgid "将jwt密码、ACCESS_KEY、SECRET_KEY与APP_INST_ID、KEY_COMPONENT样例保存到/tmp/mepauth-conf/mepauth.properties文件："
 msgstr "Archive the jwt password, ACCESS_KEY, SECRET_KEY and APP_INST_ID, KEY_COMPONENT samples to the /tmp/metauth-conf/mepauth.properties file:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4300
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1996
 msgid "注： 出于安全性考虑，mepauth容器启动后会将/tmp/mepauth-conf/mepauth.properties文件的内容删除，以防信息泄露。"
 msgstr "Note: For security reasons, the mepauth container will delete the contents of the /tmp/metauth-conf/mepauth.properties file after activation to prevent the leakage of information."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4303
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1999
 msgid "更新TRUSTED_LIST"
 msgstr "Update TRUSTED_LIST"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4305
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2001
 msgid "mepauth.properties文件中的\"TRUSTED_LIST\"字段用于设置允许调用EG-LDVS 提供的API服务的IP地址。如果需要修改允许调用EG-LDVS API服务的IP地址，需要用户进入Postgres数据库容器，然后更新Kong数据库中的plugins表数据，具体操作步骤如下："
 msgstr "The \"TRUSTED_LIST\" field in the mepauth.properties file is used to set the IP address that allows the invocation of the API service provided by the EG-LDVS.If you need to modify the IP address that allows the EG-LDVS API service to be called, the user is required to enter the Postgres database container and then update the plugins table data in the Kong database. The specific operation steps are as follows:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4320
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2016
 msgid "EG-LDVS MEP-agent部署指导"
 msgstr "EG-LDVS MEP-agent deployment guidance"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4322
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2018
 msgid "本小节介绍应用浅集成时如何通过Mep-agent进行配置集成。"
 msgstr "This section introduces how to configure integration via Mep-agent when applying shallow integration."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4324
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2020
 msgid "Mep-agent是为第三方MEC App提供代理服务的中间件，可以帮助未实现ETSI接口的MEC App注册到MEP，实现MEC App的服务注册与发现。"
 msgstr "Meep-agent is a middleware that provides proxy services for third-party MEC apps, which can help the MEC App without ETSI interface sign up to MEP to realize the service registration and discovery of the MEC App."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4328
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2024
 msgid "Mep-agent由Go语言开发，建议开发者使用Docker容器的形式部署，Mep-agent启动时会读取MEC App的配置文件 app_instance_info.yaml 并将MEC App注册到Mep，实现服务注册与发现以及服务订阅。"
 msgstr "Mep-agent is developed by GoLanguage, which recommends that developers deploy Docker containers with the MEC App's configuration document app_instance_info.yaml and register the MEC App to Mep to realize service registration and discovery, and service subscriptions."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4332
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2028
 msgid "在进行使用MEP-Agent之前，请参考[*应用接口调用流程*](#应用接口调用流程)章节准备appInstanceId，AK，SK。[](#_应用认证机制（责任人：陈传雨）)"
 msgstr "Before making use of MEP-Agent, please consult the [*Application Interface Call Flow*](#Applicationinterfacecallingprocess) chapter preparing appInstanceId, AK, SK.[](#_Appauthenticationmechanism(Those responsible: Chen Chuyu))"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4334
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2030
 msgid "将应用信息导入MEP"
 msgstr "importing application information into MEP"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4336
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2032
 msgid "在启动测试前，需要确保MEP-Agent配置的APP_INST_ID，ACCESS_KEY/ SECRET_KEY 和部署的EG-LDVS保持一致，[*部署mepauth*](#部署mepauth)章节中介绍了相关的值，以下部署指导中使用的样例值已经与前者保持一致，如果用户在部署EG-LDVS MEP时，未对启动值做自定义，可直接进行部署，否则请根据自定义值进行部署。[](#_导入应用认证信息接口)"
 msgstr "Before starting the test, you need to ensure that the APP_INST_ID, ACCESS_KEY/ SECCRET_KEY and deployed EG-LDVs are consistent in the MEP-Agent configuration, [* deployment mepaauth *](#部署mepauth) section, and the example values used in the deployment guidance are consistent with the former, if the user does not customize the activation value when deploying the EG-LDVS MEP, deploy directly, otherwise, depending on the custom value.[](#_Importapplicationauthenticationinformationinterface)"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4341
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2037
 msgid "Mep-agent部署指导"
 msgstr "Mep-agent deployment guidance"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4343
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2039
 msgid "关闭history 基于安全考虑，我们建议使用者在部署过程中关闭history，避免使用者在部署过程中设置的密码等信息泄露的风险。"
 msgstr "The shutdown history is based on security considerations, and we recommend that users close history during deployment and avoid the risk of information leaks such as passwords set by users during deployment."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4348
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2044
 msgid "构建mep-agent 容器镜像 此处假设用户已经获取到发布的mep-agent代码并放置到/home/EG-LDVS/mep-agent目录下。"
 msgstr "Building a mep-agent container mirroring here assumes that the user has obtained the release mep-agent code and placed under the /home/EG-LDVS/mep - agent directory."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4354
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2050
 msgid "运行mep-agent 容器"
 msgstr "Run the mep-agent container"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4382
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2078
 msgid "注： 出于安全性考虑，我们建议用户在mepagent容器正常启动后删除/tmp/mepagent-conf目录下的app_conf.yaml文件。"
 msgstr "Note: For security reasons, we recommend that users delete the app_conf. yaml document in the /tmp/mepagent-conf directory after the mepagent container is started normally."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4388
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2084
 msgid "Mep-agent执行MEC App服务注册的流程："
 msgstr "Mep-agent runs the flow of the MEC App service registration:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4390
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2086
 msgid "Mep-Agent向EG-LDVS MEP发送请求"
 msgstr "Mep-Agent sends request to EG-LDVS MEP"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4392
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2088
 msgid "请求头header携带着签名(签名算法参考*AK/SK签名认证算法说明*章节)，EG-LDVS MEP校验签名，校验通过返回token（有效期1小时）"
 msgstr "The request header header carries the signature (signature algorithm reference *AK/SK signature authentication algorithm description * section), EG-LDVS MEP check signature, check pass return token (valid for 1 hour)"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4394
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2090
 msgid "Mep-Agent向EG-LDVS MEP注册服务"
 msgstr "Mep-Agent to EG-LDVS MEP registration service"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4396
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2092
 msgid "请求头header携带token，Mep-Agent读取app_instance_info.yaml文件中的配置参数，转化为对象，放在body中，EG-LDVS MEP通过携带的token来进行鉴权，完成服务注册"
 msgstr "The request header carries token, Meep-Agent reads configuration parameters in app_instance_info.yaml document, transforms into objects, in body, EG-LDVS MEP performs authentication by carrying token, completes service registration"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4398
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2094
 msgid "Mep-agent 配置文件 app_instance_info.yaml样例："
 msgstr "Mep-agent configuration document app_instance_info.yaml example:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4442
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2138
 msgid "**注：单个应用注册的服务数量以及可用/终止事件订阅数量均应不超过50个，超出后服务将报错。**"
 msgstr "**Note: The number of services registered for a single application and the number of available/terminated event subscriptions should be no more than 50, and the service will be reported incorrectly.**"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4444
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2140
 msgid "Mep-agent容器内日志路径为/usr/mep/log/mep-agent.log，用户可以根据日志内容可查看Mep-agent 服务注册是否成功。用户也可以通过*查询应用服务*API查看服务注册是否成功注册到MEP中。"
 msgstr "The log path in the Mep-agent container is /usr/mep/log/mep-agent.logand the user can see if the Mep-agent service registration is successful based on the log content.Users can also see whether service registration is successfully registered to MEP by the *query application service* API."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4447
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2143
 msgid "卸载指南"
 msgstr "Offload guide"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4450
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2146
 msgid "说明： EG-LDVS无单独的服务停止命令，若用户希望停止服务时，直接通过卸载方式停止服务。"
 msgstr "Description: EG-LDVS No separate service stop command, if the user wants to stop the service, stop the service directly by offloading."
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4453
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2149
 msgid "EG-LDVS MEP/MEP-agent卸载指导"
 msgstr "EG-LDVS MEP/MEP-agent offload guide"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4455
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2151
 msgid "本章节介绍MEP、MEP-agnet组件的卸载方式。想要完整卸载MEP及MEP-agent组件需要在部署环境执行以下操作："
 msgstr "This section introduces the mode of unloading of MEP, MEP-agnet components.Want to fully uninstall MEP and MEP-agent components requires the following actions in the deployment environment:"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4457 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4463
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2153 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2159
 msgid "删除MEP/MEP-agent相关容器"
 msgstr "Delete MEP/MEP-agent related containers"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4459 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4475
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2155 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2171
 msgid "删除MEP/MEP-agent相关文件目录"
 msgstr "Delete MEP/MEP-agent related document directory"
 
-#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4461 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:4486
+#: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2157 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:2182
 msgid "删除eguser用户及eggroup用户组"
 msgstr "Delete eguser user and eggroup user groups"
 

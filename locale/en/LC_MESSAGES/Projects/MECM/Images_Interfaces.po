@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-03 09:56+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,27 +33,87 @@ msgstr "Create Image"
 msgid "creation of image"
 msgstr "creation of image"
 
-#: ../../Projects/MECM/Images_Interfaces.md:40
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "Field"
+msgstr "Field"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "Type"
+msgstr "Type"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "Label"
+msgstr "Label"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "Description"
+msgstr "Description"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "accessToken"
+msgstr "accessToken"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "string"
+msgstr "string"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "required"
+msgstr "required"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "Provide the required access token"
+msgstr "Provide the required access token"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "appInstanceId"
+msgstr "appInstanceId"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "Valid UUID"
+msgstr "Valid UUID"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "tenantId"
+msgstr "tenantId"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "path"
+msgstr "path"
+
+#: ../../Projects/MECM/Images_Interfaces.md:14
 msgid "Delete Image"
 msgstr "Delete Image"
 
-#: ../../Projects/MECM/Images_Interfaces.md:42
+#: ../../Projects/MECM/Images_Interfaces.md:16
 msgid "deletion of image"
 msgstr "deleave of image"
 
-#: ../../Projects/MECM/Images_Interfaces.md:81
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "imageId"
+msgstr "imageId"
+
+#: ../../Projects/MECM/Images_Interfaces.md:24
 msgid "Query Image"
 msgstr "Query Image"
 
-#: ../../Projects/MECM/Images_Interfaces.md:83
+#: ../../Projects/MECM/Images_Interfaces.md:26
 msgid "query of image"
 msgstr "query of image"
 
-#: ../../Projects/MECM/Images_Interfaces.md:122
+#: ../../Projects/MECM/Images_Interfaces.md:34
 msgid "Download Image file"
 msgstr "Download Image file"
 
-#: ../../Projects/MECM/Images_Interfaces.md:124
+#: ../../Projects/MECM/Images_Interfaces.md:36
 msgid "download a specific chunk of image file"
 msgstr "download a specific chunk of image file"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "chunk_num"
+msgstr "chunk_num"
+
+#: ../../Projects/MECM/Images_Interfaces.md
+msgid "Provide the required chunk_num"
+msgstr "Provide the required chunk_num"
 

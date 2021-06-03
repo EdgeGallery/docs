@@ -72,7 +72,6 @@ MEP-Agent组件：应用集成适配器，这个组件在实际使用时，应�
 ------------
 
 MEPServer、MEP-agent、MEPAuth容器内系统默认帐号说明，如下表：
-
 |**用户名**|   **用户组** |  **用途**   |                                                                                        **远程登录**   |**权限** |    **默认密码**  | **密码修改策略** |  **密码修改方法**|
 |---|---|---|---| ---|---|---|---|
 | eguser   |    eggroup  |    用于启动服务的帐号   |                                                                              禁用  |         工作用户 |    无    |         无需修改   |        不涉及|
@@ -108,7 +107,6 @@ MEPServer、MEP-agent、MEPAuth容器内系统默认帐号说明，如下表：
 --------------
 
 EG-LDVS使用开源Postgres数据库，在系统中，kong服务和mepauth服务均使用特定用户访问数据库，用户信息如下。相关密码由用户部署时自行设置，部署过程参考[*部署指南*](#部署指南)章节。
-
   |**用户名**  | **密码**  |           **用途**|
  | ---|---|---|
   |admin      |  用户部署时自行设置   |pg的admin用户，用于创建数据库和其他业务连接用户|
@@ -227,7 +225,6 @@ Authorization: SDK-HMAC-SHA256 Access=QVUJMSUMgS0VZLS0tLS0, SignedHeaders=conten
 
 <span id="_导入应用认证信息接口" class="anchor"><span id="_服务认证接口"
 class="anchor"></span></span>接口请求示例中的参数说明：
-
   |名称    |                 值    |             描述|
   |---|---|---|
   |LDVS\_HOST  |             部署LDVS的主机IP |  主机IP|
@@ -258,7 +255,6 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPAUTH_ROUTE}/mepauth/v1/token
 ```
 
 请求参数：
-
  |名称  |          类型 |    描述       |                                      IN     |  必选|
  |---|---|---|---|---|
  | Content-Type |   String  | MIME类型，  填"application/json"                        |               header  | 是|                                                                    
@@ -304,7 +300,6 @@ POST https://{LDVS_HOST}:8443/mepauth/mepauth/v1/token
 返回码：200
 
 OK
-
 |名称     |       类型  |   描述   |               必选|
   |---|---|---|---|
   |access\_token |  String  | Token|                 是|
@@ -339,7 +334,6 @@ GET https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applic
 ```
 
 请求参数：
-
   |名称            | 类型  |   描述     |                           IN    |   必选|
   |---|---|---|---|---| 
   |Authorization |  String |  Token信息，格式：Bearer token信息  | header  | 是|
@@ -370,7 +364,6 @@ GET https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782
 返回码：200
 
 OK
-
  |名称                      |   类型            |  描述      |                                                                                                            必选|
   |---|---|---|---|
  | serInstanceId      |          String       |     服务实例ID         |                                                                                                   是|
@@ -461,7 +454,6 @@ GET https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applic
 ```
 
 请求参数：
-
   |名称            |类型  |   描述     |                           IN      | 必选|
   |---|---|---|---|---| 
   |Authorization  | String  | Token信息，格式：Bearer token信息  | header |  是|
@@ -492,7 +484,6 @@ GET https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782
 返回码：200
 
 OK
-
  |名称        |                 类型   |           描述           |                                                                                                       必选|
   |---|---|---|---|
   |serInstanceId  |              String|            服务实例ID   |                                                                                                         是|
@@ -578,7 +569,6 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/appli
 ```
 
 请求参数：
-
 |名称    |        类型    | 描述     |                           IN   |    必选|
   | ---| ---| ---| ---| ---| 
  |  Content-Type    | String   | MIME类型，填"application/json"                       |     header|   是|                                                                                          
@@ -586,7 +576,6 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/appli
   |appInstanceId |  String |  APP实例ID（UUID）             |      path |    是|
 
 Body参数：
-
   |  名称     |                     类型 |              描述        |                                                                                                           必选| 
   | ---| ---| ---| ---|
   | serName     |                  String |            服务名称（字母/数字/\_/-的组合，但不能以\_和-开头或结尾），最大长度128                                                | 是| 
@@ -676,7 +665,6 @@ POST https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe478
 返回码：201
 
 OK
-
  | 名称           |               类型     |          描述        |                                                                                                           必选| 
   | ---| ---| ---| ---| 
 |   serInstanceId   |              String  |           服务实例ID      |                                                                                                       是
@@ -765,7 +753,6 @@ PUT https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applic
 ```
 
 请求参数：
-
   | 名称           |  类型   |   描述           |                      IN     |   必选| 
   |---|---|---|---|---|
   | Content-Type  |   String   | MIME类型，  填"application/json"        |                 header  | 是|                                                                     
@@ -774,7 +761,6 @@ PUT https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applic
   |serviceId     |  String   |APP服务实例ID                       |path     |是|
 
 Body参数：
-
   | 名称               |          类型      |        描述           |                                                                                                       必选|
   |---|---|---|---|
  | serName       |               String      |      服务名称（字母/数字/\_/-的组合，但不能以\_和-开头或结尾），最大长度128  |                                              是|
@@ -866,7 +852,6 @@ PUT https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782
 返回码：200
 
 OK
-
   |名称       |                  类型    |          描述              |                                                                                                    必选|
   |---|---|---|---|
  | serInstanceId|                String   |         服务实例ID               |                                                                                             是|
@@ -954,7 +939,6 @@ DELETE https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/app
 ```
 
 请求参数：
-
   |名称      |      类型    | 描述         |                       IN   |    必选|
   |---|---|---|---|---| 
   |Authorization |  String |  Token信息，格式：Bearer token信息   |header |  是|
@@ -1010,7 +994,6 @@ GET https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applic
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
@@ -1040,7 +1023,6 @@ GET https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782
 返回码：200
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | \_links  | Object | 结果信息 | 是 |
@@ -1080,7 +1062,6 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/appli
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Content-Type  | String | MIME类型，填"application/json" | header |  是   |
@@ -1088,7 +1069,6 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/appli
 | appInstanceId | String | APP实例ID（UUID） | path |  是   |
 
 Body参数：
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionType  | String | 订阅类型（SerAvailabilityNotificationSubscription） |  是   |
@@ -1149,7 +1129,6 @@ POST https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe478
 返回码：201
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionId  | String | 订阅Id |  是   |
@@ -1219,7 +1198,6 @@ DELETE https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/app
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
@@ -1271,7 +1249,6 @@ GET https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_service_mgmt/v1/applic
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
@@ -1302,7 +1279,6 @@ GET https://{LDVS_HOST}:8443/mepserver/mec_service_mgmt/v1/applications/5abe4782
 返回码：200
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionType  | String | 订阅类型（SerAvailabilityNotificationSubscription） |  是   |
@@ -1369,7 +1345,6 @@ GET https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applica
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
@@ -1399,7 +1374,6 @@ GET https://{LDVS_HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-
 返回码：200
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | \_links  | Object | 结果信息 |  是   |
@@ -1440,7 +1414,6 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applic
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Content-Type  | String | MIME类型，填"application/json"  | header |  是   |
@@ -1448,7 +1421,6 @@ POST https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applic
 | appInstanceId  | String | APP实例ID（UUID） | path |  是   |
 
 Body参数：
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionType  | String | 订阅类型（AppTerminationNotificationSubscription）  |  是   |
@@ -1482,7 +1454,6 @@ POST https://{LDVS_HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782
 返回码：201
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionId  | String | 订阅Id  |  是   |
@@ -1524,7 +1495,6 @@ DELETE https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/appl
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  是   |
@@ -1576,7 +1546,6 @@ GET https://{LDVS_HOST}:{PORT}/{KONG_MEPSERVER_ROUTE}/mec_app_support/v1/applica
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  是   |
@@ -1607,7 +1576,6 @@ GET https://{LDVS_HOST}:8443/mepserver/mec_app_support/v1/applications/5abe4782-
 返回码：200
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionType  | String | 订阅类型（ AppTerminationNotificationSubscription）  |  是   |
@@ -1656,7 +1624,6 @@ HTTP/1.1 200 OK
 ### 前置条件
 
 建议使用Ubuntu系统宿主环境进行产品部署。
-
  | 序号  | 工具  |  用途  | 说明|
  | --- | --- | --- | --- |
  | 1 | Docker Community Edition | 容器引擎 | 获取地址（第三方软件的官方网站）：[*www.docker.com*](http://www.docker.com)，下载18.xx版本及以上版本软件及资料。 | 
@@ -1671,7 +1638,6 @@ HTTP/1.1 200 OK
 
 EG-LDVS
 MEP只包含mepauth和mepserver两个组件的源码，在部署时，需要部署开源社区的kong和postgres，提供路由转发和存储数据库。
-
  | 容器名 | 容器作用 | 镜像名 | 镜像来源 | 
  | --- | --- | --- | --- |
  | kong-service | 提供路由转发功能，由kong对外发布相关接口 | kong:2.0.4-alpine | 非产品交付，从开源社区获取 | 
@@ -1828,7 +1794,6 @@ init.sql中自行设置，并确保运行kong-service时密码一致。
 -一个特殊字符：-
 
 数据库用户说明：
-
  | 用户名 | 密码 | 类型 | 备注 | 
  | --- | --- | --- | --- | 
  | admin | &lt;用户输入&gt; | super user | pg的admin用户，用于创建数据库和其他业务连接用户 | 
@@ -1837,7 +1802,6 @@ init.sql中自行设置，并确保运行kong-service时密码一致。
 \*注：处于安全考虑，建议用户设置的密码都满足以上复杂度要求
 
 用户权限说明：
-
  | usename | usesysid | usecreatedb | usesuper | userepl | usebypassrls | passwd | valuntil | useconfig | 
  | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
  | admin | 10 | t | t | t | t | \*\*\*\*\*\*\*\* | | | 

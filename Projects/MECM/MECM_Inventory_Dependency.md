@@ -2,7 +2,6 @@ rely
 ====================
 
 ##InventoryThird-PartyUseList
-
 |groupId|artifactId|version|license|directimport(Y/N)|
 |---|---|---|---|---|
 |org.springframework.boot|spring-boot-starter-web|2.3.3.RELEASE|Apache License, Version 2.0|Y|

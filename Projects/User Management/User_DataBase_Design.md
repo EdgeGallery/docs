@@ -3,7 +3,6 @@
 ### tbl\_tenant 租户表
 
 记录所有的租户信息
-
 | **字段** | **类型** | **主键** | **描述** |
 | --- | --- | --- | --- |
 |tenantid | string | key | 主键 |
@@ -32,7 +31,6 @@ Please modify the default password before deployment
 ### tbl\_role 用户角色表
 
 配置支持的平台的和用户角色，该表在启动时初始化，不支持动态添加
-
 | 字段 | 类型 |主键 | 描述 |
 |---|---|---|---|
 |id | string | key | 主键 |
@@ -70,7 +68,6 @@ Please modify the default password before deployment
 ### tbl\_tenant\_role 关系表
 
 用于描述租户和角色的关系
-
 | 字段 | 类型 |主键 | 描述 |
 |---|---|---|---|
 |tenantid | string | | 租户ID |

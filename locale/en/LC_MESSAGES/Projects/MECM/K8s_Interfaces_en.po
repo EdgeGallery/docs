@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-03 10:06+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr "K8s plugin Interfaces"
 msgid "The document is for the K8s plugin project."
 msgstr "The document is for the K8s plugin project."
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:5
+#: ../../Projects/MECM/K8s_Interfaces_en.md ../../Projects/MECM/K8s_Interfaces_en.md:5
 msgid "InstantiateRequest"
 msgstr "InstantiateRequest"
 
@@ -33,127 +33,339 @@ msgstr "InstantiateRequest"
 msgid "Application instantiated"
 msgstr "Application instantiated"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:58
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Field"
+msgstr "Field"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Type"
+msgstr "Type"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Label"
+msgstr "Label"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Description"
+msgstr "Description"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "accessToken"
+msgstr "accessToken"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "string"
+msgstr "string"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "required"
+msgstr "required"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Provide the required access token"
+msgstr "Provide the required access token"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "appInstanceId"
+msgstr "appInstanceId"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Valid UUID"
+msgstr "Valid UUID"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "hostIp"
+msgstr "hostIp"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Valid IP"
+msgstr "Valid IP"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "package"
+msgstr "package"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "bytes"
+msgstr "bytes"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Valid UUID without hypen"
+msgstr "Valid UUID without hypen"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "parameters"
+msgstr "parameters"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "key value pair"
+msgstr "key value pair"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "No"
+msgstr "No"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Instantiation parameters, key-value pairs"
+msgstr "Instantiation parameters, key-value pairs"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md ../../Projects/MECM/K8s_Interfaces_en.md:16
 msgid "InstantiateResponse"
 msgstr "InstantiateResponse"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:60
+#: ../../Projects/MECM/K8s_Interfaces_en.md:18
 msgid "Represents the InstantiateRequest status."
 msgstr "Replicents the InstantiateRequest status."
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:81
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "status"
+msgstr "status"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Status of the instantiate request"
+msgstr "Status of the instantiate request"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md ../../Projects/MECM/K8s_Interfaces_en.md:23
 msgid "TerminateRequest"
 msgstr "TerminateRequest"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:83
+#: ../../Projects/MECM/K8s_Interfaces_en.md:25
 msgid "Terminates application instance id"
 msgstr "Terminates application instance id"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:116
+#: ../../Projects/MECM/K8s_Interfaces_en.md ../../Projects/MECM/K8s_Interfaces_en.md:32
 msgid "TerminateResponse"
 msgstr "TerminateResponse"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:118
+#: ../../Projects/MECM/K8s_Interfaces_en.md:34
 msgid "Represents the TerminateRequest status."
 msgstr "Replicents the TerminateRequest status."
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:139
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Status of the terminate request"
+msgstr "Status of the terminate request"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md ../../Projects/MECM/K8s_Interfaces_en.md:39
 msgid "QueryRequest"
 msgstr "QueryRequest"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:141
+#: ../../Projects/MECM/K8s_Interfaces_en.md:41
 msgid "Get statistics information"
 msgstr "Get statistics information"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:174
+#: ../../Projects/MECM/K8s_Interfaces_en.md ../../Projects/MECM/K8s_Interfaces_en.md:48
 msgid "QueryResponse"
 msgstr "QueryResponse"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:176
+#: ../../Projects/MECM/K8s_Interfaces_en.md:50
 msgid "Represents the QueryRequest status."
-msgstr "Replents the QueryRequest status."
+msgstr "Represents the QueryRequest status."
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:197
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Status of the Query request"
+msgstr "Status of the Query request"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md ../../Projects/MECM/K8s_Interfaces_en.md:55
 msgid "UploadCfgRequest"
 msgstr "UploadCfgRequest"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:199
+#: ../../Projects/MECM/K8s_Interfaces_en.md:57
 msgid "Upload Config File"
 msgstr "Upload Config File"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:232
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "configFile"
+msgstr "configFile"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "formData"
+msgstr "formData"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Provide valid config file"
+msgstr "Provide valid config file"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md ../../Projects/MECM/K8s_Interfaces_en.md:64
 msgid "UploadCfgResponse"
 msgstr "UploadCfgResponse"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:234
+#: ../../Projects/MECM/K8s_Interfaces_en.md:66
 msgid "Represents the UploadCfgRequest status."
 msgstr "Replents the UploadCfgRequest status."
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:255
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Status of the UploadCfgRequest"
+msgstr "Status of the UploadCfgRequest"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md ../../Projects/MECM/K8s_Interfaces_en.md:71
 msgid "RemoveCfgRequest"
 msgstr "RemoveCfgRequest"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:257
+#: ../../Projects/MECM/K8s_Interfaces_en.md:73
 msgid "Removes the config file"
 msgstr "Removes the config file"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:284
+#: ../../Projects/MECM/K8s_Interfaces_en.md ../../Projects/MECM/K8s_Interfaces_en.md:79
 msgid "RemoveCfgResponse"
 msgstr "RemoveCfgResponse"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:305
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Status of the RemoveCfgRequest"
+msgstr "Status of the RemoveCfgRequest"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md:84
 msgid "CreateVmImageRequest"
 msgstr "CreateVmImageRequest"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:307
+#: ../../Projects/MECM/K8s_Interfaces_en.md:86
 msgid "Create VM image request"
 msgstr "Create VM image request"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:346
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "vmId"
+msgstr "vmId"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md:94
 msgid "CreateVmImageResponse"
 msgstr "CreateVmImageResponse"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:367
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "response"
+msgstr "response"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "response of the CreateVmImageResponse"
+msgstr "response of the CreateVmImageResponse"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md:99
 msgid "QueryVmImageRequest"
 msgstr "QueryVmImageRequest"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:369
+#: ../../Projects/MECM/K8s_Interfaces_en.md:101
 msgid "Query VM image request"
 msgstr "Query VM image request"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:408
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "imageId"
+msgstr "imageId"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md:109
 msgid "QueryVmImageResponse"
 msgstr "QueryVmImageResponse"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:429
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "response of the QueryVmImageResponse"
+msgstr "response of the QueryVmImageResponse"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md:114
 msgid "DeleteVmImageRequest"
 msgstr "DeleteVmImageRequest"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:431
+#: ../../Projects/MECM/K8s_Interfaces_en.md:116
 msgid "Delete VM image request"
 msgstr "Delete VM image request"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:470
+#: ../../Projects/MECM/K8s_Interfaces_en.md:124
 msgid "DeleteVmImageResponse"
 msgstr "DeleteVmImageResponse"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:491
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "response of the DeleteVmImageResponse"
+msgstr "response of the DeleteVmImageResponse"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md:129
 msgid "DownloadVmImageRequest"
 msgstr "DownloadVmImageRequest"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:493
+#: ../../Projects/MECM/K8s_Interfaces_en.md:131
 msgid "Download VM image request"
 msgstr "Download VM image request"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:538
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "chunkNum"
+msgstr "chunkNum"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "int32"
+msgstr "int32"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Valid integer"
+msgstr "Valid integer"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md:140
 msgid "DownloadVmImageResponse"
 msgstr "DownloadVmImageResponse"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:559
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "content"
+msgstr "content"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "byte"
+msgstr "byte"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "response of the DownloadVmImageResponse"
+msgstr "response of the DownloadVmImageResponse"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md:145
 msgid "AppLCM Service"
 msgstr "AppLCM Service"
 
-#: ../../Projects/MECM/K8s_Interfaces_en.md:561
+#: ../../Projects/MECM/K8s_Interfaces_en.md:147
 msgid "Service for handling requests."
 msgstr "Service for handling requests."
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Method Name"
+msgstr "Method Name"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Request Type"
+msgstr "Request Type"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Response Type"
+msgstr "Response Type"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "instantiate"
+msgstr "instantiate"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Instantiate application"
+msgstr "Instantiate application"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "terminate"
+msgstr "terminate"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Terminate application"
+msgstr "Terminate application"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "query"
+msgstr "query"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Query application"
+msgstr "Query application"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "uploadConfig"
+msgstr "uploadConfig"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Upload file configuration"
+msgstr "Upload file configuration"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "removeConfig"
+msgstr "removeConfig"
+
+#: ../../Projects/MECM/K8s_Interfaces_en.md
+msgid "Remove file configuration"
+msgstr "Remove file configuration"
 

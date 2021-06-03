@@ -2,7 +2,6 @@
 ====================
 
 ## AppStore-be 三方件使用清单
-
 |groupId|artifactId|version|license|direct import (Y/N)|
 |---|---|---|---|---|
 |aopalliance|aopalliance|1.0 |Public Domain|N|
@@ -219,7 +218,6 @@
 
 
 ## AppStore-fe 三方件使用清单
-
 |type|name|version|LICENSE|direct import|
 |---|---|---|---|---|
 |dependencies|acorn|7.2.0|MIT|Y|

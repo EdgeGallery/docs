@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-03 11:24+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -457,466 +457,6 @@ msgstr "1.1 POST upload plugin"
 msgid "Upload one plugin with some params."
 msgstr "Upload one plugin with some params."
 
-#: ../../Projects/Developer/Developer_Interfaces.md:190 ../../Projects/Developer/Developer_Interfaces.md:273 ../../Projects/Developer/Developer_Interfaces.md:311 ../../Projects/Developer/Developer_Interfaces.md:342 ../../Projects/Developer/Developer_Interfaces.md:373 ../../Projects/Developer/Developer_Interfaces.md:403 ../../Projects/Developer/Developer_Interfaces.md:481 ../../Projects/Developer/Developer_Interfaces.md:568 ../../Projects/Developer/Developer_Interfaces.md:676 ../../Projects/Developer/Developer_Interfaces.md:751 ../../Projects/Developer/Developer_Interfaces.md:793 ../../Projects/Developer/Developer_Interfaces.md:840 ../../Projects/Developer/Developer_Interfaces.md:877 ../../Projects/Developer/Developer_Interfaces.md:914 ../../Projects/Developer/Developer_Interfaces.md:956 ../../Projects/Developer/Developer_Interfaces.md:1035 ../../Projects/Developer/Developer_Interfaces.md:1155 ../../Projects/Developer/Developer_Interfaces.md:1232 ../../Projects/Developer/Developer_Interfaces.md:1318 ../../Projects/Developer/Developer_Interfaces.md:1394 ../../Projects/Developer/Developer_Interfaces.md:1476 ../../Projects/Developer/Developer_Interfaces.md:1612 ../../Projects/Developer/Developer_Interfaces.md:1831 ../../Projects/Developer/Developer_Interfaces.md:1951 ../../Projects/Developer/Developer_Interfaces.md:2083 ../../Projects/Developer/Developer_Interfaces.md:2120 ../../Projects/Developer/Developer_Interfaces.md:2185 ../../Projects/Developer/Developer_Interfaces.md:2230 ../../Projects/Developer/Developer_Interfaces.md:2261 ../../Projects/Developer/Developer_Interfaces.md:2337 ../../Projects/Developer/Developer_Interfaces.md:2394 ../../Projects/Developer/Developer_Interfaces.md:2427 ../../Projects/Developer/Developer_Interfaces.md:2472 ../../Projects/Developer/Developer_Interfaces.md:2534 ../../Projects/Developer/Developer_Interfaces.md:2577 ../../Projects/Developer/Developer_Interfaces.md:2630 ../../Projects/Developer/Developer_Interfaces.md:2695 ../../Projects/Developer/Developer_Interfaces.md:2742 ../../Projects/Developer/Developer_Interfaces.md:2800 ../../Projects/Developer/Developer_Interfaces.md:2853 ../../Projects/Developer/Developer_Interfaces.md:2884 ../../Projects/Developer/Developer_Interfaces.md:2943 ../../Projects/Developer/Developer_Interfaces.md:3000 ../../Projects/Developer/Developer_Interfaces.md:3047 ../../Projects/Developer/Developer_Interfaces.md:3087 ../../Projects/Developer/Developer_Interfaces.md:3162 ../../Projects/Developer/Developer_Interfaces.md:3199 ../../Projects/Developer/Developer_Interfaces.md:3250 ../../Projects/Developer/Developer_Interfaces.md:3295 ../../Projects/Developer/Developer_Interfaces.md:3328 ../../Projects/Developer/Developer_Interfaces.md:3365 ../../Projects/Developer/Developer_Interfaces.md:3401 ../../Projects/Developer/Developer_Interfaces.md:3446 ../../Projects/Developer/Developer_Interfaces.md:3461 ../../Projects/Developer/Developer_Interfaces.md:3492 ../../Projects/Developer/Developer_Interfaces.md:3535 ../../Projects/Developer/Developer_Interfaces.md:3568 ../../Projects/Developer/Developer_Interfaces.md:3607 ../../Projects/Developer/Developer_Interfaces.md:3651 ../../Projects/Developer/Developer_Interfaces.md:3684 ../../Projects/Developer/Developer_Interfaces.md:3925 ../../Projects/Developer/Developer_Interfaces.md:4166 ../../Projects/Developer/Developer_Interfaces.md:4299 ../../Projects/Developer/Developer_Interfaces.md:4340 ../../Projects/Developer/Developer_Interfaces.md:4376 ../../Projects/Developer/Developer_Interfaces.md:4421 ../../Projects/Developer/Developer_Interfaces.md:4460 ../../Projects/Developer/Developer_Interfaces.md:4511 ../../Projects/Developer/Developer_Interfaces.md:4576 ../../Projects/Developer/Developer_Interfaces.md:4677 ../../Projects/Developer/Developer_Interfaces.md:4740 ../../Projects/Developer/Developer_Interfaces.md:4795 ../../Projects/Developer/Developer_Interfaces.md:4866 ../../Projects/Developer/Developer_Interfaces.md:4897 ../../Projects/Developer/Developer_Interfaces.md:4971 ../../Projects/Developer/Developer_Interfaces.md:5018 ../../Projects/Developer/Developer_Interfaces.md:5049 ../../Projects/Developer/Developer_Interfaces.md:5111 ../../Projects/Developer/Developer_Interfaces.md:5250 ../../Projects/Developer/Developer_Interfaces.md:5364 ../../Projects/Developer/Developer_Interfaces.md:5401 ../../Projects/Developer/Developer_Interfaces.md:5458 ../../Projects/Developer/Developer_Interfaces.md:5495 ../../Projects/Developer/Developer_Interfaces.md:5532 ../../Projects/Developer/Developer_Interfaces.md:5648 ../../Projects/Developer/Developer_Interfaces.md:5679 ../../Projects/Developer/Developer_Interfaces.md:5763 ../../Projects/Developer/Developer_Interfaces.md:5856 ../../Projects/Developer/Developer_Interfaces.md:5902
-msgid "Example response:"
-msgstr "Example response:"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:235
-msgid "1.2 GET all"
-msgstr "1.2 GET all"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:237
-msgid "Query all plugin or sdk"
-msgstr "Query all plugin or sdk"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:286
-msgid "1.3 DELETE one"
-msgstr "1.3 DELETE one"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:287
-msgid "Delete one plugin by pluginId"
-msgstr "Delete one plugin by pluginId"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:317
-msgid "1.4 GET download plugin"
-msgstr "1.4 GET download plugin"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:318
-msgid "download one plugin"
-msgstr "download one plugin"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:348
-msgid "1.5 GET download logo"
-msgstr "1.5 GET download logo"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:349
-msgid "download plugin's logo file"
-msgstr "download plugin's logo file"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:378
-msgid "1.6 GET download api"
-msgstr "1.6 GET download api"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:379
-msgid "download plugin's api file"
-msgstr "download plugin's api file"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:408
-msgid "1.7 PUT update plugin"
-msgstr "1.7 PUT update plugin"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:409
-msgid "update api by id"
-msgstr "update api by id"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:525
-msgid "1.8 PUT mark plugin"
-msgstr "1.8 PUT markplugin"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:526
-msgid "update plugin satisfaction by pluginId"
-msgstr "update plugin sativaction by pluginId"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:613
-msgid "2. App"
-msgstr "2.App"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:614
-msgid "Edge applications on the car"
-msgstr "Edge applications on the car"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:615
-msgid "2.1 POST upload app"
-msgstr "2.1 POST upload app"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:616
-msgid "Upload app with some params."
-msgstr "Upload app with some params."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:702
-msgid "2.2 GET all test task"
-msgstr "2.2 GET all test task"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:703
-msgid "Query all test task by condtions"
-msgstr "Query all test task by conditions"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:768
-msgid "2.3 GET all app tags"
-msgstr "2.3 GET all app tags"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:769
-msgid "Query app function tags"
-msgstr "Query app function tags"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:803
-msgid "2.4 POST upload app to store"
-msgstr "2.4 POST upload app to store"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:804
-msgid "upload app to store"
-msgstr "upload app to store"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:846
-msgid "2.5 GET start test"
-msgstr "2.5 GET start test"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:847
-msgid "start to test app"
-msgstr "start to test app"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:883
-msgid "2.6 GET subtask list"
-msgstr "2.6 GET subtask list"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:884
-msgid "query test subtask list"
-msgstr "query test subtask list"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:929
-msgid "3. App Project"
-msgstr "3.App Project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:930
-msgid "Edge application projects created by the developer platform"
-msgstr "Edge application projects created by the developer platform"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:931
-msgid "3.1 GET all project"
-msgstr "3.1 GET all project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:932
-msgid "Query all app project with userId."
-msgstr "Query all app project with userId."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1004
-msgid "3.2 GET one project"
-msgstr "3.2 GET one project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1005
-msgid "Query project by id"
-msgstr "Query project by id"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1081
-msgid "3.3 POST create one project"
-msgstr "3.3 POST create one project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1082
-msgid "Create one project with some params"
-msgstr "Create one project with some params"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1201
-msgid "3.4 Delete one project"
-msgstr "3.4 Delete one project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1202
-msgid "Delete one project by id"
-msgstr "Delete one project by id"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1238
-msgid "3.5 PUT modify one project"
-msgstr "3.5 PUT modify one project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1239
-msgid "modify one project by id"
-msgstr "modify one project by id"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1363
-msgid "3.6 POST deploy one project"
-msgstr "3.6 POST deploy one project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1364
-msgid "Deploy one project by id"
-msgstr "Deploy one project by id"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1439
-msgid "3.7 POST clean test env"
-msgstr "3.7 POST clean test env"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1440
-msgid "clean test env"
-msgstr "clean test env"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1482
-msgid "3.8 POST create test config"
-msgstr "3.8 POST create test config"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1483
-msgid "create test config of one project"
-msgstr "create test config of one project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1707
-msgid "3.9 PUT modify test config"
-msgstr "3.9 PUT modify test config"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1708
-msgid "modify test config of one project"
-msgstr "modify test config of one project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1926
-msgid "3.10 GET one test-config"
-msgstr "3.10 GET one test-config"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:1927
-msgid "Query one test config by projectId"
-msgstr "Query one test config by projectId"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2046
-msgid "3.11 POST upload to store"
-msgstr "3.11 POST upload to store"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2047
-msgid "upload app project to appstore"
-msgstr "upload app project to appstore"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2089
-msgid "3.12 POST open project to eco"
-msgstr "3.12 POST open project to eco"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2090
-msgid "Open project to eco"
-msgstr "Open project to eco"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2142
-msgid "3.13 POST add image to project"
-msgstr "3.13 POST add image to project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2143
-msgid "Add image to project"
-msgstr "Add image to project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2199
-msgid "3.14 DELETE image of project"
-msgstr "3.14 DELETE image of project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2200
-msgid "DELETE image of project"
-msgstr "DELETE image of project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2236
-msgid "3.15 GET image of project"
-msgstr "3.15 GET image of project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2237
-msgid "GET image of project"
-msgstr "GET image of project"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2279
-msgid "3.16 POST open project api"
-msgstr "3.16 POST open project api"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2280
-msgid "POST open project api"
-msgstr "POST open project api"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2369
-msgid "3.17 GET project atp task"
-msgstr "3.17 GET project atp task"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2370
-msgid "GET project atp task"
-msgstr "GET project atp task"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2400
-msgid "4. Host"
-msgstr "4.Host"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2401
-msgid "Server of build and test or deploy app"
-msgstr "Server of build and test or deploy app"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2402
-msgid "4.1 GET all host"
-msgstr "4.1 GET all host"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2403
-msgid "Query all host."
-msgstr "Query all host."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2447
-msgid "4.2 GET one host"
-msgstr "4.2 GET one host"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2448
-msgid "Query  host by id."
-msgstr "Query host by id."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2492
-msgid "4.3 POST create one host"
-msgstr "4.3 POST create one host"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2493 ../../Projects/Developer/Developer_Interfaces.md:2584
-msgid "Create one host."
-msgstr "Create one host."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2552
-msgid "4.4 DELETE one host"
-msgstr "4.4 DELETE one host"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2553
-msgid "Delete one host."
-msgstr "Delete one host."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2583
-msgid "4.5 PUT modify one host"
-msgstr "4.5 PUT modify one host"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2648
-msgid "5. Capability-groups"
-msgstr "5.Capability-groups"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2649
-msgid "Services or capabilities of edge applications"
-msgstr "Services or capabilities of dge applications"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2650
-msgid "5.1 POST create one EdgeGalleryCapabilityGroup"
-msgstr "5.1 POST create one EdgeGalleryCapabilityGroup"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2651
-msgid "Create one Capability group."
-msgstr "Create one Capability group."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2717
-msgid "5.2 DELETE one EdgeGalleryCapabilityGroup"
-msgstr "5.2 DELETE one EdgeGalleryCapabilityGroup"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2718
-msgid "Delete one Capability group by id."
-msgstr "Delete one Capability group by id."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2748
-msgid "5.3 POST create one EdgeGalleryCapability"
-msgstr "5.3 POST create one EdgeGalleryCapability"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2749
-msgid "Create one EdgeGalleryCapability"
-msgstr "Create one EdgeGalleryCapability"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2822
-msgid "5.4 DELETE one EdgeGalleryCapability"
-msgstr "5.4 DELETE one EdgeGalleryCapability"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2823
-msgid "Delete one EdgeGalleryCapability by id"
-msgstr "Delete one EdgeGalleryCapability by id"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2859
-msgid "5.5 GET all EdgeGalleryCapability"
-msgstr "5.5 GET all EdgeGalleryCapability"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2860
-msgid "Gey all EdgeGalleryCapability"
-msgstr "Gey all EdgeGalleryCapability"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2918
-msgid "5.6 GET all EdgeGalleryCapability by groupid"
-msgstr "5.6 GET all EdgeGalleryCapability by groupid"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2919
-msgid "Gey all EdgeGalleryCapability by  groupid"
-msgstr "Gey all EdgeGalleryCapability by groupid"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2975
-msgid "5.7 GET all EdgeGallery API by fileId"
-msgstr "5.7 GET all EdgeGallery API by fileId"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:2976
-msgid "Gey all EdgeGallery  API"
-msgstr "Gey all EdgeGallery API"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3022
-msgid "5.8 GET all EdgeGallery ECO API"
-msgstr "5.8 GET all EdgeGallery ECO API"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3023 ../../Projects/Developer/Developer_Interfaces.md:3063
-msgid "Gey all EdgeGallery ECO API"
-msgstr "Gey all EdgeGallery ECO API"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3062
-msgid "5.9 GET all EdgeGallery API"
-msgstr "5.9 GET all EdgeGallery API"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3123
-msgid "6. File"
-msgstr "6.File"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3124
-msgid "This part is to configure the app, perform app deployment, and test the api for file operations"
-msgstr "This part is to configure the app, perform app deployment, and test the api for fileoperations"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3125
-msgid "6.1 GET one file"
-msgstr "6.1 GET one file"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3126
-msgid "Get one file"
-msgstr "Get one file"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3168
-msgid "6.2 POST upload one file"
-msgstr "6.2 POST upload one file"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3169
-msgid "Upload  file"
-msgstr "Upload file"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3213
-msgid "6.3 POST upload helm yaml"
-msgstr "6.3 POST upload helm yaml"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3214
-msgid "Upload helm template yaml."
-msgstr "Upload helm template yaml."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3264
-msgid "6.4 GET helm yaml"
-msgstr "6.4 GET helm yaml"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3265
-msgid "Query helm template yaml."
-msgstr "Query helm template yaml."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3303
-msgid "6.5 DELETE helm yaml"
-msgstr "6.5 DELETE helm yaml"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3304
-msgid "Delete helm template yaml."
-msgstr "Delete helm template yaml."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3334
-msgid "6.6 POST get sample code"
-msgstr "6.6 POST get sample code"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3335
-msgid "Get sample code."
-msgstr "Get sample code."
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3370
-msgid "6.7 GET one file return object"
-msgstr "6.7 GET one filereturnobject"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3371
-msgid "Get file return one object"
-msgstr "Get filereturnoneobject"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3415
-msgid "6.8 GET sdk code"
-msgstr "6.8 GET sdk code"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3416
-msgid "GET sdk code"
-msgstr "GET sdk code"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3452
-msgid "6.9 GET file content"
-msgstr "6.9 GET filecontent"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3453
-msgid "GET file content"
-msgstr "GET filecontent"
-
 #: ../../Projects/Developer/Developer_Interfaces.md
 msgid "Name"
 msgstr "Name"
@@ -934,6 +474,890 @@ msgid "Required"
 msgstr "Required"
 
 #: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginFile"
+msgstr "pluginFile"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginfile"
+msgstr "pluginfile"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "requestpart"
+msgstr "requestpart"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "yes"
+msgstr "yes"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "logoFile"
+msgstr "logoFile"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginlogofile"
+msgstr "pluginlogofile"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "apiFile"
+msgstr "apiFile"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginapifile"
+msgstr "pluginapifile"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginName"
+msgstr "pluginName"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginname"
+msgstr "pluginname"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "requestparam"
+msgstr "requestparam"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "codeLanguage"
+msgstr "codeLanguage"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "languagerepresentedbytheplugin"
+msgstr "languagerepresentedbytheplugin"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginType"
+msgstr "pluginType"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "1plugin2sdk"
+msgstr "1plugin2sdk"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "version"
+msgstr "version"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginversion"
+msgstr "pluginversion"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "introduction"
+msgstr "introduction"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginbrief"
+msgstr "pluginbrief"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "userId"
+msgstr "userId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "theauthor'sidofuploadplugin"
+msgstr "theauthor'sidofuploadplugin"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "userName"
+msgstr "userName"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "theauthor'snameofuploadplugin"
+msgstr "theauthor'snameofuploadplugin"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:129 ../../Projects/Developer/Developer_Interfaces.md:186 ../../Projects/Developer/Developer_Interfaces.md:208 ../../Projects/Developer/Developer_Interfaces.md:223 ../../Projects/Developer/Developer_Interfaces.md:238 ../../Projects/Developer/Developer_Interfaces.md:252 ../../Projects/Developer/Developer_Interfaces.md:274 ../../Projects/Developer/Developer_Interfaces.md:330 ../../Projects/Developer/Developer_Interfaces.md:392 ../../Projects/Developer/Developer_Interfaces.md:431 ../../Projects/Developer/Developer_Interfaces.md:457 ../../Projects/Developer/Developer_Interfaces.md:478 ../../Projects/Developer/Developer_Interfaces.md:494 ../../Projects/Developer/Developer_Interfaces.md:510 ../../Projects/Developer/Developer_Interfaces.md:536 ../../Projects/Developer/Developer_Interfaces.md:594 ../../Projects/Developer/Developer_Interfaces.md:693 ../../Projects/Developer/Developer_Interfaces.md:749 ../../Projects/Developer/Developer_Interfaces.md:809 ../../Projects/Developer/Developer_Interfaces.md:864 ../../Projects/Developer/Developer_Interfaces.md:920 ../../Projects/Developer/Developer_Interfaces.md:1030 ../../Projects/Developer/Developer_Interfaces.md:1228 ../../Projects/Developer/Developer_Interfaces.md:1332 ../../Projects/Developer/Developer_Interfaces.md:1438 ../../Projects/Developer/Developer_Interfaces.md:1454 ../../Projects/Developer/Developer_Interfaces.md:1498 ../../Projects/Developer/Developer_Interfaces.md:1522 ../../Projects/Developer/Developer_Interfaces.md:1537 ../../Projects/Developer/Developer_Interfaces.md:1587 ../../Projects/Developer/Developer_Interfaces.md:1628 ../../Projects/Developer/Developer_Interfaces.md:1645 ../../Projects/Developer/Developer_Interfaces.md:1674 ../../Projects/Developer/Developer_Interfaces.md:1720 ../../Projects/Developer/Developer_Interfaces.md:1747 ../../Projects/Developer/Developer_Interfaces.md:1779 ../../Projects/Developer/Developer_Interfaces.md:1828 ../../Projects/Developer/Developer_Interfaces.md:1859 ../../Projects/Developer/Developer_Interfaces.md:1896 ../../Projects/Developer/Developer_Interfaces.md:1928 ../../Projects/Developer/Developer_Interfaces.md:1943 ../../Projects/Developer/Developer_Interfaces.md:1986 ../../Projects/Developer/Developer_Interfaces.md:2027 ../../Projects/Developer/Developer_Interfaces.md:2058 ../../Projects/Developer/Developer_Interfaces.md:2082 ../../Projects/Developer/Developer_Interfaces.md:2131 ../../Projects/Developer/Developer_Interfaces.md:2147 ../../Projects/Developer/Developer_Interfaces.md:2172 ../../Projects/Developer/Developer_Interfaces.md:2196 ../../Projects/Developer/Developer_Interfaces.md:2213 ../../Projects/Developer/Developer_Interfaces.md:2234 ../../Projects/Developer/Developer_Interfaces.md:2249 ../../Projects/Developer/Developer_Interfaces.md:2273 ../../Projects/Developer/Developer_Interfaces.md:2288 ../../Projects/Developer/Developer_Interfaces.md:2303 ../../Projects/Developer/Developer_Interfaces.md:2330 ../../Projects/Developer/Developer_Interfaces.md:2347 ../../Projects/Developer/Developer_Interfaces.md:2365 ../../Projects/Developer/Developer_Interfaces.md:2388 ../../Projects/Developer/Developer_Interfaces.md:2405 ../../Projects/Developer/Developer_Interfaces.md:2625 ../../Projects/Developer/Developer_Interfaces.md:2845 ../../Projects/Developer/Developer_Interfaces.md:2962 ../../Projects/Developer/Developer_Interfaces.md:2987 ../../Projects/Developer/Developer_Interfaces.md:3007 ../../Projects/Developer/Developer_Interfaces.md:3031 ../../Projects/Developer/Developer_Interfaces.md:3054 ../../Projects/Developer/Developer_Interfaces.md:3074 ../../Projects/Developer/Developer_Interfaces.md:3103 ../../Projects/Developer/Developer_Interfaces.md:3188 ../../Projects/Developer/Developer_Interfaces.md:3235 ../../Projects/Developer/Developer_Interfaces.md:3254 ../../Projects/Developer/Developer_Interfaces.md:3309 ../../Projects/Developer/Developer_Interfaces.md:3324 ../../Projects/Developer/Developer_Interfaces.md:3377 ../../Projects/Developer/Developer_Interfaces.md:3408 ../../Projects/Developer/Developer_Interfaces.md:3423 ../../Projects/Developer/Developer_Interfaces.md:3469 ../../Projects/Developer/Developer_Interfaces.md:3582 ../../Projects/Developer/Developer_Interfaces.md:3670 ../../Projects/Developer/Developer_Interfaces.md:3686 ../../Projects/Developer/Developer_Interfaces.md:3722 ../../Projects/Developer/Developer_Interfaces.md:3738 ../../Projects/Developer/Developer_Interfaces.md:3754 ../../Projects/Developer/Developer_Interfaces.md:3844 ../../Projects/Developer/Developer_Interfaces.md:3859 ../../Projects/Developer/Developer_Interfaces.md:3912 ../../Projects/Developer/Developer_Interfaces.md:3939 ../../Projects/Developer/Developer_Interfaces.md:3964
+msgid "Example response:"
+msgstr "Example response:"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:174
+msgid "1.2 GET all"
+msgstr "1.2 GET all"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:176
+msgid "Query all plugin or sdk"
+msgstr "Query all plugin or sdk"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "plugin type"
+msgstr "plugin type"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "request param"
+msgstr "request param"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "limit"
+msgstr "limit"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the max count of one page"
+msgstr "the max count of one page"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "offset"
+msgstr "offset"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "start index of the page"
+msgstr "start index of the page"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:199
+msgid "1.3 DELETE one"
+msgstr "1.3 DELETE one"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:200
+msgid "Delete one plugin by pluginId"
+msgstr "Delete one plugin by pluginId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginId"
+msgstr "pluginId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "plugin id"
+msgstr "plugin id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "path param"
+msgstr "path param"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:214
+msgid "1.4 GET download plugin"
+msgstr "1.4 GET download plugin"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:215
+msgid "download one plugin"
+msgstr "download one plugin"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:229
+msgid "1.5 GET download logo"
+msgstr "1.5 GET download logo"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:230
+msgid "download plugin's logo file"
+msgstr "download plugin's logo file"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:243
+msgid "1.6 GET download api"
+msgstr "1.6 GET download api"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:244
+msgid "download plugin's api file"
+msgstr "download plugin's api file"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:257
+msgid "1.7 PUT update plugin"
+msgstr "1.7 PUT update plugin"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:258
+msgid "update api by id"
+msgstr "update api by id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginid"
+msgstr "pluginid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pathparam"
+msgstr "pathparam"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "no"
+msgstr "no"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:318
+msgid "1.8 PUT mark plugin"
+msgstr "1.8 PUT markplugin"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:319
+msgid "update plugin satisfaction by pluginId"
+msgstr "update plugin sativaction by pluginId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "score"
+msgstr "score"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pluginsatisfaction"
+msgstr "pluginsatisfaction"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "raterid"
+msgstr "raterid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "ratername"
+msgstr "ratername"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:375
+msgid "2. App"
+msgstr "2.App"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:376
+msgid "Edge applications on the car"
+msgstr "Edge applications on the car"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:377
+msgid "2.1 POST upload app"
+msgstr "2.1 POST upload app"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:378
+msgid "Upload app with some params."
+msgstr "Upload app with some params."
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "appFile"
+msgstr "appFile"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "appfile"
+msgstr "appfile"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "applogofile"
+msgstr "applogofile"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "affinity"
+msgstr "affinity"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "appaffinity"
+msgstr "appaffinity"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "industry"
+msgstr "industry"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "appindustry"
+msgstr "industry industry"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "apptype"
+msgstr "apptype"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "appDesc"
+msgstr "appDesc"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "appbrief"
+msgstr "appbrief"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "theauthoridofuploadapp"
+msgstr "theauthoridofuploadapp"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:418
+msgid "2.2 GET all test task"
+msgstr "2.2 GET all test task"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:419
+msgid "Query all test task by condtions"
+msgstr "Query all test task by conditions"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "appName"
+msgstr "appName"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "appname"
+msgstr "appname"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "status"
+msgstr "status"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "testtaskstatus"
+msgstr "testtaskstatus"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "beginTime"
+msgstr "beginTime"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "taskbegintime"
+msgstr "taskbegintime"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "endTime"
+msgstr "endTime"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "taskendtime"
+msgstr "taskendtime"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:448
+msgid "2.3 GET all app tags"
+msgstr "2.3 GET all app tags"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:449
+msgid "Query app function tags"
+msgstr "Query app function tags"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:467
+msgid "2.4 POST upload app to store"
+msgstr "2.4 POST upload app to store"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:468
+msgid "upload app to store"
+msgstr "upload app to store"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "appId"
+msgstr "appId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "appid"
+msgstr "appid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "theauthornameofuploadapp"
+msgstr "theauthornameofuploadapp"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:484
+msgid "2.5 GET start test"
+msgstr "2.5 GET start test"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:485
+msgid "start to test app"
+msgstr "start to test app"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:500
+msgid "2.6 GET subtask list"
+msgstr "2.6 GET subtask list"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:501
+msgid "query test subtask list"
+msgstr "query test subtask list"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "taskId"
+msgstr "taskId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "maintaskid"
+msgstr "maintaskid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:525
+msgid "3. App Project"
+msgstr "3.App Project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:526
+msgid "Edge application projects created by the developer platform"
+msgstr "Edge application projects created by the developer platform"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:527
+msgid "3.1 GET all project"
+msgstr "3.1 GET all project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:528
+msgid "Query all app project with userId."
+msgstr "Query all app project with userId."
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "theauthoridofcreateprocject"
+msgstr "theauthoridofcreateprocject"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:584
+msgid "3.2 GET one project"
+msgstr "3.2 GET one project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:585
+msgid "Query project by id"
+msgstr "Query project by id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "projectId"
+msgstr "projectId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "projectid"
+msgstr "projectid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "theauthoridofcreateproject"
+msgstr "theauthoridofcreateproject"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:640
+msgid "3.3 POST create one project"
+msgstr "3.3 POST create one project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:641
+msgid "Create one project with some params"
+msgstr "Create one project with some params"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "ApplicationProject"
+msgstr "ApplicationProject"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "Entityclass"
+msgstr "Entityclass"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "bodyparam"
+msgstr "bodybaram"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:739
+msgid "3.4 Delete one project"
+msgstr "3.4 Delete one project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:740
+msgid "Delete one project by id"
+msgstr "Delete one project by id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "project id"
+msgstr "project id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the author id of create project"
+msgstr "the author id of create project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:755
+msgid "3.5 PUT modify one project"
+msgstr "3.5 PUT modify one project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:756
+msgid "modify one project by id"
+msgstr "modify one project by id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "entityclass"
+msgstr "entityclass"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:854
+msgid "3.6 POST deploy one project"
+msgstr "3.6 POST deploy one project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:855
+msgid "Deploy one project by id"
+msgstr "Deploy one project by id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:909
+msgid "3.7 POST clean test env"
+msgstr "3.7 POST clean test env"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:910
+msgid "clean test env"
+msgstr "clean test env"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "completed"
+msgstr "completed"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "teststatus"
+msgstr "teststatus"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:926
+msgid "3.8 POST create test config"
+msgstr "3.8 POST create test config"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:927
+msgid "create test config of one project"
+msgstr "create test config of one project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "ProjectTestConfig"
+msgstr "ProjectTestConfig"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1125
+msgid "3.9 PUT modify test config"
+msgstr "3.9 PUT modify test config"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1126
+msgid "modify test config of one project"
+msgstr "modify test config of one project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1323
+msgid "3.10 GET one test-config"
+msgstr "3.10 GET one test-config"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1324
+msgid "Query one test config by projectId"
+msgstr "Query one test config by projectId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1427
+msgid "3.11 POST upload to store"
+msgstr "3.11 POST upload to store"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1428
+msgid "upload app project to appstore"
+msgstr "upload app project to appstore"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "theauthornameofcreateproject"
+msgstr "theauthornameofcreateproject"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1444
+msgid "3.12 POST open project to eco"
+msgstr "3.12 POST open project to eco"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1445
+msgid "Open project to eco"
+msgstr "Open project to eco"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1476
+msgid "3.13 POST add image to project"
+msgstr "3.13 POST add image to project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1477
+msgid "Add image to project"
+msgstr "Add image to project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "ProjectImageConfig"
+msgstr "ProjectImageConfig"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1512
+msgid "3.14 DELETE image of project"
+msgstr "3.14 DELETE image of project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1513
+msgid "DELETE image of project"
+msgstr "DELETE image of project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "imageId"
+msgstr "imageId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1528
+msgid "3.15 GET image of project"
+msgstr "3.15 GET image of project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1529
+msgid "GET image of project"
+msgstr "GET image of project"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1555
+msgid "3.16 POST open project api"
+msgstr "3.16 POST open project api"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1556
+msgid "POST open project api"
+msgstr "POST open project api"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "user id"
+msgstr "user id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "AbilityOpenConfig"
+msgstr "AbilityOpenConfig"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "entity class"
+msgstr "entity class"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "body param"
+msgstr "body param"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1619
+msgid "3.17 GET project atp task"
+msgstr "3.17 GET project atp task"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1620
+msgid "GET project atp task"
+msgstr "GET project atp task"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1634
+msgid "4. Host"
+msgstr "4.Host"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1635
+msgid "Server of build and test or deploy app"
+msgstr "Server of build and test or deploy app"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1636
+msgid "4.1 GET all host"
+msgstr "4.1 GET all host"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1637
+msgid "Query all host."
+msgstr "Query all host."
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1665
+msgid "4.2 GET one host"
+msgstr "4.2 GET one host"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1666
+msgid "Query  host by id."
+msgstr "Query host by id."
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "hostId"
+msgstr "hostId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "hostid"
+msgstr "hostid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1694
+msgid "4.3 POST create one host"
+msgstr "4.3 POST create one host"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1695 ../../Projects/Developer/Developer_Interfaces.md:1754
+msgid "Create one host."
+msgstr "Create one host."
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "MepHost"
+msgstr "MepHost"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1738
+msgid "4.4 DELETE one host"
+msgstr "4.4 DELETE one host"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1739
+msgid "Delete one host."
+msgstr "Delete one host."
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1753
+msgid "4.5 PUT modify one host"
+msgstr "4.5 PUT modify one host"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1797
+msgid "5. Capability-groups"
+msgstr "5.Capability-groups"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1798
+msgid "Services or capabilities of edge applications"
+msgstr "Services or capabilities of dge applications"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1799
+msgid "5.1 POST create one EdgeGalleryCapabilityGroup"
+msgstr "5.1 POST create one EdgeGalleryCapabilityGroup"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1800
+msgid "Create one Capability group."
+msgstr "Create one Capability group."
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "OpenMepCapabilityGroup"
+msgstr "OpenMepCapabilityGroup"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1850
+msgid "5.2 DELETE one EdgeGalleryCapabilityGroup"
+msgstr "5.2 DELETE one EdgeGalleryCapabilityGroup"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1851
+msgid "Delete one Capability group by id."
+msgstr "Delete one Capability group by id."
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "groupId"
+msgstr "groupId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "groupid"
+msgstr "groupid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1865
+msgid "5.3 POST create one EdgeGalleryCapability"
+msgstr "5.3 POST create one EdgeGalleryCapability"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1866
+msgid "Create one EdgeGalleryCapability"
+msgstr "Create one EdgeGalleryCapability"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "OpenMepCapabilityDetail"
+msgstr "OpenMepCapabilityDetail"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1918
+msgid "5.4 DELETE one EdgeGalleryCapability"
+msgstr "5.4 DELETE one EdgeGalleryCapability"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1919
+msgid "Delete one EdgeGalleryCapability by id"
+msgstr "Delete one EdgeGalleryCapability by id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "capabilityId"
+msgstr "capabilityId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "capabilityid"
+msgstr "capabilityid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1934
+msgid "5.5 GET all EdgeGalleryCapability"
+msgstr "5.5 GET all EdgeGalleryCapability"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1935
+msgid "Gey all EdgeGalleryCapability"
+msgstr "Gey all EdgeGalleryCapability"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1977
+msgid "5.6 GET all EdgeGalleryCapability by groupid"
+msgstr "5.6 GET all EdgeGalleryCapability by groupid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:1978
+msgid "Gey all EdgeGalleryCapability by  groupid"
+msgstr "Gey all EdgeGalleryCapability by groupid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "capabilitygroupid"
+msgstr "capabilitygroupid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2018
+msgid "5.7 GET all EdgeGallery API by fileId"
+msgstr "5.7 GET all EdgeGallery API by fileId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2019
+msgid "Gey all EdgeGallery  API"
+msgstr "Gey all EdgeGallery  API"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "fileId"
+msgstr "fileId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "file id"
+msgstr "file id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2049
+msgid "5.8 GET all EdgeGallery ECO API"
+msgstr "5.8 GET all EdgeGallery ECO API"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2050 ../../Projects/Developer/Developer_Interfaces.md:2074
+msgid "Gey all EdgeGallery ECO API"
+msgstr "Gey all EdgeGallery ECO API"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2073
+msgid "5.9 GET all EdgeGallery API"
+msgstr "5.9 GET all EdgeGallery API"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "api type"
+msgstr "api type"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2118
+msgid "6. File"
+msgstr "6.File"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2119
+msgid "This part is to configure the app, perform app deployment, and test the api for file operations"
+msgstr "This part is to configure the app, perform app deployment, and test the api for fileoperations"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2120
+msgid "6.1 GET one file"
+msgstr "6.1 GET one file"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2121
+msgid "Get one file"
+msgstr "Get one file"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "fileid"
+msgstr "fileid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "theauthoridofuploadfile"
+msgstr "theauthoridofuploadfile"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "file type"
+msgstr "file type"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2137
+msgid "6.2 POST upload one file"
+msgstr "6.2 POST upload one file"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2138
+msgid "Upload  file"
+msgstr "Upload file"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "file"
+msgstr "file"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "MultipartFileclass"
+msgstr "MultipartFileclass"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2161
+msgid "6.3 POST upload helm yaml"
+msgstr "6.3 POST upload helm yaml"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2162
+msgid "Upload helm template yaml."
+msgstr "Upload helm template yaml."
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2186
+msgid "6.4 GET helm yaml"
+msgstr "6.4 GET helm yaml"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2187
+msgid "Query helm template yaml."
+msgstr "Query helm template yaml."
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2204
+msgid "6.5 DELETE helm yaml"
+msgstr "6.5 DELETE helm yaml"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2205
+msgid "Delete helm template yaml."
+msgstr "Delete helm template yaml."
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2219
+msgid "6.6 POST get sample code"
+msgstr "6.6 POST get sample code"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2220
+msgid "Get sample code."
+msgstr "Get sample code."
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "apiFileIds"
+msgstr "apiFileIds"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "apifileid list"
+msgstr "apifileid list"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2239
+msgid "6.7 GET one file return object"
+msgstr "6.7 GET one filereturnobject"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2240
+msgid "Get file return one object"
+msgstr "Get filereturnoneobject"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the author id of upload file"
+msgstr "the author id of upload file"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2263
+msgid "6.8 GET sdk code"
+msgstr "6.8 GET sdk code"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2264
+msgid "GET sdk code"
+msgstr "GET sdk code"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "lan"
+msgstr "lan"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "sdk codeLanguage"
+msgstr "sdk codeLanguage"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2279
+msgid "6.9 GET file content"
+msgstr "6.9 GET filecontent"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2280
+msgid "GET file content"
+msgstr "GET filecontent"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
 msgid "fileName"
 msgstr "fileName"
 
@@ -941,355 +1365,551 @@ msgstr "fileName"
 msgid "file name"
 msgstr "filename"
 
-#: ../../Projects/Developer/Developer_Interfaces.md
-msgid "request param"
-msgstr "request param"
-
-#: ../../Projects/Developer/Developer_Interfaces.md
-msgid "yes"
-msgstr "yes"
-
-#: ../../Projects/Developer/Developer_Interfaces.md:3467
+#: ../../Projects/Developer/Developer_Interfaces.md:2294
 msgid "6.10 POST pkg structure"
 msgstr "6.10 POST pkg structure"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3468
+#: ../../Projects/Developer/Developer_Interfaces.md:2295
 msgid "POST pkg structure"
 msgstr "POST pkg structure"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3505
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "file id arrays"
+msgstr "file id arrays"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2316
 msgid "7. LocalApi"
 msgstr "7.LocalApi"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3506
+#: ../../Projects/Developer/Developer_Interfaces.md:2317
 msgid "Get the APIs of all functional modules of developer platform"
 msgstr "Get the APIs of all functional modules of developer platform"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3507
+#: ../../Projects/Developer/Developer_Interfaces.md:2318
 msgid "7.1 GET one api file"
 msgstr "7.1 GET one api file"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3508
+#: ../../Projects/Developer/Developer_Interfaces.md:2319
 msgid "Get one api file"
 msgstr "Get one api file"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3541
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "apifilename"
+msgstr "apifilename"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2336
 msgid "8. Health"
 msgstr "8.Health"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3542 ../../Projects/Developer/Developer_Interfaces.md:3544
+#: ../../Projects/Developer/Developer_Interfaces.md:2337 ../../Projects/Developer/Developer_Interfaces.md:2339
 msgid "Get health"
 msgstr "Get health"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3543
+#: ../../Projects/Developer/Developer_Interfaces.md:2338
 msgid "8.1 GET health"
 msgstr "8.1 GET health"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3574
+#: ../../Projects/Developer/Developer_Interfaces.md:2353
 msgid "9. AppRelease"
 msgstr "9.AppRelease"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3575
+#: ../../Projects/Developer/Developer_Interfaces.md:2354
 msgid "Get pkg structure and file content"
 msgstr "Get pkg structure and filecontent"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3576
+#: ../../Projects/Developer/Developer_Interfaces.md:2355
 msgid "9.1 GET pkg structure"
 msgstr "9.1 GET pkg structure"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3577
+#: ../../Projects/Developer/Developer_Interfaces.md:2356
 msgid "Get pkg structure"
 msgstr "Get pkg structure"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3620
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "csarId"
+msgstr "csarId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "csar id"
+msgstr "csar id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2378
 msgid "9.2 GET file content"
 msgstr "9.2 GET filecontent"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3621
+#: ../../Projects/Developer/Developer_Interfaces.md:2379
 msgid "Get file content"
 msgstr "Get filecontent"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3657
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "pkg file name"
+msgstr "pkg file name"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2394
 msgid "10. ReleaseConfig"
 msgstr "10.ReleaseConfig"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3658
+#: ../../Projects/Developer/Developer_Interfaces.md:2395
 msgid "Do some configuration before release app"
 msgstr "Do some configuration before release app"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3659
+#: ../../Projects/Developer/Developer_Interfaces.md:2396
 msgid "10.1 GET release config"
 msgstr "10.1 GET release config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3660
+#: ../../Projects/Developer/Developer_Interfaces.md:2397
 msgid "Get release config"
 msgstr "Get release config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3790
+#: ../../Projects/Developer/Developer_Interfaces.md:2511
 msgid "10.2 POST release config"
 msgstr "10.2 POST release config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:3791
+#: ../../Projects/Developer/Developer_Interfaces.md:2512
 msgid "POST release config"
 msgstr "POST release config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4031
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "ReleaseConfig"
+msgstr "ReleaseConfig"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2731
 msgid "10.3 PUT release config"
 msgstr "10.3 PUT release config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4032
+#: ../../Projects/Developer/Developer_Interfaces.md:2732
 msgid "PUT release config"
 msgstr "PUT release config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4272
+#: ../../Projects/Developer/Developer_Interfaces.md:2951
 msgid "11. DeployConfig"
 msgstr "11.DeployConfig"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4273
+#: ../../Projects/Developer/Developer_Interfaces.md:2952
 msgid "Get some config about deploy platform"
 msgstr "Get some config about deploy platform"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4274
+#: ../../Projects/Developer/Developer_Interfaces.md:2953
 msgid "11.1 GET deploy platform"
 msgstr "11.1 GET deploy platform"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4275
+#: ../../Projects/Developer/Developer_Interfaces.md:2954
 msgid "Get deploy platform"
 msgstr "Get deploy platform"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4308
+#: ../../Projects/Developer/Developer_Interfaces.md:2971
 msgid "11.2 PUT deploy platform"
 msgstr "11.2 PUT deploy platform"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4309
+#: ../../Projects/Developer/Developer_Interfaces.md:2972
 msgid "PUT deploy platform"
 msgstr "PUT deploy platform"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4349
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "DeployPlatformConfig"
+msgstr "DeployPlatformConfig"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:2996
 msgid "12. Deploy"
 msgstr "12.Deploy"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4350
+#: ../../Projects/Developer/Developer_Interfaces.md:2997
 msgid "API to manipulate deployment files"
-msgstr "API to manipuate deployment files"
+msgstr "API to manipulate deployment files"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4351
+#: ../../Projects/Developer/Developer_Interfaces.md:2998
 msgid "12.1 GET deploy yaml"
 msgstr "12.1 GET deploy yaml"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4352
+#: ../../Projects/Developer/Developer_Interfaces.md:2999
 msgid "get deploy yaml"
 msgstr "get deploy yaml"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4390
+#: ../../Projects/Developer/Developer_Interfaces.md:3021
 msgid "12.2 PUT deploy yaml"
 msgstr "12.2 PUT deploy yaml"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4391
+#: ../../Projects/Developer/Developer_Interfaces.md:3022
 msgid "modify deploy yaml by file id"
 msgstr "modify deploy yaml by fileid"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4435
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "fileContent"
+msgstr "fileContent"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "file content"
+msgstr "file content"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3045
 msgid "12.3 GET deploy json"
 msgstr "12.3 GET deploy json"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4436
+#: ../../Projects/Developer/Developer_Interfaces.md:3046
 msgid "Get file content with json format"
 msgstr "Get filecontentwithjsonformat"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4468
+#: ../../Projects/Developer/Developer_Interfaces.md:3062
 msgid "12.4 POST deploy yaml"
 msgstr "12.4 POST deploy yaml"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4469
+#: ../../Projects/Developer/Developer_Interfaces.md:3063
 msgid "upload deploy yaml"
 msgstr "upload deploy yaml"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4525
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "jsonStr"
+msgstr "jsonStr"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "deploy yaml content"
+msgstr "deploy yaml content"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "configType"
+msgstr "configType"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "Fields that distinguish deployment types"
+msgstr "Fields that distinguish deployment types"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3088
 msgid "13. System"
 msgstr "13.System"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4526
+#: ../../Projects/Developer/Developer_Interfaces.md:3089
 msgid "About the api with system functions on the developer platform"
 msgstr "About the api with system functions on the developer platform"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4527
+#: ../../Projects/Developer/Developer_Interfaces.md:3090
 msgid "13.1 GET all capability"
 msgstr "13.1 GET all capability"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4528
+#: ../../Projects/Developer/Developer_Interfaces.md:3091
 msgid "GET all capability"
 msgstr "GET all capability"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4615
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "twoLevelName"
+msgstr "twoLevelName"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the name of two level name"
+msgstr "the name of two level name"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "twoLevelNameEn"
+msgstr "twoLevelNameEn"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the name of two level english name"
+msgstr "the name of two level english name"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3142
 msgid "13.2 POST one capability"
 msgstr "13.2 POST one capability"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4616
+#: ../../Projects/Developer/Developer_Interfaces.md:3143
 msgid "create one capability"
 msgstr "create one capability"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4715
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "group"
+msgstr "group"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "CapabilityGroup"
+msgstr "CapabilityGroup"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3226
 msgid "13.3 DELETE one capability"
 msgstr "13.3 DELETE one capability"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4716
+#: ../../Projects/Developer/Developer_Interfaces.md:3227
 msgid "DELETE one capability"
 msgstr "DELETE one capability"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4746
+#: ../../Projects/Developer/Developer_Interfaces.md:3241
 msgid "13.4 GET all host"
 msgstr "13.4 GET all host"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4747
+#: ../../Projects/Developer/Developer_Interfaces.md:3242
 msgid "GET all host"
 msgstr "GET all host"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4819
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "name"
+msgstr "name"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the name of host"
+msgstr "the name of host"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "ip"
+msgstr "ip"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the ip of host"
+msgstr "the ip of host"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3278
 msgid "13.5 POST one host"
 msgstr "13.5 POST one host"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4820
+#: ../../Projects/Developer/Developer_Interfaces.md:3279
 msgid "create one host"
 msgstr "create one host"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4872
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "host"
+msgstr "host"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "Entity class"
+msgstr "Entity class"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3315
 msgid "13.6 GET one host"
 msgstr "13.6 GET one host"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4873
+#: ../../Projects/Developer/Developer_Interfaces.md:3316
 msgid "GET one host"
 msgstr "GET one host"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4919
+#: ../../Projects/Developer/Developer_Interfaces.md:3346
 msgid "13.7 PUT one host"
 msgstr "13.7 PUT one host"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4920
+#: ../../Projects/Developer/Developer_Interfaces.md:3347
 msgid "modify one host"
 msgstr "modify one host"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4993
+#: ../../Projects/Developer/Developer_Interfaces.md:3399
 msgid "13.8 DELETE one host"
 msgstr "13.8 DELETE one host"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:4994
+#: ../../Projects/Developer/Developer_Interfaces.md:3400
 msgid "DELETE one host"
 msgstr "DELETE one host"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5024
+#: ../../Projects/Developer/Developer_Interfaces.md:3414
 msgid "13.9 GET capability detail"
 msgstr "13.9 GET capability detail"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5025
+#: ../../Projects/Developer/Developer_Interfaces.md:3415
 msgid "GET capability detail"
 msgstr "GET capability detail"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5086
+#: ../../Projects/Developer/Developer_Interfaces.md:3460
 msgid "13.10 GET host log"
 msgstr "13.10 GET host log"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5087
+#: ../../Projects/Developer/Developer_Interfaces.md:3461
 msgid "GET host log"
 msgstr "GET host log"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5135
+#: ../../Projects/Developer/Developer_Interfaces.md:3493
 msgid "14. VirtualMachine"
 msgstr "14.VirtualMachine"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5136
+#: ../../Projects/Developer/Developer_Interfaces.md:3494
 msgid "This part is about the api for virtual machine deployment"
 msgstr "This part is about the api for virtual machine deployment"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5137
+#: ../../Projects/Developer/Developer_Interfaces.md:3495
 msgid "14.1 POST one vm"
 msgstr "14.1 POST one vm"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5138
+#: ../../Projects/Developer/Developer_Interfaces.md:3496
 msgid "create one vm"
 msgstr "create one vm"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5327
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "query param"
+msgstr "query param"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "vmCreateConfig"
+msgstr "vmCreateConfig"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3659
 msgid "14.2 DELETE vm config"
 msgstr "14.2 DELETE vm config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5328
+#: ../../Projects/Developer/Developer_Interfaces.md:3660
 msgid "DELETE vm config"
 msgstr "DELETE vm config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5370
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "vmId"
+msgstr "vmId"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3676
 msgid "14.3 GET image config"
 msgstr "14.3 GET image config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5371
+#: ../../Projects/Developer/Developer_Interfaces.md:3677
 msgid "GET image config"
 msgstr "GET image config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5427
+#: ../../Projects/Developer/Developer_Interfaces.md:3712
 msgid "14.4 POST image config"
 msgstr "14.4 POST image config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5428
+#: ../../Projects/Developer/Developer_Interfaces.md:3713
 msgid "create image config"
 msgstr "create image config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5464
+#: ../../Projects/Developer/Developer_Interfaces.md:3728
 msgid "14.5 DELETE image config"
 msgstr "14.5 DELETE image config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5465
+#: ../../Projects/Developer/Developer_Interfaces.md:3729
 msgid "delete image config"
 msgstr "delete image config"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5501
+#: ../../Projects/Developer/Developer_Interfaces.md:3744
 msgid "14.6 GET image config By ProjectId"
 msgstr "14.6 GET image config By ProjectId"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5502
+#: ../../Projects/Developer/Developer_Interfaces.md:3745
 msgid "GET image config By ProjectId"
 msgstr "GET image config By ProjectId"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5611
+#: ../../Projects/Developer/Developer_Interfaces.md:3833
 msgid "14.7 GET csar pkg"
 msgstr "14.7 GET csar pkg"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5612 ../../Projects/Developer/Developer_Interfaces.md:5721
+#: ../../Projects/Developer/Developer_Interfaces.md:3834 ../../Projects/Developer/Developer_Interfaces.md:3901
 msgid "GET csar pkg"
 msgstr "GET csar pkg"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5654
+#: ../../Projects/Developer/Developer_Interfaces.md:3850
 msgid "14.8 GET vm resources"
 msgstr "14.8 GET vm resources"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5655
+#: ../../Projects/Developer/Developer_Interfaces.md:3851
 msgid "GET vm resources"
 msgstr "GET vm resources"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5720
+#: ../../Projects/Developer/Developer_Interfaces.md:3900
 msgid "14.9 POST vm file"
 msgstr "14.9 POST vm file"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5769
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "File"
+msgstr "File"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "formdate param"
+msgstr "formdate param"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3918
 msgid "15. Image"
 msgstr "15.Image"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5770
+#: ../../Projects/Developer/Developer_Interfaces.md:3919
 msgid "This part is about the api for deploying APP image"
 msgstr "This part is about the api for deploying APP image"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5771
+#: ../../Projects/Developer/Developer_Interfaces.md:3920
 msgid "15.1 POST upload image"
 msgstr "15.1 POST upload image"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5772
+#: ../../Projects/Developer/Developer_Interfaces.md:3921
 msgid "POST upload image"
 msgstr "POST upload image"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5871
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "id"
+msgstr "id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "image chunk id"
+msgstr "image chunk id"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "chunkNumber"
+msgstr "chunkNumber"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "file chunk Number"
+msgstr "file chunk Number"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "chunkSize"
+msgstr "chunkSize"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the size of every chunk"
+msgstr "the size of every chunk"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "currentChunkSize"
+msgstr "currentChunkSize"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the length of current file chunk"
+msgstr "the length of current filechunk"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "totalSize"
+msgstr "totalSize"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the totalSize of file"
+msgstr "the totalSize of file"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "identifier"
+msgstr "identifier"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "file identifier"
+msgstr "file identifier"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "filename"
+msgstr "filename"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "fil ename"
+msgstr "fil ename"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "relativePath"
+msgstr "relativePath"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the relative Path of file"
+msgstr "the relative Path of file"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "totalChunks"
+msgstr "totalChunks"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "Total number of file blocks"
+msgstr "Total number of file blocks"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the file to upload"
+msgstr "the file to upload"
+
+#: ../../Projects/Developer/Developer_Interfaces.md:3954
 msgid "15.2 GET merge image"
 msgstr "15.2 GET merge image"
 
-#: ../../Projects/Developer/Developer_Interfaces.md:5872
+#: ../../Projects/Developer/Developer_Interfaces.md:3955
 msgid "after every file chunk uploaded, then merge to a file with same as you uploaded"
 msgstr "after every file chunk uploaded,then merge to a file with same as you uploaded"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "guid"
+msgstr "guid"
+
+#: ../../Projects/Developer/Developer_Interfaces.md
+msgid "the file id of need to merge"
+msgstr "the file id of need to merge"
 

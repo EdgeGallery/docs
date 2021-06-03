@@ -20,4 +20,3 @@ msgstr ""
 #: ../../Resource Repositories/README.md:1 and
 msgid "EdgeGallery PTs & WGs"
 msgstr "EdgeGallery PTs & WGs"
-

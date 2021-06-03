@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-02 18:43+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,2430 @@ msgstr "Developer Dependency"
 msgid "Developer-be 三方件使用清单"
 msgstr "Developer-be Trilateral Use List"
 
-#: ../../Projects/Developer/Developer_Dependency.md:1812
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "groupId"
+msgstr "groupId"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "artifactId"
+msgstr "artifactId"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "version"
+msgstr "version"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "license"
+msgstr "license"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "direct import (Y/N)"
+msgstr "direct import (Y/N)"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ch.ethz.ganymed"
+msgstr "ch.ethz.ganymed"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ganymed-ssh2"
+msgstr "ganymed-ssh2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "262"
+msgstr "262"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "BSD"
+msgstr "BSD"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "Y"
+msgstr "Y"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ch.qos.logback"
+msgstr "ch.qos.logback"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "logback-classic"
+msgstr "logback-classic"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.2.3"
+msgstr "1.2.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "EPL 1.0,LGPL 2.1"
+msgstr "EPL 1.0,LGPL 2.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "N"
+msgstr "N"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "logback-core"
+msgstr "logback-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.esotericsoftware.yamlbeans"
+msgstr "com.esotericsoftware.yamlbeans"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "yamlbeans"
+msgstr "yamlbeans"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.13"
+msgstr "1.13"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "BSD 2-clause"
+msgstr "BSD 2-clause"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.fasterxml.jackson.core"
+msgstr "com.fasterxml.jackson.core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jackson-annotations"
+msgstr "jackson-annotations"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.10.0"
+msgstr "2.10.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "Apache 2.0"
+msgstr "Apache 2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jackson-core"
+msgstr "jackson-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.10.5"
+msgstr "2.10.5"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jackson-databind"
+msgstr "jackson-databind"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.10.5.1"
+msgstr "2.10.5.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.fasterxml.jackson.dataformat"
+msgstr "com.fasterxml.jackson.dataformat"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jackson-dataformat-xml"
+msgstr "jackson-dataformat-xml"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jackson-dataformat-yaml"
+msgstr "jackson-dataformat-yaml"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.fasterxml.jackson.datatype"
+msgstr "com.fasterxml.jackson.datatype"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jackson-datatype-jdk8"
+msgstr "jackson-datatype-jdk8"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jackson-datatype-jsr310"
+msgstr "jackson-datatype-jsr310"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.fasterxml.jackson.jaxrs"
+msgstr "com.fasterxml.jackson.jaxrs"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jackson-jaxrs-base"
+msgstr "jackson-jaxrs-base"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.9.9"
+msgstr "2.9.9"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "Apache"
+msgstr "Apache"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jackson-jaxrs-json-provider"
+msgstr "jackson-jaxrs-json-provider"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.fasterxml.jackson.module"
+msgstr "com.fasterxml.jackson.module"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jackson-module-jaxb-annotations"
+msgstr "jackson-module-jaxb-annotations"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jackson-module-parameter-names"
+msgstr "jackson-module-parameter-names"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.fasterxml"
+msgstr "com.fasterxml"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "classmate"
+msgstr "classmate"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.4.0"
+msgstr "1.4.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.github.docker-java"
+msgstr "com.github.docker-java"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "docker-java-api"
+msgstr "docker-java-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.2.7"
+msgstr "3.2.7"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "docker-java-core"
+msgstr "docker-java-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "docker-java-transport-jersey"
+msgstr "docker-java-transport-jersey"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "docker-java-transport-netty"
+msgstr "docker-java-transport-netty"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "docker-java-transport"
+msgstr "docker-java-transport"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "docker-java"
+msgstr "docker-java"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.github.jsqlparser"
+msgstr "com.github.jsqlparser"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jsqlparser"
+msgstr "jsqlparser"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.0"
+msgstr "2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "Apache 2.0,LGPL 2.1"
+msgstr "Apache 2.0,LGPL 2.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.github.pagehelper"
+msgstr "com.github.pagehelper"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "pagehelper-spring-boot-autoconfigure"
+msgstr "pagehelper-spring-boot-autoconfigure"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.2.13"
+msgstr "1.2.13"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "MIT"
+msgstr "MIT"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "pagehelper-spring-boot-starter"
+msgstr "pagehelper-spring-boot-starter"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "pagehelper"
+msgstr "pagehelper"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.1.11"
+msgstr "5.1.11"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.google.code.findbugs"
+msgstr "com.google.code.findbugs"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jsr305"
+msgstr "jsr305"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.0.2"
+msgstr "3.0.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.google.code.gson"
+msgstr "com.google.code.gson"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "gson"
+msgstr "gson"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.8.5"
+msgstr "2.8.5"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.google.guava"
+msgstr "com.google.guava"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "guava"
+msgstr "guava"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "26.0-jre"
+msgstr "26.0-jre"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.google.inject"
+msgstr "com.google.inject"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "guice"
+msgstr "guice"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.2.0"
+msgstr "4.2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.google.inject.extensions"
+msgstr "com.google.inject.extensions"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "guice-assistedinject"
+msgstr "guice-assistedinject"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.1.0"
+msgstr "4.1.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "guice-multibindings"
+msgstr "guice-multibindings"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.google.protobuf"
+msgstr "com.google.protobuf"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "protobuf-java"
+msgstr "protobuf-java"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.7.1"
+msgstr "3.7.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "BSD 3-Clause"
+msgstr "BSD 3-Clause"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.h2database"
+msgstr "com.h2database"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "h2"
+msgstr "h2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.4.199"
+msgstr "1.4.199"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "MPL 2.0,EPL 1.0"
+msgstr "MPL 2.0,EPL 1.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.ibm.icu"
+msgstr "com.ibm.icu"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "icu4j"
+msgstr "icu4j"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "58.2"
+msgstr "58.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ICU"
+msgstr "ICU"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.jayway.jsonpath"
+msgstr "com.jayway.jsonpath"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "json-path"
+msgstr "json-path"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.4.0"
+msgstr "2.4.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.jcraft"
+msgstr "com.jcraft"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jsch"
+msgstr "jsch"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.1.54"
+msgstr "0.1.54"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.kohlschutter.junixsocket"
+msgstr "com.kohlschutter.junixsocket"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "junixsocket-common"
+msgstr "junixsocket-common"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.3.2"
+msgstr "2.3.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "junixsocket-native-common"
+msgstr "junixsocket-native-common"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.mikesamuel"
+msgstr "com.mikesamuel"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "json-sanitizer"
+msgstr "json-sanitizer"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.2.2"
+msgstr "1.2.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.netflix.archaius"
+msgstr "com.netflix.archaius"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "archaius-core"
+msgstr "archaius-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.7.6"
+msgstr "0.7.6"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.netflix.hystrix"
+msgstr "com.netflix.hystrix"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "hystrix-core"
+msgstr "hystrix-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.5.18"
+msgstr "1.5.18"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.netflix.netflix-commons"
+msgstr "com.netflix.netflix-commons"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netflix-commons-util"
+msgstr "netflix-commons-util"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.3.0"
+msgstr "0.3.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netflix-statistics"
+msgstr "netflix-statistics"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.1.1"
+msgstr "0.1.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.netflix.ribbon"
+msgstr "com.netflix.ribbon"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ribbon"
+msgstr "ribbon"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.3.0"
+msgstr "2.3.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ribbon-core"
+msgstr "ribbon-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ribbon-loadbalancer"
+msgstr "ribbon-loadbalancer"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ribbon-transport"
+msgstr "ribbon-transport"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.netflix.servo"
+msgstr "com.netflix.servo"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "servo-core"
+msgstr "servo-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.12.21"
+msgstr "0.12.21"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.netflix.spectator"
+msgstr "com.netflix.spectator"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spectator-api"
+msgstr "spectator-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.83.0"
+msgstr "0.83.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spectator-reg-servo"
+msgstr "spectator-reg-servo"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.spencerwi"
+msgstr "com.spencerwi"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "Either.java"
+msgstr "Either.java"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.1.0"
+msgstr "2.1.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.sun.istack"
+msgstr "com.sun.istack"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "istack-commons-runtime"
+msgstr "istack-commons-runtime"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.0.7"
+msgstr "3.0.7"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "CDDL 1.1,GPL 1.1"
+msgstr "CDDL 1.1,GPL 1.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.sun.xml.fastinfoset"
+msgstr "com.sun.xml.fastinfoset"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "FastInfoset"
+msgstr "FastInfoset"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.2.15"
+msgstr "1.2.15"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.vaadin.external.google"
+msgstr "com.vaadin.external.google"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "android-json"
+msgstr "android-json"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.0.20131108.vaadin1"
+msgstr "0.0.20131108.vaadin1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.zaxxer"
+msgstr "com.zaxxer"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "HikariCP"
+msgstr "HikariCP"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.2.0"
+msgstr "3.2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "Apache  2.0"
+msgstr "Apache  2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "commons-codec"
+msgstr "commons-codec"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.11"
+msgstr "1.11"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "commons-configuration"
+msgstr "commons-configuration"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.10"
+msgstr "1.10"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "commons-fileupload"
+msgstr "commons-fileupload"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.3.3"
+msgstr "1.3.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "commons-io"
+msgstr "commons-io"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.6"
+msgstr "2.6"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "commons-lang"
+msgstr "commons-lang"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "commons-net"
+msgstr "commons-net"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.3"
+msgstr "3.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.lettuce"
+msgstr "io.lettuce"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "lettuce-core"
+msgstr "lettuce-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.1.8.RELEASE"
+msgstr "5.1.8.RELEASE"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.netty"
+msgstr "io.netty"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-buffer"
+msgstr "netty-buffer"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.1.36.Final"
+msgstr "4.1.36.Final"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-codec"
+msgstr "netty-codec"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-codec-dns"
+msgstr "netty-codec-dns"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-codec-http"
+msgstr "netty-codec-http"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-codec-http2"
+msgstr "netty-codec-http2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-codec-socks"
+msgstr "netty-codec-socks"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-common"
+msgstr "netty-common"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-handler"
+msgstr "netty-handler"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-handler-proxy"
+msgstr "netty-handler-proxy"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-resolver"
+msgstr "netty-resolver"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-resolver-dns"
+msgstr "netty-resolver-dns"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-tcnative-boringssl-static"
+msgstr "netty-tcnative-boringssl-static"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.0.25.Final"
+msgstr "2.0.25.Final"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-transport"
+msgstr "netty-transport"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-transport-native-epoll"
+msgstr "netty-transport-native-epoll"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "l4.1.36.Final"
+msgstr "l4.1.36.Final"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-transport-native-kqueue"
+msgstr "netty-transport-native-kqueue"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "netty-transport-native-unix-common"
+msgstr "netty-transport-native-unix-common"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.projectreactor"
+msgstr "io.projectreactor"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "reactor-core"
+msgstr "reactor-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.2.8.RELEASE"
+msgstr "3.2.8.RELEASE"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.protostuff"
+msgstr "io.protostuff"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "protostuff-api"
+msgstr "protostuff-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.5.9"
+msgstr "1.5.9"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "protostuff-collectionschema"
+msgstr "protostuff-collectionschema"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "protostuff-core"
+msgstr "protostuff-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "protostuff-parser"
+msgstr "protostuff-parser"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.2.25"
+msgstr "2.2.25"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "protostuff-runtime"
+msgstr "protostuff-runtime"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.reactivex"
+msgstr "io.reactivex"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "rxjava"
+msgstr "rxjava"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.2.0"
+msgstr "1.2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "rxnetty"
+msgstr "rxnetty"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.4.9"
+msgstr "0.4.9"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "rxnetty-contexts"
+msgstr "rxnetty-contexts"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "rxnetty-servo"
+msgstr "rxnetty-servo"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.swagger"
+msgstr "io.swagger"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "swagger-annotations"
+msgstr "swagger-annotations"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.5.22"
+msgstr "1.5.22"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "swagger-core"
+msgstr "swagger-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "swagger-models"
+msgstr "swagger-models"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.vertx"
+msgstr "io.vertx"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vertx-auth-common"
+msgstr "vertx-auth-common"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.9.4"
+msgstr "3.9.4"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vertx-bridge-common"
+msgstr "vertx-bridge-common"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vertx-core"
+msgstr "vertx-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vertx-web"
+msgstr "vertx-web"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vertx-web-common"
+msgstr "vertx-web-common"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.zipkin.brave"
+msgstr "io.zipkin.brave"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "brave"
+msgstr "brave"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.6.0"
+msgstr "5.6.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.zipkin.reporter2"
+msgstr "io.zipkin.reporter2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "zipkin-reporter"
+msgstr "zipkin-reporter"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.7.13"
+msgstr "2.7.13"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.zipkin.zipkin2"
+msgstr "io.zipkin.zipkin2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "zipkin"
+msgstr "zipkin"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.19.1"
+msgstr "2.19.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jakarta.activation"
+msgstr "jakarta.activation"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jakarta.activation-api"
+msgstr "jakarta.activation-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "EDL 1.0"
+msgstr "EDL 1.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jakarta.xml.bind"
+msgstr "jakarta.xml.bind"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jakarta.xml.bind-api"
+msgstr "jakarta.xml.bind-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.3.3"
+msgstr "2.3.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.activation"
+msgstr "javax.activation"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.activation-api"
+msgstr "javax.activation-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "CDDL,GPL2.0"
+msgstr "CDDL,GPL2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.annotation"
+msgstr "javax.annotation"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.annotation-api"
+msgstr "javax.annotation-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.3.2"
+msgstr "1.3.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "CDDL,GPLv2.0"
+msgstr "CDDL,GPLv2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.inject"
+msgstr "javax.inject"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1"
+msgstr "1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.servlet"
+msgstr "javax.servlet"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.servlet-api"
+msgstr "javax.servlet-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.0.1"
+msgstr "4.0.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.validation"
+msgstr "javax.validation"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "validation-api"
+msgstr "validation-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.0.1.Final"
+msgstr "2.0.1.Final"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.ws.rs"
+msgstr "javax.ws.rs"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.ws.rs-api"
+msgstr "javax.ws.rs-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.1"
+msgstr "2.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.xml.bind"
+msgstr "javax.xml.bind"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jaxb-api"
+msgstr "jaxb-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.3.1"
+msgstr "2.3.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "CDDL 1.1"
+msgstr "CDDL 1.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "junit"
+msgstr "junit"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.13"
+msgstr "4.13"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "EPL 1.0"
+msgstr "EPL 1.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "net.bytebuddy"
+msgstr "net.bytebuddy"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "byte-buddy"
+msgstr "byte-buddy"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.9.13"
+msgstr "1.9.13"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "byte-buddy-agent"
+msgstr "byte-buddy-agent"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "net.lingala.zip4j"
+msgstr "net.lingala.zip4j"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "zip4j"
+msgstr "zip4j"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "net.minidev"
+msgstr "net.minidev"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "accessors-smart"
+msgstr "accessors-smart"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.2"
+msgstr "1.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "json-smart"
+msgstr "json-smart"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.3"
+msgstr "2.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.antlr"
+msgstr "org.antlr"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ST4"
+msgstr "ST4"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.0.8"
+msgstr "4.0.8"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "antlr-runtime"
+msgstr "antlr-runtime"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.5.2"
+msgstr "3.5.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "antlr4"
+msgstr "antlr4"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.7"
+msgstr "4.7"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "The BSD"
+msgstr "The BSD"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "antlr4-runtime"
+msgstr "antlr4-runtime"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.apache.ant"
+msgstr "org.apache.ant"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ant"
+msgstr "ant"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.8.2"
+msgstr "1.8.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ant-launcher"
+msgstr "ant-launcher"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.apache.commons"
+msgstr "org.apache.commons"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "commons-compress"
+msgstr "commons-compress"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.19"
+msgstr "1.19"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "commons-lang3"
+msgstr "commons-lang3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.8.1"
+msgstr "3.8.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.apache.httpcomponents"
+msgstr "org.apache.httpcomponents"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "httpclient"
+msgstr "httpclient"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.5.9"
+msgstr "4.5.9"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "httpcore"
+msgstr "httpcore"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.4.11"
+msgstr "4.4.11"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "httpmime"
+msgstr "httpmime"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.3.1"
+msgstr "4.3.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.apache.logging.log4j"
+msgstr "org.apache.logging.log4j"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "log4j-api"
+msgstr "log4j-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.13.3"
+msgstr "2.13.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "log4j-core"
+msgstr "log4j-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "log4j-slf4j-impl"
+msgstr "log4j-slf4j-impl"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "log4j-to-slf4j"
+msgstr "log4j-to-slf4j"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.11.2"
+msgstr "2.11.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.apache.servicecomb"
+msgstr "org.apache.servicecomb"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "common-javassist"
+msgstr "common-javassist"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "common-protobuf"
+msgstr "common-protobuf"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "common-rest"
+msgstr "common-rest"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "deployment"
+msgstr "deployment"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "foundation-common"
+msgstr "foundation-common"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "foundation-config"
+msgstr "foundation-config"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "foundation-metrics"
+msgstr "foundation-metrics"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "foundation-protobuf"
+msgstr "foundation-protobuf"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "foundation-ssl"
+msgstr "foundation-ssl"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "foundation-vertx"
+msgstr "foundation-vertx"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "handler-bizkeeper"
+msgstr "handler-bizkeeper"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "handler-flowcontrol-qps"
+msgstr "handler-flowcontrol-qps"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "handler-loadbalance"
+msgstr "handler-loadbalance"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "java-chassis-core"
+msgstr "java-chassis-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "provider-jaxrs"
+msgstr "provider-jaxrs"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "provider-pojo"
+msgstr "provider-pojo"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "provider-rest-common"
+msgstr "provider-rest-common"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "provider-springmvc"
+msgstr "provider-springmvc"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "service-registry"
+msgstr "service-registry"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot2-starter"
+msgstr "spring-boot2-starter"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot2-starter-servlet"
+msgstr "spring-boot2-starter-servlet"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "swagger-generator-core"
+msgstr "swagger-generator-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "swagger-generator-jaxrs"
+msgstr "swagger-generator-jaxrs"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "swagger-generator-springmvc"
+msgstr "swagger-generator-springmvc"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "swagger-invocation-core"
+msgstr "swagger-invocation-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "swagger-invocation-jaxrs"
+msgstr "swagger-invocation-jaxrs"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "swagger-invocation-springmvc"
+msgstr "swagger-invocation-springmvc"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "transport-common"
+msgstr "transport-common"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "transport-highway"
+msgstr "transport-highway"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "transport-rest-client"
+msgstr "transport-rest-client"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "transport-rest-servlet"
+msgstr "transport-rest-servlet"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.apache.tomcat"
+msgstr "org.apache.tomcat"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "tomcat-annotations-api"
+msgstr "tomcat-annotations-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "9.0.21"
+msgstr "9.0.21"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.apache.tomcat.embed"
+msgstr "org.apache.tomcat.embed"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "tomcat-embed-core"
+msgstr "tomcat-embed-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "9.0.44"
+msgstr "9.0.44"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "tomcat-embed-el"
+msgstr "tomcat-embed-el"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "tomcat-embed-websocket"
+msgstr "tomcat-embed-websocket"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.apiguardian"
+msgstr "org.apiguardian"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "apiguardian-api"
+msgstr "apiguardian-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.0.0"
+msgstr "1.0.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.assertj"
+msgstr "org.assertj"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "assertj-core"
+msgstr "assertj-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.11.1"
+msgstr "3.11.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.awaitility"
+msgstr "org.awaitility"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "awaitility"
+msgstr "awaitility"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.0.0"
+msgstr "3.0.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.bouncycastle"
+msgstr "org.bouncycastle"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "bcpkix-jdk15on"
+msgstr "bcpkix-jdk15on"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.56"
+msgstr "1.56"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "BouncyCastle"
+msgstr "BouncyCastle"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "bcprov-jdk15on"
+msgstr "bcprov-jdk15on"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.68"
+msgstr "1.68"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.checkerframework"
+msgstr "org.checkerframework"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "checker-qual"
+msgstr "checker-qual"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.5.0"
+msgstr "3.5.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.codehaus.woodstox"
+msgstr "org.codehaus.woodstox"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "stax2-api"
+msgstr "stax2-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.2"
+msgstr "4.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.eclipse.persistence"
+msgstr "org.eclipse.persistence"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.persistence"
+msgstr "javax.persistence"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.glassfish.hk2.external"
+msgstr "org.glassfish.hk2.external"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "aopalliance-repackaged"
+msgstr "aopalliance-repackaged"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.5.0-b42"
+msgstr "2.5.0-b42"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "EPL 2.0"
+msgstr "EPL 2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.glassfish.hk2"
+msgstr "org.glassfish.hk2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "hk2-api"
+msgstr "hk2-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "hk2-locator"
+msgstr "hk2-locator"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "hk2-utils"
+msgstr "hk2-utils"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "osgi-resource-locator"
+msgstr "osgi-resource-locator"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.0.1"
+msgstr "1.0.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.glassfish.jaxb"
+msgstr "org.glassfish.jaxb"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jaxb-runtime"
+msgstr "jaxb-runtime"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "CDDL,GPL"
+msgstr "CDDL,GPL"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "txw2"
+msgstr "txw2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.glassfish.jersey.connectors"
+msgstr "org.glassfish.jersey.connectors"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jersey-apache-connector"
+msgstr "jersey-apache-connector"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.27"
+msgstr "2.27"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "Apache 2.0,BSD 2-clause,EDL 1.0,EPL 2.0,MIT,Public,W3C"
+msgstr "Apache 2.0,BSD 2-clause,EDL 1.0,EPL 2.0,MIT,Public,W3C"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.glassfish.jersey.core"
+msgstr "org.glassfish.jersey.core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jersey-client"
+msgstr "jersey-client"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jersey-common"
+msgstr "jersey-common"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.glassfish.jersey.inject"
+msgstr "org.glassfish.jersey.inject"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jersey-hk2"
+msgstr "jersey-hk2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.glassfish"
+msgstr "org.glassfish"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jakarta.el"
+msgstr "jakarta.el"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.0.3"
+msgstr "3.0.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.json"
+msgstr "javax.json"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.0.4"
+msgstr "1.0.4"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "CDDL 1.1,GPL 2.0"
+msgstr "CDDL 1.1,GPL 2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.hamcrest"
+msgstr "org.hamcrest"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "hamcrest-core"
+msgstr "hamcrest-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.3"
+msgstr "1.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "BSD 3-clause"
+msgstr "BSD 3-clause"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "hamcrest-library"
+msgstr "hamcrest-library"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "hamcrest"
+msgstr "hamcrest"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.hdrhistogram"
+msgstr "org.hdrhistogram"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "HdrHistogram"
+msgstr "HdrHistogram"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.1.10"
+msgstr "2.1.10"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "BSD 2-clause,CC0 1.0"
+msgstr "BSD 2-clause, CC0 1.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.hibernate.validator"
+msgstr "org.hibernate.validator"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "hibernate-validator"
+msgstr "hibernate-validator"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "6.0.17.Final"
+msgstr "6.0.17.Final"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.javassist"
+msgstr "org.javassist"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javassist"
+msgstr "javassist"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.24.0-GA"
+msgstr "3.24.0-GA"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.jboss.logging"
+msgstr "org.jboss.logging"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jboss-logging"
+msgstr "jboss-logging"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.3.2.Final"
+msgstr "3.3.2.Final"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.jmockit"
+msgstr "org.jmockit"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jmockit"
+msgstr "jmockit"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jmockit-coverage"
+msgstr "jmockit-coverage"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.junit.jupiter"
+msgstr "org.junit.jupiter"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "junit-jupiter-api"
+msgstr "junit-jupiter-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.3.2"
+msgstr "5.3.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "junit-jupiter-engine"
+msgstr "junit-jupiter-engine"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "junit-jupiter-params"
+msgstr "junit-jupiter-params"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "junit-jupiter"
+msgstr "junit-jupiter"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.6.2"
+msgstr "5.6.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.junit.platform"
+msgstr "org.junit.platform"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "junit-platform-commons"
+msgstr "junit-platform-commons"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "junit-platform-engine"
+msgstr "junit-platform-engine"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.junit.vintage"
+msgstr "org.junit.vintage"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "junit-vintage-engine"
+msgstr "junit-vintage-engine"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.jvnet.staxex"
+msgstr "org.jvnet.staxex"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "stax-ex"
+msgstr "stax-ex"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.8"
+msgstr "1.8"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.mockito"
+msgstr "org.mockito"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "mockito-core"
+msgstr "mockito-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.23.4"
+msgstr "2.23.4"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "mockito-junit-jupiter"
+msgstr "mockito-junit-jupiter"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.modelmapper"
+msgstr "org.modelmapper"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "modelmapper"
+msgstr "modelmapper"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.1.0"
+msgstr "1.1.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.mybatis"
+msgstr "org.mybatis"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "mybatis"
+msgstr "mybatis"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.5.6"
+msgstr "3.5.6"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "mybatis-spring"
+msgstr "mybatis-spring"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.0.6"
+msgstr "2.0.6"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.mybatis.spring.boot"
+msgstr "org.mybatis.spring.boot"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "mybatis-spring-boot-autoconfigure"
+msgstr "mybatis-spring-boot-autoconfigure"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.1.4"
+msgstr "2.1.4"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "mybatis-spring-boot-starter"
+msgstr "mybatis-spring-boot-starter"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.objenesis"
+msgstr "org.objenesis"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "objenesis"
+msgstr "objenesis"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "Apache 2"
+msgstr "Apache 2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.opentest4j"
+msgstr "org.opentest4j"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "opentest4j"
+msgstr "opentest4j"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.1.1"
+msgstr "1.1.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.ow2.asm"
+msgstr "org.ow2.asm"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "asm"
+msgstr "asm"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.0.4"
+msgstr "5.0.4"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.postgresql"
+msgstr "org.postgresql"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "postgresql"
+msgstr "postgresql"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "42.2.16"
+msgstr "42.2.16"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "BSD 2-Clause"
+msgstr "BSD 2-Clause"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.projectlombok"
+msgstr "org.projectlombok"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "lombok"
+msgstr "lombok"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.18.10"
+msgstr "1.18.10"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "The MIT"
+msgstr "The MIT"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.reactivestreams"
+msgstr "org.reactivestreams"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "reactive-streams"
+msgstr "reactive-streams"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "CC0"
+msgstr "CC0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.skyscreamer"
+msgstr "org.skyscreamer"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jsonassert"
+msgstr "jsonassert"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.5.0"
+msgstr "1.5.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.slf4j"
+msgstr "org.slf4j"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jcl-over-slf4j"
+msgstr "jcl-over-slf4j"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.7.26"
+msgstr "1.7.26"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jcl-to-slf4j"
+msgstr "jcl-to-slf4j"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "slf4j-api"
+msgstr "slf4j-api"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.7.30"
+msgstr "1.7.30"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.springframework.boot"
+msgstr "org.springframework.boot"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-autoconfigure"
+msgstr "spring-boot-autoconfigure"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.1.6.RELEASE"
+msgstr "2.1.6.RELEASE"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-configuration-processor"
+msgstr "spring-boot-configuration-processor"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-jdbc"
+msgstr "spring-boot-starter-jdbc"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.3.3.RELEASE"
+msgstr "2.3.3.RELEASE"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-json"
+msgstr "spring-boot-starter-json"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-logging"
+msgstr "spring-boot-starter-logging"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-test"
+msgstr "spring-boot-starter-test"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-tomcat"
+msgstr "spring-boot-starter-tomcat"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-validation"
+msgstr "spring-boot-starter-validation"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-web"
+msgstr "spring-boot-starter-web"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-websocket"
+msgstr "spring-boot-starter-websocket"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.1.18.RELEASE"
+msgstr "2.1.18.RELEASE"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter"
+msgstr "spring-boot-starter"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-test-autoconfigure"
+msgstr "spring-boot-test-autoconfigure"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-test"
+msgstr "spring-boot-test"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot"
+msgstr "spring-boot"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.springframework"
+msgstr "org.springframework"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-aop"
+msgstr "spring-aop"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.1.13.RELEASE"
+msgstr "5.1.13.RELEASE"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-beans"
+msgstr "spring-beans"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-context"
+msgstr "spring-context"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-core"
+msgstr "spring-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-expression"
+msgstr "spring-expression"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-jcl"
+msgstr "spring-jcl"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-jdbc"
+msgstr "spring-jdbc"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.2.8.RELEASE"
+msgstr "5.2.8.RELEASE"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-test"
+msgstr "spring-test"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-tx"
+msgstr "spring-tx"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-web"
+msgstr "spring-web"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-webmvc"
+msgstr "spring-webmvc"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-websocket"
+msgstr "spring-websocket"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.springframework.security"
+msgstr "org.springframework.security"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-security-config"
+msgstr "spring-security-config"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.3.8.RELEASE"
+msgstr "5.3.8.RELEASE"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-security-core"
+msgstr "spring-security-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-security-jwt"
+msgstr "spring-security-jwt"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.0.9.RELEASE"
+msgstr "1.0.9.RELEASE"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-security-test"
+msgstr "spring-security-test"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.3.4.RELEASE"
+msgstr "5.3.4.RELEASE"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-security-web"
+msgstr "spring-security-web"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.springframework.security.oauth"
+msgstr "org.springframework.security.oauth"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-security-oauth2"
+msgstr "spring-security-oauth2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.3.8.RELEASE"
+msgstr "2.3.8.RELEASE"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.springframework.security.oauth.boot"
+msgstr "org.springframework.security.oauth.boot"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-security-oauth2-autoconfigure"
+msgstr "spring-security-oauth2-autoconfigure"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.2.2"
+msgstr "2.2.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.xmlunit"
+msgstr "org.xmlunit"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "xmlunit-core"
+msgstr "xmlunit-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.6.2"
+msgstr "2.6.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.yaml"
+msgstr "org.yaml"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "snakeyaml"
+msgstr "snakeyaml"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.26"
+msgstr "1.26"
+
+#: ../../Projects/Developer/Developer_Dependency.md:264
 msgid "Developer-fe 三方件使用清单"
 msgstr "Developer-fe Trilateral Use List"
 
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "type"
+msgstr "type"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "name"
+msgstr "name"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "dependencies"
+msgstr "dependencies"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "acorn"
+msgstr "acorn"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "7.2.0"
+msgstr "7.2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "auth0-js"
+msgstr "auth0-js"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "9.13.2"
+msgstr "9.13.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "axios"
+msgstr "axios"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.21.1"
+msgstr "0.21.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "core-js"
+msgstr "core-js"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.3.2"
+msgstr "3.3.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "dot-prop"
+msgstr "dot-prop"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.2.1"
+msgstr "4.2.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "echarts"
+msgstr "echarts"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.4.0"
+msgstr "4.4.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "Apache-2.0"
+msgstr "Apache-2.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "eg-view"
+msgstr "eg-view"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.0.12"
+msgstr "0.0.12"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "el-table-pagination"
+msgstr "el-table-pagination"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.4.38"
+msgstr "0.4.38"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "element-china-area-data"
+msgstr "element-china-area-data"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.1.2"
+msgstr "4.1.2"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "element-ui"
+msgstr "element-ui"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.12.0"
+msgstr "2.12.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "elliptic"
+msgstr "elliptic"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "6.5.4"
+msgstr "6.5.4"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "http-proxy"
+msgstr "http-proxy"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.18.1"
+msgstr "1.18.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "http-proxy-agent"
+msgstr "http-proxy-agent"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "kity"
+msgstr "kity"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.0.4"
+msgstr "2.0.4"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "kityminder-core"
+msgstr "kityminder-core"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.4.50"
+msgstr "1.4.50"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "BSD-3-Clause"
+msgstr "BSD-3-Clause"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "less-loader"
+msgstr "less-loader"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.0.0"
+msgstr "5.0.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "local-storage"
+msgstr "local-storage"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.0.0"
+msgstr "2.0.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "lodash"
+msgstr "lodash"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.17.21"
+msgstr "4.17.21"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "mavon-editor"
+msgstr "mavon-editor"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.9.1"
+msgstr "2.9.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "serialize-javascript"
+msgstr "serialize-javascript"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.0.0"
+msgstr "4.0.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "swagger-ui"
+msgstr "swagger-ui"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.39.0"
+msgstr "3.39.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "v-charts"
+msgstr "v-charts"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.19.0"
+msgstr "1.19.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vue"
+msgstr "vue"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.6.11"
+msgstr "2.6.11"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vue-cookies"
+msgstr "vue-cookies"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.7.0"
+msgstr "1.7.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vue-i18n"
+msgstr "vue-i18n"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "8.15.3"
+msgstr "8.15.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vue-router"
+msgstr "vue-router"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.1.3"
+msgstr "3.1.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vue-simple-uploader"
+msgstr "vue-simple-uploader"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vuex"
+msgstr "vuex"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.0.1"
+msgstr "3.0.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "devDependencies"
+msgstr "devDependencies"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "@vue/cli-plugin-babel"
+msgstr "@vue/cli-plugin-babel"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "@vue/cli-plugin-eslint"
+msgstr "@vue/cli-plugin-eslint"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.0.5"
+msgstr "4.0.5"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "@vue/cli-service"
+msgstr "@vue/cli-service"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "@vue/eslint-config-standard"
+msgstr "@vue/eslint-config-standard"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "babel-eslint"
+msgstr "babel-eslint"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "10.0.3"
+msgstr "10.0.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "eslint"
+msgstr "eslint"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.16.0"
+msgstr "5.16.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "eslint-plugin-vue"
+msgstr "eslint-plugin-vue"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.2.3"
+msgstr "5.2.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "less"
+msgstr "less"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.10.3"
+msgstr "3.10.3"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "mockjs"
+msgstr "mockjs"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "node-sass"
+msgstr "node-sass"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.5.0"
+msgstr "5.5.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "postcss-import"
+msgstr "postcss-import"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "11.0.0"
+msgstr "11.0.0"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "postcss-loader"
+msgstr "postcss-loader"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.0.8"
+msgstr "2.0.8"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "postcss-url"
+msgstr "postcss-url"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "7.2.1"
+msgstr "7.2.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "sass-loader"
+msgstr "sass-loader"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "10.1.1"
+msgstr "10.1.1"
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vue-template-compiler"
+msgstr "vue-template-compiler"

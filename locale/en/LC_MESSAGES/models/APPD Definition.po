@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-01 19:43+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,108 +25,116 @@ msgstr "Overview"
 msgid "TOSCA(Topology and Orchestration Specificatioon for Cloud Applications)是一种描述云应用组件以及组件之间关系的建模语言，Tosca采用业务模板(service templates)的概念来描述云应用的组件。   EdgeGallery采用TOSCA概念来描述APPD信息模型，基于TOSCA-Simple-Profile-yamle v1.2，参考ETSI NFV SOL001相关规范定义了对APPD的相关描述。   APPD信息模型单元和TOCSA类型定义的映射关系如下："
 msgstr "The Topology and Orchestration Specificatioon for Cloud Applications is a modeling language that describes the relationship between cloud applications and components, and Tosca uses the concept of service templates to describe the components of cloud applications.   EdgeGallery uses the TOSCA concept to describe the APPD information model, based on the TOSCA-Simple-Profile-yamle v1.2, which references the ETSI NFV SOL001-related specification to the APPD.   The mapping relationship between the APPD information model unit and the TOCSA type definition is as follows:"
 
-#: ../../models/APPD Definition.md:53
+#: ../../models/APPD Definition.md
+msgid "APPD 信息模型单元"
+msgstr "APPD information model unit"
+
+#: ../../models/APPD Definition.md
+msgid "TOSCA 类型定义"
+msgstr "TOSCA Type Definition"
+
+#: ../../models/APPD Definition.md
+msgid "APP"
+msgstr "APP"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.nodes.nfv.VNF"
+msgstr "tosca.nodes.nfv.VNF"
+
+#: ../../models/APPD Definition.md
+msgid "VDU（容器场景时为Pod）"
+msgstr "VDU (Pod in Container Scene)"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.nodes.nfv.Vducp <br> tosca.nodes.nfv.Vdu.Compute <br> tosca.nodes.nfv.Vdu.VirtualStorage"
+msgstr "tosca.nodes.nfv.Vducp <br> tosca.nodes.nfv.Vdu.Compute <br> tosca.nodes.nfv.Vdu.VirtualStorage"
+
+#: ../../models/APPD Definition.md
+msgid "Cpd"
+msgstr "Cpd"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.nodes.nfv.Cp"
+msgstr "tosca.nodes.nfv.VduCp"
+
+#: ../../models/APPD Definition.md
+msgid "VduCpd(internal connection point)"
+msgstr "VduCpd (internal connection point)"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.nodes.nfv.VduCp"
+msgstr "tosca.nodes.nfv.VduCp"
+
+#: ../../models/APPD Definition.md
+msgid "Virtual Link"
+msgstr "Virtual Link"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.nodes.nfv.VnfVirtualLink"
+msgstr "tosca.nodes.nfv.VnfVirtualLink"
+
+#: ../../models/APPD Definition.md
+msgid "VirtualStorageDesc"
+msgstr "VirtualStorageDesc"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.nodes.nfv.Vdu.VirtualStorage"
+msgstr "tosca.nodes.nfv.Vdu.VirtualStorage"
+
+#: ../../models/APPD Definition.md
+msgid "VirtualComputeDesc"
+msgstr "VirtualComputeDesc"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.nodes.nfv.Vdu.Compute"
+msgstr "tosca.nodes.nfv.Vdu.Compute"
+
+#: ../../models/APPD Definition.md
+msgid "SwImageDesc"
+msgstr "SwImageDesc"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.artifacts.nfv.SwImage"
+msgstr "tosca.artifacts.nfv.SwImage"
+
+#: ../../models/APPD Definition.md
+msgid "SecurityGroupRule"
+msgstr "SecurityGroupRule"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.policies.nfv.SecurityGroupRule"
+msgstr "tosca.policies.nfv.SecurityGroupRule"
+
+#: ../../models/APPD Definition.md:17
 msgid "一个APPD文件包含最基本的信息，metadata，inputs参数，节点类型，数据类型，文件类型，分组类型和策略类型等。"
 msgstr "An APPD document contains the most basic information, metadata, inputs parameters, node types, data types, document types, grouping types, and policy types."
 
-#: ../../models/APPD Definition.md:55
+#: ../../models/APPD Definition.md:19
 msgid "基本信息"
 msgstr "Basic information"
 
-#: ../../models/APPD Definition.md:56
+#: ../../models/APPD Definition.md:20
 msgid "APPD最开始需要包含最基本的信息，包含tosca_definition_version,  description, imports。   样例如下："
 msgstr "APPD begins with the most basic information, including tosca_definition_version, description, imports. The examples are as follows:"
 
-#: ../../models/APPD Definition.md:66
+#: ../../models/APPD Definition.md:30
 msgid "Metadata定义"
 msgstr "Metadata definition"
 
-#: ../../models/APPD Definition.md:67
+#: ../../models/APPD Definition.md:31
 msgid "Metadata为APPD的元数据。   具体参数如下："
 msgstr "Metadata for the APPD. The specific parameters are as follows:"
-
-#: ../../models/APPD Definition.md:140
-msgid "Metadata的样例如下："
-msgstr "The following examples of Metadata are:"
-
-#: ../../models/APPD Definition.md:154
-msgid "Inputs参数"
-msgstr "Inputs parameter"
-
-#: ../../models/APPD Definition.md:155
-msgid "Inputs参数格式参见TOSCA Simple Profile in YAML Version 1.1。以下列出APPD涉及到的定义部分。"
-msgstr "The Inputs parameter format is referred to TOSCA Simple Profile in YAML Version 1.1.The following lists the parts of the definition that the APPD involves."
-
-#: ../../models/APPD Definition.md:167
-msgid "Inputs样例如下："
-msgstr "The Inputs are as follows:"
-
-#: ../../models/APPD Definition.md:184
-msgid "节点类型定义"
-msgstr "Node Type Definition"
-
-#: ../../models/APPD Definition.md:185
-msgid "本章节此处只描述目前已经用到的部分节点类型。EdgeGallery节点类型基于ETSI NFV SOL001相关规范定义，具体可以参考ETSI NFV SOL001相关规范。"
-msgstr "This section describes only some of the node types that are currently used.The EdgeGallery node type is based on the ETSI NFV SOL001-related specification and can refer to the ETSI NFV SOL001-related specifications."
-
-#: ../../models/APPD Definition.md:186
-msgid "APP(tosca.nodes.nfv.VNF)"
-msgstr "APP(tosca.nodes.nfv.VNF)"
-
-#: ../../models/APPD Definition.md:187
-msgid "APP在APPD描述文件中对应tosca.nodes.nfv.VNF节点，参数定义如下："
-msgstr "The APP corresponds to the tosca.nodes.nfv.VNF node in the APPD description document, as follows:"
-
-#: ../../models/APPD Definition.md:266
-msgid "同时对于APP对象，在虚机场景下，EdgeGallery将app的helm部署脚本作为其artifact。   APP节点的样例如下："
-msgstr "At the same time, for APP objects, in the virtual machine scenario, EdgeGallery deploys the app's helm deployment script as its artifact.   The examples of APP nodes are as follows:"
-
-#: ../../models/APPD Definition.md:289
-msgid "Pod/VM(tosca.nodes.nfv.Compute)"
-msgstr "Pod/VM (tosca.nodes.nfv.Compute)"
-
-#: ../../models/APPD Definition.md:290
-msgid "对于容器场景下的Pod，以及虚机场景下的VM，采用tosca.nodes.nfv.Vdu.Compute节点，参数定义如下："
-msgstr "For the Pod in the container scene and the VMs under the virtual machine scene, the tosca.nodes.nfv.Vdu.Compute node is used and the parameters are defined as follows:"
-
-#: ../../models/APPD Definition.md:355
-msgid "tosca.nodes.nfv.Compute节点提供的能力如下所示："
-msgstr "The capabilities provided by the tosca.nodes.nfv.Compute node are as follows:"
-
-#: ../../models/APPD Definition.md:382
-msgid "Pod/VM节点的定义样例如下："
-msgstr "The following examples are defined for the Pood/VM node:"
-
-#: ../../models/APPD Definition.md:408
-msgid "网口（tosca.nodes.nfv.VduCp）"
-msgstr "Netport (tosca.nodes.nfv.VduCp)"
-
-#: ../../models/APPD Definition.md:409
-msgid "对于Pod/VM的网口，采用tosca.nodes.nfv.VduCp节点进行定义，参数定义如下："
-msgstr "For the network port of the Pood/VM, the definition of the tosca.nodes.nfv.VduCp node is defined as follows:"
-
-#: ../../models/APPD Definition.md:488
-msgid "网口节点的定义样例如下："
-msgstr "The defining examples of network interface nodes are as follows:"
-
-#: ../../models/APPD Definition.md:503
-msgid "网络（tosca.nodes.nfv.VnfVirtualLink）"
-msgstr "Network (tosca.nodes.nfv.VnfVirtualLink)"
-
-#: ../../models/APPD Definition.md:504
-msgid "对于Pod/VM的网络，采用tosca.nodes.nfv.VnfVirtualLink节点进行定义，参数定义如下："
-msgstr "For the Pod/VM network, the use of the tosca.nodes.nfv.VnfVirtualLink node is defined with the following parameters:"
-
-#: ../../models/APPD Definition.md:534
-msgid "VnfVirtualLink节点定义了能力如下:"
-msgstr "The VnfVirtualLink node defines the ability as follows:"
 
 #: ../../models/APPD Definition.md
 msgid "名称"
 msgstr "name"
 
 #: ../../models/APPD Definition.md
-msgid "类型"
+msgid "是否必选"
+msgstr "whether or not to choose"
+
+#: ../../models/APPD Definition.md
+msgid "数据类型"
 msgstr "type"
 
 #: ../../models/APPD Definition.md
@@ -138,7 +146,383 @@ msgid "描述"
 msgstr "describe"
 
 #: ../../models/APPD Definition.md
-msgid "virtual_linkable"
+msgid "template_name"
+msgstr "template_name"
+
+#: ../../models/APPD Definition.md
+msgid "是"
+msgstr "Yes."
+
+#: ../../models/APPD Definition.md
+msgid "string"
+msgstr "string"
+
+#: ../../models/APPD Definition.md
+msgid "-"
+msgstr "-"
+
+#: ../../models/APPD Definition.md
+msgid "模板名称"
+msgstr "name"
+
+#: ../../models/APPD Definition.md
+msgid "template_author"
+msgstr "template_author"
+
+#: ../../models/APPD Definition.md
+msgid "模板作者"
+msgstr "Template Author"
+
+#: ../../models/APPD Definition.md
+msgid "template_version"
+msgstr "template_version"
+
+#: ../../models/APPD Definition.md
+msgid "模板版本"
+msgstr "Template version"
+
+#: ../../models/APPD Definition.md
+msgid "vnfm_type"
+msgstr "vnfm_type"
+
+#: ../../models/APPD Definition.md
+msgid "MEPM"
+msgstr "MEPM"
+
+#: ../../models/APPD Definition.md
+msgid "该参数用于表明APPD使用的平台，目前取值MEPM"
+msgstr "This parameter is used to indicate the platform used by APPD, currently numeric MEPM"
+
+#: ../../models/APPD Definition.md
+msgid "vnfd_id"
+msgstr "vnfd_id"
+
+#: ../../models/APPD Definition.md
+msgid "该APPD对象的标识，全局唯一"
+msgstr "ID of the APPD object, unique"
+
+#: ../../models/APPD Definition.md
+msgid "vnfd_version"
+msgstr "vnfd_version"
+
+#: ../../models/APPD Definition.md
+msgid "APPD版本号"
+msgstr "APPD version number"
+
+#: ../../models/APPD Definition.md
+msgid "vnfd_name"
+msgstr "vnfd_name"
+
+#: ../../models/APPD Definition.md
+msgid "APPD名称"
+msgstr "APPD Name"
+
+#: ../../models/APPD Definition.md
+msgid "vnfd_description"
+msgstr "vnfd_description"
+
+#: ../../models/APPD Definition.md
+msgid "APPD描述"
+msgstr "APPD Description"
+
+#: ../../models/APPD Definition.md:44
+msgid "Metadata的样例如下："
+msgstr "The following examples of Metadata are:"
+
+#: ../../models/APPD Definition.md:58
+msgid "Inputs参数"
+msgstr "Inputs parameter"
+
+#: ../../models/APPD Definition.md:59
+msgid "Inputs参数格式参见TOSCA Simple Profile in YAML Version 1.1。以下列出APPD涉及到的定义部分。"
+msgstr "The Inputs parameter format is referred to TOSCA Simple Profile in YAML Version 1.1.The following lists the parts of the definition that the APPD involves."
+
+#: ../../models/APPD Definition.md:71
+msgid "Inputs样例如下："
+msgstr "The Inputs are as follows:"
+
+#: ../../models/APPD Definition.md:88
+msgid "节点类型定义"
+msgstr "Node Type Definition"
+
+#: ../../models/APPD Definition.md:89
+msgid "本章节此处只描述目前已经用到的部分节点类型。EdgeGallery节点类型基于ETSI NFV SOL001相关规范定义，具体可以参考ETSI NFV SOL001相关规范。"
+msgstr "This section describes only some of the node types that are currently used.The EdgeGallery node type is based on the ETSI NFV SOL001-related specification and can refer to the ETSI NFV SOL001-related specifications."
+
+#: ../../models/APPD Definition.md:90
+msgid "APP(tosca.nodes.nfv.VNF)"
+msgstr "APP(tosca.nodes.nfv.VNF)"
+
+#: ../../models/APPD Definition.md:91
+msgid "APP在APPD描述文件中对应tosca.nodes.nfv.VNF节点，参数定义如下："
+msgstr "The APP corresponds to the tosca.nodes.nfv.VNF node in the APPD description document, as follows:"
+
+#: ../../models/APPD Definition.md
+msgid "app描述id"
+msgstr "app description id"
+
+#: ../../models/APPD Definition.md
+msgid "app描述的版本"
+msgstr "Version described by app"
+
+#: ../../models/APPD Definition.md
+msgid "provider"
+msgstr "provider"
+
+#: ../../models/APPD Definition.md
+msgid "app的提供方"
+msgstr "The offering of app"
+
+#: ../../models/APPD Definition.md
+msgid "product_name"
+msgstr "product_name"
+
+#: ../../models/APPD Definition.md
+msgid "用来标识app产品的产品类型"
+msgstr "Product type used to identify the app product"
+
+#: ../../models/APPD Definition.md
+msgid "software_version"
+msgstr "software_version"
+
+#: ../../models/APPD Definition.md
+msgid "app的软件版本"
+msgstr "The software version of the app"
+
+#: ../../models/APPD Definition.md
+msgid "product_info_name"
+msgstr "product_info_name"
+
+#: ../../models/APPD Definition.md
+msgid "app的可读名称"
+msgstr "The readable name of the app"
+
+#: ../../models/APPD Definition.md
+msgid "product_info_description"
+msgstr "product_info_description"
+
+#: ../../models/APPD Definition.md
+msgid "否"
+msgstr "not"
+
+#: ../../models/APPD Definition.md
+msgid "app的可读描述"
+msgstr "A readable description of the app"
+
+#: ../../models/APPD Definition.md
+msgid "flavour_id"
+msgstr "flavour_id"
+
+#: ../../models/APPD Definition.md
+msgid "部署的flavour，当前app只支持单一flavour"
+msgstr "Deployed flaour, current app supports only single flaour"
+
+#: ../../models/APPD Definition.md
+msgid "flavour_descripotion"
+msgstr "flavour_descripotion"
+
+#: ../../models/APPD Definition.md
+msgid "flavour的描述"
+msgstr "Description of flavor"
+
+#: ../../models/APPD Definition.md:104
+msgid "同时对于APP对象，在虚机场景下，EdgeGallery将app的helm部署脚本作为其artifact。   APP节点的样例如下："
+msgstr "At the same time, for APP objects, in the virtual machine scenario, EdgeGallery deploys the app's helm deployment script as its artifact.   The examples of APP nodes are as follows:"
+
+#: ../../models/APPD Definition.md:127
+msgid "Pod/VM(tosca.nodes.nfv.Compute)"
+msgstr "Pod/VM (tosca.nodes.nfv.Compute)"
+
+#: ../../models/APPD Definition.md:128
+msgid "对于容器场景下的Pod，以及虚机场景下的VM，采用tosca.nodes.nfv.Vdu.Compute节点，参数定义如下："
+msgstr "For the Pod in the container scene and the VMs under the virtual machine scene, the tosca.nodes.nfv.Vdu.Compute node is used and the parameters are defined as follows:"
+
+#: ../../models/APPD Definition.md
+msgid "name"
+msgstr "name"
+
+#: ../../models/APPD Definition.md
+msgid "VDU的名称"
+msgstr "Name of VDU"
+
+#: ../../models/APPD Definition.md
+msgid "descriptioon"
+msgstr "descriptioon"
+
+#: ../../models/APPD Definition.md
+msgid "VDU的描述"
+msgstr "Description of VDU"
+
+#: ../../models/APPD Definition.md
+msgid "boot_order"
+msgstr "boot_order"
+
+#: ../../models/APPD Definition.md
+msgid "map"
+msgstr "map"
+
+#: ../../models/APPD Definition.md
+msgid "镜像盘的启动顺序"
+msgstr "Start sequence of mirrored disk"
+
+#: ../../models/APPD Definition.md
+msgid "nfvi_constraints"
+msgstr "nfvi_constraints"
+
+#: ../../models/APPD Definition.md
+msgid "计算AZ ID，确定该VDU实例的创建位置"
+msgstr "Compute AZ ID, determine where the VDU instance is created"
+
+#: ../../models/APPD Definition.md
+msgid "bootdata"
+msgstr "bootdata"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.data.types.nfv.bootdata"
+msgstr "tosca.data.types.nfv.bootdata"
+
+#: ../../models/APPD Definition.md
+msgid "注入配置信息"
+msgstr "Injection configuration information"
+
+#: ../../models/APPD Definition.md
+msgid "vdu_profile"
+msgstr "vdu_profile"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.data.types.nfv.VduProfile"
+msgstr "tosca.data.types.nfv.VduProfile"
+
+#: ../../models/APPD Definition.md
+msgid "定义VDU相关的其他实例化数据"
+msgstr "Define other instantiated data related to VDU"
+
+#: ../../models/APPD Definition.md
+msgid "sw_image_data"
+msgstr "sw_image_data"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.data.types.nfv.SwImageData"
+msgstr "tosca.data.types.nfv.SwImageData"
+
+#: ../../models/APPD Definition.md
+msgid "镜像信息，对应名称在SwImageDesc.json中的描述，对于虚机为虚机镜像，对于容器为容器镜像且可能为列表，此时采用逗号分隔"
+msgstr "mirror image information corresponding to the description in SwImageDesc.json, for virtual machine as virtual machine mirror image, the container is mirror image of container and may be list, at this time, using comma separation"
+
+#: ../../models/APPD Definition.md:139
+msgid "tosca.nodes.nfv.Compute节点提供的能力如下所示："
+msgstr "The capabilities provided by the tosca.nodes.nfv.Compute node are as follows:"
+
+#: ../../models/APPD Definition.md
+msgid "virtual_compute"
+msgstr "virtual_compute"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.capabilities.nfv.virtualCompute"
+msgstr "tosca.caabilities.nfv.VirtualLinkable"
+
+#: ../../models/APPD Definition.md
+msgid "虚机计算资源"
+msgstr "Virtual machine computing resources"
+
+#: ../../models/APPD Definition.md
+msgid "virtual_binding"
+msgstr "virtual_linkable"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.capabilities.nfv.VirtualBindable"
+msgstr "tosca.caabilities.nfv.VirtualLinkable"
+
+#: ../../models/APPD Definition.md
+msgid "定义连接绑定的能力"
+msgstr "Ability to define attachment bindings"
+
+#: ../../models/APPD Definition.md:145
+msgid "Pod/VM节点的定义样例如下："
+msgstr "The following examples are defined for the Pood/VM node:"
+
+#: ../../models/APPD Definition.md:171
+msgid "网口（tosca.nodes.nfv.VduCp）"
+msgstr "Netport (tosca.nodes.nfv.VduCp)"
+
+#: ../../models/APPD Definition.md:172
+msgid "对于Pod/VM的网口，采用tosca.nodes.nfv.VduCp节点进行定义，参数定义如下："
+msgstr "For the network port of the Pood/VM, the definition of the tosca.nodes.nfv.VduCp node is defined as follows:"
+
+#: ../../models/APPD Definition.md
+msgid "vnic_type"
+msgstr "vnic_type"
+
+#: ../../models/APPD Definition.md
+msgid "normal,direct"
+msgstr "normal, direct"
+
+#: ../../models/APPD Definition.md
+msgid "网口类型"
+msgstr "type"
+
+#: ../../models/APPD Definition.md
+msgid "order"
+msgstr "order"
+
+#: ../../models/APPD Definition.md
+msgid "integer"
+msgstr "integer"
+
+#: ../../models/APPD Definition.md
+msgid "greater_or_equal:0"
+msgstr "greater_or_equal: 0"
+
+#: ../../models/APPD Definition.md
+msgid "网口的顺序"
+msgstr "The order of the network"
+
+#: ../../models/APPD Definition.md
+msgid "vnic_name"
+msgstr "vnic_name"
+
+#: ../../models/APPD Definition.md
+msgid "网口的名字"
+msgstr "The name of the net."
+
+#: ../../models/APPD Definition.md
+msgid "description"
+msgstr "description"
+
+#: ../../models/APPD Definition.md
+msgid "网口的描述"
+msgstr "Description of the net"
+
+#: ../../models/APPD Definition.md
+msgid "Cp节点定义了需求如下:"
+msgstr "The Cp node defines the requirements as follows:"
+
+#: ../../models/APPD Definition.md
+msgid "类型"
+msgstr "type"
+
+#: ../../models/APPD Definition.md
+msgid "-----------------------"
+msgstr "-----------------------"
+
+#: ../../models/APPD Definition.md
+msgid "---------"
+msgstr "---------"
+
+#: ../../models/APPD Definition.md
+msgid "---------------------------"
+msgstr "---------------------------"
+
+#: ../../models/APPD Definition.md
+msgid "----------------------"
+msgstr "----------------------"
+
+#: ../../models/APPD Definition.md
+msgid "绑定到的VDU的需求"
+msgstr "Requirements for binding VDU"
+
+#: ../../models/APPD Definition.md
+msgid "virtual_link"
 msgstr "virtual_linkable"
 
 #: ../../models/APPD Definition.md
@@ -146,26 +530,170 @@ msgid "tosca.capabilities.nfv.VirtualLinkable"
 msgstr "tosca.caabilities.nfv.VirtualLinkable"
 
 #: ../../models/APPD Definition.md
-msgid "-"
-msgstr "-"
+msgid "连接到虚拟网络的需求"
+msgstr "Requirements for connecting to virtual networks"
+
+#: ../../models/APPD Definition.md:185
+msgid "网口节点的定义样例如下："
+msgstr "The defining examples of network interface nodes are as follows:"
+
+#: ../../models/APPD Definition.md:200
+msgid "网络（tosca.nodes.nfv.VnfVirtualLink）"
+msgstr "Network (tosca.nodes.nfv.VnfVirtualLink)"
+
+#: ../../models/APPD Definition.md:201
+msgid "对于Pod/VM的网络，采用tosca.nodes.nfv.VnfVirtualLink节点进行定义，参数定义如下："
+msgstr "For the Pod/VM network, the use of the tosca.nodes.nfv.VnfVirtualLink node is defined with the following parameters:"
+
+#: ../../models/APPD Definition.md
+msgid "vl_profile"
+msgstr "vl_profile"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.datatypes.nfv.VlProfile"
+msgstr "tosca.datatypes.nfv.VlProfile"
+
+#: ../../models/APPD Definition.md
+msgid "定义网络的信息，名称，子网等"
+msgstr "Define information, names, subnets, etc. network"
+
+#: ../../models/APPD Definition.md
+msgid "VL的描述"
+msgstr "Description of VL"
+
+#: ../../models/APPD Definition.md:207
+msgid "VnfVirtualLink节点定义了能力如下:"
+msgstr "The VnfVirtualLink node defines the ability as follows:"
+
+#: ../../models/APPD Definition.md
+msgid "virtual_linkable"
+msgstr "virtual_linkable"
 
 #: ../../models/APPD Definition.md
 msgid "描述虚拟网络连接网口的能力"
 msgstr "Ability to describe virtual network connection network ports"
 
-#: ../../models/APPD Definition.md:539
+#: ../../models/APPD Definition.md:212
 msgid "VnfVirtualLink节点的定义样例如下："
 msgstr "A VnfVirtualLink node is defined as follows:"
 
-#: ../../models/APPD Definition.md:551
+#: ../../models/APPD Definition.md:224
 msgid "APP配置 (tosca.nodes.nfv.app.configuration)--待修订"
 msgstr "APP Configuration (tosca.nodes.nfv.app.configuration)--To be revised"
 
-#: ../../models/APPD Definition.md:552
+#: ../../models/APPD Definition.md:225
 msgid "对于APP相关配置，如服务发布，服务依赖，以及应用认证信息，分流规则配置等。通过APP配置节点进行配置。相关定义参考了ETSI MEC011 ，参数定义如下："
 msgstr "For APP-related configurations such as service publishing, service dependence, and application authentication information, streaming rule configuration, etc.Configure the nodes through the APP configuration node.The relevant definition references the ETSI MEC011, which is defined as follows:"
 
-#: ../../models/APPD Definition.md:638
+#: ../../models/APPD Definition.md
+msgid "appServiceRequired"
+msgstr "appServiceRequired"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.datatypes.nfv.app.ServiceDependency"
+msgstr "tosca.datatypes.nfv.app.ServiceDependency"
+
+#: ../../models/APPD Definition.md
+msgid "app依赖的服务信息"
+msgstr "Service information on app dependency"
+
+#: ../../models/APPD Definition.md
+msgid "appServiceOptional"
+msgstr "appServiceOptional"
+
+#: ../../models/APPD Definition.md
+msgid "app的可选依赖服务信息"
+msgstr "Optional dependency service information for app"
+
+#: ../../models/APPD Definition.md
+msgid "appServiceProduced"
+msgstr "appServiceProduced"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.datatypes.nfv.app.ServiceDescriptor"
+msgstr "tosca.datatypes.nfv.app.ServiceDescriptor"
+
+#: ../../models/APPD Definition.md
+msgid "app的服务发布信息"
+msgstr "Service publishing information for app"
+
+#: ../../models/APPD Definition.md
+msgid "appFeatureRequired"
+msgstr "appFeatureRequired"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.datatypes.nfv.app.FeatureDependency"
+msgstr "tosca.datatypes.nfv.app.FeatureDependency"
+
+#: ../../models/APPD Definition.md
+msgid "app正常运行必须的特性信息"
+msgstr "The feature information required for the normal operation of the app"
+
+#: ../../models/APPD Definition.md
+msgid "appFeatureOptional"
+msgstr "appFeatureOptional"
+
+#: ../../models/APPD Definition.md
+msgid "app正常运行可能会用到的特性信息"
+msgstr "Features information that is likely to be used by the app"
+
+#: ../../models/APPD Definition.md
+msgid "transportDependencies"
+msgstr "transportDependencies"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.datatypes.nfv.app.TransportDependency"
+msgstr "tosca.datatypes.nfv.app.TransportDependency"
+
+#: ../../models/APPD Definition.md
+msgid "应用实例提供服务需要平台提供的传输能力"
+msgstr "The application instance provides services that require the delivery capability provided by the platform"
+
+#: ../../models/APPD Definition.md
+msgid "appSupportMp1"
+msgstr "appSupportMp1"
+
+#: ../../models/APPD Definition.md
+msgid "boolean"
+msgstr "boolean"
+
+#: ../../models/APPD Definition.md
+msgid "app是否支持Mp1接口"
+msgstr "Does app support the Mp1 interface"
+
+#: ../../models/APPD Definition.md
+msgid "appName"
+msgstr "appName"
+
+#: ../../models/APPD Definition.md
+msgid "应用名称"
+msgstr "name"
+
+#: ../../models/APPD Definition.md
+msgid "appTrafficRule"
+msgstr "appTrafficRule"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.datatypes.nfv.app.TrafficRuleDescriptor"
+msgstr "tosca.datatypes.nfv.app.TrafficRuleDescriptor"
+
+#: ../../models/APPD Definition.md
+msgid "应用分流规则信息"
+msgstr "Application streaming rule information"
+
+#: ../../models/APPD Definition.md
+msgid "appDNSRule"
+msgstr "appDDNSRule"
+
+#: ../../models/APPD Definition.md
+msgid "tosca.datatypes.nfv.app.DNSRuleDescriptor"
+msgstr "tosca.datatypes.nfv.app.DNSRuleDescriptor"
+
+#: ../../models/APPD Definition.md
+msgid "应用DNS分流规则信息"
+msgstr "Application DNS streaming rule information"
+
+#: ../../models/APPD Definition.md:239
 msgid "定义样例如下："
 msgstr "The following examples are defined:"
 

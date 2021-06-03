@@ -179,7 +179,6 @@ dnsserver [OPTION]...
 ```
 
 Detailed list of the optional parameters are stated below.
-
 | parameter | Type | Range/Length | Default | Description |
 | --------- | ---- | ------------ | ------- | ----------- |
 | -db | string | 1~256  | dbEgDns | Backend store db name |

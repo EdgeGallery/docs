@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-02 20:40+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,47 +29,206 @@ msgstr "tbl\\_tenant tenant table"
 msgid "记录所有的租户信息"
 msgstr "Record all the tenant information."
 
-#: ../../Projects/User Management/User_DataBase_Design.md:80 Management/User_DataBase_Design.md:127 Management/User_DataBase_Design.md:183
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "**字段**"
+msgstr "**Field**"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "**类型**"
+msgstr "**Type**"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "**主键**"
+msgstr "**Main key**"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "**描述**"
+msgstr "**Description**"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "tenantid"
+msgstr "tenantid"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "string"
+msgstr "string"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "key"
+msgstr "key"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "主键"
+msgstr "Master Key"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "username"
+msgstr "username"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "-"
+msgstr "-"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "注册时的用户名，需要唯一性。[5-29]个字符之间"
+msgstr "The user name at the time of registration requires uniqueness.[5-29] between characters"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "password"
+msgstr "password"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "注册时设置的密码，注册时需要满足密码复杂度要求，满足数字/字母/特殊字符 至少两种以上的组合，[6-18]个字符之间。数据库中的密码使用PBKDF2加盐值后存储"
+msgstr "when registering, the password needs to satisfy the password complexity requirement, satisfying the combination of the number/letter/special character at least two or more, [6-18] characters.Password in database is stored after using PBKDF2 plus salt value"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "company"
+msgstr "company"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "用户公司名称"
+msgstr "User Company Name"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "telephonenumber"
+msgstr "telephonenumber"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "用户手机号码，用于找回密码时短信验证用户身份，必须满足11位有效数字"
+msgstr "the mobile phone number of the user is used for verifying the user identity when the password is recovered, and the 11-bit effective number must be satisfied"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "mailaddress"
+msgstr "mailaddress"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "用户邮箱地址，用于找回密码时邮箱验证用户身份，必须为有效的邮箱格式"
+msgstr "User email address, which is used to verify the user identity when the password is recovered and must be in a valid mailbox format"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "gender"
+msgstr "gender"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "用户性别"
+msgstr "User Gender"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "isallowed"
+msgstr "isallowed"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "boolean"
+msgstr "boolean"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "帐号是否允许登录"
+msgstr "Is the account allowed to be registered"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "createtime"
+msgstr "createtime"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "timestamp"
+msgstr "timestamp"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "创建时间（即注册时间）"
+msgstr "Creation time (i.e. registration time)"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "modifytime"
+msgstr "modifytime"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "修改时间"
+msgstr "Modify Time"
+
+#: ../../Projects/User Management/User_DataBase_Design.md:19 Management/User_DataBase_Design.md:40 Management/User_DataBase_Design.md:75
 msgid "初始值："
 msgstr "Initial value:"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:92
+#: ../../Projects/User Management/User_DataBase_Design.md:31
 msgid "tbl\\_role 用户角色表"
 msgstr "tbl\\_role user role table"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:94
+#: ../../Projects/User Management/User_DataBase_Design.md:33
 msgid "配置支持的平台的和用户角色，该表在启动时初始化，不支持动态添加"
 msgstr "configuration supported platform and user role, the table initializes at startup and does not support dynamic addition"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:147
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "字段"
+msgstr "field"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "类型"
+msgstr "type"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "描述"
+msgstr "describe"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "id"
+msgstr "id"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "platform"
+msgstr "platform"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "支持的平台"
+msgstr "Platform supported"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "role"
+msgstr "role"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "支持的角色定义"
+msgstr "Role definition supported"
+
+#: ../../Projects/User Management/User_DataBase_Design.md:60
 msgid "说明："
 msgstr "Description:"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:148
+#: ../../Projects/User Management/User_DataBase_Design.md:61
 msgid "APPSTORE：应用仓库平台"
 msgstr "APPSTORE: Application of warehouse platform"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:149
+#: ../../Projects/User Management/User_DataBase_Design.md:62
 msgid "DEVELOPER：应用开发集成平台"
 msgstr "DEVELOPER: Application development integration platform"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:150
+#: ../../Projects/User Management/User_DataBase_Design.md:63
 msgid "MECM：MEC管理平台"
 msgstr "MECM:MEC management platform"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:151
+#: ../../Projects/User Management/User_DataBase_Design.md:64
 msgid "ATP：应用认证测试平台"
 msgstr "ATP: application authentication test platform"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:152
+#: ../../Projects/User Management/User_DataBase_Design.md:65
 msgid "LAB：实验室管理平台"
 msgstr "LAB: Laboratory Management Platform"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:154
+#: ../../Projects/User Management/User_DataBase_Design.md:67
 msgid "tbl\\_tenant\\_role 关系表"
 msgstr "tbl\\_tenant\\_role relationship table"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:156
+#: ../../Projects/User Management/User_DataBase_Design.md:69
 msgid "用于描述租户和角色的关系"
 msgstr "Relationship to describe tenants and roles"
 
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "租户ID"
+msgstr "Tenant ID"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "roleid"
+msgstr "roleid"
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "角色ID"
+msgstr "Role Id"

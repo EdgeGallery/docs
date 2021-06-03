@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-02 22:52+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,331 +21,403 @@ msgstr ""
 msgid "特性设计"
 msgstr "Feature design"
 
-#: ../../Projects/User Management/User_Features.md:3
+#: ../../Projects/User Management/User_Features.md Management/User_Features.md:3
 msgid "[用户注册](#用户注册)"
 msgstr "[User Registration](#Userregistration)"
 
-#: ../../Projects/User Management/User_Features.md:4
+#: ../../Projects/User Management/User_Features.md Management/User_Features.md:4
 msgid "[单点登录](#单点登录)"
 msgstr "[Single sign-on](#signin)"
 
-#: ../../Projects/User Management/User_Features.md:5
+#: ../../Projects/User Management/User_Features.md Management/User_Features.md:5
 msgid "[用户中心](#用户中心)"
 msgstr "[User Center](#UserCenter)"
 
-#: ../../Projects/User Management/User_Features.md:6
+#: ../../Projects/User Management/User_Features.md Management/User_Features.md:6
 msgid "[密码找回](#密码找回)"
 msgstr "[Password recovery](#recoverpassword)"
 
-#: ../../Projects/User Management/User_Features.md:7
+#: ../../Projects/User Management/User_Features.md Management/User_Features.md:7
 msgid "[访客登录](#访客登录)"
 msgstr "[Guest Registration](#Guestlogin)"
 
-#: ../../Projects/User Management/User_Features.md:8
+#: ../../Projects/User Management/User_Features.md Management/User_Features.md:8
 msgid "[用户列表管理](#用户列表管理)"
 msgstr "[User List Management](#Userlistmanagement)"
 
-#: ../../Projects/User Management/User_Features.md:9
+#: ../../Projects/User Management/User_Features.md Management/User_Features.md:9
 msgid "[邮箱验证](#邮箱验证)"
 msgstr "[Mailbox Verification](#E-mailverification)"
 
-#: ../../Projects/User Management/User_Features.md:10
+#: ../../Projects/User Management/User_Features.md Management/User_Features.md:10
 msgid "[手机验证](#手机验证)"
-msgstr "[Cell phone verification](#Phoneverification)"
+msgstr "[Phone verification](#Phoneverification)"
 
-#: ../../Projects/User Management/User_Features.md:64
-msgid "用户注册"
-msgstr "User Registration"
+#: ../../Projects/User Management/User_Features.md:12
+msgid "**Feature Info**"
+msgstr "**Feature Info**"
 
-#: ../../Projects/User Management/User_Features.md:66
-msgid "用户注册时，除提供必须的用户名外，还可以选择提供手机号码、邮箱地址。建议手机号码和邮箱地址二者至少填写一项真实信息，便于忘记密码后找回密码时进行验证。"
-msgstr "When the user is registered, the mobile phone number and the mailbox address can be provided in addition to the required user name.the mobile phone number and the mailbox address are provided with at least one real information, which is convenient to be verified when the password is recovered after forgetting the password."
+#: ../../Projects/User Management/User_Features.md
+msgid "**特性名称**"
+msgstr "**Feature Name**"
 
-#: ../../Projects/User Management/User_Features.md:68
-msgid "注册时系统会进行以下校验："
-msgstr "The system will be checked at the time of registration:"
+#: ../../Projects/User Management/User_Features.md
+msgid "**特性描述**"
+msgstr "**Feature description**"
 
-#: ../../Projects/User Management/User_Features.md:69
-msgid "用户名必须大于6位，同时会校验用户名是否已经被注册。"
-msgstr "The user name must be greater than 6 digits, and whether the username has been registered."
+#: ../../Projects/User Management/User_Features.md
+msgid "**设计约束**"
+msgstr "**Design constraints**"
 
-#: ../../Projects/User Management/User_Features.md:70
-msgid "如果提供了邮箱地址，校验其是否符合格式要求的邮箱地址，同时会校验邮箱地址是否已经被注册。"
-msgstr "if the mailbox address is provided, checking whether it meets the mailbox address of the format requirement, and checking whether the mailbox address has been registered."
+#: ../../Projects/User Management/User_Features.md
+msgid "提供用户注册功能。注册时除提供必须的用户名外，还可以选择提供邮箱地址、手机号码。建议二者至少填写一项真实信息，便于忘记密码后找回密码时进行验证。"
+msgstr "Provide user registration function. In addition to providing the necessary user name when registering, you can also choose to provide your email address and mobile phone number. It is recommended that both of them fill in at least one piece of real information to facilitate verification when the password is retrieved after forgotten."
 
-#: ../../Projects/User Management/User_Features.md:71
-msgid "如果提供了手机号码，校验其是否符合格式要求的中国大陆手机号码，同时会校验手机号码是否已经被注册。"
-msgstr "if the mobile phone number is provided, checking whether the Chinese mobile phone number is in accordance with the format requirement, and checking whether the mobile phone number has been registered."
+#: ../../Projects/User Management/User_Features.md
+msgid "注册时提供的用户名、邮箱地址、手机号码必须是唯一的，如果已存在，则无法成功注册。目前只支持中国大陆手机号注册。为了方便用户注册，当前不对邮箱地址和手机号码进行验证。"
+msgstr "The user name, mailbox address provided at the time of registration, the cell phone number must be unique and cannot be registered successfully if it already exists.Currently only the Chinese mobile phone number is supported.In order to facilitate user registration, the email address and cell phone number are currently not verified."
 
-#: ../../Projects/User Management/User_Features.md:72
-msgid "图形数字验证码"
-msgstr "Graphic Digital Validation Code"
+#: ../../Projects/User Management/User_Features.md
+msgid "可以通过用户名、手机号码或邮箱地址登录各应用平台Portal。EdgeGallery采取单点登录方式（Single Sign On），即多个应用平台共用一个登录认证平台，一次登录就可以访问互相信任的其他应用系统。"
+msgstr "The application platform Portal can be registered by user name, cell phone number or email address.EdgeGallery takes a single sign-on (Single Sign On), which is a platform for multiple applications to share with one login authentication platform, and one login can access other systems of mutual trust."
 
-#: ../../Projects/User Management/User_Features.md:74
-msgid "![用户注册处理时序图](/uploads/images/2021/usermgmt/Sequence_Register.png \"Sequence_Register.png\")"
-msgstr "![User Registration Process Sequence Diagram](/uploads/images/2021/usermgmt/Sequence_Register.png \"Sequence_Register.png\")"
+#: ../../Projects/User Management/User_Features.md
+msgid "目前单点登录系统适用于开发者平台（Developer Portal）、应用仓库（Application Store）、管理系统（MEC Manager）、应用测试认证平台（ATP Portal）、社区实验室管理平台（Lab Portal）。"
+msgstr "Currently, the single sign-on system is suitable for the Developer Portal, the Application Store, the Management System (MEC Manager), the Application Test Authentication Platform (ATP Portal), and the Community Laboratory Management Platform (Lab Portal)."
 
-#: ../../Projects/User Management/User_Features.md:76
-msgid "单点登录"
-msgstr "Single point entry"
+#: ../../Projects/User Management/User_Features.md
+msgid "用户登录到各应用平台后，可以通过“我的帐号”进入用户中心。在用户中心可以查看/修改个人信息、修改密码。"
+msgstr "After users log in to each application platform, they can enter the user center through \"My Account\". You can view/modify personal information and modify passwords in the user center."
 
-#: ../../Projects/User Management/User_Features.md:78
-msgid "单点登录系统是基于ServiceComb、Spring Security、Oauth2、JWT、Vue等技术实现，采用OAuth2协议的授权码模式（authorization code）。MECM、AppStore、Developer、Atp、Lab应用平台作为客户端，与认证服务器user-mgmt-be进行交互，实现单点登陆与单点注销功能。使用Cookie+Session机制实现用户认证鉴权和超时退出功能，使用JWT存储用户基本信息，减轻认证服务器压力。"
-msgstr "The single sign-on system is implemented based on technology such as ServiceComb, Spring Security, Oauth2, JWT, Vue, and the authorization code mode of the OAuth2 protocol.MECM, AppStore, Developer, Atp, Lab application platform as client interacts with authentication server user-mgmt-be to achieve single sign-on and single sign-on function.using the Cookie + Session mechanism to realize the authentication and overtime withdrawal function of the user, storing the basic information of the user by using the JWT, and reducing the pressure of the authentication server."
-
-#: ../../Projects/User Management/User_Features.md:80
-msgid "这里以MECM和AppStore两个应用平台作为客户端为例来说明单点登录和单点注销的处理时序。"
-msgstr "The processing time of single sign-on and single point cancellation is illustrated by the two application platforms of MECM and AppStore as an example."
-
-#: ../../Projects/User Management/User_Features.md:82
-msgid "![单点登录时序图](/uploads/images/2021/usermgmt/Sequence_SingleSignOn.png \"Sequence_SingleSignOn.png\")"
-msgstr "![Single sign-on sequence diagram](/uploads/images/2021/usermgmt/Sequence_SingleSignOn.png \"Sequence_SingleSignOn.png\")"
-
-#: ../../Projects/User Management/User_Features.md:84
-msgid "![单点注销时序图](/uploads/images/2021/usermgmt/Sequence_SingleSignOut.png \"Sequence_SingleSignOut.png\")"
-msgstr "![single sign-on time sequence diagram](/uploads/images/2021/usermgmt/Sequence_SingleSignOut.png \"Sequence_SingleSignOut.png\")"
-
-#: ../../Projects/User Management/User_Features.md:86
-msgid "用户中心"
-msgstr "User Center"
-
-#: ../../Projects/User Management/User_Features.md:88
-msgid "用户登录到各应用平台后，可以通过“我的帐号”进入用户中心。"
-msgstr "After the user logs in to each application platform, it can enter the user centre through \"My account number\"."
-
-#: ../../Projects/User Management/User_Features.md:90
-msgid "在用户中心，用户可以查看/修改个人信息、修改密码。"
-msgstr "In the user center, the user can check/modify personal information and modify the password."
-
-#: ../../Projects/User Management/User_Features.md:92
+#: ../../Projects/User Management/User_Features.md Management/User_Features.md:52
 msgid "目前不支持修改用户名，只能修改手机号码和邮箱地址。"
 msgstr "Currently, it is not supported to modify the user name, only the cell phone number and the email address can be modified."
 
-#: ../../Projects/User Management/User_Features.md:94
-msgid "密码找回"
-msgstr "Password back."
+#: ../../Projects/User Management/User_Features.md
+msgid "如果用户注册时提供了真实有效的手机号码或邮箱地址（或者在用户中心修改个人信息时提供），当忘记密码时可以通过手机号码或邮箱地址重置密码以完成密码找回。通过手机号码找回密码时需要进行手机验证，通过邮箱地址找回密码时需要进行邮箱验证，验证通过后才可以重置密码。"
+msgstr "If the user is registered with a real and effective mobile phone number or mailbox address (or provided in the user center to modify the personal information), the password can be reset through the cell phone number or the mailbox address to complete the password when the password is forgotten.the mobile phone verification is required when retrieving the password via the mobile phone number, the mailbox verification is required when the password is recovered via the mailbox address, and the password can be reset after the verification is passed."
 
-#: ../../Projects/User Management/User_Features.md:96
-msgid "通过邮箱地址找回密码"
-msgstr "Get the code back through the e-mail address."
+#: ../../Projects/User Management/User_Features.md
+msgid "只有当EdgeGallery平台开启了短信服务才可以通过手机号码找回密码；只有当EdgeGallery平台开启了邮箱服务才可以通过邮箱地址找回密码"
+msgstr "Only if the EdgeGallery platform opens the SMS service, you can get the password back through the cell phone number; only when the EdgeGallery platform opens the mailbox service to get the password back through the mailbox address"
 
-#: ../../Projects/User Management/User_Features.md:98
-msgid "用户忘记密码后通过邮箱地址找回密码的主要交互处理："
-msgstr "The main interprocessing of the password is recovered by the email address after the user has forgotten the password:"
+#: ../../Projects/User Management/User_Features.md
+msgid "访客是系统内置的一个GUEST账号，访问首页时自动登录。在访客登录时，用户可以查看系统的大部分功能，但是不能在系统中进行创建/删除/修改登录操作。"
+msgstr "The guest is a GUEST account built into the system, and it is automatically logged in when visiting the homepage. When a guest logs in, the user can view most of the functions of the system, but cannot create/delete/modify login operations in the system."
 
-#: ../../Projects/User Management/User_Features.md:100
-msgid "用户输入邮箱地址，完成图形数字验证，然后请求获取验证码。系统判断邮箱地址是否已注册，如果已注册，则发送验证码到邮箱。如果没有注册，提示用户邮箱地址不存在。"
-msgstr "The user enters the mailbox address, completes the graphic digital verification, and then requests the verification code.The system determines whether the mailbox address is registered and, if it is registered, sends the verification code to the mailbox.If not registered, the prompt user mailbox address does not exist."
-
-#: ../../Projects/User Management/User_Features.md:101 Management/User_Features.md:110
-msgid "用户输入收到的验证码和新密码，修改成功后，返回登录界面。"
-msgstr "The user inputs the received verification code and the new password, and returns to the login interface after the modification is successful."
-
-#: ../../Projects/User Management/User_Features.md:103
-msgid "![根据邮箱地址找回密码处理时序图](/uploads/images/2021/usermgmt/Sequence_RetrievePwByMail.png \"Sequence_RetrievePwByMail.png\")"
-msgstr "![recover the password processing time sequence diagram based on the mailbox address](/uploads/images/2021/usermgmt/Sequence_RetrievePwByMail.png \"Sequence_RetrievePwByMail.png\")"
-
-#: ../../Projects/User Management/User_Features.md:105
-msgid "通过手机号码找回密码"
-msgstr "Get the code back through the cell phone number"
-
-#: ../../Projects/User Management/User_Features.md:107
-msgid "用户忘记密码后通过手机号码找回密码的主要交互处理："
-msgstr "the main interactive processing of the password is recovered by the mobile phone number after the user forgets the password:"
-
-#: ../../Projects/User Management/User_Features.md:109
-msgid "用户输入手机号码，完成图形数字验证，然后请求获取验证码。系统判断手机号码是否已注册，如果已注册，则通过手机短信发送验证码。如果没有注册，提示用户手机号码不存在。"
-msgstr "The user inputs the cell phone number, finishes the graphic digital verification, and then requests the verification code.the system judges whether the mobile phone number is registered, if it is registered, sending the verification code by the mobile phone short message.If there is no registration, the prompt user's cell phone number does not exist."
-
-#: ../../Projects/User Management/User_Features.md:112
-msgid "![根据手机号码找回密码处理时序图](/uploads/images/2021/usermgmt/Sequence_RetrievePwByPhone.png \"Sequence_RetrievePwByPhone.png\")"
-msgstr "![recover the password processing time sequence diagram according to the cell phone number](/uploads/images/2021/usermgmt/Sequence_RetrievePwByPhone.png \"Sequence_RetrievePwByPhone.png\")"
-
-#: ../../Projects/User Management/User_Features.md:114
-msgid "访客登录"
-msgstr "Visitor Registration"
-
-#: ../../Projects/User Management/User_Features.md:116
-msgid "访客是系统内置的一个GUEST账号，访问首页时自动登录。"
-msgstr "Visitors are a GUEST account built in the system, which is automatically registered when the home page is accessed."
-
-#: ../../Projects/User Management/User_Features.md:118
-msgid "在访客登录时，用户可以查看系统的大部分功能，但是不能在系统中进行创建/删除/修改登录操作。"
-msgstr "When logging in, the user can see most of the functions of the system, but cannot create/delete/modify the login operation in the system."
-
-#: ../../Projects/User Management/User_Features.md:120
+#: ../../Projects/User Management/User_Features.md Management/User_Features.md:80
 msgid "访客的默认用户名和密码是guest/guest，部署时如需修改密码请通过登录数据库修改，如果想停用GUEST账号，请从数据库中直接删除。"
 msgstr "The default user name and password for the visitor is guest/gest. If you want to modify your password when deployed, please modify it by logging in to the database. If you want to disable the GUEST account, delete it directly from the database."
 
-#: ../../Projects/User Management/User_Features.md:122
+#: ../../Projects/User Management/User_Features.md
+msgid "用户管理模块默认内置admin用户，该用户作为系统的超级管理员。为该用户提供一个统一的用户列表管理功能，可以查询用户、启用/停用用户、设置用户角色权限。"
+msgstr "The user management module defaults to a built-in admin user, who acts as the super administrator of the system. Provide the user with a unified user list management function, which can query users, enable/disable users, and set user role permissions."
+
+#: ../../Projects/User Management/User_Features.md
+msgid "当停用用户后，用户将无法登录；无法设置已停用用户的角色权限。"
+msgstr "When a user is disabled, the user cannot register; the role authority for the disabled user cannot be set."
+
+#: ../../Projects/User Management/User_Features.md
+msgid "系统提供向已注册邮箱地址发送验证码的服务，用来对邮箱进行验证。"
+msgstr "The system provides a service for sending verification code to a registered mailbox address, which is used for verifying the mailbox."
+
+#: ../../Projects/User Management/User_Features.md
+msgid "只有当EdgeGallery平台开启了邮箱服务才可以向邮箱发送验证码"
+msgstr "Only when the EdgeGallery platform opens the mailbox service to send the verification code to the mailbox"
+
+#: ../../Projects/User Management/User_Features.md
+msgid "系统提供向已注册手机号码发送验证码的服务，用来对手机进行验证。"
+msgstr "The system provides a service for sending verification code to the registered mobile phone number, which is used for verifying the mobile phone."
+
+#: ../../Projects/User Management/User_Features.md
+msgid "只有当EdgeGallery平台开启了短信服务才可以向手机发送验证码"
+msgstr "It's only when the EdgeGallery platform opens the message service to send the verification code to the phone."
+
+#: ../../Projects/User Management/User_Features.md:24
+msgid "用户注册"
+msgstr "User Registration"
+
+#: ../../Projects/User Management/User_Features.md:26
+msgid "用户注册时，除提供必须的用户名外，还可以选择提供手机号码、邮箱地址。建议手机号码和邮箱地址二者至少填写一项真实信息，便于忘记密码后找回密码时进行验证。"
+msgstr "When the user is registered, the mobile phone number and the mailbox address can be provided in addition to the required user name.the mobile phone number and the mailbox address are provided with at least one real information, which is convenient to be verified when the password is recovered after forgetting the password."
+
+#: ../../Projects/User Management/User_Features.md:28
+msgid "注册时系统会进行以下校验："
+msgstr "The system will be checked at the time of registration:"
+
+#: ../../Projects/User Management/User_Features.md:29
+msgid "用户名必须大于6位，同时会校验用户名是否已经被注册。"
+msgstr "The user name must be greater than 6 digits, and whether the username has been registered."
+
+#: ../../Projects/User Management/User_Features.md:30
+msgid "如果提供了邮箱地址，校验其是否符合格式要求的邮箱地址，同时会校验邮箱地址是否已经被注册。"
+msgstr "if the mailbox address is provided, checking whether it meets the mailbox address of the format requirement, and checking whether the mailbox address has been registered."
+
+#: ../../Projects/User Management/User_Features.md:31
+msgid "如果提供了手机号码，校验其是否符合格式要求的中国大陆手机号码，同时会校验手机号码是否已经被注册。"
+msgstr "if the mobile phone number is provided, checking whether the Chinese mobile phone number is in accordance with the format requirement, and checking whether the mobile phone number has been registered."
+
+#: ../../Projects/User Management/User_Features.md:32
+msgid "图形数字验证码"
+msgstr "Graphic Digital Validation Code"
+
+#: ../../Projects/User Management/User_Features.md:34
+msgid "![用户注册处理时序图](/uploads/images/2021/usermgmt/Sequence_Register.png \"Sequence_Register.png\")"
+msgstr "![User Registration Process Sequence Diagram](/uploads/images/2021/usermgmt/Sequence_Register.png \"Sequence_Register.png\")"
+
+#: ../../Projects/User Management/User_Features.md:36
+msgid "单点登录"
+msgstr "Single point entry"
+
+#: ../../Projects/User Management/User_Features.md:38
+msgid "单点登录系统是基于ServiceComb、Spring Security、Oauth2、JWT、Vue等技术实现，采用OAuth2协议的授权码模式（authorization code）。MECM、AppStore、Developer、Atp、Lab应用平台作为客户端，与认证服务器user-mgmt-be进行交互，实现单点登陆与单点注销功能。使用Cookie+Session机制实现用户认证鉴权和超时退出功能，使用JWT存储用户基本信息，减轻认证服务器压力。"
+msgstr "The single sign-on system is implemented based on technology such as ServiceComb, Spring Security, Oauth2, JWT, Vue, and the authorization code mode of the OAuth2 protocol.MECM, AppStore, Developer, Atp, Lab application platform as client interacts with authentication server user-mgmt-be to achieve single sign-on and single sign-on function.using the Cookie + Session mechanism to realize the authentication and overtime withdrawal function of the user, storing the basic information of the user by using the JWT, and reducing the pressure of the authentication server."
+
+#: ../../Projects/User Management/User_Features.md:40
+msgid "这里以MECM和AppStore两个应用平台作为客户端为例来说明单点登录和单点注销的处理时序。"
+msgstr "The processing time of single sign-on and single point cancellation is illustrated by the two application platforms of MECM and AppStore as an example."
+
+#: ../../Projects/User Management/User_Features.md:42
+msgid "![单点登录时序图](/uploads/images/2021/usermgmt/Sequence_SingleSignOn.png \"Sequence_SingleSignOn.png\")"
+msgstr "![Single sign-on sequence diagram](/uploads/images/2021/usermgmt/Sequence_SingleSignOn.png \"Sequence_SingleSignOn.png\")"
+
+#: ../../Projects/User Management/User_Features.md:44
+msgid "![单点注销时序图](/uploads/images/2021/usermgmt/Sequence_SingleSignOut.png \"Sequence_SingleSignOut.png\")"
+msgstr "![single sign-on time sequence diagram](/uploads/images/2021/usermgmt/Sequence_SingleSignOut.png \"Sequence_SingleSignOut.png\")"
+
+#: ../../Projects/User Management/User_Features.md:46
+msgid "用户中心"
+msgstr "User Center"
+
+#: ../../Projects/User Management/User_Features.md:48
+msgid "用户登录到各应用平台后，可以通过“我的帐号”进入用户中心。"
+msgstr "After the user logs in to each application platform, it can enter the user centre through \"My account number\"."
+
+#: ../../Projects/User Management/User_Features.md:50
+msgid "在用户中心，用户可以查看/修改个人信息、修改密码。"
+msgstr "In the user center, the user can check/modify personal information and modify the password."
+
+#: ../../Projects/User Management/User_Features.md:54
+msgid "密码找回"
+msgstr "Password back."
+
+#: ../../Projects/User Management/User_Features.md:56
+msgid "通过邮箱地址找回密码"
+msgstr "Get the code back through the e-mail address."
+
+#: ../../Projects/User Management/User_Features.md:58
+msgid "用户忘记密码后通过邮箱地址找回密码的主要交互处理："
+msgstr "The main interprocessing of the password is recovered by the email address after the user has forgotten the password:"
+
+#: ../../Projects/User Management/User_Features.md:60
+msgid "用户输入邮箱地址，完成图形数字验证，然后请求获取验证码。系统判断邮箱地址是否已注册，如果已注册，则发送验证码到邮箱。如果没有注册，提示用户邮箱地址不存在。"
+msgstr "The user enters the mailbox address, completes the graphic digital verification, and then requests the verification code.The system determines whether the mailbox address is registered and, if it is registered, sends the verification code to the mailbox.If not registered, the prompt user mailbox address does not exist."
+
+#: ../../Projects/User Management/User_Features.md:61 Management/User_Features.md:70
+msgid "用户输入收到的验证码和新密码，修改成功后，返回登录界面。"
+msgstr "The user inputs the received verification code and the new password, and returns to the login interface after the modification is successful."
+
+#: ../../Projects/User Management/User_Features.md:63
+msgid "![根据邮箱地址找回密码处理时序图](/uploads/images/2021/usermgmt/Sequence_RetrievePwByMail.png \"Sequence_RetrievePwByMail.png\")"
+msgstr "![recover the password processing time sequence diagram based on the mailbox address](/uploads/images/2021/usermgmt/Sequence_RetrievePwByMail.png \"Sequence_RetrievePwByMail.png\")"
+
+#: ../../Projects/User Management/User_Features.md:65
+msgid "通过手机号码找回密码"
+msgstr "Get the code back through the cell phone number"
+
+#: ../../Projects/User Management/User_Features.md:67
+msgid "用户忘记密码后通过手机号码找回密码的主要交互处理："
+msgstr "the main interactive processing of the password is recovered by the mobile phone number after the user forgets the password:"
+
+#: ../../Projects/User Management/User_Features.md:69
+msgid "用户输入手机号码，完成图形数字验证，然后请求获取验证码。系统判断手机号码是否已注册，如果已注册，则通过手机短信发送验证码。如果没有注册，提示用户手机号码不存在。"
+msgstr "The user inputs the cell phone number, finishes the graphic digital verification, and then requests the verification code.the system judges whether the mobile phone number is registered, if it is registered, sending the verification code by the mobile phone short message.If there is no registration, the prompt user's cell phone number does not exist."
+
+#: ../../Projects/User Management/User_Features.md:72
+msgid "![根据手机号码找回密码处理时序图](/uploads/images/2021/usermgmt/Sequence_RetrievePwByPhone.png \"Sequence_RetrievePwByPhone.png\")"
+msgstr "![recover the password processing time sequence diagram according to the cell phone number](/uploads/images/2021/usermgmt/Sequence_RetrievePwByPhone.png \"Sequence_RetrievePwByPhone.png\")"
+
+#: ../../Projects/User Management/User_Features.md:74
+msgid "访客登录"
+msgstr "Visitor Registration"
+
+#: ../../Projects/User Management/User_Features.md:76
+msgid "访客是系统内置的一个GUEST账号，访问首页时自动登录。"
+msgstr "Visitors are a GUEST account built in the system, which is automatically registered when the home page is accessed."
+
+#: ../../Projects/User Management/User_Features.md:78
+msgid "在访客登录时，用户可以查看系统的大部分功能，但是不能在系统中进行创建/删除/修改登录操作。"
+msgstr "When logging in, the user can see most of the functions of the system, but cannot create/delete/modify the login operation in the system."
+
+#: ../../Projects/User Management/User_Features.md:82
 msgid "用户列表管理"
 msgstr "User list management"
 
-#: ../../Projects/User Management/User_Features.md:124
+#: ../../Projects/User Management/User_Features.md:84
 msgid "用户管理模块默认内置admin用户，该用户作为系统的超级管理员。"
 msgstr "The user management module defaults to the built-in admin user as the super administrator of the system."
 
-#: ../../Projects/User Management/User_Features.md:126
+#: ../../Projects/User Management/User_Features.md:86
 msgid "系统为该用户提供一个统一的用户列表管理功能，可以查询用户、启用/停用用户、设置用户角色权限。"
 msgstr "The system provides a uniform user list management function for the user, which can inquire the user, enable/disable the user and set the user role authority."
 
-#: ../../Projects/User Management/User_Features.md:133
+#: ../../Projects/User Management/User_Features.md:93
 msgid "邮箱验证"
 msgstr "Mailbox Verification"
 
-#: ../../Projects/User Management/User_Features.md:135
+#: ../../Projects/User Management/User_Features.md:95
 msgid "对邮箱地址进行验证时需要发送验证码到邮箱，需要开启邮箱服务。"
 msgstr "It is necessary to send the verification code to the mailbox when validating the mailbox address, and it needs to open the mailbox service."
 
-#: ../../Projects/User Management/User_Features.md:137
+#: ../../Projects/User Management/User_Features.md:97
 msgid "开启邮箱服务需要修改user-mgmt下的配置文件application.properties："
 msgstr "Opening the mailbox service requires modifying the configuration document application.properties under user-mgmt:"
 
-#: ../../Projects/User Management/User_Features.md:139
+#: ../../Projects/User Management/User_Features.md:99
 msgid "[mail.enabled=true]   //邮箱服务开关，默认false"
 msgstr "[mail.enabled=true] // mailbox service switch, default false"
 
-#: ../../Projects/User Management/User_Features.md:141
+#: ../../Projects/User Management/User_Features.md:101
 msgid "[spring.mail.host=]  //邮箱服务器"
 msgstr "[spring.mail.host=] // mailbox server"
 
-#: ../../Projects/User Management/User_Features.md:143
+#: ../../Projects/User Management/User_Features.md:103
 msgid "[spring.mail.port=]  //邮箱服务器发送邮件的端口"
 msgstr "[spring.mail.port=] // Mail server sends port of mail"
 
-#: ../../Projects/User Management/User_Features.md:145
+#: ../../Projects/User Management/User_Features.md:105
 msgid "[spring.mail.username=]  //邮件发件人"
 msgstr "[spring.mail.username=] // Mail sender"
 
-#: ../../Projects/User Management/User_Features.md:147
+#: ../../Projects/User Management/User_Features.md:107
 msgid "[spring.mail.password=]  //发件人授权码"
 msgstr "[spring.mail.mail.password=] // sender authorization code"
 
-#: ../../Projects/User Management/User_Features.md:149
+#: ../../Projects/User Management/User_Features.md:109
 msgid "手机验证"
 msgstr "Mobile phone verification"
 
-#: ../../Projects/User Management/User_Features.md:151
+#: ../../Projects/User Management/User_Features.md:111
 msgid "对手机号码进行验证时需要通过短信发送验证码到手机，需要开启短信服务。"
 msgstr "When validating the mobile phone number, it needs to send the verification code to the mobile phone via the short message, and the short message service needs to be opened."
 
-#: ../../Projects/User Management/User_Features.md:153
+#: ../../Projects/User Management/User_Features.md:113
 msgid "短信业务使用华为云消息&短信服务，详细信息请点击[这里](https://www.huaweicloud.com/product/msgsms.html)。"
 msgstr "The SMS business uses Huawei Cloud News & Short Message Service, and please click [here](https://www.huaweicloud.com/product/msgsms.html)."
 
-#: ../../Projects/User Management/User_Features.md:161
+#: ../../Projects/User Management/User_Features.md:121
 msgid "界面设计"
 msgstr "interface design"
 
-#: ../../Projects/User Management/User_Features.md:163
+#: ../../Projects/User Management/User_Features.md:123
 msgid "[用户注册界面](#用户注册界面)"
 msgstr "[User Registration Interface](#Userregistrationinterface)"
 
-#: ../../Projects/User Management/User_Features.md:164
+#: ../../Projects/User Management/User_Features.md:124
 msgid "[用户登录界面](#用户登录界面)"
 msgstr "[User Registration Interface](#Userlogininterface)"
 
-#: ../../Projects/User Management/User_Features.md:165
+#: ../../Projects/User Management/User_Features.md:125
 msgid "[忘记密码后找回密码界面](#忘记密码后找回密码界面)"
 msgstr "[Forget the password and recover the password interface](#Retrievethepasswordinterfaceafterforgettingthepassword)"
 
-#: ../../Projects/User Management/User_Features.md:166
+#: ../../Projects/User Management/User_Features.md:126
 msgid "[用户中心界面](#用户中心界面)"
 msgstr "[User Central Interface](#UserCenterInterface)"
 
-#: ../../Projects/User Management/User_Features.md:167
+#: ../../Projects/User Management/User_Features.md:127
 msgid "[用户列表管理界面](#用户列表管理界面)"
 msgstr "[User List Management Interface](#Userlistmanagementinterface)"
 
-#: ../../Projects/User Management/User_Features.md:169
+#: ../../Projects/User Management/User_Features.md:129
 msgid "用户注册界面"
 msgstr "User registration interface"
 
-#: ../../Projects/User Management/User_Features.md:171
+#: ../../Projects/User Management/User_Features.md:131
 msgid "![](/uploads/images/2021/usermgmt/UI_Register.png \"UI_Register.png\")"
 msgstr "![](/uploads/images/2021/usermgmt/UI_Register.png \"UI_Register.png\")"
 
-#: ../../Projects/User Management/User_Features.md:173
+#: ../../Projects/User Management/User_Features.md:133
 msgid "用户登录界面"
 msgstr "User registration interface"
 
-#: ../../Projects/User Management/User_Features.md:175
+#: ../../Projects/User Management/User_Features.md:135
 msgid "![](/uploads/images/2021/usermgmt/UI_Login.png \"UI_Login.png\")"
 msgstr "![](/uploads/images/2021/usermgmt/UI_Login.png \"UI_Login.png\")"
 
-#: ../../Projects/User Management/User_Features.md:177
+#: ../../Projects/User Management/User_Features.md:137
 msgid "忘记密码后找回密码界面"
 msgstr "Get the password back after you forget your password."
 
-#: ../../Projects/User Management/User_Features.md:179
+#: ../../Projects/User Management/User_Features.md:139
 msgid "（1）当只开启了邮箱服务时，只能通过邮箱找回"
 msgstr "(1) When only the mailbox service is opened, only through the mailbox"
 
-#: ../../Projects/User Management/User_Features.md:181
+#: ../../Projects/User Management/User_Features.md:141
 msgid "![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-1.png \"UI_RetrievePwByMail-1.png\")"
 msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-1.png \"UI_RetrievePwByMail-1.png\")"
 
-#: ../../Projects/User Management/User_Features.md:183
+#: ../../Projects/User Management/User_Features.md:143
 msgid "![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-2.png \"UI_RetrievePwByMail-2.png\")"
 msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-2.png \"UI_RetrievePwByMail-2.png\")"
 
-#: ../../Projects/User Management/User_Features.md:185
+#: ../../Projects/User Management/User_Features.md:145
 msgid "（2）当只开启了短信服务时，只能通过手机找回"
 msgstr "(2)When only the short message service is turned on, only the mobile phone can be retrieved"
 
-#: ../../Projects/User Management/User_Features.md:187
+#: ../../Projects/User Management/User_Features.md:147
 msgid "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-1.png \"UI_RetrievePwByPhone-1.png\")"
 msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-1.png \"UI_RetrievePwByPhone-1.png\")"
 
-#: ../../Projects/User Management/User_Features.md:189
+#: ../../Projects/User Management/User_Features.md:149
 msgid "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-2.png \"UI_RetrievePwByPhone-2.png\")"
 msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-2.png \"UI_RetrievePwByPhone-2.png\")"
 
-#: ../../Projects/User Management/User_Features.md:191
+#: ../../Projects/User Management/User_Features.md:151
 msgid "（3）当邮箱服务和短信服务同时开启时，可以二选一"
 msgstr "(3)When the mailbox service and short message service are opened at the same time, you can select one"
 
-#: ../../Projects/User Management/User_Features.md:193
+#: ../../Projects/User Management/User_Features.md:153
 msgid "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhoneOrMail.png \"UI_RetrievePwByPhoneOrMail.png\")"
 msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhoneOrMail.png \"UI_RetrievePwByPhoneOrMail.png\")"
 
-#: ../../Projects/User Management/User_Features.md:195
+#: ../../Projects/User Management/User_Features.md:155
 msgid "点击“下一步”后的界面，与前面的界面一样。"
 msgstr "Click on the interface after \"Next\", as with the front interface."
 
-#: ../../Projects/User Management/User_Features.md:197
+#: ../../Projects/User Management/User_Features.md:157
 msgid "用户中心界面"
 msgstr "User Center Interface"
 
-#: ../../Projects/User Management/User_Features.md:199 Management/User_Features.md:209
+#: ../../Projects/User Management/User_Features.md:159 Management/User_Features.md:169
 msgid "（1）主界面"
 msgstr "(1) Main interface"
 
-#: ../../Projects/User Management/User_Features.md:201
+#: ../../Projects/User Management/User_Features.md:161
 msgid "![](/uploads/images/2021/usermgmt/UI_AccountCenter.png \"UI_AccountCenter.png\")"
 msgstr "![](/uploads/images/2021/usermgmt/UI_AccountCenter.png \"UI_AccountCenter.png\")"
 
-#: ../../Projects/User Management/User_Features.md:203
+#: ../../Projects/User Management/User_Features.md:163
 msgid "（2）修改密码"
 msgstr "(2) Modify Password"
 
-#: ../../Projects/User Management/User_Features.md:205
+#: ../../Projects/User Management/User_Features.md:165
 msgid "![](/uploads/images/2021/usermgmt/UI_AccountCenter_ModifyPw.png \"UI_AccountCenter_ModifyPw.png\")"
 msgstr "![](/uploads/images/2021/usermgmt/UI_AccountCenter_ModifyPw.png \"UI_AccountCenter_ModifyPw.png\")"
 
-#: ../../Projects/User Management/User_Features.md:207
+#: ../../Projects/User Management/User_Features.md:167
 msgid "用户列表管理界面"
 msgstr "User list management interface"
 
-#: ../../Projects/User Management/User_Features.md:211
+#: ../../Projects/User Management/User_Features.md:171
 msgid "![](/uploads/images/2021/usermgmt/UI_UserList.png \"UI_UserList.png\")"
 msgstr "![](/uploads/images/2021/usermgmt/UI_UserList.png \"UI_UserList.png\")"
 
-#: ../../Projects/User Management/User_Features.md:213
+#: ../../Projects/User Management/User_Features.md:173
 msgid "（2）设置用户角色"
 msgstr "(2) setting up user roles"
 
-#: ../../Projects/User Management/User_Features.md:215
+#: ../../Projects/User Management/User_Features.md:175
 msgid "![](/uploads/images/2021/usermgmt/UI_UserList_Setting.png \"UI_UserList_Setting.png\")"
 msgstr "![](/uploads/images/2021/usermgmt/UI_UserList_Setting.png \"UI_UserList_Setting.png\")"
 

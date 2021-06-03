@@ -18,7 +18,6 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
  - Image Version: v0.9.1
 
 **新开源仓库列表**
-
 | 模块            | 名称            | 类型   | URL                                           | 说明                 |
 |-----------------|-----------------|--------|-----------------------------------------------|----------------------|
 | Developer     | api-emulator     | 产品仓   | https://gitee.com/edgegallery/api-emulator     | 提供基本能力的模拟api  |
@@ -57,9 +56,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自行修复：
 
-- Appstore:
-
-
+**Appstore**
   | Component  | Version  | CVE  |
   |---|---|---|
   | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -68,9 +65,7 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
   | spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258 |
 
 
-- Developer:
-
-
+**Developer**
   | Component  | Version  | CVE  |
   |---|---|---|
   | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -80,9 +75,7 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
   | lodash | 4.17.13 | CVE-2020-8203 |
   | minimatch | 3.0.4 | NPM-118 |
 
-- User-mgmt:
-
-
+**User-mgmt**
   | Component  | Version  | CVE  |
   |---|---|---|
   | rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
@@ -91,17 +84,13 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
   | lodash | 4.17.20 | NPM-1065, NPM-557, NPM-7823 |
   | minimatch | 3.0.4 | NPM-118 |
 
-- Website-gateway:
-
-
+**Website-gateway**
   | Component  | Version  | CVE  |
   |---|---|---|
   | log4j | 1.2.17 | CVE-2019-17571 |
   | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
 
-- MECM:
-
-
+**MECM**
   | Component  | Version  | CVE  |
   |---|---|---|
   | lodash | 4.17.13 | CVE-2020-8203 |
