@@ -134,6 +134,43 @@ Example response:
   }
 ```
 
+### Get Application template
+Retrieves application template.
+```
+Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/apptemplate
+Method: GET
+```
+|Name|Definition|type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt token|
+|app_package_id|app package id|path|yes|Alphanumeric and must be smaller case|32|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+    "appPkgName": "positioning_service",
+    "version": "1.0",
+    "appId": "efa14bd4327c43098343402246619ff3",
+    "appPackageId": "9022daf9de964391ae29907221ef95a1",
+    "inputs": [
+        {
+            "name": "APP_Name",
+            "type": "string",
+            "defaultValue": null,
+            "description": "APP_Name"
+        },
+        {
+            "name": "network_name_1",
+            "type": "string",
+            "defaultValue": "fst01_OM_Plane",
+            "description": "APP_NETWORK"
+        }
+    ]
+}
+```
+
 ### Delete Application Packages
 Deletes application package
 ```
