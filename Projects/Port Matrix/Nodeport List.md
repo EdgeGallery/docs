@@ -1,6 +1,5 @@
 Kubernetes NodePort List
 -------------------------
-
 | **Component** | **Pod Name** | **Service Name** | **Node Port** | **Internal Port** |
 | --- | --- | --- | --- | --- |
 | appstore-be | appstore-be-0 | appstore-be-svc | ClusterIP| 8099 |
@@ -26,9 +25,6 @@ Kubernetes NodePort List
 
 ServiceComb NodePort List
 --------------------------
-
-> `All services registered to the service center`
-
 | **Component** | **Service Name** | **REST Port** | **Spring Server Port (default 8080)** |
 | --- | --- | --- | --- |
 | appstore-be | mec-appstore | 8099 | 8099 |
@@ -37,3 +33,5 @@ ServiceComb NodePort List
 | developer-fe | developer-fe | 8080 | 8443|
 | user-mgmt | user-mgmt-be | 8067 | 8067 |
 | user-mgmt-fe | user-mgmt-fe | 8080 | 8443|
+
+> `All services registered to the service center`

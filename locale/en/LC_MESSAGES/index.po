@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-05-26 17:32+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../index.rst:8
 msgid "EdgeGallery Home"
@@ -78,12 +78,20 @@ msgid "Projects"
 msgstr "Projects"
 
 #: ../../index.rst:46
+msgid "Raise issue"
+msgstr "Raise issue"
+
+#: ../../index.rst:46
+msgid "Submit PR"
+msgstr "Submit PR"
+
+#: ../../index.rst:46
 msgid "Documentation Bug Report"
 msgstr "Documentation Bug Report"
 
 #: ../../index.rst:2
 msgid "Welcome to EdgeGallery's documentation!"
-msgstr "Welcombe to EdgeGallery's documentation!"
+msgstr "Welcome to EdgeGallery's documentation!"
 
 #: ../../index.rst:4
 msgid "EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边缘的资源、应 用、安全、管理的基础框架和网络开放服务的事实标准，并实现同公有云的互联互通。 在兼容边缘基础设施异构差异化的基础上，构建起统一的MEC应用生态系统。"

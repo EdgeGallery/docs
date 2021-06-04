@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-02 20:23+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,99 +33,319 @@ msgstr "Get All Application Packages"
 msgid "Retrieves all application packages"
 msgstr "Retrieves all application packages"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:45 ../../Projects/MECM/Apm_Interfaces_en.md:221 ../../Projects/MECM/Apm_Interfaces_en.md:277 ../../Projects/MECM/Apm_Interfaces_en.md:356 ../../Projects/MECM/Apm_Interfaces_en.md:402 ../../Projects/MECM/Apm_Interfaces_en.md:514 ../../Projects/MECM/Apm_Interfaces_en.md:603 ../../Projects/MECM/Apm_Interfaces_en.md:642 ../../Projects/MECM/Apm_Interfaces_en.md:684 ../../Projects/MECM/Apm_Interfaces_en.md:750 ../../Projects/MECM/Apm_Interfaces_en.md:790 ../../Projects/MECM/Apm_Interfaces_en.md:841 ../../Projects/MECM/Apm_Interfaces_en.md:891
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "Name"
+msgstr "Name"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "Definition"
+msgstr "Definition"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "type"
+msgstr "type"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "Required"
+msgstr "Required"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "Allowed"
+msgstr "Allowed"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "Max Length"
+msgstr "Max Length"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "access_token"
+msgstr "access_token"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "access token"
+msgstr "access token"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "header"
+msgstr "header"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "yes"
+msgstr "yes"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "Jwt token"
+msgstr "Jwt token"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "tenant_id"
+msgstr "tenant_id"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "tenant id"
+msgstr "tenant id"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "path"
+msgstr "path"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "Valid UUID"
+msgstr "Valid UUID"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "64"
+msgstr "64"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md:18 ../../Projects/MECM/Apm_Interfaces_en.md:90 ../../Projects/MECM/Apm_Interfaces_en.md:112 ../../Projects/MECM/Apm_Interfaces_en.md:150 ../../Projects/MECM/Apm_Interfaces_en.md:169 ../../Projects/MECM/Apm_Interfaces_en.md:240 ../../Projects/MECM/Apm_Interfaces_en.md:274 ../../Projects/MECM/Apm_Interfaces_en.md:293 ../../Projects/MECM/Apm_Interfaces_en.md:308 ../../Projects/MECM/Apm_Interfaces_en.md:340 ../../Projects/MECM/Apm_Interfaces_en.md:360 ../../Projects/MECM/Apm_Interfaces_en.md:377 ../../Projects/MECM/Apm_Interfaces_en.md:400
 msgid "Example response:"
 msgstr "Example response:"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:72
+#: ../../Projects/MECM/Apm_Interfaces_en.md:45
 msgid "Onboard Application Package"
 msgstr "Onboard Application Package"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:73
+#: ../../Projects/MECM/Apm_Interfaces_en.md:46
 msgid "Onboard application package"
 msgstr "Onboard application package"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:198 ../../Projects/MECM/Apm_Interfaces_en.md:592 ../../Projects/MECM/Apm_Interfaces_en.md:735
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "appIconUrl"
+msgstr "appIconUrl"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "body"
+msgstr "body"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "Valid URL"
+msgstr "Valid URL"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "1024"
+msgstr "1024"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "appId"
+msgstr "appId"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "AlphaNumeric with smaller case alphabets"
+msgstr "AlphaNumeric with smaller case alphabets"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "32"
+msgstr "32"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "appPkgAffinity"
+msgstr "appPkgAffinity"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "AlhpaNumeric"
+msgstr "AlhpaNumeric"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "255"
+msgstr "255"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "appPkgDesc"
+msgstr "appPkgDesc"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "appPkgId"
+msgstr "appPkgId"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "appPkgName"
+msgstr "appPkgName"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "AlphaNumeric and allowed special characters hypen and underscore"
+msgstr "AlphaNumeric and allowed special characters hypen and underscore"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "appPkgPath"
+msgstr "appPkgPath"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "appPkgVersion"
+msgstr "appPkgVersion"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "appProvider"
+msgstr "appProvider"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "AlphaNumeric"
+msgstr "AlphaNumeric"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "createdTime"
+msgstr "createdTime"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "Valid time"
+msgstr "Valid time"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "mecHostInfo"
+msgstr "mecHostInfo"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "15"
+msgstr "15"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md:67 ../../Projects/MECM/Apm_Interfaces_en.md:263 ../../Projects/MECM/Apm_Interfaces_en.md:325
 msgid "Example request body:"
 msgstr "Example request body:"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:231 ../../Projects/MECM/Apm_Interfaces_en.md:795 ../../Projects/MECM/Apm_Interfaces_en.md:853
+#: ../../Projects/MECM/Apm_Interfaces_en.md:100 ../../Projects/MECM/Apm_Interfaces_en.md:365 ../../Projects/MECM/Apm_Interfaces_en.md:389
 msgid "Get Application Package Information"
 msgstr "Get Application Package Information"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:232
+#: ../../Projects/MECM/Apm_Interfaces_en.md:101
 msgid "Retrieves application package information."
 msgstr "Retreeves application package information."
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:302
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "app_package_id"
+msgstr "app_package_id"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "app package id"
+msgstr "app package id"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "Alphanumeric and must be smaller case"
+msgstr "Alphanumeric and must be smaller case"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md:137
 msgid "Delete Application Packages"
 msgstr "Delete Application Packages"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:303
+#: ../../Projects/MECM/Apm_Interfaces_en.md:138
 msgid "Deletes application package"
 msgstr "Deletes application package"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:364
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "app id"
+msgstr "app id"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md:158
 msgid "Download Csar"
 msgstr "Download Csar"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:365
+#: ../../Projects/MECM/Apm_Interfaces_en.md:159
 msgid "Download application package CSAR"
 msgstr "Download application package CSAR"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:460
+#: ../../Projects/MECM/Apm_Interfaces_en.md:227
 msgid "Delete Application Package"
 msgstr "Delete Application Package"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:461
+#: ../../Projects/MECM/Apm_Interfaces_en.md:228
 msgid "Deletes an application packages"
 msgstr "Deleees an application packages"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:522
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "host_ip"
+msgstr "host_ip"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "host ip"
+msgstr "host ip"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "Valid IP address"
+msgstr "Valid IP address"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md:248
 msgid "On-boards application with package."
 msgstr "On-boards application with package."
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:523
+#: ../../Projects/MECM/Apm_Interfaces_en.md:249
 msgid "On-boards application with package provided."
 msgstr "On-boards application with package provided."
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:612
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "File"
+msgstr "File"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "file"
+msgstr "file"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "formData"
+msgstr "formData"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "No"
+msgstr "No"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "hostList"
+msgstr "hostList"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "host list"
+msgstr "host list"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "no"
+msgstr "no"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md:283
 msgid "Queries liveness & readiness"
 msgstr "Queries liveness & readiness"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:613
+#: ../../Projects/MECM/Apm_Interfaces_en.md:284
 msgid "Retrieves data for liveness & readiness"
 msgstr "Retreeves data for liveness & readiness"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:646 ../../Projects/MECM/Apm_Interfaces_en.md:647
+#: ../../Projects/MECM/Apm_Interfaces_en.md:297 ../../Projects/MECM/Apm_Interfaces_en.md:298
 msgid "Retrieves all application packages info from app store."
 msgstr "Retreeves all application packages info from app store."
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:689
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "appstore_ip"
+msgstr "appstore_ip"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md:313
 msgid "Sync application packages"
 msgstr "Sync application packages"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:690
+#: ../../Projects/MECM/Apm_Interfaces_en.md:314
 msgid "Sync application package by downloading package from appstore."
 msgstr "Sync application package by download package from appstore."
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:760
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "packageId"
+msgstr "packageId"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md:350
 msgid "Retrieves all application packages sync status"
 msgstr "Retreeves all application packages sync status"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:761
+#: ../../Projects/MECM/Apm_Interfaces_en.md:351
 msgid "Retrieves all application packages sync status."
 msgstr "Retreeves all application packages sync status."
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:796 ../../Projects/MECM/Apm_Interfaces_en.md:854
+#: ../../Projects/MECM/Apm_Interfaces_en.md:366 ../../Projects/MECM/Apm_Interfaces_en.md:390
 msgid "Retrieve application packages sync status."
 msgstr "Retrieve application packages sync status."
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:929
+#: ../../Projects/MECM/Apm_Interfaces_en.md
+msgid "AlphaNumeric with smaller case alpha"
+msgstr "AlphaNumeric with smaller case alpha"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md:438
 msgid "APM Open Api Swagger"
 msgstr "APM Open Api Swagger"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:931
+#: ../../Projects/MECM/Apm_Interfaces_en.md:440
 msgid "Please refer [APM_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/apm-swagger-openapi.yaml)"
 msgstr "Please review [APM_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/apm-swagger-openapi.yaml)"
 

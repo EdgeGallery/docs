@@ -19,7 +19,6 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
  - Image Version: v1.1.0
 
 **新开源仓库列表**
-
 | 模块                           |      名称       | 类型   | URL                                           | 说明                                   |
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
 | Examaple Applications          | example-apps    | PoC仓 | https://gitee.com/edgegallery/example-apps    | 提供基于EdgeGallery的样例app   |
@@ -77,9 +76,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  EdgeGalelry v1.1.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
 
-- Appstore:
-
-
+**Appstore**
 | Component                                  | Version       | CVE                                                          |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
 | log4j                 | 1.2.17        | CVE-2019-17571                                               |
@@ -93,9 +90,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 | spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
 
 
-- Developer:
-
-
+**Developer**
 | Component  | Version  | CVE  |
 |---|---|---|
 | netty-transport | 4.1.36.Final | CVE-2019-20444  CVE-2019-20445  CVE-2019-16869  CVE-2020-11612 |
@@ -108,9 +103,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 | spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
 
 
-- ATP
-
-
+**ATP**
 | Component  | Version  | CVE  |
 |---|---|---|
 | netty-transport | 4.1.36.Final | CVE-2019-20444  CVE-2019-20445  CVE-2019-16869  CVE-2020-11612 |
@@ -122,9 +115,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 | spring-core | 5.1.8.RELEASE | CVE-2020-5398 |
 
 
-- User-mgmt:
-
-
+**User-mgmt**
 | Component                                             | Version       | CVE                         |
 | ----------------------------------------------------- | ------------- | --------------------------- |
 | vertx-core | 3.9.4 | CVE-2019-17640 |
@@ -156,7 +147,6 @@ Version: v1.0.0
  - Image Version: v1.0.0
 
 **新开源仓库列表**
-
 | 模块                           |      名称       | 类型   | URL                                           | 说明                                   |
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
 | ATP(Application Test Platform) |       atp       | 产品仓 | https://gitee.com/edgegallery/atp             | 应用测试平台，为应用认证提供测试支撑   |
@@ -212,9 +202,7 @@ Version: v1.0.0
 
 EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
 
-- Appstore:
-
-
+**Appstore**
 | Component                                  | Version       | CVE                                                          |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
 | log4j (indirect dependency)                | 1.2.17        | CVE-2019-17571                                               |
@@ -224,9 +212,7 @@ EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自�
 | tomcat-embed-core | 9.0.37 | CVE-2020-17525                                                |
 
 
-- Developer:
-
-
+**Developer**
 | Component  | Version  | CVE  |
 |---|---|---|
 | spring-beans (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
@@ -236,15 +222,12 @@ EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自�
 | tomcat-embed-core | 9.0.37 | CVE-2020-17527 |
 
 
-- ATP
-
+**ATP**
 | Component  | Version  | CVE  |
 |---|---|---|
 | mybatis-spring-boot-starter |2.1.1 | CVE-2020-26945|
 
-- User-mgmt:
-
-
+**User-mgmt**
 | Component                                             | Version       | CVE                         |
 | ----------------------------------------------------- | ------------- | --------------------------- |
 | spring-security-core                                  |5.3.4.RELEASE  | CVE-2018-1258               |
@@ -253,9 +236,7 @@ EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自�
 |  mybatis-spring-boot-starter                             | 2.1.1         | CVE-2020-26945                |
 |  spring-security-oauth2                             | 2.3.3.RELEAS         | CVE-2018-15758                |
 
-- Website-gateway:
-
-
+**Website-gateway**
 | Component            | Version       | CVE            |
 | -------------------- | ------------- | -------------- |
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258  |
@@ -263,9 +244,7 @@ EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自�
 | spring-security-oauth2 | 2.3.3 | CVE-2018-15758  |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17527  |
 
-- MECM:
-
-
+**MECM**
 | Component | Version | CVE           |
 | --------- | ------- | ------------- |
 | lodash    | 4.17.13 | CVE-2020-8203 |
@@ -295,7 +274,6 @@ N/A
  - Image Version: v0.9.1
 
 **新开源仓库列表**
-
 | 模块            | 名称            | 类型   | URL                                           | 说明                 |
 |-----------------|-----------------|--------|-----------------------------------------------|----------------------|
 | Developer     | api-emulator     | 产品仓   | https://gitee.com/edgegallery/api-emulator     | 提供基本能力的模拟api  |
@@ -334,9 +312,7 @@ N/A
 
 EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自行修复：
 
-- Appstore:
-
-
+**Appstore**
 | Component                                  | Version       | CVE                                                          |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
 | netty-transport (indirect dependency)      | 4.1.36.Final  | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -354,9 +330,7 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
 
 
 
-- Developer:
-
-
+**Developer**
 | Component  | Version  | CVE  |
 |---|---|---|
 | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -375,9 +349,7 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
 | tomcat-embed-core | 9.0.37 | CVE-2020-17527 |
 | vertx-core | 3.6.3 | CVE-2019-17640 |
 
-- User-mgmt:
-
-
+**User-mgmt**
 | Component  | Version  | CVE  |
 |---|---|---|
 | rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
@@ -386,17 +358,13 @@ EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自�
 | lodash | 4.17.20 | NPM-1065, NPM-557, NPM-7823 |
 | minimatch | 3.0.4 | NPM-118 |
 
-- Website-gateway:
-
-
+**Website-gateway**
 | Component  | Version  | CVE  |
 |---|---|---|
 | log4j | 1.2.17 | CVE-2019-17571 |
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
 
-- MECM:
-
-
+**MECM**
 | Component  | Version  | CVE  |
 |---|---|---|
 | lodash | 4.17.13 | CVE-2020-8203 |
@@ -424,7 +392,6 @@ Version: v0.9
  - Image Version: v0.9
 
 **新开源仓库列表**
-
 | 模块            | 名称            | 类型   | URL                                           | 说明                 |
 |-----------------|-----------------|--------|-----------------------------------------------|----------------------|
 | helm-charts     | helm-charts     | 部署   | https://gitee.com/edgegallery/helm-charts     | EdgeGallery部署脚本  |
@@ -479,9 +446,7 @@ Version: v0.9
 
 EdgeGalelry v0.9版本第三方开源组件存在以下漏洞需要用户自行修复：
 
-- Appstore:
-
-
+**Appstore**
 | Component  | Version  | CVE  |
 |---|---|---|
 | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -490,9 +455,7 @@ EdgeGalelry v0.9版本第三方开源组件存在以下漏洞需要用户自行�
 | spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258 |
 
 
-- Developer:
-
-
+**Developer**
 | Component  | Version  | CVE  |
 |---|---|---|
 | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -502,9 +465,7 @@ EdgeGalelry v0.9版本第三方开源组件存在以下漏洞需要用户自行�
 | lodash | 4.17.13 | CVE-2020-8203 |
 | minimatch | 3.0.4 | NPM-118 |
 
-- User-mgmt:
-
-
+**User-mgmt**
 | Component  | Version  | CVE  |
 |---|---|---|
 | rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
@@ -513,17 +474,13 @@ EdgeGalelry v0.9版本第三方开源组件存在以下漏洞需要用户自行�
 | lodash | 4.17.20 | NPM-1065, NPM-557, NPM-7823 |
 | minimatch | 3.0.4 | NPM-118 |
 
-- Website-gateway:
-
-
+**Website-gateway**
 | Component  | Version  | CVE  |
 |---|---|---|
 | log4j | 1.2.17 | CVE-2019-17571 |
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
 
-- MECM:
-
-
+**MECM**
 | Component  | Version  | CVE  |
 |---|---|---|
 | lodash | 4.17.13 | CVE-2020-8203 |

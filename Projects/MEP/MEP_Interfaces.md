@@ -73,7 +73,6 @@ POST /mep/token
 ```
 
 请求参数：
-
  |名称  |          类型 |    描述       |                                      IN     |  必选|
  |---|---|---|---|---|
  | Content-Type |   String  | MIME类型，  填"application/json"                        |               header  | 是|                                                                    
@@ -122,7 +121,6 @@ POST /mep/token
 返回码：200
 
 OK
-
 |名称     |       类型  |   描述   |               必选|
   |---|---|---|---|
   |access\_token |  String  | Token|                 是|
@@ -153,20 +151,21 @@ PUT /mep/appMng/v1/applications/{appInstanceId}/confs
 ```
 
 请求参数：
-
 |名称    |        类型    | 描述     |                           IN   |    必选|
   | ---| ---| ---| ---| ---| 
  |  Content-Type    | String   | MIME类型，填"application/json"                       |     header|   是| 
   |appInstanceId |  String |  APP实例ID（UUID）             |      path |    是|
 
 Body参数：
-
   |  名称     |                     类型 |              描述        |             必选| 
   | ---| ---| ---| ---|
-  | authInfo|                  Object|            用户信息                        | 是| 
-  | &gt;credentials|               Object|            证书信息|   是      | 
-  | &gt;&gt;accessKeyId|                   String  |          AK          |                是|
-  | &gt;&gt;secretKey|                   String  |          SK          |                是|
+  | authInfo|                      Object|            用户信息      |         是| 
+  | &gt;credentials|               Object|            证书信息      |   是      | 
+  | &gt;&gt;accessKeyId|         String  |          AK             |                是|
+  | &gt;&gt;secretKey|           String  |          SK             |                是|
+  | appInfo|                       Object|            app信息       | 是| 
+  | &gt;appName|                 String  |            app名称       |   是      | 
+  | &gt;requiredServices| Array[String]  |         app依赖的服务列表 |   是      |
 
 请求示例：
 
@@ -185,6 +184,13 @@ PUT /mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confs
                 "accessKeyId": "QVUJMSUMgS0VZLS0tLS0",
                 "secretKey": "DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
             }
+        },
+        "appInfo": {
+            "appName": "name1",
+            "requiredServices": [
+                "serviceA",
+                "serviceB"
+            ]
         }
     }
 }
@@ -193,25 +199,40 @@ PUT /mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confs
 返回参数：
 
 返回码：200
-
-OK
-
   |  名称     |                     类型 |              描述        |             必选| 
   | ---| ---| ---| ---|
-  | authInfo|                  Object|            用户信息                        | 是| 
-  | &gt;credentials|               Object|            证书信息|   是      | 
-  | &gt;&gt;accessKeyId|                   String  |          AK          |                是|
-  | &gt;&gt;secretKey|                   String  |          SK          |                是|
+  | authInfo|                      Object|            用户信息      |         是| 
+  | &gt;credentials|               Object|            证书信息      |   是      | 
+  | &gt;&gt;accessKeyId|         String  |          AK             |                是|
+  | &gt;&gt;secretKey|           String  |          SK             |                是|
+  | appInfo|                       Object|            app信息       | 是| 
+  | &gt;appName|                 String  |            app名称       |   是      | 
+  | &gt;requiredServices| Array[String]  |            app依赖的服务 |   是      |
 
 返回示例：
 
 ```
 HTTP/1.1 200 OK
 {
-    "authInfo": {
-        "credentials": {
-            "accessKeyId": "QVUJMSUMgS0VZLS0tLS0",
-            "secretKey": "DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
+    "header": [
+        {
+            "key": "Content-Type",
+            "value": "application/json"
+        }
+    ],
+    "body": {
+        "authInfo": {
+            "credentials": {
+                "accessKeyId": "QVUJMSUMgS0VZLS0tLS0",
+                "secretKey": "DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
+            }
+        },
+        "appInfo": {
+            "appName": "name1",
+            "requiredServices": [
+                "serviceA",
+                "serviceB"
+            ]
         }
     }
 }
@@ -232,7 +253,6 @@ GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services
 ```
 
 请求参数：
-
   |名称            | 类型  |   描述     |                           IN    |   必选|
   |---|---|---|---|---| 
   |Authorization |  String |  Token信息，格式：Bearer token信息  | header  | 是|
@@ -263,7 +283,6 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 返回码：200
 
 OK
-
  |名称                      |   类型            |  描述      |                                                                                                            必选|
   |---|---|---|---|
  | serInstanceId      |          String       |     服务实例ID         |                                                                                                   是|
@@ -364,7 +383,6 @@ GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
 ```
 
 请求参数：
-
   |名称            |类型  |   描述     |                           IN      | 必选|
   |---|---|---|---|---| 
   |Authorization  | String  | Token信息，格式：Bearer token信息  | header |  是|
@@ -395,7 +413,6 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 返回码：200
 
 OK
-
  |名称        |                 类型   |           描述           |                                                                                                       必选|
   |---|---|---|---|
   |serInstanceId  |              String|            服务实例ID   |                                                                                                         是|
@@ -491,7 +508,6 @@ POST /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services
 ```
 
 请求参数：
-
 |名称    |        类型    | 描述     |                           IN   |    必选|
   | ---| ---| ---| ---| ---| 
  |  Content-Type    | String   | MIME类型，填"application/json"                       |     header|   是|                                                                                          
@@ -499,7 +515,6 @@ POST /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services
   |appInstanceId |  String |  APP实例ID（UUID）             |      path |    是|
 
 Body参数：
-
   |  名称     |                     类型 |              描述        |                                                                                                           必选| 
   | ---| ---| ---| ---|
   | serName     |                  String |            服务名称（字母/数字/\_/-的组合，但不能以\_和-开头或结尾），最大长度128                                                | 是| 
@@ -591,7 +606,6 @@ POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/
 返回码：201
 
 OK
-
  | 名称           |               类型     |          描述        |                                                                                                           必选| 
   | ---| ---| ---| ---| 
 |   serInstanceId   |              String  |           服务实例ID      |                                                                                                       是
@@ -690,7 +704,6 @@ PUT /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
 ```
 
 请求参数：
-
   | 名称           |  类型   |   描述           |                      IN     |   必选| 
   |---|---|---|---|---|
   | Content-Type  |   String   | MIME类型，  填"application/json"        |                 header  | 是|                                                                     
@@ -699,7 +712,6 @@ PUT /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
   |serviceId     |  String   |APP服务实例ID                       |path     |是|
 
 Body参数：
-
   | 名称               |          类型      |        描述           |                                                                                                       必选|
   |---|---|---|---|
  | serName       |               String      |      服务名称（字母/数字/\_/-的组合，但不能以\_和-开头或结尾），最大长度128  |                                              是|
@@ -793,7 +805,6 @@ PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 返回码：200
 
 OK
-
   |名称       |                  类型    |          描述              |                                                                                                    必选|
   |---|---|---|---|
  | serInstanceId|                String   |         服务实例ID               |                                                                                             是|
@@ -891,7 +902,6 @@ DELETE /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId
 ```
 
 请求参数：
-
   |名称      |      类型    | 描述         |                       IN   |    必选|
   |---|---|---|---|---| 
   |Authorization |  String |  Token信息，格式：Bearer token信息   |header |  是|
@@ -947,7 +957,6 @@ GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
@@ -977,7 +986,6 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 返回码：200
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | \_links  | Object | 结果信息 | 是 |
@@ -1017,7 +1025,6 @@ POST /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Content-Type  | String | MIME类型，填"application/json" | header |  是   |
@@ -1025,7 +1032,6 @@ POST /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
 | appInstanceId | String | APP实例ID（UUID） | path |  是   |
 
 Body参数：
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionType  | String | 订阅类型（SerAvailabilityNotificationSubscription） |  是   |
@@ -1086,7 +1092,6 @@ POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/
 返回码：201
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionId  | String | 订阅Id |  是   |
@@ -1156,7 +1161,6 @@ DELETE /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subs
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
@@ -1208,7 +1212,6 @@ GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscri
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
@@ -1239,7 +1242,6 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 返回码：200
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionType  | String | 订阅类型（SerAvailabilityNotificationSubscription） |  是   |
@@ -1306,7 +1308,6 @@ GET /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
@@ -1336,7 +1337,6 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/su
 返回码：200
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | \_links  | Object | 结果信息 |  是   |
@@ -1377,7 +1377,6 @@ POST /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Content-Type  | String | MIME类型，填"application/json"  | header |  是   |
@@ -1385,7 +1384,6 @@ POST /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions
 | appInstanceId  | String | APP实例ID（UUID） | path |  是   |
 
 Body参数：
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionType  | String | 订阅类型（AppTerminationNotificationSubscription）  |  是   |
@@ -1419,7 +1417,6 @@ POST /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 返回码：201
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionId  | String | 订阅Id  |  是   |
@@ -1461,7 +1458,6 @@ DELETE /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subsc
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  是   |
@@ -1513,7 +1509,6 @@ GET /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscrip
 ```
 
 请求参数：
-
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  是   |
@@ -1544,7 +1539,6 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/su
 返回码：200
 
 OK
-
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionType  | String | 订阅类型（ AppTerminationNotificationSubscription）  |  是   |
@@ -1581,7 +1575,6 @@ GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}/l
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
@@ -1599,7 +1592,6 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 ```
 
 Return Parameters:
-
 | Name          | Type                        | Description              |
 | ------------- | --------------------------- | ------------------------ |
 | state     | enum **{ACTIVE, INACTIVE, SUSPENDED}**                      | State                  |
@@ -1640,7 +1632,6 @@ PUT /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}/l
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
@@ -1671,7 +1662,6 @@ Example Response:
 Empty response
 
 Exception status code
-
 | **HTTP Status code** | **Description** |
 | ----- | ----- |
 | 400   | Bad request, used to indicate that the requested parameters are incorrect. |
@@ -1696,7 +1686,6 @@ GET /mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
@@ -1713,7 +1702,6 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dn
 ```
 
 Return Parameters:
-
 | Name          | Type                        | Description              |
 | ------------- | --------------------------- | ------------------------ |
 | dnsRuleId     | string                      | Rule Id                  |
@@ -1759,7 +1747,6 @@ GET /mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
@@ -1777,7 +1764,6 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dn
 ```
 
 Return Parameters:
-
 | Name          | Type                        | Description              | 
 | ------------- | --------------------------- | ------------------------ | 
 | dnsRuleId     | string                      | Rule Id                  | 
@@ -1813,7 +1799,6 @@ PUT /mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
@@ -1821,7 +1806,6 @@ Request parameters:
 | dnsRuleId      | String | DNS rule identifier(UUID) | path | Yes| 
 
 Body parameters:
-
 | Name          | Type                        | Description              | Required      |
 | ------------- | --------------------------- | ------------------------ | ------------- |
 | dnsRuleId     | string                      | Rule Id                  | No, if present must be same with actual |
@@ -1846,7 +1830,6 @@ PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dn
 ```
 
 Return Parameters:
-
 | Name          | Type                        | Description              | 
 | ------------- | --------------------------- | ------------------------ | 
 | dnsRuleId     | string                      | Rule Id                  | 
@@ -1886,7 +1869,6 @@ GET /mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
@@ -1903,7 +1885,6 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/tr
 ```
 
 Return Parameters:
-
 | Name                  | Type                        | Description              |
 | --------------------- | --------------------------- | ------------------------ |
 | trafficRuleId         | string                      | Traffic rule ID.         |
@@ -1990,7 +1971,6 @@ GET /mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules/{trafficR
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
@@ -2008,7 +1988,6 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/tr
 ```
 
 Return Parameters:
-
 | Name                  | Type                        | Description              |
 | --------------------- | --------------------------- | ------------------------ |
 | trafficRuleId         | string                      | Traffic rule ID.         |
@@ -2093,7 +2072,6 @@ PUT /mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules/{trafficR
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
@@ -2101,7 +2079,6 @@ Request parameters:
 | trafficRuleId  | String | Traffic rule identifier(UUID) | path | Yes| 
 
 Body parameters:
-
 | Name                  | Type                        | Description              |
 | --------------------- | --------------------------- | ------------------------ |
 | trafficRuleId         | string                      | Traffic rule ID.         |
@@ -2175,7 +2152,6 @@ PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/tr
 ```
 
 Return Parameters:
-
 | Name                  | Type                        | Description              |
 | --------------------- | --------------------------- | ------------------------ |
 | trafficRuleId         | string                      | Traffic rule ID.         |
@@ -2265,13 +2241,11 @@ POST /mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
 
 Body parameters:
-
 | Name                      | Type                        | Description              | Required      |
 | ------------------------- | --------------------------- | ------------------------ | ------------- |
 | appTrafficRule            | list                        | List of traffic rules. Max 16.| No |
@@ -2366,7 +2340,6 @@ POST /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_c
 ```
 
 Return Parameters:
-
 | Name          | Type    | Description                 |
 | ------------- | ------- | --------------------------- |
 | taskId        | string  | Task ID                     |
@@ -2401,7 +2374,6 @@ GET /mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
@@ -2417,7 +2389,6 @@ GET /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_co
 ```
 
 Return Parameters:
-
 | Name                      | Type                        | Description              |
 | ------------------------- | --------------------------- | ------------------------ |
 | appTrafficRule            | list                        | List of traffic rules.   |
@@ -2527,13 +2498,11 @@ PUT /mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
 
 Body parameters:
-
 | Name                      | Type                        | Description              | Required      |
 | ------------------------- | --------------------------- | ------------------------ | ------------- |
 | appTrafficRule            | list                        | List of traffic rules. Max 16.| No |
@@ -2627,7 +2596,6 @@ PUT /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_co
 ```
 
 Return Parameters:
-
 | Name          | Type    | Description                 |
 | ------------- | ------- | --------------------------- |
 | taskId        | string  | Task ID                     |
@@ -2661,7 +2629,6 @@ DELETE /mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
@@ -2677,7 +2644,6 @@ DELETE /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd
 ```
 
 Return Parameters:
-
 | Name          | Type    | Description                 |
 | ------------- | ------- | --------------------------- |
 | taskId        | string  | Task ID                     |
@@ -2712,7 +2678,6 @@ GET /mepcfg/app_lcm/v1/tasks/{taskId}/appd_configuration
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | taskId  | String | Task ID(UUID)  | path |  Yes   |
@@ -2728,7 +2693,6 @@ GET /mepcfg/app_lcm/v1/tasks/d464dd0a-d927-4baf-bc2c-d902fb0b2c73/appd_configura
 ```
 
 Return Parameters:
-
 | Name          | Type    | Description                 |
 | ------------- | ------- | --------------------------- |
 | taskId        | string  | Task ID                     |
@@ -2768,7 +2732,6 @@ DELETE /mep/mec_app_support/v1/applications/{appInstanceId}/AppInstanceTerminati
 Request parameters:
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
@@ -2820,7 +2783,6 @@ GET /mepcfg/mec_platform_config/v1/capabilities
 ```
 
 Return Parameters:
-
 | Name           | Type                        | Description              |
 | -------------- | --------------------------- | ------------------------ |
 | capabilityId   | String                      | Capability/Service id    |
@@ -2878,7 +2840,6 @@ GET /mepcfg/mec_platform_config/v1/capabilities/{capabilityId}
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | capabilityId  | String | Capability ID（UUID）  | path |  Yes   |
@@ -2894,7 +2855,6 @@ GET /mepcfg/mec_platform_config/v1/capabilities/16384563dca094183778a41ea7701d15
 ```
 
 Return Parameters:
-
 | Name           | Type                        | Description              |
 | -------------- | --------------------------- | ------------------------ |
 | capabilityId   | String                      | Capability/Service id    |
@@ -2961,7 +2921,6 @@ Request parameters:
 None
 
 Body parameters:
-
 | Name          | Type                        | Description              | Required      |
 | ------------- | --------------------------- | ------------------------ | ------------- |
 | zone          | string                      | Zone name | Yes |
@@ -3015,7 +2974,6 @@ DELETE /mep/dns_server_mgmt/v1/rrecord/{fqdn}/{rrtype}
 ```
 
 Request parameters:
-
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | fqdn  | String | Fully Qualified Domain Name | path |  Yes   |
@@ -3051,7 +3009,6 @@ URL
 GET /mep-agent/v1/token
 ```
 Request parameters:
-
  | **Name** | **Type** | **Description** | **IN** | **Required** |
  | --- | --- | --- | --- | --- |
  | Content-Type |   String  | MIME type, fill in "application/json"                        |               header  | Yes|
@@ -3078,7 +3035,6 @@ GET /mep-agent/v1/token
 Return parameters:
 
 Return code: 200 OK
-
 |Name     |       Type  |   Description   |               Required|
 |---|---|---|---|
 |access\_token |  String  | Token|                 Yes|
@@ -3104,7 +3060,6 @@ URL
 GET /mep-agent/v1/endpoint/:serName
 ```
 Request parameters:
-
  | **Name** | **Type** | **Description** | **IN** | **Required** |
  | --- | --- | --- | --- | --- |
  | Content-Type |  String  | MIME type, fill in "application/json"   | header  | Yes|
@@ -3132,7 +3087,6 @@ GET /mep-agent/v1/endpoint/serviceName
 Return parameters:
 
 Return code: 200 OK
-
 |Name     |       Type  |   Description   |  Required|
 |---|---|---|---|
 | endpoint |  Object  | endpoint | Yes|

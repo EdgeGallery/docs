@@ -34,7 +34,6 @@ User Interfaces
 Resource URI: /login
 Method: POST
 ```
-
 | Name    | Definition |type   | Required| Describe |
 | ------- | ---------- |-------|---------| ---------|
 | verifyCode | 图形验证码 |query|是| |
@@ -102,7 +101,6 @@ Succeed
 Resource URI: /v1/users
 Method: POST
 ```
-
 | Name     | Definition |type   | Required| Describe |
 | -------- | -----------|-------|---------| ---------|
 | verifyCode | 图形验证码 |query|是| |
@@ -168,7 +166,6 @@ response 500 INTERNAL ERROR
 Resource URI: /v1/users/password
 Method: PUT
 ```
-
 | Name          | Definition |type   | Required| Describe |
 | ------------- | ---------- |-------|---------| -------- |
 | type | 修改密码的类型 |body|是| 1--原密码验证修改; 2--密码找回 |
@@ -224,7 +221,6 @@ response 500 INTERNAL ERROR
 Resource URI: /v1/users/action/uniqueness
 Method: POST
 ```
-
 | Name      | Definition |type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | username | 用户名 |body|是|  必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间 |
@@ -260,7 +256,6 @@ Method: POST
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-
 | Name      | Definition |type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | username | 用户名 |body|否|用于模糊查询条件的用户名关键字 |
@@ -350,7 +345,6 @@ Method: DELETE
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-
 | Name      | Definition |type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | userId    | 用户ID      | path  | 是      |uuid     |
@@ -386,7 +380,6 @@ response 403 FORBIDDEN
 Resource URI: /v1/users/{userId}
 Method: PUT
 ```
-
 | Name      | Definition |type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | userId    | 用户ID      | path  | 是      |uuid     |
@@ -444,7 +437,6 @@ Method: PUT
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-
 | Name      | Definition |type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | userId    | 用户ID      | path  | 是      |uuid     |
@@ -482,7 +474,6 @@ Method: PUT
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-
 | Name      | Definition |type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | userId    | 用户ID      | path  | 是      |uuid     |
@@ -520,7 +511,6 @@ Method: PUT
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-
 | Name      | Definition |type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | userId    | 用户ID      | path  | 是      | uuid     |
@@ -570,7 +560,6 @@ response 403 FORBIDDEN
 Resource URI: /v1/identity/sms
 Method: POST
 ```
-
 | Name          | Definition |type   | Required|Describe |
 | ------------- | ---------- |-------|---------|-------- |
 | verifyCode | 图形验证码 |query|是| |
@@ -607,7 +596,6 @@ response 417 Expectation Failed
 Resource URI: /v1/identity/mail
 Method: POST
 ```
-
 | Name      | Definition |type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | verifyCode | 图形验证码 |query|是| |
@@ -658,7 +646,6 @@ Method: GET
 ```
 Resource URI: /v1/identity/verifycode-image/precheck
 Method: GET
-
 ```
 | Name      | Definition |type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |

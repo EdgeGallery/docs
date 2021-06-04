@@ -8,152 +8,308 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-06-01 19:29+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../models/APP Definition.md:1 Package
-msgid "# 概述"
-msgstr "# Overview"
+msgid "概述"
+msgstr "Overview"
 
 #: ../../models/APP Definition.md:2 Package
-msgid "APP包采用TOSCA规范的CSAR文件定义。TOSCA规范定义CASR文件为zip格式的压缩文件，该规范支持包含TOSCA-Metadata目录的CSAR格式，该格式要求CSAR包中必须包含一个以TOSCA-Metadata命名的文件夹，"
-msgstr "The APP package is a CSAR document definition using the TOSCA specification.The TOSCA specification defines a compressed document in a zip format that supports a CSAR format containing the TOSCA-Metadata directory, which requires a CSAR package to contain a folder named TOSCA-Metadata"
-
-#: ../../models/APP Definition.md:3 Package
-msgid "且该文件夹包含一个以TOSCA.meta命名的metadata文件，该文件是键值对的格式，用以描述该CSAR包的元数据，以及提供处理整个CSAR文件的入口信息，具体参考TOSCA 1.0 Specification。 APP包中包含五个部分，即TOSCA-Metadata目录，APPD目录，Image目录，Artifacts目录，manifest文件。 APP包内文件名称及APP包名称不能重名。 APP包结构如下(以社区样例应用为例)："
-msgstr "and the folder comprises a metadata file named by TOSCA.meta, the file is the format of the key value pair to describe the metadata of the CSAR package, and provides the entry information for processing the whole CSAR file, specifically referring to the TOSCA 1.0 Specification. The APP package contains five parts, the TOSCA-Metadata directory, the APPD directory, the Image directory, the Artifactts directory, the manifest document. The document name and APP package name in the APP package cannot be renames. The APP pack structure is as follows (for example, in the community example):"
-
-#: ../../models/APP Definition.md:8 Package
-msgid "<pre><code>| monitoring_service.mf | |--APPD |  |--monitoring-service.zip |     | TOSCA_VNFS.meta |     |--Definition |        | nfv_vnfd_types_v1_0.yaml |        | MainServiceTemplate.yaml |--Artifacts |  | ChangeLog.txt |  |--Deployment |  |  |--Charts |  |     | monitoringservice.tgz |  |--Docs |     | monitoringservice.md |--Image |  | SwImageDesc.json |  |--monitoring_service_image.zip |     |--monitoring_service_mage |        | monitoring_service_fe.tar |        | monitoring_service_be.tar |        | monitoring_service_proxy.tar |--TOSCA-Metadata |  | TOSCA.meta </code></pre>"
-msgstr "<pre><code>| monitoring_service.mf | | -- APPD | | -- monitoring-service.zip | | TOSCA_VNFS.meta | | -- nfv_vnfd_types_v1_0.yaml | | MainServiceTemplate.yaml | -- Artifact|| ChangeLog.txt | | -- Deployment | |  | -- Charts | | monitoringservice.tgz | | -- Docs | | monitoringservice.md | -- Image | | SwImageDesc.json | | -- monitoring_service_image.zip | | -- monitoring_service_mage | | monitoring_service_fe.tar | | monitoring_service_be.tar | | monitoring_service_proxy.tar | -- TOSCA-Metadata | | TOSCA.meta </code></pre>"
+msgid "APP包采用TOSCA规范的CSAR文件定义。TOSCA规范定义CASR文件为zip格式的压缩文件，该规范支持包含TOSCA-Metadata目录的CSAR格式，该格式要求CSAR包中必须包含一个以TOSCA-Metadata命名的文件夹， 且该文件夹包含一个以TOSCA.meta命名的metadata文件，该文件是键值对的格式，用以描述该CSAR包的元数据，以及提供处理整个CSAR文件的入口信息，具体参考TOSCA 1.0 Specification。   APP包中包含五个部分，即TOSCA-Metadata目录，APPD目录，Image目录，Artifacts目录，manifest文件。   APP包内文件名称及APP包名称不能重名。   APP包结构如下(以社区样例应用为例)："
+msgstr "The APP package is a CSAR document definition using the TOSCA specification.The TOSCA specification defines the CASR document as a zip format that includes a CSAR format containing the TOSCA-Metadata directory, which must contain a folder named in TOSCA-Metadata, which contains a metadata file named for TOSCA.meta, which is the format of the key pair to describe the metadata of the CSAR package and to provide entry information for processing the entire CSAR documentation, specifically TOSCA 1.0 Specification.   The APP package contains five parts, the TOSCA-Metadata directory, the APPD directory, the Image directory, the Artifactts directory, the manifest document.   The document name and APP package name in the APP package cannot be renames.   The APP pack structure is as follows (for example, in the community example):"
 
 #: ../../models/APP Definition.md:34 Package
-msgid "## TOSCA-Metadata目录 TOSCA-Metadata目录下包含一个固定名为TOSCA.meta的文件。 TOSCA.meta文件是一个文本文件，该文件用以描述整个CSAR文件的信息。文件内容包括TOSCA-Meta-File-Version,CSAR-Version,Created-by,Entry-Definitions,Name和Content-Type,具体可以参见TOSCA v1.0 Specification, TOSCA Simple profile YAML v1.1。 TOSCA.meta样例："
-msgstr "The ## TOSCA-Metadata directory TOSCA-Metadata directory contains a document named TOSCA.meta. The TOSCA.meta file is a text file that describes the entire CSAR documentation.The document content includes TOSCA-Meta-File-Version,CSAR-Version,Created-by,Entry-Definitions,Name and Content-Type, which can be found in the TOSCA v1.0 Specification, TOSCA Simple profile YAML v1.1. TOSCA.meta example:"
+msgid "TOSCA-Metadata目录"
+msgstr "TOSCA-Metadata directory"
 
-#: ../../models/APP Definition.md:40 Package
-msgid "TOSCA-Meta-File-Version: 1.0 CSAR-Version: 1.1 Created-By: EdgeGallery Entry-Definitions: APPD/monitoring-service.zip"
-msgstr "TOSCA-Meta-File-Version:1.0CSAR-Version:1.1Created-By:EdgeGalleryEntry-Definitions:APPD/monitoring-service.zip"
-
-#: ../../models/APP Definition.md:45 Package
-msgid "Name: APPD/monitoring-service.zip Content-Type: appd"
-msgstr "Name: APPD/monitoring-service.zip Content-Type: appd"
-
-#: ../../models/APP Definition.md:48 Package
-msgid "Name: Image/monitoring_service_image.zip Content-Type: Image"
-msgstr "Name: Image/monitoring_service_image.zip Content-Type: Image"
-
-#: ../../models/APP Definition.md:51 Package
-msgid "Name: Image/SwImageDesc.json Content-Type: SwImageDesc"
-msgstr "Name: Image/SwImageDesc.json Content-Type: SwImageDesc"
+#: ../../models/APP Definition.md:35 Package
+msgid "TOSCA-Metadata目录下包含一个固定名为TOSCA.meta的文件。   TOSCA.meta文件是一个文本文件，该文件用以描述整个CSAR文件的信息。文件内容包括TOSCA-Meta-File-Version,CSAR-Version,Created-by,Entry-Definitions,Name和Content-Type,具体可以参见TOSCA v1.0 Specification, TOSCA Simple profile YAML v1.1。   TOSCA.meta样例："
+msgstr "The TOSCA-Metadata directory contains a document named TOSCA.meta. The TOSCA.meta file is a text file that describes the entire CSAR documentation.The document content includes TOSCA-Meta-File-Version,CSAR-Version,Created-by,Entry-Definitions,Name and Content-Type, which can be found in the TOSCA v1.0 Specification, TOSCA Simple profile YAML v1.1.   TOSCA.meta example:"
 
 #: ../../models/APP Definition.md:54 Package
-msgid "## APPD目录 APPD目录包含APPD的压缩文件。 目前EdgeGallery的APPD文件格式包含如下内容： * 根目录下包含一个metadata文件。 * Definition目录下包含一个APPD文件以及一个定义文件。其中APPD文件要与metadata文件中定义的Entry-Definitions文件路径和文件名一致。"
-msgstr "## The APPD directory APPD directory contains compressed documents for APPD. The currently EdgeGallery APPD document format contains the following properties: * Root directory contains a metadata document. * The Definition directory contains an APPD document and a definition document.wherein the APPD file is consistent with the Entry-Definitions file path and file name defined in the metadata file."
+msgid "APPD目录"
+msgstr "APPD Directory"
+
+#: ../../models/APP Definition.md:55 Package
+msgid "APPD目录包含APPD的压缩文件。   目前EdgeGallery的APPD文件格式包含如下内容："
+msgstr "The APPD directory contains compressed documents for APPD. The current EdgeGallery APPD document format contains the following:"
+
+#: ../../models/APP Definition.md:57 Package
+msgid "根目录下包含一个metadata文件。"
+msgstr "The root directory contains a metadata document."
+
+#: ../../models/APP Definition.md:58 Package
+msgid "Definition目录下包含一个APPD文件以及一个定义文件。其中APPD文件要与metadata文件中定义的Entry-Definitions文件路径和文件名一致。"
+msgstr "The Definition directory contains an APPD document and a definition document.wherein the APPD file is consistent with the Entry-Definitions file path and file name defined in the metadata file."
 
 #: ../../models/APP Definition.md:60 Package
-msgid "其中APPD的的格式要求将在 [APPD Definition](https://gitee.com/edgegallery/docs/blob/master/models/APPD%20Definition.md)中详细说明。 metadata文件样例如下："
-msgstr "The format requests for APPD are described in detail in [APPD Definition] (https://gitee.com/edgegallery/docs/blob/master/models/APPD%20Definition.md). The metadata document is as follows:"
-
-#: ../../models/APP Definition.md:63 Package
-msgid "VNFD-Meta-File-Version: 1.0 CSAR-Version: 1.1 Created-by: EdgeGallery Entry-Definitions: Definition/MainServiceTemplate.yaml"
-msgstr "VNFD-Meta-File-Version:1.0CSAR-Version:1.1Created-by:EdgeGalleryEntry-Definitions:Definition/MainServiceTemplate.yaml"
-
-#: ../../models/APP Definition.md:68 Package
-msgid "Name: Definition/MainServiceTemplate.yaml Content-Type: VNFD"
-msgstr "Name: Definition/MainServiceTemplate.yaml Content-Type: VNFD"
-
-#: ../../models/APP Definition.md:71 Package
-msgid "Name: Definition/nfv-vnfd-type-v1_0.yaml Content-Type: VNFD"
-msgstr "Name: Definitionnfv-vnfd-type-v1_0.yaml Content-Type: VNFD"
+msgid "其中APPD的的格式要求将在 [APPD Definition](https://gitee.com/edgegallery/docs/blob/master/models/APPD%20Definition.md)中详细说明。   metadata文件样例如下："
+msgstr "The format requests for APPD are described in detail in [APPD Definition](https://gitee.com/edgegallery/docs/blob/master/models/APPD%20Definition.md). The metadata document is as follows:"
 
 #: ../../models/APP Definition.md:74 Package
-msgid "## Image目录 该目录下包含一个或者多个Image镜像文件和一个镜像描述文件。 Image镜像文件采用压缩包的方式放置于Image目录下。对于虚机应用，镜像文件为qcow2镜像，对于容器用用，镜像为容器导出的镜像tar文件。 Image目录下包含一个SwImageDesc.json文件用来描述镜像信息。SwImageDesc.json文件定义如下表所示。具体可以参考ETSI ISG NFV IFA011。"
-msgstr "## Image directory The directory contains one or more Image mirror files and a mirror description document. Image mirroring files are placed under the Image catalogue by means of a package.For the virtual machine application, the mirror image file is a qcow2 mirror image, and the mirror image is the mirror image tar file derived from the container for the container. The Image Directory contains a SwImageDesc.json file that describes the mirror information.The SwImageDesc.json document definition is shown in the following table.The ETSI ISG NFV IFA011 can be referenced specifically."
+msgid "Image目录"
+msgstr "Image Directory"
 
-#: ../../models/APP Definition.md:79 Package
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>参数名称</th> <th>参数类型</th> <th>描述</th> <th>是否必选</th> </tr> </thead> <tbody> <tr> <td>id</td> <td>Identifier</td> <td>镜像文件ID，作为序号使用，APP包内唯一,如果使用name区分，可以不使用该参数</td> <td>O</td> </tr> <tr> <td>name</td> <td>String</td> <td>镜像名，像VIM注册时采用这个名字，用以区分不同的镜像。当为容器场景时，此处命名为\"容器镜像名:版本\"命名</td> <td>M</td> </tr> <tr> <td>version</td> <td>String</td> <td>镜像文件版本号</td> <td>M</td> </tr> <tr> <td>checksum</td> <td>String</td> <td>镜像文件校验码</td> <td>O</td> </tr> <tr> <td>architecture</td> <td>String</td> <td>ARM 场景下取值aarch64，X86场景下无需该参数</td> <td>O</td> </tr> <tr> <td>containerFormat</td> <td>String</td> <td>软件镜像容器格式</td> <td>M</td> </tr> <tr> <td>diskFormat</td> <td>String</td> <td>软件磁盘格式</td> <td>M</td> </tr> <tr> <td>minDisk</td> <td>Number</td> <td>镜像所需的最小磁盘空间，单位：GB</td> <td>M</td> </tr> <tr> <td>minRam</td> <td>Number</td> <td>镜像所需的最小RAM，单位：MB</td> <td>M</td> </tr> <tr> <td>size</td> <td>Number</td> <td>镜像文件大小，单位：MB</td> <td>O</td> </tr> <tr> <td>swImage</td> <td>Indentifier(Reference to a SwImage)</td> <td>镜像文件地址，为镜像文件相对APP包的根目录地址</td> <td>M</td> </tr> <tr> <td>operatingSystem</td> <td>String</td> <td>镜像使用的操作系统</td> <td>O</td> </tr> <tr> <td>supportedVirtualisationEnvironment</td> <td>String</td> <td>镜像的虚拟化环境</td> <td>O</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <th> <th>name</th> <th>Parameter type</th> <th></th> </thead></th> </tr> <th> <tbody> <tr> <td> <td>id</td> <td>Identifier</td> <td>Mirror document ID, used as a serial number, the only one in the APP packet, if name is distinguished, the parameter is not used</td> <td>O</td> </tr> <tr> <td>name</td> <td>String</td> <td>The mirror name, like the VIM registry, uses this name to distinguish different mirrors.When the container scene is named, here is named\" container mirror name: version \" naming</td> <td> <td>M</td> </tr> <tr> <td> <td>String</td></td> <td>Mirror document version number</td> <td>M </tr></td> <tr> <td>checksum</td> <td>String</td> <td>Mirror document check code</td> <td>O</td> </tr> <tr> <td>architecture</td> </td> <td>String</td> <td>The containerFormat</td> <td> <td>String</td></td> <td> <td>software mirror container format</td> <td>M </tr></td></td> <tr> <td>diskFormat</td> <td>String</td> <td>software disk format</td> <td> <td>M </tr></td> <tr> <td>minDisk</td> <td>Number</td> <td>The minimum disk space required for the mirror image: GB</td> <td>M </tr></td> <tr> <td>minRam</td> <td>Number</td> <td>The minimum RAM required for the mirror image: MB</td> <td>M </tr></td> <tr> <td>size</td> <td>Number</td> <td>Mirror document size, unit: MB</td> <td>O</td> </tr> <tr> <td>swImage</td> <td>Indicator (Reference to a SwImage)</td> <td>Mirror document address, root directory address relative APP package for mirror file</td> <td>M</td> </tr> <tr> <td>operatingSystem</td> <td>String</td> <td>Mirror used operating system</td> <td>O</td> </tr> <tr> <td>supportedVirtualisationEnvironment</td> <td>String</td> <td>The virtualized environment</td> <td></td></td> </tbody> </table> </tbody>"
+#: ../../models/APP Definition.md:75 Package
+msgid "该目录下包含一个或者多个Image镜像文件和一个镜像描述文件。   Image镜像文件采用压缩包的方式放置于Image目录下。对于虚机应用，镜像文件为qcow2镜像，对于容器用用，镜像为容器导出的镜像tar文件。 Image目录下包含一个SwImageDesc.json文件用来描述镜像信息。SwImageDesc.json文件定义如下表所示。具体可以参考ETSI ISG NFV IFA011。"
+msgstr "The directory contains one or more image mirror files and a mirror image description file. Image mirroring files are placed under the Image catalogue by means of a package.For the virtual machine application, the mirror image file is a qcow2 mirror image, and the mirror image is the mirror image tar file derived from the container for the container. The Image Directory contains a SwImageDesc.json file that describes the mirror information.The SwImageDesc.json document definition is shown in the following table.The ETSI ISG NFV IFA011 can be referenced specifically."
 
-#: ../../models/APP Definition.md:170 Package
+#: ../../models/APP Definition.md Package
+msgid "参数名称"
+msgstr "Parameter name"
+
+#: ../../models/APP Definition.md Package
+msgid "参数类型"
+msgstr "Parameter Type"
+
+#: ../../models/APP Definition.md Package
+msgid "描述"
+msgstr "describe"
+
+#: ../../models/APP Definition.md Package
+msgid "是否必选"
+msgstr "whether or not to choose"
+
+#: ../../models/APP Definition.md Package
+msgid "id"
+msgstr "id"
+
+#: ../../models/APP Definition.md Package
+msgid "Identifier"
+msgstr "Identifier"
+
+#: ../../models/APP Definition.md Package
+msgid "镜像文件ID，作为序号使用，APP包内唯一,如果使用name区分，可以不使用该参数"
+msgstr "The mirror document identifier is used as a serial number, the only one in the APP packet, if name is distinguished, the parameter may not be used"
+
+#: ../../models/APP Definition.md Package
+msgid "O"
+msgstr "O"
+
+#: ../../models/APP Definition.md Package
+msgid "name"
+msgstr "name"
+
+#: ../../models/APP Definition.md Package
+msgid "String"
+msgstr "String"
+
+#: ../../models/APP Definition.md Package
+msgid "镜像名，像VIM注册时采用这个名字，用以区分不同的镜像。当为容器场景时，此处命名为\"容器镜像名:版本\"命名"
+msgstr "Mirror names, like VIM, use this name to distinguish between different mirrors.When the container scene is present, here is named \" Container Mirror Name: Version \""
+
+#: ../../models/APP Definition.md Package
+msgid "M"
+msgstr "M"
+
+#: ../../models/APP Definition.md Package
+msgid "version"
+msgstr "version"
+
+#: ../../models/APP Definition.md Package
+msgid "镜像文件版本号"
+msgstr "Mirror document version number"
+
+#: ../../models/APP Definition.md Package
+msgid "checksum"
+msgstr "checksum"
+
+#: ../../models/APP Definition.md Package
+msgid "镜像文件校验码"
+msgstr "Mirror file check code"
+
+#: ../../models/APP Definition.md Package
+msgid "architecture"
+msgstr "architecture"
+
+#: ../../models/APP Definition.md Package
+msgid "ARM 场景下取值aarch64，X86场景下无需该参数"
+msgstr "The parameter is not required under the X86 scenario under the ARM scene."
+
+#: ../../models/APP Definition.md Package
+msgid "containerFormat"
+msgstr "containerFormat"
+
+#: ../../models/APP Definition.md Package
+msgid "软件镜像容器格式"
+msgstr "Software mirror container format"
+
+#: ../../models/APP Definition.md Package
+msgid "diskFormat"
+msgstr "diskFormat"
+
+#: ../../models/APP Definition.md Package
+msgid "软件磁盘格式"
+msgstr "Software Disk Format"
+
+#: ../../models/APP Definition.md Package
+msgid "minDisk"
+msgstr "minDisk"
+
+#: ../../models/APP Definition.md Package
+msgid "Number"
+msgstr "Number"
+
+#: ../../models/APP Definition.md Package
+msgid "镜像所需的最小磁盘空间，单位：GB"
+msgstr "Minimum disk space required for mirroring: GB"
+
+#: ../../models/APP Definition.md Package
+msgid "minRam"
+msgstr "minRam"
+
+#: ../../models/APP Definition.md Package
+msgid "镜像所需的最小RAM，单位：MB"
+msgstr "Minimum RAM required for mirroring, unit: MB"
+
+#: ../../models/APP Definition.md Package
+msgid "size"
+msgstr "size"
+
+#: ../../models/APP Definition.md Package
+msgid "镜像文件大小，单位：MB"
+msgstr "Mirror Document Size, Unit: MB"
+
+#: ../../models/APP Definition.md Package
+msgid "swImage"
+msgstr "swImage"
+
+#: ../../models/APP Definition.md Package
+msgid "Indentifier(Reference to a SwImage)"
+msgstr "Indentifier(Reference to a SwImage)"
+
+#: ../../models/APP Definition.md Package
+msgid "镜像文件地址，为镜像文件相对APP包的根目录地址"
+msgstr "Mirror file address, which is the root address of the image file relative to the root of the APP packet"
+
+#: ../../models/APP Definition.md Package
+msgid "operatingSystem"
+msgstr "operatingSystem"
+
+#: ../../models/APP Definition.md Package
+msgid "镜像使用的操作系统"
+msgstr "Operating system for mirror use"
+
+#: ../../models/APP Definition.md Package
+msgid "supportedVirtualisationEnvironment"
+msgstr "supportedVirtualisationEnvironment"
+
+#: ../../models/APP Definition.md Package
+msgid "镜像的虚拟化环境"
+msgstr "A virtualized environment for mirroring"
+
+#: ../../models/APP Definition.md:94 Package
 msgid "SwImageDesc.json文件样例："
 msgstr "SwImageDesc.json document example:"
 
-#: ../../models/APP Definition.md:172 Package
-msgid "``` ["
-msgstr "` ` ` ["
+#: ../../models/APP Definition.md:131 Package
+msgid "manifest文件"
+msgstr "manifest document"
 
-#: ../../models/APP Definition.md:174 Package
-msgid "//镜像在APP包内 {"
-msgstr "// mirror in the APP packet {"
+#: ../../models/APP Definition.md:132 Package
+msgid "manifest文件MEAO进行解析，用以进行APP包的完整性校验。文件扩展名为.mf。   manifest文件格式是键值对的形式，主要定义APP包的metadata信息和完整性保护相关信息，具体定义参考ETSI NFV SOL004相关规范。   metadata中主要包含以下参数："
+msgstr "The manifest file MEAO is resolved for the integrity check of the APP packet.The document extension is .mf. The manifest file format is the form of the key pair, which defines the metadata information and the integrity protection information of the APP packet, specifically defining the reference ETSI NFV SOL004. The metadata in metadata includes the following parameters:"
 
-#: ../../models/APP Definition.md:176 Package
-msgid "\"id\":\"1\", \"name\":\"monitoring-service-fe:1.0\", \"version\":\"1.0\", \"checksum\":\"1\", \"containerFormat\":\"dockerImage\", \"diskFormat\":\"dockerImage\", \"minDisk\":3, \"minRam\":6, \"size\":326546, \"swImage\":\"Image/monitirong_service_image.zip/monitoring_service_image/monitoring_service_fe.tar\", \"operatingSystem\":\"ubuntu\", \"supportedVirtualisationEnvironment\":\"linux\""
-msgstr "\" id \": \" 1\", \" monitoring-service-fe: 1.0\", \" 1.0\": \" 1\", \" containerFormat \" :\"dockerImage \", \"diskFormat \" :\"dockerImage \", \" minDisk \" :3, \" minRam \" :6, \" size \" :326546, \" swImage \" :\" Image/monitirong_service_image.zip/monitoring_service_image/monitoring_service_fe.tar \", \" operatingSystem \" :\"ubuntu \", \" supportedVirtualisationEnvironment \" :\"linux \""
+#: ../../models/APP Definition.md Package
+msgid "参数取值"
+msgstr "parameter values"
 
-#: ../../models/APP Definition.md:188 Package
-msgid "} //镜像不在APP包内 {"
-msgstr "} // mirror not in APP packet {"
+#: ../../models/APP Definition.md Package
+msgid "app_provider_id"
+msgstr "app_provider_id"
 
-#: ../../models/APP Definition.md:191 Package
-msgid "\"id\":\"2\", \"name\":\"monitoring-service-be:1.0\", \"version\":\"1.0\", \"checksum\":\"1\", \"containerFormat\":\"dockerImage\", \"diskFormat\":\"dockerImage\", \"minDisk\":3, \"minRam\":6, \"size\":326546, \"swImage\":\"swr.ap-southeast-1.myhuaweicloud.com/edgegallery/monitoring-be-service:1.0\", \"operatingSystem\":\"ubuntu\", \"supportedVirtualisationEnvironment\":\"linux\""
-msgstr "\" id \": \" 2\", \" monitoring-service-be: 1.0\", \" 1.0\": \" 1\", \" containerFormat \" :\"dockerImage \", \"diskFormat \" :\"dockerImage \", \" minDisk \" :3, \" minRam \" :6, \" size \" :326546, \" swImage \" :\"swr.ap - southeast-1.myhuaweicloud.com/edgegallery/monitoring-be-service: 1.0\", \" operatingSystem \" :\"ubuntu \", \" supportedVirtualisationEnvironment \" :\"linux \""
+#: ../../models/APP Definition.md Package
+msgid "app供应商，该取值要和APPD描述文件中VNF节点的Provider保持一致"
+msgstr "app vendor, which is consistent with the Provider of the VNF node in the APPD description document"
 
-#: ../../models/APP Definition.md:203 Package
-msgid "}"
-msgstr "}"
+#: ../../models/APP Definition.md Package
+msgid "是"
+msgstr "Yes."
 
-#: ../../models/APP Definition.md:205 Package
-msgid "]"
-msgstr "]"
+#: ../../models/APP Definition.md Package
+msgid "app_product_name"
+msgstr "app_product_name"
 
-#: ../../models/APP Definition.md:207 Package
-msgid "## manifest文件 manifest文件MEAO进行解析，用以进行APP包的完整性校验。文件扩展名为.mf。 manifest文件格式是键值对的形式，主要定义APP包的metadata信息和完整性保护相关信息，具体定义参考ETSI NFV SOL004相关规范。 metadata中主要包含以下参数："
-msgstr "## manifest the manifest file, MEAO, to resolve the integrity check of the APP packet.The document extension is .mf. The manifest file format is the form of the key pair, which defines the metadata information and the integrity protection information of the APP packet, specifically defining the reference ETSI NFV SOL004. The metadata in metadata includes the following parameters:"
+#: ../../models/APP Definition.md Package
+msgid "app名称"
+msgstr "app name"
 
-#: ../../models/APP Definition.md:212 Package
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>参数名称</th> <th>参数取值</th> <th>是否必选</th> </tr> </thead> <tbody> <tr> <td>app_provider_id</td> <td>app供应商，该取值要和APPD描述文件中VNF节点的Provider保持一致</td> <td>是</td> </tr> <tr> <td>app_product_name</td> <td>app名称</td> <td>是</td> </tr> <tr> <td>app_release_data_time</td> <td>app发布时间</td> <td>是</td> </tr> <tr> <td>app_package_version</td> <td>用\".\"分隔的字符串，取值要和APPD描述文件中的metadata下的vnfd_version保持一致</td> <td>是</td> </tr> <tr> <td>app_type</td> <td>app类型，取值要和APPD描述文件中欧冠的metadata下的vnfd_id一致</td> <td>否</td> </tr> <tr> <td>app_package_description</td> <td>APP描述信息</td> <td>否</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> <th>parameter name</th> <th>Parameters</th></th> </thead> </tr> <th> <tbody> <td> <tr> <td> <td>app_provider_id</td> <td>app vendor, which is consistent</td> <td>is</td> </tr> <tr> <td>app_product_name</td> <td>app name</td> <td>Yes</td> </tr> <tr> <td>app_release_data_time</td> <td>app publish time</td> <td>Yes</td> </tr> <tr> <td>app_package_version</td> <td>A string separated by \". \",Keep consistent with vnfd_version under metadata in APPD description document</td> <td>is</td> </tr> <tr> <td>app_type</td> <td>app type, value for vnfd_id under metadata in APPD description document</td> <td>No</td> </tr> <tr> <td>app_package_description</td> <td>APP Description Information</td> <td>No</td> </tr> </tr> </table>"
+#: ../../models/APP Definition.md Package
+msgid "app_release_data_time"
+msgstr "app_release_data_time"
 
-#: ../../models/APP Definition.md:254 Package
-msgid "完整性保护上主要包含3个参数，具体定义参考ETSI NFV SOL004。 * Source:需要保护的文件标识，该文件在CSAR中的目录地址 * Algorithm： hash计算方法，统一用SHA-256 * Hash：hash值"
-msgstr "The integrity protection consists primarily of 3 parameters, which specifically define reference ETSI NFV SOL004. * Source: document identifier required to be protected, directory address in CSAR * Algorithm: hash calculation method, unified SHA-256 * Hash: hash value"
+#: ../../models/APP Definition.md Package
+msgid "app发布时间"
+msgstr "app publish time"
 
-#: ../../models/APP Definition.md:259 Package
+#: ../../models/APP Definition.md Package
+msgid "app_package_version"
+msgstr "app_package_version"
+
+#: ../../models/APP Definition.md Package
+msgid "用\".\"分隔的字符串，取值要和APPD描述文件中的metadata下的vnfd_version保持一致"
+msgstr "A string separated by \". \" is used to be consistent with vnfd_version under metadata in APPD description document"
+
+#: ../../models/APP Definition.md Package
+msgid "app_type"
+msgstr "app_type"
+
+#: ../../models/APP Definition.md Package
+msgid "app类型，取值要和APPD描述文件中欧冠的metadata下的vnfd_id一致"
+msgstr "app type, value to be consistent with vnfd_id under metadata in APPD description document"
+
+#: ../../models/APP Definition.md Package
+msgid "否"
+msgstr "not"
+
+#: ../../models/APP Definition.md Package
+msgid "app_class"
+msgstr "app_class"
+
+#: ../../models/APP Definition.md Package
+msgid "app类型，区分容器应用和虚机应用"
+msgstr "app type, distinguishing container application and virtual machine application"
+
+#: ../../models/APP Definition.md Package
+msgid "app_package_description"
+msgstr "app_package_description"
+
+#: ../../models/APP Definition.md Package
+msgid "APP描述信息"
+msgstr "APP Description Information"
+
+#: ../../models/APP Definition.md:145 Package
+msgid "完整性保护上主要包含3个参数，具体定义参考ETSI NFV SOL004。"
+msgstr "The integrity protection consists primarily of 3 parameters, which specifically define reference ETSI NFV SOL004."
+
+#: ../../models/APP Definition.md:146 Package
+msgid "Source:需要保护的文件标识，该文件在CSAR中的目录地址"
+msgstr "Source: the document ID that needs to be protected, the directory address in CSAR"
+
+#: ../../models/APP Definition.md:147 Package
+msgid "Algorithm： hash计算方法，统一用SHA-256"
+msgstr "Algorithm: hash calculation method, unified SHA-256"
+
+#: ../../models/APP Definition.md:148 Package
+msgid "Hash：hash值"
+msgstr "Hash: hash value"
+
+#: ../../models/APP Definition.md:150 Package
 msgid "manifest文件的示例："
 msgstr "Example of a manifest document:"
 
-#: ../../models/APP Definition.md:261 Package
-msgid "``` metadata: app_product_name: MonitoringService app_provider_id: EdgeGallery app_package_version: 1.0 app_release_data_time: 1611217260210 app_type: monitoring_service app_package_description: EdgeGallery Demo application"
-msgstr "` ` ` metadata: app_product_name: MonitoringService app_provider_id: EdgeGallery app_package_version: 1.0 app_release_data_time: 1611217260210 app_type: monitoring_service app_package_description: EdgeGallery Demo application"
+#: ../../models/APP Definition.md:179 Package
+msgid "Artifacts目录"
+msgstr "Artifacts directory"
 
-#: ../../models/APP Definition.md:270 Package
-msgid "Source: APPD/monitoring_service.zip Algorithm: SHA-256 Hash: 8e4b39bee03efb7c8db8c2408cbfce2bdc96b20b0206c2314a2070e813b62a4b"
-msgstr "Source: APPD/monitoring_service.zip Algorithm: SHA-256 Hash: 8e4b39bee03efb7c8db8c2408cbfce2bdc96b20b0206c2314a2070e813b62a4b"
-
-#: ../../models/APP Definition.md:274 Package
-msgid "Source: Artifacts/Deployment/Charts/monitoringservice.tgz Algorithm: SHA-256 Hash: c21317143c6c2618e61afc8e1e599b32a470705cdcc979c9c9b69f5f00017930"
-msgstr "Source: Artifacts/Deployment/Charts/monitoringservice.tgz Algorithm: SHA-256 Hash: c21317143c6c2618e61afc8e1e599b32a470705cdcc979c9c9b69f5f5f00017930"
-
-#: ../../models/APP Definition.md:278 Package
-msgid "Source: Image/monitoring_service_image.zip Algorithm: SHA-256 Hash: 7695c564a8a99aa01d3419c525ccb5cbdc615f2559f78c016fc1999d3f62d316"
-msgstr "Source: Image/monitoring_service_image.zip Algorithm: SHA-256 Hash: 7695c564a8a99aa01d3419c525ccb5cbdc615f2559f78c016fc1999d3f62d316"
-
-#: ../../models/APP Definition.md:282 Package
-msgid "Source: Image/SwImageDesc.json Algorithm: SHA-256 Hash: d1bc5ad4e5f1f309ad5fe2edb5a2de17be36766d8f8ed397555ac1fbb1a9e2e5 ```"
-msgstr "Source: Image/SwImageDesc.json Algorithm: SHA-256 Hash: d1bc5ad4e5f1f309ad5fe2edb5a2de17be36766d8f8ed3975555ac1fbb1a9e2e5 ` ` `"
-
-#: ../../models/APP Definition.md:287 Package
-msgid "## Artifacts目录 Artifacts目录存储APP包相关附件，根目录下的ChangeLog.txt描述了变更记录。 对于容器场景，EdgeGallery采用helm chart部署方式，部署文件压缩包放置在Artifacts/Deployment/Charts/目录下。 /Artifacts/Docs目录下存放应用相关的详细文档信息。"
-msgstr "The ## Artifacts directory Artifactts directory stores an APP packet related attachment, ChangeLog.txt under the root directory describes the change record. For the container scene, EdgeGallery deploys a helmchart deployment, placing the document compression package under the Artifacts/Deployment/Charts/ directory. The /Artifacts/Docs catalogue holds detailed document information related to the application."
-
-#: ../../models/APP Definition.md:292 Package
-msgid "|--Artifacts |  | ChangeLog.txt |  |--Deployment |  |  |--Charts |  |     | monitoringservice.tgz |  |--Docs |     | monitoringservice.md"
-msgstr "| -- Artifacts | | ChangeLog.txt | | -- Deployment | | | Charts | | | monitoringservice.tgz | | -- Docs | | monitoringservice.md"
+#: ../../models/APP Definition.md:180 Package
+msgid "Artifacts目录存储APP包相关附件，根目录下的ChangeLog.txt描述了变更记录。   对于容器场景，EdgeGallery采用helm chart部署方式，部署文件压缩包放置在Artifacts/Deployment/Charts/目录下。   /Artifacts/Docs目录下存放应用相关的详细文档信息。"
+msgstr "The Artifactts directory stores APP packet related attachments, ChangeLog.txt under the root directory describes the change record. For the container scene, EdgeGallery deploys a helmchart deployment, placing the document compression package under the Artifacts/Deployment/Charts/ directory. The /Artifacts/Docs catalogue holds detailed document information related to the application."
 

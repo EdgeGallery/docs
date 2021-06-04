@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-03 08:34+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -329,7 +329,147 @@ msgstr "**Command**"
 msgid "Detailed list of the optional parameters are stated below."
 msgstr "Detailed list of the optional parameters are stated below."
 
-#: ../../Projects/MEP/MEP_Features.md:252
+#: ../../Projects/MEP/MEP_Features.md
+msgid "parameter"
+msgstr "parameter"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "Type"
+msgstr "Type"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "Range/Length"
+msgstr "Range/Length"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "Default"
+msgstr "Default"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "Description"
+msgstr "Description"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "-db"
+msgstr "-db"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "string"
+msgstr "string"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "1~256"
+msgstr "1~256"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "dbEgDns"
+msgstr "dbEgDns"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "Backend store db name"
+msgstr "Backend store db name"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "-port"
+msgstr "-port"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "number"
+msgstr "number"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "1~65535"
+msgstr "1~65535"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "53"
+msgstr "53"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "DNS server listening port"
+msgstr "DNS server listening port"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "-managementPort"
+msgstr "-managementPort"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "8080"
+msgstr "8080"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "Management interface listening port"
+msgstr "Management interface listening port"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "-connectionTimeout"
+msgstr "-connectionTimeout"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "2~50"
+msgstr "2~50"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "2"
+msgstr "2"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "Connection timeout"
+msgstr "Connection timeout"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "-ipAdd"
+msgstr "-ipAdd"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "Ipv4/Ipv6"
+msgstr "Ipv4/Ipv6"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "0.0.0.0"
+msgstr "0.0.0.0"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "DNS listening ip address"
+msgstr "DNS listening ip address"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "-managementIpAdd"
+msgstr "-managementIpAdd"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "Management interface listening ip address"
+msgstr "Management interface listening ip address"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "-forwarder"
+msgstr "-forwarder"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "DNS proxy server IP"
+msgstr "DNS proxy server IP"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "-loadBalance"
+msgstr "-loadBalance"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "bool"
+msgstr "bool"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "true/false"
+msgstr "true/false"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "false"
+msgstr "false"
+
+#: ../../Projects/MEP/MEP_Features.md
+msgid "For domain names with multiple ip address, enabling this option will perform loadbalancing by shuffling the response IP list"
+msgstr "For domain names with multiple ip address, enabling this option will perform loadbalancing by shuffling the response IP list"
+
+#: ../../Projects/MEP/MEP_Features.md:192
 msgid "Example"
 msgstr "Example"
 

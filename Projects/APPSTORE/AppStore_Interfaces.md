@@ -62,10 +62,9 @@
 
 ```
 URI： /mec/appstore/v1/apps
-方法类型: GET
+METHOD: GET
 ```
 请求参数：
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |name|应用名|request param|yes|
@@ -103,9 +102,8 @@ URI： /mec/appstore/v1/apps
 根据应用ID获取应用详细信息。
 ```
 URI： /mec/appstore/v1/apps/{appId}
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId|app id|path|yes|
@@ -138,9 +136,8 @@ URI： /mec/appstore/v1/apps/{appId}
 注册应用。
 ```
 URI： /mec/appstore/v1/apps
-方法类型: POST
+METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |userId|用户ID|request param|yes|
@@ -170,9 +167,8 @@ URI： /mec/appstore/v1/apps
 根据应用ID删除应用。
 ```
 URI： /mec/appstore/v1/apps/{appId}
-方法类型: DELETE
+METHOD: DELETE
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |userId|用户ID|request param |yes|
@@ -189,9 +185,8 @@ URI： /mec/appstore/v1/apps/{appId}
 应用ID获取应用最新版本包文件。
 ```
 URI： /mec/appstore/v1/apps/{appId}/action/download
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -206,9 +201,8 @@ URI： /mec/appstore/v1/apps/{appId}/action/download
 根据应用ID获取应用图标。
 ```
 URI： /mec/appstore/v1/apps/{appId}/icon
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -223,9 +217,8 @@ URI： /mec/appstore/v1/apps/{appId}/icon
 分片上传应用包。
 ```
 URI： /mec/appstore/v1/apps/upload
-方法类型: POST
+METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |id|分包ID|RequestPart|no|
@@ -252,9 +245,8 @@ URI： /mec/appstore/v1/apps/upload
 合并应用包。
 ```
 URI： /mec/appstore/v1/apps/merge
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |fileName|文件名|request param|yes|
@@ -272,9 +264,8 @@ URI： /mec/appstore/v1/apps/merge
 注册虚机应用。
 ```
 URI： /mec/appstore/v1/apps/vm-register
-方法类型: POST
+METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |userId|用户ID|request param|yes|
@@ -304,9 +295,8 @@ URI： /mec/appstore/v1/apps/vm-register
 根据应用ID获取应用视频。
 ```
 URI： /mec/appstore/v1/apps/{appId}/demoVideo
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -327,10 +317,8 @@ URI： /mec/appstore/v1/apps/{appId}/demoVideo
 通过应用ID获取应用包列表。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages
-方法类型: GET
+METHOD: GET
 ```
-
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID |path|yes|
@@ -368,9 +356,8 @@ URI： /mec/appstore/v1/apps/{appId}/packages
 通过应用ID和应用包ID获取应用包。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -405,9 +392,8 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
 通过应用ID和应用包ID删除应用包。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
-方法类型: DELETE
+METHOD: DELETE
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |userId |用户Id|request param|yes|
@@ -425,9 +411,8 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}
 通过应用ID和应用包ID下载应用包。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -443,9 +428,8 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download
 通过应用ID和应用包ID以及文件路径获取应用包中文件内容。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
-方法类型: POST
+METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |package id|path |yes|
@@ -462,9 +446,8 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
 通过应用ID和应用包ID发布应用。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/publish
-方法类型: POST
+METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -480,9 +463,8 @@ URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/publish
 通过应用ID和应用包ID测试应用。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/test
-方法类型: POST
+METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -507,9 +489,8 @@ User can submit comments to an app.
 根据应用ID获取应用的评论列表。
 ```
 URI： /mec/appstore/v1/apps/{appId}/comments
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appId |应用ID|path |yes|
@@ -549,9 +530,8 @@ URI： /mec/appstore/v1/apps/{appId}/comments
 用户根据应用ID提交应用评分及评论。
 ```
 URI： /mec/appstore/v1/apps/{appId}/comments
-方法类型: POST
+METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |userId |用户ID|request param |yes|
@@ -583,7 +563,7 @@ Example request body:
 查询可推送的应用列表。
 ```
 URI： /mec/appstore/v1/packages/pushable
-方法类型: GET
+METHOD: GET
 ```
 
 响应示例:
@@ -615,9 +595,8 @@ URI： /mec/appstore/v1/packages/pushable
 根据packageId获取推送应用包。
 ```
 URI： /mec/appstore/v1/packages/{packageId}/pushable
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |应用包ID|path |yes|
@@ -651,9 +630,8 @@ URI： /mec/appstore/v1/packages/{packageId}/pushable
 根据packageId推送应用包。
 ```
 URI： /mec/appstore/v1/packages/{packageId}/action/push
-方法类型: POST
+METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |应用包ID|path |yes|
@@ -669,9 +647,8 @@ URI： /mec/appstore/v1/packages/{packageId}/action/push
 根据packageId下载推送应用包。
 ```
 URI： /mec/appstore/v1/packages/{packageId}/action/download-package
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |应用包ID|path |yes|
@@ -686,9 +663,8 @@ URI： /mec/appstore/v1/packages/{packageId}/action/download-package
 根据packageId下载推送应用图标。
 ```
 URI： /mec/appstore/v1/packages/{packageId}/action/download-icon
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |应用包ID|path |yes|
@@ -708,9 +684,8 @@ URI： /mec/appstore/v1/packages/{packageId}/action/download-icon
 新增外部应用仓库。
 ```
 URI： /mec/appstore/v1/appstores
-方法类型: POST
+METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appStoreName |仓库名称|request param |yes|
@@ -744,9 +719,8 @@ URI： /mec/appstore/v1/appstores
 删除外部应用仓库。
 ```
 URI： /mec/appstore/v1/appstores/{appStoreId}
-方法类型: DELETE
+METHOD: DELETE
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appStoreId |仓库id|path |yes|
@@ -761,9 +735,8 @@ URI： /mec/appstore/v1/appstores/{appStoreId}
 修改外部应用仓库。
 ```
 URI： /mec/appstore/v1/appstores/{appStoreId}
-方法类型: PUT
+METHOD: PUT
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appStoreId |仓库名称|path |yes|
@@ -798,9 +771,8 @@ URI： /mec/appstore/v1/appstores/{appStoreId}
 查询外部应用仓库列表。
 ```
 URI： /mec/appstore/v1/appstores
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appStoreName |仓库名称|request param |yes|
@@ -830,9 +802,8 @@ URI： /mec/appstore/v1/appstores
 查询外部应用仓库。
 ```
 URI： /mec/appstore/v1/appstores/{appStoreId}
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |appStoreId |仓库名称|path |yes|
@@ -864,9 +835,8 @@ URI： /mec/appstore/v1/appstores/{appStoreId}
 新增一条消息。
 ```
 URI： /mec/appstore/v1/messages
-方法类型: POST
+METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |basicInfo |基本信息|request param |yes|
@@ -888,9 +858,8 @@ URI： /mec/appstore/v1/messages
 根据消息类型获取消息。
 ```
 URI： /mec/appstore/v1/messages
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |messageType |消息类型|request param |no|
@@ -928,9 +897,8 @@ URI： /mec/appstore/v1/messages
 根据message id获取消息。
 ```
 URI： /mec/appstore/v1/messages/{messageId}
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |messageId |消息id|request param |yes|
@@ -966,9 +934,8 @@ URI： /mec/appstore/v1/messages/{messageId}
 根据message id删除消息。
 ```
 URI： /mec/appstore/v1/messages/{messageId}
-方法类型: DELETE
+METHOD: DELETE
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |messageId |消息id|request param |yes|
@@ -983,9 +950,8 @@ URI： /mec/appstore/v1/messages/{messageId}
 根据message id下载app相关信息。
 ```
 URI： /mec/appstore/v1/messages/{messageId}/action/download
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |messageId |消息id|request param |yes|
@@ -1001,9 +967,8 @@ URI： /mec/appstore/v1/messages/{messageId}/action/download
 根据message id更新消息状态。
 ```
 URI： /mec/appstore/v1/messages/{messageId}/action/readed
-方法类型: PUT
+METHOD: PUT
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |messageId |消息id|request param |yes|
@@ -1023,7 +988,7 @@ URI： /mec/appstore/v1/messages/{messageId}/action/readed
 查询可拉取的应用列表。
 ```
 URI： /mec/appstore/v1/packages/pullable
-方法类型: GET
+METHOD: GET
 ```
 
 响应示例:
@@ -1055,9 +1020,8 @@ URI： /mec/appstore/v1/packages/pullable
 根据platfromId获取外部仓库可拉取应用列表。
 ```
 URI： /mec/appstore/v1/packages/{platfromId}/pullable
-方法类型: GET
+METHOD: GET
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |platformId |外部应用仓库ID|path |yes|
@@ -1091,9 +1055,8 @@ URI： /mec/appstore/v1/packages/{platfromId}/pullable
 根据packageId拉取应用包。
 ```
 URI： /mec/appstore/v1/packages/{packageId}/action/pull
-方法类型: POST
+METHOD: POST
 ```
-
 |名称|描述|IN|必选|
 |---|---|---|---|
 |packageId |应用包ID|path |yes|

@@ -8,392 +8,572 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-06-02 23:02+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/User Management/User_Interfaces.md:2
+#: ../../Projects/User Management/User_Interfaces.md:1
 msgid "User Interfaces"
 msgstr "User Interfaces"
 
 #: ../../Projects/User Management/User_Interfaces.md:3
 msgid "[User Interfaces](#appstore-interfaces)"
-msgstr "[User Interfaces] (#appstore-interfaces)"
+msgstr "[User Interfaces](#appstore-interfaces)"
 
 #: ../../Projects/User Management/User_Interfaces.md:4
-msgid "[User-mgmt-Server](#appStore-server) - [1. AUTH](#1-AUTH)"
-msgstr "[User-mgmt-Server] (#appStore-server)-[1. AUTH] (#1-AUTH)"
+msgid "[User-mgmt-Server](#appStore-server)"
+msgstr "[User-mgmt-Server](#appStore-server)"
+
+#: ../../Projects/User Management/User_Interfaces.md:5
+msgid "[1. AUTH](#1-AUTH)"
+msgstr "[1. AUTH](#1-AUTH)"
 
 #: ../../Projects/User Management/User_Interfaces.md:6
 msgid "[1.1 登录](#11-登录)"
-msgstr "[1.1 Registration] (#11-Register)"
+msgstr "[1.1 Registration](#11-Register)"
 
 #: ../../Projects/User Management/User_Interfaces.md:7
 msgid "[1.2 获取当前登录用户信息](#12-获取当前登录用户信息)"
-msgstr "[1.2 Get current login user information] (#12-get current login user information)"
+msgstr "[1.2 Get current login user information](#12-getcurrentloginuserinformation)"
 
 #: ../../Projects/User Management/User_Interfaces.md:8
 msgid "[1.3 登出](#13-登出)"
-msgstr "[1.3 Logout] (#13-Logout)"
+msgstr "[1.3 Logout](#13-Logout)"
 
 #: ../../Projects/User Management/User_Interfaces.md:9
-msgid "[2. USER-MGMT](#2-USER-MGMT) - [2.1 注册用户](#21-注册用户) - [2.2 修改密码（个人修改密码 & 找回密码）](#22-修改密码) - [2.3 校验重复用户](#23-校验重复用户) - [2.4 查询用户列表](#24-查询用户列表) - [2.5 删除用户](#25-删除用户) - [2.6 修改用户个人信息](#26-修改用户个人信息) - [2.7 停用用户](#27-停用用户) - [2.8 启用用户](#28-启用用户) - [2.9 设置用户角色](#29-设置用户角色)"
-msgstr "[2. USER-MGMT] (#2-USER-MGMT)-[#21registered user]-[2.2 modify password (personal modification password & reclaim password)] (#22#23-modify password)-[2.4 Query user list] -#242.4 User List]-[#25Delete User]-[2.6 Modify User Personal Information] (#26-Modify User Personal Information)-[2.7 Disable User] (#27-Disable User)-[2.8 Enable user] (#28-Enable user)-[2.9 sets user roles] (#29-set user role)"
+msgid "[2. USER-MGMT](#2-USER-MGMT)"
+msgstr "[2. USER-MGMT](#2-USER-MGMT)"
+
+#: ../../Projects/User Management/User_Interfaces.md:10
+msgid "[2.1 注册用户](#21-注册用户)"
+msgstr "[2.1 Registered User](#21-RegisteredUser)"
+
+#: ../../Projects/User Management/User_Interfaces.md:11
+msgid "[2.2 修改密码（个人修改密码 & 找回密码）](#22-修改密码)"
+msgstr "[2.2 Modify Password (Personal Modify Password & Find Password)](#22-ModifyPassword)"
+
+#: ../../Projects/User Management/User_Interfaces.md:12
+msgid "[2.3 校验重复用户](#23-校验重复用户)"
+msgstr "[2.3 Check Repeat User](#23-CheckRepeatUser)"
+
+#: ../../Projects/User Management/User_Interfaces.md:13
+msgid "[2.4 查询用户列表](#24-查询用户列表)"
+msgstr "[2.4 Query User List](#24-QueryUserList)"
+
+#: ../../Projects/User Management/User_Interfaces.md:14
+msgid "[2.5 删除用户](#25-删除用户)"
+msgstr "[2.5 Delete User](#25-DeleteUser)"
+
+#: ../../Projects/User Management/User_Interfaces.md:15
+msgid "[2.6 修改用户个人信息](#26-修改用户个人信息)"
+msgstr "[2.6 Modify User Personal Information](#26-ModifyUserPersonalInformation)"
+
+#: ../../Projects/User Management/User_Interfaces.md:16
+msgid "[2.7 停用用户](#27-停用用户)"
+msgstr "[2.7 Disable User](#27-Disableuser)"
+
+#: ../../Projects/User Management/User_Interfaces.md:17
+msgid "[2.8 启用用户](#28-启用用户)"
+msgstr "[2.8 Enable User](#28-UserEnabled)"
+
+#: ../../Projects/User Management/User_Interfaces.md:18
+msgid "[2.9 设置用户角色](#29-设置用户角色)"
+msgstr "[2.9 sets user roles](#29-setuserrole)"
 
 #: ../../Projects/User Management/User_Interfaces.md:19
-msgid "[3. IDENTITY](#3-IDENTITY) - [3.1 获取短信验证码](#31-获取短信验证码) - [3.2 获取邮件验证码](#32-获取邮件验证码)"
-msgstr "[3. IDENTITY] (#3-IDENTITY)-[3.1 Get the short message verification code] (#31-Get the short message verification code)-[3.2 Get the mail verification code] (#32-Get the mail verification code)"
+msgid "[3. IDENTITY](#3-IDENTITY)"
+msgstr "[3. IDENTITY](#3-IDENTITY)"
+
+#: ../../Projects/User Management/User_Interfaces.md:20
+msgid "[3.1 获取短信验证码](#31-获取短信验证码)"
+msgstr "[3.1 Get Short Message Validation Code](#31-GetShortMessageValidationCode)"
+
+#: ../../Projects/User Management/User_Interfaces.md:21
+msgid "[3.2 获取邮件验证码](#32-获取邮件验证码)"
+msgstr "[3.2 Get Mail Validation Code](#32-GetMailValidationCode)"
+
+#: ../../Projects/User Management/User_Interfaces.md:22
+msgid "[3.3 获取图形验证码](#32-获取图形验证码)"
+msgstr "[3.3 Get Graphic Validation Code](#32-GetGraphValidationCode)"
 
 #: ../../Projects/User Management/User_Interfaces.md:23
-msgid "## 1. AUTH"
-msgstr "# # 1. AUTH"
+msgid "[3.4 预校验图形验证码正确性](#32-预校验图形验证码正确性)"
+msgstr "[3.4 Precheck Graphic Validation Code Accuracy](#32-PrecheckGraphicValidationCodeAccuracy)"
 
 #: ../../Projects/User Management/User_Interfaces.md:25
-msgid "### 1.1 登录"
-msgstr "### 1.1 Registration"
+msgid "1. AUTH"
+msgstr "1.AUTH"
 
 #: ../../Projects/User Management/User_Interfaces.md:27
+msgid "1.1 登录"
+msgstr "1.1 Registration"
+
+#: ../../Projects/User Management/User_Interfaces.md:29
 msgid "登录系统"
 msgstr "Registering a system"
 
-#: ../../Projects/User Management/User_Interfaces.md:29
-msgid "``` Resource URI: /login Method: POST ```"
-msgstr "` ` ` Resource URI: /login Method: POST ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md:31
+msgid "登录前需要先获取图形验证码，通过verifyCode参数传递。"
+msgstr "Before logging in, a graphical verification code is required to pass through the verifyCode parameter."
 
-#: ../../Projects/User Management/User_Interfaces.md:34
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </thead> <tbody> <tr> <td>username</td> <td>用户名/邮箱/手机号</td> <td>body</td> <td>是</td> <td></td> </tr> <tr> <td>password</td> <td>密码</td> <td>body</td> <td>是</td> <td></td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe </thead></th> </thead> <tbody> <tr> <tr> <td>username</td> <td>username/mailbox/cell phone</td> <td>body</td> <td>Yes</td> <td></td> </tr> <tr> <td>password</td> <td>Password</td> <td>body</td> <td>Yes</td> <td></td></td> </table> </tbody> </table>"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "Name"
+msgstr "Name"
 
-#: ../../Projects/User Management/User_Interfaces.md:62
-msgid "Example response: ``` response 200 OK ```"
-msgstr "Example response: ` ` ` response 200 OK ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "Definition"
+msgstr "Definition"
 
-#: ../../Projects/User Management/User_Interfaces.md:67
-msgid "### 1.2 获取当前登录用户信息"
-msgstr "### 1.2 Get current login user information"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "type"
+msgstr "type"
 
-#: ../../Projects/User Management/User_Interfaces.md:69
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "Required"
+msgstr "Required"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "Describe"
+msgstr "Describe"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "verifyCode"
+msgstr "verifyCode"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "图形验证码"
+msgstr "Graphics Validation Code"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "query"
+msgstr "query"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "是"
+msgstr "Yes."
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "username"
+msgstr "username"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用户名/邮箱/手机号"
+msgstr "User name/mailbox/cell phone number"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "body"
+msgstr "body"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "password"
+msgstr "password"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "密码"
+msgstr "Password."
+
+#: ../../Projects/User Management/User_Interfaces.md:43 Management/User_Interfaces.md:57 Management/User_Interfaces.md:85 Management/User_Interfaces.md:121 Management/User_Interfaces.md:189 Management/User_Interfaces.md:238 Management/User_Interfaces.md:291 Management/User_Interfaces.md:354 Management/User_Interfaces.md:397 Management/User_Interfaces.md:446 Management/User_Interfaces.md:483 Management/User_Interfaces.md:530 Management/User_Interfaces.md:573 Management/User_Interfaces.md:608 Management/User_Interfaces.md:651
+msgid "Example response:"
+msgstr "Example response:"
+
+#: ../../Projects/User Management/User_Interfaces.md:48
+msgid "1.2 获取当前登录用户信息"
+msgstr "1.2 Access to current login user information"
+
+#: ../../Projects/User Management/User_Interfaces.md:50
 msgid "用户登录成功后，通过此接口获取当前登录用户的信息。"
 msgstr "and obtaining the information of the current login user through the interface after the user login is successful."
 
-#: ../../Projects/User Management/User_Interfaces.md:71
-msgid "``` Resource URI: auth/login-info Method: GET ```"
-msgstr "` ` ` Resource URI: auth/login-info Method: GET ` ` `"
-
 #: ../../Projects/User Management/User_Interfaces.md:76
-msgid "Example response: ``` response 200 OK {"
-msgstr "Example response: ` ` ` response 200 OK {"
+msgid "1.3 登出"
+msgstr "1.3 Log out"
 
-#: ../../Projects/User Management/User_Interfaces.md:80
-msgid "\"username\": \"TestUser1\", \"mailAddress\": \"test@edgegallery.org\", \"telephone\": \"13812345678\", \"createTime\":\"2021-02-24 04:39:23\", \"allowed\": true, \"userId\": \"37423702-051a-46b4-bf2b-f190759cc0b8\", \"permissions\": ["
-msgstr "\" username \": \" TestUser1\", \" emailAddress \": \" test@edgegallery.org \", \" 13812345678\", \" createTime \": \" 2021-02-24 04:39:23\", \" allowed \": true, \" userId \": \" 37423702-051a-46b4-bf2b-f190759cc0b8\", \" permissions \": ["
-
-#: ../../Projects/User Management/User_Interfaces.md:88 Management/User_Interfaces.md:183 Management/User_Interfaces.md:512 Management/User_Interfaces.md:516 Management/User_Interfaces.md:669 Management/User_Interfaces.md:851
-msgid "{"
-msgstr "{"
-
-#: ../../Projects/User Management/User_Interfaces.md:88 Management/User_Interfaces.md:183 Management/User_Interfaces.md:512 Management/User_Interfaces.md:669 Management/User_Interfaces.md:851
-msgid "\"platform\": \"APPSTORE\", \"role\": \"GUEST\""
-msgstr "\" platform \": \" APPSTORE \", \" role \": \" GUEST \""
-
-#: ../../Projects/User Management/User_Interfaces.md:90 Management/User_Interfaces.md:93 Management/User_Interfaces.md:171 Management/User_Interfaces.md:185 Management/User_Interfaces.md:187 Management/User_Interfaces.md:194 Management/User_Interfaces.md:201 Management/User_Interfaces.md:209 Management/User_Interfaces.md:287 Management/User_Interfaces.md:298 Management/User_Interfaces.md:305 Management/User_Interfaces.md:313 Management/User_Interfaces.md:366 Management/User_Interfaces.md:376 Management/User_Interfaces.md:495 Management/User_Interfaces.md:497 Management/User_Interfaces.md:514 Management/User_Interfaces.md:518 Management/User_Interfaces.md:520 Management/User_Interfaces.md:527 Management/User_Interfaces.md:534 Management/User_Interfaces.md:542 Management/User_Interfaces.md:589 Management/User_Interfaces.md:597 Management/User_Interfaces.md:657 Management/User_Interfaces.md:671 Management/User_Interfaces.md:673 Management/User_Interfaces.md:680 Management/User_Interfaces.md:688 Management/User_Interfaces.md:735 Management/User_Interfaces.md:743 Management/User_Interfaces.md:790 Management/User_Interfaces.md:798 Management/User_Interfaces.md:853 Management/User_Interfaces.md:856 Management/User_Interfaces.md:867 Management/User_Interfaces.md:875 Management/User_Interfaces.md:914 Management/User_Interfaces.md:925 Management/User_Interfaces.md:964 Management/User_Interfaces.md:975 Management/User_Interfaces.md:983
-msgid "}"
-msgstr "}"
-
-#: ../../Projects/User Management/User_Interfaces.md:91 Management/User_Interfaces.md:186 Management/User_Interfaces.md:519 Management/User_Interfaces.md:672 Management/User_Interfaces.md:854
-msgid "]"
-msgstr "]"
-
-#: ../../Projects/User Management/User_Interfaces.md:95
-msgid "### 1.3 登出"
-msgstr "### 1.3 Logout"
-
-#: ../../Projects/User Management/User_Interfaces.md:97
+#: ../../Projects/User Management/User_Interfaces.md:78
 msgid "登出系统"
 msgstr "Logout system"
 
-#: ../../Projects/User Management/User_Interfaces.md:99
-msgid "``` Resource URI: /auth/logout Method: GET ```"
-msgstr "` ` ` Resource URI: /auth/logout Method: GET ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md:91
+msgid "2 USER-MGMT"
+msgstr "2 USER-MGMT"
 
-#: ../../Projects/User Management/User_Interfaces.md:104
-msgid "Example response: ``` 200 OK Succeed ```"
-msgstr "Example response: ` ` 200 OK Succeed ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md:93
+msgid "2.1 注册用户"
+msgstr "2.1 Registered users"
 
-#: ../../Projects/User Management/User_Interfaces.md:110
-msgid "## 2 USER-MGMT"
-msgstr "## 2 USER-MGMT"
-
-#: ../../Projects/User Management/User_Interfaces.md:112
-msgid "### 2.1 注册用户"
-msgstr "### 2.1 Registered Users"
-
-#: ../../Projects/User Management/User_Interfaces.md:114
+#: ../../Projects/User Management/User_Interfaces.md:95
 msgid "注册用户接口，注册成功返回200，并返回已经注册成功的用户信息；接口数据不全返回400。"
 msgstr "registering the user interface, registering successfully returning 200 and returning the user information that has been registered successfully; the interface data is not fully returned to 400."
 
-#: ../../Projects/User Management/User_Interfaces.md:116
-msgid "``` Resource URI: /v1/users Method: POST ```"
-msgstr "` ` ` Resource URI: /v1/users Method: POST ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md:97
+msgid "注册前需要先获取图形验证码，通过verifyCode参数传递。"
+msgstr "Before registration, a graphical verification code is required to pass through the verifyCode parameter."
 
-#: ../../Projects/User Management/User_Interfaces.md:121
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </thead> <tbody> <tr> <td>username</td> <td>用户名</td> <td>body</td> <td>是</td> <td>必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间</td> </tr> <tr> <td>password</td> <td>密码</td> <td>body</td> <td>是</td> <td>必须满足复杂度要求，必须是数字/字母/特数字符的组合，长度在6~18个字符之间</td> </tr> <tr> <td>mailAddress</td> <td>邮箱地址</td> <td>body</td> <td>否</td> <td>如果填写，必须符合邮箱地址的格式要求</td> </tr> <tr> <td>telephone</td> <td>手机号码</td> <td>body</td> <td>否</td> <td>如果填写，必须为11位有效数字，且以1开头</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </tr> <tbody> <tr> <td> <tr> username</td> <td>username</td> <td>body</td> <td>Yes</td> </td></td> </tr> <td> <td> <td>password</td> <td>password</td></td> <td> <td>Body</td> <td>The length is a combination of a number/letter/t number character and a length between 6 and 18 characters </tr></td> <tr> <td>mailAddress</td> <td>mailbox address</td> <td>body</td> <td>No</td> <td>If filled, must match the format request of the mailbox address</td> </tr> <tr> <td>telphone</td> <td>Cell phone number</td> <td>body</td> <td>No</td> <td>If completed, must be 11 valid numbers and</td></td> </tr> </tbody> </tr> </table>"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用户名"
+msgstr "User name"
 
-#: ../../Projects/User Management/User_Interfaces.md:163 Management/User_Interfaces.md:277 Management/User_Interfaces.md:359 Management/User_Interfaces.md:480 Management/User_Interfaces.md:650 Management/User_Interfaces.md:846 Management/User_Interfaces.md:909 Management/User_Interfaces.md:959
-msgid "Example request: ```json {"
-msgstr "Example request: ` ` ` json {"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间"
+msgstr "Must be a combination of letters or letters and numbers, must start with a letter, between 6 and 30 characters in length"
 
-#: ../../Projects/User Management/User_Interfaces.md:166
-msgid "\"username\": \"TestUser1\", \"mailAddress\": \"test@edgegallery.org\", \"telephone\": \"13812345678\", \"password\": \"123.qwe\""
-msgstr "\" username \": \" TestUser1\", \" mailAddress \": \" test@edgegallery.org \", \" telephone \": \" 13812345678\", \" password \":\" 123.qwe \""
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "必须满足复杂度要求，必须是数字/字母/特数字符的组合，长度在6~18个字符之间"
+msgstr "Complexity requirements must be met, must be a combination of number/letter/t number characters, length between 6 and 18 characters"
 
-#: ../../Projects/User Management/User_Interfaces.md:173
-msgid "Example response: ```json response 201 OK {"
-msgstr "Example response: ` ` ` json response 201 OK {"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "mailAddress"
+msgstr "mailAddress"
 
-#: ../../Projects/User Management/User_Interfaces.md:177 Management/User_Interfaces.md:506 Management/User_Interfaces.md:663
-msgid "\"username\": \"TestUser1\", \"mailAddress\": \"test@edgegallery.org\", \"telephone\": \"13812345678\", \"userId\": \"37423702-051a-46b4-bf2b-f190759cc0b8\", \"permissions\": ["
-msgstr "\" username \": \" TestUser1\", \" mailAddress \": \" test@edgegallery.org \": \" 13812345678\", \" userId \": \" 37423702-051a-4b4-bf2b-f190759cc0b8\", \" permissions \": ["
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "邮箱地址"
+msgstr "Mailbox Address"
 
-#: ../../Projects/User Management/User_Interfaces.md:189 Management/User_Interfaces.md:293 Management/User_Interfaces.md:522 Management/User_Interfaces.md:584 Management/User_Interfaces.md:675 Management/User_Interfaces.md:730 Management/User_Interfaces.md:785 Management/User_Interfaces.md:862 Management/User_Interfaces.md:970
-msgid "response 400 Bad Request {"
-msgstr "response 400 Bad Request {"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "否"
+msgstr "not"
 
-#: ../../Projects/User Management/User_Interfaces.md:191 Management/User_Interfaces.md:198 Management/User_Interfaces.md:205 Management/User_Interfaces.md:295 Management/User_Interfaces.md:302 Management/User_Interfaces.md:309 Management/User_Interfaces.md:524 Management/User_Interfaces.md:531 Management/User_Interfaces.md:538 Management/User_Interfaces.md:586 Management/User_Interfaces.md:593 Management/User_Interfaces.md:677 Management/User_Interfaces.md:684 Management/User_Interfaces.md:732 Management/User_Interfaces.md:739 Management/User_Interfaces.md:787 Management/User_Interfaces.md:794 Management/User_Interfaces.md:864 Management/User_Interfaces.md:871 Management/User_Interfaces.md:922 Management/User_Interfaces.md:972 Management/User_Interfaces.md:979
-msgid "\"code\": 0, \"message\": \"string\", \"detail\": \"string\""
-msgstr "\" code \": 0, \" message \": \" string \", \" detail \": \" string \""
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "如果填写，必须符合邮箱地址的格式要求"
+msgstr "If completed, the format requirements of the mailbox address must be met"
 
-#: ../../Projects/User Management/User_Interfaces.md:196 Management/User_Interfaces.md:300 Management/User_Interfaces.md:529 Management/User_Interfaces.md:591 Management/User_Interfaces.md:682 Management/User_Interfaces.md:737 Management/User_Interfaces.md:792 Management/User_Interfaces.md:869
-msgid "response 403 FORBIDDEN {"
-msgstr "response 403 FORBIDDEN {"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "telephone"
+msgstr "telphone"
 
-#: ../../Projects/User Management/User_Interfaces.md:203 Management/User_Interfaces.md:307
-msgid "response 500 INTERNAL ERROR {"
-msgstr "response 500 INTERNAL ERROR {"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "手机号码"
+msgstr "Mobile phone number"
 
-#: ../../Projects/User Management/User_Interfaces.md:211
-msgid "### 2.2 修改密码（个人修改密码 & 找回密码）"
-msgstr "### 2.2 Modify password (personal modification password & recover password)"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "如果填写，必须为11位有效数字，且以1开头"
+msgstr "If filled, must be 11 valid digits and start with 1"
 
-#: ../../Projects/User Management/User_Interfaces.md:213
+#: ../../Projects/User Management/User_Interfaces.md:111 Management/User_Interfaces.md:177 Management/User_Interfaces.md:229 Management/User_Interfaces.md:272 Management/User_Interfaces.md:350 Management/User_Interfaces.md:388 Management/User_Interfaces.md:442 Management/User_Interfaces.md:479 Management/User_Interfaces.md:518 Management/User_Interfaces.md:566 Management/User_Interfaces.md:601
+msgid "Example request:"
+msgstr "Example request:"
+
+#: ../../Projects/User Management/User_Interfaces.md:159
+msgid "2.2 修改密码（个人修改密码 & 找回密码）"
+msgstr "2.2 Modify password (personal modification password & recover password)"
+
+#: ../../Projects/User Management/User_Interfaces.md:161
 msgid "用户登录后在个人中心通过原密码验证方式修改个人密码。"
 msgstr "the personal password is modified by the original password verification mode in the personal centre after the user is logged in."
 
-#: ../../Projects/User Management/User_Interfaces.md:214
+#: ../../Projects/User Management/User_Interfaces.md:162
 msgid "如果用户注册时提供了真实的邮箱地址或手机号（也可以在个人中心填写这两项信息），可以通过邮箱或手机验证码的方式重置密码。需要开启邮件服务或短信服务才能使用。"
 msgstr "If the user registers a real email address or cell phone number (which can also be filled in the personal center), the password can be reset by way of mailbox or mobile phone verification code.An open mail service or short message service is required to use."
 
-#: ../../Projects/User Management/User_Interfaces.md:216
-msgid "``` Resource URI: /v1/users/password Method: PUT ```"
-msgstr "` ` ` Resource URI: /v1/users/password Method: PUT ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "修改密码的类型"
+msgstr "Modify the type of password"
 
-#: ../../Projects/User Management/User_Interfaces.md:221
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </thead> <tbody> <tr> <td>type</td> <td>修改密码的类型</td> <td>body</td> <td>是</td> <td>1--原密码验证修改; 2--密码找回</td> </tr> <tr> <td>newPassword</td> <td>修改后的新密码</td> <td>body</td> <td>是</td> <td>必须满足复杂度要求，必须是数字/字母/特数字符的组合，长度在6~18个字符之间</td> </tr> <tr> <td>oldPassword</td> <td>原密码</td> <td>body</td> <td>否</td> <td>当type=1时必填</td> </tr> <tr> <td>telephone</td> <td>手机号码</td> <td>body</td> <td>否</td> <td>当type=2时，且需要通过手机号找回时，填写已经注册过的手机号码。与mailAddress有效性互斥</td> </tr> <tr> <td>mailAddress</td> <td>邮箱地址</td> <td>body</td> <td>否</td> <td>当type=2时，且需要通过邮箱找回时，填写已经注册过的邮箱地址。与telephone有效性互斥</td> </tr> <tr> <td>verificationCode</td> <td>验证码</td> <td>body</td> <td>否</td> <td>6位有效数字。当type=2时必填</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </tr> <tr> <td> <tr> type</td> <td>Modify the type of password</td> <td>body</td> <td>Yes</td> <td>1 -- Password verification modification; 2 -- password recovery</td> </tr> <tr> <td>newPassword</td> <td>Modified new password</td> <td>body</td> <td>Yes</td> <td>The complexity request must be a combination of number/letter/t number characters</td> </tr> <tr> <td>oldPassword</td> <td>Password</td> <td>body</td> <td>No</td> <td>When type= 1 is required</td></td> <tr> <td>telphone</td> <td>cell phone number</td> <td>body</td> <td>No</td> <td>When type= 2, and need to be retrieved through the cell phone number, fill out the registered cell phone number.The validity of the and mailAddress is mutually exclusive</td> </tr> <tr> <td>mailAddress</td> <td>Mailbox Address</td> <td>body</td> <td>No</td> <td>When type= 2, and need to be retrieved through the mailbox, fill out the registered mailbox address.with telphone validity mutex</td> </tr> <tr> <td>verificationCode</td> <td>Validation code</td> <td>body</td> <td>No</td> <td>6-digit valid number.When type= 2 is</td></td> </tbody> </tbody> </table>"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "1--原密码验证修改; 2--密码找回"
+msgstr "1 -- Password verification modification; 2 -- password recovery"
 
-#: ../../Projects/User Management/User_Interfaces.md:280
-msgid "\"type\": 2, \"newPassword\": \"123.qwe\", \"oldPassword\": \"\", \"telephone\": \"\", \"mailAddress\": \"test@edgegallery.org\", \"verificationCode\": \"123456\""
-msgstr "\" type \": 2, \" newPassword \":\"123.qwe \", \" oldPassword \": \" \", \" telphone \": \" \", \" mailAddress \": \" test@edgegallery.org \", \" verificationCode \": \" 123456\""
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "newPassword"
+msgstr "newPassword"
 
-#: ../../Projects/User Management/User_Interfaces.md:289 Management/User_Interfaces.md:580 Management/User_Interfaces.md:726 Management/User_Interfaces.md:781 Management/User_Interfaces.md:858 Management/User_Interfaces.md:916 Management/User_Interfaces.md:966
-msgid "Example response: ```json response 200 OK"
-msgstr "Example response: ` ` ` json response 200 OK"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "修改后的新密码"
+msgstr "New password after modification"
 
-#: ../../Projects/User Management/User_Interfaces.md:315
-msgid "### 2.3 校验重复用户"
-msgstr "### 2.3 Check Repeat User"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "oldPassword"
+msgstr "oldPassword"
 
-#: ../../Projects/User Management/User_Interfaces.md:317
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "原密码"
+msgstr "original password"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "当type=1时必填"
+msgstr "Required when type= 1"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "当type=2时，且需要通过手机号找回时，填写已经注册过的手机号码。与mailAddress有效性互斥"
+msgstr "When type= 2, and need to be recovered through the cell phone number, fill out the registered cell phone number.Validity with mailAddress is mutually exclusive"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "当type=2时，且需要通过邮箱找回时，填写已经注册过的邮箱地址。与telephone有效性互斥"
+msgstr "When type= 2, and need to be recovered via the mailbox, fill out the address of the mailbox that has been registered.mutex with telphone validity"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "verificationCode"
+msgstr "verificationCode"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "验证码"
+msgstr "Verification code"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "6位有效数字。当type=2时必填"
+msgstr "6 valid numbers.Required when type= 2"
+
+#: ../../Projects/User Management/User_Interfaces.md:215
+msgid "2.3 校验重复用户"
+msgstr "2.3 Check repeat user"
+
+#: ../../Projects/User Management/User_Interfaces.md:217
 msgid "判断用户名或手机号是否已经注册过，不允许重复注册。"
 msgstr "judging whether the user name or the mobile phone number has been registered, and is not allowed to re-register."
 
-#: ../../Projects/User Management/User_Interfaces.md:319
-msgid "``` Resource URI: /v1/users/action/uniqueness Method: POST ```"
-msgstr "` ` ` Resource URI: /v1/users/action/uniqueness Method: POST ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md:248
+msgid "2.4 查询用户列表"
+msgstr "2.4 List of query users"
 
-#: ../../Projects/User Management/User_Interfaces.md:324
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </thead> <tbody> <tr> <td>username</td> <td>用户名</td> <td>body</td> <td>是</td> <td>必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间</td> </tr> <tr> <td>mailAddress</td> <td>邮箱地址</td> <td>body</td> <td>否</td> <td>如果填写，必须符合邮箱地址的格式要求</td> </tr> <tr> <td>telephone</td> <td>手机号码</td> <td>body</td> <td>否</td> <td>如果填写，必须为11位有效数字，且以1开头</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </tr> <tbody> <tr> <td> <tr> username</td> <td>username</td> <td>body</td> <td>Yes</td> <td>A combination of letters or letters and numbers</td> be between 6 and 30 characters</td> </tr> <td> <tr> mailAddress</td> <td>mailbox address</td> <td>body</td> <td>No</td> <td>If filled, must match the format request</td> the mailbox address</td> <tr> <td>telphone</td> <td>Cell phone number</td> <td>body</td> <td>No</td> <td>If completed, must be 11 valid numbers and start with</td></td> </tr> </table> </table>"
-
-#: ../../Projects/User Management/User_Interfaces.md:362 Management/User_Interfaces.md:653
-msgid "\"username\": \"TestUser1\", \"mailAddress\": \"test@edgegallery.org\", \"telephone\": \"13812345678\""
-msgstr "\" username \": \" TestUser1\", \" mailAddress \": \" test@edgegallery.org \", \" telephone \": \" 13812345678\""
-
-#: ../../Projects/User Management/User_Interfaces.md:368 Management/User_Interfaces.md:499 Management/User_Interfaces.md:659
-msgid "Example response: ```json response 200 OK {"
-msgstr "Example response: ` ` ` json response 200 OK {"
-
-#: ../../Projects/User Management/User_Interfaces.md:372
-msgid "\"username\": true or false, \"mailAddress\": true or false, \"telephone\": true or false"
-msgstr "\" username \": true or false, \" mailAddress \": true or false, \" telephone \": true or false"
-
-#: ../../Projects/User Management/User_Interfaces.md:378
-msgid "### 2.4 查询用户列表"
-msgstr "### 2.4 Query user list"
-
-#: ../../Projects/User Management/User_Interfaces.md:380
+#: ../../Projects/User Management/User_Interfaces.md:250
 msgid "用户管理员查询用户列表"
 msgstr "List of user administrators"
 
-#: ../../Projects/User Management/User_Interfaces.md:382
-msgid "``` Resource URI: /v1/users/list Method: POST Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN User: admin ```"
-msgstr "` ` ` Resource URI: /v1/users/list Method: POST Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN User: admin ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用于模糊查询条件的用户名关键字"
+msgstr "User name keyword for fuzzy query conditions"
 
-#: ../../Projects/User Management/User_Interfaces.md:389
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </thead> <tbody> <tr> <td>username</td> <td>用户名</td> <td>body</td> <td>否</td> <td>用于模糊查询条件的用户名关键字</td> </tr> <tr> <td>mailAddress</td> <td>邮箱地址</td> <td>body</td> <td>否</td> <td>用于模糊查询条件的邮箱地址关键字</td> </tr> <tr> <td>telephone</td> <td>电话号码</td> <td>body</td> <td>否</td> <td>用于模糊查询条件的电话号码关键字</td> </tr> <tr> <td>role</td> <td>角色</td> <td>body</td> <td>是</td> <td>ALL--全部;ADMIN--管理员;TENANT--租户;GUEST--访客</td> </tr> <tr> <td>status</td> <td>状态</td> <td>body</td> <td>是</td> <td>-1--全部;0--停用;1--启用</td> </tr> <tr> <td>createTimeBegin</td> <td>创建时间(即注册时间)范围--起始</td> <td>body</td> <td>否</td> <td>起始时间，格式：2021-1-21</td> </tr> <tr> <td>createTimeEnd</td> <td>创建时间(即注册时间)范围--终止</td> <td>body</td> <td>否</td> <td>终止时间，格式：2021-2-1</td> </tr> <tr> <td>offset</td> <td>查询起始位置</td> <td>body</td> <td>是</td> <td>分页控制参数，表示查询起始位置</td> </tr> <tr> <td>limit</td> <td>查询记录数</td> <td>body</td> <td>是</td> <td>分页控制参数，表示每页查询记录数</td> </tr> <tr> <td>sortBy</td> <td>排序字段</td> <td>body</td> <td>否</td> <td>用于排序的字段名。USERNAME--按用户名排序;CREATETIME--按创建(注册)时间排序</td> </tr> <tr> <td>sortOrder</td> <td>排序顺序</td> <td>body</td> <td>否</td> <td>排序顺序。ASC--升序;DESC--降序</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </tr> <tbody> <tr> <td> <tr> username</td> <td>username</td> <td>body</td> <td>No</td></td></td></td> <td> <td>The username used for fuzzy query conditions</td> </tr> <td> <tr> mailAddress</td></td> <td>mailbox address</td></td> <td> </tr></td> <td>No</td> <td> <tr> No</td> <td> <td> <td> <td>The phone number keyword</td> <td> <tr> </tr></td> <td>for fuzzy query conditions</td> <td>role</td> <td>is</td> <td>ALL -- All; ADMIN -- Manager; TENANT -- Tenant; GUEST -- Visitors</td> </tr> <tr> <td>status</td> <td>Status</td> <td>body</td> <td>Yes</td> <td>-1 -- all; 0 -- Disable; 1 -- Enable </tr></td> <tr> <td>createTimeBegin</td> <td>Creation time (i.e. registration time) range -- Home</td></td> <td> <td>No</td> <td>Start time, format: 2021-1-21</td> </tr> <tr> <td>createTimeEnd</td> <td>Creation time (i.e. registration time) range -- Terminate</td> <td>body</td> <td>No</td> <td>End time, format: 2021-2-1</td> </tr> <tr> <td>offset</td> <td>query home</td> <td>body</td> <td>is</td> <td>pagination control parameters </tr></td> <td> <td> <td>limit</td> <td>Query records</td> <td>body</td> <td>is</td> <td>Paging control parameters,indicates the number of queries per page</td> </tr> <tr> <td>sortBy</td> <td>Sort field</td> <td>body</td> <td>No</td> <td>The term name used for sorting.USERNAME -- Sort by username; CREATETIME -- Sort by create (registration) time</td> </tr> <tr> <td>sortOrder</td> <td>Sort sequence</td> <td>body</td> <td>No</td> <td>Sort sequence.ASC -- Ascending; DESC -- Descending </tr> </tbody></td> </table>"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用于模糊查询条件的邮箱地址关键字"
+msgstr "Mailbox address keyword for fuzzy query conditions"
 
-#: ../../Projects/User Management/User_Interfaces.md:483
-msgid "\"username\": \"\", \"mailAddress\": \"\", \"telephone\": \"\", \"role\": \"\", \"status\": -1, \"createTimeBegin\": \"2021-1-21\", \"createTimeEnd\": \"2021-2-1\", \"queryCtrl\": {"
-msgstr "\" username \": \" mailAddress \": \" \", \" telphone \": \" \", \" status \": -1, \" createTimeBegin \": \" 2021-1-21\", \" createTimeEnd \": \" 2021-2-1\", \" queryCtrl \": {"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "电话号码"
+msgstr "Phone number"
 
-#: ../../Projects/User Management/User_Interfaces.md:491
-msgid "\"offset\": 0, \"limit\": 10, \"sortBy\": \"USERNAME\", \"sortOrder\": \"DESC\""
-msgstr "\" offset \": 0, \" limit \": 10, \" sortBy \": \" USERNAME \", \" sortOrder \": \" DESC \""
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用于模糊查询条件的电话号码关键字"
+msgstr "Phone number keyword for fuzzy query conditions"
 
-#: ../../Projects/User Management/User_Interfaces.md:503
-msgid "\"totalCount\": 20, \"userList\": ["
-msgstr "\" totalCount \": 20, \" userList \": ["
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "role"
+msgstr "role"
 
-#: ../../Projects/User Management/User_Interfaces.md:515
-msgid "], \"allowed\": true, \"createTime\": \"2021-1-21 10:24:45\""
-msgstr "], \" allowed \": true, \" createTime \": \" 2021-1-21 10:24:45\""
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "角色"
+msgstr "characters"
 
-#: ../../Projects/User Management/User_Interfaces.md:536
-msgid "response 500 INTERNAL SERVER ERROR {"
-msgstr "response 500 INTERNAL SERVER ERROR {"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "ALL--全部;ADMIN--管理员;TENANT--租户;GUEST--访客"
+msgstr "ALL -- All; ADMIN -- Manager; TENANT -- Tenant; GUEST -- Visitors"
 
-#: ../../Projects/User Management/User_Interfaces.md:544
-msgid "### 2.5 删除用户"
-msgstr "### 2.5 Delete user"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "status"
+msgstr "status"
 
-#: ../../Projects/User Management/User_Interfaces.md:546
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "状态"
+msgstr "state"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "-1--全部;0--停用;1--启用"
+msgstr "-1 -- All; 0 -- Disabled; 1 -- Enable"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "createTimeBegin"
+msgstr "createTimeBegin"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "创建时间(即注册时间)范围--起始"
+msgstr "Creation Time (i.e. Enrollment Time) Range -- Initiation"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "起始时间，格式：2021-1-21"
+msgstr "From Time, Format: 2021-1-21"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "createTimeEnd"
+msgstr "createTimeEnd"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "创建时间(即注册时间)范围--终止"
+msgstr "Creation Time (i.e. Enrollment Time) Range -- Termination"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "终止时间，格式：2021-2-1"
+msgstr "Termination Time, Format: 2021-2-1"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "offset"
+msgstr "offset"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "查询起始位置"
+msgstr "Query starting position"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "分页控制参数，表示查询起始位置"
+msgstr "Paging control parameters, indicating the initial location of the query"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "limit"
+msgstr "limit"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "查询记录数"
+msgstr "Query Records"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "分页控制参数，表示每页查询记录数"
+msgstr "Paging control parameters that indicate the number of query records per page"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "sortBy"
+msgstr "sortBy"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "排序字段"
+msgstr "Sort field"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用于排序的字段名。USERNAME--按用户名排序;CREATETIME--按创建(注册)时间排序"
+msgstr "Word name for sorting.USERNAME -- Sort by username; CREATETIME -- Sort by create (registration) time"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "sortOrder"
+msgstr "sortOrder"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "排序顺序"
+msgstr "Sort Order"
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "排序顺序。ASC--升序;DESC--降序"
+msgstr "Sort sequence.ASC -- Ascending; DESC -- Descending"
+
+#: ../../Projects/User Management/User_Interfaces.md:336
+msgid "2.5 删除用户"
+msgstr "2.5 Delete user"
+
+#: ../../Projects/User Management/User_Interfaces.md:338
 msgid "用户管理员可以根据用户ID删除任何用户"
 msgstr "The user administrator can delete any user based on the user ID"
 
-#: ../../Projects/User Management/User_Interfaces.md:548
-msgid "``` Resource URI: /v1/users/{userId} Method: DELETE Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN User: admin ```"
-msgstr "` ` ` Resource URI: /v1/users/ {userId} Method: DELETE Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN User: admin ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "userId"
+msgstr "userId"
 
-#: ../../Projects/User Management/User_Interfaces.md:555 Management/User_Interfaces.md:701 Management/User_Interfaces.md:756
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>用户ID</td> <td>path</td> <td>是</td> <td>uuid</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </tr> <tbody> <td> <tr> <td>userId</td> <td>User ID</td> <td>path</td> <td>Yes</td> <td>uuid</td> </tr> </tr> </tbody>"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用户ID"
+msgstr "User ID"
 
-#: ../../Projects/User Management/User_Interfaces.md:576 Management/User_Interfaces.md:722 Management/User_Interfaces.md:777
-msgid "Example request: ```json ```"
-msgstr "Example request: ` ` ` json ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "path"
+msgstr "path"
 
-#: ../../Projects/User Management/User_Interfaces.md:599
-msgid "### 2.6 修改用户个人信息"
-msgstr "### 2.6 Modifying user personal information"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "uuid"
+msgstr "uuid"
 
-#: ../../Projects/User Management/User_Interfaces.md:601
+#: ../../Projects/User Management/User_Interfaces.md:373
+msgid "2.6 修改用户个人信息"
+msgstr "2.6 Modifies user personal information"
+
+#: ../../Projects/User Management/User_Interfaces.md:375
 msgid "用户可以修改个人信息，返回修改后的信息。"
 msgstr "The user can modify the personal information and return the modified information."
 
-#: ../../Projects/User Management/User_Interfaces.md:603
-msgid "``` Resource URI: /v1/users/{userId} Method: PUT ```"
-msgstr "` ` ` Resource URI: /v1/users/ {userId} Method: PUT ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md:428
+msgid "2.7 停用用户"
+msgstr "2.7 Disable user"
 
-#: ../../Projects/User Management/User_Interfaces.md:608
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>用户ID</td> <td>path</td> <td>是</td> <td>uuid</td> </tr> <tr> <td>username</td> <td>用户名</td> <td>body</td> <td>是</td> <td>必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间</td> </tr> <tr> <td>mailAddress</td> <td>邮箱地址</td> <td>body</td> <td>否</td> <td>如果填写，必须符合邮箱地址的格式要求</td> </tr> <tr> <td>telephone</td> <td>手机号码</td> <td>body</td> <td>否</td> <td>如果填写，必须为11位有效数字，且以1开头</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </tr> <tbody> <td> <tr> <td>userId</td> <td>User ID</td> <td>path</td> <td>Yes</td> <td>uuid</td> </tr> <tr> <td>username</td> <td>username</td> <td>body</td> <td>Yes</td> <td>must be a combination of letters or letters and numbers, must be between 6 and 30 characters in length</td> </tr> <tr> <td>mailAddress</td> <td>mailbox address</td> <td>body</td> <td>No</td> <td>If filling in,Must match the format request of the mailbox address</td> </tr> <tr> <td>telphone</td> <td>Cell phone number</td> <td>body</td> <td>No</td> <td>If completed, must be 11-bit valid numbers and</td></td> </tr> </tr> </tbody> </table>"
-
-#: ../../Projects/User Management/User_Interfaces.md:690
-msgid "### 2.7 停用用户"
-msgstr "### 2.7 Disable user"
-
-#: ../../Projects/User Management/User_Interfaces.md:692
+#: ../../Projects/User Management/User_Interfaces.md:430
 msgid "用户管理员可以根据用户ID停用用户，其中用户ID为非内置用户的用户ID。用户停用后将无法登录。"
 msgstr "The user administrator can disable the user according to the user ID, wherein the user ID is the user ID of the non-built-in user.The user will not be able to register after disabling."
 
-#: ../../Projects/User Management/User_Interfaces.md:694 Management/User_Interfaces.md:749
-msgid "``` Resource URI: /v1/users/status/{userId}/disallow Method: PUT Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN User: admin ```"
-msgstr "` ` ` Resource URI: /v1/users/status/ {userId} /disallow Method: PUT Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN User: admin ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md:465
+msgid "2.8 启用用户"
+msgstr "2.8 Enable users"
 
-#: ../../Projects/User Management/User_Interfaces.md:745
-msgid "### 2.8 启用用户"
-msgstr "### 2.8 Enable user"
-
-#: ../../Projects/User Management/User_Interfaces.md:747
+#: ../../Projects/User Management/User_Interfaces.md:467
 msgid "用户管理员可以根据用户ID启用用户，其中用户ID为非内置用户的用户ID。"
 msgstr "The user administrator can enable the user according to the user ID, wherein the user ID is the user ID of the non-built-in user."
 
-#: ../../Projects/User Management/User_Interfaces.md:800
-msgid "### 2.9 设置用户角色"
-msgstr "### 2.9 sets user roles"
+#: ../../Projects/User Management/User_Interfaces.md:502
+msgid "2.9 设置用户角色"
+msgstr "2.9 User roles are set"
 
-#: ../../Projects/User Management/User_Interfaces.md:802
+#: ../../Projects/User Management/User_Interfaces.md:504
 msgid "用户管理员可以根据用户ID设置其所属角色和可访问平台。"
 msgstr "The user administrator can set the role and the accessible platform thereof according to the user ID."
 
-#: ../../Projects/User Management/User_Interfaces.md:804
-msgid "``` Resource URI: /v1/users/settings/{userId} Method: PUT Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN User: admin ```"
-msgstr "` ` ` Resource URI: /v1/users/settings/ {userId} Method: PUT Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN User: admin ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "platform"
+msgstr "platform"
 
-#: ../../Projects/User Management/User_Interfaces.md:811
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </thead> <tbody> <tr> <td>userId</td> <td>用户ID</td> <td>path</td> <td>是</td> <td>uuid</td> </tr> <tr> <td>platform</td> <td>可访问平台</td> <td>body</td> <td>是</td> <td>用户可访问的平台</td> </tr> <tr> <td>role</td> <td>角色</td> <td>body</td> <td>是</td> <td>用户所属角色</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </tr> <tbody> <td> <tr> <td>userId</td> <td>User ID</td> <td>path</td> <td>Yes</td> <td>uuid</td> </tr> <tr> <td>platform</td> <td>accessible platform</td> <td>body</td> <td>is a</td> <td>user accessible platform</td> </tr> <tr> <td>role</td> <td>role</td> <td>body</td> <td>Yes</td> <td>The role of</td></td> </table> </tbody> </table>"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "可访问平台"
+msgstr "Access platform"
 
-#: ../../Projects/User Management/User_Interfaces.md:852
-msgid "\"permissions\": ["
-msgstr "\" permissions \": ["
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用户可访问的平台"
+msgstr "User accessible platform"
 
-#: ../../Projects/User Management/User_Interfaces.md:877
-msgid "## 3 IDENTITY"
-msgstr "## 3 IDENTITY"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用户所属角色"
+msgstr "The role of the user"
 
-#: ../../Projects/User Management/User_Interfaces.md:879
-msgid "### 3.1 获取短信验证码"
-msgstr "### 3.1 Get Short Message Validation Code"
+#: ../../Projects/User Management/User_Interfaces.md:549
+msgid "3 IDENTITY"
+msgstr "3 IDENTITY"
 
-#: ../../Projects/User Management/User_Interfaces.md:881
+#: ../../Projects/User Management/User_Interfaces.md:551
+msgid "3.1 获取短信验证码"
+msgstr "3.1 Access to short message verification code"
+
+#: ../../Projects/User Management/User_Interfaces.md:553
 msgid "发送验证码到指定的手机号上，发送成功返回200，发送失败返回417。"
 msgstr "sending the verification code to the appointed mobile phone number, sending the successful return 200, sending the failure to return 417."
 
-#: ../../Projects/User Management/User_Interfaces.md:883
-msgid "``` Resource URI: /v1/identity/sms Method: POST ```"
-msgstr "` ` ` Resource URI: /v1/identity/sms Method: POST ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md:555
+msgid "发送短信验证码前需要先获取图形验证码，通过verifyCode参数传递。"
+msgstr "It is necessary to obtain the graphic verification code before sending the short message verification code, which is passed through the verifyCode parameter."
 
-#: ../../Projects/User Management/User_Interfaces.md:888
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </thead> <tbody> <tr> <td>telephone</td> <td>电话号码</td> <td>body</td> <td>是</td> <td>11位有效数字，必须以1开头</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </tr> <tbody> <td> <tr> <td>telphone</td> <td>Phone number</td> <td>body</td> <td>Yes</td> <td>11 digit valid digits, must start with</td></td> </tr> </table> </table>"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "11位有效数字，必须以1开头"
+msgstr "11 valid digits, must start with 1"
 
-#: ../../Projects/User Management/User_Interfaces.md:912
-msgid "\"telephone\": \"15191881159\""
-msgstr "\" telphone \": \" 15191881159\""
+#: ../../Projects/User Management/User_Interfaces.md:586
+msgid "3.2 获取邮件验证码"
+msgstr "3.2 Get Mail Validation Code"
 
-#: ../../Projects/User Management/User_Interfaces.md:920 Management/User_Interfaces.md:977
-msgid "response 417 Expectation Failed {"
-msgstr "response 417 Expectation Failed {"
+#: ../../Projects/User Management/User_Interfaces.md:588
+msgid "发送验证码到指定的邮箱，发送成功返回200，发送失败返回417。"
+msgstr "Send the verification code to the designated mailbox, send a successful return 200, and send the failure back to 417."
 
-#: ../../Projects/User Management/User_Interfaces.md:927
-msgid "```"
-msgstr "` ` `"
+#: ../../Projects/User Management/User_Interfaces.md:590
+msgid "发送邮件验证码前需要先获取图形验证码，通过verifyCode参数传递。"
+msgstr "It is necessary to obtain the graphical verification code before sending the message verification code, which is passed through the verifyCode parameter."
 
-#: ../../Projects/User Management/User_Interfaces.md:929
-msgid "### 3.2 获取邮件验证码"
-msgstr "### 3.2 Get Mail Validation Code"
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "用以接收验证码的邮箱地址"
+msgstr "Mailbox address to receive verification code"
 
-#: ../../Projects/User Management/User_Interfaces.md:931
-msgid "发送验证码到指定的邮箱，发送成功返回200，发送失败返回417"
-msgstr "Send validation code to the specified mailbox, send successful return 200, send failure return 417"
+#: ../../Projects/User Management/User_Interfaces.md:627
+msgid "3.3 获取图形验证码"
+msgstr "3.3 Get Graph Validation Code"
 
-#: ../../Projects/User Management/User_Interfaces.md:933
-msgid "``` Resource URI: /v1/identity/mail Method: POST ```"
-msgstr "` ` ` Resource URI: /v1/identity/mail Method: POST ` ` `"
+#: ../../Projects/User Management/User_Interfaces.md:629
+msgid "获取带验证码的图片数据流"
+msgstr "Get picture data stream with verification code"
 
-#: ../../Projects/User Management/User_Interfaces.md:938
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th>Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </thead> <tbody> <tr> <td>mailAddress</td> <td>邮箱地址</td> <td>body</td> <td>是</td> <td>用以接收验证码的邮箱地址</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr> Name</th> <th>Definition</th> <th>type</th> <th>Required</th> <th>Describe</th> </tr> </tr> <tbody> <tr> <td> <td> <td>mailAddress</td> <td>Mailbox Address</td> <td>Body</td> <td>is</td> address</td> <td>to receive the verification</td></td> </tr> </tbody> </table>"
+#: ../../Projects/User Management/User_Interfaces.md:636
+msgid "该接口不带任何请求参数，返回二进制的图片数据流"
+msgstr "The interface does not take any request parameters and returns the binary picture data stream"
 
-#: ../../Projects/User Management/User_Interfaces.md:962
-msgid "\"mailAddress\": \"test@edgegallery.org\""
-msgstr "\" mailAddress \": \" test@edgegallery.org \""
+#: ../../Projects/User Management/User_Interfaces.md:637
+msgid "验证码3分钟内有效"
+msgstr "Validation is valid in 3 minutes"
+
+#: ../../Projects/User Management/User_Interfaces.md:639
+msgid "3.4 预校验图形验证码正确性"
+msgstr "3.4 Precheck Graphic Validation Code Accuracy"
+
+#: ../../Projects/User Management/User_Interfaces.md:641
+msgid "预校验用户输入的验证码是否正确"
+msgstr "pre-checking if the verification code input by the user is correct"
 

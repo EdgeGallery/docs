@@ -19,8 +19,6 @@ Version: v1.1.0
 - Image Version: v1.1.0
 
 **List of new open source warehouses**
-
-
 |Module | name | type | URL | description|
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
 |Example applications | example apps | POC|https://gitee.com/edgegallery/example-apps |Provide a sample app based on edgegallery|
@@ -87,8 +85,7 @@ Version: v1.1.0
 
 The following vulnerabilities exist in the third-party open-source components of EdgeGallelry V1.1.0, which need to be fixed by users themselves:
 
-- Appstore:
-
+**Appstore**
 | Component | Version | CVE |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
 | log4j | 1.2.17 | CVE-2019-17571 |
@@ -101,9 +98,7 @@ The following vulnerabilities exist in the third-party open-source components of
 | spring-jdbc | 5.1.8.RELEASE | CVE-2020-5398 |
 | spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
 
-- Developer:
-
-
+**Developer**
 | Component | Version | CVE |
 |---|---|---|
 | netty-transport | 4.1.36.Final | CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612 |
@@ -115,9 +110,7 @@ The following vulnerabilities exist in the third-party open-source components of
 | mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
 | spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
 
-
-- ATP
-
+**ATP**
 | Component | Version | CVE |
 |---|---|---|
 | netty-transport | 4.1.36.Final | CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612 |
@@ -128,9 +121,7 @@ The following vulnerabilities exist in the third-party open-source components of
 | spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
 | spring-core | 5.1.8.RELEASE | CVE-2020-5398 |
 
-- User-mgmt:
-
-
+**User-mgmt**
 | Component | Version | CVE |
 | ----------------------------------------------------- | ------------- | --------------------------- |
 | vertx-core | 3.9.4 | CVE-2019-17640 |
@@ -162,8 +153,6 @@ Version: v1.0.0
 - Image Version: v1.0.0
 
 **List of new open source warehouses**
-
-
 |Module | name | type | URL | description|
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
 |ATP (application test platform) | ATP | product warehouse|https://gitee.com/edgegallery/atp |Application testing platform provides testing support for application certification|
@@ -233,8 +222,7 @@ Version: v1.0.0
 
 The following vulnerabilities exist in the third-party open source components of edgegallelry v1.0.0, which need to be fixed by users themselves:
 
-- Appstore:
-
+**Appstore**
 | Component | Version | CVE |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
 | log4j (indirect dependency) | 1.2.17 | CVE-2019-17571 |
@@ -243,8 +231,7 @@ The following vulnerabilities exist in the third-party open source components of
 | spring-security-oauth2 | 2.3.3.RELEASE | CVE-2018-15758 |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17525 |
 
-- Developer:
-
+**Developer**
 | Component | Version | CVE |
 |---|---|---|
 | spring-beans (indirect dependency) | 5.1.8.RELEASE | CVE-2020-5398 |
@@ -253,14 +240,12 @@ The following vulnerabilities exist in the third-party open source components of
 | mybatis-spring-boot-starter | 2.1.1 | CVE-2020-26945 |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17527 | 
 
-- ATP
-
+**ATP**
 | Component | Version | CVE |
 |---|---|---|
 | mybatis-spring-boot-starter |2.1.1 | CVE-2020-26945|
 
-- User-mgmt:
-
+**User-mgmt**
 | Component | Version | CVE |
 | ----------------------------------------------------- | ------------- | --------------------------- |
 | spring-security-core |5.3.4.RELEASE | CVE-2018-1258 |
@@ -269,8 +254,7 @@ The following vulnerabilities exist in the third-party open source components of
 | mybatis-spring-boot-starter | 2.1.1 | CVE-2020-26945 |
 | spring-security-oauth2 | 2.3.3.RELEAS | CVE-2018-15758 |
 
-- Website-gateway:
-
+**Website-gateway**
 | Component | Version | CVE |
 | -------------------- | ------------- | -------------- |
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
@@ -278,8 +262,7 @@ The following vulnerabilities exist in the third-party open source components of
 | spring-security-oauth2 | 2.3.3 | CVE-2018-15758 |
 | tomcat-embed-core | 9.0.37 | CVE-2020-17527 |
 
-- MECM:
-
+**MECM**
 | Component | Version | CVE |
 | --------- | ------- | ------------- |
 | lodash | 4.17.13 | CVE-2020-8203 |
@@ -308,7 +291,6 @@ Version: v0.9.1
 - Image Version: v0.9.1
 
 **List of new open source warehouses**
-
 |Module | name | type | URL | description|
 |-----------------|-----------------|--------|-----------------------------------------------|----------------------|
 |Developer | API emulator | product warehouse|https://gitee.com/edgegallery/api-emulator |Simulation API providing basic capabilities|
@@ -347,9 +329,7 @@ Version: v0.9.1
 
 The following vulnerabilities exist in the third-party open source components of EdgeGallelry v0.9.1, which need to be fixed by users themselves:
 
-- Appstore:
-
-
+**Appstore**
 | Component | Version | CVE |
 | ------------------------------------------ | ------------- | ------------------------------------------------------------ |
 | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -365,8 +345,7 @@ The following vulnerabilities exist in the third-party open source components of
 | vertx-core | 3.6.3 | CVE-2019-17640 |
 
 
-- Developer:
-
+**Developer**
 | Component | Version | CVE |
 |---|---|---|
 | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -386,8 +365,7 @@ The following vulnerabilities exist in the third-party open source components of
 | vertx-core | 3.6.3 | CVE-2019-17640 |
 
 
-- User-mgmt:
-
+**User-mgmt**
 | Component | Version | CVE |
 |---|---|---|
 | rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
@@ -397,16 +375,14 @@ The following vulnerabilities exist in the third-party open source components of
 | minimatch | 3.0.4 | NPM-118 |
 
 
-- Website-gateway:
-
+**Website-gateway**
 | Component | Version | CVE |
 |---|---|---|
 | log4j | 1.2.17 | CVE-2019-17571 |
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
 
 
-- MECM:
-
+**MECM**
 | Component | Version | CVE |
 |---|---|---|
 | lodash | 4.17.13 | CVE-2020-8203 |
@@ -434,7 +410,6 @@ Version: v0.9
 - Image Version: v0.9
 
 **List of new open source warehouses**
-
 |Module | name | type | URL | description|
 |-----------------|-----------------|--------|-----------------------------------------------|----------------------|
 |Helm charts | helm charts | deployment|https://gitee.com/edgegallery/helm-charts |Edgegallery deployment script|
@@ -489,8 +464,7 @@ Version: v0.9
 The following vulnerabilities exist in the third-party open source components of edgegallelry V0.9, which need to be fixed by users themselves:
 
 
-- Appstore:
-
+**Appstore**
 | Component | Version | CVE |
 |---|---|---|
 | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -499,8 +473,7 @@ The following vulnerabilities exist in the third-party open source components of
 | spring-security-core (indirect dependency) | 5.1.5.RELEASE | CVE-2018-1258 |
 
 
--Developer:
-
+**Developer**
 | Component | Version | CVE |
 |---|---|---|
 | netty-transport (indirect dependency) | 4.1.36.Final | CVE-2019-20444, CVE-2019-20445, CVE-2020-11612, CVE-2019-16869 |
@@ -511,8 +484,7 @@ The following vulnerabilities exist in the third-party open source components of
 | minimatch | 3.0.4 | NPM-118 |
 
 
-- User-mgmt:
-
+**User-mgmt**
 | Component | Version | CVE |
 |---|---|---|
 | rxnetty (indirect dependency) | 0.4.9 | CVE-2015-2156 |
@@ -522,16 +494,14 @@ The following vulnerabilities exist in the third-party open source components of
 | minimatch | 3.0.4 | NPM-118 |
 
 
-- Website-gateway:
-
+**Website-gateway**
 | Component | Version | CVE |
 |---|---|---|
 | log4j | 1.2.17 | CVE-2019-17571 |
 | spring-security-core | 5.2.6.RELEASE | CVE-2018-1258 |
 
 
-- MECM:
-
+**MECM**
 | Component | Version | CVE |
 |---|---|---|
 | lodash | 4.17.13 | CVE-2020-8203 |

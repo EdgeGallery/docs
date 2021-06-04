@@ -8,40 +8,96 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-06-01 21:59+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../Resource Repositories/PT-AppStore.md:1 and
-msgid "## AppStore"
-msgstr "## AppStore"
+msgid "AppStore"
+msgstr "AppStore"
 
 #: ../../Resource Repositories/PT-AppStore.md:3 and
-msgid "#### 项目简介"
-msgstr "Introduction to #### Items"
+msgid "项目简介"
+msgstr "Introduction to the project"
 
-#: ../../Resource Repositories/PT-AppStore.md:5 and
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th><strong>Facts</strong></th> <th><strong>Info</strong></th> </tr> </thead> <tbody> <tr> <td>PTL</td> <td></td> </tr> <tr> <td>Gitee Repositories URL</td> <td></td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <th> <tr><strong><strong></strong></th> <th><strong>Info</strong></th> </tr></th> <tr> <td> <tr> PTL</td> <td></td> </tr> <tr> <td>GuiteRepositories URL</td> <td></td> </tr> </tr> </tbody> </table>"
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "**Facts**"
+msgstr "**Facts**"
 
-#: ../../Resource Repositories/PT-AppStore.md:24 and
-msgid "#### 仓库简介"
-msgstr "#### Introduction to warehouse"
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "**Info**"
+msgstr "**Info**"
 
-#: ../../Resource Repositories/PT-AppStore.md:26 and
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th><strong>Components Name</strong></th> <th><strong>Components Owner</strong></th> <th><strong>Components Description</strong></th> </tr> </thead> <tbody> <tr> <td>TBA</td> <td>TBA</td> <td>TBA</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr><strong><strong><strong>Name</strong></th> <th><strong>Components Owner</strong></th> <th><strong>Components Description</strong> </tr> </thead> </thead> <tbody> <tr> <td>TBA</td> <td>TBA</td> <td>TBA</td> </tr> </tr> </table>"
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "PTL"
+msgstr "PTL"
 
-#: ../../Resource Repositories/PT-AppStore.md:43 and
-msgid "#### 参与贡献人员 Resources committed to the Release"
-msgstr "#### Contributed to contributing people Resources committed to the Release"
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "Gitee Repositories URL"
+msgstr "Gitee Repositories URL"
 
-#: ../../Resource Repositories/PT-AppStore.md:45 and
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th><strong>Role</strong></th> <th><strong>Name</strong></th> <th><strong>Gitee ID</strong></th> <th><strong>Email Address</strong></th> <th><strong>Location</strong></th> </tr> </thead> <tbody> <tr> <td>PTL</td> <td></td> <td></td> <td></td> <td></td> </tr> <tr> <td>Primary Contact</td> <td></td> <td></td> <td></td> <td></td> </tr> <tr> <td>Project Manager</td> <td></td> <td></td> <td></td> <td></td> </tr> <tr> <td>Committers</td> <td></td> <td></td> <td></td> <td></td> </tr> <tr> <td>Contributors</td> <td></td> <td></td> <td></td> <td></td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr><strong><strong>Role</strong></th> <th><strong>Name</strong></th> <th><strong>GuiteID</strong></th> <th><strong>Email Address</strong></th> <th><strong>Location</strong></th></th> </thead> </tr> <tr> <tbody> <tr> PTL</td> <td></td> <td> <td></td></td> <td> </tr></td> <tr> <td>Primary Contact</td> <td></td> <td></td></td> <td> <td></td> <td></td> <tr> <td>Project Manager</td> <td></td> <td></td> <td></td></td> </tr> <td> <tr> <td>Committers</td> <td></td></td> <td> <td></td> <td> </tr></td> <tr></td> <tr> <td> <td>Contributors</td> <td></td> <td></td> <td></td> <td></td></td> </tr> </tr> </table> </table> </table>"
+#: ../../Resource Repositories/PT-AppStore.md:9 and
+msgid "仓库简介"
+msgstr "Introduction to the warehouse"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "**Components Name**"
+msgstr "**Components Name**"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "**Components Owner**"
+msgstr "**Components Owner**"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "**Components Description**"
+msgstr "**Components Description**"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "TBA"
+msgstr "TBA"
+
+#: ../../Resource Repositories/PT-AppStore.md:14 and
+msgid "参与贡献人员 Resources committed to the Release"
+msgstr "Contributed Person Resources committed to the Release"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "**Role**"
+msgstr "**Role**"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "**Name**"
+msgstr "**Name**"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "**Gitee ID**"
+msgstr "**Gitee ID**"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "**Email Address**"
+msgstr "**Email Address**"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "**Location**"
+msgstr "**Location**"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "Primary Contact"
+msgstr "Primary Contact"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "Project Manager"
+msgstr "Project Manager"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "Committers"
+msgstr "Committers"
+
+#: ../../Resource Repositories/PT-AppStore.md and
+msgid "Contributors"
+msgstr "Contributors"
 

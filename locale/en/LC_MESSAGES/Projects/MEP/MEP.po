@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-01 17:49+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/MEP/MEP.rst:9
-msgid " MEP Overview概述"
-msgstr " Overview of MEP Overview"
+#: ../../Projects/MEP/MEP.rst:3
+msgid "    MEP Overview概述"
+msgstr "    Overview of MEP Overview"
 
-#: ../../Projects/MEP/MEP.rst:17
-msgid " MEP 特性设计"
-msgstr " MEP Feature Design"
+#: ../../Projects/MEP/MEP.rst:3
+msgid "    MEP 特性设计"
+msgstr "    MEP Feature Design"
 
-#: ../../Projects/MEP/MEP.rst:25
-msgid " MEP 接口设计"
-msgstr " MEP interface design"
+#: ../../Projects/MEP/MEP.rst:3
+msgid "    MEP 接口设计"
+msgstr "    MEP interface design"
 
-#: ../../Projects/MEP/MEP.rst:33
-msgid " MEP 依赖"
-msgstr " MEP dependence"
+#: ../../Projects/MEP/MEP.rst:3
+msgid "    MEP 依赖"
+msgstr "    MEP dependence"
 
-#: ../../Projects/MEP/MEP.rst:41
-msgid " MEP 数据库设计"
-msgstr " MEP database design"
+#: ../../Projects/MEP/MEP.rst:3
+msgid "    MEP 数据库设计"
+msgstr "    MEP database design"
 
-#: ../../Projects/MEP/MEP.rst:49
+#: ../../Projects/MEP/MEP.rst:15
 msgid " MEP 如何贡献"
-msgstr " How MEP contributes"
+msgstr " How MEP attributes"
 
-#: ../../Projects/MEP/MEP.rst:49
+#: ../../Projects/MEP/MEP.rst:15
 msgid " Contribute to mep-agent"
 msgstr " Contribute to mep-agent"
 
@@ -49,27 +49,6 @@ msgstr " Contribute to mep-agent"
 msgid "MEP"
 msgstr "MEP"
 
-#: ../../Projects/MEP/MEP.rst:7
-msgid "**Overview概述**"
-msgstr "**OVERVIEW OVERVIEW**"
-
-#: ../../Projects/MEP/MEP.rst:15
-msgid "**Feature Designs特性设计**"
-msgstr "**Feature DesignsFeature Design**"
-
-#: ../../Projects/MEP/MEP.rst:23
-msgid "**Interface Designs接口设计**"
-msgstr "**Interface DesignsInterface Design**"
-
-#: ../../Projects/MEP/MEP.rst:31
-msgid "**Dependency依赖**"
-msgstr "**Dependency dependence**"
-
-#: ../../Projects/MEP/MEP.rst:39
-msgid "**Database Designs数据库设计**"
-msgstr "**Database DesignsDB Design**"
-
-#: ../../Projects/MEP/MEP.rst:47
+#: ../../Projects/MEP/MEP.rst:13
 msgid "**How to Contribute如何贡献**"
 msgstr "**How to Contribute Contribution**"
-

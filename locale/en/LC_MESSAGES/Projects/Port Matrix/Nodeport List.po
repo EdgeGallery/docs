@@ -8,32 +8,363 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:35+0530\n"
+"POT-Creation-Date: 2021-06-02 23:14+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../Projects/Port List.md:2 Matrix/Nodeport
+#: ../../Projects/Port List.md:1 Matrix/Nodeport
 msgid "Kubernetes NodePort List"
 msgstr "Kubernetes NodePort List"
 
-#: ../../Projects/Port List.md:4 Matrix/Nodeport
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th><strong>Component</strong></th> <th><strong>Pod Name</strong></th> <th><strong>Service Name</strong></th> <th><strong>Node Port</strong></th> <th><strong>Internal Port</strong></th> </tr> </thead> <tbody> <tr> <td>appstore-be</td> <td>appstore-be-0</td> <td>appstore-be-svc</td> <td>ClusterIP</td> <td>8099</td> </tr> <tr> <td>appstore-fe</td> <td>appstore-fe</td> <td>appstore-fe-svc</td> <td>30091</td> <td>8443</td> </tr> <tr> <td>appstore-be-postgres</td> <td>appstore-be-postgres-0</td> <td>appstore-be-postgres-svc</td> <td>ClusterIP</td> <td>5432</td> </tr> <tr> <td>developer-be</td> <td>developer-be-0</td> <td>N/A</td> <td>N/A</td> <td>N/A</td> </tr> <tr> <td>developer-fe</td> <td>developer-fe</td> <td>developer-fe-svc</td> <td>30092</td> <td>8443</td> </tr> <tr> <td>developer-be-postgres</td> <td>developer-be-postgres-0</td> <td>developer-be-postgres-svc</td> <td>ClusterIP</td> <td>5432</td> </tr> <tr> <td>user-mgmt</td> <td>user-mgmt</td> <td>user-mgmt-svc</td> <td>30067</td> <td>8067</td> </tr> <tr> <td>user-mgmt-postgres</td> <td>user-mgmt-postgres-0</td> <td>user-mgmt-postgres-svc</td> <td>ClusterIP</td> <td>5432</td> </tr> <tr> <td>user-mgmt-redis</td> <td>user-mgmt-redis-0</td> <td>user-mgmt-redis-svc</td> <td>ClusterIP</td> <td>6379</td> </tr> <tr> <td>service-center</td> <td>service-center</td> <td>service-center</td> <td>ClusterIP</td> <td>30100</td> </tr> <tr> <td>mecm-fe</td> <td>mecm-fe</td> <td>mecm-fe-svc</td> <td>30093</td> <td>8443</td> </tr> <tr> <td>mecm-appo</td> <td>mecm-appo</td> <td>mecm-appo-svc</td> <td>30201</td> <td>8091</td> </tr> <tr> <td>mecm-apm</td> <td>mecm-apm</td> <td>mecm-apm-svc</td> <td>30202</td> <td>8092</td> </tr> <tr> <td>mecm-inventory</td> <td>mecm-inventory</td> <td>mecm-inventory-svc</td> <td>30203</td> <td>8093</td> </tr> <tr> <td>mecm-applcm-controller</td> <td>mecm-applcm-controller</td> <td>mecm-applcm-controller-svc</td> <td>30204</td> <td>8094</td> </tr> <tr> <td>mecm-applcm-k8splugin</td> <td>mecm-applcm-k8splugin</td> <td>mecm-applcm-k8splugin-svc</td> <td>30205</td> <td>8095</td> </tr> <tr> <td>mepserver</td> <td>mepserver-deploy</td> <td>mepserver-service</td> <td>ClusterIP</td> <td>8080</td> </tr> <tr> <td>mepauth</td> <td>mepauth-deploy</td> <td>mepauth-service</td> <td>ClusterIP</td> <td>8088</td> </tr> <tr> <td>kong-apigw</td> <td>apigw-kongy</td> <td>kong-service</td> <td>30443</td> <td>8443</td> </tr> <tr> <td>mep-postgre-db</td> <td>pg-deploy</td> <td>pg-service</td> <td>ClusterIP</td> <td>5432</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <tr> <thead> <tr><strong><strong>Component</strong></th> <th><strong>Pod Name</strong></th> <th><strong>Service Name</strong></th> <th><strong>Node Port</strong></th> <th><strong>Internal Port</th></strong> </thead> </tr> </thead> <tbody> <tr> <td>appstore-be</td> <td>appstore-be0</td> <td>appstore-be-svc</td> <td>ClusterIP</td> <td>8099</td> </tr> <tr> <td>appstove-fe</td> <td>appstore-fe</td> <td>appstore-fe</td> <td>30091</td> <td>8443</td> </tr> <tr> <td>appstore-be-postgres</td> <td>appstore-be-postgres-0</td> <td>appstore-be-postgres-svc</td> <td>ClusterIP</td> <td>5432</td> </tr> <tr> <td>developer-be</td> <td>developer-be0</td> <td>N/A</td> <td>N/A</td> <td>N/A </tr></td> <tr> <td>developer-fe</td> <td>developer-fe</td> <td>developer-fe-svc</td> <td>30092</td> <td>8443</td> </tr> <tr> <td>developer-be-postgres</td> <td>developer-0</td> <td>developer-be-postgres-svc</td> <td>ClusterIP</td> <td>5432</td> </tr> <tr> <td>user-mgmt</td> <td>user-mgmt</td> <td>user-mgmt-svc</td> <td>30067</td> <td>8067</td> </tr> <tr> <td>user-mgmt-postgres</td> <td>user-mgmt-postgres-0</td> <td>user-mgmt-postgres-svc</td> <td>ClusterIP</td> <td>5432</td> </tr> <tr> <td>user-mgmt-redis</td> <td>user-mgmt-redis-0</td> <td>user-mgmt-redis-svc</td> <td>ClusterIP</td> <td>6379</td> </tr> <tr> <td>service-center</td> <td>service-center</td> <td>service-center</td> <td>ClusterIP</td> <td>30100</td> </tr> <tr> <td>mecm-fe</td> <td>mecm-fe</td> <td>30093</td></td> <td> <td>8443 </tr></td> <tr> <td>mecm-appo</td> <td>mecm-appo</td> <td>mecm-appo-svc</td> <td>30201 </tr></td> <td>8091</td> </tr> <tr> <td>mecm-apm</td> <td>mecm-apm</td> <td>mecm-apm-svc</td> <td>30202</td> <td>8092</td> </tr> <tr> <td>mecm-inventory</td> <td>mecm-inventory</td> <td>mecm-inventory-svc</td> <td>30203</td> <td>8093</td> </tr> <tr> <td>mecm-applcm-controller</td> <td>mecm-applcm-controller</td> <td>mecm-svc</td> <td>30204</td></td> <td>8094</td> </tr> <tr> <td>mecm-applcm-k8spplugin</td> <td>mecm-applcm-k8splugin</td> <td>mecm-applcm-svc</td> plugin-svc</td> <td>30205</td> <td>8095</td> </tr> <tr> <td>mepserver</td> <td>mepserver-deploy</td> <td>mepserver-service</td> <td>ClusterIP</td> <td>8080 </tr></td> <tr> <td> <td>mepauth</td> <td>meputh-deploy</td> <td>meputh-service</td> <td>ClusterIP</td> <td>8088</td> </tr> <tr> <td>kong-apigw</td> <td>apigw-kongy</td> <td>kong-service</td> <td>30443</td> <td>8443</td> </tr> <tr> <td>mep-postgre-db</td> <td>pg-deploy</td> <td>pg-service</td> <td>ClusterIP</td> <td>5432</td> </tr> </table> </table>"
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "**Component**"
+msgstr "**Component**"
 
-#: ../../Projects/Port List.md:159 Matrix/Nodeport
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "**Pod Name**"
+msgstr "**Pod Name**"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "**Service Name**"
+msgstr "**Service Name**"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "**Node Port**"
+msgstr "**Node Port**"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "**Internal Port**"
+msgstr "**Internal Port**"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "appstore-be"
+msgstr "appstore-be"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "appstore-be-0"
+msgstr "appstore-be-0"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "appstore-be-svc"
+msgstr "appstore-be-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "ClusterIP"
+msgstr "ClusterIP"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "8099"
+msgstr "8099"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "appstore-fe"
+msgstr "appstore-fe"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "appstore-fe-svc"
+msgstr "appstore-fe-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30091"
+msgstr "30091"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "8443"
+msgstr "8443"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "appstore-be-postgres"
+msgstr "appstore-be-postgres"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "appstore-be-postgres-0"
+msgstr "appstore-be-postgres-0"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "appstore-be-postgres-svc"
+msgstr "appstore-be-postgres-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "5432"
+msgstr "5432"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "developer-be"
+msgstr "developer-be"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "developer-be-0"
+msgstr "developer-be-0"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "N/A"
+msgstr "N/A"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "developer-fe"
+msgstr "developer-fe"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "developer-fe-svc"
+msgstr "developer-fe-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30092"
+msgstr "30092"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "developer-be-postgres"
+msgstr "developer-be-postgres"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "developer-be-postgres-0"
+msgstr "developer-be-postgres-0"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "developer-be-postgres-svc"
+msgstr "developer-be-postgres-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "user-mgmt"
+msgstr "user-mgmt"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "user-mgmt-svc"
+msgstr "user-mgmt-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30067"
+msgstr "30067"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "8067"
+msgstr "8067"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "user-mgmt-postgres"
+msgstr "user-mgmt-postgres"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "user-mgmt-postgres-0"
+msgstr "user-mgmt-postgres-0"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "user-mgmt-postgres-svc"
+msgstr "user-mgmt-postgres-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "user-mgmt-redis"
+msgstr "user-mgmt-redis"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "user-mgmt-redis-0"
+msgstr "user-mgmt-redis-0"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "user-mgmt-redis-svc"
+msgstr "user-mgmt-redis-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "6379"
+msgstr "6379"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "service-center"
+msgstr "service-center"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30100"
+msgstr "30100"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-fe"
+msgstr "mecm-fe"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-fe-svc"
+msgstr "mecm-fe-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30093"
+msgstr "30093"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-appo"
+msgstr "mecm-appo"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-appo-svc"
+msgstr "mecm-appo-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30201"
+msgstr "30201"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "8091"
+msgstr "8091"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-apm"
+msgstr "mecm-apm"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-apm-svc"
+msgstr "mecm-apm-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30202"
+msgstr "30202"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "8092"
+msgstr "8092"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-inventory"
+msgstr "mecm-inventory"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-inventory-svc"
+msgstr "mecm-inventory-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30203"
+msgstr "30203"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "8093"
+msgstr "8093"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-applcm-controller"
+msgstr "mecm-applcm-controller"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-applcm-controller-svc"
+msgstr "mecm-applcm-controller-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30204"
+msgstr "30204"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "8094"
+msgstr "8094"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-applcm-k8splugin"
+msgstr "mecm-applcm-k8splugin"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mecm-applcm-k8splugin-svc"
+msgstr "mecm-applcm-k8splugin-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30205"
+msgstr "30205"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "8095"
+msgstr "8095"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mepserver"
+msgstr "mepserver"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mepserver-deploy"
+msgstr "mepserver-deploy"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mepserver-service"
+msgstr "mepserver-service"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "8080"
+msgstr "8080"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mepauth"
+msgstr "mepauth"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mepauth-deploy"
+msgstr "mepaauth-deploy"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mepauth-service"
+msgstr "mepaauth-service"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "8088"
+msgstr "8088"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "kong-apigw"
+msgstr "kong-apigw"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "apigw-kongy"
+msgstr "apigw-kongy"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "kong-service"
+msgstr "kong-service"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30443"
+msgstr "30443"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mep-postgre-db"
+msgstr "mep-postgre-db"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "pg-deploy"
+msgstr "pg-deploy"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "pg-service"
+msgstr "pg-service"
+
+#: ../../Projects/Port List.md:26 Matrix/Nodeport
 msgid "ServiceComb NodePort List"
 msgstr "ServiceComb NodePort List"
 
-#: ../../Projects/Port List.md:161 Matrix/Nodeport
-msgid "> `All services registered to the service center`"
-msgstr "> ` All services registered to the service center `"
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "**REST Port**"
+msgstr "**REST Port**"
 
-#: ../../Projects/Port List.md:163 Matrix/Nodeport
-msgid "<table border=\"1\" class=\"docutils\"> <thead> <tr> <th><strong>Component</strong></th> <th><strong>Service Name</strong></th> <th><strong>REST Port</strong></th> <th><strong>Spring Server Port (default 8080)</strong></th> </tr> </thead> <tbody> <tr> <td>appstore-be</td> <td>mec-appstore</td> <td>8099</td> <td>8099</td> </tr> <tr> <td>appstore-fe</td> <td>appstore-fe</td> <td>8080</td> <td>8443</td> </tr> <tr> <td>developer-be</td> <td>mec-developer</td> <td>9082</td> <td>9082</td> </tr> <tr> <td>developer-fe</td> <td>developer-fe</td> <td>8080</td> <td>8443</td> </tr> <tr> <td>user-mgmt</td> <td>user-mgmt-be</td> <td>8067</td> <td>8067</td> </tr> <tr> <td>user-mgmt-fe</td> <td>user-mgmt-fe</td> <td>8080</td> <td>8443</td> </tr> </tbody> </table>"
-msgstr "<table bolder= \" 1\" class =\"docutils \" > <thead> <tr> <tr><strong><strong>Component</strong></th> <th><strong>Service Name</strong></th> <th><strong>REST Port</strong></th> <th><strong>Spring Server Port (default 8080)</strong></th></th> </tr> <td> <tr> <tbody> appstore-be</td> <td>mec-appstore</td> <td>8099</td> <td>8099</td> </tr> <tr> <td>appstove-fe</td> <td>appstove-fe</td> <td>8080</td> <td>8443</td> </tr> <tr> <td>developer-be</td> <td>mec-developer</td> <td>9082</td> <td>9082 </tr></td> <td> <td>developer-fe</td> <td>developer-fe</td> <td>8080</td> <tr> <td> </tr></td> <tr> <td>user-mgmt</td> <td>user-mgmt-be</td> <td>8067</td> <td>8067</td> </tr> <tr> <td>user-mgmt-fe</td> <td>user-mgmt-fe</td> <td>8080</td> <td>8443</td> </tbody> </tr></td> </table> </table>"
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "**Spring Server Port (default 8080)**"
+msgstr "**Spring Server Port (default 8080)**"
 
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mec-appstore"
+msgstr "mec-appstore"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "mec-developer"
+msgstr "mec-developer"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "9082"
+msgstr "9082"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "user-mgmt-be"
+msgstr "user-mgmt-be"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "user-mgmt-fe"
+msgstr "user-mgmt-fe"
+
+#: ../../Projects/Port List.md:37 Matrix/Nodeport
+msgid "`All services registered to the service center`"
+msgstr "`All services registered to the service center`"

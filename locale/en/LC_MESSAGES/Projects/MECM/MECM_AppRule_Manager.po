@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-03 10:59+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,47 +33,123 @@ msgstr "Queries liveness & readiness"
 msgid "Retrieves data for liveness & readiness"
 msgstr "Retreeves data for liveness & readiness"
 
-#: ../../Projects/MECM/MECM_AppRule_Manager.md:36 ../../Projects/MECM/MECM_AppRule_Manager.md:143 ../../Projects/MECM/MECM_AppRule_Manager.md:257
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "Name"
+msgstr "Name"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "Definition"
+msgstr "Definition"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "type"
+msgstr "type"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "Required"
+msgstr "Required"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "Allowed"
+msgstr "Allowed"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "Max Length"
+msgstr "Max Length"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "access_token"
+msgstr "access_token"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "access token"
+msgstr "access token"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "header"
+msgstr "header"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "yes"
+msgstr "yes"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "Jwt token"
+msgstr "Jwt token"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:16 ../../Projects/MECM/MECM_AppRule_Manager.md:82 ../../Projects/MECM/MECM_AppRule_Manager.md:155
 msgid "Example response:"
 msgstr "Example response:"
 
-#: ../../Projects/MECM/MECM_AppRule_Manager.md:41
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:21
 msgid "Create AppRule Config"
 msgstr "Create AppRule Config"
 
-#: ../../Projects/MECM/MECM_AppRule_Manager.md:42
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:22
 msgid "Configures the app rule"
 msgstr "Configurations the app rule"
 
-#: ../../Projects/MECM/MECM_AppRule_Manager.md:95 ../../Projects/MECM/MECM_AppRule_Manager.md:209
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "appInstance_id"
+msgstr "appInstance_id"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "application instance id"
+msgstr "application instance id"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "path"
+msgstr "path"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "Valid UUID"
+msgstr "Valid UUID"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "64"
+msgstr "64"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "tenant_id"
+msgstr "tenant_id"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "tenant id"
+msgstr "tenant id"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md
+msgid "appInstanceIds"
+msgstr "appInstanceIds"
+
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:34 ../../Projects/MECM/MECM_AppRule_Manager.md:107
 msgid "Example request body:"
 msgstr "Example request body:"
 
-#: ../../Projects/MECM/MECM_AppRule_Manager.md:155
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:94
 msgid "Update AppRule Config"
 msgstr "Update AppRule Config"
 
-#: ../../Projects/MECM/MECM_AppRule_Manager.md:156
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:95
 msgid "Updates the existing app rule"
 msgstr "Updates the existing app rule"
 
-#: ../../Projects/MECM/MECM_AppRule_Manager.md:269
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:167
 msgid "Get AppRule Config"
 msgstr "Get AppRule Config"
 
-#: ../../Projects/MECM/MECM_AppRule_Manager.md:270
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:168
 msgid "Queries the existing app rule"
 msgstr "Queries the existing app rule"
 
-#: ../../Projects/MECM/MECM_AppRule_Manager.md:323 ../../Projects/MECM/MECM_AppRule_Manager.md:427
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:180 ../../Projects/MECM/MECM_AppRule_Manager.md:243
 msgid "Example Response body:"
 msgstr "Example Response body:"
 
-#: ../../Projects/MECM/MECM_AppRule_Manager.md:373
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:230
 msgid "Delete AppRule Config"
 msgstr "Delete AppRule Config"
 
-#: ../../Projects/MECM/MECM_AppRule_Manager.md:374
+#: ../../Projects/MECM/MECM_AppRule_Manager.md:231
 msgid "Delete the existing app rule"
 msgstr "Delete the existing app rule"
 

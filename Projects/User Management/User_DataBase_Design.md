@@ -3,7 +3,6 @@
 ### tbl\_tenant 租户表
 
 记录所有的租户信息
-
 | **字段** | **类型** | **主键** | **描述** |
 | --- | --- | --- | --- |
 |tenantid | string | key | 主键 |
@@ -24,15 +23,14 @@
  de3565b1-a7c2-42b9-b281-3f032af29ff7 | guest          | 59756fda85ebddee6024d5cc0e6edcde3226693257a9c1eb662c56426b8a4f232b3d56c321adbd91 | company | 13800000000     | 13800000000@edgegallery.org | 1      | t | 初始数据入库时间(now函数值) | 初始数据入库时间(now函数值)
  39937079-99fe-4cd8-881f-04ca8c4fe09d | admin          | 472645ad1af0101adaa6769cc865fec3b29fedeba6dc912900a59b1364b7a6bb17bb9a0575854547 | company | 13800000001     | 13800000001@edgegallery.org | 1      | t | 初始数据入库时间(now函数值) | 初始数据入库时间(now函数值)
 
-guest账号的默认密码是：guest
-admin账号的默认密码是：Admin@321
-请部署前修改默认密码
+The default password for the guest account is：guest
+The default password for the admin account is：Admin@321
+Please modify the default password before deployment
 ```
 
 ### tbl\_role 用户角色表
 
 配置支持的平台的和用户角色，该表在启动时初始化，不支持动态添加
-
 | 字段 | 类型 |主键 | 描述 |
 |---|---|---|---|
 |id | string | key | 主键 |
@@ -70,7 +68,6 @@ admin账号的默认密码是：Admin@321
 ### tbl\_tenant\_role 关系表
 
 用于描述租户和角色的关系
-
 | 字段 | 类型 |主键 | 描述 |
 |---|---|---|---|
 |tenantid | string | | 租户ID |
@@ -91,7 +88,7 @@ admin账号的默认密码是：Admin@321
  39937079-99fe-4cd8-881f-04ca8c4fe09d |     12
  39937079-99fe-4cd8-881f-04ca8c4fe09d |     15
 
-对照tbl_tenant的初始化数据，
-de3565b1-a7c2-42b9-b281-3f032af29ff7是guest用户，默认拥有各平台的GUEST角色；
-39937079-99fe-4cd8-881f-04ca8c4fe09d是admin用户，默认拥有各平台的ADMIN角色；
+Contrast with the initialization data of tbl_tenant,
+de3565b1-a7c2-42b9-b281-3f032af29ff7It is a guest user and has the GUEST role of each platform by default;
+39937079-99fe-4cd8-881f-04ca8c4fe09dIt is an admin user and has the ADMIN role of each platform by default;
 ```

@@ -38,12 +38,13 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
    :maxdepth: 1
    :caption: Projects
 
-   AppStore <Projects/APPSTORE/AppStore>   
+   AppStore <Projects/APPSTORE/AppStore>
+   ATP <Projects/ATP/ATP>
    Developer <Projects/Developer/Developer>
    MECM <Projects/MECM/MECM>
    MEP <Projects/MEP/MEP>
    User Management <Projects/User Management/UserManagement>
-   ATP <Projects/ATP/ATP>
+   
 
 .. toctree::
    :maxdepth: 1
