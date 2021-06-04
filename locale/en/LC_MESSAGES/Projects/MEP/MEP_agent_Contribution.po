@@ -47,7 +47,7 @@ msgstr "Configure the runtime environment variables</br> MEP_IP=192.168.100.177;
 
 #: ../../Projects/MEP/MEP_agent_Contribution.md:21
 msgid "![](/uploads/images/2021/mep/mep-agent_config_env_variables.png \"env variables\")"
-msgstr "![](/uploads/images/2021/mep/mep-agent_config_env_variables.png \"env variables\")"
+msgstr "![](/uploads/images/2021/mep/mep-agent_config_env_variables_en.png \"env variables\")"
 
 #: ../../Projects/MEP/MEP_agent_Contribution.md:23
 msgid "Run main.go to start mep-agent"

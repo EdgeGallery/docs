@@ -75,7 +75,7 @@ msgstr "List of plug-ins"
 
 #: ../../Projects/Developer/Developer_Features.md:15
 msgid "![](/uploads/images/2021/developer/plugin-list.PNG \"plugin-list.PNG\")"
-msgstr "![](/uploads/images/2021/developer/plugin-list.PNG \"plugin-list.PNG\")"
+msgstr "![](/uploads/images/2021/developer/plugin-list_en.PNG \"plugin-list.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:17
 msgid "插件上传"
@@ -83,14 +83,14 @@ msgstr "Plug-in upload"
 
 #: ../../Projects/Developer/Developer_Features.md:19
 msgid "![](/uploads/images/2021/developer/pluginupload.PNG \"pluginupload.PNG\")"
-msgstr "![](/uploads/images/2021/developer/pluginupload.PNG \"pluginupload.PNG\")"
+msgstr "![](/uploads/images/2021/developer/pluginupload_en.PNG \"pluginupload.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:21
 msgid "工具链"
 msgstr "Toolchain"
 
 #: ../../Projects/Developer/Developer_Features.md:22
-msgid "工具链是开发者平台提供给开发者分析源代码，定位出需要修改的地方，以便于在不同平台部署。 ![](/uploads/images/2021/developer/toolchain.PNG \"toolchain.PNG\")"
+msgid "工具链是开发者平台提供给开发者分析源代码，定位出需要修改的地方，以便于在不同平台部署。 ![](/uploads/images/2021/developer/toolchain_en.PNG \"toolchain.PNG\")"
 msgstr "The toolchain is a developer platform that provides developers with the analysis of source code, positioning them where they need to be modified to deploy them on different platforms. ![](/uploads/images/2021/developer/toolchain.PNG \"toolchain.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:25
@@ -99,7 +99,7 @@ msgstr "document"
 
 #: ../../Projects/Developer/Developer_Features.md:26
 msgid "文档菜单包含平台的简介，开发工具，以及介绍如何将能力发布到开发者平台。 ![](/uploads/images/2021/developer/docu.PNG \"docu.PNG\")"
-msgstr "The document menu includes an introduction to the platform, development tools, and presentations on how to publish competencies to the developer platform. ![](/uploads/images/2021/developer/docu.PNG \"docu.PNG\")"
+msgstr "The document menu includes an introduction to the platform, development tools, and presentations on how to publish competencies to the developer platform. ![](/uploads/images/2021/developer/docu_en.PNG \"docu.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:30
 msgid "能力中心展示的是开发者平台所有的能力（开发者共享的能力和平台自身提供的能力）。包含详细的API描述文档，供开发者在线查看，模拟，体验。"
@@ -107,7 +107,7 @@ msgstr "Competability centers showcase all the capabilities of the developer pla
 
 #: ../../Projects/Developer/Developer_Features.md:32
 msgid "![](/uploads/images/2021/developer/abilitycenter.PNG \"abilitycenter.PNG\")"
-msgstr "![](/uploads/images/2021/developer/abilitycenter.PNG \"abilitycenter.PNG\")"
+msgstr "![](/uploads/images/2021/developer/abilitycenter_en.PNG \"abilitycenter.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:36
 msgid "开发者在这里通过创建project的方式，管理自己的APP开发过程，有两种开发模式："
@@ -187,7 +187,7 @@ msgstr "Upload to a mirrored warehouse in EdgeGallery."
 
 #: ../../Projects/Developer/Developer_Features.md:68
 msgid "![](/uploads/images/2021/developer/deploy-one.PNG \"deploy-one.PNG\")"
-msgstr "![](/uploads/images/2021/developer/deploy-one.PNG \"deploy-one.PNG\")"
+msgstr "![](/uploads/images/2021/developer/deploy-one_en.PNG \"deploy-one.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:70
 msgid "配置部署文件"
@@ -199,11 +199,11 @@ msgstr "Two configuration deployment documents are available:"
 
 #: ../../Projects/Developer/Developer_Features.md:73
 msgid "用户在本地编辑好后直接上传，平台提供基本的校验功能；有关配置文件的格式，可以参考界面提供的demo样例，该样例可以直接上传使用。 ![](/uploads/images/2021/developer/deploy-two-file.PNG \"deploy-two-file.PNG\")"
-msgstr "The user can directly upload and directly upload after local editing. The platform provides basic checking function. The format of the configuration file can be used as the demo example provided by the reference interface. The example can be directly uploaded. ![](/uploads/images/2021/developer/deploy-two-file.PNG \"deploy-two-file.PNG\")"
+msgstr "The user can directly upload and directly upload after local editing. The platform provides basic checking function. The format of the configuration file can be used as the demo example provided by the reference interface. The example can be directly uploaded. ![](/uploads/images/2021/developer/deploy-two-file_en.PNG \"deploy-two-file.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:76
 msgid "可视化配置文件，目前版本支持的部署类型为Pod和Service。 ![](/uploads/images/2021/developer/deploy-two-config.PNG \"deploy-two-config.PNG\")"
-msgstr "Visualization configuration documents, currently supported deployment types are Pod and Service. ![](/uploads/images/2021/developer/deploy-two-config.PNG \"deploy-two-config.PNG\")"
+msgstr "Visualization configuration documents, currently supported deployment types are Pod and Service. ![](/uploads/images/2021/developer/deploy-two-config_en.PNG \"deploy-two-config.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:82
 msgid "Step1 部署调测前可以根据需要选择部署环境，EdgeGallery提供‘模拟环境’和‘5G真实’两种测试环境（v1.1版本只实现模拟环境分配）；"
@@ -243,7 +243,7 @@ msgstr "Choose virtual machine resource ![](/uploads/images/2021/v1.1/ApplyingVm
 
 #: ../../Projects/Developer/Developer_Features.md:97
 msgid "输入虚机名称 ![](/uploads/images/2021/v1.1/BasicVmInformation.png \"BasicVmInformation.png\")"
-msgstr "Enter virtual machine name ![](/uploads/images/2021/v1.1/BasicVmInformation.png \"BasicVmInformation.png\")"
+msgstr "Enter virtual machine name ![](/uploads/images/2021/v1.1/BasicVmInformation_en.png \"BasicVmInformation.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:100
 msgid "配置虚机资源大小，镜像源 ![](/uploads/images/2021/v1.1/SettingVmSpecification.png \"SettingVmSpecification.png\")"
@@ -251,15 +251,15 @@ msgstr "Configure virtual machine resource size, mirror source ![](/uploads/imag
 
 #: ../../Projects/Developer/Developer_Features.md:103
 msgid "设置虚机网络类型，默认勾选N6网络 ![](/uploads/images/2021/v1.1/NetworkSettings.png \"NetworkSettings.png\")"
-msgstr "Setting up virtual machine network type, default check N6 network ![](/uploads/images/2021/v1.1/NetworkSettings.png \"NetworkSettings.png\")"
+msgstr "Setting up virtual machine network type, default check N6 network ![](/uploads/images/2021/v1.1/NetworkSettings_en.png \"NetworkSettings.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:106
 msgid "申请虚机 ![](/uploads/images/2021/v1.1/VmDeployment.png \"VmDeployment.png\")"
-msgstr "Application for virtual machine ![](/uploads/images/2021/v1.1/VmDeployment.png \"VmDeployment.png\")"
+msgstr "Application for virtual machine ![](/uploads/images/2021/v1.1/VmDeployment_en.png \"VmDeployment.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:109
 msgid "申请到的虚机可以远程登录进行应用开发调测： ![](/uploads/images/2021/v1.1/VmVNC.png \"VmVNC.png\")"
-msgstr "The virtual machine applied to can be remotely registered for application development tuning: ![](/uploads/images/2021/v1.1/VmVNC.png \"VmVNC.png\")"
+msgstr "The virtual machine applied to can be remotely registered for application development tuning: ![](/uploads/images/2021/v1.1/VmVNC_en.png \"VmVNC.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:112
 msgid "导出镜像"
@@ -267,7 +267,7 @@ msgstr "Export Mirror"
 
 #: ../../Projects/Developer/Developer_Features.md:114
 msgid "将镜像分片下载并打包在csar包中 ![](/uploads/images/2021/v1.1/VmImage.png \"VmImage.png\")"
-msgstr "Download and package the mirror fragment in the csar package ![](/uploads/images/2021/v1.1/VmImage.png \"VmImage.png\")"
+msgstr "Download and package the mirror fragment in the csar package ![](/uploads/images/2021/v1.1/VmImage_en.png \"VmImage.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:117 ../../Projects/Developer/Developer_Features.md:134
 msgid "应用发布"
@@ -299,11 +299,11 @@ msgstr "The docking authentication test platform, all developed applications nee
 
 #: ../../Projects/Developer/Developer_Features.md:127
 msgid "选择测试场景 ![](/uploads/images/2021/developer/atp-1.PNG \"atp-1.PNG\")"
-msgstr "Choose Test Scene ![](uploads/images/2021/developer/atp-1.PNG \"atp-1.PNG\")"
+msgstr "Choose Test Scene ![](uploads/images/2021/developer/atp-1_en.PNG \"atp-1.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:130
 msgid "执行测试用例 ![](/uploads/images/2021/developer/atp-2.PNG \"atp-2.PNG\")"
-msgstr "Run test case ![](/uploads/images/2021/developer/atp-2.PNG \"atp-2.PNG\")"
+msgstr "Run test case ![](/uploads/images/2021/developer/atp-2_en.PNG \"atp-2.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:136
 msgid "认证通过的应用，通过这里可以直接发布到EdgeGallery的AppStore平台，同时如果在【应用配置】时填写了应用服务发布配置，该应用同样会做为能力服务，被收录到能力中心里，可以被其他应用开发者使用。 ![](/uploads/images/2020/v1.0/ApplicationRelease.png \"ApplicationRelease.png\")"
@@ -319,10 +319,10 @@ msgstr "Sandbox Management"
 
 #: ../../Projects/Developer/Developer_Features.md:143
 msgid "沙箱节点列表 ![](/uploads/images/2021/developer/sys-saxbox.PNG \"sys-saxbox.PNG\")"
-msgstr "Sandbox Node List ![](/uploads/images/2021/developer/sys-saxbox.PNG \"sys-axbox.PNG\")"
+msgstr "Sandbox Node List ![](/uploads/images/2021/developer/sys-saxbox_en.PNG \"sys-axbox.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:145
-msgid "新增沙箱节点 ![](/uploads/images/2021/developer/sys-saxbox-new.PNG \"sys-saxbox-new.PNG\")"
+msgid "新增沙箱节点 ![](/uploads/images/2021/developer/sys-saxbox-new_en.PNG \"sys-saxbox-new.PNG\")"
 msgstr "Add Sandbox Node ![](/uploads/images/2021/developer/sys-saxbox-new.PNG \"sys-saxbox-new.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:148
@@ -331,9 +331,9 @@ msgstr "Competability Center Management"
 
 #: ../../Projects/Developer/Developer_Features.md:149
 msgid "能力中心列表 ![](/uploads/images/2021/developer/sys-ability.PNG \"sys-ability.PNG\")"
-msgstr "List of Competabilities Centers ![](/uploads/images/2021/developer/sys-ability.PNG \"sys-ability.PNG\")"
+msgstr "List of Competabilities Centers ![](/uploads/images/2021/developer/sys-ability_en.PNG \"sys-ability.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:151
 msgid "新增能力中心 ![](/uploads/images/2021/developer/sys-ability-new.PNG \"sys-ability-new.PNG\")"
-msgstr "Add Competability Center ![](/uploads/images/2021/developer/sys-ability-new.PNG \"sys-ability-new.PNG\")"
+msgstr "Add Competability Center ![](/uploads/images/2021/developer/sys-ability-new_en.PNG \"sys-ability-new.PNG\")"
 

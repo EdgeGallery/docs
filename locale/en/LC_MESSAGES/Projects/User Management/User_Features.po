@@ -163,7 +163,7 @@ msgstr "Graphic Digital Validation Code"
 
 #: ../../Projects/User Management/User_Features.md:34
 msgid "![用户注册处理时序图](/uploads/images/2021/usermgmt/Sequence_Register.png \"Sequence_Register.png\")"
-msgstr "![User Registration Process Sequence Diagram](/uploads/images/2021/usermgmt/Sequence_Register.png \"Sequence_Register.png\")"
+msgstr "![User Registration Process Sequence Diagram](/uploads/images/2021/usermgmt/Sequence_Register_en.png \"Sequence_Register.png\")"
 
 #: ../../Projects/User Management/User_Features.md:36
 msgid "单点登录"
@@ -179,11 +179,11 @@ msgstr "The processing time of single sign-on and single point cancellation is i
 
 #: ../../Projects/User Management/User_Features.md:42
 msgid "![单点登录时序图](/uploads/images/2021/usermgmt/Sequence_SingleSignOn.png \"Sequence_SingleSignOn.png\")"
-msgstr "![Single sign-on sequence diagram](/uploads/images/2021/usermgmt/Sequence_SingleSignOn.png \"Sequence_SingleSignOn.png\")"
+msgstr "![Single sign-on sequence diagram](/uploads/images/2021/usermgmt/Sequence_SingleSignOn_en.png \"Sequence_SingleSignOn.png\")"
 
 #: ../../Projects/User Management/User_Features.md:44
 msgid "![单点注销时序图](/uploads/images/2021/usermgmt/Sequence_SingleSignOut.png \"Sequence_SingleSignOut.png\")"
-msgstr "![single sign-on time sequence diagram](/uploads/images/2021/usermgmt/Sequence_SingleSignOut.png \"Sequence_SingleSignOut.png\")"
+msgstr "![single sign-on time sequence diagram](/uploads/images/2021/usermgmt/Sequence_SingleSignOut_en.png \"Sequence_SingleSignOut.png\")"
 
 #: ../../Projects/User Management/User_Features.md:46
 msgid "用户中心"
@@ -219,7 +219,7 @@ msgstr "The user inputs the received verification code and the new password, and
 
 #: ../../Projects/User Management/User_Features.md:63
 msgid "![根据邮箱地址找回密码处理时序图](/uploads/images/2021/usermgmt/Sequence_RetrievePwByMail.png \"Sequence_RetrievePwByMail.png\")"
-msgstr "![recover the password processing time sequence diagram based on the mailbox address](/uploads/images/2021/usermgmt/Sequence_RetrievePwByMail.png \"Sequence_RetrievePwByMail.png\")"
+msgstr "![recover the password processing time sequence diagram based on the mailbox address](/uploads/images/2021/usermgmt/Sequence_RetrievePwByMail_en.png \"Sequence_RetrievePwByMail.png\")"
 
 #: ../../Projects/User Management/User_Features.md:65
 msgid "通过手机号码找回密码"
@@ -235,7 +235,7 @@ msgstr "The user inputs the cell phone number, finishes the graphic digital veri
 
 #: ../../Projects/User Management/User_Features.md:72
 msgid "![根据手机号码找回密码处理时序图](/uploads/images/2021/usermgmt/Sequence_RetrievePwByPhone.png \"Sequence_RetrievePwByPhone.png\")"
-msgstr "![recover the password processing time sequence diagram according to the cell phone number](/uploads/images/2021/usermgmt/Sequence_RetrievePwByPhone.png \"Sequence_RetrievePwByPhone.png\")"
+msgstr "![recover the password processing time sequence diagram according to the cell phone number](/uploads/images/2021/usermgmt/Sequence_RetrievePwByPhone_en.png \"Sequence_RetrievePwByPhone.png\")"
 
 #: ../../Projects/User Management/User_Features.md:74
 msgid "访客登录"
@@ -335,7 +335,7 @@ msgstr "User registration interface"
 
 #: ../../Projects/User Management/User_Features.md:131
 msgid "![](/uploads/images/2021/usermgmt/UI_Register.png \"UI_Register.png\")"
-msgstr "![](/uploads/images/2021/usermgmt/UI_Register.png \"UI_Register.png\")"
+msgstr "![](/uploads/images/2021/usermgmt/UI_Register_en.png \"UI_Register.png\")"
 
 #: ../../Projects/User Management/User_Features.md:133
 msgid "用户登录界面"
@@ -343,7 +343,7 @@ msgstr "User registration interface"
 
 #: ../../Projects/User Management/User_Features.md:135
 msgid "![](/uploads/images/2021/usermgmt/UI_Login.png \"UI_Login.png\")"
-msgstr "![](/uploads/images/2021/usermgmt/UI_Login.png \"UI_Login.png\")"
+msgstr "![](/uploads/images/2021/usermgmt/UI_Login_en.png \"UI_Login.png\")"
 
 #: ../../Projects/User Management/User_Features.md:137
 msgid "忘记密码后找回密码界面"
@@ -355,11 +355,11 @@ msgstr "(1) When only the mailbox service is opened, only through the mailbox"
 
 #: ../../Projects/User Management/User_Features.md:141
 msgid "![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-1.png \"UI_RetrievePwByMail-1.png\")"
-msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-1.png \"UI_RetrievePwByMail-1.png\")"
+msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-1_en.png \"UI_RetrievePwByMail-1.png\")"
 
 #: ../../Projects/User Management/User_Features.md:143
 msgid "![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-2.png \"UI_RetrievePwByMail-2.png\")"
-msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-2.png \"UI_RetrievePwByMail-2.png\")"
+msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByMail-2_en.png \"UI_RetrievePwByMail-2.png\")"
 
 #: ../../Projects/User Management/User_Features.md:145
 msgid "（2）当只开启了短信服务时，只能通过手机找回"
@@ -367,11 +367,11 @@ msgstr "(2)When only the short message service is turned on, only the mobile pho
 
 #: ../../Projects/User Management/User_Features.md:147
 msgid "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-1.png \"UI_RetrievePwByPhone-1.png\")"
-msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-1.png \"UI_RetrievePwByPhone-1.png\")"
+msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-1_en.png \"UI_RetrievePwByPhone-1.png\")"
 
 #: ../../Projects/User Management/User_Features.md:149
 msgid "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-2.png \"UI_RetrievePwByPhone-2.png\")"
-msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-2.png \"UI_RetrievePwByPhone-2.png\")"
+msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhone-2_en.png \"UI_RetrievePwByPhone-2.png\")"
 
 #: ../../Projects/User Management/User_Features.md:151
 msgid "（3）当邮箱服务和短信服务同时开启时，可以二选一"
@@ -379,7 +379,7 @@ msgstr "(3)When the mailbox service and short message service are opened at the 
 
 #: ../../Projects/User Management/User_Features.md:153
 msgid "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhoneOrMail.png \"UI_RetrievePwByPhoneOrMail.png\")"
-msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhoneOrMail.png \"UI_RetrievePwByPhoneOrMail.png\")"
+msgstr "![](/uploads/images/2021/usermgmt/UI_RetrievePwByPhoneOrMail_en.png \"UI_RetrievePwByPhoneOrMail.png\")"
 
 #: ../../Projects/User Management/User_Features.md:155
 msgid "点击“下一步”后的界面，与前面的界面一样。"
@@ -395,7 +395,7 @@ msgstr "(1) Main interface"
 
 #: ../../Projects/User Management/User_Features.md:161
 msgid "![](/uploads/images/2021/usermgmt/UI_AccountCenter.png \"UI_AccountCenter.png\")"
-msgstr "![](/uploads/images/2021/usermgmt/UI_AccountCenter.png \"UI_AccountCenter.png\")"
+msgstr "![](/uploads/images/2021/usermgmt/UI_AccountCenter_en.png \"UI_AccountCenter.png\")"
 
 #: ../../Projects/User Management/User_Features.md:163
 msgid "（2）修改密码"
@@ -403,7 +403,7 @@ msgstr "(2) Modify Password"
 
 #: ../../Projects/User Management/User_Features.md:165
 msgid "![](/uploads/images/2021/usermgmt/UI_AccountCenter_ModifyPw.png \"UI_AccountCenter_ModifyPw.png\")"
-msgstr "![](/uploads/images/2021/usermgmt/UI_AccountCenter_ModifyPw.png \"UI_AccountCenter_ModifyPw.png\")"
+msgstr "![](/uploads/images/2021/usermgmt/UI_AccountCenter_ModifyPw_en.png \"UI_AccountCenter_ModifyPw.png\")"
 
 #: ../../Projects/User Management/User_Features.md:167
 msgid "用户列表管理界面"
@@ -411,7 +411,7 @@ msgstr "User list management interface"
 
 #: ../../Projects/User Management/User_Features.md:171
 msgid "![](/uploads/images/2021/usermgmt/UI_UserList.png \"UI_UserList.png\")"
-msgstr "![](/uploads/images/2021/usermgmt/UI_UserList.png \"UI_UserList.png\")"
+msgstr "![](/uploads/images/2021/usermgmt/UI_UserList_en.png \"UI_UserList.png\")"
 
 #: ../../Projects/User Management/User_Features.md:173
 msgid "（2）设置用户角色"
@@ -419,5 +419,5 @@ msgstr "(2) setting up user roles"
 
 #: ../../Projects/User Management/User_Features.md:175
 msgid "![](/uploads/images/2021/usermgmt/UI_UserList_Setting.png \"UI_UserList_Setting.png\")"
-msgstr "![](/uploads/images/2021/usermgmt/UI_UserList_Setting.png \"UI_UserList_Setting.png\")"
+msgstr "![](/uploads/images/2021/usermgmt/UI_UserList_Setting_en.png \"UI_UserList_Setting.png\")"
 
