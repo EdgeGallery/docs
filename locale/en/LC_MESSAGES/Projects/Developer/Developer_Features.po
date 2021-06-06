@@ -90,8 +90,8 @@ msgid "工具链"
 msgstr "Toolchain"
 
 #: ../../Projects/Developer/Developer_Features.md:22
-msgid "工具链是开发者平台提供给开发者分析源代码，定位出需要修改的地方，以便于在不同平台部署。 ![](/uploads/images/2021/developer/toolchain_en.PNG \"toolchain.PNG\")"
-msgstr "The toolchain is a developer platform that provides developers with the analysis of source code, positioning them where they need to be modified to deploy them on different platforms. ![](/uploads/images/2021/developer/toolchain.PNG \"toolchain.PNG\")"
+msgid "工具链是开发者平台提供给开发者分析源代码，定位出需要修改的地方，以便于在不同平台部署。 ![](/uploads/images/2021/developer/toolchain.PNG \"toolchain.PNG\")"
+msgstr "The toolchain is a developer platform that provides developers with the analysis of source code, positioning them where they need to be modified to deploy them on different platforms. ![](/uploads/images/2021/developer/toolchain_en.PNG \"toolchain.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:25
 msgid "文档"
@@ -322,8 +322,8 @@ msgid "沙箱节点列表 ![](/uploads/images/2021/developer/sys-saxbox.PNG \"sy
 msgstr "Sandbox Node List ![](/uploads/images/2021/developer/sys-saxbox_en.PNG \"sys-axbox.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:145
-msgid "新增沙箱节点 ![](/uploads/images/2021/developer/sys-saxbox-new_en.PNG \"sys-saxbox-new.PNG\")"
-msgstr "Add Sandbox Node ![](/uploads/images/2021/developer/sys-saxbox-new.PNG \"sys-saxbox-new.PNG\")"
+msgid "新增沙箱节点 ![](/uploads/images/2021/developer/sys-saxbox-new.PNG \"sys-saxbox-new.PNG\")"
+msgstr "Add Sandbox Node ![](/uploads/images/2021/developer/sys-saxbox-new_en.PNG \"sys-saxbox-new.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:148
 msgid "能力中心管理"
