@@ -437,9 +437,9 @@ Method: PUT
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-| Name      | Definition |type   | Required|Describe |
-| --------- | ---------- |-------|---------|-------- |
-| userId    | 用户ID      | path  | 是      |uuid     |
+|   Name      | Definition   |    type   | Required    |   Describe |
+| :---------: | :----------: | :-------: | :---------: | :--------: |
+|   userId    |   用户ID      |     path  |     是      |   uuid     |
 
 Example request:
 ```json
@@ -474,8 +474,8 @@ Method: PUT
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-| Name      | Definition |type   | Required|Describe |
-| --------- | ---------- |-------|---------|-------- |
+| Name        | Definition   |    type   | Required    |   Describe |
+| :---------: | :----------: | :-------: | :---------: | :--------: |
 | userId    | 用户ID      | path  | 是      |uuid     |
 
 Example request:
@@ -511,8 +511,8 @@ Method: PUT
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-| Name      | Definition |type   | Required|Describe |
-| --------- | ---------- |-------|---------|-------- |
+| Name        | Definition   |type       |     Required|Describe    |
+| :---------: | :----------: | :-------: | :---------: | :--------: |
 | userId    | 用户ID      | path  | 是      | uuid     |
 | platform  | 可访问平台      | body  | 是      | 用户可访问的平台    |
 | role| 角色      | body  | 是      | 用户所属角色    |
@@ -561,7 +561,7 @@ Resource URI: /v1/identity/sms
 Method: POST
 ```
 | Name          | Definition |type   | Required|Describe |
-| ------------- | ---------- |-------|---------|-------- |
+| ------------- | ---------- | ------- | --------- | -------- |
 | verifyCode | 图形验证码 |query|是| |
 | telephone | 电话号码 |body|是|11位有效数字，必须以1开头 |
 
@@ -596,8 +596,8 @@ response 417 Expectation Failed
 Resource URI: /v1/identity/mail
 Method: POST
 ```
-| Name      | Definition |type   | Required|Describe |
-| --------- | ---------- |-------|---------|-------- |
+| Name      | Definition | type  | Required | Describe |
+| --------- | ---------- |-------|----------|--------- |
 | verifyCode | 图形验证码 |query|是| |
 | mailAddress    | 邮箱地址      | body  | 是      |用以接收验证码的邮箱地址     |
 
@@ -647,8 +647,8 @@ Method: GET
 Resource URI: /v1/identity/verifycode-image/precheck
 Method: GET
 ```
-| Name      | Definition |type   | Required|Describe |
-| --------- | ---------- |-------|---------|-------- |
+| Name     | Definition | type   | Required | Describe |
+|:--------:|:----------:|:------:|:--------:|:--------:|
 | verifyCode | 图形验证码 |query|是| |
 
 Example response:
