@@ -59,5 +59,5 @@ msgstr "correspondence relationship between test suites, test scenarios, and tes
 
 #: ../../Projects/ATP/ATP_Overview.md:18
 msgid "![](/uploads/images/2021/atp/relation.png)"
-msgstr "![](/uploads/images/2021/atp/relation.png)"
+msgstr "![](/uploads/images/2021/atp/relation_en.png)"
 

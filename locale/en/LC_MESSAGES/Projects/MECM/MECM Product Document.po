@@ -43,7 +43,7 @@ msgstr "User Guide"
 
 #: ../../Projects/MECM/MECM Document.md:12 Product
 msgid "！！！注意事项：目前由于客户端和服务端协议问题，用户访问可能存在证书异常，如存在数据获取异常问题，建议先在浏览器访问[https://mecm.edgegallery.org:30202](https://mecm.edgegallery.org:30202)，然后同意继续访问，然后回到MECM界面刷新即可，此问题会在下个版本解决。 ![](/uploads/images/2021/mecm/1.png)  ![](/uploads/images/2021/mecm/2.png)"
-msgstr "! ! ! Note: Due to client and service-side protocol issues, user access may present a certificate exception, e.g. if there is a data acquisition exception, it is recommended that the browser visit [https://mecm.edgegallery.org:30202](https://mecm.edgegallery.org:30202) and then proceed to the MECM interface refresh to resolve the problem in the next version. ![](/uploads/images/2021/mecm/1.png) ![](/uploads/images/2021/mecm/2.png)"
+msgstr "! ! ! Note: Due to client and service-side protocol issues, user access may present a certificate exception, e.g. if there is a data acquisition exception, it is recommended that the browser visit [https://mecm.edgegallery.org:30202](https://mecm.edgegallery.org:30202) and then proceed to the MECM interface refresh to resolve the problem in the next version. ![](/uploads/images/2021/mecm/1_en.png) ![](/uploads/images/2021/mecm/2_en.png)"
 
 #: ../../Projects/MECM/MECM Document.md:16 Product
 msgid "1. 概述：地图区域&详情展示（节点以及KPI、MEP能力以及硬件能力），MEP详情"
@@ -55,7 +55,7 @@ msgstr "1.1 Map & Details: Click nodes on the map, display nodes and KPIs, MEP c
 
 #: ../../Projects/MECM/MECM Document.md:18 Product
 msgid "![](/uploads/images/2021/mecm/3.png) ![](/uploads/images/2021/mecm/5.png)"
-msgstr "![](/uploads/images/2021/mecm/3.png) ![](/uploads/images/2021/mecm/5.png)"
+msgstr "![](/uploads/images/2021/mecm/3_en.png) ![](/uploads/images/2021/mecm/5_en.png)"
 
 #: ../../Projects/MECM/MECM Document.md:20 Product
 msgid "1.2 MEP详情：点击管理按钮，跳转至MEP详情界面"
@@ -75,7 +75,7 @@ msgstr "2.1 Application package management"
 
 #: ../../Projects/MECM/MECM Document.md:24 Product
 msgid "集成应用同步，下发以及部署功能。   ![](/uploads/images/2021/mecm/8.png) ![](/uploads/images/2021/mecm/9.png) ![](/uploads/images/2021/mecm/10.png) ![](/uploads/images/2021/mecm/11.png)"
-msgstr "Integrated application synchronization, distribution and deployment function.   ![](/uploads/images/2021/mecm/8.png) ![](/uploads/images/2021/mecm/9.png) ![](/uploads/images/2021/mecm/10.png) ![](/uploads/images/2021/mecm/11.png)"
+msgstr "Integrated application synchronization, distribution and deployment function.   ![](/uploads/images/2021/mecm/8_en.png) ![](/uploads/images/2021/mecm/9_en.png) ![](/uploads/images/2021/mecm/10.png) ![](/uploads/images/2021/mecm/11.png)"
 
 #: ../../Projects/MECM/MECM Document.md:29 Product
 msgid "2.2 应用实例管理"
@@ -83,7 +83,7 @@ msgstr "2.2 Application Instance Management"
 
 #: ../../Projects/MECM/MECM Document.md:30 Product
 msgid "集成应用实例列表，此处可以查看当前实例的部署状态以及详情，并且进行规则配置，以及失败原因查看等功能 ![](/uploads/images/2021/mecm/12.png) ![](/uploads/images/2021/mecm/13.png) 规则配置->DNS规则配置  ![](/uploads/images/2021/mecm/14.png) ![](/uploads/images/2021/mecm/15.png)  规则配置->分流规则配置 ![](/uploads/images/2021/mecm/16.png) ![](/uploads/images/2021/mecm/17.png) 规则配置->分流规则配置->过滤规则配置  ![](/uploads/images/2021/mecm/18.png) 规则配置-分流规则配置-接口信息配置  ![](/uploads/images/2021/mecm/19.png)"
-msgstr "An integrated application instance list here to see the deployment status of the current instance and the details, and for the rule configuration, as well as the failure cause, see ![](/uploads/images/2021/mecm/12.png) ![](/uploads/images/2021/mecm/13.png) Rule configuration->DNS rule configuration ![](/uploads/images/2021/mecm/14.png) ![](uploads/images/2021/mecm/15.png) Rules configuration->shunting rule configuration ![](/uploads/images/2021/mecm/17.png) Rules configuration-> shunting rules configuration ![](/uploads/images/2021/mecm/18.png) rule configuration-shunting rule configuration-Interface information configuration  ![](/uploads/images/2021/mecm/19.png)"
+msgstr "An integrated application instance list here to see the deployment status of the current instance and the details, and for the rule configuration, as well as the failure cause, see ![](/uploads/images/2021/mecm/12_en.png) ![](/uploads/images/2021/mecm/13.png) Rule configuration->DNS rule configuration ![](/uploads/images/2021/mecm/14_en.png) ![](uploads/images/2021/mecm/15_en.png) Rules configuration->shunting rule configuration ![](/uploads/images/2021/mecm/17_en.png) Rules configuration-> shunting rules configuration ![](/uploads/images/2021/mecm/18_en.png) rule configuration-shunting rule configuration-Interface information configuration  ![](/uploads/images/2021/mecm/19_en.png)"
 
 #: ../../Projects/MECM/MECM Document.md:43 Product
 msgid "3. 边缘节点：边缘节点列表，边缘节点注册，上传k8s config文件"
@@ -91,7 +91,7 @@ msgstr "3.Edge nodes: edge node list, edge node registration, upload k8s config 
 
 #: ../../Projects/MECM/MECM Document.md:44 Product
 msgid "![](/uploads/images/2021/mecm/20.png)  ![](/uploads/images/2021/mecm/21.png)  ![](/uploads/images/2021/mecm/22.png)"
-msgstr "![](/uploads/images/2021/mecm/20.png) ![](/uploads/images/2021/mecm/21.png)  ![](/uploads/images/2021/mecm/22.png)"
+msgstr "![](/uploads/images/2021/mecm/20_en.png) ![](/uploads/images/2021/mecm/21_en.png)  ![](/uploads/images/2021/mecm/22_en.png)"
 
 #: ../../Projects/MECM/MECM Document.md:47 Product
 msgid "4.系统管理：APPLCM注册、APP Rule MGR注册、应用仓库注册"
@@ -119,5 +119,5 @@ msgstr "4.4 Application Warehouse Registration"
 
 #: ../../Projects/MECM/MECM Document.md:53 Product
 msgid "![](/uploads/images/2021/mecm/25.png)"
-msgstr "![](/uploads/images/2021/mecm/25.png)"
+msgstr "![](/uploads/images/2021/mecm/25_en.png)"
 

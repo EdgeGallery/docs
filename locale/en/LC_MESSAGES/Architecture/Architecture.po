@@ -23,7 +23,7 @@ msgstr "EdgeGallery Architecture"
 
 #: ../../Architecture/Architecture.md:3
 msgid "![EdgeGallery v1.1 Architecture](/uploads/images/2021/v1.1/EdgeGallery_Architecture.png \"EdgeGallery_Architecture.png\")"
-msgstr "![EdgeGallery v1.1 Architecture](/uploads/images/2021/v1.1/EdgeGallery_Architecture.png \"EdgeGallery_Architecture.png\")"
+msgstr "![EdgeGallery v1.1 Architecture](/uploads/images/2021/v1.1/EdgeGallery_Architecture_en.png \"EdgeGallery_Architecture.png\")"
 
 #: ../../Architecture/Architecture.md:5
 msgid "参与EdgeGallery 架构讨论"
