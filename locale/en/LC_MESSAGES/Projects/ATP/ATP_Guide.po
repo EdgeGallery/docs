@@ -91,7 +91,7 @@ msgstr "Test Scene Selection & Test Use Case Contribution"
 
 #: ../../Projects/ATP/ATP_Guide.md:35
 msgid "用户可以选择想要测试的场景，社区场景是必选的，其余场景根据用户需要自行选择。 ![](/uploads/images/2021/atp/selectScenario.png \"选择测试场景.png\") 页面右上方有贡献测试用例的入口，点击测试用例，支持用户用描述的方式或者脚本的方式贡献测试用例。 ![](/uploads/images/2021/atp/contribution.png \"贡献测试用例.png\")"
-msgstr "The user can choose the scene that wants to be tested, the community scene is mandatory, and the rest of the scene is chosen by the user according to the needs of the user. ![](/uploads/images/2021/atp/selectScenario.png \"Choose Test Scene.png\") The upper right side of the page is provided with an inlet for contributing test case, click test case, and supporting the user to contribute test case in the way of description or script. ![](/uploads/images/2021/atp/contribution_en.png \"Contribution test case.png\")"
+msgstr "The user can choose the scene that wants to be tested, the community scene is mandatory, and the rest of the scene is chosen by the user according to the needs of the user. ![](/uploads/images/2021/atp/selectScenario_en.png \"Choose Test Scene.png\") The upper right side of the page is provided with an inlet for contributing test case, click test case, and supporting the user to contribute test case in the way of description or script. ![](/uploads/images/2021/atp/contribution_en.png \"Contribution test case.png\")"
 
 #: ../../Projects/ATP/ATP_Guide.md:40
 msgid "测试进展可视化&报告查看"
