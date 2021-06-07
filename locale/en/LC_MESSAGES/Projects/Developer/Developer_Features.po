@@ -211,7 +211,7 @@ msgstr "The deployment environment can be selected according to the requirement 
 
 #: ../../Projects/Developer/Developer_Features.md:83
 msgid "Step2 启动部署，开始 生成部署文件 -> 分配测试节点 -> 实例化应用 -> 获取部署状态"
-msgstr "Step2 Start Deployment, Start Generating Deployment Documents - > Broker Node - > Instantiating Applications - > Get Deployment Status"
+msgstr "Step2 Start Deployment, Start Generating Deployment Documents -> Broker Node -> Instantiating Applications -> Get Deployment Status"
 
 #: ../../Projects/Developer/Developer_Features.md:84
 msgid "Step3 部署成功后，会返回部署后台的测试链接，并且展示已经部署完成POD信息"
