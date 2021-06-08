@@ -325,7 +325,6 @@ OK
 
 ```
 HTTP/1.1 200 OK
-{
 [
   {
     "serInstanceId": "0bc92b06cc213d2ad8beda71bd0e1460",
@@ -368,7 +367,6 @@ HTTP/1.1 200 OK
     }
   }
 ]
-}
 
 ```
 
@@ -1564,6 +1562,260 @@ HTTP/1.1 200 OK
 }
 
 ```
+
+### Service 
+#### Query availability services list
+This method retrieves information about a list of mecService resources. This method is typically used in "service availability query" procedure
+
+URL
+
+```
+GET /mep/mec_service_mgmt/v1/services
+```
+
+请求参数：
+  |名称            | 类型  |   描述     |                           IN    |   必选|
+  |---|---|---|---|---| 
+  |Authorization |  String |  Token信息，格式：Bearer token信息  | header  | 是|
+  |ser_name| String  | service name                   |query    | 否|
+
+Body参数：
+
+无
+
+请求示例：
+
+```
+GET /mep/mec_service_mgmt/v1/services?ser_name=xxx
+{
+  "header": [
+    {
+      "key": "Authorization",
+      "value": "Bearer xxx"
+    }
+  ]
+}
+
+```
+
+
+返回参数：
+
+返回码：200
+
+OK
+ |名称                      |   类型            |  描述      |                                                                                                            必选|
+  |---|---|---|---|
+ | serInstanceId      |          String       |     服务实例ID         |                                                                                                   是|
+|  serName    |                  String  |          服务名称         |                                                                                                     是|
+  |serCategory      |            Object      |      服务类别       |                                                                                                       否|
+ | &gt;href        |             String   |         目录参考    |                                                                                                          否|
+ | &gt;id          |            String   |         类别ID        |                                                                                                       否
+  |&gt;name  |                   String |           类别名称      |                                                                                                        否|
+|  &gt;version|                  String   |         类别版本号        |                                                                                                    否|
+  |version|                      String     |       服务版本号        |                                                                                                    是|
+  |state |                       String |           服务状态（ACTIVE/INACTIVE）  |                                                                                         是|
+  |transportInfo   |             Object |           服务信息       |                                                                                                       否|
+|  &gt;id     |                  String     |       ID     |                                                                                                               否|
+ | &gt;name  |                   String |           名称       |                                                                                                           否|
+  |&gt; description    |         String    |        描述       |                                                                                                           否|
+  |&gt; type |                   String|            类型（REST\_HTTP/MB\_TOPIC\_BASED/MB\_ROUTING/MB\_PUBSUB/RPC/RPC\_STREAMING/WEBSOCKET）   |                            否|
+ | &gt; protocol   |             String   |         协议名称          |                                                                                                    否|
+ | &gt; version                | String|            版本号   |                                                                                                             否|
+ | &gt; endpoint               | Ojbect|            Endpoint，三种信息其中的一个（uris/addresses/alternative） |                                                           否|
+  |&gt;&gt;uris   |              Array\[String\]|   URI格式的服务入口信息列表|                                                                                             否|
+|  &gt;&gt;addresses |           Array\[Object\] |  服务入口信息地址列表（IP地址+端口号）  |                                                                               否|
+  |&gt;&gt;&gt;host    |         String      |      IP地址     |                                                                                                           否|
+  |&gt;&gt;&gt;port   |         String     |       端口号            |                                                                                                    否|
+ | &gt;&gt;alternative  |        String     |       已实现格式或者外部规范定义的服务入口信息        |                                                                      否|
+  |&gt; security |               Object       |     安全信息        |                                                                                                      否|
+  |&gt;&gt; oAuth2Info     |     Object    |        OAuth2.0参数      |                                                                                                    否|
+  |&gt;&gt;&gt; grantTypes   |   Array\[String\]|   准予类型（OAUTH2\_AUTHORIZATION\_CODE/OAUTH2\_IMPLICIT\_GRANT/OAUTH2\_RESOURCE\_OWNER/OAUTH2\_CLIENT\_CREDENTIALS） |  否|
+ | &gt;&gt;&gt; tokenEndpoint  | String    |        Token endpoint        |                                                                                                否|
+ | &gt; implSpecificInfo|        String     |       其他实现信息            |                                                                                              否|
+  |serializer    |               String   |        序列化类型（JSON/XML/PROTOBUF3）  |                                                                                    是|
+  |scopeOfLocality  |            String   |         地域范围（MEC\_SYSTEM/MEC\_HOST/NFVI\_POP/ZONE/ZONE\_GROUP/NFVI\_NODE），默认值MEC\_HOST   |                           否|
+  |consumedLocalOnly  |          boolean    |       是否只被本地域APP消费（true/false）    |                                                                               否|
+  |isLocal                  |    boolean |          是否在本地域（true/false）       |                                                                                     否|
+  |livenessInterval         |    integer |          Interval (in seconds) between two consecutive heartbeat messages |                                                否|
+  |\_links                  |    Object  |         Links to resources related to this resource. Shall be absent in HTTP requests. |                                     否|
+  |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
+  |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
+
+返回示例：
+
+```
+HTTP/1.1 200 OK
+[
+  {
+    "serInstanceId": "0bc92b06cc213d2ad8beda71bd0e1460",
+    "serName": "ExampleService",
+    "serCategory": {
+      "href": "/example/catalogue1",
+      "id": "id12345",
+      "name": "RNI",
+      "version": "version1"
+    },
+    "version": "ServiceVersion1",
+    "state": "ACTIVE",
+    "transportInfo": {
+      "id": "TransId12345",
+      "name": "REST",
+      "description": "REST API",
+      "type": "REST_HTTP",
+      "protocol": "HTTP",
+      "version": "2.0",
+      "endpoint": {},
+      "security": {
+        "oAuth2Info": {
+          "grantTypes": [
+            "OAUTH2_CLIENT_CREDENTIALS"
+          ],
+          "tokenEndpoint": "/mecSerMgmtApi/security/TokenEndPoint"
+        }
+      },
+      "implSpecificInfo": {}
+    },
+    "serializer": "JSON",
+    "scopeOfLocality": "MEC_SYSTEM",
+    "consumedLocalOnly": false,
+    "isLocal": true,
+    "livenessInterval": 60,
+    "_links": {
+      "self": {
+        "liveness" : "/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/service/0bc92b06cc213d2ad8beda71bd0e1460/liveness"
+      }
+    }
+  }
+]
+
+```
+
+#### Query availability individual service
+This method retrieves information about a mecService resource. This method is typically used in "service availability query" procedure
+
+URL
+
+```
+GET /mep/mec_service_mgmt/v1/services/{serviceId}
+```
+
+请求参数：
+  |名称            | 类型  |   描述     |                           IN    |   必选|
+  |---|---|---|---|---| 
+  |Authorization |  String |  Token信息，格式：Bearer token信息  | header  | 是|
+  |ser_name| String  | service name                   |query    | 否|
+
+Body参数：
+
+无
+
+请求示例：
+
+```
+GET /mep/mec_service_mgmt/v1/services?ser_name=xxx
+{
+  "header": [
+    {
+      "key": "Authorization",
+      "value": "Bearer xxx"
+    }
+  ]
+}
+
+```
+
+
+返回参数：
+
+返回码：200
+
+OK
+ |名称                      |   类型            |  描述      |                                                                                                            必选|
+  |---|---|---|---|
+ | serInstanceId      |          String       |     服务实例ID         |                                                                                                   是|
+|  serName    |                  String  |          服务名称         |                                                                                                     是|
+  |serCategory      |            Object      |      服务类别       |                                                                                                       否|
+ | &gt;href        |             String   |         目录参考    |                                                                                                          否|
+ | &gt;id          |            String   |         类别ID        |                                                                                                       否
+  |&gt;name  |                   String |           类别名称      |                                                                                                        否|
+|  &gt;version|                  String   |         类别版本号        |                                                                                                    否|
+  |version|                      String     |       服务版本号        |                                                                                                    是|
+  |state |                       String |           服务状态（ACTIVE/INACTIVE）  |                                                                                         是|
+  |transportInfo   |             Object |           服务信息       |                                                                                                       否|
+|  &gt;id     |                  String     |       ID     |                                                                                                               否|
+ | &gt;name  |                   String |           名称       |                                                                                                           否|
+  |&gt; description    |         String    |        描述       |                                                                                                           否|
+  |&gt; type |                   String|            类型（REST\_HTTP/MB\_TOPIC\_BASED/MB\_ROUTING/MB\_PUBSUB/RPC/RPC\_STREAMING/WEBSOCKET）   |                            否|
+ | &gt; protocol   |             String   |         协议名称          |                                                                                                    否|
+ | &gt; version                | String|            版本号   |                                                                                                             否|
+ | &gt; endpoint               | Ojbect|            Endpoint，三种信息其中的一个（uris/addresses/alternative） |                                                           否|
+  |&gt;&gt;uris   |              Array\[String\]|   URI格式的服务入口信息列表|                                                                                             否|
+|  &gt;&gt;addresses |           Array\[Object\] |  服务入口信息地址列表（IP地址+端口号）  |                                                                               否|
+  |&gt;&gt;&gt;host    |         String      |      IP地址     |                                                                                                           否|
+  |&gt;&gt;&gt;port   |         String     |       端口号            |                                                                                                    否|
+ | &gt;&gt;alternative  |        String     |       已实现格式或者外部规范定义的服务入口信息        |                                                                      否|
+  |&gt; security |               Object       |     安全信息        |                                                                                                      否|
+  |&gt;&gt; oAuth2Info     |     Object    |        OAuth2.0参数      |                                                                                                    否|
+  |&gt;&gt;&gt; grantTypes   |   Array\[String\]|   准予类型（OAUTH2\_AUTHORIZATION\_CODE/OAUTH2\_IMPLICIT\_GRANT/OAUTH2\_RESOURCE\_OWNER/OAUTH2\_CLIENT\_CREDENTIALS） |  否|
+ | &gt;&gt;&gt; tokenEndpoint  | String    |        Token endpoint        |                                                                                                否|
+ | &gt; implSpecificInfo|        String     |       其他实现信息            |                                                                                              否|
+  |serializer    |               String   |        序列化类型（JSON/XML/PROTOBUF3）  |                                                                                    是|
+  |scopeOfLocality  |            String   |         地域范围（MEC\_SYSTEM/MEC\_HOST/NFVI\_POP/ZONE/ZONE\_GROUP/NFVI\_NODE），默认值MEC\_HOST   |                           否|
+  |consumedLocalOnly  |          boolean    |       是否只被本地域APP消费（true/false）    |                                                                               否|
+  |isLocal                  |    boolean |          是否在本地域（true/false）       |                                                                                     否|
+  |livenessInterval         |    integer |          Interval (in seconds) between two consecutive heartbeat messages |                                                否|
+  |\_links                  |    Object  |         Links to resources related to this resource. Shall be absent in HTTP requests. |                                     否|
+  |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
+  |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
+
+返回示例：
+
+```
+HTTP/1.1 200 OK
+{
+    "serInstanceId": "0bc92b06cc213d2ad8beda71bd0e1460",
+    "serName": "ExampleService",
+    "serCategory": {
+      "href": "/example/catalogue1",
+      "id": "id12345",
+      "name": "RNI",
+      "version": "version1"
+    },
+    "version": "ServiceVersion1",
+    "state": "ACTIVE",
+    "transportInfo": {
+      "id": "TransId12345",
+      "name": "REST",
+      "description": "REST API",
+      "type": "REST_HTTP",
+      "protocol": "HTTP",
+      "version": "2.0",
+      "endpoint": {},
+      "security": {
+        "oAuth2Info": {
+          "grantTypes": [
+            "OAUTH2_CLIENT_CREDENTIALS"
+          ],
+          "tokenEndpoint": "/mecSerMgmtApi/security/TokenEndPoint"
+        }
+      },
+      "implSpecificInfo": {}
+    },
+    "serializer": "JSON",
+    "scopeOfLocality": "MEC_SYSTEM",
+    "consumedLocalOnly": false,
+    "isLocal": true,
+    "livenessInterval": 60,
+    "_links": {
+      "self": {
+        "liveness" : "/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/service/0bc92b06cc213d2ad8beda71bd0e1460/liveness"
+      }
+    }
+  }
+
+```
+
 
 ### Heartbeat related interfaces
 #### 1. Query service liveness info
