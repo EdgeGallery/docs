@@ -25,7 +25,7 @@
       - [4. 查询指定终止事件订阅](#4-查询指定终止事件订阅)
     - [Services interfaces](#service)
       - [1. Query availability services list](#1-query-availability-services-list)
-      - [2. Query availability individual service](#1-query-availability-individual -service)
+      - [2. Query availability individual service](#2-query-availability-individual -service)
     - [Heartbeat related interfaces](#heartbeat-related-interfaces)
       - [1. Query service liveness info](#1-query-service-liveness-info)
       - [2. Update liveness info](#2-update-liveness-info)
