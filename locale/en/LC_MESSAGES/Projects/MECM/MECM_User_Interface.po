@@ -39,7 +39,7 @@ msgstr "![.](/uploads/images/2020/0924/open-applcm.png \"open-applcm.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:13
 msgid "For new applcm registration, click on the tab ie. Systems -> External System Manager -> Applcm. Then select New Registration. Enter the Applcm, IP, Port number."
-msgstr "For new applcm registration, click on the tab. ie. Systems - > External System Manager - > Applecm. Then select New Registration. Enter the Applcm, IP, Port number."
+msgstr "For new applcm registration, click on the tab ie. Systems -> External System Manager -> Applcm. Then select New Registration. Enter the Applcm, IP, Port number."
 
 #: ../../Projects/MECM/MECM_User_Interface.md:16
 msgid "![.](/uploads/images/2020/0924/applcm-registration.png \"applcm-registration.png\")"
@@ -47,7 +47,7 @@ msgstr "![.](/uploads/images/2020/0924/applcm-registration.png \"applcm-registra
 
 #: ../../Projects/MECM/MECM_User_Interface.md:18
 msgid "Need to add Edge node deatils by navigating to Systems -> External System Manager -> EdgeNode.  Then click on New Registration."
-msgstr "Need to add Edge node deadls by navating to Systems - > External System Manager - > EdgeNode.  Then click on New Registration."
+msgstr "Need to add Edge node deatils by navigating to Systems -> External System Manager -> EdgeNode.  Then click on New Registration."
 
 #: ../../Projects/MECM/MECM_User_Interface.md:21
 msgid "![.](/uploads/images/2020/0924/edge-node-registration.png \"edge-node-registration.png\")"

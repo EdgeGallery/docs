@@ -43,7 +43,7 @@ msgstr "where AppStore-fe's local startup relies on:"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:22
 msgid "所以为了搭建本地开发环境，最终的启动顺序为 Service Center -> DataBase -> UserManagement -> AppStore-be -> WebsiteGateway(AppStore-fe)"
-msgstr "So to build a local development environment, the final start sequence is Service Center - > DataBase - > UserManagement - > AppStore-be - > Website Gateway (AppStore-fe)"
+msgstr "So to build a local development environment, the final start sequence is Service Center -> DataBase -> UserManagement -> AppStore-be -> Website Gateway (AppStore-fe)"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:24
 msgid "Service Center"

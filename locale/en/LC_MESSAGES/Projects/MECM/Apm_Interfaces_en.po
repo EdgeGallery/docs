@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 20:23+0530\n"
+"POT-Creation-Date: 2021-06-07 22:00+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgstr "Valid UUID"
 msgid "64"
 msgstr "64"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:18 ../../Projects/MECM/Apm_Interfaces_en.md:90 ../../Projects/MECM/Apm_Interfaces_en.md:112 ../../Projects/MECM/Apm_Interfaces_en.md:150 ../../Projects/MECM/Apm_Interfaces_en.md:169 ../../Projects/MECM/Apm_Interfaces_en.md:240 ../../Projects/MECM/Apm_Interfaces_en.md:274 ../../Projects/MECM/Apm_Interfaces_en.md:293 ../../Projects/MECM/Apm_Interfaces_en.md:308 ../../Projects/MECM/Apm_Interfaces_en.md:340 ../../Projects/MECM/Apm_Interfaces_en.md:360 ../../Projects/MECM/Apm_Interfaces_en.md:377 ../../Projects/MECM/Apm_Interfaces_en.md:400
+#: ../../Projects/MECM/Apm_Interfaces_en.md:18 ../../Projects/MECM/Apm_Interfaces_en.md:90 ../../Projects/MECM/Apm_Interfaces_en.md:112 ../../Projects/MECM/Apm_Interfaces_en.md:149 ../../Projects/MECM/Apm_Interfaces_en.md:187 ../../Projects/MECM/Apm_Interfaces_en.md:206 ../../Projects/MECM/Apm_Interfaces_en.md:277 ../../Projects/MECM/Apm_Interfaces_en.md:311 ../../Projects/MECM/Apm_Interfaces_en.md:330 ../../Projects/MECM/Apm_Interfaces_en.md:345 ../../Projects/MECM/Apm_Interfaces_en.md:377 ../../Projects/MECM/Apm_Interfaces_en.md:397 ../../Projects/MECM/Apm_Interfaces_en.md:414 ../../Projects/MECM/Apm_Interfaces_en.md:437
 msgid "Example response:"
 msgstr "Example response:"
 
@@ -197,11 +197,11 @@ msgstr "mecHostInfo"
 msgid "15"
 msgstr "15"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:67 ../../Projects/MECM/Apm_Interfaces_en.md:263 ../../Projects/MECM/Apm_Interfaces_en.md:325
+#: ../../Projects/MECM/Apm_Interfaces_en.md:67 ../../Projects/MECM/Apm_Interfaces_en.md:300 ../../Projects/MECM/Apm_Interfaces_en.md:362
 msgid "Example request body:"
 msgstr "Example request body:"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:100 ../../Projects/MECM/Apm_Interfaces_en.md:365 ../../Projects/MECM/Apm_Interfaces_en.md:389
+#: ../../Projects/MECM/Apm_Interfaces_en.md:100 ../../Projects/MECM/Apm_Interfaces_en.md:402 ../../Projects/MECM/Apm_Interfaces_en.md:426
 msgid "Get Application Package Information"
 msgstr "Get Application Package Information"
 
@@ -222,10 +222,18 @@ msgid "Alphanumeric and must be smaller case"
 msgstr "Alphanumeric and must be smaller case"
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md:137
+msgid "Get Application template"
+msgstr "Get Application template"
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md:138
+msgid "Retrieves application template."
+msgstr "Retrieves application template."
+
+#: ../../Projects/MECM/Apm_Interfaces_en.md:174
 msgid "Delete Application Packages"
 msgstr "Delete Application Packages"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:138
+#: ../../Projects/MECM/Apm_Interfaces_en.md:175
 msgid "Deletes application package"
 msgstr "Deletes application package"
 
@@ -233,19 +241,19 @@ msgstr "Deletes application package"
 msgid "app id"
 msgstr "app id"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:158
+#: ../../Projects/MECM/Apm_Interfaces_en.md:195
 msgid "Download Csar"
 msgstr "Download Csar"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:159
+#: ../../Projects/MECM/Apm_Interfaces_en.md:196
 msgid "Download application package CSAR"
 msgstr "Download application package CSAR"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:227
+#: ../../Projects/MECM/Apm_Interfaces_en.md:264
 msgid "Delete Application Package"
 msgstr "Delete Application Package"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:228
+#: ../../Projects/MECM/Apm_Interfaces_en.md:265
 msgid "Deletes an application packages"
 msgstr "Deleees an application packages"
 
@@ -261,11 +269,11 @@ msgstr "host ip"
 msgid "Valid IP address"
 msgstr "Valid IP address"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:248
+#: ../../Projects/MECM/Apm_Interfaces_en.md:285
 msgid "On-boards application with package."
 msgstr "On-boards application with package."
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:249
+#: ../../Projects/MECM/Apm_Interfaces_en.md:286
 msgid "On-boards application with package provided."
 msgstr "On-boards application with package provided."
 
@@ -297,15 +305,15 @@ msgstr "host list"
 msgid "no"
 msgstr "no"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:283
+#: ../../Projects/MECM/Apm_Interfaces_en.md:320
 msgid "Queries liveness & readiness"
 msgstr "Queries liveness & readiness"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:284
+#: ../../Projects/MECM/Apm_Interfaces_en.md:321
 msgid "Retrieves data for liveness & readiness"
 msgstr "Retreeves data for liveness & readiness"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:297 ../../Projects/MECM/Apm_Interfaces_en.md:298
+#: ../../Projects/MECM/Apm_Interfaces_en.md:334 ../../Projects/MECM/Apm_Interfaces_en.md:335
 msgid "Retrieves all application packages info from app store."
 msgstr "Retreeves all application packages info from app store."
 
@@ -313,11 +321,11 @@ msgstr "Retreeves all application packages info from app store."
 msgid "appstore_ip"
 msgstr "appstore_ip"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:313
+#: ../../Projects/MECM/Apm_Interfaces_en.md:350
 msgid "Sync application packages"
 msgstr "Sync application packages"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:314
+#: ../../Projects/MECM/Apm_Interfaces_en.md:351
 msgid "Sync application package by downloading package from appstore."
 msgstr "Sync application package by download package from appstore."
 
@@ -325,15 +333,15 @@ msgstr "Sync application package by download package from appstore."
 msgid "packageId"
 msgstr "packageId"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:350
+#: ../../Projects/MECM/Apm_Interfaces_en.md:387
 msgid "Retrieves all application packages sync status"
 msgstr "Retreeves all application packages sync status"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:351
+#: ../../Projects/MECM/Apm_Interfaces_en.md:388
 msgid "Retrieves all application packages sync status."
 msgstr "Retreeves all application packages sync status."
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:366 ../../Projects/MECM/Apm_Interfaces_en.md:390
+#: ../../Projects/MECM/Apm_Interfaces_en.md:403 ../../Projects/MECM/Apm_Interfaces_en.md:427
 msgid "Retrieve application packages sync status."
 msgstr "Retrieve application packages sync status."
 
@@ -341,11 +349,11 @@ msgstr "Retrieve application packages sync status."
 msgid "AlphaNumeric with smaller case alpha"
 msgstr "AlphaNumeric with smaller case alpha"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:438
+#: ../../Projects/MECM/Apm_Interfaces_en.md:475
 msgid "APM Open Api Swagger"
 msgstr "APM Open Api Swagger"
 
-#: ../../Projects/MECM/Apm_Interfaces_en.md:440
+#: ../../Projects/MECM/Apm_Interfaces_en.md:477
 msgid "Please refer [APM_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/apm-swagger-openapi.yaml)"
 msgstr "Please review [APM_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/apm-swagger-openapi.yaml)"
 
