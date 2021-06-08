@@ -1706,6 +1706,7 @@ GET /mep/mec_service_mgmt/v1/services/{serviceId}
 请求参数：
   |名称            | 类型  |   描述     |                           IN    |   必选|
   |---|---|---|---|---| 
+  |serviceId| String  | service id                   |path    | 是|
   |Authorization |  String |  Token信息，格式：Bearer token信息  | header  | 是|
   |ser_name| String  | service name                   |query    | 否|
 
