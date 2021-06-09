@@ -63,11 +63,11 @@ msgstr "Development preparation"
 
 #: ../../Get A Demo EdgeGallery.md:23 Started/Start from on
 msgid "新建一个项目<br> ![](/uploads/images/2021/v1.1/CreateProject.png \"CreateProject.png\")"
-msgstr "New one entry<br> ![](/uploads/images/2021/demo/createproject_en.png \"CreateProject.png\")"
+msgstr "New project<br> ![](/uploads/images/2021/demo/createproject_en.png \"CreateProject.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:25 Started/Start from on
 msgid "选择依赖的平台能力，勾选“服务发现”<br> ![](/uploads/images/2021/v1.1/AbilitySelection.png \"AbilitySelection.png\")"
-msgstr "Choose the platform ability to rely on, check \"Service discovery\"<br> ![](/uploads/images/2021/demo/capabilityselection_en.PNG \"AbilitySelection.png\")"
+msgstr "Choose the platform ability to rely on, select \"Service discovery\"<br> ![](/uploads/images/2021/demo/capabilityselection_en.PNG \"AbilitySelection.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:28 Started/Start from on
 msgid "本地开发"
@@ -91,23 +91,23 @@ msgstr "Building docker image<br><br>"
 
 #: ../../Get A Demo EdgeGallery.md:35 Started/Start from on
 msgid "部署调测"
-msgstr "Deploy the test."
+msgstr "Deployment Test."
 
 #: ../../Get A Demo EdgeGallery.md:36 Started/Start from on
 msgid "部署调测页面可进行应用的部署测试"
-msgstr "Deploying a test page for deployment tests that can be applied"
+msgstr "Before publishing the app, Deploy test page helps to perform required app testing"
 
 #: ../../Get A Demo EdgeGallery.md:38 Started/Start from on
 msgid "第一步：上传App镜像。 ![](/uploads/images/2021/developer/deploy-one.PNG \"deploy-one.PNG\")"
-msgstr "First step: Upload the App Mirror. ![](/uploads/images/2021/demo/uploadappimage_en.PNG \"deploy-one.PNG\")"
+msgstr "Step 1: Upload the App image. ![](/uploads/images/2021/demo/uploadappimage_en.PNG \"deploy-one.PNG\")"
 
 #: ../../Get A Demo EdgeGallery.md:41 Started/Start from on
 msgid "第二步：配置部署文件。 ![](/uploads/images/2021/developer/deploy-two-config.PNG \"deploy-two-config.PNG\")"
-msgstr "Step 2: Configure the deployment document. ![](/uploads/images/2021/demo/uploadconfig_en.PNG \"deploy-two-config.PNG\")"
+msgstr "Step 2: Add required deployment Configuration. ![](/uploads/images/2021/demo/uploadconfig_en.PNG \"deploy-two-config.PNG\")"
 
 #: ../../Get A Demo EdgeGallery.md:44 Started/Start from on
 msgid "第三步：部署调测。 ![](/uploads/images/2020/v1.0/DeploymentTest.png \"DeploymentTest.png\")"
-msgstr "The third step is to deploy the modulation test. ![](/uploads/images/2021/demo/startdeployment_en.PNG \"DeploymentTest.png\")"
+msgstr "Step3: Perform the Deployment test. ![](/uploads/images/2021/demo/startdeployment_en.PNG \"DeploymentTest.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:47 Started/Start from on
 msgid "应用发布"
@@ -115,7 +115,7 @@ msgstr "Application Publish"
 
 #: ../../Get A Demo EdgeGallery.md:48 Started/Start from on
 msgid "应用发布页面可进行应用配置、应用认证测试，测试通过后可将应用发布至应用仓库。"
-msgstr "The application distribution page can be applied to application and test, and the application can be published to the application warehouse after the test is passed."
+msgstr "Before publishing the application to appstore, helps to perform required certification testing and app configuration."
 
 #: ../../Get A Demo EdgeGallery.md:50 Started/Start from on
 msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-1.png \"ApplicationRelease-1.png\")"
