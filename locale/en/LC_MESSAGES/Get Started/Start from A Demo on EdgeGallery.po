@@ -63,11 +63,11 @@ msgstr "Development preparation"
 
 #: ../../Get A Demo EdgeGallery.md:23 Started/Start from on
 msgid "新建一个项目<br> ![](/uploads/images/2021/v1.1/CreateProject.png \"CreateProject.png\")"
-msgstr "New project<br> ![](/uploads/images/2021/v1.1/CreateProject_en.png \"CreateProject.png\")"
+msgstr "New project<br> ![](/uploads/images/2021/demo/createproject_en.png \"CreateProject.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:25 Started/Start from on
 msgid "选择依赖的平台能力，勾选“服务发现”<br> ![](/uploads/images/2021/v1.1/AbilitySelection.png \"AbilitySelection.png\")"
-msgstr "Choose the platform ability to rely on, select \"Service discovery\"<br> ![](/uploads/images/2021/v1.1/AbilitySelection_en.PNG \"AbilitySelection.png\")"
+msgstr "Choose the platform ability to rely on, select \"Service discovery\"<br> ![](/uploads/images/2021/demo/capabilityselection_en.PNG \"AbilitySelection.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:28 Started/Start from on
 msgid "本地开发"
@@ -75,7 +75,7 @@ msgstr "Local development"
 
 #: ../../Get A Demo EdgeGallery.md:29 Started/Start from on
 msgid "下载依赖的插件-BashSupport，并导入到本地IDE<br> ![](/uploads/images/2020/v1.0/Plug-in.png \"Plug-in.png\")"
-msgstr "Download the dependent plug-in -BashSupport and import into the local IDE<br> ![](/uploads/images/2020/v1.0/Plug-in_en.PNG \"Plug-in.png\")"
+msgstr "Download the dependent plug-in -BashSupport and import into the local IDE<br> ![](/uploads/images/2021/demo/plugin_en.PNG \"Plug-in.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:31 Started/Start from on
 msgid "执行插件，会自动生成示例代码<br> ![](/uploads/images/2020/0927/execute_plugin.png \"执行插件生成示例代码.png\")"
@@ -99,15 +99,15 @@ msgstr "Before publishing the app, Deploy test page helps to perform required ap
 
 #: ../../Get A Demo EdgeGallery.md:38 Started/Start from on
 msgid "第一步：上传App镜像。 ![](/uploads/images/2021/developer/deploy-one.PNG \"deploy-one.PNG\")"
-msgstr "Step 1: Upload the App image. ![](/uploads/images/2021/developer/deploy-one_en.PNG \"deploy-one.PNG\")"
+msgstr "Step 1: Upload the App image. ![](/uploads/images/2021/demo/uploadappimage_en.PNG \"deploy-one.PNG\")"
 
 #: ../../Get A Demo EdgeGallery.md:41 Started/Start from on
 msgid "第二步：配置部署文件。 ![](/uploads/images/2021/developer/deploy-two-config.PNG \"deploy-two-config.PNG\")"
-msgstr "Step 2: Add required deployment Configuration. ![](/uploads/images/2021/developer/deploy-two-config_en.PNG \"deploy-two-config.PNG\")"
+msgstr "Step 2: Add required deployment Configuration. ![](/uploads/images/2021/demo/uploadconfig_en.PNG \"deploy-two-config.PNG\")"
 
 #: ../../Get A Demo EdgeGallery.md:44 Started/Start from on
 msgid "第三步：部署调测。 ![](/uploads/images/2020/v1.0/DeploymentTest.png \"DeploymentTest.png\")"
-msgstr "Step3: Perform the Deployment test. ![](/uploads/images/2020/v1.0/DeploymentTest_en.PNG \"DeploymentTest.png\")"
+msgstr "Step3: Perform the Deployment test. ![](/uploads/images/2021/demo/startdeployment_en.PNG \"DeploymentTest.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:47 Started/Start from on
 msgid "应用发布"
@@ -119,13 +119,13 @@ msgstr "Before publishing the application to appstore, helps to perform required
 
 #: ../../Get A Demo EdgeGallery.md:50 Started/Start from on
 msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-1.png \"ApplicationRelease-1.png\")"
-msgstr "![](/uploads/images/2020/v1.0/ApplicationRelease-1_en.PNG \"ApplicationRelease-1.png\")"
+msgstr "![](/uploads/images/2021/demo/appconfigupload_en.PNG \"ApplicationRelease-1.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:52 Started/Start from on
 msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-2.png \"ApplicationRelease-2.png\")"
-msgstr "![](/uploads/images/2020/v1.0/ApplicationRelease-2_en.PNG \"ApplicationRelease-2.png\")"
+msgstr "![](/uploads/images/2021/demo/certtest_en.PNG \"ApplicationRelease-2.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:54 Started/Start from on
 msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-3.png \"ApplicationRelease-3.png\")"
-msgstr "![](/uploads/images/2020/v1.0/ApplicationRelease-3_en.PNG \"ApplicationRelease-3.png\")"
+msgstr "![](/uploads/images/2021/demo/releaseapp_en.PNG \"ApplicationRelease-3.png\")"
 
