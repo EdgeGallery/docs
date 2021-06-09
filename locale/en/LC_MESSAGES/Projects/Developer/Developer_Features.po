@@ -239,7 +239,7 @@ msgstr "The virtual machine application deployment adjustment is divided into th
 
 #: ../../Projects/Developer/Developer_Features.md:93
 msgid "选择虚机资源 ![](/uploads/images/2021/v1.1/ApplyingVm.png \"ApplyingVm.png\")   配置虚机的规格、镜像、网络等信息"
-msgstr "Choose virtual machine resource ![](/uploads/images/2021/v1.1/ApplyingVm.png \"ApplyingVm.png\")   Configure the specification, mirroring, network, etc. information of the virtual machine"
+msgstr "Choose virtual machine resource ![](/uploads/images/2021/v1.1/ApplyingVm_en.png \"ApplyingVm.png\")   Configure the specification, mirroring, network, etc. information of the virtual machine"
 
 #: ../../Projects/Developer/Developer_Features.md:97
 msgid "输入虚机名称 ![](/uploads/images/2021/v1.1/BasicVmInformation.png \"BasicVmInformation.png\")"

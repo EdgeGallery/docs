@@ -251,7 +251,7 @@ msgstr "3.clicking the application push menu under the shared main menu to see t
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:137
 msgid "4.点击应用共享主菜单下的应用拉取菜单查看各个外部仓库可拉取的应用信息，选择需要拉取的应用可进行批量拉取。 ![](/uploads/images/2021/appstore/topull.png \"4.5\") ![](/uploads/images/2021/appstore/pulled.png \"4.6\")"
-msgstr "4.clicking the application drawing menu under the application sharing main menu to look at the application information that can be pulled by each external warehouse; selecting the application needing to be pulled to carry out batch. ![](/uploads/images/2021/appstore/topull_en.png \"4.5\") ![](/uploads/images/2021/appstore/polled.png \"4.6\")"
+msgstr "4.clicking the application drawing menu under the application sharing main menu to look at the application information that can be pulled by each external warehouse; selecting the application needing to be pulled to carry out batch. ![](/uploads/images/2021/appstore/topull_en.png \"4.5\") ![](/uploads/images/2021/appstore/pulled_en.png \"4.6\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:141
 msgid "5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。通过单击消息中心右侧面板右上角的接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在“我的应用”界面查看，点击删除按钮则删除该条消息，双击可查看消息详情。 ![](/uploads/images/2021/appstore/messages.png \"4.7\") ![](/uploads/images/2021/appstore/message_detail.png \"4.8\")"
