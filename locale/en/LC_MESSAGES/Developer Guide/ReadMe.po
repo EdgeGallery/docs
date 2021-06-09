@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-09 22:20+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,72 +22,45 @@ msgid "开发者指导"
 msgstr "Developer guidance"
 
 #: ../../Developer Guide/ReadMe.md:4
-msgid "EdgeGallery 安装指导"
-msgstr "EdgeGallery Installation Guidance"
-
-#: ../../Developer Guide/ReadMe.md:6
-#, python-format
-msgid "[EdgeGallery离线安装指导](https://gitee.com/edgegallery/installer/blob/Release-v1.1/ansible_install/README-cn%2Emd)"
-msgstr "[EdgeGallery offline installation guidance](https://gitee.com/edgegallery/installer/blob/Release-v1.1/ansible_install/README-cn%2Emd)"
-
-#: ../../Developer Guide/ReadMe.md:8
-msgid "EdgeGallery 证书更新"
-msgstr "EdgeGallery Certificate Update"
-
-#: ../../Developer Guide/ReadMe.md:10
-msgid "[EdgeGallery证书更新指导](https://gitee.com/edgegallery/docs/blob/master/certificate_update/edgegallery_certificate_update)"
-msgstr "[EdgeGallery Certificate Update Guidance](https://gitee.com/edgegallery/docs/blob/master/certificate_update/edgegallery_certificate_update)"
-
-#: ../../Developer Guide/ReadMe.md:12
 msgid "如何贡献"
 msgstr "How to contribute"
 
+#: ../../Developer Guide/ReadMe.md:5
+msgid "[APPStore](../Projects/APPSTORE/AppStore_Contribution.md)"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:7
+msgid "[Developer](../Projects/Developer/Developer_Contribution.md)"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:9
+msgid "MECM"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:10
+msgid "[APM](../Projects/MECM/MECM_Apm_Contribution.md)"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:11
+msgid "[APPO](../Projects/MECM/MECM_Appo_Contribution.md)"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:12
+msgid "[Inventory](../Projects/MECM/MECM_Inventory_Contribution.md)"
+msgstr ""
+
 #: ../../Developer Guide/ReadMe.md:13
-#, python-format
-msgid "[APPStore](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_Contribution%2Emd)"
-msgstr "[APPStore](https://gitee.com/edgegallery/docs/blob/master/Projects/APPSTORE/AppStore_Contribution%2Emd)"
+msgid "[APPLCM](../Projects/MECM/MECM_LCM_controller_Contribution.md)"
+msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:15
-#, python-format
-msgid "[Developer](https://gitee.com/edgegallery/docs/blob/master/Projects/Developer/Developer_Contribution%2Emd)"
-msgstr "[Developer](https://gitee.com/edgegallery/docs/blob/master/Projects/Developer/Developer_Contribution%2Emd)"
+msgid "[MEP](../Projects/MEP/MEP_Contribution.md)"
+msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:17
-msgid "MECM"
-msgstr "MECM"
-
-#: ../../Developer Guide/ReadMe.md:18
-#, python-format
-msgid "[APM](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Apm_Contribution%2Emd)"
-msgstr "[APM](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Apm_Contribution%2Emd)"
+msgid "[User Management](../Projects/User%20Management/User_Contribution.md)"
+msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:19
-#, python-format
-msgid "[APPO](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Appo_Contribution%2Emd)"
-msgstr "[APPO](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Appo_Contribution%2Emd)"
-
-#: ../../Developer Guide/ReadMe.md:20
-#, python-format
-msgid "[Inventory](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Inventory_Contribution%2Emd)"
-msgstr "[Inventory](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Inventory_Contribution%2Emd)"
-
-#: ../../Developer Guide/ReadMe.md:21
-#, python-format
-msgid "[APPLCM](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_LCM_controller_Contribution%2Emd)"
-msgstr "[APPLCM](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_LCM_controller_Contribution%2Emd)"
-
-#: ../../Developer Guide/ReadMe.md:23
-#, python-format
-msgid "[MEP](https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/MEP_Contribution%2Emd)"
-msgstr "[MEP](https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/MEP_Contribution%2Emd)"
-
-#: ../../Developer Guide/ReadMe.md:25
-#, python-format
-msgid "[User Management](https://gitee.com/edgegallery/docs/blob/master/Projects/User%20Management/User_Contribution%2Emd)"
-msgstr "[User Management](https://gitee.com/edgegallery/docs/blob/master/Projects/User%20Management/User_Contribution%2Emd)"
-
-#: ../../Developer Guide/ReadMe.md:27
-#, python-format
-msgid "[ATP](https://gitee.com/edgegallery/docs/blob/master/Projects/ATP/ATP_Contribution%2Emd)"
-msgstr "[ATP](https://gitee.com/edgegallery/docs/blob/master/Projects/ATP/ATP_Contribution%2Emd)"
-
+msgid "[ATP](../Projects/ATP/ATP_Contribution.md)"
+msgstr ""
