@@ -95,5 +95,5 @@ msgstr "Welcome to EdgeGallery's documentation!"
 
 #: ../../index.rst:4
 msgid "EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边缘的资源、应 用、安全、管理的基础框架和网络开放服务的事实标准，并实现同公有云的互联互通。 在兼容边缘基础设施异构差异化的基础上，构建起统一的MEC应用生态系统。"
-msgstr "The EdgeGallery community focuses on the 5G edge computing scenario, building up resources for the MEC edge through open source collaboration, the fact that it should be used, secure, managed infrastructure and network open services, and achieve connectivity to public clouds. Building a unified MEC application ecosystem on the basis of heterogeneous infrastructure heterogeneous differentiation."
+msgstr "The EdgeGallery community focuses on the MEC platform framework of the carrier network’s edge. It builds the basic framework of MEC edge resources, applications, security and management, and de facto standards of network openness services through open source collaboration, and implements interconnection with the public cloud. A unified MEC application ecosystem is constructed based on compatibility with heterogeneous edge infrastructures"
 
