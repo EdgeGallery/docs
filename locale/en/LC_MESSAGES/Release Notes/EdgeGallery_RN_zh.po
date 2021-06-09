@@ -145,7 +145,7 @@ msgstr "[ **Demand/Release Plan Long Description** ](https://gitee.com/edgegalle
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:32
 msgid "![](/uploads/images/2021/v1.1/NewFeature.png \"NewFeature.png\")"
-msgstr "![](/uploads/images/2021/v1.1/NewFeature.png \"NewFeature.png\")"
+msgstr "![](/uploads/images/2021/v1.1/NewFeature_en.png \"NewFeature.png\")"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:34
 msgid "【AI软硬件能力】支撑昇腾/Atlas硬件以及开放API"
