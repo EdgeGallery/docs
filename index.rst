@@ -7,7 +7,7 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
 
 
 .. toctree::
-   EdgeGallery Home <http://www.edgegallery.org/>
+   EdgeGallery Home <https://www.edgegallery.org/en/>
 
 
 .. toctree::
