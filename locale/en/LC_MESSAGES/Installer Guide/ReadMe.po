@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-10 16:31+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Installer Guide/ReadMe.md:1
+msgid "安装指南"
+msgstr "Installation guide"
+
+#: ../../Installer Guide/ReadMe.md:4
+msgid "EdgeGallery 安装指导"
+msgstr "EdgeGallery installation guide"
+
+#: ../../Installer Guide/ReadMe.md:6
+#, python-format
+msgid "[EdgeGallery离线安装指导](https://gitee.com/edgegallery/installer/blob/master/ansible_install/README-cn%2Emd)"
+msgstr "[EdgeGallery离线安装指导](https://gitee.com/edgegallery/installer/blob/master/ansible_install/README-en%2Emd)"
+
+#: ../../Installer Guide/ReadMe.md:8
+msgid "EdgeGallery 证书更新"
+msgstr "EdgeGallery certificate renewal"
+
+#: ../../Installer Guide/ReadMe.md:10
+msgid "[EdgeGallery证书更新指导](https://gitee.com/edgegallery/docs/blob/master/certificate_update/edgegallery_certificate_update)"
+msgstr "[EdgeGallery certificate update guide](https://gitee.com/edgegallery/docs/blob/master/certificate_update/edgegallery_certificate_update)"
+
