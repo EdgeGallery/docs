@@ -1,7 +1,6 @@
 开发者指导
 =================
 
-## 如何贡献
 - [APPStore](../Projects/APPSTORE/AppStore_Contribution.md)
 
 - [Developer](../Projects/Developer/Developer_Contribution.md)
