@@ -38,10 +38,6 @@ msgid "Release Notes"
 msgstr "Release Notes"
 
 #: ../../index.rst:23
-msgid "Architecture introduction"
-msgstr "Architecture introductions"
-
-#: ../../index.rst:23
 msgid "Architecture"
 msgstr "Architecture"
 
