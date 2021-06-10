@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-09 20:38+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,14 +118,14 @@ msgid "应用发布页面可进行应用配置、应用认证测试，测试通�
 msgstr "Before publishing the application to appstore, helps to perform required certification testing and app configuration."
 
 #: ../../Get A Demo EdgeGallery.md:50 Started/Start from on
-msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-1.png \"ApplicationRelease-1.png\")"
-msgstr "![](/uploads/images/2021/demo/appconfigupload_en.PNG \"ApplicationRelease-1.png\")"
+msgid "Step 1: Application Configuration ![](/uploads/images/2020/v1.0/ApplicationRelease-1.png \"ApplicationRelease-1.png\")"
+msgstr "Step 1: Application Configuration ![](/uploads/images/2021/demo/appconfigupload_en.PNG \"ApplicationRelease-1.png\")"
 
-#: ../../Get A Demo EdgeGallery.md:52 Started/Start from on
-msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-2.png \"ApplicationRelease-2.png\")"
-msgstr "![](/uploads/images/2021/demo/certtest_en.PNG \"ApplicationRelease-2.png\")"
+#: ../../Get A Demo EdgeGallery.md:53 Started/Start from on
+msgid "Step 2: Certification testing ![](/uploads/images/2020/v1.0/ApplicationRelease-2.png \"ApplicationRelease-2.png\")"
+msgstr "Step 2: Certification testing ![](/uploads/images/2021/demo/certtest_en.PNG \"ApplicationRelease-2.png\")"
 
-#: ../../Get A Demo EdgeGallery.md:54 Started/Start from on
-msgid "![](/uploads/images/2020/v1.0/ApplicationRelease-3.png \"ApplicationRelease-3.png\")"
-msgstr "![](/uploads/images/2021/demo/releaseapp_en.PNG \"ApplicationRelease-3.png\")"
+#: ../../Get A Demo EdgeGallery.md:56 Started/Start from on
+msgid "Step 3: Publishing application  ![](/uploads/images/2020/v1.0/ApplicationRelease-3.png \"ApplicationRelease-3.png\")"
+msgstr "Step 3: Publishing application  ![](/uploads/images/2021/demo/releaseapp_en.PNG \"ApplicationRelease-3.png\")"
 

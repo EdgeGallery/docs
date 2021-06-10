@@ -36,6 +36,12 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
 
 .. toctree::
    :maxdepth: 1
+   :caption: Installer Guide
+
+   Installer Guide <Installer Guide/ReadMe>
+
+.. toctree::
+   :maxdepth: 1
    :caption: Projects
 
    AppStore <Projects/APPSTORE/AppStore>
