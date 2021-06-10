@@ -58,8 +58,8 @@ msgid "Create a database named lcmcontrollerdb"
 msgstr "Create a database named lcmcontrollerdb"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:25
-msgid "![](/uploads/images/2020/0924/lcmcontroller-db.png \"lcmcontroller-db.png\")"
-msgstr "![](/uploads/images/2020/0924/lcmcontroller-db.png \"lcmcontroller-db.png\")"
+msgid "![](/uploads/images/2021/cor2020/lcmcontroller-db.png \"lcmcontroller-db.png\")"
+msgstr "![](/uploads/images/2021/cor2020/lcmcontroller-db_en.png \"lcmcontroller-db.png\")"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:27
 msgid "LCM contorller"
@@ -74,16 +74,16 @@ msgid "Configure the runtime environment variables (using GO Land as an example)
 msgstr "Configure the runtime environment variables (using GO Land as an example)"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:33
-msgid "![](/uploads/images/2020/0924/lcm-controller.png \"lcm-controller.png\")"
-msgstr "![](/uploads/images/2020/0924/lcm-controller.png \"lcm-controller.png\")"
+msgid "![](/uploads/images/2021/cor2020/lcm-controller.png \"lcm-controller.png\")"
+msgstr "![](/uploads/images/2021/cor2020/lcm-controller_en.png \"lcm-controller.png\")"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:35
 msgid "Update certificates path in app.conf"
 msgstr "Update certificates path in app.conf"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:37
-msgid "![](/uploads/images/2020/0924/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
-msgstr "![](/uploads/images/2020/0924/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
+msgid "![](/uploads/images/2021/cor2020/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
+msgstr "![](/uploads/images/2021/cor2020/mepm-applcm-ssl_en.png \"mepm-applcm-ssl.png\")"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:39
 msgid "Run main to start LCM controller"
@@ -98,16 +98,16 @@ msgid "Download [K8s plugin code](https://gitee.com/edgegallery/mecm-applcm)"
 msgstr "Download [K8s plugin code](https://gitee.com/edgegallery/mecm-applcm)"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:47
-msgid "![](/uploads/images/2020/0924/k8s-plugin-env.png \"k8s-plugin-env.png\")"
-msgstr "![](/uploads/images/2020/0924/k8s-plugin-env.png \"k8s-plugin-env.png\")"
+msgid "![](/uploads/images/2021/cor2020/k8s-plugin-env.png \"k8s-plugin-env.png\")"
+msgstr "![](/uploads/images/2021/cor2020/k8s-plugin-env_en.png \"k8s-plugin-env.png\")"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:49
 msgid "Update certificates path in config.yaml"
 msgstr "Update certificates path in config.yaml"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:51
-msgid "![](/uploads/images/2020/0924/k8s-ssl.png \"k8s-ssl.png\")"
-msgstr "![](/uploads/images/2020/0924/k8s-ssl.png \"k8s-ssl.png\")"
+msgid "![](/uploads/images/2021/cor2020/k8s-ssl.png \"k8s-ssl.png\")"
+msgstr "![](/uploads/images/2021/cor2020/k8s-ssl_en.png \"k8s-ssl.png\")"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:53
 msgid "Run main to start K8s plugin."
@@ -130,6 +130,6 @@ msgid "Step 2 - Install bee"
 msgstr "Step 2 - Install be"
 
 #: ../../Projects/MECM/MECM_LCM_controller_Contribution.md:97
-msgid "![](/uploads/images/2020/0924/bee-output.png \"bee-output.png\")"
-msgstr "![](/uploads/images/2020/0924/bee-output.png \"bee-output.png\")"
+msgid "![](/uploads/images/2021/cor2020/bee-output.png \"bee-output.png\")"
+msgstr "![](/uploads/images/2021/cor2020/bee-output_en.png \"bee-output.png\")"
 

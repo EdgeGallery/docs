@@ -61,10 +61,6 @@ msgstr "![](/uploads/images/2021/mecm/3_en.png) ![](/uploads/images/2021/mecm/5_
 msgid "1.2 MEP详情：点击管理按钮，跳转至MEP详情界面"
 msgstr "1.2 MEP Details: Hit Management button, Jump to MEP Details interface"
 
-#: ../../Projects/MECM/MECM Document.md:21 Product
-msgid "![](/uploads/images/2021/mecm/7.png)"
-msgstr "![](/uploads/images/2021/mecm/7.png)"
-
 #: ../../Projects/MECM/MECM Document.md:22 Product
 msgid "2. 应用管理：应用包管理，应用实例管理"
 msgstr "2.Application management: application package management, application instance management"
@@ -75,7 +71,7 @@ msgstr "2.1 Application package management"
 
 #: ../../Projects/MECM/MECM Document.md:24 Product
 msgid "集成应用同步，下发以及部署功能。   ![](/uploads/images/2021/mecm/8.png) ![](/uploads/images/2021/mecm/9.png) ![](/uploads/images/2021/mecm/10.png) ![](/uploads/images/2021/mecm/11.png)"
-msgstr "Integrated application synchronization, distribution and deployment function.   ![](/uploads/images/2021/mecm/8_en.png) ![](/uploads/images/2021/mecm/9_en.png) ![](/uploads/images/2021/mecm/10.png) ![](/uploads/images/2021/mecm/11.png)"
+msgstr "Integrated application synchronization, distribution and deployment function.   ![](/uploads/images/2021/mecm/8_en.png) ![](/uploads/images/2021/mecm/9_en.png) ![](/uploads/images/2021/mecm/10_en.png) ![](/uploads/images/2021/mecm/11_en.png)"
 
 #: ../../Projects/MECM/MECM Document.md:29 Product
 msgid "2.2 应用实例管理"
@@ -83,7 +79,7 @@ msgstr "2.2 Application Instance Management"
 
 #: ../../Projects/MECM/MECM Document.md:30 Product
 msgid "集成应用实例列表，此处可以查看当前实例的部署状态以及详情，并且进行规则配置，以及失败原因查看等功能 ![](/uploads/images/2021/mecm/12.png) ![](/uploads/images/2021/mecm/13.png) 规则配置->DNS规则配置  ![](/uploads/images/2021/mecm/14.png) ![](/uploads/images/2021/mecm/15.png)  规则配置->分流规则配置 ![](/uploads/images/2021/mecm/16.png) ![](/uploads/images/2021/mecm/17.png) 规则配置->分流规则配置->过滤规则配置  ![](/uploads/images/2021/mecm/18.png) 规则配置-分流规则配置-接口信息配置  ![](/uploads/images/2021/mecm/19.png)"
-msgstr "Integrated application instance list, here you can view the deployment status and details of the current instance, and perform rule configuration, as well as the failure reason view and other functions ![](/uploads/images/2021/mecm/12_en.png) ![](/uploads/images/2021/mecm/13.png) Rule configuration->DNS rule configuration ![](/uploads/images/2021/mecm/14_en.png) ![](uploads/images/2021/mecm/15_en.png) Rule configuration->Distribution rule configuration ![](/uploads/images/2021/mecm/16_en.png) ![](/uploads/images/2021/mecm/17_en.png) Rule configuration->Diversion rule configuration->Filter rule configuration ![](/uploads/images/2021/mecm/18_en.png) Rule configuration-Diversion rule configuration-interface information configuration ![](/uploads/images/2021/mecm/19_en.png)"
+msgstr "Integrated application instance list, here you can view the deployment status and details of the current instance, and perform rule configuration, as well as the failure reason view and other functions ![](/uploads/images/2021/mecm/12_en.png) ![](/uploads/images/2021/mecm/13_en.png) Rule configuration->DNS rule configuration ![](/uploads/images/2021/mecm/14_en.png) ![](uploads/images/2021/mecm/15_en.png) Rule configuration->Distribution rule configuration ![](/uploads/images/2021/mecm/16_en.png) ![](/uploads/images/2021/mecm/17_en.png) Rule configuration->Diversion rule configuration->Filter rule configuration ![](/uploads/images/2021/mecm/18_en.png) Rule configuration-Diversion rule configuration-interface information configuration ![](/uploads/images/2021/mecm/19_en.png)"
 
 #: ../../Projects/MECM/MECM Document.md:43 Product
 msgid "3. 边缘节点：边缘节点列表，边缘节点注册，上传k8s config文件"
@@ -101,17 +97,9 @@ msgstr "4.System Management: APPLCM Registration, APP Rule MGR Registration, App
 msgid "4.1 APPLCM注册"
 msgstr "4.1 APPLCM Registration"
 
-#: ../../Projects/MECM/MECM Document.md:49 Product
-msgid "![](/uploads/images/2021/mecm/23.png)"
-msgstr "![](/uploads/images/2021/mecm/23.png)"
-
 #: ../../Projects/MECM/MECM Document.md:50 Product
 msgid "4.2 APP Rule MGR注册"
 msgstr "4.2 APP Rule MGR Registration"
-
-#: ../../Projects/MECM/MECM Document.md:51 Product
-msgid "![](/uploads/images/2021/mecm/24.png)"
-msgstr "![](/uploads/images/2021/mecm/24.png)"
 
 #: ../../Projects/MECM/MECM Document.md:52 Product
 msgid "4.4 应用仓库注册"

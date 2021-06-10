@@ -22,16 +22,16 @@ msgid "MECM架构"
 msgstr "MECM architecture"
 
 #: ../../Projects/MECM/MECM Archetecture.md:4
-msgid "![输入图片说明](/uploads/images/2020/0709/163347_f2c0fdc4_5504908.png \"mecm.png\")"
-msgstr "![Enter picture description](/uploads/images/2020/0709/163347_f2c0fdc4_5504908.png \"mecm.png\")"
+msgid "![输入图片说明](/uploads/images/2021/cor2020/163347_f2c0fdc4_5504908.png \"mecm.png\")"
+msgstr "![Enter picture description](/uploads/images/2021/cor2020/163347_f2c0fdc4_5504908_en.png \"mecm.png\")"
 
 #: ../../Projects/MECM/MECM Archetecture.md:6
 msgid "AppO组件"
 msgstr "AppO part"
 
 #: ../../Projects/MECM/MECM Archetecture.md:8
-msgid "应用编排器。AppO 是采用ONAP的SO模块进行定制后实现的。对外提供应用生命周期管理功能，同时维护应用的整体视图，在应用部署时，编排器基于应用的部署策略，选择合适的边缘节点进行部署。 ![输入图片说明](/uploads/images/2020/0709/163805_0bb62e3c_5504908.png \"appo.png\")"
-msgstr "Application Choreographer.The AppO is implemented after customization using the ONAP's SO module.The invention provides the application life cycle management function while maintaining the overall view of the application, when the application is deployed, the orchestrator selects the right edge node to deploy based on the application deployment strategy. ![Enter picture description](/uploads/images/2020/0709/163805_0bb62e3c_5504908.png \"appo.png\")"
+msgid "应用编排器。AppO 是采用ONAP的SO模块进行定制后实现的。对外提供应用生命周期管理功能，同时维护应用的整体视图，在应用部署时，编排器基于应用的部署策略，选择合适的边缘节点进行部署。 ![输入图片说明](/uploads/images/2021/cor2020/163805_0bb62e3c_5504908.png \"appo.png\")"
+msgstr "Application Choreographer.The AppO is implemented after customization using the ONAP's SO module.The invention provides the application life cycle management function while maintaining the overall view of the application, when the application is deployed, the orchestrator selects the right edge node to deploy based on the application deployment strategy. ![Enter picture description](/uploads/images/2021/cor2020/163805_0bb62e3c_5504908_en.png \"appo.png\")"
 
 #: ../../Projects/MECM/MECM Archetecture.md:11 Archetecture.md:40 Archetecture.md:62
 msgid "API Handler"
@@ -70,8 +70,8 @@ msgid "BPMN工作流可以通过CAMUNDA Modler工具进行设计，如图所示�
 msgstr "The BPMN workflow can be designed with the CAMUNDA Modler tool as shown in the figure:"
 
 #: ../../Projects/MECM/MECM Archetecture.md:32
-msgid "![输入图片说明](/uploads/images/2020/0709/163844_b7433e0e_5504908.png \"ada.png\")"
-msgstr "![Enter picture description](/uploads/images/2020/0709/163844_b7433e0e_5504908.png \"ada.png\")"
+msgid "![输入图片说明](/uploads/images/2021/cor2020/163844_b7433e0e_5504908.png \"ada.png\")"
+msgstr "![Enter picture description](/uploads/images/2021/cor2020/163844_b7433e0e_5504908_en.png \"ada.png\")"
 
 #: ../../Projects/MECM/MECM Archetecture.md:34
 msgid "APM组件"
@@ -82,8 +82,8 @@ msgid "应用包管理模块。通过对ONAP的VF-C Catalog模块进行定制后
 msgstr "Application package management module.It is realized by customizing the VF-C Catalog module of ONAP.Responsible for managing the upload and maintenance of the application package, as well as the distribution function.Also integrated with the APPStore, the relevant application package can be obtained from the APPStore."
 
 #: ../../Projects/MECM/MECM Archetecture.md:38
-msgid "![输入图片说明](/uploads/images/2020/0709/163908_9a86e921_5504908.png \"apm.png\")"
-msgstr "![Enter picture description](/uploads/images/2020/0709/163908_9a86e921_5504908.png \"apm.png\")"
+msgid "![输入图片说明](/uploads/images/2021/cor2020/163908_9a86e921_5504908.png \"apm.png\")"
+msgstr "![Enter picture description](/uploads/images/2021/cor2020/163908_9a86e921_5504908_en.png \"apm.png\")"
 
 #: ../../Projects/MECM/MECM Archetecture.md:42
 msgid "对外提供API接口发布."
@@ -114,8 +114,8 @@ msgid "AppLCM组件"
 msgstr "AppLCM Part"
 
 #: ../../Projects/MECM/MECM Archetecture.md:59
-msgid "APPLCM组件会被部署在边缘节点，，负责单节点上的应用的生命周期管理。 ![输入图片说明](/uploads/images/2020/0709/163928_da6bb6c3_5504908.png \"applcm.png\")"
-msgstr "The APPLCM component is deployed on the edge node, responsible for the life cycle management of the application on the single node. ![Enter picture description](/uploads/images/2020/0709/163928_da6bb6c3_5504908.png \"applcm.png\")"
+msgid "APPLCM组件会被部署在边缘节点，，负责单节点上的应用的生命周期管理。 ![输入图片说明](/uploads/images/2021/cor2020/163928_da6bb6c3_5504908.png \"applcm.png\")"
+msgstr "The APPLCM component is deployed on the edge node, responsible for the life cycle management of the application on the single node. ![Enter picture description](/uploads/images/2021/cor2020/163928_da6bb6c3_5504908_en.png \"applcm.png\")"
 
 #: ../../Projects/MECM/MECM Archetecture.md:64
 msgid "对外发布API接口."
@@ -138,8 +138,8 @@ msgid "Policy组件"
 msgstr "Policy Part"
 
 #: ../../Projects/MECM/MECM Archetecture.md:76
-msgid "![输入图片说明](/uploads/images/2020/0709/163949_7f01208e_5504908.png \"policy.png\")"
-msgstr "![Enter picture description](/uploads/images/2020/0709/163949_7f01208e_5504908.png \"policy.png\")"
+msgid "![输入图片说明](/uploads/images/2021/cor2020/163949_7f01208e_5504908.png \"policy.png\")"
+msgstr "![Enter picture description](/uploads/images/2021/cor2020/163949_7f01208e_5504908_en.png \"policy.png\")"
 
 #: ../../Projects/MECM/MECM Archetecture.md:78
 msgid "APEX引擎中运行配置好的策略."

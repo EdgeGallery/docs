@@ -42,8 +42,8 @@ msgid "Update certificates path in app.conf"
 msgstr "Update certificates path in app.conf"
 
 #: ../../Projects/MECM/MECM_App_Rule_Contribution.md:15
-msgid "![](/uploads/images/2020/0924/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
-msgstr "![](/uploads/images/2020/0924/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
+msgid "![](/uploads/images/2021/cor2020/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
+msgstr "![](/uploads/images/2021/cor2020/mepm-applcm-ssl_en.png \"mepm-applcm-ssl.png\")"
 
 #: ../../Projects/MECM/MECM_App_Rule_Contribution.md:17
 msgid "Run main to start App Rule Manager"

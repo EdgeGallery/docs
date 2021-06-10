@@ -62,8 +62,8 @@ msgid "2、解压后运行 start-service-center.bat  和  start-frontend.bat"
 msgstr "2.Run the start-service-center.bat and start-frontend.bat after decompression"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:32
-msgid "![](/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg \"service center2.jpg\")"
-msgstr "![](/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg \"service center2.jpg\")"
+msgid "![](/uploads/images/2021/cor2020/153735_4dafd335_7625245.jpeg \"service center2.jpg\")"
+msgstr "![](/uploads/images/2021/cor2020/153735_4dafd335_7625245_en.jpeg \"service center2.jpg\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:34
 msgid "DataBase"
@@ -82,8 +82,8 @@ msgid "3、创建名为appstoredb的数据库"
 msgstr "3.Create a database called appstoredb"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:42
-msgid "![](/uploads/images/2020/0908/153833_89c54e53_7625245.jpeg \"db1.jpg\")"
-msgstr "![](/uploads/images/2020/0908/153833_89c54e53_7625245.jpeg \"db1.jpg\")"
+msgid "![](/uploads/images/2021/cor2020/153833_89c54e53_7625245.jpeg \"db1.jpg\")"
+msgstr "![](/uploads/images/2021/cor2020/153833_89c54e53_7625245_en.jpeg \"db1.jpg\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:44
 msgid "4、创建名为usermgmtdb的数据库"
@@ -114,8 +114,8 @@ msgid "5、在编译器（此处以IDEA为例）中配置MainServer的运行时�
 msgstr "5.Configure runtime environment variables for MainServer in the compiler (where IDEA is used as an example)"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:58
-msgid "![](/uploads/images/2020/0908/154011_896d887f_7625245.jpeg \"usermgmt1.jpg\")"
-msgstr "![](/uploads/images/2020/0908/154011_896d887f_7625245.jpeg \"usermgmt1.jpg\")"
+msgid "![](/uploads/images/2021/cor2020/154011_896d887f_7625245.jpeg \"usermgmt1.jpg\")"
+msgstr "![](/uploads/images/2021/cor2020/154011_896d887f_7625245_en.jpeg \"usermgmt1.jpg\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:60
 msgid "6、运行MainServer函数，启动UserManagement"
@@ -138,8 +138,8 @@ msgid "3、在编译器（此处以IDEA为例）中配置MainServer的运行时�
 msgstr "3.Configure runtime environment variables for MainServer in the compiler (where IDEA is used as an example)"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:70
-msgid "![](/uploads/images/2020/0908/154023_9c49d20c_7625245.jpeg \"appstore-be1.jpg\")"
-msgstr "![](/uploads/images/2020/0908/154023_9c49d20c_7625245.jpeg \"appstore-be1.jpg\")"
+msgid "![](/uploads/images/2021/cor2020/154023_9c49d20c_7625245.jpeg \"appstore-be1.jpg\")"
+msgstr "![](/uploads/images/2021/cor2020/154023_9c49d20c_7625245_en.jpeg \"appstore-be1.jpg\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:72
 msgid "3、运行MainServer函数，启动appstore-be"
@@ -178,8 +178,8 @@ msgid "7、在编译器（此处以IDEA为例）中配置GatewayApplication的�
 msgstr "7.Configuring runtime environment variables for GatewayApplication in compiler (here, IDEA as an example)"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:90
-msgid "![](/uploads/images/2020/0908/154035_12e727fc_7625245.jpeg \"appstore-fe1.jpg\")"
-msgstr "![](/uploads/images/2020/0908/154035_12e727fc_7625245.jpeg \"appstore-fe1.jpg\")"
+msgid "![](/uploads/images/2021/cor2020/154035_12e727fc_7625245.jpeg \"appstore-fe1.jpg\")"
+msgstr "![](/uploads/images/2021/cor2020/154035_12e727fc_7625245.jpeg \"appstore-fe1.jpg\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:92
 msgid "8、运行GatewayApplication启动WebsiteGateway与AppStore-fe，浏览器访问http://127.0.0.1:8080/ 即可访问到AppStore首页"
@@ -255,7 +255,7 @@ msgstr "4.clicking the application drawing menu under the application sharing ma
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:141
 msgid "5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。通过单击消息中心右侧面板右上角的接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在“我的应用”界面查看，点击删除按钮则删除该条消息，双击可查看消息详情。 ![](/uploads/images/2021/appstore/messages.png \"4.7\") ![](/uploads/images/2021/appstore/message_detail.png \"4.8\")"
-msgstr "5.clicking the information centre menu under the shared main menu under application, and checking the notification information, and accepting the APP information from different operators needing to push.By clicking the receiving button in the upper right corner of the right side panel of the message centre, the information of the application can be pulled (download), the successful APP can be looked at the \"My Application\" interface, and the click delete button deletes the message. ![](/uploads/images/2021/appstore/messages.png \"4.7\") ![](/uploads/images/2021/appstore/message_detail_en.png \"4.8\")"
+msgstr "5.clicking the information centre menu under the shared main menu under application, and checking the notification information, and accepting the APP information from different operators needing to push.By clicking the receiving button in the upper right corner of the right side panel of the message centre, the information of the application can be pulled (download), the successful APP can be looked at the \"My Application\" interface, and the click delete button deletes the message. ![](/uploads/images/2021/appstore/message_en.png \"4.7\") ![](/uploads/images/2021/appstore/message_detail_en.png \"4.8\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:145
 msgid "6.应用推送成功后切换到右边操作分析tab，在操作分析界面查看对应的信息，同时操作分析界面可以查看不同操作如：拉取、下载、通知、推送等类型的消息。 ![](/uploads/images/2021/appstore/operations.png \"4.9\")"

@@ -126,8 +126,8 @@ msgid "开发集成平台提供的端到端开发流程如下："
 msgstr "The end-to-end development process provided by the development integration platform is as follows:"
 
 #: ../../Projects/Developer/Developer_Features.md:44
-msgid "![](/uploads/images/2020/v1.0/ApplicationDevelopmentProcess.PNG \"ApplicationDevelopmentProcess.PNG\")"
-msgstr "![](/uploads/images/2020/v1.0/ApplicationDevelopmentProcess.PNG \"ApplicationDevelopmentProcess.PNG\")"
+msgid "![](/uploads/images/2021/v1.1/FlowChart.PNG \"ApplicationDevelopmentProcess.PNG\")"
+msgstr "![](/uploads/images/2021/v1.1/FlowChart_en.PNG \"ApplicationDevelopmentProcess.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:46
 msgid "创建项目"
@@ -150,16 +150,16 @@ msgid "针对每个能力服务，还提供SDK下载功能，开发者可以将S
 msgstr "The SDK download feature is also available for each capacity service, and developers can integrate the SDK directly into the code."
 
 #: ../../Projects/Developer/Developer_Features.md:54
-msgid "![](/uploads/images/2020/v1.0/CapabilityDetails.png \"CapabilityDetails.png\")"
-msgstr "![](/uploads/images/2020/v1.0/CapabilityDetails.png \"CapabilityDetails.png\")"
+msgid "![](/uploads/images/2021/cor2020/CapabilityDetails.png \"CapabilityDetails.png\")"
+msgstr "![](/uploads/images/2021/cor2020/CapabilityDetails_en.png \"CapabilityDetails.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:56
 msgid "应用开发"
 msgstr "application development"
 
 #: ../../Projects/Developer/Developer_Features.md:57
-msgid "针对选择依赖的能力API，提供调用的样例代码，帮助开发者将依赖API快速集成到自己的代码中。 ![](/uploads/images/2020/v1.0/ApplicationDevelopment.png \"ApplicationDevelopment.png\")"
-msgstr "For the ability APIs that choose to rely on, provide a sample code of calls to help developers quickly integrate relying on APIs into their own code. ![](/uploads/images/2020/v1.0/ApplicationDevelopment.png \"ApplicationDevelopment.png\")"
+msgid "针对选择依赖的能力API，提供调用的样例代码，帮助开发者将依赖API快速集成到自己的代码中。 ![](/uploads/images/2021/cor2020/ApplicationDevelopment.png \"ApplicationDevelopment.png\")"
+msgstr "For the ability APIs that choose to rely on, provide a sample code of calls to help developers quickly integrate relying on APIs into their own code. ![](/uploads/images/2021/cor2020/ApplicationDevelopment_en.png \"ApplicationDevelopment.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:60 ../../Projects/Developer/Developer_Features.md:80
 msgid "部署调测"
@@ -226,12 +226,12 @@ msgid "Step5 测试完成后，通过【资源回收】按钮释放测试环境�
 msgstr "After the Step5 test is complete, release the test environment through the [Resource Recovery] button, for modifications, after you complete the mirror modification, cycle above Step1 - > Step2 - > Step3 - > Step4 operation, repeat tests on the application"
 
 #: ../../Projects/Developer/Developer_Features.md:88
-msgid "![](/uploads/images/2020/v1.0/DeploymentTest.png \"DeploymentTest.png\")"
-msgstr "![](/uploads/images/2020/v1.0/DeploymentTest.png \"DeploymentTest.png\")"
+msgid "![](/uploads/images/2021/cor2020/DeploymentTest.png \"DeploymentTest.png\")"
+msgstr "![](/uploads/images/2021/cor2020/DeploymentTest_en.png \"DeploymentTest.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:90
-msgid "![](/uploads/images/2020/v1.0/DeploymentTest-DeploySuccess.png \"DeploymentTest-DeploySuccess.png\")"
-msgstr "![](/uploads/images/2020/v1.0/DeploymentTest-DeploySuccess.png \"DeploymentTest-DeploySuccess.png\")"
+msgid "![](/uploads/images/2021/cor2020/DeploymentTest-DeploySuccess.png \"DeploymentTest-DeploySuccess.png\")"
+msgstr "![](/uploads/images/2021/cor2020/DeploymentTest-DeploySuccess_en.png \"DeploymentTest-DeploySuccess.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:92
 msgid "虚机应用部署调测分为以下三个步骤："
@@ -246,8 +246,8 @@ msgid "输入虚机名称 ![](/uploads/images/2021/v1.1/BasicVmInformation.png \
 msgstr "Enter virtual machine name ![](/uploads/images/2021/v1.1/BasicVmInformation_en.png \"BasicVmInformation.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:100
-msgid "配置虚机资源大小，镜像源 ![](/uploads/images/2021/v1.1/SettingVmSpecification.png \"SettingVmSpecification.png\")"
-msgstr "Configure virtual machine resource size, mirror source ![](/uploads/images/2021/v1.1/SettingVmSpecification.png \"SettingVmSpecification.png\")"
+msgid "配置虚机资源大小，镜像源 ![](/uploads/images/2021/cor2020/SettingVmSpecification.png \"SettingVmSpecification.png\")"
+msgstr "Configure virtual machine resource size, mirror source ![](/uploads/images/2021/cor2020/SettingVmSpecification_en.png \"SettingVmSpecification.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:103
 msgid "设置虚机网络类型，默认勾选N6网络 ![](/uploads/images/2021/v1.1/NetworkSettings.png \"NetworkSettings.png\")"
@@ -286,8 +286,8 @@ msgid "【可选】流规则配置"
 msgstr "[Optional] Stream Rule Configuration"
 
 #: ../../Projects/Developer/Developer_Features.md:121
-msgid "【可选】应用服务发布配置：如果该应用需要成为生态能力服务，需要进行该配置。需要上传对应的API接口文档和MD说明文档，具体配置如下 ![](/uploads/images/2020/v1.0/ApplicationRelease-RuleConfiguration.png \"ApplicationRelease-RuleConfiguration.png\")"
-msgstr "[Optional] Application service publishing configuration: This configuration is required if the application needs to become ecologically capable service.The corresponding API interface document and MD documentation needs to be uploaded as follows: ![](/uploads/images/2020/v1.0/ApplicationRelease-RuleConfiguration.png \"ApplicationRelease-RuleConfiguration.png\")"
+msgid "【可选】应用服务发布配置：如果该应用需要成为生态能力服务，需要进行该配置。需要上传对应的API接口文档和MD说明文档，具体配置如下 ![](/uploads/images/2021/cor2020/ApplicationRelease-RuleConfiguration.png \"ApplicationRelease-RuleConfiguration.png\")"
+msgstr "[Optional] Application service publishing configuration: This configuration is required if the application needs to become ecologically capable service.The corresponding API interface document and MD documentation needs to be uploaded as follows: ![](/uploads/images/2021/cor2020/ApplicationRelease-RuleConfiguration_en.png \"ApplicationRelease-RuleConfiguration.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:124
 msgid "应用认证"
@@ -306,8 +306,8 @@ msgid "执行测试用例 ![](/uploads/images/2021/developer/atp-2.PNG \"atp-2.P
 msgstr "Run test case ![](/uploads/images/2021/developer/atp-2_en.PNG \"atp-2.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:136
-msgid "认证通过的应用，通过这里可以直接发布到EdgeGallery的AppStore平台，同时如果在【应用配置】时填写了应用服务发布配置，该应用同样会做为能力服务，被收录到能力中心里，可以被其他应用开发者使用。 ![](/uploads/images/2020/v1.0/ApplicationRelease.png \"ApplicationRelease.png\")"
-msgstr "The application of authentication can be directly published to the EdgeGallery's AppStore platform, and if the application service release configuration is completed when [application configuration] is available, the application will also be used as a capability service, and can be used by other application developers. ![](/uploads/images/2020/v1.0/ApplicationRelease.png \"ApplicationRelease.png\")"
+msgid "认证通过的应用，通过这里可以直接发布到EdgeGallery的AppStore平台，同时如果在【应用配置】时填写了应用服务发布配置，该应用同样会做为能力服务，被收录到能力中心里，可以被其他应用开发者使用。 ![](/uploads/images/2021/cor2020/ApplicationRelease.png \"ApplicationRelease.png\")"
+msgstr "The application of authentication can be directly published to the EdgeGallery's AppStore platform, and if the application service release configuration is completed when [application configuration] is available, the application will also be used as a capability service, and can be used by other application developers. ![](/uploads/images/2021/cor2020/ApplicationRelease_en.png \"ApplicationRelease.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:140
 msgid "系统菜单主要对管理员权限的用户开放，提供沙箱节点以及平台能力的管理。"

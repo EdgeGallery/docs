@@ -59,8 +59,8 @@ msgid "Create a database named appodb"
 msgstr "Create a database named appodb"
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:26
-msgid "![](/uploads/images/2020/0924/appodb.png \"appodb.png\")"
-msgstr "![](/uploads/images/2020/0924/appodb.png \"appodb.png\")"
+msgid "![](/uploads/images/2021/cor2020/appodb.png \"appodb.png\")"
+msgstr "![](/uploads/images/2021/cor2020/appodb_en.png \"appodb.png\")"
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:28
 msgid "Application orchestrator"
@@ -75,8 +75,8 @@ msgid "Configure the runtime environment variables (using IDEA as an example)"
 msgstr "Configure the runtime environment variables (using IDEA as an example)"
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:34
-msgid "![](/uploads/images/2020/0924/appo-contribution.png \"appo-contribution.png\")"
-msgstr "![](/uploads/images/2020/0924/appo-contribution.png \"appo-contribution.png\")"
+msgid "![](/uploads/images/2021/cor2020/appo-contribution.png \"appo-contribution.png\")"
+msgstr "![](/uploads/images/2021/cor2020/appo-contribution_en.png \"appo-contribution.png\")"
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:36
 msgid "Update key-store and trust-store path in application.yaml"
