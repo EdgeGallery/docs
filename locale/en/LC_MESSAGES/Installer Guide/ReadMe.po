@@ -28,7 +28,7 @@ msgstr "EdgeGallery installation guide"
 #: ../../Installer Guide/ReadMe.md:6
 #, python-format
 msgid "[EdgeGallery离线安装指导](https://gitee.com/edgegallery/installer/blob/master/ansible_install/README-cn%2Emd)"
-msgstr "[EdgeGallery离线安装指导](https://gitee.com/edgegallery/installer/blob/master/ansible_install/README-en%2Emd)"
+msgstr "[EdgeGallery offline installation guide](https://gitee.com/edgegallery/installer/blob/master/ansible_install/README-en%2Emd)"
 
 #: ../../Installer Guide/ReadMe.md:8
 msgid "EdgeGallery 证书更新"
