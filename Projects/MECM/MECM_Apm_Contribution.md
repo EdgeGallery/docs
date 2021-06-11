@@ -23,7 +23,7 @@ In order to build a local environment, the final startup sequence is [Mecm-Prere
 
 3. Create a database named apmdb
 
-![](/uploads/images/2020/0924/apm-db.png "apm-db.png")
+![](/uploads/images/2021/cor2020/apm-db.png "apm-db.png")
 
 ### Application package manager
 
@@ -31,10 +31,10 @@ In order to build a local environment, the final startup sequence is [Mecm-Prere
 
 2. Configure the runtime environment variables (using IDEA as an example)
 
-![](/uploads/images/2020/0924/apm.png "apm.png")
+![](/uploads/images/2021/cor2020/apm.png "apm.png")
 
 3. Update key-store and trust-store path in application.yaml
 
-![](/uploads/images/2020/0924/key-store.png "key-store.png")
+![](/uploads/images/2021/cor2020/key-store.png "key-store.png")
 
 4. Run ApmApplication to start APM

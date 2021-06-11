@@ -9,7 +9,7 @@ Developer Overview
 架构设计
 ----
 
-![](/uploads/images/2020/0709/150137_dd5a244e_5504908.png "架构设计.png")
+![](/uploads/images/2021/cor2020/150137_dd5a244e_5504908.png "架构设计.png")
 
 1.  Developer-fe：开发者平台前台框架，使用VUE开发。
     
@@ -21,7 +21,7 @@ Developer Overview
 部署视图
 ----
 
-![](/uploads/images/2020/0709/150201_343f1fd8_5504908.png "部署视图.png")
+![](/uploads/images/2021/cor2020/150201_343f1fd8_5504908.png "部署视图.png")
 
 以上部署视图是按照K8S部署设计的， 在实际部署过程中，可以直接在虚拟机或者docker容器中启动各自的服务，部署过程中需要有以下几点注意：
 

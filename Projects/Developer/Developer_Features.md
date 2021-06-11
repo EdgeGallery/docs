@@ -46,7 +46,7 @@ Developer 特性清单
 
 开发集成平台提供的端到端开发流程如下：
 
-![](/uploads/images/2020/v1.0/ApplicationDevelopmentProcess.PNG "ApplicationDevelopmentProcess.PNG")
+![](/uploads/images/2021/v1.1/FlowChart.PNG \"ApplicationDevelopmentProcess.PNG\")"
 
 #### 创建项目
 创建项目时，需要输入项目基本信息和选择需要依赖的生态能力，当前版本支持容器应用和虚机应用。
@@ -57,12 +57,12 @@ Developer 特性清单
 
 针对每个能力服务，还提供SDK下载功能，开发者可以将SDK直接集成到代码中。
 
-![](/uploads/images/2020/v1.0/CapabilityDetails.png "CapabilityDetails.png")
+![](/uploads/images/2021/cor2020/CapabilityDetails.png "CapabilityDetails.png")
 
 
 #### 应用开发
 针对选择依赖的能力API，提供调用的样例代码，帮助开发者将依赖API快速集成到自己的代码中。
-![](/uploads/images/2020/v1.0/ApplicationDevelopment.png "ApplicationDevelopment.png")
+![](/uploads/images/2021/cor2020/ApplicationDevelopment.png "ApplicationDevelopment.png")
 
 #### 部署调测
 容器应用部署调测分为三个部署：
@@ -92,9 +92,9 @@ Developer 特性清单
     - Step4 应用开发者通过链接对应用进行测试
     - Step5 测试完成后，通过【资源回收】按钮释放测试环境，如需修改，请在完成镜像修改后，循环以上Step1->Step2->Step3->Step4操作，对应用进行反复测试
 
-![](/uploads/images/2020/v1.0/DeploymentTest.png "DeploymentTest.png")
+![](/uploads/images/2021/cor2020/DeploymentTest.png "DeploymentTest.png")
 
-![](/uploads/images/2020/v1.0/DeploymentTest-DeploySuccess.png "DeploymentTest-DeploySuccess.png")
+![](/uploads/images/2021/cor2020/DeploymentTest-DeploySuccess.png "DeploymentTest-DeploySuccess.png")
 
 虚机应用部署调测分为以下三个步骤：
 - 选择虚机资源
@@ -105,7 +105,7 @@ Developer 特性清单
 ![](/uploads/images/2021/v1.1/BasicVmInformation.png "BasicVmInformation.png")
 
     - 配置虚机资源大小，镜像源
-![](/uploads/images/2021/v1.1/SettingVmSpecification.png "SettingVmSpecification.png")
+![](/uploads/images/2021/cor2020/SettingVmSpecification.png "SettingVmSpecification.png")
 
     - 设置虚机网络类型，默认勾选N6网络
 ![](/uploads/images/2021/v1.1/NetworkSettings.png "NetworkSettings.png")
@@ -126,7 +126,7 @@ Developer 特性清单
 - 应用配置
     - 【可选】流规则配置
     - 【可选】应用服务发布配置：如果该应用需要成为生态能力服务，需要进行该配置。需要上传对应的API接口文档和MD说明文档，具体配置如下
-![](/uploads/images/2020/v1.0/ApplicationRelease-RuleConfiguration.png "ApplicationRelease-RuleConfiguration.png")
+![](/uploads/images/2021/cor2020/ApplicationRelease-RuleConfiguration.png "ApplicationRelease-RuleConfiguration.png")
 
 - 应用认证
 
@@ -141,7 +141,7 @@ Developer 特性清单
 - 应用发布
 
 认证通过的应用，通过这里可以直接发布到EdgeGallery的AppStore平台，同时如果在【应用配置】时填写了应用服务发布配置，该应用同样会做为能力服务，被收录到能力中心里，可以被其他应用开发者使用。
-![](/uploads/images/2020/v1.0/ApplicationRelease.png "ApplicationRelease.png")
+![](/uploads/images/2021/cor2020/ApplicationRelease.png "ApplicationRelease.png")
 
 
 ### 系统

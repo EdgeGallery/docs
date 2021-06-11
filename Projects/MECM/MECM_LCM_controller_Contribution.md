@@ -30,11 +30,11 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 2. Configure the runtime environment variables (using GO Land as an example)
 
-![](/uploads/images/2020/0924/lcm-controller.png "lcm-controller.png")
+![](/uploads/images/2021/cor2020/lcm-controller.png "lcm-controller.png")
 
 3. Update certificates path in app.conf
 
-![](/uploads/images/2020/0924/mepm-applcm-ssl.png "mepm-applcm-ssl.png")
+![](/uploads/images/2021/cor2020/mepm-applcm-ssl.png "mepm-applcm-ssl.png")
 
 4. Run main to start LCM controller
 
@@ -44,11 +44,11 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 2. Configure the runtime environment variables (using GO Land as an example)
 
-![](/uploads/images/2020/0924/k8s-plugin-env.png "k8s-plugin-env.png")
+![](/uploads/images/2021/cor2020/k8s-plugin-env.png "k8s-plugin-env.png")
 
 3. Update certificates path in config.yaml
 
-![](/uploads/images/2020/0924/k8s-ssl.png "k8s-ssl.png")
+![](/uploads/images/2021/cor2020/k8s-ssl.png "k8s-ssl.png")
 
 4. Run main to start K8s plugin.
 
@@ -94,7 +94,7 @@ Step 2 - Install bee
 
     bee 
 
-![](/uploads/images/2020/0924/bee-output.png "bee-output.png")
+![](/uploads/images/2021/cor2020/bee-output.png "bee-output.png")
 
     Change runmode configuration to dev from prod in app.conf file
 

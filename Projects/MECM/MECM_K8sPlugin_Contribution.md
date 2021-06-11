@@ -23,7 +23,7 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 3. Create a database named k8splugindb
 
-![](/uploads/images/2020/0924/k8sPlugin-db.png "k8sPlugin-db.png")
+![](/uploads/images/2021/cor2020/k8sPlugin-db.png "k8sPlugin-db.png")
 
 ### K8s plugin
 
@@ -31,10 +31,10 @@ In order to build a local environment, the final startup sequence is DataBase ->
 
 2. Configure the runtime environment variables (using GO Land as an example)
 
-![](/uploads/images/2020/0924/k8sPlugin-contribution.png "k8sPlugin-contribution.png")
+![](/uploads/images/2021/cor2020/k8sPlugin-contribution.png "k8sPlugin-contribution.png")
 
 3. Update certificates path in app.conf
 
-![](/uploads/images/2020/0924/mepm-applcm-ssl.png "mepm-applcm-ssl.png")
+![](/uploads/images/2021/cor2020/mepm-applcm-ssl.png "mepm-applcm-ssl.png")
 
 4. Run main to start k8s plugin 
