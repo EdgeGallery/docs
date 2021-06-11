@@ -30,16 +30,16 @@ msgid "1、Download [Service Center](http://servicecomb.apache.org/cn/release/se
 msgstr "1.Download [Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)"
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:8
-msgid "![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
-msgstr "![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
+msgid "![](/uploads/images/2021/cor2020/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
+msgstr "![](/uploads/images/2021/cor2020/153700_b069cf5f_7625245_en.jpeg \"service center1.jpg\")"
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:10
 msgid "2、Run start-service-center.sh  and start-frontend.sh"
 msgstr "2.Run start-service-center.sh and start-frontend.sh"
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:12
-msgid "![](/uploads/images/2020/0924/service-comb.png \"service-comb.png\")"
-msgstr "![](/uploads/images/2020/0924/service-comb.png \"service-comb.png\")"
+msgid "![](/uploads/images/2021/cor2020/service-comb.png \"service-comb.png\")"
+msgstr "![](/uploads/images/2021/cor2020/service-comb_en.png \"service-comb.png\")"
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:14
 msgid "UserManagement"
@@ -54,8 +54,8 @@ msgid "Configure the runtime environment variables of MainServer in the compiler
 msgstr "Configure the runtime environment variables of MainServer in the compiler (here in IDEA as an example)"
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:20
-msgid "![](/uploads/images/2020/0924/mecm-usr-env.png \"mecm-usr-env.png\")"
-msgstr "![](/uploads/images/2020/0924/mecm-usr-env.png \"mecm-usr-env.png\")"
+msgid "![](/uploads/images/2021/cor2020/mecm-usr-env.png \"mecm-usr-env.png\")"
+msgstr "![](/uploads/images/2021/cor2020/mecm-usr-env_en.png \"mecm-usr-env.png\")"
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:22
 msgid "Run the MainServer function and start UserManagement"

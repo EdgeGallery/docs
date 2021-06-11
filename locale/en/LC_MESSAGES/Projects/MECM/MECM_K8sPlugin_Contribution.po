@@ -58,8 +58,8 @@ msgid "Create a database named k8splugindb"
 msgstr "Create a database named k8spludb"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:26
-msgid "![](/uploads/images/2020/0924/k8sPlugin-db.png \"k8sPlugin-db.png\")"
-msgstr "![](/uploads/images/2020/0924/k8sPlugin-db.png \"k8sPlugin-db.png\")"
+msgid "![](/uploads/images/2021/cor2020/k8sPlugin-db.png \"k8sPlugin-db.png\")"
+msgstr "![](/uploads/images/2021/cor2020/k8sPlugin-db_en.png \"k8sPlugin-db.png\")"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:28
 msgid "K8s plugin"
@@ -74,16 +74,16 @@ msgid "Configure the runtime environment variables (using GO Land as an example)
 msgstr "Configure the runtime environment variables (using GO Land as an example)"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:34
-msgid "![](/uploads/images/2020/0924/k8sPlugin-contribution.png \"k8sPlugin-contribution.png\")"
-msgstr "![](/uploads/images/2020/0924/k8sPlugin-contribution.png \"k8sPlugin-contribution.png\")"
+msgid "![](/uploads/images/2021/cor2020/k8sPlugin-contribution.png \"k8sPlugin-contribution.png\")"
+msgstr "![](/uploads/images/2021/cor2020/k8sPlugin-contribution_en.png \"k8sPlugin-contribution.png\")"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:36
 msgid "Update certificates path in app.conf"
 msgstr "Update certificates path in app.conf"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:38
-msgid "![](/uploads/images/2020/0924/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
-msgstr "![](/uploads/images/2020/0924/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
+msgid "![](/uploads/images/2021/cor2020/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
+msgstr "![](/uploads/images/2021/cor2020/mepm-applcm-ssl_en.png \"mepm-applcm-ssl.png\")"
 
 #: ../../Projects/MECM/MECM_K8sPlugin_Contribution.md:40
 msgid "Run main to start k8s plugin"

@@ -26,8 +26,8 @@ msgid "The MECM sequence flow diagram"
 msgstr "The MECM sequence flow diagram"
 
 #: ../../Projects/MECM/MECM_Features_en.md:5
-msgid "![](/uploads/images/2020/0924/mecm-sequence-diagram.png \"mecm-sequence-diagram.png\")"
-msgstr "![](/uploads/images/2020/0924/mecm-sequence-diagram.png \"mecm-sequence-diagram.png\")"
+msgid "![](/uploads/images/2021/cor2020/mecm-sequence-diagram.png \"mecm-sequence-diagram.png\")"
+msgstr "![](/uploads/images/2021/cor2020/mecm-sequence-diagram_en.png \"mecm-sequence-diagram.png\")"
 
 #: ../../Projects/MECM/MECM_Features_en.md:7
 msgid "Register External systems"

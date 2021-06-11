@@ -78,8 +78,8 @@ msgid "下载依赖的插件-BashSupport，并导入到本地IDE<br> ![](/upload
 msgstr "Download the dependent plug-in -BashSupport and import into the local IDE<br> ![](/uploads/images/2021/demo/plugin_en.PNG \"Plug-in.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:31 Started/Start from on
-msgid "执行插件，会自动生成示例代码<br> ![](/uploads/images/2020/0927/execute_plugin.png \"执行插件生成示例代码.png\")"
-msgstr "Running the plug-in automatically generates the example code<br> ![](/uploads/images/2020/0927/execute_plugin.png \"Run plugin generation example code.png\")"
+msgid "执行插件，会自动生成示例代码<br> ![](/uploads/images/2021/cor2020/execute_plugin.png \"执行插件生成示例代码.png\")"
+msgstr "Running the plug-in automatically generates the example code<br> ![](/uploads/images/2021/cor2020/execute_plugin_en.png \"Run plugin generation example code.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:33 Started/Start from on
 msgid "编写APP代码<br>"

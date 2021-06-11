@@ -39,7 +39,7 @@ msgstr "Overall Frame Description"
 
 #: ../../Projects/ATP/ATP_Overview.md:8
 msgid "EdgeGallery整体框架流程如下，应用测试平台主要对应图中的认证测试部分。 ![](/uploads/images/2020/v1.0/all-the-arch.png)"
-msgstr "The EdgeGallery overall framework flow is as follows, the application test platform's main corresponding graph in the authentication test section. ![](/uploads/images/2020/v1.0/all-the-arch.png)"
+msgstr "The EdgeGallery overall framework flow is as follows, the application test platform's main corresponding graph in the authentication test section. ![](/uploads/images/2021/v1.1/FlowChart_en.png)"
 
 #: ../../Projects/ATP/ATP_Overview.md:11
 msgid "atp-fe：开发者平台前台框架，使用VUE开发。"

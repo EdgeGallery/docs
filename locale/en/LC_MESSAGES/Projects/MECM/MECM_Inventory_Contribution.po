@@ -58,8 +58,8 @@ msgid "Create a database named inventorydb"
 msgstr "Create a database named inventorydb"
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:27
-msgid "![](/uploads/images/2020/0924/inventory-db.png \"inventory-db.png\")"
-msgstr "![](/uploads/images/2020/0924/inventory-db.png \"inventory-db.png\")"
+msgid "![](/uploads/images/2021/cor2020/inventory-db.png \"inventory-db.png\")"
+msgstr "![](/uploads/images/2021/cor2020/inventory-db_en.png \"inventory-db.png\")"
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:29
 msgid "Inventory"
@@ -74,16 +74,16 @@ msgid "Configure the runtime environment variables (using IDEA as an example)"
 msgstr "Configure the runtime environment variables (using IDEA as an example)"
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:35
-msgid "![](/uploads/images/2020/0924/inventory.png \"inventory.png\")"
-msgstr "![](/uploads/images/2020/0924/inventory.png \"inventory.png\")"
+msgid "![](/uploads/images/2021/cor2020/inventory.png \"inventory.png\")"
+msgstr "![](/uploads/images/2021/cor2020/inventory_en.png \"inventory.png\")"
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:37
 msgid "Update key-store and trust-store path in application.yaml"
 msgstr "Update key-store and trust-store path in application.yaml"
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:39
-msgid "![](/uploads/images/2020/0924/key-store.png \"key-store.png\")"
-msgstr "![](/uploads/images/2020/0924/key-store.png \"key-store.png\")"
+msgid "![](/uploads/images/2021/cor2020/key-store.png \"key-store.png\")"
+msgstr "![](/uploads/images/2021/cor2020/key-store_en.png \"key-store.png\")"
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:41
 msgid "Run InventoryApplication to start inventory"

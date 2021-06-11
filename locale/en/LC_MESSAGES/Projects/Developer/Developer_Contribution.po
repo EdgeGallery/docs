@@ -54,16 +54,16 @@ msgid "1、下载[Service Center](http://servicecomb.apache.org/cn/release/servi
 msgstr "1.Download [Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)"
 
 #: ../../Projects/Developer/Developer_Contribution.md:28
-msgid "![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
-msgstr "![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
+msgid "![](/uploads/images/2021/cor2020/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
+msgstr "![](/uploads/images/2021/cor2020/153700_b069cf5f_7625245_en.jpeg \"service center1.jpg\")"
 
 #: ../../Projects/Developer/Developer_Contribution.md:30
 msgid "2、解压后运行 start-service-center.bat  和  start-frontend.bat"
 msgstr "2.Run the start-service-center.bat and start-frontend.bat after decompression"
 
 #: ../../Projects/Developer/Developer_Contribution.md:32
-msgid "![](/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg \"service center2.jpg\")"
-msgstr "![](/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg \"service center2.jpg\")"
+msgid "![](/uploads/images/2021/cor2020/153735_4dafd335_7625245.jpeg \"service center2.jpg\")"
+msgstr "![](/uploads/images/2021/cor2020/153735_4dafd335_7625245_en.jpeg \"service center2.jpg\")"
 
 #: ../../Projects/Developer/Developer_Contribution.md:34
 msgid "DataBase"
@@ -82,16 +82,16 @@ msgid "3、创建名为developerdb的数据库"
 msgstr "3.Create a database called developerdb"
 
 #: ../../Projects/Developer/Developer_Contribution.md:42
-msgid "![](/uploads/images/2020/0917/141631_0f92f2de_5504908.png \"dev-db.png\")"
-msgstr "![](/uploads/images/2020/0917/141631_0f92f2de_5504908.png \"dev-db.png\")"
+msgid "![](/uploads/images/2021/cor2020/141631_0f92f2de_5504908.png \"dev-db.png\")"
+msgstr "![](/uploads/images/2021/cor2020/141631_0f92f2de_5504908_en.png \"dev-db.png\")"
 
 #: ../../Projects/Developer/Developer_Contribution.md:44
 msgid "4、根据[developer部署文件](https://gitee.com/edgegallery/helm-charts/blob/master/developer/templates/developer-be/developer-be-configmap.yaml) 中的数据库语句创建表结构"
 msgstr "4.Create table structure based on database statement in [developer deployment document](https://gitee.com/edgegallery/helm-charts/blob/master/developer/developer/developer-be-configmap.yaml)"
 
 #: ../../Projects/Developer/Developer_Contribution.md:46
-msgid "![](/uploads/images/2020/0917/141811_dfeec2eb_5504908.png \"dev-sql.png\")"
-msgstr "![](/uploads/images/2020/0917/141811_dfeec2eb_5504908.png \"dev-sql.png\")"
+msgid "![](/uploads/images/2021/cor2020/141811_dfeec2eb_5504908.png \"dev-sql.png\")"
+msgstr "![](/uploads/images/2021/cor2020/141811_dfeec2eb_5504908_en.png \"dev-sql.png\")"
 
 #: ../../Projects/Developer/Developer_Contribution.md:48
 msgid "5、创建名为usermgmtdb的数据库"
@@ -126,8 +126,8 @@ msgid "5、在编译器（此处以IDEA为例）中配置MainServer的运行时�
 msgstr "5.Configure runtime environment variables for MainServer in the compiler (where IDEA is used as an example)"
 
 #: ../../Projects/Developer/Developer_Contribution.md:64
-msgid "![](/uploads/images/2020/0917/150744_df40e73d_5504908.png \"user-env.png\")"
-msgstr "![](/uploads/images/2020/0917/150744_df40e73d_5504908.png \"user-env.png\")"
+msgid "![](/uploads/images/2021/cor2020/150744_df40e73d_5504908.png \"user-env.png\")"
+msgstr "![](/uploads/images/2021/cor2020/150744_df40e73d_5504908_en.png \"user-env.png\")"
 
 #: ../../Projects/Developer/Developer_Contribution.md:66
 msgid "6、运行MainServer函数，启动UserManagement"
@@ -146,8 +146,8 @@ msgid "2、在编译器（此处以IDEA为例）中配置DeveloperApp的运行�
 msgstr "2.Configure runtime environment variables for DeveloperApp in the compiler (where IDEA is used as an example)"
 
 #: ../../Projects/Developer/Developer_Contribution.md:74
-msgid "![](/uploads/images/2020/0917/154506_0ed087ca_5504908.png \"dev-config.png\")"
-msgstr "![](/uploads/images/2020/0917/154506_0ed087ca_5504908.png \"dev-config.png\")"
+msgid "![](/uploads/images/2021/cor2020/154506_0ed087ca_5504908.png \"dev-config.png\")"
+msgstr "![](/uploads/images/2021/cor2020/154506_0ed087ca_5504908_en.png \"dev-config.png\")"
 
 #: ../../Projects/Developer/Developer_Contribution.md:76
 msgid "3、运行DeveloperApp函数，启动developer-be"
@@ -186,8 +186,8 @@ msgid "7、在编译器（此处以IDEA为例）中配置GatewayApp的运行时�
 msgstr "7.Configuring runtime environment variables for GatewayApp in the compiler (where IDEA is used as an example)"
 
 #: ../../Projects/Developer/Developer_Contribution.md:94
-msgid "![](/uploads/images/2020/0917/160010_6fafc86e_5504908.png \"ws-config.png\")"
-msgstr "![](/uploads/images/2020/0917/160010_6fafc86e_5504908.png \"ws-config.png\")"
+msgid "![](/uploads/images/2021/cor2020/160010_6fafc86e_5504908.png \"ws-config.png\")"
+msgstr "![](/uploads/images/2021/cor2020/160010_6fafc86e_5504908_en.png \"ws-config.png\")"
 
 #: ../../Projects/Developer/Developer_Contribution.md:96
 msgid "8、运行GatewayApp启动WebsiteGateway与developer-fe，浏览器访问http://127.0.0.1:8080/ 即可访问到developer首页"

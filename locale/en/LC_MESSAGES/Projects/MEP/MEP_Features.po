@@ -38,8 +38,8 @@ msgid "应用APP通过MEP-auth申请token的流程如下图所示："
 msgstr "The application of the APP through the MEP-auth request token is shown in the following figure:"
 
 #: ../../Projects/MEP/MEP_Features.md:11
-msgid "![](/uploads/images/2020/0804/165746_8ff53084_5504908.png \"接口调用.png\")"
-msgstr "![](/uploads/images/2020/0804/165746_8ff53084_5504908.png \"interface call.png\")"
+msgid "![](/uploads/images/2021/cor2020/165746_8ff53084_5504908.png \"接口调用.png\")"
+msgstr "![](/uploads/images/2021/cor2020/165746_8ff53084_5504908_en.png \"interface call.png\")"
 
 #: ../../Projects/MEP/MEP_Features.md:13
 msgid "应用使用[*服务认证接口*](#服务认证接口)，获取token"
@@ -142,8 +142,8 @@ msgid "MEP提供服务注册，更新，删除，查询相关API接口。应用�
 msgstr "MEP provides service registration, updates, deletion, query related API interfaces.The application is able to register, update, delete, query through the LDVS-MEP service."
 
 #: ../../Projects/MEP/MEP_Features.md:53
-msgid "![服务注册，删除](/uploads/images/2020/0804/165650_4eeb753e_5504908.png \"特性1.png\")"
-msgstr "![service registration, deleting](/uploads/images/2020/0804/165650_4eeb753e_5504908.png \"feature 1.png\")"
+msgid "![服务注册，删除](/uploads/images/2021/cor2020/165650_4eeb753e_5504908.png \"特性1.png\")"
+msgstr "![service registration, deleting](/uploads/images/2021/cor2020/165650_4eeb753e_5504908_en.png \"feature 1.png\")"
 
 #: ../../Projects/MEP/MEP_Features.md:55
 msgid "应用服务状态订阅/通知功能"
@@ -162,8 +162,8 @@ msgid "应用能够通过LDVS-MEP进行服务状态的订阅，更新，删除�
 msgstr "The application can perform subscription, update, delete, query of service state through LDVS-MEP."
 
 #: ../../Projects/MEP/MEP_Features.md:68
-msgid "![](/uploads/images/2020/0804/165707_f4dbb36e_5504908.png \"特性2.png\")"
-msgstr "![](/uploads/images/2020/0804/165707_f4dbb36e_5504908.png \"feature 2.png\")"
+msgid "![](/uploads/images/2021/cor2020/165707_f4dbb36e_5504908.png \"特性2.png\")"
+msgstr "![](/uploads/images/2021/cor2020/165707_f4dbb36e_5504908_en.png \"feature 2.png\")"
 
 #: ../../Projects/MEP/MEP_Features.md:70
 msgid "MEP Service hearbeat"
@@ -202,8 +202,8 @@ msgid "LDVS MEP管理应用的服务，应用需要将其服务注册到MEP中�
 msgstr "The application needs to register the service information (including the application instance ID) into the application by the MEP-Agent in the MEP, and register the application in the MEP by providing the configuration."
 
 #: ../../Projects/MEP/MEP_Features.md:93
-msgid "![](/uploads/images/2020/0804/165723_8d9be51d_5504908.png \"特性3.png\")"
-msgstr "![](/uploads/images/2020/0804/165723_8d9be51d_5504908.png \"feature 3.png\")"
+msgid "![](/uploads/images/2021/cor2020/165723_8d9be51d_5504908.png \"特性3.png\")"
+msgstr "![](/uploads/images/2021/cor2020/165723_8d9be51d_5504908_en.png \"feature 3.png\")"
 
 #: ../../Projects/MEP/MEP_Features.md:95
 msgid "MEP-Agent Get token API"
@@ -230,8 +230,8 @@ msgid "The capability query interface is exposed over Mm5 interface to MECM modu
 msgstr "The capability query interface is exposed over Mm5 interface to MECM module and it can be queried together or independently. Each capability consists of a list of the present consumers to it."
 
 #: ../../Projects/MEP/MEP_Features.md:130
-msgid "![Query flow](/uploads/images/2020/1209/152205_3918141b_7625394.png \"quwery_flow1.png\")"
-msgstr "![Query flow](/uploads/images/2020/1209/152205_3918141b_7625394.png \"quwery_vlow1.png\")"
+msgid "![Query flow](/uploads/images/2021/cor2020/152205_3918141b_7625394.png \"quwery_flow1.png\")"
+msgstr "![Query flow](/uploads/images/2021/cor2020/152205_3918141b_7625394_en.png \"quwery_vlow1.png\")"
 
 #: ../../Projects/MEP/MEP_Features.md:132
 msgid "DNS server 特性"
@@ -278,8 +278,8 @@ msgid "Upon receiving the DNS configurations from MEO, MEPM send this request to
 msgstr "Upon receiving the DNS configurations from MEO, MEPM send this request to the MEP server on Mm5 interface after deploying the MEC application."
 
 #: ../../Projects/MEP/MEP_Features.md:152
-msgid "![](/uploads/images/2020/0915/133822_31b532a2_7625394.png \"meo-mepm-mep.png\")"
-msgstr "![](/uploads/images/2020/0915/133822_31b532a2_7625394.png \"meo-mepm-mep.png\")"
+msgid "![](/uploads/images/2021/cor2020/133822_31b532a2_7625394.png \"meo-mepm-mep.png\")"
+msgstr "![](/uploads/images/2021/cor2020/133822_31b532a2_7625394_en.png \"meo-mepm-mep.png\")"
 
 #: ../../Projects/MEP/MEP_Features.md:154
 msgid "**Rule creation from OSS**"
@@ -290,8 +290,8 @@ msgid "DNS configurations can be updated from OSS directly over Mm2 interface th
 msgstr "DNS configurations can be updated from OSS directly over Mm2 interface through MEPM."
 
 #: ../../Projects/MEP/MEP_Features.md:158
-msgid "![](/uploads/images/2020/0915/133912_597b2c17_7625394.png \"oss-mepm-mep.png\")"
-msgstr "![](/uploads/images/2020/0915/133912_597b2c17_7625394.png \"oss-mepm-mep.png\")"
+msgid "![](/uploads/images/2021/cor2020/133912_597b2c17_7625394.png \"oss-mepm-mep.png\")"
+msgstr "![](/uploads/images/2021/cor2020/133912_597b2c17_7625394_en.png \"oss-mepm-mep.png\")"
 
 #: ../../Projects/MEP/MEP_Features.md:160
 msgid "DNS configurations from MEC applications"
@@ -302,8 +302,8 @@ msgid "MEC applications can query the DNS configurations created for it and can 
 msgstr "MEC applications can query the DNS configurations created for it and can activate or deactivate the same. Activation or deactivation can be performed by modifying the state of the DNS configuration."
 
 #: ../../Projects/MEP/MEP_Features.md:164
-msgid "![](/uploads/images/2020/0915/133933_9f7bd2ec_7625394.png \"mecapp-mep.png\")"
-msgstr "![](/uploads/images/2020/0915/133933_9f7bd2ec_7625394.png \"mecapp-mep.png\")"
+msgid "![](/uploads/images/2021/cor2020/133933_9f7bd2ec_7625394.png \"mecapp-mep.png\")"
+msgstr "![](/uploads/images/2021/cor2020/133933_9f7bd2ec_7625394_en.png \"mecapp-mep.png\")"
 
 #: ../../Projects/MEP/MEP_Features.md:166
 msgid "DNS query"

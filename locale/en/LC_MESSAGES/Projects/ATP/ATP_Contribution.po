@@ -50,16 +50,16 @@ msgid "1、下载[Service Center](http://servicecomb.apache.org/cn/release/servi
 msgstr "1.Download [Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)"
 
 #: ../../Projects/ATP/ATP_Contribution.md:26
-msgid "![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
-msgstr "![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg \"service center1.jpg \")"
+msgid "![](/uploads/images/2021/cor2020/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
+msgstr "![](/uploads/images/2021/cor2020/153700_b069cf5f_7625245_en.jpeg \"service center1.jpg \")"
 
 #: ../../Projects/ATP/ATP_Contribution.md:28
 msgid "2、解压后运行 start-service-center.bat  和  start-frontend.bat"
 msgstr "2.Run the start-service-center.bat and start-frontend.bat after decompression"
 
 #: ../../Projects/ATP/ATP_Contribution.md:30
-msgid "![](/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg \"service center2.jpg\")"
-msgstr "![](/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg \"service center2.jpg \")"
+msgid "![](/uploads/images/2021/cor2020/153735_4dafd335_7625245.jpeg \"service center2.jpg\")"
+msgstr "![](/uploads/images/2021/cor2020/153735_4dafd335_7625245_en.jpeg \"service center2.jpg \")"
 
 #: ../../Projects/ATP/ATP_Contribution.md:32
 msgid "DataBase"
@@ -114,8 +114,8 @@ msgid "5、在编译器（此处以IDEA为例）中配置MainServer的运行时�
 msgstr "5.Configure runtime environment variables for MainServer in the compiler (where IDEA is used as an example)"
 
 #: ../../Projects/ATP/ATP_Contribution.md:58
-msgid "![](/uploads/images/2020/0917/150744_df40e73d_5504908.png \"user-env.png\")"
-msgstr "![](/uploads/images/2020/0917/150744_df40e73d_5504908.png \"user-env.png\")"
+msgid "![](/uploads/images/2021/cor2020/150744_df40e73d_5504908.png \"user-env.png\")"
+msgstr "![](/uploads/images/2021/cor2020/150744_df40e73d_5504908_en.png \"user-env.png\")"
 
 #: ../../Projects/ATP/ATP_Contribution.md:60
 msgid "6、运行MainServer函数，启动UserManagement"
@@ -134,8 +134,8 @@ msgid "2、在编译器（此处以IDEA为例）中配置atpApp的运行时环�
 msgstr "2.configuring the runtime environment variable for atpApp in the compiler (where IDEA is used as an example)"
 
 #: ../../Projects/ATP/ATP_Contribution.md:68
-msgid "![](/uploads/images/2020/0917/154506_0ed087ca_5504908.png \"dev-config.png\")"
-msgstr "![](/uploads/images/2020/0917/154506_0ed087ca_5504908.png \"dev-config.png\")"
+msgid "![](/uploads/images/2021/cor2020/154506_0ed087ca_5504908.png \"dev-config.png\")"
+msgstr "![](/uploads/images/2021/cor2020/154506_0ed087ca_5504908_en.png \"dev-config.png\")"
 
 #: ../../Projects/ATP/ATP_Contribution.md:70
 msgid "3、运行atpApp函数，启动atp"
@@ -174,8 +174,8 @@ msgid "7、在编译器（此处以IDEA为例）中配置GatewayApp的运行时�
 msgstr "7.Configuring runtime environment variables for GatewayApp in the compiler (where IDEA is used as an example)"
 
 #: ../../Projects/ATP/ATP_Contribution.md:88
-msgid "![](/uploads/images/2020/0917/160010_6fafc86e_5504908.png \"ws-config.png\")"
-msgstr "![](/uploads/images/2020/0917/160010_6fafc86e_5504908.png \"ws-config.png\")"
+msgid "![](/uploads/images/2021/cor2020/160010_6fafc86e_5504908.png \"ws-config.png\")"
+msgstr "![](/uploads/images/2021/cor2020/160010_6fafc86e_5504908_en.png \"ws-config.png\")"
 
 #: ../../Projects/ATP/ATP_Contribution.md:90
 msgid "8、运行GatewayApp启动WebsiteGateway与atp-fe，浏览器访问http://127.0.0.1:8080/ 即可访问到atp首页"

@@ -22,8 +22,8 @@ msgid "Characteristic design LcmController is mainly responsible to provide nort
 msgstr "Characteristic design LcmController is mainly responsible to provide normal north API's to upload config, remove config, instantiate, terminate, and query an application. It also provides APIs to query mep capabilities and kpi information from prometheus"
 
 #: ../../Projects/MECM/MECM_AppLcm_Features.md:5
-msgid "![](/uploads/images/2020/0924/mecm-applcm-diagram.png \"mecm-applcm-diagram.png\")"
-msgstr "![](/uploads/images/2020/0924/mecm-applcm-diagram.png \"mecm-applcm-diagram.png\")"
+msgid "![](/uploads/images/2021/cor2020/mecm-applcm-diagram.png \"mecm-applcm-diagram.png\")"
+msgstr "![](/uploads/images/2021/cor2020/mecm-applcm-diagram_en.png \"mecm-applcm-diagram.png\")"
 
 #: ../../Projects/MECM/MECM_AppLcm_Features.md:8
 msgid "Upload Configuration:  Upload configuration API is responsible to upload the kube configuration file into edge node to communicate with  kubernetes cluster."

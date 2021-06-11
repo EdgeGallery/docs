@@ -34,16 +34,16 @@ msgid "整体框架说明"
 msgstr "Overall Frame Description"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:11
-msgid "![](/uploads/images/2020/v1.0/all-the-arch.png)"
-msgstr "![](/uploads/images/2020/v1.0/all-the-arch.png)"
+msgid "![](/uploads/images/2021/v1.1/FlowChart.png)"
+msgstr "![](/uploads/images/2021/v1.1/FlowChart_en.png)"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:13
 msgid "代码架构说明"
 msgstr "Code Architecture Description"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:15
-msgid "![](/uploads/images/2020/v1.0/appstore-code-arch.png)"
-msgstr "![](/uploads/images/2020/v1.0/appstore-code-arch.png)"
+msgid "![](/uploads/images/2021/cor2020/appstore-code-arch.png)"
+msgstr "![](/uploads/images/2021/cor2020/appstore-code-arch_en.png)"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:17
 msgid "AppStore FE：开发者平台前台框架，使用VUE开发。"
