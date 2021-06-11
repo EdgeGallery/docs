@@ -16,26 +16,28 @@ atp Interfaces
        - [2.4 DELETE delete test case](#24-delete-test-case)
        - [2.5 GET query one test case](#25-query-one-test-case)
        - [2.6 GET download test case](#25-download-test-case)
-  - [3. Test scenario](#2-test-scenario)
-       - [3.1 GET query all test scenarios](#21-query-all-test-scenarios)	
-       - [3.2 POST create test scenarios](#22-create-test-scenarios) 
-       - [3.3 PUT update test scenarios](#23-update-test-scenarios)
-       - [3.4 DELETE delete test scenarios](#24-delete-test-scenarios)
-       - [3.5 GET query one test case](#25-query-one-test-case)
-       - [3.6 GET query all test cases under one scneario](#25-query-all-test-cases-under-one-scneario)
-  - [4. Test suite](#2-test-suite)
-       - [4.1 GET query all test suites](#21-query-all-test-suites)	
-       - [4.2 POST create test suite](#22-create-test-suite) 
-       - [4.3 PUT update test suite](#23-update-test-suite)
-       - [4.4 DELETE delete test suite](#24-delete-test-suite)
-       - [4.5 GET query one test suite](#25-query-one-test-suite)
-  - [5. Contribution](#2-contribution)
-       - [5.1 GET query all contributions](#21-query-all-test-contributions)	
-       - [5.2 POST create contribution](#22-create-contribution)
-       - [5.3 POST batch delete contributions](#22-batch-delete-contributions)
-       - [5.4 GET download contribution script](#22-download-contribution-script)
-  - [6. File](#2-file)
-       - [6.1 GET query one file](#21-query-one-file)	 
+  - [3. Test scenario](#3-test-scenario)
+       - [3.1 GET query all test scenarios](#31-query-all-test-scenarios)	
+       - [3.2 POST create test scenarios](#32-create-test-scenarios) 
+       - [3.3 PUT update test scenarios](#33-update-test-scenarios)
+       - [3.4 DELETE delete test scenarios](#34-delete-test-scenarios)
+       - [3.5 GET query one test case](#35-query-one-test-case)
+       - [3.6 GET query all test cases under one scneario](#36-query-all-test-cases-under-one-scneario)
+  - [4. Test suite](#4-test-suite)
+       - [4.1 GET query all test suites](#41-query-all-test-suites)	
+       - [4.2 POST create test suite](#42-create-test-suite) 
+       - [4.3 PUT update test suite](#43-update-test-suite)
+       - [4.4 DELETE delete test suite](#44-delete-test-suite)
+       - [4.5 GET query one test suite](#45-query-one-test-suite)
+  - [5. Contribution](#5-contribution)
+       - [5.1 GET query all contributions](#51-query-all-test-contributions)	
+       - [5.2 POST create contribution](#52-create-contribution)
+       - [5.3 POST batch delete contributions](#53-batch-delete-contributions)
+       - [5.4 GET download contribution script](#54-download-contribution-script)
+  - [6. File](#6-file)
+       - [6.1 GET query one file](#61-query-one-file)	
+  - [7. Test model](#7-test-model)
+       - [7.1 POST import test model](#71-import- test-model) 
 ## 1. Task
 Test task for application package
 ### 1.1 POST create test task 
@@ -864,6 +866,22 @@ Example response:
 
 ```
 
+### 5.4 GET download contribution script
+download contribution script
+```
+Resource URI: edgegallery/atp/v1/contributions/{id}/action/download
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|id|id|path param|yes|
+
+Example response:
+```
+200 OK
+binary stream
+```
+
 ## 6. File
 file
 ### 6.1 GET query one file
@@ -880,4 +898,55 @@ Example response:
 ```
 200 OK
 binary stream
+```
+
+## 7. Test model
+test model
+### 7.1 POST import test model
+import test model
+```
+Resource URI: edgegallery/atp/v1/testmodels/action/import
+```
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|file|file|request param|yes|
+
+Example response:
+```
+200 OK
+{
+  "retCode" : 0
+  "failures" : []
+}
+
+206 partial success
+{
+  "retCode" : 5000,
+  "failures" : [{
+       "id" : "string",
+       "nameEn" : "string",
+       "type" : "testScenario",
+       "errCode": 1000, 
+        "errMsg": “string”, 
+       "params": "string" 
+     },
+     {
+       "id" : "string",
+       "nameEn" : "string",
+       "type" : "testSuite",
+       "errCode": 1000, 
+      "errMsg": “string”,
+       "params": "string" 
+     },
+     {
+       "id" : "string",
+       "nameEn" : "string",
+       "type" : "testCase",
+       "errCode": 1000, 
+       "errMsg": “string”,
+       "params": "string" 
+     }
+  ]
+}
+
 ```
