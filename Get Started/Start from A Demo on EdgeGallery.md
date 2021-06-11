@@ -48,13 +48,13 @@ MEC管理平台：<br>
 ##  应用发布
 * 应用发布页面可进行应用配置、应用认证测试，测试通过后可将应用发布至应用仓库。
 
-## Application Configuration
+Step 1: Application Configuration
 ![](/uploads/images/2020/v1.0/ApplicationRelease-1.png "ApplicationRelease-1.png")
 
-## Certification testing
+Step 2: Certification testing
 ![](/uploads/images/2020/v1.0/ApplicationRelease-2.png "ApplicationRelease-2.png")
 
-## Publishing application 
+Step 3: Publishing application 
 ![](/uploads/images/2020/v1.0/ApplicationRelease-3.png "ApplicationRelease-3.png")
 
 

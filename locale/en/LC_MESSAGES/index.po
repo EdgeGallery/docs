@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-09 22:29+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,10 +38,6 @@ msgid "Release Notes"
 msgstr "Release Notes"
 
 #: ../../index.rst:23
-msgid "Architecture introduction"
-msgstr "Architecture introductions"
-
-#: ../../index.rst:23
 msgid "Architecture"
 msgstr "Architecture"
 
@@ -50,42 +46,46 @@ msgid "Developer Guide"
 msgstr "Developer Guide"
 
 #: ../../index.rst:35
+msgid "Installer Guide"
+msgstr ""
+
+#: ../../index.rst:41
 msgid "AppStore"
 msgstr "AppStore"
 
-#: ../../index.rst:35
-msgid "Developer"
-msgstr "Developer"
-
-#: ../../index.rst:35
-msgid "MECM"
-msgstr "MECM"
-
-#: ../../index.rst:35
-msgid "MEP"
-msgstr "MEP"
-
-#: ../../index.rst:35
-msgid "User Management"
-msgstr "User Management"
-
-#: ../../index.rst:35
+#: ../../index.rst:41
 msgid "ATP"
 msgstr "ATP"
 
-#: ../../index.rst:35
+#: ../../index.rst:41
+msgid "Developer"
+msgstr "Developer"
+
+#: ../../index.rst:41
+msgid "MECM"
+msgstr "MECM"
+
+#: ../../index.rst:41
+msgid "MEP"
+msgstr "MEP"
+
+#: ../../index.rst:41
+msgid "User Management"
+msgstr "User Management"
+
+#: ../../index.rst:41
 msgid "Projects"
 msgstr "Projects"
 
-#: ../../index.rst:46
+#: ../../index.rst:53
 msgid "Raise issue"
 msgstr "Raise issue"
 
-#: ../../index.rst:46
+#: ../../index.rst:53
 msgid "Submit PR"
 msgstr "Submit PR"
 
-#: ../../index.rst:46
+#: ../../index.rst:53
 msgid "Documentation Bug Report"
 msgstr "Documentation Bug Report"
 

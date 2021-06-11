@@ -1,4 +1,4 @@
-Welcome to EdgeGallery's documentation!
+Welcome to EdgeGallery documentation!
 =======================================
 
 EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边缘的资源、应
@@ -26,13 +26,19 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
    :maxdepth: 1
    :caption: Architecture
 
-   Architecture introduction <Architecture/Architecture>
+   Architecture <Architecture/Architecture>
 
 .. toctree::
    :maxdepth: 1
    :caption: Developer Guide
 
    Developer Guide <Developer Guide/ReadMe>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Installer Guide
+
+   Installer Guide <Installer Guide/ReadMe>
 
 .. toctree::
    :maxdepth: 1

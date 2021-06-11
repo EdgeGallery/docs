@@ -788,7 +788,7 @@ contribution
 ### 5.1 GET query all contribution
 query all contribution
 ```
-Resource URI: edgegallery/atp/v1/contribution
+Resource URI: edgegallery/atp/v1/contributions
 ```
 
 Example response:
@@ -811,7 +811,7 @@ Example response:
 ### 5.2 POST create contribution
 create contribution
 ```
-Resource URI: edgegallery/atp/v1/contribution
+Resource URI: edgegallery/atp/v1/contributions
 ```
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
@@ -836,12 +836,54 @@ Example response:
   }
 ```
 
+### 5.3 POST batch delete contributions
+batch delete contributions
+```
+Resource URI: edgegallery/atp/v1/contributions/batch_delete
+```
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|ids|ids|request param|yes|
+
+Example request:
+```
+{
+  "ids":["id1","id2"]
+}
+
+```
+
+Example response:
+```
+200 OK
+{
+    "failed":["id3"]
+}
+
+```
+
+### 5.4 GET download contribution script
+download contribution script
+```
+Resource URI: edgegallery/atp/v1/contributions/{id}/action/download
+```
+
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|id|id|path param|yes|
+
+Example response:
+```
+200 OK
+binary stream
+```
+
 ## 6. File
 file
 ### 6.1 GET query one file
 query one file
 ```
-Resource URI: edgegallery/atp/v1/file/{id}
+Resource URI: edgegallery/atp/v1/files/{id}
 ```
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
@@ -852,4 +894,55 @@ Example response:
 ```
 200 OK
 binary stream
+```
+
+## 7. Test model
+test model
+### 7.1 POST import test model
+import test model
+```
+Resource URI: edgegallery/atp/v1/testmodels/action/import
+```
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|file|file|request param|yes|
+
+Example response:
+```
+200 OK
+{
+  "retCode" : 0
+  "failures" : []
+}
+
+206 partial success
+{
+  "retCode" : 5000,
+  "failures" : [{
+       "id" : "string",
+       "nameEn" : "string",
+       "type" : "testScenario",
+       "errCode": 1000, 
+        "errMsg": “string”, 
+       "params": "string" 
+     },
+     {
+       "id" : "string",
+       "nameEn" : "string",
+       "type" : "testSuite",
+       "errCode": 1000, 
+      "errMsg": “string”,
+       "params": "string" 
+     },
+     {
+       "id" : "string",
+       "nameEn" : "string",
+       "type" : "testCase",
+       "errCode": 1000, 
+       "errMsg": “string”,
+       "params": "string" 
+     }
+  ]
+}
+
 ```
