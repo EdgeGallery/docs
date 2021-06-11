@@ -36,8 +36,8 @@ atp Interfaces
        - [5.4 GET download contribution script](#54-download-contribution-script)
   - [6. File](#6-file)
        - [6.1 GET query one file](#61-query-one-file)	
-  - [7. Test model](#7-test-model)
-       - [7.1 POST import test model](#71-import- test-model) 
+  - [7. Test model](#7-test-model)	
+       - [7.1 POST import test model](#71-import-test-model) 
 ## 1. Task
 Test task for application package
 ### 1.1 POST create test task 
