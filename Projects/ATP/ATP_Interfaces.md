@@ -32,6 +32,8 @@ atp Interfaces
   - [5. Contribution](#2-contribution)
        - [5.1 GET query all contributions](#21-query-all-test-contributions)	
        - [5.2 POST create contribution](#22-create-contribution)
+       - [5.3 POST batch delete contributions](#22-batch-delete-contributions)
+       - [5.4 GET download contribution script](#22-download-contribution-script)
   - [6. File](#2-file)
        - [6.1 GET query one file](#21-query-one-file)	 
 ## 1. Task
@@ -788,7 +790,7 @@ contribution
 ### 5.1 GET query all contribution
 query all contribution
 ```
-Resource URI: edgegallery/atp/v1/contribution
+Resource URI: edgegallery/atp/v1/contributions
 ```
 
 Example response:
@@ -811,7 +813,7 @@ Example response:
 ### 5.2 POST create contribution
 create contribution
 ```
-Resource URI: edgegallery/atp/v1/contribution
+Resource URI: edgegallery/atp/v1/contributions
 ```
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
@@ -836,12 +838,38 @@ Example response:
   }
 ```
 
+### 5.3 POST batch delete contributions
+batch delete contributions
+```
+Resource URI: edgegallery/atp/v1/contributions/batch_delete
+```
+|Name|Definition|type|Required|
+|-------------|-------------|------------|------------|
+|ids|ids|request param|yes|
+
+Example request:
+```
+{
+  "ids":["id1","id2"]
+}
+
+```
+
+Example response:
+```
+200 OK
+{
+    "failed":["id3"]
+}
+
+```
+
 ## 6. File
 file
 ### 6.1 GET query one file
 query one file
 ```
-Resource URI: edgegallery/atp/v1/file/{id}
+Resource URI: edgegallery/atp/v1/files/{id}
 ```
 |Name|Definition|type|Required|
 |-------------|-------------|------------|------------|
