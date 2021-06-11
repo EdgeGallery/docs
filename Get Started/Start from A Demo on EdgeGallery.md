@@ -29,7 +29,7 @@ MEC管理平台：<br>
 * 下载依赖的插件-BashSupport，并导入到本地IDE<br>
 ![](/uploads/images/2020/v1.0/Plug-in.png "Plug-in.png")
 * 执行插件，会自动生成示例代码<br>
-![](/uploads/images/2020/0927/execute_plugin.png "执行插件生成示例代码.png")
+![](/uploads/images/2021/cor2020/execute_plugin.png "执行插件生成示例代码.png")
 * 编写APP代码<br>
 * 构建docker image<br><br>
 ## 部署调测

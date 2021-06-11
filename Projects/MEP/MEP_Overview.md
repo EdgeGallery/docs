@@ -10,11 +10,11 @@ Computing）为典型的资源边缘化模式，在移动网络边缘提供IT服
 
 在MEC场景下，海量的应用将运行在网络边缘进行业务处理，并且应用能够使用网络的开放能力，应用之间也能够互相进行能力提供和消费。
 
-![](/uploads/images/2020/0805/102832_c7372e58_5504908.png)
+![](/uploads/images/2021/cor2020/102832_c7372e58_5504908.png)
 
 EdgeGallery MEP项目旨在打造一个边缘侧的开源、开放的参考MEP平台，MEP项目当前包含MEP和MEP-Agent两个组件。
 
-![](/uploads/images/2020/0804/164331_49cda7cd_5504908.png "系统架构.png")
+![](/uploads/images/2021/cor2020/164331_49cda7cd_5504908.png "系统架构.png")
 
 MEP（MEC Platform, MEC平台）是ETSI MEC标准定义的MEC平台网元，部署位置在边缘侧，主要涵盖如下功能：
 

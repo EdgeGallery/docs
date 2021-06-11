@@ -5,11 +5,11 @@ Prerequisite
 
 1、Download [Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)
 
-![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg "service center1.jpg")
+![](/uploads/images/2021/cor2020/153700_b069cf5f_7625245.jpeg "service center1.jpg")
 
 2、Run start-service-center.sh  and start-frontend.sh
 
-![](/uploads/images/2020/0924/service-comb.png "service-comb.png")
+![](/uploads/images/2021/cor2020/service-comb.png "service-comb.png")
 
 ### UserManagement
 
@@ -17,7 +17,7 @@ Prerequisite
 
 2. Configure the runtime environment variables of MainServer in the compiler (here in IDEA as an example)
 
-![](/uploads/images/2020/0924/mecm-usr-env.png "mecm-usr-env.png")
+![](/uploads/images/2021/cor2020/mecm-usr-env.png "mecm-usr-env.png")
 
 3. Run the MainServer function and start UserManagement
 

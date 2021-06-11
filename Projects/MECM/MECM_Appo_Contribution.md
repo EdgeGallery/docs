@@ -23,7 +23,7 @@ In order to build a local environment, the final startup sequence is [Mecm-Prere
 
 3. Create a database named appodb
 
-![](/uploads/images/2020/0924/appodb.png "appodb.png")
+![](/uploads/images/2021/cor2020/appodb.png "appodb.png")
 
 ### Application orchestrator
 
@@ -31,7 +31,7 @@ In order to build a local environment, the final startup sequence is [Mecm-Prere
 
 2. Configure the runtime environment variables (using IDEA as an example)
 
-![](/uploads/images/2020/0924/appo-contribution.png "appo-contribution.png")
+![](/uploads/images/2021/cor2020/appo-contribution.png "appo-contribution.png")
 
 3. Update key-store and trust-store path in application.yaml
 

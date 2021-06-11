@@ -24,11 +24,11 @@ ATP Contribution
 
 1、下载[Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)
 
-![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg "service center1.jpg")
+![](/uploads/images/2021/cor2020/153700_b069cf5f_7625245.jpeg "service center1.jpg")
 
 2、解压后运行 start-service-center.bat  和  start-frontend.bat
 
-![](/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg "service center2.jpg")
+![](/uploads/images/2021/cor2020/153735_4dafd335_7625245.jpeg "service center2.jpg")
 
 ### DataBase
 
@@ -56,7 +56,7 @@ ATP Contribution
 
 5、在编译器（此处以IDEA为例）中配置MainServer的运行时环境变量
 
-![](/uploads/images/2020/0917/150744_df40e73d_5504908.png "user-env.png")
+![](/uploads/images/2021/cor2020/150744_df40e73d_5504908.png "user-env.png")
 
 6、运行MainServer函数，启动UserManagement
 
@@ -66,7 +66,7 @@ ATP Contribution
 
 2、在编译器（此处以IDEA为例）中配置atpApp的运行时环境变量
 
-![](/uploads/images/2020/0917/154506_0ed087ca_5504908.png "dev-config.png")
+![](/uploads/images/2021/cor2020/154506_0ed087ca_5504908.png "dev-config.png")
 
 3、运行atpApp函数，启动atp
 
@@ -86,6 +86,6 @@ ATP Contribution
 
 7、在编译器（此处以IDEA为例）中配置GatewayApp的运行时环境变量
 
-![](/uploads/images/2020/0917/160010_6fafc86e_5504908.png "ws-config.png")
+![](/uploads/images/2021/cor2020/160010_6fafc86e_5504908.png "ws-config.png")
 
 8、运行GatewayApp启动WebsiteGateway与atp-fe，浏览器访问http://127.0.0.1:8080/ 即可访问到atp首页

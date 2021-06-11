@@ -8,7 +8,7 @@ MEP-auth为APP提供认证鉴权功能，提供token申请接口，APP可以基�
 
 应用APP通过MEP-auth申请token的流程如下图所示：
 
-![](/uploads/images/2020/0804/165746_8ff53084_5504908.png "接口调用.png")
+![](/uploads/images/2021/cor2020/165746_8ff53084_5504908.png "接口调用.png")
 
 1.  应用使用[*服务认证接口*](#服务认证接口)，获取token
 
@@ -51,7 +51,7 @@ MEP-auth在初始化kong过程中开启的插件包括：
 
 MEP提供服务注册，更新，删除，查询相关API接口。应用能够通过LDVS-MEP进行服务的注册，更新，删除，查询。
 
-![服务注册，删除](/uploads/images/2020/0804/165650_4eeb753e_5504908.png "特性1.png")
+![服务注册，删除](/uploads/images/2021/cor2020/165650_4eeb753e_5504908.png "特性1.png")
 
 应用服务状态订阅/通知功能
 ----------------------------------------
@@ -66,7 +66,7 @@ MEP管理应用服务的状态，应用通过MEP进行服务的注册，当服�
 
 应用能够通过LDVS-MEP进行服务状态的订阅，更新，删除，查询。
 
-![](/uploads/images/2020/0804/165707_f4dbb36e_5504908.png "特性2.png")
+![](/uploads/images/2021/cor2020/165707_f4dbb36e_5504908.png "特性2.png")
 
 ### MEP Service hearbeat
 Each MEC service instance that has previously registered in MEC platform and is configured for heartbeat shall send heartbeat message to the MEC platform periodically in order to show that the MEC service instance is still operational. When the MEC platform has not received the heartbeat for a configurable amount of time, the MEC platform considers that the service instance can no longer be discovered and The service state will change to SUSPEND if it was ACTIVE before.
@@ -91,7 +91,7 @@ LDVS MEP-Agent作为应用快速集成适配器，实现服务配置导入和服
 LDVS
 MEP管理应用的服务，应用需要将其服务注册到MEP中，MEP-Agent作为适配器，将服务信息（包括应用实例ID）导入给应用，同时提供配置的方式将应用的服务注册到MEP中。
 
-![](/uploads/images/2020/0804/165723_8d9be51d_5504908.png "特性3.png")
+![](/uploads/images/2021/cor2020/165723_8d9be51d_5504908.png "特性3.png")
 
 ### MEP-Agent Get token API
 MEP-Agent will run as sidecar along with application. If Apllication need to obtain token from mep for communication with services, it can query mep-agent api.
@@ -128,7 +128,7 @@ Once capabilities(services) registered to the mep, other applications can consum
 
 The capability query interface is exposed over Mm5 interface to MECM module and it can be queried together or independently. Each capability consists of a list of the present consumers to it.
 
-![Query flow](/uploads/images/2020/1209/152205_3918141b_7625394.png "quwery_flow1.png")
+![Query flow](/uploads/images/2021/cor2020/152205_3918141b_7625394.png "quwery_flow1.png")
 
 ## DNS server 特性
 The MEP platform provides the domain name resolution services to the applications deployed in the EdgeGallery MEC, which can be utilized by the device applications in UE. MEC platform receives the DNS configurations from the MEC management, which includes the FQDN(Fully Qualified Domain Name), IP address and related entries. MEC applications can later query or modify the state of these configurations.
@@ -150,19 +150,19 @@ DNS configurations are embedded in the application descriptor and MEO(Multi-acce
 
 Upon receiving the DNS configurations from MEO, MEPM send this request to the MEP server on Mm5 interface after deploying the MEC application.
 
-![](/uploads/images/2020/0915/133822_31b532a2_7625394.png "meo-mepm-mep.png")
+![](/uploads/images/2021/cor2020/133822_31b532a2_7625394.png "meo-mepm-mep.png")
 
 **Rule creation from OSS**
 
 DNS configurations can be updated from OSS directly over Mm2 interface through MEPM.
 
-![](/uploads/images/2020/0915/133912_597b2c17_7625394.png "oss-mepm-mep.png")
+![](/uploads/images/2021/cor2020/133912_597b2c17_7625394.png "oss-mepm-mep.png")
 
 ### DNS configurations from MEC applications
 
 MEC applications can query the DNS configurations created for it and can activate or deactivate the same. Activation or deactivation can be performed by modifying the state of the DNS configuration.
 
-![](/uploads/images/2020/0915/133933_9f7bd2ec_7625394.png "mecapp-mep.png")
+![](/uploads/images/2021/cor2020/133933_9f7bd2ec_7625394.png "mecapp-mep.png")
 
 ### DNS query
 

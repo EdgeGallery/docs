@@ -24,7 +24,7 @@ In order to build a local environment, the final startup sequence is [Mecm-Prere
 
 3. Create a database named inventorydb
 
-![](/uploads/images/2020/0924/inventory-db.png "inventory-db.png")
+![](/uploads/images/2021/cor2020/inventory-db.png "inventory-db.png")
 
 ### Inventory
 
@@ -36,6 +36,6 @@ In order to build a local environment, the final startup sequence is [Mecm-Prere
 
 3. Update key-store and trust-store path in application.yaml
 
-![](/uploads/images/2020/0924/key-store.png "key-store.png")
+![](/uploads/images/2021/cor2020/key-store.png "key-store.png")
 
 4. Run InventoryApplication to start inventory

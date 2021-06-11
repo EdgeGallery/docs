@@ -2,7 +2,7 @@ Design
 ======================
 The MECM sequence flow diagram
 
-![](/uploads/images/2020/0924/mecm-sequence-diagram.png "mecm-sequence-diagram.png")
+![](/uploads/images/2021/cor2020/mecm-sequence-diagram.png "mecm-sequence-diagram.png")
 
 ## Register External systems
 Configure edge and applcm configurations using MECM portal.

@@ -8,38 +8,38 @@ with existing account, below is the example.
 
 2. Upon successful login the home page is visible with map and nodes in the region. 
 
-![.](/uploads/images/2020/0924/open-applcm.png "open-applcm.png")
+![.](/uploads/images/2021/cor2020/open-applcm.png "open-applcm.png")
 
 3. For new applcm registration, click on the tab ie. Systems -> External System Manager -> Applcm.
 Then select New Registration. Enter the Applcm, IP, Port number. 
 
-![.](/uploads/images/2020/0924/applcm-registration.png "applcm-registration.png")
+![.](/uploads/images/2021/cor2020/applcm-registration.png "applcm-registration.png")
 
 4. Need to add Edge node deatils by navigating to Systems -> External System Manager -> EdgeNode. 
 Then click on New Registration.
 
-![.](/uploads/images/2020/0924/edge-node-registration.png "edge-node-registration.png")
+![.](/uploads/images/2021/cor2020/edge-node-registration.png "edge-node-registration.png")
 
 5. Config file of the edge node should be uploaded, by selecting the upload config file under Operation.
 
-![.](/uploads/images/2020/0924/upload-config.png "upload-config.png")
+![.](/uploads/images/2021/cor2020/upload-config.png "upload-config.png")
 
 6. Now, need to login to the appstore portal and upload the package 
 
-![.](/uploads/images/2020/0924/upload-package.png "upload-package.png")
+![.](/uploads/images/2021/cor2020/upload-package.png "upload-package.png")
 
 7. Nextly, Redirecting to the edge gallery mecm from appstore  navigate to 
 AppManagement -> Package Management 
 
-![.](/uploads/images/2020/0924/distribute-package.png "distribute-package.png")
+![.](/uploads/images/2021/cor2020/distribute-package.png "distribute-package.png")
 
 8. Choose the appropriate package and select the Distribute and select required Edge Node.
 
-![.](/uploads/images/2020/0924/distribute-edge-node.png "distribute-edge-node.png")
+![.](/uploads/images/2021/cor2020/distribute-edge-node.png "distribute-edge-node.png")
 
 9. Once Distribution is successfull, then the deploy the application.
 
-![.](/uploads/images/2020/0924/deploy.png "deploy.png")
+![.](/uploads/images/2021/cor2020/deploy.png "deploy.png")
 
 
 

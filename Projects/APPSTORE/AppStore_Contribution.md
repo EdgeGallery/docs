@@ -29,7 +29,7 @@
 
 2、解压后运行 start-service-center.bat  和  start-frontend.bat
 
-![](/uploads/images/2020/0908/153735_4dafd335_7625245.jpeg "service center2.jpg")
+![](/uploads/images/2021/cor2020/153735_4dafd335_7625245.jpeg "service center2.jpg")
 
 ### DataBase
 
@@ -39,7 +39,7 @@
 
 3、创建名为appstoredb的数据库
 
-![](/uploads/images/2020/0908/153833_89c54e53_7625245.jpeg "db1.jpg")
+![](/uploads/images/2021/cor2020/153833_89c54e53_7625245.jpeg "db1.jpg")
 
 4、创建名为usermgmtdb的数据库
 
@@ -55,7 +55,7 @@
 
 5、在编译器（此处以IDEA为例）中配置MainServer的运行时环境变量
 
-![](/uploads/images/2020/0908/154011_896d887f_7625245.jpeg "usermgmt1.jpg")
+![](/uploads/images/2021/cor2020/154011_896d887f_7625245.jpeg "usermgmt1.jpg")
 
 6、运行MainServer函数，启动UserManagement
 
@@ -67,7 +67,7 @@
 
 3、在编译器（此处以IDEA为例）中配置MainServer的运行时环境变量
 
-![](/uploads/images/2020/0908/154023_9c49d20c_7625245.jpeg "appstore-be1.jpg")
+![](/uploads/images/2021/cor2020/154023_9c49d20c_7625245.jpeg "appstore-be1.jpg")
 
 3、运行MainServer函数，启动appstore-be
 
@@ -87,7 +87,7 @@
 
 7、在编译器（此处以IDEA为例）中配置GatewayApplication的运行时环境变量
 
-![](/uploads/images/2020/0908/154035_12e727fc_7625245.jpeg "appstore-fe1.jpg")
+![](/uploads/images/2021/cor2020/154035_12e727fc_7625245.jpeg "appstore-fe1.jpg")
 
 8、运行GatewayApplication启动WebsiteGateway与AppStore-fe，浏览器访问http://127.0.0.1:8080/ 即可访问到AppStore首页
 
