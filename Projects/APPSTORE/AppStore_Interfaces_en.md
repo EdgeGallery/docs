@@ -3,7 +3,7 @@ AppStore Interfaces
 The document is for the appstore-be project, there are six parts of interfaces in the project.
 
 - [AppStore Interfaces](#appstore-interfaces)
-  - [1. APP](#1-app)
+  - [1. APP](#id2)
     - [1.1 Get All Apps](#id3)
     - [1.2 Get One App](#id4)
     - [1.3 Register App](#id5)

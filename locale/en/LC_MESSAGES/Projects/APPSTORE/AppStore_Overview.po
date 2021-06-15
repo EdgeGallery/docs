@@ -23,11 +23,11 @@ msgstr "Overview"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:4
 msgid "AppStore是开发者发布和上线App应用的边缘应用市场，由Developer平台开发的边缘应用，经过ATP测试后可以直接发布到AppStore应用商店。 用户也可以在AppStore直接上传边缘应用，经过ATP测试后可以发布到AppStore，对外展示。"
-msgstr "The App Store is an edge application marketplace for developers publishing and onboarding apps, developed by Developer Platform, and can be published directly to the AppStore app store after an ATP test. Users can also upload edge apps directly on the AppStore, which can be published to the AppStore after an ATP test."
+msgstr "The App Store is an edge application marketplace for developers publishing and onboarding apps developed by Developer Platform and can be published directly to the AppStore app store after an ATP test. Users can also upload edge apps directly on the AppStore which can be published to the AppStore after an ATP test."
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:7
 msgid "AppStore分为前后台两个部分，[AppStore BE][1]是后台部分，提供主要功能接口供前台或其他三方系统调用，[AppStore FE][2]是前台部分，提供界面展示。"
-msgstr "The AppStore is divided into two parts, and the [AppStore BE](https://gitee.com/edgegallery/appstore-be) is a backstage part that provides the main functional interface for the foreground or other three-way system calls, [AppStore FE](https://gitee.com/edgegallery/appstore-fe) is the foreground part and provides an interface display."
+msgstr "The AppStore is divided into two parts, [AppStore BE](https://gitee.com/edgegallery/appstore-be) is a backstage part that provides the main functional interface for the foreground or other three-way system calls. [AppStore FE](https://gitee.com/edgegallery/appstore-fe) is the foreground part and provides an interface display."
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:9
 msgid "整体框架说明"
@@ -51,7 +51,7 @@ msgstr "AppStore FE: Developer Platform foreground framework, developed using VU
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:19
 msgid "AppStore BE：开发者平台后台框架，使用SpringBoot+ServiceComb开发。（有关ServiceComb请参考这里：https://servicecomb.apache.org/cn/）"
-msgstr "AppStore BE: Developer Platform Backstage Framework, developed using SpringBot + ServiceComb.(For ServiceComb, please refer to this: https://servicecomb.apache.org/cn/)"
+msgstr "AppStore BE: Developer Platform Backstage Framework, developed using SpringBot + ServiceComb.(For ServiceComb, please refer to this: https://servicecomb.apache.org/)"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:21
 msgid "AppStore DB：后台依赖Postgres数据库。"

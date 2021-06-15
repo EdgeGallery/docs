@@ -23,7 +23,7 @@ msgstr "Feature design"
 
 #: ../../Projects/ATP/ATP_Features.md:3
 msgid "ATP当前提供的特性分为用户面特性和管理面特性。 用户面特性包含：选择测试场景、测试任务进展展示、测试报告分析、测试报告下载、贡献测试用例。 管理面特性包含：测试场景管理、测试套管理、测试用例管理、测试任务分析、测试任务管理。"
-msgstr "The features currently offered by ATP are divided into user facial features and management surface features. The user surface characteristic comprises selecting test scene, test task progress display, test report analysis, test report download, and contribution test case. Management surface features include: test scene management, test suite management, test case management, test task analysis, test task management."
+msgstr "The features currently offered by ATP are divided into user facial features and management surface features. The user surface characteristic comprises selecting test scene, test task progress display, test report analysis, test report download and contribution test case. Management surface features include: test scene management, test suite management, test case management, test task analysis and test task management."
 
 #: ../../Projects/ATP/ATP_Features.md:7
 msgid "选择测试场景"
@@ -31,7 +31,7 @@ msgstr "Choose a test scenario"
 
 #: ../../Projects/ATP/ATP_Features.md:8
 msgid "用户可以根据需要，选择要进行的测试场景，ATP服务会执行对应场景的测试用例。"
-msgstr "The user can select the test scene to be carried out according to the need, and the ATP service executes the test case of the corresponding scene."
+msgstr "The user can select the test scene to be carried out according to the need and the ATP service executes the test case of the corresponding scene."
 
 #: ../../Projects/ATP/ATP_Features.md:10
 msgid "测试任务进展展示"

@@ -31,11 +31,11 @@ msgstr "The application test authentication service is currently divided into ma
 
 #: ../../Projects/ATP/ATP_Guide.md:6
 msgid "在管理面，管理员可以管理测试场景、测试套、测试用例和测试任务。平台内置了4种测试场景：社区场景、中国移动场景、中国联通场景和中国电信场景。对于社区场景，平台内置了安全性测试测试套、遵从性测试测试套和沙箱测试测试套，每个测试套下面都有对应的测试用例。对于有手工用例的测试任务，管理员可以在后台手动更改测试用例状态，完成手工测试用例状态的更新。"
-msgstr "On the management side, administrators can manage test scenarios, test suites, test cases, and test tasks.The platform is built with four test scenarios: community scene, China Mobile Scene, China Unicom scene and China Telecom scene.For community scenes, the platform is built with a safety test test sleeve, a compliance test test sleeve and a sandbox test test sleeve, and each test sleeve is provided with a corresponding test case.For test tasks with manual use cases, the administrator can manually change the test case status in the background and complete the updating of the manual test case state."
+msgstr "On the management side, administrators can manage test scenarios, test suites, test cases, and test tasks.The platform is built with four test scenarios: community scene, China Mobile Scene, China Unicom scene and China Telecom scene. For community scenes, the platform is built with a safety test test sleeve, a compliance test test sleeve and a sandbox test test sleeve and each test sleeve is provided with a corresponding test case. For test tasks with manual use cases, the administrator can manually change the test case status in the background and complete the updating of the manual test case state."
 
 #: ../../Projects/ATP/ATP_Guide.md:7
 msgid "在用户面（即集成在开发者平台和应用商店中的功能），对于开发者，在开发者平台开发app以后，对生成的csar包，要经过应用测试认证服务测试通过后才可以发布到应用商店；对于已经有应用包的供应商或者厂商，在应用商店中上传应用包以后，也要经过应用测试认证服务测试通过后才可以发布到应用商店。用户可以选择要进行测试的场景，其中社区场景是必选的，然后系统会动态展示出测试用例的执行过程。当测试完成后，会生成测试报告，给出测试结果的分析，用户也可以下载测试报告，格式为pdf格式。用户面也为用户提供了贡献测试用例的入口，用户可以通过填写对测试用例的描述或者上传脚本的方式，完成对测试用例的贡献。"
-msgstr "For developers, after the developer platform develops app, the generated csars package will not be published to the app store until after the application test is passed. For suppliers or manufacturers who already have an application package, the app can be released to the app store after the app has been uploaded.The user can select the scene to be tested, wherein the community scene is selected, and then the system dynamically displays the execution process of the test case.When the test is complete, a test report is generated and an analysis of the test results is given, and the user can download the test report in pdf format.the user can finish the contribution to the test case by filling the description of the test case or the way of uploading the script."
+msgstr "For developers, after the developer platform develops app, the generated csars package will not be published to the app store until after the application test is passed. For suppliers or manufacturers who already have an application package, the app can be released to the app store after the app has been uploaded. The user can select the scene to be tested, wherein the community scene is selected and then the system dynamically displays the execution process of the test case. When the test is complete, a test report is generated and an analysis of the test results is given and the user can download the test report in pdf format. User can finish the contribution to the test case by filling the description of the test case or the way of uploading the script."
 
 #: ../../Projects/ATP/ATP_Guide.md:9
 msgid "管理面首页"
@@ -59,7 +59,7 @@ msgstr "Management side test suite management"
 
 #: ../../Projects/ATP/ATP_Guide.md:18
 msgid "测试套页面显示平台包含的所有测试套，一个测试套属于一个或者多个测试场景，管理员可以新增测试套、编辑已有的测试套，也可以删除已有的测试套。 ![](/uploads/images/2021/atp/testSuite.png \"测试套.png\")"
-msgstr "The test suite page displays all the test suites that the platform contains, one test suite belonging to one or more test scenarios, and the administrator can add test suites, edit existing test suites, and delete already existing test suites. ![](/uploads/images/2021/atp/testSuite_en.png \"Test Suite.png\")"
+msgstr "The test suite page displays all the test suites that the platform contains, one test suite belonging to one or more test scenarios and the administrator can add test suites, edit existing test suites and delete already existing test suites. ![](/uploads/images/2021/atp/testSuite_en.png \"Test Suite.png\")"
 
 #: ../../Projects/ATP/ATP_Guide.md:21
 msgid "管理面测试用例管理"
@@ -67,7 +67,7 @@ msgstr "Management side test case management"
 
 #: ../../Projects/ATP/ATP_Guide.md:22
 msgid "测试用例页面显示平台包含的所有测试用例，一个测试用例属于一个或者多个测试套，管理员可以新增测试用例、编辑已有的测试用例，也可以删除已有的测试用例。 ![](/uploads/images/2021/atp/testCase.png \"测试用例.png\")"
-msgstr "The test case page display platform includes all test cases, one test case belongs to one or more test suites, the administrator can add test cases, edit existing test cases, and also delete existing test cases. ![](/uploads/images/2021/atp/testCase_en.png \"Test case.png\")"
+msgstr "The test case page display platform includes all test cases, one test case belongs to one or more test suites, the administrator can add test cases, edit existing test cases and also delete existing test cases. ![](/uploads/images/2021/atp/testCase_en.png \"Test case.png\")"
 
 #: ../../Projects/ATP/ATP_Guide.md:25
 msgid "管理面测试任务管理"
@@ -75,7 +75,7 @@ msgstr "Management side test mission management"
 
 #: ../../Projects/ATP/ATP_Guide.md:26
 msgid "任务管理显示了所有的测试任务，管理员可以对测试任务进行批量删除，也可以修改手工用例的状态。 ![](/uploads/images/2021/atp/task.png \"测试任务.png\") ![](/uploads/images/2021/atp/modifyStatus.png \"修改手工用例状态.png\")"
-msgstr "The task management shows all the test tasks, and the administrator can delete the test task in bulk, or modify the state of the manual use case. ![](/uploads/images/2021/atp/task.png \"Test Task.png\") ![](/uploads/images/2021/atp/modifyStatus_en.png \"Modify Hand Case Status.png\")"
+msgstr "The task management shows all the test tasks and the administrator can delete the test task in bulk or modify the state of the manual use case. ![](/uploads/images/2021/atp/task.png \"Test Task.png\") ![](/uploads/images/2021/atp/modifyStatus_en.png \"Modify Hand Case Status.png\")"
 
 #: ../../Projects/ATP/ATP_Guide.md:30
 msgid "应用商店测试认证入口"
@@ -91,7 +91,7 @@ msgstr "Test Scene Selection & Test Use Case Contribution"
 
 #: ../../Projects/ATP/ATP_Guide.md:35
 msgid "用户可以选择想要测试的场景，社区场景是必选的，其余场景根据用户需要自行选择。 ![](/uploads/images/2021/atp/selectScenario.png \"选择测试场景.png\") 页面右上方有贡献测试用例的入口，点击测试用例，支持用户用描述的方式或者脚本的方式贡献测试用例。 ![](/uploads/images/2021/atp/contribution.png \"贡献测试用例.png\")"
-msgstr "The user can choose the scene that wants to be tested, the community scene is mandatory, and the rest of the scene is chosen by the user according to the needs of the user. ![](/uploads/images/2021/atp/selectScenario_en.png \"Choose Test Scene.png\") The upper right side of the page is provided with an inlet for contributing test case, click test case, and supporting the user to contribute test case in the way of description or script. ![](/uploads/images/2021/atp/contribution_en.png \"Contribution test case.png\")"
+msgstr "The user can choose the scene that wants to be tested, the community scene is mandatory and the rest of the scene is chosen by the user according to the needs of the user. ![](/uploads/images/2021/atp/selectScenario_en.png \"Choose Test Scene.png\") The upper right side of the page is provided with an inlet for contributing test case, click test case, and supporting the user to contribute test case in the way of description or script. ![](/uploads/images/2021/atp/contribution_en.png \"Contribution test case.png\")"
 
 #: ../../Projects/ATP/ATP_Guide.md:40
 msgid "测试进展可视化&报告查看"
@@ -103,5 +103,5 @@ msgstr "The test progress page dynamically displays the execution condition of t
 
 #: ../../Projects/ATP/ATP_Guide.md:44
 msgid "点击右上角的查看报告，会进入该测试任务的报告页面，报告页面显示测试任务的基本信息、各测试场景的测试用例通过率以及测试用例的详细信息。 ![](/uploads/images/2021/atp/testReport.png \"测试报告.png \")"
-msgstr "the report page displays the basic information of the test task, the test case pass rate of each test scene and the detailed information of the test case. ![](/uploads/images/2021/atp/testReport_en.png \"Test Report.png\")"
+msgstr "The report page displays the basic information of the test task, the test case pass rate of each test scene and the detailed information of the test case. ![](/uploads/images/2021/atp/testReport_en.png \"Test Report.png\")"
 

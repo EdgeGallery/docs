@@ -34,6 +34,8 @@ atp Interfaces
        - [5.2 POST create contribution](#post-create-contribution)
   - [6. File](#file)
        - [6.1 GET query one file](#get-query-one-file)
+  - [7. Test model](#test-model)
+       - [7.1 POST import test model](#post-import-test-model)
 ## 1. Task
 Test task for application package
 ### 1.1 POST create test task 
