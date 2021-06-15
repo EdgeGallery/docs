@@ -19,73 +19,73 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:1
 msgid "Contribution to APM"
-msgstr "Contribution to APM"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:4
 msgid "This section provides details on how to participate/contribute to the APM(Application package manager) project."
-msgstr "This section provides details on how to participate/contribute to the APM (Application package manager) project."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:6
 msgid "Build local development environment"
-msgstr "Build local development environment"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:8
 msgid "This section will guide developers to build APM module locally and help developers to quickly understand and  develop  code"
-msgstr "This section will guide developers to build APM module locally and help developers to quickly under and develop code"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:12
 msgid "The local startup of APM depends on："
-msgstr "The local startup of APM depends on:"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:16
 msgid "In order to build a local environment, the final startup sequence is [Mecm-Prerequisite](MECM_Prerequisite.md)-> DataBase -> APM"
-msgstr "In order to build a local environment, the final startup sequence is [Mecm-Prerequisite](MECM_Prerequisite.md)-> DataBase - > APM"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:18
 msgid "DataBase"
-msgstr "DataBase"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:20
 msgid "Download and install postgres 12.3 database"
-msgstr "Download and install postgres 12.3 database"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:22
 msgid "Set login name and password, such as apm"
-msgstr "Set login name and password, such as apm"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:24
 msgid "Create a database named apmdb"
-msgstr "Create a database named apmdb"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:26
 msgid "![](/uploads/images/2021/cor2020/apm-db.png \"apm-db.png\")"
-msgstr "![](/uploads/images/2021/cor2020/apm-db_en.png \"apm-db.png\")"
+msgstr "![](/uploads/images/2021/cor2020/apm-db.png \"apm-db.png\")"
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:28
 msgid "Application package manager"
-msgstr "Application package manager"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:30
 msgid "Download [APM Code](https://gitee.com/edgegallery/mecm-apm/)"
-msgstr "Download [APM Code](https://gitee.com/edgegallery/mecm-apm/)"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:32
 msgid "Configure the runtime environment variables (using IDEA as an example)"
-msgstr "Configure the runtime environment variables (using IDEA as an example)"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:34
 msgid "![](/uploads/images/2021/cor2020/apm.png \"apm.png\")"
-msgstr "![](/uploads/images/2021/cor2020/apm_en.png \"apm.png\")"
+msgstr "![](/uploads/images/2021/cor2020/apm.png \"apm.png\")"
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:36
 msgid "Update key-store and trust-store path in application.yaml"
-msgstr "Update key-store and trust-store path in application.yaml"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:38
 msgid "![](/uploads/images/2021/cor2020/key-store.png \"key-store.png\")"
-msgstr "![](/uploads/images/2021/cor2020/key-store_en.png \"key-store.png\")"
+msgstr "![](/uploads/images/2021/cor2020/key-store.png \"key-store.png\")"
 
 #: ../../Projects/MECM/MECM_Apm_Contribution.md:40
 msgid "Run ApmApplication to start APM"
-msgstr "Run ApmApplication to start APM"
+msgstr ""
 

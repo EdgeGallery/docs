@@ -19,53 +19,53 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:1
 msgid "Design"
-msgstr "Design"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:3
 msgid "The MECM sequence flow diagram"
-msgstr "The MECM sequence flow diagram"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:5
 msgid "![](/uploads/images/2021/cor2020/mecm-sequence-diagram.png \"mecm-sequence-diagram.png\")"
-msgstr "![](/uploads/images/2021/cor2020/mecm-sequence-diagram_en.png \"mecm-sequence-diagram.png\")"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:7
 msgid "Register External systems"
-msgstr "Register External systems"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:8
 msgid "Configure edge and applcm configurations using MECM portal."
-msgstr "Configure edit and applcm configurations using MECM portal."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:10
 msgid "Upload configuration file"
-msgstr "Upload configuration file"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:11
 msgid "Upload configuration file to lcm controller, required to communicate with edge."
-msgstr "Upload configuration file to lcm controller, required to communicate with edge."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:13
 msgid "Distribute application package"
-msgstr "Distribute application package"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:14
 msgid "Distribute application package to edge repositories."
-msgstr "Distribute application package to edge repositories."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:16
 msgid "Create application instance"
-msgstr "Create application instance"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:17
 msgid "Download application package from application package manager and decompose application package."
-msgstr "Download application package from application package manager and decompose application package."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:19
 msgid "Instantiate application instance"
-msgstr "Instantiate application instance"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Features_en.md:20
 msgid "Instantiate application package based on the deployment strategy."
-msgstr "Instantiate application package based on the deployment strategy."
+msgstr ""
 

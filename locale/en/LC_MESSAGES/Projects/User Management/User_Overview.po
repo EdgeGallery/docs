@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../Projects/User Management/User_Overview.md:1
 msgid "User Overview"
-msgstr "User Overview"
+msgstr ""
 
 #: ../../Projects/User Management/User_Overview.md:4
 msgid "简介"

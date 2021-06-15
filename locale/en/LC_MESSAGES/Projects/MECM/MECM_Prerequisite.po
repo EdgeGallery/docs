@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:1
 msgid "Prerequisite"
-msgstr "Prerequisite"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:4
 msgid "Service Center"
-msgstr "Service Center"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:6
 msgid "1、Download [Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)"
@@ -35,7 +35,7 @@ msgstr "![](/uploads/images/2021/cor2020/153700_b069cf5f_7625245_en.jpeg \"servi
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:10
 msgid "2、Run start-service-center.sh  and start-frontend.sh"
-msgstr "2.Run start-service-center.sh and start-frontend.sh"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:12
 msgid "![](/uploads/images/2021/cor2020/service-comb.png \"service-comb.png\")"
@@ -43,7 +43,7 @@ msgstr "![](/uploads/images/2021/cor2020/service-comb_en.png \"service-comb.png\
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:14
 msgid "UserManagement"
-msgstr "UserManagement"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:16
 msgid "Download [user-mgmt-be code](https://gitee.com/edgegallery/user-mgmt/)"
@@ -51,7 +51,7 @@ msgstr "Download [user-mgmt-be code](https://gitee.com/edgegallery/user-mgmt/)"
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:18
 msgid "Configure the runtime environment variables of MainServer in the compiler (here in IDEA as an example)"
-msgstr "Configure the runtime environment variables of MainServer in the compiler (here in IDEA as an example)"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:20
 msgid "![](/uploads/images/2021/cor2020/mecm-usr-env.png \"mecm-usr-env.png\")"
@@ -59,7 +59,7 @@ msgstr "![](/uploads/images/2021/cor2020/mecm-usr-env_en.png \"mecm-usr-env.png\
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:22
 msgid "Run the MainServer function and start UserManagement"
-msgstr "Run the MainServer function and start UserManagement"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:24
 msgid "Download the [jwt token generation script](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_Jwt_Token_Generation.sh) and need to give rsa private key and payload file path in the field provided."
@@ -67,9 +67,9 @@ msgstr "Download the [jwt token generation script](https://gitee.com/edgegallery
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:27
 msgid "Example Payload"
-msgstr "Example Payload"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Prerequisite.md:41
 msgid "Generate the jwt token and can be used to test the api."
-msgstr "Generate the jwt token and can be used to test the api."
+msgstr ""
 

@@ -47,15 +47,15 @@ msgstr "**Description**"
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "tenantid"
-msgstr "tenantid"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "string"
-msgstr "string"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "key"
-msgstr "key"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "主键"
@@ -63,7 +63,7 @@ msgstr "Master Key"
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "username"
-msgstr "username"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "-"
@@ -75,7 +75,7 @@ msgstr "The user name at the time of registration requires uniqueness.[5-29] bet
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "password"
-msgstr "password"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "注册时设置的密码，注册时需要满足密码复杂度要求，满足数字/字母/特殊字符 至少两种以上的组合，[6-18]个字符之间。数据库中的密码使用PBKDF2加盐值后存储"
@@ -83,7 +83,7 @@ msgstr "when registering, the password needs to satisfy the password complexity 
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "company"
-msgstr "company"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "用户公司名称"
@@ -91,7 +91,7 @@ msgstr "User Company Name"
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "telephonenumber"
-msgstr "telephonenumber"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "用户手机号码，用于找回密码时短信验证用户身份，必须满足11位有效数字"
@@ -99,7 +99,7 @@ msgstr "the mobile phone number of the user is used for verifying the user ident
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "mailaddress"
-msgstr "mailaddress"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "用户邮箱地址，用于找回密码时邮箱验证用户身份，必须为有效的邮箱格式"
@@ -107,7 +107,7 @@ msgstr "User email address, which is used to verify the user identity when the p
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "gender"
-msgstr "gender"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "用户性别"
@@ -115,11 +115,11 @@ msgstr "User Gender"
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "isallowed"
-msgstr "isallowed"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "boolean"
-msgstr "boolean"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "帐号是否允许登录"
@@ -127,11 +127,11 @@ msgstr "Is the account allowed to be registered"
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "createtime"
-msgstr "createtime"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "timestamp"
-msgstr "timestamp"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "创建时间（即注册时间）"
@@ -139,7 +139,7 @@ msgstr "Creation time (i.e. registration time)"
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "modifytime"
-msgstr "modifytime"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "修改时间"
@@ -171,11 +171,11 @@ msgstr "describe"
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "id"
-msgstr "id"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "platform"
-msgstr "platform"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "支持的平台"
@@ -183,7 +183,7 @@ msgstr "Platform supported"
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "role"
-msgstr "role"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "支持的角色定义"
@@ -227,7 +227,7 @@ msgstr "Tenant ID"
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "roleid"
-msgstr "roleid"
+msgstr ""
 
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "角色ID"

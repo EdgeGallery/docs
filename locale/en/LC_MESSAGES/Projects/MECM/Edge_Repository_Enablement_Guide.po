@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:1
 msgid "Enable Edge Repository"
-msgstr "Enable Edge Repository"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:3
 msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/193423_f8d692dc_7954177.png \"apm_edge_repo.png\")"
@@ -27,7 +27,7 @@ msgstr "![Enter picture description](https://images.gitee.com/uploads/images/202
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:5
 msgid "APM Flow diagram"
-msgstr "APM Flow diagram"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:7
 msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/194339_11033b09_7954177.png \"apm_flow_diagram.png\")"
@@ -35,43 +35,43 @@ msgstr "![Enter picture description](https://images.gitee.com/uploads/images/202
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:9
 msgid "Steps to enable the edge repository"
-msgstr "Steps to enable the edge repository"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:11
 msgid "Create private repository. Please refer the steps to create docker proxy repository in nexus"
-msgstr "Create private repository. Please refer the steps to create docker proxy repository in nexus"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:12
 msgid "Deploy the mecm-apm with push_image flag as true"
-msgstr "Deploy the mecm-apm with push_image flag as true"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:14
 msgid "Steps to create docker proxy repository in nexus"
-msgstr "Steps to create docker proxy repository in nexus"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:16
 msgid "1. create dir"
-msgstr "1.create dir"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:17
 msgid "mkdir -p /nexus/nexus3/data"
-msgstr "mkdir -p /nexus/nexus3/data"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:19
 msgid "2. chown -R 200 /nexus/nexus3/data"
-msgstr "2.chown -R 200 /nexus/nexus3/data"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:21
 msgid "3. Go to nexus3"
-msgstr "3.Go to nexus3"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:22
 msgid "cd /nexus/nexus3/"
-msgstr "cd /nexus/nexus3 /"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:24
 msgid "4. create docker-compose.yml file"
-msgstr "4.create docker-compose.yml file"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:25
 msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/194500_0eac1b35_7954177.png \"nexus_docker_compose.png\")"
@@ -79,31 +79,31 @@ msgstr "![Enter picture description](https://images.gitee.com/uploads/images/202
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:27
 msgid "5. Launch nexus:"
-msgstr "5.Launch nexus:"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:28
 msgid "docker-compose up -d"
-msgstr "docker-compose up -d"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:30
 msgid "6. Open the URL [Docker host IP address]:8081 in a web browser"
-msgstr "6.Open the URL [Docker host IP address]: 8081 in a web browser"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:32
 msgid "7. Sign in to nexus3"
-msgstr "7.Sign in to nexus3"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:33
 msgid "Click the Sign In button in the upper right corner and use the username <admin> and the password. Initial password can be found in data directory"
-msgstr "Click the Sign In button in the upper right corner and use the username <admin> and the password. Initial password can be found in data directory"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:36
 msgid "8.  Click proxy repository"
-msgstr "8.Click proxy repository"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:38
 msgid "a.  Click on cogwheel"
-msgstr "a.Click on cogwheel"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:39
 msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/194621_15a8adfc_7954177.png \"edge_repo_home_page.png\")"
@@ -111,7 +111,7 @@ msgstr "![Enter picture description](https://images.gitee.com/uploads/images/202
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:41
 msgid "b. Click on repository"
-msgstr "b.Click on repository"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:42
 msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/194749_ae231206_7954177.png \"nexus_repo_repositories.png\")"
@@ -119,7 +119,7 @@ msgstr "![Enter picture description](https://images.gitee.com/uploads/images/202
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:44
 msgid "c. Click on create repository"
-msgstr "c.Click on create repository"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:45
 msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/194940_374a3f1e_7954177.png \"nexus_create_Repository.png\")"
@@ -127,7 +127,7 @@ msgstr "![Enter picture description](https://images.gitee.com/uploads/images/202
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:47
 msgid "d. click on docker proxy"
-msgstr "d.click on docker proxy"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:48
 msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/195103_f90a26d6_7954177.png \"nexus_docker_proxy.png\")"
@@ -135,7 +135,7 @@ msgstr "![Enter picture description](https://images.gitee.com/uploads/images/202
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:50
 msgid "e.  Configure proxy repo"
-msgstr "e.Configure proxy repo"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:51
 msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/195203_97b8a714_7954177.png \"nexus_configure_docker_proxy.png\")"
@@ -151,33 +151,33 @@ msgstr "configure docker hub/swr repo username and password![Enter picture descr
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:58
 msgid "9. Configure insecure registry in /etc/docker/daemon.json and restart docker service"
-msgstr "9.Configure insecure registry in /etc/docker/daemon.json and restart docker service"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:60
 msgid "{   \"insecure-registries\":[\"<ip>:<port>\"] }"
-msgstr "{   \"insecure-Registries\":[\"<ip>:<port>\"] }"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:64
 msgid "ip where nexus repo is installed and port configured in the proxy repo"
-msgstr "ip where nexus repo is installed and port configured in the proxy repo"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:66
 msgid "Commands to restart docker service:"
-msgstr "Commands to restart docker service:"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:68
 msgid "sudo systemctl daemon-reload"
-msgstr "sudo systemctl daemon-reload"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:70
 msgid "sudo systemctl restart docker"
-msgstr "sudo systemctl restart docker"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:72
 msgid "10.  login to docker registry"
-msgstr "10.login to docker registry"
+msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:74
 msgid "docker login -u <username> -p <password> <ip:port> docker pull/push <ip:port>/<imagename:version>"
-msgstr "docker login -u <username> -p <password> <ip:port> docker pull/push <ip:port>/<imagename:version>"
+msgstr ""
 

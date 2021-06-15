@@ -19,19 +19,19 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_App_Rule_Contribution.md:1
 msgid "Contribution to App Rule Manager"
-msgstr "Contribution to App Rule Manager"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_App_Rule_Contribution.md:4
 msgid "This section provides details on how to participate/contribute to the App Rule Manager project."
-msgstr "This section provides details on how to participate/contribute to the App Rule Manager project."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_App_Rule_Contribution.md:6
 msgid "Build local development environment"
-msgstr "Build local development environment"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_App_Rule_Contribution.md:8
 msgid "This section will guide developers to build App Rule Manager module locally and help developers to quickly understand  and develop code"
-msgstr "This section will guide developers to build App Rule Manager module locally and help developers to quickly under and develop code"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_App_Rule_Contribution.md:11
 msgid "Download [App Rule Manager Code](https://gitee.com/edgegallery/mecm-apprulemgr)"
@@ -39,7 +39,7 @@ msgstr "Download [App Rule Manager Code](https://gitee.com/edgegallery/mecm-appr
 
 #: ../../Projects/MECM/MECM_App_Rule_Contribution.md:13
 msgid "Update certificates path in app.conf"
-msgstr "Update certificates path in app.conf"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_App_Rule_Contribution.md:15
 msgid "![](/uploads/images/2021/cor2020/mepm-applcm-ssl.png \"mepm-applcm-ssl.png\")"
@@ -47,5 +47,5 @@ msgstr "![](/uploads/images/2021/cor2020/mepm-applcm-ssl_en.png \"mepm-applcm-ss
 
 #: ../../Projects/MECM/MECM_App_Rule_Contribution.md:17
 msgid "Run main to start App Rule Manager"
-msgstr "Run main to start App Rule Manager"
+msgstr ""
 

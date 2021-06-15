@@ -19,129 +19,129 @@ msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:1
 msgid "Application rule manager Interface"
-msgstr "Application rule manager Interface"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:3
 msgid "The document is for the Application rule manager project, there is one part of interfaces in the project."
-msgstr "The document is for the Application rule manager project, there is one part of interfaces in the project."
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:5
 msgid "Queries liveness & readiness"
-msgstr "Queries liveness & readiness"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:6
 msgid "Retrieves data for liveness & readiness"
-msgstr "Retreeves data for liveness & readiness"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "Definition"
-msgstr "Definition"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "type"
-msgstr "type"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "Required"
-msgstr "Required"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "Allowed"
-msgstr "Allowed"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "Max Length"
-msgstr "Max Length"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "access_token"
-msgstr "access_token"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "access token"
-msgstr "access token"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "header"
-msgstr "header"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "yes"
-msgstr "yes"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "Jwt token"
-msgstr "Jwt token"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:15 ../../Projects/MECM/AppRule_Interface.md:33 ../../Projects/MECM/AppRule_Interface.md:60 ../../Projects/MECM/AppRule_Interface.md:77 ../../Projects/MECM/AppRule_Interface.md:94 ../../Projects/MECM/AppRule_Interface.md:113 ../../Projects/MECM/AppRule_Interface.md:132
 msgid "Example response:"
-msgstr "Example response:"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:20
 msgid "Configures app rule"
-msgstr "Configures app rule"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:21
 msgid "Application Rule Config create request"
-msgstr "Application Rule Config create request"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "Jwt Token"
-msgstr "Jwt Token"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "tenantId"
-msgstr "tenantId"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "tenant Id"
-msgstr "tenant Id"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "path"
-msgstr "path"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "Valid UUID"
-msgstr "Valid UUID"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "64"
-msgstr "64"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "appInstanceId"
-msgstr "appInstanceId"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md
 msgid "appInstance Id"
-msgstr "appInstance Id"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:48 ../../Projects/MECM/AppRule_Interface.md:49
 msgid "Updates app rule configuration"
-msgstr "Updates app rule configuration"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:65 ../../Projects/MECM/AppRule_Interface.md:66
 msgid "Deletes app rule configuration"
-msgstr "Deletes app rule configuration"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:82
 msgid "Query"
-msgstr "Query"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:83
 msgid "Returns app rule configuration"
-msgstr "Returns app rule configuration"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:102 ../../Projects/MECM/AppRule_Interface.md:103
 msgid "Synchronize added or update records"
-msgstr "Synchronize added or update records"
+msgstr ""
 
 #: ../../Projects/MECM/AppRule_Interface.md:121 ../../Projects/MECM/AppRule_Interface.md:122
 msgid "Synchronize deleted records"
-msgstr "Synchronize deleted records"
+msgstr ""
 

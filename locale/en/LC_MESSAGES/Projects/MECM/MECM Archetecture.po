@@ -35,7 +35,7 @@ msgstr "Application Choreographer.The AppO is implemented after customization us
 
 #: ../../Projects/MECM/MECM Archetecture.md:11 Archetecture.md:40 Archetecture.md:62
 msgid "API Handler"
-msgstr "API Handler"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Archetecture.md:13
 msgid "对外提供北向接口."
@@ -47,7 +47,7 @@ msgstr "Processing of application related life cycle management requests."
 
 #: ../../Projects/MECM/MECM Archetecture.md:18
 msgid "BPMN Execution Engine"
-msgstr "BPMN Execution Engine"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Archetecture.md:20
 msgid "BPMN执行引擎，管理和执行应用生命周期管理相关工作流."
@@ -59,7 +59,7 @@ msgstr "Manage the application life cycle status."
 
 #: ../../Projects/MECM/MECM Archetecture.md:25
 msgid "Adapters"
-msgstr "Adapters"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Archetecture.md:27
 msgid "南向接口适配器，对接其它南向APPLCM等模块."
@@ -95,7 +95,7 @@ msgstr "Processing of application packet management related interface requests."
 
 #: ../../Projects/MECM/MECM Archetecture.md:47
 msgid "Manager"
-msgstr "Manager"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Archetecture.md:49
 msgid "负责从APPStore获取应用包，处理应用上载和维护应用包状态。"
@@ -103,7 +103,7 @@ msgstr "Responsible for obtaining application package from APPStore, processing 
 
 #: ../../Projects/MECM/MECM Archetecture.md:52
 msgid "Distributor"
-msgstr "Distributor"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Archetecture.md:54
 msgid "分发器负责将应用包分发到指定的边缘节点。"
@@ -127,7 +127,7 @@ msgstr "Application life cycle management request sent by processing centre MECM
 
 #: ../../Projects/MECM/MECM Archetecture.md:70
 msgid "BROKER"
-msgstr "BROKER"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Archetecture.md:72
 msgid "负责根据应用的形态和部署要求，选择对应的部署插件，进行应用的部署。"

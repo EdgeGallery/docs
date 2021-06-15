@@ -19,17 +19,17 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Database_Design.md:1
 msgid "Appo Database Design"
-msgstr "Appo Database Design"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Database_Design.md:3
 msgid "The APPO database uses an open source PostgreSQL database, and the recommended version is 12.3."
-msgstr "The APPO database uses an open source PostgreSQL database, and the recommended version is 12.3."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Database_Design.md:5
 msgid "appinstanceinfo: Store app instance information, such as app_instance_id, applcm_host and tenant."
-msgstr "appinstanceinfo: Store app instance information, such as app_instance_id, applcm_host and tenant."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Database_Design.md:23
 msgid "appotenant: Store tenant information, such as tenant."
-msgstr "appotenant: Store tenant information, such as tenant."
+msgstr ""
 

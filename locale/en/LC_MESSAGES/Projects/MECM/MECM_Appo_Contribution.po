@@ -19,44 +19,44 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:1
 msgid "Contribution to Appo"
-msgstr "Contribution to Appo"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:4
 msgid "This section provides details on how to participate/contribute to the application orchestrator project."
-msgstr "This section provides details on how to participate/contribute to the application orchestrator project."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:6
 msgid "Build local development environment"
-msgstr "Build local development environment"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:8
 #, fuzzy
 msgid "This section will guide developers to build Appo module locally and help developers to quickly understand and develop  code"
-msgstr "This section will guide developers to build Appo module locally and help developers to quickly understand and develop code"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:11
 msgid "The local startup of Appo depends on："
-msgstr "The local startup of Appo depends on："
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:16
 msgid "In order to build a local environment, the final startup sequence is [Mecm-Prerequisite](MECM_Prerequisite.md) -> DataBase -> Appo"
-msgstr "In order to build a local environment, the final startup sequence is [Mecm-Prerequisite](MECM_Prerequisite.md) -> DataBase -> Appo"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:18
 msgid "DataBase"
-msgstr "DataBase"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:20
 msgid "Download and install postgres 12.3 database"
-msgstr "Download and install postgres 12.3 database"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:22
 msgid "Set login name and password, such as appo"
-msgstr "Set login name and password, such as appo"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:24
 msgid "Create a database named appodb"
-msgstr "Create a database named appodb"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:26
 msgid "![](/uploads/images/2021/cor2020/appodb.png \"appodb.png\")"
@@ -64,7 +64,7 @@ msgstr "![](/uploads/images/2021/cor2020/appodb_en.png \"appodb.png\")"
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:28
 msgid "Application orchestrator"
-msgstr "Application orchestrator"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:30
 msgid "Download [Appo(application orchestrator) code](https://gitee.com/edgegallery/mecm-appo/)"
@@ -72,7 +72,7 @@ msgstr "Download [Appo(application orchestrator) code](https://gitee.com/edgegal
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:32
 msgid "Configure the runtime environment variables (using IDEA as an example)"
-msgstr "Configure the runtime environment variables (using IDEA as an example)"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:34
 msgid "![](/uploads/images/2021/cor2020/appo-contribution.png \"appo-contribution.png\")"
@@ -80,7 +80,7 @@ msgstr "![](/uploads/images/2021/cor2020/appo-contribution_en.png \"appo-contrib
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:36
 msgid "Update key-store and trust-store path in application.yaml"
-msgstr "Update key-store and trust-store path in application.yaml"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:38
 msgid "![](/uploads/images/2020/0924/key-store.png \"key-store.png\")"
@@ -88,5 +88,5 @@ msgstr "![](/uploads/images/2020/0924/key-store.png \"key-store.png\")"
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:40
 msgid "Run AppOrchestratorApplication to start application orchestrator"
-msgstr "Run AppOrchestratorApplication to start application orchestrator"
+msgstr ""
 

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM Document.md:1 Product
 msgid "MECM Product Document"
-msgstr "MECM Product Document"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Document.md:4 Product
 msgid "MECM管理面"

@@ -19,137 +19,137 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:1
 msgid "MECM App Rule Manager Interfaces"
-msgstr "MECM App Rule Manager Interfaces"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:3
 msgid "The document is for the MECM App Rule Manager Interfaces project ."
-msgstr "The document is for the MECM App Rule Manager Interfaces project."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:5
 msgid "Queries liveness & readiness"
-msgstr "Queries liveness & readiness"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:6
 msgid "Retrieves data for liveness & readiness"
-msgstr "Retreeves data for liveness & readiness"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "Definition"
-msgstr "Definition"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "type"
-msgstr "type"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "Required"
-msgstr "Required"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "Allowed"
-msgstr "Allowed"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "Max Length"
-msgstr "Max Length"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "access_token"
-msgstr "access_token"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "access token"
-msgstr "access token"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "header"
-msgstr "header"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "yes"
-msgstr "yes"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "Jwt token"
-msgstr "Jwt token"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:16 ../../Projects/MECM/MECM_AppRule_Manager.md:82 ../../Projects/MECM/MECM_AppRule_Manager.md:155
 msgid "Example response:"
-msgstr "Example response:"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:21
 msgid "Create AppRule Config"
-msgstr "Create AppRule Config"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:22
 msgid "Configures the app rule"
-msgstr "Configurations the app rule"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "appInstance_id"
-msgstr "appInstance_id"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "application instance id"
-msgstr "application instance id"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "path"
-msgstr "path"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "Valid UUID"
-msgstr "Valid UUID"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "64"
-msgstr "64"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "tenant_id"
-msgstr "tenant_id"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "tenant id"
-msgstr "tenant id"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
 msgid "appInstanceIds"
-msgstr "appInstanceIds"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:34 ../../Projects/MECM/MECM_AppRule_Manager.md:107
 msgid "Example request body:"
-msgstr "Example request body:"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:94
 msgid "Update AppRule Config"
-msgstr "Update AppRule Config"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:95
 msgid "Updates the existing app rule"
-msgstr "Updates the existing app rule"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:167
 msgid "Get AppRule Config"
-msgstr "Get AppRule Config"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:168
 msgid "Queries the existing app rule"
-msgstr "Queries the existing app rule"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:180 ../../Projects/MECM/MECM_AppRule_Manager.md:243
 msgid "Example Response body:"
-msgstr "Example Response body:"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:230
 msgid "Delete AppRule Config"
-msgstr "Delete AppRule Config"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md:231
 msgid "Delete the existing app rule"
-msgstr "Delete the existing app rule"
+msgstr ""
 
