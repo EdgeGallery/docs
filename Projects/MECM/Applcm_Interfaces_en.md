@@ -697,9 +697,6 @@ Example response:
 Resource URI: /lcmcontroller/v1/mep/subscribe_statistic
 Method: GET
 ```
-|Name|Definition|Type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-| | | | | | |
 
 Example response:
 ```
@@ -756,8 +753,6 @@ Resource URI: /lcmcontroller/v1/mep/kong_log
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-| | | | | | |
 
 ```
 200 OK
@@ -782,9 +777,6 @@ Method: GET
 Resource URI: /lcmcontroller/v1/mep/subscribe_statistic
 Method: GET
 ```
-|Name|Definition|Type|Required|Allowed|Max Length|
-|---|---|---|---|---|---|
-| | | | | | |
 
 ```
 200 OK
