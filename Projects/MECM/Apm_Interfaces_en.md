@@ -10,7 +10,7 @@ Retrieves all application packages
 Resource URI: /apm/v1/tenants/{tenant_id}/packages
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |tenant_id|tenant id|path|yes|Valid UUID|64|
@@ -48,7 +48,7 @@ Onboard application package
 Resource URI: /apm/v1/tenants/{tenant_id}/packages
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |tenant_id|tenant id|path|yes|Valid UUID|64|
@@ -103,7 +103,7 @@ Retrieves application package information.
 Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |app_package_id|app package id|path|yes|Alphanumeric and must be smaller case|32|
@@ -140,7 +140,7 @@ Retrieves application template.
 Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/apptemplate
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |app_package_id|app package id|path|yes|Alphanumeric and must be smaller case|32|
@@ -177,7 +177,7 @@ Deletes application package
 Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}
 Method: DELETE
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|32|
@@ -198,7 +198,7 @@ Download application package CSAR
 Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/download
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |app_package_id|app package id|path |yes|Alphanumeric and must be smaller case|32|
 |tenant_id |tenant id|path |yes|Valid UUID|64|
@@ -267,7 +267,7 @@ Deletes an application packages
 Resource URI: /apm/v1/tenants/{tenant_id}/packages/{app_package_id}/hosts/{host_ip}
 Method: DELETE
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |app_package_id |app package id|path |yes|Alphanumeric and must be smaller case|32|
@@ -288,7 +288,7 @@ On-boards application with package provided.
 Resource URI: /apm/v1/tenants/{tenant_id}/packages/upload
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appPkgName|appPkgName|body|yes|AlphaNumeric and allowed special characters hypen and underscore|255|
@@ -323,7 +323,7 @@ Retrieves data for liveness & readiness
 Resource URI: /apm/v1/health
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 
@@ -337,7 +337,7 @@ Retrieves all application packages info from app store.
 Resource URI: /apm/v1/apps/info/appstores/{appstore_ip}
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |appstore_ip|appstore_ip|body|yes|AlphaNumeric with smaller case alphabets|32|
@@ -353,7 +353,7 @@ Sync application package by downloading package from appstore.
 Resource URI: /apm/v1/apps/sync
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appId|appId|body|yes|AlphaNumeric with smaller case alphabets|32|
@@ -390,7 +390,7 @@ Retrieves all application packages sync status.
 Resource URI: /apm/v1/apps/syncstatus
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 
@@ -405,7 +405,7 @@ Retrieve application packages sync status.
 Resource URI: /apm/v1/apps/{app_id}/packages/{package_id}/syncstatus
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |appId|appId|body|yes|AlphaNumeric with smaller case alphabets|32|
@@ -429,7 +429,7 @@ Retrieve application packages sync status.
 Resource URI: /apm/v1/tenants/{tenant_id}/app_package_infos/sync
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |tenant_id|tenant id|path|yes|Valid UUID|64|

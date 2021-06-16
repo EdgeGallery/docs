@@ -11,12 +11,12 @@
 ```
 - Service center
 - DataBase
-- UserManagement
+- User Management
 ```
 其中AppStore-fe的本地启动依赖于:
 ```
-- WebsiteGateway
-- UserManagement
+- Website Gateway
+- User Management
 - AppStore-be
 ```
 所以为了搭建本地开发环境，最终的启动顺序为 Service Center -> DataBase -> UserManagement -> AppStore-be -> WebsiteGateway(AppStore-fe)
@@ -43,7 +43,7 @@
 
 4、创建名为usermgmtdb的数据库
 
-### UserManagement
+### User Management
 
 1、下载user-mgmt-be代码和user-mgmt-fe代码
 

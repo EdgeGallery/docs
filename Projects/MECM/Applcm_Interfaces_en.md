@@ -10,7 +10,7 @@ Upload Config File
 Resource URI: /lcmcontroller/v1/configuration
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |hostIp|host Ip|string|yes|Valid IP Address|15|
@@ -37,7 +37,7 @@ Removes the config file
 Resource URI: /lcmcontroller/v1/configuration
 Method: DELETE
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt Token|
 |hostIp|host Ip|string|yes|Valid IP Address|15|
@@ -53,7 +53,7 @@ Application instantiated
 Resource URI: /lcmcontroller/v1/app_instance/{appInstanceId}/instantiate
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
@@ -93,7 +93,7 @@ Terminates application instance id
 Resource URI: /lcmcontroller/v1/tenants/{tenantId}/app_instances/{appInstanceId}/terminate
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
@@ -110,7 +110,7 @@ Get the statistics information
 Resource URI: /lcmcontroller/v1/tenants/{tenantId}/app_instances/{appInstanceId}
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
@@ -120,7 +120,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -130,7 +130,7 @@ Get cpu , memory and file system size
 Resource URI: /lcmcontroller/v1/tenants/{tenantId}/hosts/{hostIp}/kpi
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |hostIp|host Ip|path |yes|Valid IP Address|15|
@@ -140,7 +140,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -150,7 +150,7 @@ Get Mep Capabilities
 Resource URI: /lcmcontroller/v1/tenants/{tenantId}/hosts/{hostIp}/mep_capabilities
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |hostIp|host Ip|path |yes|Valid IP Address|15|
@@ -194,7 +194,7 @@ Retrieves edge host performance statistics based on capability id
 Resource URI: /lcmcontroller/v1/tenants/{tenantId}/hosts/{hostIp}/mep_capabilities/{capability_id}
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
 |host_ip|edge host ip|path|yes|Valid IP|15|
@@ -228,7 +228,7 @@ Retrieves data for liveness & readiness
 Resource URI: /lcmcontroller/v1/health
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 
@@ -243,7 +243,7 @@ Retrieves status of the application deployment
 Resource URI: /lcmcontroller/v1/hosts/{hostIp}/packages/{packageId}/status
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |host_ip|edge host ip|path|yes|Valid IP|15|
@@ -263,7 +263,7 @@ GetWorkloadDescription
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/workload/events
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
@@ -273,7 +273,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -283,7 +283,7 @@ AppInstance information
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
@@ -292,7 +292,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -302,7 +302,7 @@ Sync app instances records
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/sync_updated
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
@@ -311,7 +311,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 ### Query
@@ -320,7 +320,7 @@ Sync app instances stale records
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/sync_deleted
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
@@ -329,7 +329,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -339,7 +339,7 @@ Upload package
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |packageId|package Id|header|yes|Valid UUID without hypen|64|
@@ -358,7 +358,7 @@ Delete package
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId
 Method: DELETE
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt Token|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
@@ -375,7 +375,7 @@ Delete application package on host
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId/hosts/:hostIp
 Method: DELETE
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt Token|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
@@ -393,7 +393,7 @@ Distribute package
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |packageId|package Id|header|yes|Valid UUID without hypen|64|
@@ -410,7 +410,7 @@ Distribution status
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
@@ -420,7 +420,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -430,7 +430,7 @@ Distribution status
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
@@ -439,7 +439,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -449,7 +449,7 @@ Sync app package records
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/sync_updated
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
@@ -458,7 +458,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -468,7 +468,7 @@ Sync app package stale records
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/sync_deleted
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
@@ -477,7 +477,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -487,7 +487,7 @@ Add mec host information
 Resource URI: /lcmcontroller/v1//hosts
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |mecHostInfo|MecHostInfo|body|yes|Valid UUID|64|
@@ -503,7 +503,7 @@ Add mec host information
 Resource URI: /lcmcontroller/v1//hosts
 Method: PUT
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |mecHostInfo|MecHostInfo|body|yes|Valid UUID|64|
@@ -519,7 +519,7 @@ Query mec host information
 Resource URI: /lcmcontroller/v1/hosts
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 
@@ -527,7 +527,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -537,7 +537,7 @@ Delete mec host information
 Resource URI: /lcmcontroller/v1/hosts:hostIp
 Method: DELETE
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt Token|
 |host_ip|host ip|path|yes|Valid IP|15|
@@ -553,7 +553,7 @@ Batch terminate application
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/batchTerminate
 Method: DELETE
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt Token|
 |tenantId|tenant Id|path|yes|Valid UUID|64|
@@ -569,7 +569,7 @@ Sync mec host records
 Resource URI: /lcmcontroller/v1/hosts/sync_updated
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 
@@ -577,7 +577,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -588,7 +588,7 @@ Example response:
 Resource URI: /lcmcontroller/v1/hosts/sync_deleted
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 
@@ -596,7 +596,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -607,7 +607,7 @@ Example response:
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/images
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
@@ -618,7 +618,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -629,7 +629,7 @@ Example response:
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/images/:imageId
 Method: DELETE
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
@@ -640,7 +640,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -651,7 +651,7 @@ Example response:
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/images/:imageId
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
@@ -662,7 +662,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -674,7 +674,7 @@ Example response:
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/images/:imageId/file
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt Token|
 |appInstanceId|appInstance Id|path|yes|Valid UUID|64|
@@ -686,7 +686,7 @@ Example response:
 ```
 200 OK
   {
-    {}    
+    {}
   }
 ```
 
@@ -697,7 +697,7 @@ Example response:
 Resource URI: /lcmcontroller/v1/mep/subscribe_statistic
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 | | | | | | |
 
@@ -755,7 +755,7 @@ Example response:
 Resource URI: /lcmcontroller/v1/mep/kong_log
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 | | | | | | |
 
@@ -782,7 +782,7 @@ Method: GET
 Resource URI: /lcmcontroller/v1/mep/subscribe_statistic
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 | | | | | | |
 
