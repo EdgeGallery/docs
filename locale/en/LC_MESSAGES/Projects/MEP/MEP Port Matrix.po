@@ -1,14 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020, EdgeGallery
-# This file is distributed under the same license as the EdgeGallery Documentation package.
+# Translations template for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: EdgeGallery Documentation \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-06-15 06:58+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,61 +19,61 @@ msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md:1 Port
 msgid "MEP Port Matrix"
-msgstr "MEP Port Matrix"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "Module"
-msgstr "Module"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "Port number"
-msgstr "Port number"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "mep-server"
-msgstr "mep-server"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "8088"
-msgstr "8088"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "mep-app related configurations"
-msgstr "mep-app related configurations"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "mep-auth"
-msgstr "mep-auth"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "10443"
-msgstr "10443"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "app can apply token"
-msgstr "app can apply token"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "dns-server"
-msgstr "dns-server"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "53"
-msgstr "53"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "dns resolution"
-msgstr "dns resolution"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "8080"
-msgstr "8080"
+msgstr ""
 
 #: ../../Projects/MEP/MEP Matrix.md Port
 msgid "dns resource management interface"
-msgstr "dns resource management interface"
+msgstr ""
 

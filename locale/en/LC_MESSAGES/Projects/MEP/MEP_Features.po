@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-03 08:34+0530\n"
+"POT-Creation-Date: 2021-06-16 02:14+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,19 +19,19 @@ msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:1
 msgid "特性设计"
-msgstr "Feature design"
+msgstr "Feature Design"
 
 #: ../../Projects/MEP/MEP_Features.md:4
 msgid "MEP-auth 模块相关特性"
-msgstr "MEP-auth module related features"
+msgstr "MEP-Auth Module Related Features"
 
 #: ../../Projects/MEP/MEP_Features.md:6
 msgid "MEP-auth 为APP提供认证鉴权功能"
-msgstr "MEP-auth provides authentication authentication for APP"
+msgstr "MEP-auth provides APP authentication"
 
 #: ../../Projects/MEP/MEP_Features.md:7
 msgid "MEP-auth为APP提供认证鉴权功能，提供token申请接口，APP可以基于AK/SK签名算法，向MEP-auth提供正确的签名，获得token，然后通过该token访问MEP-server相关接口。"
-msgstr "The MEP-auth provides an authentication authentication function for APP, provides a token application interface, and the APP may provide the correct signature to MEP-auth based on the AK/SK signature algorithm, obtain the token, and access the MEP-server related interface via the token."
+msgstr "The MEP-auth provides an authentication function for APP, provides a token application interface, and the APP may provide the correct signature to MEP-auth based on the AK/SK signature algorithm, obtain the token, and access the MEP-server related interface via the token."
 
 #: ../../Projects/MEP/MEP_Features.md:9
 msgid "应用APP通过MEP-auth申请token的流程如下图所示："
@@ -42,8 +42,8 @@ msgid "![](/uploads/images/2021/cor2020/165746_8ff53084_5504908.png \"接口调�
 msgstr "![](/uploads/images/2021/cor2020/165746_8ff53084_5504908_en.png \"interface call.png\")"
 
 #: ../../Projects/MEP/MEP_Features.md:13
-msgid "应用使用[*服务认证接口*](#服务认证接口)，获取token"
-msgstr "Application Use [*Service Authentication Interface*](#Serviceauthenticationinterface) for token"
+msgid "应用使用 *服务认证接口*，获取token"
+msgstr "Application uses *Service Authentication Interface* for token"
 
 #: ../../Projects/MEP/MEP_Features.md:15
 msgid "MEP-auth对ak/sk进行签名校验并签发token"
@@ -54,12 +54,12 @@ msgid "MEP-auth返回token"
 msgstr "MEP-auth return token"
 
 #: ../../Projects/MEP/MEP_Features.md:19
-msgid "应用携带token进行服务接口调用。可调用[*应用服务管理相关接口*](#应用服务管理相关接口)，[*可用事件订阅相关接口*](#可用事件订阅相关接口)，[*终止事件订阅相关接口*](#终止事件订阅相关接口)。"
-msgstr "The application carrying token is used for calling the service interface.You can call [*application service management related interface*](#Applicationservicemanagementrelatedinterfaces), [*free event subscription related interface*](#Availableeventsubscriptionrelatedinterfaces), [*terminated event subscription related interface*](#Terminateeventsubscriptionrelatedinterface)."
+msgid "应用携带token进行服务接口调用。可调用 *应用服务管理相关接口*，*可用事件订阅相关接口*，*终止事件订阅相关接口*。"
+msgstr "The application carrying token is used for calling the service interface. You can call *application service management related interface*, *free event subscription related interface*, *terminated event subscription related interface*."
 
 #: ../../Projects/MEP/MEP_Features.md:21
 msgid "MEP基于kong的jwt插件校验token并路由相关请求至MEP-server。"
-msgstr "MEP-based-based jwt plug-in check token and route related requests to MEP-server."
+msgstr "MEP-based-based jwt plugin checks token and route related requests to MEP-server."
 
 #: ../../Projects/MEP/MEP_Features.md:23
 msgid "token申请接口详细描述请参看“MEP features”章节。"
@@ -71,11 +71,11 @@ msgstr "MEP-auth provides configuration capabilities for API gateways"
 
 #: ../../Projects/MEP/MEP_Features.md:26
 msgid "MEP-auth模块在初始化，会首先对API网关（kong）进行初始化:"
-msgstr "The MEP-auth module initializes the API gateway (pong):"
+msgstr "The MEP-auth module initializes the API gateway (kong):"
 
 #: ../../Projects/MEP/MEP_Features.md:28
 msgid "在kong添加一个consumer"
-msgstr "Add a consumer in a pong"
+msgstr "Add a consumer in kong"
 
 #: ../../Projects/MEP/MEP_Features.md:29
 msgid "为MEP-auth自身配置service和route"
@@ -87,39 +87,39 @@ msgstr "Configuring servcie and route for MEP-server"
 
 #: ../../Projects/MEP/MEP_Features.md:31
 msgid "为MEP-auth和MEP-server配置并启用kong插件"
-msgstr "Configure and enable the kong plug-in for MEP-auth and MEP-server"
+msgstr "Configure and enable the kong plugin for MEP-auth and MEP-server"
 
 #: ../../Projects/MEP/MEP_Features.md:33
 msgid "MEP-auth在初始化kong过程中开启的插件包括："
-msgstr "The plug-ins that MEP-auth opened in the initialization kong process include:"
+msgstr "The plugins that MEP-auth opened in the initialization kong process include:"
 
 #: ../../Projects/MEP/MEP_Features.md:35
 msgid "JWT插件：为相应接口提供token校验能力"
-msgstr "JWT plug-in: providing token verification capability for the corresponding interface"
+msgstr "JWT plug-in: providing token verification capability for the corresponding interface."
 
 #: ../../Projects/MEP/MEP_Features.md:36
 msgid "Appid-header插件：在接口request中插入X-AppinstanceID头，以供MEP-server校验；校验申请token的client ip与调用接口的client ip一致"
-msgstr "Appid-header plugin: Insert X-AppinstanceID header in interface request for MEP-server check; check request token's client ip is consistent with client ip of calling interface"
+msgstr "Appid-header plugin: Insert X-AppinstanceID header in interface request for MEP-server check. Check request token's client ip is consistent with client ip of calling interface."
 
 #: ../../Projects/MEP/MEP_Features.md:37
 msgid "Rate Limiting插件：为MEP-auth和MEP-server接口提供流量控制能力"
-msgstr "Rate Limiting Plug-in: Provides flow control capability for MEP-auth and MEP-server interfaces"
+msgstr "Rate Limiting Plugin: Provides flow control capability for MEP-auth and MEP-server interfaces."
 
 #: ../../Projects/MEP/MEP_Features.md:38
 msgid "IP Restriction插件：为MEP-auth提供客户端IP白名单功能支持"
-msgstr "IP Restriction Plug-in: Provide client IP white list function support for MEP-auth"
+msgstr "IP Restriction Plugin: Provides client IP white list function support for MEP-auth."
 
 #: ../../Projects/MEP/MEP_Features.md:39
 msgid "response-transformer插件：提供清除response中server header能力"
-msgstr "response-transformcher plug-in: Provides the server header capability in clear response"
+msgstr "response-transformer plugin: Provides the server header capability in clear response."
 
 #: ../../Projects/MEP/MEP_Features.md:40
 msgid "pre-function插件：提供修改接口请求x_forwarded_for能力"
-msgstr "pre-function plugin: providing modified interface request x_forwarded_for capability"
+msgstr "pre-function plugin: providing modified interface request x_forwarded_for capability."
 
 #: ../../Projects/MEP/MEP_Features.md:42
 msgid "MEP sever特性"
-msgstr "MEP sever feature"
+msgstr "MEP Sever Feature"
 
 #: ../../Projects/MEP/MEP_Features.md:44
 msgid "MEP服务治理功能"
@@ -131,7 +131,7 @@ msgstr "**Definition**"
 
 #: ../../Projects/MEP/MEP_Features.md:47
 msgid "服务管理功能是指MEP能够进行服务的注册，更新，删除，查询的能力。"
-msgstr "Service management functions are the ability of MEP to register, update, delete, query for services."
+msgstr "The service management function refers to the ability of the MEP to register, update, delete, and query services"
 
 #: ../../Projects/MEP/MEP_Features.md:49 ../../Projects/MEP/MEP_Features.md:62 ../../Projects/MEP/MEP_Features.md:88 ../../Projects/MEP/MEP_Features.md:126
 msgid "**设计原理**"
@@ -139,7 +139,7 @@ msgstr "**Design principles**"
 
 #: ../../Projects/MEP/MEP_Features.md:51
 msgid "MEP提供服务注册，更新，删除，查询相关API接口。应用能够通过LDVS-MEP进行服务的注册，更新，删除，查询。"
-msgstr "MEP provides service registration, updates, deletion, query related API interfaces.The application is able to register, update, delete, query through the LDVS-MEP service."
+msgstr "MEP provides service registration, updates, deletion, query related API interfaces. The application is able to register, update, delete, query through the LDVS-MEP service."
 
 #: ../../Projects/MEP/MEP_Features.md:53
 msgid "![服务注册，删除](/uploads/images/2021/cor2020/165650_4eeb753e_5504908.png \"特性1.png\")"
@@ -155,11 +155,11 @@ msgstr "The application service status subscription/notification function is the
 
 #: ../../Projects/MEP/MEP_Features.md:64
 msgid "MEP管理应用服务的状态，应用通过MEP进行服务的注册，当服务消费者期望使用服务供应者的服务时，需要通过MEP订阅服务供应者的服务状态。通过订阅接口，MEP能够识别服务消费者关注的服务，在服务状态发生变化时，能够将相关的服务状态通知到服务消费者。"
-msgstr "The MEP manages the status of the application service through the MEP, which is required to subscribe to the service provider of the MEP service provider when the service consumer expects to use the service provider.Through the subscription interface, MEP can identify the service of the service consumer and can inform the related service state to the service consumer when the service state changes."
+msgstr "MEP manages the status of application services, and applications register for services through MEP. When service consumers expect to use the services of the service provider, they need to subscribe to the service status of the service provider through MEP. Through the subscription interface, MEP can identify the service that the service consumer pays attention to, and when the service status changes, it can notify the service consumer of the related service status."
 
 #: ../../Projects/MEP/MEP_Features.md:66
 msgid "应用能够通过LDVS-MEP进行服务状态的订阅，更新，删除，查询。"
-msgstr "The application can perform subscription, update, delete, query of service state through LDVS-MEP."
+msgstr "Applications can subscribe, update, delete, and query service status through LDVS-MEP."
 
 #: ../../Projects/MEP/MEP_Features.md:68
 msgid "![](/uploads/images/2021/cor2020/165707_f4dbb36e_5504908.png \"特性2.png\")"
@@ -167,39 +167,39 @@ msgstr "![](/uploads/images/2021/cor2020/165707_f4dbb36e_5504908_en.png \"featur
 
 #: ../../Projects/MEP/MEP_Features.md:70
 msgid "MEP Service hearbeat"
-msgstr "MEP Service heartbeat"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:71
 msgid "Each MEC service instance that has previously registered in MEC platform and is configured for heartbeat shall send heartbeat message to the MEC platform periodically in order to show that the MEC service instance is still operational. When the MEC platform has not received the heartbeat for a configurable amount of time, the MEC platform considers that the service instance can no longer be discovered and The service state will change to SUSPEND if it was ACTIVE before."
-msgstr "Each MEC service instance that has previously registered in MEC platform and is configured for heartbeat shall send heartbeat message to the MEC platform periodically in order to show that the MEC service instance is still operational. When the MEC platform has not received the heartbeat for a configurable amount of time, the MEC platform considers that the service instance can no longer be discovered and The service state will change to SUSPEND if it was ACTIVE before."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:73
 msgid "How to configure hearbeat for a service"
-msgstr "How to configure heartbeat for a service"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:74
 msgid "Service register message will carry the livenessinterval field in it. It is an option field. If it is configured that indicate this service want to send heartbeat message. MEP platform support livenessinterval value is 60s. It will overwrite any value set by the service. Note: For details of service register message please check the interface doc."
-msgstr "Service register message will carry the livenessinterval field in it. It is an option field. If it is configured that indicate this service want to send heartbeat message. MEP platform support livenessinterval value is 60s. It will overwrite any value set by the service. Note: For details of service register message please check the interface doc."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:77
 msgid "How to send heartbeat message"
-msgstr "How to send heartbeat message"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:78
 msgid "Services who already set livenessinterval in its register message should send hearbeat message to MEP. When service registers, its response message will carry the URL (liveness), using which service should send the heartbeat to MEP. Note: For details of hearbeat message please check the interface document."
-msgstr "Services who already set set livenessinterval in its register message should send heabeat message to MEP. When service registers, its response message will carry the URL (revenue), using which service should send the heartbeat to MEP. Note: For details of heartbeat message please check the interface document."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:81
 msgid "EG-LDVS应用集成插件mep-agent"
-msgstr "EG-LDVS application integrated plug-in mep-agent"
+msgstr "EG-LDVS application integrated plug-n mep-agent"
 
 #: ../../Projects/MEP/MEP_Features.md:86
 msgid "LDVS MEP-Agent作为应用快速集成适配器，实现服务配置导入和服务注册的功能。"
-msgstr "The LDVS MEP-Agent is used as the application fast integration adapter to realize the function of service configuration import and service registration."
+msgstr "LDVS MEP-Agent, as a rapid integration application adapter, realizes the functions of service configuration import and service registration."
 
 #: ../../Projects/MEP/MEP_Features.md:90
 msgid "LDVS MEP管理应用的服务，应用需要将其服务注册到MEP中，MEP-Agent作为适配器，将服务信息（包括应用实例ID）导入给应用，同时提供配置的方式将应用的服务注册到MEP中。"
-msgstr "The application needs to register the service information (including the application instance ID) into the application by the MEP-Agent in the MEP, and register the application in the MEP by providing the configuration."
+msgstr "LDVS MEP manages the service of the application. The application needs to register its service in the MEP. The MEP-Agent acts as an adapter to import service information (including the application instance ID) to the application, and at the same time provides a configuration method to register the application's service in the MEP."
 
 #: ../../Projects/MEP/MEP_Features.md:93
 msgid "![](/uploads/images/2021/cor2020/165723_8d9be51d_5504908.png \"特性3.png\")"
@@ -207,27 +207,27 @@ msgstr "![](/uploads/images/2021/cor2020/165723_8d9be51d_5504908_en.png \"featur
 
 #: ../../Projects/MEP/MEP_Features.md:95
 msgid "MEP-Agent Get token API"
-msgstr "MEP-Agent Get token API"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:96
 msgid "MEP-Agent will run as sidecar along with application. If Apllication need to obtain token from mep for communication with services, it can query mep-agent api."
-msgstr "MEP-Agent will run as sidecar along with application. If Apllication need to obtain token from mep for communication with services, it can query mep-agent api."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:109
 msgid "Return example:"
-msgstr "Return example:"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:120
 msgid "Capabilities(Service) query support"
-msgstr "Capabilities (Service) query support"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:124
 msgid "Once capabilities(services) registered to the mep, other applications can consume it. MEP support the listing of these capabilities(services) over Mm5 interface."
-msgstr "Once capabilities (services) registered to the mep, other applications can consume it. MEP support the listing of these capabilities (services) over Mm5 interface."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:128
 msgid "The capability query interface is exposed over Mm5 interface to MECM module and it can be queried together or independently. Each capability consists of a list of the present consumers to it."
-msgstr "The capability query interface is exposed over Mm5 interface to MECM module and it can be queried together or independently. Each capability consists of a list of the present consumers to it."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:130
 msgid "![Query flow](/uploads/images/2021/cor2020/152205_3918141b_7625394.png \"quwery_flow1.png\")"
@@ -235,47 +235,47 @@ msgstr "![Query flow](/uploads/images/2021/cor2020/152205_3918141b_7625394_en.pn
 
 #: ../../Projects/MEP/MEP_Features.md:132
 msgid "DNS server 特性"
-msgstr "DNS server feature"
+msgstr "DNS server features"
 
 #: ../../Projects/MEP/MEP_Features.md:133
 msgid "The MEP platform provides the domain name resolution services to the applications deployed in the EdgeGallery MEC, which can be utilized by the device applications in UE. MEC platform receives the DNS configurations from the MEC management, which includes the FQDN(Fully Qualified Domain Name), IP address and related entries. MEC applications can later query or modify the state of these configurations."
-msgstr "The MEP platform provides the domain name resolution services to the applications deployed in the EdgeGallery MEC, which can be utilized by the device applications in UE. MEC platform receives the DNS configurations from the MEC management, which includes the FQDN (Fully Qualified Domain Name), IP address and related entries. MEC applications can later query or modify the state of these configurations."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:135
 msgid "The three major operations for DNS are:"
-msgstr "The tree major operations for DNS are:"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:137 ../../Projects/MEP/MEP_Features.md:142
 msgid "DNS management operations"
-msgstr "DNS management operations"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:138
 msgid "Query configuration and Activation/Deactivation by the MEC applications"
-msgstr "Query configuration and Activation/Deactivation by the MEC applications"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:139
 msgid "DNS query by the device applications"
-msgstr "DNS query by the device applications"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:141
 msgid "We will see each of these features in the below section."
-msgstr "We will see each of these features in the below section."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:144
 msgid "DNS configurations are created either by MECM modules during start-up or from the OSS directly. DNS management supports both create, update, query and delete operations."
-msgstr "DNS configurations are created either by MECM modules during start-up or from the OSS directly. DNS management supportts both create, update, query and delete operations."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:146
 msgid "**Rule creation at start-up**"
-msgstr "**Rule creation at start-up**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:148
 msgid "DNS configurations are embedded in the application descriptor and MEO(Multi-access Edge Orchestrator) will get these information during the start-up of the application. Once MEO receives the application descriptor, it searches for the DNS related configurations and pass this information to the MEPM(MEC Platform Manager) module in the edge along with the start-up request on Mm3 interface."
-msgstr "DNS configurations are embedded in the application descriptor and MEO (Multi-access Edge Orchestrator) will get these information during the startup-up of the application. Once MEO received the application descriptor, it searches for the DNS related configurations and pass this information to the MEPM (MEC Platform Manager) module in the layer along with the startup-up request on Mm3 interface."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:150
 msgid "Upon receiving the DNS configurations from MEO, MEPM send this request to the MEP server on Mm5 interface after deploying the MEC application."
-msgstr "Upon receiving the DNS configurations from MEO, MEPM send this request to the MEP server on Mm5 interface after deploying the MEC application."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:152
 msgid "![](/uploads/images/2021/cor2020/133822_31b532a2_7625394.png \"meo-mepm-mep.png\")"
@@ -283,11 +283,11 @@ msgstr "![](/uploads/images/2021/cor2020/133822_31b532a2_7625394_en.png \"meo-me
 
 #: ../../Projects/MEP/MEP_Features.md:154
 msgid "**Rule creation from OSS**"
-msgstr "**Rule creation from OSS**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:156
 msgid "DNS configurations can be updated from OSS directly over Mm2 interface through MEPM."
-msgstr "DNS configurations can be updated from OSS directly over Mm2 interface through MEPM."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:158
 msgid "![](/uploads/images/2021/cor2020/133912_597b2c17_7625394.png \"oss-mepm-mep.png\")"
@@ -295,11 +295,11 @@ msgstr "![](/uploads/images/2021/cor2020/133912_597b2c17_7625394_en.png \"oss-me
 
 #: ../../Projects/MEP/MEP_Features.md:160
 msgid "DNS configurations from MEC applications"
-msgstr "DNS configurations from MEC applications"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:162
 msgid "MEC applications can query the DNS configurations created for it and can activate or deactivate the same. Activation or deactivation can be performed by modifying the state of the DNS configuration."
-msgstr "MEC applications can query the DNS configurations created for it and can activate or deactivate the same. Activation or deactivation can be performed by modifying the state of the DNS configuration."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:164
 msgid "![](/uploads/images/2021/cor2020/133933_9f7bd2ec_7625394.png \"mecapp-mep.png\")"
@@ -307,169 +307,169 @@ msgstr "![](/uploads/images/2021/cor2020/133933_9f7bd2ec_7625394_en.png \"mecapp
 
 #: ../../Projects/MEP/MEP_Features.md:166
 msgid "DNS query"
-msgstr "DNS query"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:168
 msgid "Device application in the UE can query the DNS server for the domain name resolution. By default the DNS server will listen on the 53 port."
-msgstr "Device application in the UE can query the DNS server for the domain name resolution. By default the DNS server will listen on the 53 port."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:170
 msgid "How to configure the DNS server?"
-msgstr "How to configure the DNS server?"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:172
 msgid "The dns server in MEP runs inside a container and can be configured using few command line parameters."
-msgstr "The dns server in MEP runs inside a container and can be configured using few command line parameters."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:174
 msgid "**Command**"
-msgstr "**Command**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:180
 msgid "Detailed list of the optional parameters are stated below."
-msgstr "Detailed list of the optional parameters are stated below."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "parameter"
-msgstr "parameter"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "Type"
-msgstr "Type"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "Range/Length"
-msgstr "Range/Length"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "Default"
-msgstr "Default"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "-db"
-msgstr "-db"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "string"
-msgstr "string"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "1~256"
-msgstr "1~256"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "dbEgDns"
-msgstr "dbEgDns"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "Backend store db name"
-msgstr "Backend store db name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "-port"
-msgstr "-port"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "number"
-msgstr "number"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "1~65535"
-msgstr "1~65535"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "53"
-msgstr "53"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "DNS server listening port"
-msgstr "DNS server listening port"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "-managementPort"
-msgstr "-managementPort"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "8080"
-msgstr "8080"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "Management interface listening port"
-msgstr "Management interface listening port"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "-connectionTimeout"
-msgstr "-connectionTimeout"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "2~50"
-msgstr "2~50"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "2"
-msgstr "2"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "Connection timeout"
-msgstr "Connection timeout"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "-ipAdd"
-msgstr "-ipAdd"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "Ipv4/Ipv6"
-msgstr "Ipv4/Ipv6"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "0.0.0.0"
-msgstr "0.0.0.0"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "DNS listening ip address"
-msgstr "DNS listening ip address"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "-managementIpAdd"
-msgstr "-managementIpAdd"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "Management interface listening ip address"
-msgstr "Management interface listening ip address"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "-forwarder"
-msgstr "-forwarder"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "DNS proxy server IP"
-msgstr "DNS proxy server IP"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "-loadBalance"
-msgstr "-loadBalance"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "bool"
-msgstr "bool"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "true/false"
-msgstr "true/false"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "false"
-msgstr "false"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
 msgid "For domain names with multiple ip address, enabling this option will perform loadbalancing by shuffling the response IP list"
-msgstr "For domain names with multiple ip address, enabling this option will perform loadbalancing by shuffling the response IP list"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:192
 msgid "Example"
-msgstr "Example"
+msgstr ""
 

@@ -19,27 +19,27 @@ msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:1
 msgid "How to run?"
-msgstr "How to run?"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:3
 msgid "Download and unzip token-generator.zip"
-msgstr "Download and unzip token-generator.zip"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:5
 msgid "Set the below env variables using the correct ip"
-msgstr "Set the below env variables using the correct ip"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:18
 msgid "Run the token generator"
-msgstr "Run the token generator"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:19
 msgid "If the MEP version is 1.0.1 and before use token_generator"
-msgstr "If the MEP version is 1.0.1 and before use token_generator"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:23
 msgid "If the MEP version is after 1.0.1 use token_generator_url_unify"
-msgstr "If the MEP version is after 1.0.1 use token_generator_url_unify"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:27
 msgid "签名（Authorization）和token都可以通过日志看到 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0204/165822_77d3c5d4_4991354.png \"屏幕截图.png\")"
@@ -47,32 +47,32 @@ msgstr "The signature (Authorization) and token can all be seen by the log ![Ent
 
 #: ../../Projects/MEP/token-generator/README.md:30
 msgid "How to modify token-generator code"
-msgstr "How to modify token-generator code"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:32
 msgid "Token-generator is modified from mep-agent code. Only add log to record token and return after get token."
-msgstr "Token-generator is modified from mep-agent code. Only add log to record token and return after get token."
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:34
 msgid "The change code as follows："
-msgstr "The change code as follows:"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:36
 msgid "main.go"
-msgstr "main.go"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:44
 msgid "start.go"
-msgstr "start.go"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:54
 msgid "token.go"
-msgstr "token.go"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:65
 msgid "request.go"
-msgstr "request.go"
+msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:71
 msgid "How to build token-generator"
-msgstr "How to build token-generator"
+msgstr ""

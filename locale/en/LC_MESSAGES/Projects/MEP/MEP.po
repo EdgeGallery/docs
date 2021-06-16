@@ -31,7 +31,7 @@ msgstr "    MEP interface design"
 
 #: ../../Projects/MEP/MEP.rst:3
 msgid "    MEP 依赖"
-msgstr "    MEP dependence"
+msgstr "    MEP Dependency"
 
 #: ../../Projects/MEP/MEP.rst:3
 msgid "    MEP 数据库设计"

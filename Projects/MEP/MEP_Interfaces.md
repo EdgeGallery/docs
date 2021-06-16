@@ -1,28 +1,28 @@
 接口设计
 ==============
 
-- [接口设计](#接口设计)
-  - [MEP 接口简介](#mep-接口简介)
-  - [MEP-auth模块接口](#mep-auth模块接口)
-    - [服务认证接口](#服务认证接口)
-    - [AK/SK配置接口](#aksk配置接口)
-  - [MEP-server 接口](#mep-server-接口)
-    - [应用服务管理相关接口](#应用服务管理相关接口)
-      - [1. 查询应用服务](#1-查询应用服务)
-      - [2. 查询应用指定服务](#2-查询应用指定服务)
-      - [3. 注册应用服务](#3-注册应用服务)
-      - [4. 更新应用服务](#4-更新应用服务)
-      - [5. 删除应用服务](#5-删除应用服务)
-    - [可用事件订阅相关接口](#可用事件订阅相关接口)
-      - [1. 查询可用事件订阅](#1-查询可用事件订阅)
-      - [2. 注册可用事件订阅](#2-注册可用事件订阅)
-      - [3. 删除可用事件订阅](#3-删除可用事件订阅)
-      - [4. 查询指定可用事件订阅](#4-查询指定可用事件订阅)
-    - [终止事件订阅相关接口](#终止事件订阅相关接口)
-      - [1. 查询终止事件订阅](#1-查询终止事件订阅)
-      - [2. 注册终止事件订阅](#2-注册终止事件订阅)
-      - [3. 删除终止事件订阅](#3-删除终止事件订阅)
-      - [4. 查询指定终止事件订阅](#4-查询指定终止事件订阅)
+- [Interface design](#interface-design)
+  - [Introduction to MEP interface](#introduction-to-mep-interface)
+  - [MEP-auth module interface](#mep-auth-module-interface)
+    - [Service Authentication Interface](#service-authentication-interface)
+    - [AK/SK configuration interface](#ak-sk-configuration-interface)
+  - [MEP-server interface](#mep-server-interface)
+    - [Application Service Management Related Interface](#application-service-management-related-interface)
+      - [1. Query application services](#query-application-services)
+      - [2. Query application specific services](#query-application-specific-services)
+      - [3. Register application service](#register-application-service)
+      - [4. Update application service](#update-application-service)
+      - [5. Delete application service](#delete-application-service)
+    - [Available event subscription related interface](#available-event-subscription-related-interface)
+      - [1. Query available event subscriptions](#query-available-event-subscriptions)
+      - [2. Register for available event subscription](#register-for-available-event-subscription)
+      - [3. Delete available event subscription](#delete-available-event-subscription)
+      - [4. Query specified available event subscription](#query-specified-available-event-subscription)
+    - [Termination event subscription related interface](#termination-event-subscription-related-interface)
+      - [1. Query termination event subscription](#query-termination-event-subscription)
+      - [2. Registration termination event subscription](#registration-termination-event-subscription)
+      - [3. Delete termination event subscription](#delete-termination-event-subscription)
+      - [4. Query specified termination event subscription](#query-specified-termination-event-subscription)
     - [Services interfaces](#service)
       - [1. Query availability services list](#query-availability-services-list)
       - [2. Query availability individual service](#query-availability-individual-service)
@@ -45,37 +45,37 @@
       - [5. Query task status](#query-task-status)
     - [Application Termination](#application-termination)
       - [1. App Instance Termination](#app-instance-termination)
-    - [Query Platform Capabilities(Services)](#query-platform-capabilitiesservices)
+    - [Query Platform Capabilities(Services)](#query-platform-capabilities-services)
       - [1. Query all capabilities](#query-all-capabilities)
       - [2. Query individual capability](#query-individual-capability)
-    - [异常状态码](#异常状态码)
+    - [Abnormal status code](#abnormal-status-code)
   - [Dns-Server](#dns-server)
-    - [1. Create/Set new entry](#createset-new-entry)
+    - [1. Create/Set new entry](#create-set-new-entry)
     - [2. Delete an entry](#delete-an-entry)
   - [MEP Agent](#mep-agent)
       - [1. Get token](#get-token)
       - [2. Get producer endpoint by service name](#get-producer-endpoint-by-service-name)
 
-## MEP 接口简介
+## Introduction to MEP interface
 
 MEP主要包含MEP-server和MEP-auth两个主要功能模块。MEP server接口分为两类，一类为遵循ETSI MEC 011 v2.1.1标准的Mp1接口，主要为App提供服务注册发现，App状态通知订阅，Dns规则获取等功能；另一类为Mm5接口，主要为MECM/MEPM提供配置管理功能。MEP auth目前主要作为鉴权模块，为App提供token申请发放功能。  
 URL为服务自己的URL，PORT为服务自己的PORT。如果经过KONG，PORT变成KONG的PORT，URL需要添加对应的路由。mepauth直接添加{KONG_MEPAUTH_ROUTE}（当前值为/mepauth），mepserver把/mep用{KONG_MEPSERVER_ROUTE}（当前值为/mepserver）替换。
 
-## MEP-auth模块接口
+## MEP-auth module interface
 
 
 
-### 服务认证接口
+### Service Authentication Interface
 
 应用通过AK/SK向LDVS进行鉴权认证，认证通过后返回token，每个token具有有效期（1小时），token分配方在有效期结束后将收回token，当携带过期的token的HTTP请求到达的时候，将被以状态码401返回；此时token携带方需要重新进行token获取。当token还在有效期内，token携带方再次使用相同的用户获取token时返回当前仍然有效的token。
 
-URL：
+**URL**
 
 ```
 POST /mep/token
 ```
 
-请求参数：
+**请求参数**
  |名称  |          类型 |    描述       |                                      IN     |  必选|
  |---|---|---|---|---|
  | Content-Type |   String  | MIME类型，  填"application/json"                        |               header  | 是|                                                                    
@@ -84,12 +84,12 @@ POST /mep/token
  |  Host    |       String |  与生成认证信息签名用到的host字段保持一致   |      header|   是|
 
 
-Body参数：
+**Body参数**
 
 无
 
 
-请求示例：
+**请求示例**
 
 ```
 POST /mep/token
@@ -119,7 +119,7 @@ POST /mep/token
 ```
 
 
-返回参数：
+**返回参数**
 
 返回码：200
 
@@ -130,7 +130,7 @@ OK
   |token\_type     |String   |Token类型（Bearer）|   是|
   |expires\_in    | int     | 失效时间             | 是|
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 200 OK
@@ -145,21 +145,21 @@ HTTP/1.1 200 OK
 
 注：在测试时，请确保启动EG-LDVS时使用的AK/SK和获取token时使用的AK/SK相同。基于AK/SK的认证，EG-LDVS对于相同的AK若5分钟内三次认证失败，对应AK将被锁定15分钟。
 
-### AK/SK配置接口
+### AK/SK configuration interface
 
-URL：
+**URL**
 
 ```
 PUT /mep/appMng/v1/applications/{appInstanceId}/confs
 ```
 
-请求参数：
+**请求参数**
 |名称    |        类型    | 描述     |                           IN   |    必选|
   | ---| ---| ---| ---| ---| 
  |  Content-Type    | String   | MIME类型，填"application/json"                       |     header|   是| 
   |appInstanceId |  String |  APP实例ID（UUID）             |      path |    是|
 
-Body参数：
+**Body参数**
   |  名称     |                     类型 |              描述        |             必选| 
   | ---| ---| ---| ---|
   | authInfo|                      Object|            用户信息      |         是| 
@@ -170,7 +170,7 @@ Body参数：
   | &gt;appName|                 String  |            app名称       |   是      | 
   | &gt;requiredServices| Array[String]  |         app依赖的服务列表 |   是      |
 
-请求示例：
+**请求示例**
 
 ```
 PUT /mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confs
@@ -199,7 +199,7 @@ PUT /mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confs
 }
 ```
 
-返回参数：
+**返回参数**
 
 返回码：200
   |  名称     |                     类型 |              描述        |             必选| 
@@ -212,7 +212,7 @@ PUT /mep/appMng/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confs
   | &gt;appName|                 String  |            app名称       |   是      | 
   | &gt;requiredServices| Array[String]  |            app依赖的服务 |   是      |
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 200 OK
@@ -241,31 +241,31 @@ HTTP/1.1 200 OK
 }
 ```
 
-## MEP-server 接口
+## MEP-server interface
 
-### 应用服务管理相关接口
+### Application Service Management Related Interface
 
-#### 1. 查询应用服务
+#### 1. Query application services
 
 查询指定APP的服务列表
 
-URL
+**URL**
 
 ```
 GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services
 ```
 
-请求参数：
+**请求参数**
   |名称            | 类型  |   描述     |                           IN    |   必选|
   |---|---|---|---|---| 
   |Authorization |  String |  Token信息，格式：Bearer token信息  | header  | 是|
   |appInstanceId  | String  | APP实例ID（UUID）                   |path    | 是|
 
-Body参数：
+**Body参数**
 
 无
 
-请求示例：
+**请求示例**
 
 ```
 GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
@@ -281,7 +281,7 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 ```
 
 
-返回参数：
+**返回参数**
 
 返回码：200
 
@@ -324,7 +324,7 @@ OK
   |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
   |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 200 OK
@@ -373,28 +373,28 @@ HTTP/1.1 200 OK
 
 ```
 
-#### 2. 查询应用指定服务
+#### 2. Query application specific services
 
 查询对应APP的指定服务
 
-URL
+**URL**
 
 ```
 GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
 ```
 
-请求参数：
+**请求参数**
   |名称            |类型  |   描述     |                           IN      | 必选|
   |---|---|---|---|---| 
   |Authorization  | String  | Token信息，格式：Bearer token信息  | header |  是|
   |appInstanceId  | String   |APP实例ID（UUID）                  | path  |   是|
   |serviceId      | String   |APP服务实例ID                      | path |    是|
 
-Body参数：
+**Body参数**
 
 无
 
-请求示例：
+**请求示例**
 
 ```
 GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
@@ -409,7 +409,7 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 
 ```
 
-返回参数：
+**返回参数**
 
 返回码：200
 
@@ -452,7 +452,7 @@ OK
   |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
   |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 200 OK
@@ -498,24 +498,24 @@ HTTP/1.1 200 OK
  }
 ```
 
-#### 3. 注册应用服务
+#### 3. Register application service
 
 为指定APP注册服务。
 
-URL
+**URL**
 
 ```
 POST /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services
 ```
 
-请求参数：
+**请求参数**：
 |名称    |        类型    | 描述     |                           IN   |    必选|
   | ---| ---| ---| ---| ---| 
  |  Content-Type    | String   | MIME类型，填"application/json"                       |     header|   是|                                                                                          
  |Authorization |  String |  Token信息，格式：Bearer token信息  | header|   是|
   |appInstanceId |  String |  APP实例ID（UUID）             |      path |    是|
 
-Body参数：
+**Body参数**
   |  名称     |                     类型 |              描述        |                                                                                                           必选| 
   | ---| ---| ---| ---|
   | serName     |                  String |            服务名称（字母/数字/\_/-的组合，但不能以\_和-开头或结尾），最大长度128                                                | 是| 
@@ -551,7 +551,7 @@ Body参数：
   | isLocal     |                  boolean  |          是否在本地域（true/false）     |                                                                                        否|
   | livenessInterval          |    integer |          Interval (in seconds) between two consecutive heartbeat messages |                                                否|
 
-请求示例：
+**请求示例**
 
 ```
 POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services
@@ -645,7 +645,7 @@ OK
   |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
   |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 201 OK
@@ -694,17 +694,17 @@ HTTP/1.1 201 OK
 
 **注：单个应用注册的服务数量应不超过50个，超出后服务将报错。**
 
-#### 4. 更新应用服务
+#### 4. Update application service
 
 更新APP指定服务信息。
 
-URL
+**URL**
 
 ```
 PUT /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
 ```
 
-请求参数：
+**请求参数**
   | 名称           |  类型   |   描述           |                      IN     |   必选| 
   |---|---|---|---|---|
   | Content-Type  |   String   | MIME类型，  填"application/json"        |                 header  | 是|                                                                     
@@ -712,7 +712,7 @@ PUT /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
   |appInstanceId  | String   |APP实例ID（UUID）                  | path    | 是|
   |serviceId     |  String   |APP服务实例ID                       |path     |是|
 
-Body参数：
+**Body参数**
   | 名称               |          类型      |        描述           |                                                                                                       必选|
   |---|---|---|---|
  | serName       |               String      |      服务名称（字母/数字/\_/-的组合，但不能以\_和-开头或结尾），最大长度128  |                                              是|
@@ -748,7 +748,7 @@ Body参数：
 |  isLocal |                    boolean |          是否在本地域（true/false）      |                                                                                      否|
 |  livenessInterval         |      integer |          Interval (in seconds) between two consecutive heartbeat messages |                                                否|
 
-请求示例：
+**请求示例**
 
 ```
 PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
@@ -801,7 +801,7 @@ PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 
 ```
 
- 返回参数：
+ **返回参数**
 
 返回码：200
 
@@ -844,7 +844,7 @@ OK
  |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
  |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 200 OK
@@ -892,28 +892,28 @@ HTTP/1.1 200 OK
 
 ```
 
-#### 5. 删除应用服务
+#### 5. Delete application service
 
 删除APP指定服务。
 
-URL
+**URL**
 
 ```
 DELETE /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}
 ```
 
-请求参数：
+**请求参数**
   |名称      |      类型    | 描述         |                       IN   |    必选|
   |---|---|---|---|---| 
   |Authorization |  String |  Token信息，格式：Bearer token信息   |header |  是|
   |appInstanceId|   String  | APP实例ID（UUID）          |         path  |   是|
   |serviceId   |    String   |APP服务实例ID          |             path |    是|
 
-Body参数：
+**Body参数**
 
 无
 
-请求示例：
+**请求示例**
 
 ```
 DELETE /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460
@@ -930,13 +930,13 @@ DELETE /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1
 
 ```
 
-返回参数：
+**返回参数**
 
 返回码：204
 
 OK
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 204 OK
@@ -945,29 +945,29 @@ HTTP/1.1 204 OK
 
 ```
 
-### 可用事件订阅相关接口
+### Available event subscription related interface
 
-#### 1. 查询可用事件订阅
+#### 1. Query available event subscriptions
 
 查询指定APP的可用事件订阅信息
 
-URL
+**URL**
 
 ```
 GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
 ```
 
-请求参数：
+**请求参数**
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
 | appInstanceId | String | APP实例ID（UUID） | path |  是   |
 
-Body参数：
+**Body参数**
 
 无
 
-请求示例：
+**请求示例**
 
 ```
 GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
@@ -982,7 +982,7 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 
 ```
 
-返回参数：
+返回参数
 
 返回码：200
 
@@ -996,7 +996,7 @@ OK
 | &gt;&gt;href | String | 订阅者URI | 是 |
 | &gt;&gt;rel | String | 固定值SerAvailabilityNotificationSubscription | 是 |
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 200 OK
@@ -1015,24 +1015,24 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### 2. 注册可用事件订阅
+#### 2. Register for available event subscription
 
 为指定APP注册可用事件订阅
 
-URL
+**URL**
 
 ```
 POST /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions
 ```
 
-请求参数：
+**请求参数**
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Content-Type  | String | MIME类型，填"application/json" | header |  是   |
 | Authorization | String | Token信息，格式：Bearer token信息 | header |  是   |
 | appInstanceId | String | APP实例ID（UUID） | path |  是   |
 
-Body参数：
+**Body参数**
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionType  | String | 订阅类型（SerAvailabilityNotificationSubscription） |  是   |
@@ -1048,7 +1048,7 @@ Body参数：
 | &gt;states | Array\[String\] | 上报事件的应用服务状态（ACTIVE/INACTIVE） |  否   |
 | &gt;isLocal  | boolean | 是否在本地域（true/false） |  否   |
 
-请求示例：
+**请求示例**
 
 ```
 POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
@@ -1088,7 +1088,7 @@ POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/
 }
 ```
 
-返回参数：
+返回参数
 
 返回码：201
 
@@ -1112,7 +1112,7 @@ OK
 | &gt;states  | Array\[String\] | 上报事件的应用服务状态（ACTIVE/INACTIVE） |  否   |
 | &gt;isLocal  | boolean | 是否在本地域（true/false） |  否   |
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 201 OK
@@ -1151,28 +1151,28 @@ HTTP/1.1 201 OK
 
 **注：单个应用注册的可用事件订阅数量应不超过50个，超出后服务将报错。**
 
-#### 3. 删除可用事件订阅
+#### 3. Delete available event subscription
 
 删除指定可用事件订阅信息
 
-URL
+**URL**
 
 ```
 DELETE /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
-请求参数：
+**请求参数**
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
 | appInstanceId  | String | APP实例ID（UUID） | path |  是   |
 | subscriptionId  | String | 事件订阅ID | path |  是   |
 
-Body参数：
+**Body参数**
 
 无
 
-请求示例：
+**请求示例**
 
 ```
 DELETE /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
@@ -1187,13 +1187,13 @@ DELETE /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1
 
 ```
 
-返回参数：
+返回参数
 
 返回码：204
 
 OK
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 204 OK
@@ -1202,28 +1202,28 @@ HTTP/1.1 204 OK
 
 ```
 
-#### 4. 查询指定可用事件订阅
+#### 4. Query specified available event subscription
 
 查询指定ID的可用事件订阅信息
 
-URL
+**URL**
 
 ```
 GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
-请求参数：
+**请求参数**
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
 | appInstanceId  | String | APP实例ID（UUID） | path |  是   |
 | subscriptionId  | String | 事件订阅ID | path |  是   |
 
-Body参数：
+**Body参数**
 
 无
 
-请求示例：
+**请求示例**
 
 ```
 GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
@@ -1238,7 +1238,7 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 
 ```
 
-返回参数：
+返回参数
 
 返回码：200
 
@@ -1261,7 +1261,7 @@ OK
 | &gt;states  | Array\[String\] | 上报事件的应用服务状态（ACTIVE/INACTIVE） |  否   |
 | &gt;isLocal  | boolean | 是否在本地域（true/false） |  否   |
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 200 OK
@@ -1296,29 +1296,29 @@ HTTP/1.1 200 OK
 }
 ```
 
-### 终止事件订阅相关接口
+### Termination event subscription related interface
 
-#### 1. 查询终止事件订阅
+#### 1. Query termination event subscription
 
 查询指定APP的终止事件订阅信息
 
-URL
+**URL**
 
 ```
 GET /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions
 ```
 
-请求参数：
+**请求参数**
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
 | appInstanceId  | String | APP实例ID（UUID） | path |  是   |
 
-Body参数：
+**Body参数**
 
 无
 
-请求示例：
+**请求示例**
 
 ```
 GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
@@ -1333,7 +1333,7 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/su
 
 ```
 
-返回参数：
+返回参数
 
 返回码：200
 
@@ -1347,7 +1347,7 @@ OK
 | &gt;&gt;href  | String | 订阅者URI |  是   |
 | &gt;&gt;rel  | String | 固定值AppTerminationNotificationSubscription |  是   |
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 200 OK
@@ -1367,31 +1367,31 @@ HTTP/1.1 200 OK
 
 ```
 
-#### 2. 注册终止事件订阅
+#### 2. Registration termination event subscription
 
 为指定APP注册终止事件订阅
 
-URL
+**URL**
 
 ```
 POST /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions
 ```
 
-请求参数：
+**请求参数**
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Content-Type  | String | MIME类型，填"application/json"  | header |  是   |
 | Authorization  | String | Token信息，格式：Bearer token信息 | header |  是   |
 | appInstanceId  | String | APP实例ID（UUID） | path |  是   |
 
-Body参数：
+**Body参数**
 | **名称** | **类型** | **描述** | **必选** |
 | --- | --- | --- | --- |
 | subscriptionType  | String | 订阅类型（AppTerminationNotificationSubscription）  |  是   |
 | callbackReference  | String | 用于接收通知的回调URI，不支持域名格式，仅支持IP地址+URL，且不能包含localhost、127.x.x.x、mepserver容器IP网段，例如：https://159.138.1.2:8080/xxx |  是   |
 | appInstanceId  | String | APP实例ID（UUID） |  是   |
 
-请求示例：
+**请求示例**
 
 ```
 POST /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions
@@ -1413,7 +1413,7 @@ POST /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 
 ```
 
-返回参数：
+返回参数
 
 返回码：201
 
@@ -1428,7 +1428,7 @@ OK
 | &gt;&gt;href  | String | 调用者自身URI  |  是   |
 | appInstanceId  | String |   |  是   |
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 201 OK
@@ -1448,28 +1448,28 @@ HTTP/1.1 201 OK
 
 **注：单个应用注册的终止事件订阅数量应不超过50个，超出后服务将报错。**
 
-#### 3. 删除终止事件订阅
+#### 3. Delete termination event subscription
 
 删除指定终止事件订阅信息
 
-URL
+**URL**
 
 ```
 DELETE /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
-请求参数：
+**请求参数**
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  是   |
 | appInstanceId  | String | APP实例ID（UUID）  | path |  是   |
 | subscriptionId  | String | 事件订阅ID（UUID） | path |  是   |
 
-Body参数：
+**Body参数**
 
 无
 
-请求示例：
+**请求示例**
 
 ```
 DELETE /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
@@ -1484,13 +1484,13 @@ DELETE /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f
 
 ```
 
-返回参数：
+返回参数
 
 返回码：204
 
 OK
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 204 OK
@@ -1499,28 +1499,28 @@ HTTP/1.1 204 OK
 }
 ```
 
-#### 4. 查询指定终止事件订阅
+#### 4. Query specified termination event subscription
 
 查询指定ID的终止事件订阅信息
 
-URL
+**URL**
 
 ```
 GET /mep/mec_app_support/v1/applications/{appInstanceId}/subscriptions/{subscriptionId}
 ```
 
-请求参数：
+**请求参数**
 | **名称** | **类型** | **描述** | **IN** | **必选** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  是   |
 | appInstanceId  | String | APP实例ID（UUID）  | path |  是   |
 | subscriptionId  | String | 事件订阅ID（UUID） | path |  是   |
 
-Body参数：
+**Body参数**
 
 无
 
-请求示例：
+**请求示例**
 
 ```
 GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/subscriptions/826a3890-8b05-416f-8d24-7a87e9eca731
@@ -1535,7 +1535,7 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/su
 
 ```
 
-返回参数：
+返回参数
 
 返回码：200
 
@@ -1549,7 +1549,7 @@ OK
 | &gt;&gt;href  | String | 调用者自身URI  |  是   |
 | appInstanceId  | String |   |  是   |
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 200 OK
@@ -1570,23 +1570,23 @@ HTTP/1.1 200 OK
 #### 1. Query availability services list
 This method retrieves information about a list of mecService resources. This method is typically used in "service availability query" procedure
 
-URL
+**URL**
 
 ```
 GET /mep/mec_service_mgmt/v1/services
 ```
 
-请求参数：
+**请求参数**
   |名称            | 类型  |   描述     |                           IN    |   必选|
   |---|---|---|---|---| 
   |Authorization |  String |  Token信息，格式：Bearer token信息  | header  | 是|
   |ser_name| String  | service name                   |query    | 否|
 
-Body参数：
+**Body参数**
 
 无
 
-请求示例：
+**请求示例**
 
 ```
 GET /mep/mec_service_mgmt/v1/services?ser_name=xxx
@@ -1602,7 +1602,7 @@ GET /mep/mec_service_mgmt/v1/services?ser_name=xxx
 ```
 
 
-返回参数：
+返回参数
 
 返回码：200
 
@@ -1645,7 +1645,7 @@ OK
   |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
   |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 200 OK
@@ -1697,24 +1697,24 @@ HTTP/1.1 200 OK
 #### 2. Query availability individual service
 This method retrieves information about a mecService resource. This method is typically used in "service availability query" procedure
 
-URL
+**URL**
 
 ```
 GET /mep/mec_service_mgmt/v1/services/{serviceId}
 ```
 
-请求参数：
+**请求参数**
   |名称            | 类型  |   描述     |                           IN    |   必选|
   |---|---|---|---|---| 
   |serviceId| String  | service id                   |path    | 是|
   |Authorization |  String |  Token信息，格式：Bearer token信息  | header  | 是|
   |ser_name| String  | service name                   |query    | 否|
 
-Body参数：
+**Body参数**
 
 无
 
-请求示例：
+**请求示例**
 
 ```
 GET /mep/mec_service_mgmt/v1/services?ser_name=xxx
@@ -1730,7 +1730,7 @@ GET /mep/mec_service_mgmt/v1/services?ser_name=xxx
 ```
 
 
-返回参数：
+返回参数
 
 返回码：200
 
@@ -1773,7 +1773,7 @@ OK
   |&gt;self                 |    object |          Link to this resource. Shall be present in HTTP responses.        |                                                  否|
   |&gt;&gt;liveness         |    string |          Link to the resource where the MEC platform expects the service instance to send the liveness information. |         否|
 
-返回示例：
+**返回示例**
 
 ```
 HTTP/1.1 200 OK
@@ -1825,29 +1825,29 @@ HTTP/1.1 200 OK
 #### 1. Query service liveness info
 This method retrieves information about an individual mec service liveness resource
 
-URL
+**URL**
 ```
 GET /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}/liveness
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
 | appInstanceId  | String | APP实例ID（UUID）  | path |  Yes   |
 | serviceId      | String   |APP服务实例ID                      | path |    是|
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example Request:
+**Example Request**
 
 ```
 GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460/liveness
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name          | Type                        | Description              |
 | ------------- | --------------------------- | ------------------------ |
 | state     | enum **{ACTIVE, INACTIVE, SUSPENDED}**                      | State                  |
@@ -1882,25 +1882,25 @@ Exception status code
 #### 2. Update liveness info
 This method also referred as "heartbeat" message to (re)confirm the active status about an individual mec service. But not to change the state from "INACTIVE" to "ACTIVE".
 NOTE: As per ETSI doc, this message should be a PATCH message. Since we use servicecomb rest server which doesn't support PATCH message. we kept it as PUT. But behviour will be similar to patch.
-URL
+**URL**
 ```
 PUT /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}/liveness
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
 | appInstanceId  | String | APP实例ID（UUID）  | path |  Yes   |
 | serviceId      | String   |APP服务实例ID                      | path |    是|
 
-Body parameters:
+**Body Parameters**
 
 | Name          | Type                        | Description              | Required      |
 | ------------- | --------------------------- | ------------------------ | ------------- |
 | state     | enum **{ACTIVE}**                      | service state                 | Yes |
 
-Example Request:
+**Example Request**
 
 ```
 PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/services/0bc92b06cc213d2ad8beda71bd0e1460/liveness
@@ -1909,7 +1909,7 @@ PUT /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 }
 ```
 
-Return Parameters:
+**Return Parameters**
 None
 
 Return Code: 204 OK
@@ -1935,29 +1935,29 @@ Using the Mp1 interfaces mec apps can query and activate/deactivate dns rules as
 
 Query all DNS rules associated with an application.
 
-URL
+**URL**
 
 ```
 GET /mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
 | appInstanceId  | String | APP实例ID（UUID）  | path |  Yes   |
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example Request:
+**Example Request**
 
 ```
 GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name          | Type                        | Description              |
 | ------------- | --------------------------- | ------------------------ |
 | dnsRuleId     | string                      | Rule Id                  |
@@ -1996,30 +1996,30 @@ HTTP/1.1 200 OK
 
 Query single DNS rule associated with an application.
 
-URL
+**URL**
 
 ```
 GET /mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
 | dnsRuleId      | String | DNS rule identifier(UUID) | path | Yes| 
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example Request:
+**Example Request**
 
 ```
 GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name          | Type                        | Description              | 
 | ------------- | --------------------------- | ------------------------ | 
 | dnsRuleId     | string                      | Rule Id                  | 
@@ -2048,20 +2048,20 @@ HTTP/1.1 200 OK
 
 Modify the state of a rule associated with an application. This interface can modify the state from **ACTIVE** to **INACTIVE** or vice versa. No other field can be modified using this interface.
 
-URL
+**URL**
 
 ```
 PUT /mep/mec_app_support/v1/applications/{appInstanceId}/dns_rules/{dnsRuleId}
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
 | dnsRuleId      | String | DNS rule identifier(UUID) | path | Yes| 
 
-Body parameters:
+**Body Parameters**
 | Name          | Type                        | Description              | Required      |
 | ------------- | --------------------------- | ------------------------ | ------------- |
 | dnsRuleId     | string                      | Rule Id                  | No, if present must be same with actual |
@@ -2071,7 +2071,7 @@ Body parameters:
 | ttl           | int (non-zero value)        | TTL value                | No, if present must be same with actual |
 | state         | enum **{ACTIVE, INACTIVE}** | State                    | Yes |
 
-Example Request:
+**Example Request**
 
 ```
 PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dns_rules/bbc14ed1-92f4-457f-95e8-93aa723a9f12
@@ -2085,7 +2085,7 @@ PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dn
 }
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name          | Type                        | Description              | 
 | ------------- | --------------------------- | ------------------------ | 
 | dnsRuleId     | string                      | Rule Id                  | 
@@ -2118,29 +2118,29 @@ Using the Mp1 interfaces mec apps can query and modify the traffic rules associa
 
 Query all traffic rules associated with an application.
 
-URL
+**URL**
 
 ```
 GET /mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
 | appInstanceId  | String | APP实例ID（UUID）  | path |  Yes   |
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example Request:
+**Example Request**
 
 ```
 GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/traffic_rules
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name                  | Type                        | Description              |
 | --------------------- | --------------------------- | ------------------------ |
 | trafficRuleId         | string                      | Traffic rule ID.         |
@@ -2220,30 +2220,30 @@ HTTP/1.1 200 OK
 
 Query single traffic rule associated with an application.
 
-URL
+**URL**
 
 ```
 GET /mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules/{trafficRuleId}
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
 | trafficRuleId  | String | Traffic rule identifier(UUID) | path | Yes| 
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example Request:
+**Example Request**
 
 ```
 GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/traffic_rules/TrafficRule1
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name                  | Type                        | Description              |
 | --------------------- | --------------------------- | ------------------------ |
 | trafficRuleId         | string                      | Traffic rule ID.         |
@@ -2321,20 +2321,20 @@ HTTP/1.1 200 OK
 
 Modify the traffic rule associated with an application. 
 
-URL
+**URL**
 
 ```
 PUT /mep/mec_app_support/v1/applications/{appInstanceId}/traffic_rules/{trafficRuleId}
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | Authorization  | String | Token信息，格式：Bearer token信息  | header |  Yes   |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
 | trafficRuleId  | String | Traffic rule identifier(UUID) | path | Yes| 
 
-Body parameters:
+**Body Parameters**
 | Name                  | Type                        | Description              |
 | --------------------- | --------------------------- | ------------------------ |
 | trafficRuleId         | string                      | Traffic rule ID.         |
@@ -2366,7 +2366,7 @@ Body parameters:
 | &gt; dstIpAddress     | string                      | Destination IP address.  |
 | state                 | enum **{ACTIVE, INACTIVE}** | State of the rule.       |
 
-Example Request:
+**Example Request**
 
 ```
 PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/traffic_rules/TrafficRule1
@@ -2407,7 +2407,7 @@ PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/tr
 }
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name                  | Type                        | Description              |
 | --------------------- | --------------------------- | ------------------------ |
 | trafficRuleId         | string                      | Traffic rule ID.         |
@@ -2490,18 +2490,18 @@ Using the Mm5 interfaces MECM can create, query, update or delete the appd confi
 
 Create a new appd configuration and associate it with a MEC application. Each configuration can have thirty-two DNS rules and sixteen Traffic rules. There can be only one appd configuration per application at a time and the appd configuration is an asynchronous in nature. Once the request is received in the mep, after validation mep will start a task to handle multiple dns and traffic rules and return a task id to the caller of the API. Using the task-id the caller can check the status of the operation at any time.
 
-URL
+**URL**
 
 ```
 POST /mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
 
-Body parameters:
+**Body Parameters**
 | Name                      | Type                        | Description              | Required      |
 | ------------------------- | --------------------------- | ------------------------ | ------------- |
 | appTrafficRule            | list                        | List of traffic rules. Max 16.| No |
@@ -2544,7 +2544,7 @@ Body parameters:
 | appName                   | string                      | Application name.    | Yes |
 
 
-Example Request:
+**Example Request**
 
 ```
 POST /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_configuration
@@ -2595,7 +2595,7 @@ POST /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_c
 }
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name          | Type    | Description                 |
 | ------------- | ------- | --------------------------- |
 | taskId        | string  | Task ID                     |
@@ -2623,28 +2623,28 @@ HTTP/1.1 200 OK
 
 Query appd configuration associated with an application.
 
-URL
+**URL**
 
 ```
 GET /mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example Request:
+**Example Request**
 
 ```
 GET /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_configuration
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name                      | Type                        | Description              |
 | ------------------------- | --------------------------- | ------------------------ |
 | appTrafficRule            | list                        | List of traffic rules.   |
@@ -2747,18 +2747,18 @@ HTTP/1.1 200 OK
 
 Appd configuration for each applications can be configured using this interface. MEP will take the difference of existing configuration and the new modification input and then act on create/modify/delete of dns and/or traffic rules.
 
-URL
+**URL**
 
 ```
 PUT /mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
 
-Body parameters:
+**Body Parameters**
 | Name                      | Type                        | Description              | Required      |
 | ------------------------- | --------------------------- | ------------------------ | ------------- |
 | appTrafficRule            | list                        | List of traffic rules. Max 16.| No |
@@ -2800,7 +2800,7 @@ Body parameters:
 | appSupportMp1             | bool                        | Whether Mp1 interface is supported. | No |
 | appName                   | string                      | Application name.    | Yes |
 
-Example Request:
+**Example Request**
 
 ```
 PUT /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_configuration
@@ -2851,7 +2851,7 @@ PUT /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_co
 }
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name          | Type    | Description                 |
 | ------------- | ------- | --------------------------- |
 | taskId        | string  | Task ID                     |
@@ -2878,28 +2878,28 @@ HTTP/1.1 200 OK
 
 Delete appd configuration request.
 
-URL
+**URL**
 
 ```
 DELETE /mepcfg/app_lcm/v1/applications/{appInstanceId}/appd_configuration
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example Request:
+**Example Request**
 
 ```
 DELETE /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_configuration
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name          | Type    | Description                 |
 | ------------- | ------- | --------------------------- |
 | taskId        | string  | Task ID                     |
@@ -2927,28 +2927,28 @@ HTTP/1.1 200 OK
 
 Once the appd configuration create, modify or delete is submitted, mep will create a task and return a task id to the caller and the caller can periodically check the status of the task using this id. This interface calls the mep for the task status.
 
-URL
+**URL**
 
 ```
 GET /mepcfg/app_lcm/v1/tasks/{taskId}/appd_configuration
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | taskId  | String | Task ID(UUID)  | path |  Yes   |
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example Request:
+**Example Request**
 
 ```
 GET /mepcfg/app_lcm/v1/tasks/d464dd0a-d927-4baf-bc2c-d902fb0b2c73/appd_configuration
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name          | Type    | Description                 |
 | ------------- | ------- | --------------------------- |
 | taskId        | string  | Task ID                     |
@@ -2980,26 +2980,26 @@ MEP support termination/stop of instance of an application after MEP receive the
 
 Interface to remove the application's ak/sk values, unregister the services and delete the DNS and traffic rule.
 
-URL
+**URL**
 
 ```
 DELETE /mep/mec_app_support/v1/applications/{appInstanceId}/AppInstanceTermination
 ```
-Request parameters:
+**Request parameters**
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
 | appInstanceId  | String | APP实例ID(UUID)  | header |  Yes   |
 
-Example Request:
+**Example Request**
 
 ```
 DELETE /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/AppInstanceTermination
 ```
 
-Body parameters:
+**Body Parameters**
 
 None
 
@@ -3018,27 +3018,27 @@ MEP supports for querying the capabilities(services) registered with it. These c
 
 Interface to query all capabilities. This interface return the capability list registered to the queried MEP server along with the consumers of it.
 
-URL
+**URL**
 
 ```
 GET /mepcfg/mec_platform_config/v1/capabilities
 ```
 
-Request parameters:
+**Request parameters**
 
 None
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example Request:
+**Example Request**
 
 ```
 GET /mepcfg/mec_platform_config/v1/capabilities
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name           | Type                        | Description              |
 | -------------- | --------------------------- | ------------------------ |
 | capabilityId   | String                      | Capability/Service id    |
@@ -3089,28 +3089,28 @@ HTTP/1.1 200 OK
 
 Interface to query an individual capability from MEP. This interface return a capability along with the consumers of it.
 
-URL
+**URL**
 
 ```
 GET /mepcfg/mec_platform_config/v1/capabilities/{capabilityId}
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | capabilityId  | String | Capability ID（UUID）  | path |  Yes   |
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example Request:
+**Example Request**
 
 ```
 GET /mepcfg/mec_platform_config/v1/capabilities/16384563dca094183778a41ea7701d15
 ```
 
-Return Parameters:
+**Return Parameters**
 | Name           | Type                        | Description              |
 | -------------- | --------------------------- | ------------------------ |
 | capabilityId   | String                      | Capability/Service id    |
@@ -3144,7 +3144,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### 异常状态码
+### Abnormal status code
 |**HTTP状态码**|**描述**|
 |---|---|
 |400|错误的请求，用来表示请求的参数不正确。|
@@ -3166,17 +3166,17 @@ DNS entry can be added or modified using this interface. Once a record is added/
 
 Using this interface multiple records on multiple zones can be submitted together.
 
-URL
+**URL**
 
 ```
 PUT /mep/dns_server_mgmt/v1/rrecord
 ```
 
-Request parameters:
+**Request parameters**
 
 None
 
-Body parameters:
+**Body Parameters**
 | Name          | Type                        | Description              | Required      |
 | ------------- | --------------------------- | ------------------------ | ------------- |
 | zone          | string                      | Zone name | Yes |
@@ -3186,7 +3186,7 @@ Body parameters:
 | ttl           | int (non-zero value)        | Record TTL value | Yes on create |
 | rData         | list(string)                | IP Address list, Ip type must match with the **type** field | Yes on create |
 
-Example Request:
+**Example Request**
 
 ```
 PUT /mep/dns_server_mgmt/v1/rrecord
@@ -3208,7 +3208,7 @@ PUT /mep/dns_server_mgmt/v1/rrecord
 ]
 ```
 
-Return Parameters:
+**Return Parameters**
 
 None
 
@@ -3223,29 +3223,29 @@ HTTP/1.1 200 Success
 
 DNS entry can be deleted from the dns-server using this interface.
 
-URL
+**URL**
 
 ```
 DELETE /mep/dns_server_mgmt/v1/rrecord/{fqdn}/{rrtype}
 ```
 
-Request parameters:
+**Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
 | fqdn  | String | Fully Qualified Domain Name | path |  Yes   |
 | rrtype      | String | Resource record type of the entry(A or AAAA). | path | Yes |
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example Request:
+**Example Request**
 
 ```
 DELETE /mep/dns_server_mgmt/v1/rrecord/www.example.com./A
 ```
 
-Return Parameters:
+**Return Parameters**
 
 None
 
@@ -3260,20 +3260,20 @@ Mep agent is a component which run as side car with application. It helps to get
 
 #### 1. Get token
 Applicaiontion can call this API to get authentication token from mepauth.
-URL
+**URL**
 ```
 GET /mep-agent/v1/token
 ```
-Request parameters:
+**Request parameters**
  | **Name** | **Type** | **Description** | **IN** | **Required** |
  | --- | --- | --- | --- | --- |
  | Content-Type |   String  | MIME type, fill in "application/json"                        |               header  | Yes|
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example request:
+**Example Request**
 
 ```
 GET /mep-agent/v1/token
@@ -3288,7 +3288,7 @@ GET /mep-agent/v1/token
 }
 ```
 
-Return parameters:
+**Return Parameters**
 
 Return code: 200 OK
 |Name     |       Type  |   Description   |               Required|
@@ -3311,21 +3311,21 @@ HTTP/1.1 200 OK
 
 #### 2. Get producer endpoint by service name
 Applicaiontion can call this API to get producer endpoint from mepserver.
-URL
+**URL**
 ```
 GET /mep-agent/v1/endpoint/:serName
 ```
-Request parameters:
+**Request parameters**
  | **Name** | **Type** | **Description** | **IN** | **Required** |
  | --- | --- | --- | --- | --- |
  | Content-Type |  String  | MIME type, fill in "application/json"   | header  | Yes|
  | serName |  String  | service name   | path | Yes |
 
-Body parameters:
+**Body Parameters**
 
 None
 
-Example request:
+**Example Request**
 
 ```
 GET /mep-agent/v1/endpoint/serviceName
@@ -3340,7 +3340,7 @@ GET /mep-agent/v1/endpoint/serviceName
 }
 ```
 
-Return parameters:
+**Return Parameters**
 
 Return code: 200 OK
 |Name     |       Type  |   Description   |  Required|

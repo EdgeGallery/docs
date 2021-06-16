@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-03 08:19+0530\n"
+"POT-Creation-Date: 2021-06-15 06:58+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -275,7 +275,7 @@ msgstr "Manage Domain Users"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "bin"
-msgstr "bin"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "bin帐号"
@@ -283,7 +283,7 @@ msgstr "bin account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "daemon"
-msgstr "daemon"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "daemon帐号"
@@ -291,7 +291,7 @@ msgstr "daemon account"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "adm"
-msgstr "adm"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "adm帐号"
@@ -299,7 +299,7 @@ msgstr "adm account"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "lp"
-msgstr "lp"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "打印服务帐号"
@@ -307,7 +307,7 @@ msgstr "Printing service accounts"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "sync"
-msgstr "sync"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "同步服务帐号"
@@ -315,7 +315,7 @@ msgstr "Synchronized service account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "shutdown"
-msgstr "shutdown"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "关机服务帐号"
@@ -323,11 +323,11 @@ msgstr "Shutdown service account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "halt"
-msgstr "halt"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "mail"
-msgstr "mail"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "邮件服务帐号"
@@ -335,7 +335,7 @@ msgstr "Mail service account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "news"
-msgstr "news"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "news服务帐号"
@@ -343,7 +343,7 @@ msgstr "news service account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "uucp"
-msgstr "uucp"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "UUCP服务帐号"
@@ -351,7 +351,7 @@ msgstr "UUCP Service Account"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "operator"
-msgstr "operator"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "操作帐号"
@@ -359,7 +359,7 @@ msgstr "Operating account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "man"
-msgstr "man"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Manual pages viewer使用"
@@ -367,11 +367,11 @@ msgstr "Manual pages viewer use"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "postmaster"
-msgstr "postmaster"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "cron"
-msgstr "cron"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "cron服务帐号"
@@ -379,7 +379,7 @@ msgstr "cron service account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "ftp"
-msgstr "ftp"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "FTP帐号"
@@ -387,7 +387,7 @@ msgstr "FTP account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "sshd"
-msgstr "sshd"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "SSH服务帐号"
@@ -395,7 +395,7 @@ msgstr "SSH service account"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "at"
-msgstr "at"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "At服务帐号"
@@ -403,7 +403,7 @@ msgstr "At service account"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "squid"
-msgstr "squid"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Squid服务帐号"
@@ -411,7 +411,7 @@ msgstr "Squid account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "xfs"
-msgstr "xfs"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "xfs服务帐号"
@@ -419,11 +419,11 @@ msgstr "xfs service account"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "games"
-msgstr "games"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "users"
-msgstr "users"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "games服务帐号"
@@ -431,19 +431,18 @@ msgstr "Games service account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "cyrus"
-msgstr "cyrus"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "vpopmail"
-msgstr "vpopmail"
-
+msgstr ""
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "vpopmail服务帐号"
 msgstr "vpopmail service account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "ntp"
-msgstr "ntp"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "NTP帐号"
@@ -451,7 +450,7 @@ msgstr "NTP account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "smmsp"
-msgstr "smmsp"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "smmsp服务帐号"
@@ -459,7 +458,7 @@ msgstr "smmsp service account number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "guest"
-msgstr "guest"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "游客帐号"
@@ -467,7 +466,7 @@ msgstr "tourist account"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "nobody"
-msgstr "nobody"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "nobody帐号"
@@ -487,7 +486,7 @@ msgstr "**password**"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "admin"
-msgstr "admin"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "用户部署时自行设置"
@@ -499,7 +498,7 @@ msgstr "pg's admin user for creating databases and other business connection use
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "kong"
-msgstr "kong"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "kong服务访问数据库使用的用户名"
@@ -687,7 +686,7 @@ msgstr "description"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "LDVS\\_HOST"
-msgstr "LDVS\\_HOST"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "部署LDVS的主机IP"
@@ -699,11 +698,11 @@ msgstr "Host IP"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "PORT"
-msgstr "PORT"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "8443"
-msgstr "8443"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "kong开放给应用的端口"
@@ -711,11 +710,11 @@ msgstr "kong is open to the port of application"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "KONG\\_MEPAUTH\\_ROUTE"
-msgstr "KONG\\_MEPAUTH\\_ROUTE"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "mepauth"
-msgstr "mepauth"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "mepauth在kong中的路由url"
@@ -723,11 +722,11 @@ msgstr "mpauth routing url in kong"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "KONG\\_MEPSERVER\\_ROUTE"
-msgstr "KONG\\_MEPSERVER\\_ROUTE"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "mepserver"
-msgstr "mepserver"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "mepserver在kong中的路由url"
@@ -767,7 +766,7 @@ msgstr "The application is authenticated by AK/SK to LDVS, and returns token aft
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:250
 msgid "URL："
-msgstr "URL:"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:256 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:332 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:451 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:566 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:750 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:935 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:990 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1058 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1194 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1245 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1341 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1410 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1491 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1542
 msgid "请求参数："
@@ -787,11 +786,11 @@ msgstr "compulsory choice"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Content-Type"
-msgstr "Content-Type"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "String"
-msgstr "String"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "MIME类型，  填\"application/json\""
@@ -799,7 +798,7 @@ msgstr "MIME type, fill \" application/json \""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "header"
-msgstr "header"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "是"
@@ -807,7 +806,7 @@ msgstr "Yes."
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Authorization"
-msgstr "Authorization"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "认证信息"
@@ -815,7 +814,7 @@ msgstr "Certification information"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "x-sdk-date"
-msgstr "x-sdk-date"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "签名时间（当前时间戳，格式：YYYYMMDDTHHMMSSZ）"
@@ -823,7 +822,7 @@ msgstr "Signature time (current time stamp, format:YYYYMMDDTHMMSSZ)"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Host"
-msgstr "Host"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "与生成认证信息签名用到的host字段保持一致"
@@ -847,19 +846,19 @@ msgstr "Return code: 200"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:299 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:361 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:481 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:662 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:848 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:967 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1019 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1125 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1224 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1275 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1370 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1450 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1521 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1572
 msgid "OK"
-msgstr "OK"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "access\\_token"
-msgstr "access\\_token"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Token"
-msgstr "Token"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "token\\_type"
-msgstr "token\\_type"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Token类型（Bearer）"
@@ -867,11 +866,11 @@ msgstr "Token Type (Bearer)"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "expires\\_in"
-msgstr "expires\\_in"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "int"
-msgstr "int"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "失效时间"
@@ -899,7 +898,7 @@ msgstr "Query a list of services for the specified APP"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:326 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:445 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:560 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:744 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:929 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:984 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1052 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1188 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1239 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1335 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1404 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1485 ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1536
 msgid "URL"
-msgstr "URL"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Token信息，格式：Bearer token信息"
@@ -907,7 +906,7 @@ msgstr "Token information, format: Bearer token information"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "appInstanceId"
-msgstr "appInstanceId"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "APP实例ID（UUID）"
@@ -915,11 +914,11 @@ msgstr "APP Instance ID (UUID)"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "path"
-msgstr "path"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "serInstanceId"
-msgstr "serInstanceId"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "服务实例ID"
@@ -927,7 +926,7 @@ msgstr "Service Instance ID"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "serName"
-msgstr "serName"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "服务名称"
@@ -935,11 +934,11 @@ msgstr "Service Name"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "serCategory"
-msgstr "serCategory"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Object"
-msgstr "Object"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "服务类别"
@@ -951,7 +950,7 @@ msgstr "not"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;href"
-msgstr "&gt;href"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "目录参考"
@@ -959,7 +958,7 @@ msgstr "Directory reference"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;id"
-msgstr "&gt;id"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "类别ID"
@@ -967,7 +966,7 @@ msgstr "Class ID"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;name"
-msgstr "&gt;name"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "类别名称"
@@ -975,7 +974,7 @@ msgstr "Class name"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;version"
-msgstr "&gt;version"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "类别版本号"
@@ -983,7 +982,7 @@ msgstr "class version number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "version"
-msgstr "version"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "服务版本号"
@@ -991,7 +990,7 @@ msgstr "Service version number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "state"
-msgstr "state"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "服务状态（ACTIVE/INACTIVE）"
@@ -999,7 +998,7 @@ msgstr "Service Status (ACTIVE/INACTIVE)"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "transportInfo"
-msgstr "transportInfo"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "服务信息"
@@ -1007,15 +1006,15 @@ msgstr "Service information"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt; description"
-msgstr "&gt; description"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt; type"
-msgstr "&gt; type"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "类型（REST\\_HTTP/MB\\_TOPIC\\_BASED/MB\\_ROUTING/MB\\_PUBSUB/RPC/RPC\\_STREAMING/WEBSOCKET）"
@@ -1023,7 +1022,7 @@ msgstr "Type (REST\\_HTTP/MB\\_TOPIC\\_BASED/MB\\_ROUTING/MB\\_PUBSUB/RPC/RPC\\_
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt; protocol"
-msgstr "&gt; protocol"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "协议名称"
@@ -1031,7 +1030,7 @@ msgstr "Agreement Name"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt; version"
-msgstr "&gt; version"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "版本号"
@@ -1039,11 +1038,11 @@ msgstr "version number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt; endpoint"
-msgstr "&gt; endpoint"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Ojbect"
-msgstr "Ojbect"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Endpoint，三种信息其中的一个（uris/addresses/alternative）"
@@ -1051,11 +1050,11 @@ msgstr "Endpoint, one of the three messages (uris/addresses/alternative)"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;uris"
-msgstr "&gt;&gt;uris"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Array\\[String\\]"
-msgstr "Array\\[String\\]"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "URI格式的服务入口信息列表"
@@ -1063,11 +1062,11 @@ msgstr "List of service portals in URI format"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;addresses"
-msgstr "&gt;&gt;addresses"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Array\\[Object\\]"
-msgstr "Array\\[Object\\]"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "服务入口信息地址列表（IP地址+端口号）"
@@ -1075,7 +1074,7 @@ msgstr "List of service entrance information addresses (IP address + port number
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;&gt;host"
-msgstr "&gt;&gt;&gt;host"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "IP地址"
@@ -1083,7 +1082,7 @@ msgstr "IP Address"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;&gt;port"
-msgstr "&gt;&gt;&gt;port"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "端口号"
@@ -1091,7 +1090,7 @@ msgstr "port number"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;alternative"
-msgstr "&gt;&gt;alternative"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "已实现格式或者外部规范定义的服务入口信息"
@@ -1099,7 +1098,7 @@ msgstr "Service entrance information for the format or external specification de
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt; security"
-msgstr "&gt; security"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "安全信息"
@@ -1107,7 +1106,7 @@ msgstr "Security information"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt; oAuth2Info"
-msgstr "&gt;&gt; oAuth2Info"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "OAuth2.0参数"
@@ -1115,7 +1114,7 @@ msgstr "OAuth2.0 parameter"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;&gt; grantTypes"
-msgstr "&gt;&gt;&gt; grantTypes"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "准予类型（OAUTH2\\_AUTHORIZATION\\_CODE/OAUTH2\\_IMPLICIT\\_GRANT/OAUTH2\\_RESOURCE\\_OWNER/OAUTH2\\_CLIENT\\_CREDENTIALS）"
@@ -1123,15 +1122,15 @@ msgstr "granted type (OAUTH2\\_AUTHORIZATION\\_CODE/OAUTH2\\_IMPLICIT\\_GRANT/OA
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;&gt; tokenEndpoint"
-msgstr "&gt;&gt;&gt; tokenEndpoint"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Token endpoint"
-msgstr "Token endpoint"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt; implSpecificInfo"
-msgstr "&gt; implSpecificInfo"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "其他实现信息"
@@ -1139,7 +1138,7 @@ msgstr "Other realized information"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "serializer"
-msgstr "serializer"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "序列化类型（JSON/XML/PROTOBUF3）"
@@ -1147,7 +1146,7 @@ msgstr "Serialization Type (JSON/XML/PROTOBUF3)"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "scopeOfLocality"
-msgstr "scopeOfLocality"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "地域范围（MEC\\_SYSTEM/MEC\\_HOST/NFVI\\_POP/ZONE/ZONE\\_GROUP/NFVI\\_NODE），默认值MEC\\_HOST"
@@ -1155,11 +1154,11 @@ msgstr "Geographical range (MEC\\_SYSTEM/MEC\\_HOST/NFVI\\_POP/ZONE/ZONE\\_GROUP
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "consumedLocalOnly"
-msgstr "consumedLocalOnly"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "boolean"
-msgstr "boolean"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "是否只被本地域APP消费（true/false）"
@@ -1167,7 +1166,7 @@ msgstr "Is it only consumed by local APP(true/false)"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "isLocal"
-msgstr "isLocal"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "是否在本地域（true/false）"
@@ -1183,7 +1182,7 @@ msgstr "Query a specified service corresponding to APP"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "serviceId"
-msgstr "serviceId"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "APP服务实例ID"
@@ -1191,7 +1190,7 @@ msgstr "APP service instance ID"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "scopeOfLocality              String"
-msgstr "scopeOfLocality              String"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:556
 msgid "3. 注册应用服务"
@@ -1219,7 +1218,7 @@ msgstr "Service version number (formatx\\[.y\\[.z\\]\\],xyz value range0\\~32767
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "transportId"
-msgstr "transportId"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "服务信息ID，字母与数字组合，最大长度64"
@@ -1319,7 +1318,7 @@ msgstr "**required**"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "\\_links"
-msgstr "\\_links"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "结果信息"
@@ -1327,7 +1326,7 @@ msgstr "Result information"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;self"
-msgstr "&gt;self"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "调用者信息"
@@ -1335,7 +1334,7 @@ msgstr "caller information"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;href"
-msgstr "&gt;&gt;href"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "调用者URL"
@@ -1343,7 +1342,7 @@ msgstr "caller URL"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;subscriptions"
-msgstr "&gt;subscriptions"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "订阅者列表"
@@ -1355,7 +1354,7 @@ msgstr "Subscriber URI"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;rel"
-msgstr "&gt;&gt;rel"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "固定值SerAvailabilityNotificationSubscription"
@@ -1371,7 +1370,7 @@ msgstr "To specify APP registered free event subscription"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "subscriptionType"
-msgstr "subscriptionType"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "订阅类型（SerAvailabilityNotificationSubscription）"
@@ -1379,7 +1378,7 @@ msgstr "Subscription Type (SerAvailabilityNotificationSubscription)"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "callbackReference"
-msgstr "callbackReference"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "用于接收通知的回调URI，不支持域名格式，仅支持IP地址+URL，且不能包含localhost、127.x.x.x、mepserver容器IP网段，例如：https://159.138.1.2:8080/xxx"
@@ -1387,7 +1386,7 @@ msgstr "The callback URI for receiving the notification does not support the dom
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "filteringCriteria"
-msgstr "filteringCriteria"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "过滤条件列表"
@@ -1395,7 +1394,7 @@ msgstr "Filter list"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;serInstanceIds"
-msgstr "&gt;serInstanceIds"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "上报事件的应用服务实例ID列表"
@@ -1403,7 +1402,7 @@ msgstr "Application service instance ID list for reported event"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;serNames"
-msgstr "&gt;serNames"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "上报事件的应用服务实例名称列表（每个服务实例名称都是字母/数字/\\_/-的组合，但不能以\\_和-开头或结尾，最大长度128）"
@@ -1411,7 +1410,7 @@ msgstr "Application service instance name list reported for event (each service 
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;serCategories"
-msgstr "&gt;serCategories"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "上报事件的应用服务类别列表"
@@ -1423,7 +1422,7 @@ msgstr "Class Reference"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;id"
-msgstr "&gt;&gt;id"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "类别ID，最大长度64"
@@ -1431,7 +1430,7 @@ msgstr "Class ID, maximum length 64"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;name"
-msgstr "&gt;&gt;name"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "类别名称（字母/数字/\\_/-的组合，但不能以\\_和-开头或结尾），最大长度128"
@@ -1439,11 +1438,11 @@ msgstr "Class name (letter/number/\\\\_/-,but not\\_and-start or end), maximum l
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;&gt;version"
-msgstr "&gt;&gt;version"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;states"
-msgstr "&gt;states"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "上报事件的应用服务状态（ACTIVE/INACTIVE）"
@@ -1451,11 +1450,11 @@ msgstr "Application service status for reported events (ACTIVE/INACTIVE)"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "&gt;isLocal"
-msgstr "&gt;isLocal"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "subscriptionId"
-msgstr "subscriptionId"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "订阅Id"
@@ -1563,7 +1562,7 @@ msgstr "**HTTPstatuscode**"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "400"
-msgstr "400"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "错误的请求，用来表示请求的参数不正确。"
@@ -1571,7 +1570,7 @@ msgstr "An error request is used to indicate that the requested parameter is inc
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "401"
-msgstr "401"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "当前请求需要鉴权认证。"
@@ -1579,7 +1578,7 @@ msgstr "The current request requires authentication credentials."
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "403"
-msgstr "403"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "禁止当前操作。"
@@ -1587,7 +1586,7 @@ msgstr "The current operation is prohibited."
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "404"
-msgstr "404"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "请求的资源未被发现。"
@@ -1595,7 +1594,7 @@ msgstr "The requested resource was not found."
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "412"
-msgstr "412"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "请求中的先决条件验证失败。"
@@ -1603,7 +1602,7 @@ msgstr "The verification of the prerequisites in the request failed."
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "414"
-msgstr "414"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "请求的URI超长，服务器拒绝处理请求。"
@@ -1611,7 +1610,7 @@ msgstr "The requested URI is long and the server refuses to process the request.
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "500"
-msgstr "500"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "内部服务器错误。"
@@ -1619,7 +1618,7 @@ msgstr "Internal server error."
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "503"
-msgstr "503"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "服务不可用。"
@@ -1659,11 +1658,11 @@ msgstr "explanation"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "1"
-msgstr "1"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "Docker Community Edition"
-msgstr "Docker Community Edition"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "容器引擎"
@@ -1675,11 +1674,11 @@ msgstr "Get the address (website of third party software, ):[*www.docker.com*](h
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "2"
-msgstr "2"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "openssl"
-msgstr "openssl"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "用于用户准备SSL证书及密钥"
@@ -1691,11 +1690,11 @@ msgstr "Download the installation using the host environment operating system co
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "3"
-msgstr "3"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "git"
-msgstr "git"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "分布式代码版本控制系统，用于用户获取EG-LDVS源码"
@@ -1739,7 +1738,7 @@ msgstr "mirror source"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "kong-service"
-msgstr "kong-service"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "提供路由转发功能，由kong对外发布相关接口"
@@ -1747,7 +1746,7 @@ msgstr "providing the routing forwarding function, and the related interface is 
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "kong:2.0.4-alpine"
-msgstr "kong:2.0.4-alpine"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "非产品交付，从开源社区获取"
@@ -1755,7 +1754,7 @@ msgstr "Non-product delivery, from open source communities"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "postgres-db"
-msgstr "postgres-db"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "作为kong的数据存储和mepauth提供应用认证信息存储数据库。"
@@ -1763,7 +1762,7 @@ msgstr "Data storage and mepauth as kong provide application authentication info
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "postgres:12.3"
-msgstr "postgres:12.3"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "提供认证服务和提供应用信息导入服务"
@@ -1771,7 +1770,7 @@ msgstr "Provision of certification services and provision of application informa
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "edgegallery/mepauth:1.0"
-msgstr "edgegallery/mepauth:1.0"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "使用者自行编译完整镜像，产品交付组件源码"
@@ -1783,7 +1782,7 @@ msgstr "Provides services such as application service governance, status subscri
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "edgegallery/mep:1.0"
-msgstr "edgegallery/mep:1.0"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1640
 msgid "关闭history"
@@ -1927,11 +1926,11 @@ msgstr "&lt;User input&gt;"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "super user"
-msgstr "super user"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "general user"
-msgstr "general user"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "用于kong连接pg的用户"
@@ -1947,59 +1946,59 @@ msgstr "User Rights Description:"
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "usename"
-msgstr "usename"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "usesysid"
-msgstr "usesysid"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "usecreatedb"
-msgstr "usecreatedb"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "usesuper"
-msgstr "usesuper"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "userepl"
-msgstr "userepl"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "usebypassrls"
-msgstr "usebypassrls"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "passwd"
-msgstr "passwd"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "valuntil"
-msgstr "valuntil"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "useconfig"
-msgstr "useconfig"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "10"
-msgstr "10"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "t"
-msgstr "t"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "\\*\\*\\*\\*\\*\\*\\*\\*"
-msgstr "\\*\\*\\*\\*\\*\\*\\*\\*"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "16385"
-msgstr "16385"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md
 msgid "f"
-msgstr "f"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1802
 msgid "注：EG-LDVS使用上游开源社区提供的postgreSQL数据库，数据库容器镜像直接从上游开源社区的DockerHub镜像库拉取。为了提高数据库的使用安全性，EG-LDVS使用一份数据库加固脚本init.sql用于在启动数据库时进行一系列安全加固操作。用户需要将该加固脚本保存到部署环境，并通过目录映射方式映射到数据库容器中。此处假设用户将加固 init.sql 保存在 /home/EG-LDVS/mepserver/ 路径下。实际执行以下命令时请根据环境实际情况修改对应参数。"
@@ -2023,15 +2022,15 @@ msgstr "In the following command we use the example ACCESS_KEY, SECCRET_KEY and 
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1947
 msgid "ACCESS_KEY: QVUJMSUMgS0VZLS0tLS0"
-msgstr "ACCESS_KEY: QVUJMSUMgS0VZLS0tLS0"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1949
 msgid "SECRET_KEY: DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
-msgstr "SECCRET_KEY: DXPb4sqElKhcHe07Kw5uorayETwId1JOjjOIRomRs5wyszoCR5R7AtVa28KT3lSc"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1952
 msgid "APP_INST_ID: 5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f"
-msgstr "APP_INST_ID: 5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f"
+msgstr ""
 
 #: ../../Projects/MEP/EdgeGallery本地开发验证服务说明书.md:1954
 msgid "KEY_COMPONENT: oikYVgrRbDZHZSaobOTo8ugCKsUSdVeMsg2d9b7Qr250q2HNBiET4WmecJ0MFavRA0cBzOWu8sObLha17auHoy6ULbAOgP50bDZapxOylTbr1kq8Z4m8uMztciGtq4e11GA0aEh0oLCR3kxFtV4EgOm4eZb7vmEQeMtBy4jaXl6miMJugoRqcfLo9ojDYk73lbCaP9ydUkO56fw8dUUYjeMvrzmIZPLdVjPm62R4AQFQ4CEs7vp6xafx9dRwPoym"

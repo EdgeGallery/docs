@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-09 22:20+0530\n"
+"POT-Creation-Date: 2021-06-15 06:58+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,48 +19,44 @@ msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:1
 msgid "开发者指导"
-msgstr "Developer guidance"
+msgstr "Developer Guide"
 
 #: ../../Developer Guide/ReadMe.md:4
-msgid "如何贡献"
-msgstr "How to contribute"
-
-#: ../../Developer Guide/ReadMe.md:5
 msgid "[APPStore](../Projects/APPSTORE/AppStore_Contribution.md)"
 msgstr ""
 
-#: ../../Developer Guide/ReadMe.md:7
+#: ../../Developer Guide/ReadMe.md:6
 msgid "[Developer](../Projects/Developer/Developer_Contribution.md)"
 msgstr ""
 
-#: ../../Developer Guide/ReadMe.md:9
+#: ../../Developer Guide/ReadMe.md:8
 msgid "MECM"
 msgstr ""
 
-#: ../../Developer Guide/ReadMe.md:10
+#: ../../Developer Guide/ReadMe.md:9
 msgid "[APM](../Projects/MECM/MECM_Apm_Contribution.md)"
 msgstr ""
 
-#: ../../Developer Guide/ReadMe.md:11
+#: ../../Developer Guide/ReadMe.md:10
 msgid "[APPO](../Projects/MECM/MECM_Appo_Contribution.md)"
 msgstr ""
 
-#: ../../Developer Guide/ReadMe.md:12
+#: ../../Developer Guide/ReadMe.md:11
 msgid "[Inventory](../Projects/MECM/MECM_Inventory_Contribution.md)"
 msgstr ""
 
-#: ../../Developer Guide/ReadMe.md:13
+#: ../../Developer Guide/ReadMe.md:12
 msgid "[APPLCM](../Projects/MECM/MECM_LCM_controller_Contribution.md)"
 msgstr ""
 
-#: ../../Developer Guide/ReadMe.md:15
+#: ../../Developer Guide/ReadMe.md:14
 msgid "[MEP](../Projects/MEP/MEP_Contribution.md)"
 msgstr ""
 
-#: ../../Developer Guide/ReadMe.md:17
+#: ../../Developer Guide/ReadMe.md:16
 msgid "[User Management](../Projects/User%20Management/User_Contribution.md)"
 msgstr ""
 
-#: ../../Developer Guide/ReadMe.md:19
+#: ../../Developer Guide/ReadMe.md:18
 msgid "[ATP](../Projects/ATP/ATP_Contribution.md)"
 msgstr ""

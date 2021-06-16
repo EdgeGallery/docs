@@ -21,7 +21,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 **新开源仓库列表**
 | 模块                           |      名称       | 类型   | URL                                           | 说明                                   |
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
-| Examaple Applications          | example-apps    | PoC仓 | https://gitee.com/edgegallery/example-apps    | 提供基于EdgeGallery的样例app   |
+| Example Applications           | example-apps    | PoC仓 | https://gitee.com/edgegallery/example-apps    | 提供基于EdgeGallery的样例app   |
 | EdgeGallery Frontend Component |     eg-view     | 产品仓 | https://gitee.com/edgegallery/eg-view          | 提供归一化的EdgeGallery前端组件         |
 | EdgeGallery Testing Platform   |    edgeT        | PoC仓 | https://gitee.com/edgegallery/edgeT | 为用户提供本地测试的工具链 |
 

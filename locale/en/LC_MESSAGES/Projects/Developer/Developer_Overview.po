@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-15 23:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,15 +23,15 @@ msgstr "Developer Overview"
 
 #: ../../Projects/Developer/Developer_Overview.md:4
 msgid "提供开源开发者统一入口，包括开发流程、开发工具、开放的API能力、集成测试验证，开发者交流论坛等,使开发者更加方便快捷的开发应用并集成到edgegallery平台。Developer分为前后台两个部分，developere-be是后台部分，提供主要功能接口供前台或其他三方系统调用，developer-fe是前台部分，提供界面展示。"
-msgstr "To provide a unified entrance for open source developers, including development processes, development tools, open API capabilities, integrated test validation, developer exchange forums, and so on, make developers more convenient and fast to develop applications and integrate into the edgegallery platform.The developer is a backstage part, providing a main function interface for the foreground or other three-way system to call, and developer-fe is a front desk part and provides an interface display."
+msgstr "This is a consolidated entrance for open source developers, which includes development processes, development tools, open API capabilities, integrated test validation, developer exchange forums, and so on. This facilitates a faster development of applications and integration of the same into the edgegallery platform for the developers. The Developer has a backend division, which provides main function interface or other three way system call for the frontend, which is a front-desk that provides interface display."
 
 #: ../../Projects/Developer/Developer_Overview.md:5
-msgid "[架构设计](#id-开发者平台（DeveloperPortal）-架构设计)"
-msgstr "[Architecture Design](#id-DeveloperPlatform(DeveloperPortal)-ArchitectureDesign)"
+msgid "[架构设计](#id1)"
+msgstr "[Architecture Design](#id1)"
 
 #: ../../Projects/Developer/Developer_Overview.md:6
-msgid "[部署视图](#id-开发者平台（DeveloperPortal）-部署视图)"
-msgstr "[Deployment View](#id-DeveloperPlatform(DeveloperPortal)-DeploymentView)"
+msgid "[部署视图](#id2)"
+msgstr "[Deployment View](#id2)"
 
 #: ../../Projects/Developer/Developer_Overview.md:8
 msgid "架构设计"
@@ -43,15 +43,15 @@ msgstr "![](/uploads/images/2021/cor2020/150137_dd5a244e_5504908_en.png \"archit
 
 #: ../../Projects/Developer/Developer_Overview.md:13
 msgid "Developer-fe：开发者平台前台框架，使用VUE开发。"
-msgstr "Developer-fe: Developer Platform foreground frame, developed using VUE."
+msgstr "Developer-fe: Developer Platform frontend framework, developed using VUE."
 
 #: ../../Projects/Developer/Developer_Overview.md:15
 msgid "Developer-be：开发者平台后台框架，使用SpringBoot+ServiceComb开发。（有关ServiceComb请参考这里：[https://servicecomb.apache.org/cn/](https://servicecomb.apache.org/cn/)）"
-msgstr "Developer-be: Developer Platform Backstage Framework, developed using SpringBoot + ServiceComb.(For ServiceComb, please refer to this here: [https://servicecomb.apache.org/cn/](https://servicecomb.apache.org/cn/)"
+msgstr "Developer-be: Developer Platform Backend framework, developed using SpringBoot and ServiceComb. (For ServiceComb, please refer to this here: [https://servicecomb.apache.org/](https://servicecomb.apache.org/)"
 
 #: ../../Projects/Developer/Developer_Overview.md:17
 msgid "Developer DB：后台依赖Postgres数据库。"
-msgstr "Developer DB: Backstage relies on Postgres database."
+msgstr "Developer DB: Backend depends on Postgres database."
 
 #: ../../Projects/Developer/Developer_Overview.md:20
 msgid "部署视图"
@@ -67,9 +67,8 @@ msgstr "The above deployment views are designed in accordance with K8S deploymen
 
 #: ../../Projects/Developer/Developer_Overview.md:27
 msgid "Developer-fe，Developer-be需要注册到ServiceCenter中，有关ServiceCenter的使用方法请参考：[https://servicecomb.apache.org/cn/](https://servicecomb.apache.org/cn/)"
-msgstr "Developer-fe, Developer-be needs to be registered to the ServiceCenter for use of the ServiceCenter please refer to: [https://servicecomb.apache.org/cn/](https://servicecomb.apache.org/cn/)"
+msgstr "Developer-FE, Developer-BE needs to be registered to the ServiceCenter. Please refer to: [https://servicecomb.apache.org/](https://servicecomb.apache.org/)"
 
 #: ../../Projects/Developer/Developer_Overview.md:29
 msgid "推荐使用Chrome浏览器"
-msgstr "Recommended Chrome browser"
-
+msgstr "Chrome browser is recommended"

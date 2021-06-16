@@ -1,4 +1,4 @@
-Deveoper Contribution
+Developer Contribution
 ============
 
 ### 本地开发环境搭建
@@ -21,7 +21,7 @@ Deveoper Contribution
 
 ### 流程详解
 
-- #### Service Center
+#### Service Center
 
 1、下载[Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)
 
@@ -31,7 +31,7 @@ Deveoper Contribution
 
 ![](/uploads/images/2021/cor2020/153735_4dafd335_7625245.jpeg "service center2.jpg")
 
-- #### DataBase
+#### DataBase
 
 1、下载、安装、启动 Postgresql 最新版本
 
@@ -49,7 +49,7 @@ Deveoper Contribution
 
 6、根据[usermgmt部署文件](https://gitee.com/edgegallery/helm-charts/blob/master/user-mgmt/templates/user-mgmt-configmap.yaml)中的数据库语句创建表结构
 
-- #### UserManagement
+#### User Management
 
 1、下载user-mgmt-be代码和user-mgmt-fe代码
 
@@ -65,7 +65,7 @@ Deveoper Contribution
 
 6、运行MainServer函数，启动UserManagement
 
-- #### developer-be
+#### Developer-be
 
 1、下载developer-be代码
 
@@ -75,7 +75,7 @@ Deveoper Contribution
 
 3、运行DeveloperApp函数，启动developer-be
 
-- #### developer-fe
+#### Developer-fe
 
 1、下载developer-fe代码
 

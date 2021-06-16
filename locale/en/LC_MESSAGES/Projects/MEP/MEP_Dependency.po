@@ -1,14 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020, EdgeGallery
-# This file is distributed under the same license as the EdgeGallery Documentation package.
+# Translations template for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: EdgeGallery Documentation \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-03 08:26+0530\n"
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-06-15 06:58+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,165 +19,165 @@ msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md:1
 msgid "依赖"
-msgstr "rely on"
+msgstr "Dependency"
 
 #: ../../Projects/MEP/MEP_Dependency.md:4
 msgid "MEP-auth 三方件使用清单"
-msgstr "MEP-auth Tripartite Use List"
+msgstr "MEP-auth third party usage list"
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "artifact"
-msgstr "artifact"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "version"
-msgstr "version"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/agiledragon/gomonkey"
-msgstr "github.com/agiledragon/gomonkey"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v2.0.1"
-msgstr "v2.0.1"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/astaxie/beego"
-msgstr "github.com/astaxie/beego"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v1.12.0"
-msgstr "v1.12.0"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/dgrijalva/jwt-go/v4"
-msgstr "github.com/dgrijalva/jwt-go/v4"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v4.0.0-preview1"
-msgstr "v4.0.0-preview1"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/go-playground/validator/v10"
-msgstr "github.com/go-playground/validator/v10"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v10.2.0"
-msgstr "v10.2.0"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/natefinch/lumberjack"
-msgstr "github.com/natefinch/lumberjack"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v2.0.0"
-msgstr "v2.0.0"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/lib/pq"
-msgstr "github.com/lib/pq"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v1.7.0"
-msgstr "v1.7.0"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/sirupsen/logrus"
-msgstr "github.com/sirupsen/logrus"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v1.6.0"
-msgstr "v1.6.0"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/smartystreets/goconvey"
-msgstr "github.com/smartystreets/goconvey"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v1.6.4"
-msgstr "v1.6.4"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "golang.org/x/crypto"
-msgstr "golang.org/x/crypto"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v0.0.0-20200302210943-78000ba7a073"
-msgstr "v0.0.0-20200302210943-78000ba7a073"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md:17
 msgid "MEP-server 三方件使用清单"
-msgstr "MEP-server Trilateral Use List"
+msgstr "MEP-server third party usage list"
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/apache/servicecomb-service-center"
-msgstr "github.com/apache/servicecomb-service-center"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v0.0.0-20191027084911-c2dc0caef706"
-msgstr "v0.0.0-20191027084911-c2dc0caef706"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/satori/go.uuid"
-msgstr "github.com/satori/go.uuid"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v1.2.0"
-msgstr "v1.2.0"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/stretchr/testify"
-msgstr "github.com/stretchr/testify"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v1.6.1"
-msgstr "v1.6.1"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "golang.org/x/net"
-msgstr "golang.org/x/net"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v0.0.0-20200301022130-244492dfa37a"
-msgstr "v0.0.0-20200301022130-244492dfa37a"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md:29
 msgid "dns-server 三方件使用清单"
-msgstr "dns-server three-way use list"
+msgstr "Dns-server third party usage list"
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/labstack/echo/v4"
-msgstr "github.com/labstack/echo/v4"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v4.1.16"
-msgstr "v4.1.16"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "github.com/miekg/dns"
-msgstr "github.com/miekg/dns"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v1.1.29"
-msgstr "v1.1.29"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "go.etcd.io/bbolt"
-msgstr "go.etcd.io/bbolt"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v1.3.4"
-msgstr "v1.3.4"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md:39
 msgid "MEP-agent 三方件使用清单"
-msgstr "MEP-agent Trilateral Use List"
+msgstr "MEP-agent third party usage list"
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "gopkg.in/yaml.v2"
-msgstr "gopkg.in/yaml.v2"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Dependency.md
 msgid "v2.2.8"
-msgstr "v2.2.8"
+msgstr ""
 

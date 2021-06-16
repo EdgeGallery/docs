@@ -1,7 +1,7 @@
 Developer DataBase Design
 ============
 
-Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。**PostgreSQL**是开源的对象-关系数据库服务器(ORDBMS)，在灵活的BSD许可证下发行。进一步了解PostgreSQL可以点击[这里](https://www.runoob.com/postgresql/postgresql-tutorial.html)。
+Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。**PostgreSQL** 是开源的对象-关系数据库服务器(ORDBMS)，在灵活的BSD许可证下发行。进一步了解PostgreSQL可以点击[这里](https://www.runoob.com/postgresql/postgresql-tutorial.html)。
 
 - tbl_plugin: 存储开发者上传的插件信息，如名字、满意度、插件保存路径等
 ```
@@ -260,7 +260,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
--tbl_host_log： 记录app项目在边缘节点上部署的日志
+- tbl_host_log： 记录app项目在边缘节点上部署的日志
 ```
    CREATE TABLE IF NOT EXISTS  tbl_host_log  (
        log_id  varchar(50) NOT NULL,               --Log ID
@@ -293,7 +293,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
--tbl_vm_regulation： 虚机规则，虚机属性说明（虚机部署时提供选择）
+- tbl_vm_regulation： 虚机规则，虚机属性说明（虚机部署时提供选择）
 ```
   CREATE TABLE IF NOT EXISTS  tbl_vm_regulation  (
        regulation_id  SERIAL,                         --Rule id
@@ -311,7 +311,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
     );
 ```
 
--tbl_vm_network：虚机网络配置
+- tbl_vm_network：虚机网络配置
 ```
   CREATE TABLE IF NOT EXISTS  tbl_vm_network  (
        network_type  varchar(50) DEFAULT NULL,    --Network Type
@@ -321,7 +321,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
     );
 ```
 
--tbl_vm_system：虚机系统属性说明
+- tbl_vm_system：虚机系统属性说明
 ```
   CREATE TABLE IF NOT EXISTS  tbl_vm_system  (
        system_id  SERIAL,                          --System id
@@ -333,7 +333,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
     );
 ```
 
--tbl_vm_flavor：虚机规格模板说明
+- tbl_vm_flavor：虚机规格模板说明
 ```
   CREATE TABLE IF NOT EXISTS  tbl_vm_flavor  (
        architecture  varchar(50) DEFAULT NULL,  --Virtual machine architecture specifications
@@ -342,7 +342,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
     );
 ```
 
--tbl_project_vm_create_config：app项目虚机部署，创建虚机的配置说明
+- tbl_project_vm_create_config：app项目虚机部署，创建虚机的配置说明
 ```
     CREATE TABLE IF NOT EXISTS  tbl_project_vm_create_config  (
        vm_id   varchar(255) NOT NULL DEFAULT NULL,                 --Virtual machine id
@@ -364,7 +364,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
     );
 ```
 
--tbl_project_vm_image_config: app项目虚机部署，镜像配置说明
+- tbl_project_vm_image_config: app项目虚机部署，镜像配置说明
 ```
     CREATE TABLE IF NOT EXISTS  tbl_project_vm_image_config  (
        vm_id   varchar(255) NOT NULL DEFAULT NULL,              --Virtual machine id

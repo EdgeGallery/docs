@@ -31,7 +31,7 @@ msgstr "Interface design"
 
 #: ../../Projects/Developer/Developer.rst:3
 msgid "依赖"
-msgstr "rely on"
+msgstr "Dependency"
 
 #: ../../Projects/Developer/Developer.rst:3
 msgid "数据库设计"

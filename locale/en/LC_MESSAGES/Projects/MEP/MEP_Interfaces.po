@@ -1,14 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020, EdgeGallery
-# This file is distributed under the same license as the EdgeGallery Documentation package.
+# Translations template for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: EdgeGallery Documentation \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-09 20:38+0530\n"
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-06-16 04:58+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,279 +19,279 @@ msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1
 msgid "接口设计"
-msgstr "Interface design"
+msgstr "Interface Design"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:4
-msgid "[接口设计](#接口设计)"
-msgstr "[Interface Design](#Interfacedesign)"
+msgid "[Interface design](#interface-design)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:5
-msgid "[MEP 接口简介](#mep-接口简介)"
-msgstr "[Introduction to MEP Interface](#mep-InterfaceIntroduction)"
+msgid "[Introduction to MEP interface](#introduction-to-mep-interface)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:6
-msgid "[MEP-auth模块接口](#mep-auth模块接口)"
-msgstr "[MEP-auth module interface](#mep-authmoduleinterface)"
+msgid "[MEP-auth module interface](#mep-auth-module-interface)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:7
-msgid "[服务认证接口](#服务认证接口)"
-msgstr "[Service Authentication Interface](#Serviceauthenticationinterface)"
+msgid "[Service Authentication Interface](#service-authentication-interface)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:8
-msgid "[AK/SK配置接口](#aksk配置接口)"
-msgstr "[AK/SK Configuration Interface](#akskconfigurationinterface)"
+msgid "[AK/SK configuration interface](#ak-sk-configuration-interface)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:9
-msgid "[MEP-server 接口](#mep-server-接口)"
-msgstr "[MEP-server interface](#mep-server-interface)"
+msgid "[MEP-server interface](#mep-server-interface)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:10
-msgid "[应用服务管理相关接口](#应用服务管理相关接口)"
-msgstr "[Application Services Management Related Interface](#Applicationservicemanagementrelatedinterfaces)"
+msgid "[Application Service Management Related Interface](#application-service-management-related-interface)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:11
-msgid "[1. 查询应用服务](#1-查询应用服务)"
-msgstr "[1. Query application services](#1-Queryapplicationservice)"
+msgid "[1. Query application services](#query-application-services)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:12
-msgid "[2. 查询应用指定服务](#2-查询应用指定服务)"
-msgstr "[2. Query application specified service](#2-queryapplicationspecifiedservice)"
+msgid "[2. Query application specific services](#query-application-specific-services)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:13
-msgid "[3. 注册应用服务](#3-注册应用服务)"
-msgstr "[3. Registered Application Services](#3-RegisteredApplicationServices)"
+msgid "[3. Register application service](#register-application-service)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:14
-msgid "[4. 更新应用服务](#4-更新应用服务)"
-msgstr "[4. Update Application Services](#4-UpdateApplicationServices)"
+msgid "[4. Update application service](#update-application-service)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:15
-msgid "[5. 删除应用服务](#5-删除应用服务)"
-msgstr "[5. Delete Application Services](#5-DeleteApplicationServices)"
+msgid "[5. Delete application service](#delete-application-service)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:16
-msgid "[可用事件订阅相关接口](#可用事件订阅相关接口)"
-msgstr "[Available Event Subscription Related Interface](#Availableeventsubscriptionrelatedinterfaces)"
+msgid "[Available event subscription related interface](#available-event-subscription-related-interface)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:17
-msgid "[1. 查询可用事件订阅](#1-查询可用事件订阅)"
-msgstr "[1. Query Available Event Subscriptions](#1-QueryAvailableEventSubscriptions)"
+msgid "[1. Query available event subscriptions](#query-available-event-subscriptions)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:18
-msgid "[2. 注册可用事件订阅](#2-注册可用事件订阅)"
-msgstr "[2. Sign up for available event subscription](#2-Signupforavailableeventsubscription)"
+msgid "[2. Register for available event subscription](#register-for-available-event-subscription)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:19
-msgid "[3. 删除可用事件订阅](#3-删除可用事件订阅)"
-msgstr "[3. Delete available event subscription](#3-Deleteavailableeventsubscription)"
+msgid "[3. Delete available event subscription](#delete-available-event-subscription)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:20
-msgid "[4. 查询指定可用事件订阅](#4-查询指定可用事件订阅)"
-msgstr "[4. Query to specify available event subscription](#4-queryspecifiesanavailableeventsubscription)"
+msgid "[4. Query specified available event subscription](#query-specified-available-event-subscription)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:21
-msgid "[终止事件订阅相关接口](#终止事件订阅相关接口)"
-msgstr "[Terminate Event Subscription Related Interface](#Terminateeventsubscriptionrelatedinterface)"
+msgid "[Termination event subscription related interface](#termination-event-subscription-related-interface)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:22
-msgid "[1. 查询终止事件订阅](#1-查询终止事件订阅)"
-msgstr "[1. Query Termination Event Subscription](#1-QueryTerminateEventSubscription)"
+msgid "[1. Query termination event subscription](#query-termination-event-subscription)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:23
-msgid "[2. 注册终止事件订阅](#2-注册终止事件订阅)"
-msgstr "[2. Registration Terminate Event Subscription](#2-RegistrationTerminateEventSubscription)"
+msgid "[2. Registration termination event subscription](#registration-termination-event-subscription)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:24
-msgid "[3. 删除终止事件订阅](#3-删除终止事件订阅)"
-msgstr "[3. Delete Terminate Event Subscription](#3-deleteterminationeventsubscription)"
+msgid "[3. Delete termination event subscription](#delete-termination-event-subscription)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:25
-msgid "[4. 查询指定终止事件订阅](#4-查询指定终止事件订阅)"
-msgstr "[4. Query Specify Terminate Event Subscription](#4-Queryspecifiesterminationeventsubscription)"
+msgid "[4. Query specified termination event subscription](#query-specified-termination-event-subscription)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:26
 msgid "[Services interfaces](#service)"
-msgstr "[Services interfaces](#service)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:27
-msgid "[1. Query availability services list](#1-query-availability-services-list)"
-msgstr "[1. Query availability services list](#1-query-availability-services-list)"
+msgid "[1. Query availability services list](#query-availability-services-list)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:28
-msgid "[2. Query availability individual service](#2-query-availability-individual-service)"
-msgstr "[2. Query availability individual service](#2-query-availability-individual-service)"
+msgid "[2. Query availability individual service](#query-availability-individual-service)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:29
 msgid "[Heartbeat related interfaces](#heartbeat-related-interfaces)"
-msgstr "[Heartbeat related interfaces](#heartbeat-related-interfaces)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:30
-msgid "[1. Query service liveness info](#1-query-service-liveness-info)"
-msgstr "[1. Query service revenue info](#1-query-service-revenue-info)"
+msgid "[1. Query service liveness info](#query-service-liveness-info)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:31
-msgid "[2. Update liveness info](#2-update-liveness-info)"
-msgstr "[2. Update liveness info](#2-update-revenue-info)"
+msgid "[2. Update liveness info](#update-liveness-info)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:32
 msgid "[DNS rule configuration interfaces](#dns-rule-configuration-interfaces)"
-msgstr "[DNS rule configuration interfaces](#dns-rule-configuration-interfaces)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:33
-msgid "[1. Query all dns rules](#1-query-all-dns-rules)"
-msgstr "[1. Query all dns rules](#1-query-all-dns-rules)"
+msgid "[1. Query all dns rules](#query-all-dns-rules)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:34
-msgid "[2. Query a specific dns rule](#2-query-a-specific-dns-rule)"
-msgstr "[2. Query a specific dns rule](#2-query-a-specific-dns-rule)"
+msgid "[2. Query a specific dns rule](#query-a-specific-dns-rule)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:35
-msgid "[3. Update a specific dns rule](#3-update-a-specific-dns-rule)"
-msgstr "[3. Update a specific dns rule](#3-update-a-specific-dns-rule)"
+msgid "[3. Update a specific dns rule](#update-a-specific-dns-rule)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:36
 msgid "[Traffic rule configuration interfaces](#traffic-rule-configuration-interfaces)"
-msgstr "[Traffic rule configuration interfaces](#traffic-rule-configuration-interfaces)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:37
-msgid "[1. Query all traffic rules](#1-query-all-traffic-rules)"
-msgstr "[1. Query all traffic rules](#1-query-all-traffic-rules)"
+msgid "[1. Query all traffic rules](#query-all-traffic-rules)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:38
-msgid "[2. Query a specific traffic rule](#2-query-a-specific-traffic-rule)"
-msgstr "[2. Query a specific trafffic rule](#2-query-a-specific-traffic-rule)"
+msgid "[2. Query a specific traffic rule](#query-a-specific-traffic-rule)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:39
-msgid "[3. Update a specific traffic rule](#3-update-a-specific-traffic-rule)"
-msgstr "[3. Update a specific traffic rule](#3-update-a-specific-trafffic-rule)"
+msgid "[3. Update a specific traffic rule](#update-a-specific-traffic-rule)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:40
 msgid "[Mm5 Interface for appd configurations](#mm5-interface-for-appd-configurations)"
-msgstr "[Mm5 Interface for appd configurations](#mm5-interface-for-appd-configurations)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:41
-msgid "[1. Create a new appd configurations](#1-create-a-new-appd-configurations)"
-msgstr "[1. Create a new appd configurations](#1-create-a-new-appd-configurations)"
+msgid "[1. Create a new appd configurations](#create-a-new-appd-configurations)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:42
-msgid "[2. Query appd configuration](#2-query-appd-configuration)"
-msgstr "[2. Query appd configuration](#2-query-appd-configuration)"
+msgid "[2. Query appd configuration](#query-appd-configuration)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:43
-msgid "[3. Modify appd configuration](#3-modify-appd-configuration)"
-msgstr "[3. Modify appd configuration](#3-modify-appd-configuration)"
+msgid "[3. Modify appd configuration](#modify-appd-configuration)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:44
-msgid "[4. Delete appd configuration](#4-delete-appd-configuration)"
-msgstr "[4. Delete appd configuration](#4-delete-appd-configuration)"
+msgid "[4. Delete appd configuration](#delete-appd-configuration)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:45
-msgid "[5. Query task status](#5-query-task-status)"
-msgstr "[5. Query task status](#5-query-task-status)"
+msgid "[5. Query task status](#query-task-status)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:46
 msgid "[Application Termination](#application-termination)"
-msgstr "[Application Termination](#application-termination)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:47
-msgid "[1. App Instance Termination](#1-app-instance-termination)"
-msgstr "[1. App Instance Termination](#1-app-instance-termination)"
+msgid "[1. App Instance Termination](#app-instance-termination)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:48
-msgid "[Query Platform Capabilities(Services)](#query-platform-capabilitiesservices)"
-msgstr "[Query Platform Capabilities (Services)](#query-platform-capabilitiesservices)"
+msgid "[Query Platform Capabilities(Services)](#query-platform-capabilities-services)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:49
-msgid "[1. Query all capabilities](#1-query-all-capabilities)"
-msgstr "[1. Query all capabilities](#1-query-all-capabilities)"
+msgid "[1. Query all capabilities](#query-all-capabilities)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:50
-msgid "[2. Query individual capability](#2-query-individual-capability)"
-msgstr "[2. Query for manual capability](#2-query-individual-capability)"
+msgid "[2. Query individual capability](#query-individual-capability)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:51
-msgid "[异常状态码](#异常状态码)"
-msgstr "[Exception status code](#Abnormalstatuscode)"
+msgid "[Abnormal status code](#abnormal-status-code)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:52
 msgid "[Dns-Server](#dns-server)"
-msgstr "[Dns-Server](#dns-server)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:53
-msgid "[1. Create/Set new entry](#1-createset-new-entry)"
-msgstr "[1. Create/Set new entry](#1-createset-new-entry)"
+msgid "[1. Create/Set new entry](#create-set-new-entry)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:54
-msgid "[2. Delete an entry](#2-delete-an-entry)"
-msgstr "[2. Delete an entry](#2-delete-an-entry)"
+msgid "[2. Delete an entry](#delete-an-entry)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:55
 msgid "[MEP Agent](#mep-agent)"
-msgstr "[MEP Agent](#mep-agent)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:56
-msgid "[1. Get token](#1-get-token)"
-msgstr "[1. Get token](#1-get-token)"
+msgid "[1. Get token](#get-token)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:57
-msgid "[2. Get producer endpoint by service name](#2-get-producer-endpoint-by-service-name)"
-msgstr "[2. Get producer endpoint by service name](#2-get-producer-endpoint-by-service-name)"
+msgid "[2. Get producer endpoint by service name](#get-producer-endpoint-by-service-name)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:59
-msgid "MEP 接口简介"
-msgstr "Introduction to MEP interfaces"
+msgid "Introduction to MEP interface"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:61
 msgid "MEP主要包含MEP-server和MEP-auth两个主要功能模块。MEP server接口分为两类，一类为遵循ETSI MEC 011 v2.1.1标准的Mp1接口，主要为App提供服务注册发现，App状态通知订阅，Dns规则获取等功能；另一类为Mm5接口，主要为MECM/MEPM提供配置管理功能。MEP auth目前主要作为鉴权模块，为App提供token申请发放功能。   URL为服务自己的URL，PORT为服务自己的PORT。如果经过KONG，PORT变成KONG的PORT，URL需要添加对应的路由。mepauth直接添加{KONG_MEPAUTH_ROUTE}（当前值为/mepauth），mepserver把/mep用{KONG_MEPSERVER_ROUTE}（当前值为/mepserver）替换。"
-msgstr "MEP mainly contains two main functional modules of MEP-server and MEP-auth.The MEP server interface is divided into two categories, one that follows the ETSI MEC 011 v2.1.1 standard Mp1 interface, which provides service registration discovery, App status notification subscription, Dns rule acquisition, and other Mm5 interfaces, and provides configuration management functions primarily for MECM/MEPM.MEP auth is currently primarily used as an authentication module to provide token application issuance functions for the App.   The URL is the service's own URL, PORT is the service's own PORT.If KONG, PORT becomes KONG's PORT, the URL needs to add a corresponding route.mepauth directly adds {KONG_MEPAUTH_ROUTE} (current value is /mepauth), and mepserver replaces /mep with {KONG_MEPSERVER_ROUTE} (current value is /mepserver)."
+msgstr "MEP majorly consists of two main functional modules, MEP-server and MEP-auth. The MEP server interface is divided into two categories, one is the Mp1 interface that follows the ETSI MEC 011 v2.1.1 standard, which mainly provides functions such as service registration discovery, App status notification subscription, and Dns rule acquisition; the other is the Mm5 interface, mainly provides configuration management functions for MECM/MEPM. MEP auth is currently mainly used as an authentication module to provide App with the function of token application and issuance. URL is the service's own URL, and PORT is the service's own PORT. If it passes through KONG, PORT becomes KONG's PORT, and the URL needs to add the corresponding route. Mepauth directly adds {KONG_MEPAUTH_ROUTE} (the current value is /mepauth), and mepserver replaces /mep with {KONG_MEPSERVER_ROUTE} (the current value is /mepserver)."
 
 #: ../../Projects/MEP/MEP_Interfaces.md:64
-msgid "MEP-auth模块接口"
-msgstr "MEP-auth module interface"
+msgid "MEP-auth module interface"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:66
-msgid "服务认证接口"
-msgstr "Service authentication interface"
+msgid "Service Authentication Interface"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:68
 msgid "应用通过AK/SK向LDVS进行鉴权认证，认证通过后返回token，每个token具有有效期（1小时），token分配方在有效期结束后将收回token，当携带过期的token的HTTP请求到达的时候，将被以状态码401返回；此时token携带方需要重新进行token获取。当token还在有效期内，token携带方再次使用相同的用户获取token时返回当前仍然有效的token。"
-msgstr "The application is authenticated by AK/SK to LDVS, and returns token after authentication is passed, each token has validity period (1 hour), token distributor returns token after expiration, when HTTP request carrying expired token arrives, it will be returned with status code 401;When token is still valid, the token carrying party returns the token that is still valid when the same user obtains the token again."
+msgstr "The application authenticates to LDVS through AK/SK, and returns the token after passing the authentication. Each token has a validity period (1 hour). The token distributor will withdraw the token after the validity period ends. When the HTTP request with expired token arrives, it will be returned with status code 401. At this time, the token carrier needs to re-acquire the token. When the token is still valid, the bearer of the token will return the token that is still valid when the same user obtains the token again."
 
-#: ../../Projects/MEP/MEP_Interfaces.md:70 ../../Projects/MEP/MEP_Interfaces.md:144
-msgid "URL："
-msgstr "URL:"
+#: ../../Projects/MEP/MEP_Interfaces.md:70 ../../Projects/MEP/MEP_Interfaces.md:144 ../../Projects/MEP/MEP_Interfaces.md:246 ../../Projects/MEP/MEP_Interfaces.md:373 ../../Projects/MEP/MEP_Interfaces.md:498 ../../Projects/MEP/MEP_Interfaces.md:694 ../../Projects/MEP/MEP_Interfaces.md:891 ../../Projects/MEP/MEP_Interfaces.md:946 ../../Projects/MEP/MEP_Interfaces.md:1014 ../../Projects/MEP/MEP_Interfaces.md:1150 ../../Projects/MEP/MEP_Interfaces.md:1201 ../../Projects/MEP/MEP_Interfaces.md:1297 ../../Projects/MEP/MEP_Interfaces.md:1366 ../../Projects/MEP/MEP_Interfaces.md:1447 ../../Projects/MEP/MEP_Interfaces.md:1498 ../../Projects/MEP/MEP_Interfaces.md:1565 ../../Projects/MEP/MEP_Interfaces.md:1691 ../../Projects/MEP/MEP_Interfaces.md:1817 ../../Projects/MEP/MEP_Interfaces.md:1957 ../../Projects/MEP/MEP_Interfaces.md:2018 ../../Projects/MEP/MEP_Interfaces.md:2070 ../../Projects/MEP/MEP_Interfaces.md:2140 ../../Projects/MEP/MEP_Interfaces.md:2242 ../../Projects/MEP/MEP_Interfaces.md:2343 ../../Projects/MEP/MEP_Interfaces.md:2511 ../../Projects/MEP/MEP_Interfaces.md:2642 ../../Projects/MEP/MEP_Interfaces.md:2766 ../../Projects/MEP/MEP_Interfaces.md:2897 ../../Projects/MEP/MEP_Interfaces.md:2945 ../../Projects/MEP/MEP_Interfaces.md:2997 ../../Projects/MEP/MEP_Interfaces.md:3035 ../../Projects/MEP/MEP_Interfaces.md:3106 ../../Projects/MEP/MEP_Interfaces.md:3183 ../../Projects/MEP/MEP_Interfaces.md:3240
+msgid "**URL**"
+msgstr "**URL**"
 
-#: ../../Projects/MEP/MEP_Interfaces.md:76 ../../Projects/MEP/MEP_Interfaces.md:150 ../../Projects/MEP/MEP_Interfaces.md:252 ../../Projects/MEP/MEP_Interfaces.md:379 ../../Projects/MEP/MEP_Interfaces.md:504 ../../Projects/MEP/MEP_Interfaces.md:700 ../../Projects/MEP/MEP_Interfaces.md:897 ../../Projects/MEP/MEP_Interfaces.md:952 ../../Projects/MEP/MEP_Interfaces.md:1020 ../../Projects/MEP/MEP_Interfaces.md:1156 ../../Projects/MEP/MEP_Interfaces.md:1207 ../../Projects/MEP/MEP_Interfaces.md:1303 ../../Projects/MEP/MEP_Interfaces.md:1372 ../../Projects/MEP/MEP_Interfaces.md:1453 ../../Projects/MEP/MEP_Interfaces.md:1504 ../../Projects/MEP/MEP_Interfaces.md:1571 ../../Projects/MEP/MEP_Interfaces.md:1697
-msgid "请求参数："
-msgstr "Request parameters:"
+#: ../../Projects/MEP/MEP_Interfaces.md:76 ../../Projects/MEP/MEP_Interfaces.md:150 ../../Projects/MEP/MEP_Interfaces.md:252 ../../Projects/MEP/MEP_Interfaces.md:379 ../../Projects/MEP/MEP_Interfaces.md:700 ../../Projects/MEP/MEP_Interfaces.md:897 ../../Projects/MEP/MEP_Interfaces.md:952 ../../Projects/MEP/MEP_Interfaces.md:1020 ../../Projects/MEP/MEP_Interfaces.md:1156 ../../Projects/MEP/MEP_Interfaces.md:1207 ../../Projects/MEP/MEP_Interfaces.md:1303 ../../Projects/MEP/MEP_Interfaces.md:1372 ../../Projects/MEP/MEP_Interfaces.md:1453 ../../Projects/MEP/MEP_Interfaces.md:1504 ../../Projects/MEP/MEP_Interfaces.md:1571 ../../Projects/MEP/MEP_Interfaces.md:1697
+msgid "**请求参数**"
+msgstr "**Request Parameters**"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "名称"
-msgstr "name"
+msgstr "Name"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "类型"
-msgstr "type"
+msgstr "Type"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "描述"
-msgstr "describe"
+msgstr "Description"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "IN"
-msgstr "IN"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "必选"
-msgstr "compulsory choice"
+msgstr "Mandatory"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Content-Type"
-msgstr "Content-Type"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "String"
-msgstr "String"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "MIME类型，  填\"application/json\""
@@ -299,7 +299,7 @@ msgstr "MIME type, fill \"application/json\""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "header"
-msgstr "header"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "是"
@@ -315,7 +315,7 @@ msgstr "Certification information"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "x-sdk-date"
-msgstr "x-sdk-date"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "签名时间（当前时间戳，格式：YYYYMMDDTHHMMSSZ）"
@@ -323,27 +323,27 @@ msgstr "Signature time (current time stamp, format: YYYYMMDDTHHMMSSZ)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Host"
-msgstr "Host"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "与生成认证信息签名用到的host字段保持一致"
 msgstr "It is consistent with the host field used for generating the authentication information signature."
 
 #: ../../Projects/MEP/MEP_Interfaces.md:84 ../../Projects/MEP/MEP_Interfaces.md:156 ../../Projects/MEP/MEP_Interfaces.md:258 ../../Projects/MEP/MEP_Interfaces.md:386 ../../Projects/MEP/MEP_Interfaces.md:511 ../../Projects/MEP/MEP_Interfaces.md:708 ../../Projects/MEP/MEP_Interfaces.md:904 ../../Projects/MEP/MEP_Interfaces.md:958 ../../Projects/MEP/MEP_Interfaces.md:1027 ../../Projects/MEP/MEP_Interfaces.md:1163 ../../Projects/MEP/MEP_Interfaces.md:1214 ../../Projects/MEP/MEP_Interfaces.md:1309 ../../Projects/MEP/MEP_Interfaces.md:1379 ../../Projects/MEP/MEP_Interfaces.md:1460 ../../Projects/MEP/MEP_Interfaces.md:1511 ../../Projects/MEP/MEP_Interfaces.md:1577 ../../Projects/MEP/MEP_Interfaces.md:1704
-msgid "Body参数："
-msgstr "Body Parameters:"
+msgid "**Body参数**"
+msgstr "**Body parameters**"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:86 ../../Projects/MEP/MEP_Interfaces.md:260 ../../Projects/MEP/MEP_Interfaces.md:388 ../../Projects/MEP/MEP_Interfaces.md:906 ../../Projects/MEP/MEP_Interfaces.md:960 ../../Projects/MEP/MEP_Interfaces.md:1165 ../../Projects/MEP/MEP_Interfaces.md:1216 ../../Projects/MEP/MEP_Interfaces.md:1311 ../../Projects/MEP/MEP_Interfaces.md:1462 ../../Projects/MEP/MEP_Interfaces.md:1513 ../../Projects/MEP/MEP_Interfaces.md:1579 ../../Projects/MEP/MEP_Interfaces.md:1706
 msgid "无"
 msgstr "no"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:88 ../../Projects/MEP/MEP_Interfaces.md:167 ../../Projects/MEP/MEP_Interfaces.md:262 ../../Projects/MEP/MEP_Interfaces.md:390 ../../Projects/MEP/MEP_Interfaces.md:547 ../../Projects/MEP/MEP_Interfaces.md:744 ../../Projects/MEP/MEP_Interfaces.md:908 ../../Projects/MEP/MEP_Interfaces.md:962 ../../Projects/MEP/MEP_Interfaces.md:1043 ../../Projects/MEP/MEP_Interfaces.md:1167 ../../Projects/MEP/MEP_Interfaces.md:1218 ../../Projects/MEP/MEP_Interfaces.md:1313 ../../Projects/MEP/MEP_Interfaces.md:1386 ../../Projects/MEP/MEP_Interfaces.md:1464 ../../Projects/MEP/MEP_Interfaces.md:1515 ../../Projects/MEP/MEP_Interfaces.md:1581 ../../Projects/MEP/MEP_Interfaces.md:1708
-msgid "请求示例："
-msgstr "Example request:"
+msgid "**请求示例**"
+msgstr "**Example Request**"
 
-#: ../../Projects/MEP/MEP_Interfaces.md:117 ../../Projects/MEP/MEP_Interfaces.md:196 ../../Projects/MEP/MEP_Interfaces.md:277 ../../Projects/MEP/MEP_Interfaces.md:405 ../../Projects/MEP/MEP_Interfaces.md:598 ../../Projects/MEP/MEP_Interfaces.md:796 ../../Projects/MEP/MEP_Interfaces.md:925 ../../Projects/MEP/MEP_Interfaces.md:977 ../../Projects/MEP/MEP_Interfaces.md:1083 ../../Projects/MEP/MEP_Interfaces.md:1182 ../../Projects/MEP/MEP_Interfaces.md:1233 ../../Projects/MEP/MEP_Interfaces.md:1328 ../../Projects/MEP/MEP_Interfaces.md:1408 ../../Projects/MEP/MEP_Interfaces.md:1479 ../../Projects/MEP/MEP_Interfaces.md:1530 ../../Projects/MEP/MEP_Interfaces.md:1596 ../../Projects/MEP/MEP_Interfaces.md:1723
-msgid "返回参数："
-msgstr "Return parameter:"
+#: ../../Projects/MEP/MEP_Interfaces.md:117 ../../Projects/MEP/MEP_Interfaces.md:196 ../../Projects/MEP/MEP_Interfaces.md:277 ../../Projects/MEP/MEP_Interfaces.md:405 ../../Projects/MEP/MEP_Interfaces.md:796 ../../Projects/MEP/MEP_Interfaces.md:925
+msgid "**返回参数**"
+msgstr "**Return parameter**"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:119 ../../Projects/MEP/MEP_Interfaces.md:198 ../../Projects/MEP/MEP_Interfaces.md:279 ../../Projects/MEP/MEP_Interfaces.md:407 ../../Projects/MEP/MEP_Interfaces.md:798 ../../Projects/MEP/MEP_Interfaces.md:979 ../../Projects/MEP/MEP_Interfaces.md:1235 ../../Projects/MEP/MEP_Interfaces.md:1330 ../../Projects/MEP/MEP_Interfaces.md:1532 ../../Projects/MEP/MEP_Interfaces.md:1598 ../../Projects/MEP/MEP_Interfaces.md:1725
 msgid "返回码：200"
@@ -351,19 +351,19 @@ msgstr "Return code: 200"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:121 ../../Projects/MEP/MEP_Interfaces.md:281 ../../Projects/MEP/MEP_Interfaces.md:409 ../../Projects/MEP/MEP_Interfaces.md:602 ../../Projects/MEP/MEP_Interfaces.md:800 ../../Projects/MEP/MEP_Interfaces.md:929 ../../Projects/MEP/MEP_Interfaces.md:981 ../../Projects/MEP/MEP_Interfaces.md:1087 ../../Projects/MEP/MEP_Interfaces.md:1186 ../../Projects/MEP/MEP_Interfaces.md:1237 ../../Projects/MEP/MEP_Interfaces.md:1332 ../../Projects/MEP/MEP_Interfaces.md:1412 ../../Projects/MEP/MEP_Interfaces.md:1483 ../../Projects/MEP/MEP_Interfaces.md:1534 ../../Projects/MEP/MEP_Interfaces.md:1600 ../../Projects/MEP/MEP_Interfaces.md:1727
 msgid "OK"
-msgstr "OK"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "access\\_token"
-msgstr "access\\_token"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Token"
-msgstr "Token"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "token\\_type"
-msgstr "token\\_type"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Token类型（Bearer）"
@@ -371,27 +371,27 @@ msgstr "Token Type (Bearer)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "expires\\_in"
-msgstr "expires\\_in"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "int"
-msgstr "int"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "失效时间"
 msgstr "Invalidate Time"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:128 ../../Projects/MEP/MEP_Interfaces.md:209 ../../Projects/MEP/MEP_Interfaces.md:320 ../../Projects/MEP/MEP_Interfaces.md:448 ../../Projects/MEP/MEP_Interfaces.md:641 ../../Projects/MEP/MEP_Interfaces.md:839 ../../Projects/MEP/MEP_Interfaces.md:931 ../../Projects/MEP/MEP_Interfaces.md:991 ../../Projects/MEP/MEP_Interfaces.md:1107 ../../Projects/MEP/MEP_Interfaces.md:1188 ../../Projects/MEP/MEP_Interfaces.md:1256 ../../Projects/MEP/MEP_Interfaces.md:1342 ../../Projects/MEP/MEP_Interfaces.md:1423 ../../Projects/MEP/MEP_Interfaces.md:1485 ../../Projects/MEP/MEP_Interfaces.md:1544 ../../Projects/MEP/MEP_Interfaces.md:1639 ../../Projects/MEP/MEP_Interfaces.md:1766
-msgid "返回示例："
-msgstr "Return example:"
+msgid "**返回示例**"
+msgstr "**Return Example**"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:140
 msgid "注：在测试时，请确保启动EG-LDVS时使用的AK/SK和获取token时使用的AK/SK相同。基于AK/SK的认证，EG-LDVS对于相同的AK若5分钟内三次认证失败，对应AK将被锁定15分钟。"
 msgstr "Note: When testing, ensure that the AK/SK used when starting the EG-LDVS is the same AAK/SK used for the token acquisition.For authentication based on AK/SK, EG-LDVS fails three authentication failures within 5 minutes of the same AK, and the corresponding AK will be locked for 15 minutes."
 
 #: ../../Projects/MEP/MEP_Interfaces.md:142
-msgid "AK/SK配置接口"
-msgstr "AK/SK configuration interface"
+msgid "AK/SK configuration interface"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "MIME类型，填\"application/json\""
@@ -399,7 +399,7 @@ msgstr "MIME type, fill \"application/json\""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "appInstanceId"
-msgstr "appInstanceId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "APP实例ID（UUID）"
@@ -407,15 +407,15 @@ msgstr "APP Instance ID (UUID)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "path"
-msgstr "path"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "authInfo"
-msgstr "authInfo"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Object"
-msgstr "Object"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "用户信息"
@@ -423,7 +423,7 @@ msgstr "User information"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;credentials"
-msgstr "&gt;credentials"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "证书信息"
@@ -431,23 +431,23 @@ msgstr "Certificate information"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;accessKeyId"
-msgstr "&gt;&gt;accessKeyId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "AK"
-msgstr "AK"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;secretKey"
-msgstr "&gt;&gt;secretKey"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "SK"
-msgstr "SK"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "appInfo"
-msgstr "appInfo"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "app信息"
@@ -455,7 +455,7 @@ msgstr "app information"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;appName"
-msgstr "&gt;appName"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "app名称"
@@ -463,11 +463,11 @@ msgstr "app name"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;requiredServices"
-msgstr "&gt;requiredServices"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Array[String]"
-msgstr "Array[String]"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "app依赖的服务列表"
@@ -478,24 +478,20 @@ msgid "app依赖的服务"
 msgstr "app-dependent services"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:238
-msgid "MEP-server 接口"
-msgstr "MEP-server interface"
+msgid "MEP-server interface"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:240
-msgid "应用服务管理相关接口"
-msgstr "Application service management related interface"
+msgid "Application Service Management Related Interface"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:242
-msgid "1. 查询应用服务"
-msgstr "1.Query application services"
+msgid "1. Query application services"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:244
 msgid "查询指定APP的服务列表"
 msgstr "Query a list of services for the specified APP"
-
-#: ../../Projects/MEP/MEP_Interfaces.md:246 ../../Projects/MEP/MEP_Interfaces.md:373 ../../Projects/MEP/MEP_Interfaces.md:498 ../../Projects/MEP/MEP_Interfaces.md:694 ../../Projects/MEP/MEP_Interfaces.md:891 ../../Projects/MEP/MEP_Interfaces.md:946 ../../Projects/MEP/MEP_Interfaces.md:1014 ../../Projects/MEP/MEP_Interfaces.md:1150 ../../Projects/MEP/MEP_Interfaces.md:1201 ../../Projects/MEP/MEP_Interfaces.md:1297 ../../Projects/MEP/MEP_Interfaces.md:1366 ../../Projects/MEP/MEP_Interfaces.md:1447 ../../Projects/MEP/MEP_Interfaces.md:1498 ../../Projects/MEP/MEP_Interfaces.md:1565 ../../Projects/MEP/MEP_Interfaces.md:1691 ../../Projects/MEP/MEP_Interfaces.md:1817 ../../Projects/MEP/MEP_Interfaces.md:1957 ../../Projects/MEP/MEP_Interfaces.md:2018 ../../Projects/MEP/MEP_Interfaces.md:2070 ../../Projects/MEP/MEP_Interfaces.md:2140 ../../Projects/MEP/MEP_Interfaces.md:2242 ../../Projects/MEP/MEP_Interfaces.md:2343 ../../Projects/MEP/MEP_Interfaces.md:2511 ../../Projects/MEP/MEP_Interfaces.md:2642 ../../Projects/MEP/MEP_Interfaces.md:2766 ../../Projects/MEP/MEP_Interfaces.md:2897 ../../Projects/MEP/MEP_Interfaces.md:2945 ../../Projects/MEP/MEP_Interfaces.md:2997 ../../Projects/MEP/MEP_Interfaces.md:3035 ../../Projects/MEP/MEP_Interfaces.md:3106 ../../Projects/MEP/MEP_Interfaces.md:3183 ../../Projects/MEP/MEP_Interfaces.md:3240
-msgid "URL"
-msgstr "URL"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Token信息，格式：Bearer token信息"
@@ -503,7 +499,7 @@ msgstr "Token information, format: Bearer token information"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "serInstanceId"
-msgstr "serInstanceId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "服务实例ID"
@@ -511,7 +507,7 @@ msgstr "Service Instance ID"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "serName"
-msgstr "serName"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "服务名称"
@@ -519,7 +515,7 @@ msgstr "Service Name"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "serCategory"
-msgstr "serCategory"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "服务类别"
@@ -531,7 +527,7 @@ msgstr "not"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;href"
-msgstr "&gt;href"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "目录参考"
@@ -539,7 +535,7 @@ msgstr "Directory reference"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;id"
-msgstr "&gt;id"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "类别ID"
@@ -547,7 +543,7 @@ msgstr "Class ID"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;name"
-msgstr "&gt;name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "类别名称"
@@ -555,7 +551,7 @@ msgstr "Class name"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;version"
-msgstr "&gt;version"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "类别版本号"
@@ -563,7 +559,7 @@ msgstr "class version number"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "version"
-msgstr "version"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "服务版本号"
@@ -571,7 +567,7 @@ msgstr "Service version number"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "state"
-msgstr "state"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "服务状态（ACTIVE/INACTIVE）"
@@ -579,7 +575,7 @@ msgstr "Service Status (ACTIVE/INACTIVE)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "transportInfo"
-msgstr "transportInfo"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "服务信息"
@@ -587,15 +583,15 @@ msgstr "Service information"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; description"
-msgstr "&gt; description"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; type"
-msgstr "&gt; type"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "类型（REST\\_HTTP/MB\\_TOPIC\\_BASED/MB\\_ROUTING/MB\\_PUBSUB/RPC/RPC\\_STREAMING/WEBSOCKET）"
@@ -603,7 +599,7 @@ msgstr "Type (REST\\_HTTP/MB\\_TOPIC\\_BASED/MB\\_ROUTING/MB\\_PUBSUB/RPC/RPC\\_
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; protocol"
-msgstr "&gt; protocol"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "协议名称"
@@ -611,7 +607,7 @@ msgstr "Agreement Name"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; version"
-msgstr "&gt; version"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "版本号"
@@ -619,11 +615,11 @@ msgstr "version number"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; endpoint"
-msgstr "&gt; endpoint"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Ojbect"
-msgstr "Ojbect"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Endpoint，三种信息其中的一个（uris/addresses/alternative）"
@@ -631,11 +627,11 @@ msgstr "Endpoint, one of the three messages (uris/addresses/alternative)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;uris"
-msgstr "&gt;&gt;uris"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Array\\[String\\]"
-msgstr "Array\\[String\\]"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "URI格式的服务入口信息列表"
@@ -643,11 +639,11 @@ msgstr "List of service portals in URI format"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;addresses"
-msgstr "&gt;&gt;addresses"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Array\\[Object\\]"
-msgstr "Array\\[Object\\]"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "服务入口信息地址列表（IP地址+端口号）"
@@ -655,7 +651,7 @@ msgstr "List of service entrance information addresses (IP address + port number
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;&gt;host"
-msgstr "&gt;&gt;&gt;host"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "IP地址"
@@ -663,7 +659,7 @@ msgstr "IP Address"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;&gt;port"
-msgstr "&gt;&gt;&gt;port"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "端口号"
@@ -671,7 +667,7 @@ msgstr "port number"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;alternative"
-msgstr "&gt;&gt;alternative"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "已实现格式或者外部规范定义的服务入口信息"
@@ -679,7 +675,7 @@ msgstr "Service entrance information for the format or external specification de
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; security"
-msgstr "&gt; security"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "安全信息"
@@ -687,7 +683,7 @@ msgstr "Security information"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; oAuth2Info"
-msgstr "&gt;&gt; oAuth2Info"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "OAuth2.0参数"
@@ -695,7 +691,7 @@ msgstr "OAuth2.0 parameter"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;&gt; grantTypes"
-msgstr "&gt;&gt;&gt; grantTypes"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "准予类型（OAUTH2\\_AUTHORIZATION\\_CODE/OAUTH2\\_IMPLICIT\\_GRANT/OAUTH2\\_RESOURCE\\_OWNER/OAUTH2\\_CLIENT\\_CREDENTIALS）"
@@ -703,15 +699,15 @@ msgstr "granted type (OAUTH2\\_AUTHORIZATION\\_CODE/OAUTH2\\_IMPLICIT\\_GRANT/OA
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;&gt; tokenEndpoint"
-msgstr "&gt;&gt;&gt; tokenEndpoint"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Token endpoint"
-msgstr "Token endpoint"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; implSpecificInfo"
-msgstr "&gt; implSpecificInfo"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "其他实现信息"
@@ -719,7 +715,7 @@ msgstr "Other realized information"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "serializer"
-msgstr "serializer"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "序列化类型（JSON/XML/PROTOBUF3）"
@@ -727,7 +723,7 @@ msgstr "Serialization Type (JSON/XML/PROTOBUF3)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "scopeOfLocality"
-msgstr "scopeOfLocality"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "地域范围（MEC\\_SYSTEM/MEC\\_HOST/NFVI\\_POP/ZONE/ZONE\\_GROUP/NFVI\\_NODE），默认值MEC\\_HOST"
@@ -735,11 +731,11 @@ msgstr "Geographical range (MEC\\_SYSTEM/MEC\\_HOST/NFVI\\_POP/ZONE/ZONE\\_GROUP
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "consumedLocalOnly"
-msgstr "consumedLocalOnly"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "boolean"
-msgstr "boolean"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "是否只被本地域APP消费（true/false）"
@@ -747,7 +743,7 @@ msgstr "Is it only consumed by local APP (true/false)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "isLocal"
-msgstr "isLocal"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "是否在本地域（true/false）"
@@ -755,51 +751,51 @@ msgstr "Is Local Domain (true/false)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "livenessInterval"
-msgstr "livenessInterval"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "integer"
-msgstr "integer"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Interval (in seconds) between two consecutive heartbeat messages"
-msgstr "Interval (in seconds) between two consecutive heartbeat messages"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "\\_links"
-msgstr "\\_links"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Links to resources related to this resource. Shall be absent in HTTP requests."
-msgstr "Links to resources related to this resource. Shall be absent in HTTP requests."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;self"
-msgstr "&gt;self"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "object"
-msgstr "object"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Link to this resource. Shall be present in HTTP responses."
-msgstr "Link to this resource. Shall be present in HTTP responses."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;liveness"
-msgstr "&gt;&gt;liveness"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "string"
-msgstr "string"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Link to the resource where the MEC platform expects the service instance to send the liveness information."
-msgstr "Link to the resource where the MEC platform expects the service instance to send the liveness information."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:369
-msgid "2. 查询应用指定服务"
-msgstr "2.Query application specified service"
+msgid "2. Query application specific services"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:371
 msgid "查询对应APP的指定服务"
@@ -807,7 +803,7 @@ msgstr "Query a specified service corresponding to APP"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "serviceId"
-msgstr "serviceId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "APP服务实例ID"
@@ -818,12 +814,16 @@ msgid "scopeOfLocality              String"
 msgstr "scopeOfLocality              String"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:494
-msgid "3. 注册应用服务"
-msgstr "3.Registered application services"
+msgid "3. Register application service"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:496
 msgid "为指定APP注册服务。"
 msgstr "Specify the APP registration service for."
+
+#: ../../Projects/MEP/MEP_Interfaces.md:504
+msgid "**请求参数**："
+msgstr "**Request Parameter**"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "服务名称（字母/数字/\\_/-的组合，但不能以\\_和-开头或结尾），最大长度128"
@@ -839,7 +839,7 @@ msgstr "Service version number (format x\\[.y\\[.z\\]\\], xyz value range 0\\~32
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "transportId"
-msgstr "transportId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "服务信息ID，字母与数字组合，最大长度64"
@@ -869,6 +869,10 @@ msgstr "IP address.For example: 192.168.0.1"
 msgid "端口号（&lt;=65535）。例如：8080"
 msgstr "The port number (&lt;=65535).For example: 8080"
 
+#: ../../Projects/MEP/MEP_Interfaces.md:598
+msgid "返回参数："
+msgstr "Return parameter:"
+
 #: ../../Projects/MEP/MEP_Interfaces.md:600 ../../Projects/MEP/MEP_Interfaces.md:1085 ../../Projects/MEP/MEP_Interfaces.md:1410
 msgid "返回码：201"
 msgstr "Return code: 201"
@@ -882,8 +886,8 @@ msgid "**注：单个应用注册的服务数量应不超过50个，超出后服
 msgstr "**Note: The number of services registered for a single application should be no more than 50, and the service will be reported incorrectly.**"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:690
-msgid "4. 更新应用服务"
-msgstr "4.Update application services"
+msgid "4. Update application service"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:692
 msgid "更新APP指定服务信息。"
@@ -894,8 +898,8 @@ msgid "服务版本号（例如：1；1.0；1.0.2）"
 msgstr "Service version number (e.g.: 1；1.0；1.0.2)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:887
-msgid "5. 删除应用服务"
-msgstr "5.Delete application services"
+msgid "5. Delete application service"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:889
 msgid "删除APP指定服务。"
@@ -906,12 +910,12 @@ msgid "返回码：204"
 msgstr "Return code: 204"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:940
-msgid "可用事件订阅相关接口"
-msgstr "Available Event Subscription Related interfaces"
+msgid "Available event subscription related interface"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:942
-msgid "1. 查询可用事件订阅"
-msgstr "1.Query available event subscriptions"
+msgid "1. Query available event subscriptions"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:944
 msgid "查询指定APP的可用事件订阅信息"
@@ -923,7 +927,7 @@ msgstr "**name**"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "**类型**"
-msgstr "**Types of**"
+msgstr "**Type**"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "**描述**"
@@ -931,11 +935,15 @@ msgstr "**Description**"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "**IN**"
-msgstr "**IN**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "**必选**"
 msgstr "**required**"
+
+#: ../../Projects/MEP/MEP_Interfaces.md:977 ../../Projects/MEP/MEP_Interfaces.md:1083 ../../Projects/MEP/MEP_Interfaces.md:1182 ../../Projects/MEP/MEP_Interfaces.md:1233 ../../Projects/MEP/MEP_Interfaces.md:1328 ../../Projects/MEP/MEP_Interfaces.md:1408 ../../Projects/MEP/MEP_Interfaces.md:1479 ../../Projects/MEP/MEP_Interfaces.md:1530 ../../Projects/MEP/MEP_Interfaces.md:1596 ../../Projects/MEP/MEP_Interfaces.md:1723
+msgid "返回参数"
+msgstr "Return Parameter"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "结果信息"
@@ -947,7 +955,7 @@ msgstr "caller information"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;href"
-msgstr "&gt;&gt;href"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "调用者URL"
@@ -955,7 +963,7 @@ msgstr "caller URL"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;subscriptions"
-msgstr "&gt;subscriptions"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "订阅者列表"
@@ -967,15 +975,15 @@ msgstr "Subscriber URI"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;rel"
-msgstr "&gt;&gt;rel"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "固定值SerAvailabilityNotificationSubscription"
 msgstr "Fixed value SerAvailabilityNotificationSubscription"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1010
-msgid "2. 注册可用事件订阅"
-msgstr "2.Sign up for available event subscriptions"
+msgid "2. Register for available event subscription"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1012
 msgid "为指定APP注册可用事件订阅"
@@ -983,7 +991,7 @@ msgstr "To specify APP registered free event subscription"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "subscriptionType"
-msgstr "subscriptionType"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "订阅类型（SerAvailabilityNotificationSubscription）"
@@ -991,7 +999,7 @@ msgstr "Subscription Type (SerAvailabilityNotificationSubscription)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "callbackReference"
-msgstr "callbackReference"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "用于接收通知的回调URI，不支持域名格式，仅支持IP地址+URL，且不能包含localhost、127.x.x.x、mepserver容器IP网段，例如：https://159.138.1.2:8080/xxx"
@@ -999,7 +1007,7 @@ msgstr "The callback URI for receiving the notification does not support the dom
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "filteringCriteria"
-msgstr "filteringCriteria"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "过滤条件列表"
@@ -1007,7 +1015,7 @@ msgstr "Filter list"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;serInstanceIds"
-msgstr "&gt;serInstanceIds"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "上报事件的应用服务实例ID列表"
@@ -1015,7 +1023,7 @@ msgstr "Application service instance ID list for reported event"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;serNames"
-msgstr "&gt;serNames"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "上报事件的应用服务实例名称列表（每个服务实例名称都是字母/数字/\\_/-的组合，但不能以\\_和-开头或结尾，最大长度128）"
@@ -1023,7 +1031,7 @@ msgstr "Application service instance name list reported for event (each service 
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;serCategories"
-msgstr "&gt;serCategories"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "上报事件的应用服务类别列表"
@@ -1035,7 +1043,7 @@ msgstr "Class Reference"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;id"
-msgstr "&gt;&gt;id"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "类别ID，最大长度64"
@@ -1043,7 +1051,7 @@ msgstr "Class ID, maximum length 64"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;name"
-msgstr "&gt;&gt;name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "类别名称（字母/数字/\\_/-的组合，但不能以\\_和-开头或结尾），最大长度128"
@@ -1051,11 +1059,11 @@ msgstr "Class name (letter/number/\\\\_/-, but not \\_ and-start or end), maximu
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;version"
-msgstr "&gt;&gt;version"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;states"
-msgstr "&gt;states"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "上报事件的应用服务状态（ACTIVE/INACTIVE）"
@@ -1063,11 +1071,11 @@ msgstr "Application service status for reported events (ACTIVE/INACTIVE)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;isLocal"
-msgstr "&gt;isLocal"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "subscriptionId"
-msgstr "subscriptionId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "订阅Id"
@@ -1090,8 +1098,8 @@ msgid "**注：单个应用注册的可用事件订阅数量应不超过50个，
 msgstr "**Note: The number of available event subscriptions for a single application registration should be no more than 50, and the service beyond will be reported incorrectly.**"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1146
-msgid "3. 删除可用事件订阅"
-msgstr "3.Delete available event subscriptions"
+msgid "3. Delete available event subscription"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1148
 msgid "删除指定可用事件订阅信息"
@@ -1102,20 +1110,20 @@ msgid "事件订阅ID"
 msgstr "Event Subscription ID"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1197
-msgid "4. 查询指定可用事件订阅"
-msgstr "4.Query specifies an available event subscription"
+msgid "4. Query specified available event subscription"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1199
 msgid "查询指定ID的可用事件订阅信息"
 msgstr "Query the available event subscription information for the specified ID"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1291
-msgid "终止事件订阅相关接口"
-msgstr "Terminate Event Subscription Related Interface"
+msgid "Termination event subscription related interface"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1293
-msgid "1. 查询终止事件订阅"
-msgstr "1.Query termination event subscription"
+msgid "1. Query termination event subscription"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1295
 msgid "查询指定APP的终止事件订阅信息"
@@ -1126,8 +1134,8 @@ msgid "固定值AppTerminationNotificationSubscription"
 msgstr "Fixed Value AppTerminationNotificationSubscription"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1362
-msgid "2. 注册终止事件订阅"
-msgstr "2.Registration terminated event subscription"
+msgid "2. Registration termination event subscription"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1364
 msgid "为指定APP注册终止事件订阅"
@@ -1142,8 +1150,8 @@ msgid "**注：单个应用注册的终止事件订阅数量应不超过50个，
 msgstr "**Note: The number of terminated event subscriptions for a single application registration should be no more than 50, and the service beyond will be reported incorrectly.**"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1443
-msgid "3. 删除终止事件订阅"
-msgstr "3.Delete the termination event subscription"
+msgid "3. Delete termination event subscription"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1445
 msgid "删除指定终止事件订阅信息"
@@ -1154,8 +1162,8 @@ msgid "事件订阅ID（UUID）"
 msgstr "Event Subscription ID (UUID)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1494
-msgid "4. 查询指定终止事件订阅"
-msgstr "4.Query specifies termination event subscription"
+msgid "4. Query specified termination event subscription"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1496
 msgid "查询指定ID的终止事件订阅信息"
@@ -1167,11 +1175,11 @@ msgstr "Subscription Type (AppTerminationNotificationSubscription)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1561
 msgid "Service"
-msgstr "Service"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1562
 msgid "1. Query availability services list"
-msgstr "1. Query availability services list"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1563
 msgid "This method retrieves information about a list of mecService resources. This method is typically used in \"service availability query\" procedure"
@@ -1179,11 +1187,11 @@ msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "ser_name"
-msgstr "ser_name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "service name"
-msgstr "service name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "query"
@@ -1214,244 +1222,244 @@ msgid "This method retrieves information about an individual mec service livenes
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1822 ../../Projects/MEP/MEP_Interfaces.md:1896 ../../Projects/MEP/MEP_Interfaces.md:1963 ../../Projects/MEP/MEP_Interfaces.md:2024 ../../Projects/MEP/MEP_Interfaces.md:2076 ../../Projects/MEP/MEP_Interfaces.md:2146 ../../Projects/MEP/MEP_Interfaces.md:2248 ../../Projects/MEP/MEP_Interfaces.md:2349 ../../Projects/MEP/MEP_Interfaces.md:2517 ../../Projects/MEP/MEP_Interfaces.md:2648 ../../Projects/MEP/MEP_Interfaces.md:2772 ../../Projects/MEP/MEP_Interfaces.md:2903 ../../Projects/MEP/MEP_Interfaces.md:2951 ../../Projects/MEP/MEP_Interfaces.md:3002 ../../Projects/MEP/MEP_Interfaces.md:3004 ../../Projects/MEP/MEP_Interfaces.md:3041 ../../Projects/MEP/MEP_Interfaces.md:3112 ../../Projects/MEP/MEP_Interfaces.md:3189 ../../Projects/MEP/MEP_Interfaces.md:3246 ../../Projects/MEP/MEP_Interfaces.md:3281 ../../Projects/MEP/MEP_Interfaces.md:3332
-msgid "Request parameters:"
-msgstr "Request parameters:"
+msgid "**Request parameters**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "**Name**"
-msgstr "**Name**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "**Type**"
-msgstr "**Type**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "**Description**"
-msgstr "**Description**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "**Required**"
-msgstr "**Required**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Yes"
-msgstr "Yes"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1829 ../../Projects/MEP/MEP_Interfaces.md:1903 ../../Projects/MEP/MEP_Interfaces.md:1969 ../../Projects/MEP/MEP_Interfaces.md:2031 ../../Projects/MEP/MEP_Interfaces.md:2083 ../../Projects/MEP/MEP_Interfaces.md:2152 ../../Projects/MEP/MEP_Interfaces.md:2255 ../../Projects/MEP/MEP_Interfaces.md:2356 ../../Projects/MEP/MEP_Interfaces.md:2522 ../../Projects/MEP/MEP_Interfaces.md:2653 ../../Projects/MEP/MEP_Interfaces.md:2777 ../../Projects/MEP/MEP_Interfaces.md:2908 ../../Projects/MEP/MEP_Interfaces.md:2956 ../../Projects/MEP/MEP_Interfaces.md:3016 ../../Projects/MEP/MEP_Interfaces.md:3045 ../../Projects/MEP/MEP_Interfaces.md:3117 ../../Projects/MEP/MEP_Interfaces.md:3193 ../../Projects/MEP/MEP_Interfaces.md:3252 ../../Projects/MEP/MEP_Interfaces.md:3286 ../../Projects/MEP/MEP_Interfaces.md:3338
-msgid "Body parameters:"
-msgstr "Body parameters:"
+msgid "**Body Parameters**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1831 ../../Projects/MEP/MEP_Interfaces.md:1971 ../../Projects/MEP/MEP_Interfaces.md:2033 ../../Projects/MEP/MEP_Interfaces.md:2154 ../../Projects/MEP/MEP_Interfaces.md:2257 ../../Projects/MEP/MEP_Interfaces.md:2655 ../../Projects/MEP/MEP_Interfaces.md:2910 ../../Projects/MEP/MEP_Interfaces.md:2958 ../../Projects/MEP/MEP_Interfaces.md:3018 ../../Projects/MEP/MEP_Interfaces.md:3043 ../../Projects/MEP/MEP_Interfaces.md:3047 ../../Projects/MEP/MEP_Interfaces.md:3119 ../../Projects/MEP/MEP_Interfaces.md:3191 ../../Projects/MEP/MEP_Interfaces.md:3227 ../../Projects/MEP/MEP_Interfaces.md:3254 ../../Projects/MEP/MEP_Interfaces.md:3264 ../../Projects/MEP/MEP_Interfaces.md:3288 ../../Projects/MEP/MEP_Interfaces.md:3340
 msgid "None"
-msgstr "None"
+msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:1833 ../../Projects/MEP/MEP_Interfaces.md:1924 ../../Projects/MEP/MEP_Interfaces.md:1973 ../../Projects/MEP/MEP_Interfaces.md:2035 ../../Projects/MEP/MEP_Interfaces.md:2093 ../../Projects/MEP/MEP_Interfaces.md:2156 ../../Projects/MEP/MEP_Interfaces.md:2259 ../../Projects/MEP/MEP_Interfaces.md:2388 ../../Projects/MEP/MEP_Interfaces.md:2564 ../../Projects/MEP/MEP_Interfaces.md:2657 ../../Projects/MEP/MEP_Interfaces.md:2819 ../../Projects/MEP/MEP_Interfaces.md:2912 ../../Projects/MEP/MEP_Interfaces.md:2960 ../../Projects/MEP/MEP_Interfaces.md:3010 ../../Projects/MEP/MEP_Interfaces.md:3049 ../../Projects/MEP/MEP_Interfaces.md:3121 ../../Projects/MEP/MEP_Interfaces.md:3203 ../../Projects/MEP/MEP_Interfaces.md:3256
-msgid "Example Request:"
-msgstr "Example Request:"
+#: ../../Projects/MEP/MEP_Interfaces.md:1833 ../../Projects/MEP/MEP_Interfaces.md:1924 ../../Projects/MEP/MEP_Interfaces.md:1973 ../../Projects/MEP/MEP_Interfaces.md:2035 ../../Projects/MEP/MEP_Interfaces.md:2093 ../../Projects/MEP/MEP_Interfaces.md:2156 ../../Projects/MEP/MEP_Interfaces.md:2259 ../../Projects/MEP/MEP_Interfaces.md:2388 ../../Projects/MEP/MEP_Interfaces.md:2564 ../../Projects/MEP/MEP_Interfaces.md:2657 ../../Projects/MEP/MEP_Interfaces.md:2819 ../../Projects/MEP/MEP_Interfaces.md:2912 ../../Projects/MEP/MEP_Interfaces.md:2960 ../../Projects/MEP/MEP_Interfaces.md:3010 ../../Projects/MEP/MEP_Interfaces.md:3049 ../../Projects/MEP/MEP_Interfaces.md:3121 ../../Projects/MEP/MEP_Interfaces.md:3203 ../../Projects/MEP/MEP_Interfaces.md:3256 ../../Projects/MEP/MEP_Interfaces.md:3290 ../../Projects/MEP/MEP_Interfaces.md:3342
+msgid "**Example Request**"
+msgstr ""
 
-#: ../../Projects/MEP/MEP_Interfaces.md:1839 ../../Projects/MEP/MEP_Interfaces.md:1979 ../../Projects/MEP/MEP_Interfaces.md:2041 ../../Projects/MEP/MEP_Interfaces.md:2107 ../../Projects/MEP/MEP_Interfaces.md:2162 ../../Projects/MEP/MEP_Interfaces.md:2265 ../../Projects/MEP/MEP_Interfaces.md:2429 ../../Projects/MEP/MEP_Interfaces.md:2615 ../../Projects/MEP/MEP_Interfaces.md:2663 ../../Projects/MEP/MEP_Interfaces.md:2870 ../../Projects/MEP/MEP_Interfaces.md:2918 ../../Projects/MEP/MEP_Interfaces.md:2966 ../../Projects/MEP/MEP_Interfaces.md:3055 ../../Projects/MEP/MEP_Interfaces.md:3127 ../../Projects/MEP/MEP_Interfaces.md:3225 ../../Projects/MEP/MEP_Interfaces.md:3262
-msgid "Return Parameters:"
-msgstr "Return Parameters:"
+#: ../../Projects/MEP/MEP_Interfaces.md:1839 ../../Projects/MEP/MEP_Interfaces.md:1979 ../../Projects/MEP/MEP_Interfaces.md:2041 ../../Projects/MEP/MEP_Interfaces.md:2107 ../../Projects/MEP/MEP_Interfaces.md:2162 ../../Projects/MEP/MEP_Interfaces.md:2265 ../../Projects/MEP/MEP_Interfaces.md:2429 ../../Projects/MEP/MEP_Interfaces.md:2615 ../../Projects/MEP/MEP_Interfaces.md:2663 ../../Projects/MEP/MEP_Interfaces.md:2870 ../../Projects/MEP/MEP_Interfaces.md:2918 ../../Projects/MEP/MEP_Interfaces.md:2966 ../../Projects/MEP/MEP_Interfaces.md:3055 ../../Projects/MEP/MEP_Interfaces.md:3127 ../../Projects/MEP/MEP_Interfaces.md:3225 ../../Projects/MEP/MEP_Interfaces.md:3262 ../../Projects/MEP/MEP_Interfaces.md:3305 ../../Projects/MEP/MEP_Interfaces.md:3357
+msgid "**Return Parameters**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Type"
-msgstr "Type"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "enum **{ACTIVE, INACTIVE, SUSPENDED}**"
-msgstr "enum **{ACTIVE, INACTIVE, SUSPENDED}**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "State"
-msgstr "State"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "timeStamp"
-msgstr "timeStamp"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "The time when the last heartbeat message was received"
-msgstr "The time when the last heartbeat message was received"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;seconds"
-msgstr "&gt;seconds"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "int32"
-msgstr "int32"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "The seconds partof the time"
-msgstr "The seconds partof the time"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;nanoseconds"
-msgstr "&gt;nanoseconds"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "The nano seconds part of the time"
-msgstr "The nano seconds part of the time"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "interval"
-msgstr "interval"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Interval between two consecutive hearbeat message"
-msgstr "Interval between two consecutive hearbeat message"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1848 ../../Projects/MEP/MEP_Interfaces.md:1989 ../../Projects/MEP/MEP_Interfaces.md:2051 ../../Projects/MEP/MEP_Interfaces.md:2117 ../../Projects/MEP/MEP_Interfaces.md:2194 ../../Projects/MEP/MEP_Interfaces.md:2297 ../../Projects/MEP/MEP_Interfaces.md:2461 ../../Projects/MEP/MEP_Interfaces.md:2624 ../../Projects/MEP/MEP_Interfaces.md:2705 ../../Projects/MEP/MEP_Interfaces.md:2879 ../../Projects/MEP/MEP_Interfaces.md:2927 ../../Projects/MEP/MEP_Interfaces.md:2975 ../../Projects/MEP/MEP_Interfaces.md:3020 ../../Projects/MEP/MEP_Interfaces.md:3065 ../../Projects/MEP/MEP_Interfaces.md:3137
 msgid "Return Code: 200 OK"
-msgstr "Return Code: 200 OK"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1850 ../../Projects/MEP/MEP_Interfaces.md:1991 ../../Projects/MEP/MEP_Interfaces.md:2053 ../../Projects/MEP/MEP_Interfaces.md:2119 ../../Projects/MEP/MEP_Interfaces.md:2196 ../../Projects/MEP/MEP_Interfaces.md:2299 ../../Projects/MEP/MEP_Interfaces.md:2463 ../../Projects/MEP/MEP_Interfaces.md:2626 ../../Projects/MEP/MEP_Interfaces.md:2707 ../../Projects/MEP/MEP_Interfaces.md:2881 ../../Projects/MEP/MEP_Interfaces.md:2929 ../../Projects/MEP/MEP_Interfaces.md:2977 ../../Projects/MEP/MEP_Interfaces.md:3022 ../../Projects/MEP/MEP_Interfaces.md:3067 ../../Projects/MEP/MEP_Interfaces.md:3139 ../../Projects/MEP/MEP_Interfaces.md:3231 ../../Projects/MEP/MEP_Interfaces.md:3268
 msgid "Example Response:"
-msgstr "Example Response:"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1863 ../../Projects/MEP/MEP_Interfaces.md:1941
 msgid "Exception status code"
-msgstr "Exception status code"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1888
 msgid "2. Update liveness info"
-msgstr "2.Update liveness info"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1889
-msgid "This method also referred as \"heartbeat\" message to (re)confirm the active status about an individual mec service. But not to change the state from \"INACTIVE\" to \"ACTIVE\". NOTE: As per ETSI doc, this message should be a PATCH message. Since we use servicecomb rest server which doesn't support PATCH message. we kept it as PUT. But behviour will be similar to patch. URL"
-msgstr "This method also referenced as \"heartbeat\" message to (re)confirm the active status about an individual mec service. But not to change the state from \"INACTIVE\" to \"ACTIVE\". NOTE: As per ETSI doc, this message should be a PATCH message. Since we use servicecomb rest server which doesn't support PATCH message. we kept it as PUT. But behviour will be similar to patch. URL"
+msgid "This method also referred as \"heartbeat\" message to (re)confirm the active status about an individual mec service. But not to change the state from \"INACTIVE\" to \"ACTIVE\". NOTE: As per ETSI doc, this message should be a PATCH message. Since we use servicecomb rest server which doesn't support PATCH message. we kept it as PUT. But behviour will be similar to patch. **URL**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1933
-msgid "Return Parameters: None"
-msgstr "Return Parameters: None"
+msgid "**Return Parameters** None"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1936
 msgid "Return Code: 204 OK"
-msgstr "Return Code: 204 OK"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1938
 msgid "Example Response: Empty response"
-msgstr "Example Response: Empty response"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "**HTTP Status code**"
-msgstr "**HTTP Status code**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "400"
-msgstr "400"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Bad request, used to indicate that the requested parameters are incorrect."
-msgstr "Bad request, used to indicate that the requested parameters are incorrect."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "403"
-msgstr "403"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "The current operation is forbidden."
-msgstr "The current operation is forbidden."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "404"
-msgstr "404"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "The requested resource was not found."
-msgstr "The requested resource was not found."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "409"
-msgstr "409"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "conflict state."
-msgstr "conflict state."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1949
 msgid "DNS rule configuration interfaces"
-msgstr "DNS rule configuration interfaces"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1951
 msgid "Using the Mp1 interfaces mec apps can query and activate/deactivate dns rules associated to it. Implementation of this interface are as per the *ETSI GS MEC 011 V2.1.1* document."
-msgstr "Using the Mp1 interfaces mec apps can query and activate/deactivate dns rules associated to it. Implementation of this interface are as per the *ETSI GS MEC 011 V2.1.1* document."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1953
 msgid "1. Query all dns rules"
-msgstr "1.Query all dns rules"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:1955
 msgid "Query all DNS rules associated with an application."
-msgstr "Query all DNS rules associated with an application."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "dnsRuleId"
-msgstr "dnsRuleId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Rule Id"
-msgstr "Rule Id"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "domainName"
-msgstr "domainName"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "MEC app domain name"
-msgstr "MEC app domain name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "ipAddressType"
-msgstr "ipAddressType"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "enum **{IP_V4, IP_V6}**"
-msgstr "enum **{IP_V4, IP_V6}**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "MEC app ip address type"
-msgstr "MEC app ip address type"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "ipAddress"
-msgstr "ipAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "MEC app ip address"
-msgstr "MEC app ip address"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "ttl"
-msgstr "ttl"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "int (non-zero value)"
-msgstr "int (non-zero value)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "TTL value"
-msgstr "TTL value"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "enum **{ACTIVE, INACTIVE}**"
-msgstr "enum **{ACTIVE, INACTIVE}**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2014
 msgid "2. Query a specific dns rule"
-msgstr "2.Query a specific dns rule"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2016
 msgid "Query single DNS rule associated with an application."
-msgstr "Query single DNS rule associated with an application."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "APP实例ID(UUID)"
@@ -1459,715 +1467,715 @@ msgstr "APP Instance ID(UUID)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "DNS rule identifier(UUID)"
-msgstr "DNS rule identifier (UUID)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2066
 msgid "3. Update a specific dns rule"
-msgstr "3.Update a specific dns rule"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2068
 msgid "Modify the state of a rule associated with an application. This interface can modify the state from **ACTIVE** to **INACTIVE** or vice versa. No other field can be modified using this interface."
-msgstr "Modify the state of a rule associated with an application. This interface can modify the state from **ACTIVE** to **INACTIVE** or vice versa. No other field can be modified using this interface."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Required"
-msgstr "Required"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "No, if present must be same with actual"
-msgstr "No, if present must be same with actual"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2132
 msgid "Traffic rule configuration interfaces"
-msgstr "Traffic rule configuration interfaces"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2134
 msgid "Using the Mp1 interfaces mec apps can query and modify the traffic rules associated to it. Implementation of this interface are as per the *ETSI GS MEC 011 V2.1.1* document."
-msgstr "Using the Mp1 interfaces mec apps can query and modify the traffic rules associated to it. Implementation of this interface are as per the *ETSI GS MEC 011 V2.1.1* document."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2136
 msgid "1. Query all traffic rules"
-msgstr "1.Query all traffic rules"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2138
 msgid "Query all traffic rules associated with an application."
-msgstr "Query all traffic rules associated with an application."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "trafficRuleId"
-msgstr "trafficRuleId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Traffic rule ID."
-msgstr "Traffic rule ID."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "filterType"
-msgstr "filterType"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "enum **{FLOW, PACKET}**"
-msgstr "enum **{FLOW, PACKET}**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Filter type."
-msgstr "Filter type."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "priority"
-msgstr "priority"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "number (1 ~ 256)"
-msgstr "number (1 ~ 256)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Priority of the traffic rule. If any conflict in the traffic rules, then higher the priority higher the precedence."
-msgstr "Priority of the traffic rule. If any conflict in the traffic rules, then higher the priority higher the pecedence."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "trafficFilter"
-msgstr "trafficFilter"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "list"
-msgstr "list"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of traffic filters."
-msgstr "List of traffic filters."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; srcAddress"
-msgstr "&gt; srcAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of source ip address."
-msgstr "List of source ip address."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; dstAddress"
-msgstr "&gt; dstAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of destination ip address."
-msgstr "List of destination ip address."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; srcPort"
-msgstr "&gt; srcPort"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of source port address."
-msgstr "List of source port address."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; dstPort"
-msgstr "&gt; dstPort"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of destination port address."
-msgstr "List of destination port address."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of protocols."
-msgstr "List of protocols."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; tag"
-msgstr "&gt; tag"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of tags."
-msgstr "List of tags."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; srcTunnelAddress"
-msgstr "&gt; srcTunnelAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of source tunnel address."
-msgstr "List of source tunnel address."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; tgtTunnelAddress"
-msgstr "&gt; tgtTunnelAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of target tunnel address."
-msgstr "List of target tunnel address."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; srcTunnelPort"
-msgstr "&gt; srcTunnelPort"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of source tunnel ports."
-msgstr "List of source tunnel ports."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; dstTunnelPort"
-msgstr "&gt; dstTunnelPort"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of destination tunnel ports."
-msgstr "List of destination tunnel ports."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; qCI"
-msgstr "&gt; qCI"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "number"
-msgstr "number"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Match packets with same QCI."
-msgstr "Match packets with same QCI."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; dSCP"
-msgstr "&gt; dSCP"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Match packets with same DSCP."
-msgstr "Match packets with same DSCP."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; tC"
-msgstr "&gt; tC"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Match packets with same TC."
-msgstr "Match packets with same TC."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "action"
-msgstr "action"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "enum **{DROP, FORWARD_DECAPSULATED, FORWARD_AS_IS, PASSTHROUGH, DUPLICATE_DECAPSULATED, DUPLICATE_AS_IS}**"
-msgstr "enum **{DROP, FORWARD_DECAPSULATED, FORWARD_AS_IS, PASSTHROUGH, DUPLICATE_DECAPSULATED, DUPLICATE_AS_IS}**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Action when traffic rule matches."
-msgstr "Action when traffic rule matches."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "dstInterface"
-msgstr "dstInterface"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Destination interface parameters."
-msgstr "Destination interface parameters."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; interfaceType"
-msgstr "&gt; interfaceType"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "enum **{TUNNEL, MAC, IP}**"
-msgstr "enum **{TUNNEL, MAC, IP}**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; tunnelInfo"
-msgstr "&gt; tunnelInfo"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Tunnel parameters."
-msgstr "Tunnel parameters."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; tunnelType"
-msgstr "&gt;&gt; tunnelType"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "enum **{GTP_U, GRE}**"
-msgstr "enum **{GTP_U, GRE}**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Tunnel type."
-msgstr "Tunnel type."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; tunnelDstAddress"
-msgstr "&gt;&gt; tunnelDstAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Destination IP address."
-msgstr "Destination IP address."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; tunnelSrcAddress"
-msgstr "&gt;&gt; tunnelSrcAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Source IP address."
-msgstr "Source IP address."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; srcMacAddress"
-msgstr "&gt; srcMacAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Source MAC address"
-msgstr "Source MAC address"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; dstMacAddress"
-msgstr "&gt; dstMacAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Destination MAC address."
-msgstr "Destination MAC address."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; dstIpAddress"
-msgstr "&gt; dstIpAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "State of the rule."
-msgstr "State of the rule."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2238
 msgid "2. Query a specific traffic rule"
-msgstr "2.Query a specific traffic rule"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2240
 msgid "Query single traffic rule associated with an application."
-msgstr "Query single traffic rule associated with an application."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Traffic rule identifier(UUID)"
-msgstr "Traffic rule identifier (UUID)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2339
 msgid "3. Update a specific traffic rule"
-msgstr "3.Update a specific traffic rule"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2341
 msgid "Modify the traffic rule associated with an application."
-msgstr "Modify the traffic rule associated with an application."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2503
 msgid "Mm5 Interface for appd configurations"
-msgstr "Mm5 Interface for appd configurations"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2505
 msgid "Using the Mm5 interfaces MECM can create, query, update or delete the appd configurations which includes multiple dns and traffic rules associated to an application. Implementation of this interface are specified in *ETSI GS MEC 010-1 V1.1.1* and *ETSI GS MEC 010-2 V2.1.1* documents."
-msgstr "Using the Mm5 interfaces MECM can create, query, update or delete the appd configurations which includes multiple dns and traffic rules associated to an application. Implementation of this interface are specified in *ETSI GS MEC 010-1 V1.1.1 * and *ETSI GS MEC 010-2 V2.1.1* documents."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2507
 msgid "1. Create a new appd configurations"
-msgstr "1.Create a new appd configurations"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2509
 msgid "Create a new appd configuration and associate it with a MEC application. Each configuration can have thirty-two DNS rules and sixteen Traffic rules. There can be only one appd configuration per application at a time and the appd configuration is an asynchronous in nature. Once the request is received in the mep, after validation mep will start a task to handle multiple dns and traffic rules and return a task id to the caller of the API. Using the task-id the caller can check the status of the operation at any time."
-msgstr "Create a new appd configuration and associate it with a MEC application. Each configuration can have thirty-two DNS rules and sixteen Traffic rules. There can be only one appd configuration per application at a time and the appd configuration is an asynchronous in Nature. Once the request is received in the mep, after validation mep will start a task to handle multiple dnns and traffic rules and return a task id to the caller of the API. Using the task-id the caller can check the status of the operation at any time."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "appTrafficRule"
-msgstr "appTrafficRule"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of traffic rules. Max 16."
-msgstr "List of traffic rules. Max 16."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "No"
-msgstr "No"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; trafficRuleId"
-msgstr "&gt; trafficRuleId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; filterType"
-msgstr "&gt; filterType"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; priority"
-msgstr "&gt; priority"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; trafficFilter"
-msgstr "&gt; trafficFilter"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of traffic filters. Max 16."
-msgstr "List of traffic filters. Max 16."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; srcAddress"
-msgstr "&gt;&gt; srcAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of source ip address. Max 64."
-msgstr "List of source ip address. Max 64."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; dstAddress"
-msgstr "&gt;&gt; dstAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of destination ip address. Max 64."
-msgstr "List of destination ip address. Max 64."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; srcPort"
-msgstr "&gt;&gt; srcPort"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; dstPort"
-msgstr "&gt;&gt; dstPort"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; protocol"
-msgstr "&gt;&gt; protocol"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of protocols. Max 8."
-msgstr "List of protocols. Max 8."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; tag"
-msgstr "&gt;&gt; tag"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of tags. Max 8."
-msgstr "List of tags. Max 8."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; srcTunnelAddress"
-msgstr "&gt;&gt; srcTunnelAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; tgtTunnelAddress"
-msgstr "&gt;&gt; tgtTunnelAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; srcTunnelPort"
-msgstr "&gt;&gt; srcTunnelPort"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; dstTunnelPort"
-msgstr "&gt;&gt; dstTunnelPort"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; qCI"
-msgstr "&gt;&gt; qCI"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; dSCP"
-msgstr "&gt;&gt; dSCP"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; tC"
-msgstr "&gt;&gt; tC"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; action"
-msgstr "&gt; action"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; dstInterface"
-msgstr "&gt; dstInterface"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Destination interface parameters. Max 2."
-msgstr "Destination interface parameters. Max 2."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; interfaceType"
-msgstr "&gt;&gt;interfaceType"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; tunnelInfo"
-msgstr "&gt;&gt; tunnelInfo"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;&gt; tunnelType"
-msgstr "&gt;&gt;&gt; tunnelType"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;&gt; tunnelDstAddress"
-msgstr "&gt;&gt;&gt; tunnelDstAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;&gt; tunnelSrcAddress"
-msgstr "&gt;&gt;&gt; tunnelSrcAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; srcMacAddress"
-msgstr "&gt;&gt; srcMacAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; dstMacAddress"
-msgstr "&gt;&gt; dstMacAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt; dstIpAddress"
-msgstr "&gt;&gt; dstIpAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; state"
-msgstr "&gt; state"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "appDNSRule"
-msgstr "appDDNSRule"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of DNS rules. Max 32."
-msgstr "List of DNS rules. Max 32."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; dnsRuleId"
-msgstr "&gt; dnsRuleId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "DNS rule ID."
-msgstr "DNS rule ID."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; domainName"
-msgstr "&gt; domainName"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Domain name."
-msgstr "Domain name."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; ipAddressType"
-msgstr "&gt; ipAddressType"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "enum **{IPv4, IPv6}**"
-msgstr "enum **{IPv4, IPv6}**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "IP address type."
-msgstr "IP address type."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; ipAddress"
-msgstr "&gt; ipAddress"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "IP address."
-msgstr "IP address."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt; ttl"
-msgstr "&gt; ttl"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Time To Live value."
-msgstr "Time To Live value."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Rule state."
-msgstr "Rule state."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "appSupportMp1"
-msgstr "appSupportMp1"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "bool"
-msgstr "bool"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Whether Mp1 interface is supported."
-msgstr "Whether Mp1 interface is supported."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "appName"
-msgstr "appName"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Application name."
-msgstr "Application name."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "taskId"
-msgstr "taskId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Task ID"
-msgstr "Task ID"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Application instance ID"
-msgstr "Application instance ID"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "configResult"
-msgstr "configResult"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Configuration result"
-msgstr "Configuration result"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "configPhase"
-msgstr "configPhase"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Progress percentage"
-msgstr "Progress percentage"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Detailed"
-msgstr "Detailed"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Detailed reason"
-msgstr "Detailed reason"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2638
 msgid "2. Query appd configuration"
-msgstr "2.Query appd configuration"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2640
 msgid "Query appd configuration associated with an application."
-msgstr "Query appd configuration associated with an application."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of traffic rules."
-msgstr "List of traffic rules."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "List of DNS rules."
-msgstr "List of DNS rules."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2762
 msgid "3. Modify appd configuration"
-msgstr "3.Modify appd configuration"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2764
 msgid "Appd configuration for each applications can be configured using this interface. MEP will take the difference of existing configuration and the new modification input and then act on create/modify/delete of dns and/or traffic rules."
-msgstr "Appd configuration for each applications can be configured using this interface. MEP will take the difference of existing configuration and the new modification input and then act on create/modify/delete of dns and/or traffic rules."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2893
 msgid "4. Delete appd configuration"
-msgstr "4.Delete appd configuration"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2895
 msgid "Delete appd configuration request."
-msgstr "Delete appd configuration request."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2941
 msgid "5. Query task status"
-msgstr "5.Query task status"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2943
 msgid "Once the appd configuration create, modify or delete is submitted, mep will create a task and return a task id to the caller and the caller can periodically check the status of the task using this id. This interface calls the mep for the task status."
-msgstr "Once the appd configuration create, modify or delete is submitted, mep will create a task and return a task id to the caller and the caller can periodically check the status of the task using this id. This interface calls the mep for the task status."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Task ID(UUID)"
-msgstr "Task ID(UUID)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2989
 msgid "Application Termination"
-msgstr "Application Termination"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2991
 msgid "MEP support termination/stop of instance of an application after MEP receive the request from MECM."
-msgstr "MEP support termination/stop of instance of an application after MEP receive the request from MECM."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2993
 msgid "1. App Instance Termination"
-msgstr "1.App Instance Termination"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:2995
 msgid "Interface to remove the application's ak/sk values, unregister the services and delete the DNS and traffic rule."
-msgstr "Interface to remove the application's ak/sk values, unregister the services and delete the DNS and traffic rule."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3027
 msgid "Query Platform Capabilities(Services)"
-msgstr "Query Platform Capabilities (Services)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3029
 msgid "MEP supports for querying the capabilities(services) registered with it. These capability information will be used by the MECM to display it to the user on its portal. MECM send the capability query to MEP over Mm5 interface."
-msgstr "MEP supports for querying the capabilities(services) registered with it. These capability information will be used by the MECM to display it to the user on its portal. MECM send the capability query to MEP over Mm5 interface."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3031
 msgid "1. Query all capabilities"
-msgstr "1.Query all capabilities"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3033
 msgid "Interface to query all capabilities. This interface return the capability list registered to the queried MEP server along with the consumers of it."
-msgstr "Interface to query all capabilities. This interface return the capability list registered to the queried MEP server along with the consumers of it."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "capabilityId"
-msgstr "capabilityId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Capability/Service id"
-msgstr "Capability/Service id"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "capabilityName"
-msgstr "capabilityName"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Capability/Service name"
-msgstr "Capability/Service name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "status"
-msgstr "status"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Enum **{ACTIVE, INACTIVE}**"
-msgstr "Enum **{ACTIVE, INACTIVE}**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Status"
-msgstr "Status"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Version info"
-msgstr "Version info"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "consumers"
-msgstr "consumers"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Array[Object]"
-msgstr "Array[Object]"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Consumer object list"
-msgstr "Consumer object list"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;applicationInstanceId"
-msgstr "&gt;applicationInstanceId"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Consumer application id"
-msgstr "Consumer application id"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3102
 msgid "2. Query individual capability"
-msgstr "2.Query individual capability"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3104
 msgid "Interface to query an individual capability from MEP. This interface return a capability along with the consumers of it."
-msgstr "Interface to query an individual capability from MEP. This interface return a capability along with the consumers of it."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Capability ID（UUID）"
 msgstr "Capability ID (UUID)"
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3161
-msgid "异常状态码"
-msgstr "Abnormal status code"
+msgid "Abnormal status code"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "**HTTP状态码**"
@@ -2179,7 +2187,7 @@ msgstr "An error request is used to indicate that the requested parameter is inc
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "401"
-msgstr "401"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "当前请求需要鉴权认证。"
@@ -2195,7 +2203,7 @@ msgstr "The requested resource was not found."
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "412"
-msgstr "412"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "请求中的先决条件验证失败。"
@@ -2203,7 +2211,7 @@ msgstr "The verification of the prerequisites in the request failed."
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "414"
-msgstr "414"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "请求的URI超长，服务器拒绝处理请求。"
@@ -2211,7 +2219,7 @@ msgstr "The requested URI is long and the server refuses to process the request.
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "500"
-msgstr "500"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "内部服务器错误。"
@@ -2219,7 +2227,7 @@ msgstr "Internal server error."
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "503"
-msgstr "503"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "服务不可用。"
@@ -2227,185 +2235,176 @@ msgstr "Service is not available."
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3173
 msgid "Dns-Server"
-msgstr "Dns-Server"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3175
 msgid "Mep has a programmable dns server which can perform the name resolution of the MEC applications. This management interface of the dns server is handled using a rest interface and this section cover the details of this interface."
-msgstr "Mep has a programmable dns server which can perform the name resolution of the MEC applications. This management interface of the dns server is handled using a rest interface and this section cover the details of this interface."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3177
 msgid "1. Create/Set new entry"
-msgstr "1.Create/Set new entry"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3179
 msgid "DNS entry can be added or modified using this interface. Once a record is added/modified, the resource will be available for the device application to query."
-msgstr "DNS entry can be added or modified using this interface. Once a record is added/modified, the resource will be available for the device application to query."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3181
 msgid "Using this interface multiple records on multiple zones can be submitted together."
-msgstr "Using this interface multiple records on multiple zones can be submitted together."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "zone"
-msgstr "zone"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Zone name"
-msgstr "Zone name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "name"
-msgstr "name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Domain name"
-msgstr "Domain name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "type"
-msgstr "type"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "enum **{A, AAAA}**"
-msgstr "enum **{A, AAAA}**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "DNS resource type, A in case of Ipv4 and AAAA for Ipv6"
-msgstr "DNS resource type, A in case of Ipv4 and AAAA for Ipv6"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "class"
-msgstr "class"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "enum **{IN}**"
-msgstr "enum **{IN}**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Resource record class"
-msgstr "Resource record class"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Yes on create"
-msgstr "Yes on create"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Record TTL value"
-msgstr "Record TTL value"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "rData"
-msgstr "rData"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "list(string)"
-msgstr "list(string)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "IP Address list, Ip type must match with the **type** field"
-msgstr "IP Address list, Ip type must match with the **type** field"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3229 ../../Projects/MEP/MEP_Interfaces.md:3266
 msgid "Return Code: 200 Success"
-msgstr "Return Code: 200 Success"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3236
 msgid "2. Delete an entry"
-msgstr "2.Delete an entry"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3238
 msgid "DNS entry can be deleted from the dns-server using this interface."
-msgstr "DNS entry can be deleted from the dns-server using this interface."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "fqdn"
-msgstr "fqdn"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Fully Qualified Domain Name"
-msgstr "Fully Qualfied Domain Name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "rrtype"
-msgstr "rrtype"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Resource record type of the entry(A or AAAA)."
-msgstr "Resource record type of the entry(A or AAAA)."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3272
 msgid "MEP Agent"
-msgstr "MEP Agent"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3273
 msgid "Mep agent is a component which run as side car with application. It helps to get authenticaion token, do service registration, send heartbeat on behalf of application."
-msgstr "Mep agent is a component which run as side car with application. It helps to get authenticaion token, do service registration, send heartbeat on behalf of application."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3275
 msgid "1. Get token"
-msgstr "1.Get token"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3276
-msgid "Applicaiontion can call this API to get authentication token from mepauth. URL"
-msgstr "Applicaiontion can call this API to get authentication token from mepaauth. URL"
+msgid "Applicaiontion can call this API to get authentication token from mepauth. **URL**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "MIME type, fill in \"application/json\""
-msgstr "MIME type, fill in \"application/json\""
-
-#: ../../Projects/MEP/MEP_Interfaces.md:3290 ../../Projects/MEP/MEP_Interfaces.md:3342
-msgid "Example request:"
-msgstr "Example request:"
-
-#: ../../Projects/MEP/MEP_Interfaces.md:3305 ../../Projects/MEP/MEP_Interfaces.md:3357
-msgid "Return parameters:"
-msgstr "Return parameters:"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3307 ../../Projects/MEP/MEP_Interfaces.md:3359
 msgid "Return code: 200 OK"
-msgstr "Return code: 200 OK"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Token Type（Bearer）"
-msgstr "Token Type (Bearer)"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "Expire time"
-msgstr "Expire time"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3314 ../../Projects/MEP/MEP_Interfaces.md:3369
 msgid "Return example:"
-msgstr "Return example:"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3326
 msgid "2. Get producer endpoint by service name"
-msgstr "2.Get producer endpoint by service name"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md:3327
-msgid "Applicaiontion can call this API to get producer endpoint from mepserver. URL"
-msgstr "Applicaiontion can call this API to get producer endpoint from mepserver. URL"
+msgid "Applicaiontion can call this API to get producer endpoint from mepserver. **URL**"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "endpoint"
-msgstr "endpoint"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;uris"
-msgstr "&gt;uris"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;addresses"
-msgstr "&gt;addresses"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;host"
-msgstr "&gt;&gt;host"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;&gt;port"
-msgstr "&gt;&gt;port"
+msgstr ""
 
 #: ../../Projects/MEP/MEP_Interfaces.md
 msgid "&gt;alternative"
-msgstr "&gt;alternative"
-
+msgstr ""

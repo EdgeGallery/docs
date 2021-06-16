@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 19:43+0530\n"
+"POT-Creation-Date: 2021-06-15 23:50+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,11 +27,11 @@ msgstr "**Feature Name**"
 
 #: ../../Projects/Developer/Developer_Features.md
 msgid "**特性描述**"
-msgstr "**Feature description**"
+msgstr "**Feature Description**"
 
 #: ../../Projects/Developer/Developer_Features.md
 msgid "**设计约束**"
-msgstr "**Design constraints**"
+msgstr "**Design Constraints**"
 
 #: ../../Projects/Developer/Developer_Features.md ../../Projects/Developer/Developer_Features.md:10
 msgid "开发工具管理"
@@ -39,15 +39,15 @@ msgstr "Development tools management"
 
 #: ../../Projects/Developer/Developer_Features.md
 msgid "提供给开发者使用的App开发工具，开发者可以下载使用，也可以将自研的工具分享给社区开发者使用。"
-msgstr "The App development tools that are available to developers can be downloaded and used by developers, as well as for community developers."
+msgstr "The App development tools that are available to developers can be downloaded and used by developers, and it is also available for community developers."
 
 #: ../../Projects/Developer/Developer_Features.md ../../Projects/Developer/Developer_Features.md:29
 msgid "能力中心"
-msgstr "Competability Center"
+msgstr "Competence Center"
 
 #: ../../Projects/Developer/Developer_Features.md
 msgid "展示所有开发者平台提供的能力，包括平台自身提供，开发者共享到此平台的能力，供开发者开发部署项目使用。"
-msgstr "Demonuses the capabilities offered by all developer platforms, including the platform itself, where developers share the capabilities of this platform for developers to develop deployment projects."
+msgstr "Shows all the capabilities provided by the developer platform, including the capabilities provided by the platform itself, and the capabilities shared by other developers to this platform to develop and deploy projects."
 
 #: ../../Projects/Developer/Developer_Features.md ../../Projects/Developer/Developer_Features.md:34
 msgid "工作空间"
@@ -55,35 +55,35 @@ msgstr "Workspaces"
 
 #: ../../Projects/Developer/Developer_Features.md
 msgid "工作空间是给开发者提供的项目管理平台，开发者可以通过创建项目，完成App的开发-测试-发布的整个流程。支持容器和虚机应用的部署调测"
-msgstr "Workspace is a project management platform for developers, and developers can complete the development of the App by creating projects-the entire process of testing-publishing.Support for deployment of container and virtual machine applications"
+msgstr "Workspace is a project management platform for developers, and developers can complete the development of the App by creating projects, even the entire process of testing to publishing. Support for deployment of container and virtual machine applications."
 
 #: ../../Projects/Developer/Developer_Features.md ../../Projects/Developer/Developer_Features.md:139
 msgid "系统"
-msgstr "system"
+msgstr "System"
 
 #: ../../Projects/Developer/Developer_Features.md
 msgid "系统菜单是给管理员提供的管理菜单。主要负责测试沙箱和能力中心（服务）的管理"
-msgstr "The system menu is a management menu provided to the administrator.is primarily responsible for testing the management of sand boxes and capacity centres (services)"
+msgstr "The system menu is a management menu provided to the administrator and this is primarily responsible for testing the management of sandboxes and capacity centres (services)"
 
 #: ../../Projects/Developer/Developer_Features.md:11
 msgid "目前开发工具管理提供生成API调用的样例代码和生成csar包格式的插件，该插件目前支持java和python。"
-msgstr "The present development tools management provides a sample code for generating API calls and a plug-in for the cswar format, which currently supports java and python."
+msgstr "The present development tools management provides a sample code for generating API calls and a plugin for the csar format, which currently supports java and python."
 
 #: ../../Projects/Developer/Developer_Features.md:13
 msgid "插件列表"
-msgstr "List of plug-ins"
+msgstr "List of Plugins"
 
 #: ../../Projects/Developer/Developer_Features.md:15
 msgid "![](/uploads/images/2021/developer/plugin-list.PNG \"plugin-list.PNG\")"
-msgstr "![](/uploads/images/2021/developer/plugin-list_en.PNG \"plugin-list.PNG\")"
+msgstr "![](/uploads/images/2021/developer/plugin-list_en.png \"plugin-list.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:17
 msgid "插件上传"
-msgstr "Plug-in upload"
+msgstr "Plugin Upload"
 
 #: ../../Projects/Developer/Developer_Features.md:19
 msgid "![](/uploads/images/2021/developer/pluginupload.PNG \"pluginupload.PNG\")"
-msgstr "![](/uploads/images/2021/developer/pluginupload_en.PNG \"pluginupload.PNG\")"
+msgstr "![](/uploads/images/2021/developer/pluginupload_en.png \"pluginupload.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:21
 msgid "工具链"
@@ -91,43 +91,43 @@ msgstr "Toolchain"
 
 #: ../../Projects/Developer/Developer_Features.md:22
 msgid "工具链是开发者平台提供给开发者分析源代码，定位出需要修改的地方，以便于在不同平台部署。 ![](/uploads/images/2021/developer/toolchain.PNG \"toolchain.PNG\")"
-msgstr "The toolchain is a developer platform that provides developers with the analysis of source code, positioning them where they need to be modified to deploy them on different platforms. ![](/uploads/images/2021/developer/toolchain_en.PNG \"toolchain.PNG\")"
+msgstr "Tools is a developer platform which provides developers the analysis of source code, positioning them in the place where they need to be modified in order to deploy them on different platforms. ![](/uploads/images/2021/developer/toolchain_en.png \"toolchain.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:25
 msgid "文档"
-msgstr "document"
+msgstr "Document"
 
 #: ../../Projects/Developer/Developer_Features.md:26
 msgid "文档菜单包含平台的简介，开发工具，以及介绍如何将能力发布到开发者平台。 ![](/uploads/images/2021/developer/docu.PNG \"docu.PNG\")"
-msgstr "The document menu includes an introduction to the platform, development tools, and presentations on how to publish competencies to the developer platform. ![](/uploads/images/2021/developer/docu_en.PNG \"docu.PNG\")"
+msgstr "The document menu includes an introduction to the platform, development tools, and presentations on how to publish competencies to the developer platform. ![](/uploads/images/2021/developer/docu_en_ch.png \"docu.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:30
 msgid "能力中心展示的是开发者平台所有的能力（开发者共享的能力和平台自身提供的能力）。包含详细的API描述文档，供开发者在线查看，模拟，体验。"
-msgstr "Competability centers showcase all the capabilities of the developer platform (the ability of developers to share and the ability of the platform itself).Contains detailed API description documents for developers to see, simulate, experience online."
+msgstr "Competence center displays all the capabilities of Developer Platform (the ability of developers to share and the ability of the platform itself). It also contains detailed API description documents for developers to see, simulate, experience online."
 
 #: ../../Projects/Developer/Developer_Features.md:32
 msgid "![](/uploads/images/2021/developer/abilitycenter.PNG \"abilitycenter.PNG\")"
-msgstr "![](/uploads/images/2021/developer/abilitycenter_en.PNG \"abilitycenter.PNG\")"
+msgstr "![](/uploads/images/2021/developer/abilitycenter_en.png \"abilitycenter.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:36
 msgid "开发者在这里通过创建project的方式，管理自己的APP开发过程，有两种开发模式："
-msgstr "The developer manages its own APP development process here by creating project, with two development modes:"
+msgstr "The Developer manages its own APP development process here by creating project, with two development modes:"
 
 #: ../../Projects/Developer/Developer_Features.md:38
 msgid "应用开发：从编码开始，开发一个全新的应用"
-msgstr "Application development: Start with coding, develop a new app"
+msgstr "Application Development: Start with coding. Develop a new app."
 
 #: ../../Projects/Developer/Developer_Features.md:40
 msgid "应用集成：已有应用，需要将应用打包成镜像，在开发集成平台进行部署测试，最终发布到应用仓库上。"
-msgstr "Application integration: there is an application that needs to be packaged as a mirror image, a deployment test is conducted in the development of an integrated platform and finally released to the application warehouse."
+msgstr "Application Integration: Existing applications need to be packaged into images, deployed and tested on the development integration platform, and finally released to the application repository."
 
 #: ../../Projects/Developer/Developer_Features.md:42
 msgid "开发集成平台提供的端到端开发流程如下："
-msgstr "The end-to-end development process provided by the development integration platform is as follows:"
+msgstr "End-to-end development process provided by the development integration platform is as follows:"
 
 #: ../../Projects/Developer/Developer_Features.md:44
-msgid "![](/uploads/images/2021/v1.1/FlowChart.PNG \"ApplicationDevelopmentProcess.PNG\")"
-msgstr "![](/uploads/images/2021/v1.1/FlowChart_en.PNG \"ApplicationDevelopmentProcess.PNG\")"
+msgid "![](/uploads/images/2021/v1.1/FlowChart.png \"ApplicationDevelopmentProcess.PNG\")"
+msgstr "![](/uploads/images/2021/v1.1/FlowChart_en.png \"ApplicationDevelopmentProcess.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:46
 msgid "创建项目"
@@ -135,15 +135,15 @@ msgstr "Create Item"
 
 #: ../../Projects/Developer/Developer_Features.md:47
 msgid "创建项目时，需要输入项目基本信息和选择需要依赖的生态能力，当前版本支持容器应用和虚机应用。"
-msgstr "When the project is created, the project basic information needs to be input and the selection needs to depend on the ecological capability; the current version supports the container application and the virtual machine."
+msgstr "When the project is created, the project basic information needs to be provided and the selection has to made based on the ecological capability. The current version supports the container application and the virtual machine."
 
 #: ../../Projects/Developer/Developer_Features.md:49
 msgid "能力详情"
-msgstr "Competability Details"
+msgstr "Capability Details"
 
 #: ../../Projects/Developer/Developer_Features.md:50
 msgid "创建项目时选择的能力，这里会展示对应能力的详细API，帮助开发者理解如何调用能力服务，并在后台提供API模拟器，可以测试API的请求和返回值。"
-msgstr "The ability to create a project, a detailed API of the ability to help developers understand how to call a capability service and provide an API simulator in the background, can test the API's request and return values."
+msgstr "For the capability selected when creating the project, the detailed API of the corresponding capability will be displayed here to help developers understand how to call the capability service, and an API simulator is provided in the background to test the request and return value of the API."
 
 #: ../../Projects/Developer/Developer_Features.md:52
 msgid "针对每个能力服务，还提供SDK下载功能，开发者可以将SDK直接集成到代码中。"
@@ -155,15 +155,15 @@ msgstr "![](/uploads/images/2021/cor2020/CapabilityDetails_en.png \"CapabilityDe
 
 #: ../../Projects/Developer/Developer_Features.md:56
 msgid "应用开发"
-msgstr "application development"
+msgstr "Application Development"
 
 #: ../../Projects/Developer/Developer_Features.md:57
 msgid "针对选择依赖的能力API，提供调用的样例代码，帮助开发者将依赖API快速集成到自己的代码中。 ![](/uploads/images/2021/cor2020/ApplicationDevelopment.png \"ApplicationDevelopment.png\")"
-msgstr "For the ability APIs that choose to rely on, provide a sample code of calls to help developers quickly integrate relying on APIs into their own code. ![](/uploads/images/2021/cor2020/ApplicationDevelopment_en.png \"ApplicationDevelopment.png\")"
+msgstr "For the capability APIs which depends on, provide a sample code of calls to help developers quickly integrate depending APIs into their own code. ![](/uploads/images/2021/cor2020/ApplicationDevelopment_en.png \"ApplicationDevelopment.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:60 ../../Projects/Developer/Developer_Features.md:80
 msgid "部署调测"
-msgstr "Deploy the test."
+msgstr "Deploy the test"
 
 #: ../../Projects/Developer/Developer_Features.md:61
 msgid "容器应用部署调测分为三个部署："
@@ -183,11 +183,11 @@ msgstr "The user uploads the image packing file."
 
 #: ../../Projects/Developer/Developer_Features.md:66
 msgid "上传到EdgeGallery的镜像仓库。"
-msgstr "Upload to a mirrored warehouse in EdgeGallery."
+msgstr "Upload to a mirrored repository in EdgeGallery."
 
 #: ../../Projects/Developer/Developer_Features.md:68
 msgid "![](/uploads/images/2021/developer/deploy-one.PNG \"deploy-one.PNG\")"
-msgstr "![](/uploads/images/2021/developer/deploy-one_en.PNG \"deploy-one.PNG\")"
+msgstr "![](/uploads/images/2021/developer/deploy-one_en.png \"deploy-one.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:70
 msgid "配置部署文件"
@@ -199,15 +199,15 @@ msgstr "Two configuration deployment documents are available:"
 
 #: ../../Projects/Developer/Developer_Features.md:73
 msgid "用户在本地编辑好后直接上传，平台提供基本的校验功能；有关配置文件的格式，可以参考界面提供的demo样例，该样例可以直接上传使用。 ![](/uploads/images/2021/developer/deploy-two-file.PNG \"deploy-two-file.PNG\")"
-msgstr "The user can directly upload and directly upload after local editing. The platform provides basic checking function. The format of the configuration file can be used as the demo example provided by the reference interface. The example can be directly uploaded. ![](/uploads/images/2021/developer/deploy-two-file_en.PNG \"deploy-two-file.PNG\")"
+msgstr "The user can directly upload after local editing. The platform provides basic-check function. The format of the configuration file can be used as the demo example provided by the reference interface. The example can be directly uploaded. ![](/uploads/images/2021/developer/deploy-two-file_en.png \"deploy-two-file.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:76
 msgid "可视化配置文件，目前版本支持的部署类型为Pod和Service。 ![](/uploads/images/2021/developer/deploy-two-config.PNG \"deploy-two-config.PNG\")"
-msgstr "Visualization configuration documents, currently supported deployment types are Pod and Service. ![](/uploads/images/2021/developer/deploy-two-config_en.PNG \"deploy-two-config.PNG\")"
+msgstr "Visual configuration file. The deployment types supported by the current version are Pod and Service. ![](/uploads/images/2021/developer/deploy-two-config_en.png \"deploy-two-config.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:82
 msgid "Step1 部署调测前可以根据需要选择部署环境，EdgeGallery提供‘模拟环境’和‘5G真实’两种测试环境（v1.1版本只实现模拟环境分配）；"
-msgstr "The deployment environment can be selected according to the requirement of the Step1 deployment, and the EdgeGallery provides the 'simulated environment' and '5G real' test environment (v1.1 version only to realize simulation environment distribution);"
+msgstr "Step1 The deployment environment can be selected according to the requirement, and EdgeGallery provides the 'simulated environment' and '5G real' test environment (v1.1 version only to realize simulation environment distribution)."
 
 #: ../../Projects/Developer/Developer_Features.md:83
 msgid "Step2 启动部署，开始 生成部署文件 -> 分配测试节点 -> 实例化应用 -> 获取部署状态"
@@ -215,15 +215,15 @@ msgstr "Step2 Start Deployment, Start Generating Deployment Documents -> Broker 
 
 #: ../../Projects/Developer/Developer_Features.md:84
 msgid "Step3 部署成功后，会返回部署后台的测试链接，并且展示已经部署完成POD信息"
-msgstr "After the Step3 deployment is successful, the test link is returned to the deployment background and the display has been deployed to complete the POD information"
+msgstr "Step3 After successful deployment, it will return to the test link of the deployment backend and display the POD information that has been deployed."
 
 #: ../../Projects/Developer/Developer_Features.md:85
 msgid "Step4 应用开发者通过链接对应用进行测试"
-msgstr "Step4 app developers test apps by linking"
+msgstr "Step4 App developers test the apps by linking it."
 
 #: ../../Projects/Developer/Developer_Features.md:86
 msgid "Step5 测试完成后，通过【资源回收】按钮释放测试环境，如需修改，请在完成镜像修改后，循环以上Step1->Step2->Step3->Step4操作，对应用进行反复测试"
-msgstr "After the Step5 test is complete, release the test environment through the [Resource Recovery] button, for modifications, after you complete the mirror modification, cycle above Step1 - > Step2 - > Step3 - > Step4 operation, repeat tests on the application"
+msgstr "Step5 Upon completion, release the test environment through the [Resource Recovery] button. If you need to modify the image, please cycle the above Step1->Step2->Step3->Step4 operations to test the application repeatedly."
 
 #: ../../Projects/Developer/Developer_Features.md:88
 msgid "![](/uploads/images/2021/cor2020/DeploymentTest.png \"DeploymentTest.png\")"
@@ -239,7 +239,7 @@ msgstr "The virtual machine application deployment adjustment is divided into th
 
 #: ../../Projects/Developer/Developer_Features.md:93
 msgid "选择虚机资源 ![](/uploads/images/2021/v1.1/ApplyingVm.png \"ApplyingVm.png\")   配置虚机的规格、镜像、网络等信息"
-msgstr "Choose virtual machine resource ![](/uploads/images/2021/v1.1/ApplyingVm_en.png \"ApplyingVm.png\")   Configure the specification, mirroring, network, etc. information of the virtual machine"
+msgstr "Choose virtual machine resource ![](/uploads/images/2021/v1.1/ApplyingVm_en.png \"ApplyingVm.png\")  Configure the specification, mirroring, network, information of the virtual machine, etc."
 
 #: ../../Projects/Developer/Developer_Features.md:97
 msgid "输入虚机名称 ![](/uploads/images/2021/v1.1/BasicVmInformation.png \"BasicVmInformation.png\")"
@@ -247,11 +247,11 @@ msgstr "Enter virtual machine name ![](/uploads/images/2021/v1.1/BasicVmInformat
 
 #: ../../Projects/Developer/Developer_Features.md:100
 msgid "配置虚机资源大小，镜像源 ![](/uploads/images/2021/cor2020/SettingVmSpecification.png \"SettingVmSpecification.png\")"
-msgstr "Configure virtual machine resource size, mirror source ![](/uploads/images/2021/cor2020/SettingVmSpecification_en.png \"SettingVmSpecification.png\")"
+msgstr "Configure virtual machine resource size. Mirror source ![](/uploads/images/2021/cor2020/SettingVmSpecification_en.png \"SettingVmSpecification.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:103
 msgid "设置虚机网络类型，默认勾选N6网络 ![](/uploads/images/2021/v1.1/NetworkSettings.png \"NetworkSettings.png\")"
-msgstr "Setting up virtual machine network type, default check N6 network ![](/uploads/images/2021/v1.1/NetworkSettings_en.png \"NetworkSettings.png\")"
+msgstr "While setting up virtual machine network type, default check N6 network ![](/uploads/images/2021/v1.1/NetworkSettings_en.png \"NetworkSettings.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:106
 msgid "申请虚机 ![](/uploads/images/2021/v1.1/VmDeployment.png \"VmDeployment.png\")"
@@ -259,7 +259,7 @@ msgstr "Application for virtual machine ![](/uploads/images/2021/v1.1/VmDeployme
 
 #: ../../Projects/Developer/Developer_Features.md:109
 msgid "申请到的虚机可以远程登录进行应用开发调测： ![](/uploads/images/2021/v1.1/VmVNC.png \"VmVNC.png\")"
-msgstr "The virtual machine applied to can be remotely registered for application development tuning: ![](/uploads/images/2021/v1.1/VmVNC_en.png \"VmVNC.png\")"
+msgstr "The virtual machine applied can be remotely registered for application development tuning: ![](/uploads/images/2021/v1.1/VmVNC_en.png \"VmVNC.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:112
 msgid "导出镜像"
@@ -287,7 +287,7 @@ msgstr "[Optional] Stream Rule Configuration"
 
 #: ../../Projects/Developer/Developer_Features.md:121
 msgid "【可选】应用服务发布配置：如果该应用需要成为生态能力服务，需要进行该配置。需要上传对应的API接口文档和MD说明文档，具体配置如下 ![](/uploads/images/2021/cor2020/ApplicationRelease-RuleConfiguration.png \"ApplicationRelease-RuleConfiguration.png\")"
-msgstr "[Optional] Application service publishing configuration: This configuration is required if the application needs to become ecologically capable service.The corresponding API interface document and MD documentation needs to be uploaded as follows: ![](/uploads/images/2021/cor2020/ApplicationRelease-RuleConfiguration_en.png \"ApplicationRelease-RuleConfiguration.png\")"
+msgstr "[Optional] Application service publishing configuration: This configuration is required if the application needs to become an ecologically capable service. The corresponding API interface document and MD documentation needs to be uploaded as follows: ![](/uploads/images/2021/cor2020/ApplicationRelease-RuleConfiguration_en.png \"ApplicationRelease-RuleConfiguration.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:124
 msgid "应用认证"
@@ -295,19 +295,19 @@ msgstr "Application Credentials"
 
 #: ../../Projects/Developer/Developer_Features.md:126
 msgid "对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。"
-msgstr "The docking authentication test platform, all developed applications need to be authenticated to the AppStore platform via the authentication test platform, and generated authentication test reports are sent to you AppStore platform."
+msgstr "Docking the certification test platform, all completed applications need to pass the certification of the test platform before they can be published to the AppStore platform, and the generated certification test report will be sent to the AppStore platform."
 
 #: ../../Projects/Developer/Developer_Features.md:127
 msgid "选择测试场景 ![](/uploads/images/2021/developer/atp-1.PNG \"atp-1.PNG\")"
-msgstr "Choose Test Scene ![](uploads/images/2021/developer/atp-1_en.PNG \"atp-1.PNG\")"
+msgstr "Choose Test Scene ![](/uploads/images/2021/developer/atp-1_en.png \"atp-1.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:130
 msgid "执行测试用例 ![](/uploads/images/2021/developer/atp-2.PNG \"atp-2.PNG\")"
-msgstr "Run test case ![](/uploads/images/2021/developer/atp-2_en.PNG \"atp-2.PNG\")"
+msgstr "Run test case ![](/uploads/images/2021/developer/atp-2_en.png \"atp-2.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:136
 msgid "认证通过的应用，通过这里可以直接发布到EdgeGallery的AppStore平台，同时如果在【应用配置】时填写了应用服务发布配置，该应用同样会做为能力服务，被收录到能力中心里，可以被其他应用开发者使用。 ![](/uploads/images/2021/cor2020/ApplicationRelease.png \"ApplicationRelease.png\")"
-msgstr "The application of authentication can be directly published to the EdgeGallery's AppStore platform, and if the application service release configuration is completed when [application configuration] is available, the application will also be used as a capability service, and can be used by other application developers. ![](/uploads/images/2021/cor2020/ApplicationRelease_en.png \"ApplicationRelease.png\")"
+msgstr "The certified application can be directly published to the EdgeGallery's AppStore platform, and if the application service release configuration is completed when [application configuration] is available, the application will also be used as a capability service, and can be used by other application developers. ![](/uploads/images/2021/cor2020/ApplicationRelease_en.png \"ApplicationRelease.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:140
 msgid "系统菜单主要对管理员权限的用户开放，提供沙箱节点以及平台能力的管理。"
@@ -319,21 +319,21 @@ msgstr "Sandbox Management"
 
 #: ../../Projects/Developer/Developer_Features.md:143
 msgid "沙箱节点列表 ![](/uploads/images/2021/developer/sys-saxbox.PNG \"sys-saxbox.PNG\")"
-msgstr "Sandbox Node List ![](/uploads/images/2021/developer/sys-saxbox_en.PNG \"sys-axbox.PNG\")"
+msgstr "Sandbox Node List ![](/uploads/images/2021/developer/sys-saxbox_en.png \"sys-axbox.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:145
 msgid "新增沙箱节点 ![](/uploads/images/2021/developer/sys-saxbox-new.PNG \"sys-saxbox-new.PNG\")"
-msgstr "Add Sandbox Node ![](/uploads/images/2021/developer/sys-saxbox-new_en.PNG \"sys-saxbox-new.PNG\")"
+msgstr "Add Sandbox Node ![](/uploads/images/2021/developer/sys-saxbox-new_en.png \"sys-saxbox-new.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:148
 msgid "能力中心管理"
-msgstr "Competability Center Management"
+msgstr "Competence Center Management"
 
 #: ../../Projects/Developer/Developer_Features.md:149
 msgid "能力中心列表 ![](/uploads/images/2021/developer/sys-ability.PNG \"sys-ability.PNG\")"
-msgstr "List of Competabilities Centers ![](/uploads/images/2021/developer/sys-ability_en.PNG \"sys-ability.PNG\")"
+msgstr "List of Competence Centers ![](/uploads/images/2021/developer/sys-ability_en.png \"sys-ability.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:151
 msgid "新增能力中心 ![](/uploads/images/2021/developer/sys-ability-new.PNG \"sys-ability-new.PNG\")"
-msgstr "Add Competability Center ![](/uploads/images/2021/developer/sys-ability-new_en.PNG \"sys-ability-new.PNG\")"
+msgstr "Add Competence Center ![](/uploads/images/2021/developer/sys-ability-new_en.png \"sys-ability-new.PNG\")"
 

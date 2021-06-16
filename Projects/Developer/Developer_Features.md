@@ -46,7 +46,7 @@ Developer 特性清单
 
 开发集成平台提供的端到端开发流程如下：
 
-![](/uploads/images/2021/v1.1/FlowChart.PNG \"ApplicationDevelopmentProcess.PNG\")"
+![](/uploads/images/2021/v1.1/FlowChart.png "ApplicationDevelopmentProcess.PNG")
 
 #### 创建项目
 创建项目时，需要输入项目基本信息和选择需要依赖的生态能力，当前版本支持容器应用和虚机应用。

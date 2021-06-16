@@ -1,12 +1,12 @@
 # EdgeGallery界面一览
 -------------------
-开发者平台：<br>
+###### 开发者平台
 ![](/uploads/images/2021/v1.1/Developer.png "Developer.png")<br>
 
-应用商城：<br>
+###### 应用商城
 ![](/uploads/images/2021/v1.1/AppStore.png "AppStore.png")<br>
 
-MEC管理平台：<br>
+###### MEC管理平台
 ![](/uploads/images/2020/v1.0/Mecm.png "Mecm.png")<br>
 
 # APP开发流程
@@ -20,15 +20,15 @@ MEC管理平台：<br>
 * 定位服务应用作为服务供应者发布“定位服务”，对外提供生态API，其他服务可以消费“定位服务”<br>
 
 ## 开发准备
-* 新建一个项目<br>
+* **新建一个项目**
 ![](/uploads/images/2021/v1.1/CreateProject.png "CreateProject.png")
-* 选择依赖的平台能力，勾选“服务发现”<br>
+* **选择依赖的平台能力，勾选“服务发现”**
 ![](/uploads/images/2021/v1.1/AbilitySelection.png "AbilitySelection.png")
 
 ## 本地开发
-* 下载依赖的插件-BashSupport，并导入到本地IDE<br>
+* **下载依赖的插件-BashSupport，并导入到本地IDE**
 ![](/uploads/images/2020/v1.0/Plug-in.png "Plug-in.png")
-* 执行插件，会自动生成示例代码<br>
+* **执行插件，会自动生成示例代码**
 ![](/uploads/images/2021/cor2020/execute_plugin.png "执行插件生成示例代码.png")
 * 编写APP代码<br>
 * 构建docker image<br><br>
