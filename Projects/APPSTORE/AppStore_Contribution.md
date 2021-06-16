@@ -9,7 +9,7 @@
 
 其中AppStore-be的本地启动依赖于：
 ```
-- Service Center
+- Service center
 - DataBase
 - UserManagement
 ```

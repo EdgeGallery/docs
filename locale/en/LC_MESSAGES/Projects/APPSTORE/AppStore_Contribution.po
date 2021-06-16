@@ -27,7 +27,7 @@ msgstr "This paper will show users how to participate in the contribution of the
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:6
 msgid "搭建本地开发环境-Release 1.1"
-msgstr "Building Local Development Environment-Release 1.1"
+msgstr "Building local development environment-Release 1.1"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:8
 msgid "本节将指导用户如何在本地搭建AppStore-be和AppStore-fe模块，从而帮助开发者快速理解、开发代码。"
@@ -119,7 +119,7 @@ msgstr "![](/uploads/images/2021/cor2020/154011_896d887f_7625245_en.jpeg \"userm
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:60
 msgid "6、运行MainServer函数，启动UserManagement"
-msgstr "6. Run the MainServer function, start UserManagement"
+msgstr "6. Run the mainServer function, start UserManagement"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:62
 msgid "AppStore-be"
@@ -143,7 +143,7 @@ msgstr "![](/uploads/images/2021/cor2020/154023_9c49d20c_7625245_en.jpeg \"appst
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:72
 msgid "3、运行MainServer函数，启动appstore-be"
-msgstr "3.Run the MainServer function, start appstore-be"
+msgstr "3.Run the mainServer function, start appstore-be"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:74
 msgid "AppStore-fe"
@@ -195,7 +195,7 @@ msgstr "AppStore is a market for developers publishing and onboarding App applic
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:98
 msgid "登录应用平台"
-msgstr "Register Application Platform"
+msgstr "Register application platform"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:99
 msgid "进入网址后，默认为guest用户，可以查看信息。如果要进行更多操作（如上传应用）还需注册账号，注册完成，使用该账户登录之后便可进入应用平台首页： ![](/uploads/images/2021/appstore/guest.png \"1.1\") ![](/uploads/images/2021/appstore/register_user.png \"1.2\") ![](/uploads/images/2021/appstore/login.png \"1.3\") ![](/uploads/images/2021/appstore/login_appstore.png \"1.4\")"
@@ -215,7 +215,7 @@ msgstr "For comment on APP, the comment can be submitted successfully after comm
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:112
 msgid "发布应用"
-msgstr "Publish Application"
+msgstr "Publish application"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:113
 msgid "1.上传APP，打开APP Store主界面，点击右侧上传图标，打开上传APP对话框。在上传对话框中选择需要上传的APP，上传或选择系统默认提供的APP图标，选择APP行业、类型、架构，填写APP简单描述，点击确认完成上传。 ![](/uploads/images/2021/appstore/upload.png \"3.1\")"
