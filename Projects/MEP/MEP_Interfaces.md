@@ -602,7 +602,7 @@ POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/
 }
 ```
 
-返回参数：
+**返回参数**
 
 返回码：201
 
@@ -982,7 +982,7 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 
 ```
 
-返回参数
+**返回参数**
 
 返回码：200
 
@@ -1088,7 +1088,7 @@ POST /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/
 }
 ```
 
-返回参数
+**返回参数**
 
 返回码：201
 
@@ -1187,7 +1187,7 @@ DELETE /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1
 
 ```
 
-返回参数
+**返回参数**
 
 返回码：204
 
@@ -1238,7 +1238,7 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 
 ```
 
-返回参数
+**返回参数**
 
 返回码：200
 
@@ -1333,7 +1333,7 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/su
 
 ```
 
-返回参数
+**返回参数**
 
 返回码：200
 
@@ -1413,7 +1413,7 @@ POST /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 
 ```
 
-返回参数
+**返回参数**
 
 返回码：201
 
@@ -1484,7 +1484,7 @@ DELETE /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f
 
 ```
 
-返回参数
+**返回参数**
 
 返回码：204
 
@@ -1535,7 +1535,7 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/su
 
 ```
 
-返回参数
+**返回参数**
 
 返回码：200
 
@@ -1602,7 +1602,7 @@ GET /mep/mec_service_mgmt/v1/services?ser_name=xxx
 ```
 
 
-返回参数
+**返回参数**
 
 返回码：200
 
@@ -1730,7 +1730,7 @@ GET /mep/mec_service_mgmt/v1/services?ser_name=xxx
 ```
 
 
-返回参数
+**返回参数**
 
 返回码：200
 
@@ -1858,7 +1858,7 @@ GET /mep/mec_service_mgmt/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/s
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 {
@@ -1881,7 +1881,8 @@ Exception status code
 
 #### 2. Update liveness info
 This method also referred as "heartbeat" message to (re)confirm the active status about an individual mec service. But not to change the state from "INACTIVE" to "ACTIVE".
-NOTE: As per ETSI doc, this message should be a PATCH message. Since we use servicecomb rest server which doesn't support PATCH message. we kept it as PUT. But behviour will be similar to patch.
+NOTE: As per ETSI doc, this message should be a PATCH message. Since we use servicecomb rest server which doesn't support PATCH message. we kept it as PUT. But behviour will be similar to patch.   
+
 **URL**
 ```
 PUT /mep/mec_service_mgmt/v1/applications/{appInstanceId}/services/{serviceId}/liveness
@@ -1914,7 +1915,7 @@ None
 
 Return Code: 204 OK
 
-Example Response:
+**Example Response**
 Empty response
 
 Exception status code
@@ -1969,7 +1970,7 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dn
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 [
@@ -2031,7 +2032,7 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dn
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 {
@@ -2097,7 +2098,7 @@ PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/dn
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 {
@@ -2174,7 +2175,7 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/tr
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 [
@@ -2277,7 +2278,7 @@ GET /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/tr
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 {
@@ -2441,7 +2442,7 @@ PUT /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/tr
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 {
@@ -2607,7 +2608,7 @@ POST /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_c
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 {
@@ -2688,7 +2689,7 @@ GET /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_co
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 {
@@ -2862,7 +2863,7 @@ PUT /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd_co
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 {
@@ -2911,7 +2912,7 @@ DELETE /mepcfg/app_lcm/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/appd
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 {
@@ -2960,7 +2961,7 @@ GET /mepcfg/app_lcm/v1/tasks/d464dd0a-d927-4baf-bc2c-d902fb0b2c73/appd_configura
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 {
@@ -3005,7 +3006,7 @@ None
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 ""
 ```
@@ -3050,7 +3051,7 @@ GET /mepcfg/mec_platform_config/v1/capabilities
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 [
@@ -3122,7 +3123,7 @@ GET /mepcfg/mec_platform_config/v1/capabilities/16384563dca094183778a41ea7701d15
 
 Return Code: 200 OK
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 OK
 {
@@ -3214,7 +3215,7 @@ None
 
 Return Code: 200 Success
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 Success
 ```
@@ -3251,7 +3252,7 @@ None
 
 Return Code: 200 Success
 
-Example Response:
+**Example Response**
 ```
 HTTP/1.1 200 Success
 ```
@@ -3297,7 +3298,7 @@ Return code: 200 OK
 |token\_type     |String   |Token Type（Bearer）|   Yes|
 |expires\_in    | int     | Expire time             | Yes|
 
-Return example:
+**Example Response**:
 
 ```
 HTTP/1.1 200 OK
@@ -3352,7 +3353,7 @@ Return code: 200 OK
 |&gt;&gt;port   |         String     |       端口号            |  No|
 |&gt;alternative|        String     |       已实现格式或者外部规范定义的服务入口信息        | No|
 
-Return example:
+**Example Response**
 
 ```
 HTTP/1.1 200 OK

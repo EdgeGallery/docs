@@ -10,13 +10,13 @@ MEP-auth为APP提供认证鉴权功能，提供token申请接口，APP可以基�
 
 ![](/uploads/images/2021/cor2020/165746_8ff53084_5504908.png "接口调用.png")
 
-1.  应用使用 *服务认证接口*，获取token
+1.  应用使用 [*服务认证接口*](MEP_Interfaces.html#service-authentication-interface)，获取token
 
 2.  MEP-auth对ak/sk进行签名校验并签发token
 
 3.  MEP-auth返回token
 
-4.  应用携带token进行服务接口调用。可调用 *应用服务管理相关接口*，*可用事件订阅相关接口*，*终止事件订阅相关接口*。
+4.  应用携带token进行服务接口调用。可调用 [*应用服务管理相关接口*](MEP_Interfaces.html#application-service-management-related-interface)，[*可用事件订阅相关接口*](MEP_Interfaces.html#available-event-subscription-related-interface)，[*终止事件订阅相关接口*](MEP_Interfaces.html#termination-event-subscription-related-interface)。
 
 5.  MEP基于kong的jwt插件校验token并路由相关请求至MEP-server。
 
@@ -32,12 +32,12 @@ MEP-auth模块在初始化，会首先对API网关（kong）进行初始化:
 
 MEP-auth在初始化kong过程中开启的插件包括：
 
-- JWT插件：为相应接口提供token校验能力
-- Appid-header插件：在接口request中插入X-AppinstanceID头，以供MEP-server校验；校验申请token的client ip与调用接口的client ip一致
-- Rate Limiting插件：为MEP-auth和MEP-server接口提供流量控制能力
-- IP Restriction插件：为MEP-auth提供客户端IP白名单功能支持
-- response-transformer插件：提供清除response中server header能力
-- pre-function插件：提供修改接口请求x_forwarded_for能力
+- **JWT插件** 为相应接口提供token校验能力
+- **Appid-header插件** 在接口request中插入X-AppinstanceID头，以供MEP-server校验；校验申请token的client ip与调用接口的client ip一致
+- **Rate Limiting插件** 为MEP-auth和MEP-server接口提供流量控制能力
+- **IP Restriction插件** 为MEP-auth提供客户端IP白名单功能支持
+- **response-transformer插件** 提供清除response中server header能力
+- **pre-function插件** 提供修改接口请求x_forwarded_for能力
 
 ## MEP sever特性
 
@@ -76,7 +76,7 @@ Service register message will carry the livenessinterval field in it. It is an o
 Note: For details of service register message please check the interface doc.
 
 #### How to send heartbeat message
-Services who already set livenessinterval in its register message should send hearbeat message to MEP. When service registers, its response message will carry the URL (liveness), using which service should send the heartbeat to MEP.
+Services which already has set livenessinterval in its register message should send hearbeat message to MEP. When service registers, its response message will carry the URL (liveness), using which service should send the heartbeat to MEP.
 Note: For details of hearbeat message please check the interface document.
 
 EG-LDVS应用集成插件mep-agent
@@ -107,7 +107,7 @@ GET /mep-agent/v1/token
   ]
 }
 ```
-Return example:
+**Return example**
 
 ```
 HTTP/1.1 200 OK
@@ -135,9 +135,9 @@ The MEP platform provides the domain name resolution services to the application
 
 The three major operations for DNS are:
 
-1. DNS management operations
-2. Query configuration and Activation/Deactivation by the MEC applications
-3. DNS query by the device applications
+1. DNS management operations.
+2. Query configuration and Activation/Deactivation by the MEC applications.
+3. DNS query by the device applications.
 
 We will see each of these features in the below section.
 ### DNS management operations
@@ -179,7 +179,7 @@ dnsserver [OPTION]...
 ```
 
 Detailed list of the optional parameters are stated below.
-| parameter | Type | Range/Length | Default | Description |
+| Parameter | Type | Range/Length | Default | Description |
 | --------- | ---- | ------------ | ------- | ----------- |
 | -db | string | 1~256  | dbEgDns | Backend store db name |
 | -port | number | 1~65535  | 53 | DNS server listening port |
@@ -190,7 +190,7 @@ Detailed list of the optional parameters are stated below.
 | -forwarder | string | Ipv4/Ipv6  |  | DNS proxy server IP |
 | -loadBalance | bool | true/false  | false | For domain names with multiple ip address, enabling this option will perform loadbalancing by shuffling the response IP list |
 
-Example
+**Example**
 ```
 $ dnsserver -port=8053 -managementPort=8080 -loadBalance -forwarder <some-dns-server>
 ```

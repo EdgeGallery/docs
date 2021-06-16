@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-15 06:58+0530\n"
+"POT-Creation-Date: 2021-06-16 22:13+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,23 +26,23 @@ msgid "Developer-be 三方件使用清单"
 msgstr "Developer-be Third-Party Use List"
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "groupId"
+msgid "GroupId"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "artifactId"
+msgid "ArtifactId"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "version"
+msgid "Version"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "license"
+msgid "License"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "direct import (Y/N)"
+msgid "Direct Import (Y/N)"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -2114,11 +2114,11 @@ msgid "Developer-fe 三方件使用清单"
 msgstr "Developer-fe Third-Party Use List"
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "type"
+msgid "Type"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "name"
+msgid "Name"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -2452,4 +2452,3 @@ msgstr ""
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "vue-template-compiler"
 msgstr ""
-

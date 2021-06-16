@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 02:14+0530\n"
+"POT-Creation-Date: 2021-06-16 20:56+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,20 +42,20 @@ msgid "![](/uploads/images/2021/cor2020/165746_8ff53084_5504908.png \"接口调�
 msgstr "![](/uploads/images/2021/cor2020/165746_8ff53084_5504908_en.png \"interface call.png\")"
 
 #: ../../Projects/MEP/MEP_Features.md:13
-msgid "应用使用 *服务认证接口*，获取token"
-msgstr "Application uses *Service Authentication Interface* for token"
+msgid "应用使用 [*服务认证接口*](MEP_Interfaces.html#service-authentication-interface)，获取token"
+msgstr "Application uses [*Service Authentication Interface*](MEP_Interfaces.html#service-authentication-interface) for token."
 
 #: ../../Projects/MEP/MEP_Features.md:15
 msgid "MEP-auth对ak/sk进行签名校验并签发token"
-msgstr "MEP-auth sign and issue token for ak/sk"
+msgstr "MEP-auth signs and issues token for ak/sk."
 
 #: ../../Projects/MEP/MEP_Features.md:17
 msgid "MEP-auth返回token"
-msgstr "MEP-auth return token"
+msgstr "MEP-auth returns token."
 
 #: ../../Projects/MEP/MEP_Features.md:19
-msgid "应用携带token进行服务接口调用。可调用 *应用服务管理相关接口*，*可用事件订阅相关接口*，*终止事件订阅相关接口*。"
-msgstr "The application carrying token is used for calling the service interface. You can call *application service management related interface*, *free event subscription related interface*, *terminated event subscription related interface*."
+msgid "应用携带token进行服务接口调用。可调用 [*应用服务管理相关接口*](MEP_Interfaces.html#application-service-management-related-interface)，[*可用事件订阅相关接口*](MEP_Interfaces.html#available-event-subscription-related-interface)，[*终止事件订阅相关接口*](MEP_Interfaces.html#termination-event-subscription-related-interface)。"
+msgstr "The application carrying token is used for calling the service interface. You can call [*Application Service Management Related Interface*](MEP_Interfaces.html#application-service-management-related-interface), [*Available Event Subscription Related Interface*](MEP_Interfaces.html#available-event-subscription-related-interface), [*Termination Event Subscription Related Interface*](MEP_Interfaces.html#termination-event-subscription-related-interface)."
 
 #: ../../Projects/MEP/MEP_Features.md:21
 msgid "MEP基于kong的jwt插件校验token并路由相关请求至MEP-server。"
@@ -75,47 +75,47 @@ msgstr "The MEP-auth module initializes the API gateway (kong):"
 
 #: ../../Projects/MEP/MEP_Features.md:28
 msgid "在kong添加一个consumer"
-msgstr "Add a consumer in kong"
+msgstr "Add a consumer in kong."
 
 #: ../../Projects/MEP/MEP_Features.md:29
 msgid "为MEP-auth自身配置service和route"
-msgstr "Configuring service and route for MEP-auth itself"
+msgstr "Configuring service and route for MEP-auth itself."
 
 #: ../../Projects/MEP/MEP_Features.md:30
 msgid "为MEP-server配置servcie和route"
-msgstr "Configuring servcie and route for MEP-server"
+msgstr "Configuring servcie and route for MEP-server."
 
 #: ../../Projects/MEP/MEP_Features.md:31
 msgid "为MEP-auth和MEP-server配置并启用kong插件"
-msgstr "Configure and enable the kong plugin for MEP-auth and MEP-server"
+msgstr "Configure and enable the kong plugin for MEP-auth and MEP-server."
 
 #: ../../Projects/MEP/MEP_Features.md:33
 msgid "MEP-auth在初始化kong过程中开启的插件包括："
 msgstr "The plugins that MEP-auth opened in the initialization kong process include:"
 
 #: ../../Projects/MEP/MEP_Features.md:35
-msgid "JWT插件：为相应接口提供token校验能力"
-msgstr "JWT plug-in: providing token verification capability for the corresponding interface."
+msgid "**JWT插件** 为相应接口提供token校验能力"
+msgstr "**JWT plugin** Provides token verification capability for the corresponding interface."
 
 #: ../../Projects/MEP/MEP_Features.md:36
-msgid "Appid-header插件：在接口request中插入X-AppinstanceID头，以供MEP-server校验；校验申请token的client ip与调用接口的client ip一致"
-msgstr "Appid-header plugin: Insert X-AppinstanceID header in interface request for MEP-server check. Check request token's client ip is consistent with client ip of calling interface."
+msgid "**Appid-header插件** 在接口request中插入X-AppinstanceID头，以供MEP-server校验；校验申请token的client ip与调用接口的client ip一致"
+msgstr "**Appid-header plugin** Insert X-AppinstanceID header in interface request for MEP-server check. Check request token's client ip is consistent with client ip of calling interface."
 
 #: ../../Projects/MEP/MEP_Features.md:37
-msgid "Rate Limiting插件：为MEP-auth和MEP-server接口提供流量控制能力"
-msgstr "Rate Limiting Plugin: Provides flow control capability for MEP-auth and MEP-server interfaces."
+msgid "**Rate Limiting插件** 为MEP-auth和MEP-server接口提供流量控制能力"
+msgstr "**Rate Limiting Plugin** Provides flow control capability for MEP-auth and MEP-server interfaces."
 
 #: ../../Projects/MEP/MEP_Features.md:38
-msgid "IP Restriction插件：为MEP-auth提供客户端IP白名单功能支持"
-msgstr "IP Restriction Plugin: Provides client IP white list function support for MEP-auth."
+msgid "**IP Restriction插件** 为MEP-auth提供客户端IP白名单功能支持"
+msgstr "**IP Restriction Plugin** Provides client IP white list function support for MEP-auth."
 
 #: ../../Projects/MEP/MEP_Features.md:39
-msgid "response-transformer插件：提供清除response中server header能力"
-msgstr "response-transformer plugin: Provides the server header capability in clear response."
+msgid "**response-transformer插件** 提供清除response中server header能力"
+msgstr "**response-transformer plugin** Provides the server header capability in clear response."
 
 #: ../../Projects/MEP/MEP_Features.md:40
-msgid "pre-function插件：提供修改接口请求x_forwarded_for能力"
-msgstr "pre-function plugin: providing modified interface request x_forwarded_for capability."
+msgid "**pre-function插件** 提供修改接口请求x_forwarded_for能力"
+msgstr "**Pre-function plugin** providing modified interface request x_forwarded_for capability."
 
 #: ../../Projects/MEP/MEP_Features.md:42
 msgid "MEP sever特性"
@@ -131,7 +131,7 @@ msgstr "**Definition**"
 
 #: ../../Projects/MEP/MEP_Features.md:47
 msgid "服务管理功能是指MEP能够进行服务的注册，更新，删除，查询的能力。"
-msgstr "The service management function refers to the ability of the MEP to register, update, delete, and query services"
+msgstr "The service management function refers to the ability of the MEP to register, update, delete, and query services."
 
 #: ../../Projects/MEP/MEP_Features.md:49 ../../Projects/MEP/MEP_Features.md:62 ../../Projects/MEP/MEP_Features.md:88 ../../Projects/MEP/MEP_Features.md:126
 msgid "**设计原理**"
@@ -186,12 +186,12 @@ msgid "How to send heartbeat message"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:78
-msgid "Services who already set livenessinterval in its register message should send hearbeat message to MEP. When service registers, its response message will carry the URL (liveness), using which service should send the heartbeat to MEP. Note: For details of hearbeat message please check the interface document."
+msgid "Services which already has set livenessinterval in its register message should send hearbeat message to MEP. When service registers, its response message will carry the URL (liveness), using which service should send the heartbeat to MEP. Note: For details of hearbeat message please check the interface document."
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:81
 msgid "EG-LDVS应用集成插件mep-agent"
-msgstr "EG-LDVS application integrated plug-n mep-agent"
+msgstr "EG-LDVS application integrated plugin mep-agent"
 
 #: ../../Projects/MEP/MEP_Features.md:86
 msgid "LDVS MEP-Agent作为应用快速集成适配器，实现服务配置导入和服务注册的功能。"
@@ -214,7 +214,7 @@ msgid "MEP-Agent will run as sidecar along with application. If Apllication need
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:109
-msgid "Return example:"
+msgid "**Return example**"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:120
@@ -245,20 +245,24 @@ msgstr ""
 msgid "The three major operations for DNS are:"
 msgstr ""
 
-#: ../../Projects/MEP/MEP_Features.md:137 ../../Projects/MEP/MEP_Features.md:142
-msgid "DNS management operations"
+#: ../../Projects/MEP/MEP_Features.md:137
+msgid "DNS management operations."
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:138
-msgid "Query configuration and Activation/Deactivation by the MEC applications"
+msgid "Query configuration and Activation/Deactivation by the MEC applications."
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:139
-msgid "DNS query by the device applications"
+msgid "DNS query by the device applications."
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:141
 msgid "We will see each of these features in the below section."
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Features.md:142
+msgid "DNS management operations"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:144
@@ -330,7 +334,7 @@ msgid "Detailed list of the optional parameters are stated below."
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
-msgid "parameter"
+msgid "Parameter"
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md
@@ -470,6 +474,6 @@ msgid "For domain names with multiple ip address, enabling this option will perf
 msgstr ""
 
 #: ../../Projects/MEP/MEP_Features.md:192
-msgid "Example"
+msgid "**Example**"
 msgstr ""
 

@@ -11,11 +11,11 @@ Developer Overview
 
 ![](/uploads/images/2021/cor2020/150137_dd5a244e_5504908.png "架构设计.png")
 
-1.  Developer-fe：开发者平台前台框架，使用VUE开发。
+1.  **Developer-fe** 开发者平台前台框架，使用VUE开发。
     
-2.  Developer-be：开发者平台后台框架，使用SpringBoot+ServiceComb开发。（有关ServiceComb请参考这里：[https://servicecomb.apache.org/cn/](https://servicecomb.apache.org/cn/)）
+2.  **Developer-be** 开发者平台后台框架，使用SpringBoot+ServiceComb开发。（有关ServiceComb请参考这里：[https://servicecomb.apache.org/cn/](https://servicecomb.apache.org/cn/)）
     
-3.  Developer DB：后台依赖Postgres数据库。
+3.  **Developer DB** 后台依赖Postgres数据库。
     
 
 部署视图
