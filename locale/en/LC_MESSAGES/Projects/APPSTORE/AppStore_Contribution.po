@@ -42,8 +42,8 @@ msgid "其中AppStore-fe的本地启动依赖于:"
 msgstr "AppStore-fe's local startup relies on:"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:22
-msgid "所以为了搭建本地开发环境，最终的启动顺序为 Service Center -> DataBase -> UserManagement -> AppStore-be -> WebsiteGateway(AppStore-fe)"
-msgstr "So to build a local development environment, the final start sequence is Service Center -> DataBase -> UserManagement -> AppStore-be -> Website Gateway (AppStore-fe)"
+msgid "所以为了搭建本地开发环境，最终的启动顺序为 Service Center -> DataBase -> User Management -> AppStore-be -> Website Gateway(AppStore-fe)"
+msgstr "So to build a local development environment, the final start sequence is Service Center -> DataBase -> User Management -> AppStore-be -> Website Gateway (AppStore-fe)"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:24
 msgid "Service Center"
@@ -90,7 +90,7 @@ msgid "4、创建名为usermgmtdb的数据库"
 msgstr "4.Create a database called usermgmtdb"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:46
-msgid "UserManagement"
+msgid "User Management"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:48

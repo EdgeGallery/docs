@@ -54,7 +54,7 @@ msgid "Definition"
 msgstr ""
 
 #: ../../Projects/MECM/Inventory_Interfaces_en.md
-msgid "type"
+msgid "Type"
 msgstr ""
 
 #: ../../Projects/MECM/Inventory_Interfaces_en.md

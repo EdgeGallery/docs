@@ -38,7 +38,7 @@ msgid "Definition"
 msgstr ""
 
 #: ../../Projects/MECM/Applcm_Interfaces_en.md
-msgid "type"
+msgid "Type"
 msgstr ""
 
 #: ../../Projects/MECM/Applcm_Interfaces_en.md

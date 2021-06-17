@@ -42,7 +42,7 @@ msgid "Definition"
 msgstr ""
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md
-msgid "type"
+msgid "Type"
 msgstr ""
 
 #: ../../Projects/MECM/Apm_Interfaces_en.md

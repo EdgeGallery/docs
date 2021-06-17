@@ -42,7 +42,7 @@ msgid "Definition"
 msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md
-msgid "type"
+msgid "Type"
 msgstr ""
 
 #: ../../Projects/MECM/MECM_AppRule_Manager.md

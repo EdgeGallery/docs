@@ -42,7 +42,7 @@ msgid "Definition"
 msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
-msgid "type"
+msgid "Type"
 msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md

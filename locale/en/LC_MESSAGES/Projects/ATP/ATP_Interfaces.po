@@ -182,7 +182,7 @@ msgid "Definition"
 msgstr ""
 
 #: ../../Projects/ATP/ATP_Interfaces.md
-msgid "type"
+msgid "Type"
 msgstr ""
 
 #: ../../Projects/ATP/ATP_Interfaces.md
