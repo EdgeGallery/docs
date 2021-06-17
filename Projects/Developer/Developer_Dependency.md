@@ -3,7 +3,7 @@ Developer Dependency
 
 
 ## Developer-be 三方件使用清单
-|groupId|artifactId|version|license|direct import (Y/N)|
+|GroupId|ArtifactId|Version|License|Direct Import (Y/N)|
 |---|---|---|---|---|
 |ch.ethz.ganymed|ganymed-ssh2|262|BSD|Y|
 |ch.qos.logback|logback-classic|1.2.3 |EPL 1.0,LGPL 2.1|N|
@@ -264,7 +264,7 @@ Developer Dependency
 
 
 ## Developer-fe 三方件使用清单
-|type|name|version|license|direct import (Y/N)|
+|Type|Name|Version|License|Direct Import (Y/N)|
 |---|---|---|---|---|
 |dependencies|acorn|7.2.0|MIT|Y|
 |dependencies|auth0-js|9.13.2|MIT|Y|

@@ -19,9 +19,9 @@ msgstr ""
 
 #: ../../Get Started/README.md:1
 msgid "Get Started Tutorials"
-msgstr "Get Started Tutorials"
+msgstr ""
 
 #: ../../Get Started/README.md:4
 msgid "Tutorial"
-msgstr "Tutorial"
+msgstr ""
 

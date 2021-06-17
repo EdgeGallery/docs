@@ -19,12 +19,12 @@ msgstr ""
 
 #: ../../Projects/MEP/MEP_DataBase_Design.md:1
 msgid "数据库设计"
-msgstr "Database design"
+msgstr "Database Design"
 
 #: ../../Projects/MEP/MEP_DataBase_Design.md:4
 msgid "The MEP database uses an open source PostgreSQL database, only api gateway kong and mepauth use database, and the recommended version is 12.3."
-msgstr "The MEP database uses an open source PostgreSQL database, only api gateway long and mepiauth use database, and the recommended version is 12.3."
+msgstr ""
 
 #: ../../Projects/MEP/MEP_DataBase_Design.md:6
 msgid "AuthInfoRecord: Store Ak/Sk information."
-msgstr "AuthInfoRecord: Store Ak/Sk information."
+msgstr ""

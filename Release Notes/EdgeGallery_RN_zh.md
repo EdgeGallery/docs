@@ -21,7 +21,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 **新开源仓库列表**
 | 模块                           |      名称       | 类型   | URL                                           | 说明                                   |
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
-| Examaple Applications          | example-apps    | PoC仓 | https://gitee.com/edgegallery/example-apps    | 提供基于EdgeGallery的样例app   |
+| Example Applications           | example-apps    | PoC仓 | https://gitee.com/edgegallery/example-apps    | 提供基于EdgeGallery的样例app   |
 | EdgeGallery Frontend Component |     eg-view     | 产品仓 | https://gitee.com/edgegallery/eg-view          | 提供归一化的EdgeGallery前端组件         |
 | EdgeGallery Testing Platform   |    edgeT        | PoC仓 | https://gitee.com/edgegallery/edgeT | 为用户提供本地测试的工具链 |
 
@@ -33,23 +33,23 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 ![](/uploads/images/2021/v1.1/NewFeature.png "NewFeature.png")
 
 
-* 【AI软硬件能力】支撑昇腾/Atlas硬件以及开放API
+* **AI软硬件能** 支撑昇腾/Atlas硬件以及开放API
     - AI图像修复、边缘检测、卡通图像生成、图像上色、对象分类、目标检测等；
-* 【跨平台支持】支持基于Openstack的虚机应用和基于K8S容器应用的孵化集成
-* 【体验优化】
+* **跨平台支持** 支持基于Openstack的虚机应用和基于K8S容器应用的孵化集成
+* **体验优化**
     - APP分类、APP推荐、爆款动态刷新
-* 【EdgeNative支持】
+* **EdgeNative支持**
     - IaaS/PaaS/应用都支持按需部署、应用框架自动生成
     - MEP微服务管理架构可视化
     - 提供EdgeGallery小程序、设计态等
-* 【API管理】ETSI MEC API、3GPP CAPIF以及昇腾能力支持情况匹配
-* 【安全、用户管理】
+* **API管理** ETSI MEC API、3GPP CAPIF以及昇腾能力支持情况匹配
+* **安全、用户管理**
     - 分权分域，对关键操作和数据进行权限控制
     - 应用远程登录（如VNC）支持安全协议登录
-* 【社区实验室增强】
+* **社区实验室增强**
     - 提供真实E2E 5G验证环境
     - 资源一键申请，一键释放，可视化管理
-* 【应用创新】
+* **应用创新**
     - AppStore联邦，可注册外部AppStore，应用在不同AppStore间可相互推送和拉取
     - 完成80+应用集成、落地17+创新基地、西安电子科技大学研究生课程
 
@@ -64,17 +64,17 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  **Security Notes**
 
- *Fixed Security Issues*
+ **Fixed Security Issues**
 
   参见 [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%20%2Emd)
 
- *Known Security Issues*
+ **Known Security Issues**
 
   参见 [EdgeGallery v1.1.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report%2Emd)
 
- *Known Vulnerabilities in Used Modules*
+ **Known Vulnerabilities in Used Modules**
 
- EdgeGalelry v1.1.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
+ EdgeGallery v1.1.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
 
 **Appstore**
 | Component                                  | Version       | CVE                                                          |
@@ -158,20 +158,20 @@ Version: v1.0.0
 
 [ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)
 
-* 版本规划特性
-    * 【Developer】优化APP开发测试发布流程，优化API界面，集成多语言SDK
+1. 版本规划特性
+    * **Developer** 优化APP开发测试发布流程，优化API界面，集成多语言SDK
         - 优化首页设计，增加应用开发生命周期流程图；
         - 优化项目开发流程，全新界面设计；
         - 优化部署调测环节，增加可视化展示部署过程展示，增加部署结果POD展示；
         - 优化能力中心界面，增加能力分类选择；
         - 应用发布环节对接认证测试平台；
-    * 【AppStore】界面易用性优化，EdgeGallery生态能力优化
-    * 【MECM】优化拓扑、应用管理及边缘节点管理，新增获取MEP能力功能，AK/SK配置接口
-    * 【MEP】支持APP心跳检测，新增获取MEP能力接口，AK/SK配置接口，MEP-agent新增获取token接口
-    * 【ATP】APP应用的测试能力增强
-    * 【Test】提供健康检查功能，优化安装包，开发测试平台支持测试例管理
+    * **AppStore** 界面易用性优化，EdgeGallery生态能力优化
+    * **MECM** 优化拓扑、应用管理及边缘节点管理，新增获取MEP能力功能，AK/SK配置接口
+    * **MEP** 支持APP心跳检测，新增获取MEP能力接口，AK/SK配置接口，MEP-agent新增获取token接口
+    * **ATP** APP应用的测试能力增强
+    * **Test** 提供健康检查功能，优化安装包，开发测试平台支持测试例管理
 
-* PoC 特性
+2. PoC 特性
     * MEP服务治理页面展示
     * 引入插件式应用框架[Crane-framework](https://gitee.com/edgegallery/crane-framework)
     * AppStore联邦，可注册外部AppStore，应用在不同AppStore间可相互推送和拉取
@@ -190,15 +190,15 @@ Version: v1.0.0
 
  **Security Notes**
 
- *Fixed Security Issues*
+ **Fixed Security Issues**
 
   参见 [EdgeGallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report%2Emd)
 
- *Known Security Issues*
+ **Known Security Issues**
 
   参见 [EdgeGallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report%2Emd)
 
- *Known Vulnerabilities in Used Modules*
+ **Known Vulnerabilities in Used Modules**
 
 EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
 
@@ -287,7 +287,7 @@ N/A
 
 * 安全设计排查问题汇总
 * api模拟器和工具链、plugin仓库开源
-* 【MEP/MEP Agent】ak/sk配置接口
+* **MEP/MEP Agent**ak/sk配置接口
 
 
  **Bug Fixes**
@@ -300,17 +300,17 @@ N/A
 
  **Security Notes**
 
- *Fixed Security Issues*
+ **Fixed Security Issues**
 
   参见 [EdgeGallery v0.9.1 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)
 
- *Known Security Issues*
+ **Known Security Issues**
 
   参见 [EdgeGallery v0.9.1 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)
 
- *Known Vulnerabilities in Used Modules*
+ **Known Vulnerabilities in Used Modules**
 
-EdgeGalelry v0.9.1版本第三方开源组件存在以下漏洞需要用户自行修复：
+EdgeGallery v0.9.1版本第三方开源组件存在以下漏洞需要用户自行修复：
 
 **Appstore**
 | Component                                  | Version       | CVE                                                          |
@@ -434,17 +434,17 @@ Version: v0.9
 
  **Security Notes**
 
- *Fixed Security Issues*
+ **Fixed Security Issues**
 
   参见 [EdgeGallery v0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)
 
- *Known Security Issues*
+ **Known Security Issues**
 
   参见 [EdgeGallery v0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)
 
- *Known Vulnerabilities in Used Modules*
+ **Known Vulnerabilities in Used Modules**
 
-EdgeGalelry v0.9版本第三方开源组件存在以下漏洞需要用户自行修复：
+EdgeGallery v0.9版本第三方开源组件存在以下漏洞需要用户自行修复：
 
 **Appstore**
 | Component  | Version  | CVE  |

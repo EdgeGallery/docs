@@ -85,14 +85,14 @@ Developer Interfaces
     - [13.1 GET all capability](#get-all-capability)
     - [13.2 POST one capability](#post-one-capability)
     - [13.3 DELETE one capability](#delete-one-capability)
-    - [13.4 GET all host](#get-all-host)
-    - [13.5 POST one host](#post-one-host)
-    - [13.6 GET one host](#get-one-host)
-    - [13.7 PUT one host](#put-one-host)
-    - [13.8 DELETE one host](#delete-one-host)
+    - [13.4 GET all system host](#get-all-system-host)
+    - [13.5 POST one system host](#post-one-system-host)
+    - [13.6 GET one system host](#get-one-system-host)
+    - [13.7 PUT one system host](#put-one-system-host)
+    - [13.8 DELETE one system host](#delete-one-system-host)
     - [13.9 GET capability detail](#get-capability-detail)
     - [13.10 GET host log](#get-host-log)
-  - [14. VirtualMachine](#virtualvachine)
+  - [14. VirtualMachine](#virtualmachine)
     - [14.1 POST one vm](#post-one-vm)
     - [14.2 DELETE vm config](#delete-vm-config)
     - [14.3 GET image config](#get-image-config)
@@ -104,7 +104,7 @@ Developer Interfaces
     - [14.9 POST vm file](#post-vm-file)
   - [15. Image](#image)
     - [15.1 POST upload image](#post-upload-image)
-    - [15.2 GET merge image](#GET-merge-image)
+    - [15.2 GET merge image](#get-merge-image)
 
 ## 1. Plugin
 Development environment plug-in or sdk
@@ -113,7 +113,7 @@ Upload one plugin with some params.
 ```
 Resource URI: /mec/developer/v1/plugins/
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |pluginFile|pluginfile|requestpart|yes|
 |logoFile|pluginlogofile|requestpart|yes|
@@ -126,7 +126,7 @@ Resource URI: /mec/developer/v1/plugins/
 |userId|theauthor'sidofuploadplugin|requestparam|yes|
 |userName|theauthor'snameofuploadplugin|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -177,23 +177,23 @@ Query all plugin or sdk
 ```
 Resource URI: /mec/appstore/v1/plugins/
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------| -------------|------------|------------|
 |pluginType|plugin type|request param|yes|
 |limit|the max count of one page|request param|yes|
 |offset|start index of the page|request param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
- {
+{
   "results": [
     {}
   ],
   "limit": 0,
   "offset": 0,
   "total": 0
-  }
+}
 ```
 
 ### 1.3 DELETE one 
@@ -201,65 +201,65 @@ Delete one plugin by pluginId
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |pluginId|plugin id|path param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
   true
 ```
 
 ### 1.4 GET download plugin 
-download one plugin
+Download one plugin
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/download
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |pluginId|plugin id|path param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
   binary output.
 ```
 
 ### 1.5 GET download logo
-download plugin's logo file
+Download plugin's logo file
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/get-logofile
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |pluginId|plugin id|path param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
   binary output.
 ```
 ### 1.6 GET download api
-download plugin's api file
+Download plugin's api file
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/get-apifile
 ```
-|Name| Definition|type|Required|
+|Name| Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |pluginId|plugin id|path param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
   binary output.
 ```
 ### 1.7 PUT update plugin
-update api by id
+Update api by id
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |pluginId|pluginid|pathparam|yes|
 |pluginFile|pluginfile|requestpart|no|
@@ -271,7 +271,7 @@ Resource URI: /mec/appstore/v1/plugins/{pluginId}
 |version|pluginversion|requestpart|no|
 |introduction|pluginbrief|requestpart|no|
 
-Example response:
+**Example response**
 ```
 200 OK
  {
@@ -316,18 +316,18 @@ Example response:
 }
 ```
 ### 1.8 PUT mark plugin
-update plugin satisfaction by pluginId
+Update plugin satisfaction by pluginId
 ```
 Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/score
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |pluginId|pluginid|pathparam|yes|
 |score|pluginsatisfaction|requestparam|yes|
 |userId|raterid|requestparam|yes|
 |userName|ratername|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
  {
@@ -379,7 +379,7 @@ Upload app with some params.
 ```
 Resource URI: /mec/developer/v1/apps/
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |appFile|appfile|requestpart|yes|
 |logoFile|applogofile|requestpart|yes|
@@ -389,7 +389,7 @@ Resource URI: /mec/developer/v1/apps/
 |appDesc|appbrief|requestparam|yes|
 |userId|theauthoridofuploadapp|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -412,7 +412,7 @@ Example response:
     "endTime": "2020-09-11T06:26:46.351Z",
     "appId": "string"
   }
-  }
+}
 ```
 
 ### 2.2 GET all test task 
@@ -420,7 +420,7 @@ Query all test task by condtions
 ```
 Resource URI: /mec/developer/v1/apps/
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |appName|appname|requestparam|no|
 |status|testtaskstatus|requestparam|no|
@@ -428,7 +428,7 @@ Resource URI: /mec/developer/v1/apps/
 |endTime|taskendtime|requestparam|no|
 |userId|theauthoridofuploadapp|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -442,7 +442,7 @@ Example response:
       "appId": "string"
     }
   ]
-  }
+}
 ```
 
 ### 2.3 GET all app tags 
@@ -450,18 +450,15 @@ Query app function tags
 ```
 Resource URI: /mec/developer/v1/apps/tags
 ```
-|Name|Definition|type|Required|
-|-------------|-------------|------------|------------|
-| | | | |
 
-Example response:
+**Example response**
 ```
 200 OK
 {
   "tasks": [
    "string"
   ]
-  }
+}
 ```
 
 ### 2.4 POST upload app to store 
@@ -469,45 +466,45 @@ upload app to store
 ```
 Resource URI: /mec/developer/v1/apps/{appId}/action/upload
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |appId|appid|pathparam|yes|
 |userId|theauthoridofuploadapp|requestparam|yes|
 |userName|theauthornameofuploadapp|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 "csar id"
 ```
 
 ### 2.5 GET start test 
-start to test app
+Start to test app
 ```
 Resource URI: /mec/developer/v1/apps/{appId}/action/start-test
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |appId|appid|pathparam|yes|
 |userId|theauthoridofuploadapp|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 true
 ```
 
 ### 2.6 GET subtask list 
-query test subtask list
+Query test subtask list
 ```
 Resource URI: /mec/developer/v1/apps/{appId}/task/{taskId}/subtasks
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |appId|appid|pathparam|yes|
 |taskId|maintaskid|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -520,7 +517,7 @@ Example response:
       "parameters": "string"
     }
   ]
-  }
+}
 ```
 ## 3. App Project
 Edge application projects created by the developer platform
@@ -529,14 +526,15 @@ Query all app project with userId.
 ```
 Resource URI: /mec/developer/v1/projects/
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |userId|theauthoridofcreateprocject|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
-[
+
+{[
   {
     "id": "string",
     "projectType": "CREATE_NEW",
@@ -577,8 +575,7 @@ Example response:
     "createDate": "2020-09-14T01:38:48.361Z",
     "openCapabilityId": "string"
   }
-  ]
-  }
+]}
 ```
 
 ### 3.2 GET one project 
@@ -586,12 +583,12 @@ Query project by id
 ```
 Resource URI:  /mec/developer/v1/projects/{projectId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 |userId|theauthoridofcreateproject|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -633,7 +630,7 @@ Example response:
   "userId": "string",
   "createDate": "2020-09-14T01:45:11.950Z",
   "openCapabilityId": "string"
-  }
+}
 
 ```
 
@@ -642,7 +639,7 @@ Create one project with some params
 ```
 Resource URI: /mec/developer/v1/projects/
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |ApplicationProject|Entityclass|bodyparam|yes|
 |userId|theauthoridofcreateproject|requestparam|yes|
@@ -688,9 +685,9 @@ Application
   "userId": "string",
   "createDate": "2020-09-14T01:48:09.468Z",
   "openCapabilityId": "string"
-  }
+}
 ```
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -733,7 +730,7 @@ Example response:
   "createDate": "2020-09-14T01:48:09.468Z",
   "openCapabilityId": "string"
   }
-  }
+}
 ```
 
 ### 3.4 Delete one project
@@ -741,23 +738,23 @@ Delete one project by id
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}
 ```
-| Name          | Definition |type   | Required|
+| Name          | Definition |Type   | Required|
 | ------------- | ------------- |------------|------------|
 | projectId | project id|path param|yes|
 | userId | the author id of create project |request param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 true
 ```
 
 ### 3.5 PUT modify one project 
-modify one project by id
+Modify one project by id
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 |userId|theauthornameofuploadapp|requestparam|yes|
@@ -804,9 +801,9 @@ ApplicationProject
   "userId": "string",
   "createDate": "2020-09-14T01:48:09.468Z",
   "openCapabilityId": "string"
-  }
+}
 ```
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -848,7 +845,7 @@ Example response:
   "userId": "string",
   "createDate": "2020-09-14T01:48:09.468Z",
   "openCapabilityId": "string"
-  }
+}
 ```
 
 ### 3.6 POST deploy one project 
@@ -856,12 +853,12 @@ Deploy one project by id
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/deploy
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 |userId|theauthoridofcreateproject|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -903,32 +900,32 @@ Example response:
   "userId": "string",
   "createDate": "2020-09-14T01:48:09.468Z",
   "openCapabilityId": "string"
-  }
+}
 ```
 
 ### 3.7 POST clean test env 
-clean test env
+Clean test env
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/clean
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 |userId|theauthoridofcreateproject|requestparam|yes|
 |completed|teststatus|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 true
 ```
 
 ### 3.8 POST create test config 
-create test config of one project
+Create test config of one project
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/test-config
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 |userId|theauthoridofcreateproject|requestparam|yes|
@@ -1025,9 +1022,9 @@ ProjectTestConfig
   "workLoadId": "string",
   "appInstanceId": "string",
   "deployDate": "2020-09-14T01:48:09.469Z"
-  }
+}
 ```
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -1119,15 +1116,15 @@ Example response:
   "workLoadId": "string",
   "appInstanceId": "string",
   "deployDate": "2020-09-14T01:48:09.469Z"
-  }
+}
 ```
 
 ### 3.9 PUT modify test config 
-modify test config of one project
+Modify test config of one project
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/test-config
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 |ProjectTestConfig|entityclass|bodyparam|yes|
@@ -1223,9 +1220,9 @@ ProjectTestConfig
   "workLoadId": "string",
   "appInstanceId": "string",
   "deployDate": "2020-09-14T01:48:09.469Z"
-  }
+}
 ```
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -1317,7 +1314,7 @@ Example response:
   "workLoadId": "string",
   "appInstanceId": "string",
   "deployDate": "2020-09-14T01:48:09.469Z"
-  }
+}
 ```
 
 ### 3.10 GET one test-config 
@@ -1325,11 +1322,11 @@ Query one test config by projectId
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/test-config
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -1421,21 +1418,21 @@ Example response:
   "workLoadId": "string",
   "appInstanceId": "string",
   "deployDate": "2020-09-14T01:48:09.469Z"
-  }
+}
 ```
 
 ### 3.11 POST upload to store 
-upload app project to appstore
+Upload app project to appstore
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/upload
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 |userId|theauthoridofcreateproject|requestparam|yes|
 |userName|theauthornameofcreateproject|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 "csarId"
@@ -1446,12 +1443,12 @@ Open project to eco
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/open-api
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 |userId|theauthoridofcreateproject|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -1470,7 +1467,7 @@ Example response:
       "apiFileId": "string"
     }
   ]
-  }
+}
 ```
 
 ### 3.13 POST add image to project 
@@ -1478,7 +1475,7 @@ Add image to project
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/image
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 |ProjectImageConfig|entityclass|bodyparam|yes|
@@ -1493,9 +1490,9 @@ ProjectImageConfig
   "projectId": "string",
   "type": "PLATFORM",
   "nodePort": 0
-  }
+}
 ```
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -1506,7 +1503,7 @@ Example response:
   "projectId": "string",
   "type": "PLATFORM",
   "nodePort": 0
-  }
+}
 ```
 
 ### 3.14 DELETE image of project 
@@ -1514,12 +1511,12 @@ DELETE image of project
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/image/{imageId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 |imageId|imageId|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 true
@@ -1530,11 +1527,11 @@ GET image of project
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/image
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -1549,7 +1546,7 @@ Example response:
       "nodePort": 0
     }
   ]
-  }
+}
 ```
 
 ### 3.16 POST open project api 
@@ -1557,7 +1554,7 @@ POST open project api
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/open-api
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|path param|yes|
 |userId|user id|request param|yes|
@@ -1584,7 +1581,7 @@ AbilityOpenConfig:
 }
 ```
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -1621,11 +1618,11 @@ GET project atp task
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/atp
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectid|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 true
@@ -1638,11 +1635,11 @@ Query all host.
 ```
 Resource URI: /mec/developer/v1/hosts
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 | | | | |
 
-Example response:
+**Example response**
 ```
 200 OK
 [
@@ -1659,7 +1656,7 @@ Example response:
     "portRangeMin": 0,
     "portRangeMax": 0
   }
-  ]
+]
 ```
 
 ### 4.2 GET one host
@@ -1667,11 +1664,11 @@ Query  host by id.
 ```
 Resource URI: /mec/developer/v1/hosts/{hostId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |hostId|hostid|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 [
@@ -1688,7 +1685,7 @@ Example response:
     "portRangeMin": 0,
     "portRangeMax": 0
   }
-  ]
+]
 ```
 
 ### 4.3 POST create one host
@@ -1696,7 +1693,7 @@ Create one host.
 ```
 Resource URI: /mec/developer/v1/hosts/
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |MepHost|entityclass|bodyparam|yes|
 
@@ -1714,10 +1711,10 @@ MepHost
   "os": "string",
   "portRangeMin": 0,
   "portRangeMax": 0
-  }
+}
 ```
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -1732,7 +1729,7 @@ Example response:
   "os": "string",
   "portRangeMin": 0,
   "portRangeMax": 0
-  }
+}
 ```
 
 ### 4.4 DELETE one host
@@ -1740,11 +1737,11 @@ Delete one host.
 ```
 Resource URI: /mec/developer/v1/hosts/{hostId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |hostId|hostid|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 true
@@ -1755,7 +1752,7 @@ Create one host.
 ```
 Resource URI: /mec/developer/v1/hosts/{hostId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |hostId|hostid|pathparam|yes|
 |MepHost|entityclass|bodyparam|yes|
@@ -1774,9 +1771,9 @@ MepHost
   "os": "string",
   "portRangeMin": 0,
   "portRangeMax": 0
-  }
+}
 ```
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -1791,7 +1788,7 @@ Example response:
   "os": "string",
   "portRangeMin": 0,
   "portRangeMax": 0
-  }
+}
 ```
 
 ## 5. Capability-groups
@@ -1801,7 +1798,7 @@ Create one Capability group.
 ```
 Resource URI: /mec/developer/v1/capability-groups/
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |OpenMepCapabilityGroup|entityclass|bodyparam|yes|
 
@@ -1823,9 +1820,9 @@ OpenMepCapabilityGroup
       "apiFileId": "string"
     }
   ]
-  }
+}
 ```
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -1844,7 +1841,7 @@ Example response:
       "apiFileId": "string"
     }
   ]
-  }
+}
 ```
 
 ### 5.2 DELETE one EdgeGalleryCapabilityGroup
@@ -1852,11 +1849,11 @@ Delete one Capability group by id.
 ```
 Resource URI: /mec/developer/v1/capability-groups/{groupId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |groupId|groupid|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 true
@@ -1867,7 +1864,7 @@ Create one EdgeGalleryCapability
 ```
 Resource URI: /mec/developer/v1/capability-groups/{groupId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |OpenMepCapabilityDetail|entityclass|bodyparam|yes|
 |groupId|groupid|pathparam|yes|
@@ -1893,7 +1890,7 @@ OpenMepCapabilityDetail
 }
 ```
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -1920,27 +1917,27 @@ Delete one EdgeGalleryCapability by id
 ```
 Resource URI: /mec/developer/v1/capability-groups/capabilities/{capabilityId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |capabilityId|capabilityid|pathparam|yes|
 |userId|userId|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 true
 ```
 
 ### 5.5 GET all EdgeGalleryCapability
-Gey all EdgeGalleryCapability 
+Get all EdgeGalleryCapability 
 ```
 Resource URI: /mec/developer/v1/capability-groups
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |capabilityId|capabilityid|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 [
@@ -1975,15 +1972,15 @@ Example response:
 ```
 
 ### 5.6 GET all EdgeGalleryCapability by groupid
-Gey all EdgeGalleryCapability by  groupid
+Get all EdgeGalleryCapability by  groupid
 ```
 Resource URI: /mec/developer/v1/capability-groups/{groupId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |groupId|capabilitygroupid|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2016,15 +2013,15 @@ Example response:
 ```
 
 ### 5.7 GET all EdgeGallery API by fileId
-Gey all EdgeGallery  API
+Get all EdgeGallery  API
 ```
 Resource URI: /mec/developer/v1/capability-groups/openmep-api/{fileId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |fileId|file id|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2047,15 +2044,15 @@ Example response:
 ```
 
 ### 5.8 GET all EdgeGallery ECO API
-Gey all EdgeGallery ECO API
+Get all EdgeGallery ECO API
 ```
 Resource URI: /mec/developer/v1/capability-groups/openmepeco-api
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 | | | | |
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2067,19 +2064,19 @@ Example response:
       "apiFileId": "string"
     }
   ]
-  }
+}
 ```
 
 ### 5.9 GET all EdgeGallery API
-Gey all EdgeGallery ECO API
+Get all EdgeGallery ECO API
 ```
 Resource URI: /mec/developer/v1/capability-groups/open-api/{type}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |type|api type|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2124,13 +2121,13 @@ Get one file
 ```
 Resource URI: /mec/developer/v1/files/{fileId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |fileId|fileid|pathparam|yes|
 |userId|theauthoridofuploadfile|requestparam|yes|
 |type|file type|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 binary output
@@ -2141,12 +2138,12 @@ Upload  file
 ```
 Resource URI: /mec/developer/v1/files
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |file|MultipartFileclass|requestpart|yes|
 |userId|theauthoridofuploadfile|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2157,7 +2154,7 @@ Example response:
   "uploadDate": "2020-09-14T09:03:17.084Z",
   "filePath": "string",
   "temp": false
-  }
+}
 ```
 
 ### 6.3 POST upload helm yaml
@@ -2165,13 +2162,13 @@ Upload helm template yaml.
 ```
 Resource URI: /mec/developer/v1/files/helm-template-yaml
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |file|MultipartFileclass|requestpart|yes|
 |userId|theauthoridofuploadfile|requestparam|yes|
 |projectId|projectid|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2190,17 +2187,17 @@ Query helm template yaml.
 ```
 Resource URI: /mec/developer/v1/files/helm-template-yaml
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |userId|theauthoridofuploadfile|requestparam|yes|
 |projectId|projectid|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 [
   {}
-  ]
+]
 ```
 
 ### 6.5 DELETE helm yaml
@@ -2208,11 +2205,11 @@ Delete helm template yaml.
 ```
 Resource URI: /mec/developer/v1/files/helm-template-yaml
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |fileId|fileid|requestparam|yes||
 
-Example response:
+**Example response**
 ```
 200 OK
 "string"
@@ -2223,7 +2220,7 @@ Get sample code.
 ```
 Resource URI: /mec/developer/v1/files/samplecode
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |apiFileIds|apifileid list|body param|yes||
 
@@ -2231,9 +2228,9 @@ Resource URI: /mec/developer/v1/files/samplecode
 List<String>
 [
   "string"
-  ]
+]
 ```
-Example response:
+**Example response**
 ```
 200 OK
 byte array output
@@ -2243,13 +2240,13 @@ Get file return one object
 ```
 Resource URI: /mec/developer/v1/files/api-info/{fileId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |fileId|file id|path param |yes|
 |userId|the author id of upload file|request param |yes|
 
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2268,13 +2265,13 @@ GET sdk code
 ```
 Resource URI: /mec/developer/v1/files/sdk/{fileId}/download/{lan}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |fileId|file id|path param |yes|
 |lan|sdk codeLanguage|path param |yes|
 
 
-Example response:
+**Example response**
 ```
 200 OK
 binary output
@@ -2285,11 +2282,11 @@ GET file content
 ```
 Resource URI: /mec/developer/v1/files/samplecode/get-file-content
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |fileName|file name|request param |yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 String output
@@ -2301,11 +2298,11 @@ POST pkg structure
 ```
 Resource URI: /mec/developer/v1/files/samplecode/get-pkg-structure
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |apiFileIds|file id arrays|body param |yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2326,14 +2323,14 @@ Get one api file
 ```
 Resource URI: /mec/developer/v1/localapi/{fileName}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |fileName|apifilename|pathparam|yes|
 
 ```
 filename: "plugin", "testapp", "hosts", "files", "capability-groups", "projects"
 ```
-Example response:
+**Example response**
 ```
 200 OK
 binary output
@@ -2347,11 +2344,8 @@ Get health
 ```
 Resource URI: /mec/developer/v1/health
 ```
-|Name|Definition|type|Required|
-|-------------|-------------|------------|------------|
-| | | | |
 
-Example response:
+**Example response**
 ```
 200 OK
 string output
@@ -2364,12 +2358,12 @@ Get pkg structure
 ```
 Resource URI: /mec/developer/v1/apprelease/{projectId}/{csarId}/action/get-pkg-structure
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|project id|pathparam|yes|
 |csarId|csar id|pathparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2387,12 +2381,12 @@ Get file content
 ```
 Resource URI: /mec/developer/v1/apprelease/{projectId}/action/get-pkg-content
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|project id|pathparam|yes|
 |fileName|pkg file name|requestparam|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 string output
@@ -2406,12 +2400,12 @@ Get release config
 ```
 Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|project id|pathparam|yes|
 
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2522,7 +2516,7 @@ POST release config
 ```
 Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|project id|pathparam|yes|
 |ReleaseConfig|entityclass|bodyparam|yes|
@@ -2631,7 +2625,7 @@ ReleaseConfig:
   "createTime": "2020-12-29T03:31:13.204Z"
 }
 ```
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2742,7 +2736,7 @@ PUT release config
 ```
 Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|project id|pathparam|yes|
 |ReleaseConfig|entityclass|bodyparam|yes|
@@ -2851,7 +2845,7 @@ ReleaseConfig:
   "createTime": "2020-12-29T03:31:13.204Z"
 }
 ```
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2965,11 +2959,8 @@ Get deploy platform
 ```
 Resource URI: /mec/developer/v1/config/deploy-platform
 ```
-|Name|Definition|type|Required|
-|-------------|-------------|------------|------------|
-| | | | |
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -2983,7 +2974,7 @@ PUT deploy platform
 ```
 Resource URI: /mec/developer/v1/config/deploy-platform
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |DeployPlatformConfig|entityclass|bodyparam|yes|
 
@@ -2994,7 +2985,7 @@ DeployPlatformConfig:
   "virtualMachineUrl": "string"
 }
 ```
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -3006,15 +2997,15 @@ Example response:
 ## 12. Deploy
 API to manipulate deployment files
 ### 12.1 GET deploy yaml
-get deploy yaml
+Get deploy yaml
 ```
 Resource URI: /mec/developer/v1/deploy/{fileId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |fileId|fileId|path param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -3029,16 +3020,16 @@ Example response:
 ```
 
 ### 12.2 PUT deploy yaml
-modify deploy yaml by file id
+Modify deploy yaml by file id
 ```
 Resource URI: /mec/developer/v1/deploy/{fileId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |fileId|fileId|path param|yes|
 |fileContent|file content|body param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -3057,11 +3048,11 @@ Get file content with json format
 ```
 Resource URI: /mec/developer/v1/deploy/{fileId}/action/get-json
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |fileId|fileId|path param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 [
@@ -3070,18 +3061,18 @@ Example response:
 ```
 
 ### 12.4 POST deploy yaml
-upload deploy yaml
+Upload deploy yaml
 ```
 Resource URI: /mec/developer/v1/deploy/{projectId}/action/save-yaml
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |jsonStr|deploy yaml content|body param|yes|
 |userId|userId|request param|yes|
 |projectId|projectId|path param|yes|
 |configType|Fields that distinguish deployment types|request param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -3102,7 +3093,7 @@ GET all capability
 ```
 Resource URI: /mec/developer/v1/system/capability
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |userId|userId|request param|no|
 |twoLevelName|the name of two level name|request param|no|
@@ -3110,7 +3101,7 @@ Resource URI: /mec/developer/v1/system/capability
 |limit|the max count of one page|request param|yes|
 |offset|start index of the page|request param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 [
@@ -3150,11 +3141,11 @@ Example response:
 ```
 
 ### 13.2 POST one capability
-create one capability
+Create one capability
 ```
 Resource URI: /mec/developer/v1/system/capability
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |group|CapabilityGroup|body param|yes|
 
@@ -3195,7 +3186,7 @@ CapabilityGroup
 
 ```
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -3238,23 +3229,23 @@ DELETE one capability
 ```
 Resource URI: /mec/developer/v1/system/capability
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |groupId|groupId|request param|yes|
 
 
-Example response:
+**Example response**
 ```
 200 OK
 boolean output
 ```
 
-### 13.4 GET all host
+### 13.4 GET all system host
 GET all host
 ```
 Resource URI: /mec/developer/v1/system/hosts
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |userId|userId|request param|no|
 |name|the name of host|request param|no|
@@ -3263,7 +3254,7 @@ Resource URI: /mec/developer/v1/system/hosts
 |offset|start index of the page|request param|yes|
 
 
-Example response:
+**Example response**
 ```
 200 OK
 [
@@ -3287,12 +3278,12 @@ Example response:
 ]
 ```
 
-### 13.5 POST one host
-create one host
+### 13.5 POST one system host
+Create one host
 ```
 Resource URI: /mec/developer/v1/system/hosts
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |host|Entity class|body param|yes|
 
@@ -3319,22 +3310,22 @@ MepHost
 ```
 
 
-Example response:
+**Example response**
 ```
 200 OK
 boolean output
 ```
 
-### 13.6 GET one host
+### 13.6 GET one system host
 GET one host
 ```
 Resource URI: /mec/developer/v1/system/hosts/{hostId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |hostId|hostId|path param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -3356,12 +3347,12 @@ Example response:
 }
 ```
 
-### 13.7 PUT one host
-modify one host
+### 13.7 PUT one system host
+Modify one host
 ```
 Resource URI: /mec/developer/v1/system/hosts/{hostId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |hostId|hostId|path param|yes|
 |host|Entity class|body param|yes|
@@ -3387,7 +3378,7 @@ host
 }
 ```
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -3409,16 +3400,16 @@ Example response:
 }
 ```
 
-### 13.8 DELETE one host
+### 13.8 DELETE one system host
 DELETE one host
 ```
 Resource URI: /mec/developer/v1/system/hosts/{hostId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |hostId|hostId|path param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 boolean output
@@ -3429,11 +3420,11 @@ GET capability detail
 ```
 Resource URI: /mec/developer/v1/system/capability/{groupId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |groupId|groupId|path param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -3475,11 +3466,11 @@ GET host log
 ```
 Resource URI: /mec/developer/v1/system/hosts/{hostId}/log
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |hostId|hostId|path param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 [
@@ -3506,11 +3497,11 @@ Example response:
 ## 14. VirtualMachine
 This part is about the api for virtual machine deployment
 ### 14.1 POST one vm
-create one vm
+Create one vm
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm-create
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectId|path param|yes|
 |userId|userId|query param|yes|
@@ -3592,7 +3583,7 @@ vmCreateConfig:
 }
 ```
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -3674,13 +3665,13 @@ DELETE vm config
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectId|path param|yes|
 |vmId|vmId|path param|yes|
 |userId|user id|query param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 boolean output
@@ -3692,12 +3683,12 @@ GET image config
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm/image
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectId|path param|yes|
 |userId|user id|query param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -3724,32 +3715,32 @@ Example response:
 ```
 
 ### 14.4 POST image config
-create image config
+Create image config
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm/image
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectId|path param|yes|
 |userId|user id|query param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 boolean output
 ```
 
 ### 14.5 DELETE image config
-delete image config
+Delete image config
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm/image
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectId|path param|yes|
 |userId|user id|query param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 boolean output
@@ -3760,12 +3751,12 @@ GET image config By ProjectId
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectId|path param|yes|
 |userId|user id|query param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 [
@@ -3849,13 +3840,13 @@ GET csar pkg
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}/package
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectId|path param|yes|
 |userId|user id|query param|yes|
 |vmId|vmId|path param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 binary output
@@ -3866,11 +3857,11 @@ GET vm resources
 ```
 Resource URI: /mec/developer/v1/vmconfig
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 | | | | |
 
-Example response:
+**Example response**
 ```
 200 OK
 {
@@ -3916,14 +3907,14 @@ GET csar pkg
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}/files
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|projectId|path param|yes|
 |userId|user id|query param|yes|
 |vmId|vmId|path param|yes|
 |file|File |formdate param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
 boolean output
@@ -3936,7 +3927,7 @@ POST upload image
 ```
 Resource URI: /mec/appstore/v1/image/upload
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |id|image chunk id|query param|yes|
 |chunkNumber|file chunk Number|query param|yes|
@@ -3950,7 +3941,7 @@ Resource URI: /mec/appstore/v1/image/upload
 |type|file type|query param|yes|
 |file|the file to upload|query param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
   {
@@ -3966,16 +3957,16 @@ Example response:
 ```
 
 ### 15.2 GET merge image 
-after every file chunk uploaded, then merge to a file with same as you uploaded
+After every file chunk uploaded, then merge to a file with same as you uploaded
 ```
 Resource URI: /mec/appstore/v1/image/merge
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |guid|the file id of need to merge|query param|yes|
 |fileName|file name|query param|yes|
 
-Example response:
+**Example response**
 ```
 200 OK
  {

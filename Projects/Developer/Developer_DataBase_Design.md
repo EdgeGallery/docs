@@ -1,9 +1,9 @@
 Developer DataBase Design
 ============
 
-Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。**PostgreSQL**是开源的对象-关系数据库服务器(ORDBMS)，在灵活的BSD许可证下发行。进一步了解PostgreSQL可以点击[这里](https://www.runoob.com/postgresql/postgresql-tutorial.html)。
+Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。**PostgreSQL** 是开源的对象-关系数据库服务器(ORDBMS)，在灵活的BSD许可证下发行。进一步了解PostgreSQL可以点击[这里](https://www.runoob.com/postgresql/postgresql-tutorial.html)。
 
-- tbl_plugin: 存储开发者上传的插件信息，如名字、满意度、插件保存路径等
+- **tbl_plugin** 存储开发者上传的插件信息，如名字、满意度、插件保存路径等
 ```
   CREATE TABLE tbl_plugin (
     	pluginid              varchar(255)       NOT NULL,    --Plugin ID
@@ -27,7 +27,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_downloadrecord: 存储插件的下载记录，一个插件对应对应多条下载记录
+- **tbl_downloadrecord** 存储插件的下载记录，一个插件对应对应多条下载记录
 ```
   CREATE TABLE  tbl_downloadrecord (
        recordid          varchar(255)    NOT NULL,    --Download record ID
@@ -41,7 +41,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_testapp: 存储开发者上传的应用信息，如应用名称，版本等
+- **tbl_testapp** 存储开发者上传的应用信息，如应用名称，版本等
 ```
   CREATE TABLE tbl_testapp (
        appid          varchar(255)    NOT NULL,   --App ID
@@ -59,7 +59,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_testtask: 存储应用的测试任务信息，一个应用对应一个测试任务
+- **tbl_testtask** 存储应用的测试任务信息，一个应用对应一个测试任务
 ```
   CREATE TABLE   tbl_testtask  (
        taskid      varchar(255)    NOT NULL,   --Task ID
@@ -72,7 +72,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_subtaskstatus: 存储应用的测试子任务信息，一个测试主任务对应多条子任务
+- **tbl_subtaskstatus** 存储应用的测试子任务信息，一个测试主任务对应多条子任务
 ```
   CREATE TABLE  tbl_subtaskstatus  (
        executionid      varchar(255)  DEFAULT NULL,   --Execution ID (primary key)
@@ -84,7 +84,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_appfunction: 存储应用的所有亲和力的信息
+- **tbl_appfunction** 存储应用的所有亲和力的信息
 ```
   CREATE TABLE  tbl_appfunction (
        functionid     varchar(255)    NOT NULL,   --Function ID (primary key)
@@ -95,7 +95,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_app_project: 存储开发者在开发者平台自构建的应用项目的信息
+- **tbl_app_project** 存储开发者在开发者平台自构建的应用项目的信息
 ```
   CREATE TABLE  tbl_app_project  (
        id                  varchar(50)   NOT NULL,      --Project ID
@@ -119,7 +119,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_openmep_capability: 存储开发者在开发者平台自构建应用项目时，平台提供的全部能力的信息
+- **tbl_openmep_capability** 存储开发者在开发者平台自构建应用项目时，平台提供的全部能力的信息
 ```
   CREATE TABLE  tbl_openmep_capability  (
        group_id          varchar(50)     NOT NULL,         --Capability group ID
@@ -134,7 +134,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_openmep_capability_detail: 存储开发者在开发者平台自构建应用项目时，平台提供的能力详情（能力所提供的服务）的信息，一个能力对应多个能力详情（服务）
+- **tbl_openmep_capability_detail** 存储开发者在开发者平台自构建应用项目时，平台提供的能力详情（能力所提供的服务）的信息，一个能力对应多个能力详情（服务）
 ```
   CREATE TABLE  tbl_openmep_capability_detail  (
        detail_id      varchar(50)     NOT NULL,       --Capability Details ID
@@ -159,7 +159,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_project_image: 存储开发者在开发者平台对自构建的应用项目进行部署测试时，开发者上传或者填写的镜像信息，一个项目的可以利用不同的镜像构建多次
+- **tbl_project_image** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，开发者上传或者填写的镜像信息，一个项目的可以利用不同的镜像构建多次
 ```
   CREATE TABLE  tbl_project_image  (
        id                 varchar(255)       NOT NULL,           --Mirror ID
@@ -173,7 +173,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_project_test_config: 存储开发者在开发者平台对自构建的应用项目进行部署测试的配置信息，包括镜像、服务器等，一个项目可以多次配置测试项进行部署测试
+- **tbl_project_test_config** 存储开发者在开发者平台对自构建的应用项目进行部署测试的配置信息，包括镜像、服务器等，一个项目可以多次配置测试项进行部署测试
 ```
   CREATE TABLE  tbl_project_test_config  (
        test_id             varchar(50)      NOT NULL,        --Test configuration ID
@@ -199,7 +199,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_service_host: 存储开发者在开发者平台对自构建的应用项目进行部署测试时，可供选择的服务器信息
+- **tbl_service_host** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，可供选择的服务器信息
 ```
   CREATE TABLE  tbl_service_host  (
        host_id           varchar(50)    NOT NULL,        --Server id
@@ -221,7 +221,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_uploaded_file: 存储开发者在开发者平台对自构建的应用项目进行部署测试时，上传的图标、镜像、api等文件信息
+- **tbl_uploaded_file** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，上传的图标、镜像、api等文件信息
 ```
   CREATE TABLE  tbl_uploaded_file  (
        file_id         varchar(50)      NOT NULL,       --File ID
@@ -234,7 +234,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_helm_template_yaml: 存储开发者在开发者平台对自构建的应用项目进行部署测试时，上传的Helm yaml文件信息(目前版本通过yaml部署)，一个项目可以通过不同的yaml文件进行多次部署测试
+- **tbl_helm_template_yaml** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，上传的Helm yaml文件信息(目前版本通过yaml部署)，一个项目可以通过不同的yaml文件进行多次部署测试
 ```
   CREATE TABLE  tbl_helm_template_yaml  (
        file_id            varchar(50)  NOT NULL,      --File ID
@@ -248,7 +248,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
-- tbl_api_emulator: 存储对已部署测试完成的项目，模拟API调用时的配置信息（api模拟调用已从当前版本剔除）
+- **tbl_api_emulator** 存储对已部署测试完成的项目，模拟API调用时的配置信息（api模拟调用已从当前版本剔除）
 ```
   CREATE TABLE  tbl_api_emulator  (
        id            varchar(50)  NOT NULL,  --Simulator ID
@@ -260,7 +260,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
--tbl_host_log： 记录app项目在边缘节点上部署的日志
+- **tbl_host_log** 记录app项目在边缘节点上部署的日志
 ```
    CREATE TABLE IF NOT EXISTS  tbl_host_log  (
        log_id  varchar(50) NOT NULL,               --Log ID
@@ -278,7 +278,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
      
 ```
 
-- tbl_release_config: 存储应用发布对应的配置信息
+- **tbl_release_config** 存储应用发布对应的配置信息
 ```
   CREATE TABLE IF NOT EXISTS tbl_release_config (
          release_id            varchar(255)     NOT NULL,             --Application release id
@@ -293,7 +293,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
   );
 ```
 
--tbl_vm_regulation： 虚机规则，虚机属性说明（虚机部署时提供选择）
+- **tbl_vm_regulation** 虚机规则，虚机属性说明（虚机部署时提供选择）
 ```
   CREATE TABLE IF NOT EXISTS  tbl_vm_regulation  (
        regulation_id  SERIAL,                         --Rule id
@@ -311,7 +311,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
     );
 ```
 
--tbl_vm_network：虚机网络配置
+- **tbl_vm_network** 虚机网络配置
 ```
   CREATE TABLE IF NOT EXISTS  tbl_vm_network  (
        network_type  varchar(50) DEFAULT NULL,    --Network Type
@@ -321,7 +321,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
     );
 ```
 
--tbl_vm_system：虚机系统属性说明
+- **tbl_vm_system** 虚机系统属性说明
 ```
   CREATE TABLE IF NOT EXISTS  tbl_vm_system  (
        system_id  SERIAL,                          --System id
@@ -333,7 +333,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
     );
 ```
 
--tbl_vm_flavor：虚机规格模板说明
+- **tbl_vm_flavor** 虚机规格模板说明
 ```
   CREATE TABLE IF NOT EXISTS  tbl_vm_flavor  (
        architecture  varchar(50) DEFAULT NULL,  --Virtual machine architecture specifications
@@ -342,7 +342,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
     );
 ```
 
--tbl_project_vm_create_config：app项目虚机部署，创建虚机的配置说明
+- **tbl_project_vm_create_config** app项目虚机部署，创建虚机的配置说明
 ```
     CREATE TABLE IF NOT EXISTS  tbl_project_vm_create_config  (
        vm_id   varchar(255) NOT NULL DEFAULT NULL,                 --Virtual machine id
@@ -364,7 +364,7 @@ Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。
     );
 ```
 
--tbl_project_vm_image_config: app项目虚机部署，镜像配置说明
+- **tbl_project_vm_image_config** app项目虚机部署，镜像配置说明
 ```
     CREATE TABLE IF NOT EXISTS  tbl_project_vm_image_config  (
        vm_id   varchar(255) NOT NULL DEFAULT NULL,              --Virtual machine id
