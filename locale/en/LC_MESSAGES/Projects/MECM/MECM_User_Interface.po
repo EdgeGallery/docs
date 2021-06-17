@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_User_Interface.md:7
 msgid "![.](/uploads/images/2020/0924/account-Regisration.png \"account-Regisration.png\")"
-msgstr "![.](/uploads/images/2020/0924/account-Regisration.png \"account-Regisration.png\")"
+msgstr "![.](/uploads/images/2021/usermgmt/UI_Login_en.png \"account-Regisration.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:9
 msgid "Upon successful login the home page is visible with map and nodes in the region."
@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_User_Interface.md:16
 msgid "![.](/uploads/images/2021/cor2020/applcm-registration.png \"applcm-registration.png\")"
-msgstr "![.](/uploads/images/2021/cor2020/applcm-registration.png \"applcm-registration.png\")"
+msgstr "![.](/uploads/images/2021/cor2020/applcm-registration_en.png \"applcm-registration.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:18
 msgid "Need to add Edge node deatils by navigating to Systems -> External System Manager -> EdgeNode.  Then click on New Registration."
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_User_Interface.md:25
 msgid "![.](/uploads/images/2021/cor2020/upload-config.png \"upload-config.png\")"
-msgstr "![.](/uploads/images/2021/cor2020/upload-config.png \"upload-config.png\")"
+msgstr "![.](/uploads/images/2021/cor2020/upload-config_en.png \"upload-config.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:27
 msgid "Now, need to login to the appstore portal and upload the package"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_User_Interface.md:29
 msgid "![.](/uploads/images/2021/cor2020/upload-package.png \"upload-package.png\")"
-msgstr "![.](/uploads/images/2021/cor2020/upload-package.png \"upload-package.png\")"
+msgstr "![.](/uploads/images/2021/cor2020/upload-package_en.png \"upload-package.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:31
 msgid "Nextly, Redirecting to the edge gallery mecm from appstore  navigate to  AppManagement -> Package Management"
@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_User_Interface.md:34
 msgid "![.](/uploads/images/2021/cor2020/distribute-package.png \"distribute-package.png\")"
-msgstr "![.](/uploads/images/2021/cor2020/distribute-package.png \"distribute-package.png\")"
+msgstr "![.](/uploads/images/2021/cor2020/distribute-package_en.png \"distribute-package.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:36
 msgid "Choose the appropriate package and select the Distribute and select required Edge Node."
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_User_Interface.md:38
 msgid "![.](/uploads/images/2021/cor2020/distribute-edge-node.png \"distribute-edge-node.png\")"
-msgstr "![.](/uploads/images/2021/cor2020/distribute-edge-node.png \"distribute-edge-node.png\")"
+msgstr "![.](/uploads/images/2021/cor2020/distribute-edge-node_en.png \"distribute-edge-node.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:40
 msgid "Once Distribution is successfull, then the deploy the application."
@@ -91,5 +91,5 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_User_Interface.md:42
 msgid "![.](/uploads/images/2021/cor2020/deploy.png \"deploy.png\")"
-msgstr "![.](/uploads/images/2021/cor2020/deploy.png \"deploy.png\")"
+msgstr "![.](/uploads/images/2021/cor2020/deploy_en.png \"deploy.png\")"
 
