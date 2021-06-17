@@ -138,22 +138,19 @@ response 201 OK
 response 400 Bad Request
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 403 FORBIDDEN
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 500 INTERNAL ERROR
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 ```
 
@@ -194,22 +191,19 @@ response 200 OK
 response 400 Bad Request
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 403 FORBIDDEN
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 500 INTERNAL ERROR
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 ```
 
@@ -316,22 +310,19 @@ response 200 OK
 response 400 Bad Request
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 403 FORBIDDEN
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 500 INTERNAL SERVER ERROR
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 ```
 
@@ -360,15 +351,13 @@ response 200 OK
 response 400 Bad Request
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 403 FORBIDDEN
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 ```
 
@@ -415,15 +404,13 @@ response 200 OK
 response 400 Bad Request
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 403 FORBIDDEN
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 ```
 
@@ -452,15 +439,13 @@ response 200 OK
 response 400 Bad Request
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 403 FORBIDDEN
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 ```
 
@@ -489,15 +474,13 @@ response 200 OK
 response 400 Bad Request
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 403 FORBIDDEN
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 ```
 
@@ -536,15 +519,13 @@ response 200 OK
 response 400 Bad Request
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 403 FORBIDDEN
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 ```
 
@@ -580,8 +561,7 @@ response 200 OK
 response 417 Expectation Failed
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 ```
@@ -615,15 +595,13 @@ response 200 OK
 response 400 Bad Request
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 
 response 417 Expectation Failed
 {
   "code": 0,
-  "message": "string",
-  "detail": "string"
+  "message": "string"
 }
 ```
 
