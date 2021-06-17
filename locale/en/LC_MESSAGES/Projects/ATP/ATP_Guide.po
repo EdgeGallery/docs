@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-17 18:37+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgid "应用商店测试认证入口"
 msgstr "App Store Test Credentials Portal"
 
 #: ../../Projects/ATP/ATP_Guide.md:31
-msgid "在应用商店首页上传应用包以后，在我的应用中，在对应的应用包右边点击测试，进入应用测试流程。 ![](/uploads/images/2021/cor2020/myApp.PNG \"我的应用.PNG\")"
+msgid "在应用商店首页上传应用包以后，在我的应用中，在对应的应用包右边点击测试，进入应用测试流程。 ![](/uploads/images/2021/cor2020/myApp.png \"我的应用.PNG\")"
 msgstr "After uploading the application package on the application store front page, in my application, click the test on the right side of the corresponding application package and enter the application test flow. ![](/uploads/images/2021/cor2020/myApp_en.PNG \"My application.PNG\")"
 
 #: ../../Projects/ATP/ATP_Guide.md:34

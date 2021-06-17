@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 23:02+0530\n"
+"POT-Creation-Date: 2021-06-17 18:37+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -130,7 +130,7 @@ msgid "Definition"
 msgstr ""
 
 #: ../../Projects/User Management/User_Interfaces.md
-msgid "type"
+msgid "Type"
 msgstr ""
 
 #: ../../Projects/User Management/User_Interfaces.md
@@ -268,6 +268,10 @@ msgstr "the personal password is modified by the original password verification 
 #: ../../Projects/User Management/User_Interfaces.md:162
 msgid "如果用户注册时提供了真实的邮箱地址或手机号（也可以在个人中心填写这两项信息），可以通过邮箱或手机验证码的方式重置密码。需要开启邮件服务或短信服务才能使用。"
 msgstr "If the user registers a real email address or cell phone number (which can also be filled in the personal center), the password can be reset by way of mailbox or mobile phone verification code.An open mail service or short message service is required to use."
+
+#: ../../Projects/User Management/User_Interfaces.md
+msgid "type"
+msgstr ""
 
 #: ../../Projects/User Management/User_Interfaces.md
 msgid "修改密码的类型"

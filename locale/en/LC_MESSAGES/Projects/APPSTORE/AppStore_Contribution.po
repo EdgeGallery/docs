@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-17 18:37+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid "其中AppStore-fe的本地启动依赖于:"
 msgstr "AppStore-fe's local startup relies on:"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:22
-msgid "所以为了搭建本地开发环境，最终的启动顺序为 Service Center -> DataBase -> User Management -> AppStore-be -> Website Gateway(AppStore-fe)"
+msgid "所以为了搭建本地开发环境，最终的启动顺序为 Service Center -> DataBase -> UserManagement -> AppStore-be -> WebsiteGateway(AppStore-fe)"
 msgstr "So to build a local development environment, the final start sequence is Service Center -> DataBase -> User Management -> AppStore-be -> Website Gateway (AppStore-fe)"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:24

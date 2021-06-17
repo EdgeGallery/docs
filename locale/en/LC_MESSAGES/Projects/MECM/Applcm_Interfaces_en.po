@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-07 22:00+0530\n"
+"POT-Creation-Date: 2021-06-17 18:37+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,7 @@ msgstr ""
 msgid "formData"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:19 ../../Projects/MECM/Applcm_Interfaces_en.md:45 ../../Projects/MECM/Applcm_Interfaces_en.md:82 ../../Projects/MECM/Applcm_Interfaces_en.md:102 ../../Projects/MECM/Applcm_Interfaces_en.md:119 ../../Projects/MECM/Applcm_Interfaces_en.md:139 ../../Projects/MECM/Applcm_Interfaces_en.md:159 ../../Projects/MECM/Applcm_Interfaces_en.md:204 ../../Projects/MECM/Applcm_Interfaces_en.md:235 ../../Projects/MECM/Applcm_Interfaces_en.md:252 ../../Projects/MECM/Applcm_Interfaces_en.md:272 ../../Projects/MECM/Applcm_Interfaces_en.md:291 ../../Projects/MECM/Applcm_Interfaces_en.md:310 ../../Projects/MECM/Applcm_Interfaces_en.md:328 ../../Projects/MECM/Applcm_Interfaces_en.md:350 ../../Projects/MECM/Applcm_Interfaces_en.md:367 ../../Projects/MECM/Applcm_Interfaces_en.md:385 ../../Projects/MECM/Applcm_Interfaces_en.md:402 ../../Projects/MECM/Applcm_Interfaces_en.md:419 ../../Projects/MECM/Applcm_Interfaces_en.md:438 ../../Projects/MECM/Applcm_Interfaces_en.md:457 ../../Projects/MECM/Applcm_Interfaces_en.md:476 ../../Projects/MECM/Applcm_Interfaces_en.md:495 ../../Projects/MECM/Applcm_Interfaces_en.md:511 ../../Projects/MECM/Applcm_Interfaces_en.md:526 ../../Projects/MECM/Applcm_Interfaces_en.md:545 ../../Projects/MECM/Applcm_Interfaces_en.md:561 ../../Projects/MECM/Applcm_Interfaces_en.md:576 ../../Projects/MECM/Applcm_Interfaces_en.md:595 ../../Projects/MECM/Applcm_Interfaces_en.md:617 ../../Projects/MECM/Applcm_Interfaces_en.md:639 ../../Projects/MECM/Applcm_Interfaces_en.md:661 ../../Projects/MECM/Applcm_Interfaces_en.md:684 ../../Projects/MECM/Applcm_Interfaces_en.md:703
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:19 ../../Projects/MECM/Applcm_Interfaces_en.md:45 ../../Projects/MECM/Applcm_Interfaces_en.md:82 ../../Projects/MECM/Applcm_Interfaces_en.md:102 ../../Projects/MECM/Applcm_Interfaces_en.md:119 ../../Projects/MECM/Applcm_Interfaces_en.md:139 ../../Projects/MECM/Applcm_Interfaces_en.md:159 ../../Projects/MECM/Applcm_Interfaces_en.md:204 ../../Projects/MECM/Applcm_Interfaces_en.md:235 ../../Projects/MECM/Applcm_Interfaces_en.md:252 ../../Projects/MECM/Applcm_Interfaces_en.md:272 ../../Projects/MECM/Applcm_Interfaces_en.md:291 ../../Projects/MECM/Applcm_Interfaces_en.md:310 ../../Projects/MECM/Applcm_Interfaces_en.md:328 ../../Projects/MECM/Applcm_Interfaces_en.md:350 ../../Projects/MECM/Applcm_Interfaces_en.md:367 ../../Projects/MECM/Applcm_Interfaces_en.md:385 ../../Projects/MECM/Applcm_Interfaces_en.md:402 ../../Projects/MECM/Applcm_Interfaces_en.md:419 ../../Projects/MECM/Applcm_Interfaces_en.md:438 ../../Projects/MECM/Applcm_Interfaces_en.md:457 ../../Projects/MECM/Applcm_Interfaces_en.md:476 ../../Projects/MECM/Applcm_Interfaces_en.md:495 ../../Projects/MECM/Applcm_Interfaces_en.md:511 ../../Projects/MECM/Applcm_Interfaces_en.md:526 ../../Projects/MECM/Applcm_Interfaces_en.md:545 ../../Projects/MECM/Applcm_Interfaces_en.md:561 ../../Projects/MECM/Applcm_Interfaces_en.md:576 ../../Projects/MECM/Applcm_Interfaces_en.md:595 ../../Projects/MECM/Applcm_Interfaces_en.md:617 ../../Projects/MECM/Applcm_Interfaces_en.md:639 ../../Projects/MECM/Applcm_Interfaces_en.md:661 ../../Projects/MECM/Applcm_Interfaces_en.md:684 ../../Projects/MECM/Applcm_Interfaces_en.md:700
 msgid "Example response:"
 msgstr ""
 
@@ -453,10 +453,15 @@ msgstr ""
 msgid "Get Services"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:750 ../../Projects/MECM/Applcm_Interfaces_en.md:751
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:747 ../../Projects/MECM/Applcm_Interfaces_en.md:748
 msgid "Get Kong Logs"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:777 ../../Projects/MECM/Applcm_Interfaces_en.md:778
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:754
+msgid "|Name|Definition|Type|Required|Allowed|Max Length|"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:772 ../../Projects/MECM/Applcm_Interfaces_en.md:773
 msgid "Get Subscribe Statistic"
 msgstr ""
+
