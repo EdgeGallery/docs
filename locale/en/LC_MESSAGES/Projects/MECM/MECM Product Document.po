@@ -61,10 +61,6 @@ msgstr "![](/uploads/images/2021/mecm/3_en.png) ![](/uploads/images/2021/mecm/5_
 msgid "1.2 MEP详情：点击管理按钮，跳转至MEP详情界面"
 msgstr "1.2 MEP Details: Hit Management button, Jump to MEP Details interface"
 
-#: ../../Projects/MECM/MECM Document.md:21 Product
-msgid "![](/uploads/images/2021/mecm/7.png)"
-msgstr "![](/uploads/images/2021/mecm/25_en.png)"
-
 #: ../../Projects/MECM/MECM Document.md:22 Product
 msgid "2. 应用管理：应用包管理，应用实例管理"
 msgstr "2.Application management: application package management, application instance management"
@@ -103,7 +99,7 @@ msgstr "4.1 APPLCM Registration"
 
 #: ../../Projects/MECM/MECM Document.md:49 Product
 msgid "![](/uploads/images/2021/mecm/23.png)"
-msgstr "![](/uploads/images/2021/mecm/25_en.png)"
+msgstr "![](/uploads/images/2021/mecm/23_24_en.png)"
 
 #: ../../Projects/MECM/MECM Document.md:50 Product
 msgid "4.2 APP Rule MGR注册"
@@ -111,7 +107,7 @@ msgstr "4.2 APP Rule MGR Registration"
 
 #: ../../Projects/MECM/MECM Document.md:51 Product
 msgid "![](/uploads/images/2021/mecm/24.png)"
-msgstr "![](/uploads/images/2021/mecm/25_en.png)"
+msgstr "![](/uploads/images/2021/mecm/23_24_en.png)"
 
 #: ../../Projects/MECM/MECM Document.md:52 Product
 msgid "4.4 应用仓库注册"
