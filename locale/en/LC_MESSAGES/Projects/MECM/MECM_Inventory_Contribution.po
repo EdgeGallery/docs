@@ -19,43 +19,43 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:1
 msgid "Contribution to Inventory"
-msgstr "Contribution to Inventory"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:4
 msgid "This section provides details on how to participate/contribute to the inventory project."
-msgstr "This section provides details on how to participate/contribute to the inventory project."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:6
 msgid "Build local development environment"
-msgstr "Build local development environment"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:8
 msgid "This section will guide developers to build Inventory module locally and help developers to quickly understand and  develop  code"
-msgstr "This section will guide developers to build Inventory module locally and help developers to quickly under and develop code"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:12
 msgid "The local startup of Inventory depends on："
-msgstr "The local startup of Inventory depends on:"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:17
 msgid "In order to build a local environment, the final startup sequence is [Mecm-Prerequisite](MECM_Prerequisite.md) -> DataBase -> Inventory"
-msgstr "In order to build a local environment, the final startup sequence is [Mecm-Prerequisite](MECM_Prerequisite.md)-> DataBase -> Inventory"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:19
 msgid "DataBase"
-msgstr "DataBase"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:21
 msgid "Download and install postgres 12.3 database"
-msgstr "Download and install postgres 12.3 database"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:23
 msgid "Set login name and password, such as inventory"
-msgstr "Set login name and password, such as inventory"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:25
 msgid "Create a database named inventorydb"
-msgstr "Create a database named inventorydb"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:27
 msgid "![](/uploads/images/2021/cor2020/inventory-db.png \"inventory-db.png\")"
@@ -63,7 +63,7 @@ msgstr "![](/uploads/images/2021/cor2020/inventory-db_en.png \"inventory-db.png\
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:29
 msgid "Inventory"
-msgstr "Inventory"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:31
 msgid "Download [Inventory Code](https://gitee.com/edgegallery/mecm-inventory/)"
@@ -71,7 +71,7 @@ msgstr "Download [Inventory Code](https://gitee.com/edgegallery/mecm-inventory/)
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:33
 msgid "Configure the runtime environment variables (using IDEA as an example)"
-msgstr "Configure the runtime environment variables (using IDEA as an example)"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:35
 msgid "![](/uploads/images/2021/cor2020/inventory.png \"inventory.png\")"
@@ -79,7 +79,7 @@ msgstr "![](/uploads/images/2021/cor2020/inventory_en.png \"inventory.png\")"
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:37
 msgid "Update key-store and trust-store path in application.yaml"
-msgstr "Update key-store and trust-store path in application.yaml"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:39
 msgid "![](/uploads/images/2021/cor2020/key-store.png \"key-store.png\")"
@@ -87,5 +87,5 @@ msgstr "![](/uploads/images/2021/cor2020/key-store_en.png \"key-store.png\")"
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:41
 msgid "Run InventoryApplication to start inventory"
-msgstr "Run InventoryApplication to start inventory"
+msgstr ""
 

@@ -19,101 +19,101 @@ msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md:1
 msgid "Image Interfaces"
-msgstr "Image Interfaces"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md:3
 msgid "The document is for the Image Interfaces."
-msgstr "The document is for the Image Interfaces."
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md:5
 msgid "Create Image"
-msgstr "Create Image"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md:7
 msgid "creation of image"
-msgstr "creation of image"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "Field"
-msgstr "Field"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "Type"
-msgstr "Type"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "Label"
-msgstr "Label"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "accessToken"
-msgstr "accessToken"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "string"
-msgstr "string"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "required"
-msgstr "required"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "Provide the required access token"
-msgstr "Provide the required access token"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "appInstanceId"
-msgstr "appInstanceId"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "Valid UUID"
-msgstr "Valid UUID"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "tenantId"
-msgstr "tenantId"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "path"
-msgstr "path"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md:14
 msgid "Delete Image"
-msgstr "Delete Image"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md:16
 msgid "deletion of image"
-msgstr "deleave of image"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "imageId"
-msgstr "imageId"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md:24
 msgid "Query Image"
-msgstr "Query Image"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md:26
 msgid "query of image"
-msgstr "query of image"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md:34
 msgid "Download Image file"
-msgstr "Download Image file"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md:36
 msgid "download a specific chunk of image file"
-msgstr "download a specific chunk of image file"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "chunk_num"
-msgstr "chunk_num"
+msgstr ""
 
 #: ../../Projects/MECM/Images_Interfaces.md
 msgid "Provide the required chunk_num"
-msgstr "Provide the required chunk_num"
+msgstr ""
 

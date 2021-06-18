@@ -39,7 +39,7 @@ Please modify the default password before deployment
 
 初始值：
 ```sql
- id | platform  |  role  
+ id | platform  |  role
 ----+-----------+--------
   1 | APPSTORE  | GUEST
   2 | APPSTORE  | TENANT

@@ -10,7 +10,7 @@ Retrieves application instances information
 Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |tenant_id|tenant id|path|yes|Valid UUID|64|
@@ -39,7 +39,7 @@ Retrieves application instance information
 Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_id}
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appInstance_id|application instance id|path|yes|Valid UUID|64|
@@ -68,7 +68,7 @@ Creates App Instance
 Resource URI: /appo/v1/tenants/{tenant_id}/app_instances
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
 |appInstanceDescription|appInstanceDescription|RequestPart|yes|Valid UUID|64|
@@ -111,7 +111,7 @@ Retrieves application instance information
 Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
 |app_instance_id|application instance id|header|yes|Valid UUID|64|
@@ -139,7 +139,7 @@ Instantiate application instance.
 Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |app_instance_id |application instance id|path   |yes|Valid UUID|64|
@@ -175,7 +175,7 @@ Terminates application instance.
 Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/{app_instance_id}
 Method: DELETE
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access_token|header |yes|Jwt token|
 |app_instance_id |application instance id|path |yes|Valid UUID|64|
@@ -196,7 +196,7 @@ Retrieves edge host performance statistics
 Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/kpi
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
 |host_ip|edge host ip|path|yes|Valid IP|15|
@@ -226,7 +226,7 @@ Retrieves edge host performance statistics
 Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
 |host_ip|edge host ip|path|yes|Valid IP|15|
@@ -271,7 +271,7 @@ Retrieves edge host performance statistics based on capability id
 Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/mep_capabilities/{capability_id}
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
 |host_ip|edge host ip|path|yes|Valid IP|15|
@@ -303,7 +303,7 @@ Batch create application instances.
 Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_create
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |tenant_id|tenant id|path |yes|Valid UUID|64|
@@ -357,7 +357,7 @@ Batch instantiate application instances.
 Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_instantiate
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |tenant_id|tenant id|path |yes|Valid UUID|64|
@@ -408,7 +408,7 @@ Batch terminates application instances.
 Resource URI: /appo/v1/tenants/{tenant_id}/app_instances/batch_terminate
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |tenant_id|tenant id|path |yes|Valid UUID|64|
@@ -448,7 +448,7 @@ Batch Query information
 Resource URI: /appo/v1/tenants/{tenant_id}/app_instance_infos/{appInstance_ids}
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appInstance_ids|application instance id|header|yes|Valid UUID|64|
@@ -477,7 +477,7 @@ Retrieves data for liveness & readiness
 Resource URI: /appo/v1/health
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 
@@ -492,7 +492,7 @@ Configures the app rule
 Resource URI:  /appo/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appInstance_id|application instance id|path|yes|Valid UUID|64|
@@ -591,7 +591,7 @@ Update the app rule
 Resource URI:  /appo/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
 Method: PUT
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appInstance_id|application instance id|path|yes|Valid UUID|64|
@@ -690,7 +690,7 @@ Deletes the existing app rule
 Resource URI:  /appo/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
 Method: DELETE
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appInstance_id|application instance id|path|yes|Valid UUID|64|
@@ -722,7 +722,7 @@ Queries app rule config status
 Resource URI: /appo/v1/tenants/{{tenant-id}}/apprule_task_infos/{apprule_task_id}
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appInstance_id|application instance id|path|yes|Valid UUID|64|
@@ -752,7 +752,7 @@ Synchronizes application instance info from all edge
 Resource URI: /appo/v1/tenants/{{tenant-id}}/app_instance_infos/sync
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |tenant_id|tenant id|path|yes|Valid UUID|64|

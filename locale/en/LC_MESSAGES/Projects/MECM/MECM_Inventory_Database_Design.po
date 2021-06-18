@@ -19,25 +19,25 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Database_Design.md:1
 msgid "Inventory Database Design"
-msgstr "Inventory Database Design"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Database_Design.md:3
 msgid "The Inventory database uses an open source PostgreSQL database, and the recommended version is 12.3."
-msgstr "The Inventory database uses an open source PostgreSQL database, and the recommended version is 12.3."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Database_Design.md:5
 msgid "applcminventory: Store applcm information, such as applcm_id, tenant_id, applcm_ip and applcm_port."
-msgstr "applcminventory: Store applcm information, such as applcm_id, tenant_id, applcm_ip and applcm_port."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Database_Design.md:18
 msgid "appstoreinventory: Store app store distribution information, such as appstore_id, appstore_ip , appstore_port."
-msgstr "appstoreinventory: Store app store distribution information, such as appstore_id, appstore_ip, appstore_port."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Database_Design.md:35
 msgid "mechostinventory: Store MEC host information, such as mechost_id, mechost_ip, applcm_ip, zip_code, city."
-msgstr "mechostinventory: Store MEC host information, such as mechost_id, mechost_ip, applcm_ip, zip_code, city."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Database_Design.md:59
 msgid "tenantinventory: Store tenant information, such as tenant_id."
-msgstr "tenantinventory: Store tenant information, such as tenant_id."
+msgstr ""
 

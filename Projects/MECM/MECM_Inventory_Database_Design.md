@@ -13,7 +13,7 @@ The Inventory database uses an open source PostgreSQL database, and the recommen
         created_time varchar(200),
         modified_time varchar(200),
         primary key (applcm_id)
-    );        
+    );
 ```
 - appstoreinventory: Store app store distribution information, such as appstore_id, appstore_ip
 , appstore_port.

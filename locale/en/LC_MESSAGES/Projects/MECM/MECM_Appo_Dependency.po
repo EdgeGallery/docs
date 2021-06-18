@@ -19,1533 +19,1533 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md:1
 msgid "rely"
-msgstr "rely"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md:4
 msgid "Appo Third-Party Use List"
-msgstr "Appo Third-Party Use List"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "groupId"
-msgstr "groupId"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "artifactId"
-msgstr "artifactId"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "version"
-msgstr "version"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "license"
-msgstr "license"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "direct import (Y/N)"
-msgstr "direct import (Y/N)"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.camunda.bpm.springboot"
-msgstr "org.camunda.bpm.springboot"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-bpm-spring-boot-starter-webapp"
-msgstr "camunda-bpm-spring-boot-starter-webapp"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "3.4.0"
-msgstr "3.4.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Apache License, Version 2.0"
-msgstr "Apache License, Version 2.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Y"
-msgstr "Y"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-bpm-spring-boot-starter-webapp-core"
-msgstr "camunda-bpm-spring-boot-starter-webapp-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "The Apache Software License, Version 2.0"
-msgstr "The Apache Software License, Version 2.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "N"
-msgstr "N"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-bpm-spring-boot-starter"
-msgstr "camunda-bpm-spring-boot-starter"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.camunda.bpm"
-msgstr "org.camunda.bpm"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-engine-spring"
-msgstr "camunda-engine-spring"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "7.12.0"
-msgstr "7.12.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-engine"
-msgstr "camunda-engine"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.camunda.bpm.model"
-msgstr "org.camunda.bpm.model"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-bpmn-model"
-msgstr "camunda-bpmn-model"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-xml-model"
-msgstr "camunda-xml-model"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-cmmn-model"
-msgstr "camunda-cmmn-model"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.camunda.bpm.dmn"
-msgstr "org.camunda.bpm.dmn"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-engine-dmn"
-msgstr "camunda-engine-dmn"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.camunda.commons"
-msgstr "org.camunda.commons"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-commons-utils"
-msgstr "camunda-commons-utils"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.8.2"
-msgstr "1.8.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-dmn-model"
-msgstr "camunda-dmn-model"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-engine-feel-api"
-msgstr "camunda-engine-feat-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-engine-feel-juel"
-msgstr "camunda-engine-feel-juel"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-commons-logging"
-msgstr "camunda-commons-logging"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-commons-typed-values"
-msgstr "camunda-commons-typed-values"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.mybatis"
-msgstr "org.mybatis"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "mybatis"
-msgstr "mybatis"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "3.4.4"
-msgstr "3.4.4"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "joda-time"
-msgstr "joda-time"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.1"
-msgstr "2.1"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Apache 2"
-msgstr "Apache 2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "commons-dbcp"
-msgstr "commons-dbcp"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.4"
-msgstr "1.4"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "commons-pool"
-msgstr "commons-pool"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.6"
-msgstr "1.6"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.apache.commons"
-msgstr "org.apache.commons"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "commons-lang3"
-msgstr "commons-lang3"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "3.10"
-msgstr "3.10"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.fasterxml.uuid"
-msgstr "com.fasterxml.uuid"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "java-uuid-generator"
-msgstr "java-uuid-generator"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "3.2.0"
-msgstr "3.2.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.camunda.bpm.webapp"
-msgstr "org.camunda.bpm.webapp"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-webapp"
-msgstr "camunda-webapp"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-engine-rest-jaxrs2"
-msgstr "camunda-engine-rest-jaxrs2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "commons-fileupload"
-msgstr "commons-fileupload"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.3.3"
-msgstr "1.3.3"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.fasterxml.jackson.jaxrs"
-msgstr "com.fasterxml.jackson.jaxrs"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jackson-jaxrs-json-provider"
-msgstr "jackson-jaxrs-json-provider"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.11.2"
-msgstr "2.11.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jackson-jaxrs-base"
-msgstr "jackson-jaxrs-base"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.fasterxml.jackson.module"
-msgstr "com.fasterxml.jackson.module"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jackson-module-jaxb-annotations"
-msgstr "jackson-module-jaxb-annotations"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "commons-io"
-msgstr "commons-io"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.0.1"
-msgstr "2.0.1"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.springframework.boot"
-msgstr "org.springframework.boot"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-starter-web"
-msgstr "spring-boot-starter-web"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.3.3.RELEASE"
-msgstr "2.3.3.RELEASE"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-starter-json"
-msgstr "spring-boot-starter-json"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.fasterxml.jackson.datatype"
-msgstr "com.fastxml.jackson.datatype"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jackson-datatype-jdk8"
-msgstr "jackson-datatype-jdk8"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jackson-datatype-jsr310"
-msgstr "jackson-datatype-jsr310"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jackson-module-parameter-names"
-msgstr "jackson-module-parameter-names"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-starter-tomcat"
-msgstr "spring-boot-starter-tomcat"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.apache.tomcat.embed"
-msgstr "org.apache.tomcat.embed"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "tomcat-embed-core"
-msgstr "tomcat-embed-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "9.0.37"
-msgstr "9.0.37"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "tomcat-embed-websocket"
-msgstr "tomcat-embed-websocket"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-starter-jersey"
-msgstr "spring-boot-starter-jersey"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.glassfish.jersey.core"
-msgstr "org.glassfish.jersey.core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jersey-server"
-msgstr "jersey-server"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.30.1"
-msgstr "2.30.1"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Apache License, 2.0,The GNU General Public License (GPL), Version 2,EPL 2.0,Modified BSD"
-msgstr "Apache License, 2.0,The GNU General Public License (GPL), Version 2,EPL 2.0,Modified BSD"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jersey-common"
-msgstr "jersey-common"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Apache License, 2.0,EPL 2.0,The GNU General Public License (GPL), Version 2,Public Domain"
-msgstr "Apache License, 2.0,EPL 2.0,The GNU General Public License (GPL), Version 2,Public Domain"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.glassfish.hk2"
-msgstr "org.galassfish.hk2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "osgi-resource-locator"
-msgstr "osgi-resource-locator"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.0.3"
-msgstr "1.0.3"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "EPL 2.0,GPL2 w/ CPE"
-msgstr "EPL 2.0,GPL2 w/ CPE"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jersey-client"
-msgstr "jersey-client"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Apache License, 2.0,EPL 2.0,W3C license,GPL2 w/ CPE,EDL 1.0,Public Domain,jQuery license,Modified BSD,MIT license,BSD 2-Clause"
-msgstr "Apache License, 2.0,EPL 2.0,W3C license,GPL2 w/ CPE,EDL 1.0,Public Domain,jQuery license,Modified BSD,MIT license,BSD 2-Clause"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.ws.rs"
-msgstr "jakarta.ws.rs"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.ws.rs-api"
-msgstr "jakarta.ws.rs-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.1.6"
-msgstr "2.1.6"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.glassfish.jersey.media"
-msgstr "org.glassfish.jersey.media"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jersey-media-jaxb"
-msgstr "jersey-media-jaxb"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Apache License, 2.0,EPL 2.0,W3C license,GPL2 w/ CPE,EDL 1.0,Public Domain,jQuery license,Modified BSD,BSD 2-Clause,MIT license"
-msgstr "Apache License, 2.0,EPL 2.0,W3C license,GPL2 w/ CPE,EDL 1.0,Public Domain,jQuery license,Modified BSD,BSD 2-Clause,MIT license"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.glassfish.hk2.external"
-msgstr "org.glassfish.hk2.external"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.inject"
-msgstr "jakarta.inject"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.6.1"
-msgstr "2.6.1"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.glassfish.jersey.containers"
-msgstr "org.glassfish.jersey.containers"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jersey-container-servlet-core"
-msgstr "jersey-container-servlet-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jersey-container-servlet"
-msgstr "jersey-container-servlet"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.glassfish.jersey.ext"
-msgstr "org.galassfish.jersey.ext"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jersey-bean-validation"
-msgstr "jersey-bean-validation"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jersey-spring5"
-msgstr "jersey-spring5"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.glassfish.jersey.inject"
-msgstr "org.galassfish.jersey.inject"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jersey-hk2"
-msgstr "jersey-hk2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.glassfish.hk2`"
-msgstr "org.glassfish.hk2 `"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "hk2`-locator"
-msgstr "hk2`-locator"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "aopalliance-repackaged"
-msgstr "aopalliance-repackaged"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "hk2"
-msgstr "hk2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "hk2-utils"
-msgstr "hk2-utils"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "hk2-api"
-msgstr "hk2-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "hk2-core"
-msgstr "hk2-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "hk2-runlevel"
-msgstr "hk2-runlevel"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "class-model"
-msgstr "class-model"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.ow2.asm"
-msgstr "org.ow2.asm"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "asm-analysis"
-msgstr "asm-analysis"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "7.1"
-msgstr "7.1"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "BSD"
-msgstr "BSD"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "asm-commons"
-msgstr "asm-commons"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "asm-tree"
-msgstr "asm-tree"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "asm-util"
-msgstr "asm-util"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-bridge"
-msgstr "spring-bridge"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jersey-media-json-jackson"
-msgstr "jersey-media-json-jackson"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Apache License, 2.0,EPL 2.0,The GNU General Public License (GPL), Version 2"
-msgstr "Apache License, 2.0,EPL 2.0,The GNU General Public License (GPL), Version 2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jersey-entity-filtering"
-msgstr "jersey-entity-filtering"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "camunda-webapp-webjar"
-msgstr "camunda-webapp-webjar"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.h2database"
-msgstr "com.h2database"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "h2"
-msgstr "h2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.4.190"
-msgstr "1.4.190"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.yaml"
-msgstr "org.yaml"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "snakeyaml"
-msgstr "snakeyaml"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.26"
-msgstr "1.26"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-starter-test"
-msgstr "sparing-boot-starter-test"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-starter"
-msgstr "spiring-boot-starter"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.annotation"
-msgstr "jakarta.annotation"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.annotation-api"
-msgstr "jakarta.annotation-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.3.5"
-msgstr "1.3.5"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-test"
-msgstr "spring-boot-test"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-test-autoconfigure"
-msgstr "spring-boot-test-autoconfigure"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.jayway.jsonpath"
-msgstr "com.jayway.jsonpath"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "json-path"
-msgstr "json-path"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.4.0"
-msgstr "2.4.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "net.minidev"
-msgstr "net.minidev"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "json-smart"
-msgstr "json-smart"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.3"
-msgstr "2.3"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "accessors-smart"
-msgstr "accessors-smart"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.2"
-msgstr "1.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "asm"
-msgstr "asm"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "5.0.4"
-msgstr "5.0.4"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.xml.bind"
-msgstr "jakarta.xml.bind"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.xml.bind-api"
-msgstr "jakarta.xml.bin-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.3.3"
-msgstr "2.3.3"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Eclipse Distribution License - v 1.0"
-msgstr "Eclipse Distribution License - v 1.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.activation"
-msgstr "jakarta.activation"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.activation-api"
-msgstr "jakarta.activation-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.2.2"
-msgstr "1.2.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "EDL 1.0"
-msgstr "EDL 1.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.assertj"
-msgstr "org.assertj"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "assertj-core"
-msgstr "assertj-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "3.16.1"
-msgstr "3.16.1"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.hamcrest"
-msgstr "org.hamcrest"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "hamcrest"
-msgstr "hamcrest"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.2"
-msgstr "2.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "BSD License 3"
-msgstr "BSD License 3"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.junit.jupiter"
-msgstr "org.junit.jupiter"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "junit-jupiter"
-msgstr "junit-jupiter"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "5.6.2"
-msgstr "5.6.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Eclipse Public License v2.0"
-msgstr "Eclipse Public License v2.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "junit-jupiter-api"
-msgstr "junit-jupiter-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.opentest4j"
-msgstr "org.opentest4j"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "opentest4j"
-msgstr "opentest4j"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.2.0"
-msgstr "1.2.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "The Apache License, Version 2.0"
-msgstr "The Apache License, Version 2.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.junit.platform"
-msgstr "org.junit.platform"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "junit-platform-commons"
-msgstr "junit-platform-commons"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.6.2"
-msgstr "1.6.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "junit-jupiter-params"
-msgstr "junit-jupiter-params"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "junit-jupiter-engine"
-msgstr "junit-jupiter-engine"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.junit.vintage"
-msgstr "org.junit.vintage"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "junit-vintage-engine"
-msgstr "junit-vintage-engine"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.apiguardian"
-msgstr "org.apiguardian"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "apiguardian-api"
-msgstr "apiguardian-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.1.0"
-msgstr "1.1.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "junit-platform-engine"
-msgstr "junit-platform-engine"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "junit"
-msgstr "junit"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "4.13"
-msgstr "4.13"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.mockito"
-msgstr "org.mockito"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "mockito-core"
-msgstr "mockito-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "3.3.3"
-msgstr "3.3.3"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "net.bytebuddy"
-msgstr "net.bytebuddy"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "byte-buddy"
-msgstr "byte-buddy"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.10.14"
-msgstr "1.10.14"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "byte-buddy-agent"
-msgstr "byte-buddy-agent"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.objenesis"
-msgstr "org.objenesis"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "objenesis"
-msgstr "objenesis"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.6"
-msgstr "2.6"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "mockito-junit-jupiter"
-msgstr "mockito-junit-jupiter"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "The MIT License"
-msgstr "The MIT License"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.skyscreamer"
-msgstr "org.skyscreamer"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jsonassert"
-msgstr "jsonassert"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.5.0"
-msgstr "1.5.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.vaadin.external.google"
-msgstr "com.vaadin.external.google"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "android-json"
-msgstr "android-json"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "0.0.20131108.vaadin1"
-msgstr "0.0.20131108.vaadin1"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.springframework"
-msgstr "org.springframework"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-core"
-msgstr "spring-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "5.2.8.RELEASE"
-msgstr "5.2.8.RELEASE"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-jcl"
-msgstr "spring-jcl"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-test"
-msgstr "spring-test"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.xmlunit"
-msgstr "org.xmlunit"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "xmlunit-core"
-msgstr "xmlunit-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.7.0"
-msgstr "2.7.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-starter-jdbc"
-msgstr "spiring-boot-starter-jdbc"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.zaxxer"
-msgstr "com.zaxxer"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "HikariCP"
-msgstr "HikariCP"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "3.4.5"
-msgstr "3.4.5"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-jdbc"
-msgstr "spring-jdbc"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-tx"
-msgstr "spring-tx"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.apache.logging.log4j"
-msgstr "org.apache.logging.log4j"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "log4j-core"
-msgstr "log4j-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.13.2"
-msgstr "2.13.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "log4j-api"
-msgstr "log4j-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "log4j-slf4j-impl"
-msgstr "log4j-slf4j-impl"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.slf4j"
-msgstr "org.slf4j"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "slf4j-api"
-msgstr "slf4j-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.7.30"
-msgstr "1.7.30"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "MIT License"
-msgstr "MIT License"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "log4j-jcl"
-msgstr "log4j-jcl"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "commons-logging"
-msgstr "commons-logging"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.springframework.security"
-msgstr "org.springframework.security"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-security-core"
-msgstr "spring-security-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "5.3.4.RELEASE"
-msgstr "5.3.4.RELEASE"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-aop"
-msgstr "spring-aop"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-beans"
-msgstr "spring-beans"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-context"
-msgstr "spring-context"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-expression"
-msgstr "spring-expression"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-security-web"
-msgstr "spring-security-web"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-web"
-msgstr "spring-web"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-security-config"
-msgstr "spring-security-config"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.springframework.security.oauth.boot"
-msgstr "org.springframework.security.oauth.boot"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-security-oauth2-autoconfigure"
-msgstr "spring-security-oauth2-autogonfigure"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.2.2.RELEASE"
-msgstr "2.2.2.RELEASE"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.fasterxml.jackson.core"
-msgstr "com.fasterxml.jackson.core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jackson-annotations"
-msgstr "jackson-annotations"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jackson-databind"
-msgstr "jackson-databind"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jackson-core"
-msgstr "jackson-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "javax.xml.bind"
-msgstr "javax.xml.bind"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jaxb-api"
-msgstr "jaxb-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.3.1"
-msgstr "2.3.1"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "CDDL 1.1,GPL2 w/ CPE"
-msgstr "CDDL 1.1,GPL2 w/ CPE"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "javax.activation"
-msgstr "javax.activation"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "javax.activation-api"
-msgstr "javax.activation-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot"
-msgstr "spring-boot"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-autoconfigure"
-msgstr "spring-boot-autoconfigure"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.springframework.security.oauth"
-msgstr "org.springframework.security.oauth"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-security-oauth2"
-msgstr "spring-security-oauth2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.3.8.RELEASE"
-msgstr "2.3.8.RELEASE"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-webmvc"
-msgstr "spring-webmvc"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-security-jwt"
-msgstr "spring-security-jwt"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.0.11.RELEASE"
-msgstr "1.0.11.RELEASE"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.bouncycastle"
-msgstr "org.bouncycastle"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "bcpkix-jdk15on"
-msgstr "bcpkix-jdk15on"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.64"
-msgstr "1.64"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Bouncy Castle Licence"
-msgstr "Bouncy Castle Licence"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "bcprov-jdk15on"
-msgstr "bcprov-jdk15on"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.glassfish.jaxb"
-msgstr "org.glassfish.jaxb"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jaxb-runtime"
-msgstr "jaxb-runtime"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "txw2"
-msgstr "txw2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.sun.istack"
-msgstr "com.sun.istack"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "istack-commons-runtime"
-msgstr "istack-commons-runtime"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "3.0.11"
-msgstr "3.0.11"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.sun.activation"
-msgstr "com.sun.activation"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-starter-validation"
-msgstr "spring-boot-starter-validation"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.glassfish"
-msgstr "org.glassfish"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.el"
-msgstr "jakarta.el"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "3.0.3"
-msgstr "3.0.3"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.hibernate.validator"
-msgstr "org.hibernate.validator"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "hibernate-validator"
-msgstr "hibernate-validator"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "6.1.5.Final"
-msgstr "6.1.5.Final"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Apache License 2.0"
-msgstr "Apache License 2.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.validation"
-msgstr "jakarta.validation"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.validation-api"
-msgstr "jakarta.validation-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.0.2"
-msgstr "2.0.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.jboss.logging"
-msgstr "org.jboss.logging"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jboss-logging"
-msgstr "jboss-logging"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "3.4.1.Final"
-msgstr "3.4.1.Final"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Apache License, version 2.0"
-msgstr "Apache License, version 2.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "commons-collections4"
-msgstr "commons-collections4"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "4.4"
-msgstr "4.4"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.google.code.gson"
-msgstr "com.google.code.gson"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "gson"
-msgstr "gson"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.8.2"
-msgstr "2.8.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "io.springfox"
-msgstr "io.springfox"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "springfox-swagger2"
-msgstr "springfox-swagger2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.9.2"
-msgstr "2.9.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "io.swagger"
-msgstr "io.swagger"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "swagger-annotations"
-msgstr "swagger-annotations"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.5.20"
-msgstr "1.5.20"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "swagger-models"
-msgstr "swagger-models"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "springfox-spi"
-msgstr "springfox-spi"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "springfox-core"
-msgstr "springfox-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "springfox-schema"
-msgstr "springfox-schema"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "springfox-swagger-common"
-msgstr "springfox-swagger-common"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "springfox-spring-web"
-msgstr "springfox-spring-web"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.google.guava"
-msgstr "com.google.guava"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "guava"
-msgstr "guava"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "20.0"
-msgstr "20.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "com.fasterxml"
-msgstr "com.fasterxml"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "classmate"
-msgstr "classmate"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.5.1"
-msgstr "1.5.1"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.springframework.plugin"
-msgstr "org.springframework.plugin"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-plugin-core"
-msgstr "spring-plugin-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.2.0.RELEASE"
-msgstr "1.2.0.RELEASE"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-plugin-metadata"
-msgstr "spring-plugin-metadata"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.mapstruct"
-msgstr "org.mapstruct"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "mapstruct"
-msgstr "mapstruct"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.2.0.Final"
-msgstr "1.2.0.Final"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "springfox-swagger-ui"
-msgstr "springfox-swagger-ui"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-starter-data-jpa"
-msgstr "spring-boot-starter-data-jpa"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-boot-starter-aop"
-msgstr "spring-boot-starter-aop"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.aspectj"
-msgstr "org.aspectj"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "aspectjweaver"
-msgstr "aspectjweaver"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.9.6"
-msgstr "1.9.6"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Eclipse Public License - v 1.0"
-msgstr "Eclipse Public License - v 1.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.transaction"
-msgstr "jakarta.transaction"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.transaction-api"
-msgstr "jakarta.transaction-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.persistence"
-msgstr "jakarta.persistence"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jakarta.persistence-api"
-msgstr "jakarta.persistence-api"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.2.3"
-msgstr "2.2.3"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.hibernate"
-msgstr "org.hibernate"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "hibernate-core"
-msgstr "hibernate-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "5.4.20.Final"
-msgstr "5.4.20.Final"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "GNU Library General Public License v2.1 or later"
-msgstr "GNU Library General Public License v2.1 or later"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.javassist"
-msgstr "org.javassist"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "javassist"
-msgstr "javasist"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "3.24.0-GA"
-msgstr "3.24.0-GA"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "MPL 1.1,LGPL 2.1,Apache License 2.0"
-msgstr "MPL 1.1,LGPL 2.1,Apache License 2.0"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "antlr"
-msgstr "antlr"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.7.7"
-msgstr "2.7.7"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "BSD License"
-msgstr "BSD License"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.jboss"
-msgstr "org.jboss"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jandex"
-msgstr "jandex"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.1.3.Final"
-msgstr "2.1.3.Final"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.hibernate.common"
-msgstr "org.hibernate.common"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "hibernate-commons-annotations"
-msgstr "hibernate-commons-annotations"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "5.1.0.Final"
-msgstr "5.1.0.Final"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.springframework.data"
-msgstr "org.springframework.data"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-data-jpa"
-msgstr "spring-data-jpa"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-data-commons"
-msgstr "spring-data-commons"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-orm"
-msgstr "spring-orm"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-aspects"
-msgstr "spring-aspects"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.dom4j"
-msgstr "org.dom4j"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "dom4j"
-msgstr "dom4j"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "2.1.3"
-msgstr "2.1.3"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "BSD 3-clause New License"
-msgstr "BSD 3-clause New License"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.modelmapper"
-msgstr "org.modelmapper"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "modelmapper"
-msgstr "modelmapper"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.projectlombok"
-msgstr "org.projectlombok"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "lombok"
-msgstr "lombok"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.18.10"
-msgstr "1.18.10"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.apache.httpcomponents"
-msgstr "org.apache.httpcomponents"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "httpclient"
-msgstr "httpclient"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "4.5"
-msgstr "4.5"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "Apache License"
-msgstr "Apache License"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "httpcore"
-msgstr "httpcore"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "4.4.13"
-msgstr "4.4.13"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "commons-codec"
-msgstr "commons-codec"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "1.14"
-msgstr "1.14"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.postgresql"
-msgstr "org.postgresql"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "postgresql"
-msgstr "postgresql"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "42.2.14"
-msgstr "42.2.14"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "BSD-2-Clause"
-msgstr "BSD-2-Clause"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.flywaydb"
-msgstr "org.flywaydb"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "flyway-core"
-msgstr "flyway-core"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "6.4.4"
-msgstr "6.4.4"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "httpmime"
-msgstr "httpmime"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "4.3.1"
-msgstr "4.3.1"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "org.bitbucket.b_c"
-msgstr "org.bitbucket.b_c"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "jose4j"
-msgstr "jose4j"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "0.7.2"
-msgstr "0.7.2"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "spring-security-test"
-msgstr "spring-security-test"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Dependency.md
 msgid "4.2.2.RELEASE"
-msgstr "4.2.2.RELEASE"
+msgstr ""
 

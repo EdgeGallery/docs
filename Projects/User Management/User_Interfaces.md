@@ -34,7 +34,7 @@ User Interfaces
 Resource URI: /login
 Method: POST
 ```
-| Name    | Definition |type   | Required| Describe |
+| Name    | Definition |Type   | Required| Describe |
 | ------- | ---------- |-------|---------| ---------|
 | verifyCode | 图形验证码 |query|是| |
 | username | 用户名/邮箱/手机号 |body|是| |
@@ -101,7 +101,7 @@ Succeed
 Resource URI: /v1/users
 Method: POST
 ```
-| Name     | Definition |type   | Required| Describe |
+| Name     | Definition |Type   | Required| Describe |
 | -------- | -----------|-------|---------| ---------|
 | verifyCode | 图形验证码 |query|是| |
 | username | 用户名 |body|是| 必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间 |
@@ -163,7 +163,7 @@ response 500 INTERNAL ERROR
 Resource URI: /v1/users/password
 Method: PUT
 ```
-| Name          | Definition |type   | Required| Describe |
+| Name          | Definition |Type   | Required| Describe |
 | ------------- | ---------- |-------|---------| -------- |
 | type | 修改密码的类型 |body|是| 1--原密码验证修改; 2--密码找回 |
 | newPassword | 修改后的新密码 |body|是| 必须满足复杂度要求，必须是数字/字母/特数字符的组合，长度在6~18个字符之间  |
@@ -215,7 +215,7 @@ response 500 INTERNAL ERROR
 Resource URI: /v1/users/action/uniqueness
 Method: POST
 ```
-| Name      | Definition |type   | Required|Describe |
+| Name      | Definition |Type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | username | 用户名 |body|是|  必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间 |
 | mailAddress | 邮箱地址 |body|否| 如果填写，必须符合邮箱地址的格式要求 |
@@ -250,7 +250,7 @@ Method: POST
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-| Name      | Definition |type   | Required|Describe |
+| Name      | Definition |Type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | username | 用户名 |body|否|用于模糊查询条件的用户名关键字 |
 | mailAddress| 邮箱地址 |body|否|用于模糊查询条件的邮箱地址关键字 |
@@ -336,7 +336,7 @@ Method: DELETE
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-| Name      | Definition |type   | Required|Describe |
+| Name      | Definition |Type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | userId    | 用户ID      | path  | 是      |uuid     |
 
@@ -369,7 +369,7 @@ response 403 FORBIDDEN
 Resource URI: /v1/users/{userId}
 Method: PUT
 ```
-| Name      | Definition |type   | Required|Describe |
+| Name      | Definition |Type   | Required|Describe |
 | --------- | ---------- |-------|---------|-------- |
 | userId    | 用户ID      | path  | 是      |uuid     |
 | username | 用户名 |body|是|  必须是字母或者字母和数字的组合，必须以字母开头，长度在6~30个字符之间 |
@@ -459,7 +459,7 @@ Method: PUT
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-| Name        | Definition   |    type   | Required    |   Describe |
+| Name        | Definition   |    Type   | Required    |   Describe |
 | :---------: | :----------: | :-------: | :---------: | :--------: |
 | userId    | 用户ID      | path  | 是      |uuid     |
 
@@ -494,7 +494,7 @@ Method: PUT
 Role: APPSTORE_ADMIN or DEVELOPER_ADMIN or MECM_ADMIN or LAB_ADMIN or ATP_ADMIN
 User: admin
 ```
-| Name        | Definition   |type       |     Required|Describe    |
+| Name        | Definition   |Type       |     Required|Describe    |
 | :---------: | :----------: | :-------: | :---------: | :--------: |
 | userId    | 用户ID      | path  | 是      | uuid     |
 | platform  | 可访问平台      | body  | 是      | 用户可访问的平台    |
@@ -541,7 +541,7 @@ response 403 FORBIDDEN
 Resource URI: /v1/identity/sms
 Method: POST
 ```
-| Name          | Definition |type   | Required|Describe |
+| Name          | Definition |Type   | Required|Describe |
 | ------------- | ---------- | ------- | --------- | -------- |
 | verifyCode | 图形验证码 |query|是| |
 | telephone | 电话号码 |body|是|11位有效数字，必须以1开头 |
@@ -576,7 +576,7 @@ response 417 Expectation Failed
 Resource URI: /v1/identity/mail
 Method: POST
 ```
-| Name      | Definition | type  | Required | Describe |
+| Name      | Definition | Type  | Required | Describe |
 | --------- | ---------- |-------|----------|--------- |
 | verifyCode | 图形验证码 |query|是| |
 | mailAddress    | 邮箱地址      | body  | 是      |用以接收验证码的邮箱地址     |
@@ -625,7 +625,7 @@ Method: GET
 Resource URI: /v1/identity/verifycode-image/precheck
 Method: GET
 ```
-| Name     | Definition | type   | Required | Describe |
+| Name     | Definition | Type   | Required | Describe |
 |:--------:|:----------:|:------:|:--------:|:--------:|
 | verifyCode | 图形验证码 |query|是| |
 

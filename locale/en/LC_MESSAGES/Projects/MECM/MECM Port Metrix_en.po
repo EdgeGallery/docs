@@ -19,125 +19,125 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md:1 Port
 msgid "MECM port matrix"
-msgstr "MECM port matrix"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "Module"
-msgstr "Module"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "Port number"
-msgstr "Port number"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "External port number"
-msgstr "External port number"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "APPO"
-msgstr "APPO"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "8091"
-msgstr "8091"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "30201"
-msgstr "30201"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "Provide external service port for application lifecycle management"
-msgstr "Provide external service port for application lifecycle management"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "APM"
-msgstr "APM"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "8092"
-msgstr "8092"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "30202"
-msgstr "30202"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "Provide external service port for application package management"
-msgstr "Provide external service port for application package management"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "Inventory"
-msgstr "Inventory"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "8093"
-msgstr "8093"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "30203"
-msgstr "30203"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "Provide external service port for inventory management"
-msgstr "Provide external service port for inventory management"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "applcm controller"
-msgstr "applcm controller"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "8094"
-msgstr "8094"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "30204"
-msgstr "30204"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "aplcm k8splugin"
-msgstr "aplcm k8spplugin"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "8095"
-msgstr "8095"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "30205"
-msgstr "30205"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "FE"
-msgstr "FE"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "8443"
-msgstr "8443"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "30093"
-msgstr "30093"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "Provide external service port for front-end module"
-msgstr "Provide external service port for front-end module"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "AppRuleManager"
-msgstr "AppRuleManager"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "8096"
-msgstr "8096"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "30206"
-msgstr "30206"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix_en.md Port
 msgid "Provide external service port for application rule management"
-msgstr "Provide external service port for application rule management"
+msgstr ""
 

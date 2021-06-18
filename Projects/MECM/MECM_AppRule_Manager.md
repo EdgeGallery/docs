@@ -9,7 +9,7 @@ Retrieves data for liveness & readiness
 Resource URI: /apprulemgr/v1/health
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 
@@ -24,7 +24,7 @@ Configures the app rule
 Resource URI:  /apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
 Method: POST
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appInstance_id|application instance id|path|yes|Valid UUID|64|
@@ -82,7 +82,7 @@ Example request body:
 Example response:
 ```
 200 OK
-{  
+{
   "taskId":"string",
   "appInstanceId":"string",
   "configResult":"string",
@@ -97,7 +97,7 @@ Updates the existing app rule
 Resource URI: /apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
 Method: PUT
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appInstance_id|application instance id|path|yes|Valid UUID|64|
@@ -155,7 +155,7 @@ Example request body:
 Example response:
 ```
 200 OK
-{  
+{
   "taskId":"string",
   "appInstanceId":"string",
   "configResult":"string",
@@ -170,7 +170,7 @@ Queries the existing app rule
 Resource URI: /apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
 Method: GET
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appInstance_id|application instance id|path|yes|Valid UUID|64|
@@ -233,7 +233,7 @@ Delete the existing app rule
 Resource URI: /apprulemgr/v1/tenants/{tenantId}/app_instances/{appInstanceId}/appd_configuration
 Method: DELETE
 ```
-|Name|Definition|type|Required|Allowed|Max Length|
+|Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access_token|header|yes|Jwt token|
 |appInstance_id|application instance id|path|yes|Valid UUID|64|

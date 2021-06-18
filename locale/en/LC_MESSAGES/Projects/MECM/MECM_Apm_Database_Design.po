@@ -19,21 +19,21 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Database_Design.md:1
 msgid "Apm Database Design"
-msgstr "Apm Database Design"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Database_Design.md:3
 msgid "The APM database uses an open source PostgreSQL database, and the recommended version is 12.3."
-msgstr "The APM database uses an open source PostgreSQL database, and the recommended version is 12.3."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Database_Design.md:5
 msgid "apppackage: Store application package information, such as app_pkg_id, app_pkg_path and tenant_id."
-msgstr "apppackage: Store application package information, such as app_pkg_id, app_pkg_path and tenant_id."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Database_Design.md:25
 msgid "apppackagehost: Store application package distribution information, such as app_pkg_id, distribution_status , tenant_id."
-msgstr "apppackagehost: Store application package distribution information, such as app_pkg_id, distribution_status, tenant_id."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_Apm_Database_Design.md:39
 msgid "apmtenant: Store tenant information, such as tenant."
-msgstr "apmtenant: Store tenant information, such as tenant."
+msgstr ""
 

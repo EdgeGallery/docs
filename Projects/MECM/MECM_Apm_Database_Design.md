@@ -20,7 +20,7 @@ The APM database uses an open source PostgreSQL database, and the recommended ve
         created_time timestamp default current_timestamp,
         modified_time timestamp default current_timestamp,
         primary key (id)
-    );        
+    );
 ```
 - apppackagehost: Store application package distribution information, such as app_pkg_id, distribution_status
 , tenant_id.

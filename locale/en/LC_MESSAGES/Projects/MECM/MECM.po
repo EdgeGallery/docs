@@ -27,47 +27,47 @@ msgstr " MECM Architecture Framework"
 
 #: ../../Projects/MECM/MECM.rst:25
 msgid " Apm Interfaces"
-msgstr " Apm Interfaces"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:25
 msgid " Applcm Interfaces"
-msgstr " Applcm Interfaces"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:25
 msgid " Appo Interfaces"
-msgstr " Appo Interfaces"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:25
 msgid " Inventory Interfaces"
-msgstr " Inventory Interfaces"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:25
 msgid " AppRule Manager Interfaces"
-msgstr " AppRule Manager Interfaces"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:25
 msgid " K8s plugin Interface"
-msgstr " K8s plugin Interface"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:38
 msgid " Apm Database"
-msgstr " Apm Database"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:38
 msgid " Lcm Controller Database"
-msgstr " Lcm Controller Database"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:38
 msgid " K8s Plugin Database"
-msgstr " K8s Plugin Database"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:38
 msgid " Appo Database"
-msgstr " Appo Database"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:38
 msgid " Inventory Database"
-msgstr " Inventory Database"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:50
 msgid " MECM Product Document使用指导"
@@ -75,27 +75,27 @@ msgstr " MECM Product Document Use Guidance"
 
 #: ../../Projects/MECM/MECM.rst:50
 msgid " MECM User Interface Document"
-msgstr " MECM User Interface Document"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:59
 msgid " Contribute to APM"
-msgstr " Contribute to APM"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:59
 msgid " Contribute to Lcm Controller and K8s Plugin(Applcm)"
-msgstr " Contribute to Lcm Controller and K8s Plugin (Applcm)"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:59
 msgid " Contribute to APPO"
-msgstr " Contribute to APPO"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:59
 msgid " Contribute to Inventory"
-msgstr " Contribute to Inventory"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:59
 msgid " Contribute to AppRuleManager"
-msgstr " Contribute to AppRuleManager"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:71
 msgid " MECM port matrix端口矩阵"
@@ -103,7 +103,7 @@ msgstr " MECM port matrix port matrix"
 
 #: ../../Projects/MECM/MECM.rst:2
 msgid "MECM"
-msgstr "MECM"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:7
 msgid "**Overview概述**"
@@ -111,7 +111,7 @@ msgstr "**OVERVIEW OVERVIEW**"
 
 #: ../../Projects/MECM/MECM.rst:15
 msgid "**Architecture**"
-msgstr "**Architecture**"
+msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:23
 msgid "**Interface Designs界面设计**"

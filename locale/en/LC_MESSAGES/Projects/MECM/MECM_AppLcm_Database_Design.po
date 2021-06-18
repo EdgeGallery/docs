@@ -19,17 +19,17 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:1
 msgid "Lcm Controller Database Design"
-msgstr "Lcm Controller Database Design"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:3
 msgid "The LcmController database uses an open source PostgreSQL database, and the recommended version is 12.2. Two database  tables currently designed and applied:"
-msgstr "The LcmController database uses an open source PostgreSQL database, and the recommended version is 12.2. Two database tables currently assigned and applied:"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:6
 msgid "app_info_record: Store app information, such as appInsId, hostIp, deployType and tenantId."
-msgstr "app_info_record: Store app information, such as appInsId, hostIp, deployType and tenantId."
+msgstr ""
 
 #: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:16
 msgid "tenant_info_record: Store tenant information, such as tenantId."
-msgstr "tenant_info_record: Store tenant information, such as tenantId."
+msgstr ""
 

@@ -39,7 +39,7 @@ msgstr "where the local activation of atp-fe depends on:"
 
 #: ../../Projects/ATP/ATP_Contribution.md:20
 msgid "所以为了搭建本地开发环境，最终的启动顺序为 Service Center -> DataBase -> UserManagement -> atp -> WebsiteGateway(atp-fe)"
-msgstr "So in order to build a local development environment, the final start sequence is Service Center - > DataBase - > UserManagement - > atp - > Website Gateway (atp-fe)"
+msgstr "So in order to build a local development environment, the final start sequence is Service Center->DataBase->UserManagement->atp->WebsiteGateway (atp-fe)"
 
 #: ../../Projects/ATP/ATP_Contribution.md:22
 msgid "Service Center"

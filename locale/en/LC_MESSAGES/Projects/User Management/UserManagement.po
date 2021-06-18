@@ -39,5 +39,5 @@ msgstr "How to contribute"
 
 #: ../../Projects/User Management/UserManagement.rst:2
 msgid "User Management"
-msgstr "User Management"
+msgstr ""
 

@@ -18,7 +18,7 @@ Architecture
 
 ## Inventory
  Inventory provides realtime view of deployed applications on the edge hosts and applications configurations. Inventory
-  is also used for external system registrations.  
+  is also used for external system registrations.
 
 
 ## LCM Controller

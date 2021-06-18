@@ -19,13 +19,13 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_k8s_Database_Design.md:1
 msgid "K8s Plugin Database Design"
-msgstr "K8s Plugin Database Design"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_k8s_Database_Design.md:4
 msgid "The K8sPlugin database uses an open source PostegreSQL database, and the recommended version is 12.2. One database  table currently designed and applied:"
-msgstr "The K8sPlugin database uses an open source PostegreSQL database, and the recommended version is 12.2. One database table currently assigned and applied:"
+msgstr ""
 
 #: ../../Projects/MECM/MECM_k8s_Database_Design.md:7
 msgid "app_instance_info_record: MECM LcmController Database Design.mdStore app information, such as appInsId, hostIp and workloadId."
-msgstr "app_instance_info_record: MECM LcmController Database Design.mdStore app information, such as appInsId, hostIp and workloadId."
+msgstr ""
 

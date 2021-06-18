@@ -23,15 +23,15 @@ msgstr "Database design"
 
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:3
 msgid "AppStore数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用了三张数据库表格："
-msgstr "The AppStore database uses open-source PostgreSQL databases with a recommended version of 12.2.Three database tables are currently designed and applied:"
+msgstr "The AppStore database uses open-source PostgreSQL databases with a recommended version of 12.2. Three database tables are currently designed and applied:"
 
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:5
 msgid "app_table: 存储app信息，如名字、提供者、描述等"
-msgstr "app_table: stores app information such as name, provider, description, etc."
+msgstr "app_table: Stores app information such as name, provider, description, etc."
 
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:28
 msgid "catalog_package_table: 存储应用的package信息，一个应用可以拥有多个package"
-msgstr "catalog_package_table: package information for storage applications, one application can have multiple package"
+msgstr "catalog_package_table: Package information for storage applications, one application can have multiple package"
 
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:56
 msgid "csar_package_score: 存储应用的评论信息"
@@ -39,11 +39,11 @@ msgstr "csar_package_score: Comments information for storage applications"
 
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:70
 msgid "app_store_table: 存储外部appstore信息（POC特性）"
-msgstr "app_store_table: stores external appstore information (POC feature)"
+msgstr "app_store_table: Stores external appstore information (POC feature)"
 
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:88
 msgid "pushable_package_table: 存储可推送csar包的信息（POC特性）"
-msgstr "pushable_package_table: stores information that can push a cswar (POC feature)"
+msgstr "pushable_package_table: Stores information that can push a cswar (POC feature)"
 
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:100
 msgid "message_table: 存储appstore间互通时的消息（POC特性）"

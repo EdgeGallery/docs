@@ -3,51 +3,51 @@ AppStore Interfaces
 The document is for the appstore-be project, there are six parts of interfaces in the project.
 
 - [AppStore Interfaces](#appstore-interfaces)
-  - [1. APP](#1-app)
-    - [1.1 Get All Apps](#id3)
-    - [1.2 Get One App](#id4)
-    - [1.3 Register App](#id5)
-    - [1.4 Delete One App](#id6)
-    - [1.5 Get Latest Version Of App](#id7)
-    - [1.6 Get Icon Of App](#id8)
-	- [1.7 Upload Package by Segment](#id9)
-	- [1.8 Merge App package](#id10)
-	- [1.9 Register Virtual Machine App](#id11)
-	- [1.10 Get Video of App](#id12)
+  - [1. APP](#id2)
+    - [1.1 Get all apps](#id3)
+    - [1.2 Get one app](#id4)
+    - [1.3 Register app](#id5)
+    - [1.4 Delete one app](#id6)
+    - [1.5 Get latest version of app](#id7)
+    - [1.6 Get icon of app](#id8)
+	- [1.7 Upload package by segment](#id9)
+	- [1.8 Merge app package](#id10)
+	- [1.9 Register virtual machine app](#id11)
+	- [1.10 Get video of app](#id12)
   - [2. Package](#id13)
-    - [2.1 Get All Packages Of APP](#id14)
-    - [2.2 Get One Package](#id15)
-    - [2.3 Delete One Package](#id16)
-    - [2.4 Download One Package](#id17)
-    - [2.5 Get File Content](#id18)
-    - [2.6 APP Publish](#id19)
-    - [2.7 APP Test](#id20)
+    - [2.1 Get all packages of app](#id14)
+    - [2.2 Get one package](#id15)
+    - [2.3 Delete one package](#id16)
+    - [2.4 Download one package](#id17)
+    - [2.5 Get file content](#id18)
+    - [2.6 APP publish](#id19)
+    - [2.7 APP test](#id20)
   - [3. Comment](#id21)
-    - [3.1 Get Comments Of App](#id22)
-    - [3.2 Submit Comment To App](#id23)
-  - [4. APP Push](#id24)
-    - [4.1 Query Push App List](#id25)
-    - [4.2 Get Push App Package](#id26)
-    - [4.3 Push App Package](#id27)
-    - [4.4 Download Push App Package](#id28)
-    - [4.5 Download Push App Icon](#id29)
-  - [5. APPStore Manager](#id30)
-    - [5.1 Add AppStore](#id31)
-    - [5.2 Delete AppStore](#id32)
-    - [5.3 Modify AppStore](#id33)
-    - [5.4 Query AppStore List](#id34)
-    - [5.5 Query AppStore](#id35)
+    - [3.1 Get comments of app](#id22)
+    - [3.2 Submit comment to app](#id23)
+  - [4. APP push](#id24)
+    - [4.1 Query push app list](#id25)
+    - [4.2 Get push app package](#id26)
+    - [4.3 Push app package](#id27)
+    - [4.4 Download push app package](#id28)
+    - [4.5 Download push app icon](#id29)
+  - [5. APPStore manager](#id30)
+    - [5.1 Add appStore](#id31)
+    - [5.2 Delete appStore](#id32)
+    - [5.3 Modify appStore](#id33)
+    - [5.4 Query appStore List](#id34)
+    - [5.5 Query appStore](#id35)
   - [6. Message](#id36)
-    - [6.1 Add Message](#id37)
-    - [6.2 Get All Message](#id38)
-    - [6.3 Get Message](#id39)
-    - [6.4 Delete Message](#id40)
-    - [6.5 Accept Message](#id41)
-    - [6.6 Update Status](#id42)
-  - [7. APP Pull](#id43)
-    - [7.1 Query Pull App List](#id44)
-    - [7.2 Get Pull App Packages](#id45)
-    - [7.3 Pull App Package](#id46)
+    - [6.1 Add message](#id37)
+    - [6.2 Get all message](#id38)
+    - [6.3 Get message](#id39)
+    - [6.4 Delete message](#id40)
+    - [6.5 Accept message](#id41)
+    - [6.6 Update status](#id42)
+  - [7. APP pull](#id43)
+    - [7.1 Query pull app list](#id44)
+    - [7.2 Get pull app packages](#id45)
+    - [7.3 Pull app package](#id46)
 
 
 ## 1. APP
@@ -63,7 +63,7 @@ Query all apps by condation.
 Resource URI: /mec/appstore/v1/apps
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |name|app name.|request param|yes|
 |provider|app provider.|request param|yes|
@@ -102,7 +102,7 @@ Query app by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appId|app id|path|yes|
 
@@ -136,7 +136,7 @@ registe a app.
 Resource URI: /mec/appstore/v1/apps
 Method: POST
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |userId|user id|request param|yes|
 |userName|app name|request param|yes|
@@ -167,7 +167,7 @@ delete a app.
 Resource URI: /mec/appstore/v1/apps/{appId}
 Method: DELETE
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |userId|user id|request param |yes|
 |userName |app name|request param |yes|
@@ -185,7 +185,7 @@ get latest version package of app.
 Resource URI: /mec/appstore/v1/apps/{appId}/action/download
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appId |app id|path |yes|
 
@@ -201,7 +201,7 @@ get app icon by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}/icon
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appId |app id|path |yes|
 
@@ -217,7 +217,7 @@ upload package by segment.
 Resource URI: /mec/appstore/v1/apps/upload
 Method: POST
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |id|block id|RequestPart|no|
 |chunkNumber|current file block number|RequestPart|yes|
@@ -246,7 +246,7 @@ merge app package.
 Resource URI: /mec/appstore/v1/apps/merge
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |fileName|file name|request param|yes|
 |guid|file identifier|request param|yes|
@@ -265,7 +265,7 @@ register vitual machine app.
 Resource URI: /mec/appstore/v1/apps/vm-register
 Method: POST
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |userId|user id|request param|yes|
 |userName|app name|request param|yes|
@@ -296,7 +296,7 @@ get app video by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}/demoVideo
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appId |app id|path |yes|
 
@@ -319,7 +319,7 @@ Query all packages by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}/packages
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appId |app id |type|yes|
 |userId|user id|request param|yes|
@@ -358,7 +358,7 @@ Query app by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appId |app id|path |yes|
 |packageId |package id|path |yes|
@@ -394,7 +394,7 @@ delete a package of app.
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}
 Method: DELETE
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |userId |user id|request param|yes|
 |userName |user name|request param|yes|
@@ -413,7 +413,7 @@ download one package by appId and packageId.
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/download
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appId |app id|path |yes|
 |packageId |package id|path |yes|
@@ -430,7 +430,7 @@ Get file content by app id package id and file path.
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/files
 Method: POST
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |packageId |package id|path |yes|
 |filePath |file path|FormParam |yes|
@@ -448,7 +448,7 @@ Publish APP by app id and package id.
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/publish
 Method: POST
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appId |app id|path |yes|
 |packageId |package id|path |yes|
@@ -466,7 +466,7 @@ Test APP by app id and package id.
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/test
 Method: POST
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appId |app id|path |yes|
 |packageId |package id|path |yes|
@@ -493,7 +493,7 @@ Get comments by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}/comments
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appId |app id|path |yes|
 
@@ -534,7 +534,7 @@ User submit comment to app by app id.
 Resource URI: /mec/appstore/v1/apps/{appId}/comments
 Method: POST
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |userId |user id|request param |yes|
 |userName |app name|request param |yes|
@@ -600,7 +600,7 @@ Get push app package by packageId.
 URI： /mec/appstore/v1/packages/{packageId}/pushable
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |packageId |package id|path |yes|
 
@@ -635,7 +635,7 @@ Push app package by packageId
 URI： /mec/appstore/v1/packages/{packageId}/action/push
 Method: POST
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |packageId |package id|path |yes|
 |dto |provider list|request param |yes|
@@ -652,7 +652,7 @@ Download push appp package by packageId
 URI： /mec/appstore/v1/packages/{packageId}/action/download-package
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |packageId |package id|path |yes|
 
@@ -668,7 +668,7 @@ Download push app icon by packageId.
 URI： /mec/appstore/v1/packages/{packageId}/action/download-icon
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |packageId |package id|path |yes|
 
@@ -689,7 +689,7 @@ add external AppStore.
 URI： /mec/appstore/v1/appstores
 Method: POST
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appStoreName |appStore name|request param |yes|
 |appStoreVersion |appStore version|request param |yes|
@@ -724,7 +724,7 @@ Delete external AppStore.
 URI： /mec/appstore/v1/appstores/{appStoreId}
 Method: DELETE
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appStoreId |appStore id|path |yes|
 
@@ -740,7 +740,7 @@ Modify external AppStore.
 URI： /mec/appstore/v1/appstores/{appStoreId}
 Method: PUT
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appStoreId |appStore id|path |yes|
 |appStoreName |appStore name|request param |yes|
@@ -776,7 +776,7 @@ Query external appStore list.
 URI： /mec/appstore/v1/appstores
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appStoreName |appStore name|request param |yes|
 |company |company name|request param |yes|
@@ -807,7 +807,7 @@ Query external appStore.
 URI： /mec/appstore/v1/appstores/{appStoreId}
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |appStoreId |appStore id|path |yes|
 
@@ -840,7 +840,7 @@ Add a APP operation message.
 URI： /mec/appstore/v1/messages
 Method: POST
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |basicInfo |basic information|request param |yes|
 |sourceAppStore |source AppStore|request param |yes|
@@ -863,7 +863,7 @@ Get messages by message type.
 URI： /mec/appstore/v1/messages
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |messageType |message type|request param |no|
 
@@ -902,7 +902,7 @@ Get message by message id.
 URI： /mec/appstore/v1/messages/{messageId}
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |messageId |message id|request param |yes|
 
@@ -939,7 +939,7 @@ Delete message by message id.
 URI： /mec/appstore/v1/messages/{messageId}
 Method: DELETE
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |messageId |message id|request param |yes|
 
@@ -955,7 +955,7 @@ download message by message id.
 URI： /mec/appstore/v1/messages/{messageId}/action/download
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |messageId |message id|request param |yes|
 |request |request body|request param |yes|
@@ -972,7 +972,7 @@ Update message status by message id.
 URI： /mec/appstore/v1/messages/{messageId}/action/readed
 Method: PUT
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |messageId |message id|request param |yes|
 
@@ -1025,7 +1025,7 @@ Get pull app packages by platfromId.
 URI： /mec/appstore/v1/packages/{platfromId}/pullable
 Method: GET
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |platfromId |external appstore id|path |yes|
 
@@ -1060,7 +1060,7 @@ Pull app package by packageId
 URI： /mec/appstore/v1/packages/{packageId}/action/pull
 Method: POST
 ```
-|Name|Definition|type|Required|
+|Name|Definition|Type|Required|
 |---|---|---|---|
 |packageId |package id|path |yes|
 |dto |pull request dto|request param |yes|

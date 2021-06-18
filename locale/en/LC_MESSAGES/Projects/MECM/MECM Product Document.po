@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-17 18:37+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM Document.md:1 Product
 msgid "MECM Product Document"
-msgstr "MECM Product Document"
+msgstr ""
 
 #: ../../Projects/MECM/MECM Document.md:4 Product
 msgid "MECM管理面"
@@ -34,7 +34,7 @@ msgid "V1.1版本新增特性如下："
 msgstr "The V1.1 release features are as follows:"
 
 #: ../../Projects/MECM/MECM Document.md:7 Product
-msgid "1.新增游客、租户及管理员角色，管理员可以进行注册和删除操作，租户可以进行应用同步，分发，部署操作，游客只有浏览权限   2.新增应用商店注册功能，支持管理员新增注册应用商店   3.新增应用同步功能，支持应用从应用商店到APM同步"
+msgid "1.新增游客、租户及管理员角色，管理员可以进行注册和删除操作，租户可以进行应用同步，分发，部署操作，游客只有浏览权限 2.新增应用商店注册功能，支持管理员新增注册应用商店   3.新增应用同步功能，支持应用从应用商店到APM同步"
 msgstr "1.Add visitors, tenant, and administrator roles, the administrator can register and delete, the tenant can apply sync, distribute, deploy operations, visitors only browse rights 2. Add application store registration function, support administrator add register application store 3. Add application sync feature, support application from app store to APM sync"
 
 #: ../../Projects/MECM/MECM Document.md:11 Product
@@ -60,6 +60,10 @@ msgstr "![](/uploads/images/2021/mecm/3_en.png) ![](/uploads/images/2021/mecm/5_
 #: ../../Projects/MECM/MECM Document.md:20 Product
 msgid "1.2 MEP详情：点击管理按钮，跳转至MEP详情界面"
 msgstr "1.2 MEP Details: Hit Management button, Jump to MEP Details interface"
+
+#: ../../Projects/MECM/MECM Document.md:21 Product
+msgid "![](/uploads/images/2021/mecm/7.png)"
+msgstr "![](/uploads/images/2021/mecm/25_en.png)"
 
 #: ../../Projects/MECM/MECM Document.md:22 Product
 msgid "2. 应用管理：应用包管理，应用实例管理"
@@ -97,9 +101,17 @@ msgstr "4.System Management: APPLCM Registration, APP Rule MGR Registration, App
 msgid "4.1 APPLCM注册"
 msgstr "4.1 APPLCM Registration"
 
+#: ../../Projects/MECM/MECM Document.md:49 Product
+msgid "![](/uploads/images/2021/mecm/23.png)"
+msgstr "![](/uploads/images/2021/mecm/25_en.png)"
+
 #: ../../Projects/MECM/MECM Document.md:50 Product
 msgid "4.2 APP Rule MGR注册"
 msgstr "4.2 APP Rule MGR Registration"
+
+#: ../../Projects/MECM/MECM Document.md:51 Product
+msgid "![](/uploads/images/2021/mecm/24.png)"
+msgstr "![](/uploads/images/2021/mecm/25_en.png)"
 
 #: ../../Projects/MECM/MECM Document.md:52 Product
 msgid "4.4 应用仓库注册"

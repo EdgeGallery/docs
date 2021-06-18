@@ -19,368 +19,368 @@ msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:1
 msgid "Application Orchestrator Interfaces"
-msgstr "Application Orchestrator Interfaces"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:3
 msgid "The document is for the Application Orchestrator project, there are two parts of interfaces in the project."
-msgstr "The document is for the Application Orchestrator project, there are two parts of interfaces in the project."
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:5
 msgid "Get All Application Instances"
-msgstr "Get All Application Instances"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:7
 msgid "Retrieves application instances information"
-msgstr "Retrieves application instances information"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Definition"
-msgstr "Definition"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
-msgid "type"
-msgstr "type"
+msgid "Type"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Required"
-msgstr "Required"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Allowed"
-msgstr "Allowed"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Max Length"
-msgstr "Max Length"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "access_token"
-msgstr "access_token"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "header"
-msgstr "header"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "yes"
-msgstr "yes"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Jwt token"
-msgstr "Jwt token"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "tenant_id"
-msgstr "tenant_id"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "tenant id"
-msgstr "tenant id"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "path"
-msgstr "path"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Valid UUID"
-msgstr "Valid UUID"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "64"
-msgstr "64"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:18 ../../Projects/MECM/Appo_Interfaces_en.md:48 ../../Projects/MECM/Appo_Interfaces_en.md:96 ../../Projects/MECM/Appo_Interfaces_en.md:119 ../../Projects/MECM/Appo_Interfaces_en.md:162 ../../Projects/MECM/Appo_Interfaces_en.md:183 ../../Projects/MECM/Appo_Interfaces_en.md:204 ../../Projects/MECM/Appo_Interfaces_en.md:233 ../../Projects/MECM/Appo_Interfaces_en.md:278 ../../Projects/MECM/Appo_Interfaces_en.md:331 ../../Projects/MECM/Appo_Interfaces_en.md:382 ../../Projects/MECM/Appo_Interfaces_en.md:422 ../../Projects/MECM/Appo_Interfaces_en.md:454 ../../Projects/MECM/Appo_Interfaces_en.md:480 ../../Projects/MECM/Appo_Interfaces_en.md:573 ../../Projects/MECM/Appo_Interfaces_en.md:672 ../../Projects/MECM/Appo_Interfaces_en.md:704
 msgid "Example response:"
-msgstr "Example response:"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:36
 msgid "Get Application Instance"
-msgstr "Get Application Instance"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:37 ../../Projects/MECM/Appo_Interfaces_en.md:108
 msgid "Retrieves application instance information"
-msgstr "Retrieves application instance information"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 #, fuzzy
 msgid "appInstance_id"
-msgstr "Create AppInstance"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 #, fuzzy
 msgid "application instance id"
-msgstr "Get Application Instance"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:64
 msgid "Create AppInstance"
-msgstr "Create AppInstance"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:65
 msgid "Creates App Instance"
-msgstr "Creates App Instance"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "access token"
-msgstr "access token"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "appInstanceDescription"
-msgstr "appInstanceDescription"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "RequestPart"
-msgstr "RequestPart"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "appName"
-msgstr "appName"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Alphanumeric characters,special characters are hypen and underscore"
-msgstr "Alphanumeric characters,special characters are ypgen and underscore"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "128"
-msgstr "128"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "appPackageId"
-msgstr "appPackageId"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Alphanumeric in lower case"
-msgstr "Alphanumeric in lower case"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "appId"
-msgstr "appId"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "mecHost"
-msgstr "mecHost"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Valid IP Address"
-msgstr "Valid IP Address"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "15"
-msgstr "15"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 #, fuzzy
 msgid "hwcapabilities"
-msgstr "Get Mep Capabilities"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 #, fuzzy
 msgid "hardwareCapabilities"
-msgstr "Get Mep Capabilities"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "body"
-msgstr "body"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "No"
-msgstr "No"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "AlphaNumeric characters allowed"
-msgstr "AlphaNumeric characters allowed"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:81 ../../Projects/MECM/Appo_Interfaces_en.md:148 ../../Projects/MECM/Appo_Interfaces_en.md:314 ../../Projects/MECM/Appo_Interfaces_en.md:363 ../../Projects/MECM/Appo_Interfaces_en.md:414 ../../Projects/MECM/Appo_Interfaces_en.md:498 ../../Projects/MECM/Appo_Interfaces_en.md:597 ../../Projects/MECM/Appo_Interfaces_en.md:696
 msgid "Example request body:"
-msgstr "Example request body:"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:107
 msgid "Get App Instance Information"
-msgstr "Get App Instance Information"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 #, fuzzy
 msgid "app_instance_id"
-msgstr "Create AppInstance"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:135
 msgid "Instantiate Application"
-msgstr "Instantiate Application"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:136
 msgid "Instantiate application instance."
-msgstr "Instantiate application instance."
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "parameters"
-msgstr "parameters"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "key value pair"
-msgstr "key value pair"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Valid String"
-msgstr "Valid String"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:171
 msgid "Delete Application Instance"
-msgstr "Delete Application Instance"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:172
 msgid "Terminates application instance."
-msgstr "Terminates application instance."
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:192
 msgid "Get Query Kpi"
-msgstr "Get Query Kpi"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:193 ../../Projects/MECM/Appo_Interfaces_en.md:222
 msgid "Retrieves edge host performance statistics"
-msgstr "Retrieval edge host performance statistics"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "host_ip"
-msgstr "host_ip"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "edge host ip"
-msgstr "edit host ip"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Valid IP"
-msgstr "Valid IP"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:221
 msgid "Get Mep Capabilities"
-msgstr "Get Mep Capabilities"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:265
 msgid "Get Mep Capability"
-msgstr "Get Mp Capability"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:266
 msgid "Retrieves edge host performance statistics based on capability id"
-msgstr "Retrieves edit host performance statistics based on capability id"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "capability_id"
-msgstr "capability_id"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:297
 msgid "Create Batch"
-msgstr "Create Batch"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:298
 msgid "Batch create application instances."
-msgstr "Batch create application instances."
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:351
 msgid "Batch instantiate"
-msgstr "Batch instantiate"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:352
 msgid "Batch instantiate application instances."
-msgstr "Batch instantiate application instances."
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "instantiationParameters"
-msgstr "instantiationParameters"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "array of key value pair"
-msgstr "array of key value pair"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 msgid "Valid string"
-msgstr "Valid string"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:402
 msgid "Batch terminate"
-msgstr "Batch terminate"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:403
 msgid "Batch terminates application instances."
-msgstr "Batch terminates application instances."
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 #, fuzzy
 msgid "appInstanceIds"
-msgstr "Create AppInstance"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:442
 msgid "Batch Query"
-msgstr "Batch Query"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:443
 msgid "Batch Query information"
-msgstr "Batch Query information"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md
 #, fuzzy
 msgid "appInstance_ids"
-msgstr "Create AppInstance"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:470
 msgid "Queries liveness & readiness"
-msgstr "Queries liveness & readiness"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:471
 msgid "Retrieves data for liveness & readiness"
-msgstr "Retreeves data for liveness & readiness"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:485
 msgid "Create AppRule Config"
-msgstr "Create AppRule Config"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:486
 msgid "Configures the app rule"
-msgstr "Configurations the app rule"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:584
 msgid "Update AppRule Config"
-msgstr "Update AppRule Config"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:585
 msgid "Update the app rule"
-msgstr "Update the app rule"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:683
 msgid "Delete AppRule Config"
-msgstr "Delete AppRule Config"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:684
 msgid "Deletes the existing app rule"
-msgstr "Deletes the existing app rule"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:715
 msgid "Get AppRule Config Status"
-msgstr "Get AppRule Config Status"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:716
 msgid "Queries app rule config status"
-msgstr "Queries app rule config status"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:728 ../../Projects/MECM/Appo_Interfaces_en.md:755
 msgid "Example Response body:"
-msgstr "Example Response body:"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:744
 msgid "Synchronizes application instance info from edge"
-msgstr "Synchronizes application instance info from edge"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:745
 msgid "Synchronizes application instance info from all edge"
-msgstr "Synchronizes application instance info from all edit"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:777
 msgid "APPO Open Api Swagger"
-msgstr "APPO Open Api Swagger"
+msgstr ""
 
 #: ../../Projects/MECM/Appo_Interfaces_en.md:779
 msgid "Please refer [APPO_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/appo-swagger-openapi.yaml)"
-msgstr "Please review [APPO_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/appo-swagger-openapi.yaml)"
+msgstr ""
 

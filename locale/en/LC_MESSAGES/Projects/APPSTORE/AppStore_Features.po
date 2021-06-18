@@ -23,11 +23,11 @@ msgstr "Feature design"
 
 #: ../../Projects/APPSTORE/AppStore_Features.md:3
 msgid "AppStore 是 EdgeGallery 的应用仓库模块，主要负责5G边缘应用的存储与管理等工作，当前版本进行了分权控制，不同的用户角色包含不同的特性。"
-msgstr "The AppStore is an application warehouse module for EdgeGallery, which is primarily responsible for the storage and management of 5G edge applications, where the current version has decentralized control, and different user roles contain different features."
+msgstr "The AppStore is an application warehouse module for EdgeGallery, which is primarily responsible for the storage and management of 5G edge applications where the current version has decentralized control and different user roles contain different features."
 
 #: ../../Projects/APPSTORE/AppStore_Features.md:5
 msgid "管理员用户包含：应用上传、应用测试、应用发布、应用查询、应用评论、下载/删除所有应用、外部仓库管理、应用推送、应用拉取、消息管理、操作分析、文档中心。"
-msgstr "Manager users include: application upload, application test, application publishing, application query, application review, download/delete all applications, external warehouse management, application push, application pull, message management, operation analysis, document center."
+msgstr "Manager users include: App Upload, Application testing, Application Publish, Application Query, Application Review, App Download, Application Delete, External app store management, App Push, Application Pull, Message Management and Application Acquisition."
 
 #: ../../Projects/APPSTORE/AppStore_Features.md:7
 msgid "租户用户包含：应用上传、应用测试、应用发布、应用查询、应用评论、下载/删除本用户应用、文档中心。"
@@ -55,7 +55,7 @@ msgstr "AppStore supports users to upload apps (cswar pack)"
 
 #: ../../Projects/APPSTORE/AppStore_Features.md
 msgid "应用测试"
-msgstr "applied testing"
+msgstr "Application testing"
 
 #: ../../Projects/APPSTORE/AppStore_Features.md
 msgid "AppStore集成了ATP测试平台，用户上传应用包后可以通过ATP测试平台对应用包进行测试"
@@ -79,7 +79,7 @@ msgstr "Users can see all published apps in the Application Warehouse, and can s
 
 #: ../../Projects/APPSTORE/AppStore_Features.md
 msgid "应用评论"
-msgstr "application review"
+msgstr "Application Review"
 
 #: ../../Projects/APPSTORE/AppStore_Features.md
 msgid "用户可以对“应用仓库”看到的应用进行评论、打分，不能评论自己的应用"
@@ -127,7 +127,7 @@ msgstr "The user can pull the shared application to the warehouse from the added
 
 #: ../../Projects/APPSTORE/AppStore_Features.md
 msgid "消息管理"
-msgstr "Message management"
+msgstr "Message Management"
 
 #: ../../Projects/APPSTORE/AppStore_Features.md
 msgid "用户在\"应用共享\"中执行的推送、下载等操作均会记录一条消息日志"
@@ -135,7 +135,7 @@ msgstr "The push, download, and so on by the user in \" apply share \" will reco
 
 #: ../../Projects/APPSTORE/AppStore_Features.md
 msgid "应用获取"
-msgstr "Application acquisition"
+msgstr "Application Acquisition"
 
 #: ../../Projects/APPSTORE/AppStore_Features.md
 msgid "用户可以从收到的推送消息中获取应用，上传到当前平台"
