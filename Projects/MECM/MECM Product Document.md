@@ -19,7 +19,7 @@ MECM Product Document
 ![](/uploads/images/2021/mecm/3.png)
 ![](/uploads/images/2021/mecm/5.png)
 ##### 1.2 MEP详情：点击管理按钮，跳转至MEP详情界面 
-![](/uploads/images/2021/mecm/7.png) 
+
 #### 2. 应用管理：应用包管理，应用实例管理
 ##### 2.1 应用包管理 
 集成应用同步，下发以及部署功能。  
