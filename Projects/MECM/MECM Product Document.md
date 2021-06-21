@@ -46,9 +46,6 @@ MECM Product Document
 ![](/uploads/images/2021/mecm/21.png) 
 ![](/uploads/images/2021/mecm/22.png) 
 #### 4.系统管理：APPLCM注册、APP Rule MGR注册、应用仓库注册
-##### 4.1 APPLCM注册
-![](/uploads/images/2021/mecm/23.png) 
-##### 4.2 APP Rule MGR注册
-![](/uploads/images/2021/mecm/24.png) 
+##### 4.1 MEPM注册 
 ##### 4.4 应用仓库注册
 ![](/uploads/images/2021/mecm/25.png) 
