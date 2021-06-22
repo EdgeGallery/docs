@@ -194,3 +194,53 @@ Detailed list of the optional parameters are stated below.
 ```
 $ dnsserver -port=8053 -managementPort=8080 -loadBalance -forwarder <some-dns-server>
 ```
+## HealthCheck
+### 需求来源
+
+*EdgeGallery版本规划
+
+### 需求描述（Requirement Description）
+
+*Support mec-m check its edge healthy condition 
+
+### Usecase
+
+
+
+![](/uploads/images/2021/mep/usecase.png "healthcheck-usecase.png")
+
+1. MECM调用中心侧服务HealthCheck-M，启动整体健康检查服务
+2. 中心侧HealthCheck-M根据MECM调用时body内的mec list检查所辖的边缘节点
+3. 各边缘节点HealthCheck收到中心侧HealthCheck-M的检查信息，先自查内部mep/lcm的健康情况，当边缘侧的mep/lcm均健康时，此边缘节点则认为本边缘节点健康
+4. 完成自查后，边缘节点间启动互查机制，被访问的节点mep/lcm均健康则认为节点健康
+5. 各边缘节点把通讯后互查结果反馈回HealthCheck-M，HealthCheck-M启动投票机制
+6. 中心侧HealthCheck-M投票则是，当某节点收到其他节点的通讯成功的结果超过mec list总数的一半时中心侧认为此节点健康
+7. HealthCheck-M把投票结果反馈给MECM或调用方
+
+### 涉及模块&&EPIC&&Story
+
+*MECM
+
+​      *调用方启动HealthCheck-M，HealthCheck-M访问MECM-inventory获取mec list
+
+*MEP
+
+​       *边缘侧健康检查本节点MEP情况，MEP和LCM均健康时才认为此节点健康
+
+*LCM
+
+​       *边缘侧健康检查本节点MEP情况，MEP和LCM均健康时才认为此节点健康
+
+### 业务流程
+
+![](/uploads/images/2021/mep/routine.png "healthcheck-routine.png")
+
+### 接口定义
+
+|        | Method | URL                                  | Body                                                         |
+| ------ | :----: | ------------------------------------ | ------------------------------------------------------------ |
+| center |  GET   | /health-check/v1/center/action/start |                                                              |
+| center |  GET   | /health-check/v1/center/health       | {["checked ip" : string, "condition" : bool]}                |
+| edge   |  POST  | /health-check/v1/edge/action/start   | {"checker ip" : string, "edgeCheckInfo" : ["checked ip" : string, "condition" : bool]} |
+| edge   |  GET   | /health-check/v1/edge/health         |                                                              |
+
