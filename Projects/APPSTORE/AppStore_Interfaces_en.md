@@ -297,7 +297,7 @@ Example response:
   }
 ```
 
-### 1.9 Get App Video
+### 1.9 Get Video of App
 Get application video by application id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/demoVideo
@@ -794,7 +794,7 @@ Example response:
   }
 ```
 
-### 2.11 Get Packages of App-v2
+### 2.11 Get All Packages of App-v2
 
 Pagination query packages by application id.
 
@@ -1673,7 +1673,7 @@ Example response:
 }
 ```
 
-## 7. App Push
+## 7. App Pull
 
 User can pull a application from other AppStore. 
 
