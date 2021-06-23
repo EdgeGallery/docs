@@ -3,11 +3,11 @@ AppStore Interfaces
 The document is for the appstore-be project, there are six parts of interfaces in the project.
 
 - [AppStore Interfaces](#appstore-interfaces)
-  - [1. APP](#id2)
-    - [1.1 Get all apps](#id3)
-    - [1.2 Get one app](#id4)
-    - [1.3 Register app](#id5)
-    - [1.4 Delete one app](#id6)
+  - [1. APP](#1-APP)
+    - [1.1 Get all apps](#11-Get All Apps)
+    - [1.2 Get one app](#12-Get One App)
+    - [1.3 Register app](#13-Register App)
+    - [1.4 Delete one app](#14-Delete One App)
     - [1.5 Get icon of app](#id7)
     - [1.6 Upload package by segment](#id8)
     - [1.7 Merge app package](#id9)
