@@ -6,64 +6,64 @@ The document is for the appstore-be project, there are six parts of interfaces i
   - [1. APP](#1-APP)
     - [1.1 Get all apps](#11-Get-All-Apps)
     - [1.2 Get one app](#12-Get-One-App)
-    - [1.3 Register app](#13-Register App)
-    - [1.4 Delete one app](#14-Delete One App)
-    - [1.5 Get icon of app](#id7)
-    - [1.6 Upload package by segment](#id8)
-    - [1.7 Merge app package](#id9)
-    - [1.8 Register virtual machine app](#id10)
-    - [1.9 Get video of app](#id11)
-    - [1.10 Modify hot apps](#id12)
-    - [1.11 Get all apps-v2](#id13)
-    - [1.12 Get one app-v2](#id14)
-    - [1.13 Register app-v2](#id15)
-  - [2. Package](#id16)
-    - [2.1 Get all packages of app](#id17)
-    - [2.2 Get one package](#id18)
-    - [2.3 Delete one package](#id19)
-    - [2.4 Download one package](#id20)
-    - [2.5 Get file content](#id21)
-    - [2.6 APP publish](#id22)
-    - [2.7 APP test](#id23)
-    - [2.8 Get all packages of user](#id24)
-    - [2.9 Update app](#id25)
-    - [2.10 APP publish-v2](#id26)
-    - [2.11 Get all packages of app-v2](#id27)
-    - [2.12 Get one package-v2](#id28)
-    - [2.13 Get all packages of user-v2](#id29)
-  - [3. Comment](#id30)
-    - [3.1 Get comments of app](#id31)
-    - [3.2 Submit comment to app](#id32)
-    - [3.3 Get comments of app-v2](#id33)
-  - [4. APP push](#id34)
-    - [4.1 Query push app list](#id35)
-    - [4.2 Get push app package](#id36)
-    - [4.3 Push app package](#id37)
-    - [4.4 Download push app package](#id38)
-    - [4.5 Download push app icon](#id39)
-    - [4.6 Query push app list-v2](#id40)
-  - [5. APPStore manager](#id41)
-    - [5.1 Add appStore](#id42)
-    - [5.2 Delete appStore](#id43)
-    - [5.3 Modify appStore](#id44)
-    - [5.4 Query appStore List](#id45)
-    - [5.5 Query appStore](#id46)
-    - [5.6 Query appStore List-v2](#id47)
-  - [6. Message](#id48)
-    - [6.1 Add message](#id49)
-    - [6.2 Get all message](#id50)
-    - [6.3 Get message](#id51)
-    - [6.4 Delete message](#id52)
-    - [6.5 Accept message](#id53)
-    - [6.6 Update status](#id54)
-    - [6.7 Add message-v2](#id55)
-    - [6.8 Get all message-v2](#id56)
-  - [7. APP pull](#id457)
-    - [7.1 Query pull app list](#id58)
-    - [7.2 Get pull app packages](#id59)
-    - [7.3 Pull app package](#id60)
-    - [7.4 Query pull app lis-v2](#id61)
-    - [7.5 Get pull app packages-v2](#id62)
+    - [1.3 Register app](#13-Register-App)
+    - [1.4 Delete one app](#14-Delete-One-App)
+    - [1.5 Get icon of app](#15-Get-Icon-of-App)
+    - [1.6 Upload package by segment](#16-Upload-Package-by-Segment)
+    - [1.7 Merge app package](#17-Merge-App-Package)
+    - [1.8 Register virtual machine app](#18-Register-Virtual-Machine-App)
+    - [1.9 Get video of app](#19-Get-Video-of-App)
+    - [1.10 Modify hot apps](#110-Modify-Hot-Apps)
+    - [1.11 Get all apps-v2](#111-Get-All-Apps-v2)
+    - [1.12 Get one app-v2](#112-Get-One-App-v2)
+    - [1.13 Register app-v2](#113-Register-App-v2)
+  - [2. Package](#2-Package)
+    - [2.1 Get all packages of app](#21-Get-All-Packages-of-App)
+    - [2.2 Get one package](#22-Get-One-Package)
+    - [2.3 Delete one package](#23-Delete-One-Package)
+    - [2.4 Download one package](#24-Download-One-Package)
+    - [2.5 Get file content](#25-Get-File-Content)
+    - [2.6 APP publish](#26-App-Publish)
+    - [2.7 APP test](#27-App-Test)
+    - [2.8 Get all packages of user](#28-Get-All-Packages-of-User)
+    - [2.9 Update app](#29-Update-App)
+    - [2.10 APP publish-v2](#210-App-Publish-v2)
+    - [2.11 Get all packages of app-v2](#211-Get-All-Packages-of-App-v2)
+    - [2.12 Get one package-v2](#212-Get-One-Package-v2)
+    - [2.13 Get all packages of user-v2](#213-Get-All-Packages-of-User-v2)
+  - [3. Comment](#3-Comment)
+    - [3.1 Get comments of app](#31-Get-Comments-of-App)
+    - [3.2 Submit comment to app](#32-Submit-Comment-to-App)
+    - [3.3 Get comments of app-v2](#33-Get-Comments-of-App-v2)
+  - [4. APP push](#4-App-Push)
+    - [4.1 Query push app list](#41-Query-Push-App-List)
+    - [4.2 Get push app package](#42-Get-Push-App-Package)
+    - [4.3 Push app package](#43-Push-App-Package)
+    - [4.4 Download push app package](#44-DownLoad-Push-App-Package)
+    - [4.5 Download push app icon](#45-Download-Push-App-Icon)
+    - [4.6 Query push app list-v2](#46-Query-Push-App-List-v2)
+  - [5. AppStore manager](#5-AppStore-Manager)
+    - [5.1 Add AppStore](#51-Add-AppStore)
+    - [5.2 Delete AppStore](#52-Delete-AppStore)
+    - [5.3 Modify AppStore](#53-Modify-AppStore)
+    - [5.4 Query AppStore List](#54-Query-AppStore-List)
+    - [5.5 Query AppStore](#55-Query-AppStore)
+    - [5.6 Query AppStore List-v2](#56-Query-AppStore-List-v2)
+  - [6. Message](#6-Message)
+    - [6.1 Add message](#61-Add-Message)
+    - [6.2 Get all message](#62-Get-All-Message)
+    - [6.3 Get message](#63-Get-Message)
+    - [6.4 Delete message](#64-Delete-Message)
+    - [6.5 Accept message](#65-Accept-Message)
+    - [6.6 Update status](#66-Update-Status)
+    - [6.7 Add message-v2](#67-Add-Message-v2)
+    - [6.8 Get all message-v2](#68-Get-All-Message-v2)
+  - [7. APP pull](#7-App-Pull)
+    - [7.1 Query pull app list](#71-Query-Pull-App-List)
+    - [7.2 Get pull app packages](#72-Get-Pull-App-Packages)
+    - [7.3 Pull app package](#73-Pull-App-Package)
+    - [7.4 Query pull app list-v2](#74-Query-Pull-App-List-v2)
+    - [7.5 Get pull app packages-v2](#75-Get-Pull-App-Packages-v2)
 
 
 ## 1. App
@@ -201,7 +201,7 @@ Example response:
   "delete App success."
 ```
 
-### 1.5 Get Icon Of App
+### 1.5 Get Icon of App
 Get application icon by application id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/icon
@@ -499,7 +499,7 @@ Example response:
 Package belong to application, etch application have at least one Package. 
 
 
-### 2.1 Get All Packages Of App
+### 2.1 Get All Packages of App
 
 Query all packages by application id.
 
@@ -991,7 +991,7 @@ Example response:
 ]
 ```
 
-### 3.2 Submit Comment To App
+### 3.2 Submit Comment to App
 User submit comment to application by application id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/comments
@@ -1254,8 +1254,8 @@ Method: POST
 ```
 |Name|Definition|Type|Required|
 |---|---|---|---|
-|appStoreName |appStore name|request param |yes|
-|appStoreVersion |appStore version|request param |yes|
+|appStoreName |AppStore name|request param |yes|
+|appStoreVersion |AppStore version|request param |yes|
 |company |company name|request param |yes|
 |url |url address|request param |yes|
 |schema |schema|request param |no|
@@ -1289,7 +1289,7 @@ Method: DELETE
 ```
 |Name|Definition|Type|Required|
 |---|---|---|---|
-|appStoreId |appStore id|path |yes|
+|appStoreId |AppStore id|path |yes|
 
 Example response:
 ```
@@ -1305,9 +1305,9 @@ Method: PUT
 ```
 |Name|Definition|Type|Required|
 |---|---|---|---|
-|appStoreId |appStore id|path |yes|
-|appStoreName |appStore name|request param |yes|
-|appStoreVersion |appStore version|request param |yes|
+|appStoreId |AppStore id|path |yes|
+|appStoreName |AppStore  name|request param |yes|
+|appStoreVersion |AppStore  version|request param |yes|
 |company |company name|request param |yes|
 |url |url address|request param |yes|
 |schema |schema|request param |no|
@@ -1334,14 +1334,14 @@ Example response:
 ```
 
 ### 5.4 Query AppStore List
-Query external appStore list.
+Query external AppStore list.
 ```
 Resource URI： /mec/appstore/v1/appstores
 Method: GET
 ```
 |Name|Definition|Type|Required|
 |---|---|---|---|
-|appStoreName |appStore name|request param |yes|
+|appStoreName |AppStore name|request param |yes|
 |company |company name|request param |yes|
 
 Example response:
@@ -1365,14 +1365,14 @@ Example response:
 ```
 
 ### 5.5 Query AppStore
-Query external appStore.
+Query external AppStore .
 ```
 Resource URI： /mec/appstore/v1/appstores/{appStoreId}
 Method: GET
 ```
 |Name|Definition|Type|Required|
 |---|---|---|---|
-|appStoreId |appStore id|path |yes|
+|appStoreId |AppStore id|path |yes|
 
 Example response:
 ```
@@ -1394,7 +1394,7 @@ Example response:
 
 ### 5.6 Query AppStore List-v2
 
-Pagination query external appStores.
+Pagination query external AppStores.
 
 ```
 Resource URI： /mec/appstore/v2/appstores
@@ -1403,7 +1403,7 @@ METHOD: GET
 
 | Name         | Definition                               | Type          | Required |
 | ------------ | ---------------------------------------- | ------------- | -------- |
-| appStoreName | appStore name                            | request param | yes      |
+| appStoreName | AppStore name                            | request param | yes      |
 | company      | company name                             | request param | yes      |
 | limit        | number of queries per page, [1,500]      | request param | yes      |
 | offset       | paging query start page, starting from 0 | request param | yes      |
@@ -1448,8 +1448,8 @@ Method: POST
 |Name|Definition|Type|Required|
 |---|---|---|---|
 |basicInfo |basic information|request param |yes|
-|sourceAppStore |source appStore|request param |yes|
-|targetAppStore |target appStore|request param |yes|
+|sourceAppStore |source AppStore|request param |yes|
+|targetAppStore |target AppStore|request param |yes|
 |atpTestStatus |ATP test result|request param |yes|
 |atpTestTaskId |ATP test task id|request param |yes|
 |atpTestReportUrl |ATP test report url|request param |yes|
@@ -1599,8 +1599,8 @@ METHOD: POST
 | Name               | Definition                    | Type          | Required |
 | ------------------ | ----------------------------- | ------------- | -------- |
 | basicInfo          | basic information             | request param | yes      |
-| sourceAppStore     | source appStore               | request param | yes      |
-| targetAppStore     | target appStore               | request param | yes      |
+| sourceAppStore     | source AppStore               | request param | yes      |
+| targetAppStore     | target AppStore               | request param | yes      |
 | atpTestStatus      | ATP test result               | request param | yes      |
 | atpTestTaskId      | ATP test task id              | request param | yes      |
 | atpTestReportUrl   | ATP test report url           | request param | yes      |
@@ -1675,7 +1675,7 @@ Example response:
 
 ## 7. App Push
 
-User can pull a application from other appstore. 
+User can pull a application from other AppStore. 
 
 
 ### 7.1 Query Pull App List
@@ -1718,7 +1718,7 @@ Method: GET
 ```
 |Name|Definition|Type|Required|
 |---|---|---|---|
-|platformId |external appstore id|path |yes|
+|platformId |external AppStore id|path |yes|
 
 Example response:
 ```
@@ -1760,8 +1760,8 @@ PullAppReqDto:
 
 | 字段            | 描述                          | 类型   | 必选 |
 | --------------- | ----------------------------- | ------ | ---- |
-| sourceStoreId   | source appStore id            | string | yes  |
-| sourceStoreName | source appStore name          | string | yes  |
+| sourceStoreId   | source AppStore id            | string | yes  |
+| sourceStoreName | source AppStore name          | string | yes  |
 | name            | application name              | string | yes  |
 | provider        | application provider          | string | yes  |
 | version         | application version           | string | yes  |
@@ -1842,7 +1842,7 @@ METHOD: GET
 
 | Name       | Definition                               | Type          | Required |
 | ---------- | ---------------------------------------- | ------------- | -------- |
-| platformId | external appStore id                     | path          | yes      |
+| platformId | external AppStore id                     | path          | yes      |
 | limit      | number of queries per page, [1,500]      | int           | yes      |
 | offset     | paging query start page, starting from 0 | int           | yes      |
 | sortItem   | query sort field                         | String        | no       |
