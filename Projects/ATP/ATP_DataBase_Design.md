@@ -1,9 +1,9 @@
 数据库设计
 =========================
 - 在V1.2版本中，较v1.1版本，数据库表TEST_CASE_TABLE，TEST_SCENARIO_TABLE 和TEST_SUITE_TABLE新增了CREATETIME字段，需要在上述3个数据库表中执行如下sql语句：
-alter table TEST_CASE_TABLE add column CREATETIME  TIMESTAMP  NULL;
-alter table TEST_SCENARIO_TABLE add column CREATETIME  TIMESTAMP  NULL;
-alter table TEST_SUITE_TABLE add column CREATETIME  TIMESTAMP  NULL;
+alter table TEST_CASE_TABLE add column CREATETIME  TIMESTAMP  NULL;  
+alter table TEST_SCENARIO_TABLE add column CREATETIME  TIMESTAMP  NULL;  
+alter table TEST_SUITE_TABLE add column CREATETIME  TIMESTAMP  NULL; 
 
 
 - ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用的数据库表格如下：
