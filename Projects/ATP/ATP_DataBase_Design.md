@@ -1,6 +1,11 @@
 数据库设计
 =========================
-- 在V1.1版本中，较v1.0版本，TASK_TABLE表中TESTCASEDETAIL字段存储内容发生变化，TEST_CASE_TABLE表中存储字段发生变化，因此升级V1.1版本需要清除TASK_TABLE表和TEST_CASE_TABLE表中所有数据，否则功能会有问题。
+- 在V1.2版本中，较v1.1版本，数据库表TEST_CASE_TABLE，TEST_SCENARIO_TABLE 和TEST_SUITE_TABLE新增了CREATETIME字段，需要在上述3个数据库表中执行如下sql语句：
+alter table TEST_CASE_TABLE add column CREATETIME  TIMESTAMP  NULL;
+alter table TEST_SCENARIO_TABLE add column CREATETIME  TIMESTAMP  NULL;
+alter table TEST_SUITE_TABLE add column CREATETIME  TIMESTAMP  NULL;
+
+
 - ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用的数据库表格如下：
 
 - TABLE TASK_TABLE: 存储测试任务信息
@@ -39,6 +44,7 @@
        TESTSUITEIDLIST          TEXT               NULL,
        TESTSTEPCH               TEXT               NULL,
        TESTSTEPEN               TEXT               NULL,
+       CREATETIME               TIMESTAMP          NULL,
        CONSTRAINT test_case_table_pkey PRIMARY KEY (ID)
     );
 ```
@@ -52,6 +58,7 @@
         DESCRIPTIONCh            TEXT               NULL,
         DESCRIPTIONEN            TEXT               NULL,
         LABEL                    VARCHAR(200)       NULL,
+        CREATETIME               TIMESTAMP          NULL,
         CONSTRAINT test_scenario_table_pkey PRIMARY KEY (ID)
     );
 ```
@@ -65,6 +72,7 @@
        DESCRIPTIONCh            TEXT               NULL,
        DESCRIPTIONEN            TEXT               NULL, 
        SCENARIOIDLIST           VARCHAR(255)       NULL,
+       CREATETIME               TIMESTAMP          NULL,
        CONSTRAINT test_suite_table_pkey PRIMARY KEY (ID)
     );
 ```
