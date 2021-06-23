@@ -4,8 +4,8 @@ The document is for the appstore-be project, there are six parts of interfaces i
 
 - [AppStore Interfaces](#appstore-interfaces)
   - [1. APP](#1-APP)
-    - [1.1 Get all apps](#11-Get All Apps)
-    - [1.2 Get one app](#12-Get One App)
+    - [1.1 Get all apps](#11-Get-All-Apps)
+    - [1.2 Get one app](#12-Get-One-App)
     - [1.3 Register app](#13-Register App)
     - [1.4 Delete one app](#14-Delete One App)
     - [1.5 Get icon of app](#id7)
