@@ -32,6 +32,8 @@ atp Interfaces
   - [5. Contribution](#contribution)
        - [5.1 GET query all contributions](#get-query-all-contribution)
        - [5.2 POST create contribution](#post-create-contribution)
+       - [5.3 POST batch delete contributions](#post-batch-delete-contributions)
+       - [5.4 GET download contribution script](#get-download-contribution-script)
   - [6. File](#file)
        - [6.1 GET query one file](#get-query-one-file)
   - [7. Test model](#test-model)
