@@ -1,6 +1,6 @@
 # OpenStack（简称OS） 参数预配置
 ##预步置骤
-- 安装OpenStack Wallaby (5.5.0) 版本;
+- 推荐安装OpenStack Wallaby (5.5.0) 版本;
 - 配置网络
 - 配置示例类型
 
@@ -30,10 +30,11 @@ OpenStack社区正式发布第23个版本 – Wallaby， OpenStack专注于开�
 
 ##配置网络：
 
-创建三个共享网络
+创建三个网络
 mec_network_n6、mec_network_mep、mec_network_internet;
-
+![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Network.png "网络配置.png")
 
 ##实例类型
 创建以下几个规格示例类型，配置与实际的规格对应1c（CPU1核）、1024m（内存1024M）、40g（硬盘40G）
 1c-1024m-40g、2c-4096m-40g
+![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Flavor.png "实例类型.png")
