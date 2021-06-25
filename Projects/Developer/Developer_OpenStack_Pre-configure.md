@@ -4,8 +4,6 @@
 - 配置网络
 - 配置示例类型
 
-## OpenStack Wallaby 版本
-![](https://pics6.baidu.com/feed/9c16fdfaaf51f3def0316ac698d1ab173b29795c.jpeg?token=fd931b36007bef42854fd783e3a21496)
 ###版本介绍
 OpenStack社区正式发布第23个版本 – Wallaby， OpenStack专注于开源基础设施软件的广泛开发与部署，作为全球三大活跃的开源项目之一（包括Linux kernel与Chromium），始终注重激发全球社区活力，提升社区开发者的参与度。
 
