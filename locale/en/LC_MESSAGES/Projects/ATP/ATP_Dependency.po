@@ -357,6 +357,18 @@ msgstr "fastjson"
 msgid "1.2.70"
 msgstr "1.2.70"
 
+#: ../../Projects/ATP/ATP_Dependency.md
+msgid "org.apache.poi"
+msgstr "org.apache.poi"
+
+#: ../../Projects/ATP/ATP_Dependency.md
+msgid "poi-ooxml"
+msgstr "poi-ooxml"
+
+#: ../../Projects/ATP/ATP_Dependency.md
+msgid "4.1.1"
+msgstr "4.1.1"
+
 #: ../../Projects/ATP/ATP_Dependency.md:34
 msgid "ATP-fe 三方件使用清单"
 msgstr "ATP-fe Trilateral Use List"
