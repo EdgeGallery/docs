@@ -63,29 +63,29 @@ Development of location services based on EdgeGallery, showing how to develop ed
 
 ##  应用发布-Application release  
 
-Step 1: Application Configuration     
+第一步：ATP测试-Step 1: Application Testing     
+![](/uploads/images/2021/v1.2/starttest.png "starttest.png")
+![](/uploads/images/2021/v1.2/starttest-en.png "starttest-en.png")   
 
-![](/uploads/images/2020/v1.0/ApplicationRelease-1.png "ApplicationRelease-1.png")    
-
-Step 2: Certification testing    
-
-![](/uploads/images/2020/v1.0/ApplicationRelease-2.png "ApplicationRelease-2.png")   
-
-Step 3: Publishing application    
- 
-![](/uploads/images/2020/v1.0/ApplicationRelease-3.png "ApplicationRelease-3.png")
+第二步：应用发布-Step 2: Publishing application    
+![](/uploads/images/2021/v1.2/publish.png "publish.png")
+![](/uploads/images/2021/v1.2/publish-en.png "publish-en.png")  
 
 
-## 本地开发
-* 下载依赖的插件-BashSupport，并导入到本地IDE   
+## 本地开发-Local development
+* 下载依赖的插件-BashSupport，并导入到本地IDE
+* Download the dependent plug-in-BashSupport, and import it to the local IDE  
 ![](/uploads/images/2020/v1.0/Plug-in.png "Plug-in.png")    
 
 * 执行插件，会自动生成示例代码    
+* Executing the plug-in will automatically generate sample code
 ![](/uploads/images/2021/cor2020/execute_plugin.png "执行插件生成示例代码.png")    
 
 * 编写APP代码    
+* Write APP code
 
-* 构建docker image      
+* 构建docker image  
+* Build docker image    
 
 
 
