@@ -34,9 +34,8 @@ Development of location services based on EdgeGallery, showing how to develop ed
 * Location service applications as service consumers rely on the "face recognition service" of the EdgeGallery platform<br>
 * Location service application as a service provider releases "location service", provides ecological API externally, and other services can consume "location service"<br>
 
-# 开发者平台流程介绍-Developer Platform Process Introduction
-![](/uploads/images/2021/v1.2/dev-integrate.png "dev-integrate.png")
-![](/uploads/images/2021/v1.2/dev-development.png "dev-development.png")
+# 开发者平台容器部署流程介绍-Introduction to the developer platform container deployment process
+![](/uploads/images/2021/v1.2/dev_development.png "dev_development.png")
 
 ## 开发准备-Development Preparation
 * 新建一个项目-Create a new project 
@@ -47,35 +46,22 @@ Development of location services based on EdgeGallery, showing how to develop ed
 ![](/uploads/images/2021/v1.2/capability.png "capability.png")
 ![](/uploads/images/2021/v1.2/capability-en.png "capability-en.png")
 
-## 本地开发
-* 下载依赖的插件-BashSupport，并导入到本地IDE   
-![](/uploads/images/2020/v1.0/Plug-in.png "Plug-in.png")    
+## 部署调测-Deployment and commissioning
 
-* 执行插件，会自动生成示例代码    
-![](/uploads/images/2021/cor2020/execute_plugin.png "执行插件生成示例代码.png")    
+ 第一步：上传App镜像-Step 1: Upload App image
+![](/uploads/images/2021/v1.2/uploadimage.png "uploadimage.png")
+![](/uploads/images/2021/v1.2/uploadimage-en.png "uploadimage-en.png")    
 
-* 编写APP代码    
+ 第二步：上传yaml文档-Step 2: Upload the yaml file  
+![](/uploads/images/2021/v1.2/uploadyaml.png "uploadyaml.png")
+![](/uploads/images/2021/v1.2/uploadyaml-en.png "uploadyaml-en.png")        
 
-* 构建docker image      
-
-## 部署调测
-* 部署调测页面可进行应用的部署测试
-
- 第一步：上传App镜像。   
-
-![](/uploads/images/2021/developer/deploy-one.PNG "deploy-one.PNG")    
-
- 第二步：配置部署文件。    
-
-![](/uploads/images/2021/developer/deploy-two-config.PNG "deploy-two-config.PNG")     
-
- 第三步：部署调测。    
-
-![](/uploads/images/2020/v1.0/DeploymentTest.png "DeploymentTest.png")    
+ 第三步：部署调测-Step 3: Deployment and commissioning   
+![](/uploads/images/2021/v1.2/startdeploy.png "startdeploy.png")
+![](/uploads/images/2021/v1.2/startdeploy-en.png "startdeploy-en.png")           
 
 
-##  应用发布
-* 应用发布页面可进行应用配置、应用认证测试，测试通过后可将应用发布至应用仓库。  
+##  应用发布-Application release  
 
 Step 1: Application Configuration     
 
@@ -89,6 +75,17 @@ Step 3: Publishing application
  
 ![](/uploads/images/2020/v1.0/ApplicationRelease-3.png "ApplicationRelease-3.png")
 
+
+## 本地开发
+* 下载依赖的插件-BashSupport，并导入到本地IDE   
+![](/uploads/images/2020/v1.0/Plug-in.png "Plug-in.png")    
+
+* 执行插件，会自动生成示例代码    
+![](/uploads/images/2021/cor2020/execute_plugin.png "执行插件生成示例代码.png")    
+
+* 编写APP代码    
+
+* 构建docker image      
 
 
 
