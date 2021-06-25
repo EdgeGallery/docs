@@ -22,8 +22,8 @@ msgid "数据库设计"
 msgstr "Database design"
 
 #: ../../Projects/ATP/ATP_DataBase_Design.md:3
-msgid "在V1.1版本中，较v1.0版本，TASK_TABLE表中TESTCASEDETAIL字段存储内容发生变化，TEST_CASE_TABLE表中存储字段发生变化，因此升级V1.1版本需要清除TASK_TABLE表和TEST_CASE_TABLE表中所有数据，否则功能会有问题。"
-msgstr "In version V1.1, when the contents of the TESTCASEDETAIL field in the TESTCASE_TABLE table change in the v1.0 version, the storage field in the TEST_CASE_TABLE table has changed, so the upgrade version 1.1 requires that all data in the TASK_TABLE table and TEST_CASE_TABLE table be cleared, otherwise the function will be problematic."
+msgid "在V1.2版本中，较v1.1版本，数据库表TEST_CASE_TABLE，TEST_SCENARIO_TABLE 和TEST_SUITE_TABLE新增了CREATETIME字段，需要在上述3个数据库表中执行如下sql语句：alter table TEST_CASE_TABLE add column CREATETIME TIMESTAMP NULL;alter table TEST_SCENARIO_TABLE add column CREATETIME TIMESTAMP NULL;alter table TEST_SUITE_TABLE add column CREATETIME TIMESTAMP NULL;"
+msgstr "In version V1.2,table TEST_CASE_TABLE，TEST_SCENARIO_TABLE and TEST_SUITE_TABLE have been increased the field:CREATETIME. So we need to execute the following sql:alter table TEST_CASE_TABLE add column CREATETIME TIMESTAMP NULL;alter table TEST_SCENARIO_TABLE add column CREATETIME TIMESTAMP NULL;alter table TEST_SUITE_TABLE add column CREATETIME TIMESTAMP NULL;"
 
 #: ../../Projects/ATP/ATP_DataBase_Design.md:4
 msgid "ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用的数据库表格如下："
