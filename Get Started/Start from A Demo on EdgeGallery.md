@@ -1,13 +1,19 @@
 # EdgeGallery界面一览
 -------------------
-###### 开发者平台
-![](/uploads/images/2021/v1.1/Developer.png "Developer.png")<br>
+###### 开发者平台-Developer Platform
+![](/uploads/images/2021/v1.2/developer.png "developer.png")<br>
 
-###### 应用商城
-![](/uploads/images/2021/v1.1/AppStore.png "AppStore.png")<br>
+###### 应用商城-AppStore Platform
+![](/uploads/images/2021/v1.2/appstore.png "appstore.png")<br>
 
-###### MEC管理平台
-![](/uploads/images/2020/v1.0/Mecm.png "Mecm.png")<br>
+###### MEC管理平台-Mecm Platform
+![](/uploads/images/2021/v1.2/mecm.png "mecm.png")<br>
+
+###### 应用测试认证平台-Application Testing Platform
+![](/uploads/images/2021/v1.2/atp.png "atp.png")<br>
+
+###### 边缘节点管理平台-Edge Node Management Platform
+![](/uploads/images/2021/v1.2/mepm.png "mepm.png")<br>
 
 # APP开发流程
 -------------------
