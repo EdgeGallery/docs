@@ -2,23 +2,23 @@
 -------------------
 ###### 开发者平台-Developer Platform
 ![](/uploads/images/2021/v1.2/developer.png "developer.png")<br>
-![](/uploads/images/2021/v1.2/developer.png "developer-en.png")<br>
+![](/uploads/images/2021/v1.2/developer-en.png "developer-en.png")<br>
 
 ###### 应用商城-AppStore Platform
 ![](/uploads/images/2021/v1.2/appstore.png "appstore.png")<br>
-![](/uploads/images/2021/v1.2/appstore.png "appstore-en.png")<br>
+![](/uploads/images/2021/v1.2/appstore-en.png "appstore-en.png")<br>
 
 ###### MEC管理平台-Mecm Platform
 ![](/uploads/images/2021/v1.2/mecm.png "mecm.png")<br>
-![](/uploads/images/2021/v1.2/mecm.png "mecm-en.png")<br>
+![](/uploads/images/2021/v1.2/mecm-en.png "mecm-en.png")<br>
 
 ###### 应用测试认证平台-Application Testing Platform
 ![](/uploads/images/2021/v1.2/atp.png "atp.png")<br>
-![](/uploads/images/2021/v1.2/atp.png "atp-en.png")<br>
+![](/uploads/images/2021/v1.2/atp-en.png "atp-en.png")<br>
 
 ###### 边缘节点管理平台-Edge Node Management Platform
 ![](/uploads/images/2021/v1.2/mepm.png "mepm.png")<br>
-![](/uploads/images/2021/v1.2/mepm.png "mepm-en.png")<br>
+![](/uploads/images/2021/v1.2/mepm-en.png "mepm-en.png")<br>
 
 # APP开发流程-APP Development Process
 -------------------
