@@ -70,7 +70,7 @@ The document is for the appstore-be project, there are six parts of interfaces i
     - [8.3 Create one host](#83-Create-One-Host)
     - [8.4 Delete one host](#84-Delete-One-Host)
     - [8.5 Modify one host](#85-Modify-One-Host)
-    - [8.6 Upload configuration file](#85-Upload-Configuration-File)
+    - [8.6 Upload configuration file](#86-Upload-Configuration-File)
   - [9. App experience online](#9-App-Experience-Online)
     - [9.1 Instantiate App](#91-Instantiate-App)
     - [9.2 Release resource](#92-Release-Resource)
