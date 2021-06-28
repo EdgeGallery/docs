@@ -15,10 +15,12 @@ password：配置虚机镜像登录密码
 ## 配置沙箱环境：developer新增openstack沙箱环境
 
 1. develoepr平台用管理员用户admin登录 打开系统-沙箱环境管理-新增沙箱环境
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png "屏幕截图.png")
 
 2.lcmIp为lcmcontroller的IP地址 ，mecHost为openstack的IP地址，端口号为lcmcontroller对外暴露的端口号, 协议选择https.
 
 其他参数配置openstack相关的网络配置：参数设置如下：
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0628/163330_baff108f_7625288.png "屏幕截图.png")
 
 DC_ID=FS_M:Manager_VPC; 使用默认值或者不传即可
 
