@@ -6,14 +6,10 @@ AppStore是开发者发布和上线App应用的边缘应用市场，由Developer
 
 AppStore分为前后台两个部分，[AppStore BE][1]是后台部分，提供主要功能接口供前台或其他三方系统调用，[AppStore FE][2]是前台部分，提供界面展示。
 
-## 整体框架说明
 
-![](/uploads/images/2020/v1.0/all-the-arch.png)
+## 代码架构
 
-
-## 代码架构说明
-
-![](/uploads/images/2021/cor2020/appstore-code-arch.png)
+![](/uploads/images/2021/appstore/app structure.png)
 
 1. AppStore FE：开发者平台前台框架，使用VUE开发。
 
@@ -23,3 +19,4 @@ AppStore分为前后台两个部分，[AppStore BE][1]是后台部分，提供�
 
 [1]: https://gitee.com/edgegallery/appstore-be "AppStore BE"
 [2]: https://gitee.com/edgegallery/appstore-fe "AppStore FE"
+
