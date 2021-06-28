@@ -21,9 +21,8 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 **新开源仓库列表**
 | 模块                           |      名称       | 类型   | URL                                           | 说明                                   |
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
-| Application Health-check           | health-check    | 产品仓 | https://gitee.com/edgegallery/health-check    | 提供ETSI定义的APP health-check能力   |
-| EdgeGallery Frontend Component |     applications     | PoC仓 | https://gitee.com/edgegallery/applications          | 提供开源三方APP Demo         |
-
+| Install          | install    | 配置仓 | https://gitee.com/edgegallery/installer    |     |
+| filesystem       | filesystem | 产品仓 | https://gitee.com/edgegallery/file-system | EdgeGallery平台内的应用镜像管理服务      |
 
 
 **New Features**
@@ -40,6 +39,17 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
     - 视频会议、在线课堂
 * **应用创新**
     - 完成130+应用集成、落地25+创新基地
+* **体验优化**
+    - AppStore、Developer、MECM各平台界面全面升级优化
+    - 支持数据持久化
+* **新增特性**
+    - Developer、AppStore和MECM平台增加管理员操作界面
+    - AppStore平台提供应用在线体验功能
+    - 虚机应用集成能力增强，可配置网络，input参数等，支持无镜像包调测
+    - 支持虚机应用的全流上线，从集成、测试、发布，到部署和分发
+    - 增加镜像文件管理服务，支持镜像文件的上传和下载
+    - 增加边缘自治管理界面
+* **安装部署** 支持ansible部署，提供All-in-one部署安装
 
 
  **Bug Fixes**
