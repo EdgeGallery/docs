@@ -64,8 +64,17 @@
     - [7.3 拉取应用包](#73-拉取应用包)
     - [7.4 分页查询可拉取应用列表-v2](#74-分页查询可拉取应用列表-v2)
     - [7.5 获取外部仓库可拉取应用列表-v2](#75-获取外部应用仓库可拉取应用列表-v2)
-
-
+  - [8. 沙箱管理](#8-沙箱管理)
+    - [8.1 查询沙箱环境列表](#81-查询沙箱环境列表)
+    - [8.2 查询沙箱环境](#82-查询沙箱环境)
+    - [8.3 添加沙箱环境](#83-添加沙箱环境)
+    - [8.4 删除沙箱环境](#84-删除沙箱环境)
+    - [8.5 修改沙箱环境](#85-修改沙箱环境)
+    - [8.6 上传沙箱环境配置文件](#86-上传沙箱环境配置文件)
+  - [9. 应用在线体验](#9-应用在线体验)
+    - [9.1 实例化应用](#91-实例化应用)
+    - [9.2 释放资源](#92-释放资源)
+    - [9.3 获取应用工作状态](#93-获取应用工作状态)
 
 ## 1. 应用
 
@@ -1612,7 +1621,6 @@ METHOD: POST
 
 ```
 200 OK
-  add a message success
   {
     "data": "add a message success",
     "retCode": 0,
@@ -1879,3 +1887,284 @@ METHOD: GET
 }
 ```
 
+## 8. 沙箱管理
+
+管理沙箱环境。
+
+
+### 8.1 查询沙箱环境列表
+查询沙箱环境列表。
+```
+URI： /mec/appstore/v1/system/hosts
+METHOD: GET
+```
+
+| 名称       | 描述                        | IN            | 必选 |
+| ---------- | --------------------------- | ------------- | ---- |
+| userId | 用户ID              | request param          | no  |
+| name | 沙箱环境名称              | request param          | no  |
+| ip | 沙箱环境ip              | request param          | no  |
+
+响应示例:
+```
+200 OK
+[
+  {
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "ip": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0
+  }
+]
+```
+
+### 8.2 查询沙箱环境
+根据hostId查询沙箱环境。
+```
+URI： /mec/appstore/v1/system/hosts/{hostId}
+METHOD: GET
+```
+
+| 名称       | 描述                        | IN            | 必选 |
+| ---------- | --------------------------- | ------------- | ---- |
+| hostId | 沙箱环境id             | path          | yes  |
+
+响应示例:
+```
+200 OK
+[
+  {
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "ip": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0
+  }
+]
+```
+
+### 8.3 添加沙箱环境
+新增一个沙箱环境。
+```
+URI: /mec/appstore/v1/system/hosts
+METHOD: POST
+```
+
+| 名称       | 描述                        | IN            | 必选 |
+| ------- | ----------- | --------- | -------- |
+| MepHost | 沙箱管理请求结构体 | request body | yes      |
+
+```
+MepHost
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+
+响应示例:
+```
+200 OK
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+
+### 8.4 删除沙箱环境
+根据hostId删除沙箱环境。
+```
+URI: /mec/appstore/v1/system/hosts/{hostId}
+METHOD: DELETE
+```
+
+| 名称       | 描述                        | IN            | 必选 |
+| ------ | ---------- | --------- | -------- |
+| hostId | 沙箱环境id     | path | yes      |
+
+响应示例:
+```
+200 OK
+true
+```
+
+### 8.5 修改沙箱环境
+根据hostId修改沙箱环境。
+```
+URI: /mec/appstore/v1/system/hosts/{hostId}
+METHOD: PUT
+```
+
+| 名称       | 描述                        | IN            | 必选 |
+| ------ | ---------- | --------- | -------- |
+| hostId | 沙箱环境id     | path | yes      |
+| MepHost | 沙箱管理请求结构体 | request body | yes      |
+
+```
+MepHost
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+
+响应示例:
+```
+200 OK
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+
+### 8.6 上传沙箱环境配置文件
+上传沙箱环境配置文件。
+```
+URI: /mec/appstore/v1/system/host/files
+METHOD: POST
+```
+
+| 名称       | 描述                        | IN            | 必选 |
+| ------ | ---------- | --------- | -------- |
+| uploadFile | 上传文件     | request body form | yes      |
+| userId | 用户ID | request param | yes      |
+
+
+响应示例:
+```
+200 OK
+{
+  "fileId": "string",
+  "fileName": "string",
+  "url": "string",
+  "userId": "string",
+  "uploadDate": "2020-09-14T09:03:17.084Z",
+  "filePath": "string",
+  "temp": false
+}
+```
+
+## 9. 应用在线体验
+
+可以在线体验应用
+
+
+### 9.1 实例化应用
+实例化应用，开始应用在线体验。
+```
+URI： /mec/appstore/v1/experience/deploy
+METHOD: GET
+```
+
+| 名称       | 描述                        | IN            | 必选 |
+| ---------- | --------------------------- | ------------- | ---- |
+| appId | 应用ID              | request param          | no  |
+| packageId | 应用包ID              | request param          | no  |
+| userId | 用户ID              | request param          | no  |
+| name | 沙箱环境名称              | request param          | no  |
+| ip | 沙箱环境ip              | request param          | no  |
+
+响应示例:
+```
+200 OK
+{
+    "data": "testAPP:30208:127.0.0.1",
+    "retCode": 0,
+    "params": "[string]",
+    "message": "string"
+}
+```
+
+### 9.2 释放资源
+体验完成，释放资源。
+```
+URI： /mec/appstore/v1/experience/clean
+METHOD: POST
+```
+
+| 名称       | 描述                        | IN            | 必选 |
+| ---------- | --------------------------- | ------------- | ---- |
+| packageId | 应用包ID              | request param          | yes  |
+| userId | 用户ID              | request param          | no  |
+| name | 沙箱环境名称              | request param          | no  |
+| ip | 沙箱环境ip              | request param          | no  |
+
+响应示例:
+```
+200 OK
+true
+```
+
+### 9.3 获取应用工作状态
+获取应用工作状态。
+```
+URI： /mec/appstore/v1/experience/container/workStatus
+METHOD: POST
+```
+
+| 名称       | 描述                        | IN            | 必选 |
+| ---------- | --------------------------- | ------------- | ---- |
+| packageId | 应用包ID              | request param          | no  |
+| userId | 用户ID              | request param          | no  |
+| name | 沙箱环境名称              | request param          | no  |
+| ip | 沙箱环境ip              | request param          | no  |
+
+响应示例:
+```
+200 OK
+{
+    "data": "testAPP:30208:127.0.0.1",
+    "retCode": 0,
+    "params": "[string]",
+    "message": "string"
+}
+```

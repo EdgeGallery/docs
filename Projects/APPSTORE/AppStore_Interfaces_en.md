@@ -64,7 +64,17 @@ The document is for the appstore-be project, there are six parts of interfaces i
     - [7.3 Pull app package](#73-Pull-App-Package)
     - [7.4 Query pull app list-v2](#74-Query-Pull-App-List-v2)
     - [7.5 Get pull app packages-v2](#75-Get-Pull-App-Packages-v2)
-
+  - [8. Sandbox Management](#8-Sandbox-Management)
+    - [8.1 Get all hosts](#81-Get-All-Hosts)
+    - [8.2 Get one host](#82-Get-One-Host)
+    - [8.3 Create one host](#83-Create-One-Host)
+    - [8.4 Delete one host](#84-Delete-One-Host)
+    - [8.5 Modify one host](#85-Modify-One-Host)
+    - [8.6 Upload configuration file](#86-Upload-Configuration-File)
+  - [9. App experience online](#9-App-Experience-Online)
+    - [9.1 Instantiate App](#91-Instantiate-App)
+    - [9.2 Release resource](#92-Release-Resource)
+    - [9.3 Get app work status](#93-Get-App-Working-Status)
 
 ## 1. App
 
@@ -1611,13 +1621,12 @@ Example response:
 
 ```
 200 OK
-  add a message success
-  {
+{
     "data": "add a message success",
     "retCode": 0,
     "params": "[string]",
     "message": "string"
-  }
+}
 ```
 
 ### 6.8 Get All Message-v2
@@ -1880,3 +1889,294 @@ Example response:
 }
 ```
 
+
+## 8. Sandbox Management
+
+Manage the sandbox environment.
+
+
+### 8.1 Get All Hosts
+Get all sandbox environments.
+```
+Resource URI： /mec/appstore/v1/system/hosts
+METHOD: GET
+```
+
+| Name       | Definition                               | Type          | Required |
+| ---------- | ---------------------------------------- | ------------- | -------- |
+| userId     | user id                                  | request param | no       |
+| name       | sandbox environment name                 | request param | no       |
+| ip         | sandbox environment ip                   | request param | no       |
+
+Example response:
+
+```
+200 OK
+[
+  {
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "ip": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0
+  }
+]
+```
+
+### 8.2 Get One Host
+Get the sandbox environment based on hostId.
+```
+Resource URI： /mec/appstore/v1/system/hosts/{hostId}
+METHOD: GET
+```
+
+| Name       | Definition                               | Type          | Required |
+| ---------- | ---------------------------------------- | ------------- | -------- |
+| hostId     | sandbox environment id                   | path          | yes      |
+
+Example response:
+
+```
+200 OK
+[
+  {
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "ip": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0
+  }
+]
+```
+
+### 8.3 Create One Host
+Create one sandbox environment.
+```
+Resource URI: /mec/appstore/v1/system/hosts
+METHOD: POST
+```
+
+| Name       | Definition                               | Type          | Required |
+| ---------- | ---------------------------------------- | ------------- | -------- |
+| MepHost    | sandbox environment request body         | request body  | yes      |
+
+```
+MepHost
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+
+Example response:
+
+```
+200 OK
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+
+### 8.4 Delete One Host
+Delete the sandbox environment based on hostId.
+```
+Resource URI: /mec/appstore/v1/system/hosts/{hostId}
+METHOD: DELETE
+```
+
+| Name       | Definition                               | Type          | Required |
+| ---------- | ---------------------------------------- | ------------- | -------- |
+| hostId     | sandbox environment id                   | path          | yes      |
+
+Example response:
+
+```
+200 OK
+true
+```
+
+### 8.5 Modify One Host
+Modify the sandbox environment based on hostId.
+```
+Resource URI: /mec/appstore/v1/system/hosts/{hostId}
+METHOD: PUT
+```
+
+| Name       | Definition                               | Type          | Required |
+| ---------- | ---------------------------------------- | ------------- | -------- |
+| hostId     | sandbox environment id                   | path          | yes      |
+| MepHost    | sandbox environment request body         | request body  | yes      |
+
+```
+MepHost
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+
+Example response:
+
+```
+200 OK
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "ip": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0
+}
+```
+
+### 8.6 Upload Configuration File
+Upload sandbox environment configuration file.
+```
+Resource URI: /mec/appstore/v1/system/host/files
+METHOD: POST
+```
+
+| Name       | Definition                            | Type              | Required |
+| ---------- | ------------------------------------- | ----------------- | -------- |
+| uploadFile | uploaded file                         | request body form | yes      |
+| userId     | user id                               | request param     | yes      |
+
+
+Example response:
+
+```
+200 OK
+{
+  "fileId": "string",
+  "fileName": "string",
+  "url": "string",
+  "userId": "string",
+  "uploadDate": "2020-09-14T09:03:17.084Z",
+  "filePath": "string",
+  "temp": false
+}
+```
+
+## 9. App Experience Online
+
+Experiencing the application online.
+
+
+### 9.1 Instantiate App
+Instantiate the application and start experiencing the application online.
+```
+Resource URI： /mec/appstore/v1/experience/deploy
+METHOD: GET
+```
+
+| Name       | Definition                               | Type          | Required |
+| ---------- | ---------------------------------------- | ------------- | -------- |
+| appId      | application id                           | request param | no       |
+| packageId  | application package id                   | request param | no       |
+| userId     | user id                                  | request param | no       |
+| name       | sandbox environment name                 | request param | no       |
+| ip         | sandbox environment ip                   | request param | no       |
+
+Example response:
+
+```
+200 OK
+{
+    "data": "testAPP:30208:127.0.0.1",
+    "retCode": 0,
+    "params": "[string]",
+    "message": "string"
+}
+```
+
+### 9.2 Release Resource
+The experience is complete and resources are released.
+```
+Resource URI： /mec/appstore/v1/experience/clean
+METHOD: POST
+```
+
+| Name       | Definition                               | Type          | Required |
+| ---------- | ---------------------------------------- | ------------- | -------- |
+| packageId  | application package id                   | request param | yes      |
+| userId     | user id                                  | request param | no       |
+| name       | sandbox environment name                 | request param | no       |
+| ip         | sandbox environment ip                   | request param | no       |
+
+Example response:
+
+```
+200 OK
+true
+```
+
+### 9.3 Get App Working Status
+Get application working status.
+```
+Resource URI： /mec/appstore/v1/experience/container/workStatus
+METHOD: POST
+```
+
+| Name       | Definition                               | Type          | Required |
+| ---------- | ---------------------------------------- | ------------- | -------- |
+| packageId  | application package id                   | request param | no       |
+| userId     | user id                                  | request param | no       |
+| name       | sandbox environment name                 | request param | no       |
+| ip         | sandbox environment ip                   | request param | no       |
+
+Example response:
+
+```
+200 OK
+{
+    "data": "testAPP:30208:127.0.0.1",
+    "retCode": 0,
+    "params": "[string]",
+    "message": "string"
+}
+```
