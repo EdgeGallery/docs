@@ -11,7 +11,61 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 - [项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)
 - [开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
 
+
+ Version: v1.2.0
+--------------
+
+ - Release Date: 2020-07-07
+ - Image Version: v1.2.0
+
+**新开源仓库列表**
+| 模块                           |      名称       | 类型   | URL                                           | 说明                                   |
+| ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
+| Application Health-check           | health-check    | 产品仓 | https://gitee.com/edgegallery/health-check    | 提供ETSI定义的APP health-check能力   |
+| EdgeGallery Frontend Component |     applications     | PoC仓 | https://gitee.com/edgegallery/applications          | 提供开源三方APP Demo         |
+
+
+
+**New Features**
+
+[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.2)
+
+
+
+* **AI软硬件能** 支撑昇腾/Atlas硬件以及开放API
+    - AI换脸、OCR、智慧货架、姿态识别等
+* **行业套件** 支持行业组合能力
+    - PCB质量检测
+    - 工业现场南向设备管理通信
+    - 视频会议、在线课堂
+* **应用创新**
+    - 完成130+应用集成、落地25+创新基地
+
+
+ **Bug Fixes**
+
+  参见 [EdgeGallery v1.2.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.2%20Test%20Plan.md)
+
+ **Known Issues**
+
+  参见 [EdgeGallery v1.2.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.2%20Test%20Plan.md)
+
+ **Security Notes**
+
+ **Fixed Security Issues**
+
+  参见 [EdgeGallery v1.2.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.2/EG%20R1.2%20Security%20Test%20Plan%20.md)
+
+ **Known Security Issues**
+
+  参见 [EdgeGallery v1.2.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.2/EG%20R1.2%20Security%20Test%20Plan%20.md)
+
+ **Known Vulnerabilities in Used Modules**
+
+
+-----------------------------------------------------------------------------
  
+
  Version: v1.1.0
 --------------
 
