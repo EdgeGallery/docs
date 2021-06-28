@@ -28,7 +28,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 **New Features**
 
-[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)
+[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.2)
 
 
 
@@ -54,15 +54,20 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  **Fixed Security Issues**
 
-  参见 [https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.2/EG%20R1.2%20Security%20Test%20Plan%20.md)
+  参见 [EdgeGallery v1.2.0 Security Test Report]
+(https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.2/EG%20R1.2%20Security%20Test%20Plan%20.md)
 
  **Known Security Issues**
 
-  参见 [EdgeGallery v1.2.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.2/EG%20R1.2%20Security%20Test%20Plan%20.md)
+  参见 [EdgeGallery v1.2.0 Security Test Report]
+(https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.2/EG%20R1.2%20Security%20Test%20Plan%20.md)
 
  **Known Vulnerabilities in Used Modules**
 
+
+-----------------------------------------------------------------------------
  
+
  Version: v1.1.0
 --------------
 
