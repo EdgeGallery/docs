@@ -9,7 +9,7 @@ AppStore分为前后台两个部分，[AppStore BE][1]是后台部分，提供�
 
 ## 代码架构
 
-![](/uploads/images/2021/appstore/app structure.png)
+![](/uploads/images/2021/appstore/app_structure.png)
 
 1. AppStore FE：开发者平台前台框架，使用VUE开发。
 
