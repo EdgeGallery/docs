@@ -24,15 +24,15 @@ So in order to build a local development environment, the final startup sequence
 
 1. Download [Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)
 
-   ![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg "service center1.jpg")
+   ![](/uploads/images/2021/appstore/download_service-center_en.png "service center1.jpg")
 
 2. Run start-service-center.bat and start-frontend.bat after decompression
 
-   ![](/uploads/images/2021/cor2020/153735_4dafd335_7625245.jpeg "service center2.jpg")
+   ![](/uploads/images/2021/appstore/start_service-center.png "service center2.jpg")
 
 ### DataBase
 
-1. Download, install, and start Postgresql 12.2
+1. Download, install, and start Postgresql 12.3
 
 2. Set the login name and password, such as postgresql/root
 
@@ -144,7 +144,7 @@ After entering the website, the default is the guest user and can view the infor
    ![](/uploads/images/2021/appstore/pulled_en.png "4.6")
 
 5. Click the message center menu under the main menu of application sharing to view the notification information, and you can accept APP information that needs to be pushed from different operators. You can pull (download) the information of the application by clicking the receive button in the upper right corner of the right panel of the message center. The successfully pulled APP can be viewed on the "My Application" interface. Click the delete button to delete the message. Double-click to delete the message. View the message details.
-   ![](/uploads/images/2021/appstore/messages_en.png "4.7")
+   ![](/uploads/images/2021/appstore/message_en.png "4.7")
    ![](/uploads/images/2021/appstore/message_detail_en.png "4.8")
 
 6. After the application is successfully pushed, switch to the operation analysis tab on the right, and view the corresponding information in the operation analysis interface. At the same time, the operation analysis interface can view different operations such as pull, download, notification, push and other types of messages.

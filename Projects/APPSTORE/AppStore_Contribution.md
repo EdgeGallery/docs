@@ -25,15 +25,15 @@
 
 1、下载[Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)
 
-![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg "service center1.jpg")
+!![](/uploads/images/2021/appstore/download_service-center.png "service center1.jpg")
 
 2、解压后运行 start-service-center.bat  和  start-frontend.bat
 
-![](/uploads/images/2021/cor2020/153735_4dafd335_7625245.jpeg "service center2.jpg")
+![](/uploads/images/2021/appstore/start_service-center.png "service center2.jpg")
 
 ### DataBase
 
-1、下载、安装、启动 Postgresql 12.2
+1、下载、安装、启动 Postgresql 12.3
 
 2、设置登录名和密码，例如 postgresql/root
 
