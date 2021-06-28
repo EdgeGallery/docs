@@ -69,7 +69,7 @@
 
 ![](/uploads/images/2021/cor2020/154023_9c49d20c_7625245.jpeg "appstore-be1.jpg")
 
-3、运行MainServer函数，启动appstore-be
+4、运行MainServer函数，启动appstore-be
 
 ### AppStore-fe
 
@@ -127,7 +127,7 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 
 
 ### 共享应用
-1.应用共享导航下分为外部应用仓库管理、应用推广、应用拉取、消息中心和操作分析；
+1.应用共享导航下分为外部应用仓库管理、应用推广、应用拉取、消息中心和操作分析。
 ![](/uploads/images/2021/appstore/app_share.png "4.1")
 
 2.外部应用仓库管理页面，可以添加、修改和删除仓库。
@@ -147,5 +147,4 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 
 6.应用推送成功后切换到右边操作分析tab，在操作分析界面查看对应的信息，同时操作分析界面可以查看不同操作如：拉取、下载、通知、推送等类型的消息。
 ![](/uploads/images/2021/appstore/operations.png "4.9")
-
 
