@@ -67,7 +67,7 @@ Developer Interfaces
   - [8. Health](#health)
     - [8.1 GET health](#get-health)
   - [9. AppRelease](#apprelease)
-    - [9.1 GET pkg structure](#get-pkg-structure)3
+    - [9.1 GET pkg structure](#get-pkg-structure)
     - [9.2 GET file content](#get-file-content)
   - [10. ReleaseConfig](#releaseconfig)
     - [10.1 GET release config](#get-release-config)
@@ -105,6 +105,15 @@ Developer Interfaces
   - [15. Image](#image)
     - [15.1 POST upload image](#post-upload-image)
     - [15.2 GET merge image](#get-merge-image)
+  - [16. SystemImage](#systemImage)
+    - [16.1 POST one system image](#post-one-system-image)
+    - [16.2 DELETE system image](#delete-system-image)
+    - [16.3 POST system image](#post-system-image)
+    - [16.4 PUT system image](#put-system-image)
+    - [16.5 PUT publish system image](#put-publish-system-image)
+    - [16.6 POST system image to upload file](#post-system-image-to-upload-file)
+    - [16.7 GET system image to merge](#get-system-image-to-merge)
+    - [16.8 GET system image to download](#get-system-image-to-download)
 
 ## 1. Plugin
 Development environment plug-in or sdk
@@ -4120,7 +4129,7 @@ boolean output
 ```
 
 ### 16.5 PUT system image 
-publish image config
+publish system image 
 ```
 Resource URI: /mec/developer/v1/system/images/{systemId}/publish
 ```
@@ -4166,7 +4175,7 @@ Resource URI: /mec/developer/v1/system/images/{systemId}/merge
 ```
 
 ### 16.8 GET system image to download
-GET vm resources
+download system image
 ```
 Resource URI: /mec/developer/v1/system/images/{systemId}/download"
 ```
