@@ -21,7 +21,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 **新开源仓库列表**
 | 模块                           |      名称       | 类型   | URL                                           | 说明                                   |
 | ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
-| Install          | install    | 配置仓 | https://gitee.com/edgegallery/installer    |     |
+| Installer      | installer    | 配置仓 | https://gitee.com/edgegallery/installer    | EdgeGallery离线包制作以及离线安装、在线安装、docker compose方式安装脚本    |
 | filesystem       | filesystem | 产品仓 | https://gitee.com/edgegallery/file-system | EdgeGallery平台内的应用镜像管理服务      |
 
 
