@@ -31,20 +31,20 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 
 
-* **AI软硬件能** 支撑昇腾/Atlas硬件以及开放API
+* **[AI软硬件能](https://47.243.125.138:30092/#/mecDeveloper/api/mep)** 支撑昇腾/Atlas硬件以及开放API
     - AI换脸、OCR、智慧货架、姿态识别等
-* **行业套件** 支持行业组合能力
+* **[行业套件]https://47.243.125.138:30091/#/home)** 支持行业组合能力
     - PCB质量检测
     - 工业现场南向设备管理通信
     - 视频会议、在线课堂
-* **应用创新**
+* **[应用创新](https://47.243.125.138:30091/#/home)**
     - 完成130+应用集成、落地25+创新基地
 * **体验优化**
-    - AppStore、Developer、MECM各平台界面全面升级优化
+    - [AppStore](https://47.243.125.138:30091/#/home)、[Developer](https://47.243.125.138:30092/#/)、[MECM](https://47.243.125.138:30093/)各平台界面全面升级优化
     - 支持数据持久化
-* **安全**
+* **[安全](https://gitee.com/edgegallery/installer)**
     - 用户管理增加动态验证码校验功能
-* **新增特性**
+* **[增强特性](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.2)**
     - Developer、AppStore和MECM平台增加管理员操作界面
     - AppStore平台提供应用在线体验功能
     - 虚机应用集成能力增强，可配置网络，input参数等，支持无镜像包调测
@@ -52,7 +52,7 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
     - 增加镜像文件管理服务，支持镜像文件的上传和下载
     - 提供边缘自治管理界面
     - 增加边缘节点的健康检查能力
-* **安装部署**
+* **[安装部署]https://gitee.com/edgegallery/installer)**
     - 支持基于Ansible模块化部署k8s/k3s以及EdgeGallery各子模块
     - 支持docker-compose方式部署EdgeGallery各子模块
 
