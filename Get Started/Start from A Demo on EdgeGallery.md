@@ -36,6 +36,7 @@ Development of location services based on EdgeGallery, showing how to develop ed
 
 # 开发者平台容器部署流程介绍-Introduction to the developer platform container deployment process
 ![](/uploads/images/2021/v1.2/dev_development.png "dev_development.png")
+![](/uploads/images/2021/v1.2/dev_development-en.png "dev_development-en.png")
 
 ## 开发准备-Development Preparation
 * 新建一个项目-Create a new project 
@@ -74,6 +75,7 @@ Development of location services based on EdgeGallery, showing how to develop ed
 
 # 开发者平台虚机部署流程介绍-Introduction to the developer platform VM deployment process
 ![](/uploads/images/2021/v1.2/dev_integrate.png "dev_integrate.png")
+![](/uploads/images/2021/v1.2/dev_integrate-en.png "dev_integrate-en.png")
 
 ## 开发准备-Development Preparation
 * 新建一个项目-Create a new project 
@@ -128,7 +130,8 @@ After the image is successfully generated, the image file can be downloaded
 ## 本地开发-Local development
 * 下载依赖的插件-BashSupport，并导入到本地IDE
   Download the dependent plug-in-BashSupport, and import it to the local IDE  
-![](/uploads/images/2020/v1.0/Plug-in.png "Plug-in.png")    
+![](/uploads/images/2021/v1.2/plugin.png "plugin.png")    
+![](/uploads/images/2021/v1.2/plugin-en.png "plugin-en.png")  
 
 * 执行插件，会自动生成示例代码    
   Executing the plug-in will automatically generate sample code
