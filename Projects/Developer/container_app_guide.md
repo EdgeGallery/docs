@@ -16,7 +16,7 @@
  **1.** 因为涉及到开发者连接edgegallery安装环境的docker去其他开源镜像仓库拉取镜像，因此开放2375端口（其他未被占用端口也可以）。以下操作以环境为Ubuntu18.04,Docker18.09.0作为样例说明，不同系统，docker的安装目录也不尽相同，具体原理大体一致。<br/>
 - 查找docker.service的目录，操作命令systemctl status docker
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0630/170158_44bd012f_5504908.png "dockerservice-new.png")
-- 编辑docker.service,添加如下内容
+- 编辑docker.service,添加如下内容<br/>
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0630/170510_ee349bc5_5504908.png "dockerservicecontent.png")
 - systemctl daemon-reload //重新加载系统的daemon,使配置生效
 - service docker restart  //重启docker<br/>
