@@ -14,7 +14,7 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
    :maxdepth: 1
    :caption: Getting Started
 
-   Get Started <Get Started/Start from A Demo on EdgeGallery>
+   Getting Started <Get Started/Start from A Demo on EdgeGallery>
 
 .. toctree::
    :maxdepth: 1

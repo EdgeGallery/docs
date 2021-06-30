@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-30 18:53+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/Developer/vm_app_guide.md:1
+msgid "developer 虚机应用开发指导"
+msgstr "Developer Virtual Machine Application Development Guide"
+
+#: ../../Projects/Developer/vm_app_guide.md:3
+msgid "环境准备"
+msgstr "Environment Preparation"
+
+#: ../../Projects/Developer/vm_app_guide.md:5
+msgid "edgegallery 安装v1.2版本 openstack安装 W版本"
+msgstr "Install Edgegallery v1.2 version and Openstack W version"
+
+#: ../../Projects/Developer/vm_app_guide.md:7
+msgid "**developer 安装注意事项** v1.2新增文件管理系统，用于上传和下载虚机镜像，当前支持qcow2、img、iso格式    **fileSystemAddress** 配置文件管理系统的地址                                                        **username** 配置虚机镜像用户名                                                                    **password** 配置虚机镜像登录密码"
+msgstr "**Developer Installation Notes** v1.2 adds a new file management system for uploading and downloading virtual machine images, currently supports qcow2, img, iso formats    **fileSystemAddress** Configuration file management system address                                                        **username** Configure the virtual machine mirroring user name                                                                    **password** Configure the virtual machine mirroring login password"
+
+#: ../../Projects/Developer/vm_app_guide.md:11
+msgid "openstack初始化配置： [参考文档](../../Projects/Developer/Developer_OpenStack_Pre-configure.md)"
+msgstr "Initial configuration of openstack: [Reference document](../../Projects/Developer/Developer_OpenStack_Pre-configure.md)"
+
+#: ../../Projects/Developer/vm_app_guide.md:14
+msgid "配置沙箱环境：developer新增openstack沙箱环境"
+msgstr "Configure sandbox environment: developer adds openstack sandbox environment"
+
+#: ../../Projects/Developer/vm_app_guide.md:16
+msgid "develoepr平台用管理员用户admin登录 打开系统-沙箱环境管理-新增沙箱环境 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png \"屏幕截图.png\")"
+msgstr "Log in to the develoepr platform with the administrator user admin to open the system-sandbox environment management-new sandbox environment! [Enter picture description](https://images.gitee.com/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:19
+msgid "lcmIp为lcmcontroller的IP地址 ，mecHost为openstack的IP地址，端口号为lcmcontroller对外暴露的端口号, 协议选择https."
+msgstr "lcmIp is the IP address of lcmcontroller, mecHost is the IP address of openstack, the port number is the port number exposed by lcmcontroller, and the protocol is https."
+
+#: ../../Projects/Developer/vm_app_guide.md:21
+msgid "其他参数配置openstack相关的网络配置：参数设置如下： ![输入图片说明](https://images.gitee.com/uploads/images/2021/0628/163330_baff108f_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](https://images.gitee.com/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:24
+msgid "DC_ID=FS_M:Manager_VPC; 使用默认值或者不传即可"
+msgstr "DC_ID=FS_M:Manager_VPC; Use the default value or leave it alone."
+
+#: ../../Projects/Developer/vm_app_guide.md:26
+msgid "az_dc=nova;  默认值为az1.dc1，与openstack的zones值保持一致"
+msgstr "az_dc=nova; The default value is az1.dc1, which is consistent with the openstack zones value"
+
+#: ../../Projects/Developer/vm_app_guide.md:28
+msgid "mep_certificate=YHXGFTWU!@$%@&%#(DH(122479+_); 使用默认值或者不传即可"
+msgstr "mep_certificate=YHXGFTWU!@$%@&%#(DH(122479+_); Use the default value or leave it alone"
+
+#: ../../Projects/Developer/vm_app_guide.md:30
+msgid "app_mp1_ip=192.168.226.201;app_mp1_mask=255.255.255.0;app_mp1_gw=192.168.226.1;  app_n6网络配置：ip取openstack对应n6网络范围内的值，mask默认255.255.255.0， gw最后以为取1"
+msgstr "app_mp1_ip=192.168.226.201;app_mp1_mask=255.255.255.0;app_mp1_gw=192.168.226.1; app_n6 network configuration: ip takes the value within the n6 network range corresponding to openstack, the mask defaults to 255.255.255.0, and gw finally takes 1"
+
+#: ../../Projects/Developer/vm_app_guide.md:32
+msgid "app_n6_ip=192.168.225.202;app_n6_mask=255.255.255.0;app_n6_gw=192.168.225.1; 同app_n6"
+msgstr "app_n6_ip=192.168.225.202;app_n6_mask=255.255.255.0;app_n6_gw=192.168.225.1; same as app_n6"
+
+#: ../../Projects/Developer/vm_app_guide.md:34
+msgid "app_internet_ip=192.168.227.203;app_internet_mask=255.255.255.0;app_internet_gw=192.168.227.1;  同 app_n6"
+msgstr "app_internet_ip=192.168.227.203;app_internet_mask=255.255.255.0;app_internet_gw=192.168.227.1; same as app_n6"
+
+#: ../../Projects/Developer/vm_app_guide.md:36
+msgid "mep_ip=;mep_port=8443; 配置mep的ip和端口，不涉及mep可不用配置该参数"
+msgstr "mep_ip=;mep_port=8443; configure the ip and port of mep, do not need to configure this parameter if mep is not involved"
+
+#: ../../Projects/Developer/vm_app_guide.md:38
+msgid "network_name_mep=mec_network_mep;network_mep_physnet=physnet2;network_mep_vlanid=2653; 网络名与openstack网络名称保持一致"
+msgstr "network_name_mep=mec_network_mep;network_mep_physnet=physnet2;network_mep_vlanid=2653; The network name is consistent with the openstack network name"
+
+#: ../../Projects/Developer/vm_app_guide.md:40
+msgid "network_name_n6=mec_network_n6;network_n6_physnet=physnet2;network_n6_vlanid=2652; 网络名与openstack网络名称保持一致"
+msgstr "network_name_n6=mec_network_n6;network_n6_physnet=physnet2;network_n6_vlanid=2652; The network name is consistent with the openstack network name"
+
+#: ../../Projects/Developer/vm_app_guide.md:42
+msgid "network_name_internet=mec_network_internet;network_internet_physnet=physnet2;network_internet_vlanid=2651; 网络名与openstack网络名称保持一致"
+msgstr "network_name_internet=mec_network_internet;network_internet_physnet=physnet2;network_internet_vlanid=2651; The network name is consistent with the openstack network name"
+
+#: ../../Projects/Developer/vm_app_guide.md:44
+msgid "ue_ip_segment=0.0.0.0/0; ue使用默认值即可"
+msgstr "ue_ip_segment=0.0.0.0/0; ue can use the default value"
+
+#: ../../Projects/Developer/vm_app_guide.md:46
+msgid "mec_internet_ip=0.0.0.0  默认值或者不传即可"
+msgstr "mec_internet_ip=0.0.0.0 default value or not pass it"
+
+#: ../../Projects/Developer/vm_app_guide.md:48
+msgid "3.上传配置文件为openstack config， 该配置文件为openstack对应的用户名、密码、项目、url等信息参数如下："
+msgstr "3.Upload the configuration file as openstack config, the configuration file is the user name, password, project, url and other information parameters corresponding to openstack as follows:"
+
+#: ../../Projects/Developer/vm_app_guide.md:50
+msgid "export OS_USERNAME=admin     export OS_PASSWORD=*****     export OS_PROJECT_NAME=admin     export OS_AUTH_URL=http://ip/identity      export OS_IDENTITY_API_VERSION=3      export OS_PROJECT_DOMAIN_NAME=default       export OS_USER_DOMAIN_NAME=default"
+msgstr "export OS_USERNAME=admin     export OS_PASSWORD=*****     export OS_PROJECT_NAME=admin     export OS_AUTH_URL=http://ip/identity      export OS_IDENTITY_API_VERSION=3      export OS_PROJECT_DOMAIN_NAME=default       export OS_USER_DOMAIN_NAME=default"
+
+#: ../../Projects/Developer/vm_app_guide.md:58
+msgid "4.添加路由：developer环境与openstack环境的路由配置"
+msgstr "4.Add routing: routing configuration for developer environment and openstack environment"
+
+#: ../../Projects/Developer/vm_app_guide.md:60
+msgid "developer与openstack后台添加路由，例如 route add -net 192.168.225.0 netmask 255.255.255.0 gw openstack_ip"
+msgstr "Developer and openstack background to add routes, such as route add -net 192.168.225.0 netmask 255.255.255.0 gw openstack_ip"
+
+#: ../../Projects/Developer/vm_app_guide.md:63
+msgid "上传基础镜像"
+msgstr "Upload the base image"
+
+#: ../../Projects/Developer/vm_app_guide.md:64
+msgid "系统 - 镜像管理 - 新建系统镜像"
+msgstr "System-Image Management-New System Image"
+
+#: ../../Projects/Developer/vm_app_guide.md:66
+msgid "填写镜像的基本信息后点击上传"
+msgstr "Fill in the basic information of the mirror and click upload"
+
+#: ../../Projects/Developer/vm_app_guide.md:68
+msgid "上传镜像为zip压缩包，目前支持的镜像格式为qcow2和iso，上传镜像包目录格式为：filename.zip/filename/filename.qcow2"
+msgstr "The uploaded image is a zip compressed package, the currently supported image formats are qcow2 and iso, and the upload image package directory format is: filename.zip/filename/filename.qcow2"
+
+#: ../../Projects/Developer/vm_app_guide.md:70
+msgid "虚机应用开发"
+msgstr "Virtual machine application development"
+
+#: ../../Projects/Developer/vm_app_guide.md:71
+msgid "todo 开发指导"
+msgstr "todo development guide"
+
+#: ../../Projects/Developer/vm_app_guide.md:73
+msgid "mepagent的集成"
+msgstr "Mepagent Integration"
+
+#: ../../Projects/Developer/vm_app_guide.md:74
+msgid "mepagent支持虚机方式部署，参考文档如下："
+msgstr "Mepagent supports virtual machine deployment. The reference documents are as follows:"
+
+#: ../../Projects/Developer/vm_app_guide.md:76
+#, python-format
+msgid "https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/mep-agent%E4%BD%BF%E7%94%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%96%B9%E5%BC%8F%E9%83%A8%E7%BD%B2.md"
+msgstr ""
+

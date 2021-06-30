@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-30 00:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,30 +30,21 @@ msgid "AppStore分为前后台两个部分，[AppStore BE][1]是后台部分，�
 msgstr "The AppStore is divided into two parts, [AppStore BE](https://gitee.com/edgegallery/appstore-be) is a backstage part that provides the main functional interface for the foreground or other three-way system calls. [AppStore FE](https://gitee.com/edgegallery/appstore-fe) is the foreground part and provides an interface display."
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:9
-msgid "整体框架说明"
-msgstr "Overall Frame Description"
+msgid "代码架构"
+msgstr "Code Architecture"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:11
-msgid "![](/uploads/images/2021/v1.1/FlowChart.png)"
-msgstr "![](/uploads/images/2021/v1.1/FlowChart_en.png)"
+msgid "![](/uploads/images/2021/appstore/app_structure.png)"
+msgstr "![](/uploads/images/2021/appstore/app_structure.png)"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:13
-msgid "代码架构说明"
-msgstr "Code Architecture Description"
-
-#: ../../Projects/APPSTORE/AppStore_Overview.md:15
-msgid "![](/uploads/images/2021/cor2020/appstore-code-arch.png)"
-msgstr "![](/uploads/images/2021/cor2020/appstore-code-arch_en.png)"
-
-#: ../../Projects/APPSTORE/AppStore_Overview.md:17
 msgid "AppStore FE：开发者平台前台框架，使用VUE开发。"
 msgstr "AppStore FE: Developer Platform foreground framework, developed using VUE."
 
-#: ../../Projects/APPSTORE/AppStore_Overview.md:19
+#: ../../Projects/APPSTORE/AppStore_Overview.md:15
 msgid "AppStore BE：开发者平台后台框架，使用SpringBoot+ServiceComb开发。（有关ServiceComb请参考这里：https://servicecomb.apache.org/cn/）"
 msgstr "AppStore BE: Developer Platform Backstage Framework, developed using SpringBot + ServiceComb.(For ServiceComb, please refer to this: https://servicecomb.apache.org/)"
 
-#: ../../Projects/APPSTORE/AppStore_Overview.md:21
+#: ../../Projects/APPSTORE/AppStore_Overview.md:17
 msgid "AppStore DB：后台依赖Postgres数据库。"
 msgstr "AppStore DB: Backstage relies on Postgres database."
-

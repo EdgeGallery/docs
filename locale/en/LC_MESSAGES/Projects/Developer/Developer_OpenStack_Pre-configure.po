@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-30 00:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:1
+msgid "OpenStack（简称OS） 参数预配置"
+msgstr "OpenStack(referred to as OS) Parameter Pre-Configuration"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:2
+msgid "预置步骤"
+msgstr "Preset Steps"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:3
+msgid "推荐安装OpenStack Wallaby (5.5.0) 版本;"
+msgstr "It is recommended to install OpenStack Wallaby (5.5.0) version."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:4
+msgid "配置网络"
+msgstr "Configure the network."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:5
+msgid "配置示例类型"
+msgstr "Configuration example type."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:7
+msgid "版本介绍"
+msgstr "Version Introduction"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:8
+msgid "OpenStack社区正式发布第23个版本 – Wallaby， OpenStack专注于开源基础设施软件的广泛开发与部署，作为全球三大活跃的开源项目之一（包括Linux kernel与Chromium），始终注重激发全球社区活力，提升社区开发者的参与度。"
+msgstr "The OpenStack community officially released the 23rd version-Wallaby. OpenStack focuses on the extensive development and deployment of open source infrastructure software. As one of the three most active open source projects in the world (including Linux kernel and Chromium), it always focuses on stimulating the vitality of the global community and improving participation of community developers."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:10
+msgid "最新版Wallaby增强了安全性能，实现了与其他开源技术的进一步集成，进而强化了开源基础设施在云原生领域的应用。来自45个国家140家组织/机构的800多位贡献者所提交的17,000代码修改已成功合并至Wallaby版本。"
+msgstr "The latest version of Wallaby has enhanced security performance and achieved further integration with other open source technologies, thereby strengthening the application of open source infrastructure in the cloud native field. Over 17,000 code modifications submitted by more than 800 contributors from 140 organizations/institutions in 45 countries have been successfully merged into the Wallaby version."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:12
+msgid "OS接口列表"
+msgstr "OS Interface List"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "方法"
+msgstr "Method"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "服务"
+msgstr "Service"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "路径"
+msgstr "Path"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "说明"
+msgstr "Description"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "POST"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "orchestration"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "/v1/{tenant_id}/stacks"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "创建stack"
+msgstr "Create stack."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "DELETE"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "/v1/{tenant_id}/stacks/{stack_name}/{stack_id}"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "销毁stack"
+msgstr "Delete stack."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "GET"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "/v1/{tenant_id}/stacks/{stack_name}/{stack_id}/resources"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "stack resource列表"
+msgstr "Stack resource list."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "compute"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "/servers/{server_id}"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "获取虚拟机信息"
+msgstr "Get virtual machine information."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "/servers/{server_id}/action"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "操作虚拟机, 用于停止，创建快照"
+msgstr "Operating virtual machines, used to stop and create snapshots."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "/servers/{server_id}/remote-consoles"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "控制台"
+msgstr "Console"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "image"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "/v2/images/{image_id}/file"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "下载镜像"
+msgstr "Download mirror."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "/v2/images/{imageId}/import"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "导入镜像"
+msgstr "Import image."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "PUT"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "Image"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "/v2/images/{imageId}/file"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "上传镜像文件"
+msgstr "Upload image file."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "/v2/images"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "创建镜像"
+msgstr "Create a mirror."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "展示镜像列表"
+msgstr "Show mirror list."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "/v2/images/{imageId}"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md
+msgid "获取镜像信息"
+msgstr "Obtain mirror information."
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:28
+msgid "配置网络(Network)："
+msgstr "Configure the network (Network):"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:30
+msgid "创建三个网络 mec_network_n6、mec_network_mep、mec_network_internet; ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Network.png \"网络配置.png\")"
+msgstr "Create three networks mec_network_n6, mec_network_mep, mec_network_internet; ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Network.png \"Network Configuration.png\")"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:34
+msgid "实例类型(Flavors):"
+msgstr "Instance type (Flavors):"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:35
+msgid "创建以下几个规格示例类型，配置与实际的规格对应1c（CPU1核）、1024m（内存1024M）、40g（硬盘40G） 1c-1024m-40g、2c-4096m-40g ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Flavor.png \"实例类型.png\")"
+msgstr "Create the following sample types of specifications, the configuration corresponds to the actual specifications 1c (CPU1 core), 1024m (memory 1024M), 40g (hard disk 40G) 1c-1024m-40g, 2c-4096m-40g ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Flavor.png \"instance type.png\")"
+

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-30 00:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgid "应用测试服务分为前后台两个部分，[atp][1]是后台部分�
 msgstr "The application testing service is divided into the front and back platforms, [atp](https://gitee.com/edgegallery/atp) is the background part, providing the main function interface for the foreground or other three-way system to call, [atp-fe](https://gitee.com/edgegallery/atp-fe) is the foreground part, providing the interface display."
 
 #: ../../Projects/ATP/ATP_Overview.md:5
-msgid "应用测试服务目前分为管理面功能和用户面功能，管理面功能包括测试场景的管理、测试套的管理、测试用例的管理和测试任务的管理。管理员可以在管理面动态的新增测试场景、测试套和测试用例，也可以修改测试任务中手工用例的状态。用户面功能包括选择要测试的场景、测试过程可视化、测试报告展示以及贡献测试用例。目前用户面的功能主要集成在开发者平台和应用商店中，对于生成的应用包进行测试。"
-msgstr "The application test service is divided into management plane function and user plane function, the management surface function comprises management of test scene, management of test sleeve, management of test case and management of test task. The administrator can add test scenarios, test suites and test cases dynamically in the management face and also modify the state of the manual use cases in the test task. The user plane function includes selecting the scene to be tested, the test process visualization, the test report display and the contribution test case. Currently, the function of the user side is mainly integrated in the developer platform and the application store and the generated application package is tested."
+msgid "应用测试服务目前分为管理面功能和用户面功能，管理面功能包括测试场景的管理、测试套的管理、测试用例的管理、模型模型批量导入、测试任务的管理以及贡献的管理，其中贡献管理的菜单仅管理员可见。管理员可以在管理面动态的新增测试场景、测试套和测试用例，修改测试任务中手工用例的状态，还可以下载脚本类型贡献的测试用例，对于合理的用例，将加入到平台的用例集中。用户面功能包括选择要测试的场景、测试过程可视化、测试报告展示以及贡献测试用例。目前用户面的功能主要集成在开发者平台和应用商店中，对于生成的应用包进行测试。"
+msgstr "Application testing services are currently divided into management functions and user functions. The management functions include the management of test scenarios, the management of test suites, the management of test cases, the batch import of model models, the management of test tasks, and the management of contributions, among which contribution management The menu for is only visible to the administrator. Administrators can dynamically add test scenarios, test suites and test cases on the management plane, modify the status of manual use cases in test tasks, and download test cases contributed by script types. For reasonable use cases, they will be added to the platform's use case set . User interface functions include selecting scenarios to be tested, visualizing the testing process, displaying test reports, and contributing test cases. At present, the functions of the user plane are mainly integrated in the developer platform and the application store, and the generated application package is tested."
 
 #: ../../Projects/ATP/ATP_Overview.md:7
 msgid "整体框架说明"

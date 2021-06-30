@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-17 18:37+0530\n"
+"POT-Creation-Date: 2021-06-30 00:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgid "应用测试认证服务目前分为管理面功能和用户面功能。"
 msgstr "The application test authentication service is currently divided into management side functions and user plane functions."
 
 #: ../../Projects/ATP/ATP_Guide.md:6
-msgid "在管理面，管理员可以管理测试场景、测试套、测试用例和测试任务。平台内置了社区场景以及3个样例运营商场景。对于社区场景，平台内置了安全性测试测试套、遵从性测试测试套和沙箱测试测试套，每个测试套下面都有对应的测试用例。对于有手工用例的测试任务，管理员可以在后台手动更改测试用例状态，完成手工测试用例状态的更新。"
-msgstr "On the management side, administrators can manage test scenarios, test suites, test cases and test tasks. The platform is built with community scenario and three other example operator scenarios. For community scenes, the platform is built with a safety test sleeve, a compliance test sleeve and a sandbox test sleeve. Each test sleeve is provided with a corresponding test case. For test tasks with manual use cases, the administrator can manually change the test case status in the background and complete the updating of the manual test case state."
+msgid "在管理面，管理员可以管理测试场景、测试套、测试用例、测试任务以及贡献的测试用例，其中贡献管理的菜单仅管理员可见。平台内置了社区场景以及3个样例运营商场景。对于社区场景，平台内置了通用安全性测试测试套、通用遵从性测试测试套和通用沙箱测试测试套，每个测试套下面都有对应的测试用例。平台支持一键式批量导入测试模型，方便批量测试模型的新增。对于有手工用例的测试任务，管理员可以在后台手动更改测试用例状态，完成手工测试用例状态的更新。"
+msgstr "On the management side, administrators can manage test scenarios, test suites, test cases, test tasks, and contributed test cases. The menu for contribution management is visible only to the administrator. The platform has built-in community scenarios and 3 sample operator scenarios. For community scenarios, the platform has built-in general security test test suites, general compliance test test suites, and general sandbox test test suites. There are corresponding test cases under each test suite. The platform supports one-click batch import of test models to facilitate the addition of batch test models. For test tasks with manual use cases, the administrator can manually change the test case status in the background to complete the update of the manual test case status."
 
 #: ../../Projects/ATP/ATP_Guide.md:7
 msgid "在用户面（即集成在开发者平台和应用商店中的功能），对于开发者，在开发者平台开发app以后，对生成的csar包，要经过应用测试认证服务测试通过后才可以发布到应用商店；对于已经有应用包的供应商或者厂商，在应用商店中上传应用包以后，也要经过应用测试认证服务测试通过后才可以发布到应用商店。用户可以选择要进行测试的场景，其中社区场景是必选的，然后系统会动态展示出测试用例的执行过程。当测试完成后，会生成测试报告，给出测试结果的分析，用户也可以下载测试报告，格式为pdf格式。用户面也为用户提供了贡献测试用例的入口，用户可以通过填写对测试用例的描述或者上传脚本的方式，完成对测试用例的贡献。"
@@ -42,8 +42,8 @@ msgid "管理面首页"
 msgstr "Admin Face Home"
 
 #: ../../Projects/ATP/ATP_Guide.md:10
-msgid "首页会对过去6个月的测试任务数量进行统计显示。 ![](/uploads/images/2021/atp/management-portal.png \"首页.png\")"
-msgstr "The home page shows the number of test tasks over the last 6 months. ![](/uploads/images/2021/atp/management-portal_en.png \"Home.png\")"
+msgid "首页可以直接点击查看所有测试用例，首页还介绍了各菜单模块的功能，展示了过去6个月测试任务数量的统计。 ![](/uploads/images/2021/atp/management-portal.png \"首页.png\")"
+msgstr "You can directly click on the homepage to view all test cases. The homepage also introduces the functions of each menu module and displays the statistics of the number of test tasks in the past 6 months. ![](/uploads/images/2021/atp/management-portal_en.png \"Home.png\")"
 
 #: ../../Projects/ATP/ATP_Guide.md:13
 msgid "管理面测试场景管理"
@@ -70,38 +70,46 @@ msgid "测试用例页面显示平台包含的所有测试用例，一个测试�
 msgstr "The test case page display platform includes all test cases, one test case belongs to one or more test suites, the administrator can add test cases, edit existing test cases and also delete existing test cases. ![](/uploads/images/2021/atp/testCase_en.png \"Test case.png\")"
 
 #: ../../Projects/ATP/ATP_Guide.md:25
+msgid "管理面测试模型一键式导入"
+msgstr "One-click import of management plane test models."
+
+#: ../../Projects/ATP/ATP_Guide.md:26
+msgid "为了方便管理员批量导入测试场景、测试套和测试用例，管理面提供了测试模型导入功能。管理员可以将测试场景、测试套和测试用例的描述写到excel表中，并把测试用例脚本，测试场景图标放到指定文件夹中，最终压缩成zip包，通过导入zip包的方式完成测试模型的批量导入功能。管理员可以在测试场景页面、测试套页面或者测试用例页面右上角的批量导入按钮完成测试模型批量导入功能。   ![](/uploads/images/2021/atp/batchImport.png \"批量导入.png\")"
+msgstr "In order to facilitate the administrator to import test scenarios, test suites and test cases in batches, the management plane provides a test model import function. The administrator can write the description of the test scenarios, test suites and test cases in the excel sheet, and put the test case scripts and test scenario icons in the specified folder, and finally compress them into a zip package, and complete the test by importing the zip package Model batch import function. The administrator can complete the batch import function of test models in the batch import button on the upper right corner of the test scenario page, test suite page or test case page."
+
+#: ../../Projects/ATP/ATP_Guide.md:29
 msgid "管理面测试任务管理"
 msgstr "Management side test mission management"
 
-#: ../../Projects/ATP/ATP_Guide.md:26
+#: ../../Projects/ATP/ATP_Guide.md:30
 msgid "任务管理显示了所有的测试任务，管理员可以对测试任务进行批量删除，也可以修改手工用例的状态。 ![](/uploads/images/2021/atp/task.png \"测试任务.png\") ![](/uploads/images/2021/atp/modifyStatus.png \"修改手工用例状态.png\")"
 msgstr "The task management shows all the test tasks and the administrator can delete the test task in bulk or modify the state of the manual use case. ![](/uploads/images/2021/atp/task.png \"Test Task.png\") ![](/uploads/images/2021/atp/modifyStatus_en.png \"Modify Hand Case Status.png\")"
 
-#: ../../Projects/ATP/ATP_Guide.md:30
+#: ../../Projects/ATP/ATP_Guide.md:34
 msgid "应用商店测试认证入口"
 msgstr "App Store Test Credentials Portal"
 
-#: ../../Projects/ATP/ATP_Guide.md:31
-msgid "在应用商店首页上传应用包以后，在我的应用中，在对应的应用包右边点击测试，进入应用测试流程。 ![](/uploads/images/2021/cor2020/myApp.png \"我的应用.PNG\")"
-msgstr "After uploading the application package on the application store front page, in my application, click the test on the right side of the corresponding application package and enter the application test flow. ![](/uploads/images/2021/cor2020/myApp_en.PNG \"My application.PNG\")"
+#: ../../Projects/ATP/ATP_Guide.md:35
+msgid "在应用商店首页上传应用包以后，在我的应用中，在对应的应用包右边点击测试，进入应用测试流程。 ![](/uploads/images/2021/cor2020/myApp.PNG \"我的应用.PNG\")"
+msgstr "After uploading the application package on the homepage of the application store, in my application, click Test on the right side of the corresponding application package to enter the application testing process. ![](/uploads/images/2021/cor2020/myApp_en.PNG \"My Application.PNG\")"
 
-#: ../../Projects/ATP/ATP_Guide.md:34
+#: ../../Projects/ATP/ATP_Guide.md:38
 msgid "测试场景选择&测试用例贡献"
 msgstr "Test Scene Selection & Test Use Case Contribution"
 
-#: ../../Projects/ATP/ATP_Guide.md:35
+#: ../../Projects/ATP/ATP_Guide.md:39
 msgid "用户可以选择想要测试的场景，社区场景是必选的，其余场景根据用户需要自行选择。 ![](/uploads/images/2021/atp/selectScenario.png \"选择测试场景.png\") 页面右上方有贡献测试用例的入口，点击测试用例，支持用户用描述的方式或者脚本的方式贡献测试用例。 ![](/uploads/images/2021/atp/contribution.png \"贡献测试用例.png\")"
 msgstr "The user can choose the scene that wants to be tested, the community scene is mandatory and the rest of the scene is chosen by the user according to the needs of the user. ![](/uploads/images/2021/atp/selectScenario_en.png \"Choose Test Scene.png\") The upper right side of the page is provided with an inlet for contributing test case, click test case, and supporting the user to contribute test case in the way of description or script. ![](/uploads/images/2021/atp/contribution_en.png \"Contribution test case.png\")"
 
-#: ../../Projects/ATP/ATP_Guide.md:40
+#: ../../Projects/ATP/ATP_Guide.md:44
 msgid "测试进展可视化&报告查看"
 msgstr "Test Progress Visualization & Report Look"
 
-#: ../../Projects/ATP/ATP_Guide.md:41
+#: ../../Projects/ATP/ATP_Guide.md:45
 msgid "测试进展页面动态地展示用例的执行情况，所有自动化类型的测试用例都会自动执行，手工类型的测试用例需要管理员在管理面修改测试用例状态。 ![](/uploads/images/2021/atp/process.png \"测试进展.png\")"
 msgstr "The test progress page dynamically displays the execution condition of the use case, and all test cases of the automation type are automatically executed; ![](/uploads/images/2021/atp/process_en.png \"Test Progress.png\")"
 
-#: ../../Projects/ATP/ATP_Guide.md:44
+#: ../../Projects/ATP/ATP_Guide.md:48
 msgid "点击右上角的查看报告，会进入该测试任务的报告页面，报告页面显示测试任务的基本信息、各测试场景的测试用例通过率以及测试用例的详细信息。 ![](/uploads/images/2021/atp/testReport.png \"测试报告.png \")"
 msgstr "The report page displays the basic information of the test task, the test case pass rate of each test scene and the detailed information of the test case. ![](/uploads/images/2021/atp/testReport_en.png \"Test Report.png\")"
 

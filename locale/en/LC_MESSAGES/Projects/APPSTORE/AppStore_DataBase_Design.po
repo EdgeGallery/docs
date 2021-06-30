@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-30 23:10+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,30 +22,38 @@ msgid "数据库设计"
 msgstr "Database design"
 
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:3
-msgid "AppStore数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用了三张数据库表格："
-msgstr "The AppStore database uses open-source PostgreSQL databases with a recommended version of 12.2. Three database tables are currently designed and applied:"
+msgid "AppStore数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用了如下数据库表格："
+msgstr "The AppStore database uses open-source PostgreSQL databases with a recommended version of 12.2. The following database tables are currently designed and applied:"
 
 #: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:5
-msgid "app_table: 存储app信息，如名字、提供者、描述等"
-msgstr "app_table: Stores app information such as name, provider, description, etc."
+msgid "**app_table** 存储app信息，如名字、提供者、描述等"
+msgstr "**app_table** Stores app information such as name, provider, description, etc."
 
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:28
-msgid "catalog_package_table: 存储应用的package信息，一个应用可以拥有多个package"
-msgstr "catalog_package_table: Package information for storage applications, one application can have multiple package"
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:32
+msgid "**catalog_package_table** 存储应用的package信息，一个应用可以拥有多个package"
+msgstr "**catalog_package_table** Package information for storage applications, one application can have multiple package"
 
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:56
-msgid "csar_package_score: 存储应用的评论信息"
-msgstr "csar_package_score: Comments information for storage applications"
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:66
+msgid "**csar_package_score** 存储应用的评论信息"
+msgstr "**csar_package_score** Comments information for storage applications"
 
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:70
-msgid "app_store_table: 存储外部appstore信息（POC特性）"
-msgstr "app_store_table: Stores external appstore information (POC feature)"
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:80
+msgid "**app_store_table** 存储外部appstore信息"
+msgstr "**app_store_table** Stores external appstore information"
 
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:88
-msgid "pushable_package_table: 存储可推送csar包的信息（POC特性）"
-msgstr "pushable_package_table: Stores information that can push a cswar (POC feature)"
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:98
+msgid "**pushable_package_table** 存储可推送应用包的信息"
+msgstr "**pushable_package_table** Stores information about pushable application packages"
 
-#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:100
-msgid "message_table: 存储appstore间互通时的消息（POC特性）"
-msgstr "message_table: Message (POC feature) to store intercommunication between appstore"
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:110
+msgid "**message_table** 存储appstore间互通时的消息"
+msgstr "**message_table** Stores messages during intercommunication between appstores"
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:138
+msgid "**tbl_service_host** 存储沙箱环境信息"
+msgstr "**tbl_service_host** Stores sandbox environment information"
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design.md:161
+msgid "**pushable_package_table** 存储沙箱环境配置文件信息"
+msgstr "**pushable_package_table** Stores the profile information of the sandbox environment"
 
