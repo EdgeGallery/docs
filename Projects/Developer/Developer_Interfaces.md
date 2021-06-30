@@ -105,6 +105,15 @@ Developer Interfaces
   - [15. Image](#image)
     - [15.1 POST upload image](#post-upload-image)
     - [15.2 GET merge image](#get-merge-image)
+  - [16. SystemImage](#systemImage)
+    - [16.1 POST one system image](#post-one-system-image)
+    - [16.2 DELETE system image](#delete-system-image)
+    - [16.3 POST system image](#post-system-image)
+    - [16.4 PUT system image](#put-system-image)
+    - [16.5 PUT publish system image](#put-publish-system-image)
+    - [16.6 POST system image to upload file](#post-system-image-to-upload-file)
+    - [16.7 GET system image to merge](#get-system-image-to-merge)
+    - [16.8 GET system image to download](#get-system-image-to-download)
 
 ## 1. Plugin
 Development environment plug-in or sdk
@@ -3979,4 +3988,202 @@ Resource URI: /mec/appstore/v1/image/merge
   "statusCode": "CONTINUE",
   "statusCodeValue": 0
 }
+```
+## 16. SystemImage
+This part is about the api for system image deployment
+### 16.1 POST one system image
+Create one system image
+```
+Resource URI: /mec/developer/v1/system/images
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemName|systemName|body param|yes|
+|type|type|body param|yes|
+|operateSystem|operateSystem|body param|yes|
+|version|version|body param|yes|
+|systemBit|systemBit|body param|yes|
+|systemDisk|systemDisk|body param|yes|
+
+```
+system image:
+{
+systemName:"testImage",
+type:"private",
+operateSystem:"ubuntu",
+version:"16.04",
+systemBit:"64",
+systemDisk:40
+}
+```
+
+**Example response**
+```
+200 OK
+boolean output
+```
+
+### 16.2 DELETE system image
+DELETE system image
+```
+Resource URI: /mec/developer/v1/system/images/{systemId}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemId|systemId|path param|yes|
+
+**Example response**
+```
+200 OK
+boolean output
+```
+
+
+### 16.3 POST system image
+GET system image
+```
+Resource URI: /mec/developer/v1/system/images/list
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemName|systemName|body param|no|
+|type|type|body param|no|
+|operateSystem|operateSystem|body param|no|
+|status|status|body param|no|
+|createTimeBegin|createTimeBegin|body param|no|
+|createTimeEnd|createTimeEnd|body param|no|
+|queryCtrl|queryCtrl|body param|yes|
+
+```
+system image:
+{
+systemName:"testImage",
+type:"private",
+operateSystem:"ubuntu",
+status:"",
+createTimeBegin:"2021-5-7",
+createTimeEnd:"2021-5-8",
+queryCtrl:{
+offset:0,
+limit:10,
+sortBy:"createTime",
+sortOrder:"DESC"
+}
+}
+```
+
+**Example response**
+```
+200 OK
+{
+  totalCount:20,
+  imageList:[
+  {
+    systemId:"Success",
+    systemName:"testImage",
+    type:"private",
+    operateSystem:"ubuntu",
+    version:"16.04",
+    systemBit:"64",
+    systemDisk:40,
+    userName:"admin",
+    createTime:"2021-5-7 17:38:12",
+    systemFormat:"iso",
+    uploadTime:"2021-5-7 17:45:23",
+    status:""
+  }
+ ]
+}
+```
+
+### 16.4 PUT system image
+update system image
+```
+Resource URI: /mec/developer/v1/system/images/{systemId}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemName|systemName|body param|yes|
+|type|type|body param|yes|
+|operateSystem|operateSystem|body param|yes|
+|version|version|body param|yes|
+|systemBit|systemBit|body param|yes|
+|systemDisk|systemDisk|body param|yes|
+
+```
+system image:
+{
+systemName:"testImage",
+type:"private",
+operateSystem:"ubuntu",
+version:"16.04",
+systemBit:"64",
+systemDisk:40
+}
+```
+
+**Example response**
+```
+200 OK
+boolean output
+```
+
+### 16.5 PUT system image 
+publish system image 
+```
+Resource URI: /mec/developer/v1/system/images/{systemId}/publish
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemId|systemId|path param|yes|
+
+**Example response**
+```
+200 OK
+boolean output
+```
+
+### 16.6 POST system image to upload file
+upload system image
+```
+Resource URI: /mec/developer/v1/system/images/{systemId}/upload
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemId|systemId|path param|yes|
+
+**Example response**
+```
+200 OK
+boolean output
+```
+
+### 16.7 GET system image to merge
+merge system image
+```
+Resource URI: /mec/developer/v1/system/images/{systemId}/merge
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemId|systemId|path param|yes|
+|fileName|fileName|request param|yes|
+|identifier|identifier|request param|yes|
+
+**Example response**
+```
+200 OK
+```
+
+### 16.8 GET system image to download
+download system image
+```
+Resource URI: /mec/developer/v1/system/images/{systemId}/download"
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemId|systemId|path param|yes|
+
+**Example response**
+```
+200 OK
 ```
