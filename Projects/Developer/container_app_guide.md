@@ -34,7 +34,7 @@
  **mecHost:** 边缘节点的IP地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **端口号** lcmcontroller对外暴露的端口号<br/>
  **协议** 选择https&nbsp;&nbsp; **用户名** 登录mechost的用户名&nbsp;&nbsp; **密码** 登录mechost的密码<br/>
  **架构** 根据自己的需要需要&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **部署区域** 根据自己的需要需要<br/>
- **其他** 可以不用改动
+ **其他** 可以不用改动<br/>
 **3.** 上传的配置文件结构如下，自己配置部分已由xxx代替：<br/>
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0701/151313_489a9540_5504908.png "config.png")
 
