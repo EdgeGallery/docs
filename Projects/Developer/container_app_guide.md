@@ -25,7 +25,7 @@
 最终权限如下：<br/>
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0630/171606_83e1797d_5504908.png "dockersock.png")
 <br/>
-## 配置沙箱环境：developer新增openstack沙箱环境
+## 配置沙箱环境：developer新增K8S沙箱环境
 
 ## 容器应用开发
 todo 开发指导，快速集成，如何发布能力，如何服务注册、mepagent的集成，如何修改yaml、如何上传镜像
