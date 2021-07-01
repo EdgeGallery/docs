@@ -4,20 +4,19 @@
 
 ### edgegallery 安装v1.2版本 openstack安装 W版本
 
-1. developer 安装注意事项：
-v1.2新增文件管理系统，用于上传和下载虚机镜像，当前支持qcow2、img、iso格式
-fileSystemAddress：配置文件管理系统的地址
-username：配置虚机镜像用户名
-password：配置虚机镜像登录密码
+1. **developer 安装注意事项** v1.2新增文件管理系统，用于上传和下载虚机镜像，当前支持qcow2、img、iso格式   
+**fileSystemAddress** 配置文件管理系统的地址                                                       
+**username** 配置虚机镜像用户名                                                                   
+**password** 配置虚机镜像登录密码                                                                               
 2. openstack初始化配置：
-参考文档：Developer_OpenStack_Pre-configure.md
+[参考文档](../../Projects/Developer/Developer_OpenStack_Pre-configure.md)
 
 ## 配置沙箱环境：developer新增openstack沙箱环境
 
 1. develoepr平台用管理员用户admin登录 打开系统-沙箱环境管理-新增沙箱环境
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png "屏幕截图.png")
 
-2.lcmIp为lcmcontroller的IP地址 ，mecHost为openstack的IP地址，端口号为lcmcontroller对外暴露的端口号, 协议选择https.
+2. lcmIp为lcmcontroller的IP地址 ，mecHost为openstack的IP地址，端口号为lcmcontroller对外暴露的端口号, 协议选择https.   
 
 其他参数配置openstack相关的网络配置：参数设置如下：
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0628/163330_baff108f_7625288.png "屏幕截图.png")
@@ -48,13 +47,13 @@ mec_internet_ip=0.0.0.0  默认值或者不传即可
 
 3.上传配置文件为openstack config， 该配置文件为openstack对应的用户名、密码、项目、url等信息参数如下：
 
-export OS_USERNAME=admin
-export OS_PASSWORD=*****
-export OS_PROJECT_NAME=admin
-export OS_AUTH_URL=http://ip/identity
-export OS_IDENTITY_API_VERSION=3
-export OS_PROJECT_DOMAIN_NAME=default
-export OS_USER_DOMAIN_NAME=default
+export OS_USERNAME=admin    
+export OS_PASSWORD=*****    
+export OS_PROJECT_NAME=admin    
+export OS_AUTH_URL=http://ip/identity     
+export OS_IDENTITY_API_VERSION=3     
+export OS_PROJECT_DOMAIN_NAME=default      
+export OS_USER_DOMAIN_NAME=default     
 
 4.添加路由：developer环境与openstack环境的路由配置
 
@@ -73,8 +72,7 @@ todo 开发指导
 
 
 ## mepagent的集成
-mepagnet支持虚机方式部署，参考文档如下：
+mepagent支持虚机方式部署，参考文档如下：
 
 https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/mep-agent%E4%BD%BF%E7%94%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%96%B9%E5%BC%8F%E9%83%A8%E7%BD%B2.md
-
 

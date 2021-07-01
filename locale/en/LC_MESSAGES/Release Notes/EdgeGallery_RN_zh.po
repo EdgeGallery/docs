@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 18:57+0530\n"
+"POT-Creation-Date: 2021-06-30 00:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,19 +43,19 @@ msgstr "[Project Description](https://gitee.com/edgegallery/docs/blob/master/Get
 msgid "[开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
 msgstr "[Developer Guide](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:15
-msgid "Version: v1.1.0"
+#: ../../Release Notes/EdgeGallery_RN_zh.md:14
+msgid "Version: v1.2.0"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:17
+msgid "Release Date: 2020-07-07"
 msgstr ""
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:18
-msgid "Release Date: 2020-04-09"
+msgid "Image Version: v1.2.0"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:19
-msgid "Image Version: v1.1.0"
-msgstr ""
-
-#: ../../Release Notes/EdgeGallery_RN_zh.md:21 Notes/EdgeGallery_RN_zh.md:141 Notes/EdgeGallery_RN_zh.md:263 Notes/EdgeGallery_RN_zh.md:375
+#: ../../Release Notes/EdgeGallery_RN_zh.md:20 Notes/EdgeGallery_RN_zh.md:84 Notes/EdgeGallery_RN_zh.md:204 Notes/EdgeGallery_RN_zh.md:326 Notes/EdgeGallery_RN_zh.md:438
 msgid "**新开源仓库列表**"
 msgstr "**List of newly created repositories**"
 
@@ -78,6 +78,190 @@ msgstr ""
 #: ../../Release Notes/EdgeGallery_RN_zh.md
 msgid "说明"
 msgstr "Explanation"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md
+msgid "Installer"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md
+msgid "installer"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md
+msgid "配置仓"
+msgstr "Configuration Repository"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md
+msgid "https://gitee.com/edgegallery/installer"
+msgstr "https://gitee.com/edgegallery/installer"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md
+msgid "EdgeGallery离线包制作以及离线安装、在线安装、docker compose方式安装脚本"
+msgstr "EdgeGallery offline package production and offline installation, online installation, docker compose installation script."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md
+msgid "filesystem"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md
+msgid "产品仓"
+msgstr "Product Repository"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md
+msgid "https://gitee.com/edgegallery/file-system"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md
+msgid "EdgeGallery平台内的应用镜像管理服务"
+msgstr "Application image management service in EdgeGallery platform"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:26 Notes/EdgeGallery_RN_zh.md:91 Notes/EdgeGallery_RN_zh.md:212 Notes/EdgeGallery_RN_zh.md:333 Notes/EdgeGallery_RN_zh.md:457
+msgid "**New Features**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:28
+msgid "[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.2)"
+msgstr "[ **Detailed description of demand/release plan** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.2)"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:30
+msgid "**[AI软硬件能](https://47.243.125.138:30092/#/mecDeveloper/api/mep)** 支撑昇腾/Atlas硬件以及开放API"
+msgstr "**[AI Software and Hardware Capability](https://47.243.125.138:30092/#/mecDeveloper/api/mep)** Supports Shengteng/Atlas hardware and open API."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:31
+msgid "AI换脸、OCR、智慧货架、姿态识别等"
+msgstr "AI face change, OCR, smart shelf, gesture recognition, etc."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:32
+msgid "**[行业套件](https://47.243.125.138:30091/#/home)** 支持行业组合能力"
+msgstr "**[Industry Suite](https://47.243.125.138:30091/#/home)** Supports industry combination capabilities."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:33
+msgid "PCB质量检测"
+msgstr "PCB quality inspection."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:34
+msgid "工业现场南向设备管理通信"
+msgstr "Industrial site southbound equipment management communication."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:35
+msgid "视频会议、在线课堂"
+msgstr "Video conference, online classroom."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:36
+msgid "**[应用创新](https://47.243.125.138:30091/#/home)**"
+msgstr "**[Application Innovation](https://47.243.125.138:30091/#/home)**"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:37
+msgid "完成130+应用集成、落地25+创新基地"
+msgstr "Completed 130+ application integration and landed 25+ innovation bases."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:38 Notes/EdgeGallery_RN_zh.md:100
+msgid "**体验优化**"
+msgstr "**Experience Optimization**"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:39
+msgid "[AppStore](https://47.243.125.138:30091/#/home)、[Developer](https://47.243.125.138:30092/#/)、[MECM](https://47.243.125.138:30093/)各平台界面全面升级优化"
+msgstr "[AppStore](https://47.243.125.138:30091/#/home), [Developer](https://47.243.125.138:30092/#/), [MECM](https://47.243.125.138:30093/) Comprehensive upgrade and optimization of the interface from each platform."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:40
+msgid "支持数据持久化"
+msgstr "Supports data persistence"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:41
+msgid "**[安全](https://gitee.com/edgegallery/installer)**"
+msgstr "**[Security](https://gitee.com/edgegallery/installer)**"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:42
+msgid "用户管理增加动态验证码校验功能"
+msgstr "User management adds dynamic verification code with verification function."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:43
+msgid "**[增强特性](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.2)**"
+msgstr "**[Enhanced features](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.2)**"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:44
+msgid "Developer、AppStore和MECM平台增加管理员操作界面"
+msgstr "Developer, AppStore and MECM platform adds administrator operation interface."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:45
+msgid "AppStore平台提供应用在线体验功能"
+msgstr "AppStore platform provides application online experience function."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:46
+msgid "虚机应用集成能力增强，可配置网络，input参数等，支持无镜像包调测"
+msgstr "Enhanced virtual machine application integration capabilities, configurable network, input parameters, etc., and supports debugging without mirroring package."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:47
+msgid "支持虚机应用的全流上线，从集成、测试、发布，到部署和分发"
+msgstr "Supports the full-stream online launch of virtual machine applications, from integration, testing, release, to deployment and distribution."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:48
+msgid "增加镜像文件管理服务，支持镜像文件的上传和下载"
+msgstr "Adds mirror file management service, and supports the upload and download of mirror files."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:49
+msgid "提供边缘自治管理界面"
+msgstr "Provides Edge Autonomous Management Interface."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:50
+msgid "增加边缘节点的健康检查能力"
+msgstr "Increases the health check capability of edge nodes."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:51
+msgid "**[安装部署](https://gitee.com/edgegallery/installer)**"
+msgstr "**[Installation and Deployment](https://gitee.com/edgegallery/installer)**"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:52
+msgid "支持基于Ansible模块化部署k8s/k3s以及EdgeGallery各子模块"
+msgstr "Supports modular deployment of k8s/k3s and EdgeGallery sub-modules based on Ansible."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:53
+msgid "支持docker-compose方式部署EdgeGallery各子模块"
+msgstr "Supports docker-compose mode to deploy EdgeGallery sub-modules."
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:55 Notes/EdgeGallery_RN_zh.md:117 Notes/EdgeGallery_RN_zh.md:238 Notes/EdgeGallery_RN_zh.md:341 Notes/EdgeGallery_RN_zh.md:469
+msgid "**Bug Fixes**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:57 Notes/EdgeGallery_RN_zh.md:61
+msgid "参见 [EdgeGallery v1.2.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.2%20Test%20Plan.md)"
+msgstr "Look [EdgeGallery v1.2.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.2%20Test%20Plan.md)"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:59 Notes/EdgeGallery_RN_zh.md:121 Notes/EdgeGallery_RN_zh.md:242 Notes/EdgeGallery_RN_zh.md:345 Notes/EdgeGallery_RN_zh.md:473
+msgid "**Known Issues**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:63 Notes/EdgeGallery_RN_zh.md:125 Notes/EdgeGallery_RN_zh.md:246 Notes/EdgeGallery_RN_zh.md:349 Notes/EdgeGallery_RN_zh.md:477
+msgid "**Security Notes**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:65 Notes/EdgeGallery_RN_zh.md:127 Notes/EdgeGallery_RN_zh.md:248 Notes/EdgeGallery_RN_zh.md:351 Notes/EdgeGallery_RN_zh.md:479
+msgid "**Fixed Security Issues**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:67 Notes/EdgeGallery_RN_zh.md:71
+msgid "参见 [EdgeGallery v1.2.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.2/EG%20R1.2%20Security%20Test%20Plan%20.md)"
+msgstr "Look [EdgeGallery v1.2.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.2/EG%20R1.2%20Security%20Test%20Plan%20.md)"
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:69 Notes/EdgeGallery_RN_zh.md:131 Notes/EdgeGallery_RN_zh.md:252 Notes/EdgeGallery_RN_zh.md:355 Notes/EdgeGallery_RN_zh.md:483
+msgid "**Known Security Issues**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:73 Notes/EdgeGallery_RN_zh.md:135 Notes/EdgeGallery_RN_zh.md:256 Notes/EdgeGallery_RN_zh.md:359 Notes/EdgeGallery_RN_zh.md:487
+msgid "**Known Vulnerabilities in Used Modules**"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:78
+msgid "Version: v1.1.0"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:81
+msgid "Release Date: 2020-04-09"
+msgstr ""
+
+#: ../../Release Notes/EdgeGallery_RN_zh.md:82
+msgid "Image Version: v1.1.0"
+msgstr ""
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md
 msgid "Example Applications"
@@ -108,10 +292,6 @@ msgid "eg-view"
 msgstr ""
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md
-msgid "产品仓"
-msgstr "Product Repository"
-
-#: ../../Release Notes/EdgeGallery_RN_zh.md
 msgid "https://gitee.com/edgegallery/eg-view"
 msgstr ""
 
@@ -135,138 +315,106 @@ msgstr ""
 msgid "为用户提供本地测试的工具链"
 msgstr "Local testing tool-chain for users."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:28 Notes/EdgeGallery_RN_zh.md:149 Notes/EdgeGallery_RN_zh.md:270 Notes/EdgeGallery_RN_zh.md:394
-msgid "**New Features**"
-msgstr ""
-
-#: ../../Release Notes/EdgeGallery_RN_zh.md:30
+#: ../../Release Notes/EdgeGallery_RN_zh.md:93
 msgid "[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)"
-msgstr "[ **Demand/Release Plan Long Description** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)"
+msgstr "[ **Detailed description of demand/release plan** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.1)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:32
+#: ../../Release Notes/EdgeGallery_RN_zh.md:95
 msgid "![](/uploads/images/2021/v1.1/NewFeature.png \"NewFeature.png\")"
 msgstr "![](/uploads/images/2021/v1.1/NewFeature_en.png \"NewFeature.png\")"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:34
+#: ../../Release Notes/EdgeGallery_RN_zh.md:97
 msgid "**AI软硬件能** 支撑昇腾/Atlas硬件以及开放API"
 msgstr "**AI software and hardware capabilities** Supporting Ascenium/Atlas hardware and open APIs."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:35
+#: ../../Release Notes/EdgeGallery_RN_zh.md:98
 msgid "AI图像修复、边缘检测、卡通图像生成、图像上色、对象分类、目标检测等；"
 msgstr "AI image repair, edge detection, cartoon image generation, image colouring, object classification, target detection, etc."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:36
+#: ../../Release Notes/EdgeGallery_RN_zh.md:99
 msgid "**跨平台支持** 支持基于Openstack的虚机应用和基于K8S容器应用的孵化集成"
 msgstr "**Cross platform support** Supports Openstack-based virtual machine applications, and K8S container applications based incubation integration."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:37
-msgid "**体验优化**"
-msgstr "**Experience Optimization**"
-
-#: ../../Release Notes/EdgeGallery_RN_zh.md:38
+#: ../../Release Notes/EdgeGallery_RN_zh.md:101
 msgid "APP分类、APP推荐、爆款动态刷新"
 msgstr "APP Classification, APP Recommendation, Dynamic refresh of hot models."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:39
+#: ../../Release Notes/EdgeGallery_RN_zh.md:102
 msgid "**EdgeNative支持**"
 msgstr "**EdgeNative support**"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:40
+#: ../../Release Notes/EdgeGallery_RN_zh.md:103
 msgid "IaaS/PaaS/应用都支持按需部署、应用框架自动生成"
 msgstr "IaaS/PaSS/On-demand app deployment support, automatic generation of application framework."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:41
+#: ../../Release Notes/EdgeGallery_RN_zh.md:104
 msgid "MEP微服务管理架构可视化"
 msgstr "MEP Microservice Management Architecture Visualization."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:42
+#: ../../Release Notes/EdgeGallery_RN_zh.md:105
 msgid "提供EdgeGallery小程序、设计态等"
 msgstr "Provides EdgeGallery applet, design state, etc."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:43
+#: ../../Release Notes/EdgeGallery_RN_zh.md:106
 msgid "**API管理** ETSI MEC API、3GPP CAPIF以及昇腾能力支持情况匹配"
 msgstr "**API Management** ETSI MEC API,3GPP CAPIF and Shengteng capability support situation match."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:44
+#: ../../Release Notes/EdgeGallery_RN_zh.md:107
 msgid "**安全、用户管理**"
 msgstr "**Security, User Management**"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:45
+#: ../../Release Notes/EdgeGallery_RN_zh.md:108
 msgid "分权分域，对关键操作和数据进行权限控制"
 msgstr "Decentralized domain, authority control over key operations and data."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:46
+#: ../../Release Notes/EdgeGallery_RN_zh.md:109
 msgid "应用远程登录（如VNC）支持安全协议登录"
 msgstr "Application of remote login (such as VNC) supports security protocol registration."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:47
+#: ../../Release Notes/EdgeGallery_RN_zh.md:110
 msgid "**社区实验室增强**"
 msgstr "**Community Laboratory enhancement**"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:48
+#: ../../Release Notes/EdgeGallery_RN_zh.md:111
 msgid "提供真实E2E 5G验证环境"
 msgstr "Provide real E2E 5G verification environment."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:49
+#: ../../Release Notes/EdgeGallery_RN_zh.md:112
 msgid "资源一键申请，一键释放，可视化管理"
 msgstr "Resource One-One Application, One-Talk Release, Visual Management."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:50
+#: ../../Release Notes/EdgeGallery_RN_zh.md:113
 msgid "**应用创新**"
 msgstr "**Application Innovation**"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:51 Notes/EdgeGallery_RN_zh.md:169
+#: ../../Release Notes/EdgeGallery_RN_zh.md:114 Notes/EdgeGallery_RN_zh.md:232
 msgid "AppStore联邦，可注册外部AppStore，应用在不同AppStore间可相互推送和拉取"
 msgstr "AppStore Federation, can register an external AppStore and apply to push and pull with each other in different AppStore."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:52
+#: ../../Release Notes/EdgeGallery_RN_zh.md:115
 msgid "完成80+应用集成、落地17+创新基地、西安电子科技大学研究生课程"
 msgstr "Complete 80 + Application Integration, Floor 17 + Innovation Base, Graduate Program at Xi'an Electronic Science and Technology University."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:54 Notes/EdgeGallery_RN_zh.md:175 Notes/EdgeGallery_RN_zh.md:278 Notes/EdgeGallery_RN_zh.md:406
-msgid "**Bug Fixes**"
-msgstr ""
-
-#: ../../Release Notes/EdgeGallery_RN_zh.md:56 Notes/EdgeGallery_RN_zh.md:60
+#: ../../Release Notes/EdgeGallery_RN_zh.md:119 Notes/EdgeGallery_RN_zh.md:123
 #, python-format
 msgid "参见 [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report%2Emd)"
-msgstr "See [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report%2Emd)"
+msgstr "Look [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.1%20Test%20Report%2Emd)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:58 Notes/EdgeGallery_RN_zh.md:179 Notes/EdgeGallery_RN_zh.md:282 Notes/EdgeGallery_RN_zh.md:410
-msgid "**Known Issues**"
-msgstr ""
-
-#: ../../Release Notes/EdgeGallery_RN_zh.md:62 Notes/EdgeGallery_RN_zh.md:183 Notes/EdgeGallery_RN_zh.md:286 Notes/EdgeGallery_RN_zh.md:414
-msgid "**Security Notes**"
-msgstr ""
-
-#: ../../Release Notes/EdgeGallery_RN_zh.md:64 Notes/EdgeGallery_RN_zh.md:185 Notes/EdgeGallery_RN_zh.md:288 Notes/EdgeGallery_RN_zh.md:416
-msgid "**Fixed Security Issues**"
-msgstr ""
-
-#: ../../Release Notes/EdgeGallery_RN_zh.md:66
+#: ../../Release Notes/EdgeGallery_RN_zh.md:129
 #, python-format
 msgid "参见 [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%20%2Emd)"
-msgstr "See [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%20%2Emd)"
+msgstr "Look [EdgeGallery v1.1.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.1/EG%20R1.1%20Security%20Test%20Plan%20%2Emd)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:68 Notes/EdgeGallery_RN_zh.md:189 Notes/EdgeGallery_RN_zh.md:292 Notes/EdgeGallery_RN_zh.md:420
-msgid "**Known Security Issues**"
-msgstr ""
-
-#: ../../Release Notes/EdgeGallery_RN_zh.md:70
+#: ../../Release Notes/EdgeGallery_RN_zh.md:133
 #, python-format
 msgid "参见 [EdgeGallery v1.1.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report%2Emd)"
-msgstr "See [EdgeGallery v1.1.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report%2Emd)"
+msgstr "Look [EdgeGallery v1.1.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.1/EG%20v1.1%20Security%20Test%20Report%2Emd)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:72 Notes/EdgeGallery_RN_zh.md:193 Notes/EdgeGallery_RN_zh.md:296 Notes/EdgeGallery_RN_zh.md:424
-msgid "**Known Vulnerabilities in Used Modules**"
-msgstr ""
-
-#: ../../Release Notes/EdgeGallery_RN_zh.md:74
+#: ../../Release Notes/EdgeGallery_RN_zh.md:137
 msgid "EdgeGallery v1.1.0 版本第三方开源组件存在以下漏洞需要用户自行修复："
 msgstr "The following vulnerabilities in the third-party open source components of EdgeGallery v1.1.o have to be fixed by users:"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:76 Notes/EdgeGallery_RN_zh.md:197 Notes/EdgeGallery_RN_zh.md:300 Notes/EdgeGallery_RN_zh.md:428
+#: ../../Release Notes/EdgeGallery_RN_zh.md:139 Notes/EdgeGallery_RN_zh.md:260 Notes/EdgeGallery_RN_zh.md:363 Notes/EdgeGallery_RN_zh.md:491
 msgid "**Appstore**"
 msgstr ""
 
@@ -386,7 +534,7 @@ msgstr ""
 msgid "CVE-2018-1258"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:89 Notes/EdgeGallery_RN_zh.md:206 Notes/EdgeGallery_RN_zh.md:315 Notes/EdgeGallery_RN_zh.md:436
+#: ../../Release Notes/EdgeGallery_RN_zh.md:152 Notes/EdgeGallery_RN_zh.md:269 Notes/EdgeGallery_RN_zh.md:378 Notes/EdgeGallery_RN_zh.md:499
 msgid "**Developer**"
 msgstr ""
 
@@ -402,7 +550,7 @@ msgstr ""
 msgid "CVE-2018-8088  CVE-2016-6199  CVE-2019-15052  CVE-2020-25649  CVE-2019-10086  CVE-2017-1000207  CVE-2017-1000208  CVE-2017-18640  CVE-2020-11979"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:101 Notes/EdgeGallery_RN_zh.md:215
+#: ../../Release Notes/EdgeGallery_RN_zh.md:164 Notes/EdgeGallery_RN_zh.md:278
 msgid "**ATP**"
 msgstr ""
 
@@ -410,7 +558,7 @@ msgstr ""
 msgid "spring-core"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:112 Notes/EdgeGallery_RN_zh.md:220 Notes/EdgeGallery_RN_zh.md:334 Notes/EdgeGallery_RN_zh.md:446
+#: ../../Release Notes/EdgeGallery_RN_zh.md:175 Notes/EdgeGallery_RN_zh.md:283 Notes/EdgeGallery_RN_zh.md:397 Notes/EdgeGallery_RN_zh.md:509
 msgid "**User-mgmt**"
 msgstr ""
 
@@ -418,31 +566,31 @@ msgstr ""
 msgid "5.3.8.RELEASE"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:121 Notes/EdgeGallery_RN_zh.md:243 Notes/EdgeGallery_RN_zh.md:355 Notes/EdgeGallery_RN_zh.md:467
+#: ../../Release Notes/EdgeGallery_RN_zh.md:184 Notes/EdgeGallery_RN_zh.md:306 Notes/EdgeGallery_RN_zh.md:418 Notes/EdgeGallery_RN_zh.md:530
 msgid "**Upgrade Notes**"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:123 Notes/EdgeGallery_RN_zh.md:127 Notes/EdgeGallery_RN_zh.md:131 Notes/EdgeGallery_RN_zh.md:245 Notes/EdgeGallery_RN_zh.md:249 Notes/EdgeGallery_RN_zh.md:253 Notes/EdgeGallery_RN_zh.md:357 Notes/EdgeGallery_RN_zh.md:361 Notes/EdgeGallery_RN_zh.md:469 Notes/EdgeGallery_RN_zh.md:473
+#: ../../Release Notes/EdgeGallery_RN_zh.md:186 Notes/EdgeGallery_RN_zh.md:190 Notes/EdgeGallery_RN_zh.md:194 Notes/EdgeGallery_RN_zh.md:308 Notes/EdgeGallery_RN_zh.md:312 Notes/EdgeGallery_RN_zh.md:316 Notes/EdgeGallery_RN_zh.md:420 Notes/EdgeGallery_RN_zh.md:424 Notes/EdgeGallery_RN_zh.md:532 Notes/EdgeGallery_RN_zh.md:536
 msgid "N/A"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:125 Notes/EdgeGallery_RN_zh.md:247 Notes/EdgeGallery_RN_zh.md:359 Notes/EdgeGallery_RN_zh.md:471
+#: ../../Release Notes/EdgeGallery_RN_zh.md:188 Notes/EdgeGallery_RN_zh.md:310 Notes/EdgeGallery_RN_zh.md:422 Notes/EdgeGallery_RN_zh.md:534
 msgid "**Deprecation Notes**"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:129 Notes/EdgeGallery_RN_zh.md:251 Notes/EdgeGallery_RN_zh.md:363 Notes/EdgeGallery_RN_zh.md:475
+#: ../../Release Notes/EdgeGallery_RN_zh.md:192 Notes/EdgeGallery_RN_zh.md:314 Notes/EdgeGallery_RN_zh.md:426 Notes/EdgeGallery_RN_zh.md:538
 msgid "**Other**"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:135
+#: ../../Release Notes/EdgeGallery_RN_zh.md:198
 msgid "Version: v1.0.0"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:138
+#: ../../Release Notes/EdgeGallery_RN_zh.md:201
 msgid "Release Date: 2020-12-31"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:139
+#: ../../Release Notes/EdgeGallery_RN_zh.md:202
 msgid "Image Version: v1.0.0"
 msgstr ""
 
@@ -506,90 +654,90 @@ msgstr ""
 msgid "管理面提供应用规则配置下发和管理的能力"
 msgstr "Management side provides the ability to configure and manage application rules."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:151
+#: ../../Release Notes/EdgeGallery_RN_zh.md:214
 msgid "[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)"
-msgstr "[ **Demand/Release Plan Long Description** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)"
+msgstr "[ **Detailed description of demand/release plan** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v1.0)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:153
+#: ../../Release Notes/EdgeGallery_RN_zh.md:216
 msgid "版本规划特性"
 msgstr "Version planning features"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:154
+#: ../../Release Notes/EdgeGallery_RN_zh.md:217
 msgid "**Developer** 优化APP开发测试发布流程，优化API界面，集成多语言SDK"
 msgstr "**Developer** Optimizes APP development test publishing process, optimize API interface, sets into multi-language SDK."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:155
+#: ../../Release Notes/EdgeGallery_RN_zh.md:218
 msgid "优化首页设计，增加应用开发生命周期流程图；"
 msgstr "Optimizing the front page design and increasing the application development life cycle flow chart."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:156
+#: ../../Release Notes/EdgeGallery_RN_zh.md:219
 msgid "优化项目开发流程，全新界面设计；"
 msgstr "Optimizing project development process, new interface design."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:157
+#: ../../Release Notes/EdgeGallery_RN_zh.md:220
 msgid "优化部署调测环节，增加可视化展示部署过程展示，增加部署结果POD展示；"
 msgstr "optimizing the deployment adjusting link, increasing the display of the visual display deployment process, increasing the deployment result POD display."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:158
+#: ../../Release Notes/EdgeGallery_RN_zh.md:221
 msgid "优化能力中心界面，增加能力分类选择；"
 msgstr "an optimized capability centre interface for increasing the capability classification selection."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:159
+#: ../../Release Notes/EdgeGallery_RN_zh.md:222
 msgid "应用发布环节对接认证测试平台；"
 msgstr "the application release link is connected to the authentication test platform."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:160
+#: ../../Release Notes/EdgeGallery_RN_zh.md:223
 msgid "**AppStore** 界面易用性优化，EdgeGallery生态能力优化"
 msgstr "**AppStore** Interface Usability Optimization, EdgeGallery Ecocapacity Optimization."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:161
+#: ../../Release Notes/EdgeGallery_RN_zh.md:224
 msgid "**MECM** 优化拓扑、应用管理及边缘节点管理，新增获取MEP能力功能，AK/SK配置接口"
 msgstr "**MECM** Optimized topology, application management and edge node management, adds acquisition MEP capability function, AK/SK configuration interface."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:162
+#: ../../Release Notes/EdgeGallery_RN_zh.md:225
 msgid "**MEP** 支持APP心跳检测，新增获取MEP能力接口，AK/SK配置接口，MEP-agent新增获取token接口"
 msgstr "**MEP** supports APP heartbeat detection, adds acquire MEP capability interface, AK/SK configuration interface, MEP-agent add to obtain token interface."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:163
+#: ../../Release Notes/EdgeGallery_RN_zh.md:226
 msgid "**ATP** APP应用的测试能力增强"
 msgstr "**ATP** Test capability enhancement for APP application."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:164
+#: ../../Release Notes/EdgeGallery_RN_zh.md:227
 msgid "**Test** 提供健康检查功能，优化安装包，开发测试平台支持测试例管理"
 msgstr "**Test** Provide health check function, optimize installation package, develop test platform to support test case management."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:166
+#: ../../Release Notes/EdgeGallery_RN_zh.md:229
 msgid "PoC 特性"
 msgstr "PoC features"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:167
+#: ../../Release Notes/EdgeGallery_RN_zh.md:230
 msgid "MEP服务治理页面展示"
 msgstr "MEP Service Governance Page Demo."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:168
+#: ../../Release Notes/EdgeGallery_RN_zh.md:231
 msgid "引入插件式应用框架[Crane-framework](https://gitee.com/edgegallery/crane-framework)"
 msgstr "Introducing the plug-in application framework [Crane-framework](https://gitee.com/edgegallery/crane-framework)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:171
+#: ../../Release Notes/EdgeGallery_RN_zh.md:234
 msgid "**PoC Test Report**"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:173
+#: ../../Release Notes/EdgeGallery_RN_zh.md:236
 #, python-format
 msgid "参见[EdgeGallery v1.0.0 PoC Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)"
-msgstr "See [EdgeGallery v1.0.0 PoC Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)"
+msgstr "Look [EdgeGallery v1.0.0 PoC Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Poc%20Requirement%20Test%20Report%2Emd)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:177 Notes/EdgeGallery_RN_zh.md:181
+#: ../../Release Notes/EdgeGallery_RN_zh.md:240 Notes/EdgeGallery_RN_zh.md:244
 #, python-format
 msgid "参见 [EdgeGallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)"
-msgstr "See [EdgeGallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)"
+msgstr "Look [EdgeGallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.0%20Test%20Report%2Emd)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:187 Notes/EdgeGallery_RN_zh.md:191
+#: ../../Release Notes/EdgeGallery_RN_zh.md:250 Notes/EdgeGallery_RN_zh.md:254
 #, python-format
 msgid "参见 [EdgeGallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report%2Emd)"
-msgstr "See [EdgeGallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report%2Emd)"
+msgstr "Look [EdgeGallery v1.0.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.0/EG%20v1.0.0%20Security%20Test%20Report%2Emd)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:195
+#: ../../Release Notes/EdgeGallery_RN_zh.md:258
 msgid "EdgeGalelry v1.0.0 版本第三方开源组件存在以下漏洞需要用户自行修复："
 msgstr "EdgeGallry v1.0.0's version of third party open source component exists that the following vulnerabilities require users to repair themselves:"
 
@@ -669,7 +817,7 @@ msgstr ""
 msgid "2.3.3.RELEAS"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:229 Notes/EdgeGallery_RN_zh.md:343 Notes/EdgeGallery_RN_zh.md:455
+#: ../../Release Notes/EdgeGallery_RN_zh.md:292 Notes/EdgeGallery_RN_zh.md:406 Notes/EdgeGallery_RN_zh.md:518
 msgid "**Website-gateway**"
 msgstr ""
 
@@ -681,7 +829,7 @@ msgstr ""
 msgid "2.3.3"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:237 Notes/EdgeGallery_RN_zh.md:349 Notes/EdgeGallery_RN_zh.md:461
+#: ../../Release Notes/EdgeGallery_RN_zh.md:300 Notes/EdgeGallery_RN_zh.md:412 Notes/EdgeGallery_RN_zh.md:524
 msgid "**MECM**"
 msgstr ""
 
@@ -709,15 +857,15 @@ msgstr ""
 msgid "NPM-118"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:257
+#: ../../Release Notes/EdgeGallery_RN_zh.md:320
 msgid "Version: v0.9.1"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:260
+#: ../../Release Notes/EdgeGallery_RN_zh.md:323
 msgid "Release Date: 2020-11-11"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:261
+#: ../../Release Notes/EdgeGallery_RN_zh.md:324
 msgid "Image Version: v0.9.1"
 msgstr ""
 
@@ -761,28 +909,28 @@ msgstr ""
 msgid "提供x86平台应用上车ARM时源码分析功能"
 msgstr "Providing the x86 platform application for ARM-time-source analysis."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:272
+#: ../../Release Notes/EdgeGallery_RN_zh.md:335
 msgid "[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)"
-msgstr "[ **Demand/Release Plan Long Description** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)"
+msgstr "[ **Detailed description of demand/release plan** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9.x)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:274
+#: ../../Release Notes/EdgeGallery_RN_zh.md:337
 msgid "安全设计排查问题汇总"
 msgstr "Summary of security design check issues."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:275
+#: ../../Release Notes/EdgeGallery_RN_zh.md:338
 msgid "api模拟器和工具链、plugin仓库开源"
 msgstr "api simulator and toolchain, plugin warehouse open source."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:276
+#: ../../Release Notes/EdgeGallery_RN_zh.md:339
 msgid "**MEP/MEP Agent**ak/sk配置接口"
 msgstr "**MEP/MEP Agent** ak/sk Configuration Interface."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:280 Notes/EdgeGallery_RN_zh.md:284 Notes/EdgeGallery_RN_zh.md:290 Notes/EdgeGallery_RN_zh.md:294
+#: ../../Release Notes/EdgeGallery_RN_zh.md:343 Notes/EdgeGallery_RN_zh.md:347 Notes/EdgeGallery_RN_zh.md:353 Notes/EdgeGallery_RN_zh.md:357
 #, python-format
 msgid "参见 [EdgeGallery v0.9.1 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)"
-msgstr "See [EdgeGallery v0.9.1 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)"
+msgstr "Look [EdgeGallery v0.9.1 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/%20EdgeGallery%20R0.9.1%20Test%20Report%2Emd)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:298
+#: ../../Release Notes/EdgeGallery_RN_zh.md:361
 msgid "EdgeGallery v0.9.1版本第三方开源组件存在以下漏洞需要用户自行修复："
 msgstr "The following vulnerabilities exist in the third-party open source components of EdgeGallery v0.9.1 and have to be fixed by users:"
 
@@ -870,20 +1018,20 @@ msgstr ""
 msgid "NPM-1065, NPM-557, NPM-7823"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:365 Notes/EdgeGallery_RN_zh.md:477
+#: ../../Release Notes/EdgeGallery_RN_zh.md:428 Notes/EdgeGallery_RN_zh.md:540
 #, python-format
 msgid "经过安全工作组评审，Plugins仓库遗留问题单[I1XA0N](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N)将在v0.9版本发布后通过补丁形式修复，详细情况请参见安全工作组[会议纪要](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)"
 msgstr "After a security working group review, the Plugins repository legacy ticket [I1XA0N](https://gitee.com/OSDT/dashboard/programs/114640/issues?issue_id=I1XA0N) will be repaired in patch form after the v0.9 release. For details, see Security Working Group [minutes](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Meetings/Meeting%20Minutes%2030-09-2020%2Emd)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:369
+#: ../../Release Notes/EdgeGallery_RN_zh.md:432
 msgid "Version: v0.9"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:372
+#: ../../Release Notes/EdgeGallery_RN_zh.md:435
 msgid "Release Date: 2020-09-30"
 msgstr ""
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:373
+#: ../../Release Notes/EdgeGallery_RN_zh.md:436
 msgid "Image Version: v0.9"
 msgstr ""
 
@@ -1083,43 +1231,43 @@ msgstr ""
 msgid "文档"
 msgstr "document"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:396
+#: ../../Release Notes/EdgeGallery_RN_zh.md:459
 msgid "[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)"
-msgstr "[ **Demand/Release Plan Long Description** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)"
+msgstr "[ **Detailed description of demand/release plan** ](https://gitee.com/edgegallery/community/tree/master/TSC/Release/v0.9)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:398
+#: ../../Release Notes/EdgeGallery_RN_zh.md:461
 msgid "All-in-One MEP/MECM网络隔离"
 msgstr "All-in-One MEP/MECM network isolation."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:399
+#: ../../Release Notes/EdgeGallery_RN_zh.md:462
 msgid "MEP支持DNS配置"
 msgstr "MEP Support DNS Configuration."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:400
+#: ../../Release Notes/EdgeGallery_RN_zh.md:463
 msgid "支持All-in-One部署"
 msgstr "Support for all-in-One deployment."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:401
+#: ../../Release Notes/EdgeGallery_RN_zh.md:464
 msgid "多节点离线部署"
 msgstr "Multi-node offline deployment."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:402
+#: ../../Release Notes/EdgeGallery_RN_zh.md:465
 msgid "九大维度安全优化"
 msgstr "Nine Great Dimension Security Optimization."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:403
+#: ../../Release Notes/EdgeGallery_RN_zh.md:466
 msgid "MECM界面/拓扑管理/资源管理优化"
 msgstr "MECM interface/topology management/resource management optimization."
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:404
+#: ../../Release Notes/EdgeGallery_RN_zh.md:467
 msgid "（PoC）kubeedge集成验证"
 msgstr "(PoC) kubedge integration verification"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:408 Notes/EdgeGallery_RN_zh.md:412 Notes/EdgeGallery_RN_zh.md:418 Notes/EdgeGallery_RN_zh.md:422
+#: ../../Release Notes/EdgeGallery_RN_zh.md:471 Notes/EdgeGallery_RN_zh.md:475 Notes/EdgeGallery_RN_zh.md:481 Notes/EdgeGallery_RN_zh.md:485
 #, python-format
 msgid "参见 [EdgeGallery v0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)"
-msgstr "See [EdgeGallery v0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)"
+msgstr "Look [EdgeGallery v0.9 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R0.9%20Test%20%20Report%20%2Emd)"
 
-#: ../../Release Notes/EdgeGallery_RN_zh.md:426
+#: ../../Release Notes/EdgeGallery_RN_zh.md:489
 msgid "EdgeGallery v0.9版本第三方开源组件存在以下漏洞需要用户自行修复："
 msgstr "The following vulnerabilities in the third-party open source components of EdgeGallery v0.9 have to be fixed by users:"

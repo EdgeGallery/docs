@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-17 18:37+0530\n"
+"POT-Creation-Date: 2021-06-30 00:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,27 +51,27 @@ msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:26
 msgid "1、下载[Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)"
-msgstr "1.Download [Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)"
+msgstr "1.Download [Service Center](http://servicecomb.apache.org/release/service-center-downloads/)"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:28
-msgid "![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
-msgstr "![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
+msgid "!![](/uploads/images/2021/appstore/download_service-center.png \"service center1.jpg\")"
+msgstr "!![](/uploads/images/2021/appstore/download_service-center_en.png \"service center1.jpg\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:30
 msgid "2、解压后运行 start-service-center.bat  和  start-frontend.bat"
 msgstr "2.Run the start-service-center.bat and start-frontend.bat after decompression"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:32
-msgid "![](/uploads/images/2021/cor2020/153735_4dafd335_7625245.jpeg \"service center2.jpg\")"
-msgstr "![](/uploads/images/2021/cor2020/153735_4dafd335_7625245_en.jpeg \"service center2.jpg\")"
+msgid "![](/uploads/images/2021/appstore/start_service-center.png \"service center2.jpg\")"
+msgstr "![](/uploads/images/2021/appstore/start_service-center.png \"service center2.jpg\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:34
 msgid "DataBase"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:36
-msgid "1、下载、安装、启动 Postgresql 12.2"
-msgstr "1.Download, install and start Postgresql 12.2"
+msgid "1、下载、安装、启动 Postgresql 12.3"
+msgstr "1.Download, install and start Postgresql 12.3"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:38
 msgid "2、设置登录名和密码，例如 postgresql/root"
@@ -142,8 +142,8 @@ msgid "![](/uploads/images/2021/cor2020/154023_9c49d20c_7625245.jpeg \"appstore-
 msgstr "![](/uploads/images/2021/cor2020/154023_9c49d20c_7625245_en.jpeg \"appstore-be1.jpg\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:72
-msgid "3、运行MainServer函数，启动appstore-be"
-msgstr "3.Run the mainServer function, start appstore-be"
+msgid "4、运行MainServer函数，启动appstore-be"
+msgstr "4. Run the MainServer function and start appstore-be"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:74
 msgid "AppStore-fe"
@@ -238,8 +238,8 @@ msgid "共享应用"
 msgstr "Shared applications"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:127
-msgid "1.应用共享导航下分为外部应用仓库管理、应用推广、应用拉取、消息中心和操作分析； ![](/uploads/images/2021/appstore/app_share.png \"4.1\")"
-msgstr "1. Application shared navigation is divided into external application warehouse management, application promotion, application pulling and message centre and operation analysis; ![](/uploads/images/2021/appstore/app_share_en.png \"4.1\")"
+msgid "1.应用共享导航下分为外部应用仓库管理、应用推广、应用拉取、消息中心和操作分析。 ![](/uploads/images/2021/appstore/app_share.png \"4.1\")"
+msgstr "1. Application sharing navigation is divided into external application warehouse management, application promotion, application pull, message center and operation analysis. ![](/uploads/images/2021/appstore/app_share-en.png \"4.1\""
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:130
 msgid "2.外部应用仓库管理页面，可以添加、修改和删除仓库。 ![](/uploads/images/2021/appstore/third_appstores.png \"4.2\")"
@@ -260,4 +260,7 @@ msgstr "5. Clicking the information centre menu under the shared main menu under
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:145
 msgid "6.应用推送成功后切换到右边操作分析tab，在操作分析界面查看对应的信息，同时操作分析界面可以查看不同操作如：拉取、下载、通知、推送等类型的消息。 ![](/uploads/images/2021/appstore/operations.png \"4.9\")"
 msgstr "6. After the application is successful, switching to the right operation analysis tab, looking at the corresponding information in the operation analysis interface and operating the analysis interface to look at the messages of different operations such as pulling, downloading, informing, pushing and so on. ![](/uploads/images/2021/appstore/operations_en.png \"4.9\")"
+
+#~ msgid "![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
+#~ msgstr "![](/uploads/images/2020/0908/153700_b069cf5f_7625245.jpeg \"service center1.jpg\")"
 

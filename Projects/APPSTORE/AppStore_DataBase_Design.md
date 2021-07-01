@@ -2,7 +2,7 @@
 =========================
 AppStore数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用了如下数据库表格：
 
-- app_table: 存储app信息，如名字、提供者、描述等
+- **app_table** 存储app信息，如名字、提供者、描述等
 ```
 create TABLE if not exists app_table (
         APPID                    VARCHAR(200)       NOT NULL,
@@ -29,7 +29,7 @@ create TABLE if not exists app_table (
     );
 ```
 
-- catalog_package_table: 存储应用的package信息，一个应用可以拥有多个package
+- **catalog_package_table** 存储应用的package信息，一个应用可以拥有多个package
 ```
 create TABLE if not exists catalog_package_table (
         PACKAGEID                VARCHAR(200)       NOT NULL,
@@ -63,7 +63,7 @@ create TABLE if not exists catalog_package_table (
     );
 ```
 
-- csar_package_score: 存储应用的评论信息
+- **csar_package_score** 存储应用的评论信息
 ```
 create TABLE if not exists csar_package_score (
         COMMENTID                serial,
@@ -77,7 +77,7 @@ create TABLE if not exists csar_package_score (
     );
 ```
 
-- app_store_table: 存储外部appstore信息
+- **app_store_table** 存储外部appstore信息
 ```
 create TABLE if not exists app_store_table (
         APPSTOREID               VARCHAR(64)        NOT NULL,
@@ -95,7 +95,7 @@ create TABLE if not exists app_store_table (
     );
 ```
 
-- pushable_package_table: 存储可推送应用包的信息
+- **pushable_package_table** 存储可推送应用包的信息
 ```
 create TABLE if not exists pushable_package_table (
         PACKAGEID  VARCHAR(64) NOT NULL,
@@ -107,7 +107,7 @@ create TABLE if not exists pushable_package_table (
     );
 ```
 
-- message_table: 存储appstore间互通时的消息
+- **message_table** 存储appstore间互通时的消息
 ```
 create TABLE if not exists message_table (
         MESSAGEID                VARCHAR(100)       NOT NULL,
@@ -135,7 +135,7 @@ create TABLE if not exists message_table (
     );
 ```
 
-- tbl_service_host: 存储沙箱环境信息
+- **tbl_service_host** 存储沙箱环境信息
 
 ```
 CREATE TABLE IF NOT EXISTS TBL_SERVICE_HOST (
@@ -158,7 +158,7 @@ CREATE TABLE IF NOT EXISTS TBL_SERVICE_HOST (
     );
 ```
 
-- pushable_package_table: 存储沙箱环境配置文件信息
+- **pushable_package_table** 存储沙箱环境配置文件信息
 
 ```
 CREATE TABLE IF NOT EXISTS TBL_UPLOADED_FILE (

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-30 00:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,7 +74,7 @@ msgid "Configure the runtime environment variables (using IDEA as an example)"
 msgstr ""
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:35
-msgid "![](/uploads/images/2021/cor2020/inventory.png \"inventory.png\")"
+msgid "![](/uploads/images/2020/0924/inventory.png \"inventory.png\")"
 msgstr "![](/uploads/images/2021/cor2020/inventory_en.png \"inventory.png\")"
 
 #: ../../Projects/MECM/MECM_Inventory_Contribution.md:37

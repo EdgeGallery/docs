@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-30 00:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgid "部署关系"
 msgstr "Deployment Relationship"
 
 #: ../../Projects/User Management/User_Overview.md:10
-msgid "![](/uploads/images/2021/cor2020/user-mgmt-overview.PNG)"
+msgid "![](/uploads/images/2020/user-mgmt/user-mgmt-overview.PNG)"
 msgstr "![](/uploads/images/2021/cor2020/user-mgmt-overview_en.PNG)"
 
 #: ../../Projects/User Management/User_Overview.md:12

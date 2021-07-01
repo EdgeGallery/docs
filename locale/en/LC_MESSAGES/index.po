@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-09 22:29+0530\n"
+"POT-Creation-Date: 2021-06-30 00:58+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,31 +19,27 @@ msgstr ""
 
 #: ../../index.rst:8
 msgid "EdgeGallery Home"
-msgstr "EdgeGallery Home"
-
-#: ../../index.rst:11
-msgid "Get Started"
-msgstr "Get Started"
+msgstr ""
 
 #: ../../index.rst:11
 msgid "Getting Started"
-msgstr "Getting Started"
+msgstr ""
 
 #: ../../index.rst:17
 msgid "Release Details"
-msgstr "Release Details"
+msgstr ""
 
 #: ../../index.rst:17
 msgid "Release Notes"
-msgstr "Release Notes"
+msgstr ""
 
 #: ../../index.rst:23
 msgid "Architecture"
-msgstr "Architecture"
+msgstr ""
 
 #: ../../index.rst:29
 msgid "Developer Guide"
-msgstr "Developer Guide"
+msgstr ""
 
 #: ../../index.rst:35
 msgid "Installer Guide"
@@ -51,49 +47,52 @@ msgstr ""
 
 #: ../../index.rst:41
 msgid "AppStore"
-msgstr "AppStore"
+msgstr ""
 
 #: ../../index.rst:41
 msgid "ATP"
-msgstr "ATP"
+msgstr ""
 
 #: ../../index.rst:41
 msgid "Developer"
-msgstr "Developer"
+msgstr ""
 
 #: ../../index.rst:41
 msgid "MECM"
-msgstr "MECM"
+msgstr ""
 
 #: ../../index.rst:41
 msgid "MEP"
-msgstr "MEP"
+msgstr ""
 
 #: ../../index.rst:41
 msgid "User Management"
-msgstr "User Management"
+msgstr ""
 
 #: ../../index.rst:41
 msgid "Projects"
-msgstr "Projects"
+msgstr ""
 
 #: ../../index.rst:53
 msgid "Raise issue"
-msgstr "Raise issue"
+msgstr ""
 
 #: ../../index.rst:53
 msgid "Submit PR"
-msgstr "Submit PR"
+msgstr ""
 
 #: ../../index.rst:53
 msgid "Documentation Bug Report"
-msgstr "Documentation Bug Report"
+msgstr ""
 
 #: ../../index.rst:2
-msgid "Welcome to EdgeGallery's documentation!"
-msgstr "Welcome to EdgeGallery's documentation!"
+msgid "Welcome to EdgeGallery documentation!"
+msgstr ""
 
 #: ../../index.rst:4
 msgid "EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边缘的资源、应 用、安全、管理的基础框架和网络开放服务的事实标准，并实现同公有云的互联互通。 在兼容边缘基础设施异构差异化的基础上，构建起统一的MEC应用生态系统。"
 msgstr "The EdgeGallery community focuses on the MEC platform framework of the carrier network’s edge. It builds the basic framework of MEC edge resources, applications, security and management, and de facto standards of network openness services through open source collaboration, and implements interconnection with the public cloud. A unified MEC application ecosystem is constructed based on compatibility with heterogeneous edge infrastructures"
+
+#~ msgid "Get Started"
+#~ msgstr ""
 

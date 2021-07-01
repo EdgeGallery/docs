@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-30 00:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "Characteristic design LcmController is mainly responsible to provide nort
 msgstr ""
 
 #: ../../Projects/MECM/MECM_AppLcm_Features.md:5
-msgid "![](/uploads/images/2021/cor2020/mecm-applcm-diagram.png \"mecm-applcm-diagram.png\")"
+msgid "![](/uploads/images/2020/0924/mecm-applcm-diagram.png \"mecm-applcm-diagram.png\")"
 msgstr "![](/uploads/images/2021/cor2020/mecm-applcm-diagram_en.png \"mecm-applcm-diagram.png\")"
 
 #: ../../Projects/MECM/MECM_AppLcm_Features.md:8

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-06-30 00:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,8 +22,8 @@ msgid "特性设计"
 msgstr "Feature design"
 
 #: ../../Projects/ATP/ATP_Features.md:3
-msgid "ATP当前提供的特性分为用户面特性和管理面特性。 用户面特性包含：选择测试场景、测试任务进展展示、测试报告分析、测试报告下载、贡献测试用例。 管理面特性包含：测试场景管理、测试套管理、测试用例管理、测试任务分析、测试任务管理。"
-msgstr "The features currently offered by ATP are divided into user facial features and management surface features. The user surface characteristic comprises selecting test scene, test task progress display, test report analysis, test report download and contribution test case. Management surface features include: test scene management, test suite management, test case management, test task analysis and test task management."
+msgid "ATP当前提供的特性分为用户面特性和管理面特性。   用户面特性包含：选择测试场景、测试任务进展展示、测试报告分析、测试报告下载、贡献测试用例。   管理面特性包含：测试场景管理、测试套管理、测试用例管理、测试模型一键导入、测试任务分析、测试任务管理、贡献管理。"
+msgstr "The features currently provided by ATP are divided into user-plane features and management-plane features. User interface features include: selection of test scenarios, display of test task progress, test report analysis, test report download, and test case contribution. Management features include: test scenario management, test suite management, test case management, one-click import of test models, test task analysis, test task management, and contribution management."
 
 #: ../../Projects/ATP/ATP_Features.md:7
 msgid "选择测试场景"
@@ -90,18 +90,34 @@ msgid "包含测试用例的展示、新增、删除、修改操作。"
 msgstr "Contains display of test cases, add, delete, modify operations."
 
 #: ../../Projects/ATP/ATP_Features.md:31
+msgid "测试模型一键导入"
+msgstr "One-click import of test models"
+
+#: ../../Projects/ATP/ATP_Features.md:32
+msgid "可以将批量的测试场景、测试套、测试用例定义到excel中，测试用例脚本和测试场景图标放到文件夹中，最终将这些文件压缩成zip包，在管理面一键式导入批量的测试模型数据。"
+msgstr "One can define batches of test scenarios, test suites, and test cases in excel, put test case scripts and test scenario icons in a folder, and finally compress these files into a zip package, and import batch test models in one-click on the management side data."
+
+#: ../../Projects/ATP/ATP_Features.md:34
 msgid "测试任务分析"
 msgstr "Test mission analysis"
 
-#: ../../Projects/ATP/ATP_Features.md:32
+#: ../../Projects/ATP/ATP_Features.md:35
 msgid "ATP管理面首页展示近6个月测试任务数量的分布情况以及总数。"
 msgstr "The ATP Management Face home page shows the distribution of the number of test tasks in nearly 6 months and the total number."
 
-#: ../../Projects/ATP/ATP_Features.md:34
+#: ../../Projects/ATP/ATP_Features.md:37
 msgid "测试任务管理"
 msgstr "Test mission management"
 
-#: ../../Projects/ATP/ATP_Features.md:35
+#: ../../Projects/ATP/ATP_Features.md:38
 msgid "包含测试任务的展示、以及测试任务的批量删除操作。"
 msgstr "Contains the display of the test task and the batch delete operation of the test task."
+
+#: ../../Projects/ATP/ATP_Features.md:40
+msgid "贡献管理"
+msgstr "Contribution management"
+
+#: ../../Projects/ATP/ATP_Features.md:41
+msgid "包含脚本类型的贡献用例下载、贡献的批量删除操作。"
+msgstr "Contains script-type contribution use case download and contribution batch deletion operations."
 
