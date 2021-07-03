@@ -2,12 +2,26 @@
 
 ## 环境准备
 
-### edgegallery 安装v1.2版本 openstack安装 W版本
-
-1. **developer 安装注意事项** v1.2新增文件管理系统，用于上传和下载虚机镜像，当前支持qcow2、img、iso格式   
+### edgegallery 安装v1.2版本 文件管理系统的安装 openstack安装 W版本 
+1. **文件管理系统的安装**
+文件管理系统目前没有集成到一键安装脚本里，需要手动安装
+在gitee上下载file-system对应版本的helmchart：https://gitee.com/edgegallery/helm-charts/tree/master/file-system
+在环境中执行以下命令：helm install file-system ./file-system -- set postgres.password=te9Fmv%qaq
+1. **developer 安装注意事项** v1.2新增文件管理系统，用于上传和下载虚机镜像，当前支持qcow2、img、iso格式,安装相关的参数配置如下：   
 **fileSystemAddress** 配置文件管理系统的地址                                                       
 **username** 配置虚机镜像用户名                                                                   
-**password** 配置虚机镜像登录密码                                                                               
+**password** 配置虚机镜像登录密码 
+
+默认文件管理系统的地址为空，需要修改为http://ip:30090 ,虚机镜像用户名为ubuntu ，虚机密码为123456，根据虚机镜像配置，通过kubectl edit 修改参数
+例如：
+修改文件管理系统
+kubectl edit deployment developer-be 
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0703/100831_be9fd9ab_7625288.png "屏幕截图.png")
+修改虚机用户名密码：
+kubectl edit secret developer-be-secret 
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0703/101036_0bbb64db_7625288.png "屏幕截图.png")
+secret 里面显示的base64编码，所以先讲修改的参数进行base64编写在修改对应的值
+                                                                              
 2. openstack初始化配置：
 [参考文档](../../Projects/Developer/Developer_OpenStack_Pre-configure.md)
 
