@@ -7,7 +7,7 @@
 文件管理系统目前没有集成到一键安装脚本里，需要手动安装
 在gitee上下载file-system对应版本的helmchart：https://gitee.com/edgegallery/helm-charts/tree/master/file-system
 在环境中执行以下命令：helm install file-system ./file-system -- set postgres.password=te9Fmv%qaq
-1. **developer 安装注意事项** v1.2新增文件管理系统，用于上传和下载虚机镜像，当前支持qcow2、img、iso格式,安装相关的参数配置如下：   
+2. **developer 安装注意事项** v1.2新增文件管理系统，用于上传和下载虚机镜像，当前支持qcow2、img、iso格式,安装相关的参数配置如下：   
 **fileSystemAddress** 配置文件管理系统的地址                                                       
 **username** 配置虚机镜像用户名                                                                   
 **password** 配置虚机镜像登录密码 
@@ -22,7 +22,7 @@ kubectl edit secret developer-be-secret
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0703/101036_0bbb64db_7625288.png "屏幕截图.png")
 secret 里面显示的base64编码，所以先讲修改的参数进行base64编写在修改对应的值
                                                                               
-2. openstack初始化配置：
+3. openstack初始化配置：
 [参考文档](../../Projects/Developer/Developer_OpenStack_Pre-configure.md)
 
 ## 配置沙箱环境：developer新增openstack沙箱环境
