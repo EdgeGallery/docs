@@ -15,10 +15,15 @@
 默认文件管理系统的地址为空，需要修改为http://ip:30090 ,虚机镜像用户名为ubuntu ，虚机密码为123456，根据虚机镜像配置，通过kubectl edit 修改参数
 例如：
 修改文件管理系统
+
 kubectl edit deployment developer-be 
+
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0703/100831_be9fd9ab_7625288.png "屏幕截图.png")
+
 修改虚机用户名密码：
+
 kubectl edit secret developer-be-secret 
+
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0703/101036_0bbb64db_7625288.png "屏幕截图.png")
 secret 里面显示的base64编码，所以先讲修改的参数进行base64编写在修改对应的值
                                                                               
