@@ -22,7 +22,7 @@ kubectl edit secret developer-be-secret
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0703/101036_0bbb64db_7625288.png "屏幕截图.png")
 secret 里面显示的base64编码，所以先讲修改的参数进行base64编写在修改对应的值
                                                                               
-3. openstack初始化配置：
+3. **openstack初始化配置**
 [参考文档](../../Projects/Developer/Developer_OpenStack_Pre-configure.md)
 
 ## 配置沙箱环境：developer新增openstack沙箱环境
