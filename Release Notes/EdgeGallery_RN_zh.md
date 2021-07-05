@@ -89,8 +89,83 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 |  6   | [【atp】【Security】用户贡献测试用例功能存在重放攻击漏洞](https://e.gitee.com/OSDT/issues/list?issue=I3VZS3) |  已修复  | 主要 |
 |  7   | [【user-mgmt】【Security】首次登陆admin账户未强制修改密码](https://e.gitee.com/OSDT/issues/list?issue=I3V708) |  已修复  | 主要 |
 |  8   | [【atp】【Security】在appstore进行atp测试->社区场景->安全测试用例执行失败](https://e.gitee.com/OSDT/issues/list?issue=I3T6A0) |  已修复  | 主要 |
+|  9   | [【developer】【Security】新增沙箱环境时，鉴权应按角色判断，不应按userId判断](https://e.gitee.com/OSDT/issues/list?issue=I3YTO7) |  已修复  | 主要 |
 
  **Known Vulnerabilities in Used Modules**
+
+ EdgeGallery v1.2.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
+
+
+**User-mgmt**
+| Component                                             | Version       | CVE                         |
+| ----------------------------------------------------- | ------------- | --------------------------- |
+| vertx-core | 3.9.4 | CVE-2019-17640 |
+| foundation-ssl | 1.3.0 | CVE-2004-0009 |
+| mybatis-spring | 2.0.6 | CVE-2020-26945 |
+| mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
+| spring-security-core | 5.3.8.RELEASE | CVE-2018-1258 |
+
+
+**Appstore**
+| Component                                  | Version       | CVE                                                          |
+| ------------------------------------------ | ------------- | ------------------------------------------------------------ |
+| log4j                 | 1.2.17        | CVE-2019-17571                                               |
+| netty-transport | 4.1.36.Final | CVE-2019-20444  CVE-2019-20445  CVE-2019-16869  CVE-2020-11612 |
+| vertx-core | 3.9.4 | CVE-2019-17640 |
+| docker-java-core | 3.2.7 | CVE-2019-13139  CVE-2019-13509  CVE-2019-16884  CVE-2019-5736|
+| foundation-ssl | 1.3.0 | CVE-2004-0009 |
+| mybatis-spring | 2.0.6 | CVE-2020-26945 |
+| mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
+| spring-jdbc | 5.1.8.RELEASE | CVE-2020-5398 |
+| spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
+
+
+**Developer**
+| Component  | Version  | CVE  |
+|---|---|---|
+| netty-transport | 4.1.36.Final | CVE-2019-20444  CVE-2019-20445  CVE-2019-16869  CVE-2020-11612 |
+| vertx-core | 3.9.4 | CVE-2019-17640 |
+| swagger-codegen-cli | 3.0.21 | CVE-2018-8088  CVE-2016-6199  CVE-2019-15052  CVE-2020-25649  CVE-2019-10086  CVE-2017-1000207  CVE-2017-1000208  CVE-2017-18640  CVE-2020-11979 CVE-2021-29428 |
+| docker-java-core | 3.2.7 | CVE-2019-13139  CVE-2019-13509  CVE-2019-16884  CVE-2019-5736|
+| foundation-ssl | 1.3.0 | CVE-2004-0009 |
+| mybatis-spring | 2.0.6 | CVE-2020-26945 |
+| mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
+| spring-security-core | 5.3.8.RELEASE | CVE-2018-1258 |
+| sprint-jdbc | 5.2.8.RELEASE | CVE-2021-22118 |
+
+
+**MECM**
+| Component  | Version  | CVE  |
+|---|---|---|
+| bcprov-jdk15on-1.56.jar | 1.56 | CVE-2018-1000613 CVE-2018-1000180 |
+| log4j | 1.2.17 | CVE-2019-17571 |
+| vertx-core | 3.6.3 | CVE-2019-17640 |
+| foundation-ssl | 1.3.0 | CVE-2004-0009 |
+| hibernate-core | 5.3.10.Final | CVE-2020-25638 |
+| netty-transport | 4.1.36.Final | CVE-2019-20444 CVE-2019-20445 CVE-2019-16869 CVE-2020-11612 |
+| spring-security-core | 5.3.8.RELEASE | CVE-2018-1258 |
+| spring-tx | 5.1.8.RELEASE | CVE-2020-5398 |
+| tomcat-embed-core | 9.0.21 | CVE-2020-1938 CVE-2019-12418 CVE-2019-17563 CVE-2020-11996 CVE-2020-13934 CVE-2020-13935 CVE-2020-17527 CVE-2020-8022 CVE-2020-9484 CVE-2021-25122 CVE-2021-25329 |
+| jackson-databind | 2.9.9 | CVE-2019-14379 CVE-2019-14540 CVE-2019-14892 CVE-2019-14893 CVE-2019-16335 CVE-2019-16942 CVE-2019-16943 CVE-2019-17267 CVE-2019-17531 CVE-2019-20330 CVE-2020-8840 CVE-2020-9546 CVE-2020-9547 CVE-2020-9548 CVE-2019-14439 CVE-2020-10672 CVE-2020-10673 CVE-2020-10968 CVE-2020-10969 CVE-2020-11111 CVE-2020-11112 CVE-2020-11113 CVE-2020-11619 CVE-2020-11620 CVE-2020-14060 CVE-2020-14061 CVE-2020-14062 CVE-2020-14195 CVE-2020-24616 CVE-2020-24750 CVE-2020-25649 CVE-2020-35490 CVE-2020-35491 CVE-2020-35728 CVE-2020-36179 CVE-2020-36180 CVE-2020-36181 CVE-2020-36182 CVE-2020-36183 CVE-2020-36184 CVE-2020-36185 CVE-2020-36186 CVE-2020-36187 CVE-2020-36188 CVE-2020-36189 CVE-2020-36190 |
+| mybatis | 3.4.4 | CVE-2020-26945 |
+
+
+**ATP**
+| Component  | Version  | CVE  |
+|---|---|---|
+| netty-transport | 4.1.36.Final | CVE-2019-20444  CVE-2019-20445  CVE-2019-16869  CVE-2020-11612 |
+| vertx-core | 3.9.4 | CVE-2019-17640 |
+| foundation-ssl | 1.3.0 | CVE-2004-0009 |
+| mybatis-spring | 2.0.6 | CVE-2020-26945 |
+| mybatis-spring-boot-starter | 2.1.4 | CVE-2020-26945 |
+| spring-security-core | 5.1.5.RELEASE | CVE-2018-1258 |
+| spring-core | 5.1.8.RELEASE | CVE-2020-5398 |
+
+
+**MEP**
+| Component  | Version  | CVE  |
+|---|---|---|
+| golang.org/x/net | v0.0.0-20200301022130 | CVE-2021-33194 |
 
 
 -----------------------------------------------------------------------------
