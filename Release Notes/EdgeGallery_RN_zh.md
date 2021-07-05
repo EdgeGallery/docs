@@ -32,13 +32,13 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 
 * **开放能力**
-    - [AI软硬件能](https://47.243.125.138:30092/#/mecDeveloper/api/mep) 
-        - 支撑昇腾/Atlas硬件以及开放API
+    - [AI软硬件能力](https://47.243.125.138:30092/#/mecDeveloper/api/mep) 
+        - 支撑昇腾/Atlas硬件以及开放API：支持昇腾20+开放能力，包括图像修复、目标定位、超分辨图像算法等
         - AI换脸、OCR、智慧货架、姿态识别等
     - [行业套件](https://47.243.125.138:30091/#/home) 支持行业组合能力
-        - PCB质量检测
-        - 工业现场南向设备管理通信
-        - 视频会议、在线课堂
+        - PCB质量检测：提供开放能力和PCB板质量检测的样例应用
+        - 工业现场南向设备管理通信：提供基于Fledge的工业南向设备管理方案以及部署脚本
+        - 视频会议、在线课堂：提供视频开源样例应用
 * **[安全增强](https://gitee.com/edgegallery/installer)**
     - 用户管理增加动态验证码校验功能
 * **[新增模块特性](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.2)**
