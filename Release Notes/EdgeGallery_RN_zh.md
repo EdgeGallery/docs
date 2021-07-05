@@ -51,8 +51,11 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
     - 提供边缘自治管理界面和边缘节点健康检查功能
     - 全模块支持数据持久化能力
 * **[按需部署](https://gitee.com/edgegallery/installer)**
-    - 支持基于Ansible模块化部署k8s/k3s以及EdgeGallery各子模块
-    - 支持非K8S平台以docker-compose方式部署EdgeGallery各子模块
+    - 提供基于Ansible的离线部署脚本与离线安装包，支持用户进行自定义的按需部署
+        - IaaS层提供k8s与k3s两种部署方式
+        - EdgeGallery各子模块支持单独部署与卸载
+        - 支持基于k8s NFS的数据持久化功能
+    - 支持以docker-compose方式（不依赖k8s/k3s）部署EdgeGallery各子模块
  * **其他**
     - [应用创新](https://47.243.125.138:30091/#/home): 完成130+应用集成、落地25+创新基地
     - 体验优化: [AppStore](https://47.243.125.138:30091/#/home)、[Developer](https://47.243.125.138:30092/#/)、[MECM](https://47.243.125.138:30093/)各平台界面全面升级优化
