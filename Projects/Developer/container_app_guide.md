@@ -80,3 +80,5 @@
 #### 5.如果yaml中配置的镜像属于其他开源镜像仓库，请确保镜像配置形式正确。<br/> 
 #### 6.请尽可能的配置yaml中的namespace，并确保其格式为’{{ .Values.appconfig.appnamespace }}’。<br/> 
 #### 7.尽可能一次性配置正确，确保yaml中的关键参数配置正确，例如暴露的端口，配置的环境变量等等。<br/> 
+## 容器应用与MepAgent的集成
+### 参考文档：[APP通过MEP调用](https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/app%E9%80%9A%E8%BF%87MEP%E8%B0%83%E7%94%A8.md)
