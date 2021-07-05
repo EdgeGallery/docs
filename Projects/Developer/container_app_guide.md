@@ -72,3 +72,11 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0705/151335_9683c789_5504908.png "应用发布3-2.png")<br/>
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0705/151356_1a02a11a_5504908.png "appstore.png")<br/> 
 ## 常见问题
+#### 1.开发者对容器应用部署调测时，可以下载开发者平台提供的样例yaml，根据自己需要部署的应用，修改样例yaml并上传使用。<br/> 
+#### 2.开发者平台会对上传的yaml中的镜像信息进行校验，yaml中配置的镜像不拘泥于固定格式，但是需要注意的是镜像需要为开源镜像或者EdgeGallery仓库已有镜像。<br/> 
+#### 3.如果yaml中配置的镜像形式为EdgeGallery仓库镜像形式，请提前上传镜像到EdgeGallery仓库，防止容器应用部署调测失败。<br/> 
+#### 4.如果yaml中配置的镜像形式为EdgeGallery仓库镜像形式，建议的镜像配置格式如下：<br/> 
+#### ‘{{.Values.imagelocation.domainname}}/{{.Values.imagelocation.project}}/xxx:xxx’<br/> 
+#### 5.如果yaml中配置的镜像属于其他开源镜像仓库，请确保镜像配置形式正确。<br/> 
+#### 6.请尽可能的配置yaml中的namespace，并确保其格式为’{{ .Values.appconfig.appnamespace }}’。<br/> 
+#### 7.尽可能一次性配置正确，确保yaml中的关键参数配置正确，例如暴露的端口，配置的环境变量等等。<br/> 
