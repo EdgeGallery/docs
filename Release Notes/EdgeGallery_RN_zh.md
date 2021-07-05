@@ -60,21 +60,30 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 **Bug Fixes**
 
-  参见 [EdgeGallery v1.2.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.2%20Test%20Plan.md)
+  参见 [EdgeGallery v1.2.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.2%20Test%20Report.md)
 
- **Known Issues**
+总缺陷数量： 267（含 34个安全类缺陷），已解决数量： 265个；未解决bug 16个（含16 个known issue，遗留到下一版本解决）
 
-  参见 [EdgeGallery v1.2.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.2%20Test%20Plan.md)
+- 按缺陷类型分析：安全类bug 35个；其他类bug 246个。
+- 按缺陷严重级别分析：严重bug 31个；主要bug 70个；次要bug 129个；不重要bug 9个；不指定42 个。
+- 按需求点分析
+- 缺陷收敛性分析：总计281 个bug（含 14个无效bug；含安全类bug 34）；迭代一 39 个bug（含 3个无效bug）；迭代二 65 个bug（含 5个无效bug）；迭代三 143 个bug（含 4个无效bug）
+；未制定迭代34 个bug（含 2个无效bug）
 
  **Security Notes**
 
- **Fixed Security Issues**
+ **Fixed/Known Security Issues**
 
-  参见 [EdgeGallery v1.2.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.2/EG%20R1.2%20Security%20Test%20Plan%20.md)
-
- **Known Security Issues**
-
-  参见 [EdgeGallery v1.2.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Plan/Release-R1.2/EG%20R1.2%20Security%20Test%20Plan%20.md)
+| No.  | Issue 标题                                                   |   状态   | 级别 |
+| :--: | ------------------------------------------------------------ | :------: | :--: |
+|  1   | [【mecm】【Security】lcm，rule，apm，appo，inventory，k8xplugin等pod中usr/app/log目录下没有日志文件](https://e.gitee.com/OSDT/issues/list?issue=I3XUQW) |  已修复  | 主要 |
+|  2   | [【user-mgmt】【Security】user-mgmt pod中usr/app/log目录下没有日志文件](https://e.gitee.com/OSDT/issues/list?issue=I3XUNS) | **遗留** | 主要 |
+|  3   | [【developer】【Security】developer-be中usr/app/log目录下没有日志文件](https://e.gitee.com/OSDT/issues/list?issue=I3XSH9) |  已修复  | 主要 |
+|  4   | [【user-mgmt】【Security】日志记录敏感信息（ssoSessionId）](https://e.gitee.com/OSDT/issues/list?issue=I3XS2G) |  已修复  | 主要 |
+|  5   | [【developer】【Security】虚机部署时，日志中记录了敏感信息（lcmToken）](https://e.gitee.com/OSDT/issues/list?issue=I3XR72) |  已修复  | 主要 |
+|  6   | [【atp】【Security】用户贡献测试用例功能存在重放攻击漏洞](https://e.gitee.com/OSDT/issues/list?issue=I3VZS3) |  已修复  | 主要 |
+|  7   | [【user-mgmt】【Security】首次登陆admin账户未强制修改密码](https://e.gitee.com/OSDT/issues/list?issue=I3V708) |  已修复  | 主要 |
+|  8   | [【atp】【Security】在appstore进行atp测试->社区场景->安全测试用例执行失败](https://e.gitee.com/OSDT/issues/list?issue=I3T6A0) |  已修复  | 主要 |
 
  **Known Vulnerabilities in Used Modules**
 
