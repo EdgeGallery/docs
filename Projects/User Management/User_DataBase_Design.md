@@ -15,17 +15,19 @@
 |isallowed| boolean |- | 帐号是否允许登录|
 |createtime| timestamp|- | 创建时间（即注册时间）|
 |modifytime| timestamp|- | 修改时间|
+|pweffecttime| timestamp|- | 密码生效时间|
 
 初始值：
 ```
-               tenantid               |    username    |                                     password                                     | company | telephonenumber | mailaddress | gender | isallowed | createtime | modifytime
+               tenantid               |    username    |                                     password                                     | company | telephonenumber | mailaddress | gender | isallowed | createtime | modifytime | pweffecttime
 --------------------------------------+----------------+----------------------------------------------------------------------------------+---------+-----------------+--------+-----------
- de3565b1-a7c2-42b9-b281-3f032af29ff7 | guest          | 59756fda85ebddee6024d5cc0e6edcde3226693257a9c1eb662c56426b8a4f232b3d56c321adbd91 | company | 13800000000     | 13800000000@edgegallery.org | 1      | t | 初始数据入库时间(now函数值) | 初始数据入库时间(now函数值)
- 39937079-99fe-4cd8-881f-04ca8c4fe09d | admin          | 472645ad1af0101adaa6769cc865fec3b29fedeba6dc912900a59b1364b7a6bb17bb9a0575854547 | company | 13800000001     | 13800000001@edgegallery.org | 1      | t | 初始数据入库时间(now函数值) | 初始数据入库时间(now函数值)
+ de3565b1-a7c2-42b9-b281-3f032af29ff7 | guest          | 59756fda85ebddee6024d5cc0e6edcde3226693257a9c1eb662c56426b8a4f232b3d56c321adbd91 | company | 13800000000     | 13800000000@edgegallery.org | 1      | t | 初始数据入库时间(now函数值) | 初始数据入库时间(now函数值) | NULL
+ 39937079-99fe-4cd8-881f-04ca8c4fe09d | admin          | 472645ad1af0101adaa6769cc865fec3b29fedeba6dc912900a59b1364b7a6bb17bb9a0575854547 | company | 13800000001     | 13800000001@edgegallery.org | 1      | t | 初始数据入库时间(now函数值) | 初始数据入库时间(now函数值) | 初始数据入库时间(now函数值)往前推10年的时间
 
 The default password for the guest account is：guest
 The default password for the admin account is：Admin@321
-Please modify the default password before deployment
+对于admin用户，首次登录后会强制修改默认密码。
+对于非guest用户，密码超过90天后过期，登录时会强制修改密码。
 ```
 
 ### tbl\_role 用户角色表
