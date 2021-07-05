@@ -72,6 +72,8 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  **Security Notes**
 
+参见 [EdgeGallery v1.2.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.2/EG%20v1.2%20Security%20Test%20Report.md)
+
  **Fixed/Known Security Issues**
 
 | No.  | Issue 标题                                                   |   状态   | 级别 |
