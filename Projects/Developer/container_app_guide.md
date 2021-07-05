@@ -38,6 +38,17 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0701/151313_489a9540_5504908.png "config.png")
 
 ## 容器应用开发
+### 新建容器应用项目或者快速集成项目，主要的是选择容器属性，因为涉及到后续的发布能力，以新建项目为例作出说明
+#### 1. 进入开发者平台，选择导航栏中的工作空间，点击项目列表右上方的新建项目，选择应用开发
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0705/113102_e12792fe_5504908.png "新建项目.png")<br/>
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0705/113150_d7c948dd_5504908.png "集成或者新建.png")<br/>
+#### 2. 填写项目基本信息，切记勾选负载类型为容器，新建第二部选择服务发现能力
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0705/113407_e13c5fd3_5504908.png "新建1.png")<br/>
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0705/113427_9c4b2d9a_5504908.png "新建2.png")<br/>
+#### 3. 进入项目详情页，查看项目属性
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0705/113527_ea4193f9_5504908.png "详情.png")<br/>
+
+
 todo 开发指导，快速集成，如何发布能力，如何服务注册、mepagent的集成，如何修改yaml、如何上传镜像
 
 
