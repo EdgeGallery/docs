@@ -40,16 +40,16 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
         - 工业现场南向设备管理通信：提供基于Fledge的工业南向设备管理方案以及部署脚本
         - 视频会议、在线课堂：提供视频开源样例应用
 * **[安全增强](https://gitee.com/edgegallery/installer)**
-    - 用户管理增加动态验证码校验功能
+    - 用户管理模块增加动态验证码校验功能，解决恶意注册和邮件轰炸等安全漏洞问题
+    - 应用调测过程中，VNC远程登录沙箱环境设置非root用户操作，限制访问权限
 * **[新增模块特性](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.2)**
     - Developer、AppStore和MECM平台增加管理员操作界面
     - AppStore平台提供应用在线体验功能
-    - 虚机应用集成能力增强，可配置网络，input参数等，支持无镜像包调测
-    - 支持虚机应用的全流上线，从集成、测试、发布，到部署和分发
-    - 增加镜像文件管理服务，支持镜像文件的上传和下载
-    - 提供边缘自治管理界面
-    - 增加边缘节点的健康检查能力
-    - 支持数据持久化
+    - 全流程支持虚机应用的快速集成、测试和发布，MECM平台支持虚机应用的分发和部署
+    - 虚机应用集成能力增强，支持虚机规格配置、网络配置和环境变量配置
+    - 增加镜像文件管理服务，解决EdgeGallery中心节点模块间镜像文件共享问题
+    - 提供边缘自治管理界面和边缘节点健康检查功能
+    - 全模块支持数据持久化能力
 * **[按需部署](https://gitee.com/edgegallery/installer)**
     - 支持基于Ansible模块化部署k8s/k3s以及EdgeGallery各子模块
     - 支持非K8S平台以docker-compose方式部署EdgeGallery各子模块
