@@ -87,8 +87,42 @@ route add -net 192.168.225.0 netmask 255.255.255.0 gw openstack_ip
 上传镜像为zip压缩包，目前支持的镜像格式为qcow2和iso，上传镜像包目录格式为：filename.zip/filename/filename.qcow2
 
 ## 虚机应用开发
-todo 开发指导
+1. 新建项目：点击工作空间-新建项目，选择应用集成。
 
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/095837_a0b50766_7625288.png "屏幕截图.png")
+
+2.填写项目的基本信息。对于虚机应用，类型选择虚机，架构支持X86和ARM
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/095933_b22eab8d_7625288.png "屏幕截图.png")
+
+3.资源配置：填写虚机应用的基本信息、资源配置、基础镜像选择、选择网络配置、以及其他主机组、注入脚本等配置。
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/100022_a448ce23_7625288.png "屏幕截图.png")
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/100113_60cb5fbb_7625288.png "屏幕截图.png")
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/100145_4a51761f_7625288.png "屏幕截图.png")
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/100223_023d24fe_7625288.png "屏幕截图.png")
+
+点击保存后，显示资源配置的详细信息
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/100300_970fa983_7625288.png "屏幕截图.png")
+
+4.部署调测可选：部署调测过程会从openstack拉起虚机镜像，用于开发者应用开发和调测。需提前安装和配置好openstack，由于资源有限，有可能部署调测失败
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/100407_8b2b296c_7625288.png "屏幕截图.png")
+部署调测成功后，我们可以通过远程登录，登录到申请的虚拟机中，也可以通过上传文件将APP应用包上传至虚拟机中，安装调测应用
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/100617_2271e07e_7625288.png "屏幕截图.png")
+
+5.应用发布：填写应用发布的基本信息，如应用的描述文档，点击应用包详情可以查看应用包的结构
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/100733_3799d8a7_7625288.png "屏幕截图.png")
+
+6.应用测试： 点击开始测试，选择测试场景-点击开始，该步骤会对developer生成的应用包进行相关的遵从性、生命周期、安全等测试，测试通过后可发布到appstore
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/100819_13dc6bf8_7625288.png "屏幕截图.png")
+
+最后将应用发布到appstore中
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/100919_c3a3facb_7625288.png "屏幕截图.png")
 
 ## mepagent的集成
 mepagent支持虚机方式部署，参考文档如下：
