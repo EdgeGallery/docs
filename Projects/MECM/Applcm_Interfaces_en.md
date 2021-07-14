@@ -643,7 +643,6 @@ Example response:
 ```
 
 ### Get Image
-### Get Image
 
 ```
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/images/:imageId
