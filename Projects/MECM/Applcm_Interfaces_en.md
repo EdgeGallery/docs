@@ -257,7 +257,7 @@ Example response:
 }
 ```
 
-### Query
+### Query workload
 GetWorkloadDescription
 ```
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/workload/events
@@ -296,7 +296,7 @@ Example response:
   }
 ```
 
-### Query
+### Query app instances records
 Sync app instances records
 ```
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/sync_updated
@@ -314,7 +314,7 @@ Example response:
     {}
   }
 ```
-### Query
+### Query stale records
 Sync app instances stale records
 ```
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/sync_deleted
@@ -482,7 +482,7 @@ Example response:
 ```
 
 ### Add MEC host
-Add mec host information
+
 ```
 Resource URI: /lcmcontroller/v1//hosts
 Method: POST
@@ -498,7 +498,7 @@ Example response:
 ```
 
 ### Update MEC host
-Add mec host information
+
 ```
 Resource URI: /lcmcontroller/v1//hosts
 Method: PUT
@@ -514,7 +514,7 @@ Example response:
 ```
 
 ### Query MEC hosts
-Query mec host information
+
 ```
 Resource URI: /lcmcontroller/v1/hosts
 Method: GET
@@ -532,7 +532,7 @@ Example response:
 ```
 
 ### Delete MEC host
-Delete mec host information
+
 ```
 Resource URI: /lcmcontroller/v1/hosts:hostIp
 Method: DELETE
@@ -548,7 +548,8 @@ Example response:
 ```
 
 ### Batch terminate application
-Batch terminate application
+
+
 ```
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/batchTerminate
 Method: DELETE
@@ -564,7 +565,7 @@ Example response:
 ```
 
 ### Sync mec host records
-Sync mec host records
+
 ```
 Resource URI: /lcmcontroller/v1/hosts/sync_updated
 Method: GET
@@ -582,7 +583,6 @@ Example response:
 ```
 
 ### Sync mec host stale records
-### Sync mec host stale recordsSync mec host stale records
 
 ```
 Resource URI: /lcmcontroller/v1/hosts/sync_deleted
@@ -600,7 +600,6 @@ Example response:
   }
 ```
 
-### Create Image
 ### Create Image
 
 ```
@@ -623,7 +622,6 @@ Example response:
 ```
 
 ### Delete Image
-### Delete Image
 
 ```
 Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/images/:imageId
@@ -644,7 +642,6 @@ Example response:
   }
 ```
 
-### Get Image
 ### Get Image
 
 ```
@@ -667,7 +664,6 @@ Example response:
 ```
 
 
-### Get Image file
 ### Get Image file
 
 ```
@@ -690,7 +686,6 @@ Example response:
   }
 ```
 
-### Get Services
 ### Get Services
 
 ```
@@ -746,13 +741,12 @@ Example response:
 ```
 
 ### Get Kong Logs
-### Get Kong Logs
 
 ```
 Resource URI: /lcmcontroller/v1/mep/kong_log
 Method: GET
 ```
-|Name|Definition|Type|Required|Allowed|Max Length|
+
 
 ```
 200 OK
@@ -770,7 +764,6 @@ Method: GET
 }
 ```
 
-### Get Subscribe Statistic
 ### Get Subscribe Statistic
 
 ```
