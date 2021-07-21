@@ -9,6 +9,8 @@ atp Interfaces
     - [1.5 PUT modify test case status](#put-modify-test-case-status)
     - [1.6 POST batch delete test tasks](#post-batch-delete-test-tasks)
     - [1.7 GET get test tasks analysis](#get-get-test-tasks-analysis)
+    - [1.8 DELETE delete one test task](#delete-delete-one-test-task)
+    - [1.9 POST upload self test report](#post-upload-self-test-report)
   - [2. Test case](#test-case)
        - [2.1 GET query all test cases](#get-query-all-test-cases)
        - [2.2 POST create test case](#post-create-test-case)
@@ -298,6 +300,46 @@ Example response:
    "fourMonthAgo":14,
    "fiveMonthAgo":15
 }
+```
+
+### 1.8 DELETE delete one test task
+delete one test task
+```
+Resource URI: edgegallery/atp/v1/tasks/{taskId}
+```
+
+Example response:
+```
+true
+```
+
+### 1.9 POST upload self test report
+upload self test report
+```
+Resource URI: edgegallery/atp/v1/tasks/{taskId}/action/upload-report
+```
+
+Example request:
+```
+{
+    file: file
+} 
+
+```
+
+Example response:
+```
+{
+    "data":{
+        "path":"reportPath"
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1“
+    ]
+}
+
 ```
 
 ## 2. Test case
