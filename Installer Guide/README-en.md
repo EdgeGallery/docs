@@ -1,0 +1,1 @@
+This is the Guide of How to deploy EG with the Offline Package.
