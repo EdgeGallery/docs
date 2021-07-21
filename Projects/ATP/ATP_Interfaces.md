@@ -22,7 +22,7 @@ atp Interfaces
        - [3.3 PUT update test scenarios](#put-update-test-scenario)
        - [3.4 DELETE delete test scenarios](#delete-delete-test-scenario)
        - [3.5 GET query one test case](#get-query-one-test-scenario)
-       - [3.6 GET query all test cases under one scneario](#get-query-all-test-cases-under-one-scenario)
+       - [3.6 GET query all test cases under one scenario](#get-query-all-test-cases-under-one-scenario)
   - [4. Test suite](#test-suite)
        - [4.1 GET query all test suites](#get-query-all-test-suite)
        - [4.2 POST create test suite](#post-create-test-suite)
@@ -38,6 +38,12 @@ atp Interfaces
        - [6.1 GET query one file](#get-query-one-file)
   - [7. Test model](#test-model)
        - [7.1 POST import test model](#post-import-test-model)
+  - [8. configuration](#configuration)
+       - [8.1 POST create config](#post-create-config)
+       - [8.2 PUT update config](#put-update-config)
+       - [8.3 DELETE delete config](#delete-delete-config)
+       - [8.4 GET query one config](#get-query-one-config)
+       - [8.5 GET query all configs](#get-query-all-configs)
 ## 1. Task
 Test task for application package
 ### 1.1 POST create test task 
@@ -947,6 +953,183 @@ Example response:
        "params": "string" 
      }
   ]
+}
+
+```
+
+## 8. Configuration
+config
+### 8.1 POST create config
+create config
+```
+Resource URI: edgegallery/atp/v1/configs
+```
+Example request:
+```
+{
+    "nameCh":"虚机应用实例化",
+    "nameEn":"Instantiation for vm app",
+    "descriptionCh":"配置虚机应用实例化所需参数",
+    "descriptionEn":"Configure params for instantiation of vm app",
+    "configuration":"DC_ID = FS+M;az_dc=nova;"
+}
+
+```
+
+Example response:
+```
+200 OK
+{
+    "data":{
+        "id":"uuid",
+        "nameCh":"虚机应用实例化",
+        "nameEn":"Instantiation for vm app",
+        "descriptionCh":"配置虚机应用实例化所需参数",
+        "descriptionEn":"Configure params for instantiation of vm app",
+        "configuration":"DC_ID = FS+M;az_dc=nova;",
+        "createTime":""
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1",
+        "param2"
+    ]
+}
+
+```
+
+### 8.2 PUT update config
+update config
+```
+Resource URI: edgegallery/atp/v1/configs/{id}
+```
+Example request:
+```
+{
+    "nameCh":"虚机应用实例化",
+    "nameEn":"Instantiation for vm app",
+    "descriptionCh":"配置虚机应用实例化所需参数",
+    "descriptionEn":"Configure params for instantiation of vm app",
+    "configuration":"DC_ID = FS+M;az_dc=nova;"
+}
+
+
+```
+
+Example response:
+```
+200 OK
+{
+    "data":{
+        "id":"uuid",
+        "nameCh":"虚机应用实例化",
+        "nameEn":"Instantiation for vm app",
+        "descriptionCh":"配置虚机应用实例化所需参数",
+        "descriptionEn":"Configure params for instantiation of vm app",
+        "configuration":"DC_ID = FS+M;az_dc=nova;",
+        "createTime":""
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1",
+        "param2"
+    ]
+}
+
+```
+
+### 8.3 DELETE delete config
+delete config
+```
+Resource URI: edgegallery/atp/v1/configs/{id}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|id|id|path param|yes|
+
+Example request:
+```
+NA
+
+```
+
+Example response:
+```
+200 OK
+true
+
+```
+
+### 8.4 GET query one config
+query one config
+```
+Resource URI: edgegallery/atp/v1/configs/{id}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|id|id|path param|yes|
+
+Example request:
+```
+NA
+
+```
+
+Example response:
+```
+200 OK
+{
+    "data":{
+        "id":"uuid",
+        "nameCh":"虚机应用实例化",
+        "nameEn":"Instantiation for vm app",
+        "descriptionCh":"配置虚机应用实例化所需参数",
+        "descriptionEn":"Configure params for instantiation of vm app",
+        "configuration":"DC_ID = FS+M;az_dc=nova;",
+        "createTime":""
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1",
+        "param2"
+    ]
+}
+
+```
+
+### 8.5 GET query all configs
+query all configs
+```
+Resource URI: edgegallery/atp/v1/configs
+```
+
+Example request:
+```
+NA
+
+```
+
+Example response:
+```
+200 OK
+{
+    "results":[
+        {
+            "id":"uuid",
+            "nameCh":"虚机应用实例化",
+            "nameEn":"Instantiation for vm app",
+            "descriptionCh":"配置虚机应用实例化所需参数",
+            "descriptionEn":"Configure params for instantiation of vm app",
+            "configuration":"DC_ID = FS+M;az_dc=nova;",
+            "createTime":""
+        }
+    ],
+    "total":1,
+    "limit":10,
+    "offset":0
 }
 
 ```
