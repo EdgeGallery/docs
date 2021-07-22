@@ -16,7 +16,7 @@ The document currently contains the following content：
 
 [Creative Commons Corporation 4.0（CC-BY-4.0）](https://gitee.com/edgegallery/docs/blob/master/license-cc-by-4.0)
 
-## Mandantory step for Docs repo commit
+## Mandatory step for Docs repo commit
 After making changes in .md files of docs repository, the following steps must be followed to make the translation of the same to work. Even if the .md files are written in English, these steps must be followed, to maintain a proper translation structure
 
 ### Environment Requirement
