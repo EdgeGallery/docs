@@ -39,7 +39,7 @@ exit_if_error $? "Unable to generate English HTML documents."
 
 mkdir -p /var/opt/docs
 mkdir /var/opt/docs/$BUILD_NUMBER
-cp -r /root/docs/_build/html/en/* /var/opt/docs/$BUILD_NUMBER/
+cp -r _build/html/en/* /var/opt/docs/$BUILD_NUMBER/
 
 # Cleanup and exit
 cleanup
