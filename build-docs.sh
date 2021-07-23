@@ -2,6 +2,21 @@
 
 # Local build verification
 
+# Common function for exit function
+exit_if_error() {
+  local exit_code=$1
+  shift
+  [[ $exit_code ]] &&
+    ((exit_code != 0)) && {
+        printf 'ERROR: %s\n' "$@" >&2
+    }
+}
+
+# Common clean up function
+cleanup() {
+  rm -rf ~/docs_jjb
+}
+
 # cleanup and create a virtual python directory for docs command executions.
 cleanup
 mkdir -p ~/docs_jjb/virtualpython
