@@ -13,6 +13,7 @@
       - [3. Register application service](#register-application-service)
       - [4. Update application service](#update-application-service)
       - [5. Delete application service](#delete-application-service)
+      - [6. Confirm ready service](#confirm-ready-service)
     - [Available event subscription related interface](#available-event-subscription-related-interface)
       - [1. Query available event subscriptions](#query-available-event-subscriptions)
       - [2. Register for available event subscription](#register-for-available-event-subscription)
@@ -45,13 +46,15 @@
       - [5. Query task status](#query-task-status)
     - [Application Termination](#application-termination)
       - [1. App Instance Termination](#app-instance-termination)
+      - [2. App Instance Termination Confirmation](#app-instance-termination-confirmation)
     - [Query Platform Capabilities(Services)](#query-platform-capabilities-services)
       - [1. Query all capabilities](#query-all-capabilities)
       - [2. Query individual capability](#query-individual-capability)
     - [Abnormal status code](#abnormal-status-code)
   - [Dns-Server](#dns-server)
-    - [1. Create/Set new entry](#create-set-new-entry)
-    - [2. Delete an entry](#delete-an-entry)
+    - [1. Create new entry](#create-new-entry)
+    - [2. Modify the entry](#modify-the-entry)
+    - [3. Delete an entry](#delete-an-entry)
   - [MEP Agent](#mep-agent)
       - [1. Get token](#get-token)
       - [2. Get producer endpoint by service name](#get-producer-endpoint-by-service-name)
@@ -945,6 +948,59 @@ HTTP/1.1 204 OK
 
 ```
 
+#### 6. Confirm ready service
+
+The MEC application that intends to communicate with MEC sends a "MEC App is running" message towards the MEC platform to confirm that the instantiation and the start-up phase have been successfully completed.
+
+**URL**
+
+```
+POST /mep/mec_app_support/v1/applications/{appInstanceId}/confirm_ready
+```
+
+**Request parameters**
+| **Name** | **Type** | **Description** | **IN** | **Required** |
+| --- | --- | --- | --- | --- |
+| appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
+
+None
+
+**Body Parameters**
+| Name          | Type                        | Description              | Required      |
+| ------------- | --------------------------- | ------------------------ | ------------- |
+| indication | string                    | Indication about the MEC application instance: - READY  | Yes |
+
+
+**Example Request**
+
+```
+POST /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confirm_ready
+{
+  "indication": "READY"
+}
+```
+
+**Return Parameters**
+
+None
+
+Return Code: 204 No Content
+
+**Example Response**
+```
+HTTP/1.1 204 No Content
+```
+Exception status code
+
+| **Data type** | **Response codes** | **Description** |
+| --- | --- | --- |
+| N/A | 204 No Content | The request is acknowledged. The response body shall be empty.|
+| ProblemDetails | 401 Unauthorized | It is used when the client did not submit the appropriate credentials. In the returned ProblemDetails structure, the "detail" attribute should convey more information about the error.|
+| ProblemDetails | 403 Forbidden | The operation is not allowed given the current status of the resource. More information shall be provided in the "detail" attribute of the "ProblemDetails" structure.|
+| ProblemDetails | 404 Not Found | It is used when a client provided a URI that cannot be mapped to a valid resource URI. In the returned ProblemDetails structure, the "detail" attribute should convey more information about the error.|
+| ProblemDetails | 409 Conflict | The operation cannot be executed currently, due to a conflict with the state of the resource. Typically, this is because the application instance resource is in NOT_INSTANTIATED state or because there is no termination ongoing. The response body shall contain a ProblemDetails structure, in which the "detail" attribute shall convey more information about the error.
+| ProblemDetails | 429 Too Many Requests | It is used when a rate limiter has triggered. In the returned ProblemDetails structure, the "detail" attribute should convey more information about the error. |
+
 ### Available event subscription related interface
 
 #### 1. Query available event subscriptions
@@ -1819,6 +1875,14 @@ HTTP/1.1 200 OK
   }
 
 ```
+
+Exception status code
+
+| **HTTP Status Code** | **Description** |
+| --- | --- |
+| 400  | Bad request, used to indicate that the requested parameters are incorrect. |
+| 403   | The current operation is forbidden. |
+| 404  | The requested resource was not found. |
 
 
 ### Heartbeat related interfaces
@@ -3011,6 +3075,59 @@ Return Code: 200 OK
 ""
 ```
 
+#### 2. App Instance Termination Confirmation
+
+After the MEC platform receives a request to terminate or stop a MEC application instance, the MEC platform notifies the MEC application instance that it will be terminated or stopped soon incase if graceful termination/stop is subscribed. 
+
+**URL**
+
+```
+POST /mep/mec_app_support/v1/applications/{appInstanceId}/confirm_termination
+```
+
+**Request parameters**
+| **Name** | **Type** | **Description** | **IN** | **Required** |
+| --- | --- | --- | --- | --- |
+| appInstanceId  | String | APP实例ID(UUID)  | path |  Yes   |
+
+**Example Request**
+
+```
+POST /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confirm_termination
+```
+
+**Body Parameters**
+{
+    "notificationType": "AppTerminationNotification",
+    "operationAction": "STOPPING",
+    "maxGracefulTimeout": "30",
+    "_links": {
+      "subscription": "mep/mec_app_support/v1/applications/6abe4782-2c70-4e47-9a4e-0ee3a1a0fd1e/subscriptions/6abe4782",
+      "confirmTermination": "????",
+    },
+}
+
+Return Code: 204 No Content
+
+**Example Response**
+```
+POST /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/confirm_termination
+{
+  "operationAction": "TERMINATING"
+}
+```
+
+Exception status code
+
+| **Data type** | **Response codes** | **Description** |
+| --- | --- | --- |
+| N/A | 204 No Content | The request is acknowledged. The response body shall be empty.|
+| ProblemDetails | 401 Unauthorized | It is used when the client did not submit the appropriate credentials. In the returned ProblemDetails structure, the "detail" attribute should convey more information about the error.|
+| ProblemDetails | 403 Forbidden | The operation is not allowed given the current status of the resource. More information shall be provided in the "detail" attribute of the "ProblemDetails" structure.|
+| ProblemDetails | 404 Not Found | It is used when a client provided a URI that cannot be mapped to a valid resource URI. In the returned ProblemDetails structure, the "detail" attribute should convey more information about the error.|
+| ProblemDetails | 409 Conflict | The operation cannot be executed currently, due to a conflict with the state of the resource. Typically, this is because the application instance resource is in NOT_INSTANTIATED state or because there is no termination ongoing. The response body shall contain a ProblemDetails structure, in which the "detail" attribute shall convey more information about the error.
+| ProblemDetails | 429 Too Many Requests | It is used when a rate limiter has triggered. In the returned ProblemDetails structure, the "detail" attribute should convey more information about the error. |
+
 ### Query Platform Capabilities(Services)
 
 MEP supports for querying the capabilities(services) registered with it. These capability information will be used by the MECM to display it to the user on its portal. MECM send the capability query to MEP over Mm5 interface.
@@ -3161,26 +3278,29 @@ HTTP/1.1 200 OK
 
 Mep has a programmable dns server which can perform the name resolution of the MEC applications. This management interface of the dns server is handled using a rest interface and this section cover the details of this interface.
 
-### 1. Create/Set new entry
+### 1. Create new entry
 
-DNS entry can be added or modified using this interface. Once a record is added/modified, the resource will be available for the device application to query.
-
-Using this interface multiple records on multiple zones can be submitted together.
+DNS entry can be added using this interface. Once a record is added, the resource will be available for the device application to query. Using this interface multiple records for a zone can be submitted together.
 
 **URL**
 
 ```
-PUT /mep/dns_server_mgmt/v1/rrecord
+POST /mep/dns_server_mgmt/v1/rrecord
 ```
 
 **Request parameters**
 
 None
 
+**Query parameters**
+| Name          | Type                        | Description              | Required      |
+| ------------- | --------------------------- | ------------------------ | ------------- |
+| zone          | string                      | Zone name. Default is "." | Yes |
+
+
 **Body Parameters**
 | Name          | Type                        | Description              | Required      |
 | ------------- | --------------------------- | ------------------------ | ------------- |
-| zone          | string                      | Zone name | Yes |
 | name          | string                      | Domain name | Yes |
 | type          | enum **{A, AAAA}**          | DNS resource type, A in case of Ipv4 and AAAA for Ipv6 | Yes |
 | class         | enum **{IN}**               | Resource record class | Yes on create |
@@ -3190,21 +3310,76 @@ None
 **Example Request**
 
 ```
-PUT /mep/dns_server_mgmt/v1/rrecord
+POST /mep/dns_server_mgmt/v1/rrecord?zone="com."
 [
   {
-    "zone": ".",
-    "rr": [
-      {
-        "name": "www.example.com.",
-        "type": "A",
-        "class": "IN",
-        "ttl": 30,
-        "rData": [
-          "172.168.15.101"
-        ]
-      }
-    ]
+      "name": "www.example.com.",
+      "type": "A",
+      "class": "IN",
+      "ttl": 30,
+      "rData": [
+        "172.168.15.101"
+      ]
+  }
+]
+```
+
+**Return Parameters**
+
+None
+
+Return Code: 200 Success
+
+**Example Response**
+```
+HTTP/1.1 200 Success
+```
+
+### 2. Modify the entry
+
+DNS entry can be modified using this interface. Once a record is modified, the resource will be available for the device application to query. Using this interface multiple records for a zone can be submitted together.
+
+**URL**
+
+```
+PUT /mep/dns_server_mgmt/v1/rrecord/{fqdn}/{rrtype}
+```
+
+**Request parameters**
+| **Name** | **Type** | **Description** | **IN** | **Required** |
+| --- | --- | --- | --- | --- |
+| fqdn  | String | Fully Qualified Domain Name | path |  Yes   |
+| rrtype      | String | Resource record type of the entry(A or AAAA). | path | Yes |
+
+
+**Query parameters**
+| Name          | Type                        | Description              | Required      |
+| ------------- | --------------------------- | ------------------------ | ------------- |
+| zone          | string                      | Zone name. Default is "." | Yes |
+
+
+**Body Parameters**
+| Name          | Type                        | Description              | Required      |
+| ------------- | --------------------------- | ------------------------ | ------------- |
+| name          | string                      | Domain name | Yes |
+| type          | enum **{A, AAAA}**          | DNS resource type, A in case of Ipv4 and AAAA for Ipv6 | Yes |
+| class         | enum **{IN}**               | Resource record class | Yes on create |
+| ttl           | int (non-zero value)        | Record TTL value | Yes on create |
+| rData         | list(string)                | IP Address list, Ip type must match with the **type** field | Yes on create |
+
+**Example Request**
+
+```
+PUT /mep/dns_server_mgmt/v1/rrecord/www.example.com/A?zone="com."
+[
+  {
+      "name": "www.example.com.",
+      "type": "A",
+      "class": "IN",
+      "ttl": 30,
+      "rData": [
+        "172.168.15.201"
+      ]
   }
 ]
 ```
@@ -3230,6 +3405,11 @@ DNS entry can be deleted from the dns-server using this interface.
 DELETE /mep/dns_server_mgmt/v1/rrecord/{fqdn}/{rrtype}
 ```
 
+**Query parameters**A
+| Name          | Type                        | Description              | Required      |
+| ------------- | --------------------------- | ------------------------ | ------------- |
+| zone          | string                      | Zone name. Default is "." | Yes |
+
 **Request parameters**
 | **Name** | **Type** | **Description** | **IN** | **Required** |
 | --- | --- | --- | --- | --- |
@@ -3243,7 +3423,7 @@ None
 **Example Request**
 
 ```
-DELETE /mep/dns_server_mgmt/v1/rrecord/www.example.com./A
+DELETE /mep/dns_server_mgmt/v1/rrecord/www.example.com./A?zone=com.
 ```
 
 **Return Parameters**
