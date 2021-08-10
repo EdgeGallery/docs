@@ -35,7 +35,7 @@ msgstr "Application testing services are currently divided into management funct
 
 #: ../../Projects/ATP/ATP_Overview.md:7
 msgid "整体框架说明"
-msgstr "Overall Frame Description"
+msgstr "Overview"
 
 #: ../../Projects/ATP/ATP_Overview.md:8
 msgid "EdgeGallery整体框架流程如下，应用测试平台主要对应图中的认证测试部分。 ![](/uploads/images/2020/v1.0/all-the-arch.png)"
