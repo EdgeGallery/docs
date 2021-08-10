@@ -2,6 +2,10 @@
 
 # Local build verification
 
+if [[ -z "$BUILD_NUMBER" ]]; then
+  echo "Set BUILD_NUMBER env var"
+  exit 1
+fi
 # Common function for exit function
 exit_if_error() {
   local exit_code=$1
@@ -52,9 +56,8 @@ exit_if_error $? "Unable to generate .po documents."
 sphinx-build -b html -D language=en . _build/html/en
 exit_if_error $? "Unable to generate English HTML documents."
 
-mkdir -p /var/opt/docs
-mkdir /var/opt/docs/$BUILD_NUMBER
-cp -r _build/html/en/* /var/opt/docs/$BUILD_NUMBER/
+mkdir -p /var/www/html/$BUILD_NUMBER
+cp -r _build/html/en/* /var/www/html/$BUILD_NUMBER/
 
 # Cleanup and exit
 cleanup
