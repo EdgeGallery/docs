@@ -184,7 +184,7 @@ Resource URI: /mec/developer/v1/plugins/
 
 Query all plugin or sdk
 ```
-Resource URI: /mec/appstore/v1/plugins/
+Resource URI: /mec/developer/v1/plugins/
 ```
 |Name|Definition|Type|Required|
 |-------------| -------------|------------|------------|
@@ -208,7 +208,7 @@ Resource URI: /mec/appstore/v1/plugins/
 ### 1.3 DELETE one 
 Delete one plugin by pluginId
 ```
-Resource URI: /mec/appstore/v1/plugins/{pluginId}
+Resource URI: /mec/developer/v1/plugins/{pluginId}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -223,7 +223,7 @@ Resource URI: /mec/appstore/v1/plugins/{pluginId}
 ### 1.4 GET download plugin 
 Download one plugin
 ```
-Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/download
+Resource URI: /mec/developer/v1/plugins/{pluginId}/action/download
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -238,7 +238,7 @@ Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/download
 ### 1.5 GET download logo
 Download plugin's logo file
 ```
-Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/get-logofile
+Resource URI: /mec/developer/v1/plugins/{pluginId}/action/get-logofile
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -252,7 +252,7 @@ Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/get-logofile
 ### 1.6 GET download api
 Download plugin's api file
 ```
-Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/get-apifile
+Resource URI: /mec/developer/v1/plugins/{pluginId}/action/get-apifile
 ```
 |Name| Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -266,7 +266,7 @@ Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/get-apifile
 ### 1.7 PUT update plugin
 Update api by id
 ```
-Resource URI: /mec/appstore/v1/plugins/{pluginId}
+Resource URI: /mec/developer/v1/plugins/{pluginId}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -327,7 +327,7 @@ Resource URI: /mec/appstore/v1/plugins/{pluginId}
 ### 1.8 PUT mark plugin
 Update plugin satisfaction by pluginId
 ```
-Resource URI: /mec/appstore/v1/plugins/{pluginId}/action/score
+Resource URI: /mec/developer/v1/plugins/{pluginId}/action/score
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -1431,7 +1431,7 @@ Resource URI: /mec/developer/v1/projects/{projectId}/test-config
 ```
 
 ### 3.11 POST upload to store 
-Upload app project to appstore
+Upload app project to developer
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/upload
 ```
@@ -3934,7 +3934,7 @@ This part is about the api for deploying APP image
 ### 15.1 POST upload image 
 POST upload image
 ```
-Resource URI: /mec/appstore/v1/image/upload
+Resource URI: /mec/developer/v1/image/upload
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -3968,7 +3968,7 @@ Resource URI: /mec/appstore/v1/image/upload
 ### 15.2 GET merge image 
 After every file chunk uploaded, then merge to a file with same as you uploaded
 ```
-Resource URI: /mec/appstore/v1/image/merge
+Resource URI: /mec/developer/v1/image/merge
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
