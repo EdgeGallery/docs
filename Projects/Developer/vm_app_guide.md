@@ -80,11 +80,19 @@ developer与openstack后台添加路由，例如
 route add -net 192.168.225.0 netmask 255.255.255.0 gw openstack_ip
 
 ## 上传基础镜像
-系统 - 镜像管理 - 新建系统镜像
+1.新建系统镜像
 
-填写镜像的基本信息后点击上传
+系统 - 系统镜像管理 - 新建系统镜像
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/111801_821e101d_9047452.png "屏幕截图.png")
+
+填写镜像的基本信息后点击确认
+2.上传镜像压缩包
 
 上传镜像为zip压缩包，目前支持的镜像格式为qcow2和iso，上传镜像包目录格式为：filename.zip/filename/filename.qcow2
+[图片上传中…(image-YNZxdUJUIpoH7VXZe53N)]
+3.修改系统镜像
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0706/112158_ee1ac1da_9047452.png "屏幕截图.png")
+点击“编辑”,修改参数后点击确认
 
 ## 虚机应用开发
 1. 新建项目：点击工作空间-新建项目，选择应用集成。
