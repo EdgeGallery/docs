@@ -154,6 +154,7 @@ Example response:
   "status": "running",
   "createTime": "2021-03-01T02:42:29.306+0000",
   "endTime": "2021-03-01T02:43:03.943+0000",
+  "reportPath":"/report/68016a29-75da-4f3e-aa00-42ed731dbc3f.pdf",
   "user": {
     "userId": "4eed814b-5d29-4e4c-ba73-51fc6db4ed86",
     "userName": "atp"
@@ -208,6 +209,7 @@ Example response:
   "status": "running",
   "createTime": "2021-03-01T02:42:29.306+0000",
   "endTime": "2021-03-01T02:43:03.943+0000",
+  "reportPath":"/report/68016a29-75da-4f3e-aa00-42ed731dbc3f.pdf",
   "user": {
     "userId": "4eed814b-5d29-4e4c-ba73-51fc6db4ed86",
     "userName": "atp"
@@ -322,7 +324,7 @@ true
 ### 1.9 POST upload self test report
 upload self test report
 ```
-Resource URI: edgegallery/atp/v1/tasks/{taskId}/action/upload-report
+Resource URI: edgegallery/atp/v2/tasks/{taskId}/action/upload-report
 ```
 
 Example request:
@@ -380,6 +382,9 @@ Example response:
   "testStepEn": "1.open csar package 2.validate root directory contains APPD directory",
   "testSuiteIdList": [
     "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
+  ],
+  "configIdList": [
+    "522684bd-9999-4b47-aab8-b43f1b4c19c0"
   ]
 }]
 
@@ -404,6 +409,7 @@ Resource URI: /edgegallery/atp/v1/testcases
 |testStepCh|testStepCh|request param|yes|
 |testStepEn|testStepEn|request param|no|
 |file|file|request part|yes|
+|configIdList|configIdList|request param|no|
 
 Example response:
 ```
@@ -423,6 +429,9 @@ Example response:
   "testStepEn": "1.open csar package 2.validate root directory contains APPD directory",
   "testSuiteIdList": [
     "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
+  ],
+  "configIdList": [
+    "522684bd-9999-4b47-aab8-b43f1b4c19c0"
   ]
 }
 ```
@@ -445,6 +454,7 @@ Resource URI: /edgegallery/atp/v1/testcases
 |testStepCh|testStepCh|request param|no|
 |testStepEn|testStepEn|request param|no|
 |file|file|request part|no|
+|configIdList|configIdList|request param|no|
 
 Example response:
 ```
@@ -464,6 +474,9 @@ Example response:
   "testStepEn": "1.open csar package 2.validate root directory contains APPD directory",
   "testSuiteIdList": [
     "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
+  ],
+  "configIdList": [
+    "522684bd-9999-4b47-aab8-b43f1b4c19c0"
   ]
 }
 ```
@@ -509,6 +522,9 @@ Example response:
   "testStepEn": "1.open csar package 2.validate root directory contains APPD directory",
   "testSuiteIdList": [
     "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
+  ],
+  "configIdList": [
+    "522684bd-9999-4b47-aab8-b43f1b4c19c0"
   ]
 }
 ```
@@ -1004,7 +1020,7 @@ config
 ### 8.1 POST create config
 create config
 ```
-Resource URI: edgegallery/atp/v1/configs
+Resource URI: edgegallery/atp/v2/configs
 ```
 Example request:
 ```
@@ -1044,7 +1060,7 @@ Example response:
 ### 8.2 PUT update config
 update config
 ```
-Resource URI: edgegallery/atp/v1/configs/{id}
+Resource URI: edgegallery/atp/v2/configs/{id}
 ```
 Example request:
 ```
@@ -1085,7 +1101,7 @@ Example response:
 ### 8.3 DELETE delete config
 delete config
 ```
-Resource URI: edgegallery/atp/v1/configs/{id}
+Resource URI: edgegallery/atp/v2/configs/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -1107,7 +1123,7 @@ true
 ### 8.4 GET query one config
 query one config
 ```
-Resource URI: edgegallery/atp/v1/configs/{id}
+Resource URI: edgegallery/atp/v2/configs/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -1145,7 +1161,7 @@ Example response:
 ### 8.5 GET query all configs
 query all configs
 ```
-Resource URI: edgegallery/atp/v1/configs
+Resource URI: edgegallery/atp/v2/configs
 ```
 
 Example request:
