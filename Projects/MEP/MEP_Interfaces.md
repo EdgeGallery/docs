@@ -27,6 +27,7 @@
     - [Services interfaces](#service)
       - [1. Query availability services list](#query-availability-services-list)
       - [2. Query availability individual service](#query-availability-individual-service)
+      - [3. Query transport capabilities](#query-transport-capabilities)
     - [Heartbeat related interfaces](#heartbeat-related-interfaces)
       - [1. Query service liveness info](#query-service-liveness-info)
       - [2. Update liveness info](#update-liveness-info)
@@ -50,6 +51,9 @@
     - [Query Platform Capabilities(Services)](#query-platform-capabilities-services)
       - [1. Query all capabilities](#query-all-capabilities)
       - [2. Query individual capability](#query-individual-capability)
+    - [Timing interfaces](#timing-interfaces)
+      - [1. Query platform time](#query-platform-time)
+      - [2. Query timing capabilities](#query-timing-capabilities)
     - [Abnormal status code](#abnormal-status-code)
   - [Dns-Server](#dns-server)
     - [1. Create new entry](#create-new-entry)
@@ -1876,6 +1880,69 @@ HTTP/1.1 200 OK
 
 ```
 
+#### 3. Query transport information
+Transport information query provides a standardized means to the MEC applications to discover the available transports supported in MEP.
+
+**URL**
+```
+GET mep/mec_service_mgmt/v1/transports
+```
+
+**Request parameters**
+
+None
+
+**Body Parameters**
+
+None
+
+**Example Request**
+
+```
+GET mep/mec_service_mgmt/v1/transports
+```
+
+**Return Parameters**
+
+| Name   | Type   | Description   | Required |
+|--------|--------|--------|------|
+| id | string | Transport ID. | Yes |
+| name | string | Transport name. | Yes |
+| description | string | Description about the transport. | No |
+| type | TransportType | Transport type. | Yes |
+| protocol | string | Name of the protocol used. | Yes |
+| version | string | Version of the protocol used. | Yes |
+| endpoint | EndPointInfo | Information about the endpoint to access the transport. | Yes |
+| security | SecurityInfo | Information about the security used by the transport. | Yes |
+| implSpecificInfo | Object | Any other implementation specific information. | No |
+
+Return Code: 200 OK
+
+**Example Response**
+```
+HTTP/1.1 200 OK
+[
+  {
+    "id": "TransId12345",
+    "name": "REST",
+    "description": "REST API",
+    "type": "REST_HTTP",
+    "protocol": "HTTP",
+    "version": "2.0",
+    "endpoint": {},
+    "security": {
+      "oAuth2Info": {
+        "grantTypes": [
+          "OAUTH2_CLIENT_CREDENTIALS"
+        ],
+        "tokenEndpoint": "/mecSerMgmtApi/security/TokenEndPoint"
+      }
+    },
+    "implSpecificInfo": {}
+  }
+]
+```
+
 Exception status code
 
 | **HTTP Status Code** | **Description** |
@@ -3097,13 +3164,14 @@ POST /mep/mec_app_support/v1/applications/5abe4782-2c70-4e47-9a4e-0ee3a1a0fd1f/c
 ```
 
 **Body Parameters**
+```
 {
     "notificationType": "AppTerminationNotification",
     "operationAction": "STOPPING",
     "maxGracefulTimeout": "30",
     "_links": {
       "subscription": "mep/mec_app_support/v1/applications/6abe4782-2c70-4e47-9a4e-0ee3a1a0fd1e/subscriptions/6abe4782",
-      "confirmTermination": "????",
+      "confirmTermination": "/mep/mec_app_support/v1/applications/6abe4782-2c70-4e47-9a4e-0ee3a1a0fd1e/confirm_termination",
     },
 }
 
@@ -3257,6 +3325,119 @@ HTTP/1.1 200 OK
         },
         {
             "applicationInstanceId": "86dfc97d-325e-4feb-ac4f-280a0ba42513"
+        }
+    ]
+}
+```
+### Timing interfaces
+
+Interface to get platform time for MEP applications.
+
+#### 1. Query platform time
+
+Interface to get the current MEP platform time.
+
+**URL**
+
+```
+GET mep/mec_app_support/v1/timing/current_time
+```
+**Request parameters**
+
+None
+
+| Name   | Type   | Description   |
+|--------|--------|--------|
+| seconds | integer | The seconds part of the time in unix time format. |
+| nanoSeconds | integer | The nano-seconds part of the time in unix time format. |
+| timeSourceStatus | enum{TRACEABLE, NONTRACEABLE} | 1 = TRACEABLE - time source is locked to the UTC time source. 2 = NONTRACEABLE - time source is not locked to the UTC time source |
+
+**Example Request**
+
+```
+GET mep/mec_app_support/v1/timing/current_time
+```
+
+**Body Parameters**
+
+None
+
+Return Code: 200 OK
+
+**Example Response**
+```
+HTTP/1.1 200 OK
+{
+    "seconds": 1627971217,
+    "nanoSeconds": 869279458,
+    "timeSourceStatus": "TRACEABLE"
+}
+```
+
+
+#### 2. Query timing capability
+
+Interface to get the timing capabilities. The information regarding available packet timing facilities.
+
+**URL**
+
+```
+GET mep/mec_app_support/v1/timing/timing_caps
+```
+**Request parameters**
+
+None
+
+Return Parameters:
+
+| Name   | Type   | Description   | Required | 
+|--------|--------|--------|------|
+| timeStamp | Object | Time stamp information. | No |
+| >seconds  | integer | The seconds part of the time in unix time format. | Yes |
+| >nanoSeconds | integer  | The nano-seconds part of the time in unix time format. | Yes |
+| ntpServers | Array[Object] | Details about all NTP server available in the platform. | No |
+| >ntpServerAddrType  | enum{IP_ADDRESS, DNS_NAME} | Address type. | Yes |
+| >ntpServerAddr | string | NTP server address. | Yes |
+| >minPollingInterval | integer | Minimum poll interval for NTP messages, in seconds as a power of two Range: 3…17  | Yes |
+| >maxPollingInterval | integer | Maximum poll interval for NTP messages, in seconds as a power of two Range: 3…17 | Yes |
+| >localPriority | integer | Local priority value. | Yes |
+| >authenticationOption  | enum{NONE, SYMMETRIC_KEY, AUTO_KEY} | Available authentication option. | Yes |
+| >authenticationKeyNum | integer | Authentication key number. This configuration is valid if selected authenticationOption is SymmetricKey  | Yes |
+| ptpMasters | Array[Object] | Details about all PTP server available in the platform. | No |
+| >ptpMasterIpAddress  | string | PTP master IP address. | Yes |
+| >ptpMasterLocalPriority  | integer | Local priority number. | Yes |
+| >delayReqMaxRate  | integer | Acceptable maximum rate of the Delay_Req messages in packets per second | Yes |
+
+
+**Example Request**
+
+```
+GET mep/mec_app_support/v1/timing/timing_caps
+```
+
+**Body Parameters**
+
+None
+
+Return Code: 200 OK
+
+**Example Response**
+```
+HTTP/1.1 200 OK
+{
+    "timeStamp": {
+        "seconds": 1627971264,
+        "nanoSeconds": 478959804
+    },
+    "ntpServers": [
+        {
+            "ntpServerAddrType": "DNS_NAME",
+            "ntpServerAddr": "mep-ntp",
+            "minPollingInterval": 4,
+            "maxPollingInterval": 17,
+            "localPriority": 1,
+            "authenticationOption": "NONE",
+            "authenticationKeyNum": 0
         }
     ]
 }
