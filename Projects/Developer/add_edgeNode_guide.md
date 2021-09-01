@@ -8,9 +8,9 @@
 
 3.根据服务器架构下载EdgeGallery-v1.0.tar.gz安装包
 
-X86_64架构安装包网址：http://release.edgegallery.org/release/x86/edge/EdgeGallery-v1.0.tar.gz
+X86_64架构安装包网址：https://edgegallery.obs.cn-east-3.myhuaweicloud.com/releases/v1.2/x86/EdgeGallery-v1.2.0-edge-x86.tar.gz
 
-ARM_64架构安装包网址：http://release.edgegallery.org/release/arm64/edge/EdgeGallery-v1.0.tar.gz
+ARM_64架构安装包网址：https://edgegallery.obs.cn-east-3.myhuaweicloud.com/releases/v1.2/arm64/EdgeGallery-v1.2.0-edge-arm64.tar.gz
 
 
 ### 边缘节点安装步骤
