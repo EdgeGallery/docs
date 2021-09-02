@@ -65,3 +65,6 @@ else
 
    echo -e "$cm"
 fi
+
+#command to configure 'server.dir-listing' in conf file
+sed -i '/^server.document-root/a server.dir-listing          = "enable"' /etc/lighttpd/lighttpd.conf
