@@ -274,7 +274,7 @@ msgstr "[7.5 Get external warehouse to pull application list](#75-Getthewarehous
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:67
 msgid "[8. 沙箱管理](#8-沙箱管理)"
-msgstr "[8. Sandbox Management](#8-SandboxManagement)"
+msgstr "[8.Sandbox Management](#8-SandboxManagement)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:68
 msgid "[8.1 查询沙箱环境列表](#81-查询沙箱环境列表)"
@@ -302,7 +302,7 @@ msgstr "[8.6 Upload sandbox environment configuration file](#86-Uploadsandboxenv
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:74
 msgid "[9. 应用在线体验](#9-应用在线体验)"
-msgstr "[9. App online experience](#9-Apponlineexperience)"
+msgstr "[9.App online experience](#9-Apponlineexperience)"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md:75
 msgid "[9.1 实例化应用](#91-实例化应用)"
