@@ -325,24 +325,20 @@ METHOD: GET
   binary output.
 ```
 
-### 1.10 修改热门应用 
-
+### 1.10 修改热门应用
 根据应用ID更改应用是否为热门应用。
-
 ```
 URI： /mec/appstore/v2/apps/hotapps
 METHOD: PUT
 ```
-
-| 名称  | 描述   | IN   | 必选 |
-| ----- | ------ | ---- | ---- |
-| appId | 应用ID | path | yes  |
+|名称|描述|IN|必选|
+|---|---|---|---|
+|appId|应用ID|path|yes|
 
 响应示例:
-
 ```
 200 OK
-  "set hot apps success."
+  set hot apps success.
 ```
 
 ### 1.11 获取应用列表-v2
