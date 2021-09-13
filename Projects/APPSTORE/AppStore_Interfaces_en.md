@@ -434,29 +434,27 @@ Example response:
 ```
 200 OK
   {
-    "data": [
-        {
-            "appId": "string",
-            "iconUrl": "string",
-            "name": "string",
-            "provider": "string",
-            "type": "string",
-            "shortDesc": "string",
-            "showType": "string",
-            "createTime": "string",
-            "details": "string",
-            "downloadCount": int,
-            "affinity": "string",
-            "industry": "string",
-            "contact": "string",
-            "score": 5.0,
-            "userId": "string",
-            "userName": "string",
-            "status": "string",
-            "deployMode": "string",
-            "hotApp": false
-        }
-    ],
+    "data": {
+        "appId": "string",
+        "iconUrl": "string",
+        "name": "string",
+        "provider": "string",
+        "type": "string",
+        "shortDesc": "string",
+        "showType": "string",
+        "createTime": "string",
+        "details": "string",
+        "downloadCount": int,
+        "affinity": "string",
+        "industry": "string",
+        "contact": "string",
+        "score": 5.0,
+        "userId": "string",
+        "userName": "string",
+        "status": "string",
+        "deployMode": "string",
+        "hotApp": false
+    },
     "retCode": 0,
     "params": "[string]",
     "message": "string"
