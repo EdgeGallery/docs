@@ -78,19 +78,19 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 参见 [EdgeGallery v1.2.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.2/EG%20v1.2%20Security%20Test%20Report.md)
 
- **Fixed/Known Security Issues**
 
-| No.  | Issue 标题                                                   |   状态   | 级别 |
-| :--: | ------------------------------------------------------------ | :------: | :--: |
-|  1   | [【mecm】【Security】lcm，rule，apm，appo，inventory，k8xplugin等pod中usr/app/log目录下没有日志文件](https://e.gitee.com/OSDT/issues/list?issue=I3XUQW) |  已修复  | 主要 |
-|  2   | [【user-mgmt】【Security】user-mgmt pod中usr/app/log目录下没有日志文件](https://e.gitee.com/OSDT/issues/list?issue=I3XUNS) | **遗留** | 主要 |
-|  3   | [【developer】【Security】developer-be中usr/app/log目录下没有日志文件](https://e.gitee.com/OSDT/issues/list?issue=I3XSH9) |  已修复  | 主要 |
-|  4   | [【user-mgmt】【Security】日志记录敏感信息（ssoSessionId）](https://e.gitee.com/OSDT/issues/list?issue=I3XS2G) |  已修复  | 主要 |
-|  5   | [【developer】【Security】虚机部署时，日志中记录了敏感信息（lcmToken）](https://e.gitee.com/OSDT/issues/list?issue=I3XR72) |  已修复  | 主要 |
-|  6   | [【atp】【Security】用户贡献测试用例功能存在重放攻击漏洞](https://e.gitee.com/OSDT/issues/list?issue=I3VZS3) |  已修复  | 主要 |
-|  7   | [【user-mgmt】【Security】首次登陆admin账户未强制修改密码](https://e.gitee.com/OSDT/issues/list?issue=I3V708) |  已修复  | 主要 |
-|  8   | [【atp】【Security】在appstore进行atp测试->社区场景->安全测试用例执行失败](https://e.gitee.com/OSDT/issues/list?issue=I3T6A0) |  已修复  | 主要 |
-|  9   | [【developer】【Security】新增沙箱环境时，鉴权应按角色判断，不应按userId判断](https://e.gitee.com/OSDT/issues/list?issue=I3YTO7) |  已修复  | 主要 |
+**Fixed/Known Security Issues**
+| **No.** | **Issue 标题** | **状态** | **级别** |
+| --- | --- | --- | --- |
+| 1 | [【mecm】【Security】lcm，rule，apm，appo，inventory，k8xplugin等pod中usr/app/log目录下没有日志文件](https://e.gitee.com/OSDT/issues/list?issue=I3XSH9) | 已修复 | 主要 |
+| 2 | [【user-mgmt】【Security】user-mgmt pod中usr/app/log目录下没有日志文件](https://e.gitee.com/OSDT/issues/list?issue=I3XUNS) | **遗留** | 主要 |
+| 3 | [【developer】【Security】developer-be中usr/app/log目录下没有日志文件](https://e.gitee.com/OSDT/issues/list?issue=I3XSH9) | 已修复 | 主要 |
+| 4 | [【user-mgmt】【Security】日志记录敏感信息（ssoSessionId）](https://e.gitee.com/OSDT/issues/list?issue=I3XS2G) | 已修复 | 主要 |
+| 5 | [【developer】【Security】虚机部署时，日志中记录了敏感信息（lcmToken）](https://e.gitee.com/OSDT/issues/list?issue=I3XR72) | 已修复 | 主要 |
+| 6 | [【atp】【Security】用户贡献测试用例功能存在重放攻击漏洞](https://e.gitee.com/OSDT/issues/list?issue=I3VZS3) | 已修复 | 主要 |
+| 7 | [【user-mgmt】【Security】首次登陆admin账户未强制修改密码](https://e.gitee.com/OSDT/issues/list?issue=I3V708) | 已修复 | 主要 |
+| 8 | [【atp】【Security】在appstore进行atp测试->社区场景->安全测试用例执行失败](https://e.gitee.com/OSDT/issues/list?issue=I3T6A0) | 已修复 | 主要 |
+| 9 | [【developer】【Security】新增沙箱环境时，鉴权应按角色判断，不应按userId判断](https://e.gitee.com/OSDT/issues/list?issue=I3YTO7) | 已修复 | 主要 |
 
  **Known Vulnerabilities in Used Modules**
 

@@ -351,33 +351,30 @@ METHOD: POST
 ```
 
 请求参数：
-
-| 名称           | 描述         | IN           | 必选 |
-| -------------- | ------------ | ------------ | ---- |
-| QueryAppReqDto | 查询应用条件 | request body | yes  |
+|名称|描述|IN|必选|
+|---|---|---|---|
+|QueryAppReqDto|查询应用条件|request body|yes|
 
 QueryAppReqDto
-
-| 字段名       | 描述         | 字段类型        | 必选 |
-| ------------ | ------------ | --------------- | ---- |
-| types        | 应用类型     | List<String>    | no   |
-| showType     | 应用显示类型 | List<String>    | no   |
-| affinity     | 应用架构     | List<String>    | no   |
-| industry     | 应用行业     | List<String>    | no   |
-| workloadType | 应用负载类型 | List<String>    | no   |
-| userId       | 用户Id       | String          | no   |
-| status       | 应用状态     | String          | no   |
-| appName      | 应用名称     | String          | no   |
-| queryCtrl    | 查询条件     | QueryAppCtrlDto | yes  |
+|字段名|描述|字段类型|必选|
+|------------|------------|---------------|----|
+|types|应用类型|List<String>|no|
+|showType|应用显示类型|List<String>|no|
+|affinity|应用架构|List<String>|no|
+|industry|应用行业|List<String>|no|
+|workloadType|应用负载类型|List<String>|no|
+|userId|用户Id|String|no|
+|status|应用状态|String|no|
+|appName|应用名称|String|no|
+|queryCtrl|查询条件|QueryAppCtrlDto|yes|
 
 QueryAppCtrlDto
-
-| 字段名   | 描述                        | 字段类型 | 必选 |
-| -------- | --------------------------- | -------- | ---- |
-| limit    | 分页查询每页查询数量[1,500] | int      | yes  |
-| offset   | 分页查询起始页，从0开始     | int      | yes  |
-| sortItem | 查询排序字段                | String   | no   |
-| sortType | 查询排序方式，升序/降序     | String   | no   |
+|字段名|描述|字段类型|必选|
+|------------|------------|---------------|----|
+|limit|分页查询每页查询数量[1,500]|int|yes|
+|offset|分页查询起始页，从0开始|int|yes|
+|sortItem|查询排序字段|String|no|
+|sortType|查询排序方式升序/降序|String|no|
 
 响应示例:
 
@@ -421,10 +418,9 @@ QueryAppCtrlDto
 URI： /mec/appstore/v2/apps/{appId}
 METHOD: GET
 ```
-
-| 名称  | 描述   | IN   | 必选 |
-| ----- | ------ | ---- | ---- |
-| appId | app id | path | yes  |
+|名称|描述|IN|必选|
+|-----|------|----|----|
+|appId|app id|path|yes|
 
 
 响应示例:
@@ -467,20 +463,19 @@ METHOD: GET
 URI： /mec/appstore/v2/apps
 METHOD: POST
 ```
-
-| 名称       | 描述                                    | IN                | 必选 |
-| ---------- | --------------------------------------- | ----------------- | ---- |
-| userId     | 用户ID                                  | request param     | yes  |
-| userName   | 应用名                                  | request param     | yes  |
-| file       | 应用包文件                              | request body form | yes  |
-| icon       | 应用图标文件                            | request body form | yes  |
-| demoVideo  | 应用视频文件                            | request body form | no   |
-| type       | 应用类型                                | request body form | yes  |
-| shortDesc  | 应用简述                                | request body form | yes  |
-| affinity   | 架构                                    | request body form | yes  |
-| industry   | 应用所属行业                            | request body form | yes  |
-| testTaskId | 测试任务id                              | request body form | no   |
-| showType   | 显示类型：public、inner-public、private | request body form | no   |
+|名称|描述|IN|必选|
+|----------|---------------------------------------|-----------------|----|
+|userId|用户ID|request param|yes|
+|userName|应用名|request param|yes|
+|file|应用包文件|request body form|yes|
+|icon|应用图标文件|request body form|yes|
+|demoVideo|应用视频文件|request body form|no|
+|type|应用类型|request body form|yes|
+|shortDesc|应用简述|request body form|yes|
+|affinity|架构|request body form|yes|
+|industry|应用所属行业|request body form|yes|
+|testTaskId|测试任务id|request body form|no|
+|showType|显示类型：public、inner-public、private|request body form|no|
 
 响应示例:
 
@@ -514,7 +509,7 @@ METHOD: GET
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|appId |应用ID |path|yes|
+|appId|应用ID|path|yes|
 |userId|用户ID|request param|yes|
 |access_token|请求token|request header|yes|
 
@@ -555,8 +550,8 @@ METHOD: GET
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|appId |应用ID|path |yes|
-|packageId |应用包ID|path |yes|
+|appId|应用ID|path|yes|
+|packageId|应用包ID|path|yes|
 
 响应示例:
 ```
@@ -593,10 +588,10 @@ METHOD: DELETE
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|userId |用户Id|request param|yes|
-|userName |用户名|request param|yes|
-|appId |应用ID|path |yes|
-|packageId |应用包ID|path |yes|
+|userId|用户Id|request param|yes|
+|userName|用户名|request param|yes|
+|appId|应用ID|path|yes|
+|packageId|应用包ID|path|yes|
 
 响应示例:
 ```
@@ -612,8 +607,8 @@ METHOD: GET
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|appId |应用ID|path |yes|
-|packageId |应用包ID|path |yes|
+|appId|应用ID|path|yes|
+|packageId|应用包ID|path|yes|
 
 响应示例:
 ```
@@ -629,9 +624,9 @@ METHOD: POST
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|packageId |package id|path |yes|
-|filePath |file path|request body |yes|
-|appId |应用ID|path |yes|
+|packageId|package id|path|yes|
+|filePath|file path|request body|yes|
+|appId|应用ID|path|yes|
 
 响应示例:
 ```
@@ -647,8 +642,8 @@ METHOD: POST
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|appId |应用ID|path |yes|
-|packageId |应用包ID|path |yes|
+|appId|应用ID|path|yes|
+|packageId|应用包ID|path|yes|
 
 响应示例:
 ```
@@ -664,9 +659,9 @@ METHOD: POST
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|appId |应用ID|path |yes|
-|packageId |应用包ID|path |yes|
-|access_token |请求token|request header |yes|
+|appId|应用ID|path|yes|
+|packageId|应用包ID|path|yes|
+|access_token|请求token|request header|yes|
 
 响应示例:
 ```
@@ -685,11 +680,10 @@ METHOD: POST
 URI： /mec/appstore/v1/packages
 METHOD: GET
 ```
-
-| 名称         | 描述      | IN             | 必选 |
-| ------------ | --------- | -------------- | ---- |
-| ueserId      | 用户id    | request param  | yes  |
-| access_token | 请求token | request header | yes  |
+|名称|描述|IN|必选|
+|------------|---------|--------------|----|
+|ueserId|用户id|request param|yes|
+|access_token|请求token|request header|yes|
 
 响应示例:
 
@@ -729,18 +723,17 @@ METHOD: GET
 URI： /mec/appstore/v1/apps/{appId}/package/{packageId}
 METHOD: PUT
 ```
-
-| 名称      | 描述         | IN                | 必选 |
-| --------- | ------------ | ----------------- | ---- |
-| appId     | 应用ID       | path              | yes  |
-| packageId | 应用包ID     | path              | yes  |
-| industry  | 应用行业     | request body form | no   |
-| type      | 应用类型     | request body form | no   |
-| icon      | 应用图标     | request body form | no   |
-| video     | 应用视频     | request body form | no   |
-| affinity  | 应用架构     | request body form | no   |
-| shortDesc | 应用描述     | request body form | no   |
-| showType  | 应用显示类型 | request body form | no   |
+|名称|描述|IN|必选|
+|---------|------------|-----------------|----|
+|appId|应用ID|path|yes|
+|packageId|应用包ID|path|yes|
+|industry|应用行业|request body form|no|
+|type|应用类型|request body form|no|
+|icon|应用图标|request body form|no|
+|video|应用视频|request body form|no|
+|affinity|应用架构|request body form|no|
+|shortDesc|应用描述|request body form|no|
+|showType|应用显示类型|request body form|no|
 
 响应示例:
 
@@ -778,11 +771,10 @@ METHOD: PUT
 URI： /mec/appstore/v2/apps/{appId}/packages/{packageId}/action/publish
 METHOD: POST
 ```
-
-| 名称      | 描述     | IN   | 必选 |
-| --------- | -------- | ---- | ---- |
-| appId     | 应用ID   | path | yes  |
-| packageId | 应用包ID | path | yes  |
+|名称|描述|IN|必选|
+|---------|--------|----|----|
+|appId|应用ID|path|yes|
+|packageId|应用包ID|path|yes|
 
 响应示例:
 
@@ -805,14 +797,13 @@ METHOD: POST
 URI： /mec/appstore/v2/apps/{appId}/packages
 METHOD: GET
 ```
-
-| 名称         | 描述                                                         | IN             | 必选 |
-| ------------ | ------------------------------------------------------------ | -------------- | ---- |
-| appId        | 应用ID                                                       | path           | yes  |
-| userId       | 用户ID                                                       | request param  | yes  |
-| access_token | 请求token                                                    | request header | yes  |
-| limit        | 分页查询每页查询数量，建议设置较大值，一次性查询完该应用的所有应用包 | request param  | yes  |
-| offset       | 分页查询起始页，从0开始                                      | request param  | yes  |
+|名称|描述|IN|必选|
+|------------|------------------------------------------------------------|--------------|----|
+|appId|应用ID|path|yes|
+|userId|用户ID|request param|yes|
+|access_token|请求token|request header|yes|
+|limit|分页查询每页查询数量，建议设置较大值，一次性查询完该应用的所有应用包|request param|yes|
+|offset|分页查询起始页，从0开始|request param|yes|
 
 响应示例:
 
@@ -852,11 +843,10 @@ METHOD: GET
 URI： /mec/appstore/v2/apps/{appId}/packages/{packageId}
 METHOD: GET
 ```
-
-| 名称      | 描述     | IN   | 必选 |
-| --------- | -------- | ---- | ---- |
-| appId     | 应用ID   | path | yes  |
-| packageId | 应用包ID | path | yes  |
+|名称|描述|IN|必选|
+|---------|--------|----|----|
+|appId|应用ID|path|yes|
+|packageId|应用包ID|path|yes|
 
 响应示例:
 
@@ -900,17 +890,16 @@ METHOD: GET
 URI： /mec/appstore/v2/packages
 METHOD: GET
 ```
-
-| 名称         | 描述                        | IN             | 必选 |
-| ------------ | --------------------------- | -------------- | ---- |
-| ueserId      | 用户id                      | request param  | yes  |
-| access_token | 请求token                   | request header | yes  |
-| offset       | 分页查询起始页，从0开始     | request param  | yes  |
-| limit        | 分页查询每页查询数量[1,500] | request param  | yes  |
-| appName      | 应用名称                    | request param  | no   |
-| status       | 应用状态                    | request param  | no   |
-| sortType     | 查询排序方式，升序/降序     | request param  | no   |
-| sortItem     | 查询排序字段                | request param  | no   |
+|名称|描述|IN|必选|
+|------------|---------------------------|--------------|----|
+|ueserId|用户id|request param|yes|
+|access_token|请求token|request header|yes|
+|offset|分页查询起始页，从0开始|request param|yes|
+|limit|分页查询每页查询数量[1,500]|request param|yes|
+|appName|应用名称|request param|no|
+|status|应用状态|request param|no|
+|sortType|查询排序方式，升序/降序|request param|no|
+|sortItem|查询排序字段|request param|no|
 
 响应示例:
 
@@ -961,7 +950,7 @@ METHOD: GET
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|appId |应用ID|path |yes|
+|appId|应用ID|path|yes|
 
 
 响应示例:
@@ -1002,10 +991,10 @@ METHOD: POST
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|userId |用户ID|request param |yes|
-|userName |应用名|request param |yes|
-|appId |应用ID|path |yes|
-|entity |评论内容和打分| request body  |yes|
+|userId|用户ID|request param|yes|
+|userName|应用名|request param|yes|
+|appId|应用ID|path|yes|
+|entity|评论内容和打分|request body|yes|
 
 entity请求体示例:
 ```
@@ -1030,12 +1019,11 @@ entity请求体示例:
 URI： /mec/appstore/v2/apps/{appId}/comments
 METHOD: GET
 ```
-
-| 名称   | 描述                    | IN            | 必选 |
-| ------ | ----------------------- | ------------- | ---- |
-| appId  | 应用ID                  | path          | yes  |
-| offset | 分页查询起始页，从0开始 | request param | yes  |
-| limit  | 分页查询每页查询数量[1,500]    | request param | yes  |
+|名称|描述|IN|必选|
+|------|-----------------------|-------------|----|
+|appId|应用ID|path|yes|
+|offset|分页查询起始页，从0开始|request param|yes|
+|limit|分页查询每页查询数量[1,500]|request param|yes|
 
 
 响应示例:
@@ -1085,7 +1073,6 @@ METHOD: GET
 URI： /mec/appstore/v1/packages/pushable
 METHOD: GET
 ```
-
 响应示例:
 ```
 200 OK
@@ -1119,7 +1106,7 @@ METHOD: GET
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|packageId |应用包ID|path |yes|
+|packageId|应用包ID|path|yes|
 
 响应示例:
 ```
@@ -1154,8 +1141,8 @@ METHOD: POST
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|packageId |应用包ID|path |yes|
-|dto |运营商列表|request param |yes|
+|packageId|应用包ID|path|yes|
+|dto|运营商列表|request param|yes|
 
 响应示例:
 ```
@@ -1171,7 +1158,7 @@ METHOD: GET
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|packageId |应用包ID|path |yes|
+|packageId|应用包ID|path|yes|
 
 响应示例:
 ```
@@ -1187,7 +1174,7 @@ METHOD: GET
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|packageId |应用包ID|path |yes|
+|packageId|应用包ID|path|yes|
 
 响应示例:
 ```
@@ -1203,14 +1190,13 @@ METHOD: GET
 URI： /mec/appstore/v2/packages/pushable
 METHOD: GET
 ```
-
-| 名称     | 描述                        | IN            | 必选 |
-| -------- | --------------------------- | ------------- | ---- |
-| limit    | 分页查询每页查询数量[1,500] | request param | yes  |
-| offset   | 分页查询起始页，从0开始     | request param | yes  |
-| sortItem | 查询排序字段                | request param | no   |
-| sortType | 查询排序方式，升序/降序     | request param | no   |
-| appName  | 应用名称                    | request param | no   |
+|名称|描述|IN|必选|
+|--------|---------------------------|-------------|----|
+|limit|分页查询每页查询数量[1,500]|request param|yes|
+|offset|分页查询起始页，从0开始|request param|yes|
+|sortItem|查询排序字段|request param|no|
+|sortType|查询排序方式，升序/降序|request param|no|
+|appName|应用名称|request param|no|
 
 响应示例:
 
@@ -1258,14 +1244,14 @@ METHOD: POST
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|appStoreName |仓库名称|request param |yes|
-|appStoreVersion |仓库版本|request param |yes|
-|company |公司名称|request param |yes|
-|url |访问地址|request param |yes|
-|schema |访问协议|request param |no|
-|appPushIntf |推送方式|request param |no|
-|appdTransId |转换器id|request param |yes|
-|description |描述|request param |no|
+|appStoreName|仓库名称|request param|yes|
+|appStoreVersion|仓库版本|request param|yes|
+|company|公司名称|request param|yes|
+|url|访问地址|request param|yes|
+|schema|访问协议|request param|no|
+|appPushIntf|推送方式|request param|no|
+|appdTransId|转换器id|request param|yes|
+|description|描述|request param|no|
 
 响应示例:
 ```
@@ -1293,7 +1279,7 @@ METHOD: DELETE
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|appStoreId |仓库id|path |yes|
+|appStoreId|仓库id|path|yes|
 
 响应示例:
 ```
@@ -1309,15 +1295,15 @@ METHOD: PUT
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|appStoreId |仓库名称|path |yes|
-|appStoreName |仓库名称|request param |yes|
-|appStoreVersion |仓库版本|request param |yes|
-|company |公司名称|request param |yes|
-|url |访问地址|request param |yes|
-|schema |访问协议|request param |no|
-|appPushIntf |推送方式|request param |no|
-|appdTransId |转换器id|request param |yes|
-|description |描述|request param |no|
+|appStoreId|仓库名称|path |yes|
+|appStoreName|仓库名称|request param|yes|
+|appStoreVersion|仓库版本|request param|yes|
+|company|公司名称|request param|yes|
+|url|访问地址|request param|yes|
+|schema|访问协议|request param|no|
+|appPushIntf|推送方式|request param|no|
+|appdTransId|转换器id|request param|yes|
+|description|描述|request param|no|
 
 响应示例:
 ```
@@ -1345,8 +1331,8 @@ METHOD: GET
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|appStoreName |仓库名称|request param |yes|
-|company |公司名称|request param |yes|
+|appStoreName|仓库名称|request param |yes|
+|company|公司名称|request param |yes|
 
 响应示例:
 ```
@@ -1404,13 +1390,12 @@ METHOD: GET
 URI： /mec/appstore/v2/appstores
 METHOD: GET
 ```
-
-| 名称         | 描述                        | IN            | 必选 |
-| ------------ | --------------------------- | ------------- | ---- |
-| appStoreName | 仓库名称                    | request param | yes  |
-| company      | 公司名称                    | request param | yes  |
-| limit        | 分页查询每页查询数量[1,500] | request param | yes  |
-| offset       | 分页查询起始页，从0开始     | request param | yes  |
+|名称|描述|IN|必选|
+|------------|---------------------------|-------------|----|
+|appStoreName|仓库名称|request param|yes|
+|company|公司名称|request param|yes|
+|limit|分页查询每页查询数量[1,500]|request param|yes|
+|offset|分页查询起始页，从0开始|request param|yes|
 
 响应示例:
 
@@ -1451,14 +1436,14 @@ METHOD: POST
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|basicInfo |基本信息|request param |yes|
-|sourceAppStore |源AppStore|request param |yes|
-|targetAppStore |目标AppStore|request param |yes|
-|atpTestStatus |ATP测试结果|request param |yes|
-|atpTestTaskId |ATP测试任务Id|request param |yes|
-|atpTestReportUrl |ATP测试报告|request param |yes|
-|packageDownloadUrl |应用包下载地址|request param |yes|
-|iconDownloadUrl |应用图标下载地址|request param |yes|
+|basicInfo|基本信息|request param|yes|
+|sourceAppStore|源AppStore|request param|yes|
+|targetAppStore|目标AppStore|request param|yes|
+|atpTestStatus|ATP测试结果|request param|yes|
+|atpTestTaskId|ATP测试任务Id|request param|yes|
+|atpTestReportUrl|ATP测试报告|request param|yes|
+|packageDownloadUrl|应用包下载地址|request param|yes|
+|iconDownloadUrl|应用图标下载地址|request param|yes|
 
 响应示例:
 ```
@@ -1474,7 +1459,7 @@ METHOD: GET
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|messageType |消息类型|request param |no|
+|messageType|消息类型|request param|no|
 
 响应示例:
 ```
@@ -1513,7 +1498,7 @@ METHOD: GET
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|messageId |消息id|request param |yes|
+|messageId|消息id|request param|yes|
 
 响应示例:
 ```
@@ -1550,7 +1535,7 @@ METHOD: DELETE
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|messageId |消息id|request param |yes|
+|messageId|消息id|request param|yes|
 
 响应示例:
 ```
@@ -1583,7 +1568,7 @@ METHOD: PUT
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|messageId |消息id|request param |yes|
+|messageId|消息id|request param|yes|
 
 响应示例:
 ```
@@ -1599,17 +1584,16 @@ METHOD: PUT
 URI： /mec/appstore/v2/messages
 METHOD: POST
 ```
-
-| 名称               | 描述             | IN            | 必选 |
-| ------------------ | ---------------- | ------------- | ---- |
-| basicInfo          | 基本信息         | request param | yes  |
-| sourceAppStore     | 源AppStore       | request param | yes  |
-| targetAppStore     | 目标AppStore     | request param | yes  |
-| atpTestStatus      | ATP测试结果      | request param | yes  |
-| atpTestTaskId      | ATP测试任务Id    | request param | yes  |
-| atpTestReportUrl   | ATP测试报告      | request param | yes  |
-| packageDownloadUrl | 应用包下载地址   | request param | yes  |
-| iconDownloadUrl    | 应用图标下载地址 | request param | yes  |
+|名称|描述|IN|必选|
+|------------------|----------------|-------------|----|
+|basicInfo|基本信息|request param|yes|
+|sourceAppStore|源AppStore|request param|yes|
+|targetAppStore|目标AppStore|request param|yes|
+|atpTestStatus|ATP测试结果|request param|yes|
+|atpTestTaskId|ATP测试任务Id|request param|yes|
+|atpTestReportUrl|ATP测试报告|request param|yes|
+|packageDownloadUrl|应用包下载地址|request param|yes|
+|iconDownloadUrl|应用图标下载地址|request param|yes|
 
 响应示例:
 
@@ -1631,15 +1615,14 @@ METHOD: POST
 URI： /mec/appstore/v2/messages
 METHOD: GET
 ```
-
-| 名称        | 描述                        | IN            | 必选 |
-| ----------- | --------------------------- | ------------- | ---- |
-| messageType | 消息类型                    | request param | no   |
-| limit       | 分页查询每页查询数量[1,500] | request param | yes  |
-| offset      | 分页查询起始页，从0开始     | request param | yes  |
-| sortItem    | 查询排序字段                | request param | no   |
-| sortType    | 查询排序方式，升序/降序     | request param | no   |
-| appName     | 应用名称                    | request param | no   |
+|名称|描述|IN|必选|
+|-----------|---------------------------|-------------|----|
+|messageType|消息类型|request param|no|
+|limit|分页查询每页查询数量[1,500]|request param|yes|
+|offset|分页查询起始页，从0开始|request param|yes|
+|sortItem|查询排序字段|request param|no|
+|sortType|查询排序方式，升序/降序|request param|no|
+|appName|应用名称|request param|no|
 
 响应示例:
 
@@ -1687,7 +1670,6 @@ METHOD: GET
 URI： /mec/appstore/v1/packages/pullable
 METHOD: GET
 ```
-
 响应示例:
 ```
 200 OK
@@ -1721,7 +1703,7 @@ METHOD: GET
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|platformId |外部应用仓库ID|path |yes|
+|platformId|外部应用仓库ID|path|yes|
 
 响应示例:
 ```
@@ -1749,33 +1731,34 @@ METHOD: GET
 ```
 
 ### 7.3 拉取应用包
+
 根据packageId拉取应用包。
+
 ```
 URI： /mec/appstore/v1/packages/{packageId}/action/pull
 METHOD: POST
 ```
 |名称|描述|IN|必选|
 |---|---|---|---|
-|packageId |应用包ID|path |yes|
-|PullAppReqDto |拉取请求结构|request body |yes|
+|packageId|应用包ID|path|yes|
+|PullAppReqDto|拉取请求结构|request body|yes|
 
 PullAppReqDto：
-
-| 字段            | 描述           | 类型   | 必选 |
-| --------------- | -------------- | ------ | ---- |
-| sourceStoreId   | 源仓库平台ID   | string | yes  |
-| sourceStoreName | 源仓库平台名称 | string | yes  |
-| name            | 应用名称       | string | yes  |
-| provider        | 应用供应商     | string | yes  |
-| version         | 应用版本       | string | yes  |
-| atpTestStatus   | 应用测试状态   | string | yes  |
-| affinity        | 应用架构       | string | yes  |
-| shortDesc       | 应用描述       | string | yes  |
-| showType        | 应用显示类型   | string | yes  |
-| industry        | 应用行业       | string | yes  |
-| type            | 应用类型       | string | yes  |
-| userId          | 用户ID         | string | yes  |
-| userName        | 用户名称       | string | yes  |
+|字段|描述|类型|必选|
+|---------------|--------------|------|----|
+|sourceStoreId|源仓库平台ID|string|yes|
+|sourceStoreName|源仓库平台名称|string|yes|
+|name|应用名称|string|yes|
+|provider|应用供应商|string|yes|
+|version|应用版本|string|yes|
+|atpTestStatus|应用测试状态|string|yes|
+|affinity|应用架构|string|yes|
+|shortDesc|应用描述|string|yes|
+|showType|应用显示类型|string|yes|
+|industry|应用行业|string|yes|
+|type|应用类型|string|yes|
+|userId|用户ID|string|yes|
+|userName|用户名称|string|yes|
 
 响应示例:
 
@@ -1792,14 +1775,13 @@ PullAppReqDto：
 URI： /mec/appstore/v2/packages/pullable
 METHOD: GET
 ```
-
-| 名称     | 描述                        | IN            | 必选 |
-| -------- | --------------------------- | ------------- | ---- |
-| limit    | 分页查询每页查询数量[1,500] | request param | yes  |
-| offset   | 分页查询起始页，从0开始     | request param | yes  |
-| sortItem | 查询排序字段                | request param | no   |
-| sortType | 查询排序方式，升序/降序     | request param | no   |
-| appName  | 应用名称                    | request param | no   |
+|名称|描述|IN|必选|
+|--------|---------------------------|-------------|----|
+|limit|分页查询每页查询数量[1,500]|request param|yes|
+|offset|分页查询起始页，从0开始|request param|yes|
+|sortItem|查询排序字段|request param|no|
+|sortType|查询排序方式，升序/降序|request param|no|
+|appName|应用名称|request param|no|
 
 响应示例:
 
@@ -1840,15 +1822,14 @@ METHOD: GET
 URI： /mec/appstore/v2/packages/{platfromId}/pullable
 METHOD: GET
 ```
-
-| 名称       | 描述                        | IN            | 必选 |
-| ---------- | --------------------------- | ------------- | ---- |
-| platformId | 外部应用仓库ID              | path          | yes  |
-| limit      | 分页查询每页查询数量[1,500] | request param | yes  |
-| offset     | 分页查询起始页，从0开始     | request param | yes  |
-| sortItem   | 查询排序字段                | request param | no   |
-| sortType   | 查询排序方式，升序/降序     | request param | no   |
-| appName    | 应用名称                    | request param | no   |
+|名称|描述|IN|必选|
+|----------|---------------------------|-------------|----|
+|platformId|外部应用仓库ID|path|yes|
+|limit|分页查询每页查询数量[1,500]|request param|yes|
+|offset|分页查询起始页，从0开始|request param|yes|
+|sortItem|查询排序字段|request param|no|
+|sortType|查询排序方式，升序/降序|request param|no|
+|appName|应用名称|request param|no|
 
 响应示例:
 
@@ -1892,12 +1873,11 @@ METHOD: GET
 URI： /mec/appstore/v1/system/hosts
 METHOD: GET
 ```
-
-| 名称       | 描述                        | IN            | 必选 |
-| ---------- | --------------------------- | ------------- | ---- |
-| userId | 用户ID              | request param          | no  |
-| name | 沙箱环境名称              | request param          | no  |
-| ip | 沙箱环境ip              | request param          | no  |
+|名称|描述|IN|必选|
+|----------|---------------------------|-------------|----|
+|userId|用户ID|request param|no|
+|name|沙箱环境名称|request param|no|
+|ip|沙箱环境ip|request param|no|
 
 响应示例:
 ```
@@ -1925,10 +1905,9 @@ METHOD: GET
 URI： /mec/appstore/v1/system/hosts/{hostId}
 METHOD: GET
 ```
-
-| 名称       | 描述                        | IN            | 必选 |
-| ---------- | --------------------------- | ------------- | ---- |
-| hostId | 沙箱环境id             | path          | yes  |
+|名称|描述|IN|必选|
+|----------|---------------------------|-------------|----|
+|hostId|沙箱环境id|path|yes|
 
 响应示例:
 ```
@@ -1956,10 +1935,9 @@ METHOD: GET
 URI: /mec/appstore/v1/system/hosts
 METHOD: POST
 ```
-
-| 名称       | 描述                        | IN            | 必选 |
-| ------- | ----------- | --------- | -------- |
-| MepHost | 沙箱管理请求结构体 | request body | yes      |
+|名称|描述|IN|必选|
+|-------|-----------|---------|--------|
+|MepHost|沙箱管理请求结构体|request body|yes|
 
 ```
 MepHost
@@ -2002,10 +1980,9 @@ MepHost
 URI: /mec/appstore/v1/system/hosts/{hostId}
 METHOD: DELETE
 ```
-
-| 名称       | 描述                        | IN            | 必选 |
-| ------ | ---------- | --------- | -------- |
-| hostId | 沙箱环境id     | path | yes      |
+|名称|描述|IN|必选|
+|------|----------|---------|--------|
+|hostId|沙箱环境id|path|yes|
 
 响应示例:
 ```
@@ -2019,11 +1996,10 @@ true
 URI: /mec/appstore/v1/system/hosts/{hostId}
 METHOD: PUT
 ```
-
-| 名称       | 描述                        | IN            | 必选 |
-| ------ | ---------- | --------- | -------- |
-| hostId | 沙箱环境id     | path | yes      |
-| MepHost | 沙箱管理请求结构体 | request body | yes      |
+|名称|描述|IN|必选|
+|------|----------|---------|--------|
+|hostId|沙箱环境id|path|yes|
+|MepHost|沙箱管理请求结构体|request body|yes|
 
 ```
 MepHost
@@ -2066,11 +2042,10 @@ MepHost
 URI: /mec/appstore/v1/system/host/files
 METHOD: POST
 ```
-
-| 名称       | 描述                        | IN            | 必选 |
-| ------ | ---------- | --------- | -------- |
-| uploadFile | 上传文件     | request body form | yes      |
-| userId | 用户ID | request param | yes      |
+|名称|描述|IN|必选|
+|------|----------|---------|-------- |
+|uploadFile|上传文件|request body form|yes|
+|userId|用户ID|request param|yes|
 
 
 响应示例:
@@ -2098,14 +2073,13 @@ METHOD: POST
 URI： /mec/appstore/v1/experience/deploy
 METHOD: GET
 ```
-
-| 名称       | 描述                        | IN            | 必选 |
-| ---------- | --------------------------- | ------------- | ---- |
-| appId | 应用ID              | request param          | no  |
-| packageId | 应用包ID              | request param          | no  |
-| userId | 用户ID              | request param          | no  |
-| name | 沙箱环境名称              | request param          | no  |
-| ip | 沙箱环境ip              | request param          | no  |
+|名称|描述|IN|必选|
+|----------|---------------------------|-------------|----|
+|appId|应用ID|request param|no|
+|packageId|应用包ID|request param|no|
+|userId|用户ID|request param|no|
+|name|沙箱环境名称|request param|no|
+|ip|沙箱环境ip|request param|no|
 
 响应示例:
 ```
@@ -2124,13 +2098,12 @@ METHOD: GET
 URI： /mec/appstore/v1/experience/clean
 METHOD: POST
 ```
-
-| 名称       | 描述                        | IN            | 必选 |
-| ---------- | --------------------------- | ------------- | ---- |
-| packageId | 应用包ID              | request param          | yes  |
-| userId | 用户ID              | request param          | no  |
-| name | 沙箱环境名称              | request param          | no  |
-| ip | 沙箱环境ip              | request param          | no  |
+|名称|描述|IN|必选|
+|----------|---------------------------|-------------|----|
+|packageId|应用包ID|request param|yes|
+|userId|用户ID|request param|no|
+|name|沙箱环境名称|request param|no|
+|ip|沙箱环境ip|request param|no|
 
 响应示例:
 ```
@@ -2144,13 +2117,12 @@ true
 URI： /mec/appstore/v1/experience/container/workStatus
 METHOD: POST
 ```
-
-| 名称       | 描述                        | IN            | 必选 |
-| ---------- | --------------------------- | ------------- | ---- |
-| packageId | 应用包ID              | request param          | no  |
-| userId | 用户ID              | request param          | no  |
-| name | 沙箱环境名称              | request param          | no  |
-| ip | 沙箱环境ip              | request param          | no  |
+|名称|描述|IN|必选|
+|----------|---------------------------|-------------|----|
+|packageId|应用包ID|request param|no|
+|userId|用户ID|request param|no|
+|name|沙箱环境名称|request param|no|
+|ip|沙箱环境ip|request param|no|
 
 响应示例:
 ```

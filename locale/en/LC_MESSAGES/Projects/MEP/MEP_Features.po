@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 20:56+0530\n"
+"POT-Creation-Date: 2021-09-09 12:13+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -476,4 +475,96 @@ msgstr ""
 #: ../../Projects/MEP/MEP_Features.md:192
 msgid "**Example**"
 msgstr ""
+
+#: ../../Projects/MEP/MEP_Features.md:196
+msgid "HealthCheck"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Features.md:197
+msgid "需求来源"
+msgstr "Source of demand"
+
+#: ../../Projects/MEP/MEP_Features.md:199
+msgid "*EdgeGallery版本规划"
+msgstr "*EdgeGallery version planning"
+
+#: ../../Projects/MEP/MEP_Features.md:201
+msgid "需求描述（Requirement Description）"
+msgstr "Requirement Description"
+
+#: ../../Projects/MEP/MEP_Features.md:203
+msgid "*Support mec-m check its edge healthy condition"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Features.md:205
+msgid "Usecase"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Features.md:207
+msgid "![](/uploads/images/2021/mep/usecase.png \"healthcheck-usecase.png\")"
+msgstr "![](/uploads/images/2021/cor2020/133933_9f7bd2ec_7625394_en.png \"mecapp-mep.png\")"
+
+#: ../../Projects/MEP/MEP_Features.md:209
+msgid "MECM调用中心侧服务HealthCheck-M，启动整体健康检查服务"
+msgstr "MECM calls the center-side service HealthCheck-M to start the overall health check service"
+
+#: ../../Projects/MEP/MEP_Features.md:210
+msgid "中心侧HealthCheck-M根据MECM调用时body内的mec list检查所辖的边缘节点"
+msgstr "HealthCheck-M on the center side checks the edge nodes under its jurisdiction based on the mec list in the body when the MECM is called"
+
+#: ../../Projects/MEP/MEP_Features.md:211
+msgid "各边缘节点HealthCheck收到中心侧HealthCheck-M的检查信息，先自查内部mep/lcm的健康情况，当边缘侧的mep/lcm均健康时，此边缘节点则认为本边缘节点健康"
+msgstr "Each edge node HealthCheck receives the check information from HealthCheck-M on the center side, and first self-checks the health of the internal mep/lcm. When the mep/lcm on the edge side is healthy, the edge node considers the edge node to be healthy"
+
+#: ../../Projects/MEP/MEP_Features.md:212
+msgid "完成自查后，边缘节点间启动互查机制，被访问的节点mep/lcm均健康则认为节点健康"
+msgstr "After the self-check is completed, the mutual check mechanism is started between the edge nodes, and the visited nodes mep/lcm are all healthy, the node is considered healthy"
+
+#: ../../Projects/MEP/MEP_Features.md:213
+msgid "各边缘节点把通讯后互查结果反馈回HealthCheck-M，HealthCheck-M启动投票机制"
+msgstr "Each edge node feeds back the results of the mutual check after communication to HealthCheck-M, and HealthCheck-M starts the voting mechanism"
+
+#: ../../Projects/MEP/MEP_Features.md:214
+msgid "中心侧HealthCheck-M投票则是，当某节点收到其他节点的通讯成功的结果超过mec list总数的一半时中心侧认为此节点健康"
+msgstr "The HealthCheck-M vote on the center side is that when a node receives more than half of the total number of mec lists, the center side considers this node to be healthy."
+
+#: ../../Projects/MEP/MEP_Features.md:215
+msgid "HealthCheck-M把投票结果反馈给MECM或调用方"
+msgstr "HealthCheck-M feeds back the voting results to MECM or the caller"
+
+#: ../../Projects/MEP/MEP_Features.md:217
+msgid "涉及模块&&EPIC&&Story"
+msgstr "Involving modules&&EPIC&&Story"
+
+#: ../../Projects/MEP/MEP_Features.md:219
+msgid "*MECM"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Features.md:221
+msgid "​      *调用方启动HealthCheck-M，HealthCheck-M访问MECM-inventory获取mec list"
+msgstr "<200b> *The caller starts HealthCheck-M, and HealthCheck-M accesses MECM-inventory to obtain mec list"
+
+#: ../../Projects/MEP/MEP_Features.md:223
+msgid "*MEP"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Features.md:225 ../../Projects/MEP/MEP_Features.md:229
+msgid "​       *边缘侧健康检查本节点MEP情况，MEP和LCM均健康时才认为此节点健康"
+msgstr "<200b> *The edge side health checks the MEP condition of the node, and the node is considered healthy only when both MEP and LCM are healthy"
+
+#: ../../Projects/MEP/MEP_Features.md:227
+msgid "*LCM"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Features.md:231
+msgid "业务流程"
+msgstr "Business Process"
+
+#: ../../Projects/MEP/MEP_Features.md:233
+msgid "![](/uploads/images/2021/mep/routine.png \"healthcheck-routine.png\")"
+msgstr ""
+
+#: ../../Projects/MEP/MEP_Features.md:235
+msgid "接口定义"
+msgstr "Interface definition"
 

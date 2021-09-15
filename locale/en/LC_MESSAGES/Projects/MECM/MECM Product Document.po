@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-17 18:37+0530\n"
+"POT-Creation-Date: 2021-09-09 12:13+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,26 +93,13 @@ msgid "4.系统管理：APPLCM注册、APP Rule MGR注册、应用仓库注册"
 msgstr "4.System Management: APPLCM Registration, APP Rule MGR Registration, Application Warehouse Registration"
 
 #: ../../Projects/MECM/MECM Document.md:48 Product
-msgid "4.1 APPLCM注册"
-msgstr "4.1 APPLCM Registration"
+msgid "4.1 MEPM注册"
+msgstr "4.1 MEPM registration"
 
 #: ../../Projects/MECM/MECM Document.md:49 Product
-msgid "![](/uploads/images/2021/mecm/23.png)"
-msgstr "![](/uploads/images/2021/mecm/23_24_en.png)"
-
-#: ../../Projects/MECM/MECM Document.md:50 Product
-msgid "4.2 APP Rule MGR注册"
-msgstr "4.2 APP Rule MGR Registration"
-
-#: ../../Projects/MECM/MECM Document.md:51 Product
-msgid "![](/uploads/images/2021/mecm/24.png)"
-msgstr "![](/uploads/images/2021/mecm/23_24_en.png)"
-
-#: ../../Projects/MECM/MECM Document.md:52 Product
 msgid "4.4 应用仓库注册"
 msgstr "4.4 Application Warehouse Registration"
 
-#: ../../Projects/MECM/MECM Document.md:53 Product
+#: ../../Projects/MECM/MECM Document.md:50 Product
 msgid "![](/uploads/images/2021/mecm/25.png)"
 msgstr "![](/uploads/images/2021/mecm/25_en.png)"
-
