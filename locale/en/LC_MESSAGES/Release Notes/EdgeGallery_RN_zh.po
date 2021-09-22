@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-13 11:30+0530\n"
+"POT-Creation-Date: 2021-09-21 11:54+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -709,7 +709,7 @@ msgstr "[**Requirements/Release Plan Detailed Description** ](https://gitee.com/
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:179
 msgid "![](/uploads/images/2021/v1.1/NewFeature.png \"NewFeature.png\")"
-msgstr ""
+msgstr "![](/uploads/images/2021/v1.1/NewFeature_en.png \"NewFeature.png\")"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:181
 msgid "**AI软硬件能** 支撑昇腾/Atlas硬件以及开放API"
