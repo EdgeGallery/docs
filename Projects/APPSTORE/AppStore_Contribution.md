@@ -45,7 +45,7 @@
 
 ### User Management
 
-1、下载user-mgmt-be代码和user-mgmt-fe代码
+1.下载 user-mgmt-be 代码和 user-mgmt-fe 代码
 
 2、安装node.js和npm，进入user-mgmt-fe文件夹，运行`npm install`和`npm run build`
 
@@ -69,7 +69,7 @@
 
 ![](/uploads/images/2021/cor2020/154023_9c49d20c_7625245.jpeg "appstore-be1.jpg")
 
-4、运行MainServer函数，启动appstore-be
+4.运行 MainServer 函数，启动 appstore-be
 
 ### AppStore-fe
 
