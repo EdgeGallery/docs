@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-21 11:54+0530\n"
+"POT-Creation-Date: 2021-09-23 18:20+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -301,7 +301,7 @@ msgstr ""
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md
 msgid "[【mecm】【Security】lcm，rule，apm，appo，inventory，k8xplugin等pod中usr/app/log目录下没有日志文件](https://e.gitee.com/OSDT/issues/list?issue=I3XSH9)"
-msgstr "[[Mecm][Security] There are no log files in the usr/app/log directory in pods such as lcm, rule, apm, appo, inventory, k8xplugin](https://e.gitee.com/OSDT/issues/list?issue =I3XSH9)"
+msgstr "[[Mecm] [Security] There are no log files in the usr/app/log directory in pods such as lcm, rule, apm, appo, inventory, k8xplugin, etc.](https://e.gitee.com/OSDT/issues/list?issue=I3XSH9)"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md
 msgid "已修复"
