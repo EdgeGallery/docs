@@ -12,6 +12,79 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 - [开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
 
 
+ Version: v1.3.0
+--------------
+
+ - Release Date: 2021-10-12
+ - Image Version: v1.3.0
+
+**新开源仓库列表**
+None
+
+**New Features**
+
+[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.3)
+
+
+
+* **Edge Native架构落地优化**
+    - 南向IoT设备Profile Management完善
+        - 边缘侧集成Kuiper，Flink等Stream analyzer进行数据的清洗：如整形与格式化，上报大数据系统内；也可以通过云边接口上传至公有云进行进一步的数据计算，如机器学习等
+        - 集成业界IoT协议栈，如Fledge，EdgeX，KubeEdge等开源组件，实现MQTT、OPCUA等典型协议支持
+        - 支持大数据平台接入，支持标准化工业平台配置等
+    - 三方生态平台对接增强
+        - 整合抽象管理周边系统，如MEAO/MEPM，IaaS（如Openstack，Kubernetes， K3S, 华为Fushionsphere）等，公有云，其他边缘系统（如Fledge，KubeEdge），测试系统（如ATP），其他应用商店
+    - 边缘自治系统自助服务增强
+        - 支持企业用户通过自助服务界面来购买边缘计算一级资源，二级资源
+        - 支持企业用户查看资源使用，应用运行以及upf网络连接等状态
+    - Edge AI能力全面优化
+        - 集成Tensorflow Lite，MindSpore Lite，增强EdgeGallery AI相关框架能力
+        - 通过wasmEdge进行AI能力大幅瘦身以及定制优化
+* **E2E边缘应用自助订购以及开发集成优化**
+    - 虚机应用集成流程优化
+        - 优化虚机镜像包压缩管理，通过分片技术，实现镜像包大小压缩比提升500%。
+        - 支持应用VM包（镜像不含应用业务）孵化能力，支持常见的GuestOS或者自定义OS，支持APP的安装与调测（可选），镜像导出后制作包，上传应用仓库。
+        - 直接对接商用系统：EdgeGallery应用市场实现与MEAO系统对接，EdgeGallery上应用包可以直接推送到商用MEAO系统中。
+    - 大应用传输体验优化
+        - 增量大包制作效率提升：支持APPD中部分参数动态修改，支持二次大包制作，减少应用包制作时间3-4小时。
+        - Appstore支持分片下载，即MEAO可以通过分片下载、上传机制进行应用包传递，提升应用传输稳定性
+        - 增强传输加密，保证应用传递过程的安全性
+    - APP Store应用订购上线支持
+        - 首次探索应用的购买与变现流程：通过APP Store添加APP购买入口，打通APP从购买到部署、监控的端到端流程
+        - APP Store上应用对接联通、移动等多厂商商用MEAO，打通变现流程
+* **新增模块特性**
+    - ATP能力自动化测试能力增强
+        - 增强安全性测试含病毒、端口和漏洞扫描，以及时延，带宽等性能测试
+        - 支持测试用例灵活可定义的用例参数配置
+    - 沙箱管理能力提升
+        - 支持沙箱的远程管理和运维能力
+ * **其他**
+    - [应用创新](https://47.243.125.138:30091/#/home): 完成150+应用集成、落地25+创新基地
+    - 体验优化: [AppStore](https://47.243.125.138:30091/#/home)、[Developer](https://47.243.125.138:30092/#/)、[MECM](https://47.243.125.138:30093/)各平台界面全面升级优化
+
+
+**Bug Fixes**
+
+  参见 [EdgeGallery v1.3.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.2%20Test%20Report.md)
+
+
+ **Security Notes**
+
+参见 [EdgeGallery v1.3.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.2/EG%20v1.2%20Security%20Test%20Report.md)
+
+
+**Fixed/Known Security Issues**
+
+ **Known Vulnerabilities in Used Modules**
+
+ EdgeGallery v1.3.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
+
+
+
+
+-----------------------------------------------------------------------------
+
+
  Version: v1.2.0
 --------------
 
