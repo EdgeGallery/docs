@@ -63,12 +63,12 @@ None
 
 **Bug Fixes**
 
-  参见 [EdgeGallery v1.3.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.2%20Test%20Report.md)
+  参见 [EdgeGallery v1.3.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.3%20Test%20Report.md)
 
 
  **Security Notes**
 
-参见 [EdgeGallery v1.3.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.2/EG%20v1.2%20Security%20Test%20Report.md)
+参见 [EdgeGallery v1.3.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.3%20Test%20Report.md)
 
 
 **Fixed/Known Security Issues**
