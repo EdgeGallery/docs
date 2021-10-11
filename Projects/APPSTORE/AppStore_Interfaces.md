@@ -1946,15 +1946,16 @@ METHOD: POST
 ```
 MepHost
 {
-  "hostId": "string",
   "name": "string",
   "address": "string",
   "architecture": "string",
   "status": "NORMAL",
-  "ip": "string",
+  "lcmIp": "string",
+  "mecHost": "string",
   "protocol": "string",
   "port": 0,
   "os": "string",
+  "parameter":"string",
   "portRangeMin": 0,
   "portRangeMax": 0
 }
@@ -1969,10 +1970,12 @@ MepHost
   "address": "string",
   "architecture": "string",
   "status": "NORMAL",
-  "ip": "string",
+  "lcmIp": "string",
+  "mecHost": "string",
   "protocol": "string",
   "port": 0,
   "os": "string",
+  "parameter":"string",
   "portRangeMin": 0,
   "portRangeMax": 0
 }
@@ -2013,10 +2016,12 @@ MepHost
   "address": "string",
   "architecture": "string",
   "status": "NORMAL",
-  "ip": "string",
+  "lcmIp": "string",
+  "mecHost": "string",
   "protocol": "string",
   "port": 0,
   "os": "string",
+  "parameter":"string",
   "portRangeMin": 0,
   "portRangeMax": 0
 }
@@ -2031,10 +2036,12 @@ MepHost
   "address": "string",
   "architecture": "string",
   "status": "NORMAL",
-  "ip": "string",
+  "lcmIp": "string",
+  "mecHost": "string",
   "protocol": "string",
   "port": 0,
   "os": "string",
+  "parameter":"string",
   "portRangeMin": 0,
   "portRangeMax": 0
 }
