@@ -10,7 +10,7 @@ ATP Dependency
 |org.reactivestreams|reactive-streams|1.0.0 |CC0|Y|
 |org.springframework.boot|spring-boot-configuration-processor|2.1.6.RELEASE |Apache License, Version 2.0|Y|
 |org.springframework.boot|spring-boot-starter-jdbc|2.1.6.RELEASE |Apache License, Version 2.0|Y|
-|org.mybatis.spring.boot|mybatis-spring-boot-starter|2.1.1 |The Apache Software License, Version 2.0|Y|
+|org.mybatis.spring.boot|mybatis-spring-boot-starter|2.2.0 |The Apache Software License, Version 2.0|Y|
 |org.springframework.boot|spring-boot-starter-test|2.1.6.RELEASE |Apache License, Version 2.0|Y|
 |org.projectlombok|lombok|1.18.10 |The MIT License|Y|
 |io.lettuce|lettuce-core|5.1.8.RELEASE |Apache License, Version 2.0|Y|
@@ -25,13 +25,15 @@ ATP Dependency
 |org.jmockit|jmockit|1.19|The MIT License|Y|
 |org.jmockit|jmockit-coverage|1.19|The MIT LICENSE|Y|
 |org.apache.ant|ant|1.8.2 |The Apache Software License, Version 2.0|Y|
-|org.springframework.security|spring-security-test|5.3.4.RELEASE |The Apache Software License, Version 2.0|Y|
+|org.springframework.security|spring-security-test|5.3.10.RELEASE |The Apache Software License, Version 2.0|Y|
 |commons-io|commons-io|2.6|Apache License, Version 2.0|Y|
 |com.h2database|h2|1.4.199 |MPL 2.0 or EPL 1.0|Y|
 |commons-fileupload|commons-fileupload|1.3.3 |Apache License, Version 2.0|Y|
 |org.python|jython|2.5.3 |Python Software Foudation License V2|Y|
 |com.alibaba|fastjson|1.2.70 |Apache License, Version 2.0|Y|
 |org.apache.poi|poi-ooxml|4.1.1 |Apache License, Version 2.0|Y|
+|bcprov-jdk15on|org.bouncycastle|1.68 |Bouncy Castle Licence|Y|
+|org.springframework.security|spring-security-jwt|1.1.1.RELEASE |Apache License, Version 2.0|Y|
 
 
 ## ATP-fe 三方件使用清单

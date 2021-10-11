@@ -96,6 +96,7 @@ Example response:
   "status": "running",
   "createTime": "2021-03-01T02:42:29.306+0000",
   "endTime": "2021-03-01T02:43:03.943+0000",
+  "reportPath":"/report/68016a29-75da-4f3e-aa00-42ed731dbc3f.pdf",
   "user": {
     "userId": "4eed814b-5d29-4e4c-ba73-51fc6db4ed86",
     "userName": "atp"
