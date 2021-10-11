@@ -2096,7 +2096,7 @@ METHOD: GET
 ```
 200 OK
 {
-    "data": "testAPP:30208:127.0.0.1",
+    "data": "[{"serviceName":"testApp","serviceName":"30258","mecHost":"127.0.0.1"}]",
     "retCode": 0,
     "params": "[string]",
     "message": "string"
@@ -2139,7 +2139,7 @@ METHOD: POST
 ```
 200 OK
 {
-    "data": "testAPP:30208:127.0.0.1",
+    "data": "[{"serviceName":"testApp","serviceName":"30258","mecHost":"127.0.0.1"}]",
     "retCode": 0,
     "params": "[string]",
     "message": "string"
