@@ -8,7 +8,7 @@ AppStore is divided into two parts: the front and back parts. [AppStore BE][1]is
 
 ## Code architecture
 
-![](/uploads/images/2021/appstore/app_structure.png)
+![](/uploads/images/2021/1009/appstore/app_structure.png)
 
 1. AppStore FE: The front-end framework of the developer platform, developed using VUE.
 2. AppStore BE: Developer platform background framework, developed using SpringBoot+ServiceComb. (For ServiceComb, please refer to here: https://servicecomb.apache.org/cn/)
