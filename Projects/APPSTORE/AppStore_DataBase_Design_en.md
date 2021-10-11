@@ -59,6 +59,9 @@ create TABLE if not exists catalog_package_table (
         INSTANCETENENTID         VARCHAR(100)       NULL,
         INSTANCEPACKAGEID        VARCHAR(255)       NULL,
         EXPERIENCEABLE           boolean            DEFAULT false,
+        STARTEXPTIME             VARCHAR(100)       NULL,
+        EXPERIENCEABLEIP         VARCHAR(100)       NULL,
+        MECHOST                  VARCHAR(100)       NULL,
         CONSTRAINT catalog_package_table_pkey PRIMARY KEY (PACKAGEID)
     );
 ```
@@ -87,7 +90,7 @@ create TABLE if not exists app_store_table (
         URL                      VARCHAR(256)       NOT NULL,
         SCHEMA                   VARCHAR(16)        NULL,
         APPPUSHINTF              VARCHAR(256)       NULL,
-        APPDTRANSID              VARCHAR(64)        NULL,
+        APPDTRANSID               VARCHAR(64)        NULL,
         DESCRIPTION              VARCHAR(256)       NULL,
         ADDEDTIME                TIMESTAMP          NOT NULL,
         MODIFIEDTIME             TIMESTAMP          NULL,
@@ -103,7 +106,7 @@ create TABLE if not exists pushable_package_table (
         LATESTPUSHTIME TIMESTAMP NOT NULL,
         PUSHTIMES INTEGER NOT NULL DEFAULT 0,
         SOURCEPLATFORM VARCHAR(100) NOT NULL,
-        CONSTRAINT pushable_package_table_pkey PRIMARY KEY (PACKAGEID)
+        CONSTRAINT PUSHABLE_PACKAGE_TABLE_PKEY PRIMARY KEY (PACKAGEID)
     );
 ```
 
@@ -136,9 +139,8 @@ create TABLE if not exists message_table (
 ```
 
 - tbl_service_host: Store sandbox environment information
-
 ```
-CREATE TABLE IF NOT EXISTS TBL_SERVICE_HOST (
+create TABLE if not exists tbl_service_host (
         HOST_ID VARCHAR(50) NOT NULL,
         USER_ID VARCHAR(50) DEFAULT NULL,
         NAME VARCHAR(100) DEFAULT NULL,
@@ -153,15 +155,14 @@ CREATE TABLE IF NOT EXISTS TBL_SERVICE_HOST (
         PORT_RANGE_MAX INTEGER DEFAULT 0,
         PORT INTEGER DEFAULT 0,
         VNC_PORT INTEGER DEFAULT NULL,
-        PARAMETER VARCHAR(500) DEFAULT 22,
+        PARAMETER text DEFAULT NULL,
         DELETE BOOLEAN DEFAULT NULL
     );
 ```
 
-- pushable_package_table: Store the k8s file information of the sandbox environment
-
+- tbl_uploaded_file: Store the k8s file information of the sandbox environment
 ```
-CREATE TABLE IF NOT EXISTS TBL_UPLOADED_FILE (
+create TABLE if not exists tbl_uploaded_file (
         FILE_ID VARCHAR(50) NOT NULL DEFAULT NULL,
         FILE_NAME VARCHAR(255) DEFAULT NULL,
         IS_TEMP BOOL DEFAULT NULL,

@@ -7,8 +7,8 @@
 |aopalliance|aopalliance|1.0 |Public Domain|N|
 |com.fasterxml|classmate|1.4.0 |The Apache Software License, Version 2.0|N|
 |com.fasterxml.jackson.core|jackson-annotations|2.9.0 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.core|jackson-core|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.core|jackson-databind|2.9.10.6 |The Apache Software License, Version 2.0|Y|
+|com.fasterxml.jackson.core|jackson-core|2.10.5 |The Apache Software License, Version 2.0|N|
+|com.fasterxml.jackson.core|jackson-databind|2.10.5.1 |The Apache Software License, Version 2.0|Y|
 |com.fasterxml.jackson.dataformat|jackson-dataformat-xml|2.9.9 |The Apache Software License, Version 2.0|N|
 |com.fasterxml.jackson.dataformat|jackson-dataformat-yaml|2.9.9 |The Apache Software License, Version 2.0|N|
 |com.fasterxml.jackson.datatype|jackson-datatype-jdk8|2.9.9 |The Apache Software License, Version 2.0|N|
@@ -19,7 +19,7 @@
 |com.github.ben-manes.caffeine|caffeine|2.6.2 |Apache License, Version 2.0|N|
 |com.github.waffle|waffle-jna|1.9.1 |Eclipse Public License|N|
 |com.google.code.findbugs|jsr305|3.0.2 |The Apache Software License, Version 2.0|N|
-|com.google.code.gson|gson|2.8.2 |Apache 2.0|Y|
+|com.google.code.gson|gson|2.8.5 |Apache 2.0|Y|
 |com.google.errorprone|error_prone_annotations|2.1.3 |Apache 2.0|N|
 |com.google.guava|guava|26.0-jre |The Apache Software License, Version 2.0|N|
 |com.google.inject|guice|4.2.0 |The Apache Software License, Version 2.0|N|
@@ -92,7 +92,7 @@
 |javax.validation|validation-api|2.0.1.Final |Apache License 2.0|N|
 |javax.ws.rs|javax.ws.rs-api|2.1 |CDDL 1.1 & GPL2 w/ CPE|N|
 |javax.xml.bind|jaxb-api|2.3.1 |CDDL 1.1 & GPL2 w/ CPE|N|
-|junit|junit|4.12 |Eclipse Public License 1.0|Y|
+|junit|junit|4.13 |Eclipse Public License 1.0|Y|
 |log4j|log4j|1.2.17 |The Apache Software License, Version 2.0|     N|
 |net.bytebuddy|byte-buddy|1.9.13 |Apache License, Version 2.0|     N|
 |net.bytebuddy|byte-buddy-agent|1.9.13 |Apache License, Version 2.0|N|
@@ -108,11 +108,11 @@
 |org.apache.ant|ant|1.8.2 |The Apache Software License, Version 2.0|Y|
 |org.apache.ant|ant-launcher|1.8.2 |The Apache Software License, Version 2.0|N|
 |org.apache.commons|commons-lang3|3.8.1 |Apache License, Version 2.0|N|
-|org.apache.httpcomponents|httpclient|4.5.9 |Apache License, Version 2.0|N|
+|org.apache.httpcomponents|httpclient|4.5.10 |Apache License, Version 2.0|N|
 |org.apache.httpcomponents|httpcore|4.4.11 |Apache License, Version 2.0|N|
-|org.apache.logging.log4j|log4j-api|2.11.2 |Apache License, Version 2.0|Y|
-|org.apache.logging.log4j|log4j-core|2.11.2 |Apache License, Version 2.0|Y|
-|org.apache.logging.log4j|log4j-slf4j-impl|2.11.2 |Apache License, Version 2.0|Y|
+|org.apache.logging.log4j|log4j-api|2.13.3 |Apache License, Version 2.0|Y|
+|org.apache.logging.log4j|log4j-core|2.13.3 |Apache License, Version 2.0|Y|
+|org.apache.logging.log4j|log4j-slf4j-impl|2.13.3 |Apache License, Version 2.0|Y|
 |org.apache.servicecomb|common-javassist|1.3.0 |Apache License, Version 2.0|N|
 |org.apache.servicecomb|common-protobuf|1.3.0 |Apache License, Version 2.0|N|
 |org.apache.servicecomb|common-rest|1.3.0 |Apache License, Version 2.0|N|
@@ -144,13 +144,13 @@
 |org.apache.servicecomb|transport-highway|1.3.0 |Apache License, Version 2.0|N|
 |org.apache.servicecomb|transport-rest-client|1.3.0 |Apache License, Version 2.0|N|
 |org.apache.servicecomb|transport-rest-servlet|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.tomcat|tomcat-annotations-api|9.0.37 |Apache License, Version 2.0|Y|
-|org.apache.tomcat.embed|tomcat-embed-core|9.0.37 |Apache License, Version 2.0|Y|
-|org.apache.tomcat.embed|tomcat-embed-el|9.0.37 |Apache License, Version 2.0|Y|
-|org.apache.tomcat.embed|tomcat-embed-websocket|9.0.37 |Apache License, Version 2.0|Y|
+|org.apache.tomcat|tomcat-annotations-api|9.0.44 |Apache License, Version 2.0|Y|
+|org.apache.tomcat.embed|tomcat-embed-core|9.0.44 |Apache License, Version 2.0|Y|
+|org.apache.tomcat.embed|tomcat-embed-el|9.0.44 |Apache License, Version 2.0|Y|
+|org.apache.tomcat.embed|tomcat-embed-websocket|9.0.44 |Apache License, Version 2.0|Y|
 |org.assertj|assertj-core|3.11.1 |Apache License, Version 2.0|N|
 |org.bouncycastle|bcpkix-jdk15on|1.64 |Bouncy Castle Licence|     N|
-|org.bouncycastle|bcprov-jdk15on|1.60 |Bouncy Castle Licence|Y|
+|org.bouncycastle|bcprov-jdk15on|1.68 |Bouncy Castle Licence|Y|
 |org.checkerframework|checker-qual|2.5.2 |The MIT License|N|
 |org.codehaus.mojo|animal-sniffer-annotations|1.14 |MIT license|N|
 |org.codehaus.woodstox|stax2-api|3.1.4 |The BSD License|N|
@@ -171,49 +171,51 @@
 |org.mybatis|mybatis|3.5.3 |The Apache Software License, Version 2.0|N|
 |org.mybatis|mybatis-spring|2.0.3 |The Apache Software License, Version 2.0|N|
 |org.mybatis.spring.boot|mybatis-spring-boot-autoconfigure|2.1.1 |The Apache Software License, Version 2.0|N|
-|org.mybatis.spring.boot|mybatis-spring-boot-starter|2.1.4 |The Apache Software License, Version 2.0|Y|
+|org.mybatis.spring.boot|mybatis-spring-boot-starter|2.2.0 |The Apache Software License, Version 2.0|Y|
 |org.objenesis|objenesis|2.6 |Apache 2|N|
 |org.osgi|org.osgi.core|4.3.1 |Apache License, Version 2.0|N|
 |org.osgi|org.osgi.enterprise|4.2.0 - no url defined)|Unknown license|N|
 |org.ow2.asm|asm|5.0.4 |BSD|N|
-|org.postgresql|postgresql|42.2.13 |BSD-2-Clause|Y|
+|org.postgresql|postgresql|42.2.16 |BSD-2-Clause|Y|
 |org.projectlombok|lombok|1.18.10 |The MIT License|Y|
 |org.reactivestreams|reactive-streams|1.0.0 |CC0|Y|
 |org.skyscreamer|jsonassert|1.5.0 |The Apache Software License, Version 2.0|N|
-|org.slf4j|jcl-over-slf4j|1.7.26 |MIT License|N|
-|org.slf4j|slf4j-api|1.7.26 |MIT License|Y|
+|org.slf4j|jcl-over-slf4j|1.7.30 |MIT License|N|
+|org.slf4j|slf4j-api|1.7.30 |MIT License|Y|
 |org.springframework|spring-aop|5.1.13.RELEASE |Apache License, Version 2.0|Y|
-|org.springframework|spring-beans|5.1.8.RELEASE |Apache License, Version 2.0|N|
-|org.springframework|spring-context|5.1.8.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-beans|5.1.13.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-context|5.1.13.RELEASE |Apache License, Version 2.0|N|
 |org.springframework|spring-core|5.1.13.RELEASE |Apache License, Version 2.0|Y|
-|org.springframework|spring-expression|5.1.8.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-expression|5.1.13.RELEASE |Apache License, Version 2.0|N|
 |org.springframework|spring-jcl|5.1.13.RELEASE |Apache License, Version 2.0|Y|
-|org.springframework|spring-jdbc|5.1.8.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-jdbc|5.1.13.RELEASE |Apache License, Version 2.0|N|
 |org.springframework|spring-test|5.1.13.RELEASE |Apache License, Version 2.0|N|
 |org.springframework|spring-tx|5.1.13.RELEASE |Apache License, Version 2.0|Y|
 |org.springframework|spring-web|5.1.13.RELEASE |Apache License, Version 2.0|Y|
-|org.springframework|spring-webmvc|5.1.8.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-webmvc|5.1.13.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-websocket|5.1.13.RELEASE |Apache License, Version 2.0|N|
 |org.springframework.boot|spring-boot|2.1.6.RELEASE |Apache License, Version 2.0|N|
 |org.springframework.boot|spring-boot-autoconfigure|2.1.6.RELEASE |Apache License, Version 2.0|N|
 |org.springframework.boot|spring-boot-configuration-processor|2.1.6.RELEASE |Apache License, Version 2.0|Y|
 |org.springframework.boot|spring-boot-starter|2.1.6.RELEASE |Apache License, Version 2.0|N|
-|org.springframework.boot|spring-boot-starter-jdbc|2.1.6.RELEASE |Apache License, Version 2.0|Y|
+|org.springframework.boot|spring-boot-starter-jdbc|2.3.3.RELEASE |Apache License, Version 2.0|Y|
 |org.springframework.boot|spring-boot-starter-json|2.1.6.RELEASE |Apache License, Version 2.0|N|
-|org.springframework.boot|spring-boot-starter-test|2.1.6.RELEASE |Apache License, Version 2.0|Y|
+|org.springframework.boot|spring-boot-starter-test|2.3.3.RELEASE |Apache License, Version 2.0|Y|
 |org.springframework.boot|spring-boot-starter-tomcat|2.1.6.RELEASE |Apache License, Version 2.0|N|
 |org.springframework.boot|spring-boot-starter-web|2.1.6.RELEASE |Apache License, Version 2.0|N|
+|org.springframework.boot|spring-boot-starter-websocket|2.1.18.RELEASE |Apache License, Version 2.0|N|
 |org.springframework.boot|spring-boot-test|2.1.6.RELEASE |Apache License, Version 2.0|N|
 |org.springframework.boot|spring-boot-test-autoconfigure|2.1.6.RELEASE |Apache License, Version 2.0|N|
 |org.springframework.security|spring-security-config|5.1.5.RELEASE |The Apache Software License, Version 2.0|N|
 |org.springframework.security|spring-security-core|5.1.5.RELEASE |The Apache Software License, Version 2.0|N|
 |org.springframework.security|spring-security-jwt|1.1.1.RELEASE |Apache 2.0|Y|
-|org.springframework.security|spring-security-test|4.2.2.RELEASE |The Apache Software License, Version 2.0|Y|
+|org.springframework.security|spring-security-test|5.3.10.RELEASE |The Apache Software License, Version 2.0|Y|
 |org.springframework.security|spring-security-web|5.1.5.RELEASE |The Apache Software License, Version 2.0|N|
-|org.springframework.security.oauth|spring-security-oauth2|2.5.0.RELEASE |Apache 2.0|Y|
-|org.springframework.security.oauth.boot|spring-security-oauth2-autoconfigure|2.1.10.RELEASE |The Apache Software License, Version 2.0|Y|
+|org.springframework.security.oauth|spring-security-oauth2|2.3.8.RELEASE |Apache 2.0|Y|
+|org.springframework.security.oauth.boot|spring-security-oauth2-autoconfigure|2.2.2.RELEASE |The Apache Software License, Version 2.0|Y|
 |org.xmlunit|xmlunit-core|2.6.2 |The Apache Software License, Version 2.0|N|
 |org.yaml|snakeyaml|1.26 |Apache License, Version 2.0|Y|
-|com.github.docker-java|docker-java|3.2.7 |Apache License, Version 2.0|N|
+|com.github.docker-java|docker-java|3.2.10 |Apache License, Version 2.0|N|
 |org.modelmapper|modelmapper|1.1.0 |Apache License, Version 2.0|Y|
 
 

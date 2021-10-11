@@ -25,11 +25,11 @@
 
 1、下载[Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)
 
-!![](/uploads/images/2021/appstore/download_service-center.png "service center1.jpg")
+!![](/uploads/images/2021/1009/appstore/download_service-center.png "service center1.jpg")
 
 2、解压后运行 start-service-center.bat  和  start-frontend.bat
 
-![](/uploads/images/2021/appstore/start_service-center.png "service center2.jpg")
+![](/uploads/images/2021/1009/appstore/start_service-center.png "service center2.jpg")
 
 ### DataBase
 
@@ -97,54 +97,55 @@ AppStore是开发者发布和上线App应用的市场，由Developer平台开发
 
 ### 登录应用平台
  进入网址后，默认为guest用户，可以查看信息。如果要进行更多操作（如上传应用）还需注册账号，注册完成，使用该账户登录之后便可进入应用平台首页：
-![](/uploads/images/2021/appstore/guest.png "1.1")
-![](/uploads/images/2021/appstore/register_user.png "1.2")
-![](/uploads/images/2021/appstore/login.png "1.3")
-![](/uploads/images/2021/appstore/login_appstore.png "1.4")
+![](/uploads/images/2021/1009/appstore/guest.png "1.1")
+![](/uploads/images/2021/1009/appstore/register_user.png "1.2")
+![](/uploads/images/2021/1009/appstore/login.png "1.3")
+![](/uploads/images/2021/1009/appstore/login_appstore.png "1.4")
 
 
 ### 查看应用
 1. 点击应用查看应用详情，详情界面展示应用版本，行业，类型等基本信息，下侧展示具体介绍，基本信息中的右侧操作中，右侧下载按钮有权限设置，只能下载自己上传的包，管理员用户可以下载所有发布的包和自己上传的包。
 2. 如需对APP进行评论，可以在评论区输入评论，设置评分，鼠标左键点击按钮后，评论提交成功。
-![](/uploads/images/2021/appstore/app_detail.png "2.1")
-![](/uploads/images/2021/appstore/comment.png "2.2")
-![](/uploads/images/2021/appstore/comments.png "2.3")
+![](/uploads/images/2021/1009/appstore/app_detail.png "2.1")
+![](/uploads/images/2021/1009/appstore/comment.png "2.2")
+![](/uploads/images/2021/1009/appstore/comments.png "2.3")
 
 
 ### 发布应用
 1.上传APP，打开APP Store主界面，点击右侧上传图标，打开上传APP对话框。在上传对话框中选择需要上传的APP，上传或选择系统默认提供的APP图标，选择APP行业、类型、架构，填写APP简单描述，点击确认完成上传。
-![](/uploads/images/2021/appstore/upload.png "3.1")
+![](/uploads/images/2021/1009/appstore/upload.png "3.1")
 
 2.应用上传后，会自动跳转至我的应用界面下，上传的应用需要经过平台的atp测试之后才可以发布到仓库。我的应用下是上传的包的基本信息，表格右侧为基本操作，点击测试按钮，会开始创建测试任务，页面为嵌套的atp测试页面，点击开始测试按钮，解析包的依赖，可以看到具体的测试用例有多少条，点击确定后开始测试，页面为测试进展页面，可以返回到我的应用页面，等待测完成
-![](/uploads/images/2021/appstore/totest.png "3.2")
-![](/uploads/images/2021/appstore/test_task.png "3.3")
-![](/uploads/images/2021/appstore/test_success.png "3.4")
+![](/uploads/images/2021/1009/appstore/totest.png "3.2")
+![](/uploads/images/2021/1009/appstore/test_task.png "3.3")
+![](/uploads/images/2021/1009/appstore/test_success.png "3.4")
 
 3.我的应用中测试状态为Test_success（即测试成功）时才能发布应用，点击右侧的发布按钮，发布成功后，在首页可以看到你上传的应用。
-![](/uploads/images/2021/appstore/topublish.png "3.5")
+![](/uploads/images/2021/1009/appstore/topublish.png "3.5")
 
-![](/uploads/images/2021/appstore/published.png "3.6")
+![](/uploads/images/2021/1009/appstore/published.png "3.6")
 
 
 ### 共享应用
 1.应用共享导航下分为外部应用仓库管理、应用推广、应用拉取、消息中心和操作分析。
-![](/uploads/images/2021/appstore/app_share.png "4.1")
+![](/uploads/images/2021/1009/appstore/app_share.png "4.1")
 
 2.外部应用仓库管理页面，可以添加、修改和删除仓库。
-![](/uploads/images/2021/appstore/third_appstores.png "4.2")
+![](/uploads/images/2021/1009/appstore/third_appstores.png "4.2")
 
 3.点击应用共享主菜单下的应用推送菜单查看可推送的应用信息，选择需要推送给运营商或者第三方的应用，打开应用推送操作对话框。点击推送操作对话框左下角执行按钮，触发推送任务，然后查看应用推送到运营商或者第三方的结果。
-![](/uploads/images/2021/appstore/topush.png "4.3")
-![](/uploads/images/2021/appstore/pushed.png "4.4")
+![](/uploads/images/2021/1009/appstore/topush.png "4.3")
+![](/uploads/images/2021/1009/appstore/pushed.png "4.4")
 
 4.点击应用共享主菜单下的应用拉取菜单查看各个外部仓库可拉取的应用信息，选择需要拉取的应用可进行批量拉取。
-![](/uploads/images/2021/appstore/topull.png "4.5")
-![](/uploads/images/2021/appstore/pulled.png "4.6")
+![](/uploads/images/2021/1009/appstore/topull.png "4.5")
+![](/uploads/images/2021/1009/appstore/pulled.png "4.6")
 
 5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。通过单击消息中心右侧面板右上角的接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在“我的应用”界面查看，点击删除按钮则删除该条消息，双击可查看消息详情。
-![](/uploads/images/2021/appstore/messages.png "4.7")
-![](/uploads/images/2021/appstore/message_detail.png "4.8")
+![](/uploads/images/2021/1009/appstore/messages.png "4.7")
+![](/uploads/images/2021/1009/appstore/message_detail.png "4.8")
 
 6.应用推送成功后切换到右边操作分析tab，在操作分析界面查看对应的信息，同时操作分析界面可以查看不同操作如：拉取、下载、通知、推送等类型的消息。
-![](/uploads/images/2021/appstore/operations.png "4.9")
+![](/uploads/images/2021/1009/appstore/operations.png "4.9")
+![](/uploads/images/2021/1009/appstore/notice_table.png "4.10")
 
