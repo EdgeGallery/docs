@@ -1889,10 +1889,12 @@ METHOD: GET
     "address": "string",
     "architecture": "string",
     "status": "NORMAL",
-    "ip": "string",
+    "lcmIp": "string",
+    "mecHost": "string",
     "protocol": "string",
     "port": 0,
     "os": "string",
+    "parameter":"string",
     "portRangeMin": 0,
     "portRangeMax": 0
   }
@@ -1912,21 +1914,23 @@ METHOD: GET
 响应示例:
 ```
 200 OK
-[
-  {
-    "hostId": "string",
-    "name": "string",
-    "address": "string",
-    "architecture": "string",
-    "status": "NORMAL",
-    "ip": "string",
-    "protocol": "string",
-    "port": 0,
-    "os": "string",
-    "portRangeMin": 0,
-    "portRangeMax": 0
-  }
-]
+
+ {
+   "hostId": "string",
+   "name": "string",
+   "address": "string",
+   "architecture": "string",
+   "status": "NORMAL",
+   "lcmIp": "string",
+   "mecHost": "string",
+   "protocol": "string",
+   "port": 0,
+   "os": "string",
+   "parameter":"string",
+   "portRangeMin": 0,
+   "portRangeMax": 0
+ }
+
 ```
 
 ### 8.3 添加沙箱环境
