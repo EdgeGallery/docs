@@ -38,7 +38,7 @@ So in order to build a local development environment, the final startup sequence
 
 3. Create a database named appstoredb
 
-   ![](/uploads/images/2021/1009/cor2020/153833_89c54e53_7625245.jpeg "db1.jpg")
+   ![](/uploads/images/2021/cor2020/153833_89c54e53_7625245.jpeg "db1.jpg")
 
 4. Create a database named usermgmtdb
 
@@ -54,7 +54,7 @@ So in order to build a local development environment, the final startup sequence
 
 5. Configure the runtime environment variables of MainServer in the compiler (here, taking IDEA as an example)
 
-   ![](/uploads/images/2021/1009/cor2020/154011_896d887f_7625245.jpeg "usermgmt1.jpg")
+   ![](/uploads/images/2021/cor2020/154011_896d887f_7625245.jpeg "usermgmt1.jpg")
 
 6. Run the MainServer function and start UserManagement
 
@@ -66,7 +66,7 @@ So in order to build a local development environment, the final startup sequence
 
 3. Configure the runtime environment variables of MainServer in the compiler (here, taking IDEA as an example)
 
-   ![](/uploads/images/2021/1009/cor2020/154023_9c49d20c_7625245.jpeg "appstore-be1.jpg")
+   ![](/uploads/images/2021/cor2020/154023_9c49d20c_7625245.jpeg "appstore-be1.jpg")
 
 4. Run the MainServer function and start appstore-be
 
@@ -86,7 +86,7 @@ So in order to build a local development environment, the final startup sequence
 
 7. Configure the runtime environment variables of GatewayApplication in the compiler (here in IDEA as an example)
 
-   ![](/uploads/images/2021/1009/cor2020/154035_12e727fc_7625245.jpeg "appstore-fe1.jpg")
+   ![](/uploads/images/2021/cor2020/154035_12e727fc_7625245.jpeg "appstore-fe1.jpg")
 
 8. Run GatewayApplication to start WebsiteGateway and AppStore-fe, and the browser can visit http://127.0.0.1:8080/ to access the AppStore homepage
 
