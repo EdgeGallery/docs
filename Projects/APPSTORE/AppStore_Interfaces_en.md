@@ -31,6 +31,7 @@ The document is for the appstore-be project, there are six parts of interfaces i
     - [2.11 Get all packages of app-v2](#211-Get-All-Packages-of-App-v2)
     - [2.12 Get one package-v2](#212-Get-One-Package-v2)
     - [2.13 Get all packages of user-v2](#213-Get-All-Packages-of-User-v2)
+    - [2.14 Download icon of app](#15-Download-Icon-of-App)
   - [3. Comment](#3-Comment)
     - [3.1 Get comments of app](#31-Get-Comments-of-App)
     - [3.2 Submit comment to app](#32-Submit-Comment-to-App)
@@ -57,7 +58,7 @@ The document is for the appstore-be project, there are six parts of interfaces i
     - [6.5 Accept message](#65-Accept-Message)
     - [6.6 Update status](#66-Update-Status)
     - [6.7 Add message-v2](#67-Add-Message-v2)
-    - [6.8 Get all message-v2](#68-Get-All-Message-v2)
+    - [6.8 Get message list-v2](#68-Get-Message-List-v2)
   - [7. APP pull](#7-App-Pull)
     - [7.1 Query pull app list](#71-Query-Pull-App-List)
     - [7.2 Get pull app packages](#72-Get-Pull-App-Packages)
@@ -953,6 +954,23 @@ Example response:
 }
 ```
 
+### 2.14 Download Icon of App
+Download application icon by application id and package id.
+```
+Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/icon
+Method: GET
+```
+|Name|Definition|Type|Required|
+|---|---|---|---|
+|appId |application id|path |yes|
+|packageId |package id|path |yes|
+
+Example response:
+```
+200 OK
+  binary output.
+```
+
 ## 3. Comment
 
 User can submit comments to an application. 
@@ -1627,23 +1645,32 @@ Example response:
 }
 ```
 
-### 6.8 Get All Message-v2
+### 6.8 Get Message List-v2
 
-Get all messages by message type.
+Pagination query messages by condition.
 
 ```
-Resource URI： /mec/appstore/v2/messages
-METHOD: GET
+Resource URI： /mec/appstore/v2/messages/action/query
+METHOD: POST
 ```
 
 | Name        | Definition                               | Type          | Required |
 | ----------- | ---------------------------------------- | ------------- | -------- |
-| messageType | message type                             | request param | no       |
+| QueryMessageReqDto | query message condition           | request body  | yes      |
+
+QueryMessageReqDto
+| Name        | Definition                               | Type          | Required |
+| ----------- | ---------------------------------------- | ------------- | -------- |
+| messageType | message type                             | String        | no       |
 | limit       | number of queries per page, [1,500]      | int           | yes      |
 | offset      | paging query start page, starting from 0 | int           | yes      |
 | sortItem    | query sort field                         | String        | no       |
 | sortType    | query sorting method, ASC/DESC           | String        | no       |
-| appName     | application name                         | request param | no       |
+| appName     | application name                         | String        | no       |
+|timeFlag     |message time flag. enumeration values include: today, within a week, within a month and earlier|enum        |no    |
+|allMessage   |get all message or not  |boolean       |yes      |
+|readable     |Get readed or unread messages when not getting all messages|boolean      |yes    |
+
 
 Example response:
 
@@ -1917,10 +1944,12 @@ Example response:
     "address": "string",
     "architecture": "string",
     "status": "NORMAL",
-    "ip": "string",
+    "lcmIp": "string",
+    "mecHost": "string",
     "protocol": "string",
     "port": 0,
     "os": "string",
+    "parameter":"string",
     "portRangeMin": 0,
     "portRangeMax": 0
   }
@@ -1942,21 +1971,21 @@ Example response:
 
 ```
 200 OK
-[
-  {
-    "hostId": "string",
-    "name": "string",
-    "address": "string",
-    "architecture": "string",
-    "status": "NORMAL",
-    "ip": "string",
-    "protocol": "string",
-    "port": 0,
-    "os": "string",
-    "portRangeMin": 0,
-    "portRangeMax": 0
-  }
-]
+ {
+   "hostId": "string",
+   "name": "string",
+   "address": "string",
+   "architecture": "string",
+   "status": "NORMAL",
+   "lcmIp": "string",
+   "mecHost": "string",
+   "protocol": "string",
+   "port": 0,
+   "os": "string",
+   "parameter":"string",
+   "portRangeMin": 0,
+   "portRangeMax": 0
+ }
 ```
 
 ### 8.3 Create One Host
@@ -1973,15 +2002,16 @@ METHOD: POST
 ```
 MepHost
 {
-  "hostId": "string",
   "name": "string",
   "address": "string",
   "architecture": "string",
   "status": "NORMAL",
-  "ip": "string",
+  "lcmIp": "string",
+  "mecHost": "string",
   "protocol": "string",
   "port": 0,
   "os": "string",
+  "parameter":"string",
   "portRangeMin": 0,
   "portRangeMax": 0
 }
@@ -1991,19 +2021,7 @@ Example response:
 
 ```
 200 OK
-{
-  "hostId": "string",
-  "name": "string",
-  "address": "string",
-  "architecture": "string",
-  "status": "NORMAL",
-  "ip": "string",
-  "protocol": "string",
-  "port": 0,
-  "os": "string",
-  "portRangeMin": 0,
-  "portRangeMax": 0
-}
+true
 ```
 
 ### 8.4 Delete One Host
@@ -2039,15 +2057,16 @@ METHOD: PUT
 ```
 MepHost
 {
-  "hostId": "string",
   "name": "string",
   "address": "string",
   "architecture": "string",
   "status": "NORMAL",
-  "ip": "string",
+  "lcmIp": "string",
+  "mecHost": "string",
   "protocol": "string",
   "port": 0,
   "os": "string",
+  "parameter":"string",
   "portRangeMin": 0,
   "portRangeMax": 0
 }
@@ -2057,19 +2076,7 @@ Example response:
 
 ```
 200 OK
-{
-  "hostId": "string",
-  "name": "string",
-  "address": "string",
-  "architecture": "string",
-  "status": "NORMAL",
-  "ip": "string",
-  "protocol": "string",
-  "port": 0,
-  "os": "string",
-  "portRangeMin": 0,
-  "portRangeMax": 0
-}
+true
 ```
 
 ### 8.6 Upload Configuration File
@@ -2125,7 +2132,7 @@ Example response:
 ```
 200 OK
 {
-    "data": "testAPP:30208:127.0.0.1",
+    "data": "[{"serviceName":"testApp","serviceName":"30258","mecHost":"127.0.0.1"}]",
     "retCode": 0,
     "params": "[string]",
     "message": "string"
@@ -2172,7 +2179,7 @@ Example response:
 ```
 200 OK
 {
-    "data": "testAPP:30208:127.0.0.1",
+    "data": "[{"serviceName":"testApp","serviceName":"30258","mecHost":"127.0.0.1"}]",
     "retCode": 0,
     "params": "[string]",
     "message": "string"
