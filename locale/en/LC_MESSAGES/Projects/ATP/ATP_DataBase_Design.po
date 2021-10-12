@@ -22,33 +22,41 @@ msgid "数据库设计"
 msgstr "Database design"
 
 #: ../../Projects/ATP/ATP_DataBase_Design.md:3
-msgid "在V1.2版本中，较v1.1版本，数据库表TEST_CASE_TABLE，TEST_SCENARIO_TABLE 和TEST_SUITE_TABLE新增了CREATETIME字段，需要在上述3个数据库表中执行如下sql语句：   alter table TEST_CASE_TABLE add column CREATETIME  TIMESTAMP  NULL;   alter table TEST_SCENARIO_TABLE add column CREATETIME  TIMESTAMP  NULL;   alter table TEST_SUITE_TABLE add column CREATETIME  TIMESTAMP  NULL;"
-msgstr "In the V1.2 version, compared to the v1.1 version, the database tables TEST_CASE_TABLE, TEST_SCENARIO_TABLE and TEST_SUITE_TABLE have newly added CREATETIME fields. The following SQL statements need to be executed in the above three database tables: alter table TEST_CASE_TABLE add column CREATETIME TIMESTAMP NULL; alter table TEST_SCENARIO_TABLE add column CREATETIME TIMESTAMP NULL; alter table TEST_SUITE_TABLE add column CREATETIME TIMESTAMP NULL;"
+msgid "在V1.3版本中，较v1.2版本，数据库表TEST_CASE_TABLE新增了configIdList字段，表TASK_TABLE新增字段reportPath，需要在上述2个数据库表中执行如下sql语句："
+msgstr "In the V1.3 version, compared to the v1.2 version, the database tables TEST_CASE_TABLE have newly added configIdList fields. The following SQL statements need to be executed in the above three database tables:"
 
-#: ../../Projects/ATP/ATP_DataBase_Design.md:8
+#: ../../Projects/ATP/ATP_DataBase_Design.md:7
+msgid "新增了配置项的数据库表CONFIG_TABLE，建表信息见下方表结构信息即可"
+msgstr "Adding DB table CONFIG_TABLE, and creating table info can be seen below."
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:9
 msgid "ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用的数据库表格如下："
 msgstr "The ATP database uses open-source PostgreSQL databases with a recommended version of 12.2.The database tables currently designed and applied are as follows:"
 
-#: ../../Projects/ATP/ATP_DataBase_Design.md:10
+#: ../../Projects/ATP/ATP_DataBase_Design.md:11
 msgid "TABLE TASK_TABLE: 存储测试任务信息"
 msgstr "TABLE TASK_TABLE: Storage test task information"
 
-#: ../../Projects/ATP/ATP_DataBase_Design.md:28
+#: ../../Projects/ATP/ATP_DataBase_Design.md:30
 msgid "TEST_CASE_TABLE : 存储测试用例信息"
 msgstr "TEST_CASE_TABLE: Storage test case information"
 
-#: ../../Projects/ATP/ATP_DataBase_Design.md:51
+#: ../../Projects/ATP/ATP_DataBase_Design.md:54
 msgid "TEST_SCENARIO_TABLE: 存储测试场景信息"
 msgstr "TEST_SCENARIO_TABLE: Storage test scene information"
 
-#: ../../Projects/ATP/ATP_DataBase_Design.md:65
+#: ../../Projects/ATP/ATP_DataBase_Design.md:68
 msgid "TEST_SUITE_TABLE: 存储测试套信息"
 msgstr "TEST_SUITE_TABLE: Storage test suite information"
 
-#: ../../Projects/ATP/ATP_DataBase_Design.md:79
+#: ../../Projects/ATP/ATP_DataBase_Design.md:82
 msgid "FILE_TABLE: 存储图标文件信息"
 msgstr "FILE_TABLE: stores icon document information"
 
-#: ../../Projects/ATP/ATP_DataBase_Design.md:90
+#: ../../Projects/ATP/ATP_DataBase_Design.md:93
 msgid "CONTRIBUTION_TABLE: 存储贡献的测试用例信息"
 msgstr "CONTRIBUTION_TABLE: Storage contribution test case information"
+
+#: ../../Projects/ATP/ATP_DataBase_Design.md:108
+msgid "CONFIG_TABLE: 存储配置项信息"
+msgstr "CONFIG_TABLE: Storage config item information"

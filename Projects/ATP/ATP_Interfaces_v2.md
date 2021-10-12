@@ -1,6 +1,6 @@
-atp Interfaces
+atp v2 Interfaces
 ==============
-- [atp Interfaces](#atp-interfaces)
+- [atp v2 Interfaces](#atp-v2-interfaces)
   - [1. Task](#task)
     - [1.1 POST create test task](#post-create-test-task)
     - [1.2 POST run test task](#post-run-test-task)
@@ -51,7 +51,7 @@ Test task for application package
 ### 1.1 POST create test task 
 create test task for application package.
 ```
-Resource URI: /edgegallery/atp/v1/tasks
+Resource URI: /edgegallery/atp/v2/tasks
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -61,17 +61,25 @@ Example response:
 ```
 200 OK
 {
-   "id":"",
-   "packagePath":"",
-   "appName":"",
-   "appVersion":"",
-   "providerId":"",
-   "status":"",
-   "createTime":123456789,
-   "user":{
-       "userId":"",
-       "userName":""
-   }
+    "data":{
+        "id":"",
+        "packagePath":"",
+        "appName":"",
+        "appVersion":"",
+        "providerId":"",
+        "status":"",
+        "createTime":123456789,
+        "user":{
+            "userId":"",
+            "userName":""
+        }
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1",
+        "param2"
+    ]
 }
 
 ```
@@ -79,7 +87,7 @@ Example response:
 ### 1.2 POST run test task 
 Run test task by taskId
 ```
-Resource URI: /edgegallery/atp/v1/tasks/{taskId}/action/run
+Resource URI: /edgegallery/atp/v2/tasks/{taskId}/action/run
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -90,45 +98,52 @@ Example response:
 ```
 200 OK
 {
-  "id": "8ac6e62d-1d20-4193-942e-ece6deff5e4e",
-  "appName": "monitor-service",
-  "appVersion": "1.0",
-  "status": "running",
-  "createTime": "2021-03-01T02:42:29.306+0000",
-  "endTime": "2021-03-01T02:43:03.943+0000",
-  "reportPath":"/report/68016a29-75da-4f3e-aa00-42ed731dbc3f.pdf",
-  "user": {
-    "userId": "4eed814b-5d29-4e4c-ba73-51fc6db4ed86",
-    "userName": "atp"
-  },
-  "providerId": "Huawei",
-  "testScenarios": [
-    {
-      "id": "e71718a5-864a-49e5-855a-5805a5e9f97d",
-      "nameCh": "中国联通",
-      "nameEn": "China Unicom Scenario",
-      "label": "China Unicom",
-      "testSuites": [
-        {
-          "id": "6d04da1b-1f36-4295-920a-8074f7f9d942",
-          "nameCh": "沙箱测试",
-          "nameEn": "Sandbox Test",
-          "testCases": [
+    "data":{
+        "id":"8ac6e62d-1d20-4193-942e-ece6deff5e4e",
+        "appName":"monitor-service",
+        "appVersion":"1.0",
+        "status":"running",
+        "createTime":"2021-03-01T02:42:29.306+0000",
+        "endTime":"2021-03-01T02:43:03.943+0000",
+        "reportPath":"/report/68016a29-75da-4f3e-aa00-42ed731dbc3f.pdf",
+        "user":{
+            "userId":"4eed814b-5d29-4e4c-ba73-51fc6db4ed86",
+            "userName":"atp"
+        },
+        "providerId":"Huawei",
+        "testScenarios":[
             {
-              "id": "4d203173-5555-4f62-aabb-8ebcec357f87",
-              "nameCh": "应用实例化",
-              "nameEn": "Application Instantiation",
-              "descriptionCh": "将应用包部署到边缘节点",
-              "descriptionEn": "Instantiate application and its dependency application on one edge host",
-              "type": "automatic",
-              "result": "failed",
-              "reason": "host ip is empty"
+                "id":"e71718a5-864a-49e5-855a-5805a5e9f97d",
+                "nameCh":"中国联通",
+                "nameEn":"China Unicom Scenario",
+                "label":"China Unicom",
+                "testSuites":[
+                    {
+                        "id":"6d04da1b-1f36-4295-920a-8074f7f9d942",
+                        "nameCh":"沙箱测试",
+                        "nameEn":"Sandbox Test",
+                        "testCases":[
+                            {
+                                "id":"4d203173-5555-4f62-aabb-8ebcec357f87",
+                                "nameCh":"应用实例化",
+                                "nameEn":"Application Instantiation",
+                                "descriptionCh":"将应用包部署到边缘节点",
+                                "descriptionEn":"Instantiate application and its dependency application on one edge host",
+                                "type":"automatic",
+                                "result":"failed",
+                                "reason":"host ip is empty"
+                            }
+                        ]
+                    }
+                ]
             }
-          ]
-        }
-      ]
-    }
-  ] 
+        ]
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
 }
 
 ```
@@ -136,7 +151,7 @@ Example response:
 ### 1.3 GET get task list 
 download one plugin
 ```
-Resource URI: /edgegallery/atp/v1/tasks
+Resource URI: /edgegallery/atp/v2/tasks?limit=10&offset=0
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -144,57 +159,66 @@ Resource URI: /edgegallery/atp/v1/tasks
 |status|status|query param|no|
 |appVersion|appVersion|query param|no|
 |providerId|providerId|query param|no|
+|limit|limit|query param|yes|
+|offset|offset|query param|yes|
 
 Example response:
 ```
 200 OK
-[{
-  "id": "8ac6e62d-1d20-4193-942e-ece6deff5e4e",
-  "appName": "monitor-service",
-  "appVersion": "1.0",
-  "status": "running",
-  "createTime": "2021-03-01T02:42:29.306+0000",
-  "endTime": "2021-03-01T02:43:03.943+0000",
-  "reportPath":"/report/68016a29-75da-4f3e-aa00-42ed731dbc3f.pdf",
-  "user": {
-    "userId": "4eed814b-5d29-4e4c-ba73-51fc6db4ed86",
-    "userName": "atp"
-  },
-  "providerId": "Huawei",
-  "testScenarios": [
-    {
-      "id": "e71718a5-864a-49e5-855a-5805a5e9f97d",
-      "nameCh": "中国联通",
-      "nameEn": "China Unicom Scenario",
-      "label": "China Unicom",
-      "testSuites": [
+{
+    "results":[
         {
-          "id": "6d04da1b-1f36-4295-920a-8074f7f9d942",
-          "nameCh": "沙箱测试",
-          "nameEn": "Sandbox Test",
-          "testCases": [
-            {
-              "id": "4d203173-5555-4f62-aabb-8ebcec357f87",
-              "nameCh": "应用实例化",
-              "nameEn": "Application Instantiation",
-              "descriptionCh": "将应用包部署到边缘节点",
-              "descriptionEn": "Instantiate application and its dependency application on one edge host",
-              "type": "automatic",
-              "result": "failed",
-              "reason": "host ip is empty"
-            }
-          ]
+            "id":"8ac6e62d-1d20-4193-942e-ece6deff5e4e",
+            "appName":"monitor-service",
+            "appVersion":"1.0",
+            "status":"running",
+            "createTime":"2021-03-01T02:42:29.306+0000",
+            "endTime":"2021-03-01T02:43:03.943+0000",
+            "reportPath":"/report/68016a29-75da-4f3e-aa00-42ed731dbc3f.pdf",
+            "user":{
+                "userId":"4eed814b-5d29-4e4c-ba73-51fc6db4ed86",
+                "userName":"atp"
+            },
+            "providerId":"Huawei",
+            "testScenarios":[
+                {
+                    "id":"e71718a5-864a-49e5-855a-5805a5e9f97d",
+                    "nameCh":"中国联通",
+                    "nameEn":"China Unicom Scenario",
+                    "label":"China Unicom",
+                    "testSuites":[
+                        {
+                            "id":"6d04da1b-1f36-4295-920a-8074f7f9d942",
+                            "nameCh":"沙箱测试",
+                            "nameEn":"Sandbox Test",
+                            "testCases":[
+                                {
+                                    "id":"4d203173-5555-4f62-aabb-8ebcec357f87",
+                                    "nameCh":"应用实例化",
+                                    "nameEn":"Application Instantiation",
+                                    "descriptionCh":"将应用包部署到边缘节点",
+                                    "descriptionEn":"Instantiate application and its dependency application on one edge host",
+                                    "type":"automatic",
+                                    "result":"failed",
+                                    "reason":"host ip is empty"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ] 
-}]
+    ],
+    "total":1,
+    "limit":10,
+    "offset":0
+}
 ```
 
 ### 1.4 GET get one task
 get task by taskId
 ```
-Resource URI: /edgegallery/atp/v1/tasks/{taskId}
+Resource URI: /edgegallery/atp/v2/tasks/{taskId}
 ```
 |Name| Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -204,52 +228,59 @@ Example response:
 ```
 200 OK
 {
-  "id": "8ac6e62d-1d20-4193-942e-ece6deff5e4e",
-  "appName": "monitor-service",
-  "appVersion": "1.0",
-  "status": "running",
-  "createTime": "2021-03-01T02:42:29.306+0000",
-  "endTime": "2021-03-01T02:43:03.943+0000",
-  "reportPath":"/report/68016a29-75da-4f3e-aa00-42ed731dbc3f.pdf",
-  "user": {
-    "userId": "4eed814b-5d29-4e4c-ba73-51fc6db4ed86",
-    "userName": "atp"
-  },
-  "providerId": "Huawei",
-  "testScenarios": [
-    {
-      "id": "e71718a5-864a-49e5-855a-5805a5e9f97d",
-      "nameCh": "中国联通",
-      "nameEn": "China Unicom Scenario",
-      "label": "China Unicom",
-      "testSuites": [
-        {
-          "id": "6d04da1b-1f36-4295-920a-8074f7f9d942",
-          "nameCh": "沙箱测试",
-          "nameEn": "Sandbox Test",
-          "testCases": [
+    "data":{
+        "id":"8ac6e62d-1d20-4193-942e-ece6deff5e4e",
+        "appName":"monitor-service",
+        "appVersion":"1.0",
+        "status":"running",
+        "createTime":"2021-03-01T02:42:29.306+0000",
+        "endTime":"2021-03-01T02:43:03.943+0000",
+        "reportPath":"/report/68016a29-75da-4f3e-aa00-42ed731dbc3f.pdf",
+        "user":{
+            "userId":"4eed814b-5d29-4e4c-ba73-51fc6db4ed86",
+            "userName":"atp"
+        },
+        "providerId":"Huawei",
+        "testScenarios":[
             {
-              "id": "4d203173-5555-4f62-aabb-8ebcec357f87",
-              "nameCh": "应用实例化",
-              "nameEn": "Application Instantiation",
-              "descriptionCh": "将应用包部署到边缘节点",
-              "descriptionEn": "Instantiate application and its dependency application on one edge host",
-              "type": "automatic",
-              "result": "failed",
-              "reason": "host ip is empty"
+                "id":"e71718a5-864a-49e5-855a-5805a5e9f97d",
+                "nameCh":"中国联通",
+                "nameEn":"China Unicom Scenario",
+                "label":"China Unicom",
+                "testSuites":[
+                    {
+                        "id":"6d04da1b-1f36-4295-920a-8074f7f9d942",
+                        "nameCh":"沙箱测试",
+                        "nameEn":"Sandbox Test",
+                        "testCases":[
+                            {
+                                "id":"4d203173-5555-4f62-aabb-8ebcec357f87",
+                                "nameCh":"应用实例化",
+                                "nameEn":"Application Instantiation",
+                                "descriptionCh":"将应用包部署到边缘节点",
+                                "descriptionEn":"Instantiate application and its dependency application on one edge host",
+                                "type":"automatic",
+                                "result":"failed",
+                                "reason":"host ip is empty"
+                            }
+                        ]
+                    }
+                ]
             }
-          ]
-        }
-      ]
-    }
-  ] 
+        ]
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
 }
 
 ```
 ### 1.5 PUT modify test case status
 modify manual test case status
 ```
-Resource URI: edgegallery/atp/v1/tasks/{taskId}/testcase
+Resource URI: edgegallery/atp/v2/tasks/{taskId}/testcase
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -273,7 +304,7 @@ true
 ### 1.6 POST  batch delete test tasks
 batch delete test tasks
 ```
-Resource URI: edgegallery/atp/v1/tasks/batch_delete
+Resource URI: edgegallery/atp/v2/tasks/batch_delete
 ```
 
 Example request:
@@ -287,34 +318,51 @@ Example request:
 Example response:
 ```
 {
-   "failed":["id3"]
+    "retCode":5000,
+    "failures":[
+        {
+            "id":"string",
+            "errCode":11111,
+            "message":"string",
+            "params":[
+                "string"
+            ]
+        }
+    ]
 }
 
 ```
 ### 1.7 GET get test tasks analysis
 get test tasks analysis
 ```
-Resource URI: edgegallery/atp/v1/tasks/action/analysize
+Resource URI: edgegallery/atp/v2/tasks/action/analysize
 ```
 
 Example response:
 ```
 200 OK
  {
-   "total":426,
-   "currentMonth":11,
-   "oneMonthAgo":111,
-   "twoMonthAgo":12,
-   "threeMonthAgo":13,
-   "fourMonthAgo":14,
-   "fiveMonthAgo":15
+    "data":{
+        "total":426,
+        "currentMonth":11,
+        "oneMonthAgo":111,
+        "twoMonthAgo":12,
+        "threeMonthAgo":13,
+        "fourMonthAgo":14,
+        "fiveMonthAgo":15
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
 }
 ```
 
 ### 1.8 DELETE delete one test task
 delete one test task
 ```
-Resource URI: edgegallery/atp/v1/tasks/{taskId}
+Resource URI: edgegallery/atp/v2/tasks/{taskId}
 ```
 
 Example response:
@@ -356,7 +404,7 @@ test cases of csar package
 ### 2.1 GET query all test cases 
 query all test cases
 ```
-Resource URI: /edgegallery/atp/v1/testcases
+Resource URI: /edgegallery/atp/v2/testcases?limit=10&offset=0
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -364,37 +412,46 @@ Resource URI: /edgegallery/atp/v1/testcases
 |name|name|query param|no|
 |locale|locale|query param|no|
 |testSuiteIdList|testSuiteIdList|query param|no|
+|limit|limit|query param|yes|
+|offset|offset|query param|yes|
 
 Example response:
 ```
 200 OK
-[{
-  "id": "4d203173-9999-4f62-aabb-8ebcec357f87",
-  "nameCh": "APPD文件目录校验",
-  "nameEn": "APPD File Dir Validation",
-  "type": "automatic",
-  "descriptionCh": "根目录下必须包含APPD文件目录",
-  "descriptionEn": "Root directory must contain APPD file dir",
-  "hashCode": "",
-  "codeLanguage": "java",
-  "expectResultCh": "根目录下存在APPD文件目录",
-  "expectResultEn": "Root directory contains APPD file dir",
-  "testStepCh": "1.打开csar包 2.校验根目录下存在APPD目录",
-  "testStepEn": "1.open csar package 2.validate root directory contains APPD directory",
-  "testSuiteIdList": [
-    "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
-  ],
-  "configIdList": [
-    "522684bd-9999-4b47-aab8-b43f1b4c19c0"
-  ]
-}]
+{
+    "results":[
+        {
+            "id":"4d203173-9999-4f62-aabb-8ebcec357f87",
+            "nameCh":"APPD文件目录校验",
+            "nameEn":"APPD File Dir Validation",
+            "type":"automatic",
+            "descriptionCh":"根目录下必须包含APPD文件目录",
+            "descriptionEn":"Root directory must contain APPD file dir",
+            "hashCode":"",
+            "codeLanguage":"java",
+            "expectResultCh":"根目录下存在APPD文件目录",
+            "expectResultEn":"Root directory contains APPD file dir",
+            "testStepCh":"1.打开csar包 2.校验根目录下存在APPD目录",
+            "testStepEn":"1.open csar package 2.validate root directory contains APPD directory",
+            "testSuiteIdList":[
+                "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
+            ],
+            "configIdList":[
+                "522684bd-9999-4b47-aab8-b43f1b4c19c0"
+            ]
+        }
+    ],
+    "total":1,
+    "limit":10,
+    "offset":0
+}
 
 ```
 
 ### 2.2 POST create test case 
 create test case
 ```
-Resource URI: /edgegallery/atp/v1/testcases
+Resource URI: /edgegallery/atp/v2/testcases
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -416,31 +473,38 @@ Example response:
 ```
 200 OK
 {
-  "id": "4d203173-9999-4f62-aabb-8ebcec357f87",
-  "nameCh": "APPD文件目录校验",
-  "nameEn": "APPD File Dir Validation",
-  "type": "automatic",
-  "descriptionCh": "根目录下必须包含APPD文件目录",
-  "descriptionEn": "Root directory must contain APPD file dir",
-  "hashCode": "",
-  "codeLanguage": "java",
-  "expectResultCh": "根目录下存在APPD文件目录",
-  "expectResultEn": "Root directory contains APPD file dir",
-  "testStepCh": "1.打开csar包 2.校验根目录下存在APPD目录",
-  "testStepEn": "1.open csar package 2.validate root directory contains APPD directory",
-  "testSuiteIdList": [
-    "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
-  ],
-  "configIdList": [
-    "522684bd-9999-4b47-aab8-b43f1b4c19c0"
-  ]
+    "data":{
+        "id":"4d203173-9999-4f62-aabb-8ebcec357f87",
+        "nameCh":"APPD文件目录校验",
+        "nameEn":"APPD File Dir Validation",
+        "type":"automatic",
+        "descriptionCh":"根目录下必须包含APPD文件目录",
+        "descriptionEn":"Root directory must contain APPD file dir",
+        "hashCode":"",
+        "codeLanguage":"java",
+        "expectResultCh":"根目录下存在APPD文件目录",
+        "expectResultEn":"Root directory contains APPD file dir",
+        "testStepCh":"1.打开csar包 2.校验根目录下存在APPD目录",
+        "testStepEn":"1.open csar package 2.validate root directory contains APPD directory",
+        "testSuiteIdList":[
+            "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
+        ],
+        "configIdList":[
+            "522684bd-9999-4b47-aab8-b43f1b4c19c0"
+        ]
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
 }
 ```
 
 ### 2.3 PUT update test case 
 update test case
 ```
-Resource URI: /edgegallery/atp/v1/testcases
+Resource URI: /edgegallery/atp/v2/testcases
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -461,30 +525,37 @@ Example response:
 ```
 200 OK
 {
-  "id": "4d203173-9999-4f62-aabb-8ebcec357f87",
-  "nameCh": "APPD文件目录校验",
-  "nameEn": "APPD File Dir Validation",
-  "type": "automatic",
-  "descriptionCh": "根目录下必须包含APPD文件目录",
-  "descriptionEn": "Root directory must contain APPD file dir",
-  "hashCode": "",
-  "codeLanguage": "java",
-  "expectResultCh": "根目录下存在APPD文件目录",
-  "expectResultEn": "Root directory contains APPD file dir",
-  "testStepCh": "1.打开csar包 2.校验根目录下存在APPD目录",
-  "testStepEn": "1.open csar package 2.validate root directory contains APPD directory",
-  "testSuiteIdList": [
-    "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
-  ],
-  "configIdList": [
-    "522684bd-9999-4b47-aab8-b43f1b4c19c0"
-  ]
+    "data":{
+        "id":"4d203173-9999-4f62-aabb-8ebcec357f87",
+        "nameCh":"APPD文件目录校验",
+        "nameEn":"APPD File Dir Validation",
+        "type":"automatic",
+        "descriptionCh":"根目录下必须包含APPD文件目录",
+        "descriptionEn":"Root directory must contain APPD file dir",
+        "hashCode":"",
+        "codeLanguage":"java",
+        "expectResultCh":"根目录下存在APPD文件目录",
+        "expectResultEn":"Root directory contains APPD file dir",
+        "testStepCh":"1.打开csar包 2.校验根目录下存在APPD目录",
+        "testStepEn":"1.open csar package 2.validate root directory contains APPD directory",
+        "testSuiteIdList":[
+            "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
+        ],
+        "configIdList":[
+            "522684bd-9999-4b47-aab8-b43f1b4c19c0"
+        ]
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
 }
 ```
 ### 2.4 DELETE delete test case 
 delete test case
 ```
-Resource URI: /edgegallery/atp/v1/testcases/{id}
+Resource URI: /edgegallery/atp/v2/testcases/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -499,7 +570,7 @@ true
 ### 2.5 GET query one test case 
 query one test case
 ```
-Resource URI: /edgegallery/atp/v1/testcases/{id}
+Resource URI: /edgegallery/atp/v2/testcases/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -509,31 +580,38 @@ Example response:
 ```
 200 OK
 {
-  "id": "4d203173-9999-4f62-aabb-8ebcec357f87",
-  "nameCh": "APPD文件目录校验",
-  "nameEn": "APPD File Dir Validation",
-  "type": "automatic",
-  "descriptionCh": "根目录下必须包含APPD文件目录",
-  "descriptionEn": "Root directory must contain APPD file dir",
-  "hashCode": "",
-  "codeLanguage": "java",
-  "expectResultCh": "根目录下存在APPD文件目录",
-  "expectResultEn": "Root directory contains APPD file dir",
-  "testStepCh": "1.打开csar包 2.校验根目录下存在APPD目录",
-  "testStepEn": "1.open csar package 2.validate root directory contains APPD directory",
-  "testSuiteIdList": [
-    "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
-  ],
-  "configIdList": [
-    "522684bd-9999-4b47-aab8-b43f1b4c19c0"
-  ]
+    "data":{
+        "id":"4d203173-9999-4f62-aabb-8ebcec357f87",
+        "nameCh":"APPD文件目录校验",
+        "nameEn":"APPD File Dir Validation",
+        "type":"automatic",
+        "descriptionCh":"根目录下必须包含APPD文件目录",
+        "descriptionEn":"Root directory must contain APPD file dir",
+        "hashCode":"",
+        "codeLanguage":"java",
+        "expectResultCh":"根目录下存在APPD文件目录",
+        "expectResultEn":"Root directory contains APPD file dir",
+        "testStepCh":"1.打开csar包 2.校验根目录下存在APPD目录",
+        "testStepEn":"1.open csar package 2.validate root directory contains APPD directory",
+        "testSuiteIdList":[
+            "522684bd-d6df-4b47-aab8-b43f1b4c19c0"
+        ],
+        "configIdList":[
+            "522684bd-9999-4b47-aab8-b43f1b4c19c0"
+        ]
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
 }
 ```
 
 ### 2.6 GET download test case 
 download test case
 ```
-Resource URI: edgegallery/atp/v1/testcases/{id}/action/download
+Resource URI: edgegallery/atp/v2/testcases/{id}/action/download
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -550,33 +628,40 @@ test scenario management
 ### 3.1 GET query all test scenarios 
 query all test scenarios
 ```
-Resource URI: edgegallery/atp/v1/testscenarios
+Resource URI: edgegallery/atp/v2/testscenarios?limit=10&offset=0
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |name|name|query param|no|
 |locale|locale|query param|no|
+|limit|limit|query param|yes|
+|offset|offset|query param|yes|
 
 Example response:
 ```
 200 OK
-[
-  {
-    "id": "4d203111-1111-4f62-aabb-8ebcec357f87",
-    "nameCh": "社区场景",
-    "nameEn": "EdgeGallery Community Scenario",
-    "descriptionCh": "适用于社区场景的测试",
-    "descriptionEn": "suite for EdgeGallery community test",
-    "label": "EdgeGallery"
-  }
-]
+{
+    "results":[
+        {
+            "id":"4d203111-1111-4f62-aabb-8ebcec357f87",
+            "nameCh":"社区场景",
+            "nameEn":"EdgeGallery Community Scenario",
+            "descriptionCh":"适用于社区场景的测试",
+            "descriptionEn":"suite for EdgeGallery community test",
+            "label":"EdgeGallery"
+        }
+    ],
+    "total":1,
+    "limit":10,
+    "offset":0
+}
 
 ```
 
 ### 3.2 POST create test scenario 
 create test scenario 
 ```
-Resource URI: edgegallery/atp/v1/testscenarios
+Resource URI: edgegallery/atp/v2/testscenarios
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -590,20 +675,27 @@ Resource URI: edgegallery/atp/v1/testscenarios
 Example response:
 ```
 200 OK
-  {
-    "id": "4d203111-1111-4f62-aabb-8ebcec357f87",
-    "nameCh": "社区场景",
-    "nameEn": "EdgeGallery Community Scenario",
-    "descriptionCh": "适用于社区场景的测试",
-    "descriptionEn": "suite for EdgeGallery community test",
-    "label": "EdgeGallery"
-  }
+{
+    "data":{
+        "id":"4d203111-1111-4f62-aabb-8ebcec357f87",
+        "nameCh":"社区场景",
+        "nameEn":"EdgeGallery Community Scenario",
+        "descriptionCh":"适用于社区场景的测试",
+        "descriptionEn":"suite for EdgeGallery community test",
+        "label":"EdgeGallery"
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
+}
 ```
 
 ### 3.3 PUT update test scenario
 update test scenario
 ```
-Resource URI: edgegallery/atp/v1/testscenarios/{id}
+Resource URI: edgegallery/atp/v2/testscenarios/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -618,19 +710,26 @@ Resource URI: edgegallery/atp/v1/testscenarios/{id}
 Example response:
 ```
 200 OK
-  {
-    "id": "4d203111-1111-4f62-aabb-8ebcec357f87",
-    "nameCh": "社区场景",
-    "nameEn": "EdgeGallery Community Scenario",
-    "descriptionCh": "适用于社区场景的测试",
-    "descriptionEn": "suite for EdgeGallery community test",
-    "label": "EdgeGallery"
-  }
+{
+    "data":{
+        "id":"4d203111-1111-4f62-aabb-8ebcec357f87",
+        "nameCh":"社区场景",
+        "nameEn":"EdgeGallery Community Scenario",
+        "descriptionCh":"适用于社区场景的测试",
+        "descriptionEn":"suite for EdgeGallery community test",
+        "label":"EdgeGallery"
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
+}
 ```
 ### 3.4 DELETE delete test scenario
 delete test scenario
 ```
-Resource URI: edgegallery/atp/v1/testscenarios/{id}
+Resource URI: edgegallery/atp/v2/testscenarios/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -645,7 +744,7 @@ true
 ### 3.5 GET query one test scenario
 query one test scenario
 ```
-Resource URI: edgegallery/atp/v1/testscenarios/{id}
+Resource URI: edgegallery/atp/v2/testscenarios/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -654,20 +753,27 @@ Resource URI: edgegallery/atp/v1/testscenarios/{id}
 Example response:
 ```
 200 OK
-  {
-    "id": "4d203111-1111-4f62-aabb-8ebcec357f87",
-    "nameCh": "社区场景",
-    "nameEn": "EdgeGallery Community Scenario",
-    "descriptionCh": "适用于社区场景的测试",
-    "descriptionEn": "suite for EdgeGallery community test",
-    "label": "EdgeGallery"
-  }
+{
+    "data":{
+        "id":"4d203111-1111-4f62-aabb-8ebcec357f87",
+        "nameCh":"社区场景",
+        "nameEn":"EdgeGallery Community Scenario",
+        "descriptionCh":"适用于社区场景的测试",
+        "descriptionEn":"suite for EdgeGallery community test",
+        "label":"EdgeGallery"
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
+}
 ```
 
 ### 3.6 GET query all test cases under one scenario
 query all test cases under one scenario
 ```
-Resource URI: edgegallery/atp/v1/testscenarios/testcases
+Resource URI: edgegallery/atp/v2/testscenarios/testcases
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -732,36 +838,43 @@ test suite management
 ### 4.1 GET query all test suite
 query all test suite
 ```
-Resource URI: edgegallery/atp/v1/testsuites
+Resource URI: edgegallery/atp/v2/testsuites?limit=10&offset=0
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |name|name|query param|no|
 |locale|locale|query param|no|
 |scenarioIdList|scenarioIdList|query param|no|
+|limit|limit|query param|yes|
+|offset|offset|query param|yes|
 
 Example response:
 ```
 200 OK
-[
-  {
-    "id": "522684bd-d6df-4b47-aab8-b43f1b4c19c0",
-    "nameCh": "遵从性测试",
-    "nameEn": "Compliance Test",
-    "descriptionCh": "遵从社区APPD标准、ETSI标准对应用包结构进行校验",
-    "descriptionEn": "Validate app package structure according to commnunity and ETSI standard",
-    "scenarioIdList": [
-      "4d203111-1111-4f62-aabb-8ebcec357f87"
-    ]
-  }
-]
+{
+    "results":[
+        {
+            "id":"522684bd-d6df-4b47-aab8-b43f1b4c19c0",
+            "nameCh":"遵从性测试",
+            "nameEn":"Compliance Test",
+            "descriptionCh":"遵从社区APPD标准、ETSI标准对应用包结构进行校验",
+            "descriptionEn":"Validate app package structure according to commnunity and ETSI standard",
+            "scenarioIdList":[
+                "4d203111-1111-4f62-aabb-8ebcec357f87"
+            ]
+        }
+    ],
+    "total":1,
+    "limit":10,
+    "offset":0
+}
 
 ```
 
 ### 4.2 POST create test suite
 create test suite
 ```
-Resource URI: edgegallery/atp/v1/testsuites
+Resource URI: edgegallery/atp/v2/testsuites
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -775,21 +888,28 @@ Example response:
 ```
 200 OK
 {
-  "id": "743abd93-57a3-499d-9591-fa7db86a4778",
-  "nameCh": "安全性测试",
-  "nameEn": "Security Test",
-  "descriptionCh": "应用包安全测试",
-  "descriptionEn": "App package security test",
-  "scenarioIdList": [
-    "4d203111-1111-4f62-aabb-8ebcec357f87"
-  ]
+    "data":{
+        "id":"743abd93-57a3-499d-9591-fa7db86a4778",
+        "nameCh":"安全性测试",
+        "nameEn":"Security Test",
+        "descriptionCh":"应用包安全测试",
+        "descriptionEn":"App package security test",
+        "scenarioIdList":[
+            "4d203111-1111-4f62-aabb-8ebcec357f87"
+        ]
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
 }
 ```
 
 ### 4.3 PUT update test suite
 update test suite
 ```
-Resource URI: edgegallery/atp/v1/testsuites/{id}
+Resource URI: edgegallery/atp/v2/testsuites/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -804,20 +924,27 @@ Example response:
 ```
 200 OK
 {
-  "id": "743abd93-57a3-499d-9591-fa7db86a4778",
-  "nameCh": "安全性测试",
-  "nameEn": "Security Test",
-  "descriptionCh": "应用包安全测试",
-  "descriptionEn": "App package security test",
-  "scenarioIdList": [
-    "4d203111-1111-4f62-aabb-8ebcec357f87"
-  ]
+    "data":{
+        "id":"743abd93-57a3-499d-9591-fa7db86a4778",
+        "nameCh":"安全性测试",
+        "nameEn":"Security Test",
+        "descriptionCh":"应用包安全测试",
+        "descriptionEn":"App package security test",
+        "scenarioIdList":[
+            "4d203111-1111-4f62-aabb-8ebcec357f87"
+        ]
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
 }
 ```
 ### 4.4 DELETE delete test suite
 delete test suite
 ```
-Resource URI: edgegallery/atp/v1/testsuites/{id}
+Resource URI: edgegallery/atp/v2/testsuites/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -832,7 +959,7 @@ true
 ### 4.5 GET query one test suite
 query one test suite
 ```
-Resource URI: edgegallery/atp/v1/testsuites/{id}
+Resource URI: edgegallery/atp/v2/testsuites/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -842,14 +969,21 @@ Example response:
 ```
 200 OK
 {
-  "id": "743abd93-57a3-499d-9591-fa7db86a4778",
-  "nameCh": "安全性测试",
-  "nameEn": "Security Test",
-  "descriptionCh": "应用包安全测试",
-  "descriptionEn": "App package security test",
-  "scenarioIdList": [
-    "4d203111-1111-4f62-aabb-8ebcec357f87"
-  ]
+    "data":{
+        "id":"743abd93-57a3-499d-9591-fa7db86a4778",
+        "nameCh":"安全性测试",
+        "nameEn":"Security Test",
+        "descriptionCh":"应用包安全测试",
+        "descriptionEn":"App package security test",
+        "scenarioIdList":[
+            "4d203111-1111-4f62-aabb-8ebcec357f87"
+        ]
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
 }
 ```
 ## 5. Contribution
@@ -857,30 +991,40 @@ contribution
 ### 5.1 GET query all contribution
 query all contribution
 ```
-Resource URI: edgegallery/atp/v1/contributions
+Resource URI: edgegallery/atp/v2/contributions?limit=10&offset=0
 ```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|name|name|query param|no|
+|limit|limit|query param|yes|
+|offset|offset|query param|yes|
 
 Example response:
 ```
 200 OK
-[
-  {
-    "id": "872b55f8-bfb8-4fb4-be4e-0b643ff375e2",
-    "name": "test",
-    "objective": "test",
-    "step": "test",
-    "expectResult": "test",
-    "type": "text",
-    "createTime": "2021-03-01T09:17:31.915+0000"
-  }
-]
+{
+    "results":[
+        {
+            "id":"872b55f8-bfb8-4fb4-be4e-0b643ff375e2",
+            "name":"test",
+            "objective":"test",
+            "step":"test",
+            "expectResult":"test",
+            "type":"text",
+            "createTime":"2021-03-01T09:17:31.915+0000"
+        }
+    ],
+    "total":1,
+    "limit":10,
+    "offset":0
+}
 
 ```
 
 ### 5.2 POST create contribution
 create contribution
 ```
-Resource URI: edgegallery/atp/v1/contributions
+Resource URI: edgegallery/atp/v2/contributions
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -894,21 +1038,28 @@ Resource URI: edgegallery/atp/v1/contributions
 Example response:
 ```
 200 OK
-  {
-    "id": "872b55f8-bfb8-4fb4-be4e-0b643ff375e2",
-    "name": "test",
-    "objective": "test",
-    "step": "test",
-    "expectResult": "test",
-    "type": "text",
-    "createTime": "2021-03-01T09:17:31.915+0000"
-  }
+{
+    "data":{
+        "id":"872b55f8-bfb8-4fb4-be4e-0b643ff375e2",
+        "name":"test",
+        "objective":"test",
+        "step":"test",
+        "expectResult":"test",
+        "type":"text",
+        "createTime":"2021-03-01T09:17:31.915+0000"
+    },
+    "retCode":0,
+    "message":"errorMsg",
+    "params":[
+        "param1"
+    ]
+}
 ```
 
 ### 5.3 POST batch delete contributions
 batch delete contributions
 ```
-Resource URI: edgegallery/atp/v1/contributions/batch_delete
+Resource URI: edgegallery/atp/v2/contributions/batch_delete
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -926,15 +1077,24 @@ Example response:
 ```
 200 OK
 {
-    "failed":["id3"]
+    "retCode":5000,
+    "failures":[
+        {
+            "id":"string",
+            "errCode":11111,
+            "message":"string",
+            "params":[
+                "string"
+            ]
+        }
+    ]
 }
-
 ```
 
 ### 5.4 GET download contribution script
 download contribution script
 ```
-Resource URI: edgegallery/atp/v1/contributions/{id}/action/download
+Resource URI: edgegallery/atp/v2/contributions/{id}/action/download
 ```
 
 |Name|Definition|Type|Required|
@@ -952,7 +1112,7 @@ file
 ### 6.1 GET query one file
 query one file
 ```
-Resource URI: edgegallery/atp/v1/files/{id}
+Resource URI: edgegallery/atp/v2/files/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -970,7 +1130,7 @@ test model
 ### 7.1 POST import test model
 import test model
 ```
-Resource URI: edgegallery/atp/v1/testmodels/action/import
+Resource URI: edgegallery/atp/v2/testmodels/action/import
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
