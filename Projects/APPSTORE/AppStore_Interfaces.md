@@ -31,7 +31,7 @@
     - [2.11 通过应用ID获取应用包列表-v2](#211-通过应用ID获取应用包列表-v2)
     - [2.12 获取应用包-v2](#212-获取应用包-v2)
     - [2.13 获取应用包列表-v2](#213-获取应用包列表-v2)
-    - [2.14 下载应用包](#214-下载应用包图标)
+    - [2.14 下载应用图标](#214-下载应用图标)
   - [3. 评论](#3-评论)
     - [3.1 获取评论列表](#31-获取评论列表)
     - [3.2 提交评论](#32-提交评论)
@@ -58,7 +58,7 @@
     - [6.5 接收消息](#65-接收消息)
     - [6.6 更新状态](#66-更新状态)
     - [6.7 添加消息-v2](#67-添加消息-v2)
-    - [6.8 获取所有消息-v2](#68-获取所有消息-v2)
+    - [6.8 获取消息列表-v2](#68-获取消息列表-v2)
   - [7. 应用拉取](#7-应用拉取)
     - [7.1 查询可拉取应用列表](#71-查询可推送应用列表)
     - [7.2 获取外部仓库可拉取应用列表](#72-根据仓库id获取该仓库可拉取应用列表)
@@ -937,8 +937,8 @@ METHOD: GET
     "total": 12
 }
 ```
-### 2.14 下载应用包 
-通过应用ID和应用包ID下载应用包图标。
+### 2.14 下载应用图标 
+通过应用ID和应用包ID下载应用图标。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/icon
 METHOD: GET
@@ -1624,22 +1624,34 @@ METHOD: POST
   }
 ```
 
-### 6.8 获取所有消息-v2
+### 6.8 获取消息列表-v2
 
-根据消息类型获取消息。
+根据查询条件分页获取消息。
 
 ```
-URI： /mec/appstore/v2/messages
-METHOD: GET
+URI： /mec/appstore/v2/messages/action/query
+METHOD: POST
 ```
+
+请求参数：
 |名称|描述|IN|必选|
+|---|---|---|---|
+|QueryMessageReqDto|查询消息条件|request body|yes|
+
+
+QueryMessageReqDto
+|字段名|描述|字段类型|必选|
 |-----------|---------------------------|-------------|----|
-|messageType|消息类型|request param|no|
-|limit|分页查询每页查询数量[1,500]|request param|yes|
-|offset|分页查询起始页，从0开始|request param|yes|
-|sortItem|查询排序字段|request param|no|
-|sortType|查询排序方式，升序/降序|request param|no|
-|appName|应用名称|request param|no|
+|messageType|消息类型|String|no|
+|limit|分页查询每页查询数量[1,500]|int|yes|
+|offset|分页查询起始页，从0开始|int|yes|
+|sortItem|查询排序字段|String|no|
+|sortType|查询排序方式，升序/降序|String|no|
+|appName|应用名称|String|no|
+|timeFlag|消息时间标志，枚举值有：今天、一周内、一月内、更早|enum|no|
+|allMessage|是否获取所有消息|boolean|yes|
+|readable|不获取所有消息时，获取已读/未读消息|boolean|yes|
+
 
 响应示例:
 
@@ -1981,21 +1993,7 @@ MepHost
 响应示例:
 ```
 200 OK
-{
-  "hostId": "string",
-  "name": "string",
-  "address": "string",
-  "architecture": "string",
-  "status": "NORMAL",
-  "lcmIp": "string",
-  "mecHost": "string",
-  "protocol": "string",
-  "port": 0,
-  "os": "string",
-  "parameter":"string",
-  "portRangeMin": 0,
-  "portRangeMax": 0
-}
+true
 ```
 
 ### 8.4 删除沙箱环境
@@ -2047,21 +2045,7 @@ MepHost
 响应示例:
 ```
 200 OK
-{
-  "hostId": "string",
-  "name": "string",
-  "address": "string",
-  "architecture": "string",
-  "status": "NORMAL",
-  "lcmIp": "string",
-  "mecHost": "string",
-  "protocol": "string",
-  "port": 0,
-  "os": "string",
-  "parameter":"string",
-  "portRangeMin": 0,
-  "portRangeMax": 0
-}
+true
 ```
 
 ### 8.6 上传沙箱环境配置文件
