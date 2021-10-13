@@ -294,8 +294,8 @@ msgid "spring-security-test"
 msgstr "spring-security-test"
 
 #: ../../Projects/ATP/ATP_Dependency.md
-msgid "5.3.4.RELEASE"
-msgstr "5.3.4.RELEASE"
+msgid "5.3.10.RELEASE"
+msgstr "5.3.10.RELEASE"
 
 #: ../../Projects/ATP/ATP_Dependency.md
 msgid "commons-io"
@@ -368,6 +368,34 @@ msgstr "poi-ooxml"
 #: ../../Projects/ATP/ATP_Dependency.md
 msgid "4.1.1"
 msgstr "4.1.1"
+
+#: ../../Projects/ATP/ATP_Dependency.md
+msgid "bcprov-jdk15on"
+msgstr "bcprov-jdk15on"
+
+#: ../../Projects/ATP/ATP_Dependency.md
+msgid "org.bouncycastle"
+msgstr "org.bouncycastle"
+
+#: ../../Projects/ATP/ATP_Dependency.md
+msgid "1.68"
+msgstr "1.68"
+
+#: ../../Projects/ATP/ATP_Dependency.md
+msgid "Bouncy Castle Licence"
+msgstr "Bouncy Castle Licence"
+
+#: ../../Projects/ATP/ATP_Dependency.md
+msgid "org.springframework.security"
+msgstr "org.springframework.security"
+
+#: ../../Projects/ATP/ATP_Dependency.md
+msgid "spring-security-jwt"
+msgstr "spring-security-jwt"
+
+#: ../../Projects/ATP/ATP_Dependency.md
+msgid "1.1.1.RELEASE"
+msgstr "1.1.1.RELEASE"
 
 #: ../../Projects/ATP/ATP_Dependency.md:34
 msgid "ATP-fe 三方件使用清单"
