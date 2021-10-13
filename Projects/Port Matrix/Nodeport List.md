@@ -8,6 +8,10 @@ Kubernetes NodePort List
 | developer-be | developer-be-0 | N/A| N/A | N/A |
 | developer-fe | developer-fe | developer-fe-svc | 30092| 8443|
 | developer-be-postgres | developer-be-postgres-0 | developer-be-postgres-svc | ClusterIP | 5432 |
+| file-system | file-system | file-system-svc | 30090 | 9500 |
+| filesystem-postgres | filesystem-postgres | filesystem-postgres | ClusterIP | 5432 |
+| healthcheck | healthcheck | healthcheck-svc | 32759 | 9527 |
+| healthcheck-m | healthcheck-m | healthcheck-m-svc | 32757 | 9529 |
 | user-mgmt | user-mgmt  | user-mgmt-svc | 30067| 8067 |
 | user-mgmt-postgres | user-mgmt-postgres-0 | user-mgmt-postgres-svc | ClusterIP | 5432 |
 | user-mgmt-redis | user-mgmt-redis-0 | user-mgmt-redis-svc | ClusterIP | 6379 |
