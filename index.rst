@@ -51,6 +51,11 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
    MEP <Projects/MEP/MEP>
    User Management <Projects/User Management/UserManagement>
    
+.. toctree::
+   :maxdepth: 1
+   :caption: Port Matrix
+
+   Port Matrix <Projects/Port Matrix/Nodeport List>
 
 .. toctree::
    :maxdepth: 1
