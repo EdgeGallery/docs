@@ -25,22 +25,16 @@ None
 
 [ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.3)
 
-* **Edge Native架构落地优化**
+* **亮点功能**
     - 南向IoT设备Profile Management完善
         - 边缘侧集成Kuiper，Flink等Stream analyzer进行数据的清洗：如整形与格式化，上报大数据系统内；也可以通过云边接口上传至公有云进行进一步的数据计算，如机器学习等
         - 集成业界IoT协议栈，如Fledge，EdgeX，KubeEdge等开源组件，实现MQTT、OPCUA等典型协议支持
         - 支持大数据平台接入，支持标准化工业平台配置等
-    - 边缘自治系统自助服务增强
-        - 支持企业用户查看资源使用，应用运行以及upf网络连接等状态
-    - Edge AI能力全面优化
-        - 集成Tensorflow Lite，MindSpore Lite，增强EdgeGallery AI相关框架能力
-        - 通过wasmEdge进行AI能力大幅瘦身以及定制优化
-* **E2E边缘应用自助订购以及开发集成优化**
     - 大应用传输体验优化
         - 大包制作效率提升：支持二次大包制作，虚机镜像瘦身60%，减少应用包制作时间3-4小时。
         - Appstore支持分片下载，即MEAO可以通过分片下载、上传机制进行应用包传递，提升应用传输稳定性
 
-* **新增模块特性**
+* **模块增强**
     - ATP能力自动化测试能力增强
         - 增强安全性测试含病毒、端口和漏洞扫描，以及时延等性能测试
         - 增加应用使能测试，含服务注册、更新、下线等指标测试
@@ -57,11 +51,20 @@ None
     - AppStore平台能力增强
         - 增加APPD转换功能
     - MEP完全实现ETSI接口规范
+    - Edge AI能力全面优化
+        - 集成Tensorflow Lite，MindSpore Lite，增强EdgeGallery AI相关框架能力
+    - 安全增强
+        - 对所有流量添加了访问频率限制，短时间访问频率达到限定值会禁止访问，极大降低了遭受DOS攻击和暴力破解的风险
 
 
  * **其他**
     - [应用创新](https://47.243.125.138:30091/#/home): 完成150+应用集成、落地30+创新基地
     - 体验优化: [AppStore](https://47.243.125.138:30091/#/home)、[Developer](https://47.243.125.138:30092/#/)、[MECM](https://47.243.125.138:30093/)各平台界面全面升级优化
+    - 1.4功能预告
+        - 通过wasmEdge进行AI能力大幅瘦身以及定制优化
+        - E2E边缘应用自助订购以及开发集成优化
+        - 边缘自治系统自助服务增强
+            - 支持企业用户查看资源使用，应用运行以及upf网络连接等状态        
 
 
 **Bug Fixes**
