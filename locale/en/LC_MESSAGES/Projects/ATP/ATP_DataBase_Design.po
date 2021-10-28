@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 00:08+0530\n"
+"POT-Creation-Date: 2021-10-28 17:21+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +21,11 @@ msgid "数据库设计"
 msgstr "Database design"
 
 #: ../../Projects/ATP/ATP_DataBase_Design.md:3
-msgid "在V1.3版本中，较v1.2版本，数据库表TEST_CASE_TABLE新增了configIdList字段，表TASK_TABLE新增字段reportPath，需要在上述2个数据库表中执行如下sql语句："
-msgstr "In the V1.3 version, compared to the v1.2 version, the database tables TEST_CASE_TABLE have newly added configIdList fields. The following SQL statements need to be executed in the above three database tables:"
+msgid "在V1.3版本中，较v1.2版本，数据库表TEST_CASE_TABLE新增了configIdList字段，表TASK_TABLE新增字段reportPath，需要在上述2个数据库表中执行如下sql语句：   alter table TEST_CASE_TABLE add column configIdList  TEXT  NULL;   alter table TASK_TABLE add column reportPath varchar(200) NULL;"
+msgstr "In the V1.3 version, compared with the v1.2 version, the database table TEST_CASE_TABLE has a new configIdList field, and the table TASK_TABLE has a new field reportPath. The following SQL statements need to be executed in the above two database tables: alter table TEST_CASE_TABLE add column configIdList TEXT NULL ; alter table TASK_TABLE add column reportPath varchar(200) NULL;"
 
 #: ../../Projects/ATP/ATP_DataBase_Design.md:7
-msgid "新增了配置项的数据库表CONFIG_TABLE，建表信息见下方表结构信息即可"
+msgid "新增了配置项的数据库表CONFIG_TABLE，建表信息见下方表结构信息即可。"
 msgstr "Adding DB table CONFIG_TABLE, and creating table info can be seen below."
 
 #: ../../Projects/ATP/ATP_DataBase_Design.md:9
@@ -60,3 +59,7 @@ msgstr "CONTRIBUTION_TABLE: Storage contribution test case information"
 #: ../../Projects/ATP/ATP_DataBase_Design.md:108
 msgid "CONFIG_TABLE: 存储配置项信息"
 msgstr "CONFIG_TABLE: Storage config item information"
+
+#~ msgid "在V1.3版本中，较v1.2版本，数据库表TEST_CASE_TABLE新增了configIdList字段，表TASK_TABLE新增字段reportPath，需要在上述2个数据库表中执行如下sql语句："
+#~ msgstr "In the V1.3 version, compared to the v1.2 version, the database tables TEST_CASE_TABLE have newly added configIdList fields. The following SQL statements need to be executed in the above three database tables:"
+
