@@ -7,7 +7,7 @@ The document is for the Applcm project, there is one part of interfaces in the p
 Upload Config File
 
 ```
-Resource URI: /lcmcontroller/v1/configuration
+Resource URI: /lcmcontroller/v2/configuration
 Method: POST
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -34,7 +34,7 @@ Example response:
 ### Delete Config File
 Removes the config file
 ```
-Resource URI: /lcmcontroller/v1/configuration
+Resource URI: /lcmcontroller/v2/configuration
 Method: DELETE
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -50,7 +50,7 @@ Example response:
 ### Instantiate Application
 Application instantiated
 ```
-Resource URI: /lcmcontroller/v1/app_instance/{appInstanceId}/instantiate
+Resource URI: /lcmcontroller/v2/app_instance/{appInstanceId}/instantiate
 Method: POST
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -90,7 +90,7 @@ Example response:
 ### Terminates Application
 Terminates application instance id
 ```
-Resource URI: /lcmcontroller/v1/tenants/{tenantId}/app_instances/{appInstanceId}/terminate
+Resource URI: /lcmcontroller/v2/tenants/{tenantId}/app_instances/{appInstanceId}/terminate
 Method: POST
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -107,7 +107,7 @@ Example response:
 ### Query
 Get the statistics information
 ```
-Resource URI: /lcmcontroller/v1/tenants/{tenantId}/app_instances/{appInstanceId}
+Resource URI: /lcmcontroller/v2/tenants/{tenantId}/app_instances/{appInstanceId}
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -127,7 +127,7 @@ Example response:
 ### Query Kpi
 Get cpu , memory and file system size
 ```
-Resource URI: /lcmcontroller/v1/tenants/{tenantId}/hosts/{hostIp}/kpi
+Resource URI: /lcmcontroller/v2/tenants/{tenantId}/hosts/{hostIp}/kpi
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -147,7 +147,7 @@ Example response:
 ### Query MepCapabilities
 Get Mep Capabilities
 ```
-Resource URI: /lcmcontroller/v1/tenants/{tenantId}/hosts/{hostIp}/mep_capabilities
+Resource URI: /lcmcontroller/v2/tenants/{tenantId}/hosts/{hostIp}/mep_capabilities
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -191,7 +191,7 @@ Example response:
 ### Get Mep Capability
 Retrieves edge host performance statistics based on capability id
 ```
-Resource URI: /lcmcontroller/v1/tenants/{tenantId}/hosts/{hostIp}/mep_capabilities/{capability_id}
+Resource URI: /lcmcontroller/v2/tenants/{tenantId}/hosts/{hostIp}/mep_capabilities/{capability_id}
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -260,7 +260,7 @@ Example response:
 ### Query workload
 GetWorkloadDescription
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/:appInstanceId/workload/events
+Resource URI: /lcmcontroller/v2/tenants/:tenantId/app_instances/:appInstanceId/workload/events
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -299,7 +299,7 @@ Example response:
 ### Query app instances records
 Sync app instances records
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/sync_updated
+Resource URI: /lcmcontroller/v2/tenants/:tenantId/app_instances/sync_updated
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -317,7 +317,7 @@ Example response:
 ### Query stale records
 Sync app instances stale records
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/app_instances/sync_deleted
+Resource URI: /lcmcontroller/v2/tenants/:tenantId/app_instances/sync_deleted
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -336,7 +336,7 @@ Example response:
 ### Upload package
 Upload package
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages
+Resource URI: /lcmcontroller/v2/tenants/:tenantId/packages
 Method: POST
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -355,7 +355,7 @@ Example response:
 ### Delete package
 Delete package
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId
+Resource URI: /lcmcontroller/v2/tenants/:tenantId/packages/:packageId
 Method: DELETE
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -372,7 +372,7 @@ Example response:
 ### Delete application package on host
 Delete application package on host
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId/hosts/:hostIp
+Resource URI: /lcmcontroller/v2/tenants/:tenantId/packages/:packageId/hosts/:hostIp
 Method: DELETE
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -390,7 +390,7 @@ Example response:
 ### Distribute package
 Distribute package
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId
+Resource URI: /lcmcontroller/v2/tenants/:tenantId/packages/:packageId
 Method: POST
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -407,7 +407,7 @@ Example response:
 ### Query
 Distribution status
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/:packageId
+Resource URI: /lcmcontroller/v2/tenants/:tenantId/packages/:packageId
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -446,7 +446,7 @@ Example response:
 ### Sync app package records
 Sync app package records
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/sync_updated
+Resource URI: /lcmcontroller/v2/tenants/:tenantId/packages/sync_updated
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -465,7 +465,7 @@ Example response:
 ### Sync app package stale records
 Sync app package stale records
 ```
-Resource URI: /lcmcontroller/v1/tenants/:tenantId/packages/sync_deleted
+Resource URI: /lcmcontroller/v2/tenants/:tenantId/packages/sync_deleted
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
