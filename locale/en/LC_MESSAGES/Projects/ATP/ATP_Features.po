@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 00:08+0530\n"
+"POT-Creation-Date: 2021-10-28 17:21+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +21,8 @@ msgid "特性设计"
 msgstr "Feature design"
 
 #: ../../Projects/ATP/ATP_Features.md:3
-msgid "ATP当前提供的特性分为用户面特性和管理面特性。   用户面特性包含：选择测试场景、测试任务进展展示、测试报告分析、测试报告下载、贡献测试用例以及用户自测报告导入。   管理面特性包含：测试场景管理、测试套管理、测试用例管理、测试模型一键导入、测试任务分析、测试任务管理、贡献管理以及配置项管理。"
+msgid "ATP当前提供的特性分为用户面特性和管理面特性。   用户面特性包含：选择测试场景、测试任务进展展示、测试报告分析、测试报告下载、贡献测试用例以及用户自测报告导入。   管理面特性包含：测试场景管理、测试套管理、测试用例管理、测试模型一键导入、测试任务分析、测试任务管理、贡献管理以及配置项管理。    目前测试用例涵盖安全性测试（漏洞扫描、签名校验、端口扫描、病毒扫描等）、遵从性测试（应用包结构校验）、沙箱测试（应用部署、mep平台服务注册更新等）以及性能测试（时延、cpu占用率、内存占用率等）。"
 msgstr "The features currently provided by ATP are divided into user-plane features and management-plane features. User interface features include: selection of test scenarios, display of test task progress, test report analysis, test report download, test case contribution and self-test report upload. Management features include: test scenario management, test suite management, test case management, one-click import of test models, test task analysis, test task management, contribution management and config item management."
-
-#: ../../Projects/ATP/ATP_Features.md:6
-msgid "目前测试用例涵盖安全性测试（漏洞扫描、签名校验、端口扫描、病毒扫描等）、遵从性测试（应用包结构校验）、沙箱测试（应用部署、mep平台服务注册更新等）以及性能测试（时延、cpu占用率、内存占用率等）"
-msgstr "At present, the test cases cover security test (vulnerability scanning, signature verification, port scanning, virus scanning, etc.), compliance test (application package structure verification), Sandbox test (application deployment, MEP platform service registration update, etc.) and performance test (delay, CPU occupancy, memory occupancy, etc.)"
 
 #: ../../Projects/ATP/ATP_Features.md:8
 msgid "选择测试场景"
@@ -74,7 +69,7 @@ msgid "自测报告导入"
 msgstr "Self-test report upload"
 
 #: ../../Projects/ATP/ATP_Features.md:24
-msgid "在自动执行完测试用例后，支持用户上传自测报告。如果用户有功能性测试等应用特定的测试，可以上传自测报告，应用测试平台会将平台用例执行报告和用户上传自测报告整合成一份测试报告展示"
+msgid "在自动执行完测试用例后，支持用户上传自测报告。如果用户有功能性测试等应用特定的测试，可以上传自测报告，应用测试平台会将平台用例执行报告和用户上传自测报告整合成一份测试报告展示。"
 msgstr "After the test cases are automatically executed, users can upload self-test reports. If users have application specific tests such as functional tests, they can upload self-test reports. The application test platform will integrate the platform test case execution report and the user uploaded self-test report into one test report display"
 
 #: ../../Projects/ATP/ATP_Features.md:26
@@ -138,5 +133,9 @@ msgid "配置项管理"
 msgstr "Config item management"
 
 #: ../../Projects/ATP/ATP_Features.md:48
-msgid "可以针对某个测试用例配置参数，使测试用例更灵活"
+msgid "可以针对某个测试用例配置参数，使测试用例更灵活。"
 msgstr "You can config parameters for a test case to make the test case more flexible"
+
+#~ msgid "目前测试用例涵盖安全性测试（漏洞扫描、签名校验、端口扫描、病毒扫描等）、遵从性测试（应用包结构校验）、沙箱测试（应用部署、mep平台服务注册更新等）以及性能测试（时延、cpu占用率、内存占用率等）"
+#~ msgstr "At present, the test cases cover security test (vulnerability scanning, signature verification, port scanning, virus scanning, etc.), compliance test (application package structure verification), Sandbox test (application deployment, MEP platform service registration update, etc.) and performance test (delay, CPU occupancy, memory occupancy, etc.)"
+

@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 23:17+0530\n"
+"POT-Creation-Date: 2021-10-28 17:21+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,11 +25,11 @@ msgid "AppStore 是 EdgeGallery 的应用仓库模块，主要负责5G边缘应�
 msgstr "The AppStore is an application repository module for EdgeGallery, which is primarily responsible for the storage and management of 5G edge applications where the current version has decentralized control and different user roles contain different features."
 
 #: ../../Projects/APPSTORE/AppStore_Features.md:5
-msgid "**管理员用户包含** 应用上传、应用测试、应用发布、应用查询、应用评论、下载/删除所有应用、外部仓库管理、应用推送、应用拉取、消息管理、操作分析、应用管理、沙箱管理、应用在线体验、文档中心。"
+msgid "**管理员用户包含** 应用上传、应用测试、应用发布、应用查询、应用评论、下载/删除所有应用、外部仓库管理、应用推送、应用拉取、消息管理、操作分析、应用管理、沙箱管理、应用在线体验、应用同步、文档中心。"
 msgstr "**Administrator users include** Application upload, application testing, application release, application query, application comment, download/delete all applications, external repository management, application push, application pull, message management, operation analysis, application management, sandbox management, Application online experience, document center."
 
 #: ../../Projects/APPSTORE/AppStore_Features.md:7
-msgid "**租户用户包含** 应用上传、应用测试、应用发布、应用查询、应用评论、下载/删除本用户应用、应用在线体验、文档中心。"
+msgid "**租户用户包含** 应用上传、应用测试、应用发布、应用查询、应用评论、下载/删除本用户应用、应用在线体验、应用同步、文档中心。"
 msgstr "**Tenant users include** Application upload, application testing, application release, application query, application comment, download/delete of this user application, application online experience, document center."
 
 #: ../../Projects/APPSTORE/AppStore_Features.md:9
@@ -164,6 +163,14 @@ msgstr "App online experience"
 #: ../../Projects/APPSTORE/AppStore_Features.md
 msgid "用户可以基于已有的沙箱环境实例化应用，进行在线体验。"
 msgstr "Users can instantiate applications based on the existing sandbox environment for online experience."
+
+#: ../../Projects/APPSTORE/AppStore_Features.md
+msgid "应用同步"
+msgstr "App synchronization"
+
+#: ../../Projects/APPSTORE/AppStore_Features.md
+msgid "用户可以将应用同步部署到配置的周边系统，如MEAO"
+msgstr "Users can deploy the application to the configured peripheral system, such as MEAO"
 
 #: ../../Projects/APPSTORE/AppStore_Features.md
 msgid "文档中心"
