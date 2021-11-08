@@ -3,69 +3,70 @@ Developer Interfaces
 - [Developer Interfaces](#developer-interfaces)
   - [1. Plugin](#plugin)
     - [1.1 POST upload plugin](#post-upload-plugin)
-    - [1.2 GET all](#get-all)
-    - [1.3 DELETE one](#delete-one)
-	- [1.4 GET download plugin](#get-download-plugin)
-	- [1.5 GET download logo](#get-download-logo)
-	- [1.6 GET download plugin](#get-download-api)
-	- [1.7 PUT update plugin](#put-update-plugin)
-	- [1.8 PUT mark plugin](#put-mark-plugin)
-  - [2. App](#app)
-       - [2.1 POST upload app](#post-upload-app)
-       - [2.2 GET all test task](#get-all-test-task)
-       - [2.3 GET all app tags](#get-all-app-tags)
-       - [2.4 POST upload app to store](#post-upload-app-to-store)
-       - [2.5 GET start test](#get-start-test)
-       - [2.6 GET subtask list](#get-subtask-list)
+    - [1.2 GET all plugin](#get-all-plugin)
+    - [1.3 DELETE one plugin](#delete-one-plugin)
+    - [1.4 GET download plugin](#get-download-plugin)
+    - [1.5 GET download logo](#get-download-logo)
+    - [1.6 GET download api](#get-download-api)
+    - [1.7 PUT update plugin](#put-update-plugin)
+    - [1.8 PUT mark plugin](#put-mark-plugin)
+    - [1.9 GET api content](#get-api-content)
+  - [2. Container Image](#container-image)
+    - [2.1 POST upload container image](#post-upload-container-image)
+    - [2.2 DELETE upload container image](#delete-upload-container-image)
+    - [2.3 POST create image](#post-create-image)
+    - [2.4 PUT modify image](#put-modify-image)
+    - [2.5 DELETE container image](#delete-container-image)
+    - [2.6 GET download image](#get-download-image)
+    - [2.7 POST query all image](#post-query-all-image)
+    - [2.8 GET merge container image](#get-merge-container-image)
+    - [2.9 GET synchronize image](#get-synchronize-image)
   - [3. App Project](#app-project)
-       - [3.1 GET all project](#get-all-project)
-       - [3.2 GET one project](#get-one-project)
-       - [3.3 POST create one project](#post-create-one-project)
-       - [3.4 DELETE one project](#delete-one-project)
-       - [3.5 PUT modify one project](#put-modify-one-project)
-	- [3.6 POST deploy one project](#post-deploy-one-project)
-	- [3.7 POST clean test env](#post-clean-test-env)
-	- [3.8 POST create test config](#post-create-test-config)
-	- [3.9 PUT modify test config](#put-modify-test-config)
-	- [3.10 GET one test-config](#get-one-test-config)
-	- [3.11 POST upload to store](#post-upload-to-store)
-	- [3.12 POST open project to eco](#post-open-project-to-eco)
-	- [3.13 POST add image to project](#post-add-image-to-project)
-	- [3.14 DELETE image of project](#delete-image-of-project)
-	- [3.15 GET image of project](#get-image-of-project)
-    - [3.16 POST open project api](#post-open-project-api)
-    - [3.17 GET project atp task](#get-project-atp-task)
+    - [3.1 GET all project](#get-all-project)
+    - [3.2 GET one project](#get-one-project)
+    - [3.3 POST create one project](#post-create-one-project)
+    - [3.4 DELETE one project](#delete-one-project)
+    - [3.5 PUT modify one project](#put-modify-one-project)
+    - [3.6 POST deploy one project](#post-deploy-one-project)
+    - [3.7 POST clean test env](#post-clean-test-env)
+    - [3.8 POST create test config](#post-create-test-config)
+    - [3.9 PUT modify test config](#put-modify-test-config)
+    - [3.10 GET one test-config](#get-one-test-config)
+    - [3.11 POST upload to store](#post-upload-to-store)
+    - [3.12 GET project atp task](#get-project-atp-task)
+    - [3.13 GET project workstatus](#get-project-workstatus)
+    - [3.14 POST terminate project](#post-terminate-project)
   - [4. Host](#host)
     - [4.1 GET all host](#get-all-host)
     - [4.2 GET one host](#get-one-host)
-	- [4.3 POST create one host](#post-create-one-host)
-	- [4.4 DELETE one host](#delete-one-host)
-	- [4.5 PUT modify one host](#put-modify-one-host)
+    - [4.3 POST create one host](#post-create-one-host)
+    - [4.4 DELETE one host](#delete-one-host)
+    - [4.5 PUT modify one host](#put-modify-one-host)
+    - [4.6 GET host list](#get-host-list)
+    - [4.7 GET host logs](#get-host-logs)
   - [5. Capability-groups](#capability-groups)
-     - [5.1 POST create one EdgeGalleryCapabilityGroup](#post-create-one-edgegallerycapabilitygroup)
-    - [5.2 DELETE one EdgeGalleryCapabilityGroup](#delete-one-edgegallerycapabilitygroup)
-	- [5.3 POST create one EdgeGalleryCapability](#post-create-one-edgegallerycapability)
-	- [5.4 DELETE one EdgeGalleryCapability](#delete-one-edgegallerycapability)
-	- [5.5 GET all EdgeGalleryCapability](#get-all-edgegallerycapability)
-	- [5.6 GET all EdgeGalleryCapability by groupid](#get-all-edgegallerycapability-by-groupid)
-	- [5.7 GET all EdgeGallery API by fileId](#get-all-edgegallery-api-by-fileid)
-	- [5.8 GET all EdgeGallery ECO API](#get-all-edgegallery-eco-api)
-    - [5.9 GET all EdgeGallery API](#get-all-edgegallery-api)
+    - [5.1 POST create group](#post-create-group)
+    - [5.2 GET all group](#get-all-group)
+    - [5.3 GET one group](#get-one-group)
+    - [5.4 DELETE one group](#delete-one-group)
   - [6. File](#file)
     - [6.1 GET one file](#get-one-file)
     - [6.2 POST upload one file](#post-upload-one-file)
     - [6.3 POST upload helm yaml](#post-upload-helm-yaml)
-    - [6.4 GET helm yaml](#get-helm-yaml)
-    - [6.5 DELETE helm yaml](#delete-helm-yaml)
-    - [6.6 POST get sample code](#post-get-sample-code)
-    - [6.7 GET one file return object](#get-one-file-return-object)
-    - [6.8 GET sdk code](#get-sdk-code)
-    - [6.9 GET file content](#get-file-content)
-    - [6.10 POST pkg structure](#post-pkg-structure)
-  - [7. LocalApi](#localapi)
-    - [7.1 GET one api file](#get-one-api-file)
-  - [8. Health](#health)
-    - [8.1 GET health](#get-health)
+    - [6.4 DELETE helm yaml](#delete-helm-yaml)
+    - [6.5 POST get sample code](#post-get-sample-code)
+    - [6.6 GET api info](#get-api-info)
+    - [6.7 GET sdk code](#get-sdk-code)
+    - [6.8 GET sample content](#get-sample-content)
+    - [6.9 POST pkg structure](#post-pkg-structure)
+  - [7. Capabilities](#capabilities)
+    - [7.1 POST create capability](#post-create-capability)
+    - [7.2 GET all capability](#get-all-capability)
+    - [7.3 GET one capability](#get-one-capability)
+    - [7.4 DELETE one capability](#delete-one-capability)
+    - [7.5 PUT one capability](#put-one-capability)
+  - [8. Capability-Groups Query](#capability-groups-query)
+    - [8.1 GET group by type](#get-group-by-type)
   - [9. AppRelease](#apprelease)
     - [9.1 GET pkg structure](#get-pkg-structure)
     - [9.2 GET file content](#get-file-content)
@@ -73,47 +74,51 @@ Developer Interfaces
     - [10.1 GET release config](#get-release-config)
     - [10.2 POST release config](#post-release-config)
     - [10.3 PUT release config](#put-release-config)
-  - [11. DeployConfig](#deployconfig)
-    - [11.1 GET deploy platform](#get-deploy-platform)
-    - [11.2 PUT deploy platform](#put-deploy-platform)
+  - [11. Health](#health)
+    - [11.1 GET health check](#get-health-check)
   - [12. Deploy](#deploy)
     - [12.1 GET deploy yaml](#get-deploy-yaml)
     - [12.2 PUT deploy yaml](#put-deploy-yaml)
     - [12.3 GET deploy json](#get-deploy-json)
     - [12.4 POST deploy yaml](#post-deploy-yaml)
-  - [13. System](#system)
-    - [13.1 GET all capability](#get-all-capability)
-    - [13.2 POST one capability](#post-one-capability)
-    - [13.3 DELETE one capability](#delete-one-capability)
-    - [13.4 GET all system host](#get-all-system-host)
-    - [13.5 POST one system host](#post-one-system-host)
-    - [13.6 GET one system host](#get-one-system-host)
-    - [13.7 PUT one system host](#put-one-system-host)
-    - [13.8 DELETE one system host](#delete-one-system-host)
-    - [13.9 GET capability detail](#get-capability-detail)
-    - [13.10 GET host log](#get-host-log)
+  - [13. Capability-group stats](#capability-group-stats)
+    - [13.1 GET group stats](#get-group-stats) 
   - [14. VirtualMachine](#virtualmachine)
     - [14.1 POST one vm](#post-one-vm)
     - [14.2 DELETE vm config](#delete-vm-config)
-    - [14.3 GET image config](#get-image-config)
+    - [14.3 GET all image config](#get-all-image-config)
     - [14.4 POST image config](#post-image-config)
     - [14.5 DELETE image config](#delete-image-config)
     - [14.6 GET image config By ProjectId](#get-image-config-by-projectid)
     - [14.7 GET csar pkg](#get-csar-pkg)
     - [14.8 GET vm resources](#get-vm-resources)
     - [14.9 POST vm file](#post-vm-file)
-  - [15. Image](#image)
-    - [15.1 POST upload image](#post-upload-image)
-    - [15.2 GET merge image](#get-merge-image)
+    - [14.10 GET merge image](#get-merge-image)
+    - [14.11 POST clean vm](#post-clean-vm)
+    - [14.12 GET vm pkg](#get-vm-pkg)
+    - [14.13 POST vm pkg](#post-vm-pkg)
+    - [14.14 DELETE vm pkg](#delete-vm-pkg)
+  - [15. Capability-group stats query](#capability-group-stats-query)
+    - [15.1 GET stats by type](#get-stats-by-type) 
   - [16. SystemImage](#systemImage)
     - [16.1 POST one system image](#post-one-system-image)
     - [16.2 DELETE system image](#delete-system-image)
-    - [16.3 POST system image](#post-system-image)
+    - [16.3 POST upload system image](#post-upload-system-image)
     - [16.4 PUT system image](#put-system-image)
     - [16.5 PUT publish system image](#put-publish-system-image)
     - [16.6 POST system image to upload file](#post-system-image-to-upload-file)
     - [16.7 GET system image to merge](#get-system-image-to-merge)
     - [16.8 GET system image to download](#get-system-image-to-download)
+    - [16.9 POST slim image](#post-slim-image)
+    - [16.10 PUT reset image status](#put-reset-image-status)
+    - [16.11 POST upload image](#post-upload-image)
+    - [16.12 DELETE upload image](#delete-upload-image)
+  - [17. Capability query](#capability-query)
+    - [17.1 GET capability by groupid](#get-capability-by-groupid) 
+    - [17.2 GET capability by en name](#get-capability-by-en-name)  
+    - [17.3 GET capability by name](#get-capability-by-name)
+    - [17.4 GET capability by projectid](#get-capability-by-projectid)
+    - [17.5 GET capability by type](#get-capability-by-type)
 
 ## 1. Plugin
 Development environment plug-in or sdk
@@ -180,7 +185,7 @@ Resource URI: /mec/developer/v1/plugins/
 }
 ```
 
-### 1.2 GET all
+### 1.2 GET all plugin
 
 Query all plugin or sdk
 ```
@@ -205,7 +210,7 @@ Resource URI: /mec/developer/v1/plugins/
 }
 ```
 
-### 1.3 DELETE one 
+### 1.3 DELETE one plugin
 Delete one plugin by pluginId
 ```
 Resource URI: /mec/developer/v1/plugins/{pluginId}
@@ -249,6 +254,7 @@ Resource URI: /mec/developer/v1/plugins/{pluginId}/action/get-logofile
 200 OK
   binary output.
 ```
+
 ### 1.6 GET download api
 Download plugin's api file
 ```
@@ -263,6 +269,7 @@ Resource URI: /mec/developer/v1/plugins/{pluginId}/action/get-apifile
 200 OK
   binary output.
 ```
+
 ### 1.7 PUT update plugin
 Update api by id
 ```
@@ -324,6 +331,7 @@ Resource URI: /mec/developer/v1/plugins/{pluginId}
   }
 }
 ```
+
 ### 1.8 PUT mark plugin
 Update plugin satisfaction by pluginId
 ```
@@ -381,121 +389,177 @@ Resource URI: /mec/developer/v1/plugins/{pluginId}/action/score
 }
 ```
 
-## 2. App
-Edge applications on the car
-### 2.1 POST upload app 
-Upload app with some params.
+### 1.9 GET api content
+Get plugin api content by pluginId
 ```
-Resource URI: /mec/developer/v1/apps/
+Resource URI: /mec/developer/v1/plugins/{pluginId}/action/content
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|appFile|appfile|requestpart|yes|
-|logoFile|applogofile|requestpart|yes|
-|affinity|appaffinity|requestparam|yes|
-|industry|appindustry|requestparam|yes|
-|type|apptype|requestparam|yes|
-|appDesc|appbrief|requestparam|yes|
-|userId|theauthoridofuploadapp|requestparam|yes|
+|pluginId|pluginid|pathparam|yes|
+
+**Example response**
+```
+200 OK
+ string output.
+```
+
+## 2. Container Image
+operate about container app image
+### 2.1 POST upload container image 
+Upload image with some params.
+```
+Resource URI: /mec/developer/v2/containerimages/{imageId}/upload
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|imageId|imageId|path param|yes|
+|id|id|query param|yes|
+|chunkNumber|chunkNumber|path param|yes|
+|chunkSize|chunkSize|query param|yes|
+|currentChunkSize|currentChunkSize|query param|yes|
+|totalSize|totalSize|query param|yes|
+|identifier|identifier|query param|yes|
+|filename|filename|query param|yes|
+|relativePath|relativePath|query param|yes|
+|totalChunks|totalChunks|query param|yes|
+|type|type|query param|yes|
+|file|file|query param|yes|
 
 **Example response**
 ```
 200 OK
 {
-  "appId": "string",
-  "appName": "string",
-  "appFile": "string",
-  "logoFile": "string",
-  "affinity": "string",
-  "industry": "string",
-  "appDesc": "string",
-  "uploadTime": "2020-09-11T06:26:46.351Z",
+  "headers": {
+    "string": [
+      "string"
+    ]
+  },
+  "body": {},
+  "statusCode": "CONTINUE",
+  "statusCodeValue": 0
+}
+```
+
+### 2.2 DELETE upload container image 
+cancel upload image
+```
+Resource URI: /mec/developer/v2/containerimages/{imageId}/upload
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|imageId|imageId|path param|yes|
+
+**Example response**
+```
+200 OK
+{
+  "headers": {
+    "string": [
+      "string"
+    ]
+  },
+  "body": {},
+  "statusCode": "CONTINUE",
+  "statusCodeValue": 0
+}
+```
+
+### 2.3 POST create image
+create image record
+```
+Resource URI: /mec/developer/v2/containerimages/
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|ContainerImage|ContainerImage|request body param|yes|
+
+```
+ContainerImage:
+{
+  "imageId": "string",
+  "imageName": "string",
+  "imageVersion": "string",
   "userId": "string",
-  "appVersion": "string",
-  "type": "string",
-  "task": {
-    "taskId": "string",
-    "taskNo": "string",
-    "status": "string",
-    "beginTime": "2020-09-11T06:26:46.351Z",
-    "endTime": "2020-09-11T06:26:46.351Z",
-    "appId": "string"
-  }
+  "userName": "string",
+  "uploadTime": "2021-10-12T08:37:38.000+0000",
+  "createTime": "2021-10-12T08:37:38.000+0000",
+  "imageStatus": "UPLOAD_SUCCEED",
+  "imageType": "string",
+  "imagePath": "string",
+  "fileName": "string"
 }
 ```
-
-### 2.2 GET all test task 
-Query all test task by condtions
-```
-Resource URI: /mec/developer/v1/apps/
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|appName|appname|requestparam|no|
-|status|testtaskstatus|requestparam|no|
-|beginTime|taskbegintime|requestparam|no|
-|endTime|taskendtime|requestparam|no|
-|userId|theauthoridofuploadapp|requestparam|yes|
-
 **Example response**
 ```
 200 OK
 {
-  "tasks": [
-    {
-      "taskId": "string",
-      "taskNo": "string",
-      "status": "string",
-      "beginTime": "2020-09-11T06:26:46.351Z",
-      "endTime": "2020-09-11T06:26:46.351Z",
-      "appId": "string"
-    }
-  ]
+  "imageId": "string",
+  "imageName": "string",
+  "imageVersion": "string",
+  "userId": "string",
+  "userName": "string",
+  "uploadTime": "2021-10-12T08:37:38.000+0000",
+  "createTime": "2021-10-12T08:37:38.000+0000",
+  "imageStatus": "UPLOAD_SUCCEED",
+  "imageType": "string",
+  "imagePath": "string",
+  "fileName": "string"
 }
 ```
 
-### 2.3 GET all app tags 
-Query app function tags
+### 2.4 PUT modify image
+modify image record
 ```
-Resource URI: /mec/developer/v1/apps/tags
+Resource URI: /mec/developer/v2/containerimages/{imageId}
 ```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|ContainerImage|ContainerImage|request body param|yes|
+|imageId|imageId|path param|yes|
 
+```
+ContainerImage:
+{
+  "imageId": "string",
+  "imageName": "string",
+  "imageVersion": "string",
+  "userId": "string",
+  "userName": "string",
+  "uploadTime": "2021-10-12T08:37:38.000+0000",
+  "createTime": "2021-10-12T08:37:38.000+0000",
+  "imageStatus": "UPLOAD_SUCCEED",
+  "imageType": "string",
+  "imagePath": "string",
+  "fileName": "string"
+}
+```
 **Example response**
 ```
 200 OK
 {
-  "tasks": [
-   "string"
-  ]
+  "imageId": "string",
+  "imageName": "string",
+  "imageVersion": "string",
+  "userId": "string",
+  "userName": "string",
+  "uploadTime": "2021-10-12T08:37:38.000+0000",
+  "createTime": "2021-10-12T08:37:38.000+0000",
+  "imageStatus": "UPLOAD_SUCCEED",
+  "imageType": "string",
+  "imagePath": "string",
+  "fileName": "string"
 }
 ```
 
-### 2.4 POST upload app to store 
-upload app to store
+### 2.5 DELETE container image
+delete image
 ```
-Resource URI: /mec/developer/v1/apps/{appId}/action/upload
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|appId|appid|pathparam|yes|
-|userId|theauthoridofuploadapp|requestparam|yes|
-|userName|theauthornameofuploadapp|requestparam|yes|
-
-**Example response**
-```
-200 OK
-"csar id"
-```
-
-### 2.5 GET start test 
-Start to test app
-```
-Resource URI: /mec/developer/v1/apps/{appId}/action/start-test
+Resource URI: /mec/developer/v2/containerimages/{imageId}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|appId|appid|pathparam|yes|
-|userId|theauthoridofuploadapp|requestparam|yes|
+|imageId|imageId|path param|yes|
 
 **Example response**
 ```
@@ -503,31 +567,108 @@ Resource URI: /mec/developer/v1/apps/{appId}/action/start-test
 true
 ```
 
-### 2.6 GET subtask list 
-Query test subtask list
+### 2.6 GET download image 
+download container image 
 ```
-Resource URI: /mec/developer/v1/apps/{appId}/task/{taskId}/subtasks
+Resource URI: /mec/developer/v2/containerimages/{imageId}/download
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|appId|appid|pathparam|yes|
-|taskId|maintaskid|pathparam|yes|
+|imageId|imageId|path param|yes|
+
+**Example response**
+```
+200 OK
+binary output.
+```
+
+### 2.7 POST query all image 
+query all container image 
+```
+Resource URI: /mec/developer/v2/containerimages/list
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|ContainerImageReq|ContainerImageReq|request body param|yes|
+
+```
+ContainerImageReq:
+{
+  "imageName": "string",
+  "userId": "string",
+  "uploadTimeBegin": "string",
+  "uploadTimeEnd": "string",
+  "limit": 0,
+  "offset": 0,
+  "sortBy": "string",
+  "sortOrder": "string"
+}
+```
+**Example response**
+```
+200 OK
+{
+  "imageId": "string",
+  "imageName": "string",
+  "imageVersion": "string",
+  "userId": "string",
+  "userName": "string",
+  "uploadTime": "2021-10-12T08:17:01.000Z",
+  "createTime": "2021-10-12T08:17:01.000Z",
+  "imageStatus": "UPLOAD_WAIT",
+  "imageType": "string",
+  "imagePath": "string",
+  "fileName": "string"
+}
+```
+
+### 2.8 GET merge container image 
+merge container image 
+```
+Resource URI: /mec/developer/v2/containerimages/{imageId}/merge
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|imageId|imageId|path param|yes|
+|fileName|fileName|query param|yes|
+|guid|guid|query param|yes|
 
 **Example response**
 ```
 200 OK
 {
-  "subTasks": [
-    {
-      "executionid": "string",
-      "taskid": "string",
-      "testcaseid": 0,
-      "status": "string",
-      "parameters": "string"
-    }
-  ]
+  "headers": {
+    "string": [
+      "string"
+    ]
+  },
+  "body": {},
+  "statusCode": "CONTINUE",
+  "statusCodeValue": 0
 }
 ```
+
+### 2.9 GET synchronize image 
+synchronize container image 
+```
+Resource URI: /mec/developer/v2/containerimages/synchronize
+```
+
+**Example response**
+```
+200 OK
+{
+  "headers": {
+    "string": [
+      "string"
+    ]
+  },
+  "body": {},
+  "statusCode": "CONTINUE",
+  "statusCodeValue": 0
+}
+```
+
 ## 3. App Project
 Edge application projects created by the developer platform
 ### 3.1 GET all project
@@ -537,13 +678,15 @@ Resource URI: /mec/developer/v1/projects/
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|userId|theauthoridofcreateprocject|requestparam|yes|
+|userId|userId|query param|yes|
+|projectName|projectName|query param|yes|
+|limit|limit|query param|yes|
+|offset|offset|query param|yes|
 
 **Example response**
 ```
 200 OK
-
-{[
+[
   {
     "id": "string",
     "projectType": "CREATE_NEW",
@@ -553,6 +696,7 @@ Resource URI: /mec/developer/v1/projects/
     "platform": [
       "string"
     ],
+    "deployPlatform": "KUBERNETES",
     "type": "string",
     "industry": [
       "string"
@@ -561,30 +705,20 @@ Resource URI: /mec/developer/v1/projects/
     "iconFileId": "string",
     "status": "ONLINE",
     "capabilityList": [
-      {
-        "groupId": "string",
-        "name": "string",
-        "type": "OPENMEP",
-        "description": "string",
-        "capabilityDetailList": [
-          {
-            "detailId": "string",
-            "groupId": "string",
-            "service": "string",
-            "version": "string",
-            "description": "string",
-            "provider": "string",
-            "apiFileId": "string"
-          }
-        ]
-      }
+      "string"
     ],
     "lastTestId": "string",
     "userId": "string",
-    "createDate": "2020-09-14T01:38:48.361Z",
-    "openCapabilityId": "string"
+    "createDate": "string",
+    "openCapabilityId": "string",
+    "applicationProjectCapabilities": [
+      {
+        "projectId": "string",
+        "capabilityId": "string"
+      }
+    ]
   }
-]}
+]
 ```
 
 ### 3.2 GET one project 
@@ -594,8 +728,8 @@ Resource URI:  /mec/developer/v1/projects/{projectId}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
-|userId|theauthoridofcreateproject|requestparam|yes|
+|projectId|projectid|path param|yes|
+|userId|userId|query param|yes|
 
 **Example response**
 ```
@@ -609,6 +743,7 @@ Resource URI:  /mec/developer/v1/projects/{projectId}
   "platform": [
     "string"
   ],
+  "deployPlatform": "KUBERNETES",
   "type": "string",
   "industry": [
     "string"
@@ -617,28 +752,18 @@ Resource URI:  /mec/developer/v1/projects/{projectId}
   "iconFileId": "string",
   "status": "ONLINE",
   "capabilityList": [
-    {
-      "groupId": "string",
-      "name": "string",
-      "type": "OPENMEP",
-      "description": "string",
-      "capabilityDetailList": [
-        {
-          "detailId": "string",
-          "groupId": "string",
-          "service": "string",
-          "version": "string",
-          "description": "string",
-          "provider": "string",
-          "apiFileId": "string"
-        }
-      ]
-    }
+    "string"
   ],
   "lastTestId": "string",
   "userId": "string",
-  "createDate": "2020-09-14T01:45:11.950Z",
-  "openCapabilityId": "string"
+  "createDate": "string",
+  "openCapabilityId": "string",
+  "applicationProjectCapabilities": [
+    {
+      "projectId": "string",
+      "capabilityId": "string"
+    }
+  ]
 }
 
 ```
@@ -650,11 +775,11 @@ Resource URI: /mec/developer/v1/projects/
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|ApplicationProject|Entityclass|bodyparam|yes|
-|userId|theauthoridofcreateproject|requestparam|yes|
+|ApplicationProject|Entityclass|body param|yes|
+|userId|userId|query param|yes|
 
 ```
-Application
+ApplicationProject:
 {
   "id": "string",
   "projectType": "CREATE_NEW",
@@ -664,6 +789,7 @@ Application
   "platform": [
     "string"
   ],
+  "deployPlatform": "KUBERNETES",
   "type": "string",
   "industry": [
     "string"
@@ -672,33 +798,22 @@ Application
   "iconFileId": "string",
   "status": "ONLINE",
   "capabilityList": [
-    {
-      "groupId": "string",
-      "name": "string",
-      "type": "OPENMEP",
-      "description": "string",
-      "capabilityDetailList": [
-        {
-          "detailId": "string",
-          "groupId": "string",
-          "service": "string",
-          "version": "string",
-          "description": "string",
-          "provider": "string",
-          "apiFileId": "string"
-        }
-      ]
-    }
+    "string"
   ],
   "lastTestId": "string",
   "userId": "string",
-  "createDate": "2020-09-14T01:48:09.468Z",
-  "openCapabilityId": "string"
+  "createDate": "string",
+  "openCapabilityId": "string",
+  "applicationProjectCapabilities": [
+    {
+      "projectId": "string",
+      "capabilityId": "string"
+    }
+  ]
 }
 ```
 **Example response**
 ```
-200 OK
 {
   "id": "string",
   "projectType": "CREATE_NEW",
@@ -708,6 +823,7 @@ Application
   "platform": [
     "string"
   ],
+  "deployPlatform": "KUBERNETES",
   "type": "string",
   "industry": [
     "string"
@@ -716,39 +832,28 @@ Application
   "iconFileId": "string",
   "status": "ONLINE",
   "capabilityList": [
-    {
-      "groupId": "string",
-      "name": "string",
-      "type": "OPENMEP",
-      "description": "string",
-      "capabilityDetailList": [
-        {
-          "detailId": "string",
-          "groupId": "string",
-          "service": "string",
-          "version": "string",
-          "description": "string",
-          "provider": "string",
-          "apiFileId": "string"
-        }
-      ]
-    }
+    "string"
   ],
   "lastTestId": "string",
   "userId": "string",
-  "createDate": "2020-09-14T01:48:09.468Z",
-  "openCapabilityId": "string"
-  }
+  "createDate": "string",
+  "openCapabilityId": "string",
+  "applicationProjectCapabilities": [
+    {
+      "projectId": "string",
+      "capabilityId": "string"
+    }
+  ]
 }
 ```
 
-### 3.4 Delete one project
+### 3.4 DELETE one project
 Delete one project by id
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}
 ```
 | Name          | Definition |Type   | Required|
-| ------------- | ------------- |------------|------------|
+|-------------|-------------|------------|------------|
 | projectId | project id|path param|yes|
 | userId | the author id of create project |request param|yes|
 
@@ -765,8 +870,8 @@ Resource URI: /mec/developer/v1/projects/{projectId}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
-|userId|theauthornameofuploadapp|requestparam|yes|
+|projectId|projectid|path param|yes|
+|userId|userId|request param|yes|
 |ApplicationProject|entityclass|bodyparam|yes|
 
 ```
@@ -780,6 +885,7 @@ ApplicationProject
   "platform": [
     "string"
   ],
+  "deployPlatform": "KUBERNETES",
   "type": "string",
   "industry": [
     "string"
@@ -788,28 +894,18 @@ ApplicationProject
   "iconFileId": "string",
   "status": "ONLINE",
   "capabilityList": [
-    {
-      "groupId": "string",
-      "name": "string",
-      "type": "OPENMEP",
-      "description": "string",
-      "capabilityDetailList": [
-        {
-          "detailId": "string",
-          "groupId": "string",
-          "service": "string",
-          "version": "string",
-          "description": "string",
-          "provider": "string",
-          "apiFileId": "string"
-        }
-      ]
-    }
+    "string"
   ],
   "lastTestId": "string",
   "userId": "string",
-  "createDate": "2020-09-14T01:48:09.468Z",
-  "openCapabilityId": "string"
+  "createDate": "string",
+  "openCapabilityId": "string",
+  "applicationProjectCapabilities": [
+    {
+      "projectId": "string",
+      "capabilityId": "string"
+    }
+  ]
 }
 ```
 **Example response**
@@ -824,6 +920,7 @@ ApplicationProject
   "platform": [
     "string"
   ],
+  "deployPlatform": "KUBERNETES",
   "type": "string",
   "industry": [
     "string"
@@ -832,40 +929,30 @@ ApplicationProject
   "iconFileId": "string",
   "status": "ONLINE",
   "capabilityList": [
-    {
-      "groupId": "string",
-      "name": "string",
-      "type": "OPENMEP",
-      "description": "string",
-      "capabilityDetailList": [
-        {
-          "detailId": "string",
-          "groupId": "string",
-          "service": "string",
-          "version": "string",
-          "description": "string",
-          "provider": "string",
-          "apiFileId": "string"
-        }
-      ]
-    }
+    "string"
   ],
   "lastTestId": "string",
   "userId": "string",
-  "createDate": "2020-09-14T01:48:09.468Z",
-  "openCapabilityId": "string"
+  "createDate": "string",
+  "openCapabilityId": "string",
+  "applicationProjectCapabilities": [
+    {
+      "projectId": "string",
+      "capabilityId": "string"
+    }
+  ]
 }
 ```
 
 ### 3.6 POST deploy one project 
-Deploy one project by id
+deploy one project by id
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/deploy
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
-|userId|theauthoridofcreateproject|requestparam|yes|
+|projectId|projectid|path param|yes|
+|userId|userId|request param|yes|
 
 **Example response**
 ```
@@ -879,6 +966,7 @@ Resource URI: /mec/developer/v1/projects/{projectId}/action/deploy
   "platform": [
     "string"
   ],
+  "deployPlatform": "KUBERNETES",
   "type": "string",
   "industry": [
     "string"
@@ -887,28 +975,18 @@ Resource URI: /mec/developer/v1/projects/{projectId}/action/deploy
   "iconFileId": "string",
   "status": "ONLINE",
   "capabilityList": [
-    {
-      "groupId": "string",
-      "name": "string",
-      "type": "OPENMEP",
-      "description": "string",
-      "capabilityDetailList": [
-        {
-          "detailId": "string",
-          "groupId": "string",
-          "service": "string",
-          "version": "string",
-          "description": "string",
-          "provider": "string",
-          "apiFileId": "string"
-        }
-      ]
-    }
+    "string"
   ],
   "lastTestId": "string",
   "userId": "string",
-  "createDate": "2020-09-14T01:48:09.468Z",
-  "openCapabilityId": "string"
+  "createDate": "string",
+  "openCapabilityId": "string",
+  "applicationProjectCapabilities": [
+    {
+      "projectId": "string",
+      "capabilityId": "string"
+    }
+  ]
 }
 ```
 
@@ -919,9 +997,8 @@ Resource URI: /mec/developer/v1/projects/{projectId}/action/clean
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
-|userId|theauthoridofcreateproject|requestparam|yes|
-|completed|teststatus|requestparam|yes|
+|projectId|projectid|path param|yes|
+|userId|userId|request param|yes|
 
 **Example response**
 ```
@@ -936,8 +1013,8 @@ Resource URI: /mec/developer/v1/projects/{projectId}/test-config
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
-|userId|theauthoridofcreateproject|requestparam|yes|
+|projectId|projectid|path param|yes|
+|userId|userId|request param|yes|
 |ProjectTestConfig|entityclass|bodyparam|yes|
 
 ```
@@ -945,6 +1022,45 @@ ProjectTestConfig
 {
   "testId": "string",
   "projectId": "string",
+  "platform": "KUBERNETES",
+  "deployFileId": "string",
+  "privateHost": false,
+  "pods": "string",
+  "deployStatus": "NOTDEPLOY",
+  "stageStatus": {
+    "csar": "Success",
+    "hostInfo": "Success",
+    "instantiateInfo": "Success",
+    "workStatus": "Success"
+  },
+  "hosts": [
+    {
+      "hostId": "string",
+      "name": "string",
+      "address": "string",
+      "architecture": "string",
+      "status": "NORMAL",
+      "lcmIp": "string",
+      "mecHost": "string",
+      "protocol": "string",
+      "port": 0,
+      "os": "string",
+      "portRangeMin": 0,
+      "portRangeMax": 0,
+      "userId": "string",
+      "configId": "string",
+      "userName": "string",
+      "password": "string",
+      "vncPort": 0,
+      "parameter": "string",
+      "resource": "string"
+    }
+  ],
+  "errorLog": "string",
+  "workLoadId": "string",
+  "appInstanceId": "string",
+  "deployDate": "2021-10-12T08:56:43.051Z",
+  "lcmToken": "string",
   "agentConfig": {
     "serviceName": "string",
     "href": "string",
@@ -1009,28 +1125,10 @@ ProjectTestConfig
       ]
     }
   ],
-  "hosts": [
-    {
-      "hostId": "string",
-      "name": "string",
-      "address": "string",
-      "architecture": "string",
-      "status": "NORMAL",
-      "ip": "string",
-      "protocol": "string",
-      "port": 0,
-      "os": "string",
-      "portRangeMin": 0,
-      "portRangeMax": 0
-    }
-  ],
   "appApiFileId": "string",
-  "status": "NETWORK_ERROR",
   "accessUrl": "string",
-  "errorLog": "string",
-  "workLoadId": "string",
-  "appInstanceId": "string",
-  "deployDate": "2020-09-14T01:48:09.469Z"
+  "packageId": "string",
+  "nextStage": "string"
 }
 ```
 **Example response**
@@ -1039,6 +1137,45 @@ ProjectTestConfig
 {
   "testId": "string",
   "projectId": "string",
+  "platform": "KUBERNETES",
+  "deployFileId": "string",
+  "privateHost": false,
+  "pods": "string",
+  "deployStatus": "NOTDEPLOY",
+  "stageStatus": {
+    "csar": "Success",
+    "hostInfo": "Success",
+    "instantiateInfo": "Success",
+    "workStatus": "Success"
+  },
+  "hosts": [
+    {
+      "hostId": "string",
+      "name": "string",
+      "address": "string",
+      "architecture": "string",
+      "status": "NORMAL",
+      "lcmIp": "string",
+      "mecHost": "string",
+      "protocol": "string",
+      "port": 0,
+      "os": "string",
+      "portRangeMin": 0,
+      "portRangeMax": 0,
+      "userId": "string",
+      "configId": "string",
+      "userName": "string",
+      "password": "string",
+      "vncPort": 0,
+      "parameter": "string",
+      "resource": "string"
+    }
+  ],
+  "errorLog": "string",
+  "workLoadId": "string",
+  "appInstanceId": "string",
+  "deployDate": "2021-10-12T08:56:43.051Z",
+  "lcmToken": "string",
   "agentConfig": {
     "serviceName": "string",
     "href": "string",
@@ -1103,28 +1240,10 @@ ProjectTestConfig
       ]
     }
   ],
-  "hosts": [
-    {
-      "hostId": "string",
-      "name": "string",
-      "address": "string",
-      "architecture": "string",
-      "status": "NORMAL",
-      "ip": "string",
-      "protocol": "string",
-      "port": 0,
-      "os": "string",
-      "portRangeMin": 0,
-      "portRangeMax": 0
-    }
-  ],
   "appApiFileId": "string",
-  "status": "NETWORK_ERROR",
   "accessUrl": "string",
-  "errorLog": "string",
-  "workLoadId": "string",
-  "appInstanceId": "string",
-  "deployDate": "2020-09-14T01:48:09.469Z"
+  "packageId": "string",
+  "nextStage": "string"
 }
 ```
 
@@ -1143,6 +1262,45 @@ ProjectTestConfig
 {
   "testId": "string",
   "projectId": "string",
+  "platform": "KUBERNETES",
+  "deployFileId": "string",
+  "privateHost": false,
+  "pods": "string",
+  "deployStatus": "NOTDEPLOY",
+  "stageStatus": {
+    "csar": "Success",
+    "hostInfo": "Success",
+    "instantiateInfo": "Success",
+    "workStatus": "Success"
+  },
+  "hosts": [
+    {
+      "hostId": "string",
+      "name": "string",
+      "address": "string",
+      "architecture": "string",
+      "status": "NORMAL",
+      "lcmIp": "string",
+      "mecHost": "string",
+      "protocol": "string",
+      "port": 0,
+      "os": "string",
+      "portRangeMin": 0,
+      "portRangeMax": 0,
+      "userId": "string",
+      "configId": "string",
+      "userName": "string",
+      "password": "string",
+      "vncPort": 0,
+      "parameter": "string",
+      "resource": "string"
+    }
+  ],
+  "errorLog": "string",
+  "workLoadId": "string",
+  "appInstanceId": "string",
+  "deployDate": "2021-10-12T08:56:43.051Z",
+  "lcmToken": "string",
   "agentConfig": {
     "serviceName": "string",
     "href": "string",
@@ -1207,28 +1365,10 @@ ProjectTestConfig
       ]
     }
   ],
-  "hosts": [
-    {
-      "hostId": "string",
-      "name": "string",
-      "address": "string",
-      "architecture": "string",
-      "status": "NORMAL",
-      "ip": "string",
-      "protocol": "string",
-      "port": 0,
-      "os": "string",
-      "portRangeMin": 0,
-      "portRangeMax": 0
-    }
-  ],
   "appApiFileId": "string",
-  "status": "NETWORK_ERROR",
   "accessUrl": "string",
-  "errorLog": "string",
-  "workLoadId": "string",
-  "appInstanceId": "string",
-  "deployDate": "2020-09-14T01:48:09.469Z"
+  "packageId": "string",
+  "nextStage": "string"
 }
 ```
 **Example response**
@@ -1237,6 +1377,45 @@ ProjectTestConfig
 {
   "testId": "string",
   "projectId": "string",
+  "platform": "KUBERNETES",
+  "deployFileId": "string",
+  "privateHost": false,
+  "pods": "string",
+  "deployStatus": "NOTDEPLOY",
+  "stageStatus": {
+    "csar": "Success",
+    "hostInfo": "Success",
+    "instantiateInfo": "Success",
+    "workStatus": "Success"
+  },
+  "hosts": [
+    {
+      "hostId": "string",
+      "name": "string",
+      "address": "string",
+      "architecture": "string",
+      "status": "NORMAL",
+      "lcmIp": "string",
+      "mecHost": "string",
+      "protocol": "string",
+      "port": 0,
+      "os": "string",
+      "portRangeMin": 0,
+      "portRangeMax": 0,
+      "userId": "string",
+      "configId": "string",
+      "userName": "string",
+      "password": "string",
+      "vncPort": 0,
+      "parameter": "string",
+      "resource": "string"
+    }
+  ],
+  "errorLog": "string",
+  "workLoadId": "string",
+  "appInstanceId": "string",
+  "deployDate": "2021-10-12T08:56:43.051Z",
+  "lcmToken": "string",
   "agentConfig": {
     "serviceName": "string",
     "href": "string",
@@ -1301,28 +1480,10 @@ ProjectTestConfig
       ]
     }
   ],
-  "hosts": [
-    {
-      "hostId": "string",
-      "name": "string",
-      "address": "string",
-      "architecture": "string",
-      "status": "NORMAL",
-      "ip": "string",
-      "protocol": "string",
-      "port": 0,
-      "os": "string",
-      "portRangeMin": 0,
-      "portRangeMax": 0
-    }
-  ],
   "appApiFileId": "string",
-  "status": "NETWORK_ERROR",
   "accessUrl": "string",
-  "errorLog": "string",
-  "workLoadId": "string",
-  "appInstanceId": "string",
-  "deployDate": "2020-09-14T01:48:09.469Z"
+  "packageId": "string",
+  "nextStage": "string"
 }
 ```
 
@@ -1333,7 +1494,7 @@ Resource URI: /mec/developer/v1/projects/{projectId}/test-config
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
+|projectId|projectid|path param|yes|
 
 **Example response**
 ```
@@ -1341,6 +1502,45 @@ Resource URI: /mec/developer/v1/projects/{projectId}/test-config
 {
   "testId": "string",
   "projectId": "string",
+  "platform": "KUBERNETES",
+  "deployFileId": "string",
+  "privateHost": false,
+  "pods": "string",
+  "deployStatus": "NOTDEPLOY",
+  "stageStatus": {
+    "csar": "Success",
+    "hostInfo": "Success",
+    "instantiateInfo": "Success",
+    "workStatus": "Success"
+  },
+  "hosts": [
+    {
+      "hostId": "string",
+      "name": "string",
+      "address": "string",
+      "architecture": "string",
+      "status": "NORMAL",
+      "lcmIp": "string",
+      "mecHost": "string",
+      "protocol": "string",
+      "port": 0,
+      "os": "string",
+      "portRangeMin": 0,
+      "portRangeMax": 0,
+      "userId": "string",
+      "configId": "string",
+      "userName": "string",
+      "password": "string",
+      "vncPort": 0,
+      "parameter": "string",
+      "resource": "string"
+    }
+  ],
+  "errorLog": "string",
+  "workLoadId": "string",
+  "appInstanceId": "string",
+  "deployDate": "2021-10-12T08:56:43.051Z",
+  "lcmToken": "string",
   "agentConfig": {
     "serviceName": "string",
     "href": "string",
@@ -1402,31 +1602,13 @@ Resource URI: /mec/developer/v1/projects/{projectId}/test-config
           "name": "string",
           "mountPath": "string"
         }
-      ],
-    }
-  ],
-  "hosts": [
-    {
-      "hostId": "string",
-      "name": "string",
-      "address": "string",
-      "architecture": "string",
-      "status": "NORMAL",
-      "ip": "string",
-      "protocol": "string",
-      "port": 0,
-      "os": "string",
-      "portRangeMin": 0,
-      "portRangeMax": 0
+      ]
     }
   ],
   "appApiFileId": "string",
-  "status": "NETWORK_ERROR",
   "accessUrl": "string",
-  "errorLog": "string",
-  "workLoadId": "string",
-  "appInstanceId": "string",
-  "deployDate": "2020-09-14T01:48:09.469Z"
+  "packageId": "string",
+  "nextStage": "string"
 }
 ```
 
@@ -1437,9 +1619,9 @@ Resource URI: /mec/developer/v1/projects/{projectId}/action/upload
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
-|userId|theauthoridofcreateproject|requestparam|yes|
-|userName|theauthornameofcreateproject|requestparam|yes|
+|projectId|projectid|path param|yes|
+|userId|userId|request param|yes|
+|userName|userName|request param|yes|
 
 **Example response**
 ```
@@ -1447,194 +1629,80 @@ Resource URI: /mec/developer/v1/projects/{projectId}/action/upload
 "csarId"
 ```
 
-### 3.12 POST open project to eco 
-Open project to eco
-```
-Resource URI: /mec/developer/v1/projects/{projectId}/action/open-api
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
-|userId|theauthoridofcreateproject|requestparam|yes|
-
-**Example response**
-```
-200 OK
-{
-  "groupId": "string",
-  "name": "string",
-  "type": "OPENMEP",
-  "description": "string",
-  "capabilityDetailList": [
-    {
-      "detailId": "string",
-      "groupId": "string",
-      "service": "string",
-      "version": "string",
-      "description": "string",
-      "provider": "string",
-      "apiFileId": "string"
-    }
-  ]
-}
-```
-
-### 3.13 POST add image to project 
-Add image to project
-```
-Resource URI: /mec/developer/v1/projects/{projectId}/image
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
-|ProjectImageConfig|entityclass|bodyparam|yes|
-
-```
-ProjectImageConfig
-{
-  "id": "string",
-  "name": "string",
-  "port": 0,
-  "version": "string",
-  "projectId": "string",
-  "type": "PLATFORM",
-  "nodePort": 0
-}
-```
-**Example response**
-```
-200 OK
-{
-  "id": "string",
-  "name": "string",
-  "port": 0,
-  "version": "string",
-  "projectId": "string",
-  "type": "PLATFORM",
-  "nodePort": 0
-}
-```
-
-### 3.14 DELETE image of project 
-DELETE image of project
-```
-Resource URI: /mec/developer/v1/projects/{projectId}/image/{imageId}
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
-|imageId|imageId|pathparam|yes|
-
-**Example response**
-```
-200 OK
-true
-```
-
-### 3.15 GET image of project 
-GET image of project 
-```
-Resource URI: /mec/developer/v1/projects/{projectId}/image
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
-
-**Example response**
-```
-200 OK
-{
-  "images": [
-    {
-      "id": "string",
-      "name": "string",
-      "port": 0,
-      "version": "string",
-      "projectId": "string",
-      "type": "PLATFORM",
-      "nodePort": 0
-    }
-  ]
-}
-```
-
-### 3.16 POST open project api 
-POST open project api
-```
-Resource URI: /mec/developer/v1/projects/{projectId}/action/open-api
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|projectId|projectid|path param|yes|
-|userId|user id|request param|yes|
-|AbilityOpenConfig|entity class|body param|yes|
-
-```
-AbilityOpenConfig:
-{
-  "detailId": "string",
-  "groupId": "string",
-  "service": "string",
-  "version": "string",
-  "description": "string",
-  "provider": "string",
-  "apiFileId": "string",
-  "guideFileId": "string",
-  "uploadTime": "2020-12-29T01:51:11.028Z",
-  "port": 0,
-  "host": "string",
-  "protocol": "string",
-  "appId": "string",
-  "packageId": "string",
-  "userId": "string"
-}
-```
-
-**Example response**
-```
-200 OK
-{
-  "groupId": "string",
-  "oneLevelName": "string",
-  "twoLevelName": "string",
-  "threeLevelName": "string",
-  "type": "OPENMEP",
-  "description": "string",
-  "capabilityDetailList": [
-    {
-      "detailId": "string",
-      "groupId": "string",
-      "service": "string",
-      "version": "string",
-      "description": "string",
-      "provider": "string",
-      "apiFileId": "string",
-      "guideFileId": "string",
-      "uploadTime": "2020-12-29T01:51:11.028Z",
-      "port": 0,
-      "host": "string",
-      "protocol": "string",
-      "appId": "string",
-      "packageId": "string",
-      "userId": "string"
-    }
-  ]
-}
-```
-
-### 3.17 GET project atp task 
-GET project atp task
+### 3.12 GET project atp task 
+get project atp task
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/action/atp
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|projectId|projectid|pathparam|yes|
+|projectId|projectid|path param|yes|
 
 **Example response**
 ```
 200 OK
 true
+```
+
+### 3.13 GET project workstatus 
+GET project works tatus 
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/container/workStatus
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|path param|yes|
+
+**Example response**
+```
+200 OK
+true
+```
+
+### 3.14 POST terminate project
+terminate project
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/action/terminate
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectid|path param|yes|
+|userId|userId|query param|yes|
+
+**Example response**
+```
+200 OK
+{
+  "id": "string",
+  "projectType": "CREATE_NEW",
+  "name": "string",
+  "version": "string",
+  "provider": "string",
+  "platform": [
+    "string"
+  ],
+  "deployPlatform": "KUBERNETES",
+  "type": "string",
+  "industry": [
+    "string"
+  ],
+  "description": "string",
+  "iconFileId": "string",
+  "status": "ONLINE",
+  "capabilityList": [
+    "string"
+  ],
+  "lastTestId": "string",
+  "userId": "string",
+  "createDate": "string",
+  "openCapabilityId": "string",
+  "applicationProjectCapabilities": [
+    {
+      "projectId": "string",
+      "capabilityId": "string"
+    }
+  ]
+}
 ```
 
 ## 4. Host
@@ -1646,7 +1714,11 @@ Resource URI: /mec/developer/v1/hosts
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-| | | | |
+|userId|userId|query param|yes|
+|name|name|query param|yes|
+|ip|ip|query param|yes|
+|limit|limit|query param|yes|
+|offset|offset|query param|yes|
 
 **Example response**
 ```
@@ -1658,12 +1730,20 @@ Resource URI: /mec/developer/v1/hosts
     "address": "string",
     "architecture": "string",
     "status": "NORMAL",
-    "ip": "string",
+    "lcmIp": "string",
+    "mecHost": "string",
     "protocol": "string",
     "port": 0,
     "os": "string",
     "portRangeMin": 0,
-    "portRangeMax": 0
+    "portRangeMax": 0,
+    "userId": "string",
+    "configId": "string",
+    "userName": "string",
+    "password": "string",
+    "vncPort": 0,
+    "parameter": "string",
+    "resource": "string"
   }
 ]
 ```
@@ -1675,26 +1755,32 @@ Resource URI: /mec/developer/v1/hosts/{hostId}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|hostId|hostid|pathparam|yes|
+|hostId|hostid|path param|yes|
 
 **Example response**
 ```
 200 OK
-[
-  {
-    "hostId": "string",
-    "name": "string",
-    "address": "string",
-    "architecture": "string",
-    "status": "NORMAL",
-    "ip": "string",
-    "protocol": "string",
-    "port": 0,
-    "os": "string",
-    "portRangeMin": 0,
-    "portRangeMax": 0
-  }
-]
+{
+  "hostId": "string",
+  "name": "string",
+  "address": "string",
+  "architecture": "string",
+  "status": "NORMAL",
+  "lcmIp": "string",
+  "mecHost": "string",
+  "protocol": "string",
+  "port": 0,
+  "os": "string",
+  "portRangeMin": 0,
+  "portRangeMax": 0,
+  "userId": "string",
+  "configId": "string",
+  "userName": "string",
+  "password": "string",
+  "vncPort": 0,
+  "parameter": "string",
+  "resource": "string"
+}
 ```
 
 ### 4.3 POST create one host
@@ -1714,31 +1800,26 @@ MepHost
   "address": "string",
   "architecture": "string",
   "status": "NORMAL",
-  "ip": "string",
+  "lcmIp": "string",
+  "mecHost": "string",
   "protocol": "string",
   "port": 0,
   "os": "string",
   "portRangeMin": 0,
-  "portRangeMax": 0
+  "portRangeMax": 0,
+  "userId": "string",
+  "configId": "string",
+  "userName": "string",
+  "password": "string",
+  "vncPort": 0,
+  "parameter": "string",
+  "resource": "string"
 }
 ```
-
 **Example response**
 ```
 200 OK
-{
-  "hostId": "string",
-  "name": "string",
-  "address": "string",
-  "architecture": "string",
-  "status": "NORMAL",
-  "ip": "string",
-  "protocol": "string",
-  "port": 0,
-  "os": "string",
-  "portRangeMin": 0,
-  "portRangeMax": 0
-}
+true
 ```
 
 ### 4.4 DELETE one host
@@ -1757,7 +1838,7 @@ true
 ```
 
 ### 4.5 PUT modify one host
-Create one host.
+modify one host.
 ```
 Resource URI: /mec/developer/v1/hosts/{hostId}
 ```
@@ -1774,12 +1855,20 @@ MepHost
   "address": "string",
   "architecture": "string",
   "status": "NORMAL",
-  "ip": "string",
+  "lcmIp": "string",
+  "mecHost": "string",
   "protocol": "string",
   "port": 0,
   "os": "string",
   "portRangeMin": 0,
-  "portRangeMax": 0
+  "portRangeMax": 0,
+  "userId": "string",
+  "configId": "string",
+  "userName": "string",
+  "password": "string",
+  "vncPort": 0,
+  "parameter": "string",
+  "resource": "string"
 }
 ```
 **Example response**
@@ -1791,337 +1880,215 @@ MepHost
   "address": "string",
   "architecture": "string",
   "status": "NORMAL",
-  "ip": "string",
+  "lcmIp": "string",
+  "mecHost": "string",
   "protocol": "string",
   "port": 0,
   "os": "string",
   "portRangeMin": 0,
-  "portRangeMax": 0
+  "portRangeMax": 0,
+  "userId": "string",
+  "configId": "string",
+  "userName": "string",
+  "password": "string",
+  "vncPort": 0,
+  "parameter": "string",
+  "resource": "string"
 }
 ```
 
-## 5. Capability-groups
-Services or capabilities of edge applications
-### 5.1 POST create one EdgeGalleryCapabilityGroup
-Create one Capability group.
+### 4.6 GET host list
+get host list
 ```
-Resource URI: /mec/developer/v1/capability-groups/
+Resource URI: /mec/developer/v1/hosts/list
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|OpenMepCapabilityGroup|entityclass|bodyparam|yes|
-
-```
-OpenMepCapabilityGroup
-{
-  "groupId": "string",
-  "name": "string",
-  "type": "OPENMEP",
-  "description": "string",
-  "capabilityDetailList": [
-    {
-      "detailId": "string",
-      "groupId": "string",
-      "service": "string",
-      "version": "string",
-      "description": "string",
-      "provider": "string",
-      "apiFileId": "string"
-    }
-  ]
-}
-```
-**Example response**
-```
-200 OK
-{
-  "groupId": "string",
-  "name": "string",
-  "type": "OPENMEP",
-  "description": "string",
-  "capabilityDetailList": [
-    {
-      "detailId": "string",
-      "groupId": "string",
-      "service": "string",
-      "version": "string",
-      "description": "string",
-      "provider": "string",
-      "apiFileId": "string"
-    }
-  ]
-}
-```
-
-### 5.2 DELETE one EdgeGalleryCapabilityGroup
-Delete one Capability group by id.
-```
-Resource URI: /mec/developer/v1/capability-groups/{groupId}
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|groupId|groupid|pathparam|yes|
-
-**Example response**
-```
-200 OK
-true
-```
-
-### 5.3 POST create one EdgeGalleryCapability
-Create one EdgeGalleryCapability
-```
-Resource URI: /mec/developer/v1/capability-groups/{groupId}
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|OpenMepCapabilityDetail|entityclass|bodyparam|yes|
-|groupId|groupid|pathparam|yes|
-
-```
-OpenMepCapabilityDetail
-{
-  "detailId": "string",
-  "groupId": "string",
-  "service": "string",
-  "version": "string",
-  "description": "string",
-  "provider": "string",
-  "apiFileId": "string",
-  "guideFileId": "string",
-  "uploadTime": "2020-12-29T02:12:28.030Z",
-  "port": 0,
-  "host": "string",
-  "protocol": "string",
-  "appId": "string",
-  "packageId": "string",
-  "userId": "string"
-}
-```
-
-**Example response**
-```
-200 OK
-{
-  "detailId": "string",
-  "groupId": "string",
-  "service": "string",
-  "version": "string",
-  "description": "string",
-  "provider": "string",
-  "apiFileId": "string",
-  "guideFileId": "string",
-  "uploadTime": "2020-12-29T02:12:28.030Z",
-  "port": 0,
-  "host": "string",
-  "protocol": "string",
-  "appId": "string",
-  "packageId": "string",
-  "userId": "string"
-}
-```
-
-### 5.4 DELETE one EdgeGalleryCapability
-Delete one EdgeGalleryCapability by id
-```
-Resource URI: /mec/developer/v1/capability-groups/capabilities/{capabilityId}
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|capabilityId|capabilityid|pathparam|yes|
-|userId|userId|requestparam|yes|
-
-**Example response**
-```
-200 OK
-true
-```
-
-### 5.5 GET all EdgeGalleryCapability
-Get all EdgeGalleryCapability 
-```
-Resource URI: /mec/developer/v1/capability-groups
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|capabilityId|capabilityid|pathparam|yes|
+|os|os|query param|yes|
+|architecture|architecture|query param|yes|
+|limit|limit|query param|yes|
+|offset|offset|query param|yes|
 
 **Example response**
 ```
 200 OK
 [
   {
-    "groupId": "string",
-    "oneLevelName": "string",
-    "twoLevelName": "string",
-    "threeLevelName": "string",
-    "type": "OPENMEP",
-    "description": "string",
-    "capabilityDetailList": [
-      {
-        "detailId": "string",
-        "groupId": "string",
-        "service": "string",
-        "version": "string",
-        "description": "string",
-        "provider": "string",
-        "apiFileId": "string",
-        "guideFileId": "string",
-        "uploadTime": "2020-12-29T02:12:28.030Z",
-        "port": 0,
-        "host": "string",
-        "protocol": "string",
-        "appId": "string",
-        "packageId": "string",
-        "userId": "string"
-      }
-    ]
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "lcmIp": "string",
+    "mecHost": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0,
+    "userId": "string",
+    "configId": "string",
+    "userName": "string",
+    "password": "string",
+    "vncPort": 0,
+    "parameter": "string",
+    "resource": "string"
   }
 ]
 ```
 
-### 5.6 GET all EdgeGalleryCapability by groupid
-Get all EdgeGalleryCapability by  groupid
+### 4.7 GET host logs
+get host logs.
 ```
-Resource URI: /mec/developer/v1/capability-groups/{groupId}
+Resource URI: /mec/developer/v1/hosts/{hostId}/logs
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|groupId|capabilitygroupid|pathparam|yes|
+|hostId|hostid|pathparam|yes|
 
 **Example response**
 ```
 200 OK
+[
+  {
+    "hostId": "string",
+    "name": "string",
+    "address": "string",
+    "architecture": "string",
+    "status": "NORMAL",
+    "lcmIp": "string",
+    "mecHost": "string",
+    "protocol": "string",
+    "port": 0,
+    "os": "string",
+    "portRangeMin": 0,
+    "portRangeMax": 0,
+    "userId": "string",
+    "configId": "string",
+    "userName": "string",
+    "password": "string",
+    "vncPort": 0,
+    "parameter": "string",
+    "resource": "string"
+  }
+]
+```
+
+## 5. Capability-groups
+capability group of edge applications
+### 5.1 POST create group
+Create one Capability group.
+```
+Resource URI: /mec/developer/v2/capability-groups
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|CapabilityGroup|entityclass|body param|yes|
+
+```
 {
-  "groupId": "string",
-  "oneLevelName": "string",
-  "twoLevelName": "string",
-  "threeLevelName": "string",
-  "type": "OPENMEP",
+  "id": "string",
+  "name": "string",
   "description": "string",
-  "capabilityDetailList": [
-    {
-      "detailId": "string",
-      "groupId": "string",
-      "service": "string",
-      "version": "string",
-      "description": "string",
-      "provider": "string",
-      "apiFileId": "string",
-      "guideFileId": "string",
-      "uploadTime": "2020-12-29T02:12:28.030Z",
-      "port": 0,
-      "host": "string",
-      "protocol": "string",
-      "appId": "string",
-      "packageId": "string",
-      "userId": "string"
-    }
-  ]
+  "nameEn": "string",
+  "descriptionEn": "string",
+  "type": "string",
+  "iconFileId": "string",
+  "author": "string",
+  "createTime": 0,
+  "updateTime": 0,
+  "parent": {},
+  "parentId": "string"
 }
 ```
-
-### 5.7 GET all EdgeGallery API by fileId
-Get all EdgeGallery  API
-```
-Resource URI: /mec/developer/v1/capability-groups/openmep-api/{fileId}
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|fileId|file id|pathparam|yes|
-
 **Example response**
 ```
 200 OK
 {
-  "detailId": "string",
-  "groupId": "string",
-  "service": "string",
-  "version": "string",
+  "id": "string",
+  "name": "string",
   "description": "string",
-  "provider": "string",
-  "apiFileId": "string",
-  "guideFileId": "string",
-  "uploadTime": "2020-12-29T02:12:28.030Z",
-  "port": 0,
-  "host": "string",
-  "protocol": "string",
-  "appId": "string",
-  "packageId": "string",
-  "userId": "string"
+  "nameEn": "string",
+  "descriptionEn": "string",
+  "type": "string",
+  "iconFileId": "string",
+  "author": "string",
+  "createTime": 0,
+  "updateTime": 0,
+  "parent": {},
+  "parentId": "string"
 }
 ```
 
-### 5.8 GET all EdgeGallery ECO API
-Get all EdgeGallery ECO API
+### 5.2 GET all group
+get all group.
 ```
-Resource URI: /mec/developer/v1/capability-groups/openmepeco-api
+Resource URI: /mec/developer/v2/capability-groups/
+```
+
+**Example response**
+```
+200 OK
+[
+  {
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "nameEn": "string",
+    "descriptionEn": "string",
+    "type": "string",
+    "iconFileId": "string",
+    "author": "string",
+    "createTime": 0,
+    "updateTime": 0,
+    "parent": {},
+    "parentId": "string"
+  }
+]
+```
+
+### 5.3 GET one group
+get one group
+```
+Resource URI: /mec/developer/v2/capability-groups/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-| | | | |
+|id|group id|path param|yes|
 
 **Example response**
 ```
 200 OK
 {
-  "openMepEcos": [
-    {
-      "name": "string",
-      "service": "string",
-      "description": "string",
-      "apiFileId": "string"
-    }
-  ]
+  "id": "string",
+  "name": "string",
+  "description": "string",
+  "nameEn": "string",
+  "descriptionEn": "string",
+  "type": "string",
+  "iconFileId": "string",
+  "author": "string",
+  "createTime": 0,
+  "updateTime": 0,
+  "parent": {},
+  "parentId": "string"
 }
 ```
 
-### 5.9 GET all EdgeGallery API
-Get all EdgeGallery ECO API
+### 5.4 DELETE one group
+Delete one group by id
 ```
-Resource URI: /mec/developer/v1/capability-groups/open-api/{type}
+Resource URI: /mec/developer/v2/capability-groups/{id}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|type|api type|pathparam|yes|
+|id|group id|path param|yes|
 
 **Example response**
 ```
 200 OK
-{
-  "openCapability": [
-    {
-      "groupId": "string",
-      "oneLevelName": "string",
-      "twoLevelName": "string",
-      "threeLevelName": "string",
-      "type": "OPENMEP",
-      "description": "string",
-      "capabilityDetailList": [
-        {
-          "detailId": "string",
-          "groupId": "string",
-          "service": "string",
-          "version": "string",
-          "description": "string",
-          "provider": "string",
-          "apiFileId": "string",
-          "guideFileId": "string",
-          "uploadTime": "2020-12-29T02:12:28.030Z",
-          "port": 0,
-          "host": "string",
-          "protocol": "string",
-          "appId": "string",
-          "packageId": "string",
-          "userId": "string"
-        }
-      ]
-    }
-  ]
-}
+string output.
 ```
-
-
 
 ## 6. File
 This part is to configure the app, perform app deployment, and test the api for file operations
@@ -2132,9 +2099,9 @@ Resource URI: /mec/developer/v1/files/{fileId}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|fileId|fileid|pathparam|yes|
-|userId|theauthoridofuploadfile|requestparam|yes|
-|type|file type|requestparam|yes|
+|fileId|fileid|path param|yes|
+|userId|userId|request param|yes|
+|type|file type|request param|yes|
 
 **Example response**
 ```
@@ -2149,8 +2116,8 @@ Resource URI: /mec/developer/v1/files
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|file|MultipartFileclass|requestpart|yes|
-|userId|theauthoridofuploadfile|requestparam|yes|
+|file|MultipartFileclass|request part|yes|
+|userId|userId|request param|yes|
 
 **Example response**
 ```
@@ -2173,9 +2140,10 @@ Resource URI: /mec/developer/v1/files/helm-template-yaml
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|file|MultipartFileclass|requestpart|yes|
-|userId|theauthoridofuploadfile|requestparam|yes|
-|projectId|projectid|requestparam|yes|
+|file|MultipartFileclass|request part|yes|
+|userId|userId|reques tparam|yes|
+|projectId|projectid|request param|yes|
+|configType|configType|request param|yes|
 
 **Example response**
 ```
@@ -2191,32 +2159,14 @@ Resource URI: /mec/developer/v1/files/helm-template-yaml
 }
 ```
 
-### 6.4 GET helm yaml
-Query helm template yaml.
-```
-Resource URI: /mec/developer/v1/files/helm-template-yaml
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|userId|theauthoridofuploadfile|requestparam|yes|
-|projectId|projectid|requestparam|yes|
-
-**Example response**
-```
-200 OK
-[
-  {}
-]
-```
-
-### 6.5 DELETE helm yaml
+### 6.4 DELETE helm yaml
 Delete helm template yaml.
 ```
 Resource URI: /mec/developer/v1/files/helm-template-yaml
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|fileId|fileid|requestparam|yes||
+|fileId|fileid|request param|yes||
 
 **Example response**
 ```
@@ -2224,7 +2174,7 @@ Resource URI: /mec/developer/v1/files/helm-template-yaml
 "string"
 ```
 
-### 6.6 POST get sample code
+### 6.5 POST get sample code
 Get sample code.
 ```
 Resource URI: /mec/developer/v1/files/samplecode
@@ -2244,7 +2194,8 @@ List<String>
 200 OK
 byte array output
 ```
-### 6.7 GET one file return object
+
+### 6.6 GET api info
 Get file return one object
 ```
 Resource URI: /mec/developer/v1/files/api-info/{fileId}
@@ -2253,7 +2204,6 @@ Resource URI: /mec/developer/v1/files/api-info/{fileId}
 |-------------|-------------|------------|------------|
 |fileId|file id|path param |yes|
 |userId|the author id of upload file|request param |yes|
-
 
 **Example response**
 ```
@@ -2269,8 +2219,8 @@ Resource URI: /mec/developer/v1/files/api-info/{fileId}
 }
 ```
 
-### 6.8 GET sdk code
-GET sdk code
+### 6.7 GET sdk code
+Get sdk code
 ```
 Resource URI: /mec/developer/v1/files/sdk/{fileId}/download/{lan}
 ```
@@ -2279,15 +2229,14 @@ Resource URI: /mec/developer/v1/files/sdk/{fileId}/download/{lan}
 |fileId|file id|path param |yes|
 |lan|sdk codeLanguage|path param |yes|
 
-
 **Example response**
 ```
 200 OK
 binary output
 ```
 
-### 6.9 GET file content
-GET file content
+### 6.8 GET sample content
+query file content
 ```
 Resource URI: /mec/developer/v1/files/samplecode/get-file-content
 ```
@@ -2301,9 +2250,8 @@ Resource URI: /mec/developer/v1/files/samplecode/get-file-content
 String output
 ```
 
-
-### 6.10 POST pkg structure
-POST pkg structure
+### 6.9 POST pkg structure
+post pkg structure
 ```
 Resource URI: /mec/developer/v1/files/samplecode/get-pkg-structure
 ```
@@ -2324,40 +2272,385 @@ Resource URI: /mec/developer/v1/files/samplecode/get-pkg-structure
 }
 ```
 
-
-## 7. LocalApi
-Get the APIs of all functional modules of developer platform
-### 7.1 GET one api file
-Get one api file
+## 7. Capabilities
+capability of edge applications
+### 7.1 POST create capability
+create capability
 ```
-Resource URI: /mec/developer/v1/localapi/{fileName}
+Resource URI: /mec/developer/v2/capabilities/
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|fileName|apifilename|pathparam|yes|
+|Capability|Capability|body param|yes|
 
 ```
-filename: "plugin", "testapp", "hosts", "files", "capability-groups", "projects"
+Capability:
+{
+  "id": "string",
+  "name": "string",
+  "nameEn": "string",
+  "version": "string",
+  "description": "string",
+  "descriptionEn": "string",
+  "provider": "string",
+  "apiFileId": "string",
+  "guideFileId": "string",
+  "guideFileIdEn": "string",
+  "uploadTime": 0,
+  "port": 0,
+  "host": "string",
+  "protocol": "string",
+  "appId": "string",
+  "packageId": "string",
+  "userId": "string",
+  "selectCount": 0,
+  "iconFileId": "string",
+  "author": "string",
+  "experienceUrl": "string",
+  "group": {
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "nameEn": "string",
+    "descriptionEn": "string",
+    "type": "string",
+    "iconFileId": "string",
+    "author": "string",
+    "createTime": 0,
+    "updateTime": 0,
+    "parent": {},
+    "parentId": "string"
+  },
+  "groupId": "string"
+}
 ```
 **Example response**
 ```
 200 OK
-binary output
+{
+  "id": "string",
+  "name": "string",
+  "nameEn": "string",
+  "version": "string",
+  "description": "string",
+  "descriptionEn": "string",
+  "provider": "string",
+  "apiFileId": "string",
+  "guideFileId": "string",
+  "guideFileIdEn": "string",
+  "uploadTime": 0,
+  "port": 0,
+  "host": "string",
+  "protocol": "string",
+  "appId": "string",
+  "packageId": "string",
+  "userId": "string",
+  "selectCount": 0,
+  "iconFileId": "string",
+  "author": "string",
+  "experienceUrl": "string",
+  "group": {
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "nameEn": "string",
+    "descriptionEn": "string",
+    "type": "string",
+    "iconFileId": "string",
+    "author": "string",
+    "createTime": 0,
+    "updateTime": 0,
+    "parent": {},
+    "parentId": "string"
+  },
+  "groupId": "string"
+}
 ```
 
-
-## 8. Health
-Get health
-### 8.1 GET health
-Get health
+### 7.2 GET all capability
+GET all capabilities
 ```
-Resource URI: /mec/developer/v1/health
+Resource URI: /mec/developer/v2/capabilities/
 ```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|filterType|filterType|query param|yes|
 
 **Example response**
 ```
 200 OK
-string output
+[
+  {
+    "id": "string",
+    "name": "string",
+    "nameEn": "string",
+    "version": "string",
+    "description": "string",
+    "descriptionEn": "string",
+    "provider": "string",
+    "apiFileId": "string",
+    "guideFileId": "string",
+    "guideFileIdEn": "string",
+    "uploadTime": 0,
+    "port": 0,
+    "host": "string",
+    "protocol": "string",
+    "appId": "string",
+    "packageId": "string",
+    "userId": "string",
+    "selectCount": 0,
+    "iconFileId": "string",
+    "author": "string",
+    "experienceUrl": "string",
+    "group": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "nameEn": "string",
+      "descriptionEn": "string",
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "groupId": "string"
+  }
+]
+```
+
+### 7.3 GET one capability
+query one capability
+```
+Resource URI: /mec/developer/v2/capabilities/{id}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|id|id|path param|yes|
+
+**Example response**
+```
+200 OK
+[
+  {
+    "id": "string",
+    "name": "string",
+    "nameEn": "string",
+    "version": "string",
+    "description": "string",
+    "descriptionEn": "string",
+    "provider": "string",
+    "apiFileId": "string",
+    "guideFileId": "string",
+    "guideFileIdEn": "string",
+    "uploadTime": 0,
+    "port": 0,
+    "host": "string",
+    "protocol": "string",
+    "appId": "string",
+    "packageId": "string",
+    "userId": "string",
+    "selectCount": 0,
+    "iconFileId": "string",
+    "author": "string",
+    "experienceUrl": "string",
+    "group": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "nameEn": "string",
+      "descriptionEn": "string",
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "groupId": "string"
+  }
+]
+```
+
+### 7.4 DELETE one capability
+Delete one capability
+```
+Resource URI: /mec/developer/v2/capabilities/{id}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|id|id|path param|yes|
+
+**Example response**
+```
+200 OK
+{
+    "id": "string",
+    "name": "string",
+    "nameEn": "string",
+    "version": "string",
+    "description": "string",
+    "descriptionEn": "string",
+    "provider": "string",
+    "apiFileId": "string",
+    "guideFileId": "string",
+    "guideFileIdEn": "string",
+    "uploadTime": 0,
+    "port": 0,
+    "host": "string",
+    "protocol": "string",
+    "appId": "string",
+    "packageId": "string",
+    "userId": "string",
+    "selectCount": 0,
+    "iconFileId": "string",
+    "author": "string",
+    "experienceUrl": "string",
+    "group": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "nameEn": "string",
+      "descriptionEn": "string",
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "groupId": "string"
+  }
+```
+
+### 7.5 PUT one capability
+update one capability
+```
+Resource URI: /mec/developer/v2/capabilities/{id}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|id|id|path param|yes|
+|capability|capability|body param|yes|
+
+```
+capability:
+{
+    "id": "string",
+    "name": "string",
+    "nameEn": "string",
+    "version": "string",
+    "description": "string",
+    "descriptionEn": "string",
+    "provider": "string",
+    "apiFileId": "string",
+    "guideFileId": "string",
+    "guideFileIdEn": "string",
+    "uploadTime": 0,
+    "port": 0,
+    "host": "string",
+    "protocol": "string",
+    "appId": "string",
+    "packageId": "string",
+    "userId": "string",
+    "selectCount": 0,
+    "iconFileId": "string",
+    "author": "string",
+    "experienceUrl": "string",
+    "group": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "nameEn": "string",
+      "descriptionEn": "string",
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "groupId": "string"
+  }
+```
+**Example response**
+```
+200 OK
+{
+    "id": "string",
+    "name": "string",
+    "nameEn": "string",
+    "version": "string",
+    "description": "string",
+    "descriptionEn": "string",
+    "provider": "string",
+    "apiFileId": "string",
+    "guideFileId": "string",
+    "guideFileIdEn": "string",
+    "uploadTime": 0,
+    "port": 0,
+    "host": "string",
+    "protocol": "string",
+    "appId": "string",
+    "packageId": "string",
+    "userId": "string",
+    "selectCount": 0,
+    "iconFileId": "string",
+    "author": "string",
+    "experienceUrl": "string",
+    "group": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "nameEn": "string",
+      "descriptionEn": "string",
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "groupId": "string"
+  }
+```
+
+## 8. Capability-Groups Query
+Capability-Groups query
+### 8.1 GET group by type
+query group by type
+```
+Resource URI: /mec/developer/v2/query/capability-groups/type/{type}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|type|group type|path param|yes|
+
+**Example response**
+```
+200 OK
+[
+  {
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "nameEn": "string",
+    "descriptionEn": "string",
+    "type": "string",
+    "iconFileId": "string",
+    "author": "string",
+    "createTime": 0,
+    "updateTime": 0,
+    "parent": {},
+    "parentId": "string"
+  }
+]
 ```
 
 ## 9. AppRelease
@@ -2401,7 +2694,6 @@ Resource URI: /mec/developer/v1/apprelease/{projectId}/action/get-pkg-content
 string output
 ```
 
-
 ## 10. ReleaseConfig
 Do some configuration before release app 
 ### 10.1 GET release config
@@ -2412,7 +2704,6 @@ Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |projectId|project id|pathparam|yes|
-
 
 **Example response**
 ```
@@ -2521,7 +2812,7 @@ Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config
 ```
 
 ### 10.2 POST release config
-POST release config
+create release config
 ```
 Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config
 ```
@@ -2741,7 +3032,7 @@ ReleaseConfig:
 ```
 
 ### 10.3 PUT release config
-PUT release config
+update release config
 ```
 Resource URI: /mec/developer/v1/releaseconfig/{projectId}/action/release-config
 ```
@@ -2960,47 +3251,18 @@ ReleaseConfig:
 }
 ```
 
-
-## 11. DeployConfig
-Get some config about deploy platform
-### 11.1 GET deploy platform
-Get deploy platform
+## 11. Health
+health Check
+### 11.1 GET health check
+Get health check
 ```
-Resource URI: /mec/developer/v1/config/deploy-platform
+Resource URI: /health
 ```
 
 **Example response**
 ```
 200 OK
-{
-  "isVirtualMachine": false,
-  "virtualMachineUrl": "string"
-}
-```
-
-### 11.2 PUT deploy platform
-PUT deploy platform
-```
-Resource URI: /mec/developer/v1/config/deploy-platform
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|DeployPlatformConfig|entityclass|bodyparam|yes|
-
-```
-DeployPlatformConfig:
-{
-  "isVirtualMachine": false,
-  "virtualMachineUrl": "string"
-}
-```
-**Example response**
-```
-200 OK
-{
-  "isVirtualMachine": false,
-  "virtualMachineUrl": "string"
-}
+'ok'.
 ```
 
 ## 12. Deploy
@@ -3095,410 +3357,45 @@ Resource URI: /mec/developer/v1/deploy/{projectId}/action/save-yaml
 }
 ```
 
-## 13. System
-About the api with system functions on the developer platform
-### 13.1 GET all capability
-GET all capability
+## 13. Capability-group stats
+query group stats
+### 13.1 GET group stats
+Get group stats
 ```
-Resource URI: /mec/developer/v1/system/capability
+Resource URI: /mec/developer/v2/capability-group-stats/
 ```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|userId|userId|request param|no|
-|twoLevelName|the name of two level name|request param|no|
-|twoLevelNameEn|the name of two level english name|request param|no|
-|limit|the max count of one page|request param|yes|
-|offset|start index of the page|request param|yes|
 
 **Example response**
 ```
 200 OK
 [
   {
-    "groupId": "string",
-    "oneLevelName": "string",
-    "oneLevelNameEn": "string",
-    "twoLevelName": "string",
-    "twoLevelNameEn": "string",
-    "type": "OPENMEP",
+    "id": "string",
+    "name": "string",
     "description": "string",
+    "nameEn": "string",
     "descriptionEn": "string",
-    "capabilityDetailList": [
-      {
-        "detailId": "string",
-        "groupId": "string",
-        "service": "string",
-        "serviceEn": "string",
-        "version": "string",
-        "description": "string",
-        "descriptionEn": "string",
-        "provider": "string",
-        "apiFileId": "string",
-        "guideFileId": "string",
-        "guideFileIdEn": "string",
-        "uploadTime": "string",
-        "port": 0,
-        "host": "string",
-        "protocol": "string",
-        "appId": "string",
-        "packageId": "string",
-        "userId": "string"
-      }
-    ]
-  }
-]
-```
-
-### 13.2 POST one capability
-Create one capability
-```
-Resource URI: /mec/developer/v1/system/capability
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|group|CapabilityGroup|body param|yes|
-
-```
-CapabilityGroup
-{
-  "groupId": "string",
-  "oneLevelName": "string",
-  "oneLevelNameEn": "string",
-  "twoLevelName": "string",
-  "twoLevelNameEn": "string",
-  "type": "OPENMEP",
-  "description": "string",
-  "descriptionEn": "string",
-  "capabilityDetailList": [
-    {
-      "detailId": "string",
-      "groupId": "string",
-      "service": "string",
-      "serviceEn": "string",
-      "version": "string",
+    "type": "string",
+    "iconFileId": "string",
+    "author": "string",
+    "createTime": 0,
+    "updateTime": 0,
+    "parent": {
+      "id": "string",
+      "name": "string",
       "description": "string",
+      "nameEn": "string",
       "descriptionEn": "string",
-      "provider": "string",
-      "apiFileId": "string",
-      "guideFileId": "string",
-      "guideFileIdEn": "string",
-      "uploadTime": "string",
-      "port": 0,
-      "host": "string",
-      "protocol": "string",
-      "appId": "string",
-      "packageId": "string",
-      "userId": "string"
-    }
-  ]
-}
-
-```
-
-**Example response**
-```
-200 OK
-{
-  "groupId": "string",
-  "oneLevelName": "string",
-  "oneLevelNameEn": "string",
-  "twoLevelName": "string",
-  "twoLevelNameEn": "string",
-  "type": "OPENMEP",
-  "description": "string",
-  "descriptionEn": "string",
-  "capabilityDetailList": [
-    {
-      "detailId": "string",
-      "groupId": "string",
-      "service": "string",
-      "serviceEn": "string",
-      "version": "string",
-      "description": "string",
-      "descriptionEn": "string",
-      "provider": "string",
-      "apiFileId": "string",
-      "guideFileId": "string",
-      "guideFileIdEn": "string",
-      "uploadTime": "string",
-      "port": 0,
-      "host": "string",
-      "protocol": "string",
-      "appId": "string",
-      "packageId": "string",
-      "userId": "string"
-    }
-  ]
-}
-]
-```
-
-### 13.3 DELETE one capability
-DELETE one capability
-```
-Resource URI: /mec/developer/v1/system/capability
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|groupId|groupId|request param|yes|
-
-
-**Example response**
-```
-200 OK
-boolean output
-```
-
-### 13.4 GET all system host
-GET all host
-```
-Resource URI: /mec/developer/v1/system/hosts
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|userId|userId|request param|no|
-|name|the name of host|request param|no|
-|ip|the ip of host|request param|no|
-|limit|the max count of one page|request param|yes|
-|offset|start index of the page|request param|yes|
-
-
-**Example response**
-```
-200 OK
-[
-  {
-    "hostId": "string",
-    "name": "string",
-    "address": "string",
-    "architecture": "string",
-    "status": "NORMAL",
-    "lcmIp": "string",
-    "mecHost": "string",
-    "protocol": "string",
-    "port": 0,
-    "os": "string",
-    "portRangeMin": 0,
-    "portRangeMax": 0,
-    "userId": "string",
-    "configId": "string",
-    "userName": "string"
-  }
-]
-```
-
-### 13.5 POST one system host
-Create one host
-```
-Resource URI: /mec/developer/v1/system/hosts
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|host|Entity class|body param|yes|
-
-```
-MepHost
-{
-  "hostId": "string",
-  "name": "string",
-  "address": "string",
-  "architecture": "string",
-  "status": "NORMAL",
-  "lcmIp": "string",
-  "mecHost": "string",
-  "protocol": "string",
-  "port": 0,
-  "os": "string",
-  "portRangeMin": 0,
-  "portRangeMax": 0,
-  "userId": "string",
-  "configId": "string",
-  "userName": "string",
-  "password": "string"
-}
-```
-
-
-**Example response**
-```
-200 OK
-boolean output
-```
-
-### 13.6 GET one system host
-GET one host
-```
-Resource URI: /mec/developer/v1/system/hosts/{hostId}
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|hostId|hostId|path param|yes|
-
-**Example response**
-```
-200 OK
-{
-  "hostId": "string",
-  "name": "string",
-  "address": "string",
-  "architecture": "string",
-  "status": "NORMAL",
-  "lcmIp": "string",
-  "mecHost": "string",
-  "protocol": "string",
-  "port": 0,
-  "os": "string",
-  "portRangeMin": 0,
-  "portRangeMax": 0,
-  "userId": "string",
-  "configId": "string",
-  "userName": "string"
-}
-```
-
-### 13.7 PUT one system host
-Modify one host
-```
-Resource URI: /mec/developer/v1/system/hosts/{hostId}
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|hostId|hostId|path param|yes|
-|host|Entity class|body param|yes|
-
-```
-host
-{
-  "hostId": "string",
-  "name": "string",
-  "address": "string",
-  "architecture": "string",
-  "status": "NORMAL",
-  "lcmIp": "string",
-  "mecHost": "string",
-  "protocol": "string",
-  "port": 0,
-  "os": "string",
-  "portRangeMin": 0,
-  "portRangeMax": 0,
-  "userId": "string",
-  "configId": "string",
-  "userName": "string"
-}
-```
-
-**Example response**
-```
-200 OK
-{
-  "hostId": "string",
-  "name": "string",
-  "address": "string",
-  "architecture": "string",
-  "status": "NORMAL",
-  "lcmIp": "string",
-  "mecHost": "string",
-  "protocol": "string",
-  "port": 0,
-  "os": "string",
-  "portRangeMin": 0,
-  "portRangeMax": 0,
-  "userId": "string",
-  "configId": "string",
-  "userName": "string"
-}
-```
-
-### 13.8 DELETE one system host
-DELETE one host
-```
-Resource URI: /mec/developer/v1/system/hosts/{hostId}
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|hostId|hostId|path param|yes|
-
-**Example response**
-```
-200 OK
-boolean output
-```
-
-### 13.9 GET capability detail
-GET capability detail
-```
-Resource URI: /mec/developer/v1/system/capability/{groupId}
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|groupId|groupId|path param|yes|
-
-**Example response**
-```
-200 OK
-{
-  "groupId": "string",
-  "oneLevelName": "string",
-  "oneLevelNameEn": "string",
-  "twoLevelName": "string",
-  "twoLevelNameEn": "string",
-  "type": "OPENMEP",
-  "description": "string",
-  "descriptionEn": "string",
-  "capabilityDetailList": [
-    {
-      "detailId": "string",
-      "groupId": "string",
-      "service": "string",
-      "serviceEn": "string",
-      "version": "string",
-      "description": "string",
-      "descriptionEn": "string",
-      "provider": "string",
-      "apiFileId": "string",
-      "guideFileId": "string",
-      "guideFileIdEn": "string",
-      "uploadTime": "string",
-      "port": 0,
-      "host": "string",
-      "protocol": "string",
-      "appId": "string",
-      "packageId": "string",
-      "userId": "string"
-    }
-  ]
-}
-```
-
-### 13.10 GET host log
-GET host log
-```
-Resource URI: /mec/developer/v1/system/hosts/{hostId}/log
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|hostId|hostId|path param|yes|
-
-**Example response**
-```
-200 OK
-[
-  {
-    "hostId": "string",
-    "name": "string",
-    "address": "string",
-    "architecture": "string",
-    "status": "NORMAL",
-    "lcmIp": "string",
-    "mecHost": "string",
-    "protocol": "string",
-    "port": 0,
-    "os": "string",
-    "portRangeMin": 0,
-    "portRangeMax": 0,
-    "userId": "string",
-    "configId": "string",
-    "userName": "string"
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "capabilityCount": 0,
+    "parentId": "string"
   }
 ]
 ```
@@ -3514,83 +3411,6 @@ Resource URI: /mec/developer/v1/projects/{projectId}/vm-create
 |-------------|-------------|------------|------------|
 |projectId|projectId|path param|yes|
 |userId|userId|query param|yes|
-|vmCreateConfig|entity class|body param|yes|
-
-```
-vmCreateConfig:
-{
-  "vmId": "string",
-  "projectId": "string",
-  "vmRegulation": {
-    "regulationId": 0,
-    "architecture": "string",
-    "nameZh": "string",
-    "nameEn": "string",
-    "sceneZh": "string",
-    "sceneEn": "string",
-    "memory": 0,
-    "cpu": 0,
-    "systemDisk": 0,
-    "dataDisk": 0,
-    "gpu": "string",
-    "otherAbility": "string"
-  },
-  "vmSystem": {
-    "systemId": 0,
-    "type": "string",
-    "operateSystem": "string",
-    "version": "string",
-    "systemBit": "string",
-    "systemDisk": 0
-  },
-  "vmNetwork": [
-    "string"
-  ],
-  "vmName": "string",
-  "status": "NOTCREATE",
-  "stageStatus": {
-    "hostInfo": "Success",
-    "csar": "Success",
-    "instantiateInfo": "Success",
-    "workStatus": "Success"
-  },
-  "host": {
-    "hostId": "string",
-    "name": "string",
-    "address": "string",
-    "architecture": "string",
-    "status": "NORMAL",
-    "lcmIp": "string",
-    "mecHost": "string",
-    "protocol": "string",
-    "port": 0,
-    "os": "string",
-    "portRangeMin": 0,
-    "portRangeMax": 0,
-    "userId": "string",
-    "configId": "string",
-    "userName": "string"
-  },
-  "lcmToken": "string",
-  "vmInfo": [
-    {
-      "vmId": "string",
-      "vncUrl": "string",
-      "networks": [
-        {
-          "ip": "string",
-          "name": "string"
-        }
-      ]
-    }
-  ],
-  "appInstanceId": "string",
-  "packageId": "string",
-  "createTime": "2021-03-31T06:11:11.495Z",
-  "log": "string",
-  "nextStage": "string"
-}
-```
 
 **Example response**
 ```
@@ -3598,36 +3418,11 @@ vmCreateConfig:
 {
   "vmId": "string",
   "projectId": "string",
-  "vmRegulation": {
-    "regulationId": 0,
-    "architecture": "string",
-    "nameZh": "string",
-    "nameEn": "string",
-    "sceneZh": "string",
-    "sceneEn": "string",
-    "memory": 0,
-    "cpu": 0,
-    "systemDisk": 0,
-    "dataDisk": 0,
-    "gpu": "string",
-    "otherAbility": "string"
-  },
-  "vmSystem": {
-    "systemId": 0,
-    "type": "string",
-    "operateSystem": "string",
-    "version": "string",
-    "systemBit": "string",
-    "systemDisk": 0
-  },
-  "vmNetwork": [
-    "string"
-  ],
   "vmName": "string",
   "status": "NOTCREATE",
   "stageStatus": {
     "hostInfo": "Success",
-    "csar": "Success",
+    "distributeInfo": "Success",
     "instantiateInfo": "Success",
     "workStatus": "Success"
   },
@@ -3646,7 +3441,11 @@ vmCreateConfig:
     "portRangeMax": 0,
     "userId": "string",
     "configId": "string",
-    "userName": "string"
+    "userName": "string",
+    "password": "string",
+    "vncPort": 0,
+    "parameter": "string",
+    "resource": "string"
   },
   "lcmToken": "string",
   "vmInfo": [
@@ -3663,14 +3462,14 @@ vmCreateConfig:
   ],
   "appInstanceId": "string",
   "packageId": "string",
-  "createTime": "2021-03-31T06:11:11.495Z",
+  "createTime": "2021-10-13T01:47:57.447Z",
   "log": "string",
   "nextStage": "string"
 }
 ```
 
 ### 14.2 DELETE vm config
-DELETE vm config
+delete vm config
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}
 ```
@@ -3686,9 +3485,8 @@ Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}
 boolean output
 ```
 
-
-### 14.3 GET image config
-GET image config
+### 14.3 GET all image config
+get all image config
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm/image
 ```
@@ -3710,6 +3508,7 @@ Resource URI: /mec/developer/v1/projects/{projectId}/vm/image
   "hostIp": "string",
   "sumChunkNum": 0,
   "chunkSize": 0,
+  "checksum": "string",
   "stageStatus": {
     "createImageInfo": "Success",
     "imageStatus": "Success",
@@ -3717,7 +3516,7 @@ Resource URI: /mec/developer/v1/projects/{projectId}/vm/image
   },
   "status": "NOTCREATE",
   "lcmToken": "string",
-  "createTime": "2021-03-31T06:11:11.497Z",
+  "createTime": "2021-10-13T01:47:57.448Z",
   "log": "string",
   "nextStage": "string"
 }
@@ -3756,7 +3555,7 @@ boolean output
 ```
 
 ### 14.6 GET image config By ProjectId
-GET image config By ProjectId
+query image config By ProjectId
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm
 ```
@@ -3772,36 +3571,11 @@ Resource URI: /mec/developer/v1/projects/{projectId}/vm
   {
     "vmId": "string",
     "projectId": "string",
-    "vmRegulation": {
-      "regulationId": 0,
-      "architecture": "string",
-      "nameZh": "string",
-      "nameEn": "string",
-      "sceneZh": "string",
-      "sceneEn": "string",
-      "memory": 0,
-      "cpu": 0,
-      "systemDisk": 0,
-      "dataDisk": 0,
-      "gpu": "string",
-      "otherAbility": "string"
-    },
-    "vmSystem": {
-      "systemId": 0,
-      "type": "string",
-      "operateSystem": "string",
-      "version": "string",
-      "systemBit": "string",
-      "systemDisk": 0
-    },
-    "vmNetwork": [
-      "string"
-    ],
     "vmName": "string",
     "status": "NOTCREATE",
     "stageStatus": {
       "hostInfo": "Success",
-      "csar": "Success",
+      "distributeInfo": "Success",
       "instantiateInfo": "Success",
       "workStatus": "Success"
     },
@@ -3820,7 +3594,11 @@ Resource URI: /mec/developer/v1/projects/{projectId}/vm
       "portRangeMax": 0,
       "userId": "string",
       "configId": "string",
-      "userName": "string"
+      "userName": "string",
+      "password": "string",
+      "vncPort": 0,
+      "parameter": "string",
+      "resource": "string"
     },
     "lcmToken": "string",
     "vmInfo": [
@@ -3837,7 +3615,7 @@ Resource URI: /mec/developer/v1/projects/{projectId}/vm
     ],
     "appInstanceId": "string",
     "packageId": "string",
-    "createTime": "2021-03-31T06:11:11.495Z",
+    "createTime": "2021-10-13T01:47:57.447Z",
     "log": "string",
     "nextStage": "string"
   }
@@ -3845,7 +3623,7 @@ Resource URI: /mec/developer/v1/projects/{projectId}/vm
 ```
 
 ### 14.7 GET csar pkg
-GET csar pkg
+get csar pkg
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}/package
 ```
@@ -3862,13 +3640,10 @@ binary output
 ```
 
 ### 14.8 GET vm resources
-GET vm resources
+get vm resources
 ```
 Resource URI: /mec/developer/v1/vmconfig
 ```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-| | | | |
 
 **Example response**
 ```
@@ -3893,11 +3668,26 @@ Resource URI: /mec/developer/v1/vmconfig
   "vmSystemList": [
     {
       "systemId": 0,
-      "type": "string",
-      "operateSystem": "string",
+      "type": "public",
+      "operateSystem": "ubuntu",
       "version": "string",
       "systemBit": "string",
-      "systemDisk": 0
+      "systemDisk": 0,
+      "systemName": "string",
+      "fileName": "string",
+      "createTime": "string",
+      "modifyTime": "string",
+      "systemFormat": "string",
+      "systemSize": 0,
+      "systemSlim": "SLIM_WAIT",
+      "uploadTime": "string",
+      "systemPath": "string",
+      "status": "UPLOAD_WAIT",
+      "userId": "string",
+      "userName": "string",
+      "fileMd5": "string",
+      "fileIdentifier": "string",
+      "errorType": "string"
     }
   ],
   "vmNetworkList": [
@@ -3907,12 +3697,21 @@ Resource URI: /mec/developer/v1/vmconfig
       "descriptionEn": "string",
       "networkName": "string"
     }
+  ],
+  "vmUserDataList": [
+    {
+      "operateSystem": "string",
+      "flavorExtraSpecs": "string",
+      "contents": "string",
+      "params": "string",
+      "temp": false
+    }
   ]
 }
 ```
 
 ### 14.9 POST vm file
-GET csar pkg
+uoload vm image
 ```
 Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}/files
 ```
@@ -3921,7 +3720,17 @@ Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}/files
 |projectId|projectId|path param|yes|
 |userId|user id|query param|yes|
 |vmId|vmId|path param|yes|
-|file|File |formdate param|yes|
+|file|File |query param|yes|
+|id|id|query param|yes|
+|chunkNumber|chunkNumber|path param|yes|
+|chunkSize|chunkSize|query param|yes|
+|currentChunkSize|currentChunkSize|query param|yes|
+|totalSize|totalSize|query param|yes|
+|identifier|identifier|query param|yes|
+|filename|filename|query param|yes|
+|relativePath|relativePath|query param|yes|
+|totalChunks|totalChunks|query param|yes|
+|type|type|query param|yes|
 
 **Example response**
 ```
@@ -3929,66 +3738,312 @@ Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}/files
 boolean output
 ```
 
-## 15. Image
-This part is about the api for deploying APP image
-### 15.1 POST upload image 
-POST upload image
+### 14.10 GET merge image
+merge vm image
 ```
-Resource URI: /mec/developer/v1/image/upload
+Resource URI: /mec/developer/v1/projects/{projectId}/vm/{vmId}/merge
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|id|image chunk id|query param|yes|
-|chunkNumber|file chunk Number|query param|yes|
-|chunkSize|the size of every chunk|query param|yes|
-|currentChunkSize|the length of current file chunk|query param|yes|
-|totalSize|the totalSize of file|query param|yes|
-|identifier|file identifier|query param|yes|
-|filename|fil ename|query param|yes|
-|relativePath|the relative Path of file|query param|yes|
-|totalChunks|Total number of file blocks|query param|yes|
-|type|file type|query param|yes|
-|file|the file to upload|query param|yes|
+|projectId|projectId|path param|yes|
+|userId|user id|query param|yes|
+|vmId|vmId|path param|yes|
+|fileName|fileName |query param|yes|
+|identifier|identifier |query param|yes|
 
 **Example response**
 ```
 200 OK
+{
+  "headers": {
+    "string": [
+      "string"
+    ]
+  },
+  "body": {},
+  "statusCodeValue": 0,
+  "statusCode": "CONTINUE"
+}
+```
+
+### 14.11 POST clean vm
+clean vm 
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm/clean
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+
+**Example response**
+```
+200 OK
+true.
+```
+
+### 14.12 GET vm pkg
+query vm package info
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm-package
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+|userId|userId|query param|yes|
+
+**Example response**
+```
+200 OK
+{
+  "id": "string",
+  "projectId": "string",
+  "vmRegulation": {
+    "regulationId": 0,
+    "architecture": "string",
+    "nameZh": "string",
+    "nameEn": "string",
+    "sceneZh": "string",
+    "sceneEn": "string",
+    "memory": 0,
+    "cpu": 0,
+    "systemDisk": 0,
+    "dataDisk": 0,
+    "gpu": "string",
+    "otherAbility": "string"
+  },
+  "vmSystem": {
+    "systemId": 0,
+    "type": "public",
+    "operateSystem": "ubuntu",
+    "version": "string",
+    "systemBit": "string",
+    "systemDisk": 0,
+    "systemName": "string",
+    "fileName": "string",
+    "createTime": "string",
+    "modifyTime": "string",
+    "systemFormat": "string",
+    "systemSize": 0,
+    "systemSlim": "SLIM_WAIT",
+    "uploadTime": "string",
+    "systemPath": "string",
+    "status": "UPLOAD_WAIT",
+    "userId": "string",
+    "userName": "string",
+    "fileMd5": "string",
+    "fileIdentifier": "string",
+    "errorType": "string"
+  },
+  "vmNetwork": [
+    "string"
+  ],
+  "vmUserData": {
+    "operateSystem": "string",
+    "flavorExtraSpecs": "string",
+    "contents": "string",
+    "params": "string",
+    "temp": false
+  },
+  "vmName": "string",
+  "ak": "string",
+  "sk": "string",
+  "appInstanceId": "string",
+  "createTime": "2021-10-13T01:47:57.448Z"
+}
+```
+
+### 14.13 POST vm pkg
+create vm package config info
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm-package
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+|userId|userId|query param|yes|
+|vmPackageConfig|vmPackageConfig|body param|yes|
+
+```
+{
+  "id": "string",
+  "projectId": "string",
+  "vmRegulation": {
+    "regulationId": 0,
+    "architecture": "string",
+    "nameZh": "string",
+    "nameEn": "string",
+    "sceneZh": "string",
+    "sceneEn": "string",
+    "memory": 0,
+    "cpu": 0,
+    "systemDisk": 0,
+    "dataDisk": 0,
+    "gpu": "string",
+    "otherAbility": "string"
+  },
+  "vmSystem": {
+    "systemId": 0,
+    "type": "public",
+    "operateSystem": "ubuntu",
+    "version": "string",
+    "systemBit": "string",
+    "systemDisk": 0,
+    "systemName": "string",
+    "fileName": "string",
+    "createTime": "string",
+    "modifyTime": "string",
+    "systemFormat": "string",
+    "systemSize": 0,
+    "systemSlim": "SLIM_WAIT",
+    "uploadTime": "string",
+    "systemPath": "string",
+    "status": "UPLOAD_WAIT",
+    "userId": "string",
+    "userName": "string",
+    "fileMd5": "string",
+    "fileIdentifier": "string",
+    "errorType": "string"
+  },
+  "vmNetwork": [
+    "string"
+  ],
+  "vmUserData": {
+    "operateSystem": "string",
+    "flavorExtraSpecs": "string",
+    "contents": "string",
+    "params": "string",
+    "temp": false
+  },
+  "vmName": "string",
+  "ak": "string",
+  "sk": "string",
+  "appInstanceId": "string",
+  "createTime": "2021-10-13T01:47:57.448Z"
+}
+```
+**Example response**
+```
+200 OK
+{
+  "id": "string",
+  "projectId": "string",
+  "vmRegulation": {
+    "regulationId": 0,
+    "architecture": "string",
+    "nameZh": "string",
+    "nameEn": "string",
+    "sceneZh": "string",
+    "sceneEn": "string",
+    "memory": 0,
+    "cpu": 0,
+    "systemDisk": 0,
+    "dataDisk": 0,
+    "gpu": "string",
+    "otherAbility": "string"
+  },
+  "vmSystem": {
+    "systemId": 0,
+    "type": "public",
+    "operateSystem": "ubuntu",
+    "version": "string",
+    "systemBit": "string",
+    "systemDisk": 0,
+    "systemName": "string",
+    "fileName": "string",
+    "createTime": "string",
+    "modifyTime": "string",
+    "systemFormat": "string",
+    "systemSize": 0,
+    "systemSlim": "SLIM_WAIT",
+    "uploadTime": "string",
+    "systemPath": "string",
+    "status": "UPLOAD_WAIT",
+    "userId": "string",
+    "userName": "string",
+    "fileMd5": "string",
+    "fileIdentifier": "string",
+    "errorType": "string"
+  },
+  "vmNetwork": [
+    "string"
+  ],
+  "vmUserData": {
+    "operateSystem": "string",
+    "flavorExtraSpecs": "string",
+    "contents": "string",
+    "params": "string",
+    "temp": false
+  },
+  "vmName": "string",
+  "ak": "string",
+  "sk": "string",
+  "appInstanceId": "string",
+  "createTime": "2021-10-13T01:47:57.448Z"
+}
+```
+
+### 14.14 DELETE vm pkg
+delete vm package config info
+```
+Resource URI: /mec/developer/v1/projects/{projectId}/vm-package
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+|userId|userId|query param|yes|
+
+**Example response**
+```
+200 OK
+true.
+```
+
+## 15. Capability-group stats query
+This part is about the api for Capability-group stats
+### 15.1 GET stats by type 
+query group stats by type
+```
+Resource URI: /mec/developer/v2/query/capability-group-stats/type/{type}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|type|type|path param|yes|
+
+**Example response**
+```
+200 OK
+ [
   {
-  "headers": {
-    "string": [
-      "string"
-    ]
-  },
-  "body": {},
-  "statusCode": "CONTINUE",
-  "statusCodeValue": 0
-}
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "nameEn": "string",
+    "descriptionEn": "string",
+    "type": "string",
+    "iconFileId": "string",
+    "author": "string",
+    "createTime": 0,
+    "updateTime": 0,
+    "parent": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "nameEn": "string",
+      "descriptionEn": "string",
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "capabilityCount": 0,
+    "parentId": "string"
+  }
+]
 ```
 
-### 15.2 GET merge image 
-After every file chunk uploaded, then merge to a file with same as you uploaded
-```
-Resource URI: /mec/developer/v1/image/merge
-```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
-|guid|the file id of need to merge|query param|yes|
-|fileName|file name|query param|yes|
-
-**Example response**
-```
-200 OK
- {
-  "headers": {
-    "string": [
-      "string"
-    ]
-  },
-  "body": {},
-  "statusCode": "CONTINUE",
-  "statusCodeValue": 0
-}
-```
 ## 16. SystemImage
 This part is about the api for system image deployment
 ### 16.1 POST one system image
@@ -3998,25 +4053,34 @@ Resource URI: /mec/developer/v1/system/images
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|systemName|systemName|body param|yes|
-|type|type|body param|yes|
-|operateSystem|operateSystem|body param|yes|
-|version|version|body param|yes|
-|systemBit|systemBit|body param|yes|
-|systemDisk|systemDisk|body param|yes|
+|VmImage|VmImage|body param|yes|
 
 ```
-system image:
+VmImage:
 {
-systemName:"testImage",
-type:"private",
-operateSystem:"ubuntu",
-version:"16.04",
-systemBit:"64",
-systemDisk:40
+  "systemId": 0,
+  "type": "public",
+  "operateSystem": "ubuntu",
+  "version": "string",
+  "systemBit": "string",
+  "systemDisk": 0,
+  "systemName": "string",
+  "fileName": "string",
+  "createTime": "string",
+  "modifyTime": "string",
+  "systemFormat": "string",
+  "systemSize": 0,
+  "systemSlim": "SLIM_WAIT",
+  "uploadTime": "string",
+  "systemPath": "string",
+  "status": "UPLOAD_WAIT",
+  "userId": "string",
+  "userName": "string",
+  "fileMd5": "string",
+  "fileIdentifier": "string",
+  "errorType": "string"
 }
 ```
-
 **Example response**
 ```
 200 OK
@@ -4024,7 +4088,7 @@ boolean output
 ```
 
 ### 16.2 DELETE system image
-DELETE system image
+delete system image
 ```
 Resource URI: /mec/developer/v1/system/images/{systemId}
 ```
@@ -4038,61 +4102,64 @@ Resource URI: /mec/developer/v1/system/images/{systemId}
 boolean output
 ```
 
-
-### 16.3 POST system image
-GET system image
+### 16.3 POST upload system image
+uploading system image
 ```
 Resource URI: /mec/developer/v1/system/images/list
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|systemName|systemName|body param|no|
-|type|type|body param|no|
-|operateSystem|operateSystem|body param|no|
-|status|status|body param|no|
-|createTimeBegin|createTimeBegin|body param|no|
-|createTimeEnd|createTimeEnd|body param|no|
-|queryCtrl|queryCtrl|body param|yes|
+|userId|userId|query param|no|
+|quemepGetSystemImageReqryCtrl|mepGetSystemImageReq|body param|yes|
 
 ```
-system image:
+mepGetSystemImageReq:
 {
-systemName:"testImage",
-type:"private",
-operateSystem:"ubuntu",
-status:"",
-createTimeBegin:"2021-5-7",
-createTimeEnd:"2021-5-8",
-queryCtrl:{
-offset:0,
-limit:10,
-sortBy:"createTime",
-sortOrder:"DESC"
-}
+  "systemName": "string",
+  "type": "public",
+  "userId": "string",
+  "operateSystem": "string",
+  "status": "UPLOAD_WAIT",
+  "uploadTimeBegin": "string",
+  "uploadTimeEnd": "string",
+  "queryCtrl": {
+    "offset": 0,
+    "limit": 0,
+    "sortBy": "userName",
+    "sortOrder": "ASC"
+  }
 }
 ```
-
 **Example response**
 ```
 200 OK
 {
-  totalCount:20,
-  imageList:[
-  {
-    systemId:"Success",
-    systemName:"testImage",
-    type:"private",
-    operateSystem:"ubuntu",
-    version:"16.04",
-    systemBit:"64",
-    systemDisk:40,
-    userName:"admin",
-    createTime:"2021-5-7 17:38:12",
-    systemFormat:"iso",
-    uploadTime:"2021-5-7 17:45:23",
-    status:""
-  }
- ]
+  "totalCount": 0,
+  "imageList": [
+    {
+      "systemId": 0,
+      "type": "public",
+      "operateSystem": "ubuntu",
+      "version": "string",
+      "systemBit": "string",
+      "systemDisk": 0,
+      "systemName": "string",
+      "fileName": "string",
+      "createTime": "string",
+      "modifyTime": "string",
+      "systemFormat": "string",
+      "systemSize": 0,
+      "systemSlim": "SLIM_WAIT",
+      "uploadTime": "string",
+      "systemPath": "string",
+      "status": "UPLOAD_WAIT",
+      "userId": "string",
+      "userName": "string",
+      "fileMd5": "string",
+      "fileIdentifier": "string",
+      "errorType": "string"
+    }
+  ]
 }
 ```
 
@@ -4103,32 +4170,42 @@ Resource URI: /mec/developer/v1/system/images/{systemId}
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
-|systemName|systemName|body param|yes|
-|type|type|body param|yes|
-|operateSystem|operateSystem|body param|yes|
-|version|version|body param|yes|
-|systemBit|systemBit|body param|yes|
-|systemDisk|systemDisk|body param|yes|
+|systemId|systemId|path param|yes|
+|vmImage|vmImage|body param|yes|
 
 ```
-system image:
+vmImage:
 {
-systemName:"testImage",
-type:"private",
-operateSystem:"ubuntu",
-version:"16.04",
-systemBit:"64",
-systemDisk:40
+  "systemId": 0,
+  "type": "public",
+  "operateSystem": "ubuntu",
+  "version": "string",
+  "systemBit": "string",
+  "systemDisk": 0,
+  "systemName": "string",
+  "fileName": "string",
+  "createTime": "string",
+  "modifyTime": "string",
+  "systemFormat": "string",
+  "systemSize": 0,
+  "systemSlim": "SLIM_WAIT",
+  "uploadTime": "string",
+  "systemPath": "string",
+  "status": "UPLOAD_WAIT",
+  "userId": "string",
+  "userName": "string",
+  "fileMd5": "string",
+  "fileIdentifier": "string",
+  "errorType": "string"
 }
 ```
-
 **Example response**
 ```
 200 OK
 boolean output
 ```
 
-### 16.5 PUT system image 
+### 16.5 PUT publish system image
 publish system image 
 ```
 Resource URI: /mec/developer/v1/system/images/{systemId}/publish
@@ -4151,11 +4228,21 @@ Resource URI: /mec/developer/v1/system/images/{systemId}/upload
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
 |systemId|systemId|path param|yes|
+|identifier|identifier|query param|yes|
 
 **Example response**
 ```
 200 OK
-boolean output
+{
+  "headers": {
+    "string": [
+      "string"
+    ]
+  },
+  "body": {},
+  "statusCodeValue": 0,
+  "statusCode": "CONTINUE"
+}
 ```
 
 ### 16.7 GET system image to merge
@@ -4172,12 +4259,22 @@ Resource URI: /mec/developer/v1/system/images/{systemId}/merge
 **Example response**
 ```
 200 OK
+{
+  "headers": {
+    "string": [
+      "string"
+    ]
+  },
+  "body": {},
+  "statusCodeValue": 0,
+  "statusCode": "CONTINUE"
+}
 ```
 
 ### 16.8 GET system image to download
 download system image
 ```
-Resource URI: /mec/developer/v1/system/images/{systemId}/download"
+Resource URI: /mec/developer/v1/system/images/{systemId}/download
 ```
 |Name|Definition|Type|Required|
 |-------------|-------------|------------|------------|
@@ -4186,4 +4283,370 @@ Resource URI: /mec/developer/v1/system/images/{systemId}/download"
 **Example response**
 ```
 200 OK
+binary output.
+```
+
+### 16.9 POST slim image 
+slim system image
+```
+Resource URI: /mec/developer/v1/system/images/{systemId}/slim
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemId|systemId|path param|yes|
+
+**Example response**
+```
+200 OK
+true
+```
+
+### 16.10 PUT reset image status
+reset system image
+```
+Resource URI: /mec/developer/v1/system/images/{systemId}/reset
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemId|systemId|path param|yes|
+
+**Example response**
+```
+200 OK
+true
+```
+
+### 16.11 POST upload image
+upload system image
+```
+Resource URI: /mec/developer/v1/system/images/{systemId}/upload
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemId|systemId|path param|yes|
+|id|id|query param|yes|
+|chunkNumber|chunkNumber|path param|yes|
+|chunkSize|chunkSize|query param|yes|
+|currentChunkSize|currentChunkSize|query param|yes|
+|totalSize|totalSize|query param|yes|
+|identifier|identifier|query param|yes|
+|filename|filename|query param|yes|
+|relativePath|relativePath|query param|yes|
+|totalChunks|totalChunks|query param|yes|
+|type|type|query param|yes|
+
+**Example response**
+```
+200 OK
+{
+  "headers": {
+    "string": [
+      "string"
+    ]
+  },
+  "body": {},
+  "statusCodeValue": 0,
+  "statusCode": "CONTINUE"
+}
+```
+
+### 16.12 DELETE upload image
+cancel upload system image
+```
+Resource URI: /mec/developer/v1/system/images/{systemId}/upload
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|systemId|systemId|path param|yes|
+|identifier|identifier|query param|yes|
+
+**Example response**
+```
+200 OK
+{
+  "headers": {
+    "string": [
+      "string"
+    ]
+  },
+  "body": {},
+  "statusCodeValue": 0,
+  "statusCode": "CONTINUE"
+}
+```
+
+## 17. Capability query
+This part is about the api for query capability
+### 17.1 GET capability by groupid
+get capability by groupid
+```
+Resource URI: /mec/developer/v2/query/capabilities/group-id/{groupId}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|groupId|groupId|path param|yes|
+
+**Example response**
+```
+200 OK
+[
+  {
+    "id": "string",
+    "name": "string",
+    "nameEn": "string",
+    "version": "string",
+    "description": "string",
+    "descriptionEn": "string",
+    "provider": "string",
+    "apiFileId": "string",
+    "guideFileId": "string",
+    "guideFileIdEn": "string",
+    "uploadTime": 0,
+    "port": 0,
+    "host": "string",
+    "protocol": "string",
+    "appId": "string",
+    "packageId": "string",
+    "userId": "string",
+    "selectCount": 0,
+    "iconFileId": "string",
+    "author": "string",
+    "experienceUrl": "string",
+    "group": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "nameEn": "string",
+      "descriptionEn": "string",
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "groupId": "string"
+  }
+]
+```
+
+### 17.2 GET capability by en name
+query capability by en name
+```
+Resource URI: /mec/developer/v2/query/capabilities/name-en
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|nameEn|english name|query param|yes|
+|limit|limit name|query param|yes|
+|offset|offset name|query param|yes|
+
+**Example response**
+```
+200 OK
+[
+  {
+    "id": "string",
+    "name": "string",
+    "nameEn": "string",
+    "version": "string",
+    "description": "string",
+    "descriptionEn": "string",
+    "provider": "string",
+    "apiFileId": "string",
+    "guideFileId": "string",
+    "guideFileIdEn": "string",
+    "uploadTime": 0,
+    "port": 0,
+    "host": "string",
+    "protocol": "string",
+    "appId": "string",
+    "packageId": "string",
+    "userId": "string",
+    "selectCount": 0,
+    "iconFileId": "string",
+    "author": "string",
+    "experienceUrl": "string",
+    "group": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "nameEn": "string",
+      "descriptionEn": "string",
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "groupId": "string"
+  }
+]
+```
+
+### 17.3 GET capability by name
+GET capability by zh name
+```
+Resource URI: /mec/developer/v2/query/capabilities/name
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|name|chinese name|query param|yes|
+|limit|limit name|query param|yes|
+|offset|offset name|query param|yes|
+
+**Example response**
+```
+200 OK
+[
+  {
+    "id": "string",
+    "name": "string",
+    "nameEn": "string",
+    "version": "string",
+    "description": "string",
+    "descriptionEn": "string",
+    "provider": "string",
+    "apiFileId": "string",
+    "guideFileId": "string",
+    "guideFileIdEn": "string",
+    "uploadTime": 0,
+    "port": 0,
+    "host": "string",
+    "protocol": "string",
+    "appId": "string",
+    "packageId": "string",
+    "userId": "string",
+    "selectCount": 0,
+    "iconFileId": "string",
+    "author": "string",
+    "experienceUrl": "string",
+    "group": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "nameEn": "string",
+      "descriptionEn": "string",
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "groupId": "string"
+  }
+]
+```
+
+### 17.4 GET capability by projectid
+get capability by projectid
+```
+Resource URI: /mec/developer/v2/query/capabilities/project-id/{projectId}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|projectId|projectId|path param|yes|
+
+**Example response**
+```
+200 OK
+[
+  {
+    "id": "string",
+    "name": "string",
+    "nameEn": "string",
+    "version": "string",
+    "description": "string",
+    "descriptionEn": "string",
+    "provider": "string",
+    "apiFileId": "string",
+    "guideFileId": "string",
+    "guideFileIdEn": "string",
+    "uploadTime": 0,
+    "port": 0,
+    "host": "string",
+    "protocol": "string",
+    "appId": "string",
+    "packageId": "string",
+    "userId": "string",
+    "selectCount": 0,
+    "iconFileId": "string",
+    "author": "string",
+    "experienceUrl": "string",
+    "group": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "nameEn": "string",
+      "descriptionEn": "string",
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "groupId": "string"
+  }
+]
+```
+
+### 17.5 GET capability by type
+query capability by type
+```
+Resource URI: /mec/developer/v2/query/capabilities/type/{type}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|type|type|path param|yes|
+
+**Example response**
+```
+200 OK
+[
+  {
+    "id": "string",
+    "name": "string",
+    "nameEn": "string",
+    "version": "string",
+    "description": "string",
+    "descriptionEn": "string",
+    "provider": "string",
+    "apiFileId": "string",
+    "guideFileId": "string",
+    "guideFileIdEn": "string",
+    "uploadTime": 0,
+    "port": 0,
+    "host": "string",
+    "protocol": "string",
+    "appId": "string",
+    "packageId": "string",
+    "userId": "string",
+    "selectCount": 0,
+    "iconFileId": "string",
+    "author": "string",
+    "experienceUrl": "string",
+    "group": {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "nameEn": "string",
+      "descriptionEn": "string",
+      "type": "string",
+      "iconFileId": "string",
+      "author": "string",
+      "createTime": 0,
+      "updateTime": 0,
+      "parent": {},
+      "parentId": "string"
+    },
+    "groupId": "string"
+  }
+]
 ```
