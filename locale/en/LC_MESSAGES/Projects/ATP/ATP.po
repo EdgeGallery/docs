@@ -30,6 +30,10 @@ msgid "接口设计"
 msgstr "Interface design"
 
 #: ../../Projects/ATP/ATP.rst:3
+msgid "V2接口设计"
+msgstr "V2 interface design"
+
+#: ../../Projects/ATP/ATP.rst:3
 msgid "数据库设计"
 msgstr "Database design"
 

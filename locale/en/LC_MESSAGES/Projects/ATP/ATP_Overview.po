@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 00:08+0530\n"
+"POT-Creation-Date: 2021-10-29 14:43+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,30 +29,30 @@ msgid "应用测试服务分为前后台两个部分，[atp][1]是后台部分�
 msgstr "The application testing service is divided into the front and back platforms, [atp](https://gitee.com/edgegallery/atp) is the background part, providing the main function interface for the foreground or other three-way system to call, [atp-fe](https://gitee.com/edgegallery/atp-fe) is the foreground part, providing the interface display."
 
 #: ../../Projects/ATP/ATP_Overview.md:5
-msgid "应用测试服务目前分为管理面功能和用户面功能，管理面功能包括测试场景的管理、测试套的管理、测试用例的管理、模型模型批量导入、测试任务的管理以及贡献的管理，其中贡献管理的菜单仅管理员可见。管理员可以在管理面动态的新增测试场景、测试套和测试用例，修改测试任务中手工用例的状态，还可以下载脚本类型贡献的测试用例，对于合理的用例，将加入到平台的用例集中。用户面功能包括选择要测试的场景、测试过程可视化、测试报告展示以及贡献测试用例。目前用户面的功能主要集成在开发者平台和应用商店中，对于生成的应用包进行测试。"
+msgid "应用测试服务目前分为管理面功能和用户面功能，管理面功能包括测试场景的管理、测试套的管理、测试用例的管理、模型模型批量导入、测试任务的管理、贡献的管理以及配置项的管理，其中贡献管理的菜单仅管理员可见。管理员可以在管理面动态的新增测试场景、测试套和测试用例，修改测试任务中手工用例的状态，还可以下载脚本类型贡献的测试用例，对于合理的用例，将加入到平台的用例集中。用户面功能包括选择要测试的场景、测试过程可视化、测试报告展示、贡献测试用例以及上传自测报告。目前用户面的功能主要集成在开发者平台和应用商店中，对于生成的应用包进行测试。"
 msgstr "Application testing services are currently divided into management functions and user functions. The management functions include the management of test scenarios, the management of test suites, the management of test cases, the batch import of model models, the management of test tasks, and the management of contributions, among which contribution management The menu for is only visible to the administrator. Administrators can dynamically add test scenarios, test suites and test cases on the management plane, modify the status of manual use cases in test tasks, and download test cases contributed by script types. For reasonable use cases, they will be added to the platform's use case set . User interface functions include selecting scenarios to be tested, visualizing the testing process, displaying test reports, and contributing test cases. At present, the functions of the user plane are mainly integrated in the developer platform and the application store, and the generated application package is tested."
 
 #: ../../Projects/ATP/ATP_Overview.md:6
-msgid "目前测试用例涵盖安全性测试（漏洞扫描、签名校验、端口扫描、病毒扫描等）、遵从性测试（应用包结构校验）、沙箱测试（应用部署、mep平台服务注册更新等）以及性能测试（时延、cpu占用率、内存占用率等"
+msgid "目前测试用例涵盖安全性测试（漏洞扫描、签名校验、端口扫描、病毒扫描等）、遵从性测试（应用包结构校验）、沙箱测试（应用部署、mep平台服务注册更新等）以及性能测试（时延、cpu占用率、内存占用率等）。"
 msgstr "At present, the test cases cover security test (vulnerability scanning, signature verification, port scanning, virus scanning, etc.), compliance test (application package structure verification), Sandbox test (application deployment, MEP platform service registration update, etc.) and performance test (delay, CPU occupancy, memory occupancy, etc.)"
 
-#: ../../Projects/ATP/ATP_Overview.md:9
+#: ../../Projects/ATP/ATP_Overview.md:8
 msgid "整体框架说明"
-msgstr "Overview"
+msgstr "Overall framework description"
 
-#: ../../Projects/ATP/ATP_Overview.md:10
+#: ../../Projects/ATP/ATP_Overview.md:9
 msgid "EdgeGallery整体框架流程如下，应用测试平台主要对应图中的认证测试部分。 ![](/uploads/images/2020/v1.0/all-the-arch.png)"
 msgstr "The EdgeGallery overall framework flow is as follows, the application test platform's main corresponding graph in the authentication test section. ![](/uploads/images/2021/v1.1/FlowChart_en.png)"
 
-#: ../../Projects/ATP/ATP_Overview.md:14
+#: ../../Projects/ATP/ATP_Overview.md:12
 msgid "atp-fe：开发者平台前台框架，使用VUE开发。"
 msgstr "ATP-fe: Developer Platform foreground framework, developed using VUE."
 
-#: ../../Projects/ATP/ATP_Overview.md:16
+#: ../../Projects/ATP/ATP_Overview.md:14
 msgid "atp：开发者平台后台框架，使用SpringBoot+ServiceComb开发。（有关ServiceComb请参考这里：https://servicecomb.apache.org/cn/）"
 msgstr "ATP: Developer Platform Backstage Framework, developed using SpringBot + ServiceComb.(For ServiceComb, please refer to this: https://servicecomb.apache.org/cn/)"
 
-#: ../../Projects/ATP/ATP_Overview.md:15
+#: ../../Projects/ATP/ATP_Overview.md:16
 msgid "atp DB：后台依赖Postgres数据库。"
 msgstr "ATP DB: Backstage relies on Postgres database."
 
@@ -61,7 +60,7 @@ msgstr "ATP DB: Backstage relies on Postgres database."
 msgid "测试套、测试场景和测试用例的对应关系"
 msgstr "correspondence relationship between test suites, test scenarios, and test cases"
 
-#: ../../Projects/ATP/ATP_Overview.md:22
+#: ../../Projects/ATP/ATP_Overview.md:19
 msgid "![](/uploads/images/2021/atp/relation.png)"
 msgstr "![](/uploads/images/2021/atp/relation_en.png)"
 
