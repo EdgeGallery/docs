@@ -2,7 +2,7 @@
 
 This article will show users how to participate in the contribution of the AppStore project. The content is divided into two parts, which will respectively introduce how to build a local development environment and AppStore operation guidance.
 
-## Build a local development environment-Release 1.2
+## Build a local development environment
 
 This section will guide users how to build AppStore-be and AppStore-fe modules locally to help developers quickly understand and develop code.
 
@@ -135,7 +135,7 @@ After entering the website, the default is the guest user and can view the infor
 2. External application warehouse management page, you can add, modify and delete warehouses.
    ![](/uploads/images/2021/1009/appstore/third_appstores_en.png "4.2")
 
-3. Click the application push menu under the application sharing main menu to view the application information that can be pushed, select the application that needs to be pushed to the operator or a third party, and open the application push operation dialog box. Click the execute button in the lower left corner of the push operation dialog box to trigger the push task, and then view the results of the application pushed to the operator or a third party.
+3. Click the application push menu under the application sharing main menu to view the application information that can be pushed, select the application that needs to be pushed to the operator or a third party, and click the batch push button, and then view the results of the application pushed to the operator or a third party.
    ![](/uploads/images/2021/1009/appstore/topush_en.png "4.3")
    ![](/uploads/images/2021/1009/appstore/pushed_en.png "4.4")
 
@@ -143,7 +143,7 @@ After entering the website, the default is the guest user and can view the infor
    ![](/uploads/images/2021/1009/appstore/topull_en.png "4.5")
    ![](/uploads/images/2021/1009/appstore/pulled_en.png "4.6")
 
-5. Click the message center menu under the main menu of application sharing to view the notification information, and you can accept APP information that needs to be pushed from different operators. You can pull (download) the information of the application by clicking the receive button in the upper right corner of the right panel of the message center. The successfully pulled APP can be viewed on the "My Application" interface. Click the delete button to delete the message. Double-click to delete the message. View the message details.
+5. Click the message center menu under the main menu of application sharing to view the notification information, and you can accept APP information that needs to be pushed from different operators. You can pull (download) the information of the application by clicking the receive button of the message detail. The successfully pulled APP can be viewed on the "My Application" interface. Click the delete button to delete the message. Double-click to delete the message. View the message details.
    ![](/uploads/images/2021/1009/appstore/message_en.png "4.7")
    ![](/uploads/images/2021/1009/appstore/message_detail_en.png "4.8")
 
