@@ -31,7 +31,8 @@ The document is for the appstore-be project, there are six parts of interfaces i
     - [2.11 Get all packages of app-v2](#211-Get-All-Packages-of-App-v2)
     - [2.12 Get one package-v2](#212-Get-One-Package-v2)
     - [2.13 Get all packages of user-v2](#213-Get-All-Packages-of-User-v2)
-    - [2.14 Download icon of app](#15-Download-Icon-of-App)
+    - [2.14 Get all packages by create time range-v2](#214-Get-All-Packages-by-Create-Time-Range -v2)
+    - [2.15 Download icon of app](#215-Download-Icon-of-App)
   - [3. Comment](#3-Comment)
     - [3.1 Get comments of app](#31-Get-Comments-of-App)
     - [3.2 Submit comment to app](#32-Submit-Comment-to-App)
@@ -349,7 +350,7 @@ Example response:
 Pagination query all applications by condition.
 
 ```
-Resource URI： /mec/appstore/v2/query/apps
+Resource URI： /mec/appstore/v2/apps/action/query
 METHOD: POST
 ```
 
@@ -369,18 +370,18 @@ QueryAppReqDto
 | industry     | application industries     | List<String>    | no       |
 | workloadType | application workload types | List<String>    | no       |
 | userId       | user id                    | String          | no       |
-| status       | application status         | String          | no       |
-| appName      | application name           | String          | no       |
 | queryCtrl    | query condition            | QueryAppCtrlDto | yes      |
 
 QueryAppCtrlDto
 
-| Name     | Definition                               | Type   | Required |
-| -------- | ---------------------------------------- | ------ | -------- |
-| limit    | number of queries per page, [1,500]      | int    | yes      |
-| offset   | paging query start page, starting from 0 | int    | yes      |
-| sortItem | query sort field                         | String | no       |
-| sortType | query sorting method, ASC/DESC           | String | no       |
+| Name     | Definition                               | Type         | Required |
+| -------- | ---------------------------------------- | ------------ | -------- |
+| limit    | number of queries per page, [1,500]      | int          | yes      |
+| offset   | paging query start page, starting from 0 | int          | yes      |
+| sortItem | query sort field                         | String       | no       |
+| sortType | query sorting method, ASC/DESC           | String       | no       |
+| status   | application status                       | List<String> | no       |
+| appName  | application name                         | String       | no       |
 
 Example response:
 
@@ -390,6 +391,7 @@ Example response:
     "results": [
         {
             "appId": "string",
+            "packageId": "string",
             "iconUrl": "string",
             "name": "string",
             "provider": "string",
@@ -407,7 +409,8 @@ Example response:
             "userName": "string",
             "status": "string",
             "deployMode": "string",
-            "hotApp": false
+            "hotApp": false,
+            "exprienceAble": false
         }
     ],
     "limit": 1,
@@ -903,20 +906,27 @@ Example response:
 Pagination query all packages of user.
 
 ```
-Resource URI： /mec/appstore/v2/packages
-METHOD: GET
+Resource URI： /mec/appstore/v2/packages/action/query
+METHOD: POST
 ```
 
-| Name         | Definition                                | Type           | Required |
-| ------------ | ----------------------------------------- | -------------- | -------- |
-| ueserId      | user id                                   | request param  | yes      |
-| access_token | request token                             | request header | yes      |
-| offset       | paging query start page, starting from 0. | request param  | yes      |
-| limit        | number of queries per page, [1,500]       | request param  | yes      |
-| appName      | application name                          | request param  | no       |
-| status       | application status                        | request param  | no       |
-| sortType     | query sorting method, ASC/DESC            | request param  | no       |
-| sortItem     | query sort field                          | request param  | no       |
+Request parameters:
+
+| Name            | Definition                  | Type           | Required |
+| --------------- | --------------------------- | -------------- | -------- |
+| QueryAppCtrlDto | query application condition | request body   | yes      |
+| access_token    | request token               | request header | yes      |
+
+QueryAppCtrlDto
+
+| Name     | Definition                               | Type         | Required |
+| -------- | ---------------------------------------- | ------------ | -------- |
+| limit    | number of queries per page, [1,500]      | int          | yes      |
+| offset   | paging query start page, starting from 0 | int          | yes      |
+| sortItem | query sort field                         | String       | no       |
+| sortType | query sorting method, ASC/DESC           | String       | no       |
+| status   | application status                       | List<String> | no       |
+| appName  | application name                         | String       | no       |
 
 Example response:
 
@@ -954,7 +964,60 @@ Example response:
 }
 ```
 
-### 2.14 Download Icon of App
+### 2.14 Get All Packages by Create Time Range -v2
+
+Pagination query all packages by create time range.
+
+```
+Resource URI： /mec/appstore/v2/packages
+METHOD: GET
+```
+
+| Name      | Definition                                | Type          | Required |
+| --------- | ----------------------------------------- | ------------- | -------- |
+| offset    | paging query start page, starting from 0. | request param | yes      |
+| limit     | number of queries per page, [1,500]       | request param | yes      |
+| startTime | the start of application's create time    | request param | no       |
+| endTime   | the end of application's create time      | request param | no       |
+
+Example response:
+
+```
+200 OK
+{
+    "results": [
+        {
+            "packageId": "string",
+            "size": "string",
+            "format": "string",
+            "createTime": "string",
+            "name": "string",
+            "version": "string",
+            "type": "string",
+            "details": "string",
+            "affinity": "string",
+            "industry": "string",
+            "contact": "string",
+            "appId": "string",
+            "userId": "string",
+            "userName": "string",
+            "status": "string",
+            "shortDesc": "string",
+            "showType": "string",
+            "testTaskId": "string",
+            "provider": "string",
+            "demoVideoName": "string",
+            "deployMode": "string"
+        }
+    ],
+    "limit": 1,
+    "offset": 0,
+    "total": 12
+}
+```
+
+### 2.15 Download Icon of App
+
 Download application icon by application id and package id.
 ```
 Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/icon

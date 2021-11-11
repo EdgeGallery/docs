@@ -31,7 +31,8 @@
     - [2.11 通过应用ID获取应用包列表-v2](#211-通过应用ID获取应用包列表-v2)
     - [2.12 获取应用包-v2](#212-获取应用包-v2)
     - [2.13 获取应用包列表-v2](#213-获取应用包列表-v2)
-    - [2.14 下载应用图标](#214-下载应用图标)
+    - [2.14 根据创建时间区间获取应用包列表-v2](#214-根据创建时间区间获取应用包列表-v2)
+    - [2.15 下载应用图标](#215-下载应用图标)
   - [3. 评论](#3-评论)
     - [3.1 获取评论列表](#31-获取评论列表)
     - [3.2 提交评论](#32-提交评论)
@@ -347,7 +348,7 @@ METHOD: PUT
 分页查询应用列表。
 
 ```
-URI： /mec/appstore/v2/query/apps
+URI： /mec/appstore/v2/apps/action/query
 METHOD: POST
 ```
 
@@ -365,8 +366,6 @@ QueryAppReqDto
 |industry|应用行业|List<String>|no|
 |workloadType|应用负载类型|List<String>|no|
 |userId|用户Id|String|no|
-|status|应用状态|String|no|
-|appName|应用名称|String|no|
 |queryCtrl|查询条件|QueryAppCtrlDto|yes|
 
 QueryAppCtrlDto
@@ -376,6 +375,8 @@ QueryAppCtrlDto
 |offset|分页查询起始页，从0开始|int|yes|
 |sortItem|查询排序字段|String|no|
 |sortType|查询排序方式升序/降序|String|no|
+|status|应用状态|List<String>|no|
+|appName|应用名称|String|no|
 
 响应示例:
 
@@ -385,6 +386,7 @@ QueryAppCtrlDto
     "results": [
         {
             "appId": "string",
+            "packageId": "string",
             "iconUrl": "string",
             "name": "string",
             "provider": "string",
@@ -402,7 +404,8 @@ QueryAppCtrlDto
             "userName": "string",
             "status": "string",
             "deployMode": "string",
-            "hotApp": false
+            "hotApp": false,
+            "exprienceAble": false
         }
     ],
     "limit": 1,
@@ -888,19 +891,26 @@ METHOD: GET
 分页获取应用包列表。
 
 ```
-URI： /mec/appstore/v2/packages
-METHOD: GET
+URI： /mec/appstore/v2/packages/action/query
+METHOD: POST
 ```
-|名称|描述|IN|必选|
-|------------|---------------------------|--------------|----|
-|ueserId|用户id|request param|yes|
-|access_token|请求token|request header|yes|
-|offset|分页查询起始页，从0开始|request param|yes|
-|limit|分页查询每页查询数量[1,500]|request param|yes|
-|appName|应用名称|request param|no|
-|status|应用状态|request param|no|
-|sortType|查询排序方式，升序/降序|request param|no|
-|sortItem|查询排序字段|request param|no|
+请求参数：
+
+| 名称            | 描述         | IN             | 必选 |
+| --------------- | ------------ | -------------- | ---- |
+| QueryAppCtrlDto | 查询应用条件 | request body   | yes  |
+| access_token    | 请求token    | request header | yes  |
+
+QueryAppCtrlDto
+
+| 字段名   | 描述                        | 字段类型     | 必选 |
+| -------- | --------------------------- | ------------ | ---- |
+| limit    | 分页查询每页查询数量[1,500] | int          | yes  |
+| offset   | 分页查询起始页，从0开始     | int          | yes  |
+| sortItem | 查询排序字段                | String       | no   |
+| sortType | 查询排序方式升序/降序       | String       | no   |
+| status   | 应用状态                    | List<String> | no   |
+| appName  | 应用名称                    | String       | no   |
 
 响应示例:
 
@@ -937,7 +947,60 @@ METHOD: GET
     "total": 12
 }
 ```
-### 2.14 下载应用图标 
+### 2.14 根据创建时间区间获取应用包列表-v2
+
+根据创建时间区间分页获取应用包列表。
+
+```
+URI： /mec/appstore/v2/packages
+METHOD: GET
+```
+
+| 名称      | 描述                        | IN            | 必选 |
+| --------- | --------------------------- | ------------- | ---- |
+| offset    | 分页查询起始页，从0开始     | request param | yes  |
+| limit     | 分页查询每页查询数量[1,500] | request param | yes  |
+| startTime | 应用创建时间的起始时间      | request param | no   |
+| endTime   | 应用创建时间的终止时间      | request param | no   |
+
+响应示例:
+
+```
+200 OK
+{
+    "results": [
+        {
+            "packageId": "string",
+            "size": "string",
+            "format": "string",
+            "createTime": "string",
+            "name": "string",
+            "version": "string",
+            "type": "string",
+            "details": "string",
+            "affinity": "string",
+            "industry": "string",
+            "contact": "string",
+            "appId": "string",
+            "userId": "string",
+            "userName": "string",
+            "status": "string",
+            "shortDesc": "string",
+            "showType": "string",
+            "testTaskId": "string",
+            "provider": "string",
+            "demoVideoName": "string",
+            "deployMode": "string"
+        }
+    ],
+    "limit": 1,
+    "offset": 0,
+    "total": 12
+}
+```
+
+### 2.15 下载应用图标 
+
 通过应用ID和应用包ID下载应用图标。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/icon
