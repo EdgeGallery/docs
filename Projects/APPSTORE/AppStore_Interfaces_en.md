@@ -656,6 +656,8 @@ Method: POST
 |---|---|---|---|
 |appId |application id|path |yes|
 |packageId |package id|path |yes|
+|isFree |is this application free?|request body |no|
+|price |the price of the application|request body |no|
 
 Example response:
 ```
@@ -788,10 +790,12 @@ Resource URI： /mec/appstore/v2/apps/{appId}/packages/{packageId}/action/publis
 METHOD: POST
 ```
 
-| Name      | Definition     | Type | Required |
-| --------- | -------------- | ---- | -------- |
-| appId     | application id | path | yes      |
-| packageId | package id     | path | yes      |
+| Name      | Definition                   | Type         | Required |
+| --------- | ---------------------------- | ------------ | -------- |
+| appId     | application id               | path         | yes      |
+| packageId | package id                   | path         | yes      |
+| isFree    | is this application free?    | request body | no       |
+| price     | the price of the application | request body | no       |
 
 Example response:
 

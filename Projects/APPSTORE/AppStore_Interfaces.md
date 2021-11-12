@@ -648,6 +648,8 @@ METHOD: POST
 |---|---|---|---|
 |appId|应用ID|path|yes|
 |packageId|应用包ID|path|yes|
+|isFree|是否免费|request body|no|
+|price|应用定价信息|request body|no|
 
 响应示例:
 ```
@@ -779,6 +781,8 @@ METHOD: POST
 |---------|--------|----|----|
 |appId|应用ID|path|yes|
 |packageId|应用包ID|path|yes|
+|isFree|是否免费|request body|no|
+|price|应用定价信息|request body|no|
 
 响应示例:
 
