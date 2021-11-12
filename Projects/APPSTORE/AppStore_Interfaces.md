@@ -31,7 +31,8 @@
     - [2.11 通过应用ID获取应用包列表-v2](#211-通过应用ID获取应用包列表-v2)
     - [2.12 获取应用包-v2](#212-获取应用包-v2)
     - [2.13 获取应用包列表-v2](#213-获取应用包列表-v2)
-    - [2.14 下载应用图标](#214-下载应用图标)
+    - [2.14 根据创建时间区间获取应用包列表-v2](#214-根据创建时间区间获取应用包列表-v2)
+    - [2.15 下载应用图标](#215-下载应用图标)
   - [3. 评论](#3-评论)
     - [3.1 获取评论列表](#31-获取评论列表)
     - [3.2 提交评论](#32-提交评论)
@@ -76,6 +77,11 @@
     - [9.1 实例化应用](#91-实例化应用)
     - [9.2 释放资源](#92-释放资源)
     - [9.3 获取应用工作状态](#93-获取应用工作状态)
+  - [10. 应用变现](#10-应用变现)
+    - [10.1 订购应用](#101-订购应用)
+    - [10.2 退订应用](#102-退订应用)
+    - [10.3 激活订单](#103-激活订单)
+    - [10.4 查询订单列表](#104-查询订单列表)
 
 ## 1. 应用
 
@@ -347,7 +353,7 @@ METHOD: PUT
 分页查询应用列表。
 
 ```
-URI： /mec/appstore/v2/query/apps
+URI： /mec/appstore/v2/apps/action/query
 METHOD: POST
 ```
 
@@ -365,8 +371,6 @@ QueryAppReqDto
 |industry|应用行业|List<String>|no|
 |workloadType|应用负载类型|List<String>|no|
 |userId|用户Id|String|no|
-|status|应用状态|String|no|
-|appName|应用名称|String|no|
 |queryCtrl|查询条件|QueryAppCtrlDto|yes|
 
 QueryAppCtrlDto
@@ -376,6 +380,8 @@ QueryAppCtrlDto
 |offset|分页查询起始页，从0开始|int|yes|
 |sortItem|查询排序字段|String|no|
 |sortType|查询排序方式升序/降序|String|no|
+|status|应用状态|List<String>|no|
+|appName|应用名称|String|no|
 
 响应示例:
 
@@ -385,6 +391,7 @@ QueryAppCtrlDto
     "results": [
         {
             "appId": "string",
+            "packageId": "string",
             "iconUrl": "string",
             "name": "string",
             "provider": "string",
@@ -402,7 +409,8 @@ QueryAppCtrlDto
             "userName": "string",
             "status": "string",
             "deployMode": "string",
-            "hotApp": false
+            "hotApp": false,
+            "exprienceAble": false
         }
     ],
     "limit": 1,
@@ -645,6 +653,8 @@ METHOD: POST
 |---|---|---|---|
 |appId|应用ID|path|yes|
 |packageId|应用包ID|path|yes|
+|isFree|是否免费|request body|no|
+|price|应用定价信息|request body|no|
 
 响应示例:
 ```
@@ -776,6 +786,8 @@ METHOD: POST
 |---------|--------|----|----|
 |appId|应用ID|path|yes|
 |packageId|应用包ID|path|yes|
+|isFree|是否免费|request body|no|
+|price|应用定价信息|request body|no|
 
 响应示例:
 
@@ -888,19 +900,26 @@ METHOD: GET
 分页获取应用包列表。
 
 ```
-URI： /mec/appstore/v2/packages
-METHOD: GET
+URI： /mec/appstore/v2/packages/action/query
+METHOD: POST
 ```
-|名称|描述|IN|必选|
-|------------|---------------------------|--------------|----|
-|ueserId|用户id|request param|yes|
-|access_token|请求token|request header|yes|
-|offset|分页查询起始页，从0开始|request param|yes|
-|limit|分页查询每页查询数量[1,500]|request param|yes|
-|appName|应用名称|request param|no|
-|status|应用状态|request param|no|
-|sortType|查询排序方式，升序/降序|request param|no|
-|sortItem|查询排序字段|request param|no|
+请求参数：
+
+| 名称            | 描述         | IN             | 必选 |
+| --------------- | ------------ | -------------- | ---- |
+| QueryAppCtrlDto | 查询应用条件 | request body   | yes  |
+| access_token    | 请求token    | request header | yes  |
+
+QueryAppCtrlDto
+
+| 字段名   | 描述                        | 字段类型     | 必选 |
+| -------- | --------------------------- | ------------ | ---- |
+| limit    | 分页查询每页查询数量[1,500] | int          | yes  |
+| offset   | 分页查询起始页，从0开始     | int          | yes  |
+| sortItem | 查询排序字段                | String       | no   |
+| sortType | 查询排序方式升序/降序       | String       | no   |
+| status   | 应用状态                    | List<String> | no   |
+| appName  | 应用名称                    | String       | no   |
 
 响应示例:
 
@@ -937,7 +956,60 @@ METHOD: GET
     "total": 12
 }
 ```
-### 2.14 下载应用图标 
+### 2.14 根据创建时间区间获取应用包列表-v2
+
+根据创建时间区间分页获取应用包列表。
+
+```
+URI： /mec/appstore/v2/packages
+METHOD: GET
+```
+
+| 名称      | 描述                        | IN            | 必选 |
+| --------- | --------------------------- | ------------- | ---- |
+| offset    | 分页查询起始页，从0开始     | request param | yes  |
+| limit     | 分页查询每页查询数量[1,500] | request param | yes  |
+| startTime | 应用创建时间的起始时间      | request param | no   |
+| endTime   | 应用创建时间的终止时间      | request param | no   |
+
+响应示例:
+
+```
+200 OK
+{
+    "results": [
+        {
+            "packageId": "string",
+            "size": "string",
+            "format": "string",
+            "createTime": "string",
+            "name": "string",
+            "version": "string",
+            "type": "string",
+            "details": "string",
+            "affinity": "string",
+            "industry": "string",
+            "contact": "string",
+            "appId": "string",
+            "userId": "string",
+            "userName": "string",
+            "status": "string",
+            "shortDesc": "string",
+            "showType": "string",
+            "testTaskId": "string",
+            "provider": "string",
+            "demoVideoName": "string",
+            "deployMode": "string"
+        }
+    ],
+    "limit": 1,
+    "offset": 0,
+    "total": 12
+}
+```
+
+### 2.15 下载应用图标 
+
 通过应用ID和应用包ID下载应用图标。
 ```
 URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/icon
@@ -2146,3 +2218,147 @@ METHOD: POST
     "message": "string"
 }
 ```
+
+## 10. 应用变现
+
+应用发布时可对应用定价，实现应用变现。
+
+### 10.1 订购应用
+
+创建订单。
+
+```
+URI： /mec/appstore/v1/orders
+METHOD: POST
+```
+
+| 名称         | 描述       | IN           | 必选 |
+| ------------ | ---------- | ------------ | ---- |
+| appId        | APPID      | request body | 是   |
+| appPackageId | APP包ID    | request body | 是   |
+| mecHostIp    | 边缘节点IP | request body | 是   |
+
+
+响应示例:
+
+```json
+response 200 OK
+{
+  "data": {
+      "orderId": "",
+      "orderNum": "",
+  },
+  "retCode": 0,
+  "params": ["", ""],
+  "message": ""
+}
+```
+
+### 10.2 退订应用
+
+对订单进行退订操作。
+
+```
+URI: /mec/appstore/v1/orders/{orderId}/deactivation
+METHOD: POST
+```
+
+| 名称    | 描述   | IN         | 必选 |
+| ------- | ------ | ---------- | ---- |
+| orderId | 订单ID | path param | 是   |
+
+
+响应示例:
+
+```json
+response 200 OK
+{
+  "data": null,
+  "retCode": 0,
+  "params": ["", ""],
+  "message": ""
+}
+```
+
+### 10.3 激活订单
+
+对订单进行激活操作。
+
+```
+URI: /mec/appstore/v1/orders/{orderId}/activation
+METHOD: POST
+```
+
+| 名称    | 描述   | IN         | 必选 |
+| ------- | ------ | ---------- | ---- |
+| orderId | 订单ID | path param | 是   |
+
+
+响应示例:
+
+```json
+response 200 OK
+{
+  "data": null,
+  "retCode": 0,
+  "params": ["", ""],
+  "message": ""
+}
+```
+
+### 10.4 查询订单列表
+
+获取订单列表。
+
+```
+URI: /mec/appstore/v1/orders/list
+METHOD: POST
+```
+
+| 名称           | 描述                   | IN           | 必选 |
+| -------------- | ---------------------- | ------------ | ---- |
+| appId          | 应用ID                 | request body | 否   |
+| orderNum       | 订单编号               | request body | 否   |
+| status         | 订单状态               | request body | 否   |
+| orderTimeBegin | 下单时间范围的起始时间 | request body | 否   |
+| orderTimeEnd   | 下单时间范围的结束时间 | request body | 否   |
+| QueryCtrlDto   | 查询条件               | request body | 是   |
+
+QueryCtrlDto
+
+| 字段名   | 描述                        | 字段类型 | 必选 |
+| -------- | --------------------------- | -------- | ---- |
+| limit    | 分页查询每页查询数量[1,500] | int      | yes  |
+| offset   | 分页查询起始页，从0开始     | int      | yes  |
+| sortItem | 查询排序字段                | String   | no   |
+| sortType | 查询排序方式升序/降序       | String   | no   |
+
+响应示例:
+
+```json
+response 200 OK
+{
+  "results": [
+    {
+      "orderId": "",
+      "orderNum": "",
+      "userId": "",
+      "userName": "",
+      "appId": "",
+      "appName": "",
+      "appVersion": "",
+      "orderTime": "",
+      "operateTime": "",
+      "status": "",
+      "mecHostIp": "",
+      "mecHostCity": "",
+      "detail": ""
+    },
+    {...}
+  ],
+  "offset": 0,
+  "limit": 20,
+  "total": 100
+}
+```
+
