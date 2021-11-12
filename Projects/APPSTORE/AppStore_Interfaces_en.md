@@ -77,6 +77,11 @@ The document is for the appstore-be project, there are six parts of interfaces i
     - [9.1 Instantiate App](#91-Instantiate-App)
     - [9.2 Release resource](#92-Release-Resource)
     - [9.3 Get app work status](#93-Get-App-Working-Status)
+  - [10. App monetization](#10-App-Monetization)
+    - [10.1 Subscribe App](#101-Subscribe-App)
+    - [10.2 Unsubscribe App](#102-Unsubscribe-App)
+    - [10.3 Activate order](#103-Activate-Order)
+    - [10.4 Query order list](#104-Query-Order-List)
 
 ## 1. App
 
@@ -2252,3 +2257,147 @@ Example response:
     "message": "string"
 }
 ```
+
+## 10. App Monetization
+
+When the application is published, the application can be priced to realize the application revenue.
+
+### 10.1 Subscribe App
+
+create order.
+
+```
+Resource URI: /mec/appstore/v1/orders
+METHOD: POST
+```
+
+| Name         | Definition             | Type         | Required |
+| ------------ | ---------------------- | ------------ | -------- |
+| appId        | application id         | request body | yes      |
+| appPackageId | application package id | request body | yes      |
+| mecHostIp    | mechost ip             | request body | yes      |
+
+
+Example response:
+
+```json
+response 200 OK
+{
+  "data": {
+      "orderId": "",
+      "orderNum": "",
+  },
+  "retCode": 0,
+  "params": ["", ""],
+  "message": ""
+}
+```
+
+### 10.2 Unsubscribe App
+
+deactivate order.
+
+```
+Resource URI: /mec/appstore/v1/orders/{orderId}/deactivation
+METHOD: POST
+```
+
+| Name    | Definition | Type       | Required |
+| ------- | ---------- | ---------- | -------- |
+| orderId | order id   | path param | yes      |
+
+
+Example response:
+
+```json
+response 200 OK
+{
+  "data": null,
+  "retCode": 0,
+  "params": ["", ""],
+  "message": ""
+}
+```
+
+### 10.3 Activate Order
+
+activate order.
+
+```
+Resource URI: /mec/appstore/v1/orders/{orderId}/activation
+METHOD: POST
+```
+
+| Name    | Definition | Type       | Required |
+| ------- | ---------- | ---------- | -------- |
+| orderId | order id   | path param | yes      |
+
+
+Example response:
+
+```json
+response 200 OK
+{
+  "data": null,
+  "retCode": 0,
+  "params": ["", ""],
+  "message": ""
+}
+```
+
+### 10.4 Query Order List
+
+Pagination query orders of user.
+
+```
+Resource URI: /mec/appstore/v1/orders/list
+METHOD: POST
+```
+
+| Name           | Definition              | Type         | Required |
+| -------------- | ----------------------- | ------------ | -------- |
+| appId          | application package id  | request body | no       |
+| orderNum       | order number            | request body | no       |
+| status         | order status            | request body | no       |
+| orderTimeBegin | the start of order time | request body | no       |
+| orderTimeEnd   | the end of order time   | request body | no       |
+| QueryCtrlDto   | query condition         | request body | yes      |
+
+QueryCtrlDto
+
+| Name     | Definition                               | Type   | Required |
+| -------- | ---------------------------------------- | ------ | -------- |
+| limit    | number of queries per page, [1,500]      | int    | yes      |
+| offset   | paging query start page, starting from 0 | int    | yes      |
+| sortItem | query sort field                         | String | no       |
+| sortType | query sorting method, ASC/DESC           | String | no       |
+
+Example response:
+
+```json
+response 200 OK
+{
+  "results": [
+    {
+      "orderId": "",
+      "orderNum": "",
+      "userId": "",
+      "userName": "",
+      "appId": "",
+      "appName": "",
+      "appVersion": "",
+      "orderTime": "",
+      "operateTime": "",
+      "status": "",
+      "mecHostIp": "",
+      "mecHostCity": "",
+      "detail": ""
+    },
+    {...}
+  ],
+  "offset": 0,
+  "limit": 20,
+  "total": 100
+}
+```
+

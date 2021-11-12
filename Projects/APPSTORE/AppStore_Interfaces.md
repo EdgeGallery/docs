@@ -77,6 +77,11 @@
     - [9.1 实例化应用](#91-实例化应用)
     - [9.2 释放资源](#92-释放资源)
     - [9.3 获取应用工作状态](#93-获取应用工作状态)
+  - [10. 应用变现](#10-应用变现)
+    - [10.1 订购应用](#101-订购应用)
+    - [10.2 退订应用](#102-退订应用)
+    - [10.3 激活订单](#103-激活订单)
+    - [10.4 查询订单列表](#104-查询订单列表)
 
 ## 1. 应用
 
@@ -2213,3 +2218,147 @@ METHOD: POST
     "message": "string"
 }
 ```
+
+## 10. 应用变现
+
+应用发布时可对应用定价，实现应用变现。
+
+### 10.1 订购应用
+
+创建订单。
+
+```
+URI： /mec/appstore/v1/orders
+METHOD: POST
+```
+
+| 名称         | 描述       | IN           | 必选 |
+| ------------ | ---------- | ------------ | ---- |
+| appId        | APPID      | request body | 是   |
+| appPackageId | APP包ID    | request body | 是   |
+| mecHostIp    | 边缘节点IP | request body | 是   |
+
+
+响应示例:
+
+```json
+response 200 OK
+{
+  "data": {
+      "orderId": "",
+      "orderNum": "",
+  },
+  "retCode": 0,
+  "params": ["", ""],
+  "message": ""
+}
+```
+
+### 10.2 退订应用
+
+对订单进行退订操作。
+
+```
+URI: /mec/appstore/v1/orders/{orderId}/deactivation
+METHOD: POST
+```
+
+| 名称    | 描述   | IN         | 必选 |
+| ------- | ------ | ---------- | ---- |
+| orderId | 订单ID | path param | 是   |
+
+
+响应示例:
+
+```json
+response 200 OK
+{
+  "data": null,
+  "retCode": 0,
+  "params": ["", ""],
+  "message": ""
+}
+```
+
+### 10.3 激活订单
+
+对订单进行激活操作。
+
+```
+URI: /mec/appstore/v1/orders/{orderId}/activation
+METHOD: POST
+```
+
+| 名称    | 描述   | IN         | 必选 |
+| ------- | ------ | ---------- | ---- |
+| orderId | 订单ID | path param | 是   |
+
+
+响应示例:
+
+```json
+response 200 OK
+{
+  "data": null,
+  "retCode": 0,
+  "params": ["", ""],
+  "message": ""
+}
+```
+
+### 10.4 查询订单列表
+
+获取订单列表。
+
+```
+URI: /mec/appstore/v1/orders/list
+METHOD: POST
+```
+
+| 名称           | 描述                   | IN           | 必选 |
+| -------------- | ---------------------- | ------------ | ---- |
+| appId          | 应用ID                 | request body | 否   |
+| orderNum       | 订单编号               | request body | 否   |
+| status         | 订单状态               | request body | 否   |
+| orderTimeBegin | 下单时间范围的起始时间 | request body | 否   |
+| orderTimeEnd   | 下单时间范围的结束时间 | request body | 否   |
+| QueryCtrlDto   | 查询条件               | request body | 是   |
+
+QueryCtrlDto
+
+| 字段名   | 描述                        | 字段类型 | 必选 |
+| -------- | --------------------------- | -------- | ---- |
+| limit    | 分页查询每页查询数量[1,500] | int      | yes  |
+| offset   | 分页查询起始页，从0开始     | int      | yes  |
+| sortItem | 查询排序字段                | String   | no   |
+| sortType | 查询排序方式升序/降序       | String   | no   |
+
+响应示例:
+
+```json
+response 200 OK
+{
+  "results": [
+    {
+      "orderId": "",
+      "orderNum": "",
+      "userId": "",
+      "userName": "",
+      "appId": "",
+      "appName": "",
+      "appVersion": "",
+      "orderTime": "",
+      "operateTime": "",
+      "status": "",
+      "mecHostIp": "",
+      "mecHostCity": "",
+      "detail": ""
+    },
+    {...}
+  ],
+  "offset": 0,
+  "limit": 20,
+  "total": 100
+}
+```
+
