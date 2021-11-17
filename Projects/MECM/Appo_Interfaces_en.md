@@ -190,6 +190,39 @@ Example response:
   }
 ```
 
+### Get App Instance Information based in App package ID 
+Retrieves application instance information based on package ID
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/apps/{app_id}/packages/{app_package_id}/status
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|app_id|application id|header|yes|Alphanumeric in lower case|64|
+|app_package_id|application package id|header|yes|Alphanumeric in lower case|64|
+|tenant_id|tenant id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+  {
+  "data": [
+    {
+      "appInstanceId": "e87c728c-a552-447b-84ca-782b6c065add",
+      "appName": "face_recognition",
+      "appDescriptor": "face_recognition",
+      "mecHost": "1.1.1.1",
+      "mepmHost": "1.1.1.1",
+      "operationalStatus": "Created"
+    }
+  ],
+  "retCode": 200,
+  "params": [],
+  "message": ""
+}
+```
+
 ### Get Query Kpi
 Retrieves edge host performance statistics
 ```
