@@ -38,7 +38,7 @@ bash  eg.sh -i   //开始安装edge，大约5min后可以安装完成
 
 命令：kubectl get pod --all-namespaces  // 检查pod,所有的pod状态为running ,则环境正常
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0112/185955_b278b54d_7624663.png "屏幕截图.png")
+![输入图片说明](/uploads/images/2021/0112/185955_b278b54d_7624663.png "屏幕截图.png")
 
 
 ### 外部系统注册
@@ -47,38 +47,38 @@ bash  eg.sh -i   //开始安装edge，大约5min后可以安装完成
 
 登录mecm后，点击系统→applcm注册系统
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0112/190253_f61c2ee9_7624663.png "屏幕截图.png")
+![输入图片说明](/uploads/images/2021/0112/190253_f61c2ee9_7624663.png "屏幕截图.png")
  
 
 点击’新增注册’注册applcm ,  ip地址为边缘节点ip，端口是30204
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0112/190308_93d0f8f3_7624663.png "屏幕截图.png")
+![输入图片说明](/uploads/images/2021/0112/190308_93d0f8f3_7624663.png "屏幕截图.png")
  
 
 #### APPRULE注册
 
 点击系统→apprulemgr→新增注册
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0112/190325_352507ee_7624663.png "屏幕截图.png")
+![输入图片说明](/uploads/images/2021/0112/190325_352507ee_7624663.png "屏幕截图.png")
  
 
 输入IP地址为边缘节点IP,端口30206，点击确定
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0112/190338_fb67eaf6_7624663.png "屏幕截图.png")
+![输入图片说明](/uploads/images/2021/0112/190338_fb67eaf6_7624663.png "屏幕截图.png")
  
 
 #### 边缘节点注册
 
 点击系统→边缘节点注册系统→新增注册
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0112/190357_9708d2e6_7624663.png "屏幕截图.png")
+![输入图片说明](/uploads/images/2021/0112/190357_9708d2e6_7624663.png "屏幕截图.png")
 
 输入IP地址为边缘节点IP，选择安装环境的架和硬件能力（没有可以不选）硬件品牌和型号 ，选择applcm ip，apprulemgr ip,填写边缘ip，输入边缘仓库端口，点击确认
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0112/190420_546ee5e2_7624663.png "屏幕截图.png")
+![输入图片说明](/uploads/images/2021/0112/190420_546ee5e2_7624663.png "屏幕截图.png")
 
 配置文件上传：
 
 配置文件为要的边缘节点/root/.kube/ 下config文件，下载config 文件，点击上传文件，看到提示‘你已成功上传配置文件’，则上传成功
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0112/190434_66384ecf_7624663.png "屏幕截图.png")
+![输入图片说明](/uploads/images/2021/0112/190434_66384ecf_7624663.png "屏幕截图.png")

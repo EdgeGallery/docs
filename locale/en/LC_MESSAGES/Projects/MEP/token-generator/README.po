@@ -42,8 +42,8 @@ msgid "If the MEP version is after 1.0.1 use token_generator_url_unify"
 msgstr ""
 
 #: ../../Projects/MEP/token-generator/README.md:27
-msgid "签名（Authorization）和token都可以通过日志看到 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0204/165822_77d3c5d4_4991354.png \"屏幕截图.png\")"
-msgstr "The signature (Authorization) and token can all be seen by the log ![Enter the picture description](https://images.gitee.com/uploads/images/2021/0204/165822_77d3c5d4_4991354.png \"Screen screenshot.png\")"
+msgid "签名（Authorization）和token都可以通过日志看到 ![输入图片说明](/uploads/images/2021/0204/165822_77d3c5d4_4991354.png \"屏幕截图.png\")"
+msgstr "The signature (Authorization) and token can all be seen by the log ![Enter the picture description](/uploads/images/2021/0204/165822_77d3c5d4_4991354.png \"Screen screenshot.png\")"
 
 #: ../../Projects/MEP/token-generator/README.md:30
 msgid "How to modify token-generator code"

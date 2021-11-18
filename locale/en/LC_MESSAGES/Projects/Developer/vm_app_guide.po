@@ -42,16 +42,16 @@ msgid "配置沙箱环境：developer新增openstack沙箱环境"
 msgstr "Configure sandbox environment: developer adds openstack sandbox environment"
 
 #: ../../Projects/Developer/vm_app_guide.md:16
-msgid "develoepr平台用管理员用户admin登录 打开系统-沙箱环境管理-新增沙箱环境 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png \"屏幕截图.png\")"
-msgstr "Log in to the develoepr platform with the administrator user admin to open the system-sandbox environment management-new sandbox environment! [Enter picture description](https://images.gitee.com/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png \"Screenshot.png\")"
+msgid "develoepr平台用管理员用户admin登录 打开系统-沙箱环境管理-新增沙箱环境 ![输入图片说明](/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png \"屏幕截图.png\")"
+msgstr "Log in to the develoepr platform with the administrator user admin to open the system-sandbox environment management-new sandbox environment! [Enter picture description](/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png \"Screenshot.png\")"
 
 #: ../../Projects/Developer/vm_app_guide.md:19
 msgid "lcmIp为lcmcontroller的IP地址 ，mecHost为openstack的IP地址，端口号为lcmcontroller对外暴露的端口号, 协议选择https."
 msgstr "lcmIp is the IP address of lcmcontroller, mecHost is the IP address of openstack, the port number is the port number exposed by lcmcontroller, and the protocol is https."
 
 #: ../../Projects/Developer/vm_app_guide.md:21
-msgid "其他参数配置openstack相关的网络配置：参数设置如下： ![输入图片说明](https://images.gitee.com/uploads/images/2021/0628/163330_baff108f_7625288.png \"屏幕截图.png\")"
-msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](https://images.gitee.com/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+msgid "其他参数配置openstack相关的网络配置：参数设置如下： ![输入图片说明](/uploads/images/2021/0628/163330_baff108f_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
 
 #: ../../Projects/Developer/vm_app_guide.md:24
 msgid "DC_ID=FS_M:Manager_VPC; 使用默认值或者不传即可"

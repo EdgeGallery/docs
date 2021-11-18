@@ -25,7 +25,7 @@ If the MEP version is after 1.0.1 use token_generator_url_unify
 ./token_generator_url_unify 
 ```
 signature（Authorization）withtokenCan be seen through the log
-![Enter picture description](https://images.gitee.com/uploads/images/2021/0204/165822_77d3c5d4_4991354.png "Screenshots.png")
+![Enter picture description](/uploads/images/2021/0204/165822_77d3c5d4_4991354.png "Screenshots.png")
 
 # How to modify token-generator code
 

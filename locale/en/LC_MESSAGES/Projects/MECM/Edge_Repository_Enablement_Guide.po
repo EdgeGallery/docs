@@ -22,16 +22,16 @@ msgid "Enable Edge Repository"
 msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:3
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/193423_f8d692dc_7954177.png \"apm_edge_repo.png\")"
-msgstr "![Enter picture description](https://images.gitee.com/uploads/images/2020/1124/193423_f8d692dc_7954177.png \"apm_edge_repo.png\")"
+msgid "![输入图片说明](/uploads/images/2020/1124/193423_f8d692dc_7954177.png \"apm_edge_repo.png\")"
+msgstr "![Enter picture description](/uploads/images/2020/1124/193423_f8d692dc_7954177.png \"apm_edge_repo.png\")"
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:5
 msgid "APM Flow diagram"
 msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:7
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/194339_11033b09_7954177.png \"apm_flow_diagram.png\")"
-msgstr "![Enter picture description](https://images.gitee.com/uploads/images/2020/1124/194339_11033b09_7954177.png \"apm_flow_diagram.png\")"
+msgid "![输入图片说明](/uploads/images/2020/1124/194339_11033b09_7954177.png \"apm_flow_diagram.png\")"
+msgstr "![Enter picture description](/uploads/images/2020/1124/194339_11033b09_7954177.png \"apm_flow_diagram.png\")"
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:9
 msgid "Steps to enable the edge repository"
@@ -74,8 +74,8 @@ msgid "4. create docker-compose.yml file"
 msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:25
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/194500_0eac1b35_7954177.png \"nexus_docker_compose.png\")"
-msgstr "![Enter picture description](https://images.gitee.com/uploads/images/2020/1124/194500_0eac1b35_7954177.png \"nexus_docker_compose.png\")"
+msgid "![输入图片说明](/uploads/images/2020/1124/194500_0eac1b35_7954177.png \"nexus_docker_compose.png\")"
+msgstr "![Enter picture description](/uploads/images/2020/1124/194500_0eac1b35_7954177.png \"nexus_docker_compose.png\")"
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:27
 msgid "5. Launch nexus:"
@@ -106,48 +106,48 @@ msgid "a.  Click on cogwheel"
 msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:39
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/194621_15a8adfc_7954177.png \"edge_repo_home_page.png\")"
-msgstr "![Enter picture description](https://images.gitee.com/uploads/images/2020/1124/194621_15a8adfc_7954177.png \"edge_repo_home_page.png\")"
+msgid "![输入图片说明](/uploads/images/2020/1124/194621_15a8adfc_7954177.png \"edge_repo_home_page.png\")"
+msgstr "![Enter picture description](/uploads/images/2020/1124/194621_15a8adfc_7954177.png \"edge_repo_home_page.png\")"
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:41
 msgid "b. Click on repository"
 msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:42
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/194749_ae231206_7954177.png \"nexus_repo_repositories.png\")"
-msgstr "![Enter picture description](https://images.gitee.com/uploads/images/2020/1124/194749_ae231206_7954177.png \"nexus_repo_repositories.png\")"
+msgid "![输入图片说明](/uploads/images/2020/1124/194749_ae231206_7954177.png \"nexus_repo_repositories.png\")"
+msgstr "![Enter picture description](/uploads/images/2020/1124/194749_ae231206_7954177.png \"nexus_repo_repositories.png\")"
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:44
 msgid "c. Click on create repository"
 msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:45
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/194940_374a3f1e_7954177.png \"nexus_create_Repository.png\")"
-msgstr "![Enter picture description](https://images.gitee.com/uploads/images/2020/1124/194940_374a3f1e_7954177.png \"nexus_create_Repository.png\")"
+msgid "![输入图片说明](/uploads/images/2020/1124/194940_374a3f1e_7954177.png \"nexus_create_Repository.png\")"
+msgstr "![Enter picture description](/uploads/images/2020/1124/194940_374a3f1e_7954177.png \"nexus_create_Repository.png\")"
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:47
 msgid "d. click on docker proxy"
 msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:48
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/195103_f90a26d6_7954177.png \"nexus_docker_proxy.png\")"
-msgstr "![Enter picture description](https://images.gitee.com/uploads/images/2020/1124/195103_f90a26d6_7954177.png \"nexus_docker_proxy.png\")"
+msgid "![输入图片说明](/uploads/images/2020/1124/195103_f90a26d6_7954177.png \"nexus_docker_proxy.png\")"
+msgstr "![Enter picture description](/uploads/images/2020/1124/195103_f90a26d6_7954177.png \"nexus_docker_proxy.png\")"
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:50
 msgid "e.  Configure proxy repo"
 msgstr ""
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:51
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/195203_97b8a714_7954177.png \"nexus_configure_docker_proxy.png\")"
-msgstr "![Enter picture description](https://images.gitee.com/uploads/images/2020/1124/195203_97b8a714_7954177.png \"nexus_configure_docker_proxy.png\")"
+msgid "![输入图片说明](/uploads/images/2020/1124/195203_97b8a714_7954177.png \"nexus_configure_docker_proxy.png\")"
+msgstr "![Enter picture description](/uploads/images/2020/1124/195203_97b8a714_7954177.png \"nexus_configure_docker_proxy.png\")"
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:53
-msgid "![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/195402_ee3d2326_7954177.png \"nexus_configure_docker_proxy2.png\")"
-msgstr "![Enter picture description](https://images.gitee.com/uploads/images/2020/1124/195402_ee3d2326_7954177.png \"nexus_configure_docker_proxy2.png\")"
+msgid "![输入图片说明](/uploads/images/2020/1124/195402_ee3d2326_7954177.png \"nexus_configure_docker_proxy2.png\")"
+msgstr "![Enter picture description](/uploads/images/2020/1124/195402_ee3d2326_7954177.png \"nexus_configure_docker_proxy2.png\")"
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:55
-msgid "configure docker hub/swr repo username and password ![输入图片说明](https://images.gitee.com/uploads/images/2020/1124/195550_1c0f66fc_7954177.png \"nexus_configure_docker_proxy4.png\")"
-msgstr "configure docker hub/swr repo username and password![Enter picture description](https://images.gitee.com/uploads/images/2020/1124/195550_1c0f66fc_7954177.png \"nexus_configure_docker_proxy4.png\")"
+msgid "configure docker hub/swr repo username and password ![输入图片说明](/uploads/images/2020/1124/195550_1c0f66fc_7954177.png \"nexus_configure_docker_proxy4.png\")"
+msgstr "configure docker hub/swr repo username and password![Enter picture description](/uploads/images/2020/1124/195550_1c0f66fc_7954177.png \"nexus_configure_docker_proxy4.png\")"
 
 #: ../../Projects/MECM/Edge_Repository_Enablement_Guide.md:58
 msgid "9. Configure insecure registry in /etc/docker/daemon.json and restart docker service"
