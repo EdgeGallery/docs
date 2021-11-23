@@ -26,31 +26,17 @@ After making changes in .md files of docs repository, the following steps must b
 
 ### Setting up of the env
 
-**STEP 1: Install virtual env of python**
+**STEP 1: Setup env**
 ```
-apt-get update
-apt-get install python-virtualenv
-mkdir /opt/python/3.8 
-virtualenv -p /usr/bin/python3 /opt/python/3.8
-source /opt/python/3.8/bin/activate
+./setup-docs-env.sh
 ```
 
-**STEP 2: Prepare the virtual env**
-Install pip latest version 21.1.1, inside the virtual env
+**STEP 2: Build**
 ```
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3.8 get-pip.py
-```
-Make sure that executing 'pip --version' command inside virtual env produces an output version
-```
-(3.8) swajan@swajan-IdeaPad-3-15ADA05:~/jans_work/docs/2605/sixth_commit/docs$ pip --version
-pip 21.1.1 from /home/swajan/jans_work/python3/3.8/lib/python3.8/site-packages/pip (python 3.8)
-(3.8) swajan@swajan-IdeaPad-3-15ADA05:~/jans_work/docs/2605/sixth_commit/docs$ 
+export BUILD_NUMBER=<Any Random Number>
+./build-docs.sh
 ```
 
-**STEP 3: Sphinx tools installation**
-- Go to the docs code directory, and do `cd docs/`
-- Run `test_tools.sh` from the docs directory
 This will result in generating .pot files, updating .po files, creating .mo files, chinese html and English html
 ```
 Generated files directory
@@ -60,8 +46,8 @@ Chinese html dir: docs/build/html/
 English html dir: docs/_build/html/en
 ```
 
-**STEP 4: Translation**
-For every change in .md files in docs project made, the .po files will be updated or created, while the `test_tools.sh` was run in STEP 3. 
+**STEP 3: Translation**
+For every change in .md files in docs project made, the .po files will be updated or created, while the `build-docs.sh` was run in STEP 2. 
 
 Follow the below steps to make a proper translated content.
 1. [Fill the empty msgStr](#Fill-the-empty-msgStr)
@@ -73,7 +59,22 @@ Navigate the corresponding .po file for the same modified .md file, in docs/loca
 > For a change made in docs/Projects/User Management/User_Interfaces.md, the docs/locale/en/LC_MESSAGES/Projects/User Management/User_Interfaces.po should be modified
 
 Translation should be available for all `msgId` in the file. For each msgId, translation should be given in msgStr
-Search `msgStr ""` in the files, and do a manual translation of the msgId. 
+Use translator script, and translate msgId easily.
+
+```
+#prerequisite
+python3.8 install -r translator/requirements.txt
+#find
+python3.8 translator/translator.py -f locale/en/LC_MESSAGES/Projects/*/*.po
+#translate
+python3.8 translator/translator.py -t -O
+- input 'y' for manual translation.
+- translate 'entries.list' document to english and paste the translated content to 'entries.list.translated' document in the same path.
+- input 'y' once translated document is ready.
+#replace
+python3.8 translator/translator.py -r
+```
+
 ```
 Empty msgStr which needs translation in User_Interfaces.po file
 #: ../../Projects/User Management/User_Interfaces.md
@@ -108,11 +109,11 @@ Remove these below lines, which start with '#~'
 #~ msgid "邮箱地址"
 #~ msgstr "email address"
 ```
-**STEP 5: Verification**
+**STEP 4: Verification**
 - After saving the changes in all the .po files, once again run the `test_tools.sh` under the docs/ directory
 - Go into `docs/_build/html/en`, and verify the corresponding english translated html files
 
-**STEP 6: Commit**
+**STEP 5: Commit**
 While pushing the changes, only commit the changes made in `.po` and `.md`. Ignore all the other folders and files.
 ```
 Do not commit the below files and folders. Remove these changes.
