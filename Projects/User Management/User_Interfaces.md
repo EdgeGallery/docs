@@ -6,6 +6,7 @@ User Interfaces
     - [1.1 登录](#11-登录)
     - [1.2 获取当前登录用户信息](#12-获取当前登录用户信息)
     - [1.3 登出](#13-登出)
+    - [1.4 获取AccessToken](#14-获取AccessToken)
   - [2. USER-MGMT](#2-USER-MGMT)
     - [2.1 注册用户](#21-注册用户)
     - [2.2 修改密码（个人修改密码 & 找回密码）](#22-修改密码)
@@ -50,7 +51,7 @@ response 200 OK
 用户登录成功后，通过此接口获取当前登录用户的信息。
 
 ```
-Resource URI: auth/login-info
+Resource URI: /auth/login-info
 Method: GET
 ```
 
@@ -86,6 +87,24 @@ Example response:
 ```
 200 OK
 Succeed
+```
+
+### 1.4 获取AccessToken
+
+北向接口调用前需要先通过该接口获取AccessToken。
+
+```
+Resource URI: /v1/accesstoken
+Method: POST
+```
+| Name    | Definition |Type   | Required| Describe |
+| ------- | ---------- |-------|---------| ---------|
+| userFlag | 用户名/邮箱/手机号 |body|是| |
+| password | 密码 |body|是| |
+
+Example response:
+```
+response 200 OK
 ```
 
 
