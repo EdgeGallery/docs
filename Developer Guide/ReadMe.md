@@ -1,6 +1,8 @@
 开发者指导
 =================
 
+## EdgeGallery业务开发指导
+
 - [APPStore](../Projects/APPSTORE/AppStore_Contribution.md)
 
 - [Developer](../Projects/Developer/Developer_Contribution.md)
@@ -22,7 +24,7 @@
 
 EdgeGallery支持第三方业务系统通过北向接口网关调用EdgeGallery的业务接口。调用流程如下图所示：
 
-
+![北向接口调用流程](../uploads/images/2021/common/northapi-arch.png)
 
 ### 北向接口调用endpoint
 
@@ -41,7 +43,7 @@ EdgeGallery支持第三方业务系统通过北向接口网关调用EdgeGallery�
 
 ### 获取XSRF-TOKEN
 
-在正式调用获取AccessToken和业务接口前，需要先获取到XSRF-TOKEN。
+在调用获取AccessToken的接口和各平台的业务接口之前，需要先获取到XSRF-TOKEN。
 
 ```
 Resource URI: /
@@ -59,7 +61,8 @@ Example response:
 ```
 response 200 OK
 
-响应的Cookie中包含XSRF-TOKEN
+响应的Cookie中即包含XSRF-TOKEN，请获取它。
+后续所有的接口调用中都需要通过请求头X-XSRF-TOKEN传递。
 ```
 
 ### 获取AccessToken
@@ -71,7 +74,7 @@ Method: POST
 | Name    | Definition |Type   | Required| Describe |
 | ------- | ---------- |-------|---------| ---------|
 | X-XSRF-TOKEN | XSRF-TOKEN | header |是| |
-| userFlag | 用户名/邮箱/手机号 |body|是| |
+| userFlag | 登录凭证（用户名/邮箱/手机号） |body|是| |
 | password | 密码 |body|是| |
 
 Example request:
@@ -93,8 +96,7 @@ response 200 OK
   "accessToken": "eyJhbGciOiJSUzI1NiIsInR5xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
 
-调用业务接口时通过X-ACCESS-TOKEN传递该响应中的accessToken值。
-
+后续所有的业务接口调用都需要通过请求头X-ACCESS-TOKEN传递这里的accessToken值。
 
 response 400 Bad Request
 {
