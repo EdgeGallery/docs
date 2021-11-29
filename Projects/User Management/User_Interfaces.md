@@ -1,7 +1,7 @@
 User Interfaces
 =============
-- [User Interfaces](#appstore-interfaces)
-- [User-mgmt-Server](#appStore-server)
+
+- [User-mgmt-Server](#User-mgmt-Server)
   - [1. AUTH](#1-AUTH)
     - [1.1 登录](#11-登录)
     - [1.2 获取当前登录用户信息](#12-获取当前登录用户信息)
