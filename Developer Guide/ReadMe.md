@@ -144,12 +144,13 @@ https://x.x.x.x:30095/{urlPrefix}/{业务接口自身的URL}
 | X-ACCESS-TOKEN | ACCESS-TOKEN |
 
 
-【举例】
+#### 北向业务接口调用示例
+
 AppStore平台提供了获取应用列表的接口：
 GET /mec/appstore/v1/apps
 
-北向调用样例：
+北向调用：
 
 ```
-https://x.x.x.x:30095/mec-appstore/mec/appstore/v1/apps -H "X-XSRF-TOKEN: xxxx" -H "X-ACCESS-TOKEN: xxxx"
+GET https://x.x.x.x:30095/mec-appstore/mec/appstore/v1/apps -H "X-XSRF-TOKEN: xxxx" -H "X-ACCESS-TOKEN: xxxx"
 ```
