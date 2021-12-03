@@ -154,3 +154,15 @@ GET /mec/appstore/v1/apps
 ```
 GET https://x.x.x.x:30095/mec-appstore/mec/appstore/v1/apps -H "X-XSRF-TOKEN: xxxx" -H "X-ACCESS-TOKEN: xxxx"
 ```
+
+## 第三方IAM对接开发指导
+
+EdgeGallery支持对接使用第三方IAM帐号系统。
+
+在部署EdgeGallery时请参考：[离线安装指导](https://gitee.com/edgegallery/installer/tree/master/ansible_install)中的说明开启第三方IAM使能开关。
+
+对于第三方IAM帐号系统，需要实现如下接口：
+
+| 接口名称 | URL                                                          | Method | Request                                                      | Response                                                     | Response Status                                                    | 
+| --------------- | ------------------------------------------------------------ | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 登录 | /iam/users/login | POST | {<br>  "userFlag": "xxxx",//用户登录凭证（用户名/邮箱地址）<br>  "password": "xxx"//登录密码<br>} | {<br>  "userId": "",     //用户ID<br>  "userName": "",   //用户名<br>  "mailAddress": "",  //邮箱地址（可选）<br>  "userRole": "",  //用户角色（ADMIN：管理员 TENANT：租户）} | 200：登录成功，返回用户信息<br>401：认证失败 |
