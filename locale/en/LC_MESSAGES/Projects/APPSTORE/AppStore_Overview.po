@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 00:08+0530\n"
+"POT-Creation-Date: 2021-11-09 10:45+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +33,7 @@ msgid "代码架构"
 msgstr "Code Architecture"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:11
-msgid "![](/uploads/images/2021/appstore/app_structure.png)"
+msgid "![](/uploads/images/2021/1009/appstore/app_structure.png)"
 msgstr "![](/uploads/images/2021/appstore/app_structure.png)"
 
 #: ../../Projects/APPSTORE/AppStore_Overview.md:13
@@ -48,3 +47,4 @@ msgstr "AppStore BE: Developer Platform Backstage Framework, developed using Spr
 #: ../../Projects/APPSTORE/AppStore_Overview.md:17
 msgid "AppStore DB：后台依赖Postgres数据库。"
 msgstr "AppStore DB: Backstage relies on Postgres database."
+

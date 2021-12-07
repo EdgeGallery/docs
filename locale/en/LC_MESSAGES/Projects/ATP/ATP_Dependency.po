@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 13:06+0530\n"
+"POT-Creation-Date: 2021-11-09 10:45+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,8 +121,8 @@ msgid "mybatis-spring-boot-starter"
 msgstr "mybatis-spring-boot-starter"
 
 #: ../../Projects/ATP/ATP_Dependency.md
-msgid "2.1.1"
-msgstr "2.1.1"
+msgid "2.2.0"
+msgstr "2.2.0"
 
 #: ../../Projects/ATP/ATP_Dependency.md
 msgid "spring-boot-starter-test"
@@ -386,10 +385,6 @@ msgid "Bouncy Castle Licence"
 msgstr "Bouncy Castle Licence"
 
 #: ../../Projects/ATP/ATP_Dependency.md
-msgid "org.springframework.security"
-msgstr "org.springframework.security"
-
-#: ../../Projects/ATP/ATP_Dependency.md
 msgid "spring-security-jwt"
 msgstr "spring-security-jwt"
 
@@ -397,7 +392,7 @@ msgstr "spring-security-jwt"
 msgid "1.1.1.RELEASE"
 msgstr "1.1.1.RELEASE"
 
-#: ../../Projects/ATP/ATP_Dependency.md:34
+#: ../../Projects/ATP/ATP_Dependency.md:37
 msgid "ATP-fe 三方件使用清单"
 msgstr "ATP-fe Trilateral Use List"
 
@@ -696,3 +691,7 @@ msgstr "postcss-url"
 #: ../../Projects/ATP/ATP_Dependency.md
 msgid "7.2.1"
 msgstr "7.2.1"
+
+#~ msgid "2.1.1"
+#~ msgstr "2.1.1"
+

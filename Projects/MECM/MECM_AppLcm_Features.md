@@ -1,4 +1,6 @@
-﻿Characteristic design
+﻿Features
+======================
+Characteristic design
 LcmController is mainly responsible to provide northbound API's to upload config, remove config, instantiate, terminate
 , and query an application. It also provides APIs to query mep capabilities and kpi information from prometheus
 

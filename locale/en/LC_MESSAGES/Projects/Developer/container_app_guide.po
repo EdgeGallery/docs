@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-17 16:09+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/Developer/container_app_guide.md:1
+msgid "developer 容器应用开发指导"
+msgstr "Developer container application guide"
+
+#: ../../Projects/Developer/container_app_guide.md:3
+msgid "环境准备"
+msgstr "Environmental preparation"
+
+#: ../../Projects/Developer/container_app_guide.md:5
+msgid "edgegallery 安装v1.2版本"
+msgstr "edgegallery install v1.2 version"
+
+#: ../../Projects/Developer/container_app_guide.md:6
+msgid "developer 安装注意事项-镜像仓库配置<br/>"
+msgstr "Developer installation considerations-mirror warehouse configuration <br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:7
+msgid "1.2版本部署yaml上传的时候，新增image校验，校验规则如下：<br/>"
+msgstr "When deploying yaml in version 1.2, image verification is added. The verification rules are as follows:<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:9
+msgid "**1.** image配置为edgegallery镜像仓库地址（包括环境变量的配置形式），首先会去edgegallery仓库进行拉取，如果拉取失败，提示上传者镜像信息配置有误（镜像地址配置错误或者未提前上传镜像到edgegallery仓库）。<br/>"
+msgstr "**1.** The image is configured as the address of the edgegallery mirror warehouse (including the configuration form of environment variables). First, it will go to the edgegallery warehouse to pull. The image has not been uploaded to the edgegallery warehouse in advance"
+
+#: ../../Projects/Developer/container_app_guide.md:11
+msgid "**2.** image配置为其他镜像仓库地址（例如swr,docker等仓库），首先会进行拉取，如果拉取失败，提示上传者镜像信息配置有误（镜像地址配置错误，开源仓库中未找到此镜像）。拉取成功，developer后台会对此镜像进行重新打标签，推到edgegallery仓库，下次开发者可以直接配置成edgegallery仓库的镜像地址形式，进行容器应用的开发。<br/>"
+msgstr "**2.** If the image is configured to other mirror warehouse addresses (such as swr, docker, etc.), it will be pulled first. If the pull fails, the uploader will be prompted that the mirror information is configured incorrectly (the mirror address is configured incorrectly, in the open source warehouse) The mirror was not found). If the pull is successful, the developer background will enter the mirro"
+
+#: ../../Projects/Developer/container_app_guide.md:13
+msgid "**3.** 镜像信息配置为其他形式（非edgegallery镜像仓库镜像地址），因为镜像大小以及仓库的不同，以及后续的重新打标签，推送操作，可能会有稍微的费时，请开发者上传yaml时耐心等待。"
+msgstr "**3.** The mirror information is configured in other forms (non-edgegallery mirror warehouse mirror address). Because of the difference in mirror size and warehouse, as well as subsequent relabeling and push operations, it may take a little time. Please upload it Wait patiently when yaml."
+
+#: ../../Projects/Developer/container_app_guide.md:14
+msgid "developer 安装注意事项-Docker配置<br/>"
+msgstr "Developer installation notes-Docker configuration<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:16
+msgid "**1.** 因为涉及到开发者连接edgegallery安装环境的docker去其他开源镜像仓库拉取镜像，因此开放2375端口（其他未被占用端口也可以）。以下操作以环境为Ubuntu18.04,Docker18.09.0作为样例说明，不同系统，docker的安装目录也不尽相同，具体原理大体一致。<br/>"
+msgstr "**1.** Because it involves developers connecting to the docker of the edgegallery installation environment to pull images from other open source mirror warehouses, port 2375 is opened (other unoccupied ports are also available). The following operations are based on Ubuntu 18.04 and Docker 18.09.0 as examples. Different systems have different installation directories for docker, and the specific principles are roughly the same. <br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:17
+msgid "查找docker.service的目录，操作命令systemctl status docker ![输入图片说明](/uploads/images/2021/0630/170158_44bd012f_5504908.png \"dockerservice-new.png\")"
+msgstr "Find the directory of docker.service and operate the command systemctl status docker ![Enter image description](/uploads/images/2021/0630/170158_44bd012f_5504908.png \"dockerservice-new.png\")"
+
+#: ../../Projects/Developer/container_app_guide.md:19
+msgid "编辑docker.service,添加如下内容<br/> ![输入图片说明](/uploads/images/2021/0630/170510_ee349bc5_5504908.png \"dockerservicecontent.png\")"
+msgstr "Edit docker.service and add the following content<br/> ![Enter picture description](/uploads/images/2021/0630/170510_ee349bc5_5504908.png \"dockerservicecontent.png\")"
+
+#: ../../Projects/Developer/container_app_guide.md:21
+msgid "systemctl daemon-reload //重新加载系统的daemon,使配置生效"
+msgstr "systemctl daemon-reload //Reload the daemon of the system to make the configuration effective"
+
+#: ../../Projects/Developer/container_app_guide.md:22
+msgid "service docker restart  //重启docker<br/>"
+msgstr "service docker restart // restart docker<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:24
+msgid "**2.** 接上面的步骤，重启docker之后，查看/var/run/docker.sock的权限，如果docker.sock的权限中的o权限为0，手动为其添加rw权限 最终权限如下：<br/> ![输入图片说明](/uploads/images/2021/0630/171606_83e1797d_5504908.png \"dockersock.png\") <br/>"
+msgstr "**2.** Following the above steps, after restarting docker, check the permissions of /var/run/docker.sock. If the o permission in the permissions of docker.sock is 0, manually add rw permissions to the final permissions as follows: <br/> ![Enter picture description](/uploads/images/2021/0630/171606_83e1797d_5504908.png \"dockersock.png\") <br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:28
+msgid "配置沙箱环境：developer新增K8S沙箱环境"
+msgstr "Configure the sandbox environment: developer adds the K8S sandbox environment"
+
+#: ../../Projects/Developer/container_app_guide.md:30
+msgid "**1.** 利用admin账户登录Developer平台，打开系统-沙箱管理，点击左上角新增沙箱环境按钮，添加k8的沙箱<br/> ![输入图片说明](/uploads/images/2021/0701/143746_1e95d967_5504908.png \"k8s.png\")<br/> **2.** 参数说明：<br/>  **名称** 边缘节点（沙箱环境）的名称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **lcmIp** lcmcontroller的ip地址<br/>  **mecHost:** 边缘节点的IP地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **端口号** lcmcontroller对外暴露的端口号<br/>  **协议** 选择https&nbsp;&nbsp; **用户名** 登录mechost的用户名&nbsp;&nbsp; **密码** 登录mechost的密码<br/>  **架构** 根据自己的需要选择&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **部署区域** 根据自己的需要填写&nbsp;&nbsp;&nbsp;**其他** 可以不用改动<br/> **3.** 上传的配置文件结构如下，自己配置部分已由xxx代替：<br/> ![输入图片说明](/uploads/images/2021/0701/151313_489a9540_5504908.png \"config.png\")"
+msgstr "**1.** Use the admin account to log in to the Developer platform, open the system-sandbox management, click the Add Sandbox Environment button in the upper left corner to add the sandbox of k8<br/> ![Enter picture description](/uploads/images/2021/0701/143746_1e95d967_5504908.png \"k8s.png\")<br/> **2.** Parameter description:<br/> **Name** Edge node ( Sandbox environment) name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **lcmIp** lcmcontroller's ip address<br/> **mecHost:** edge node IP address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Port Number** The port number exposed by lcmcontroller<br/> **Protocol** Select https&nbsp;&nbsp; **Username** Username to log in to mechost&nbsp;&nbsp; **Password** Password to log in to mechost <br/> **Architecture** Choose according to your needs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Deployment area** Fill in according to your needs&nbsp;&nbsp;&nbsp;**Others** No need to change< br/> **3.** The structure of the uploaded configuration file is as follows, and the configuration part of yourself has been replaced by xxx:<br/> ![Enter picture description](/uploads/images/2021 /0701/151313_489a9540_5504908.png \"config.png\")"
+
+#: ../../Projects/Developer/container_app_guide.md:40
+msgid "容器应用开发"
+msgstr "Container application development"
+
+#: ../../Projects/Developer/container_app_guide.md:41
+msgid "新建容器应用项目或者快速集成项目，主要的是选择容器属性，因为涉及到后续的发布能力，以新建项目为例作出说明"
+msgstr "To create a new container application project or a quick integration project, the main thing is to select the container properties, because it involves the subsequent release capabilities, take the new project as an example to explain"
+
+#: ../../Projects/Developer/container_app_guide.md:42
+msgid "1. 进入开发者平台，选择导航栏中的工作空间，点击项目列表右上方的新建项目，选择应用开发"
+msgstr "1.Enter the developer platform, select the workspace in the navigation bar, click on the new project at the top right of the project list, and select application development"
+
+#: ../../Projects/Developer/container_app_guide.md:43
+msgid "![输入图片说明](/uploads/images/2021/0705/113102_e12792fe_5504908.png \"新建项目.png\")<br/> ![输入图片说明](/uploads/images/2021/0705/113150_d7c948dd_5504908.png \"集成或者新建.png\")<br/>"
+msgstr "![Enter picture description](/uploads/images/2021/0705/113102_e12792fe_5504908.png \"New project.png\")<br/> ![Enter picture description](/uploads/images/2021/0705/113150_d7c948dd_5504908.png \"Integrate or create a new .png\")<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:45
+msgid "2. 填写项目基本信息，切记勾选负载类型为容器，新建第二部选择服务发现能力"
+msgstr "2.Fill in the basic information of the project, remember to check the load type as container, create the second part and select the service discovery capability"
+
+#: ../../Projects/Developer/container_app_guide.md:46
+msgid "![输入图片说明](/uploads/images/2021/0705/113407_e13c5fd3_5504908.png \"新建1.png\")<br/> ![输入图片说明](/uploads/images/2021/0705/113427_9c4b2d9a_5504908.png \"新建2.png\")<br/>"
+msgstr "![Enter picture description](/uploads/images/2021/0705/113407_e13c5fd3_5504908.png \"New 1.png\")<br/> ![Enter picture description](/uploads/images/2021/0705/113427_9c4b2d9a_5504908.png \"New 2.png\")<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:48
+msgid "3. 进入项目详情页，查看项目属性"
+msgstr "3.Enter the project details page to view the project properties"
+
+#: ../../Projects/Developer/container_app_guide.md:49
+msgid "![输入图片说明](/uploads/images/2021/0705/113527_ea4193f9_5504908.png \"详情.png\")<br/>"
+msgstr "![Enter picture description](/uploads/images/2021/0705/113527_ea4193f9_5504908.png \"details.png\")<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:50
+msgid "4. 进入能力详情页，展示的为勾选的能力的api"
+msgstr "4.Enter the ability details page, the api of the checked ability is displayed"
+
+#: ../../Projects/Developer/container_app_guide.md:51
+msgid "![输入图片说明](/uploads/images/2021/0705/113734_b718d554_5504908.png \"能力详情.png\")<br/>"
+msgstr "![Enter picture description](/uploads/images/2021/0705/113734_b718d554_5504908.png \"Ability Details.png\")<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:52
+msgid "5. 进入应用开发页，最主要的可以下载样例代码，进行本地开发"
+msgstr "5.Enter the application development page, the most important thing is to download the sample code for local development"
+
+#: ../../Projects/Developer/container_app_guide.md:53
+msgid "![输入图片说明](/uploads/images/2021/0705/113943_7be5a4b2_5504908.png \"应用开发.png\")<br/>"
+msgstr "![Enter picture description](/uploads/images/2021/0705/113943_7be5a4b2_5504908.png \"application development.png\")<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:54
+msgid "6. 新建项目完成，进入项目详情页，可直接点击左边的部署调测到达此页，可以忽略能力详情和应用开发，跳转到此步进行测试<br/>"
+msgstr "6.After the new project is completed, enter the project details page, you can directly click on the deployment and commissioning on the left to reach this page, you can ignore the capability details and application development, and jump to this step for testing.<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:55
+msgid "（1）上传镜像，如果您需要测试的镜像可以从公共的镜像仓库拉取，可以直接进入第二步配置部署文件。反之，请先上传tar格式的镜像至EdgeGallery镜像仓库，如果您已通过其他方式将镜像推送至EdgeGallery镜像仓库，可直接进入第二步配置部署文件。<br>"
+msgstr "(1) Upload the image. If the image you need to test can be pulled from the public image repository, you can directly enter the second step to configure the deployment file. On the contrary, please upload the image in tar format to the EdgeGallery mirror warehouse first. If you have already pushed the image to the EdgeGallery mirror warehouse by other means, you can directly enter the second step to configure the deployment file. <br>"
+
+#: ../../Projects/Developer/container_app_guide.md:56
+msgid "![输入图片说明](/uploads/images/2021/0705/142510_f3377eab_5504908.png \"部署调测1.png\")<br>"
+msgstr "![Enter picture description](/uploads/images/2021/0705/142510_f3377eab_5504908.png \"Deployment and commissioning 1.png\")<br>"
+
+#: ../../Projects/Developer/container_app_guide.md:57
+msgid "（2）配置部署文件，可以选择上传yaml或者进行可视化配置，如果选择上传，可直接点击模板下载链接下载样例文件，进行修改并且上传，选择可视化配置，正常填写就行。<br/>"
+msgstr "(2) To configure the deployment file, you can choose to upload yaml or perform visual configuration. If you choose to upload, you can directly click the template download link to download the sample file, modify it and upload it, select the visual configuration, and fill in normally. <br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:58
+msgid "**上传**<br/> ![](/uploads/images/2021/0705/143136_afd8a588_5504908.png \"部署调测2.png\")<br/> **可视化配置**<br/> ![输入图片说明](/uploads/images/2021/0705/144525_ccc745a7_5504908.png \"可视化.png\")<br/>"
+msgstr "**Upload**<br/> ![](/uploads/images/2021/0705/143136_afd8a588_5504908.png \"Deployment and commissioning 2.png\")<br/> * *Visualization configuration**<br/> ![Enter picture description](/uploads/images/2021/0705/144525_ccc745a7_5504908.png \"Visualization.png\")<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:62
+msgid "（3）部署调测。选择测试环境，尽量选择沙箱环境，真实的5G环境较少，可能会申请失败。点击开始部署，直至出现部署成功，可以进行远程VNC连接，进入沙箱环境，查看已经部署的项目，也可以测试出现的url，是否可用。部署失败也会显示失败原因。最底下会显示应用的pod构成，资源占比。<br/>"
+msgstr "(3) Deployment and commissioning. Choose a test environment and try to choose a sandbox environment. There are fewer real 5G environments, and the application may fail. Click to start deployment, until the deployment is successful, you can connect remote VNC, enter the sandbox environment, view the deployed projects, you can also test whether the URL that appears is availabl"
+
+#: ../../Projects/Developer/container_app_guide.md:63
+msgid "![输入图片说明](/uploads/images/2021/0705/145123_86b9ef5f_5504908.png \"部署3.png\")<br/>"
+msgstr "![Enter image description](/uploads/images/2021/0705/145123_86b9ef5f_5504908.png \"Deployment 3.png\")<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:64
+msgid "7. 应用发布，进入发布页之前，记得释放资源。可以在部署调测页点击释放资源按钮释放，如果未点击释放资源进入发布页，发布页也会弹窗提示释放资源<br/>"
+msgstr "7.After the application is released, remember to release the resources before entering the release page. You can click the release resource button on the deployment and commissioning page to release. If you do not click to release the resource to enter the release page, the release page will also pop up a window to remind you to release the resource.<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:65
+msgid "（1）应用配置，此页面可以根据自己需要配置，不做强制要求。可以上传项目的说明文档，也可以配置dns，流量规则，也可以添加您需要对外发布的服务。<br/>"
+msgstr "(1) Application configuration, this page can be configured according to your own needs, there is no mandatory requirement. You can upload project description documents, configure dns, traffic rules, and add services that you need to publish to the outside world. <br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:66
+msgid "![输入图片说明](/uploads/images/2021/0705/145937_fc649708_5504908.png \"应用发布1.png\")"
+msgstr "![Enter image description](/uploads/images/2021/0705/145937_fc649708_5504908.png \"application release 1.png\")"
+
+#: ../../Projects/Developer/container_app_guide.md:67
+msgid "（2）应用认证，是对您经过开发者平台部署调测，配置生成的应用包进行解析，测试，包括文件目录校验、病毒扫描等。<br/>"
+msgstr "(2) Application certification is to analyze and test the application package generated by your developer platform deployment, commissioning and configuration, including file directory verification, virus scanning, etc. <br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:68
+msgid "![输入图片说明](/uploads/images/2021/0705/150838_a7c1486c_5504908.png \"应用发布2.png\")<br/> ![输入图片说明](/uploads/images/2021/0705/150914_9f97acef_5504908.png \"应用发布2-2.png\")<br/>"
+msgstr "![Enter image description](/uploads/images/2021/0705/150838_a7c1486c_5504908.png \"application release 2.png\")<br/> ![Enter image description](/uploads/images/2021/0705/150914_9f97acef_5504908.png \"application release 2-2.png\")<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:70
+msgid "（3）应用发布，认证成功的应用可以点击发布按钮，将其发布到Appstore（应用市场）。如果应用配置中，配置了服务，也可以选择是否把服务发布到开发者的能力中心，发布成功，可以在应用市场的我的应用中查看已发布的应用<br/>"
+msgstr "(3) Application release. Successfully authenticated applications can click the publish button to publish them to the Appstore (application market). If the service is configured in the application configuration, you can also choose whether to publish the service to the developer's competence center. If the publishing is successful, you can view the published application in the application market"
+
+#: ../../Projects/Developer/container_app_guide.md:71
+msgid "![输入图片说明](/uploads/images/2021/0705/151314_53d74b22_5504908.png \"应用发布3.png\")<br/> ![输入图片说明](/uploads/images/2021/0705/151335_9683c789_5504908.png \"应用发布3-2.png\")<br/> ![输入图片说明](/uploads/images/2021/0705/151356_1a02a11a_5504908.png \"appstore.png\")<br/>"
+msgstr "![Enter image description](/uploads/images/2021/0705/151314_53d74b22_5504908.png \"application release 3.png\")<br/> ![Enter image description](/uploads/images/2021/0705/151335_9683c789_5504908.png \"application release 3-2.png\")<br/> ![Enter image description](/uploads/images/2021/0705/151356_1a02a11a_5504908.png \"appstore.png\")<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:74
+msgid "常见问题"
+msgstr "Common problem"
+
+#: ../../Projects/Developer/container_app_guide.md:75
+msgid "1.开发者对容器应用部署调测时，可以下载开发者平台提供的样例yaml，根据自己需要部署的应用，修改样例yaml并上传使用。<br/>"
+msgstr "1.When developers deploy and debug container applications, they can download the sample yaml provided by the developer platform, modify the sample yaml according to the application they need to deploy, and upload it for use."
+
+#: ../../Projects/Developer/container_app_guide.md:76
+msgid "2.开发者平台会对上传的yaml中的镜像信息进行校验，yaml中配置的镜像不拘泥于固定格式，但是需要注意的是镜像需要为开源镜像或者EdgeGallery仓库已有镜像。<br/>"
+msgstr "2.The developer platform will verify the image information in the uploaded yaml. The image configured in the yaml is not limited to a fixed format, but it should be noted that the image needs to be an open source image or an existing image in the EdgeGallery warehouse. <br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:77
+msgid "3.如果yaml中配置的镜像形式为EdgeGallery仓库镜像形式，请提前上传镜像到EdgeGallery仓库，防止容器应用部署调测失败。<br/>"
+msgstr "3.If the mirror format configured in yaml is the EdgeGallery warehouse mirroring format, please upload the mirror to the EdgeGallery warehouse in advance to prevent container application deployment and commissioning failures. <br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:78
+msgid "4.如果yaml中配置的镜像形式为EdgeGallery仓库镜像形式，建议的镜像配置格式如下：<br/>"
+msgstr "4.If the mirroring format configured in yaml is EdgeGallery warehouse mirroring format, the recommended mirroring configuration format is as follows:<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:79
+msgid "‘{{.Values.imagelocation.domainname}}/{{.Values.imagelocation.project}}/xxx:xxx’<br/>"
+msgstr "‘{{.Values.imagelocation.domainname}}/{{.Values.imagelocation.project}}/xxx:xxx’<br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:80
+msgid "5.如果yaml中配置的镜像属于其他开源镜像仓库，请确保镜像配置形式正确。<br/>"
+msgstr "5.If the mirror configured in yaml belongs to other open source mirror warehouses, please ensure that the mirror configuration form is correct. <br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:81
+msgid "6.请尽可能的配置yaml中的namespace，并确保其格式为’{{ .Values.appconfig.appnamespace }}’。<br/>"
+msgstr "6.Please configure the namespace in yaml as much as possible, and ensure that its format is ‘{{ .Values.appconfig.appnamespace }}’. <br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:82
+msgid "7.尽可能一次性配置正确，确保yaml中的关键参数配置正确，例如暴露的端口，配置的环境变量等等。<br/>"
+msgstr "7.Configure the correct one-time as much as possible, and ensure that the key parameters in yaml are configured correctly, such as exposed ports, configured environment variables, and so on. <br/>"
+
+#: ../../Projects/Developer/container_app_guide.md:83
+msgid "容器应用与MepAgent的集成"
+msgstr "Integration of container applications and MepAgent"
+
+#: ../../Projects/Developer/container_app_guide.md:84
+#, python-format
+msgid "参考文档：[APP通过MEP调用](https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/app%E9%80%9A%E8%BF%87MEP%E8%B0%83%E7%94%A8.md)"
+msgstr "Reference document: [APP call via MEP](https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/app%E9%80%9A%E8%BF%87MEP%E8%B0%83% E7%94%A8.md)"
+

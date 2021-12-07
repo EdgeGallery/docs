@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 23:14+0530\n"
+"POT-Creation-Date: 2021-11-09 10:45+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,6 +127,58 @@ msgstr "developer-be-postgres-0"
 #: ../../Projects/Port List.md Matrix/Nodeport
 msgid "developer-be-postgres-svc"
 msgstr "developer-be-postgres-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "file-system"
+msgstr ""
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "file-system-svc"
+msgstr ""
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "30090"
+msgstr "30100"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "9500"
+msgstr ""
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "filesystem-postgres"
+msgstr "user-mgmt-postgres"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "healthcheck"
+msgstr ""
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "healthcheck-svc"
+msgstr ""
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "32759"
+msgstr "6379"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "9527"
+msgstr ""
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "healthcheck-m"
+msgstr ""
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "healthcheck-m-svc"
+msgstr ""
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "32757"
+msgstr "30205"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+msgid "9529"
+msgstr ""
 
 #: ../../Projects/Port List.md Matrix/Nodeport
 msgid "user-mgmt"
@@ -333,7 +384,7 @@ msgstr "pg-deploy"
 msgid "pg-service"
 msgstr "pg-service"
 
-#: ../../Projects/Port List.md:26 Matrix/Nodeport
+#: ../../Projects/Port List.md:30 Matrix/Nodeport
 msgid "ServiceComb NodePort List"
 msgstr "ServiceComb NodePort List"
 
@@ -365,6 +416,7 @@ msgstr "user-mgmt-be"
 msgid "user-mgmt-fe"
 msgstr "user-mgmt-fe"
 
-#: ../../Projects/Port List.md:37 Matrix/Nodeport
+#: ../../Projects/Port List.md:41 Matrix/Nodeport
 msgid "`All services registered to the service center`"
 msgstr "`All services registered to the service center`"
+

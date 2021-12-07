@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-11-09 10:45+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,10 +26,45 @@ msgid "The LcmController database uses an open source PostgreSQL database, and t
 msgstr ""
 
 #: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:6
-msgid "app_info_record: Store app information, such as appInsId, hostIp, deployType and tenantId."
+msgid "app_info_record: Store app information, such as appInsId, hostIp, deployType, appPackageId, appName, Origin, SyncStatus and tenantId."
 msgstr ""
 
-#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:16
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:21
 msgid "tenant_info_record: Store tenant information, such as tenantId."
 msgstr ""
 
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:28
+msgid "mec_host: Store mec host information, such as mecHostId, mecHostIp, mecHostName, zipCode, city, address, affinity UserName, configUploadStatus, coordinates, vim, origin and syncStatus"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:48
+msgid "mec_hw_capability: Store mec hardware capability information, such as MecCapabilityId, hwType, hwVendor and hwModel"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:57
+msgid "app_instance_stale_rec: Store app instance stale record information, such as appInstanceId and tenantId"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:64
+msgid "mec_host_stale_rec: Store mec host stale record information, such as mecHostId"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:70
+msgid "app_package_record: Store app package record information, such as appPkgId, appPkgName, appPkgVersion, appPkgPath, appPkgProvider, appPkgDesc, appPkgAffinity, appIconUrl, appId, tenantId, packageId, origin and syncStatus"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:89
+msgid "app_package_host_record: Store app package host record information, such as pkgHostKey, hostIp, appPkgId, status,  tenantId, error, origin and syncStatus"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:103
+msgid "app_package_stale_rec: Store app package stale record information, such as appPkgId and tenantId"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:110
+msgid "app_package_host_stale_rec: Store app package stale record information, such as pacakgeId, tenantId and hostIp"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppLcm_Database_Design.md:118
+msgid "edge_authenticate_rec: Store edge authenticate record information, such as authenticateId, name and key"
+msgstr ""

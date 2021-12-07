@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2021-11-09 16:48+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,6 +36,10 @@ msgstr "Database design"
 #: ../../Projects/User Management/UserManagement.rst:3
 msgid "如何贡献"
 msgstr "How to contribute"
+
+#: ../../Projects/User Management/UserManagement.rst:3
+msgid "用户依赖"
+msgstr "User dependence"
 
 #: ../../Projects/User Management/UserManagement.rst:2
 msgid "User Management"

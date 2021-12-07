@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-01 22:34+0530\n"
+"POT-Creation-Date: 2021-11-09 10:45+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,16 +93,16 @@ msgid "jackson-core"
 msgstr "jackson-core"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "2.9.9"
-msgstr "2.9.9"
+msgid "2.10.5"
+msgstr "2.10.5"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "jackson-databind"
 msgstr "jackson-databind"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "2.9.10.6"
-msgstr "2.9.10.6"
+msgid "2.10.5.1"
+msgstr "2.10.5.1"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "Y"
@@ -116,6 +115,10 @@ msgstr "com.fasterxml.jackson.dataformat"
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "jackson-dataformat-xml"
 msgstr "jackson-dataformat-xml"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.9.9"
+msgstr "2.9.9"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "jackson-dataformat-yaml"
@@ -214,8 +217,8 @@ msgid "gson"
 msgstr "gson"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "2.8.2"
-msgstr "2.8.2"
+msgid "2.8.5"
+msgstr "2.8.5"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "Apache 2.0"
@@ -874,8 +877,8 @@ msgid "junit"
 msgstr "junit"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "4.12"
-msgstr "4.12"
+msgid "4.13"
+msgstr "4.13"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "Eclipse Public License 1.0"
@@ -1038,8 +1041,8 @@ msgid "httpclient"
 msgstr "httpclient"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "4.5.9"
-msgstr "4.5.9"
+msgid "4.5.10"
+msgstr "4.5.10"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "httpcore"
@@ -1058,8 +1061,8 @@ msgid "log4j-api"
 msgstr "log4j-api"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "2.11.2"
-msgstr "2.11.2"
+msgid "2.13.3"
+msgstr "2.13.3"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "log4j-core"
@@ -1210,8 +1213,8 @@ msgid "tomcat-annotations-api"
 msgstr "tomcat-annotations-api"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "9.0.37"
-msgstr "9.0.37"
+msgid "9.0.44"
+msgstr "9.0.44"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "org.apache.tomcat.embed"
@@ -1262,8 +1265,8 @@ msgid "bcprov-jdk15on"
 msgstr "bcprov-jdk15on"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "1.60"
-msgstr "1.60"
+msgid "1.68"
+msgstr "1.68"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "org.checkerframework"
@@ -1518,8 +1521,8 @@ msgid "mybatis-spring-boot-starter"
 msgstr "mybatis-spring-boot-starter"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "2.1.4"
-msgstr "2.1.4"
+msgid "2.2.0"
+msgstr "2.2.0"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "org.objenesis"
@@ -1582,8 +1585,8 @@ msgid "postgresql"
 msgstr "postgresql"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "42.2.13"
-msgstr "42.2.13"
+msgid "42.2.16"
+msgstr "42.2.16"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "BSD-2-Clause"
@@ -1638,8 +1641,8 @@ msgid "jcl-over-slf4j"
 msgstr "jcl-over-slf4j"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "1.7.26"
-msgstr "1.7.26"
+msgid "1.7.30"
+msgstr "1.7.30"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "MIT License"
@@ -1702,6 +1705,10 @@ msgid "spring-webmvc"
 msgstr "spring-webmvc"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-websocket"
+msgstr "spring-web"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "org.springframework.boot"
 msgstr "org.springframework.boot"
 
@@ -1730,6 +1737,10 @@ msgid "spring-boot-starter-jdbc"
 msgstr "spring-boot-starter-jdbc"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.3.3.RELEASE"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "spring-boot-starter-json"
 msgstr "spring-boot-starter-json"
 
@@ -1744,6 +1755,14 @@ msgstr "spring-boot-starter-tomcat"
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "spring-boot-starter-web"
 msgstr "spring-boot-starter-web"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "spring-boot-starter-websocket"
+msgstr "spring-boot-starter-web"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.1.18.RELEASE"
+msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "spring-boot-test"
@@ -1782,8 +1801,8 @@ msgid "spring-security-test"
 msgstr "spring-security-test"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "4.2.2.RELEASE"
-msgstr "4.2.2.RELEASE"
+msgid "5.3.10.RELEASE"
+msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "spring-security-web"
@@ -1798,8 +1817,8 @@ msgid "spring-security-oauth2"
 msgstr "spring-security-oauth2"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "2.5.0.RELEASE"
-msgstr "2.5.0.RELEASE"
+msgid "2.3.8.RELEASE"
+msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "org.springframework.security.oauth.boot"
@@ -1810,8 +1829,8 @@ msgid "spring-security-oauth2-autoconfigure"
 msgstr "spring-security-oauth2-autoconfigure"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "2.1.10.RELEASE"
-msgstr "2.1.10.RELEASE"
+msgid "2.2.2.RELEASE"
+msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "org.xmlunit"
@@ -1842,8 +1861,8 @@ msgid "docker-java"
 msgstr "docker-java"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
-msgid "3.2.7"
-msgstr "3.2.7"
+msgid "3.2.10"
+msgstr "3.2.10"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "org.modelmapper"
@@ -1857,7 +1876,7 @@ msgstr "modelmapper"
 msgid "1.1.0"
 msgstr "1.1.0"
 
-#: ../../Projects/APPSTORE/AppStore_Dependency.md:219
+#: ../../Projects/APPSTORE/AppStore_Dependency.md:221
 msgid "AppStore-fe 三方件使用清单"
 msgstr "AppStore-fe Trilateral Use List"
 
@@ -2030,6 +2049,10 @@ msgid "mavon-editor"
 msgstr "mavon-editor"
 
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
+msgid "2.8.2"
+msgstr "2.8.2"
+
+#: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "sass"
 msgstr "sass"
 
@@ -2112,4 +2135,3 @@ msgstr "vuex"
 #: ../../Projects/APPSTORE/AppStore_Dependency.md
 msgid "3.1.1"
 msgstr "3.1.1"
-

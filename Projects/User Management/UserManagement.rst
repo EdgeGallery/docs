@@ -8,4 +8,5 @@ User Management
    接口设计 <User_Interfaces>
    数据库设计 <User_DataBase_Design>
    如何贡献 <User_Contribution>
+   用户依赖 <User_Dependency>
 

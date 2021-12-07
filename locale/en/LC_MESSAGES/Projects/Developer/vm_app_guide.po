@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 18:53+0530\n"
+"POT-Creation-Date: 2021-11-23 15:57+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,131 +25,223 @@ msgid "环境准备"
 msgstr "Environment Preparation"
 
 #: ../../Projects/Developer/vm_app_guide.md:5
-msgid "edgegallery 安装v1.2版本 openstack安装 W版本"
+msgid "edgegallery 安装v1.2版本 文件管理系统的安装 openstack安装 W版本"
 msgstr "Install Edgegallery v1.2 version and Openstack W version"
 
-#: ../../Projects/Developer/vm_app_guide.md:7
-msgid "**developer 安装注意事项** v1.2新增文件管理系统，用于上传和下载虚机镜像，当前支持qcow2、img、iso格式    **fileSystemAddress** 配置文件管理系统的地址                                                        **username** 配置虚机镜像用户名                                                                    **password** 配置虚机镜像登录密码"
+#: ../../Projects/Developer/vm_app_guide.md:6
+msgid "**文件管理系统的安装** 文件管理系统目前没有集成到一键安装脚本里，需要手动安装 在gitee上下载file-system对应版本的helmchart：https://gitee.com/edgegallery/helm-charts/tree/master/file-system 在环境中执行以下命令：helm install file-system ./file-system -- set postgres.password=te9Fmv%qaq"
+msgstr "**Installation of file management system** The file management system is currently not integrated into the one-click installation script. You need to manually install it on gitee and download the corresponding version of helmchart for file-system: https://gitee.com/edgegallery/helm-charts /tree/master/file-system in the environment
+Execute the following command: helm install file-system ./file-system - set postgres.password=te9Fmv%qaq"
+
+#: ../../Projects/Developer/vm_app_guide.md:10
+msgid "**developer 安装注意事项** v1.2新增文件管理系统，用于上传和下载虚机镜像，当前支持qcow2、img、iso格式,安装相关的参数配置如下：    **fileSystemAddress** 配置文件管理系统的地址                                                        **username** 配置虚机镜像用户名                                                                    **password** 配置虚机镜像登录密码"
 msgstr "**Developer Installation Notes** v1.2 adds a new file management system for uploading and downloading virtual machine images, currently supports qcow2, img, iso formats    **fileSystemAddress** Configuration file management system address                                                        **username** Configure the virtual machine mirroring user name                                                                    **password** Configure the virtual machine mirroring login password"
 
-#: ../../Projects/Developer/vm_app_guide.md:11
-msgid "openstack初始化配置： [参考文档](../../Projects/Developer/Developer_OpenStack_Pre-configure.md)"
+#: ../../Projects/Developer/vm_app_guide.md:15
+msgid "默认文件管理系统的地址为空，需要修改为http://ip:30090 ,虚机镜像用户名为ubuntu ，虚机密码为123456，根据虚机镜像配置，通过kubectl edit 修改参数 例如： 修改文件管理系统"
+msgstr "The default file management system address is empty and needs to be modified to http://ip:30090, the virtual machine mirroring user name is ubuntu, and the virtual machine password is 123456. According to the virtual machine mirroring configuration, modify the parameters through kubectl edit, for example: Modify file management system"
+
+#: ../../Projects/Developer/vm_app_guide.md:19
+msgid "kubectl edit deployment developer-be"
+msgstr ""
+
+#: ../../Projects/Developer/vm_app_guide.md:21
+msgid "![输入图片说明](/uploads/images/2021/0703/100831_be9fd9ab_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:23
+msgid "修改虚机用户名密码： kubectl edit secret developer-be-secret"
+msgstr "Modify the user name and password of the virtual machine: kubectl edit secret developer-be-secret"
+
+#: ../../Projects/Developer/vm_app_guide.md:26
+msgid "![输入图片说明](/uploads/images/2021/0703/101036_0bbb64db_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:28
+msgid "secret 里面显示的base64编码，所以先讲修改的参数进行base64编写在修改对应的值"
+msgstr "The base64 code displayed in secret, so first talk about the modified parameters and write base64 before modifying the corresponding value"
+
+#: ../../Projects/Developer/vm_app_guide.md:30
+msgid "**openstack初始化配置** [参考文档](../../Projects/Developer/Developer_OpenStack_Pre-configure.md)"
 msgstr "Initial configuration of openstack: [Reference document](../../Projects/Developer/Developer_OpenStack_Pre-configure.md)"
 
-#: ../../Projects/Developer/vm_app_guide.md:14
+#: ../../Projects/Developer/vm_app_guide.md:33
 msgid "配置沙箱环境：developer新增openstack沙箱环境"
 msgstr "Configure sandbox environment: developer adds openstack sandbox environment"
 
-#: ../../Projects/Developer/vm_app_guide.md:16
+#: ../../Projects/Developer/vm_app_guide.md:35
 msgid "develoepr平台用管理员用户admin登录 打开系统-沙箱环境管理-新增沙箱环境 ![输入图片说明](/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png \"屏幕截图.png\")"
 msgstr "Log in to the develoepr platform with the administrator user admin to open the system-sandbox environment management-new sandbox environment! [Enter picture description](/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png \"Screenshot.png\")"
 
-#: ../../Projects/Developer/vm_app_guide.md:19
+#: ../../Projects/Developer/vm_app_guide.md:38
 msgid "lcmIp为lcmcontroller的IP地址 ，mecHost为openstack的IP地址，端口号为lcmcontroller对外暴露的端口号, 协议选择https."
 msgstr "lcmIp is the IP address of lcmcontroller, mecHost is the IP address of openstack, the port number is the port number exposed by lcmcontroller, and the protocol is https."
 
-#: ../../Projects/Developer/vm_app_guide.md:21
+#: ../../Projects/Developer/vm_app_guide.md:40
 msgid "其他参数配置openstack相关的网络配置：参数设置如下： ![输入图片说明](/uploads/images/2021/0628/163330_baff108f_7625288.png \"屏幕截图.png\")"
 msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
 
-#: ../../Projects/Developer/vm_app_guide.md:24
+#: ../../Projects/Developer/vm_app_guide.md:43
 msgid "DC_ID=FS_M:Manager_VPC; 使用默认值或者不传即可"
 msgstr "DC_ID=FS_M:Manager_VPC; Use the default value or leave it alone."
 
-#: ../../Projects/Developer/vm_app_guide.md:26
+#: ../../Projects/Developer/vm_app_guide.md:45
 msgid "az_dc=nova;  默认值为az1.dc1，与openstack的zones值保持一致"
 msgstr "az_dc=nova; The default value is az1.dc1, which is consistent with the openstack zones value"
 
-#: ../../Projects/Developer/vm_app_guide.md:28
+#: ../../Projects/Developer/vm_app_guide.md:47
 msgid "mep_certificate=YHXGFTWU!@$%@&%#(DH(122479+_); 使用默认值或者不传即可"
 msgstr "mep_certificate=YHXGFTWU!@$%@&%#(DH(122479+_); Use the default value or leave it alone"
 
-#: ../../Projects/Developer/vm_app_guide.md:30
+#: ../../Projects/Developer/vm_app_guide.md:49
 msgid "app_mp1_ip=192.168.226.201;app_mp1_mask=255.255.255.0;app_mp1_gw=192.168.226.1;  app_n6网络配置：ip取openstack对应n6网络范围内的值，mask默认255.255.255.0， gw最后以为取1"
 msgstr "app_mp1_ip=192.168.226.201;app_mp1_mask=255.255.255.0;app_mp1_gw=192.168.226.1; app_n6 network configuration: ip takes the value within the n6 network range corresponding to openstack, the mask defaults to 255.255.255.0, and gw finally takes 1"
 
-#: ../../Projects/Developer/vm_app_guide.md:32
+#: ../../Projects/Developer/vm_app_guide.md:51
 msgid "app_n6_ip=192.168.225.202;app_n6_mask=255.255.255.0;app_n6_gw=192.168.225.1; 同app_n6"
 msgstr "app_n6_ip=192.168.225.202;app_n6_mask=255.255.255.0;app_n6_gw=192.168.225.1; same as app_n6"
 
-#: ../../Projects/Developer/vm_app_guide.md:34
+#: ../../Projects/Developer/vm_app_guide.md:53
 msgid "app_internet_ip=192.168.227.203;app_internet_mask=255.255.255.0;app_internet_gw=192.168.227.1;  同 app_n6"
 msgstr "app_internet_ip=192.168.227.203;app_internet_mask=255.255.255.0;app_internet_gw=192.168.227.1; same as app_n6"
 
-#: ../../Projects/Developer/vm_app_guide.md:36
+#: ../../Projects/Developer/vm_app_guide.md:55
 msgid "mep_ip=;mep_port=8443; 配置mep的ip和端口，不涉及mep可不用配置该参数"
 msgstr "mep_ip=;mep_port=8443; configure the ip and port of mep, do not need to configure this parameter if mep is not involved"
 
-#: ../../Projects/Developer/vm_app_guide.md:38
+#: ../../Projects/Developer/vm_app_guide.md:57
 msgid "network_name_mep=mec_network_mep;network_mep_physnet=physnet2;network_mep_vlanid=2653; 网络名与openstack网络名称保持一致"
 msgstr "network_name_mep=mec_network_mep;network_mep_physnet=physnet2;network_mep_vlanid=2653; The network name is consistent with the openstack network name"
 
-#: ../../Projects/Developer/vm_app_guide.md:40
+#: ../../Projects/Developer/vm_app_guide.md:59
 msgid "network_name_n6=mec_network_n6;network_n6_physnet=physnet2;network_n6_vlanid=2652; 网络名与openstack网络名称保持一致"
 msgstr "network_name_n6=mec_network_n6;network_n6_physnet=physnet2;network_n6_vlanid=2652; The network name is consistent with the openstack network name"
 
-#: ../../Projects/Developer/vm_app_guide.md:42
+#: ../../Projects/Developer/vm_app_guide.md:61
 msgid "network_name_internet=mec_network_internet;network_internet_physnet=physnet2;network_internet_vlanid=2651; 网络名与openstack网络名称保持一致"
 msgstr "network_name_internet=mec_network_internet;network_internet_physnet=physnet2;network_internet_vlanid=2651; The network name is consistent with the openstack network name"
 
-#: ../../Projects/Developer/vm_app_guide.md:44
+#: ../../Projects/Developer/vm_app_guide.md:63
 msgid "ue_ip_segment=0.0.0.0/0; ue使用默认值即可"
 msgstr "ue_ip_segment=0.0.0.0/0; ue can use the default value"
 
-#: ../../Projects/Developer/vm_app_guide.md:46
+#: ../../Projects/Developer/vm_app_guide.md:65
 msgid "mec_internet_ip=0.0.0.0  默认值或者不传即可"
 msgstr "mec_internet_ip=0.0.0.0 default value or not pass it"
 
-#: ../../Projects/Developer/vm_app_guide.md:48
+#: ../../Projects/Developer/vm_app_guide.md:67
 msgid "3.上传配置文件为openstack config， 该配置文件为openstack对应的用户名、密码、项目、url等信息参数如下："
 msgstr "3.Upload the configuration file as openstack config, the configuration file is the user name, password, project, url and other information parameters corresponding to openstack as follows:"
 
-#: ../../Projects/Developer/vm_app_guide.md:50
+#: ../../Projects/Developer/vm_app_guide.md:69
 msgid "export OS_USERNAME=admin     export OS_PASSWORD=*****     export OS_PROJECT_NAME=admin     export OS_AUTH_URL=http://ip/identity      export OS_IDENTITY_API_VERSION=3      export OS_PROJECT_DOMAIN_NAME=default       export OS_USER_DOMAIN_NAME=default"
 msgstr "export OS_USERNAME=admin     export OS_PASSWORD=*****     export OS_PROJECT_NAME=admin     export OS_AUTH_URL=http://ip/identity      export OS_IDENTITY_API_VERSION=3      export OS_PROJECT_DOMAIN_NAME=default       export OS_USER_DOMAIN_NAME=default"
 
-#: ../../Projects/Developer/vm_app_guide.md:58
+#: ../../Projects/Developer/vm_app_guide.md:77
 msgid "4.添加路由：developer环境与openstack环境的路由配置"
 msgstr "4.Add routing: routing configuration for developer environment and openstack environment"
 
-#: ../../Projects/Developer/vm_app_guide.md:60
+#: ../../Projects/Developer/vm_app_guide.md:79
 msgid "developer与openstack后台添加路由，例如 route add -net 192.168.225.0 netmask 255.255.255.0 gw openstack_ip"
 msgstr "Developer and openstack background to add routes, such as route add -net 192.168.225.0 netmask 255.255.255.0 gw openstack_ip"
 
-#: ../../Projects/Developer/vm_app_guide.md:63
+#: ../../Projects/Developer/vm_app_guide.md:82
 msgid "上传基础镜像"
 msgstr "Upload the base image"
 
-#: ../../Projects/Developer/vm_app_guide.md:64
-msgid "系统 - 镜像管理 - 新建系统镜像"
-msgstr "System-Image Management-New System Image"
+#: ../../Projects/Developer/vm_app_guide.md:83
+msgid "1.新建系统镜像"
+msgstr "1.Create a new system image"
 
-#: ../../Projects/Developer/vm_app_guide.md:66
-msgid "填写镜像的基本信息后点击上传"
+#: ../../Projects/Developer/vm_app_guide.md:85
+msgid "系统 - 系统镜像管理 - 新建系统镜像 ![输入图片说明](/uploads/images/2021/0706/111801_821e101d_9047452.png \"屏幕截图.png\")"
+msgstr "Log in to the develoepr platform with the administrator user admin to open the system-sandbox environment management-new sandbox environment! [Enter picture description](/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:88
+msgid "填写镜像的基本信息后点击确认 2.上传镜像压缩包"
 msgstr "Fill in the basic information of the mirror and click upload"
 
-#: ../../Projects/Developer/vm_app_guide.md:68
-msgid "上传镜像为zip压缩包，目前支持的镜像格式为qcow2和iso，上传镜像包目录格式为：filename.zip/filename/filename.qcow2"
-msgstr "The uploaded image is a zip compressed package, the currently supported image formats are qcow2 and iso, and the upload image package directory format is: filename.zip/filename/filename.qcow2"
+#: ../../Projects/Developer/vm_app_guide.md:91
+msgid "上传镜像为zip压缩包，目前支持的镜像格式为qcow2和iso，上传镜像包目录格式为：filename.zip/filename/filename.qcow2 [图片上传中…(image-YNZxdUJUIpoH7VXZe53N)] 3.修改系统镜像 ![输入图片说明](/uploads/images/2021/0706/112158_ee1ac1da_9047452.png \"屏幕截图.png\") 点击“编辑”,修改参数后点击确认"
+msgstr "The uploaded image is a zip compressed package. The currently supported image formats are qcow2 and iso. The upload image package directory format is: filename.zip/filename/filename.qcow2 [Image uploading...(image-YNZxdUJUIpoH7VXZe53N)] 3. Modify the system image! [Enter picture description](/uploads/images/2021/0706/112158_ee1ac1da_9047452.png \"Screenshot.png\") Click "Edit", modify the parameters and click OK"
 
-#: ../../Projects/Developer/vm_app_guide.md:70
+#: ../../Projects/Developer/vm_app_guide.md:97
 msgid "虚机应用开发"
 msgstr "Virtual machine application development"
 
-#: ../../Projects/Developer/vm_app_guide.md:71
-msgid "todo 开发指导"
-msgstr "todo development guide"
+#: ../../Projects/Developer/vm_app_guide.md:98
+msgid "新建项目：点击工作空间-新建项目，选择应用集成。"
+msgstr "New project: Click Workspace-New Project, select Application Integration."
 
-#: ../../Projects/Developer/vm_app_guide.md:73
+#: ../../Projects/Developer/vm_app_guide.md:100
+msgid "![输入图片说明](/uploads/images/2021/0706/095837_a0b50766_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:102
+msgid "2.填写项目的基本信息。对于虚机应用，类型选择虚机，架构支持X86和ARM"
+msgstr "2.Fill in the basic information of the project. For virtual machine applications, select the type of virtual machine, and the architecture supports X86 and ARM"
+
+#: ../../Projects/Developer/vm_app_guide.md:104
+msgid "![输入图片说明](/uploads/images/2021/0706/095933_b22eab8d_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:106
+msgid "3.资源配置：填写虚机应用的基本信息、资源配置、基础镜像选择、选择网络配置、以及其他主机组、注入脚本等配置。 ![输入图片说明](/uploads/images/2021/0706/100022_a448ce23_7625288.png \"屏幕截图.png\")"
+msgstr "3.Resource configuration: Fill in the basic information of the virtual machine application, resource configuration, basic image selection, network configuration selection, and other host groups, script injection and other configurations. ![Enter picture description](/uploads/images/2021/0706/100022_a448ce23_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:109
+msgid "![输入图片说明](/uploads/images/2021/0706/100113_60cb5fbb_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:111
+msgid "![输入图片说明](/uploads/images/2021/0706/100145_4a51761f_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:113
+msgid "![输入图片说明](/uploads/images/2021/0706/100223_023d24fe_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:115
+msgid "点击保存后，显示资源配置的详细信息 ![输入图片说明](/uploads/images/2021/0706/100300_970fa983_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:118
+msgid "4.部署调测可选：部署调测过程会从openstack拉起虚机镜像，用于开发者应用开发和调测。需提前安装和配置好openstack，由于资源有限，有可能部署调测失败 ![输入图片说明](/uploads/images/2021/0706/100407_8b2b296c_7625288.png \"屏幕截图.png\") 部署调测成功后，我们可以通过远程登录，登录到申请的虚拟机中，也可以通过上传文件将APP应用包上传至虚拟机中，安装调测应用 ![输入图片说明](/uploads/images/2021/0706/100617_2271e07e_7625288.png \"屏幕截图.png\")"
+msgstr "4.Optional deployment and commissioning: The deployment and commissioning process will pull up the virtual machine image from openstack for developer application development and commissioning. Openstack needs to be installed and configured in advance. Due to limited resources, deployment and commissioning may fail! [Enter picture description](/uploads/images/2021/0706/100407_8b2b296c_7625288.png \"Screenshot.png\") Deployment and commissioning succeeded After that, we can log in remotely to log in to the requested virtual machine, or upload the APP application package to the virtual machine by uploading a file, and install the commissioning application! [Enter picture description](/uploads/images/2021/0706 /100617_2271e07e_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:123
+msgid "5.应用发布：填写应用发布的基本信息，如应用的描述文档，点击应用包详情可以查看应用包的结构"
+msgstr "5.Application release: fill in the basic information of the application release, such as the description document of the application, click on the application package details to view the structure of the application package"
+
+#: ../../Projects/Developer/vm_app_guide.md:125
+msgid "![输入图片说明](/uploads/images/2021/0706/100733_3799d8a7_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:127
+msgid "6.应用测试： 点击开始测试，选择测试场景-点击开始，该步骤会对developer生成的应用包进行相关的遵从性、生命周期、安全等测试，测试通过后可发布到appstore"
+msgstr "6.Application test: Click to start the test, select the test scenario-click to start, this step will perform related compliance, life cycle, security and other tests on the application package generated by the developer. After the test is passed, it can be published to the appstore"
+
+#: ../../Projects/Developer/vm_app_guide.md:129
+msgid "![输入图片说明](/uploads/images/2021/0706/100819_13dc6bf8_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:131
+msgid "最后将应用发布到appstore中"
+msgstr "Finally, publish the application to the appstore"
+
+#: ../../Projects/Developer/vm_app_guide.md:133
+msgid "![输入图片说明](/uploads/images/2021/0706/100919_c3a3facb_7625288.png \"屏幕截图.png\")"
+msgstr "Other parameter configuration Openstack-related network configuration: The parameter settings are as follows: ![Enter picture description](/uploads/images/2021/0628/163330_baff108f_7625288.png \"Screenshot.png\")"
+
+#: ../../Projects/Developer/vm_app_guide.md:135
 msgid "mepagent的集成"
 msgstr "Mepagent Integration"
 
-#: ../../Projects/Developer/vm_app_guide.md:74
+#: ../../Projects/Developer/vm_app_guide.md:136
 msgid "mepagent支持虚机方式部署，参考文档如下："
 msgstr "Mepagent supports virtual machine deployment. The reference documents are as follows:"
 
-#: ../../Projects/Developer/vm_app_guide.md:76
+#: ../../Projects/Developer/vm_app_guide.md:138
 #, python-format
 msgid "https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/mep-agent%E4%BD%BF%E7%94%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%96%B9%E5%BC%8F%E9%83%A8%E7%BD%B2.md"
 msgstr ""
-
