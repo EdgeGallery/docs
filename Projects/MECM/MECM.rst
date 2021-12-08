@@ -19,13 +19,13 @@ MECM
 
        MECM Architecture架构<MECM_Architecture_en>
 
-**Prerequisite**
-******************
+.. **Prerequisite**
+.. ******************
 
     .. toctree::
-      :maxdepth: 3
+.. :maxdepth: 3
 
-       MECM Prerequisite<MECM_Prerequisite>
+.. MECM Prerequisite<MECM_Prerequisite>
 
 **Interface Designs界面设计**
 *************************
@@ -39,8 +39,8 @@ MECM
        Inventory Interfaces<Inventory_Interfaces_en>
        AppRule Manager Interfaces<MECM_AppRule_Manager>
        K8s plugin Interface<K8s_Interfaces_en>
-       AppRule Interfaces<AppRule_Interface>
-       Images Interfaces<Images_Interfaces>
+.. AppRule Interfaces<AppRule_Interface>
+.. Images Interfaces<Images_Interfaces>
 
 
 **Database Designs数据库设计**
@@ -63,7 +63,7 @@ MECM
 
        MECM Product Document使用指导<MECM Product Document>
        MECM User Interface Document<MECM_User_Interface>
-       Edge Repository Enablement Guide<Edge_Repository_Enablement_Guide>
+.. Edge Repository Enablement Guide<Edge_Repository_Enablement_Guide>
 
 **How to Contribute如何贡献**
 *****************
@@ -76,27 +76,27 @@ MECM
        Contribute to APPO<MECM_Appo_Contribution>
        Contribute to Inventory<MECM_Inventory_Contribution>
        Contribute to AppRuleManager<MECM_App_Rule_Contribution>
-       Contribute to K8sPlugin<MECM_K8sPlugin_Contribution>
+.. Contribute to K8sPlugin<MECM_K8sPlugin_Contribution>
 
-**MECM Dependecies**
-*****************
-
-    .. toctree::
-      :maxdepth: 1
-
-       MECM Apm Dependency<MECM_Apm_Dependency>
-       MECM AppLcm Dependency<MECM_AppLcm_Dependency>
-       MECM Inventory Dependency<MECM_Inventory_Dependency>
-       MECM Appo Dependency<MECM_Appo_Dependency>
-
-**MECM Features**
-*****************
+.. **MECM Dependecies**
+.. *****************
 
     .. toctree::
-      :maxdepth: 1
+.. :maxdepth: 1
 
-       MECM AppLcm Features<MECM_AppLcm_Features>
-       MECM Features<MECM_Features_en>
+.. MECM Apm Dependency<MECM_Apm_Dependency>
+.. MECM AppLcm Dependency<MECM_AppLcm_Dependency>
+.. MECM Inventory Dependency<MECM_Inventory_Dependency>
+.. MECM Appo Dependency<MECM_Appo_Dependency>
+
+.. **MECM Features**
+.. *****************
+
+    .. toctree::
+.. :maxdepth: 1
+
+.. MECM AppLcm Features<MECM_AppLcm_Features>
+.. MECM Features<MECM_Features_en>
 
 **Port Matrix端口矩阵**
 ******************

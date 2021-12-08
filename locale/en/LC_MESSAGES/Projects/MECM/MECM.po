@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-23 17:26+0530\n"
+"POT-Creation-Date: 2021-12-08 17:02+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,10 +23,6 @@ msgstr " Overview of MECM Overview"
 #: ../../Projects/MECM/MECM.rst:17
 msgid " MECM Architecture架构"
 msgstr " MECM Architecture Framework"
-
-#: ../../Projects/MECM/MECM.rst:25
-msgid " MECM Prerequisite"
-msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:33
 msgid " Apm Interfaces"
@@ -51,14 +46,6 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:33
 msgid " K8s plugin Interface"
-msgstr ""
-
-#: ../../Projects/MECM/MECM.rst:33
-msgid " AppRule Interfaces"
-msgstr ""
-
-#: ../../Projects/MECM/MECM.rst:33
-msgid " Images Interfaces"
 msgstr ""
 
 #: ../../Projects/MECM/MECM.rst:48
@@ -89,10 +76,6 @@ msgstr " MECM Product Document Use Guidance"
 msgid " MECM User Interface Document"
 msgstr ""
 
-#: ../../Projects/MECM/MECM.rst:60
-msgid " Edge Repository Enablement Guide"
-msgstr ""
-
 #: ../../Projects/MECM/MECM.rst:70
 msgid " Contribute to APM"
 msgstr ""
@@ -113,30 +96,6 @@ msgstr ""
 msgid " Contribute to AppRuleManager"
 msgstr ""
 
-#: ../../Projects/MECM/MECM.rst:83
-msgid " MECM Apm Dependency"
-msgstr ""
-
-#: ../../Projects/MECM/MECM.rst:83
-msgid " MECM AppLcm Dependency"
-msgstr ""
-
-#: ../../Projects/MECM/MECM.rst:83
-msgid " MECM Inventory Dependency"
-msgstr ""
-
-#: ../../Projects/MECM/MECM.rst:83
-msgid " MECM Appo Dependency"
-msgstr ""
-
-#: ../../Projects/MECM/MECM.rst:94
-msgid " MECM AppLcm Features"
-msgstr ""
-
-#: ../../Projects/MECM/MECM.rst:94
-msgid " MECM Features"
-msgstr ""
-
 #: ../../Projects/MECM/MECM.rst:103
 msgid " MECM port matrix端口矩阵"
 msgstr " MECM port matrix"
@@ -153,33 +112,21 @@ msgstr "**OVERVIEW OVERVIEW**"
 msgid "**Architecture**"
 msgstr ""
 
-#: ../../Projects/MECM/MECM.rst:23
-msgid "**Prerequisite**"
-msgstr ""
-
 #: ../../Projects/MECM/MECM.rst:31
 msgid "**Interface Designs界面设计**"
-msgstr "**Interface DesignsInterface Design**"
+msgstr "**Interface Design**"
 
 #: ../../Projects/MECM/MECM.rst:46
 msgid "**Database Designs数据库设计**"
-msgstr "**Database DesignsDB Design**"
+msgstr "**Database Design**"
 
 #: ../../Projects/MECM/MECM.rst:58
 msgid "**User Guides使用指导**"
-msgstr "**User Guides Use Guidance**"
+msgstr "**User Guidance**"
 
 #: ../../Projects/MECM/MECM.rst:68
 msgid "**How to Contribute如何贡献**"
-msgstr "**How How to Contribute Contribution**"
-
-#: ../../Projects/MECM/MECM.rst:81
-msgid "**MECM Dependecies**"
-msgstr ""
-
-#: ../../Projects/MECM/MECM.rst:92
-msgid "**MECM Features**"
-msgstr ""
+msgstr "**How to Contribute **"
 
 #: ../../Projects/MECM/MECM.rst:101
 msgid "**Port Matrix端口矩阵**"
