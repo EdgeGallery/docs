@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
@@ -30,7 +29,6 @@ msgid "Build local development environment"
 msgstr ""
 
 #: ../../Projects/MECM/MECM_Appo_Contribution.md:8
-#, fuzzy
 msgid "This section will guide developers to build Appo module locally and help developers to quickly understand and develop  code"
 msgstr ""
 
