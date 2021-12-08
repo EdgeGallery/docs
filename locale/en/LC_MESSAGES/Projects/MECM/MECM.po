@@ -126,7 +126,7 @@ msgstr "**User Guidance**"
 
 #: ../../Projects/MECM/MECM.rst:68
 msgid "**How to Contribute如何贡献**"
-msgstr "**How to Contribute **"
+msgstr "**How to Contribute**"
 
 #: ../../Projects/MECM/MECM.rst:101
 msgid "**Port Matrix端口矩阵**"
