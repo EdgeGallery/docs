@@ -30,11 +30,11 @@ EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边�
 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Models
+.. :maxdepth: 1
+.. :caption: Models
 
-   APPD Definition <models/APPD Definition>
-   APP Package Definition <models/APP Package Definition>
+.. APPD Definition <models/APPD Definition>
+.. APP Package Definition <models/APP Package Definition>
 
 .. toctree::
    :maxdepth: 1
