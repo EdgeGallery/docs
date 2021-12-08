@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-28 17:21+0530\n"
+"POT-Creation-Date: 2021-12-08 16:24+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,8 +25,8 @@ msgid "本文将向用户展示如何参与到AppStore项目的贡献中，内�
 msgstr "This paper will show users how to participate in the contribution of the AppStore project, which is divided into two parts, which will separately describe how to build the local development environment and the operating guidance of the AppStore."
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:6
-msgid "搭建本地开发环境-Release 1.1"
-msgstr "Building local development environment-Release 1.1"
+msgid "搭建本地开发环境"
+msgstr "Set up a local development environment"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:8
 msgid "本节将指导用户如何在本地搭建AppStore-be和AppStore-fe模块，从而帮助开发者快速理解、开发代码。"
@@ -245,7 +245,7 @@ msgid "2.外部应用仓库管理页面，可以添加、修改和删除仓库�
 msgstr "2.The external application warehouse management page can add, modify and delete the warehouse. ![](/uploads/images/2021/appstore/third_appstores_en.png \"4.2\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:133
-msgid "3.点击应用共享主菜单下的应用推送菜单查看可推送的应用信息，选择需要推送给运营商或者第三方的应用，打开应用推送操作对话框。点击推送操作对话框左下角执行按钮，触发推送任务，然后查看应用推送到运营商或者第三方的结果。 ![](/uploads/images/2021/1009/appstore/topush.png \"4.3\") ![](/uploads/images/2021/1009/appstore/pushed.png \"4.4\")"
+msgid "3.点击应用共享主菜单下的应用推送菜单查看可推送的应用信息，选择需要推送给运营商或者第三方的应用，进行批量推送，然后查看应用推送到运营商或者第三方的结果。 ![](/uploads/images/2021/1009/appstore/topush.png \"4.3\") ![](/uploads/images/2021/1009/appstore/pushed.png \"4.4\")"
 msgstr "3.Clicking the application push menu under the shared main menu to see the push application information, selecting the application needing to push to the operator or the third party to open the application push operation dialog box.Hit the button on the bottom left of the push action dialog box, trigger the push task, and see the results of the application push to the operator or third party. ![](/uploads/images/2021/appstore/topush_en.png \"4.3\") ![](/uploads/images/2021/appstore/pushed_en.png \"4.4\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:137
@@ -253,7 +253,7 @@ msgid "4.点击应用共享主菜单下的应用拉取菜单查看各个外部�
 msgstr "4.Clicking the application drawing menu under the application sharing main menu to look at the application information that can be pulled by each external warehouse; selecting the application needing to be pulled to carry out batch. ![](/uploads/images/2021/appstore/topull_en.png \"4.5\") ![](/uploads/images/2021/appstore/pulled_en.png \"4.6\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:141
-msgid "5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。通过单击消息中心右侧面板右上角的接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在“我的应用”界面查看，点击删除按钮则删除该条消息，双击可查看消息详情。 ![](/uploads/images/2021/1009/appstore/messages.png \"4.7\") ![](/uploads/images/2021/1009/appstore/message_detail.png \"4.8\")"
+msgid "5.点击应用共享主菜单下的消息中心菜单，查看通知信息，可以接受来自不同运营商需要推送的APP信息。点击消息可以看到消息详情，点击接收按钮可以拉取（下载）该应用的信息，拉取成功的APP可以在“我的应用”界面查看，点击删除按钮则删除该条消息，双击可查看消息详情。 ![](/uploads/images/2021/1009/appstore/messages.png \"4.7\") ![](/uploads/images/2021/1009/appstore/message_detail.png \"4.8\")"
 msgstr "5.Clicking the information centre menu under the shared main menu under application, and checking the notification information and accepting the APP information from different operators needing to push. By clicking the receiving button in the upper right corner of the right side panel of the message centre, the information of the application can be pulled (download), the successful APP can be looked at the \"My Application\" interface, and the click delete button deletes the message. ![](/uploads/images/2021/appstore/message_en.png \"4.7\") ![](/uploads/images/2021/appstore/message_detail_en.png \"4.8\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:145
