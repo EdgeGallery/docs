@@ -119,6 +119,14 @@ Developer Interfaces
     - [17.3 GET capability by name](#get-capability-by-name)
     - [17.4 GET capability by projectid](#get-capability-by-projectid)
     - [17.5 GET capability by type](#get-capability-by-type)
+  - [18. Profile](#profile)
+    - [18.1 POST create profile](#post-create-profile)
+    - [18.2 GET download file](#get-download-file)
+    - [18.3 PUT update profile](#put-update-profile)
+    - [18.4 GET query all profiles](#get-query-all-profiles)
+    - [18.5 GET query one profile](#get-query-one-profile)
+	- [18.6 DELETE delete one profile](#delete-one-profile)
+	- [18.7 POST create application by profile id](#post-create-application-by-profile-id)
 
 ## 1. Plugin
 Development environment plug-in or sdk
@@ -4649,4 +4657,238 @@ Resource URI: /mec/developer/v2/query/capabilities/type/{type}
     "groupId": "string"
   }
 ]
+```
+
+## 18. Profile
+This part is about the api for profile operation
+### 18.1 POST create profile
+Create one profile
+```
+Resource URI: /mec/developer/v2/profiles
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|file|file|request part|yes|
+
+```
+{
+      file:file
+}
+```
+
+**Example response**
+```
+200 OK
+{
+    "id":"",
+    "name":"",
+    "descriptionCh":"",
+    "descriptionEn":"",
+     "seq":[
+        "fledge",
+        "mqtt-broker",
+        "kuiper"
+    ],
+     "appList":[
+        "fledge",
+        "mqtt-broker",
+        "kuiper"
+    ],
+    "createTime":"",
+    "type":"yuanqu",
+    "industry":"game",
+    "topoFilePath":"usr/topo.png"
+}
+```
+
+### 18.2 GET download file
+GET download file according to file type
+```
+Resource URI: /mec/developer/v2/profiles/{profileId}/action/download
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|profileId|profileId|path param|yes|
+|type|type|query param|no|
+|name|name|query param|no|
+
+**Example response**
+```
+200 OK
+byte[]
+```
+
+### 18.3 PUT update profile
+Update one profile
+```
+Resource URI: /mec/developer/v2/profiles/{profileId}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|file|file|request part|yes|
+|profileId|profileId|path param|yes|
+
+```
+{
+      file:file
+}
+```
+
+**Example response**
+```
+200 OK
+{
+    "id":"",
+    "name":"",
+    "descriptionCh":"",
+    "descriptionEn":"",
+     "seq":[
+        "fledge",
+        "mqtt-broker",
+        "kuiper"
+    ],
+     "appList":[
+        "fledge",
+        "mqtt-broker",
+        "kuiper"
+    ],
+    "createTime":"",
+    "type":"yuanqu",
+    "industry":"game",
+    "topoFilePath":"usr/topo.png"
+}
+```
+
+### 18.4 GET query all profiles
+GET query all profiles
+```
+Resource URI: /mec/developer/v2/profiles
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|name|name|query param|no|
+|limit|limit|query param|yes|
+|offset|offset|query param|yes|
+
+**Example response**
+```
+200 OK
+[{
+    "id":"",
+    "name":"",
+    "descriptionCh":"",
+    "descriptionEn":"",
+     "seq":[
+        "fledge",
+        "mqtt-broker",
+        "kuiper"
+    ],
+     "appList":[
+        "fledge",
+        "mqtt-broker",
+        "kuiper"
+    ],
+    "createTime":"",
+    "type":"yuanqu",
+    "industry":"game",
+    "topoFilePath":"usr/topo.png"
+}]
+```
+
+### 18.5 GET query one profile
+GET query one profile
+```
+Resource URI: /mec/developer/v2/profiles/{profileId}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|profileId|profileId|path param|yes|
+
+**Example response**
+```
+200 OK
+{
+    "id":"",
+    "name":"",
+    "descriptionCh":"",
+    "descriptionEn":"",
+     "seq":[
+        "fledge",
+        "mqtt-broker",
+        "kuiper"
+    ],
+     "appList":[
+        "fledge",
+        "mqtt-broker",
+        "kuiper"
+    ],
+    "createTime":"",
+    "type":"yuanqu",
+    "industry":"game",
+    "topoFilePath":"usr/topo.png"
+}
+```
+
+### 18.6 DELETE delete one profile
+DELETE delete one profile
+```
+Resource URI: /mec/developer/v2/profiles/{profileId}
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|profileId|profileId|path param|yes|
+
+**Example response**
+```
+200 OK
+true
+```
+
+### 18.7 POST create application by profile id
+POST create application by profile id
+```
+Resource URI: /mec/developer/v2/profiles/{profileId}/create-application
+```
+|Name|Definition|Type|Required|
+|-------------|-------------|------------|------------|
+|profileId|profileId|path param|yes|
+|iconFile|iconFile|request part|yes|
+
+**Example response**
+```
+200 OK
+{
+    "id": "d0a10115-d757-46de-a03d-3099352c2168",
+    "name": "VmAppTest11",
+    "description": "test",
+    "version": "v1.0",
+    "provider": "huawei",
+    "architecture": "X86",
+    "appClass": "VM",
+    "type": "yuanqu",
+    "industry": "game",
+    "iconFileId": "1920c51b-631d-42a0-9953-2e0208b21496",
+    "appCreateType": "INTEGRATED",
+    "createTime": "2021-10-29 16:52:08",
+    "status": "ONLINE",  DEPLOYING DEPLOYED DEPLOY_FAILED TESTING TESTED RELEASED
+    "userId": "39937079-99fe-4cd8-881f-04ca8c4fe09d",
+    "userName": "admin",
+    "mepHostId": null,
+    "appPackage": {
+        "id": null,
+        "appId": null,
+        "packageFileName": null
+    },
+    "atpTestTaskList": [],
+    "appConfiguration": {
+        "appCertificate": {
+            "ak": null,
+            "sk": null
+        },
+        "appServiceProducedList": [],
+        "appServiceRequiredList": [],
+        "trafficRuleList": [],
+        "dnsRuleList": [],
+      }
+}
 ```
