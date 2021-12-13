@@ -358,12 +358,13 @@ Example response:
 Retrieves all MEC host records
 
 ```
-Resource URI: /inventory/v1/mechosts
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
+|tenant_id |tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -401,12 +402,13 @@ Example response:
 ### Add MEC Host Record
 Adds new MEC host record
 ```
-Resource URI: /inventory/v1/mechosts
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts
 Method: POST
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
+|tenant_id |tenant identifier|path|yes|Valid UUID|64|
 |mechost_ip|mechost IP|path|yes|Valid IP address|15|
 |address|address|body|yes|Valid IP address|255|
 |affinity|affinity|body|yes|AlphaNumeric, special characters allowed are hypen,underscore and comma|128|
@@ -469,12 +471,13 @@ Example response:
 ### Delete All MEC Host Records
 Deletes all application stores records
 ```
-Resource URI: /inventory/v1/mechosts
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts
 Method: DELETE
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
+|tenant_id |tenant identifier|path|yes|Valid UUID|64|
 
 Example response:
 ```
@@ -490,12 +493,13 @@ Example response:
 Retrieves MEC host records
 
 ```
-Resource URI: /inventory/v1/mechosts/{mechost_ip}
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}
 Method: GET
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
+|tenant_id |tenant identifier|path|yes|Valid UUID|64|
 |mechost_ip |mechost_ip|path |yes|Valid IP address|15|
 
 ```
@@ -530,12 +534,13 @@ Method: GET
 ### Update MEC Host Record
 Updates existing MEC host record
 ```
-Resource URI: /inventory/v1/mechosts/{mechost_ip}
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}
 Method: PUT
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token|access token|header|yes|Jwt token|
+|tenant_id |tenant identifier|path|yes|Valid UUID|64|
 |mechost_ip|mechost IP|path|yes|Valid IP address|15|
 |address|address|body|yes|Valid IP address|255|
 |affinity|affinity|body|yes|AlphaNumeric, special characters allowed are hypen,underscore and comma|128|
@@ -595,12 +600,13 @@ Example response:
 ### Delete MEC Host Record
 Deletes application stores record
 ```
-Resource URI: /inventory/v1/mechosts/{mechost_ip}
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}
 Method: DELETE
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
+|tenant_id |tenant identifier|path|yes|Valid UUID|64|
 |mechost_ip |mechost IP|path |yes|Valid IP Address|15|
 
 Example response:
@@ -782,13 +788,14 @@ Example response:
 Upload K8s configuration file to applcm
 
 ```
-Resource URI: /inventory/v1/mechosts/{mechost_ip}/k8sconfig
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/k8sconfig
 Method: POST
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
 |file|file|formData|yes|
+|tenant_id |tenant identifier|path|yes|Valid UUID|64|
 |mechost_ip|mechost IP|path|yes|Valid IP Address|15|
 
 Example response:
@@ -802,12 +809,13 @@ Example response:
 ### Delete K8s Configuration File
 Deletes K8s configuration file from applcm
 ```
-Resource URI: /inventory/v1/mechosts/{mechost_ip}/k8sconfig
+Resource URI: /inventory/v1/tenants/{tenant_id}/mechosts/{mechost_ip}/k8sconfig
 Method: DELETE
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
 |---|---|---|---|---|---|
 |access_token |access token|header |yes|Jwt token|
+|tenant_id |tenant identifier|path|yes|Valid UUID|64|
 |mechost_ip |mechost IP|path |yes|Valid IP Address|15|
 
 Example response:
