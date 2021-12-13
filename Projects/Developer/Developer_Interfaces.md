@@ -125,8 +125,8 @@ Developer Interfaces
     - [18.3 PUT update profile](#put-update-profile)
     - [18.4 GET query all profiles](#get-query-all-profiles)
     - [18.5 GET query one profile](#get-query-one-profile)
-	- [18.6 DELETE delete one profile](#delete-one-profile)
-	- [18.7 POST create application by profile id](#post-create-application-by-profile-id)
+    - [18.6 DELETE delete one profile](#delete-one-profile)
+    - [18.7 POST create application by profile id](#post-create-application-by-profile-id)
 
 ## 1. Plugin
 Development environment plug-in or sdk
