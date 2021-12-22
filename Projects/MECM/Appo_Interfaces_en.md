@@ -778,7 +778,6 @@ Example Response body:
 
 ```
 
-
 ### Synchronizes application instance info from edge
 Synchronizes application instance info from all edge
 ```
@@ -811,7 +810,1045 @@ Example Response body:
 }
 
 ```
+### Create flavor
+Create flavor
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/flavors
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
 
+Example request body:
+```
+{
+    "name": "test_flavor",
+    "vcpus": 2,
+    "ram": 1024,
+    "disk": 88888,
+    "swap": 10,
+    "extraSpecs": {
+        "EG": "true"
+    }
+}
+
+```
+Example response:
+```
+200 Accepted
+{
+    "data": null,
+    "retCode": 0,
+    "message": "create flavor success",
+    "params": null
+}
+```
+### Query flavor
+Query flavor
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/flavors
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": {
+		"name": "test_flavor",
+		"vcpus": 2,
+        "ram": 1024,
+        "disk": 10,
+        "swap": "10",
+        "extraSpecs": {
+		    "EG": "true"
+		}},
+    "retCode": 0,
+    "message": "Query flavor success",
+    "params": null
+}
+```
+### Query flavor by id
+Query flavor by id
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/flavors/{flavor_id}
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|flavor_id|tenant_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": {
+		"name": "test_flavor",
+		"vcpus": 2,
+        "ram": 1024,
+        "disk": 10,
+        "swap": "10",
+        "extraSpecs": {
+		    "EG": "true"
+		}},
+    "retCode": 0,
+    "message": "Query flavor success",
+    "params": null
+}
+```
+### Delete flavor by id
+Delete flavor by id
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/flavors/{flavor_id}
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|flavor_id|flavor_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": null,
+    "retCode": 0,
+    "message": "delete flavor success",
+    "params": null
+}
+```
+### Create networks
+Create networks
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/networks
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+    "name": "sample_network",
+    "shared": true,
+    subnet": {
+            "name": "subnetA",
+            "enableDhcp": true,
+            "gatewayIp": "192.168.xxx.1",
+            "cidr": "10.0.0.0/24",
+            "allocationPools": [
+                {
+                    "start": "192.168.xxx.5",
+                    "end": "192.168.xxx.25"
+                }
+            ]
+        }
+        
+}
+
+```
+Example response:
+```
+200 Accepted
+{
+    "data": null,
+    "retCode": 0,
+    "message": "Create networks success",
+    "params": null
+}
+```
+### Query flavor
+Query flavor
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/networks
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": [{
+            "id": "0884b5fb-ea5c-4951-9c54-256f4fc38996",
+            "name": "mec_network_n6",
+            "shared": true,
+            "external": false,
+            "status": "ACTIVE",
+            "adminState": true,
+            "availabilityZones": [
+                "nova"
+            ],
+            "subnets": [
+                {
+                    "cidr": "192.168.225.0/24",
+                    "name": "shared-subnet"
+                },
+                {
+                    "cidr": "111.11.11.0/24",
+                    "name": "test111"
+                }
+            ]
+        },
+        {
+            "id": "1e15cba8-979f-4fb8-bb56-e16a0ebabf54",
+            "name": "test6666",
+            "shared": false,
+            "external": false,
+            "status": "ACTIVE",
+            "adminState": true,
+            "availabilityZones": [
+                "nova"
+            ],
+            "subnets": [
+                {
+                    "cidr": "192.168.4.0/24",
+                    "name": "test6666"
+                }
+            ]
+        }
+    ]},
+    "retCode": 0,
+    "message": "Query networks success",
+    "params": null
+}
+```
+### Query flavor by id
+Query flavor by id
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/networks/{network_id}
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|network_id|tenant_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": [{
+            "id": "0884b5fb-ea5c-4951-9c54-256f4fc38996",
+            "name": "mec_network_n6",
+            "shared": true,
+            "external": false,
+            "status": "ACTIVE",
+            "adminState": true,
+            "availabilityZones": [
+                "nova"
+            ],
+            "subnets": [
+                {
+                    "cidr": "192.168.225.0/24",
+                    "name": "shared-subnet"
+                },
+                {
+                    "cidr": "111.11.11.0/24",
+                    "name": "test111"
+                }
+            ]
+        },
+        {
+            "id": "1e15cba8-979f-4fb8-bb56-e16a0ebabf54",
+            "name": "test6666",
+            "shared": false,
+            "external": false,
+            "status": "ACTIVE",
+            "adminState": true,
+            "availabilityZones": [
+                "nova"
+            ],
+            "subnets": [
+                {
+                    "cidr": "192.168.4.0/24",
+                    "name": "test6666"
+                }
+            ]
+        }
+    ]},
+    "retCode": 0,
+    "message": "Query networks success",
+    "params": null
+}
+```
+### Delete network by id
+Delete network by id
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/networks/{network_id}
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|network_id|network_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": null,
+    "retCode": 0,
+    "message": "delete network success",
+    "params": null
+}
+```
+### Create servers
+Create servers
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/servers
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+    "server" : {
+        "name": "vmTest",
+        "flavor": "0e12087a-7c87-476a-8f84-7398e991cecc",
+        "image" : "cec3aab9-5991-4893-befe-4775ddf79de6",
+        "imageRef" : "70a599e0-31e7-49b7-b260-868f441e862b",
+        "availabilityZone": "us-west",
+        "user_data" : "IyEvYmluL2Jhc2gKL2Jpbi9zdQplY2hvICJJIGFtIGluIHlvdSEiCg==",
+        "configDrive": "true",
+        "securityGroups": [
+            {
+                "name": "default"
+            }
+        ],
+		"netWorks": [
+            {
+                "network": "0884b5fb-ea5c-4951-9c54-256f4fc38991",
+				"fixedIp": "192.168.xx.19"
+            },
+			{
+                "network": "241aee72-de67-4c95-bdaa-e63f12fbd183",
+				"fixedIp": "192.168.xx.19"
+            },
+			{
+                "network": "446aa035-f737-45db-9834-83c7a5f94046",
+				"fixedIp": "192.168.xxx.19"
+            }
+        ]
+    }
+}
+
+```
+Example response:
+```
+200 Accepted
+{
+    "data": null,
+    "retCode": 0,
+    "message": "Create server success",
+    "params": null
+}
+```
+### Query servers
+Query servers
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/servers
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": {
+	"servers": [
+        {
+            "OS-DCF:diskConfig": "AUTO",
+            "OS-EXT-AZ:availability_zone": "nova",
+            "OS-EXT-SRV-ATTR:host": "compute",
+            "OS-EXT-SRV-ATTR:hostname": "new-server-test",
+            "OS-EXT-SRV-ATTR:hypervisor_hostname": "fake-mini",
+            "OS-EXT-SRV-ATTR:instance_name": "instance-00000001",
+            "OS-EXT-SRV-ATTR:kernel_id": "",
+            "OS-EXT-SRV-ATTR:launch_index": 0,
+            "OS-EXT-SRV-ATTR:ramdisk_id": "",
+            "OS-EXT-SRV-ATTR:reservation_id": "r-l0i0clt2",
+            "OS-EXT-SRV-ATTR:root_device_name": "/dev/sda",
+            "OS-EXT-SRV-ATTR:user_data": "IyEvYmluL2Jhc2gKL2Jpbi9zdQplY2hvICJJIGFtIGluIHlvdSEiCg==",
+            "OS-EXT-STS:power_state": 1,
+            "OS-EXT-STS:task_state": null,
+            "OS-EXT-STS:vm_state": "active",
+            "OS-SRV-USG:launched_at": "2019-04-23T15:19:15.317839",
+            "OS-SRV-USG:terminated_at": null,
+            "accessIPv4": "1.2.3.4",
+            "accessIPv6": "80fe::",
+            "addresses": {
+                "private": [
+                    {
+                        "OS-EXT-IPS-MAC:mac_addr": "00:0c:29:0d:11:74",
+                        "OS-EXT-IPS:type": "fixed",
+                        "addr": "192.168.1.30",
+                        "version": 4
+                    }
+                ]
+            },
+            "config_drive": "",
+            "created": "2019-04-23T15:19:14Z",
+            "description": null,
+            "flavor": {
+                "disk": 1,
+                "ephemeral": 0,
+                "extra_specs": {},
+                "original_name": "m1.tiny",
+                "ram": 512,
+                "swap": 0,
+                "vcpus": 1
+            },
+            "hostId": "2091634baaccdc4c5a1d57069c833e402921df696b7f970791b12ec6",
+            "host_status": "UP",
+            "id": "2ce4c5b3-2866-4972-93ce-77a2ea46a7f9",
+            "image": {
+                "id": "70a599e0-31e7-49b7-b260-868f441e862b",
+            },
+            "key_name": null,
+            
+            "locked": true,
+            "locked_reason": "I don't want to work",
+            "metadata": {
+                "My Server Name": "Apache1"
+            },
+            "name": "new-server-test",
+            "os-extended-volumes:volumes_attached": [],
+            "progress": 0,
+            "security_groups": [
+                {
+                    "name": "default"
+                }
+            ],
+            "status": "ACTIVE",
+            "tags": [],
+            "tenant_id": "6f70656e737461636b20342065766572",
+            "trusted_image_certificates": null,
+            "updated": "2019-04-23T15:19:15Z",
+            "user_id": "admin"
+        }
+    ]},
+    "retCode": 0,
+    "message": "Query servers success",
+    "params": null
+}
+```
+### Query server by id
+Query server by id
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/servers/{server_id}
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|server_id|tenant_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": {"server": {
+        "OS-DCF:diskConfig": "AUTO",
+        "OS-EXT-AZ:availability_zone": "nova",
+        "OS-EXT-SRV-ATTR:host": "compute",
+        "OS-EXT-SRV-ATTR:hostname": "new-server-test",
+        "OS-EXT-SRV-ATTR:hypervisor_hostname": "fake-mini",
+        "OS-EXT-SRV-ATTR:instance_name": "instance-00000001",
+        "OS-EXT-SRV-ATTR:kernel_id": "",
+        "OS-EXT-SRV-ATTR:launch_index": 0,
+        "OS-EXT-SRV-ATTR:ramdisk_id": "",
+        "OS-EXT-SRV-ATTR:reservation_id": "r-t61j9da6",
+        "OS-EXT-SRV-ATTR:root_device_name": "/dev/sda",
+        "OS-EXT-SRV-ATTR:user_data": "IyEvYmluL2Jhc2gKL2Jpbi9zdQplY2hvICJJIGFtIGluIHlvdSEiCg==",
+        "OS-EXT-STS:power_state": 1,
+        "OS-EXT-STS:task_state": null,
+        "OS-EXT-STS:vm_state": "active",
+        "OS-SRV-USG:launched_at": "2019-04-23T15:19:10.855016",
+        "OS-SRV-USG:terminated_at": null,
+        "accessIPv4": "1.2.3.4",
+        "accessIPv6": "80fe::",
+        "addresses": {
+            "private": [
+                {
+                    "OS-EXT-IPS-MAC:mac_addr": "00:0c:29:0d:11:74",
+                    "OS-EXT-IPS:type": "fixed",
+                    "addr": "192.168.1.30",
+                    "version": 4
+                }
+            ]
+        },
+        "config_drive": "",
+        "created": "2019-04-23T15:19:09Z",
+        "description": null,
+        "flavor": {
+            "disk": 1,
+            "ephemeral": 0,
+            "extra_specs": {},
+            "original_name": "m1.tiny",
+            "ram": 512,
+            "swap": 0,
+            "vcpus": 1
+        },
+        "hostId": "2091634baaccdc4c5a1d57069c833e402921df696b7f970791b12ec6",
+        "host_status": "UP",
+        "id": "0e12087a-7c87-476a-8f84-7398e991cecc",
+        "image": {
+            "id": "70a599e0-31e7-49b7-b260-868f441e862b",
+        },
+        "key_name": null,
+        
+        "locked": true,
+        "locked_reason": "I don't want to work",
+        "metadata": {
+            "My Server Name": "Apache1"
+        },
+        "name": "new-server-test",
+        "os-extended-volumes:volumes_attached": [],
+        "progress": 0,
+        "security_groups": [
+            {
+                "name": "default"
+            }
+        ],
+        "server_groups": [],
+        "status": "ACTIVE",
+        "tags": [],
+        "tenant_id": "6f70656e737461636b20342065766572",
+        "trusted_image_certificates": null,
+        "updated": "2019-04-23T15:19:11Z",
+        "user_id": "admin"
+    }},
+    "retCode": 0,
+    "message": "Query servers success",
+    "params": null
+}
+```
+### Operate servers
+Operate servers
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/servers/{server_id}
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|server_id|tenant_id|path|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+    "action" : "" ### reboot/createImage/pause(数据保留到内存)/unpause(after pause)/suspend(数据保留到磁盘)/resume(after suspend)/stop(关机)/start(after stop)/createConsole
+    ### if action reboot, need add params like "HARD" or "SOFT" , if action createImage need add params name and metadata
+	"reboot" : " " 
+	"createImage : { 
+	    "name": "vmsnap",
+		"metadata": { }
+	} 
+}
+```
+Example response:
+```
+200 Accepted
+{
+    "data": null,
+    "retCode": 0,
+    "message": "Operate server success",
+    "params": null
+}
+```
+### Delete servers by serverId
+Delete servers by serverId
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/servers/{server_id}
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|server_id|server_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": null,
+    "retCode": 0,
+    "message": "delete server success",
+    "params": null
+}
+```
+### Create images
+Create images
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/images
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+    name: "test_image",
+    containerFormat: "",
+    diskFormat: "",
+    minRam: 1,
+    minDisk: 10,
+    properties: { }
+}
+
+```
+Example response:
+```
+200 Accepted
+{
+    "data": null,
+    "retCode": 0,
+    "message": "create image success",
+    "params": null
+}
+```
+### Import image
+Import image
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/images/{image_id}
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|image_id|image_id|path|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+    resourceUri: "example",       
+}
+
+```
+Example response:
+```
+200 Accepted
+{
+    "data": null,
+    "retCode": 0,
+    "message": "import image success",
+    "params": null
+}
+```
+### Query images
+Query images
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/images/
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+```
+Example response:
+```
+200 OK
+{
+    "images": [
+        {
+            "status": "active",
+            "name": "cirros-0.3.2-x86_64-disk",
+            "tags": [],
+            "container_format": "bare",
+            "created_at": "2014-11-07T17:07:06Z",
+            "disk_format": "qcow2",
+            "updated_at": "2014-11-07T17:19:09Z",
+            "visibility": "public",
+            "self": "/v2/images/1bea47ed-f6a9-463b-b423-14b9cca9ad27",
+            "min_disk": 0,
+            "protected": false,
+            "id": "1bea47ed-f6a9-463b-b423-14b9cca9ad27",
+            "file": "/v2/images/1bea47ed-f6a9-463b-b423-14b9cca9ad27/file",
+            "checksum": "64d7c1cd2b6f60c92c14662941cb7913",
+            "os_hash_algo": "sha512",
+            "os_hash_value": "073b4523583784fbe01daff81eba092a262ec37ba6d04dd3f52e4cd5c93eb8258af44881345ecda0e49f3d8cc6d2df6b050ff3e72681d723234aff9d17d0cf09",
+            "os_hidden": false,
+            "owner": "5ef70662f8b34079a6eddb8da9d75fe8",
+            "size": 13167616,
+            "min_ram": 0,
+            "schema": "/v2/schemas/image",
+            "virtual_size": null
+        }
+    ],
+    "schema": "/v2/schemas/images",
+    "first": "/v2/images"
+}
+```
+### Query images by id
+Query images by id
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/images/{image_id}
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|image_id|image_id|path|yes|Valid UUID|64|
+```
+Example response:
+```
+200 OK
+{
+    "status": "active",
+    "name": "cirros-0.3.2-x86_64-disk",
+    "tags": [],
+    "container_format": "bare",
+    "created_at": "2014-05-05T17:15:10Z",
+    "disk_format": "qcow2",
+    "updated_at": "2014-05-05T17:15:11Z",
+    "visibility": "public",
+    "self": "/v2/images/1bea47ed-f6a9-463b-b423-14b9cca9ad27",
+    "min_disk": 0,
+    "protected": false,
+    "id": "1bea47ed-f6a9-463b-b423-14b9cca9ad27",
+    "file": "/v2/images/1bea47ed-f6a9-463b-b423-14b9cca9ad27/file",
+    "checksum": "64d7c1cd2b6f60c92c14662941cb7913",
+    "os_hash_algo": "sha512",
+    "os_hash_value": "073b4523583784fbe01daff81eba092a262ec37ba6d04dd3f52e4cd5c93eb8258af44881345ecda0e49f3d8cc6d2df6b050ff3e72681d723234aff9d17d0cf09",
+    "os_hidden": false,
+    "owner": "5ef70662f8b34079a6eddb8da9d75fe8",
+    "size": 13167616,
+    "min_ram": 0,
+    "schema": "/v2/schemas/image",
+    "virtual_size": null
+}
+```
+### Delete image by id
+Delete image by id
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/images/{image_id}
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|image_id|image_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": null,
+    "retCode": 0,
+    "message": "delete image success",
+    "params": null
+}
+```
+### Create securityGroups
+Create securityGroups
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/securityGroups
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+    "name": "new-webservers",
+}
+
+```
+Example response:
+```
+200 Accepted
+{
+    "data": null,
+    "retCode": 0,
+    "message": "create securityGroup success",
+    "params": null
+}
+```
+### Query securityGroups
+Query securityGroups
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/securityGroups
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": {"securityGroup": [
+        {
+            "description": "default",
+            "id": "85cc3048-abc3-43cc-89b3-377341426ac5",
+            "name": "default",
+            "securityGroupRule": [
+                {
+                    "direction": "egress",
+                    "ethertype": "IPv6",
+                    "id": "3c0e45ff-adaf-4124-b083-bf390e5482ff",
+                    "port_range_max": null,
+                    "port_range_min": null,
+                    "protocol": null,
+                    "remote_group_id": null,
+                    "remote_ip_prefix": null,
+                    "security_group_id": "85cc3048-abc3-43cc-89b3-377341426ac5",
+                    "project_id": "e4f50856753b4dc6afee5fa6b9b6c550",
+                    "revision_number": 1,
+                    "tags": ["tag1,tag2"],
+                    "tenant_id": "e4f50856753b4dc6afee5fa6b9b6c550",
+                    "created_at": "2018-03-19T19:16:56Z",
+                    "updated_at": "2018-03-19T19:16:56Z",
+                    "description": ""
+                }
+            ],
+            "project_id": "e4f50856753b4dc6afee5fa6b9b6c550",
+            "revision_number": 8,
+            "created_at": "2018-03-19T19:16:56Z",
+            "updated_at": "2018-03-19T19:16:56Z",
+            "tags": ["tag1,tag2"],
+            "tenant_id": "e4f50856753b4dc6afee5fa6b9b6c550",
+            "stateful": true,
+            "shared": false
+        }
+    ]},
+    "retCode": 0,
+    "message": "Query securityGroups success",
+    "params": null
+}
+```
+
+### Query securityGroup by securityGroupId
+Query securityGroup by securityGroupId
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/securityGroups/{security_group_id}
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|security_group_id|security_group_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": {"securityGroup": {
+        "description": "default",
+        "id": "85cc3048-abc3-43cc-89b3-377341426ac5",
+        "name": "default",
+        "securityGroupRule": [
+            {
+                "securityGroupId": "a7734e61-b545-452d-a3cd-0189cbd9747a",
+		        "direction": "egress",
+		        "protocol": "tcp",
+                "ethertype": "IPv4",
+		        "port_range_min": 80,
+                "port_range_max": 90,
+		        remoteIpPrefix: "",
+                "remote_group_id": "85cc3048-abc3-43cc-89b3-377341426ac5"
+            }
+        ],
+        "project_id": "e4f50856753b4dc6afee5fa6b9b6c550",
+        "created_at": "2018-03-19T19:16:56Z",
+        "updated_at": "2018-03-19T19:16:56Z",
+        "revision_number": 4,
+        "tags": ["tag1,tag2"],
+        "tenant_id": "e4f50856753b4dc6afee5fa6b9b6c550",
+        "stateful": true,
+        "shared": false
+    }},
+    "retCode": 0,
+    "message": "Query securityGroup success",
+    "params": null
+}
+```
+### Delete securityGroup by id
+Delete securityGroup by id
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/securityGroups/{security_group_id}
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|security_group_id|security_group_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": null,
+    "retCode": 0,
+    "message": "delete securityGroup success",
+    "params": null
+}
+```
+### Create securityGroupRules
+Create securityGroupRules
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/securityGroups/{security_group_id}/securityGroupRules
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|security_group_id|security_group_id|path|yes|Valid UUID|64|
+
+Example request body:
+```
+{
+        "securityGroupId": "a7734e61-b545-452d-a3cd-0189cbd9747a",
+        "direction": "ingress",
+        "protocol": "tcp",
+        "ethertype": "IPv4",
+        "port_range_min": 80,
+        "port_range_max": 90,
+        remoteIpPrefix: "",
+        "remote_group_id": "85cc3048-abc3-43cc-89b3-377341426ac5"
+}
+
+```
+Example response:
+```
+200 Accepted
+{
+    "data": null,
+    "retCode": 0,
+    "message": "create securityGroupRules success",
+    "params": null
+}
+```
+### Query securityGroupRules
+Query securityGroupRules
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/securityGroups/{security_group_id}/securityGroupRules
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|security_group_id|security_group_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": {"securityGroupRule": [
+        {
+            "direction": "egress",
+            "ethertype": "IPv6",
+            "id": "3c0e45ff-adaf-4124-b083-bf390e5482ff",
+            "port_range_max": null,
+            "port_range_min": null,
+            "protocol": null,
+            "remote_group_id": null,
+            "remote_ip_prefix": null,
+            "security_group_id": "85cc3048-abc3-43cc-89b3-377341426ac5",
+            "project_id": "e4f50856753b4dc6afee5fa6b9b6c550",
+            "revision_number": 1,
+            "created_at": "2018-03-19T19:16:56Z",
+            "updated_at": "2018-03-19T19:16:56Z",
+            "tenant_id": "e4f50856753b4dc6afee5fa6b9b6c550",
+            "description": ""
+        }
+    ]},
+    "retCode": 0,
+    "message": "Query securityGroupRules success",
+    "params": null
+}
+```
+### Delete securityGroupRules by securityGroupRulesId
+Delete securityGroupRules by securityGroupRulesId
+```
+Resource URI: /appo/v1/tenants/{tenant_id}/hosts/{host_ip}/securityGroups/{security_group_id}/securityGroupRules
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token|access token|header|yes|Jwt token|
+|host_ip|edge host ip|path|yes|Valid IP|15|
+|tenant_id|tenant_id|path|yes|Valid UUID|64|
+|security_group_id|security_group_id|path|yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+{
+    "data": null,
+    "retCode": 0,
+    "message": "delete securityGroupRule success",
+    "params": null
+}
+```
 ### APPO Open Api Swagger
 
 * Please refer [APPO_OPEN_API](https://gitee.com/edgegallery/docs/blob/master/Projects/MECM/MECM_APIs/appo-swagger-openapi.yaml)
