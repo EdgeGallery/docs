@@ -12,6 +12,72 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 - [开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
 
 
+
+ Version: v1.5.0
+--------------
+
+ - Release Date: 2022-01
+ - Image Version: v1.5.0
+
+**新开源仓库列表**
+
+None
+
+
+[ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.5)
+
+* **版本更新**
+    - 系统架构增强
+        - 整体抽象EdgeGallery 东南西北向的对接关系，进行三方系统的统一规划管理（包含MEAO、镜像仓库、Appstore、IaaS、测试系统）
+        - Profile Management：完善Developer 与 MECM在Profile上展示与内部模型的映射，提供统一的北向Profile与数据出口
+        - WASM运行态完整支持
+        - EdgeGallery北向接口支持：支持北向对接认证API；支持与第三方IAM系统集成方案，形成一套标准的统一认证体系
+        - 支持proxy代理访问部署EdgeGallery
+    
+    - 管理面增强        
+        - EdgeGallery虚拟机场景增强：支持灵活定义MEC节点内的网络；支持灵活定义应用挂接的网络；支持配置应用的网络接口参数；支持在部署应用时灵活配置flavor；支持边缘节点内的租户隔离，EG用户与openstack租户绑定
+        - MECM资源管理功能增强：1.支持边缘节点的资源管理，包括边缘节点的资源信息，租户信息等；2.支持APP的资源管理，包括APP使用的虚拟机列表，对应虚拟机的状态与度量指标；3.支持边缘资源的申请，包括虚拟机拉起，flavor设置，镜像（应用）选择等；4.支持边缘虚拟机资源的维护，包括重启，关闭，开机，远程VNC等
+    
+    - 边缘自治-企业Portal
+        - 支持Openstack/FS资源统计，边缘节点检查支持定时任务，企业自助申请IaaS资源并隔离        
+    - APP变现和商业化流程优化
+        - 基于当前的设计持续推进APP变现流程，打通一个端到端的定价，订购，部署，维护的流程
+    - 集成平台
+        - 提供融合服务界面，大幅优化用户体验
+        - EdgeGallery应用孵化流程优化，前台界面操作流程优化；后台接口重构，适配流程优化；ATP界面需要适配新的流程优化；容器应用流程优化
+        - 基于RTMP的超低演示推拉流服务：1. 搭建基于WebRTC的实时音视频平台集成至EdgeGallery，支撑VR/AR等应用上线；2. 提供开放SDK，支撑应用上线。
+ 
+ * **其他**
+    - 完成小程序解释层与MEP平台架构改造，相关部署脚本与workload形态同步完成
+    - 安全加解密SDK： 针对EG平台内部存储的敏感数据，例如：沙箱环境密码，需要提供安全可靠的加解密方式进行密码的存储保存，安全的加解密服务
+    - java镜像剥离三方件依赖，提供统一三方件依赖全集
+
+
+**Bug Fixes**
+
+  参见 [EdgeGallery v1.5.0 Test Report](https://gitee.com/edgegallery/community/blob/master/Test%20WG/Test%20Release/EdgeGallery%20R1.3%20Test%20Report.md)
+
+
+ **Security Notes**
+
+
+**Fixed/Known Security Issues**
+
+参见 [EdgeGallery v1.5.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.3/EG%20v1.3%20Security%20Test%20Report.md)
+
+ **Known Vulnerabilities in Used Modules**
+
+参见 [EdgeGallery v1.5.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.3/EG%20v1.3%20Security%20Test%20Report.md)
+
+ EdgeGallery v1.5.0 版本第三方开源组件存在以下漏洞需要用户自行修复：待补充
+
+
+
+
+
+-----------------------------------------------------------------------------
+
+
  Version: v1.3.0
 --------------
 
