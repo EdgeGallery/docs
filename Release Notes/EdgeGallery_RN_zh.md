@@ -21,7 +21,10 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 **新开源仓库列表**
 
-None
+| 模块                           |      名称       | 类型   | URL                                           | 说明                                   |
+| ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
+| Common Service           | common-service    | 产品仓 | https://gitee.com/edgegallery/common-service    | 为EdgeGallery各组件提供公共服务   |
+| 3rd Party System |     3rd-party-system     | 产品仓 | https://gitee.com/edgegallery/3rd-party-system          | EdgeGallery对接的外部系统统一管理  |
 
 
 [ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.5)
