@@ -82,6 +82,7 @@ The document is for the appstore-be project, there are six parts of interfaces i
     - [10.2 Unsubscribe App](#102-Unsubscribe-App)
     - [10.3 Activate order](#103-Activate-Order)
     - [10.4 Query order list](#104-Query-Order-List)
+    - [10.5 Get MEC hosts](#105-Get-MEC-Hosts)
 
 ## 1. App
 
@@ -2275,7 +2276,9 @@ METHOD: POST
 | ------------ | ---------------------- | ------------ | -------- |
 | appId        | application id         | request body | yes      |
 | appPackageId | application package id | request body | yes      |
+| appName      | application name       | request body | yes      |
 | mecHostIp    | mechost ip             | request body | yes      |
+| mecHostCity  | mechost location       | request body | yes      |
 
 
 Example response:
@@ -2385,7 +2388,6 @@ response 200 OK
       "userName": "",
       "appId": "",
       "appName": "",
-      "appVersion": "",
       "orderTime": "",
       "operateTime": "",
       "status": "",
@@ -2398,6 +2400,41 @@ response 200 OK
   "offset": 0,
   "limit": 20,
   "total": 100
+}
+```
+
+### 10.5 Get MEC Hosts
+
+get mec hosts info.
+
+```
+Resource URI: /mec/appstore/v1/mechosts?appId={appId}&packageId={packageId}
+METHOD: GET
+```
+
+| Name      | Definition             | Type          | Required |
+| --------- | ---------------------- | ------------- | -------- |
+| appId     | application id         | request param | no       |
+| packageId | application package id | request param | no       |
+
+
+Example response:
+
+```json
+response 200 OK
+{
+  "data": [
+      {
+          "mechostIp": "",
+          "mechostName": "",
+          "mechostCity": "",
+          "vim": "",
+          "affinity": ""
+      }
+  ],
+  "retCode": 0,
+  "params": ["", ""],
+  "message": ""
 }
 ```
 
