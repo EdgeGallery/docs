@@ -82,6 +82,7 @@
     - [10.2 退订应用](#102-退订应用)
     - [10.3 激活订单](#103-激活订单)
     - [10.4 查询订单列表](#104-查询订单列表)
+    - [10.5 查询边缘节点列表](#105-查询边缘节点列表)
 
 ## 1. 应用
 
@@ -2232,11 +2233,13 @@ URI： /mec/appstore/v1/orders
 METHOD: POST
 ```
 
-| 名称         | 描述       | IN           | 必选 |
-| ------------ | ---------- | ------------ | ---- |
-| appId        | APPID      | request body | 是   |
-| appPackageId | APP包ID    | request body | 是   |
-| mecHostIp    | 边缘节点IP | request body | 是   |
+| 名称         | 描述         | IN           | 必选 |
+| ------------ | ------------ | ------------ | ---- |
+| appId        | APPID        | request body | 是   |
+| appPackageId | APP包ID      | request body | 是   |
+| appName      | 应用名称     | request body | 是   |
+| mecHostIp    | 边缘节点IP   | request body | 是   |
+| mecHostCity  | 边缘节点位置 | request body | 是   |
 
 
 响应示例:
@@ -2346,7 +2349,6 @@ response 200 OK
       "userName": "",
       "appId": "",
       "appName": "",
-      "appVersion": "",
       "orderTime": "",
       "operateTime": "",
       "status": "",
@@ -2359,6 +2361,41 @@ response 200 OK
   "offset": 0,
   "limit": 20,
   "total": 100
+}
+```
+
+### 10.5 查询边缘节点列表
+
+获取边缘节点信息.
+
+```
+URI: /mec/appstore/v1/mechosts?appId={appId}&packageId={packageId}
+METHOD: GET
+```
+
+| 名称      | 描述     | IN            | 必选 |
+| --------- | -------- | ------------- | ---- |
+| appId     | 应用id   | request param | 否   |
+| packageId | 应用包id | request param | 否   |
+
+
+响应示例:
+
+```json
+response 200 OK
+{
+  "data": [
+      {
+          "mechostIp": "",
+          "mechostName": "",
+          "mechostCity": "",
+          "vim": "",
+          "affinity": ""
+      }
+  ],
+  "retCode": 0,
+  "params": ["", ""],
+  "message": ""
 }
 ```
 

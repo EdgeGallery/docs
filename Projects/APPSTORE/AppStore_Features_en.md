@@ -2,9 +2,9 @@ Features Design
 ======================
 AppStore is the application warehouse module of EdgeGallery. It is mainly responsible for the storage and management of 5G edge applications. The current version has decentralized control, and different user roles contain different features.
 
-Administrator users' features: application upload, application test, application publish, application query, application comment, download/delete all applications, external warehouse management, application push, application pull, message management, operation analysis, application management, sandbox management, application online experience, application synchronization, document center.
+Administrator users' features: application upload, application test, application publish, application query, application comment, download/delete all applications, external warehouse management, application push, application pull, message management, operation analysis, application management, sandbox management, application online experience, application synchronization, application monetization, document center.
 
-Tenant users' features: application upload, application test, application publish, application query, application comment, download/delete of this user application, application online experience, application synchronization, document center.
+Tenant users' features: application upload, application test, application publish, application query, application comment, download/delete of this user application, application online experience, application monetization, document center.
 
 Guest user features: application query, document center.
 
@@ -26,5 +26,6 @@ Guest user features: application query, document center.
 |sandbox management|Users can add, delete, modify and query the sandbox environment.|
 |application online experience|Users can instantiate applications based on the existing sandbox environment for online experience.|
 |application synchronization|Users can synchronously deploy applications to configured peripheral systems, such as meao.|
+|application monetization|Users can subscribe to favorite applications and deploy them to specified edge nodes.|
 |document center|Users can learn about the main functions, interface specifications and application package specifications of appstore in the documentation center|
 
