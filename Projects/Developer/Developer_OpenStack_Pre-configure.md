@@ -29,8 +29,8 @@ OpenStack社区正式发布第23个版本 – Wallaby， OpenStack专注于开�
 ## 配置网络(Network)：
 
 创建三个网络
-mec_network_n6、mec_network_mep、mec_network_internet;
-![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Network.png "网络配置.png")
+MEC_APP_Public, MEC_APP_Private, MEC_APP_MP1;
+![输入图片说明](../../uploads/images/2021/developer/image.png)
 
 ## 实例类型(Flavors):
 创建以下几个规格示例类型，配置与实际的规格对应1c（CPU1核）、1024m（内存1024M）、40g（硬盘40G）
