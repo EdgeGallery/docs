@@ -6,15 +6,15 @@ Dependency
 |---|---|---|---|---|
 |aopalliance|aopalliance|1.0 |Public Domain|N|
 |com.fasterxml|classmate|1.4.0 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.core|jackson-annotations|2.9.0 |The Apache Software License, Version 2.0|N|
+|com.fasterxml.jackson.core|jackson-annotations|2.10.0 |The Apache Software License, Version 2.0|N|
 |com.fasterxml.jackson.core|jackson-core|2.10.5 |The Apache Software License, Version 2.0|N|
 |com.fasterxml.jackson.core|jackson-databind|2.10.5.1 |The Apache Software License, Version 2.0|Y|
-|com.fasterxml.jackson.dataformat|jackson-dataformat-xml|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.dataformat|jackson-dataformat-yaml|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.datatype|jackson-datatype-jdk8|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.datatype|jackson-datatype-jsr310|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.module|jackson-module-jaxb-annotations|2.9.9 |The Apache Software License, Version 2.0|N|
-|com.fasterxml.jackson.module|jackson-module-parameter-names|2.9.9 |The Apache Software License, Version 2.0|N|
+|com.fasterxml.jackson.dataformat|jackson-dataformat-xml|2.10.0 |The Apache Software License, Version 2.0|N|
+|com.fasterxml.jackson.dataformat|jackson-dataformat-yaml|2.10.0 |The Apache Software License, Version 2.0|N|
+|com.fasterxml.jackson.datatype|jackson-datatype-jdk8|2.10.0 |The Apache Software License, Version 2.0|N|
+|com.fasterxml.jackson.datatype|jackson-datatype-jsr310|2.10.0 |The Apache Software License, Version 2.0|N|
+|com.fasterxml.jackson.module|jackson-module-jaxb-annotations|2.10.0 |The Apache Software License, Version 2.0|N|
+|com.fasterxml.jackson.module|jackson-module-parameter-names|2.10.0 |The Apache Software License, Version 2.0|N|
 |com.fasterxml.woodstox|woodstox-core|5.0.3 |The Apache License, Version 2.0|N|
 |com.github.ben-manes.caffeine|caffeine|2.6.2 |Apache License, Version 2.0|N|
 |com.github.waffle|waffle-jna|1.9.1 |Eclipse Public License|N|
@@ -77,14 +77,14 @@ Dependency
 |io.swagger|swagger-annotations|1.5.22 |Apache License 2.0|N|
 |io.swagger|swagger-core|1.5.22 |Apache License 2.0|N|
 |io.swagger|swagger-models|1.5.22 |Apache License 2.0|N|
-|io.vertx|vertx-auth-common|3.6.3 |Eclipse Public License - v 1.0 & The Apache Software License, Version 2.0|N|
-|io.vertx|vertx-bridge-common|3.6.3 |Eclipse Public License - v 1.0 & The Apache Software License, Version 2.1|N|
-|io.vertx|vertx-core|3.6.3 |Eclipse Public License - v 1.0 & The Apache Software License, Version 2.2|N|
-|io.vertx|vertx-web|3.6.3 |Eclipse Public License - v 1.0 & The Apache Software License, Version 2.3|N|
-|io.vertx|vertx-web-common|3.6.3 |Eclipse Public License - v 1.0 & The Apache Software License, Version 2.4|N|
+|io.vertx|vertx-auth-common|3.9.4 |Eclipse Public License - v 1.0 & The Apache Software License, Version 2.0|N|
+|io.vertx|vertx-bridge-common|3.9.4 |Eclipse Public License - v 1.0 & The Apache Software License, Version 2.1|N|
+|io.vertx|vertx-core|3.9.4 |Eclipse Public License - v 1.0 & The Apache Software License, Version 2.2|N|
+|io.vertx|vertx-web|3.9.4 |Eclipse Public License - v 1.0 & The Apache Software License, Version 2.3|N|
+|io.vertx|vertx-web-common|3.9.4 |Eclipse Public License - v 1.0 & The Apache Software License, Version 2.4|N|
 |io.zipkin.brave|brave|5.6.0 |The Apache Software License, Version 2.0|N|
-|io.zipkin.reporter2|zipkin-reporter|2.5.0 |The Apache Software License, Version 2.0|N|
-|io.zipkin.zipkin2|zipkin|2.9.3 |The Apache Software License, Version 2.0|N|
+|io.zipkin.reporter2|zipkin-reporter|2.7.13 |The Apache Software License, Version 2.0|N|
+|io.zipkin.zipkin2|zipkin|2.19.1 |The Apache Software License, Version 2.0|N|
 |javax.activation|javax.activation-api|1.2.0 |CDDL/GPLv2+CE|     N|
 |javax.annotation|javax.annotation-api|1.3.2 |CDDL + GPLv2 with classpath exception|N|
 |javax.inject|javax.inject|1 |The Apache Software License, Version 2.0|N|
@@ -113,37 +113,37 @@ Dependency
 |org.apache.logging.log4j|log4j-api|2.17.0 |Apache License, Version 2.0|Y|
 |org.apache.logging.log4j|log4j-core|2.17.0 |Apache License, Version 2.0|Y|
 |org.apache.logging.log4j|log4j-slf4j-impl|2.17.0 |Apache License, Version 2.0|Y|
-|org.apache.servicecomb|common-javassist|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|common-protobuf|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|common-rest|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|deployment|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|foundation-common|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|foundation-config|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|foundation-metrics|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|foundation-protobuf|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|foundation-ssl|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|foundation-vertx|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|handler-bizkeeper|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|handler-flowcontrol-qps|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|handler-loadbalance|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|java-chassis-core|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|provider-jaxrs|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|provider-pojo|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|provider-rest-common|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|provider-springmvc|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|service-registry|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|spring-boot2-starter|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|spring-boot2-starter-servlet|1.3.0 |Apache License, Version 2.0|Y|
-|org.apache.servicecomb|swagger-generator-core|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|swagger-generator-jaxrs|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|swagger-generator-springmvc|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|swagger-invocation-core|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|swagger-invocation-jaxrs|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|swagger-invocation-springmvc|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|transport-common|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|transport-highway|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|transport-rest-client|1.3.0 |Apache License, Version 2.0|N|
-|org.apache.servicecomb|transport-rest-servlet|1.3.0 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|common-javassist|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|common-protobuf|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|common-rest|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|deployment|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|foundation-common|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|foundation-config|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|foundation-metrics|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|foundation-protobuf|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|foundation-ssl|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|foundation-vertx|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|handler-bizkeeper|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|handler-flowcontrol-qps|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|handler-loadbalance|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|java-chassis-core|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|provider-jaxrs|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|provider-pojo|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|provider-rest-common|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|provider-springmvc|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|service-registry|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|spring-boot2-starter|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|spring-boot2-starter-servlet|1.3.2 |Apache License, Version 2.0|Y|
+|org.apache.servicecomb|swagger-generator-core|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|swagger-generator-jaxrs|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|swagger-generator-springmvc|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|swagger-invocation-core|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|swagger-invocation-jaxrs|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|swagger-invocation-springmvc|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|transport-common|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|transport-highway|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|transport-rest-client|1.3.2 |Apache License, Version 2.0|N|
+|org.apache.servicecomb|transport-rest-servlet|1.3.2 |Apache License, Version 2.0|N|
 |org.apache.tomcat|tomcat-annotations-api|9.0.44 |Apache License, Version 2.0|Y|
 |org.apache.tomcat.embed|tomcat-embed-core|9.0.44 |Apache License, Version 2.0|Y|
 |org.apache.tomcat.embed|tomcat-embed-el|9.0.44 |Apache License, Version 2.0|Y|
@@ -151,16 +151,16 @@ Dependency
 |org.assertj|assertj-core|3.11.1 |Apache License, Version 2.0|N|
 |org.bouncycastle|bcpkix-jdk15on|1.64 |Bouncy Castle Licence|     N|
 |org.bouncycastle|bcprov-jdk15on|1.68 |Bouncy Castle Licence|Y|
-|org.checkerframework|checker-qual|2.5.2 |The MIT License|N|
+|org.checkerframework|checker-qual|3.5.0 |The MIT License|N|
 |org.codehaus.mojo|animal-sniffer-annotations|1.14 |MIT license|N|
-|org.codehaus.woodstox|stax2-api|3.1.4 |The BSD License|N|
+|org.codehaus.woodstox|stax2-api|4.2 |The BSD License|N|
 |org.eclipse.persistence|javax.persistence|2.1.0 |Eclipse Distribution License v. 1.0 & Eclipse Public License v1.0|Y|
 |org.glassfish|javax.json|1.0.4 |Dual license consisting of the CDDL v1.1 and GPL v2|N|
 |org.glassfish.jaxb|jaxb-runtime|2.3.1 |CDDL+GPL License|     N|
 |org.glassfish.jaxb|txw2|2.3.1 |CDDL+GPL License|N|
 |org.hamcrest|hamcrest-core|1.3 |New BSD License|N|
 |org.hamcrest|hamcrest-library|1.3 |New BSD License|N|
-|org.hdrhistogram|HdrHistogram|2.1.9 |Public Domain, per Creative Commons CC0|N|
+|org.hdrhistogram|HdrHistogram|2.1.10 |Public Domain, per Creative Commons CC0|N|
 |org.hibernate.validator|hibernate-validator|6.0.17.Final |Apache License 2.0|N|
 |org.javassist|javassist|3.24.0-GA |Apache License 2.0 & LGPL 2.1 & MPL 1.1|N|
 |org.jboss.logging|jboss-logging|3.3.2.Final |Apache License, version 2.0|N|
@@ -168,9 +168,9 @@ Dependency
 |org.jmockit|jmockit-coverage|1.19 |The MIT LICENSE|Y|
 |org.jvnet.staxex|stax-ex|1.8 |Dual license consisting of the CDDL v1.1 and GPL v2|N|
 |org.mockito|mockito-core|2.23.4 |The MIT License|N|
-|org.mybatis|mybatis|3.5.3 |The Apache Software License, Version 2.0|N|
-|org.mybatis|mybatis-spring|2.0.3 |The Apache Software License, Version 2.0|N|
-|org.mybatis.spring.boot|mybatis-spring-boot-autoconfigure|2.1.1 |The Apache Software License, Version 2.0|N|
+|org.mybatis|mybatis|3.5.7 |The Apache Software License, Version 2.0|N|
+|org.mybatis|mybatis-spring|2.0.6 |The Apache Software License, Version 2.0|N|
+|org.mybatis.spring.boot|mybatis-spring-boot-autoconfigure|2.2.0 |The Apache Software License, Version 2.0|N|
 |org.mybatis.spring.boot|mybatis-spring-boot-starter|2.2.0 |The Apache Software License, Version 2.0|Y|
 |org.objenesis|objenesis|2.6 |Apache 2|N|
 |org.osgi|org.osgi.core|4.3.1 |Apache License, Version 2.0|N|
@@ -180,19 +180,19 @@ Dependency
 |org.projectlombok|lombok|1.18.10 |The MIT License|Y|
 |org.reactivestreams|reactive-streams|1.0.0 |CC0|Y|
 |org.skyscreamer|jsonassert|1.5.0 |The Apache Software License, Version 2.0|N|
-|org.slf4j|jcl-over-slf4j|1.7.30 |MIT License|N|
+|org.slf4j|jcl-over-slf4j|1.7.26 |MIT License|N|
 |org.slf4j|slf4j-api|1.7.30 |MIT License|Y|
 |org.springframework|spring-aop|5.1.13.RELEASE |Apache License, Version 2.0|Y|
-|org.springframework|spring-beans|5.1.13.RELEASE |Apache License, Version 2.0|N|
-|org.springframework|spring-context|5.1.13.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-beans|5.1.8.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-context|5.1.8.RELEASE |Apache License, Version 2.0|N|
 |org.springframework|spring-core|5.1.13.RELEASE |Apache License, Version 2.0|Y|
-|org.springframework|spring-expression|5.1.13.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-expression|5.1.8.RELEASE |Apache License, Version 2.0|N|
 |org.springframework|spring-jcl|5.1.13.RELEASE |Apache License, Version 2.0|Y|
-|org.springframework|spring-jdbc|5.1.13.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-jdbc|5.1.8.RELEASE |Apache License, Version 2.0|N|
 |org.springframework|spring-test|5.1.13.RELEASE |Apache License, Version 2.0|N|
 |org.springframework|spring-tx|5.1.13.RELEASE |Apache License, Version 2.0|Y|
 |org.springframework|spring-web|5.1.13.RELEASE |Apache License, Version 2.0|Y|
-|org.springframework|spring-webmvc|5.1.13.RELEASE |Apache License, Version 2.0|N|
+|org.springframework|spring-webmvc|5.1.8.RELEASE |Apache License, Version 2.0|N|
 |org.springframework|spring-websocket|5.1.13.RELEASE |Apache License, Version 2.0|N|
 |org.springframework.boot|spring-boot|2.1.6.RELEASE |Apache License, Version 2.0|N|
 |org.springframework.boot|spring-boot-autoconfigure|2.1.6.RELEASE |Apache License, Version 2.0|N|
