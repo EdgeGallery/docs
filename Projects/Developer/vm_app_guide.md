@@ -2,67 +2,34 @@
 
 ## 环境准备
 
-### edgegallery 安装v1.2版本 文件管理系统的安装 openstack安装 W版本 
-1. **文件管理系统的安装**
-文件管理系统目前没有集成到一键安装脚本里，需要手动安装
-在gitee上下载file-system对应版本的helmchart：https://gitee.com/edgegallery/helm-charts/tree/master/file-system
-在环境中执行以下命令：helm install file-system ./file-system -- set postgres.password=te9Fmv%qaq
-2. **developer 安装注意事项** v1.2新增文件管理系统，用于上传和下载虚机镜像，当前支持qcow2、img、iso格式,安装相关的参数配置如下：   
-**fileSystemAddress** 配置文件管理系统的地址                                                       
-**username** 配置虚机镜像用户名                                                                   
-**password** 配置虚机镜像登录密码 
-
-默认文件管理系统的地址为空，需要修改为http://ip:30090 ,虚机镜像用户名为ubuntu ，虚机密码为123456，根据虚机镜像配置，通过kubectl edit 修改参数
-例如：
-修改文件管理系统
-
-kubectl edit deployment developer-be 
-
-![输入图片说明](/uploads/images/2021/0703/100831_be9fd9ab_7625288.png "屏幕截图.png")
-
-修改虚机用户名密码：
-kubectl edit secret developer-be-secret 
-
-![输入图片说明](/uploads/images/2021/0703/101036_0bbb64db_7625288.png "屏幕截图.png")
-
-secret 里面显示的base64编码，所以先讲修改的参数进行base64编写在修改对应的值
-                                                                              
-3. **openstack初始化配置**
+### edgegallery 安装v1.5版本 文件管理系统的安装 openstack安装 W版本 
+                                                                         
+1. **openstack初始化配置**
 [参考文档](../../Projects/Developer/Developer_OpenStack_Pre-configure.md)
 
 ## 配置沙箱环境：developer新增openstack沙箱环境
 
 1. develoepr平台用管理员用户admin登录 打开系统-沙箱环境管理-新增沙箱环境
-![输入图片说明](/uploads/images/2021/0628/163538_c2d7c8b4_7625288.png "屏幕截图.png")
-
-2. lcmIp为lcmcontroller的IP地址 ，mecHost为openstack的IP地址，端口号为lcmcontroller对外暴露的端口号, 协议选择https.   
-
-其他参数配置openstack相关的网络配置：参数设置如下：
-![输入图片说明](/uploads/images/2021/0628/163330_baff108f_7625288.png "屏幕截图.png")
-
+![输入图片说明](../../uploads/images/2021/developer/%E6%B2%99%E7%AE%B1%E9%85%8D%E7%BD%AE.png)
+参数填写规范如下：
+名称：沙箱名称，不限
+lcmIp: 如果是单机部署edgegallery，即为edgegallery本机ip，如果多机部署为边缘节点ip
+端口号：默认31252
+mecHost: openstack环境的ip值
+mecPort: openstack环境拉起虚机后用于VNC远程登录的端口，当前openstack环境VNC端口是6080
+系统：选择OpenStack
+资源配置：用于展示OpenStack环境相关的资源信息，格式如下：
+{"VCPU数量":"20","内存资源":"50G","存储资源":"1000G","网络":"不支持5G","GPU算力":"NA","AI加速":"1*Atlas300C(16G)","终端":"NA"}
+根据实际情况可以新增或修改相关信息
+网络配置：用于部署调测配置相关网络信息，详情如下：
+APP_Plane01_Network=MEC_APP_MP1;APP_Plane02_Network=MEC_APP_Public;APP_Plane03_Network=MEC_APP_Private;VDU1_APP_Plane01_IP=192.168.221.0/24;VDU1_APP_Plane02_IP=192.168.222.0/24;VDU1_APP_Plane03_IP=192.168.220.0/24
+  
+其他参数及含义如下
 DC_ID=FS_M:Manager_VPC; 使用默认值或者不传即可
 
 az_dc=nova;  默认值为az1.dc1，与openstack的zones值保持一致
 
-mep_certificate=YHXGFTWU!@$%@&%#(DH(122479+_); 使用默认值或者不传即可
-
-app_mp1_ip=192.168.226.201;app_mp1_mask=255.255.255.0;app_mp1_gw=192.168.226.1;  app_n6网络配置：ip取openstack对应n6网络范围内的值，mask默认255.255.255.0， gw最后以为取1
-
-app_n6_ip=192.168.225.202;app_n6_mask=255.255.255.0;app_n6_gw=192.168.225.1; 同app_n6
-
-app_internet_ip=192.168.227.203;app_internet_mask=255.255.255.0;app_internet_gw=192.168.227.1;  同 app_n6
-
-mep_ip=;mep_port=8443; 配置mep的ip和端口，不涉及mep可不用配置该参数
-
-network_name_mep=mec_network_mep;network_mep_physnet=physnet2;network_mep_vlanid=2653; 网络名与openstack网络名称保持一致
-
-network_name_n6=mec_network_n6;network_n6_physnet=physnet2;network_n6_vlanid=2652; 网络名与openstack网络名称保持一致
-
-network_name_internet=mec_network_internet;network_internet_physnet=physnet2;network_internet_vlanid=2651; 网络名与openstack网络名称保持一致
-
-ue_ip_segment=0.0.0.0/0; ue使用默认值即可
-
-mec_internet_ip=0.0.0.0  默认值或者不传即可
+APP_Plane02_GW=192.168.222.1， APP_Plane01_GW=192.168.221.1， APP_Plane03_GW=192.168.220.1 gw默认取1
 
 3.上传配置文件为openstack config， 该配置文件为openstack对应的用户名、密码、项目、url等信息参数如下：
 
@@ -83,57 +50,37 @@ route add -net 192.168.225.0 netmask 255.255.255.0 gw openstack_ip
 1.新建系统镜像
 
 系统 - 系统镜像管理 - 新建系统镜像
-![输入图片说明](/uploads/images/2021/0706/111801_821e101d_9047452.png "屏幕截图.png")
-
+![输入图片说明](../../uploads/images/2021/developer/%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F%E7%AE%A1%E7%90%86.png)
+镜像名唯一 ，磁盘大小必须大于该镜像所需的最小磁盘大小
 填写镜像的基本信息后点击确认
-2.上传镜像压缩包
+2.上传镜像文件
 
-上传镜像为zip压缩包，目前支持的镜像格式为qcow2和iso，上传镜像包目录格式为：filename.zip/filename/filename.qcow2
-[图片上传中…(image-YNZxdUJUIpoH7VXZe53N)]
-3.修改系统镜像
-![输入图片说明](/uploads/images/2021/0706/112158_ee1ac1da_9047452.png "屏幕截图.png")
-点击“编辑”,修改参数后点击确认
+目前支持的镜像格式为qcow2和iso
+![输入图片说明](../../uploads/images/2021/developer/%E4%B8%8A%E4%BC%A0%E9%95%9C%E5%83%8F.png)
 
 ## 虚机应用开发
 1. 新建项目：点击工作空间-新建项目，选择应用集成。
 
-![输入图片说明](/uploads/images/2021/0706/095837_a0b50766_7625288.png "屏幕截图.png")
+![输入图片说明](../../uploads/images/2021/developer/%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.png)
 
-2.填写项目的基本信息。对于虚机应用，类型选择虚机，架构支持X86和ARM
+填写项目的基本信息。对于虚机应用，类型选择虚机，架构支持X86和ARM
 
-![输入图片说明](/uploads/images/2021/0706/095933_b22eab8d_7625288.png "屏幕截图.png")
+2.选择沙箱：选择沙箱，新建虚机，填写虚机应用的基本信息、资源配置、基础镜像选择、选择网络配置、以及其他主机组、注入脚本等配置。
+![输入图片说明](../../uploads/images/2021/developer/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%9C%BA.png)
 
-3.资源配置：填写虚机应用的基本信息、资源配置、基础镜像选择、选择网络配置、以及其他主机组、注入脚本等配置。
-![输入图片说明](/uploads/images/2021/0706/100022_a448ce23_7625288.png "屏幕截图.png")
+点击保存后，点击启动
+![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E9%83%A8%E7%BD%B2.png)
 
-![输入图片说明](/uploads/images/2021/0706/100113_60cb5fbb_7625288.png "屏幕截图.png")
+3.部署调测可选：部署调测过程会从openstack拉起虚机镜像，用于开发者应用开发和调测。需提前安装和配置好openstack，由于资源有限，有可能部署调测失败
+部署调测成功后，我们可以通过VNC远程登录和SSH，登录到申请的虚拟机中，也可以通过上传文件将APP应用包上传至虚拟机中，安装调测应用
 
-![输入图片说明](/uploads/images/2021/0706/100145_4a51761f_7625288.png "屏幕截图.png")
+4.制作镜像： 查看应用的基本信息，并打包预览
+![输入图片说明](../../uploads/images/2021/developer/%E5%88%B6%E4%BD%9C%E9%95%9C%E5%83%8F.png)
 
-![输入图片说明](/uploads/images/2021/0706/100223_023d24fe_7625288.png "屏幕截图.png")
+5.测试认证： 点击开始测试，选择测试场景-点击开始，该步骤会对developer生成的应用包进行相关的遵从性、生命周期、安全等测试，测试通过后可发布到appstore
 
-点击保存后，显示资源配置的详细信息
-![输入图片说明](/uploads/images/2021/0706/100300_970fa983_7625288.png "屏幕截图.png")
-
-4.部署调测可选：部署调测过程会从openstack拉起虚机镜像，用于开发者应用开发和调测。需提前安装和配置好openstack，由于资源有限，有可能部署调测失败
-![输入图片说明](/uploads/images/2021/0706/100407_8b2b296c_7625288.png "屏幕截图.png")
-部署调测成功后，我们可以通过远程登录，登录到申请的虚拟机中，也可以通过上传文件将APP应用包上传至虚拟机中，安装调测应用
-![输入图片说明](/uploads/images/2021/0706/100617_2271e07e_7625288.png "屏幕截图.png")
-
-5.应用发布：填写应用发布的基本信息，如应用的描述文档，点击应用包详情可以查看应用包的结构
-
-![输入图片说明](/uploads/images/2021/0706/100733_3799d8a7_7625288.png "屏幕截图.png")
-
-6.应用测试： 点击开始测试，选择测试场景-点击开始，该步骤会对developer生成的应用包进行相关的遵从性、生命周期、安全等测试，测试通过后可发布到appstore
-
-![输入图片说明](/uploads/images/2021/0706/100819_13dc6bf8_7625288.png "屏幕截图.png")
+![输入图片说明](../../uploads/images/2021/developer/%E6%B5%8B%E8%AF%95%E8%AE%A4%E8%AF%81.png)
 
 最后将应用发布到appstore中
 
-![输入图片说明](/uploads/images/2021/0706/100919_c3a3facb_7625288.png "屏幕截图.png")
-
-## mepagent的集成
-mepagent支持虚机方式部署，参考文档如下：
-
-https://gitee.com/edgegallery/docs/blob/master/Projects/MEP/mep-agent%E4%BD%BF%E7%94%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%96%B9%E5%BC%8F%E9%83%A8%E7%BD%B2.md
 
