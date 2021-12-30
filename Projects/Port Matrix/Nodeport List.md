@@ -20,7 +20,9 @@ Kubernetes NodePort List
 | mecm-appo | mecm-appo| mecm-appo-svc | 30201| 8091|
 | mecm-apm | mecm-apm| mecm-apm-svc | 30202| 8092|
 | mecm-inventory| mecm-inventory| mecm-inventory-svc | 30203| 8093|
+| mecm-north| mecm-north| mecm-north-svc | 30303| 8102|
 | mecm-applcm-controller| mecm-applcm-controller| mecm-applcm-controller-svc | 30204| 8094|
+| mecm-resource-controller| mecm-resource-controller| mecm-resource-controller-svc | 31952| 8098|
 | mecm-applcm-k8splugin| mecm-applcm-k8splugin| mecm-applcm-k8splugin-svc | 30205| 8095|
 | mepserver|mepserver-deploy |  mepserver-service | ClusterIP | 8080 |
 | mepauth|mepauth-deploy |mepauth-service  | ClusterIP | 8088|
