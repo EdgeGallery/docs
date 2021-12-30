@@ -17,7 +17,7 @@ Developer 特性清单
 ### 能力中心
 能力中心展示的是开发者平台所有的能力（开发者共享的能力和平台自身提供的能力）。包含详细的API描述文档，供开发者在线查看，模拟，体验。
 
-![](/uploads/images/2021/developer/abilitycenter.PNG "abilitycenter.PNG")
+![输入图片说明](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83%E9%A6%96%E9%A1%B5.png)
 
 
 ### 应用孵化
@@ -119,12 +119,10 @@ Developer 特性清单
 
     对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。
     - 选择测试场景    
-
-    ![输入图片说明](../../uploads/images/2021/developer/%E9%80%89%E6%8B%A9%E6%B5%8B%E8%AF%95%E5%9C%BA%E6%99%AF.png)
+![输入图片说明](../../uploads/images/2021/developer/%E9%80%89%E6%8B%A9%E6%B5%8B%E8%AF%95%E5%9C%BA%E6%99%AF.png)
     
     - 执行测试用例    
-
-    ![输入图片说明](../../uploads/images/2021/developer/%E6%89%A7%E8%A1%8C%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B.png)
+![输入图片说明](../../uploads/images/2021/developer/%E6%89%A7%E8%A1%8C%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B.png)
 	
 
 - 应用发布
@@ -149,8 +147,7 @@ Developer 特性清单
 #### 能力中心管理
 - 能力中心列表    
 
-![](/uploads/images/2021/developer/sys-ability.PNG "sys-ability.PNG")     
-
+![输入图片说明](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83%E5%88%97%E8%A1%A8.png)
 - 新增能力中心     
 
-![](/uploads/images/2021/developer/sys-ability-new.PNG "sys-ability-new.PNG")
+![输入图片说明](../../uploads/images/2021/developer/%E6%96%B0%E5%A2%9E%E8%83%BD%E5%8A%9B.png)
