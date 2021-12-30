@@ -7,7 +7,7 @@ The document is for the Applcm project, there is one part of interfaces in the p
 Upload Config File
 
 ```
-Resource URI: /lcmcontroller/v2/configuration
+Resource URI: /lcmcontroller/v2/tenants/{tenantId}/configuration
 Method: POST
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -19,22 +19,18 @@ Method: POST
 Example response:
 ```
 200 OK
-[
-  "response": {}
-]
-```
-
-```
-201 Created
-[
-  "response": {}
-]
+{
+    "data": null,
+    "retCode": 0,
+    "message": "Upload config is successful",
+    "params": null
+}
 ```
 
 ### Delete Config File
 Removes the config file
 ```
-Resource URI: /lcmcontroller/v2/configuration
+Resource URI: /lcmcontroller/v2/tenants/{tenantId}/configuration
 Method: DELETE
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -50,7 +46,7 @@ Example response:
 ### Instantiate Application
 Application instantiated
 ```
-Resource URI: /lcmcontroller/v2/app_instance/{appInstanceId}/instantiate
+Resource URI: /lcmcontroller/v2/tenants/{tenantId}/app_instance/{appInstanceId}/instantiate
 Method: POST
 ```
 |Name|Definition|Type|Required|Allowed|Max Length|
@@ -253,7 +249,7 @@ Example response:
 ```
 200 OK
 {
-  true
+  {"package_deployed":false}
 }
 ```
 
