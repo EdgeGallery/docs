@@ -33,13 +33,16 @@ Architecture
   
 ## K8s Plugin
  K8s Plugin is responsible for MEC application life cycle management operations on kubernetes infrastructure. K8s plugin
-  use helm
-  client to perform application life cycle management operations.
+  use helm client to perform application life cycle management operations.
 
  
 ## App Rule Manager
  APP Rule Manager is responsible for configuring application rules by sending application rule configurations to MEP.
   Application rule configurations includes the traffic rules and DNS to be configured.
+
+ 
+## Resource Controller
+ Resource Controller performs LCM operations on resources such as flavour, network, virtual machine etc...
 
 
 ## Deployment view
