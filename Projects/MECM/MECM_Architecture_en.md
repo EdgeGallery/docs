@@ -2,7 +2,7 @@ Architecture
 ==============
 
 
-![.](/uploads/images/2021/cor2020/mecm-architecture.png "mecm-architecture.png")
+![.](/uploads/images/2021/cor2020/mecm-architecture-v1.5_en.png "mecm-architecture-v1.5_en.png")
 
 
 ## Application Package Manager
