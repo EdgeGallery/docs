@@ -20,9 +20,11 @@ Architecture
  Inventory provides realtime view of deployed applications on the edge hosts and applications configurations. Inventory
   is also used for external system registrations.
 
+
 ## North
  North provides interface to obtain the host list and application distribution deployment. At present, it mainly helps   
   the Appstore implement the subscription function.
+
 
 ## LCM Controller
  LCM Controller is responsible MEC application life cycle management operations by sending requests to appropriate
