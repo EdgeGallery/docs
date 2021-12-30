@@ -49,3 +49,7 @@ MECM Product Document
 ##### 4.1 MEPM注册 
 ##### 4.4 应用仓库注册
 ![](/uploads/images/2021/mecm/25.png) 
+
+#### V1.5版本新增特性如下：
+OpenStack节点资源管理功能，通过资源管理界面可对注册的边缘节点（OpenStack）进行基础的管理操作
+![](/uploads/images/2021/mecm/26.png) 
