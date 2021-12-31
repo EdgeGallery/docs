@@ -777,3 +777,367 @@ Method: GET
 	"subscribeRelations": []
 }
 ```
+
+### Create Flavor
+Create Flavor
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/flavors
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|flavorInfo|Flavor|body|yes|
+
+Example response:
+```
+200 OK
+```
+
+### Query Flavor
+Query Flavor
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/flavors/:flavorId
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|flavorId |flavor Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Delete Flavor
+Delete Flavor
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/flavors/:flavorId
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|flavorId |flavor Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Create Server
+Create Server
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/servers
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|serverInfo|Server|body|yes|
+
+Example response:
+```
+200 OK
+```
+
+### Query Server
+Query Server
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/servers/:serverId
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|serverId |server Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Delete Server
+Delete Server
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/servers/:serverId
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|serverId |server Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Operate Server
+Operate Server
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/servers/:serverId
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|serverId |server Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Create Image
+Create Image
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/images/:imageId
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|imageId |image Id|path |yes|Valid UUID|64|
+|imageInfo|Image|body|yes|
+
+Example response:
+```
+200 OK
+```
+
+### Import Image
+Import Image
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/images/:imageId
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|imageId |image Id|path |yes|Valid UUID|64|
+|importImageInfo|ImportImage|body|yes|
+
+Example response:
+```
+200 OK
+```
+
+### Query Image
+Query Image
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/images/:imageId
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|imageId |image Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Delete Image
+Delete Image
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/images/:imageId
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|imageId |image Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Create Security Group
+Create Security Group
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/securityGroups
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|securityGroupInfo|SecurityGroup|body|yes|
+
+Example response:
+```
+200 OK
+```
+
+### Query Security Group
+Query Security Group
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/securityGroups/:securityGroupId
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|securityGroupId |security group Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Delete Security Group
+Delete Security Group
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/securityGroups/:securityGroupId
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|securityGroupId |security group Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Create Security Group rule
+Create Security Group rule
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/securityGroups/:securityGroupId/securityGroupRules
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|securityGroupId |security group Id|path |yes|Valid UUID|64|
+|securityGroupRulesInfo|SecurityGroupRules|body|yes|
+
+Example response:
+```
+200 OK
+```
+
+### Query Security Group rule
+Query Security Group rule
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/securityGroups/:securityGroupId/securityGroupRules
+Method: GET
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|securityGroupId |security group Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Delete Security Group rule
+Delete Security Group rule
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/securityGroups/:securityGroupId/securityGroupRules/:securityGroupRuleId
+Method: DELETE
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|securityGroupId |security group Id|path |yes|Valid UUID|64|
+|securityGroupRuleId |security group rule Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Create Network
+Create Network
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/networks
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|networkInfo|Network|body|yes|
+
+Example response:
+```
+200 OK
+```
+
+### Query Network
+Query Network
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/networks/:networkId
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|networkId |network Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
+
+### Delete Network
+Delete Network
+```
+Resource URI: /rescontroller/v1/tenants/:tenantId/hosts/:hostIp/networks/:networkId
+Method: POST
+```
+|Name|Definition|Type|Required|Allowed|Max Length|
+|---|---|---|---|---|---|
+|access_token |access token|header |yes|Jwt Token|
+|hostIp|host Ip|path |yes|Valid IP Address|15|
+|tenantId |tenant Id|path |yes|Valid UUID|64|
+|networkId |network Id|path |yes|Valid UUID|64|
+
+Example response:
+```
+200 OK
+```
