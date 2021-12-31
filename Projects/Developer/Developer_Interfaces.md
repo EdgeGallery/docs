@@ -13,7 +13,7 @@ Developer Interfaces
     - [1.9 GET api content](#get-api-content)
   - [2. Container Image](#container-image)
     - [2.1 POST upload container image](#post-upload-container-image)
-    - [2.2 DELETE upload container image](#delete-upload-container-image)
+    - [2.2 Cancel upload container image](#delete-upload-container-image)
     - [2.3 PUT modify image](#put-modify-image)
     - [2.4 DELETE container image](#delete-container-image)
     - [2.5 GET download image](#get-download-image)
@@ -503,7 +503,7 @@ Resource URI: /mec/developer/v2/containerimages/{imageId}/action/upload
 }
 ```
 
-### 2.2 DELETE upload container image 
+### 2.2 Cancel upload container image 
 cancel upload image
 ```
 Resource URI: /mec/developer/v2/containerimages/{imageId}/action/upload
@@ -730,134 +730,18 @@ Resource URI: /mec/developer/v2/applications/
       "packageFileName": "string",
       "packageFilePath": "string"
     },
-    "atpTestTaskList": [
-      {
-        "id": "string",
-        "appName": "string",
-        "status": "string",
-        "createTime": "string"
-      }
-    ],
+    "atpTestTaskList": [],
     "appConfiguration": {
       "appCertificate": {
         "ak": "string",
         "sk": "string"
       },
-      "appServiceProducedList": [
-        {
-          "appServiceProducedId": "string",
-          "oneLevelName": "string",
-          "oneLevelNameEn": "string",
-          "twoLevelName": "string",
-          "description": "string",
-          "apiFileId": "string",
-          "guideFileId": "string",
-          "iconFileId": "string",
-          "serviceName": "string",
-          "internalPort": 0,
-          "version": "string",
-          "protocol": "string",
-          "author": "string",
-          "experienceUrl": "string",
-          "dnsRuleIdList": [
-            "string"
-          ],
-          "trafficRuleIdList": [
-            "string"
-          ]
-        }
-      ],
-      "appServiceRequiredList": [
-        {
-          "id": "string",
-          "oneLevelName": "string",
-          "oneLevelNameEn": "string",
-          "twoLevelName": "string",
-          "twoLevelNameEn": "string",
-          "serName": "string",
-          "version": "string",
-          "requestedPermissions": false,
-          "appId": "string",
-          "packageId": "string"
-        }
-      ],
-      "trafficRuleList": [
-        {
-          "trafficRuleId": "string",
-          "filterType": "string",
-          "priority": 0,
-          "trafficFilter": [
-            {
-              "srcAddress": [
-                "string"
-              ],
-              "dstAddress": [
-                "string"
-              ],
-              "srcPort": [
-                "string"
-              ],
-              "dstPort": [
-                "string"
-              ],
-              "protocol": [
-                "string"
-              ],
-              "tag": [
-                "string"
-              ],
-              "srcTunnelAddress": [
-                "string"
-              ],
-              "tgtTunnelAddress": [
-                "string"
-              ],
-              "srcTunnelPort": [
-                "string"
-              ],
-              "dstTunnelPort": [
-                "string"
-              ],
-              "qCI": 0,
-              "dSCP": 0,
-              "tC": 0
-            }
-          ],
-          "action": "string",
-          "dstInterface": [
-            {
-              "interfaceType": "string",
-              "tunnelInfo": {
-                "tunnelType": "string",
-                "tunnelDstAddress": "string",
-                "tunnelSrcAddress": "string",
-                "tunnelSpecificData": "string"
-              },
-              "srcMacAddress": "string",
-              "dstMacAddress": "string",
-              "dstIpAddress": "string"
-            }
-          ]
-        }
-      ],
-      "dnsRuleList": [
-        {
-          "dnsRuleId": "string",
-          "domainName": "string",
-          "ipAddressType": "string",
-          "ipAddress": "string",
-          "ttl": "string"
-        }
-      ]
+      "appServiceProducedList": [],
+      "appServiceRequiredList": [],
+      "trafficRuleList": [],
+      "dnsRuleList": []
     },
-    "scriptList": [
-      {
-        "id": "string",
-        "name": "string",
-        "scriptFileId": "string",
-        "createTime": "2021-12-29T06:44:05.343Z"
-      }
-    ]
+    "scriptList": []
   }
 ]
 ```
@@ -899,134 +783,18 @@ Resource URI:  /mec/developer/v2/applications/{applictaionId}
     "packageFileName": "string",
     "packageFilePath": "string"
   },
-  "atpTestTaskList": [
-    {
-      "id": "string",
-      "appName": "string",
-      "status": "string",
-      "createTime": "string"
-    }
-  ],
+  "atpTestTaskList": [],
   "appConfiguration": {
     "appCertificate": {
       "ak": "string",
       "sk": "string"
-    },
-    "appServiceProducedList": [
-      {
-        "appServiceProducedId": "string",
-        "oneLevelName": "string",
-        "oneLevelNameEn": "string",
-        "twoLevelName": "string",
-        "description": "string",
-        "apiFileId": "string",
-        "guideFileId": "string",
-        "iconFileId": "string",
-        "serviceName": "string",
-        "internalPort": 0,
-        "version": "string",
-        "protocol": "string",
-        "author": "string",
-        "experienceUrl": "string",
-        "dnsRuleIdList": [
-          "string"
-        ],
-        "trafficRuleIdList": [
-          "string"
-        ]
-      }
-    ],
-    "appServiceRequiredList": [
-      {
-        "id": "string",
-        "oneLevelName": "string",
-        "oneLevelNameEn": "string",
-        "twoLevelName": "string",
-        "twoLevelNameEn": "string",
-        "serName": "string",
-        "version": "string",
-        "requestedPermissions": false,
-        "appId": "string",
-        "packageId": "string"
-      }
-    ],
-    "trafficRuleList": [
-      {
-        "trafficRuleId": "string",
-        "filterType": "string",
-        "priority": 0,
-        "trafficFilter": [
-          {
-            "srcAddress": [
-              "string"
-            ],
-            "dstAddress": [
-              "string"
-            ],
-            "srcPort": [
-              "string"
-            ],
-            "dstPort": [
-              "string"
-            ],
-            "protocol": [
-              "string"
-            ],
-            "tag": [
-              "string"
-            ],
-            "srcTunnelAddress": [
-              "string"
-            ],
-            "tgtTunnelAddress": [
-              "string"
-            ],
-            "srcTunnelPort": [
-              "string"
-            ],
-            "dstTunnelPort": [
-              "string"
-            ],
-            "qCI": 0,
-            "dSCP": 0,
-            "tC": 0
-          }
-        ],
-        "action": "string",
-        "dstInterface": [
-          {
-            "interfaceType": "string",
-            "tunnelInfo": {
-              "tunnelType": "string",
-              "tunnelDstAddress": "string",
-              "tunnelSrcAddress": "string",
-              "tunnelSpecificData": "string"
-            },
-            "srcMacAddress": "string",
-            "dstMacAddress": "string",
-            "dstIpAddress": "string"
-          }
-        ]
-      }
-    ],
-    "dnsRuleList": [
-      {
-        "dnsRuleId": "string",
-        "domainName": "string",
-        "ipAddressType": "string",
-        "ipAddress": "string",
-        "ttl": "string"
-      }
-    ]
+   },
+    "appServiceProducedList": [],
+    "appServiceRequiredList": [],
+    "trafficRuleList": [],
+    "dnsRuleList": []
   },
-  "scriptList": [
-    {
-      "id": "string",
-      "name": "string",
-      "scriptFileId": "string",
-      "createTime": "2021-12-29T06:44:05.343Z"
-    }
-  ]
+  "scriptList": []
 }
 ```
 
@@ -1042,7 +810,6 @@ Resource URI: /mec/developer/v2/applications
 ```
 Application:
 {
-  "id": "string",
   "name": "string",
   "description": "string",
   "version": "string",
@@ -1054,138 +821,9 @@ Application:
   "iconFileId": "string",
   "guideFileId": "string",
   "appCreateType": "INTEGRATED",
-  "createTime": "string",
-  "status": "CREATED",
   "userId": "string",
   "userName": "string",
-  "mepHostId": "string",
   "pkgSpecId": "string",
-  "appPackage": {
-    "id": "string",
-    "appId": "string",
-    "packageFileName": "string",
-    "packageFilePath": "string"
-  },
-  "atpTestTaskList": [
-    {
-      "id": "string",
-      "appName": "string",
-      "status": "string",
-      "createTime": "string"
-    }
-  ],
-  "appConfiguration": {
-    "appCertificate": {
-      "ak": "string",
-      "sk": "string"
-    },
-    "appServiceProducedList": [
-      {
-        "appServiceProducedId": "string",
-        "oneLevelName": "string",
-        "oneLevelNameEn": "string",
-        "twoLevelName": "string",
-        "description": "string",
-        "apiFileId": "string",
-        "guideFileId": "string",
-        "iconFileId": "string",
-        "serviceName": "string",
-        "internalPort": 0,
-        "version": "string",
-        "protocol": "string",
-        "author": "string",
-        "experienceUrl": "string",
-        "dnsRuleIdList": [
-          "string"
-        ],
-        "trafficRuleIdList": [
-          "string"
-        ]
-      }
-    ],
-    "appServiceRequiredList": [
-      {
-        "id": "string",
-        "oneLevelName": "string",
-        "oneLevelNameEn": "string",
-        "twoLevelName": "string",
-        "twoLevelNameEn": "string",
-        "serName": "string",
-        "version": "string",
-        "requestedPermissions": false,
-        "appId": "string",
-        "packageId": "string"
-      }
-    ],
-    "trafficRuleList": [
-      {
-        "trafficRuleId": "string",
-        "filterType": "string",
-        "priority": 0,
-        "trafficFilter": [
-          {
-            "srcAddress": [
-              "string"
-            ],
-            "dstAddress": [
-              "string"
-            ],
-            "srcPort": [
-              "string"
-            ],
-            "dstPort": [
-              "string"
-            ],
-            "protocol": [
-              "string"
-            ],
-            "tag": [
-              "string"
-            ],
-            "srcTunnelAddress": [
-              "string"
-            ],
-            "tgtTunnelAddress": [
-              "string"
-            ],
-            "srcTunnelPort": [
-              "string"
-            ],
-            "dstTunnelPort": [
-              "string"
-            ],
-            "qCI": 0,
-            "dSCP": 0,
-            "tC": 0
-          }
-        ],
-        "action": "string",
-        "dstInterface": [
-          {
-            "interfaceType": "string",
-            "tunnelInfo": {
-              "tunnelType": "string",
-              "tunnelDstAddress": "string",
-              "tunnelSrcAddress": "string",
-              "tunnelSpecificData": "string"
-            },
-            "srcMacAddress": "string",
-            "dstMacAddress": "string",
-            "dstIpAddress": "string"
-          }
-        ]
-      }
-    ],
-    "dnsRuleList": [
-      {
-        "dnsRuleId": "string",
-        "domainName": "string",
-        "ipAddressType": "string",
-        "ipAddress": "string",
-        "ttl": "string"
-      }
-    ]
-  },
   "scriptList": [
     {
       "id": "string",
@@ -1223,134 +861,18 @@ Application:
     "packageFileName": "string",
     "packageFilePath": "string"
   },
-  "atpTestTaskList": [
-    {
-      "id": "string",
-      "appName": "string",
-      "status": "string",
-      "createTime": "string"
-    }
-  ],
+  "atpTestTaskList": [],
   "appConfiguration": {
     "appCertificate": {
       "ak": "string",
       "sk": "string"
-    },
-    "appServiceProducedList": [
-      {
-        "appServiceProducedId": "string",
-        "oneLevelName": "string",
-        "oneLevelNameEn": "string",
-        "twoLevelName": "string",
-        "description": "string",
-        "apiFileId": "string",
-        "guideFileId": "string",
-        "iconFileId": "string",
-        "serviceName": "string",
-        "internalPort": 0,
-        "version": "string",
-        "protocol": "string",
-        "author": "string",
-        "experienceUrl": "string",
-        "dnsRuleIdList": [
-          "string"
-        ],
-        "trafficRuleIdList": [
-          "string"
-        ]
-      }
-    ],
-    "appServiceRequiredList": [
-      {
-        "id": "string",
-        "oneLevelName": "string",
-        "oneLevelNameEn": "string",
-        "twoLevelName": "string",
-        "twoLevelNameEn": "string",
-        "serName": "string",
-        "version": "string",
-        "requestedPermissions": false,
-        "appId": "string",
-        "packageId": "string"
-      }
-    ],
-    "trafficRuleList": [
-      {
-        "trafficRuleId": "string",
-        "filterType": "string",
-        "priority": 0,
-        "trafficFilter": [
-          {
-            "srcAddress": [
-              "string"
-            ],
-            "dstAddress": [
-              "string"
-            ],
-            "srcPort": [
-              "string"
-            ],
-            "dstPort": [
-              "string"
-            ],
-            "protocol": [
-              "string"
-            ],
-            "tag": [
-              "string"
-            ],
-            "srcTunnelAddress": [
-              "string"
-            ],
-            "tgtTunnelAddress": [
-              "string"
-            ],
-            "srcTunnelPort": [
-              "string"
-            ],
-            "dstTunnelPort": [
-              "string"
-            ],
-            "qCI": 0,
-            "dSCP": 0,
-            "tC": 0
-          }
-        ],
-        "action": "string",
-        "dstInterface": [
-          {
-            "interfaceType": "string",
-            "tunnelInfo": {
-              "tunnelType": "string",
-              "tunnelDstAddress": "string",
-              "tunnelSrcAddress": "string",
-              "tunnelSpecificData": "string"
-            },
-            "srcMacAddress": "string",
-            "dstMacAddress": "string",
-            "dstIpAddress": "string"
-          }
-        ]
-      }
-    ],
-    "dnsRuleList": [
-      {
-        "dnsRuleId": "string",
-        "domainName": "string",
-        "ipAddressType": "string",
-        "ipAddress": "string",
-        "ttl": "string"
-      }
-    ]
+   },
+    "appServiceProducedList": [],
+    "appServiceRequiredList": [],
+    "trafficRuleList": [],
+    "dnsRuleList": []
   },
-  "scriptList": [
-    {
-      "id": "string",
-      "name": "string",
-      "scriptFileId": "string",
-      "createTime": "2021-12-29T06:44:05.343Z"
-    }
-  ]
+  "scriptList": []
 }
 ```
 
@@ -1394,146 +916,12 @@ Application
   "iconFileId": "string",
   "guideFileId": "string",
   "appCreateType": "INTEGRATED",
-  "createTime": "string",
   "status": "CREATED",
   "userId": "string",
   "userName": "string",
   "mepHostId": "string",
   "pkgSpecId": "string",
-  "appPackage": {
-    "id": "string",
-    "appId": "string",
-    "packageFileName": "string",
-    "packageFilePath": "string"
-  },
-  "atpTestTaskList": [
-    {
-      "id": "string",
-      "appName": "string",
-      "status": "string",
-      "createTime": "string"
-    }
-  ],
-  "appConfiguration": {
-    "appCertificate": {
-      "ak": "string",
-      "sk": "string"
-    },
-    "appServiceProducedList": [
-      {
-        "appServiceProducedId": "string",
-        "oneLevelName": "string",
-        "oneLevelNameEn": "string",
-        "twoLevelName": "string",
-        "description": "string",
-        "apiFileId": "string",
-        "guideFileId": "string",
-        "iconFileId": "string",
-        "serviceName": "string",
-        "internalPort": 0,
-        "version": "string",
-        "protocol": "string",
-        "author": "string",
-        "experienceUrl": "string",
-        "dnsRuleIdList": [
-          "string"
-        ],
-        "trafficRuleIdList": [
-          "string"
-        ]
-      }
-    ],
-    "appServiceRequiredList": [
-      {
-        "id": "string",
-        "oneLevelName": "string",
-        "oneLevelNameEn": "string",
-        "twoLevelName": "string",
-        "twoLevelNameEn": "string",
-        "serName": "string",
-        "version": "string",
-        "requestedPermissions": false,
-        "appId": "string",
-        "packageId": "string"
-      }
-    ],
-    "trafficRuleList": [
-      {
-        "trafficRuleId": "string",
-        "filterType": "string",
-        "priority": 0,
-        "trafficFilter": [
-          {
-            "srcAddress": [
-              "string"
-            ],
-            "dstAddress": [
-              "string"
-            ],
-            "srcPort": [
-              "string"
-            ],
-            "dstPort": [
-              "string"
-            ],
-            "protocol": [
-              "string"
-            ],
-            "tag": [
-              "string"
-            ],
-            "srcTunnelAddress": [
-              "string"
-            ],
-            "tgtTunnelAddress": [
-              "string"
-            ],
-            "srcTunnelPort": [
-              "string"
-            ],
-            "dstTunnelPort": [
-              "string"
-            ],
-            "qCI": 0,
-            "dSCP": 0,
-            "tC": 0
-          }
-        ],
-        "action": "string",
-        "dstInterface": [
-          {
-            "interfaceType": "string",
-            "tunnelInfo": {
-              "tunnelType": "string",
-              "tunnelDstAddress": "string",
-              "tunnelSrcAddress": "string",
-              "tunnelSpecificData": "string"
-            },
-            "srcMacAddress": "string",
-            "dstMacAddress": "string",
-            "dstIpAddress": "string"
-          }
-        ]
-      }
-    ],
-    "dnsRuleList": [
-      {
-        "dnsRuleId": "string",
-        "domainName": "string",
-        "ipAddressType": "string",
-        "ipAddress": "string",
-        "ttl": "string"
-      }
-    ]
-  },
-  "scriptList": [
-    {
-      "id": "string",
-      "name": "string",
-      "scriptFileId": "string",
-      "createTime": "2021-12-29T07:10:56.154Z"
-    }
-  ]
+  "scriptList": []
 }
 ```
 **Example response**
@@ -2536,7 +1924,6 @@ Resource URI: /mec/developer/v2/mephosts/
 ```
 MepHost
 {
-  "id": "string",
   "name": "string",
   "lcmIp": "string",
   "lcmProtocol": "string",
@@ -3309,7 +2696,6 @@ Resource URI: /mec/developer/v2/flavors
 ```
 flavor
 {
-  "id": "string",
   "name": "string",
   "description": "string",
   "architecture": "string",
@@ -3508,7 +2894,6 @@ Resource URI: /mec/developer/v2/applications/{applicationId}/vms
 ```
 virtualMachine:
 {
-  "id": "string",
   "name": "string",
   "flavorId": "string",
   "imageId": 0,
@@ -3532,40 +2917,7 @@ virtualMachine:
       "networkName": "string"
     }
   ],
-  "status": "NOT_DEPLOY",
-  "areaZone": "string",
-  "flavorExtraSpecs": "string",
-  "vmInstantiateInfo": {
-    "operationId": "string",
-    "appPackageId": "string",
-    "distributedMecHost": "string",
-    "mepmPackageId": "string",
-    "appInstanceId": "string",
-    "vmInstanceId": "string",
-    "status": "PACKAGE_GENERATING",
-    "instantiateTime": "2021-12-29T13:52:32.321Z",
-    "log": "string",
-    "vncUrl": "string",
-    "portInstanceList": [
-      {
-        "networkName": "string",
-        "ipAddress": "string"
-      }
-    ]
-  },
-  "imageExportInfo": {
-    "operationId": "string",
-    "imageInstanceId": "string",
-    "name": "string",
-    "imageFileName": "string",
-    "format": "string",
-    "checkSum": "string",
-    "status": "IMAGE_CREATING",
-    "downloadUrl": "string",
-    "imageSize": "string",
-    "createTime": "2021-12-29T13:52:32.321Z",
-    "log": "string"
-  }
+  "flavorExtraSpecs": "string"
 }
 ```
 **Example response**
@@ -3748,38 +3100,7 @@ virtualMachine:
   ],
   "status": "NOT_DEPLOY",
   "areaZone": "string",
-  "flavorExtraSpecs": "string",
-  "vmInstantiateInfo": {
-    "operationId": "string",
-    "appPackageId": "string",
-    "distributedMecHost": "string",
-    "mepmPackageId": "string",
-    "appInstanceId": "string",
-    "vmInstanceId": "string",
-    "status": "PACKAGE_GENERATING",
-    "instantiateTime": "2021-12-29T13:52:32.321Z",
-    "log": "string",
-    "vncUrl": "string",
-    "portInstanceList": [
-      {
-        "networkName": "string",
-        "ipAddress": "string"
-      }
-    ]
-  },
-  "imageExportInfo": {
-    "operationId": "string",
-    "imageInstanceId": "string",
-    "name": "string",
-    "imageFileName": "string",
-    "format": "string",
-    "checkSum": "string",
-    "status": "IMAGE_CREATING",
-    "downloadUrl": "string",
-    "imageSize": "string",
-    "createTime": "2021-12-29T13:52:32.321Z",
-    "log": "string"
-  }
+  "flavorExtraSpecs": "string"
 }
 ```
 
@@ -6569,27 +5890,12 @@ Resource URI: /mec/developer/v2/vmimages
 ```
 VmImage
 {
-  "id": 0,
   "visibleType": "public",
   "osType": "ubuntu",
   "osVersion": "string",
   "osBitType": "string",
   "systemDiskSize": 0,
-  "name": "string",
-  "imageFileName": "string",
-  "createTime": "string",
-  "modifyTime": "string",
-  "imageFormat": "string",
-  "uploadTime": "string",
-  "downLoadUrl": "string",
-  "imageSize": 0,
-  "status": "UPLOAD_WAIT",
-  "imageSlimStatus": "SLIM_WAIT",
-  "userId": "string",
-  "userName": "string",
-  "fileMd5": "string",
-  "fileIdentifier": "string",
-  "errorType": "string"
+  "name": "string"
 }
 ```
 
@@ -6655,21 +5961,7 @@ VmImage
   "osVersion": "string",
   "osBitType": "string",
   "systemDiskSize": 0,
-  "name": "string",
-  "imageFileName": "string",
-  "createTime": "string",
-  "modifyTime": "string",
-  "imageFormat": "string",
-  "uploadTime": "string",
-  "downLoadUrl": "string",
-  "imageSize": 0,
-  "status": "UPLOAD_WAIT",
-  "imageSlimStatus": "SLIM_WAIT",
-  "userId": "string",
-  "userName": "string",
-  "fileMd5": "string",
-  "fileIdentifier": "string",
-  "errorType": "string"
+  "name": "string"
 }
 ```
 
