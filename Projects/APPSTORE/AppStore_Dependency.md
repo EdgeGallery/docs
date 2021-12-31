@@ -252,3 +252,4 @@
 |dependencies|vue-router|3.1.3|MIT|Y|
 |devDependencies|vue-template-compiler|2.6.11|MIT|Y|
 |dependencies|vuex|3.1.1|MIT|Y|
+|dependencies|jquery|3.6.0|MIT|Y|
