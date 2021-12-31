@@ -38,11 +38,28 @@ MEC_APP_Public, MEC_APP_Private, MEC_APP_MP1;
 ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Flavor.png "实例类型.png")
 
 ## 配置路由
+
+openstack 自身就有一条public网络是和主机之间是能通信的
+![输入图片说明](../../uploads/images/2021/developer/image-openstack-01.png)
+创建的虚拟机MEC_APP_Private网络需要通过这个public网络才能进行外部访问,所以需要新建路由：
+![输入图片说明](../../uploads/images/2021/developer/image-openstack-02.png)
+配置后虚拟机就能访问安装openstack的主机了。
+
+主机需要访问openstack的虚机也需要添加类似的路由：
+
+route add -net 192.168.220.0 netmask 255.255.255.0 gw 172.24.4.60
+
+![输入图片说明](../../uploads/images/2021/developer/image-openstack-03.png)
+
+部署EdgeGalley的主机需要和OpenStack网络打通
+
 developer平台跟虚机的网络是通过MEC_APP_Private进行打通，需配置developer与openstack的路由：
 
 developer后台通往openstack路由配置，参考如下：
+
 route add -net 192.168.220.0 netmask 255.255.255.0 gw 192.168.1.156  其中，192.168.220.0为MEC_APP_Private 子网ip, 192.168.1.156为openstack ip
 
+通过以上配置developer后台就与openstack之间网络就配置通了。
 
 
 
