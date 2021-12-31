@@ -36,3 +36,13 @@ MEC_APP_Public, MEC_APP_Private, MEC_APP_MP1;
 创建以下几个规格示例类型，配置与实际的规格对应1c（CPU1核）、1024m（内存1024M）、40g（硬盘40G）
 1c-1024m-40g、2c-4096m-40g
 ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Flavor.png "实例类型.png")
+
+## 配置路由
+developer平台跟虚机的网络是通过MEC_APP_Private进行打通，需配置developer与openstack的路由：
+
+developer后台通往openstack路由配置，参考如下：
+route add -net 192.168.220.0 netmask 255.255.255.0 gw 192.168.1.156  其中，192.168.220.0为MEC_APP_Private 子网ip, 192.168.1.156为openstack ip
+
+
+
+
