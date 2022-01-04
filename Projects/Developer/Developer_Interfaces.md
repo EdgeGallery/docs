@@ -2662,8 +2662,6 @@ Get all flavor
 ```
 Resource URI: /mec/developer/v2/flavor
 ```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
 
 **Example response**
 ```
@@ -5006,8 +5004,6 @@ query all pkg specs
 ```
 Resource URI: /mec/developer/v2/pkg-specs
 ```
-|Name|Definition|Type|Required|
-|-------------|-------------|------------|------------|
 
 **Example response**
 ```
