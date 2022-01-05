@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,11 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../Projects/MECM/MECM_AppLcm_Dependency.md:1
-msgid "rely LcmController Third-Party Use List"
+msgid "rely"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppLcm_Dependency.md:5
+msgid "LcmController Third-Party Use List"
 msgstr ""
 
 #: ../../Projects/MECM/MECM_AppLcm_Dependency.md
@@ -173,7 +177,7 @@ msgstr ""
 msgid "gopkg.in/natefinch/lumberjack.v2"
 msgstr ""
 
-#: ../../Projects/MECM/MECM_AppLcm_Dependency.md:21
+#: ../../Projects/MECM/MECM_AppLcm_Dependency.md:24
 msgid "K8sPlugin Third-Party Use List"
 msgstr ""
 
@@ -224,4 +228,7 @@ msgstr ""
 #: ../../Projects/MECM/MECM_AppLcm_Dependency.md
 msgid "v0.0.3"
 msgstr ""
+
+#~ msgid "rely LcmController Third-Party Use List"
+#~ msgstr ""
 

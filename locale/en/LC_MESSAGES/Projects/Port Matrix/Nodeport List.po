@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-09 10:45+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -293,6 +293,26 @@ msgid "8093"
 msgstr "8093"
 
 #: ../../Projects/Port List.md Matrix/Nodeport
+#, fuzzy
+msgid "mecm-north"
+msgstr "mecm-inventory"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+#, fuzzy
+msgid "mecm-north-svc"
+msgstr "mecm-inventory-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+#, fuzzy
+msgid "30303"
+msgstr "30203"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+#, fuzzy
+msgid "8102"
+msgstr "8092"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
 msgid "mecm-applcm-controller"
 msgstr "mecm-applcm-controller"
 
@@ -307,6 +327,26 @@ msgstr "30204"
 #: ../../Projects/Port List.md Matrix/Nodeport
 msgid "8094"
 msgstr "8094"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+#, fuzzy
+msgid "mecm-resource-controller"
+msgstr "mecm-applcm-controller"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+#, fuzzy
+msgid "mecm-resource-controller-svc"
+msgstr "mecm-applcm-controller-svc"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+#, fuzzy
+msgid "31952"
+msgstr "30092"
+
+#: ../../Projects/Port List.md Matrix/Nodeport
+#, fuzzy
+msgid "8098"
+msgstr "8099"
 
 #: ../../Projects/Port List.md Matrix/Nodeport
 msgid "mecm-applcm-k8splugin"
@@ -384,7 +424,7 @@ msgstr "pg-deploy"
 msgid "pg-service"
 msgstr "pg-service"
 
-#: ../../Projects/Port List.md:30 Matrix/Nodeport
+#: ../../Projects/Port List.md:32 Matrix/Nodeport
 msgid "ServiceComb NodePort List"
 msgstr "ServiceComb NodePort List"
 
@@ -416,7 +456,7 @@ msgstr "user-mgmt-be"
 msgid "user-mgmt-fe"
 msgstr "user-mgmt-fe"
 
-#: ../../Projects/Port List.md:41 Matrix/Nodeport
+#: ../../Projects/Port List.md:43 Matrix/Nodeport
 msgid "`All services registered to the service center`"
 msgstr "`All services registered to the service center`"
 

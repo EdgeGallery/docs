@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-15 06:58+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,41 +22,202 @@ msgid "开发者指导"
 msgstr "Developer Guide"
 
 #: ../../Developer Guide/ReadMe.md:4
-msgid "[APPStore](../Projects/APPSTORE/AppStore_Contribution.md)"
+msgid "EdgeGallery业务开发指导"
 msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:6
-msgid "[Developer](../Projects/Developer/Developer_Contribution.md)"
+msgid "[APPStore](../Projects/APPSTORE/AppStore_Contribution.md)"
 msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:8
-msgid "MECM"
-msgstr ""
-
-#: ../../Developer Guide/ReadMe.md:9
-msgid "[APM](../Projects/MECM/MECM_Apm_Contribution.md)"
+msgid "[Developer](../Projects/Developer/Developer_Contribution.md)"
 msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:10
-msgid "[APPO](../Projects/MECM/MECM_Appo_Contribution.md)"
+msgid "MECM"
 msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:11
-msgid "[Inventory](../Projects/MECM/MECM_Inventory_Contribution.md)"
+msgid "[APM](../Projects/MECM/MECM_Apm_Contribution.md)"
 msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:12
-msgid "[APPLCM](../Projects/MECM/MECM_LCM_controller_Contribution.md)"
+msgid "[APPO](../Projects/MECM/MECM_Appo_Contribution.md)"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:13
+msgid "[Inventory](../Projects/MECM/MECM_Inventory_Contribution.md)"
 msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:14
-msgid "[MEP](../Projects/MEP/MEP_Contribution.md)"
+msgid "[APPLCM](../Projects/MECM/MECM_LCM_controller_Contribution.md)"
 msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:16
-msgid "[User Management](../Projects/User%20Management/User_Contribution.md)"
+msgid "[MEP](../Projects/MEP/MEP_Contribution.md)"
 msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:18
+msgid "[User Management](../Projects/User%20Management/User_Contribution.md)"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:20
 msgid "[ATP](../Projects/ATP/ATP_Contribution.md)"
 msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:22
+msgid "北向接口调用指导"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:24
+msgid "EdgeGallery支持第三方业务系统通过北向接口网关调用EdgeGallery的业务接口。调用流程如下图所示："
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:26
+msgid "![北向接口调用流程](../uploads/images/2021/common/northapi-arch.png)"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:28
+msgid "北向接口调用endpoint"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:30
+msgid "目前由WebsiteGateway来承担北向接口网关的职责，具体是由通过WebsiteGateway运行起来的各业务平台前端来承担。"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:32
+msgid "所以北向接口调用的endpoint可以使用任意一个业务平台前端的endpoint。如下："
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:71
+msgid "获取XSRF-TOKEN"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:73
+msgid "在调用获取AccessToken的接口和各平台的业务接口之前，需要先获取到XSRF-TOKEN。"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:80 Guide/ReadMe.md:107
+msgid "Example request:"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:86 Guide/ReadMe.md:118
+msgid "Example response:"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:95
+msgid "获取AccessToken"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "Name"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "Definition"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "Type"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "Required"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "Describe"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "X-XSRF-TOKEN"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "XSRF-TOKEN"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "header"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "是"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "userFlag"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "登录凭证（用户名/邮箱/手机号）"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "body"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "password"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md
+msgid "密码"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:141
+msgid "调用业务接口"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:143
+msgid "各平台提供的业务接口，参考各模块的接口文档。"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:145
+msgid "北向业务接口URL格式"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:147
+msgid "通过北向接口调用各平台的业务接口时，URL按照如下格式调用："
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:153
+msgid "其中urlPrefix是各平台在网关中定义的路由前缀，定义如下表所示："
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:190
+msgid "北向业务接口请求头"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:192
+msgid "通过北向接口调用各平台的业务接口时，需要传递如下请求头："
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:213
+msgid "北向业务接口调用示例"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:215
+msgid "AppStore平台提供了获取应用列表的接口： GET /mec/appstore/v1/apps"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:218
+msgid "北向调用："
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:224
+msgid "第三方IAM对接开发指导"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:226
+msgid "EdgeGallery支持对接使用第三方IAM帐号系统。"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:228
+msgid "在部署EdgeGallery时请参考：[离线安装指导](https://gitee.com/edgegallery/installer/tree/master/ansible_install)中的说明开启第三方IAM使能开关。"
+msgstr ""
+
+#: ../../Developer Guide/ReadMe.md:230
+msgid "对于第三方IAM帐号系统，需要实现如下接口："
+msgstr ""
+

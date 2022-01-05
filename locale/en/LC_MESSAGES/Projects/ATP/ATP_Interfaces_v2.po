@@ -1,0 +1,739 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1
+msgid "atp v2 Interfaces"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:3
+msgid "[atp v2 Interfaces](#atp-v2-interfaces)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:4
+msgid "[1. Task](#task)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:5
+msgid "[1.1 POST create test task](#post-create-test-task)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:6
+msgid "[1.2 POST run test task](#post-run-test-task)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:7
+msgid "[1.3 GET get task list](#get-get-task-list)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:8
+msgid "[1.4 GET get one task](#get-get-one-task)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:9
+msgid "[1.5 PUT modify test case status](#put-modify-test-case-status)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:10
+msgid "[1.6 POST batch delete test tasks](#post-batch-delete-test-tasks)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:11
+msgid "[1.7 GET get test tasks analysis](#get-get-test-tasks-analysis)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:12
+msgid "[1.8 DELETE delete one test task](#delete-delete-one-test-task)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:13
+msgid "[1.9 POST upload self test report](#post-upload-self-test-report)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:14
+msgid "[2. Test case](#test-case)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:15
+msgid "[2.1 GET query all test cases](#get-query-all-test-cases)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:16
+msgid "[2.2 POST create test case](#post-create-test-case)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:17
+msgid "[2.3 PUT update test case](#put-update-test-case)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:18
+msgid "[2.4 DELETE delete test case](#delete-delete-test-case)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:19
+msgid "[2.5 GET query one test case](#get-query-one-test-case)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:20
+msgid "[2.6 GET download test case](#get-download-test-case)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:21
+msgid "[3. Test scenario](#test-scenario)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:22
+msgid "[3.1 GET query all test scenarios](#get-query-all-test-scenarios)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:23
+msgid "[3.2 POST create test scenarios](#post-create-test-scenario)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:24
+msgid "[3.3 PUT update test scenarios](#put-update-test-scenario)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:25
+msgid "[3.4 DELETE delete test scenarios](#delete-delete-test-scenario)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:26
+msgid "[3.5 GET query one test case](#get-query-one-test-scenario)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:27
+msgid "[3.6 GET query all test cases under one scenario](#get-query-all-test-cases-under-one-scenario)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:28
+msgid "[4. Test suite](#test-suite)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:29
+msgid "[4.1 GET query all test suites](#get-query-all-test-suite)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:30
+msgid "[4.2 POST create test suite](#post-create-test-suite)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:31
+msgid "[4.3 PUT update test suite](#put-update-test-suite)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:32
+msgid "[4.4 DELETE delete test suite](#delete-delete-test-suite)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:33
+msgid "[4.5 GET query one test suite](#get-query-one-test-suite)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:34
+msgid "[5. Contribution](#contribution)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:35
+msgid "[5.1 GET query all contributions](#get-query-all-contribution)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:36
+msgid "[5.2 POST create contribution](#post-create-contribution)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:37
+msgid "[5.3 POST batch delete contributions](#post-batch-delete-contributions)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:38
+msgid "[5.4 GET download contribution script](#get-download-contribution-script)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:39
+msgid "[6. File](#file)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:40
+msgid "[6.1 GET query one file](#get-query-one-file)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:41
+msgid "[7. Test model](#test-model)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:42
+msgid "[7.1 POST import test model](#post-import-test-model)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:43
+msgid "[8. configuration](#configuration)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:44
+msgid "[8.1 POST create config](#post-create-config)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:45
+msgid "[8.2 PUT update config](#put-update-config)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:46
+msgid "[8.3 DELETE delete config](#delete-delete-config)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:47
+msgid "[8.4 GET query one config](#get-query-one-config)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:48
+msgid "[8.5 GET query all configs](#get-query-all-configs)"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:49
+msgid "1. Task"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:50
+msgid "Test task for application package"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:51
+msgid "1.1 POST create test task"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:52
+msgid "create test task for application package."
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "Name"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "Definition"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "Type"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "Required"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md ../../Projects/ATP/ATP_Interfaces_v2.md:1126
+msgid "file"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "requestpart"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "yes"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:60 ../../Projects/ATP/ATP_Interfaces_v2.md:97 ../../Projects/ATP/ATP_Interfaces_v2.md:165 ../../Projects/ATP/ATP_Interfaces_v2.md:227 ../../Projects/ATP/ATP_Interfaces_v2.md:300 ../../Projects/ATP/ATP_Interfaces_v2.md:318 ../../Projects/ATP/ATP_Interfaces_v2.md:341 ../../Projects/ATP/ATP_Interfaces_v2.md:368 ../../Projects/ATP/ATP_Interfaces_v2.md:387 ../../Projects/ATP/ATP_Interfaces_v2.md:418 ../../Projects/ATP/ATP_Interfaces_v2.md:472 ../../Projects/ATP/ATP_Interfaces_v2.md:524 ../../Projects/ATP/ATP_Interfaces_v2.md:564 ../../Projects/ATP/ATP_Interfaces_v2.md:579 ../../Projects/ATP/ATP_Interfaces_v2.md:620 ../../Projects/ATP/ATP_Interfaces_v2.md:640 ../../Projects/ATP/ATP_Interfaces_v2.md:675 ../../Projects/ATP/ATP_Interfaces_v2.md:710 ../../Projects/ATP/ATP_Interfaces_v2.md:738 ../../Projects/ATP/ATP_Interfaces_v2.md:753 ../../Projects/ATP/ATP_Interfaces_v2.md:787 ../../Projects/ATP/ATP_Interfaces_v2.md:851 ../../Projects/ATP/ATP_Interfaces_v2.md:887 ../../Projects/ATP/ATP_Interfaces_v2.md:923 ../../Projects/ATP/ATP_Interfaces_v2.md:953 ../../Projects/ATP/ATP_Interfaces_v2.md:968 ../../Projects/ATP/ATP_Interfaces_v2.md:1002 ../../Projects/ATP/ATP_Interfaces_v2.md:1038 ../../Projects/ATP/ATP_Interfaces_v2.md:1076 ../../Projects/ATP/ATP_Interfaces_v2.md:1119 ../../Projects/ATP/ATP_Interfaces_v2.md:1137 ../../Projects/ATP/ATP_Interfaces_v2.md:1154 ../../Projects/ATP/ATP_Interfaces_v2.md:1213 ../../Projects/ATP/ATP_Interfaces_v2.md:1253 ../../Projects/ATP/ATP_Interfaces_v2.md:1291 ../../Projects/ATP/ATP_Interfaces_v2.md:1313 ../../Projects/ATP/ATP_Interfaces_v2.md:1354
+msgid "Example response:"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:87
+msgid "1.2 POST run test task"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:88
+msgid "Run test task by taskId"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "taskId"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "path param"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "scenarioIdList"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "request param"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:151
+msgid "1.3 GET get task list"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:152
+msgid "download one plugin"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "appName"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "query param"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "no"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "status"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "appVersion"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "providerId"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "limit"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "offset"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:218
+msgid "1.4 GET get one task"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:219
+msgid "get task by taskId"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:280
+msgid "1.5 PUT modify test case status"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:281
+msgid "modify manual test case status"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:289 ../../Projects/ATP/ATP_Interfaces_v2.md:310 ../../Projects/ATP/ATP_Interfaces_v2.md:379 ../../Projects/ATP/ATP_Interfaces_v2.md:782 ../../Projects/ATP/ATP_Interfaces_v2.md:1068 ../../Projects/ATP/ATP_Interfaces_v2.md:1201 ../../Projects/ATP/ATP_Interfaces_v2.md:1241 ../../Projects/ATP/ATP_Interfaces_v2.md:1285 ../../Projects/ATP/ATP_Interfaces_v2.md:1307 ../../Projects/ATP/ATP_Interfaces_v2.md:1348
+msgid "Example request:"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:304
+msgid "1.6 POST  batch delete test tasks"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:305
+msgid "batch delete test tasks"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:335
+msgid "1.7 GET get test tasks analysis"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:336
+msgid "get test tasks analysis"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:362
+msgid "1.8 DELETE delete one test task"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:363
+msgid "delete one test task"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:373
+msgid "1.9 POST upload self test report"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:374
+msgid "upload self test report"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:402
+msgid "2. Test case"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:403
+msgid "test cases of csar package"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:404
+msgid "2.1 GET query all test cases"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:405
+msgid "query all test cases"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "type"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "name"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "locale"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "testSuiteIdList"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:451
+msgid "2.2 POST create test case"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:452
+msgid "create test case"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "nameCh"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "nameEn"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "descriptionCh"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "descriptionEn"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "codeLanguage"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "expectResultCh"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "expectResultEn"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "testStepCh"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "testStepEn"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "request part"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "configIdList"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:504
+msgid "2.3 PUT update test case"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:505
+msgid "update test case"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "id"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:555
+msgid "2.4 DELETE delete test case"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:556
+msgid "delete test case"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:570
+msgid "2.5 GET query one test case"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:571
+msgid "query one test case"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:611
+msgid "2.6 GET download test case"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:612
+msgid "download test case"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:626
+msgid "3. Test scenario"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:627
+msgid "test scenario management"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:628
+msgid "3.1 GET query all test scenarios"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:629
+msgid "query all test scenarios"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:661
+msgid "3.2 POST create test scenario"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:662
+msgid "create test scenario"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "label"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "icon"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:695
+msgid "3.3 PUT update test scenario"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:696
+msgid "update test scenario"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:729
+msgid "3.4 DELETE delete test scenario"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:730
+msgid "delete test scenario"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:744
+msgid "3.5 GET query one test scenario"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:745
+msgid "query one test scenario"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:773
+msgid "3.6 GET query all test cases under one scenario"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:774
+msgid "query all test cases under one scenario"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "scenarioids"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:836
+msgid "4. Test suite"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:837
+msgid "test suite management"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:838
+msgid "4.1 GET query all test suite"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:839
+msgid "query all test suite"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:874
+msgid "4.2 POST create test suite"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:875
+msgid "create test suite"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:909
+msgid "4.3 PUT update test suite"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:910
+msgid "update test suite"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:944
+msgid "4.4 DELETE delete test suite"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:945
+msgid "delete test suite"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:959
+msgid "4.5 GET query one test suite"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:960
+msgid "query one test suite"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:989
+msgid "5. Contribution"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:990
+msgid "contribution"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:991
+msgid "5.1 GET query all contribution"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:992
+msgid "query all contribution"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1024
+msgid "5.2 POST create contribution"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1025
+msgid "create contribution"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "objective"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "step"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "expectResult"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1059
+msgid "5.3 POST batch delete contributions"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1060
+msgid "batch delete contributions"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md
+msgid "ids"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1094
+msgid "5.4 GET download contribution script"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1095
+msgid "download contribution script"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1125
+msgid "6. File"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1127
+msgid "6.1 GET query one file"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1128
+msgid "query one file"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1143
+msgid "7. Test model"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1144
+msgid "test model"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1145
+msgid "7.1 POST import test model"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1146
+msgid "import test model"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1194
+msgid "8. Configuration"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1195
+msgid "config"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1196
+msgid "8.1 POST create config"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1197
+msgid "create config"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1236
+msgid "8.2 PUT update config"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1237
+msgid "update config"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1276
+msgid "8.3 DELETE delete config"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1277
+msgid "delete config"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1298
+msgid "8.4 GET query one config"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1299
+msgid "query one config"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1336
+msgid "8.5 GET query all configs"
+msgstr ""
+
+#: ../../Projects/ATP/ATP_Interfaces_v2.md:1337
+msgid "query all configs"
+msgstr ""
+

@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Installer Guide/README-en.md:1
+msgid "Guide of EdgeGallery Installation"
+msgstr ""
+
+#: ../../Installer Guide/README-en.md:4
+msgid "EdgeGallery Install Guide"
+msgstr ""
+
+#: ../../Installer Guide/README-en.md:6
+msgid "[EdgeGallery Offline Installation](https://gitee.com/edgegallery/installer/blob/master/ansible_install/README-en.md)"
+msgstr ""
+
+#: ../../Installer Guide/README-en.md:8
+msgid "EdgeGallery Certification Update Guide"
+msgstr ""
+
+#: ../../Installer Guide/README-en.md:10
+msgid "[EdgeGallery Certification Update](https://gitee.com/edgegallery/docs/blob/master/certificate_update/edgegallery_certificate_update)"
+msgstr ""
+

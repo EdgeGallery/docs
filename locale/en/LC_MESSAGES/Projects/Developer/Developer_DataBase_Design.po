@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-28 17:21+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:1
-msgid "Developer DataBase Design"
+#, fuzzy
+msgid "Developer DataBase Design v1.5"
 msgstr "Developer DataBase Design"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:4
@@ -33,77 +34,186 @@ msgid "**tbl_downloadrecord** 存储插件的下载记录，一个插件对应�
 msgstr "**tbl_downloadrecord** Store plugin download records. One plugin corresponds to multiple download records."
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:44
-msgid "**tbl_app_project** 存储开发者在开发者平台自构建的应用项目的信息"
-msgstr "**tbl_app_project** Store the information of the application project built by the developer on the developer platform."
-
-#: ../../Projects/Developer/Developer_DataBase_Design.md:68
-msgid "**tbl_project_image** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，开发者上传或者填写的镜像信息，一个项目的可以利用不同的镜像构建多次"
-msgstr "**tbl_project_image** Store the image information uploaded or filled by the developer when the developer deploys and tests the self-built application project on the developer platform. A project can be built multiple times with different images."
-
-#: ../../Projects/Developer/Developer_DataBase_Design.md:78
 msgid "**tbl_container_image** 存储开发者在开发者平台上传容器镜像包时，生成的容器镜像信息"
 msgstr "**tbl_container_image** stores the container image information generated when the developer uploads the container image package on the developer platform"
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:96
+#: ../../Projects/Developer/Developer_DataBase_Design.md:63
 msgid "**tbl_app_project_capability** 开发者新建容器应用项目时，选择平台能力（此表是项目和能力之间的关联表）"
 msgstr "**tbl_app_project_capability** When the developer creates a new container application project, he selects the platform capability (this table is an association table between projects and capabilities)"
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:104
+#: ../../Projects/Developer/Developer_DataBase_Design.md:72
 msgid "**tbl_capability_group** 开发者新建容器应用项目时，选择平台能力（能力分类表）"
 msgstr "**tbl_openmep_capability** Store the information of all the capabilities provided by the platform when the developer builds the application project on the developer platform."
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:120
+#: ../../Projects/Developer/Developer_DataBase_Design.md:89
 msgid "**tbl_capability** 开发者新建容器应用项目时，选择平台能力（能力详情表）"
 msgstr "**tbl_openmep_capability** Store the information of all the capabilities provided by the platform when the developer builds the application project on the developer platform."
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:148
-msgid "**tbl_project_test_config** 存储开发者在开发者平台对自构建的应用项目进行部署测试的配置信息，包括镜像、服务器等，一个项目可以多次配置测试项进行部署测试"
-msgstr "**tbl_project_test_config** Store the configuration information for the developer to deploy and test the self-built application project on the developer platform, including mirrors, servers, etc. A project can configure test items for multiple deployment tests."
-
-#: ../../Projects/Developer/Developer_DataBase_Design.md:174
-msgid "**tbl_service_host** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，可供选择的服务器信息"
+#: ../../Projects/Developer/Developer_DataBase_Design.md:117
+#, fuzzy
+msgid "**tbl_mep_host** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，可供选择的服务器（测试沙箱）信息"
 msgstr "**tbl_service_host** Store the server information that developers can select when deploying and testing self-built application projects on the developer platform."
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:199
+#: ../../Projects/Developer/Developer_DataBase_Design.md:140
 msgid "**tbl_uploaded_file** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，上传的图标、镜像、api等文件信息"
 msgstr "**tbl_uploaded_file** Store the icon, image, api and other file information uploaded by the developer when deploying and testing the self-built application project on the developer platform"
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:212
-msgid "**tbl_helm_template_yaml** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，上传的Helm yaml文件信息(目前版本通过yaml部署)，一个项目可以通过不同的yaml文件进行多次部署测试"
-msgstr "**tbl_helm_template_yaml** Store the Helm yaml file information uploaded by developers when they deploy and test self-built application projects on the developer platform (the current version is deployed through yaml). A project can be deployed and tested multiple times through different yaml files."
-
-#: ../../Projects/Developer/Developer_DataBase_Design.md:226
+#: ../../Projects/Developer/Developer_DataBase_Design.md:153
 msgid "**tbl_host_log** 记录app项目在边缘节点上部署的日志"
 msgstr "**tbl_host_log** Record the deployment log of the app project on the edge node."
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:243
-msgid "**tbl_release_config** 存储应用发布对应的配置信息"
-msgstr "**tbl_release_config** Store the configuration information corresponding to the application release."
+#: ../../Projects/Developer/Developer_DataBase_Design.md:170
+msgid "**tbl_api_emulator** 平台能力调用模拟器"
+msgstr "**tbl_api_emulator** Platform ability to call the simulator"
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:258
-msgid "**tbl_vm_regulation** 虚机规则，虚机属性说明（虚机部署时提供选择）"
-msgstr "**tbl_vm_regulation** Virtual machine rules, descriptions of virtual machine attributes (optional when deploying virtual machines)."
+#: ../../Projects/Developer/Developer_DataBase_Design.md:182
+msgid "**tbl_app_traffic_rule** 流量规则配置"
+msgstr "**tbl_app_traffic_rule** Traffic rule configuration"
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:276
-msgid "**tbl_vm_network** 虚机网络配置"
-msgstr "**tbl_vm_network** Virtual machine network configuration"
+#: ../../Projects/Developer/Developer_DataBase_Design.md:196
+msgid "**tbl_app_dns_rule** 分流规则配置"
+msgstr "**tbl_app_dns_rule** Diversion rule configuration"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:209
+msgid "**tbl_app_service_produced** 能力发布配置"
+msgstr "**tbl_app_service_produced** Capability release configuration"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:233
+msgid "**tbl_app_service_required** 服务依赖配置"
+msgstr "**tbl_app_service_required** Service dependent configuration"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:251
+msgid "**tbl_app_certificate** 认证配置"
+msgstr "**tbl_app_certificate** Authentication configuration"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:261
+msgid "**tbl_application** 项目（孵化应用）配置"
+msgstr "**tbl_application** project（Incubation application）Configuration"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:286
-msgid "**tbl_vm_system** 虚机系统属性说明"
-msgstr "**tbl_vm_system** Description of virtual machine system attributes"
+msgid "**tbl_container_helm_chart** 记录应用部署文件"
+msgstr "**tbl_container_helm_chart** Record application deployment files"
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:315
-msgid "**tbl_project_vm_create_config** app项目虚机部署，创建虚机的配置说明"
-msgstr "**tbl_project_vm_create_config** App project virtual machine deployment, configuration instructions for creating a virtual machine."
+#: ../../Projects/Developer/Developer_DataBase_Design.md:299
+#, fuzzy
+msgid "**tbl_vm** 虚机配置"
+msgstr "**tbl_vm_network** Virtual machine network configuration"
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:334
-msgid "**tbl_project_vm_image_config** app项目虚机部署，镜像配置说明"
-msgstr "**tbl_project_vm_image_config** App project virtual machine deployment, mirror configuration instructions."
+#: ../../Projects/Developer/Developer_DataBase_Design.md:316
+#, fuzzy
+msgid "**tbl_network** 虚机网络配置"
+msgstr "**tbl_vm_network** Virtual machine network configuration"
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:354
-msgid "**tbl_vm_user_data** app项目虚机部署，存储的部署用户的信息"
-msgstr "**tbl_vm_user_data** App project virtual machine deployment, stored deployment user information"
+#: ../../Projects/Developer/Developer_DataBase_Design.md:327
+#, fuzzy
+msgid "**tbl_vm_port** 虚机端口配置"
+msgstr "**tbl_vm_network** Virtual machine network configuration"
 
-#: ../../Projects/Developer/Developer_DataBase_Design.md:366
-msgid "**tbl_project_vm_package_config** app项目虚机部署，生成虚机包所需的配置信息"
-msgstr "**tbl_project_vm_create_config** App project virtual machine deployment, configuration instructions for creating a virtual machine."
+#: ../../Projects/Developer/Developer_DataBase_Design.md:339
+#, fuzzy
+msgid "**tbl_vm_certificate** 虚机证书配置"
+msgstr "**tbl_vm_network** Virtual machine network configuration"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:350
+#, fuzzy
+msgid "**tbl_vm_flavor** 虚机规格配置"
+msgstr "**tbl_vm_network** Virtual machine network configuration"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:367
+#, fuzzy
+msgid "**tbl_vm_image** 虚机镜像管理"
+msgstr "**tbl_vm_network** Virtual machine network configuration"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:396
+msgid "**tbl_vm_instantiate_info** 虚机实例化信息表"
+msgstr "**tbl_vm_instantiate_info** Virtual machine instantiation information table"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:414
+msgid "**tbl_vm_port_instantiate_info** 虚拟端口实例化信息表"
+msgstr "**tbl_vm_port_instantiate_info** Virtual port instantiation information table"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:424
+msgid "**tbl_vm_image_export_info** 记录虚机镜像导出信息"
+msgstr "**tbl_vm_image_export_info** Record virtual machine image export information"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:443
+msgid "**tbl_container_app_instantiate_info**  容器应用实例化信息表"
+msgstr "**tbl_container_app_instantiate_info**  Container application instantiation information table"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:459
+msgid "**tbl_k8s_pod_instantiate_info** 容器应用部署的pod实例化信息"
+msgstr "**tbl_k8s_pod_instantiate_info** Container application deploymentpodInstantiated information"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:470
+msgid "**tbl_container_instantiate_info** 容器实例化信息"
+msgstr "**tbl_container_instantiate_info** Container instantiation information"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:482
+msgid "**tbl_k8s_service_instantiate_info** 容器应用部署的Service实例化信息"
+msgstr "**tbl_k8s_service_instantiate_info** Container application deploymentServiceInstantiated information"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:492
+msgid "**tbl_k8s_service_port_instantiate_info** 容器应用部署的Service端口实例化信息"
+msgstr "**tbl_k8s_service_port_instantiate_info** Container application deploymentServicePort instantiation information"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:503
+msgid "**tbl_operation_status** 应用部署操作信息表"
+msgstr "**tbl_operation_status** Application deployment operation information table"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:521
+msgid "**tbl_action_status** 应用部署action信息表"
+msgstr "**tbl_action_status** Application deploymentactionInformation Sheet"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:538
+msgid "**tbl_app_package**  生成的应用包信息"
+msgstr "**tbl_app_package**  Generated application package information"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:549
+msgid "**tbl_atp_test_task**  应用包测试认证信息表"
+msgstr "**tbl_atp_test_task**  Application package test certification information table"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:561
+msgid "**tbl_profile** profile信息表"
+msgstr "**tbl_profile** profileInformation Sheet"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:580
+msgid "**tbl_app_script** 应用包脚本文件表"
+msgstr "**tbl_app_script** Application package script file table"
+
+#: ../../Projects/Developer/Developer_DataBase_Design.md:592
+msgid "**tbl_released_package** 从Appstore同步的应用包信息"
+msgstr "**tbl_released_package** fromAppstoreSynchronized application package information"
+
+#~ msgid "**tbl_app_project** 存储开发者在开发者平台自构建的应用项目的信息"
+#~ msgstr "**tbl_app_project** Store the information of the application project built by the developer on the developer platform."
+
+#~ msgid "**tbl_project_image** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，开发者上传或者填写的镜像信息，一个项目的可以利用不同的镜像构建多次"
+#~ msgstr "**tbl_project_image** Store the image information uploaded or filled by the developer when the developer deploys and tests the self-built application project on the developer platform. A project can be built multiple times with different images."
+
+#~ msgid "**tbl_project_test_config** 存储开发者在开发者平台对自构建的应用项目进行部署测试的配置信息，包括镜像、服务器等，一个项目可以多次配置测试项进行部署测试"
+#~ msgstr "**tbl_project_test_config** Store the configuration information for the developer to deploy and test the self-built application project on the developer platform, including mirrors, servers, etc. A project can configure test items for multiple deployment tests."
+
+#~ msgid "**tbl_helm_template_yaml** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，上传的Helm yaml文件信息(目前版本通过yaml部署)，一个项目可以通过不同的yaml文件进行多次部署测试"
+#~ msgstr "**tbl_helm_template_yaml** Store the Helm yaml file information uploaded by developers when they deploy and test self-built application projects on the developer platform (the current version is deployed through yaml). A project can be deployed and tested multiple times through different yaml files."
+
+#~ msgid "**tbl_release_config** 存储应用发布对应的配置信息"
+#~ msgstr "**tbl_release_config** Store the configuration information corresponding to the application release."
+
+#~ msgid "**tbl_vm_regulation** 虚机规则，虚机属性说明（虚机部署时提供选择）"
+#~ msgstr "**tbl_vm_regulation** Virtual machine rules, descriptions of virtual machine attributes (optional when deploying virtual machines)."
+
+#~ msgid "**tbl_vm_system** 虚机系统属性说明"
+#~ msgstr "**tbl_vm_system** Description of virtual machine system attributes"
+
+#~ msgid "**tbl_project_vm_create_config** app项目虚机部署，创建虚机的配置说明"
+#~ msgstr "**tbl_project_vm_create_config** App project virtual machine deployment, configuration instructions for creating a virtual machine."
+
+#~ msgid "**tbl_project_vm_image_config** app项目虚机部署，镜像配置说明"
+#~ msgstr "**tbl_project_vm_image_config** App project virtual machine deployment, mirror configuration instructions."
+
+#~ msgid "**tbl_vm_user_data** app项目虚机部署，存储的部署用户的信息"
+#~ msgstr "**tbl_vm_user_data** App project virtual machine deployment, stored deployment user information"
+
+#~ msgid "**tbl_project_vm_package_config** app项目虚机部署，生成虚机包所需的配置信息"
+#~ msgstr "**tbl_project_vm_create_config** App project virtual machine deployment, configuration instructions for creating a virtual machine."
+

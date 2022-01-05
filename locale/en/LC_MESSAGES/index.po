@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-12 09:21+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,18 +35,6 @@ msgstr ""
 
 #: ../../index.rst:23
 msgid "Architecture"
-msgstr ""
-
-#: ../../index.rst:29
-msgid "APPD Definition"
-msgstr ""
-
-#: ../../index.rst:29
-msgid "APP Package Definition"
-msgstr ""
-
-#: ../../index.rst:29
-msgid "Models"
 msgstr ""
 
 #: ../../index.rst:36
@@ -108,4 +96,13 @@ msgstr ""
 #: ../../index.rst:4
 msgid "EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边缘的资源、应 用、安全、管理的基础框架和网络开放服务的事实标准，并实现同公有云的互联互通。 在兼容边缘基础设施异构差异化的基础上，构建起统一的MEC应用生态系统。"
 msgstr "The EdgeGallery community focuses on the MEC platform framework of the carrier network’s edge. It builds the basic framework of MEC edge resources, applications, security and management, and de facto standards of network openness services through open source collaboration, and implements interconnection with the public cloud. A unified MEC application ecosystem is constructed based on compatibility with heterogeneous edge infrastructures"
+
+#~ msgid "APPD Definition"
+#~ msgstr ""
+
+#~ msgid "APP Package Definition"
+#~ msgstr ""
+
+#~ msgid "Models"
+#~ msgstr ""
 

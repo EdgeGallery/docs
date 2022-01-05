@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 20:40+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,15 +145,23 @@ msgstr ""
 msgid "修改时间"
 msgstr "Modify Time"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:19 Management/User_DataBase_Design.md:40 Management/User_DataBase_Design.md:75
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "pweffecttime"
+msgstr ""
+
+#: ../../Projects/User Management/User_DataBase_Design.md
+msgid "密码生效时间"
+msgstr "Password effective time"
+
+#: ../../Projects/User Management/User_DataBase_Design.md:20 Management/User_DataBase_Design.md:42 Management/User_DataBase_Design.md:77
 msgid "初始值："
 msgstr "Initial value:"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:31
+#: ../../Projects/User Management/User_DataBase_Design.md:33
 msgid "tbl\\_role 用户角色表"
 msgstr "tbl\\_role user role table"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:33
+#: ../../Projects/User Management/User_DataBase_Design.md:35
 msgid "配置支持的平台的和用户角色，该表在启动时初始化，不支持动态添加"
 msgstr "configuration supported platform and user role, the table initializes at startup and does not support dynamic addition"
 
@@ -189,35 +197,35 @@ msgstr ""
 msgid "支持的角色定义"
 msgstr "Role definition supported"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:60
+#: ../../Projects/User Management/User_DataBase_Design.md:62
 msgid "说明："
 msgstr "Description:"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:61
+#: ../../Projects/User Management/User_DataBase_Design.md:63
 msgid "APPSTORE：应用仓库平台"
 msgstr "APPSTORE: Application of warehouse platform"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:62
+#: ../../Projects/User Management/User_DataBase_Design.md:64
 msgid "DEVELOPER：应用开发集成平台"
 msgstr "DEVELOPER: Application development integration platform"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:63
+#: ../../Projects/User Management/User_DataBase_Design.md:65
 msgid "MECM：MEC管理平台"
 msgstr "MECM:MEC management platform"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:64
+#: ../../Projects/User Management/User_DataBase_Design.md:66
 msgid "ATP：应用认证测试平台"
 msgstr "ATP: application authentication test platform"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:65
+#: ../../Projects/User Management/User_DataBase_Design.md:67
 msgid "LAB：实验室管理平台"
 msgstr "LAB: Laboratory Management Platform"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:67
+#: ../../Projects/User Management/User_DataBase_Design.md:69
 msgid "tbl\\_tenant\\_role 关系表"
 msgstr "tbl\\_tenant\\_role relationship table"
 
-#: ../../Projects/User Management/User_DataBase_Design.md:69
+#: ../../Projects/User Management/User_DataBase_Design.md:71
 msgid "用于描述租户和角色的关系"
 msgstr "Relationship to describe tenants and roles"
 
@@ -232,3 +240,4 @@ msgstr ""
 #: ../../Projects/User Management/User_DataBase_Design.md
 msgid "角色ID"
 msgstr "Role Id"
+

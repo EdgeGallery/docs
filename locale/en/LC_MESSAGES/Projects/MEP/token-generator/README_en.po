@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/MEP/token-generator/README_en.md:1
+msgid "How to run?"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:3
+msgid "Download and unzip token-generator.zip"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:5
+msgid "Set the below env variables using the correct ip"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:18
+msgid "Run the token generator"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:19
+msgid "If the MEP version is 1.0.1 and before use token_generator"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:23
+msgid "If the MEP version is after 1.0.1 use token_generator_url_unify"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:27
+msgid "signature（Authorization）withtokenCan be seen through the log ![Enter picture description](/uploads/images/2021/0204/165822_77d3c5d4_4991354.png \"Screenshots.png\")"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:30
+msgid "How to modify token-generator code"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:32
+msgid "Token-generator is modified from mep-agent code. Only add log to record token and return after get token."
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:34
+msgid "The change code as follows："
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:36
+msgid "main.go"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:44
+msgid "start.go"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:54
+msgid "token.go"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:65
+msgid "request.go"
+msgstr ""
+
+#: ../../Projects/MEP/token-generator/README_en.md:71
+msgid "How to build token-generator"
+msgstr ""
+

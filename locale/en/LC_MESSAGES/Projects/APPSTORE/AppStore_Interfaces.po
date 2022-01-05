@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-08 16:24+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -344,23 +344,28 @@ msgstr "[10.3 Activate Order](#103-Activate Order)"
 msgid "[10.4 查询订单列表](#104-查询订单列表)"
 msgstr "[10.4 Query warehouse list](#104-QueryWarehouseList])"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:86
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:85
+#, fuzzy
+msgid "[10.5 查询边缘节点列表](#105-查询边缘节点列表)"
+msgstr "[10.4 Query warehouse list](#104-QueryWarehouseList])"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:87
 msgid "1. 应用"
 msgstr "1.Application"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:88
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:89
 msgid "应用是应用商店基本的发布单位。"
 msgstr "The app is app store's basic publishing unit."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:90
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:91
 msgid "1.1 获取应用列表"
 msgstr "1.1 Get list application list"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:92
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:93
 msgid "根据入参查询应用列表。"
 msgstr "According to application list of the input parameter."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:98 ../../Projects/APPSTORE/AppStore_Interfaces.md:358 ../../Projects/APPSTORE/AppStore_Interfaces.md:902 ../../Projects/APPSTORE/AppStore_Interfaces.md:1788
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:99 ../../Projects/APPSTORE/AppStore_Interfaces.md:359 ../../Projects/APPSTORE/AppStore_Interfaces.md:903 ../../Projects/APPSTORE/AppStore_Interfaces.md:1789
 msgid "请求参数："
 msgstr "Request parameters:"
 
@@ -428,15 +433,15 @@ msgstr ""
 msgid "应用创建人"
 msgstr "Application creator"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:107 ../../Projects/APPSTORE/AppStore_Interfaces.md:145 ../../Projects/APPSTORE/AppStore_Interfaces.md:191 ../../Projects/APPSTORE/AppStore_Interfaces.md:215 ../../Projects/APPSTORE/AppStore_Interfaces.md:232 ../../Projects/APPSTORE/AppStore_Interfaces.md:258 ../../Projects/APPSTORE/AppStore_Interfaces.md:277 ../../Projects/APPSTORE/AppStore_Interfaces.md:305 ../../Projects/APPSTORE/AppStore_Interfaces.md:327 ../../Projects/APPSTORE/AppStore_Interfaces.md:343 ../../Projects/APPSTORE/AppStore_Interfaces.md:384 ../../Projects/APPSTORE/AppStore_Interfaces.md:432 ../../Projects/APPSTORE/AppStore_Interfaces.md:486 ../../Projects/APPSTORE/AppStore_Interfaces.md:521 ../../Projects/APPSTORE/AppStore_Interfaces.md:561 ../../Projects/APPSTORE/AppStore_Interfaces.md:601 ../../Projects/APPSTORE/AppStore_Interfaces.md:618 ../../Projects/APPSTORE/AppStore_Interfaces.md:636 ../../Projects/APPSTORE/AppStore_Interfaces.md:655 ../../Projects/APPSTORE/AppStore_Interfaces.md:673 ../../Projects/APPSTORE/AppStore_Interfaces.md:695 ../../Projects/APPSTORE/AppStore_Interfaces.md:745 ../../Projects/APPSTORE/AppStore_Interfaces.md:788 ../../Projects/APPSTORE/AppStore_Interfaces.md:817 ../../Projects/APPSTORE/AppStore_Interfaces.md:860 ../../Projects/APPSTORE/AppStore_Interfaces.md:980 ../../Projects/APPSTORE/AppStore_Interfaces.md:1061 ../../Projects/APPSTORE/AppStore_Interfaces.md:1109 ../../Projects/APPSTORE/AppStore_Interfaces.md:1129 ../../Projects/APPSTORE/AppStore_Interfaces.md:1181 ../../Projects/APPSTORE/AppStore_Interfaces.md:1201 ../../Projects/APPSTORE/AppStore_Interfaces.md:1247 ../../Projects/APPSTORE/AppStore_Interfaces.md:1282 ../../Projects/APPSTORE/AppStore_Interfaces.md:1318 ../../Projects/APPSTORE/AppStore_Interfaces.md:1334 ../../Projects/APPSTORE/AppStore_Interfaces.md:1350 ../../Projects/APPSTORE/AppStore_Interfaces.md:1372 ../../Projects/APPSTORE/AppStore_Interfaces.md:1426 ../../Projects/APPSTORE/AppStore_Interfaces.md:1454 ../../Projects/APPSTORE/AppStore_Interfaces.md:1478 ../../Projects/APPSTORE/AppStore_Interfaces.md:1507 ../../Projects/APPSTORE/AppStore_Interfaces.md:1537 ../../Projects/APPSTORE/AppStore_Interfaces.md:1570 ../../Projects/APPSTORE/AppStore_Interfaces.md:1617 ../../Projects/APPSTORE/AppStore_Interfaces.md:1633 ../../Projects/APPSTORE/AppStore_Interfaces.md:1672 ../../Projects/APPSTORE/AppStore_Interfaces.md:1709 ../../Projects/APPSTORE/AppStore_Interfaces.md:1726 ../../Projects/APPSTORE/AppStore_Interfaces.md:1742 ../../Projects/APPSTORE/AppStore_Interfaces.md:1767 ../../Projects/APPSTORE/AppStore_Interfaces.md:1806 ../../Projects/APPSTORE/AppStore_Interfaces.md:1851 ../../Projects/APPSTORE/AppStore_Interfaces.md:1886 ../../Projects/APPSTORE/AppStore_Interfaces.md:1941 ../../Projects/APPSTORE/AppStore_Interfaces.md:1964 ../../Projects/APPSTORE/AppStore_Interfaces.md:2012 ../../Projects/APPSTORE/AppStore_Interfaces.md:2059 ../../Projects/APPSTORE/AppStore_Interfaces.md:2091 ../../Projects/APPSTORE/AppStore_Interfaces.md:2141 ../../Projects/APPSTORE/AppStore_Interfaces.md:2157 ../../Projects/APPSTORE/AppStore_Interfaces.md:2193 ../../Projects/APPSTORE/AppStore_Interfaces.md:2210 ../../Projects/APPSTORE/AppStore_Interfaces.md:2242 ../../Projects/APPSTORE/AppStore_Interfaces.md:2266 ../../Projects/APPSTORE/AppStore_Interfaces.md:2285 ../../Projects/APPSTORE/AppStore_Interfaces.md:2340 ../../Projects/APPSTORE/AppStore_Interfaces.md:2383 ../../Projects/APPSTORE/AppStore_Interfaces.md:2423 ../../Projects/APPSTORE/AppStore_Interfaces.md:2532
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:108 ../../Projects/APPSTORE/AppStore_Interfaces.md:146 ../../Projects/APPSTORE/AppStore_Interfaces.md:192 ../../Projects/APPSTORE/AppStore_Interfaces.md:216 ../../Projects/APPSTORE/AppStore_Interfaces.md:233 ../../Projects/APPSTORE/AppStore_Interfaces.md:259 ../../Projects/APPSTORE/AppStore_Interfaces.md:278 ../../Projects/APPSTORE/AppStore_Interfaces.md:306 ../../Projects/APPSTORE/AppStore_Interfaces.md:328 ../../Projects/APPSTORE/AppStore_Interfaces.md:344 ../../Projects/APPSTORE/AppStore_Interfaces.md:385 ../../Projects/APPSTORE/AppStore_Interfaces.md:433 ../../Projects/APPSTORE/AppStore_Interfaces.md:487 ../../Projects/APPSTORE/AppStore_Interfaces.md:522 ../../Projects/APPSTORE/AppStore_Interfaces.md:562 ../../Projects/APPSTORE/AppStore_Interfaces.md:602 ../../Projects/APPSTORE/AppStore_Interfaces.md:619 ../../Projects/APPSTORE/AppStore_Interfaces.md:637 ../../Projects/APPSTORE/AppStore_Interfaces.md:656 ../../Projects/APPSTORE/AppStore_Interfaces.md:674 ../../Projects/APPSTORE/AppStore_Interfaces.md:696 ../../Projects/APPSTORE/AppStore_Interfaces.md:746 ../../Projects/APPSTORE/AppStore_Interfaces.md:789 ../../Projects/APPSTORE/AppStore_Interfaces.md:818 ../../Projects/APPSTORE/AppStore_Interfaces.md:861 ../../Projects/APPSTORE/AppStore_Interfaces.md:981 ../../Projects/APPSTORE/AppStore_Interfaces.md:1062 ../../Projects/APPSTORE/AppStore_Interfaces.md:1110 ../../Projects/APPSTORE/AppStore_Interfaces.md:1130 ../../Projects/APPSTORE/AppStore_Interfaces.md:1182 ../../Projects/APPSTORE/AppStore_Interfaces.md:1202 ../../Projects/APPSTORE/AppStore_Interfaces.md:1248 ../../Projects/APPSTORE/AppStore_Interfaces.md:1283 ../../Projects/APPSTORE/AppStore_Interfaces.md:1319 ../../Projects/APPSTORE/AppStore_Interfaces.md:1335 ../../Projects/APPSTORE/AppStore_Interfaces.md:1351 ../../Projects/APPSTORE/AppStore_Interfaces.md:1373 ../../Projects/APPSTORE/AppStore_Interfaces.md:1427 ../../Projects/APPSTORE/AppStore_Interfaces.md:1455 ../../Projects/APPSTORE/AppStore_Interfaces.md:1479 ../../Projects/APPSTORE/AppStore_Interfaces.md:1508 ../../Projects/APPSTORE/AppStore_Interfaces.md:1538 ../../Projects/APPSTORE/AppStore_Interfaces.md:1571 ../../Projects/APPSTORE/AppStore_Interfaces.md:1618 ../../Projects/APPSTORE/AppStore_Interfaces.md:1634 ../../Projects/APPSTORE/AppStore_Interfaces.md:1673 ../../Projects/APPSTORE/AppStore_Interfaces.md:1710 ../../Projects/APPSTORE/AppStore_Interfaces.md:1727 ../../Projects/APPSTORE/AppStore_Interfaces.md:1743 ../../Projects/APPSTORE/AppStore_Interfaces.md:1768 ../../Projects/APPSTORE/AppStore_Interfaces.md:1807 ../../Projects/APPSTORE/AppStore_Interfaces.md:1852 ../../Projects/APPSTORE/AppStore_Interfaces.md:1887 ../../Projects/APPSTORE/AppStore_Interfaces.md:1942 ../../Projects/APPSTORE/AppStore_Interfaces.md:1965 ../../Projects/APPSTORE/AppStore_Interfaces.md:2013 ../../Projects/APPSTORE/AppStore_Interfaces.md:2060 ../../Projects/APPSTORE/AppStore_Interfaces.md:2092 ../../Projects/APPSTORE/AppStore_Interfaces.md:2142 ../../Projects/APPSTORE/AppStore_Interfaces.md:2158 ../../Projects/APPSTORE/AppStore_Interfaces.md:2194 ../../Projects/APPSTORE/AppStore_Interfaces.md:2211 ../../Projects/APPSTORE/AppStore_Interfaces.md:2243 ../../Projects/APPSTORE/AppStore_Interfaces.md:2267 ../../Projects/APPSTORE/AppStore_Interfaces.md:2286 ../../Projects/APPSTORE/AppStore_Interfaces.md:2353 ../../Projects/APPSTORE/AppStore_Interfaces.md:2396 ../../Projects/APPSTORE/AppStore_Interfaces.md:2436 ../../Projects/APPSTORE/AppStore_Interfaces.md:2545 ../../Projects/APPSTORE/AppStore_Interfaces.md:2607
 msgid "响应示例:"
 msgstr "Response examples:"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:135
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:136
 msgid "1.2 获取应用"
 msgstr "1.2 Access to application list"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:136 ../../Projects/APPSTORE/AppStore_Interfaces.md:422
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:137 ../../Projects/APPSTORE/AppStore_Interfaces.md:423
 msgid "根据应用ID获取应用详细信息。"
 msgstr "Obtaining application details according to application ID."
 
@@ -452,11 +457,11 @@ msgstr ""
 msgid "path"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:171
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:172
 msgid "1.3 注册应用"
 msgstr "1.3 Registration applications"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:172 ../../Projects/APPSTORE/AppStore_Interfaces.md:466
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:173 ../../Projects/APPSTORE/AppStore_Interfaces.md:467
 msgid "注册应用。"
 msgstr "Register for the application."
 
@@ -536,11 +541,11 @@ msgstr ""
 msgid "显示类型：public、inner-public、private"
 msgstr "Display Type: public, inner-public, private"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:203
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:204
 msgid "1.4 删除应用"
 msgstr "1.4 Delete application"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:204
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:205
 msgid "根据应用ID删除应用。"
 msgstr "application is deleted according to the application ID."
 
@@ -548,19 +553,19 @@ msgstr "application is deleted according to the application ID."
 msgid "应用ID"
 msgstr "Application ID"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:221
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:222
 msgid "1.5 获取应用图标"
 msgstr "1.5 Get the app icon"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:223
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:224
 msgid "根据应用ID获取应用图标。"
 msgstr "Obtaining the application icon according to the application ID."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:238
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:239
 msgid "1.6 分片上传应用包"
 msgstr "1.6 Sharding upload app"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:239
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:240
 msgid "分片上传应用包。"
 msgstr "Shards upload the application package."
 
@@ -644,11 +649,11 @@ msgstr "Document type"
 msgid "文件"
 msgstr "Papers"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:266
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:267
 msgid "1.7 合并应用包"
 msgstr "1.7 Combined application package"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:267
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:268
 msgid "合并应用包。"
 msgstr "Application packages."
 
@@ -664,11 +669,11 @@ msgstr ""
 msgid "文件标识"
 msgstr "Document ID"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:285
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:286
 msgid "1.8 注册虚机应用"
 msgstr "1.8 Registration of virtual machines"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:286
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:287
 msgid "注册虚机应用。"
 msgstr "Sign up for virtual machine applications."
 
@@ -680,31 +685,31 @@ msgstr ""
 msgid "应用包文件相对路径"
 msgstr "Application packet file relative path"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:317
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:318
 msgid "1.9 获取应用视频"
 msgstr "1.9 Get the app video"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:318
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:319
 msgid "根据应用ID获取应用视频。"
 msgstr "Obtaining the application video according to the application ID."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:333
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:334
 msgid "1.10 修改热门应用"
 msgstr "1.10 Get the app video"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:334
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:335
 msgid "根据应用ID更改应用是否为热门应用。"
 msgstr "Change whether the application is a popular application according to the application ID."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:349
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:350
 msgid "1.11 获取应用列表-v2"
 msgstr "1.11 Access to applications"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:351
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:352
 msgid "分页查询应用列表。"
 msgstr "According to application list of the input parameter."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md ../../Projects/APPSTORE/AppStore_Interfaces.md:363
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md ../../Projects/APPSTORE/AppStore_Interfaces.md:364
 msgid "QueryAppReqDto"
 msgstr ""
 
@@ -768,7 +773,7 @@ msgstr ""
 msgid "查询条件"
 msgstr "Query conditions"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md ../../Projects/APPSTORE/AppStore_Interfaces.md:374 ../../Projects/APPSTORE/AppStore_Interfaces.md:929
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md ../../Projects/APPSTORE/AppStore_Interfaces.md:375 ../../Projects/APPSTORE/AppStore_Interfaces.md:930
 msgid "QueryAppCtrlDto"
 msgstr ""
 
@@ -824,27 +829,27 @@ msgstr ""
 msgid "应用名称"
 msgstr "application name"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:420
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:421
 msgid "1.12 获取应用-v2"
 msgstr "1.12 Access to applications"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:464
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:465
 msgid "1.13 注册应用-v2"
 msgstr "1.13 Registration applications"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:504
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:505
 msgid "2. 应用包"
 msgstr "2.Application"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:506
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:507
 msgid "应用包属于应用，每个应用包含至少一个应用包。"
 msgstr "The application package belongs to the application, each application comprises at least one application package."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:508
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:509
 msgid "2.1 通过应用ID获取应用包列表"
 msgstr "2.1 Access to application packages"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:510
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:511
 msgid "通过应用ID获取应用包列表。"
 msgstr "Get the list of applications by applying ID."
 
@@ -860,11 +865,11 @@ msgstr "Request token"
 msgid "request header"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:550
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:551
 msgid "2.2 获取应用包"
 msgstr "2.2 Access to applications"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:551 ../../Projects/APPSTORE/AppStore_Interfaces.md:849
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:552 ../../Projects/APPSTORE/AppStore_Interfaces.md:850
 msgid "通过应用ID和应用包ID获取应用包。"
 msgstr "The application package is obtained by applying ID and application packet ID."
 
@@ -876,27 +881,27 @@ msgstr ""
 msgid "应用包ID"
 msgstr "Application package ID"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:588
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:589
 msgid "2.3 删除应用包"
 msgstr "2.3 Delete the application package"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:589
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:590
 msgid "通过应用ID和应用包ID删除应用包。"
 msgstr "Delete the application package by application ID and application package ID."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:607
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:608
 msgid "2.4 下载应用包"
 msgstr "2.4 Download the application package"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:608
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:609
 msgid "通过应用ID和应用包ID下载应用包。"
 msgstr "Download the application package via the application ID and the application package ID."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:624
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:625
 msgid "2.5 获取文件内容"
 msgstr "2.5 Access to document content"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:625
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:626
 msgid "通过应用ID和应用包ID以及文件路径获取应用包中文件内容。"
 msgstr "Obtaining the file content in the application package by application ID, application packet ID and file path."
 
@@ -912,11 +917,11 @@ msgstr ""
 msgid "file path"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:642
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:643
 msgid "2.6 应用发布"
 msgstr "2.6 Application publishing"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:643 ../../Projects/APPSTORE/AppStore_Interfaces.md:775
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:644 ../../Projects/APPSTORE/AppStore_Interfaces.md:776
 msgid "通过应用ID和应用包ID发布应用。"
 msgstr "The application is published by application ID and application packet ID."
 
@@ -926,7 +931,7 @@ msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md
 msgid "是否免费"
-msgstr ""
+msgstr "Is it free"
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md
 msgid "price"
@@ -934,21 +939,21 @@ msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces.md
 msgid "应用定价信息"
-msgstr ""
+msgstr "App pricing information"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:661
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:662
 msgid "2.7 应用测试"
 msgstr "2.7 Application test"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:662
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:663
 msgid "通过应用ID和应用包ID测试应用。"
 msgstr "Test the application by application ID and application package ID."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:682
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:683
 msgid "2.8 获取应用包列表"
 msgstr "2.8 Get App Package List"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:684
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:685
 msgid "通过用户ID获取应用包列表。"
 msgstr "Get the list of applications by applying ID."
 
@@ -960,11 +965,11 @@ msgstr ""
 msgid "用户id"
 msgstr "User Id"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:725
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:726
 msgid "2.9 修改应用"
 msgstr "2.9 Modify Application"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:727
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:728
 msgid "通过应用ID和应用包ID修改应用。"
 msgstr "Modify the application through the application ID and application package ID."
 
@@ -984,15 +989,15 @@ msgstr "Application of video files"
 msgid "应用描述"
 msgstr "Description of application"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:773
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:774
 msgid "2.10 应用发布-v2"
 msgstr "2.10 Application release-v2"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:801
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:802
 msgid "2.11 通过应用ID获取应用包列表-v2"
 msgstr "2.11 Get application package list by application ID-v2"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:803
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:804
 msgid "通过应用ID分页查询应用包列表。"
 msgstr "Get the list of applications by applying ID."
 
@@ -1000,55 +1005,55 @@ msgstr "Get the list of applications by applying ID."
 msgid "分页查询每页查询数量，建议设置较大值，一次性查询完该应用的所有应用包"
 msgstr "Pagination to query the number of queries per page, it is recommended to set a larger value to query all application packages of the application at one time"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:847
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:848
 msgid "2.12 获取应用包-v2"
 msgstr "2.12 Get application package-v2"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:894
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:895
 msgid "2.13 获取应用包列表-v2"
 msgstr "2.13 Get application package list-v2"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:896
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:897
 msgid "分页获取应用包列表。"
 msgstr "Get the list of applications by applying ID."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1015
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1016
 msgid "2.14 根据创建时间区间获取应用包列表-v2"
 msgstr "2.14 Get application package list-v2"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1017
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1018
 msgid "根据创建时间区间分页获取应用包列表。"
 msgstr "Get the list of applications by applying ID."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1097
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1098
 msgid "2.15 下载应用图标"
 msgstr "2.15 Download the application package"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1099
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1100
 msgid "通过应用ID和应用包ID下载应用图标。"
 msgstr "Download the application package via the application ID and the application package ID."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1115
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1116
 msgid "3. 评论"
 msgstr "3.Comments"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1117
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1118
 msgid "用户可以评论应用."
 msgstr "Users can comment on apps."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1119
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1120
 msgid "3.1 获取评论列表"
 msgstr "3.1 List of acquisition comments"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1120
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1121
 msgid "根据应用ID获取应用的评论列表。"
 msgstr "Get a list of comments that apply based on the application ID."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1159
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1160
 msgid "3.2 提交评论"
 msgstr "3.2 Submit comments"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1160
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1161
 msgid "用户根据应用ID提交应用评分及评论。"
 msgstr "Users submit application scores and comments based on the application ID."
 
@@ -1060,47 +1065,47 @@ msgstr ""
 msgid "评论内容和打分"
 msgstr "Comment content and scoring"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1172
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1173
 msgid "entity请求体示例:"
 msgstr "Example of entity request body:"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1187
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1188
 msgid "3.3 获取评论列表-v2"
 msgstr "3.3 Get comment list-v2"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1189
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1190
 msgid "根据应用ID分页获取应用的评论列表。"
 msgstr "Get a list of comments that apply based on the application ID."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1237
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1238
 msgid "4. 应用推送"
 msgstr "4.Application push"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1239
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1240
 msgid "用户可以推送应用到运营商或第三方。"
 msgstr "Users can push applications to carriers or third parties."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1241
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1242
 msgid "4.1 查询可推送应用列表"
 msgstr "4.1 Query the list of pushable applications"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1242
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1243
 msgid "查询可推送的应用列表。"
 msgstr "Query the list of apps that can be pushed."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1272
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1273
 msgid "4.2 获取推送应用包"
 msgstr "4.2 Get pushes app"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1273
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1274
 msgid "根据packageId获取推送应用包。"
 msgstr "Get the push app based on packageId."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1307
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1308
 msgid "4.3 推送应用包"
 msgstr "4.3 Push application package"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1308
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1309
 msgid "根据packageId推送应用包。"
 msgstr "Push the application based on the packageId."
 
@@ -1112,27 +1117,27 @@ msgstr ""
 msgid "运营商列表"
 msgstr "List of operators"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1324
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1325
 msgid "4.4 下载推送应用包"
 msgstr "4.4 Download push app"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1325
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1326
 msgid "根据packageId下载推送应用包。"
 msgstr "Download the push app based on the packageId."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1340
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1341
 msgid "4.5 下载推送应用图标"
 msgstr "4.5 Download push app icon"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1341
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1342
 msgid "根据packageId下载推送应用图标。"
 msgstr "Download the push app icon based on the packageId."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1356
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1357
 msgid "4.6 查询可推送应用列表-v2"
 msgstr "4.6 Query the list of pushable applications-v2"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1358
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1359
 msgid "分页查询可推送的应用列表。"
 msgstr "Query the list of apps that can be pushed."
 
@@ -1140,19 +1145,19 @@ msgstr "Query the list of apps that can be pushed."
 msgid "查询排序方式，升序/降序"
 msgstr "Query sorting method ascending/descending"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1405
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1406
 msgid "5. 仓库管理"
 msgstr "5.Warehouse management"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1407
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1408
 msgid "对应用仓库的增删改查。"
 msgstr "Pruning the application warehouse."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1409
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1410
 msgid "5.1 添加仓库"
 msgstr "5.1 Add to warehouse"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1410
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1411
 msgid "新增外部应用仓库。"
 msgstr "Add an external application warehouse."
 
@@ -1216,11 +1221,11 @@ msgstr "Translator id"
 msgid "description"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1444
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1445
 msgid "5.2 删除仓库"
 msgstr "5.2 Delete warehouse"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1445
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1446
 msgid "删除外部应用仓库。"
 msgstr "Deletes an external application warehouse."
 
@@ -1232,51 +1237,51 @@ msgstr ""
 msgid "仓库id"
 msgstr "Warehouse id"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1460
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1461
 msgid "5.3 修改仓库"
 msgstr "5.3 Modification of warehouse"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1461
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1462
 msgid "修改外部应用仓库。"
 msgstr "Modify the external application warehouse."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1496
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1497
 msgid "5.4 查询仓库列表"
 msgstr "5.4 Query warehouse list"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1497
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1498
 msgid "查询外部应用仓库列表。"
 msgstr "Query the list of external application warehouses."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1527
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1528
 msgid "5.5 查询仓库"
 msgstr "5.5 Query warehouse"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1528
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1529
 msgid "查询外部应用仓库。"
 msgstr "Query the external application warehouse."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1555
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1556
 msgid "5.6 分页查询仓库列表-v2"
 msgstr "5.6 List of warehouse queries"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1557
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1558
 msgid "分页查询外部应用仓库列表。"
 msgstr "Query the list of external application warehouses."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1596
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1597
 msgid "6. 消息"
 msgstr "6.Information"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1598
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1599
 msgid "消息包含应用推送、下载、通知等信息。"
 msgstr "The message includes information such as application push, download, notification and so on."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1600
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1601
 msgid "6.1 添加消息"
 msgstr "6.1 Add message"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1601 ../../Projects/APPSTORE/AppStore_Interfaces.md:1750
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1602 ../../Projects/APPSTORE/AppStore_Interfaces.md:1751
 msgid "新增一条消息。"
 msgstr "Add a message."
 
@@ -1344,11 +1349,11 @@ msgstr ""
 msgid "应用图标下载地址"
 msgstr "Application Icon Download Address"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1623
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1624
 msgid "6.2 获取所有消息"
 msgstr "6.2 Get all the information"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1624
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1625
 msgid "根据消息类型获取消息。"
 msgstr "Obtaining information according to the message type."
 
@@ -1360,11 +1365,11 @@ msgstr ""
 msgid "消息类型"
 msgstr "Message Type"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1662
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1663
 msgid "6.3 获取消息"
 msgstr "6.3 Access to information"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1663
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1664
 msgid "根据message id获取消息。"
 msgstr "Get the message according to message id."
 
@@ -1376,19 +1381,19 @@ msgstr ""
 msgid "消息id"
 msgstr "Message id"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1699
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1700
 msgid "6.4 删除消息"
 msgstr "6.4 Delete message"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1700
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1701
 msgid "根据message id删除消息。"
 msgstr "Deletes a message according to message id."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1715
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1716
 msgid "6.5 接收消息"
 msgstr "6.5 Receiving information"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1716
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1717
 msgid "根据message id下载app相关信息。"
 msgstr "Download the app-related information according to message id."
 
@@ -1400,27 +1405,27 @@ msgstr ""
 msgid "请求体"
 msgstr "Request body"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1732
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1733
 msgid "6.6 更新状态"
 msgstr "6.6 Update Status"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1733
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1734
 msgid "根据message id更新消息状态。"
 msgstr "Update the message status according to message id."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1748
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1749
 msgid "6.7 添加消息-v2"
 msgstr "6.7 Add Message-v2"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1779
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1780
 msgid "6.8 获取消息列表-v2"
 msgstr "6.8 Get all messages-v2"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1781
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1782
 msgid "根据查询条件分页获取消息。"
 msgstr "Get messages in pages according to query conditions."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md ../../Projects/APPSTORE/AppStore_Interfaces.md:1793
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md ../../Projects/APPSTORE/AppStore_Interfaces.md:1794
 msgid "QueryMessageReqDto"
 msgstr ""
 
@@ -1460,27 +1465,27 @@ msgstr ""
 msgid "不获取所有消息时，获取已读/未读消息"
 msgstr "When not getting all messages, get read/unread messages"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1841
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1842
 msgid "7. 应用拉取"
 msgstr "7.Application pulling"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1843
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1844
 msgid "用户可以从运营商或第三方仓库拉取应用。"
 msgstr "Users can pull applications from operators or third-party warehouses."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1845
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1846
 msgid "7.1 查询可拉取应用列表"
 msgstr "7.1 Inquivable application list"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1846
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1847
 msgid "查询可拉取的应用列表。"
 msgstr "Query the list of applications that can be pulled."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1876
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1877
 msgid "7.2 获取外部应用仓库可拉取应用列表"
 msgstr "7.2 Get external application warehouse to pull application list"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1877 ../../Projects/APPSTORE/AppStore_Interfaces.md:1997
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1878 ../../Projects/APPSTORE/AppStore_Interfaces.md:1998
 msgid "根据platfromId获取外部仓库可拉取应用列表。"
 msgstr "Obtaining an external warehouse according to the platfromId to pull the application list."
 
@@ -1492,11 +1497,11 @@ msgstr ""
 msgid "外部应用仓库ID"
 msgstr "External application warehouse ID"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1911
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1912
 msgid "7.3 拉取应用包"
 msgstr "7.3 Lafetch application package"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1913
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1914
 msgid "根据packageId拉取应用包。"
 msgstr "According to the packageId pull application package."
 
@@ -1508,7 +1513,7 @@ msgstr ""
 msgid "拉取请求结构"
 msgstr "Pull request"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1924
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1925
 msgid "PullAppReqDto："
 msgstr ""
 
@@ -1560,31 +1565,31 @@ msgstr "Get the working status of the application."
 msgid "用户名称"
 msgstr "User name"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1948
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1949
 msgid "7.4 分页查询可拉取应用列表-v2"
 msgstr "7.4 Paging query to pull application list-v2"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1950
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1951
 msgid "分页查询可拉取的应用列表。"
 msgstr "Paging to query the list of applications that can be pulled."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1995
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:1996
 msgid "7.5 获取外部应用仓库可拉取应用列表-v2"
 msgstr "7.5 Get the list of applications that can be pulled from the external application repository-v2"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2043
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2044
 msgid "8. 沙箱管理"
 msgstr "8.Sandbox Management"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2045
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2046
 msgid "管理沙箱环境。"
 msgstr "Manage the sandbox environment."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2047
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2048
 msgid "8.1 查询沙箱环境列表"
 msgstr "8.1 Query the sandbox environment list"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2048
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2049
 msgid "查询沙箱环境列表。"
 msgstr "Query the list of sandbox environments."
 
@@ -1600,11 +1605,11 @@ msgstr ""
 msgid "沙箱环境ip"
 msgstr "Manage the sandbox environment."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2081
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2082
 msgid "8.2 查询沙箱环境"
 msgstr "8.2 Query the sandbox environment"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2082
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2083
 msgid "根据hostId查询沙箱环境。"
 msgstr "Query the sandbox environment based on hostId."
 
@@ -1616,11 +1621,11 @@ msgstr ""
 msgid "沙箱环境id"
 msgstr "Manage the sandbox environment."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2113
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2114
 msgid "8.3 添加沙箱环境"
 msgstr "8.3 Add a sandbox environment"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2114
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2115
 msgid "新增一个沙箱环境。"
 msgstr "Add a sandbox environment."
 
@@ -1632,27 +1637,27 @@ msgstr ""
 msgid "沙箱管理请求结构体"
 msgstr "Sandbox management request structure"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2147
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2148
 msgid "8.4 删除沙箱环境"
 msgstr "8.4 Delete sandbox environment"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2148
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2149
 msgid "根据hostId删除沙箱环境。"
 msgstr "Delete the sandbox environment based on hostId."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2163
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2164
 msgid "8.5 修改沙箱环境"
 msgstr "8.5 Modify the sandbox environment"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2164
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2165
 msgid "根据hostId修改沙箱环境。"
 msgstr "Modify the sandbox environment based on hostId."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2199
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2200
 msgid "8.6 上传沙箱环境配置文件"
 msgstr "8.6 Upload sandbox environment configuration file"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2200
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2201
 msgid "上传沙箱环境配置文件。"
 msgstr "Upload the sandbox environment configuration file."
 
@@ -1664,79 +1669,88 @@ msgstr ""
 msgid "上传文件"
 msgstr "Papers"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2224
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2225
 msgid "9. 应用在线体验"
 msgstr "9.App online experience"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2226
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2227
 msgid "可以在线体验应用"
 msgstr "You can experience the application online"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2228
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2229
 msgid "9.1 实例化应用"
 msgstr "9.1 Instantiate the application"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2229
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2230
 msgid "实例化应用，开始应用在线体验。"
 msgstr "Instantiate the application and start applying the online experience."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2253
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2254
 msgid "9.2 释放资源"
 msgstr "9.2 Release resources"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2254
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2255
 msgid "体验完成，释放资源。"
 msgstr "The experience is complete and resources are released."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2272
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2273
 msgid "9.3 获取应用工作状态"
 msgstr "9.3 Access to applications"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2273
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2274
 msgid "获取应用工作状态。"
 msgstr "Get the working status of the application."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2296
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2297
 msgid "10. 应用变现"
 msgstr "10. Application"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2298
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2299
 msgid "应用发布时可对应用定价，实现应用变现。"
 msgstr "The application can be priced when the application is released, and the application can be monetized."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2300
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2301
 msgid "10.1 订购应用"
 msgstr "10.1 Order application"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2302
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2303
 msgid "创建订单。"
 msgstr "Create Order."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2355
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2368
 msgid "10.2 退订应用"
 msgstr "10.2 Unsubscribe from apps"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2357
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2370
 msgid "对订单进行退订操作。"
 msgstr "Unsubscribe the order."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2395
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2408
 msgid "10.3 激活订单"
 msgstr "10.3 Activate order"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2397
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2410
 msgid "对订单进行激活操作。"
 msgstr "Activate the order."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2435
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2448
 msgid "10.4 查询订单列表"
 msgstr "10.4 Query warehouse list"
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2437
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2450
 msgid "获取订单列表。"
 msgstr "Get a list of orders."
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2493
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2506
 msgid "QueryCtrlDto"
 msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2573
+#, fuzzy
+msgid "10.5 查询边缘节点列表"
+msgstr "10.4 Query warehouse list"
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces.md:2575
+msgid "获取边缘节点信息."
+msgstr "Get edge node information."
 

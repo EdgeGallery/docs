@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-16 22:13+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,30 +66,6 @@ msgid "Y"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "ch.qos.logback"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "logback-classic"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "1.2.3"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "EPL 1.0,LGPL 2.1"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "N"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "logback-core"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
 msgid "com.esotericsoftware.yamlbeans"
 msgstr ""
 
@@ -106,6 +82,26 @@ msgid "BSD 2-clause"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.fasterxml"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "classmate"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.4.0"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "Apache 2.0"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "N"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
 msgid "com.fasterxml.jackson.core"
 msgstr ""
 
@@ -115,10 +111,6 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "2.10.0"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "Apache 2.0"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -194,19 +186,15 @@ msgid "jackson-module-parameter-names"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "com.fasterxml"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "classmate"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "1.4.0"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
 msgid "com.github.docker-java"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "docker-java"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.2.10"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -214,11 +202,11 @@ msgid "docker-java-api"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "3.2.7"
+msgid "docker-java-core"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "docker-java-core"
+msgid "docker-java-transport"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -227,14 +215,6 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "docker-java-transport-netty"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "docker-java-transport"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "docker-java"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -258,6 +238,18 @@ msgid "com.github.pagehelper"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
+msgid "pagehelper"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.1.11"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "MIT"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
 msgid "pagehelper-spring-boot-autoconfigure"
 msgstr ""
 
@@ -266,19 +258,7 @@ msgid "1.2.13"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "MIT"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
 msgid "pagehelper-spring-boot-starter"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "pagehelper"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "5.1.11"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -554,6 +534,34 @@ msgid "2.1.0"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.squareup.okhttp3"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "logging-interceptor"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.8.1"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "okhttp"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "com.squareup.okio"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "okio"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.13.0"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
 msgid "com.sun.istack"
 msgstr ""
 
@@ -651,6 +659,46 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "3.3"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.fabric8"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "kubernetes-model"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.gsonfire"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "gson-fire"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.8.5"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.kubernetes"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "client-java"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "13.0.1"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "client-java-api"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "client-java-proto"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -758,6 +806,26 @@ msgid "3.2.8.RELEASE"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
+msgid "io.prometheus"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "simpleclient"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "0.6.0"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "simpleclient_common"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "simpleclient_httpserver"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
 msgid "io.protostuff"
 msgstr ""
 
@@ -778,15 +846,15 @@ msgid "protostuff-core"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
+msgid "protostuff-runtime"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
 msgid "protostuff-parser"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "2.2.25"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "protostuff-runtime"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -826,11 +894,15 @@ msgid "swagger-annotations"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "1.5.22"
+msgid "1.6.2"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "swagger-core"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.5.22"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -907,6 +979,10 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "jakarta.activation-api"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.2.1"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1126,6 +1202,14 @@ msgid "org.apache.commons"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
+msgid "commons-collections4"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.4"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
 msgid "commons-compress"
 msgstr ""
 
@@ -1135,10 +1219,6 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "commons-lang3"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "3.8.1"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1178,7 +1258,7 @@ msgid "log4j-api"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "2.13.3"
+msgid "2.17.0"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1187,14 +1267,6 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "log4j-slf4j-impl"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "log4j-to-slf4j"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "2.11.2"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1382,31 +1454,19 @@ msgid "3.11.1"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "org.awaitility"
+msgid "org.bitbucket.b_c"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "awaitility"
+msgid "jose4j"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "3.0.0"
+msgid "0.7.8"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "org.bouncycastle"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "bcpkix-jdk15on"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "1.56"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "BouncyCastle"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1415,6 +1475,26 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "1.68"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "BouncyCastle"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "bcpkix-jdk15on"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.69"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "bcutil-jdk15on"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "bcprov-ext-jdk15on"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1450,19 +1530,31 @@ msgid "javax.persistence"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "org.glassfish.hk2.external"
+msgid "org.glassfish"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "aopalliance-repackaged"
+msgid "jakarta.el"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "2.5.0-b42"
+msgid "3.0.3"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "EPL 2.0"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "javax.json"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.0.4"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "CDDL 1.1,GPL 2.0"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1471,6 +1563,10 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "hk2-api"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.5.0-b42"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1487,6 +1583,14 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "1.0.1"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.glassfish.hk2.external"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "aopalliance-repackaged"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1542,31 +1646,19 @@ msgid "jersey-hk2"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "org.glassfish"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "jakarta.el"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "3.0.3"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "javax.json"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "1.0.4"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "CDDL 1.1,GPL 2.0"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
 msgid "org.hamcrest"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "hamcrest"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.2"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "BSD 3-clause"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1575,18 +1667,6 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "1.3"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "BSD 3-clause"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "hamcrest-library"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "hamcrest"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1658,6 +1738,14 @@ msgid "org.junit.jupiter"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
+msgid "junit-jupiter"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.6.2"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
 msgid "junit-jupiter-api"
 msgstr ""
 
@@ -1671,14 +1759,6 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "junit-jupiter-params"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "junit-jupiter"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "5.6.2"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1770,7 +1850,7 @@ msgid "mybatis-spring-boot-autoconfigure"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "2.1.4"
+msgid "2.2.0"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -1882,87 +1962,11 @@ msgid "1.7.26"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "jcl-to-slf4j"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
 msgid "slf4j-api"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "1.7.30"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "org.springframework.boot"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-autoconfigure"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "2.1.6.RELEASE"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-configuration-processor"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-starter-jdbc"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "2.3.3.RELEASE"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-starter-json"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-starter-logging"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-starter-test"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-starter-tomcat"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-starter-validation"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-starter-web"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-starter-websocket"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "2.1.18.RELEASE"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-starter"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-test-autoconfigure"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot-test"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "spring-boot"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -2026,6 +2030,74 @@ msgid "spring-websocket"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
+msgid "org.springframework.boot"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.1.6.RELEASE"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-autoconfigure"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-configuration-processor"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-jdbc"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.3.3.RELEASE"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-json"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-test"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-tomcat"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-validation"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-web"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-starter-websocket"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "2.1.18.RELEASE"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-test"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "spring-boot-test-autoconfigure"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
 msgid "org.springframework.security"
 msgstr ""
 
@@ -2042,6 +2114,10 @@ msgid "spring-security-core"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.3.10.RELEASE"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
 msgid "spring-security-jwt"
 msgstr ""
 
@@ -2051,10 +2127,6 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "spring-security-test"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
-msgid "5.3.4.RELEASE"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -2109,7 +2181,7 @@ msgstr ""
 msgid "1.26"
 msgstr ""
 
-#: ../../Projects/Developer/Developer_Dependency.md:264
+#: ../../Projects/Developer/Developer_Dependency.md:272
 msgid "Developer-fe 三方件使用清单"
 msgstr "Developer-fe Third-Party Use List"
 
@@ -2182,7 +2254,7 @@ msgid "eg-view"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "0.0.12"
+msgid "0.0.20"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -2298,6 +2370,14 @@ msgid "3.39.0"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
+msgid "swiper"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.4.5"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
 msgid "v-charts"
 msgstr ""
 
@@ -2311,6 +2391,14 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "2.6.11"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vue-awesome-swiper"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.1.1"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -2347,6 +2435,50 @@ msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "3.0.1"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "html2canvas"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jspdf"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vue-pdf"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "4.3.0"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vue-seamless-scroll"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "1.1.23"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "ISC"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "vue-video-player"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "5.0.2"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "jquery"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_Dependency.md
+msgid "3.6.0"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
@@ -2414,10 +2546,6 @@ msgid "node-sass"
 msgstr ""
 
 #: ../../Projects/Developer/Developer_Dependency.md
-msgid "5.5.0"
-msgstr ""
-
-#: ../../Projects/Developer/Developer_Dependency.md
 msgid "postcss-import"
 msgstr ""
 
@@ -2452,3 +2580,64 @@ msgstr ""
 #: ../../Projects/Developer/Developer_Dependency.md
 msgid "vue-template-compiler"
 msgstr ""
+
+#~ msgid "ch.qos.logback"
+#~ msgstr ""
+
+#~ msgid "logback-classic"
+#~ msgstr ""
+
+#~ msgid "1.2.3"
+#~ msgstr ""
+
+#~ msgid "EPL 1.0,LGPL 2.1"
+#~ msgstr ""
+
+#~ msgid "logback-core"
+#~ msgstr ""
+
+#~ msgid "3.2.7"
+#~ msgstr ""
+
+#~ msgid "2.13.3"
+#~ msgstr ""
+
+#~ msgid "log4j-to-slf4j"
+#~ msgstr ""
+
+#~ msgid "2.11.2"
+#~ msgstr ""
+
+#~ msgid "org.awaitility"
+#~ msgstr ""
+
+#~ msgid "awaitility"
+#~ msgstr ""
+
+#~ msgid "3.0.0"
+#~ msgstr ""
+
+#~ msgid "1.56"
+#~ msgstr ""
+
+#~ msgid "hamcrest-library"
+#~ msgstr ""
+
+#~ msgid "2.1.4"
+#~ msgstr ""
+
+#~ msgid "jcl-to-slf4j"
+#~ msgstr ""
+
+#~ msgid "spring-boot-starter-logging"
+#~ msgstr ""
+
+#~ msgid "5.3.4.RELEASE"
+#~ msgstr ""
+
+#~ msgid "0.0.12"
+#~ msgstr ""
+
+#~ msgid "5.5.0"
+#~ msgstr ""
+

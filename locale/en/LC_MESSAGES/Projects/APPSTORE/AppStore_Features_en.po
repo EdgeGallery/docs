@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/APPSTORE/AppStore_Features_en.md:1
+msgid "Features Design"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Features_en.md:3
+msgid "AppStore is the application warehouse module of EdgeGallery. It is mainly responsible for the storage and management of 5G edge applications. The current version has decentralized control, and different user roles contain different features."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Features_en.md:5
+msgid "Administrator users' features: application upload, application test, application publish, application query, application comment, download/delete all applications, external warehouse management, application push, application pull, message management, operation analysis, application management, sandbox management, application online experience, application synchronization, application monetization, document center."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Features_en.md:7
+msgid "Tenant users' features: application upload, application test, application publish, application query, application comment, download/delete of this user application, application online experience, application monetization, document center."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Features_en.md:9
+msgid "Guest user features: application query, document center."
+msgstr ""
+

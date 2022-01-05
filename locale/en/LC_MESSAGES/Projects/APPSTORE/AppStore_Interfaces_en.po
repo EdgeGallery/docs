@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 00:08+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,194 +142,226 @@ msgid "[2.13 Get all packages of user-v2](#213-Get-All-Packages-of-User-v2)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:34
-msgid "[3. Comment](#3-Comment)"
+msgid "[2.14 Get all packages by create time range-v2](#214-Get-All-Packages-by-Create-Time-Range -v2)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:35
-msgid "[3.1 Get comments of app](#31-Get-Comments-of-App)"
+msgid "[2.15 Download icon of app](#215-Download-Icon-of-App)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:36
-msgid "[3.2 Submit comment to app](#32-Submit-Comment-to-App)"
+msgid "[3. Comment](#3-Comment)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:37
-msgid "[3.3 Get comments of app-v2](#33-Get-Comments-of-App-v2)"
+msgid "[3.1 Get comments of app](#31-Get-Comments-of-App)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:38
-msgid "[4. APP push](#4-App-Push)"
+msgid "[3.2 Submit comment to app](#32-Submit-Comment-to-App)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:39
-msgid "[4.1 Query push app list](#41-Query-Push-App-List)"
+msgid "[3.3 Get comments of app-v2](#33-Get-Comments-of-App-v2)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:40
-msgid "[4.2 Get push app package](#42-Get-Push-App-Package)"
+msgid "[4. APP push](#4-App-Push)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:41
-msgid "[4.3 Push app package](#43-Push-App-Package)"
+msgid "[4.1 Query push app list](#41-Query-Push-App-List)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:42
-msgid "[4.4 Download push app package](#44-DownLoad-Push-App-Package)"
+msgid "[4.2 Get push app package](#42-Get-Push-App-Package)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:43
-msgid "[4.5 Download push app icon](#45-Download-Push-App-Icon)"
+msgid "[4.3 Push app package](#43-Push-App-Package)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:44
-msgid "[4.6 Query push app list-v2](#46-Query-Push-App-List-v2)"
+msgid "[4.4 Download push app package](#44-DownLoad-Push-App-Package)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:45
-msgid "[5. AppStore manager](#5-AppStore-Manager)"
+msgid "[4.5 Download push app icon](#45-Download-Push-App-Icon)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:46
-msgid "[5.1 Add AppStore](#51-Add-AppStore)"
+msgid "[4.6 Query push app list-v2](#46-Query-Push-App-List-v2)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:47
-msgid "[5.2 Delete AppStore](#52-Delete-AppStore)"
+msgid "[5. AppStore manager](#5-AppStore-Manager)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:48
-msgid "[5.3 Modify AppStore](#53-Modify-AppStore)"
+msgid "[5.1 Add AppStore](#51-Add-AppStore)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:49
-msgid "[5.4 Query AppStore List](#54-Query-AppStore-List)"
+msgid "[5.2 Delete AppStore](#52-Delete-AppStore)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:50
-msgid "[5.5 Query AppStore](#55-Query-AppStore)"
+msgid "[5.3 Modify AppStore](#53-Modify-AppStore)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:51
-msgid "[5.6 Query AppStore List-v2](#56-Query-AppStore-List-v2)"
+msgid "[5.4 Query AppStore List](#54-Query-AppStore-List)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:52
-msgid "[6. Message](#6-Message)"
+msgid "[5.5 Query AppStore](#55-Query-AppStore)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:53
-msgid "[6.1 Add message](#61-Add-Message)"
+msgid "[5.6 Query AppStore List-v2](#56-Query-AppStore-List-v2)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:54
-msgid "[6.2 Get all message](#62-Get-All-Message)"
+msgid "[6. Message](#6-Message)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:55
-msgid "[6.3 Get message](#63-Get-Message)"
+msgid "[6.1 Add message](#61-Add-Message)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:56
-msgid "[6.4 Delete message](#64-Delete-Message)"
+msgid "[6.2 Get all message](#62-Get-All-Message)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:57
-msgid "[6.5 Accept message](#65-Accept-Message)"
+msgid "[6.3 Get message](#63-Get-Message)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:58
-msgid "[6.6 Update status](#66-Update-Status)"
+msgid "[6.4 Delete message](#64-Delete-Message)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:59
-msgid "[6.7 Add message-v2](#67-Add-Message-v2)"
+msgid "[6.5 Accept message](#65-Accept-Message)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:60
-msgid "[6.8 Get all message-v2](#68-Get-All-Message-v2)"
+msgid "[6.6 Update status](#66-Update-Status)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:61
-msgid "[7. APP pull](#7-App-Pull)"
+msgid "[6.7 Add message-v2](#67-Add-Message-v2)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:62
-msgid "[7.1 Query pull app list](#71-Query-Pull-App-List)"
+msgid "[6.8 Get message list-v2](#68-Get-Message-List-v2)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:63
-msgid "[7.2 Get pull app packages](#72-Get-Pull-App-Packages)"
+msgid "[7. APP pull](#7-App-Pull)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:64
-msgid "[7.3 Pull app package](#73-Pull-App-Package)"
+msgid "[7.1 Query pull app list](#71-Query-Pull-App-List)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:65
-msgid "[7.4 Query pull app list-v2](#74-Query-Pull-App-List-v2)"
+msgid "[7.2 Get pull app packages](#72-Get-Pull-App-Packages)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:66
-msgid "[7.5 Get pull app packages-v2](#75-Get-Pull-App-Packages-v2)"
+msgid "[7.3 Pull app package](#73-Pull-App-Package)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:67
-msgid "[8. Sandbox Management](#8-Sandbox-Management)"
+msgid "[7.4 Query pull app list-v2](#74-Query-Pull-App-List-v2)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:68
-msgid "[8.1 Get all hosts](#81-Get-All-Hosts)"
+msgid "[7.5 Get pull app packages-v2](#75-Get-Pull-App-Packages-v2)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:69
-msgid "[8.2 Get one host](#82-Get-One-Host)"
+msgid "[8. Sandbox Management](#8-Sandbox-Management)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:70
-msgid "[8.3 Create one host](#83-Create-One-Host)"
+msgid "[8.1 Get all hosts](#81-Get-All-Hosts)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:71
-msgid "[8.4 Delete one host](#84-Delete-One-Host)"
+msgid "[8.2 Get one host](#82-Get-One-Host)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:72
-msgid "[8.5 Modify one host](#85-Modify-One-Host)"
+msgid "[8.3 Create one host](#83-Create-One-Host)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:73
-msgid "[8.6 Upload configuration file](#86-Upload-Configuration-File)"
+msgid "[8.4 Delete one host](#84-Delete-One-Host)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:74
-msgid "[9. App experience online](#9-App-Experience-Online)"
+msgid "[8.5 Modify one host](#85-Modify-One-Host)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:75
-msgid "[9.1 Instantiate App](#91-Instantiate-App)"
+msgid "[8.6 Upload configuration file](#86-Upload-Configuration-File)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:76
-msgid "[9.2 Release resource](#92-Release-Resource)"
+msgid "[9. App experience online](#9-App-Experience-Online)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:77
-msgid "[9.3 Get app work status](#93-Get-App-Working-Status)"
+msgid "[9.1 Instantiate App](#91-Instantiate-App)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:78
+msgid "[9.2 Release resource](#92-Release-Resource)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:79
-msgid "1. App"
+msgid "[9.3 Get app work status](#93-Get-App-Working-Status)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:80
+msgid "[10. App monetization](#10-App-Monetization)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:81
-msgid "Application is the basic publishing unit of AppStore."
+msgid "[10.1 Subscribe App](#101-Subscribe-App)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:82
+msgid "[10.2 Unsubscribe App](#102-Unsubscribe-App)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:83
-msgid "1.1 Get All Apps"
+msgid "[10.3 Activate order](#103-Activate-Order)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:84
+msgid "[10.4 Query order list](#104-Query-Order-List)"
 msgstr ""
 
 #: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:85
+msgid "[10.5 Get MEC hosts](#105-Get-MEC-Hosts)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:87
+msgid "1. App"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:89
+msgid "Application is the basic publishing unit of AppStore."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:91
+msgid "1.1 Get All Apps"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:93
 msgid "Query all application by condition."
 msgstr ""
 
@@ -397,15 +429,15 @@ msgstr ""
 msgid "application creator."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md ../../Projects/APPSTORE/AppStore_Interfaces_en.md:99 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:137 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:206 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:222 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:248 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:268 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:296 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:318 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:352 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:497 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:559 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:681 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:717 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:757 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:797 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:814 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:832 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:849 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:868 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:912 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1018 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1080 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1145 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1209 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1313 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1363 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1415 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1460 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1507 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1542 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1578 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1594 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1610 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1668 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1722 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1750 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1774 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1803 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1833 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1897 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1944 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1960 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1999 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2036 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2053 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2069 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2145 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2215 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2261 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2296 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2425 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2484 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2573 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2646 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2693 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2757 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2802 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2858 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2909 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2978 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3034 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3085
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md ../../Projects/APPSTORE/AppStore_Interfaces_en.md:107 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:145 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:214 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:230 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:256 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:276 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:304 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:326 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:360 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:505 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:569 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:689 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:725 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:765 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:805 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:822 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:840 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:859 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:878 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:922 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1028 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1102 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1167 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1231 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1352 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1434 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1482 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1502 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1554 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1599 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1646 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1681 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1717 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1733 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1749 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1807 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1861 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1889 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1913 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1942 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1972 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2036 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2083 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2099 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2138 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2175 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2192 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2208 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2284 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2337 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2383 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2418 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2547 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2606 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2695 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2768 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2817 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2882 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2915 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2972 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3011 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3080 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3136 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3187 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3255 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3298 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3338 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3447 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3509
 msgid "Example response:"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:127
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:135
 msgid "1.2 Get One App"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:128 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:533 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:747
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:136 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:543 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:755
 msgid "Query application by application id."
 msgstr ""
 
@@ -421,11 +453,11 @@ msgstr ""
 msgid "path"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:163
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:171
 msgid "1.3 Register App"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:164 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:595
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:172 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:603
 msgid "Register a application."
 msgstr ""
 
@@ -513,11 +545,11 @@ msgstr ""
 msgid "show type: public、inner-public、private"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:194
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:202
 msgid "1.4 Delete One App"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:195
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:203
 msgid "Delete a application."
 msgstr ""
 
@@ -525,19 +557,19 @@ msgstr ""
 msgid "application name"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:212
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:220
 msgid "1.5 Get Icon of App"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:213
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:221
 msgid "Get application icon by application id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:228
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:236
 msgid "1.6 Upload Package by Segment"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:229
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:237
 msgid "Upload package by segment."
 msgstr ""
 
@@ -617,11 +649,11 @@ msgstr ""
 msgid "file type"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:256
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:264
 msgid "1.7 Merge App Package"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:257
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:265
 msgid "Merge application package."
 msgstr ""
 
@@ -633,11 +665,11 @@ msgstr ""
 msgid "guid"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:276
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:284
 msgid "1.8 Register Virtual Machine App"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:277
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:285
 msgid "Register virtual machine application."
 msgstr ""
 
@@ -649,63 +681,63 @@ msgstr ""
 msgid "package file relative path"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:308
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:316
 msgid "1.9 Get Video of App"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:309
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:317
 msgid "Get application video by application id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:324
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:332
 msgid "1.10 Modify Hot Apps"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:326
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:334
 msgid "Modify if hot application by application ids."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:359
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:367
 msgid "1.11 Get All Apps-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:361
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:369
 msgid "Pagination query all applications by condition."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:368
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:376 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1274
 msgid "Request parameters:"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:389
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:397
 msgid "QueryAppReqDto"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:458
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:454 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1301
 msgid "QueryAppCtrlDto"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:531
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:541
 msgid "1.12 Get One App-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:593
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:601
 msgid "1.13 Register App-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:699
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:707
 msgid "2. Package"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:701
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:709
 msgid "Package belong to application, etch application have at least one Package."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:703
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:711
 msgid "2.1 Get All Packages of App"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:705
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:713
 msgid "Query all packages by application id."
 msgstr ""
 
@@ -721,7 +753,7 @@ msgstr ""
 msgid "request header"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:746
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:754
 msgid "2.2 Get One Package"
 msgstr ""
 
@@ -733,27 +765,27 @@ msgstr ""
 msgid "package id"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:784
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:792
 msgid "2.3 Delete One Package"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:785
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:793
 msgid "Delete a package of application."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:803
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:811
 msgid "2.4 Download One Package"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:804
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:812
 msgid "Download one package by application id and package id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:820
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:828
 msgid "2.5 Get File Content"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:821
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:829
 msgid "Get file content by application id package id and file path."
 msgstr ""
 
@@ -769,87 +801,119 @@ msgstr ""
 msgid "request body"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:838
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:846
 msgid "2.6 App Publish"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:839 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1048
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:847 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1058
 msgid "Publish a application by application id and package id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:856
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "isFree"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "is this application free?"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "price"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "the price of the application"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:866
 msgid "2.7 App Test"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:857
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:867
 msgid "Test a application by application id and package id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:878
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:888
 msgid "2.8 Get All Packages of User"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:880
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:890
 msgid "Get all packages of user."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:942
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:952
 msgid "2.9 Update App"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:944
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:954
 msgid "Update a application by application  id and package id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1046
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1056
 msgid "2.10 App Publish-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1093
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1115
 msgid "2.11 Get All Packages of App-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1095
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1117
 msgid "Pagination query packages by application id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1175
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1197
 msgid "2.12 Get One Package-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1177
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1199
 msgid "Get one package by application id and package id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1243
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1265
 msgid "2.13 Get All Packages of User-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1245
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1267
 msgid "Pagination query all packages of user."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1349
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1388
+msgid "2.14 Get All Packages by Create Time Range -v2"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1390
+msgid "Pagination query all packages by create time range."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1470
+msgid "2.15 Download Icon of App"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1472
+msgid "Download application icon by application id and package id."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1488
 msgid "3. Comment"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1351
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1490
 msgid "User can submit comments to an application."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1353
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1492
 msgid "3.1 Get Comments of App"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1354
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1493
 msgid "Get comments by application id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1393
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1532
 msgid "3.2 Submit Comment to App"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1394
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1533
 msgid "User submit comment to application by application id."
 msgstr ""
 
@@ -861,47 +925,47 @@ msgstr ""
 msgid "comment entity"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1406
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1545
 msgid "Example request body:"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1420
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1559
 msgid "3.3 Get Comments of App-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1422
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1561
 msgid "Pagination query comments of application by application id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1496
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1635
 msgid "4. App Push"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1498
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1637
 msgid "User can push a application to other."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1500
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1639
 msgid "4.1 Query Push App List"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1501
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1640
 msgid "Query the application list which can be pushed."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1532
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1671
 msgid "4.2 Get Push App Package"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1533
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1672
 msgid "Get push application package by package id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1567
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1706
 msgid "4.3 Push App Package"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1568
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1707
 msgid "Push a application package by package id"
 msgstr ""
 
@@ -913,43 +977,43 @@ msgstr ""
 msgid "provider list"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1584
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1723
 msgid "4.4 Download Push App Package"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1585
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1724
 msgid "Download push application package by package id"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1600
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1739
 msgid "4.5 Download Push App Icon"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1601
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1740
 msgid "Download push application icon by package id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1616
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1755
 msgid "4.6 Query Push App List-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1618
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1757
 msgid "Pagination query pushable applications."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1701
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1840
 msgid "5. AppStore Manager"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1703
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1842
 msgid "Add, delete, modify and query the AppStore."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1705
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1844
 msgid "5.1 Add AppStore"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1706
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1845
 msgid "Add external AppStore."
 msgstr ""
 
@@ -1013,11 +1077,11 @@ msgstr ""
 msgid "description information"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1740
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1879
 msgid "5.2 Delete AppStore"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1741
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1880
 msgid "Delete external AppStore."
 msgstr ""
 
@@ -1029,11 +1093,11 @@ msgstr ""
 msgid "AppStore id"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1756
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1895
 msgid "5.3 Modify AppStore"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1757
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1896
 msgid "Modify external AppStore."
 msgstr ""
 
@@ -1045,43 +1109,43 @@ msgstr ""
 msgid "AppStore  version"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1792
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1931
 msgid "5.4 Query AppStore List"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1793
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1932
 msgid "Query external AppStore list."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1823
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1962
 msgid "5.5 Query AppStore"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1824
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1963
 msgid "Query external AppStore ."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1851
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1990
 msgid "5.6 Query AppStore List-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1853
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1992
 msgid "Pagination query external AppStores."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1923
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2062
 msgid "6. Message"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1925
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2064
 msgid "The message contains information such as application push, download, notice, pull."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1927
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2066
 msgid "6.1 Add Message"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1928 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2077
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2067 ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2216
 msgid "Add a application operation message."
 msgstr ""
 
@@ -1149,11 +1213,11 @@ msgstr ""
 msgid "application icon download url"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1950
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2089
 msgid "6.2 Get All Message"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1951
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2090
 msgid "Get messages by message type."
 msgstr ""
 
@@ -1165,11 +1229,11 @@ msgstr ""
 msgid "message type"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1989
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2128
 msgid "6.3 Get Message"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:1990
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2129
 msgid "Get message by message id."
 msgstr ""
 
@@ -1181,19 +1245,19 @@ msgstr ""
 msgid "message id"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2026
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2165
 msgid "6.4 Delete Message"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2027
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2166
 msgid "Delete message by message id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2042
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2181
 msgid "6.5 Accept Message"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2043
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2182
 msgid "download message by message id."
 msgstr ""
 
@@ -1201,47 +1265,127 @@ msgstr ""
 msgid "request"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2059
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2198
 msgid "6.6 Update Status"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2060
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2199
 msgid "Update message status by message id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2075
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2214
 msgid "6.7 Add Message-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2157
-msgid "6.8 Get All Message-v2"
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2296
+msgid "6.8 Get Message List-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2159
-msgid "Get all messages by message type."
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2298
+msgid "Pagination query messages by condition."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2250
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2324
+msgid "QueryMessageReqDto"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "String"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "limit"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "number of queries per page, [1,500]"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "int"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "offset"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "paging query start page, starting from 0"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "sortItem"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "query sort field"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "sortType"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "query sorting method, ASC/DESC"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "appName"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "timeFlag"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "message time flag. enumeration values include: today, within a week, within a month and earlier"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "enum"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "allMessage"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "get all message or not"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "boolean"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "readable"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md
+msgid "Get readed or unread messages when not getting all messages"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2372
 msgid "7. App Pull"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2252
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2374
 msgid "User can pull a application from other AppStore."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2254
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2376
 msgid "7.1 Query Pull App List"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2255
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2377
 msgid "Query the application list which can pull"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2286
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2408
 msgid "7.2 Get Pull App Packages"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2287
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2409
 msgid "Get pull application packages by platform id."
 msgstr ""
 
@@ -1253,11 +1397,11 @@ msgstr ""
 msgid "external AppStore id"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2321
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2443
 msgid "7.3 Pull App Package"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2322
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2444
 msgid "Pull app package by packageId"
 msgstr ""
 
@@ -1269,110 +1413,172 @@ msgstr ""
 msgid "pull request dto"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2332
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2454
 msgid "PullAppReqDto:"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2432
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2554
 msgid "7.4 Query Pull App List-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2434
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2556
 msgid "Pagination query pullable applications."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2515
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2637
 msgid "7.5 Get Pull App Packages-v2"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2517
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2639
 msgid "Get pullable application packages by external platform id."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2604
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2726
 msgid "8. Sandbox Management"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2606
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2728
 msgid "Manage the sandbox environment."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2608
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2730
 msgid "8.1 Get All Hosts"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2609
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2731
 msgid "Get all sandbox environments."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2667
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2791
 msgid "8.2 Get One Host"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2668
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2792
 msgid "Get the sandbox environment based on hostId."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2714
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2838
 msgid "8.3 Create One Host"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2715
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2839
 msgid "Create one sandbox environment."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2776
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2889
 msgid "8.4 Delete One Host"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2777
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2890
 msgid "Delete the sandbox environment based on hostId."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2809
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2922
 msgid "8.5 Modify One Host"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2810
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2923
 msgid "Modify the sandbox environment based on hostId."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2877
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2979
 msgid "8.6 Upload Configuration File"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2878
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2980
 msgid "Upload sandbox environment configuration file."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2924
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3026
 msgid "9. App Experience Online"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2926
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3028
 msgid "Experiencing the application online."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2928
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3030
 msgid "9.1 Instantiate App"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2929
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3031
 msgid "Instantiate the application and start experiencing the application online."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2990
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3092
 msgid "9.2 Release Resource"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:2991
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3093
 msgid "The experience is complete and resources are released."
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3041
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3143
 msgid "9.3 Get App Working Status"
 msgstr ""
 
-#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3042
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3144
 msgid "Get application working status."
 msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3199
+msgid "10. App Monetization"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3201
+msgid "When the application is published, the application can be priced to realize the application revenue."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3203
+msgid "10.1 Subscribe App"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3205
+msgid "create order."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3270
+msgid "10.2 Unsubscribe App"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3272
+msgid "deactivate order."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3310
+msgid "10.3 Activate Order"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3312
+msgid "activate order."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3350
+msgid "10.4 Query Order List"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3352
+msgid "Pagination query orders of user."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3408
+msgid "QueryCtrlDto"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3475
+msgid "10.5 Get MEC Hosts"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Interfaces_en.md:3477
+msgid "get mec hosts info."
+msgstr ""
+
+#~ msgid "[6.8 Get all message-v2](#68-Get-All-Message-v2)"
+#~ msgstr ""
+
+#~ msgid "6.8 Get All Message-v2"
+#~ msgstr ""
+
+#~ msgid "Get all messages by message type."
+#~ msgstr ""
+

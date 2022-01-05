@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../README_en.md:1
+msgid "docs"
+msgstr ""
+
+#: ../../README_en.md:3
+msgid "Introduction"
+msgstr ""
+
+#: ../../README_en.md:4
+msgid "The documentation of the warehouse is compiled and formed by the documentation tool[Documentation](http://docs.edgegallery.org/zh_CN/latest/)，The link is as follows：http://docs.edgegallery.org/zh_CN/latest/"
+msgstr ""
+
+#: ../../README_en.md:6
+msgid "The document currently contains the following content："
+msgstr ""
+
+#: ../../README_en.md:8 ../../README_en.md:128
+#, python-format
+msgid "[Get Started](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery.md)"
+msgstr ""
+
+#: ../../README_en.md:9 ../../README_en.md:129
+#, python-format
+msgid "[Developer Guide](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)"
+msgstr ""
+
+#: ../../README_en.md:10 ../../README_en.md:130
+msgid "[Release Notes](https://gitee.com/edgegallery/docs/blob/master/Release%20Notes/EdgeGallery_RN_zh.md)"
+msgstr ""
+
+#: ../../README_en.md:11 ../../README_en.md:131
+msgid "[Projects](https://gitee.com/edgegallery/docs/tree/master/Projects)"
+msgstr ""
+
+#: ../../README_en.md:13
+msgid "copyright"
+msgstr ""
+
+#: ../../README_en.md:14
+msgid "[Apache License Version 2.0](https://gitee.com/edgegallery/docs/blob/master/license)"
+msgstr ""
+
+#: ../../README_en.md:16
+msgid "[Creative Commons Corporation 4.0（CC-BY-4.0）](https://gitee.com/edgegallery/docs/blob/master/license-cc-by-4.0)"
+msgstr ""
+
+#: ../../README_en.md:18
+msgid "Mandatory step for Docs repo commit"
+msgstr ""
+
+#: ../../README_en.md:19
+msgid "After making changes in .md files of docs repository, the following steps must be followed to make the translation of the same to work. Even if the .md files are written in English, these steps must be followed, to maintain a proper translation structure"
+msgstr ""
+
+#: ../../README_en.md:21
+msgid "Environment Requirement"
+msgstr ""
+
+#: ../../README_en.md:23
+msgid "Ubuntu `18.04` version or higher than that"
+msgstr ""
+
+#: ../../README_en.md:24
+msgid "python `3.8` installed in ubuntu"
+msgstr ""
+
+#: ../../README_en.md:26
+msgid "Setting up of the env"
+msgstr ""
+
+#: ../../README_en.md:28
+msgid "**STEP 1: Setup env**"
+msgstr ""
+
+#: ../../README_en.md:33
+msgid "**STEP 2: Build**"
+msgstr ""
+
+#: ../../README_en.md:39
+msgid "This will result in generating .pot files, updating .po files, creating .mo files, chinese html and English html"
+msgstr ""
+
+#: ../../README_en.md:48
+msgid "**STEP 3: Translation** For every change in .md files in docs project made, the .po files will be updated or created, while the `build-docs.sh` was run in STEP 2."
+msgstr ""
+
+#: ../../README_en.md:51
+msgid "Follow the below steps to make a proper translated content."
+msgstr ""
+
+#: ../../README_en.md:52
+msgid "[Fill the empty msgStr](#Fill-the-empty-msgStr)"
+msgstr ""
+
+#: ../../README_en.md:53
+msgid "[Modify the fuzzy msgStr](#Modify-the-fuzzy-msgStr)"
+msgstr ""
+
+#: ../../README_en.md:54
+msgid "[Remove the old content](#Remove-the-old-content)"
+msgstr ""
+
+#: ../../README_en.md:56
+msgid "**Fill the empty msgStr** Navigate the corresponding .po file for the same modified .md file, in docs/locale/en/LC_MESSAGES/."
+msgstr ""
+
+#: ../../README_en.md:58
+msgid "For a change made in docs/Projects/User Management/User_Interfaces.md, the docs/locale/en/LC_MESSAGES/Projects/User Management/User_Interfaces.po should be modified"
+msgstr ""
+
+#: ../../README_en.md:60
+msgid "Translation should be available for all `msgId` in the file. For each msgId, translation should be given in msgStr Use translator script, and translate msgId easily."
+msgstr ""
+
+#: ../../README_en.md:89
+msgid "**Modify the fuzzy msgStr** Modified lines of .md would make .po file have `fuzzy` content, which also should be properly translated."
+msgstr ""
+
+#: ../../README_en.md:91
+msgid "Search for `#, fuzzy` in the .po file"
+msgstr ""
+
+#: ../../README_en.md:98
+msgid "Remove the line which contains `#, fuzzy` and retranslate the msgId, and update the msgStr in User_Interface.po file"
+msgstr ""
+
+#: ../../README_en.md:104
+msgid "**Remove the old content**"
+msgstr ""
+
+#: ../../README_en.md:105
+msgid "Search for `#~` in the .po file."
+msgstr ""
+
+#: ../../README_en.md:111
+msgid "**STEP 4: Verification**"
+msgstr ""
+
+#: ../../README_en.md:112
+msgid "After saving the changes in all the .po files, once again run the `test_tools.sh` under the docs/ directory"
+msgstr ""
+
+#: ../../README_en.md:113
+msgid "Go into `docs/_build/html/en`, and verify the corresponding english translated html files"
+msgstr ""
+
+#: ../../README_en.md:115
+msgid "**STEP 5: Commit** While pushing the changes, only commit the changes made in `.po` and `.md`. Ignore all the other folders and files."
+msgstr ""
+
+#: ../../README_en.md:123
+msgid "Documentation Details"
+msgstr ""
+
+#: ../../README_en.md:124
+msgid "该仓库的文档通过文档工具编译形成[文档](http://docs.edgegallery.org/zh_CN/latest/)，链接如下：http://docs.edgegallery.org/zh_CN/latest/"
+msgstr ""
+
+#: ../../README_en.md:126
+msgid "该文档当前包含内容如下："
+msgstr ""
+

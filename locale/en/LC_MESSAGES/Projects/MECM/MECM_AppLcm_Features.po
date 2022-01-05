@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 00:08+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,38 +18,42 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../Projects/MECM/MECM_AppLcm_Features.md:1
+msgid "Features"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:3
 msgid "Characteristic design LcmController is mainly responsible to provide northbound API's to upload config, remove config, instantiate, terminate , and query an application. It also provides APIs to query mep capabilities and kpi information from prometheus"
 msgstr ""
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:5
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:7
 msgid "![](/uploads/images/2020/0924/mecm-applcm-diagram.png \"mecm-applcm-diagram.png\")"
 msgstr "![](/uploads/images/2021/cor2020/mecm-applcm-diagram_en.png \"mecm-applcm-diagram.png\")"
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:8
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:10
 msgid "Upload Configuration:  Upload configuration API is responsible to upload the kube configuration file into edge node to communicate with  kubernetes cluster."
 msgstr ""
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:12
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:14
 msgid "Remove Configuration:  Remove configuration API is responsible to remove the kube configuration file from edge node."
 msgstr ""
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:15
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:17
 msgid "Instantiate:  Instantiate API is responsible to deploy an application in edge node. As part of Instantiate API lcmcontroller  will send request to MEP about ak sk configuration and will create a kubernetes secret for ak sk values and which   can be referred by deployed application."
 msgstr ""
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:20
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:22
 msgid "Terminate:  Terminate API is responsible to delete an application from edge node."
 msgstr ""
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:23
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:25
 msgid "Query:  Query API is responsible to get the statistics of pod details such as cpu, disk and memory information."
 msgstr ""
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:26
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:28
 msgid "QueryKPI:  Query KPI API is responsible to get the statistics of node details by using prometheus"
 msgstr ""
 
-#: ../../Projects/MECM/MECM_AppLcm_Features.md:29
+#: ../../Projects/MECM/MECM_AppLcm_Features.md:31
 msgid "QueryMEP:  Query MEP API is responsible to get mep capabilities from mep server node"
 msgstr ""
 

@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:1
+msgid "How to contribute"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:3
+msgid "This article will show users how to participate in the contribution of the AppStore project. The content is divided into two parts, which will respectively introduce how to build a local development environment and AppStore operation guidance."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:5
+msgid "Build a local development environment"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:7
+msgid "This section will guide users how to build AppStore-be and AppStore-fe modules locally to help developers quickly understand and develop code."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:9
+msgid "The local startup of AppStore-be depends on:"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:15
+msgid "The local startup of AppStore-fe depends on:"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:21
+msgid "So in order to build a local development environment, the final startup sequence is Service Center -> DataBase -> UserManagement -> AppStore-be -> WebsiteGateway(AppStore-fe)."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:23
+msgid "Service Center"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:25
+msgid "Download [Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:27
+msgid "![](/uploads/images/2021/1009/appstore/download_service-center_en.png \"service center1.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:29
+msgid "Run start-service-center.bat and start-frontend.bat after decompression"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:31
+msgid "![](/uploads/images/2021/1009/appstore/start_service-center.png \"service center2.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:33
+msgid "DataBase"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:35
+msgid "Download, install, and start Postgresql 12.3"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:37
+msgid "Set the login name and password, such as postgresql/root"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:39
+msgid "Create a database named appstoredb"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:41
+msgid "![](/uploads/images/2021/cor2020/153833_89c54e53_7625245.jpeg \"db1.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:43
+msgid "Create a database named usermgmtdb"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:45
+msgid "User Management"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:47
+msgid "Download user-mgmt-be code and user-mgmt-fe code"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:49
+msgid "Install node.js and npm, enter the user-mgmt-fe folder, run `npm install`and`npm run build`"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:51
+msgid "Create a static folder in the src/main/resources/ folder of user-mgmt-be"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:53
+msgid "Copy the contents of the dist folder compiled by user-mgmt-fe to the static folder of user-mgmt-be"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:55 ../../Projects/APPSTORE/AppStore_Contribution_en.md:67
+msgid "Configure the runtime environment variables of MainServer in the compiler (here, taking IDEA as an example)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:57
+msgid "![](/uploads/images/2021/cor2020/154011_896d887f_7625245.jpeg \"usermgmt1.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:59
+msgid "Run the MainServer function and start UserManagement"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:61
+msgid "AppStore-be"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:63
+msgid "Download the appstore-be code"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:65
+msgid "Modify the /src/main/resources/application.yaml file in appstore-be `servicecomb.rest.address`to`127.0.0.1:8099`"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:69
+msgid "![](/uploads/images/2021/cor2020/154023_9c49d20c_7625245.jpeg \"appstore-be1.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:71
+msgid "Run the MainServer function and start appstore-be"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:73
+msgid "AppStore-fe"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:75
+msgid "Download the appstore-fe code"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:77
+msgid "Enter the appstore-fe folder, run `npm install`and`npm run build`"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:79
+msgid "Download the website-gateway code"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:81
+msgid "Create a static folder in the src/main/resources/ folder of website-gateway"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:83
+msgid "Copy the contents of the dist folder compiled by appstore-fe to the static folder of website-gateway"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:85
+msgid "Modify the /src/main/resources/application.yaml file in website-gateway `server.port`to `8080`( `OAUTH_APPSTORE_CLIENT_URL`consistent with the port in the variable filled in when usermgmt is started )"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:87
+msgid "Configure the runtime environment variables of GatewayApplication in the compiler (here in IDEA as an example)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:89
+msgid "![](/uploads/images/2021/cor2020/154035_12e727fc_7625245.jpeg \"appstore-fe1.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:91
+msgid "Run GatewayApplication to start WebsiteGateway and AppStore-fe, and the browser can visit http://127.0.0.1:8080/ to access the AppStore homepage"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:93
+msgid "Operation guidance"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:95
+msgid "AppStore is a market for developers to publish and launch App applications. Edge applications developed by the Developer platform can be directly shared to the AppStore application store after testing. You can also directly upload application packages that comply with the platform specifications, and the application package file type is csar. One APP corresponds to multiple packages, and users can directly download the latest version of the APP or download the specified version of the package."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:97
+msgid "Log in to the application platform"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:99
+msgid "After entering the website, the default is the guest user and can view the information. If you want to perform more operations (such as uploading an application), you need to register an account. After the registration is completed, you can enter the home page of the application platform after logging in with the account: ![](/uploads/images/2021/1009/appstore/guest_en.png \"1.1\") ![](/uploads/images/2021/1009/appstore/register_user_en.png \"1.2\") ![](/uploads/images/2021/1009/appstore/login_en.png \"1.3\") ![](/uploads/images/2021/1009/appstore/login_appstore_en.png \"1.4\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:105
+msgid "View application"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:107
+msgid "Click on the application to view the application details. The details interface displays basic information such as application version, industry, type, etc. The specific introduction is displayed on the lower side. In the operation on the right side of the basic information, the download button on the right has permission settings and can only download packages uploaded by yourself. Administrator users can download all published packages and packages uploaded by themselves."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:109
+msgid "If you need to comment on the APP, you can enter the comment in the comment area, set the rating, and click the button with the left mouse button, and the comment submission is successful."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:111
+msgid "![](/uploads/images/2021/1009/appstore/app_detail_en.png \"2.1\") ![](/uploads/images/2021/1009/appstore/comment_en.png \"2.2\") ![](/uploads/images/2021/1009/appstore/comments_en.png \"2.3\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:115
+msgid "Publish the application"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:117
+msgid "Upload the APP, open the main interface of the APP Store, click the upload icon on the right to open the upload APP dialog box. In the upload dialog box, select the APP to be uploaded, upload or select the APP icon provided by the system by default, select the APP industry, type, and architecture, fill in a brief description of the APP, and click OK to complete the upload. ![](/uploads/images/2021/1009/appstore/upload_en.png \"3.1\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:120
+msgid "After the application is uploaded, it will automatically jump to the My Application interface. The uploaded application needs to pass the platform's atp test before it can be published to the warehouse. My application is the basic information of the uploaded package. The right side of the form is the basic operation. Click the test button to start creating a test task. The page is a nested atp test page. Click the start test button to resolve the package dependencies, you can see When you reach the number of specific test cases, click OK to start the test. The page is the test progress page, you can return to the My Application page and wait for the test to complete. ![](/uploads/images/2021/1009/appstore/totest_en.png \"3.2\") ![](/uploads/images/2021/1009/appstore/test_task_en.png \"3.3\") ![](/uploads/images/2021/1009/appstore/test_success_en.png \"3.4\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:125
+msgid "The application can only be published when the test status in my application is Test_success (that is, the test is successful). Click the publish button on the right. After the publishing is successful, you can see the application you uploaded on the homepage. ![](/uploads/images/2021/1009/appstore/topublish_en.png \"3.5\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:128
+msgid "![](/uploads/images/2021/1009/appstore/published_en.png \"3.6\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:130
+msgid "Share application"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:132
+msgid "Application sharing navigation is divided into external application warehouse management, application promotion, application pull, message center and operation analysis. ![](/uploads/images/2021/1009/appstore/app_share_en.png \"4.1\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:135
+msgid "External application warehouse management page, you can add, modify and delete warehouses. ![](/uploads/images/2021/1009/appstore/third_appstores_en.png \"4.2\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:138
+msgid "Click the application push menu under the application sharing main menu to view the application information that can be pushed, select the application that needs to be pushed to the operator or a third party, and click the batch push button, and then view the results of the application pushed to the operator or a third party. ![](/uploads/images/2021/1009/appstore/topush_en.png \"4.3\") ![](/uploads/images/2021/1009/appstore/pushed_en.png \"4.4\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:142
+msgid "Click the application pull menu under the application sharing main menu to view the application information that can be pulled from each external warehouse, and select the applications that need to be pulled for batch pull. ![](/uploads/images/2021/1009/appstore/topull_en.png \"4.5\") ![](/uploads/images/2021/1009/appstore/pulled_en.png \"4.6\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:146
+msgid "Click the message center menu under the main menu of application sharing to view the notification information, and you can accept APP information that needs to be pushed from different operators. You can pull (download) the information of the application by clicking the receive button of the message detail. The successfully pulled APP can be viewed on the \"My Application\" interface. Click the delete button to delete the message. Double-click to delete the message. View the message details. ![](/uploads/images/2021/1009/appstore/message_en.png \"4.7\") ![](/uploads/images/2021/1009/appstore/message_detail_en.png \"4.8\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Contribution_en.md:150
+msgid "After the application is successfully pushed, switch to the operation analysis tab on the right, and view the corresponding information in the operation analysis interface. At the same time, the operation analysis interface can view different operations such as pull, download, notification, push and other types of messages. ![](/uploads/images/2021/1009/appstore/operations_en.png \"4.9\") ![](/uploads/images/2021/1009/appstore/notice_table_en.png \"4.10\")"
+msgstr ""
+

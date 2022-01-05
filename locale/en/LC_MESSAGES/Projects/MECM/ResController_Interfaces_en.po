@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:1
+msgid "Rescontroller Interface"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:3
+msgid "The document is for the Rescontroller project, there is one part of interfaces in the project."
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:5
+msgid "Create server on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:7
+msgid "Create servers on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md
+msgid "Name"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md
+msgid "Definition"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md
+msgid "Type"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md
+msgid "Required"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md
+msgid "Allowed"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md
+msgid "Max Length"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md
+msgid "access_token"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md
+msgid "access token"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md
+msgid "header"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md
+msgid "yes"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md
+msgid "Jwt Token"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:16 ../../Projects/MECM/ResController_Interfaces_en.md:258 ../../Projects/MECM/ResController_Interfaces_en.md:335 ../../Projects/MECM/ResController_Interfaces_en.md:605 ../../Projects/MECM/ResController_Interfaces_en.md:639 ../../Projects/MECM/ResController_Interfaces_en.md:669 ../../Projects/MECM/ResController_Interfaces_en.md:892 ../../Projects/MECM/ResController_Interfaces_en.md:1129
+msgid "Example request:"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:50 ../../Projects/MECM/ResController_Interfaces_en.md:73 ../../Projects/MECM/ResController_Interfaces_en.md:166 ../../Projects/MECM/ResController_Interfaces_en.md:271 ../../Projects/MECM/ResController_Interfaces_en.md:293 ../../Projects/MECM/ResController_Interfaces_en.md:349 ../../Projects/MECM/ResController_Interfaces_en.md:372 ../../Projects/MECM/ResController_Interfaces_en.md:400 ../../Projects/MECM/ResController_Interfaces_en.md:451 ../../Projects/MECM/ResController_Interfaces_en.md:474 ../../Projects/MECM/ResController_Interfaces_en.md:543 ../../Projects/MECM/ResController_Interfaces_en.md:583 ../../Projects/MECM/ResController_Interfaces_en.md:617 ../../Projects/MECM/ResController_Interfaces_en.md:646 ../../Projects/MECM/ResController_Interfaces_en.md:715 ../../Projects/MECM/ResController_Interfaces_en.md:738 ../../Projects/MECM/ResController_Interfaces_en.md:820 ../../Projects/MECM/ResController_Interfaces_en.md:870 ../../Projects/MECM/ResController_Interfaces_en.md:899 ../../Projects/MECM/ResController_Interfaces_en.md:922 ../../Projects/MECM/ResController_Interfaces_en.md:1031 ../../Projects/MECM/ResController_Interfaces_en.md:1107 ../../Projects/MECM/ResController_Interfaces_en.md:1143 ../../Projects/MECM/ResController_Interfaces_en.md:1166 ../../Projects/MECM/ResController_Interfaces_en.md:1257
+msgid "Example response:"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:61
+msgid "Query serverson mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:63
+msgid "Query servers on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:155 ../../Projects/MECM/ResController_Interfaces_en.md:157
+msgid "Query vm on mechost by vmId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:247 ../../Projects/MECM/ResController_Interfaces_en.md:249
+msgid "Operate vm server"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:282 ../../Projects/MECM/ResController_Interfaces_en.md:284
+msgid "Delete servers on mechost by serverId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:304
+msgid "Create flavor on mechost."
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:306
+msgid "Create flavor on mechost by flavorId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:360 ../../Projects/MECM/ResController_Interfaces_en.md:362
+msgid "Query flavors on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:389 ../../Projects/MECM/ResController_Interfaces_en.md:391
+msgid "Query flavor on mechost by flavorId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:419
+msgid "Delete flavor on mechost by flavorId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:421
+msgid "Delete vm on mechost by flavorId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:462 ../../Projects/MECM/ResController_Interfaces_en.md:464
+msgid "Query images on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:532 ../../Projects/MECM/ResController_Interfaces_en.md:534
+msgid "Query image on mechost by imageId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:572
+msgid "Delete image on mechost by imageId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:574
+msgid "Delete vm on mechost by imageId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:594
+msgid "Create image on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:596
+msgid "Create vm on mechost by imageId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:628
+msgid "Import image on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:630
+msgid "import image on mechost by imageId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:657
+msgid "Add networks on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:659
+msgid "Add network on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:726 ../../Projects/MECM/ResController_Interfaces_en.md:728
+msgid "Query networks on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:809 ../../Projects/MECM/ResController_Interfaces_en.md:811
+msgid "Query network on mechost by networkId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:859 ../../Projects/MECM/ResController_Interfaces_en.md:861
+msgid "Delete network on mechost by networkId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:881 ../../Projects/MECM/ResController_Interfaces_en.md:883
+msgid "Create securityGroup"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:910 ../../Projects/MECM/ResController_Interfaces_en.md:912
+msgid "Query securityGroups on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:1020 ../../Projects/MECM/ResController_Interfaces_en.md:1022
+msgid "Query securityGroup on mechost by securityGroupId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:1096
+msgid "Delete securityGroup on mechost by securityGroupId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:1098
+msgid "Delete SecurityGroup on mechost by securityGroupId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:1118 ../../Projects/MECM/ResController_Interfaces_en.md:1120
+msgid "Create securityGroupRules"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:1154 ../../Projects/MECM/ResController_Interfaces_en.md:1156
+msgid "Query securityGroupRules on mechost"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:1246
+msgid "Delete securityGroupRules on mechost by securityGroupRulesId"
+msgstr ""
+
+#: ../../Projects/MECM/ResController_Interfaces_en.md:1248
+msgid "Delete vm on mechost by securityGroupId"
+msgstr ""
+
