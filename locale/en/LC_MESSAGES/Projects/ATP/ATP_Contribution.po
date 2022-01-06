@@ -134,8 +134,8 @@ msgid "2、在编译器（此处以IDEA为例）中配置atpApp的运行时环�
 msgstr "2.configuring the runtime environment variable for atpApp in the compiler (where IDEA is used as an example)"
 
 #: ../../Projects/ATP/ATP_Contribution.md:68
-msgid "![](/uploads/images/2021/cor2020/154506_0ed087ca_5504908.png \"dev-config.png\")"
-msgstr "![](/uploads/images/2021/cor2020/154506_0ed087ca_5504908_en.png \"dev-config.png\")"
+msgid "![](/uploads/images/2021/atp/envParam.png \"envParam.png\")"
+msgstr "![](/uploads/images/2021/atp/envParam.png \"envParam.png\")"
 
 #: ../../Projects/ATP/ATP_Contribution.md:70
 msgid "3、运行atpApp函数，启动atp"

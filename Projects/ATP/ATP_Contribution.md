@@ -66,7 +66,7 @@ ATP Contribution
 
 2、在编译器（此处以IDEA为例）中配置atpApp的运行时环境变量
 
-![](/uploads/images/2021/cor2020/154506_0ed087ca_5504908.png "dev-config.png")
+![](/uploads/images/2021/atp/envParam.png "envParam.png")
 
 3、运行atpApp函数，启动atp
 
