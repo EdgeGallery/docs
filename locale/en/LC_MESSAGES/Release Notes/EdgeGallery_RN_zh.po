@@ -70,71 +70,71 @@ msgstr "**Application Innovation**"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:53
 msgid "系统架构增强"
-msgstr ""
+msgstr "System Architecture Enhancements"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:54
 msgid "整体抽象EdgeGallery 东南西北向的对接关系，进行三方系统的统一规划管理（包含MEAO、镜像仓库、Appstore、IaaS、测试系统）"
-msgstr ""
+msgstr "overall abstractionEdgeGallery Docking relationship between southeast and northwest，Unified planning and management of the tripartite system（IncludeMEAO、mirror repository、Appstore、IaaS、test system）"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:55
 msgid "Profile Management：完善Developer 与 MECM在Profile上展示与内部模型的映射，提供统一的北向Profile与数据出口"
-msgstr ""
+msgstr "Profile Management：CompleteDeveloper and MECMexistProfileShow the mapping with the internal model，Provides a unified northboundProfilewith data export"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:56
 msgid "WASM运行态完整支持"
-msgstr ""
+msgstr "WASMFull runtime support"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:57
 msgid "EdgeGallery北向接口支持：支持北向对接认证API；支持与第三方IAM系统集成方案，形成一套标准的统一认证体系"
-msgstr ""
+msgstr "EdgeGalleryNorthbound interface support：Support northbound authenticationAPI；Support with third partiesIAMSystem Integration Solution，Form a set of standard unified certification system"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:58
 msgid "支持proxy代理访问部署EdgeGallery"
-msgstr ""
+msgstr "supportproxyProxy Access DeploymentEdgeGallery"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:60
 msgid "管理面增强"
-msgstr ""
+msgstr "Management plane enhancement"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:61
 msgid "EdgeGallery虚拟机场景增强：支持灵活定义MEC节点内的网络；支持灵活定义应用挂接的网络；支持配置应用的网络接口参数；支持在部署应用时灵活配置flavor；支持边缘节点内的租户隔离，EG用户与openstack租户绑定"
-msgstr ""
+msgstr "EdgeGalleryVirtual Machine Scenario Enhancement：Support flexible definitionMECnetwork within a node；Supports flexible definition of application-attached networks；Supports configuring the network interface parameters of the application；Support flexible configuration when deploying applicationsflavor；Supports tenant isolation within edge nodes，EGuser withopenstackTenant binding"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:62
 msgid "MECM资源管理功能增强：1.支持边缘节点的资源管理，包括边缘节点的资源信息，租户信息等；2.支持APP的资源管理，包括APP使用的虚拟机列表，对应虚拟机的状态与度量指标；3.支持边缘资源的申请，包括虚拟机拉起，flavor设置，镜像（应用）选择等；4.支持边缘虚拟机资源的维护，包括重启，关闭，开机，远程VNC等"
-msgstr ""
+msgstr "MECMResource management enhancements：1.Support resource management of edge nodes，Including resource information of edge nodes，Tenant information, etc.；2.supportAPPresource management，includeAPPList of virtual machines used，Corresponding virtual machine status and metrics；3.Application for supporting edge resources，Including virtual machine pull up，flavorset up，mirror（application）choose etc.；4.Supports the maintenance of edge virtual machine resources，including reboot，closure，boot，RemotelyVNCWait"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:64
 msgid "边缘自治-企业Portal"
-msgstr ""
+msgstr "Border autonomy-enterprisePortal"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:65
 msgid "支持Openstack/FS资源统计，边缘节点检查支持定时任务，企业自助申请IaaS资源并隔离"
-msgstr ""
+msgstr "supportOpenstack/FSResource Statistics，Edge node inspection supports scheduled tasks，Enterprise self-service applicationIaaSresources and isolate"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:66
 msgid "APP变现和商业化流程优化"
-msgstr ""
+msgstr "APPMonetization and commercialization process optimization"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:67
 msgid "基于当前的设计持续推进APP变现流程，打通一个端到端的定价，订购，部署，维护的流程"
-msgstr ""
+msgstr "Continue to advance based on current designAPPMonetization process，Get through an end-to-end pricing，order，deploy，maintenance process"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:68
 msgid "集成平台"
-msgstr ""
+msgstr "Integrated platform"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:69
 msgid "提供融合服务界面，大幅优化用户体验"
-msgstr ""
+msgstr "Provide integrated service interface，Greatly optimized user experience"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:70
 msgid "EdgeGallery应用孵化流程优化，前台界面操作流程优化；后台接口重构，适配流程优化；ATP界面需要适配新的流程优化；容器应用流程优化"
-msgstr ""
+msgstr "EdgeGalleryApplication Incubation Process Optimization，Front-end interface operation process optimization；Backend interface refactoring，Adaptation process optimization；ATPThe interface needs to adapt to the new process optimization；Container application process optimization"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:71
 msgid "基于RTMP的超低延迟推拉流服务：1. 搭建基于WebRTC的实时音视频平台集成至EdgeGallery，支撑VR/AR等应用上线；2. 提供开放SDK，支撑应用上线。"
-msgstr ""
+msgstr "based onRTMPUltra-low latency push-pull streaming service：1. build based onWebRTCThe real-time audio and video platform is integrated intoEdgeGallery，supportVR/ARWaiting for the application to go online；2. provide openSDK，Support application online。"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:73 Notes/EdgeGallery_RN_zh.md:211 Notes/EdgeGallery_RN_zh.md:354
 msgid "**其他**"
@@ -142,11 +142,11 @@ msgstr "**other**"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:74
 msgid "完成小程序解释层与MEP平台架构改造，相关部署脚本与workload形态同步完成"
-msgstr ""
+msgstr "Complete the applet interpretation layer andMEPPlatform Architecture Transformation，The relevant deployment script is the same asworkloadMorphological synchronization complete"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:75
 msgid "安全加解密SDK： 针对EG平台内部存储的敏感数据，例如：沙箱环境密码，需要提供安全可靠的加解密方式进行密码的存储保存，安全的加解密服务"
-msgstr ""
+msgstr "Secure encryption and decryptionSDK： againstEGSensitive data stored inside the platform，For example：Sandbox environment password，It is necessary to provide a safe and reliable encryption and decryption method for password storage and preservation，Secure encryption and decryption services"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:77 Notes/EdgeGallery_RN_zh.md:220 Notes/EdgeGallery_RN_zh.md:358 Notes/EdgeGallery_RN_zh.md:499 Notes/EdgeGallery_RN_zh.md:620 Notes/EdgeGallery_RN_zh.md:723 Notes/EdgeGallery_RN_zh.md:851
 msgid "**Bug Fixes**"
@@ -168,7 +168,7 @@ msgstr ""
 #: ../../Release Notes/EdgeGallery_RN_zh.md:85 Notes/EdgeGallery_RN_zh.md:89
 #, python-format
 msgid "参见 [EdgeGallery v1.5.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.5/EG%20v1.5%20Security%20Test%20Report.md)"
-msgstr ""
+msgstr "see [EdgeGallery v1.5.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.5/EG%20v1.5%20Security%20Test%20Report.md)"
 
 #: ../../Release Notes/EdgeGallery_RN_zh.md:87 Notes/EdgeGallery_RN_zh.md:230 Notes/EdgeGallery_RN_zh.md:387 Notes/EdgeGallery_RN_zh.md:517 Notes/EdgeGallery_RN_zh.md:638 Notes/EdgeGallery_RN_zh.md:741 Notes/EdgeGallery_RN_zh.md:869
 msgid "**Known Vulnerabilities in Used Modules**"

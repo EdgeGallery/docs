@@ -23,7 +23,7 @@ msgstr "Developer Guide"
 
 #: ../../Developer Guide/ReadMe.md:4
 msgid "EdgeGallery业务开发指导"
-msgstr ""
+msgstr "EdgeGalleryBusiness Development Guidance"
 
 #: ../../Developer Guide/ReadMe.md:6
 msgid "[APPStore](../Projects/APPSTORE/AppStore_Contribution.md)"
@@ -67,35 +67,35 @@ msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:22
 msgid "北向接口调用指导"
-msgstr ""
+msgstr "Northbound Interface Calling Guide"
 
 #: ../../Developer Guide/ReadMe.md:24
 msgid "EdgeGallery支持第三方业务系统通过北向接口网关调用EdgeGallery的业务接口。调用流程如下图所示："
-msgstr ""
+msgstr "EdgeGallerySupport third-party business system invocation through northbound interface gatewayEdgeGallerybusiness interface。The calling process is shown in the following figure："
 
 #: ../../Developer Guide/ReadMe.md:26
 msgid "![北向接口调用流程](../uploads/images/2021/common/northapi-arch.png)"
-msgstr ""
+msgstr "![Northbound interface call process](../uploads/images/2021/common/northapi-arch.png)"
 
 #: ../../Developer Guide/ReadMe.md:28
 msgid "北向接口调用endpoint"
-msgstr ""
+msgstr "Northbound interface callendpoint"
 
 #: ../../Developer Guide/ReadMe.md:30
 msgid "目前由WebsiteGateway来承担北向接口网关的职责，具体是由通过WebsiteGateway运行起来的各业务平台前端来承担。"
-msgstr ""
+msgstr "Currently byWebsiteGatewayto assume the responsibility of the northbound interface gateway，Specifically byWebsiteGatewayThe front-end of each business platform that is running is responsible for。"
 
 #: ../../Developer Guide/ReadMe.md:32
 msgid "所以北向接口调用的endpoint可以使用任意一个业务平台前端的endpoint。如下："
-msgstr ""
+msgstr "So the northbound interface callsendpointYou can use the front-end of any business platformendpoint。as follows："
 
 #: ../../Developer Guide/ReadMe.md:71
 msgid "获取XSRF-TOKEN"
-msgstr ""
+msgstr "ObtainXSRF-TOKEN"
 
 #: ../../Developer Guide/ReadMe.md:73
 msgid "在调用获取AccessToken的接口和各平台的业务接口之前，需要先获取到XSRF-TOKEN。"
-msgstr ""
+msgstr "Get in the callAccessTokenBefore the interface and the business interface of each platform，need to getXSRF-TOKEN。"
 
 #: ../../Developer Guide/ReadMe.md:80 Guide/ReadMe.md:107
 msgid "Example request:"
@@ -107,7 +107,7 @@ msgstr ""
 
 #: ../../Developer Guide/ReadMe.md:95
 msgid "获取AccessToken"
-msgstr ""
+msgstr "ObtainAccessToken"
 
 #: ../../Developer Guide/ReadMe.md
 msgid "Name"
@@ -143,7 +143,7 @@ msgstr ""
 
 #: ../../Developer Guide/ReadMe.md
 msgid "是"
-msgstr ""
+msgstr "Yes"
 
 #: ../../Developer Guide/ReadMe.md
 msgid "userFlag"
@@ -151,7 +151,7 @@ msgstr ""
 
 #: ../../Developer Guide/ReadMe.md
 msgid "登录凭证（用户名/邮箱/手机号）"
-msgstr ""
+msgstr "login credentials（username/Mail/Phone number）"
 
 #: ../../Developer Guide/ReadMe.md
 msgid "body"
@@ -163,61 +163,61 @@ msgstr ""
 
 #: ../../Developer Guide/ReadMe.md
 msgid "密码"
-msgstr ""
+msgstr "password"
 
 #: ../../Developer Guide/ReadMe.md:141
 msgid "调用业务接口"
-msgstr ""
+msgstr "call business interface"
 
 #: ../../Developer Guide/ReadMe.md:143
 msgid "各平台提供的业务接口，参考各模块的接口文档。"
-msgstr ""
+msgstr "Business interfaces provided by each platform，Refer to the interface documentation of each module。"
 
 #: ../../Developer Guide/ReadMe.md:145
 msgid "北向业务接口URL格式"
-msgstr ""
+msgstr "Northbound service interfaceURLFormat"
 
 #: ../../Developer Guide/ReadMe.md:147
 msgid "通过北向接口调用各平台的业务接口时，URL按照如下格式调用："
-msgstr ""
+msgstr "When calling the business interface of each platform through the northbound interface，URLCalled in the following format："
 
 #: ../../Developer Guide/ReadMe.md:153
 msgid "其中urlPrefix是各平台在网关中定义的路由前缀，定义如下表所示："
-msgstr ""
+msgstr "inurlPrefixis the routing prefix defined by each platform in the gateway，The definitions are shown in the table below："
 
 #: ../../Developer Guide/ReadMe.md:190
 msgid "北向业务接口请求头"
-msgstr ""
+msgstr "Northbound service interface request header"
 
 #: ../../Developer Guide/ReadMe.md:192
 msgid "通过北向接口调用各平台的业务接口时，需要传递如下请求头："
-msgstr ""
+msgstr "When calling the business interface of each platform through the northbound interface，The following request headers need to be passed："
 
 #: ../../Developer Guide/ReadMe.md:213
 msgid "北向业务接口调用示例"
-msgstr ""
+msgstr "Northbound Service API Calling Example"
 
 #: ../../Developer Guide/ReadMe.md:215
 msgid "AppStore平台提供了获取应用列表的接口： GET /mec/appstore/v1/apps"
-msgstr ""
+msgstr "AppStoreThe platform provides an interface to get the application list： GET /mec/appstore/v1/apps"
 
 #: ../../Developer Guide/ReadMe.md:218
 msgid "北向调用："
-msgstr ""
+msgstr "northbound call："
 
 #: ../../Developer Guide/ReadMe.md:224
 msgid "第三方IAM对接开发指导"
-msgstr ""
+msgstr "third partyIAMDocking development guidance"
 
 #: ../../Developer Guide/ReadMe.md:226
 msgid "EdgeGallery支持对接使用第三方IAM帐号系统。"
-msgstr ""
+msgstr "EdgeGallerySupport the use of third-party dockingIAMaccount system。"
 
 #: ../../Developer Guide/ReadMe.md:228
 msgid "在部署EdgeGallery时请参考：[离线安装指导](https://gitee.com/edgegallery/installer/tree/master/ansible_install)中的说明开启第三方IAM使能开关。"
-msgstr ""
+msgstr "in deploymentEdgeGalleryPlease refer to：[Offline Installation Guide](https://gitee.com/edgegallery/installer/tree/master/ansible_install)The instructions in Turn on third-partyIAMenable switch。"
 
 #: ../../Developer Guide/ReadMe.md:230
 msgid "对于第三方IAM帐号系统，需要实现如下接口："
-msgstr ""
+msgstr "For third partiesIAMaccount system，Need to implement the following interface："
 
