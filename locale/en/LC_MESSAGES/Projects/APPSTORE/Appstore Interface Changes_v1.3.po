@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md:2 Interface
+msgid "新增或者修改的接口"
+msgstr "New or modified interface"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "**API**"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "**方法**"
+msgstr "**method**"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "API说明"
+msgstr "APIinstruction"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "**变更类型**"
+msgstr "**Change type**"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "**说明**"
+msgstr "**instruction**"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "/mec/appstore/v2/messages"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "GET"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "获取所有消息"
+msgstr "Get all news"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "删除"
+msgstr "delete"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "为支持更多的查询条件，变更为下面接口"
+msgstr "To support more query conditions，Change to the following interface"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "/mec/appstore/v2/messages/action/query"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "POST"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "获取消息列表"
+msgstr "Get the message list"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "新增"
+msgstr "Add"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "请求参数增加字段 appName、limit、offset、sortItem、sortType，timeFlag，readable，allMessage;  后台进行分页查询、支持模糊查询 ，按条件排序，查询已读未读消息，响应时间段内的消息，响应参数增加总数量total、limit、offset。"
+msgstr "Request parameter increase field appName、limit、offset、sortItem、sortType，timeFlag，readable，allMessage;  Paging query in the background、Support fuzzy query ，Sort by condition，Query read and unread messages，Message within response time，Total number of response parameters increasetotal、limit、offset。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "/mec/appstore/v1/apps/{appId}/packages/{packageId}/icon"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "获取应用包图标"
+msgstr "Get app package icon"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "请求参数字段appId 、packageId; 后台根据请求字返回给前台文件流。"
+msgstr "Request parameter fieldappId 、packageId; The background returns to the foreground file stream according to the request word。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "/mec/appstore/v1/experience/deploy"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "在线体验"
+msgstr "online experience"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "修改"
+msgstr "Revise"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "返回参数data由字符串修改为数组，里面存储应用的多个服务信息对象[{serviceName，nodePort，mecHost}]。"
+msgstr "Return parameterdataModified from string to array，Store multiple service information objects of the application[{serviceName，nodePort，mecHost}]。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "/mec/appstore/v1/system/hosts/{hostId}"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "获取沙箱列表"
+msgstr "Get a list of sandboxes"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "优化接口响应规范"
+msgstr "Optimize interface response specifications"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "/mec/appstore/v1/system/hosts"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "新增沙箱"
+msgstr "Add sandbox"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "优化接口响应规范，请求参数mepHost结构调整，新增parameter、status， status为必填参数，状态为NORMAL、BUSY、STOP状态。"
+msgstr "Optimize interface response specifications，Request parametermepHostStructural Adjustment，Addparameter、status， statusIs a required parameter，Status isNORMAL、BUSY、STOPstate。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "PUT"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "更改沙箱"
+msgstr "Change sandbox"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "DELETE"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
+msgid "删除沙箱"
+msgstr "Delete sandbox"
+

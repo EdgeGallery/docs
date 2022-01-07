@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:1 Local Up
+msgid "搭建本地开发环境"
+msgstr "Set up a local development environment"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:3 Local Up
+msgid "本节将指导用户如何在本地搭建AppStore-be和AppStore-fe模块，从而帮助开发者快速理解、开发代码。"
+msgstr "This section will guide users how to build locallyAppStore-beandAppStore-feModule，So as to help developers quickly understand、Development code。"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:5 Local Up
+msgid "其中AppStore-be的本地启动依赖于："
+msgstr "inAppStore-beThe local startup depends on："
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:11 Local Up
+msgid "其中AppStore-fe的本地启动依赖于:"
+msgstr "inAppStore-feThe local startup depends on:"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:17 Local Up
+msgid "所以为了搭建本地开发环境，最终的启动顺序为 Service Center -> DataBase -> UserManagement -> AppStore-be -> WebsiteGateway(AppStore-fe)"
+msgstr "So in order to build a local development environment，The final startup sequence is Service Center -> DataBase -> UserManagement -> AppStore-be -> WebsiteGateway(AppStore-fe)"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:19 Local Up
+msgid "Service Center"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:21 Local Up
+msgid "1、下载[Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)"
+msgstr "1、download[Service Center](http://servicecomb.apache.org/cn/release/service-center-downloads/)"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:23 Local Up
+msgid "!![](/uploads/images/2021/1009/appstore/download_service-center.png \"service center1.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:25 Local Up
+msgid "2、解压后运行 start-service-center.bat  和  start-frontend.bat"
+msgstr "2、Run after decompression start-service-center.bat  and  start-frontend.bat"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:27 Local Up
+msgid "![](/uploads/images/2021/1009/appstore/start_service-center.png \"service center2.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:29 Local Up
+msgid "DataBase"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:31 Local Up
+msgid "1、下载、安装、启动 Postgresql 12.3"
+msgstr "1、download、Install、start up Postgresql 12.3"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:33 Local Up
+msgid "2、设置登录名和密码，例如 postgresql/root"
+msgstr "2、Set login name and password，For example postgresql/root"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:35 Local Up
+msgid "3、创建名为appstoredb的数据库"
+msgstr "3、Create a nameappstoredbDatabase"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:37 Local Up
+msgid "![](/uploads/images/2021/cor2020/153833_89c54e53_7625245.jpeg \"db1.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:39 Local Up
+msgid "4、创建名为usermgmtdb的数据库"
+msgstr "4、Create a nameusermgmtdbDatabase"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:41 Local Up
+msgid "User Management"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:43 Local Up
+msgid "1.下载 user-mgmt-be 代码和 user-mgmt-fe 代码"
+msgstr "1.download user-mgmt-be Code and user-mgmt-fe Code"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:45 Local Up
+msgid "2、安装node.js和npm，进入user-mgmt-fe文件夹，运行`npm install`和`npm run build`"
+msgstr "2、Installnode.jsandnpm，Enteruser-mgmt-fefolder，run`npm install`and`npm run build`"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:47 Local Up
+msgid "3、在user-mgmt-be的src/main/resources/文件夹中创建static文件夹"
+msgstr "3、existuser-mgmt-beofsrc/main/resources/Create in folderstaticfolder"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:49 Local Up
+msgid "4、将user-mgmt-fe编译出的dist文件夹中的内容拷贝到user-mgmt-be的static文件夹中"
+msgstr "4、willuser-mgmt-feCompileddistCopy the contents of the folder touser-mgmt-beofstaticFolder"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:51 Local Up
+msgid "5、在编译器（此处以IDEA为例）中配置MainServer的运行时环境变量"
+msgstr "5、In the compiler（Here withIDEAAs an example）Medium configurationMainServerRuntime environment variables"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:53 Local Up
+msgid "![](/uploads/images/2021/cor2020/154011_896d887f_7625245.jpeg \"usermgmt1.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:55 Local Up
+msgid "6、运行MainServer函数，启动UserManagement"
+msgstr "6、runMainServerfunction，start upUserManagement"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:57 Local Up
+msgid "AppStore-be"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:59 Local Up
+msgid "1、下载appstore-be代码"
+msgstr "1、downloadappstore-beCode"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:61 Local Up
+msgid "2、修改appstore-be中/src/main/resources/application.yaml 文件内的`servicecomb.rest.address`为`127.0.0.1:8099`"
+msgstr "2、Reviseappstore-bemiddle/src/main/resources/application.yaml Within the file`servicecomb.rest.address`for`127.0.0.1:8099`"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:63 Local Up
+msgid "3、在编译器（此处以IDEA为例）中配置MainServer的运行时环境变量"
+msgstr "3、In the compiler（Here withIDEAAs an example）Medium configurationMainServerRuntime environment variables"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:65 Local Up
+msgid "![](/uploads/images/2021/cor2020/154023_9c49d20c_7625245.jpeg \"appstore-be1.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:67 Local Up
+msgid "4.运行 MainServer 函数，启动 appstore-be"
+msgstr "4.run MainServer function，start up appstore-be"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:69 Local Up
+msgid "AppStore-fe"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:71 Local Up
+msgid "1、下载appstore-fe代码"
+msgstr "1、downloadappstore-feCode"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:73 Local Up
+msgid "2、进入appstore-fe文件夹，运行`npm install`和`npm run build`"
+msgstr "2、Enterappstore-fefolder，run`npm install`and`npm run build`"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:75 Local Up
+msgid "3、下载website-gateway代码"
+msgstr "3、downloadwebsite-gatewayCode"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:77 Local Up
+msgid "4、在website-gateway的src/main/resources/文件夹中创建static文件夹"
+msgstr "4、existwebsite-gatewayofsrc/main/resources/Create in folderstaticfolder"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:79 Local Up
+msgid "5、将appstore-fe编译出的dist文件夹中的内容拷贝到website-gateway的static文件夹中"
+msgstr "5、willappstore-feCompileddistCopy the contents of the folder towebsite-gatewayofstaticFolder"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:81 Local Up
+msgid "6、修改website-gateway中/src/main/resources/application.yaml 文件内的`server.port`为`8080`(与usermgmt启动时填写的`OAUTH_APPSTORE_CLIENT_URL`变量中的端口保持一致)"
+msgstr "6、Revisewebsite-gatewaymiddle/src/main/resources/application.yaml Within the file`server.port`for`8080`(andusermgmtFilled out at startup`OAUTH_APPSTORE_CLIENT_URL`Keep the port in the variable consistent)"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:83 Local Up
+msgid "7、在编译器（此处以IDEA为例）中配置GatewayApplication的运行时环境变量"
+msgstr "7、In the compiler（Here withIDEAAs an example）Medium configurationGatewayApplicationRuntime environment variables"
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:85 Local Up
+msgid "![](/uploads/images/2021/cor2020/154035_12e727fc_7625245.jpeg \"appstore-fe1.jpg\")"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Setting Development Environment.md:87 Local Up
+msgid "8、运行GatewayApplication启动WebsiteGateway与AppStore-fe，浏览器访问http://127.0.0.1:8080/ 即可访问到AppStore首页"
+msgstr "8、runGatewayApplicationstart upWebsiteGatewayandAppStore-fe，Browser accesshttp://127.0.0.1:8080/ You can accessAppStorefront page"
+

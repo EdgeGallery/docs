@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/APPSTORE/AppStore_Overview_en.md:1
+msgid "Overview"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview_en.md:4
+msgid "AppStore is an edge application market for developers to release and launch App applications. Edge applications developed by the Developer platform can be directly published to the AppStore application store after ATP testing. Users can also upload edge applications directly in the AppStore, and after ATP testing, they can be published to the AppStore for external display."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview_en.md:6
+msgid "AppStore is divided into two parts: the front and back parts. [AppStore BE][1]is the back-end part, which provides the main functional interface for the front desk or other three-party systems to call, and the [AppStore FE][2] is the front-end part and provides interface display."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview_en.md:8
+msgid "Code architecture"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview_en.md:10
+msgid "![](/uploads/images/2021/1009/appstore/app_structure.png)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview_en.md:12
+msgid "AppStore FE: The front-end framework of the developer platform, developed using VUE."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview_en.md:13
+msgid "AppStore BE: Developer platform background framework, developed using SpringBoot+ServiceComb. (For ServiceComb, please refer to here: https://servicecomb.apache.org/cn/)"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_Overview_en.md:14
+msgid "AppStore DB: The background depends on the Postgres database."
+msgstr ""
+

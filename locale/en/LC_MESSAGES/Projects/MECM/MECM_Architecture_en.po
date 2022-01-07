@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,8 @@ msgid "Architecture"
 msgstr ""
 
 #: ../../Projects/MECM/MECM_Architecture_en.md:4
-msgid "![.](/uploads/images/2021/cor2020/mecm-architecture.png \"mecm-architecture.png\")"
+#, fuzzy
+msgid "![.](/uploads/images/2021/cor2020/mecm-architecture-v1.5_en.png \"mecm-architecture-v1.5_en.png\")"
 msgstr "![.](/uploads/images/2021/cor2020/mecm-architecture.png \"mecm-architecture.png\")"
 
 #: ../../Projects/MECM/MECM_Architecture_en.md:6
@@ -50,38 +51,58 @@ msgid "Inventory provides realtime view of deployed applications on the edge hos
 msgstr ""
 
 #: ../../Projects/MECM/MECM_Architecture_en.md:20
-msgid "LCM Controller"
+msgid "North"
 msgstr ""
 
 #: ../../Projects/MECM/MECM_Architecture_en.md:21
-msgid "LCM Controller is responsible MEC application life cycle management operations by sending requests to appropriate   pluggable plugin adapters based on the infrastructure."
+msgid "North provides interface to obtain the host list and application distribution deployment. At present, it mainly helps      the Appstore implement the subscription function."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:24
+msgid "LCM Controller"
 msgstr ""
 
 #: ../../Projects/MECM/MECM_Architecture_en.md:25
+msgid "LCM Controller is responsible MEC application life cycle management operations by sending requests to appropriate   pluggable plugin adapters based on the infrastructure."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:29
 msgid "K8s Plugin"
 msgstr ""
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:26
-msgid "K8s Plugin is responsible for MEC application life cycle management operations on kubernetes infrastructure. K8s plugin   use helm   client to perform application life cycle management operations."
+#: ../../Projects/MECM/MECM_Architecture_en.md:30
+msgid "K8s Plugin is responsible for MEC application life cycle management operations on kubernetes infrastructure. K8s plugin   use helm client to perform application life cycle management operations."
 msgstr ""
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:31
+#: ../../Projects/MECM/MECM_Architecture_en.md:34
 msgid "App Rule Manager"
 msgstr ""
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:32
+#: ../../Projects/MECM/MECM_Architecture_en.md:35
 msgid "APP Rule Manager is responsible for configuring application rules by sending application rule configurations to MEP.   Application rule configurations includes the traffic rules and DNS to be configured."
 msgstr ""
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:35
+#: ../../Projects/MECM/MECM_Architecture_en.md:39
+msgid "Resource Controller"
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:40
+msgid "Resource Controller performs LCM operations on resources such as flavour, network, virtual machine etc..."
+msgstr ""
+
+#: ../../Projects/MECM/MECM_Architecture_en.md:42
 msgid "Deployment view"
 msgstr ""
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:36
-msgid "![.](/uploads/images/2021/cor2020/mecm-deployment-overview.png \"mecm-deployment-overview.png\")"
+#: ../../Projects/MECM/MECM_Architecture_en.md:43
+#, fuzzy
+msgid "![.](/uploads/images/2021/cor2020/mecm-deployment-overview-v1.5_en.png \"mecm-deployment-overview-v1.5_en.png\")"
 msgstr "![.](/uploads/images/2021/cor2020/mecm-deployment-overview.png \"mecm-deployment-overview.png\")"
 
-#: ../../Projects/MECM/MECM_Architecture_en.md:38
+#: ../../Projects/MECM/MECM_Architecture_en.md:45
 msgid "The deployment view shown is based on k8s deployment. MECM modules supports deployment on virtual  machine or docker container to start respective service."
 msgstr ""
+
+#~ msgid "K8s Plugin is responsible for MEC application life cycle management operations on kubernetes infrastructure. K8s plugin   use helm   client to perform application life cycle management operations."
+#~ msgstr ""
 

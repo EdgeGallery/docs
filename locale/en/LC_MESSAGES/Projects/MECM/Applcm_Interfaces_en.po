@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-09 10:45+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,23 +101,23 @@ msgstr ""
 msgid "formData"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:19 ../../Projects/MECM/Applcm_Interfaces_en.md:45 ../../Projects/MECM/Applcm_Interfaces_en.md:82 ../../Projects/MECM/Applcm_Interfaces_en.md:102 ../../Projects/MECM/Applcm_Interfaces_en.md:119 ../../Projects/MECM/Applcm_Interfaces_en.md:139 ../../Projects/MECM/Applcm_Interfaces_en.md:159 ../../Projects/MECM/Applcm_Interfaces_en.md:204 ../../Projects/MECM/Applcm_Interfaces_en.md:235 ../../Projects/MECM/Applcm_Interfaces_en.md:252 ../../Projects/MECM/Applcm_Interfaces_en.md:272 ../../Projects/MECM/Applcm_Interfaces_en.md:291 ../../Projects/MECM/Applcm_Interfaces_en.md:310 ../../Projects/MECM/Applcm_Interfaces_en.md:328 ../../Projects/MECM/Applcm_Interfaces_en.md:350 ../../Projects/MECM/Applcm_Interfaces_en.md:367 ../../Projects/MECM/Applcm_Interfaces_en.md:385 ../../Projects/MECM/Applcm_Interfaces_en.md:402 ../../Projects/MECM/Applcm_Interfaces_en.md:419 ../../Projects/MECM/Applcm_Interfaces_en.md:438 ../../Projects/MECM/Applcm_Interfaces_en.md:457 ../../Projects/MECM/Applcm_Interfaces_en.md:476 ../../Projects/MECM/Applcm_Interfaces_en.md:495 ../../Projects/MECM/Applcm_Interfaces_en.md:511 ../../Projects/MECM/Applcm_Interfaces_en.md:526 ../../Projects/MECM/Applcm_Interfaces_en.md:545 ../../Projects/MECM/Applcm_Interfaces_en.md:561 ../../Projects/MECM/Applcm_Interfaces_en.md:576 ../../Projects/MECM/Applcm_Interfaces_en.md:594 ../../Projects/MECM/Applcm_Interfaces_en.md:615 ../../Projects/MECM/Applcm_Interfaces_en.md:636 ../../Projects/MECM/Applcm_Interfaces_en.md:657 ../../Projects/MECM/Applcm_Interfaces_en.md:679 ../../Projects/MECM/Applcm_Interfaces_en.md:694
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:19 ../../Projects/MECM/Applcm_Interfaces_en.md:41 ../../Projects/MECM/Applcm_Interfaces_en.md:78 ../../Projects/MECM/Applcm_Interfaces_en.md:98 ../../Projects/MECM/Applcm_Interfaces_en.md:115 ../../Projects/MECM/Applcm_Interfaces_en.md:135 ../../Projects/MECM/Applcm_Interfaces_en.md:155 ../../Projects/MECM/Applcm_Interfaces_en.md:200 ../../Projects/MECM/Applcm_Interfaces_en.md:231 ../../Projects/MECM/Applcm_Interfaces_en.md:248 ../../Projects/MECM/Applcm_Interfaces_en.md:268 ../../Projects/MECM/Applcm_Interfaces_en.md:287 ../../Projects/MECM/Applcm_Interfaces_en.md:306 ../../Projects/MECM/Applcm_Interfaces_en.md:324 ../../Projects/MECM/Applcm_Interfaces_en.md:346 ../../Projects/MECM/Applcm_Interfaces_en.md:363 ../../Projects/MECM/Applcm_Interfaces_en.md:381 ../../Projects/MECM/Applcm_Interfaces_en.md:398 ../../Projects/MECM/Applcm_Interfaces_en.md:415 ../../Projects/MECM/Applcm_Interfaces_en.md:434 ../../Projects/MECM/Applcm_Interfaces_en.md:453 ../../Projects/MECM/Applcm_Interfaces_en.md:472 ../../Projects/MECM/Applcm_Interfaces_en.md:491 ../../Projects/MECM/Applcm_Interfaces_en.md:507 ../../Projects/MECM/Applcm_Interfaces_en.md:522 ../../Projects/MECM/Applcm_Interfaces_en.md:541 ../../Projects/MECM/Applcm_Interfaces_en.md:557 ../../Projects/MECM/Applcm_Interfaces_en.md:572 ../../Projects/MECM/Applcm_Interfaces_en.md:590 ../../Projects/MECM/Applcm_Interfaces_en.md:611 ../../Projects/MECM/Applcm_Interfaces_en.md:632 ../../Projects/MECM/Applcm_Interfaces_en.md:653 ../../Projects/MECM/Applcm_Interfaces_en.md:675 ../../Projects/MECM/Applcm_Interfaces_en.md:690 ../../Projects/MECM/Applcm_Interfaces_en.md:791 ../../Projects/MECM/Applcm_Interfaces_en.md:809 ../../Projects/MECM/Applcm_Interfaces_en.md:827 ../../Projects/MECM/Applcm_Interfaces_en.md:845 ../../Projects/MECM/Applcm_Interfaces_en.md:863 ../../Projects/MECM/Applcm_Interfaces_en.md:881 ../../Projects/MECM/Applcm_Interfaces_en.md:899 ../../Projects/MECM/Applcm_Interfaces_en.md:918 ../../Projects/MECM/Applcm_Interfaces_en.md:937 ../../Projects/MECM/Applcm_Interfaces_en.md:955 ../../Projects/MECM/Applcm_Interfaces_en.md:973 ../../Projects/MECM/Applcm_Interfaces_en.md:991 ../../Projects/MECM/Applcm_Interfaces_en.md:1009 ../../Projects/MECM/Applcm_Interfaces_en.md:1027 ../../Projects/MECM/Applcm_Interfaces_en.md:1046 ../../Projects/MECM/Applcm_Interfaces_en.md:1064 ../../Projects/MECM/Applcm_Interfaces_en.md:1083 ../../Projects/MECM/Applcm_Interfaces_en.md:1101 ../../Projects/MECM/Applcm_Interfaces_en.md:1119 ../../Projects/MECM/Applcm_Interfaces_en.md:1137
 msgid "Example response:"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:34
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:30
 msgid "Delete Config File"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:35
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:31
 msgid "Removes the config file"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:50
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:46
 msgid "Instantiate Application"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:51
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:47
 msgid "Application instantiated"
 msgstr ""
 
@@ -185,47 +185,47 @@ msgstr ""
 msgid "valid string"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:65
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:61
 msgid "Example request body:"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:90
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:86
 msgid "Terminates Application"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:91
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:87
 msgid "Terminates application instance id"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:107 ../../Projects/MECM/Applcm_Interfaces_en.md:407
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:103 ../../Projects/MECM/Applcm_Interfaces_en.md:403
 msgid "Query"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:108
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:104
 msgid "Get the statistics information"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:127
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:123
 msgid "Query Kpi"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:128
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:124
 msgid "Get cpu , memory and file system size"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:147
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:143
 msgid "Query MepCapabilities"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:148
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:144
 msgid "Get Mep Capabilities"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:191
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:187
 msgid "Get Mep Capability"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:192
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:188
 msgid "Retrieves edge host performance statistics based on capability id"
 msgstr ""
 
@@ -253,19 +253,19 @@ msgstr ""
 msgid "Alphanumeric characters,special characters are hypen and underscore"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:225
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:221
 msgid "Queries liveness & readiness"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:226
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:222
 msgid "Retrieves data for liveness & readiness"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:240
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:236
 msgid "App Deployment Status"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:241
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:237
 msgid "Retrieves status of the application deployment"
 msgstr ""
 
@@ -281,39 +281,39 @@ msgstr ""
 msgid "Valid UUID without hypen"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:260
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:256
 msgid "Query workload"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:261
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:257
 msgid "GetWorkloadDescription"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:280
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:276
 msgid "Query AppInstance information"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:281
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:277
 msgid "AppInstance information"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:299
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:295
 msgid "Query app instances records"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:300
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:296
 msgid "Sync app instances records"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:317
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:313
 msgid "Query stale records"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:318
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:314
 msgid "Sync app instances stale records"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:336 ../../Projects/MECM/Applcm_Interfaces_en.md:337
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:332 ../../Projects/MECM/Applcm_Interfaces_en.md:333
 msgid "Upload package"
 msgstr ""
 
@@ -333,11 +333,11 @@ msgstr ""
 msgid "package file"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:355 ../../Projects/MECM/Applcm_Interfaces_en.md:356
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:351 ../../Projects/MECM/Applcm_Interfaces_en.md:352
 msgid "Delete package"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:372 ../../Projects/MECM/Applcm_Interfaces_en.md:373
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:368 ../../Projects/MECM/Applcm_Interfaces_en.md:369
 msgid "Delete application package on host"
 msgstr ""
 
@@ -345,23 +345,23 @@ msgstr ""
 msgid "host ip"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:390 ../../Projects/MECM/Applcm_Interfaces_en.md:391
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:386 ../../Projects/MECM/Applcm_Interfaces_en.md:387
 msgid "Distribute package"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:408 ../../Projects/MECM/Applcm_Interfaces_en.md:427 ../../Projects/MECM/Applcm_Interfaces_en.md:428
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:404 ../../Projects/MECM/Applcm_Interfaces_en.md:423 ../../Projects/MECM/Applcm_Interfaces_en.md:424
 msgid "Distribution status"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:446 ../../Projects/MECM/Applcm_Interfaces_en.md:447
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:442 ../../Projects/MECM/Applcm_Interfaces_en.md:443
 msgid "Sync app package records"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:465 ../../Projects/MECM/Applcm_Interfaces_en.md:466
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:461 ../../Projects/MECM/Applcm_Interfaces_en.md:462
 msgid "Sync app package stale records"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:484
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:480
 msgid "Add MEC host"
 msgstr ""
 
@@ -377,31 +377,31 @@ msgstr ""
 msgid "body"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:500
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:496
 msgid "Update MEC host"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:516
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:512
 msgid "Query MEC hosts"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:534
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:530
 msgid "Delete MEC host"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:550
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:546
 msgid "Batch terminate application"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:566
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:562
 msgid "Sync mec host records"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:584
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:580
 msgid "Sync mec host stale records"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:602
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:598 ../../Projects/MECM/Applcm_Interfaces_en.md:904 ../../Projects/MECM/Applcm_Interfaces_en.md:905
 msgid "Create Image"
 msgstr ""
 
@@ -413,7 +413,7 @@ msgstr ""
 msgid "vm Id"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:623
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:619 ../../Projects/MECM/Applcm_Interfaces_en.md:960 ../../Projects/MECM/Applcm_Interfaces_en.md:961
 msgid "Delete Image"
 msgstr ""
 
@@ -425,11 +425,11 @@ msgstr ""
 msgid "image Id"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:644
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:640
 msgid "Get Image"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:665
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:661
 msgid "Get Image file"
 msgstr ""
 
@@ -445,15 +445,183 @@ msgstr ""
 msgid "Valid int"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:687
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:683
 msgid "Get Services"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:741
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:737
 msgid "Get Kong Logs"
 msgstr ""
 
-#: ../../Projects/MECM/Applcm_Interfaces_en.md:764
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:760
 msgid "Get Subscribe Statistic"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:778 ../../Projects/MECM/Applcm_Interfaces_en.md:779
+msgid "Create Flavor"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "flavorInfo"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "Flavor"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:796 ../../Projects/MECM/Applcm_Interfaces_en.md:797
+msgid "Query Flavor"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "flavorId"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "flavor Id"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:814 ../../Projects/MECM/Applcm_Interfaces_en.md:815
+msgid "Delete Flavor"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:832 ../../Projects/MECM/Applcm_Interfaces_en.md:833
+msgid "Create Server"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "serverInfo"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "Server"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:850 ../../Projects/MECM/Applcm_Interfaces_en.md:851
+msgid "Query Server"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "serverId"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "server Id"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:868 ../../Projects/MECM/Applcm_Interfaces_en.md:869
+msgid "Delete Server"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:886 ../../Projects/MECM/Applcm_Interfaces_en.md:887
+msgid "Operate Server"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "imageInfo"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "Image"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:923 ../../Projects/MECM/Applcm_Interfaces_en.md:924
+msgid "Import Image"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "importImageInfo"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "ImportImage"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:942 ../../Projects/MECM/Applcm_Interfaces_en.md:943
+msgid "Query Image"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:978 ../../Projects/MECM/Applcm_Interfaces_en.md:979
+msgid "Create Security Group"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "securityGroupInfo"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "SecurityGroup"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:996 ../../Projects/MECM/Applcm_Interfaces_en.md:997
+msgid "Query Security Group"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "securityGroupId"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "security group Id"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:1014 ../../Projects/MECM/Applcm_Interfaces_en.md:1015
+msgid "Delete Security Group"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:1032 ../../Projects/MECM/Applcm_Interfaces_en.md:1033
+msgid "Create Security Group rule"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "securityGroupRulesInfo"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "SecurityGroupRules"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:1051 ../../Projects/MECM/Applcm_Interfaces_en.md:1052
+msgid "Query Security Group rule"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:1069 ../../Projects/MECM/Applcm_Interfaces_en.md:1070
+msgid "Delete Security Group rule"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "securityGroupRuleId"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "security group rule Id"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:1088 ../../Projects/MECM/Applcm_Interfaces_en.md:1089
+msgid "Create Network"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "networkInfo"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "Network"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:1106 ../../Projects/MECM/Applcm_Interfaces_en.md:1107
+msgid "Query Network"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "networkId"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md
+msgid "network Id"
+msgstr ""
+
+#: ../../Projects/MECM/Applcm_Interfaces_en.md:1124 ../../Projects/MECM/Applcm_Interfaces_en.md:1125
+msgid "Delete Network"
 msgstr ""
 

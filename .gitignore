@@ -1,0 +1,5 @@
+*.mo
+*.json
+entries.list*
+/_build
+/build

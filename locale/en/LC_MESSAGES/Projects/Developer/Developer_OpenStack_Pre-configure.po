@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 00:08+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -198,8 +198,8 @@ msgid "配置网络(Network)："
 msgstr "Configure the network (Network):"
 
 #: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:30
-msgid "创建三个网络 mec_network_n6、mec_network_mep、mec_network_internet; ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Network.png \"网络配置.png\")"
-msgstr "Create three networks mec_network_n6, mec_network_mep, mec_network_internet; ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Network.png \"Network Configuration.png\")"
+msgid "创建三个网络 MEC_APP_Public, MEC_APP_Private, MEC_APP_MP1; ![输入图片说明](../../uploads/images/2021/developer/image.png)"
+msgstr "Create three networks MEC_APP_Public, MEC_APP_Private, MEC_APP_MP1; ![Enter picture description](../../uploads/images/2021/developer/image.png)"
 
 #: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:34
 msgid "实例类型(Flavors):"
@@ -208,4 +208,47 @@ msgstr "Instance type (Flavors):"
 #: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:35
 msgid "创建以下几个规格示例类型，配置与实际的规格对应1c（CPU1核）、1024m（内存1024M）、40g（硬盘40G） 1c-1024m-40g、2c-4096m-40g ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Flavor.png \"实例类型.png\")"
 msgstr "Create the following sample types of specifications, the configuration corresponds to the actual specifications 1c (CPU1 core), 1024m (memory 1024M), 40g (hard disk 40G) 1c-1024m-40g, 2c-4096m-40g ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Flavor.png \"instance type.png\")"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:39
+msgid "配置路由"
+msgstr "Configure routing"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:41
+msgid "openstack 自身就有一条public网络是和主机之间是能通信的 ![输入图片说明](../../uploads/images/2021/developer/image-openstack-01.png) 创建的虚拟机MEC_APP_Private网络需要通过这个public网络才能进行外部访问,所以需要新建路由： ![输入图片说明](../../uploads/images/2021/developer/image-openstack-02.png) 配置后虚拟机就能访问安装openstack的主机了。"
+msgstr "openstack Own onepublicThe network can communicate with the host ![Enter picture description](../../uploads/images/2021/developer/image-openstack-01.png) Virtual machine createdMEC_APP_PrivateThe network needs to pass thispublicExternal access,So you need to create a new route： ![Enter picture description](../../uploads/images/2021/developer/image-openstack-02.png) After configuration, the virtual machine can access the installationopenstackHost。"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:47
+msgid "主机需要访问openstack的虚机也需要添加类似的路由："
+msgstr "Host needs accessopenstackThe virtual machine also needs to add a similar route："
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:49
+msgid "route add -net 192.168.220.0 netmask 255.255.255.0 gw 172.24.4.60"
+msgstr ""
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:51
+msgid "![输入图片说明](../../uploads/images/2021/developer/image-openstack-03.png)"
+msgstr "![Enter picture description](../../uploads/images/2021/developer/image-openstack-03.png)"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:53
+msgid "部署EdgeGalley的主机需要和OpenStack网络打通"
+msgstr "deployEdgeGalleyHost needs andOpenStackNetwork connection"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:55
+msgid "developer平台跟虚机的网络是通过MEC_APP_Private进行打通，需配置developer与openstack的路由："
+msgstr "developerThe network of the platform and the virtual machine is throughMEC_APP_PrivateGet through，Need to configuredeveloperandopenstackRouting："
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:57
+msgid "developer后台通往openstack路由配置，参考如下："
+msgstr "developerBackstage leading toopenstackRouting configuration，Reference is as follows："
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:59
+msgid "route add -net 192.168.220.0 netmask 255.255.255.0 gw 192.168.1.156  其中，192.168.220.0为MEC_APP_Private 子网ip, 192.168.1.156为openstack ip"
+msgstr "route add -net 192.168.220.0 netmask 255.255.255.0 gw 192.168.1.156  in，192.168.220.0forMEC_APP_Private Subnetip, 192.168.1.156foropenstack ip"
+
+#: ../../Projects/Developer/Developer_OpenStack_Pre-configure.md:61
+msgid "通过以上配置developer后台就与openstack之间网络就配置通了。"
+msgstr "Through the above configurationdeveloperBackstage withopenstackThe network is configured between。"
+
+#~ msgid "创建三个网络 mec_network_n6、mec_network_mep、mec_network_internet; ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Network.png \"网络配置.png\")"
+#~ msgstr "Create three networks mec_network_n6, mec_network_mep, mec_network_internet; ![](/uploads/images/2021/v1.2/Developer/OSPreconfigred_Network.png \"Network Configuration.png\")"
 

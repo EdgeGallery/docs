@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design_en.md:1
+msgid "DataBase Desgian"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design_en.md:3
+msgid "The AppStore database uses an open source PostgreSQL database, and the recommended version is 12.2. The following database tables are currently designed and applied:"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design_en.md:5
+msgid "app_table: Store app information, such as name, provider, description, etc."
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design_en.md:32
+msgid "catalog_package_table: Store application package information, one application can have multiple packages"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design_en.md:69
+msgid "csar_package_score: Store application comments information"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design_en.md:83
+msgid "app_store_table: Store external appstores information"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design_en.md:101
+msgid "pushable_package_table: Store information about pushable application packages"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design_en.md:113
+msgid "message_table: Store messages during intercommunication between appstores"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design_en.md:141
+msgid "tbl_service_host: Store sandbox environment information"
+msgstr ""
+
+#: ../../Projects/APPSTORE/AppStore_DataBase_Design_en.md:163
+msgid "tbl_uploaded_file: Store the k8s file information of the sandbox environment"
+msgstr ""
+

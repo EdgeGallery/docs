@@ -1,0 +1,319 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, EdgeGallery
+# This file is distributed under the same license as the EdgeGallery Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EdgeGallery Documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md:1 Interface
+msgid "删除接口"
+msgstr "Delete interface"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "API"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "方法"
+msgstr "method"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "API说明"
+msgstr "APIinstruction"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v1/apps/{appId}/action/download"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "GET"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "根据appId下载最新版本应用包"
+msgstr "according toappIdDownload the latest version of the application package"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md:6 Interface
+msgid "新增或者修改的接口"
+msgstr "New or modified interface"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "**API**"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "**方法**"
+msgstr "**method**"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "**变更类型**"
+msgstr "**Change type**"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "**说明**"
+msgstr "**instruction**"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/query/apps"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "POST"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "获取应用列表"
+msgstr "Get application list"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "新增"
+msgstr "Add"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "请求参数增加字段 appName、limit、offset、sortItem、sortType;  后台进行分页查询、支持模糊查询 ，按条件排序，响应参数增加总数量total、limit、offset。"
+msgstr "Request parameter increase field appName、limit、offset、sortItem、sortType;  Paging query in the background、Support fuzzy query ，Sort by condition，Total number of response parameters increasetotal、limit、offset。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/apps/{appId}/packages"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "根据appid获取应用包"
+msgstr "according toappidGet the application package"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/packages"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "获取应用包列表"
+msgstr "Get a list of application packages"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "请求参数在v1接口基础上增加字段  appName、limit、offset;  后台进行分页查询、支持模糊查询 ，按条件排序，响应参数增加总数量total、limit、offset。"
+msgstr "The request parameters are inv1Add fields based on the interface  appName、limit、offset;  Paging query in the background、Support fuzzy query ，Sort by condition，Total number of response parameters increasetotal、limit、offset。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/appstores"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "获取appStore"
+msgstr "ObtainappStore"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "请求参数增加字段 appStoreName、limit、offset、sortItem、sortType;  后台进行分页查询、支持模糊查询 ，按条件排序，响应参数增加总数量total、limit、offset。"
+msgstr "Request parameter increase field appStoreName、limit、offset、sortItem、sortType;  Paging query in the background、Support fuzzy query ，Sort by condition，Total number of response parameters increasetotal、limit、offset。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/packages/pushable"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "获取应用推送app列表"
+msgstr "Get app pushappList"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "请求参数在v1接口基础上增加字段  appName、limit、offset、sortItem、sortType ;  后台进行分页查询、支持模糊查询，按条件排序 ，响应参数增加总数量total、limit、offset。"
+msgstr "The request parameters are inv1Add fields based on the interface  appName、limit、offset、sortItem、sortType ;  Paging query in the background、Support fuzzy query，Sort by condition ，Total number of response parameters increasetotal、limit、offset。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/packages/pullable"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "获取应用拉取app列表"
+msgstr "Get app pullappList"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "请求参数在v1接口基础上增加字段  appName、limit、offset、sortItem、sortType;  后台进行分页查询、支持模糊查询 ，按条件排序，响应参数增加总数量total、limit、offset。"
+msgstr "The request parameters are inv1Add fields based on the interface  appName、limit、offset、sortItem、sortType;  Paging query in the background、Support fuzzy query ，Sort by condition，Total number of response parameters increasetotal、limit、offset。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/packages/{platformId}/pullable"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "根据appstoreid获取应用拉取app列表"
+msgstr "according toappstoreidGet app pullappList"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/messages"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "操作分析消息列表"
+msgstr "Operation analysis message list"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "请求参数在v1接口基础上增加字段  appName、limit、offset、sortItem、sortType;  后台进行分页查询、支持模糊查询，按条件排序 ，响应参数增加总数量total、limit、offset。"
+msgstr "The request parameters are inv1Add fields based on the interface  appName、limit、offset、sortItem、sortType;  Paging query in the background、Support fuzzy query，Sort by condition ，Total number of response parameters increasetotal、limit、offset。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/apps/{appId}/comments"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "获取应用评论信息"
+msgstr "Get app review information"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "请求参数在v1接口基础上增加字段  limit、offset;  后台进行分页查询、支持模糊查询 ，按条件排序，响应参数增加总数量total、limit、offset。"
+msgstr "The request parameters are inv1Add fields based on the interface  limit、offset;  Paging query in the background、Support fuzzy query ，Sort by condition，Total number of response parameters increasetotal、limit、offset。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/apps/{appId}/packages/{packageId}/action/publish"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "发布应用"
+msgstr "Publish the application"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "响应规范化：<br />{<br/>  \"data\" : string,<br/>  \"retCode\" : int,<br/>  \"message\": string,<br/>  \"params\": [string]<br/>}"
+msgstr "Response normalization：<br />{<br/>  \"data\" : string,<br/>  \"retCode\" : int,<br/>  \"message\": string,<br/>  \"params\": [string]<br/>}"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/apps/{appId}/packages/{packageId}"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "根据appId和packageId获取应用包"
+msgstr "according toappIdandpackageIdGet the application package"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "响应规范化：<br />{<br/>  \"data\" : PackageDto,<br/>  \"retCode\" : int,<br/>  \"message\": string,<br/>  \"params\": [string]<br/>}"
+msgstr "Response normalization：<br />{<br/>  \"data\" : PackageDto,<br/>  \"retCode\" : int,<br/>  \"message\": string,<br/>  \"params\": [string]<br/>}"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/apps"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "上传应用"
+msgstr "Upload application"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "响应规范化：<br />{<br/>  \"data\" : RegisterRespDto,<br/>  \"retCode\" : int,<br/>  \"message\": string,<br/>  \"params\": [string]<br/>}"
+msgstr "Response normalization：<br />{<br/>  \"data\" : RegisterRespDto,<br/>  \"retCode\" : int,<br/>  \"message\": string,<br/>  \"params\": [string]<br/>}"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v2/apps/{appId}"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "根据appId获取应用"
+msgstr "according toappIdGet the app"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "响应规范化：<br />{<br/>  \"data\" : AppDto,<br/>  \"retCode\" : int,<br/>  \"message\": string,<br/>  \"params\": [string]<br/>}"
+msgstr "Response normalization：<br />{<br/>  \"data\" : AppDto,<br/>  \"retCode\" : int,<br/>  \"message\": string,<br/>  \"params\": [string]<br/>}"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "添加消息"
+msgstr "Add message"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v1/apps"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "修改"
+msgstr "Revise"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "1、响应增加deployMode字段，标识是虚机应用还是容器应用。 2、响应增加isHotApp字段，标识是否为近期热门应用。 3、userId请求参数为空时，只返回已发布showType非private的应用；非空时，返回当前用户所有的应用"
+msgstr "1、Increased responsedeployModeField，Identify whether it is a virtual machine application or a container application。 2、Increased responseisHotAppField，Identifies whether it is a recent popular app。 3、userIdWhen the request parameter is empty，Only return publishedshowTypeNoprivateApplications；Non-space time，Return all apps of the current user"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v1/apps/{appId}"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v1/apps/{appId}/packages"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "根据appId获取应用包列表"
+msgstr "according toappIdGet a list of application packages"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "1、响应增加deployMode字段，标识是虚机应用还是容器应用。  2、userId请求参数为空时，只返回已发布showType非private的应用包；非空时，返回当前用户所有的应用包"
+msgstr "1、Increased responsedeployModeField，Identify whether it is a virtual machine application or a container application。  2、userIdWhen the request parameter is empty，Only return publishedshowTypeNoprivateApp package；Non-space time，Return all application packages of the current user"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v1/apps/{appId}/packages/{packageId}"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v1/packages"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v1/apps/hotapps"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "PUT"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "修改热门应用"
+msgstr "Edit popular apps"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "根据应用ID更改应用是否为热门应用，请求参数为应用ID列表。"
+msgstr "According to the applicationIDChange whether the app is a popular app，The request parameter is the applicationIDList。"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v1/packages/pushable"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "获取可推送应用列表"
+msgstr "Get a list of pushable apps"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "只返回已发布且showType为public属性的应用包"
+msgstr "Only return published andshowTypeforpublicAttribute application package"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v1/packages/{packages}/pushable"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "根据packageId获取可推送应用列表"
+msgstr "according topackageIdGet a list of pushable apps"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v1/packages/pullable"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "获取可拉取应用列表"
+msgstr "Get a list of pullable apps"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "/mec/appstore/v1/apps/{appId}/package/{packageId}"
+msgstr ""
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "修改应用属性"
+msgstr "Modify application properties"
+
+#: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
+msgid "修改应用属性，包括应用的行业、类型、图标、视频、架构、描述、展示类型"
+msgstr "Modify application properties，Including applied industries、type、icon、video、Architecture、describe、Display type"
+

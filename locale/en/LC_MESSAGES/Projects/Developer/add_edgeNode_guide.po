@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 17:32+0530\n"
+"POT-Creation-Date: 2022-01-05 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,12 +38,12 @@ msgid "3.根据服务器架构下载EdgeGallery-v1.0.tar.gz安装包"
 msgstr "3.Download EdgeGallery-v1.0.tar.gz installation package based on server architecture"
 
 #: ../../Projects/Developer/add_edgeNode_guide.md:11
-msgid "X86_64架构安装包网址："
-msgstr "X86_64 architecture installation package: "
+msgid "X86_64架构安装包网址：https://edgegallery.obs.cn-east-3.myhuaweicloud.com/releases/v1.2/x86/EdgeGallery-v1.2.0-edge-x86.tar.gz"
+msgstr "X86_64Framework installation package URL：https://edgegallery.obs.cn-east-3.myhuaweicloud.com/releases/v1.2/x86/EdgeGallery-v1.2.0-edge-x86.tar.gz"
 
 #: ../../Projects/Developer/add_edgeNode_guide.md:13
-msgid "ARM_64架构安装包网址："
-msgstr "ARM_64 architecture installation package: "
+msgid "ARM_64架构安装包网址：https://edgegallery.obs.cn-east-3.myhuaweicloud.com/releases/v1.2/arm64/EdgeGallery-v1.2.0-edge-arm64.tar.gz"
+msgstr "ARM_64Framework installation package URL：https://edgegallery.obs.cn-east-3.myhuaweicloud.com/releases/v1.2/arm64/EdgeGallery-v1.2.0-edge-arm64.tar.gz"
 
 #: ../../Projects/Developer/add_edgeNode_guide.md:15
 msgid "边缘节点安装步骤"
@@ -172,4 +172,10 @@ msgstr "Configure the configuration document to be the edge node/root/.kube/ und
 #: ../../Projects/Developer/add_edgeNode_guide.md:81
 msgid "![输入图片说明](/uploads/images/2021/0112/190434_66384ecf_7624663.png \"屏幕截图.png\")"
 msgstr "![Enter picture description](/uploads/images/2021/0112/190434_66384ecf_7624663.png \"Screen screenshot.png\")"
+
+#~ msgid "X86_64架构安装包网址："
+#~ msgstr "X86_64 architecture installation package: "
+
+#~ msgid "ARM_64架构安装包网址："
+#~ msgstr "ARM_64 architecture installation package: "
 
