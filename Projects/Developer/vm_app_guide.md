@@ -5,12 +5,12 @@
 ### edgegallery 安装v1.5版本 文件管理系统的安装 openstack安装 W版本 
                                                                          
 1. **openstack初始化配置**
-[参考文档](../../Projects/Developer/Developer_OpenStack_Pre-configure.md)
+[参考文档](/Projects/Developer/Developer_OpenStack_Pre-configure.md)
 
 ## 配置沙箱环境：developer新增openstack沙箱环境
 
 1. develoepr平台用管理员用户admin登录 打开系统-沙箱环境管理-新增沙箱环境
-![输入图片说明](../../uploads/images/2021/developer/%E6%B2%99%E7%AE%B1%E9%85%8D%E7%BD%AE.png)
+![](/uploads/images/2021/developer/config-sandbox.png "config-sandbox.png")
 参数填写规范如下：
 名称：沙箱名称，不限
 lcmIp: 如果是单机部署edgegallery，即为edgegallery本机ip，如果多机部署为边缘节点ip
@@ -50,36 +50,36 @@ route add -net 192.168.225.0 netmask 255.255.255.0 gw openstack_ip
 1.新建系统镜像
 
 系统 - 系统镜像管理 - 新建系统镜像
-![输入图片说明](../../uploads/images/2021/developer/%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F%E7%AE%A1%E7%90%86.png)
+![](/uploads/images/2021/developer/vm-image-new.png "vm-image-new.png")
 镜像名唯一 ，磁盘大小必须大于该镜像所需的最小磁盘大小
 填写镜像的基本信息后点击确认
 2.上传镜像文件
 
 目前支持的镜像格式为qcow2和iso
-![输入图片说明](../../uploads/images/2021/developer/%E4%B8%8A%E4%BC%A0%E9%95%9C%E5%83%8F.png)
+![](/uploads/images/2021/developer/flavor-list.png "flavor-list.png")
 
 ## 虚机应用开发
 1. 新建项目：点击工作空间-新建项目，选择应用集成。
 
-![输入图片说明](../../uploads/images/2021/developer/%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.png)
+![](/uploads/images/2021/developer/vm-app-new.png "vm-app-new.png")
 
 填写项目的基本信息。对于虚机应用，类型选择虚机，架构支持X86和ARM
 
 2.选择沙箱：选择沙箱，新建虚机，填写虚机应用的基本信息、资源配置、基础镜像选择、选择网络配置、以及其他主机组、注入脚本等配置。
-![输入图片说明](../../uploads/images/2021/developer/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%9C%BA.png)
+![](/uploads/images/2021/developer/vm-new.png "vm-new.png")
 
 点击保存后，点击启动
-![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E9%83%A8%E7%BD%B2.png)
+![](/uploads/images/2021/developer/deploy-vm.png "deploy-vm.png")
 
 3.部署调测可选：部署调测过程会从openstack拉起虚机镜像，用于开发者应用开发和调测。需提前安装和配置好openstack，由于资源有限，有可能部署调测失败
 部署调测成功后，我们可以通过VNC远程登录和SSH，登录到申请的虚拟机中，也可以通过上传文件将APP应用包上传至虚拟机中，安装调测应用
 
 4.制作镜像： 查看应用的基本信息，并打包预览
-![输入图片说明](../../uploads/images/2021/developer/%E5%88%B6%E4%BD%9C%E9%95%9C%E5%83%8F.png)
+![](/uploads/images/2021/developer/new-vm-image.png "new-vm-image.png")
 
 5.测试认证： 点击开始测试，选择测试场景-点击开始，该步骤会对developer生成的应用包进行相关的遵从性、生命周期、安全等测试，测试通过后可发布到appstore
 
-![输入图片说明](../../uploads/images/2021/developer/%E6%B5%8B%E8%AF%95%E8%AE%A4%E8%AF%81.png)
+![](/uploads/images/2021/developer/atp-test.png "atp-test.png")
 
 最后将应用发布到appstore中
 
