@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
@@ -98,9 +97,8 @@ msgid "30303"
 msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix.md Port
-#, fuzzy
 msgid "对外提供北向接口的服务端口"
-msgstr "Service ports for inventory management"
+msgstr "The service port that provides the northbound interface to the outside world"
 
 #: ../../Projects/MECM/MECM Metrix.md Port
 msgid "applcm controller"
@@ -131,9 +129,8 @@ msgid "31952"
 msgstr ""
 
 #: ../../Projects/MECM/MECM Metrix.md Port
-#, fuzzy
 msgid "对外提供OpenStack资源管理的服务端口"
-msgstr "Service ports for inventory management"
+msgstr "Provides external service ports for OpenStack resource management"
 
 #: ../../Projects/MECM/MECM Metrix.md Port
 msgid "aplcm k8splugin"

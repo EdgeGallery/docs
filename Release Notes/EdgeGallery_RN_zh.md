@@ -18,13 +18,11 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
  - Release Date: 2022-01
  - Image Version: v1.5.0
-
 **新开源仓库列表**
-
-| 模块                           |      名称       | 类型   | URL                                           | 说明                                   |
-| ------------------------------ | :-------------: | ------ | --------------------------------------------- | -------------------------------------- |
-| Common Service           | common-service    | 产品仓 | https://gitee.com/edgegallery/common-service    | 为EdgeGallery各组件提供公共服务   |
-| 3rd Party System |     3rd-party-system     | 产品仓 | https://gitee.com/edgegallery/third-party-system          | EdgeGallery对接的外部系统统一管理  |
+|模块|名称|类型|URL|说明|
+|------------------------------|:-------------:|------|---------------------------------------------|--------------------------------------|
+|Common Service|common-service|产品仓|https://gitee.com/edgegallery/common-service|为EdgeGallery各组件提供公共服务|
+|3rd Party System|3rd-party-system|产品仓|https://gitee.com/edgegallery/third-party-system|EdgeGallery对接的外部系统统一管理|
 
 
 [ **需求/发布计划详细说明** ](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements/v1.5)
@@ -65,19 +63,18 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 
 **Fixed/Known Security Issues**
 
-参见 [EdgeGallery v1.5.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.5/EG%20v1.5%20Security%20Test%20Report.md)
+  参见 [EdgeGallery v1.5.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.5/EG%20v1.5%20Security%20Test%20Report.md)
 
  **Known Vulnerabilities in Used Modules**
 
-参见 [EdgeGallery v1.5.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.5/EG%20v1.5%20Security%20Test%20Report.md)
+  参见 [EdgeGallery v1.5.0 Security Test Report](https://gitee.com/edgegallery/community/blob/master/Security%20WG/Security%20Test%20Result/Test%20result%20Release%20V1.5/EG%20v1.5%20Security%20Test%20Report.md)
 
  EdgeGallery v1.5.0 版本第三方开源组件存在以下漏洞需要用户自行修复：
-
-| 三方组件  | 版本  | CVE编号  | 涉及模块 |
-|---|---|---|---|
-| log4j | 1.2.17 | CVE-2019-17571 | Appstore，MECM |
-| netty-transport | 4.1.36 | CVE-2019-20444，CVE-2019-20445 | Appstore |
-| vertx-core | 3.9.4 | CVE-2019-17640 | UserMgmt，Appstore，Developer，ATP |
+| 三方组件 | 版本 | CVE编号 | 涉及模块 |
+| ---      | ---  | ---     | ---      |
+| log4j | 1.2.17 | CVE-2019-17571 | Appstore,MECM |
+| netty-transport | 4.1.36 | CVE-2019-20444,CVE-2019-20445 | Appstore |
+| vertx-core | 3.9.4 | CVE-2019-17640 | UserMgmt,Appstore,Developer,ATP |
 | docker-java-core | 3.2.10 | CVE-2019-13139，CVE-2019-13509，CVE-2019-16884，CVE-2019-5736 | Appstore，Developer，MECM |
 | foundation-ssl | 1.3.2 | CVE-2004-0009 | UserMgmt，Appstore，Developer，ATP |
 | mybatis-spring | 2.0.6 | CVE-2020-26945 | UserMgmt，Appstore，Developer，ATP |

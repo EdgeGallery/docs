@@ -102,12 +102,11 @@ msgstr "4.4 Application Warehouse Registration"
 
 #: ../../Projects/MECM/MECM Document.md:50 Product
 msgid "![](/uploads/images/2021/mecm/25.png)"
-msgstr "![](/uploads/images/2021/mecm/25_en.png)"
+msgstr "![](/uploads/images/2021/mecm/25.png)"
 
 #: ../../Projects/MECM/MECM Document.md:52 Product
-#, fuzzy
 msgid "V1.5版本新增特性如下："
-msgstr "The V1.1 release features are as follows:"
+msgstr "The new features of V1.5 version are as follows:"
 
 #: ../../Projects/MECM/MECM Document.md:53 Product
 msgid "OpenStack节点资源管理功能，通过资源管理界面可对注册的边缘节点（OpenStack）进行基础的管理操作 ![](/uploads/images/2021/mecm/26.png)"

@@ -25,14 +25,12 @@ msgid "AppStore 是 EdgeGallery 的应用仓库模块，主要负责5G边缘应�
 msgstr "The AppStore is an application repository module for EdgeGallery, which is primarily responsible for the storage and management of 5G edge applications where the current version has decentralized control and different user roles contain different features."
 
 #: ../../Projects/APPSTORE/AppStore_Features.md:5
-#, fuzzy
 msgid "**管理员用户包含** 应用上传、应用测试、应用发布、应用查询、应用评论、下载/删除所有应用、外部仓库管理、应用推送、应用拉取、消息管理、操作分析、应用管理、沙箱管理、应用在线体验、应用同步、应用变现、文档中心。"
-msgstr "**Administrator users include** Application upload, application testing, application release, application query, application comment, download/delete all applications, external repository management, application push, application pull, message management, operation analysis, application management, sandbox management, Application online experience, document center."
+msgstr "**Administrator users include** application upload, application test, application release, application query, application comment, download/delete all applications, external warehouse management, application push, application pull, message management, operation analysis, application management, Sandbox management, application > online experience, application synchronization, application monetization, document center."
 
 #: ../../Projects/APPSTORE/AppStore_Features.md:7
-#, fuzzy
 msgid "**租户用户包含** 应用上传、应用测试、应用发布、应用查询、应用评论、下载/删除本用户应用、应用在线体验、应用变现、文档中心。"
-msgstr "**Tenant users include** Application upload, application testing, application release, application query, application comment, download/delete of this user application, application online experience, document center."
+msgstr "**Tenant users include** application uploading, application testing, application publishing, application querying, application commenting, downloading/deleting this user's application, application online experience, application monetization, and document center."
 
 #: ../../Projects/APPSTORE/AppStore_Features.md:9
 msgid "**游客用户包含** 应用查询、文档中心。"

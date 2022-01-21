@@ -17,9 +17,8 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:1
-#, fuzzy
 msgid "Developer DataBase Design v1.5"
-msgstr "Developer DataBase Design"
+msgstr "Developer DataBase Design v1.5"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:4
 msgid "Developer数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。**PostgreSQL** 是开源的对象-关系数据库服务器(ORDBMS)，在灵活的BSD许可证下发行。进一步了解PostgreSQL可以点击[这里](https://www.runoob.com/postgresql/postgresql-tutorial.html)。"
@@ -50,9 +49,8 @@ msgid "**tbl_capability** 开发者新建容器应用项目时，选择平台能
 msgstr "**tbl_openmep_capability** Store the information of all the capabilities provided by the platform when the developer builds the application project on the developer platform."
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:117
-#, fuzzy
 msgid "**tbl_mep_host** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，可供选择的服务器（测试沙箱）信息"
-msgstr "**tbl_service_host** Store the server information that developers can select when deploying and testing self-built application projects on the developer platform."
+msgstr "**tbl_mep_host** stores the server (test sandbox) information that the developer can choose when deploying and testing the self-built application project on the developer platform"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:140
 msgid "**tbl_uploaded_file** 存储开发者在开发者平台对自构建的应用项目进行部署测试时，上传的图标、镜像、api等文件信息"
@@ -95,34 +93,28 @@ msgid "**tbl_container_helm_chart** 记录应用部署文件"
 msgstr "**tbl_container_helm_chart** Record application deployment files"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:299
-#, fuzzy
 msgid "**tbl_vm** 虚机配置"
-msgstr "**tbl_vm_network** Virtual machine network configuration"
+msgstr "**tbl_vm** virtual machine configuration"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:316
-#, fuzzy
 msgid "**tbl_network** 虚机网络配置"
-msgstr "**tbl_vm_network** Virtual machine network configuration"
+msgstr "**tbl_network** virtual machine network configuration"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:327
-#, fuzzy
 msgid "**tbl_vm_port** 虚机端口配置"
-msgstr "**tbl_vm_network** Virtual machine network configuration"
+msgstr "**tbl_vm_port** virtual machine port configuration"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:339
-#, fuzzy
 msgid "**tbl_vm_certificate** 虚机证书配置"
-msgstr "**tbl_vm_network** Virtual machine network configuration"
+msgstr "**tbl_vm_certificate** virtual machine certificate configuration"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:350
-#, fuzzy
 msgid "**tbl_vm_flavor** 虚机规格配置"
-msgstr "**tbl_vm_network** Virtual machine network configuration"
+msgstr "**tbl_vm_flavor** virtual machine specification configuration"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:367
-#, fuzzy
 msgid "**tbl_vm_image** 虚机镜像管理"
-msgstr "**tbl_vm_network** Virtual machine network configuration"
+msgstr "**tbl_vm_image** virtual machine image management"
 
 #: ../../Projects/Developer/Developer_DataBase_Design.md:396
 msgid "**tbl_vm_instantiate_info** 虚机实例化信息表"

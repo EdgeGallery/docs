@@ -897,33 +897,27 @@ METHOD: GET
 ```
 
 ### 2.13 获取应用包列表-v2
-
 分页获取应用包列表。
-
 ```
 URI： /mec/appstore/v2/packages/action/query
 METHOD: POST
 ```
 请求参数：
-
-| 名称            | 描述         | IN             | 必选 |
-| --------------- | ------------ | -------------- | ---- |
-| QueryAppCtrlDto | 查询应用条件 | request body   | yes  |
-| access_token    | 请求token    | request header | yes  |
+|名称|描述|IN|必选|
+|---------------|------------|--------------|----|
+|QueryAppCtrlDto|查询应用条件|request body|yes|
+|access_token|请求token|request header|yes|
 
 QueryAppCtrlDto
-
-| 字段名   | 描述                        | 字段类型     | 必选 |
-| -------- | --------------------------- | ------------ | ---- |
-| limit    | 分页查询每页查询数量[1,500] | int          | yes  |
-| offset   | 分页查询起始页，从0开始     | int          | yes  |
-| sortItem | 查询排序字段                | String       | no   |
-| sortType | 查询排序方式升序/降序       | String       | no   |
-| status   | 应用状态                    | List<String> | no   |
-| appName  | 应用名称                    | String       | no   |
-
+|字段名|描述|字段类型|必选|
+|--------|---------------------------|------------|----|
+|limit|分页查询每页查询数量[1,500]|int|yes|
+|offset|分页查询起始页，从0开始|int|yes|
+|sortItem|查询排序字段|String|no|
+|sortType|查询排序方式升序/降序|String|no|
+|status|应用状态|List<String>|no|
+|appName|应用名称|String|no|
 响应示例:
-
 ```
 200 OK
 {
@@ -958,23 +952,19 @@ QueryAppCtrlDto
 }
 ```
 ### 2.14 根据创建时间区间获取应用包列表-v2
-
 根据创建时间区间分页获取应用包列表。
-
 ```
 URI： /mec/appstore/v2/packages
 METHOD: GET
 ```
-
-| 名称      | 描述                        | IN            | 必选 |
-| --------- | --------------------------- | ------------- | ---- |
-| offset    | 分页查询起始页，从0开始     | request param | yes  |
-| limit     | 分页查询每页查询数量[1,500] | request param | yes  |
-| startTime | 应用创建时间的起始时间      | request param | no   |
-| endTime   | 应用创建时间的终止时间      | request param | no   |
+|名称|描述|IN|必选|
+|---------|---------------------------|-------------|----|
+|offset|分页查询起始页，从0开始|request param|yes|
+|limit|分页查询每页查询数量[1,500]|request param|yes|
+|startTime|应用创建时间的起始时间|request param|no|
+|endTime|应用创建时间的终止时间|request param|no|
 
 响应示例:
-
 ```
 200 OK
 {
@@ -2102,7 +2092,7 @@ MepHost
   "hostId": "string",
   "name": "string",
   "address": "string",
-  "architecture": "string",
+:se  "architecture": "string",
   "status": "NORMAL",
   "lcmIp": "string",
   "mecHost": "string",
@@ -2224,26 +2214,22 @@ METHOD: POST
 
 应用发布时可对应用定价，实现应用变现。
 
+
 ### 10.1 订购应用
-
 创建订单。
-
 ```
 URI： /mec/appstore/v1/orders
 METHOD: POST
 ```
-
-| 名称         | 描述         | IN           | 必选 |
-| ------------ | ------------ | ------------ | ---- |
-| appId        | APPID        | request body | 是   |
-| appPackageId | APP包ID      | request body | 是   |
-| appName      | 应用名称     | request body | 是   |
-| mecHostIp    | 边缘节点IP   | request body | 是   |
-| mecHostCity  | 边缘节点位置 | request body | 是   |
-
+|名称|描述|IN|必选|
+|------------|------------|------------|----|
+|appId|APPID|request body|是|
+|appPackageId|APP包ID|request body|是|
+|appName|应用名称|request body|是|
+|mecHostIp|边缘节点IP|request body|是|
+|mecHostCity|边缘节点位置|request body|是|
 
 响应示例:
-
 ```json
 response 200 OK
 {
@@ -2258,21 +2244,16 @@ response 200 OK
 ```
 
 ### 10.2 退订应用
-
 对订单进行退订操作。
-
 ```
 URI: /mec/appstore/v1/orders/{orderId}/deactivation
 METHOD: POST
 ```
-
-| 名称    | 描述   | IN         | 必选 |
-| ------- | ------ | ---------- | ---- |
-| orderId | 订单ID | path param | 是   |
-
+|名称|描述|IN|必选|
+|-------|------|----------|----|
+|orderId|订单ID|path param|是|
 
 响应示例:
-
 ```json
 response 200 OK
 {
@@ -2284,21 +2265,16 @@ response 200 OK
 ```
 
 ### 10.3 激活订单
-
 对订单进行激活操作。
-
 ```
 URI: /mec/appstore/v1/orders/{orderId}/activation
 METHOD: POST
 ```
-
-| 名称    | 描述   | IN         | 必选 |
-| ------- | ------ | ---------- | ---- |
-| orderId | 订单ID | path param | 是   |
-
+|名称|描述|IN|必选|
+|-------|------|----------|----|
+|orderId|订单ID|path param|是|
 
 响应示例:
-
 ```json
 response 200 OK
 {
@@ -2310,34 +2286,30 @@ response 200 OK
 ```
 
 ### 10.4 查询订单列表
-
 获取订单列表。
-
 ```
 URI: /mec/appstore/v1/orders/list
 METHOD: POST
 ```
+|名称|描述|IN|必选|
+|--------------|----------------------|------------|----|
+|appId|应用ID|request body|否|
+|orderNum|订单编号|request body|否|
+|status|订单状态|request body|否|
+|orderTimeBegin|下单时间范围的起始时间|request body|否|
+|orderTimeEnd|下单时间范围的结束时间|request body|否|
+|QueryCtrlDto|查询条件|request body|是|
 
-| 名称           | 描述                   | IN           | 必选 |
-| -------------- | ---------------------- | ------------ | ---- |
-| appId          | 应用ID                 | request body | 否   |
-| orderNum       | 订单编号               | request body | 否   |
-| status         | 订单状态               | request body | 否   |
-| orderTimeBegin | 下单时间范围的起始时间 | request body | 否   |
-| orderTimeEnd   | 下单时间范围的结束时间 | request body | 否   |
-| QueryCtrlDto   | 查询条件               | request body | 是   |
 
 QueryCtrlDto
-
-| 字段名   | 描述                        | 字段类型 | 必选 |
-| -------- | --------------------------- | -------- | ---- |
-| limit    | 分页查询每页查询数量[1,500] | int      | yes  |
-| offset   | 分页查询起始页，从0开始     | int      | yes  |
-| sortItem | 查询排序字段                | String   | no   |
-| sortType | 查询排序方式升序/降序       | String   | no   |
+|字段名|描述|字段类型|必选|
+|--------|---------------------------|--------|----|
+|limit|分页查询每页查询数量[1,500]|int|yes|
+|offset|分页查询起始页，从0开始|int|yes|
+|sortItem|查询排序字段|String|no|
+|sortType|查询排序方式升序/降序|String|no|
 
 响应示例:
-
 ```json
 response 200 OK
 {
@@ -2365,22 +2337,17 @@ response 200 OK
 ```
 
 ### 10.5 查询边缘节点列表
-
 获取边缘节点信息.
-
 ```
 URI: /mec/appstore/v1/mechosts?appId={appId}&packageId={packageId}
 METHOD: GET
 ```
-
-| 名称      | 描述     | IN            | 必选 |
-| --------- | -------- | ------------- | ---- |
-| appId     | 应用id   | request param | 否   |
-| packageId | 应用包id | request param | 否   |
-
+|名称|描述|IN|必选|
+|---------|--------|-------------|----|
+|appId|应用id|request param|否|
+|packageId|应用包id|request param|否|
 
 响应示例:
-
 ```json
 response 200 OK
 {

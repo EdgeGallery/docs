@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the EdgeGallery Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-05 12:53+0000\n"
+"POT-Creation-Date: 2022-01-17 05:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,9 +33,8 @@ msgid "**设计约束**"
 msgstr "**Design Constraints**"
 
 #: ../../Projects/Developer/Developer_Features.md
-#, fuzzy
 msgid "工具箱"
-msgstr "Toolchain"
+msgstr "Toolbox"
 
 #: ../../Projects/Developer/Developer_Features.md
 msgid "提供给开发者使用的App开发工具，开发者可以下载使用，也可以将自研的工具分享给社区开发者使用。"
@@ -55,14 +53,12 @@ msgid "应用孵化"
 msgstr "Application incubation"
 
 #: ../../Projects/Developer/Developer_Features.md
-#, fuzzy
 msgid "应用孵化是给开发者提供的项目管理平台，开发者可以通过创建项目，完成App的开发-测试-发布的整个流程。支持容器和虚机应用的部署调测"
-msgstr "Workspace is a project management platform for developers, and developers can complete the development of the App by creating projects, even the entire process of testing to publishing. Support for deployment of container and virtual machine applications."
+msgstr "Application incubation is a project management platform provided to developers. Developers can create projects to complete the entire process of App development-testing-release. It supports deployment and debugging of container and virtual machine applications"
 
 #: ../../Projects/Developer/Developer_Features.md
-#, fuzzy
 msgid "系统管理"
-msgstr "System"
+msgstr "System Management"
 
 #: ../../Projects/Developer/Developer_Features.md
 msgid "系统菜单是给管理员提供的管理菜单。主要负责测试沙箱和能力中心（服务）的管理"
@@ -78,7 +74,7 @@ msgstr "The document menu includes an introduction to the platform, development 
 
 #: ../../Projects/Developer/Developer_Features.md:13
 msgid "![](/uploads/images/2021/developer/docu.PNG \"docu.PNG\")"
-msgstr "![](/uploads/images/2021/developer/docu_en_ch.png \"docu.png\")"
+msgstr "![](/uploads/images/2021/developer/docu.png \"docu.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:16
 msgid "能力中心展示的是开发者平台所有的能力（开发者共享的能力和平台自身提供的能力）。包含详细的API描述文档，供开发者在线查看，模拟，体验。"
@@ -90,14 +86,12 @@ msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%83%BD%E5%8A
 msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83%E9%A6%96%E9%A1%B5.png)"
 
 #: ../../Projects/Developer/Developer_Features.md:22
-#, fuzzy
 msgid "开发者在这里通过创建项目的方式，管理自己的APP开发过程，有两种开发模式："
-msgstr "The Developer manages its own APP development process here by creating project, with two development modes:"
+msgstr "Developers manage their own APP development process by creating projects here. There are two development modes:"
 
 #: ../../Projects/Developer/Developer_Features.md:24
-#, fuzzy
 msgid "**新建应用** 在开发集成平台进行部署测试，最终发布到应用仓库上"
-msgstr "**Application Integration** Existing applications need to be packaged into images, deployed and tested on the development integration platform, and finally released to the application repository."
+msgstr "**New application** is deployed and tested on the development integration platform, and finally released to the application repository"
 
 #: ../../Projects/Developer/Developer_Features.md:26
 msgid "**选择场景** 支持profile应用场景，集成profile相关基础能力。"
@@ -122,9 +116,8 @@ msgid "创建项目时，需要输入项目基本信息。当前版本支持容�
 msgstr "When creating a project，Need to enter the basic information of the project。The current version supports container applications and virtual machine applications。 ![Enter picture description](../../uploads/images/2021/developer/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png)"
 
 #: ../../Projects/Developer/Developer_Features.md:36
-#, fuzzy
 msgid "能力中心-可选"
-msgstr "Competence Center"
+msgstr "Competence Center - Optional"
 
 #: ../../Projects/Developer/Developer_Features.md:37
 #, python-format
@@ -170,14 +163,12 @@ msgid "配置部署文件"
 msgstr "Configuring deployment documents"
 
 #: ../../Projects/Developer/Developer_Features.md:55
-#, fuzzy
 msgid "提供两种配置部署文件方式，支持在线编辑修改："
-msgstr "Two configuration deployment documents are available:"
+msgstr "Provide two ways to configure and deploy files, support online editing and modification:"
 
 #: ../../Projects/Developer/Developer_Features.md:56
-#, fuzzy
 msgid "支持k8s deployment yaml文件上传，平台提供基本的校验功能；有关配置文件的格式，可以参考界面提供的demo样例，该样例可以直接上传使用。"
-msgstr "The user can directly upload after local editing. The platform provides basic-check function. The format of the configuration file can be used as the demo example provided by the reference interface. The example can be directly uploaded."
+msgstr "K8s deployment yaml file upload is supported, and the platform provides basic verification functions; for the format of the configuration file, you can refer to the demo sample provided by the interface, which can be directly uploaded and used."
 
 #: ../../Projects/Developer/Developer_Features.md:58
 msgid "支持helmchart文件上传。"
@@ -189,26 +180,22 @@ msgid "![输入图片说明](../../uploads/images/2021/developer/k8%E8%84%9A%E6%
 msgstr "![Enter picture description](../../uploads/images/2021/developer/k8%E8%84%9A%E6%9C%AC%E4%B8%8A%E4%BC%A0.png)"
 
 #: ../../Projects/Developer/Developer_Features.md:65
-#, fuzzy
 msgid "**Step1** 启动部署，开始 生成部署文件 -> 获取测试节点 -> 实例化应用 -> 获取部署状态"
-msgstr "**Step2** Start Deployment, Start Generating Deployment Documents -> Broker Node -> Instantiating Applications -> Get Deployment Status"
+msgstr "**Step1** start the deployment, start generating the deployment file -> get the test node -> instantiate the application -> get the deployment status"
 
 #: ../../Projects/Developer/Developer_Features.md:66
-#, fuzzy
 msgid "**Step2** 部署成功后，会展示已经部署完成POD信息"
-msgstr "**Step3** After successful deployment, it will return to the test link of the deployment backend and display the POD information that has been deployed."
+msgstr "**Step2** After the deployment is successful, the POD information that has been deployed will be displayed"
 
 #: ../../Projects/Developer/Developer_Features.md:67
-#, fuzzy
 msgid "**Step3** 应用开发者暴露的端口号对应用进行测试"
-msgstr "**Step4** App developers test the apps by linking it."
+msgstr "**Step3** Test the application with the port number exposed by the application developer"
 
 #: ../../Projects/Developer/Developer_Features.md:68
 msgid "**Step4** 可以通过远程登录，查看应用的部署详细信息以及日志"
 msgstr "**Step4** Can log in remotely，View application deployment details and logs"
 
 #: ../../Projects/Developer/Developer_Features.md:69
-#, fuzzy
 msgid "**Step5** 测试完成后，通过【删除】按钮释放测试环境，如需修改，请在完成镜像修改后，循环以上Step1->Step2->Step3->Step4操作，对应用进行反复测试"
 msgstr "**Step5** Upon completion, release the test environment through the [Resource Recovery] button. If you need to modify the image, please cycle the above Step1->Step2->Step3->Step4 operations to test the application repeatedly."
 
@@ -222,9 +209,8 @@ msgid "虚机应用部署调测分为以下三个步骤："
 msgstr "The virtual machine application deployment adjustment is divided into the following three steps:"
 
 #: ../../Projects/Developer/Developer_Features.md:74
-#, fuzzy
 msgid "选择虚机沙箱"
-msgstr "Choose virtual machine resource "
+msgstr "Choose virtual machine sandbox "
 
 #: ../../Projects/Developer/Developer_Features.md:76
 #, python-format
@@ -245,9 +231,8 @@ msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C
 msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E5%90%8D%E7%A7%B0.png)"
 
 #: ../../Projects/Developer/Developer_Features.md:83
-#, fuzzy
 msgid "配置虚机镜像源"
-msgstr "Configure virtual machine resource size and mirror source."
+msgstr "Configure the virtual machine image source"
 
 #: ../../Projects/Developer/Developer_Features.md:85
 #, python-format
@@ -255,9 +240,8 @@ msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C
 msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E9%95%9C%E5%83%8F%E9%80%89%E6%8B%A9.png)"
 
 #: ../../Projects/Developer/Developer_Features.md:87
-#, fuzzy
 msgid "配置虚机资源规格"
-msgstr "Configure virtual machine resource size and mirror source."
+msgstr "Configure virtual machine resource specifications"
 
 #: ../../Projects/Developer/Developer_Features.md:89
 #, python-format
@@ -265,9 +249,8 @@ msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C
 msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E8%A7%84%E5%88%99%E9%80%89%E6%8B%A9.png)"
 
 #: ../../Projects/Developer/Developer_Features.md:91
-#, fuzzy
 msgid "设置虚机网络类型，默认全选"
-msgstr "Set the network type of the virtual machine, the N6 network is checked by default."
+msgstr "Set the virtual machine network type, select all by default"
 
 #: ../../Projects/Developer/Developer_Features.md:93
 #, python-format
@@ -284,9 +267,8 @@ msgid "![输入图片说明](../../uploads/images/2021/developer/%E5%90%AF%E5%8A
 msgstr "![Enter picture description](../../uploads/images/2021/developer/%E5%90%AF%E5%8A%A8%E8%99%9A%E6%9C%BA%E9%83%A8%E7%BD%B2.png)"
 
 #: ../../Projects/Developer/Developer_Features.md:99
-#, fuzzy
 msgid "申请到的虚机可以远程登录和SSH到虚机进行应用开发调测："
-msgstr "The applied virtual machine can be remotely logged in for application development and commissioning:"
+msgstr "The applied virtual machine can be remotely logged in and SSH to the virtual machine for application development and debugging:"
 
 #: ../../Projects/Developer/Developer_Features.md:101
 #, python-format
@@ -319,77 +301,84 @@ msgstr "According to the basic information of the project，Package the applicat
 msgid "测试认证"
 msgstr "Test certification"
 
-#: ../../Projects/Developer/Developer_Features.md:117
+#: ../../Projects/Developer/Developer_Features.md:115
+msgid "对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。"
+msgstr "Connecting to the certification test platform, all developed applications need to pass the certification test platform certification before they can be released to the AppStore platform, and the generated certification test report will be sent to the AppStore platform."
+
+#: ../../Projects/Developer/Developer_Features.md:116
+msgid "选择测试场景"
+msgstr "Choose a test scenario"
+
+#: ../../Projects/Developer/Developer_Features.md:118
 #, python-format
 msgid "![输入图片说明](../../uploads/images/2021/developer/%E9%80%89%E6%8B%A9%E6%B5%8B%E8%AF%95%E5%9C%BA%E6%99%AF.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E9%80%89%E6%8B%A9%E6%B5%8B%E8%AF%95%E5%9C%BA%E6%99%AF.png)"
+msgstr "![Enter image description](../../uploads/images/2021/developer/%E9%80%89%E6%8B%A9%E6%B5%8B%E8%AF%95%E5%9C% BA%E6%99%AF.png)"
 
 #: ../../Projects/Developer/Developer_Features.md:120
 #, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E6%89%A7%E8%A1%8C%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B.png)"
+msgid "执行测试用例     ![输入图片说明](../../uploads/images/2021/developer/%E6%89%A7%E8%A1%8C%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B.png)"
 msgstr "![Enter picture description](../../uploads/images/2021/developer/%E6%89%A7%E8%A1%8C%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B.png)"
 
-#: ../../Projects/Developer/Developer_Features.md:123
+#: ../../Projects/Developer/Developer_Features.md:124
 msgid "应用发布"
 msgstr "Application Publish"
 
-#: ../../Projects/Developer/Developer_Features.md:125
+#: ../../Projects/Developer/Developer_Features.md:126
 msgid "认证通过的应用，通过这里可以直接发布到EdgeGallery的AppStore平台，同时如果在【应用配置】时填写了应用服务发布配置，该应用同样会做为能力服务，被收录到能力中心里，可以被其他应用开发者使用。"
 msgstr "The certified application can be directly published to the EdgeGallery's AppStore platform, and if the application service release configuration is completed when [application configuration] is available, the application will also be used as a capability service, and can be used by other application developers."
 
-#: ../../Projects/Developer/Developer_Features.md:127
+#: ../../Projects/Developer/Developer_Features.md:128
 #, python-format
 msgid "![输入图片说明](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E5%8F%91%E5%B8%83.png)"
 msgstr "![Enter picture description](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E5%8F%91%E5%B8%83.png)"
 
-#: ../../Projects/Developer/Developer_Features.md:129
+#: ../../Projects/Developer/Developer_Features.md:130
 msgid "系统"
 msgstr "System"
 
-#: ../../Projects/Developer/Developer_Features.md:130
-#, fuzzy
+#: ../../Projects/Developer/Developer_Features.md:131
 msgid "系统菜单主要对管理员权限的用户开放，提供沙箱节点、镜像管理以及平台能力的管理。"
-msgstr "The system menu is primarily open to users of administrator rights, providing the management of sandbox nodes and platform capabilities."
+msgstr "The system menu is mainly open to users with administrator privileges, and provides management of sandbox nodes, image management, and platform capabilities."
 
-#: ../../Projects/Developer/Developer_Features.md:132
+#: ../../Projects/Developer/Developer_Features.md:133
 msgid "沙箱管理"
 msgstr "Sandbox Management"
 
-#: ../../Projects/Developer/Developer_Features.md:133
+#: ../../Projects/Developer/Developer_Features.md:134
 msgid "沙箱节点列表"
 msgstr "Sandbox Node List "
 
-#: ../../Projects/Developer/Developer_Features.md:135
+#: ../../Projects/Developer/Developer_Features.md:136
 #, python-format
 msgid "![输入图片说明](../../uploads/images/2021/developer/%E6%B2%99%E7%AE%B1%E8%8A%82%E7%82%B9%E5%88%97%E8%A1%A8.png)"
 msgstr "![Enter picture description](../../uploads/images/2021/developer/%E6%B2%99%E7%AE%B1%E8%8A%82%E7%82%B9%E5%88%97%E8%A1%A8.png)"
 
-#: ../../Projects/Developer/Developer_Features.md:137
+#: ../../Projects/Developer/Developer_Features.md:138
 msgid "新增沙箱节点"
 msgstr "Add Sandbox Node "
 
-#: ../../Projects/Developer/Developer_Features.md:139
+#: ../../Projects/Developer/Developer_Features.md:140
 msgid "![](/uploads/images/2021/developer/sys-saxbox-new.PNG \"sys-saxbox-new.PNG\")"
 msgstr "![](/uploads/images/2021/developer/sys-saxbox-new_en.png \"sys-saxbox-new.PNG\")"
 
-#: ../../Projects/Developer/Developer_Features.md:141
+#: ../../Projects/Developer/Developer_Features.md:142
 msgid "能力中心管理"
 msgstr "Competence Center Management"
 
-#: ../../Projects/Developer/Developer_Features.md:142
+#: ../../Projects/Developer/Developer_Features.md:143
 msgid "能力中心列表"
 msgstr "List of Competence Centers"
 
-#: ../../Projects/Developer/Developer_Features.md:144
+#: ../../Projects/Developer/Developer_Features.md:145
 #, python-format
 msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83%E5%88%97%E8%A1%A8.png)"
 msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83%E5%88%97%E8%A1%A8.png)"
 
-#: ../../Projects/Developer/Developer_Features.md:145
+#: ../../Projects/Developer/Developer_Features.md:146
 msgid "新增能力中心"
 msgstr "Competence Center"
 
-#: ../../Projects/Developer/Developer_Features.md:147
+#: ../../Projects/Developer/Developer_Features.md:148
 #, python-format
 msgid "![输入图片说明](../../uploads/images/2021/developer/%E6%96%B0%E5%A2%9E%E8%83%BD%E5%8A%9B.png)"
 msgstr "![Enter picture description](../../uploads/images/2021/developer/%E6%96%B0%E5%A2%9E%E8%83%BD%E5%8A%9B.png)"
@@ -529,17 +518,11 @@ msgstr "![Enter picture description](../../uploads/images/2021/developer/%E6%96%
 #~ msgid "应用认证"
 #~ msgstr "Application Credentials"
 
-#~ msgid "对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。"
-#~ msgstr "Docking the certification test platform, all completed applications need to pass the certification of the test platform before they can be published to the AppStore platform, and the generated certification test report will be sent to the AppStore platform."
-
 #~ msgid "选择测试场景"
 #~ msgstr "Choose Test Scene "
 
 #~ msgid "![](/uploads/images/2021/developer/atp-1.PNG \"atp-1.PNG\")"
 #~ msgstr "![](/uploads/images/2021/developer/atp-1_en.png \"atp-1.PNG\")"
-
-#~ msgid "执行测试用例"
-#~ msgstr "Run test case "
 
 #~ msgid "![](/uploads/images/2021/developer/atp-2.PNG \"atp-2.PNG\")"
 #~ msgstr "![](/uploads/images/2021/developer/atp-2_en.png \"atp-2.PNG\")"
@@ -555,4 +538,10 @@ msgstr "![Enter picture description](../../uploads/images/2021/developer/%E6%96%
 
 #~ msgid "![](/uploads/images/2021/developer/sys-ability-new.PNG \"sys-ability-new.PNG\")"
 #~ msgstr "![](/uploads/images/2021/developer/sys-ability-new_en.png \"sys-ability-new.PNG\")"
+
+#~ msgid "对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。"
+#~ msgstr "Docking the certification test platform, all completed applications need to pass the certification of the test platform before they can be published to the AppStore platform, and the generated certification test report will be sent to the AppStore platform."
+
+#~ msgid "执行测试用例"
+#~ msgstr "Run test case "
 
