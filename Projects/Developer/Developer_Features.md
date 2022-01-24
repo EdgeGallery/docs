@@ -17,7 +17,7 @@ Developer 特性清单
 ### 能力中心
 能力中心展示的是开发者平台所有的能力（开发者共享的能力和平台自身提供的能力）。包含详细的API描述文档，供开发者在线查看，模拟，体验。
 
-![输入图片说明](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83%E9%A6%96%E9%A1%B5.png)
+![](/uploads/images/2021/developer/capability-center-index.png "capability-center-index.png")
 
 
 ### 应用孵化
@@ -30,21 +30,21 @@ Developer 特性清单
 
 开发集成平台提供的端到端开发流程如下：
 
-![输入图片说明](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E5%AD%B5%E5%8C%96.png)
+![](/uploads/images/2021/developer/app-incubation.png "app-incubation.png")
 
 #### 创建项目
 创建项目时，需要输入项目基本信息。当前版本支持容器应用和虚机应用。
-![输入图片说明](../../uploads/images/2021/developer/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png)
+![](/uploads/images/2021/developer/create-app.png "create-app.png")
 
 
 #### 能力中心-可选
 创建项目时选择的能力，这里会展示对应能力的详细API，帮助开发者理解如何调用能力服务，并在后台提供API模拟器，可以测试API的请求和返回值。
-![输入图片说明](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83.png)
+![](/uploads/images/2021/developer/capability-center-optional.png "capability-center-optional.png")
 
 
 #### 选择沙箱
 选择相应的沙箱环境进行部署调测
-![输入图片说明](../../uploads/images/2021/developer/%E9%80%89%E6%8B%A9%E6%B2%99%E7%AE%B1.png)
+![](/uploads/images/2021/developer/select-sandbox.png "select-sandbox.png")
 
 #### 部署调测
 容器应用部署调测分为三个部署：
@@ -53,7 +53,7 @@ Developer 特性清单
     集成开发-系统管理-系统镜像管理-容器镜像
     - 将镜像文件上传至容器镜像管理中。
 
-![输入图片说明](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E4%B8%8A%E4%BC%A0.png)
+![](/uploads/images/2021/developer/uoload-container-image.png "uoload-container-image.png")
 
 - 配置部署文件
 
@@ -62,7 +62,7 @@ Developer 特性清单
     
     - 支持helmchart文件上传。   
 
-    ![输入图片说明](../../uploads/images/2021/developer/k8%E8%84%9A%E6%9C%AC%E4%B8%8A%E4%BC%A0.png)
+    ![](/uploads/images/2021/developer/upload-k8s-yaml.png "upload-k8s-yaml.png")
     
 
 - 部署调测
@@ -73,64 +73,64 @@ Developer 特性清单
     - **Step4** 可以通过远程登录，查看应用的部署详细信息以及日志
     - **Step5** 测试完成后，通过【删除】按钮释放测试环境，如需修改，请在完成镜像修改后，循环以上Step1->Step2->Step3->Step4操作，对应用进行反复测试
 
-![输入图片说明](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8%E9%83%A8%E7%BD%B2%E8%B0%83%E6%B5%8B.png)
+![](/uploads/images/2021/developer/container-deploy-test.png "container-deploy-test.png")
 
 虚机应用部署调测分为以下三个步骤：
 - 选择虚机沙箱  
 
-![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E6%B2%99%E7%AE%B1%E9%80%89%E6%8B%A9.png) 
+![](/uploads/images/2021/developer/select-vm-sandbox.png "select-vm-sandbox.png") 
 
 配置虚机的规格、镜像、网络等信息
 - 输入虚机名称    
 
-![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E5%90%8D%E7%A7%B0.png)
+![](/uploads/images/2021/developer/input-vm-name.png "input-vm-name.png")
 
 - 配置虚机镜像源    
 
-![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E9%95%9C%E5%83%8F%E9%80%89%E6%8B%A9.png)
+![](/uploads/images/2021/developer/select-vm-image.png "select-vm-image.png")
 
 - 配置虚机资源规格
 
-![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E8%A7%84%E5%88%99%E9%80%89%E6%8B%A9.png)
+![](/uploads/images/2021/developer/select-vm-flavor.png "select-vm-flavor.png")
 
 - 设置虚机网络类型，默认全选 
 
-![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE.png)
+![](/uploads/images/2021/developer/config-vm-network.png "config-vm-network.png")
 
 - 启动虚机    
 
-![输入图片说明](../../uploads/images/2021/developer/%E5%90%AF%E5%8A%A8%E8%99%9A%E6%9C%BA%E9%83%A8%E7%BD%B2.png)
+![](/uploads/images/2021/developer/start-vm.png "start-vm.png")
 
 申请到的虚机可以远程登录和SSH到虚机进行应用开发调测：   
 
-![输入图片说明](../../uploads/images/2021/developer/%E8%BF%9C%E7%A8%8B%E8%B0%83%E6%B5%8B.png)
+![](/uploads/images/2021/developer/vm-ssh.png "vm-ssh.png")
 
 - 导出镜像
 
     - 将镜像下载到镜像管理中   
 
-![输入图片说明](../../uploads/images/2021/developer/%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA.png)
+![](/uploads/images/2021/developer/export-vm-image.png "export-vm-image.png")
 
 #### 制作镜像
 根据项目的基本信息，将应用进行打包：
-![输入图片说明](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85.png)   
+![](/uploads/images/2021/developer/make-vm-image.png "make-vm-image.png")   
 
 #### 测试认证
 
 对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。
-- 选择测试场景
-    
-![输入图片说明](../../uploads/images/2021/developer/%E9%80%89%E6%8B%A9%E6%B5%8B%E8%AF%95%E5%9C%BA%E6%99%AF.png)
+	
+- 选择测试场景    
+![](/uploads/images/2021/developer/select-test-scence.png "select-test-scence.png")
     
 - 执行测试用例    
-![输入图片说明](../../uploads/images/2021/developer/%E6%89%A7%E8%A1%8C%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B.png)
+![](/uploads/images/2021/developer/execute-test-case.png "execute-test-case.png")
 	
 
 - 应用发布
 
 认证通过的应用，通过这里可以直接发布到EdgeGallery的AppStore平台，同时如果在【应用配置】时填写了应用服务发布配置，该应用同样会做为能力服务，被收录到能力中心里，可以被其他应用开发者使用。    
 
-![输入图片说明](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E5%8F%91%E5%B8%83.png)
+![](/uploads/images/2021/developer/release-app.png "release-app.png")
 
 
 ### 系统
@@ -139,16 +139,17 @@ Developer 特性清单
 #### 沙箱管理
 - 沙箱节点列表       
 
-![输入图片说明](../../uploads/images/2021/developer/%E6%B2%99%E7%AE%B1%E8%8A%82%E7%82%B9%E5%88%97%E8%A1%A8.png)    
+![](/uploads/images/2021/developer/sandbox-list.png "sandbox-list.png")    
 
 - 新增沙箱节点    
 
-![](/uploads/images/2021/developer/sys-saxbox-new.PNG "sys-saxbox-new.PNG")
+![](/uploads/images/2021/developer/sandbox-new.png "saxbox-new.png")
 
 #### 能力中心管理
 - 能力中心列表    
 
-![输入图片说明](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83%E5%88%97%E8%A1%A8.png)
-- 新增能力中心     
+![](/uploads/images/2021/developer/capability-list.png "capability-list.png")
 
-![输入图片说明](../../uploads/images/2021/developer/%E6%96%B0%E5%A2%9E%E8%83%BD%E5%8A%9B.png)
+- 新增能力    
+
+![](/uploads/images/2021/developer/capability-new.png "capability-new.png")

@@ -12,7 +12,7 @@
 ## 配置沙箱环境：developer新增K8S沙箱环境
 
  **1.** 利用admin账户登录Developer平台，打开集成开发-系统管理-沙箱管理，点击右上角新增沙箱环境按钮，添加k8的沙箱<br/>
-![输入图片说明](../../uploads/images/2021/developer/k8s%E6%B2%99%E7%AE%B1%E9%85%8D%E7%BD%AE.png)
+![](/uploads/images/2021/developer/config-k8s-sandbox.png "config-k8s-sandbox.png")
 **2.** 参数说明：<br/>
  **名称** 边缘节点（沙箱环境）的名称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **lcmIp** lcmcontroller的ip地址<br/>
  **mecHost:** 边缘节点的IP地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **端口号** lcmcontroller对外暴露的端口号<br/>
@@ -20,29 +20,28 @@
  **架构** 根据自己的需要选择&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **部署区域** 根据自己的需要填写<br/>
  **mecPort**连接mechost的端口号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**其他** 可以不用改动（资源配置可以为空）<br/>
 **3.** 上传的配置文件结构如下，自己配置部分已由xxx代替：<br/>
-![输入图片说明](/uploads/images/2021/0701/151313_489a9540_5504908.png "config.png")
+![](/uploads/images/2021/0701/151313_489a9540_5504908.png "config.png")
 
 ## 容器应用开发
 ### 新建容器应用项目，主要的是选择容器属性，因为涉及到后续的发布能力，以新建项目为例作出说明
 #### 1. 进入首页，点击应用孵化图标
-![输入图片说明](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E5%AD%B5%E5%8C%96.png)
+![](/uploads/images/2021/developer/app-incubation.png "app-incubation.png")
 #### 2. 点击创建应用，记得负载类型选择容器
-![输入图片说明](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA.png)
-
+![](/uploads/images/2021/developer/container-app-new.png "container-app-new.png")
 #### 3. 点击能力中心，可以选择平台已有能力或者开发者已发布的能力
-![输入图片说明](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E9%80%89%E6%8B%A9.png)
+![](/uploads/images/2021/developer/select-capability.png "select-capability.png")
 #### 4. 点击选择沙箱，选择可用的沙箱，然后上传部署脚本
-![输入图片说明](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8-%E6%B2%99%E7%AE%B1%E9%80%89%E6%8B%A9.png)
+![](/uploads/images/2021/developer/select-container-sandbox.png "select-container-sandbox.png")
 #### 5. 接第四步，上传脚本完成，点击右侧，容器启动按钮，开始部署，部署完成，释放环境，点击右下角完成
-![输入图片说明](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8-%E9%83%A8%E7%BD%B2%E8%B0%83%E6%B5%8B.png)
+![](/uploads/images/2021/developer/container-deploy-test-other.png "container-deploy-test-other.png")
 #### 6. 点击制作镜像，可以配置需要发布的服务，点击右下角打包预览，打包完成，点击右上角，返回孵化流程
-![输入图片说明](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8-%E5%88%B6%E4%BD%9C%E9%95%9C%E5%83%8F.png)
+![](/uploads/images/2021/developer/make-container-image.png "make-container-image.png")
 ####7. 点击测试认证，选择对应的测试场景，点击右下角开始测试，等待测试完成
-![输入图片说明](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8-%E6%B5%8B%E8%AF%95%E8%AE%A4%E8%AF%81.png)
+![](/uploads/images/2021/developer/container-atp-test.png "container-atp-test.png")
 #### 8. 发布，测试完成，点击测试用例页面上部的发布按钮，发布应用到应用仓库
 
 #### 9. 点击应用仓库，查看已发布应用
-![输入图片说明](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8-%E5%BA%94%E7%94%A8%E4%BB%93%E5%BA%93.png)
+![](/uploads/images/2021/developer/container-appstore.png "container-appstore.png")
 ## FAQ 常见问题
 #### 1.开发者对容器应用部署调测时，可以下载开发者平台提供的样例yaml，根据自己需要部署的应用，修改样例yaml并上传使用。<br/> 
 
