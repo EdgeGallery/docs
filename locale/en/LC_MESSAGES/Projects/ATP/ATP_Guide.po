@@ -82,7 +82,7 @@ msgstr "Management side test mission management"
 
 #: ../../Projects/ATP/ATP_Guide.md:30
 msgid "任务管理显示了所有的测试任务，管理员可以对测试任务进行批量删除，也可以修改手工用例的状态。 ![](/uploads/images/2021/atp/task.png \"测试任务.png\") ![](/uploads/images/2021/atp/modifyStatus.png \"修改手工用例状态.png\")"
-msgstr "The task management shows all the test tasks and the administrator can delete the test task in bulk or modify the state of the manual use case. ![](/uploads/images/2021/atp/task.png \"Test Task.png\") ![](/uploads/images/2021/atp/modifyStatus_en.png \"Modify Hand Case Status.png\")"
+msgstr "The task management shows all the test tasks and the administrator can delete the test task in bulk or modify the state of the manual use case. ![](/uploads/images/2021/atp/task_en.png \"Test Task.png\") ![](/uploads/images/2021/atp/modifyStatus_en.png \"Modify Hand Case Status.png\")"
 
 #: ../../Projects/ATP/ATP_Guide.md:34
 msgid "管理面配置项管理"
@@ -90,7 +90,7 @@ msgstr "Management side config item management"
 
 #: ../../Projects/ATP/ATP_Guide.md:35
 msgid "配置项管理显示了所有配置项信息，每个配置项可以关联一个或者多个测试用例，使测试用例参数可配置，更灵活。 ![](/uploads/images/2021/atp/configMgmt.png "配置管理.png")"
-msgstr "Configuration item management displays all configuration item information. Each configuration item can be associated with one or more test cases, making test case parameters configurable and more flexible. ![](/uploads/images/2021/atp/configMgmt.png "config management.png")"
+msgstr "Configuration item management displays all configuration item information. Each configuration item can be associated with one or more test cases, making test case parameters configurable and more flexible. ![](/uploads/images/2021/atp/configMgmt_en.png "config management.png")"
 
 #: ../../Projects/ATP/ATP_Guide.md:38
 msgid "应用商店测试认证入口"

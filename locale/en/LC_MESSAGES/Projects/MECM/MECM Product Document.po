@@ -110,5 +110,5 @@ msgstr "The new features of V1.5 version are as follows:"
 
 #: ../../Projects/MECM/MECM Document.md:53 Product
 msgid "OpenStack节点资源管理功能，通过资源管理界面可对注册的边缘节点（OpenStack）进行基础的管理操作 ![](/uploads/images/2021/mecm/26.png)"
-msgstr "OpenStackNode resource management function，Registered edge nodes can be checked through the resource management interface（OpenStack）Perform basic management operations ![](/uploads/images/2021/mecm/26.png)"
+msgstr "OpenStackNode resource management function，Registered edge nodes can be checked through the resource management interface（OpenStack）Perform basic management operations ![](/uploads/images/2021/mecm/26_en.png)"
 
