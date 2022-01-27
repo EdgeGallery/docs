@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../Projects/MECM/MECM_User_Interface.md:21
 msgid "![.](/uploads/images/2021/cor2020/edge-node-registration.png \"edge-node-registration.png\")"
-msgstr ""
+msgstr "![.](/uploads/images/2021/cor2020/edge-node-registration_en.png \"edge-node-registration.png\")"
 
 #: ../../Projects/MECM/MECM_User_Interface.md:23
 msgid "Config file of the edge node should be uploaded, by selecting the upload config file under Operation."

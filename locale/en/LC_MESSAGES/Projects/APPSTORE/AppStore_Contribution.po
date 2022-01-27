@@ -242,7 +242,7 @@ msgstr "1.Application sharing navigation is divided into external application wa
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:130
 msgid "2.外部应用仓库管理页面，可以添加、修改和删除仓库。 ![](/uploads/images/2021/1009/appstore/third_appstores.png \"4.2\")"
-msgstr "2.The external application warehouse management page can add, modify and delete the warehouse. ![](/uploads/images/2021/appstore/third_appstores_en.png \"4.2\")"
+msgstr "2.The external application warehouse management page can add, modify and delete the warehouse. ![](/uploads/images/2021/1009/appstore/third_appstores_en.png \"4.2\")"
 
 #: ../../Projects/APPSTORE/AppStore_Contribution.md:133
 msgid "3.点击应用共享主菜单下的应用推送菜单查看可推送的应用信息，选择需要推送给运营商或者第三方的应用，进行批量推送，然后查看应用推送到运营商或者第三方的结果。 ![](/uploads/images/2021/1009/appstore/topush.png \"4.3\") ![](/uploads/images/2021/1009/appstore/pushed.png \"4.4\")"
