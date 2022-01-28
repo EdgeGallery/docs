@@ -24,6 +24,8 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
         - 优化应用孵化主流程界面，增加动态效果
         - 优化虚机应用部署时的参数配置
         - 优化AppStore中的应用同步三方系统功能
+        - 支持iso镜像实例化
+        - 扩展系统镜像类型，支持Ubuntu、Centos、Windows、Debian等不同操作系统镜像的部署调测
 
 
  Version: v1.5.0
