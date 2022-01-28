@@ -11,6 +11,19 @@ EdgeGallery 是一个5G MEC开源边缘计算平台，它是一个面向应用�
 - [项目简介](https://gitee.com/edgegallery/docs/blob/master/Get%20Started/Start%20from%20A%20Demo%20on%20EdgeGallery%2Emd)
 - [开发者指南](https://gitee.com/edgegallery/docs/tree/master/Developer%20Guide)
 
+ Version: v1.5.1
+--------------
+
+ - Release Date: 2022-01-28
+ - Image Version: v1.5.1
+
+* **版本更新**
+    - 已知问题单修改
+    
+    - 界面优化        
+        - 优化应用孵化主流程界面，增加动态效果
+        - 优化虚机应用部署时的参数配置
+        - 优化AppStore中的应用同步三方系统功能
 
 
  Version: v1.5.0
