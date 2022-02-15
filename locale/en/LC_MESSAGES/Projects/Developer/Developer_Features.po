@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EdgeGallery Documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-17 05:51+0000\n"
+"POT-Creation-Date: 2022-02-15 18:53+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,9 +81,8 @@ msgid "能力中心展示的是开发者平台所有的能力（开发者共享�
 msgstr "Competence center displays all the capabilities of Developer Platform (the ability of developers to share and the ability of the platform itself). It also contains detailed API description documents for developers to see, simulate, experience online."
 
 #: ../../Projects/Developer/Developer_Features.md:18
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83%E9%A6%96%E9%A1%B5.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83%E9%A6%96%E9%A1%B5.png)"
+msgid "![](/uploads/images/2021/developer/capability-center-index.png \"capability-center-index.png\")"
+msgstr "![](/uploads/images/2021/developer/capability-center-index_en.png \"capability-center-index_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:22
 msgid "开发者在这里通过创建项目的方式，管理自己的APP开发过程，有两种开发模式："
@@ -102,36 +101,32 @@ msgid "开发集成平台提供的端到端开发流程如下："
 msgstr "End-to-end development process provided by the development integration platform is as follows:"
 
 #: ../../Projects/Developer/Developer_Features.md:30
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E5%AD%B5%E5%8C%96.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E5%AD%B5%E5%8C%96.png)"
+msgid "![](/uploads/images/2021/developer/app-incubation.png \"app-incubation.png\")"
+msgstr "![](/uploads/images/2021/developer/app-incubation_en.png \"app-incubation_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:32
 msgid "创建项目"
 msgstr "Create Item"
 
 #: ../../Projects/Developer/Developer_Features.md:33
-#, python-format
-msgid "创建项目时，需要输入项目基本信息。当前版本支持容器应用和虚机应用。 ![输入图片说明](../../uploads/images/2021/developer/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png)"
-msgstr "When creating a project，Need to enter the basic information of the project。The current version supports container applications and virtual machine applications。 ![Enter picture description](../../uploads/images/2021/developer/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png)"
+msgid "创建项目时，需要输入项目基本信息。当前版本支持容器应用和虚机应用。 ![](/uploads/images/2021/developer/create-app.png \"create-app.png\")"
+msgstr "When creating a project，Need to enter the basic information of the project。The current version supports container applications and virtual machine applications。 ![Enter picture description](/uploads/images/2021/developer/create-app_en.png)"
 
 #: ../../Projects/Developer/Developer_Features.md:36
 msgid "能力中心-可选"
 msgstr "Competence Center - Optional"
 
 #: ../../Projects/Developer/Developer_Features.md:37
-#, python-format
-msgid "创建项目时选择的能力，这里会展示对应能力的详细API，帮助开发者理解如何调用能力服务，并在后台提供API模拟器，可以测试API的请求和返回值。 ![输入图片说明](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83.png)"
-msgstr "The abilities selected when creating the project，Here will show the details of the corresponding capabilitiesAPI，Help developers understand how to call capability services，And provide in the backgroundAPIEmulator，Can be testedAPIRequest and return value。 ![Enter picture description](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83.png)"
+msgid "创建项目时选择的能力，这里会展示对应能力的详细API，帮助开发者理解如何调用能力服务，并在后台提供API模拟器，可以测试API的请求和返回值。 ![](/uploads/images/2021/developer/capability-center-optional.png \"capability-center-optional.png\")"
+msgstr "The abilities selected when creating the project，Here will show the details of the corresponding capabilitiesAPI，Help developers understand how to call capability services，And provide in the backgroundAPIEmulator，Can be testedAPIRequest and return value。 ![Enter picture description](uploads/images/2021/developer/capability-center-optional_en.png)"
 
 #: ../../Projects/Developer/Developer_Features.md:40
 msgid "选择沙箱"
 msgstr "Select sandbox"
 
 #: ../../Projects/Developer/Developer_Features.md:41
-#, python-format
-msgid "选择相应的沙箱环境进行部署调测 ![输入图片说明](../../uploads/images/2021/developer/%E9%80%89%E6%8B%A9%E6%B2%99%E7%AE%B1.png)"
-msgstr "Select the corresponding sandbox environment for deployment and commissioning ![Enter picture description](../../uploads/images/2021/developer/%E9%80%89%E6%8B%A9%E6%B2%99%E7%AE%B1.png)"
+msgid "选择相应的沙箱环境进行部署调测 ![](/uploads/images/2021/developer/select-sandbox.png \"select-sandbox.png\")"
+msgstr "![](/uploads/images/2021/developer/select-sandbox_en.png \"select-sandbox_en.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:44 ../../Projects/Developer/Developer_Features.md:63
 msgid "部署调测"
@@ -154,9 +149,8 @@ msgid "将镜像文件上传至容器镜像管理中。"
 msgstr "Upload the image file to the container image management。"
 
 #: ../../Projects/Developer/Developer_Features.md:51
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E4%B8%8A%E4%BC%A0.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E4%B8%8A%E4%BC%A0.png)"
+msgid "![](/uploads/images/2021/developer/uoload-container-image.png \"uoload-container-image.png\")"
+msgstr "![](/uploads/images/2021/developer/upload-container-image_en.png \"upload-container-image_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:53
 msgid "配置部署文件"
@@ -175,9 +169,8 @@ msgid "支持helmchart文件上传。"
 msgstr "supporthelmchartFile Upload。"
 
 #: ../../Projects/Developer/Developer_Features.md:60
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/k8%E8%84%9A%E6%9C%AC%E4%B8%8A%E4%BC%A0.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/k8%E8%84%9A%E6%9C%AC%E4%B8%8A%E4%BC%A0.png)"
+msgid "![](/uploads/images/2021/developer/upload-k8s-yaml.png \"upload-k8s-yaml.png\")"
+msgstr "![](/uploads/images/2021/developer/upload-k8s-yaml_en.png \"upload-k8s-yaml_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:65
 msgid "**Step1** 启动部署，开始 生成部署文件 -> 获取测试节点 -> 实例化应用 -> 获取部署状态"
@@ -200,9 +193,8 @@ msgid "**Step5** 测试完成后，通过【删除】按钮释放测试环境，
 msgstr "**Step5** Upon completion, release the test environment through the [Resource Recovery] button. If you need to modify the image, please cycle the above Step1->Step2->Step3->Step4 operations to test the application repeatedly."
 
 #: ../../Projects/Developer/Developer_Features.md:71
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8%E9%83%A8%E7%BD%B2%E8%B0%83%E6%B5%8B.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E5%AE%B9%E5%99%A8%E9%83%A8%E7%BD%B2%E8%B0%83%E6%B5%8B.png)"
+msgid "![](/uploads/images/2021/developer/container-deploy-test.png \"container-deploy-test.png\")"
+msgstr "![](/uploads/images/2021/developer/container-deploy-test_en.png \"container-deploy-test_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:73
 msgid "虚机应用部署调测分为以下三个步骤："
@@ -213,9 +205,8 @@ msgid "选择虚机沙箱"
 msgstr "Choose virtual machine sandbox "
 
 #: ../../Projects/Developer/Developer_Features.md:76
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E6%B2%99%E7%AE%B1%E9%80%89%E6%8B%A9.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E6%B2%99%E7%AE%B1%E9%80%89%E6%8B%A9.png)"
+msgid "![](/uploads/images/2021/developer/select-vm-sandbox.png \"select-vm-sandbox.png\")"
+msgstr "![](/uploads/images/2021/developer/select-vm-sandbox_en.png \"select-vm-sandbox_en.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:78
 msgid "配置虚机的规格、镜像、网络等信息"
@@ -226,54 +217,48 @@ msgid "输入虚机名称"
 msgstr "Enter the name of the virtual machine."
 
 #: ../../Projects/Developer/Developer_Features.md:81
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E5%90%8D%E7%A7%B0.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E5%90%8D%E7%A7%B0.png)"
+msgid "![](/uploads/images/2021/developer/input-vm-name.png \"input-vm-name.png\")"
+msgstr "![](/uploads/images/2021/developer/input-vm-name_en.png \"input-vm-name_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:83
 msgid "配置虚机镜像源"
 msgstr "Configure the virtual machine image source"
 
 #: ../../Projects/Developer/Developer_Features.md:85
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E9%95%9C%E5%83%8F%E9%80%89%E6%8B%A9.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E9%95%9C%E5%83%8F%E9%80%89%E6%8B%A9.png)"
+msgid "![](/uploads/images/2021/developer/select-vm-image.png \"select-vm-image.png\")"
+msgstr "![](/uploads/images/2021/developer/select-vm-image_en.png \"select-vm-image_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:87
 msgid "配置虚机资源规格"
 msgstr "Configure virtual machine resource specifications"
 
 #: ../../Projects/Developer/Developer_Features.md:89
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E8%A7%84%E5%88%99%E9%80%89%E6%8B%A9.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E8%A7%84%E5%88%99%E9%80%89%E6%8B%A9.png)"
+msgid "![](/uploads/images/2021/developer/select-vm-flavor.png \"select-vm-flavor.png\")"
+msgstr "![](/uploads/images/2021/developer/select-vm-flavor_en.png \"select-vm-flavor_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:91
 msgid "设置虚机网络类型，默认全选"
 msgstr "Set the virtual machine network type, select all by default"
 
 #: ../../Projects/Developer/Developer_Features.md:93
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%99%9A%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE.png)"
+msgid "![](/uploads/images/2021/developer/config-vm-network.png \"config-vm-network.png\")"
+msgstr "![](/uploads/images/2021/developer/config-vm-network_en.png \"config-vm-network_en.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:95
 msgid "启动虚机"
 msgstr "Start the virtual machine"
 
 #: ../../Projects/Developer/Developer_Features.md:97
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E5%90%AF%E5%8A%A8%E8%99%9A%E6%9C%BA%E9%83%A8%E7%BD%B2.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E5%90%AF%E5%8A%A8%E8%99%9A%E6%9C%BA%E9%83%A8%E7%BD%B2.png)"
+msgid "![](/uploads/images/2021/developer/start-vm.png \"start-vm.png\")"
+msgstr "![](/uploads/images/2021/developer/start-vm_en.png \"start-vm_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:99
 msgid "申请到的虚机可以远程登录和SSH到虚机进行应用开发调测："
 msgstr "The applied virtual machine can be remotely logged in and SSH to the virtual machine for application development and debugging:"
 
 #: ../../Projects/Developer/Developer_Features.md:101
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%BF%9C%E7%A8%8B%E8%B0%83%E6%B5%8B.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%BF%9C%E7%A8%8B%E8%B0%83%E6%B5%8B.png)"
+msgid "![](/uploads/images/2021/developer/vm-ssh.png \"vm-ssh.png\")"
+msgstr "![](/uploads/images/2021/developer/vm-ssh_en.png \"vm-ssh_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:103
 msgid "导出镜像"
@@ -284,18 +269,16 @@ msgid "将镜像下载到镜像管理中"
 msgstr "Download the image to the image management"
 
 #: ../../Projects/Developer/Developer_Features.md:107
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA.png)"
+msgid "![](/uploads/images/2021/developer/export-vm-image.png \"export-vm-image.png\")"
+msgstr "![](/uploads/images/2021/developer/export-vm-image_en.png \"export-vm-image_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:109
 msgid "制作镜像"
 msgstr "Make mirror"
 
 #: ../../Projects/Developer/Developer_Features.md:110
-#, python-format
-msgid "根据项目的基本信息，将应用进行打包： ![输入图片说明](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85.png)"
-msgstr "According to the basic information of the project，Package the application： ![Enter picture description](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85.png)"
+msgid "根据项目的基本信息，将应用进行打包： ![](/uploads/images/2021/developer/make-vm-image.png \"make-vm-image.png\")"
+msgstr "Package the application according to the basic information of the project:  ![](/uploads/images/2021/developer/make-vm-image_en.png \"make-vm-image_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:113
 msgid "测试认证"
@@ -305,19 +288,13 @@ msgstr "Test certification"
 msgid "对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。"
 msgstr "Connecting to the certification test platform, all developed applications need to pass the certification test platform certification before they can be released to the AppStore platform, and the generated certification test report will be sent to the AppStore platform."
 
-#: ../../Projects/Developer/Developer_Features.md:116
-msgid "选择测试场景"
-msgstr "Choose a test scenario"
-
-#: ../../Projects/Developer/Developer_Features.md:118
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E9%80%89%E6%8B%A9%E6%B5%8B%E8%AF%95%E5%9C%BA%E6%99%AF.png)"
-msgstr "![Enter image description](../../uploads/images/2021/developer/%E9%80%89%E6%8B%A9%E6%B5%8B%E8%AF%95%E5%9C% BA%E6%99%AF.png)"
+#: ../../Projects/Developer/Developer_Features.md:117
+msgid "选择测试场景     ![](/uploads/images/2021/developer/select-test-scence.png \"select-test-scence.png\")"
+msgstr "![](/uploads/images/2021/developer/select-test-scence_en.png \"select-test-scence_en.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:120
-#, python-format
-msgid "执行测试用例     ![输入图片说明](../../uploads/images/2021/developer/%E6%89%A7%E8%A1%8C%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E6%89%A7%E8%A1%8C%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B.png)"
+msgid "执行测试用例     ![](/uploads/images/2021/developer/execute-test-case.png \"execute-test-case.png\")"
+msgstr "![](/uploads/images/2021/developer/execute-test-case_en.png \"execute-test-case_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:124
 msgid "应用发布"
@@ -328,9 +305,8 @@ msgid "认证通过的应用，通过这里可以直接发布到EdgeGallery的Ap
 msgstr "The certified application can be directly published to the EdgeGallery's AppStore platform, and if the application service release configuration is completed when [application configuration] is available, the application will also be used as a capability service, and can be used by other application developers."
 
 #: ../../Projects/Developer/Developer_Features.md:128
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E5%8F%91%E5%B8%83.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E5%BA%94%E7%94%A8%E5%8F%91%E5%B8%83.png)"
+msgid "![](/uploads/images/2021/developer/release-app.png \"release-app.png\")"
+msgstr "![](/uploads/images/2021/developer/release-app_en.png \"release-app_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:130
 msgid "系统"
@@ -349,17 +325,16 @@ msgid "沙箱节点列表"
 msgstr "Sandbox Node List "
 
 #: ../../Projects/Developer/Developer_Features.md:136
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E6%B2%99%E7%AE%B1%E8%8A%82%E7%82%B9%E5%88%97%E8%A1%A8.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E6%B2%99%E7%AE%B1%E8%8A%82%E7%82%B9%E5%88%97%E8%A1%A8.png)"
+msgid "![](/uploads/images/2021/developer/sandbox-list.png \"sandbox-list.png\")"
+msgstr "![](/uploads/images/2021/developer/sandbox-list_en.png \"sandbox-list_en.PNG\")"
 
 #: ../../Projects/Developer/Developer_Features.md:138
 msgid "新增沙箱节点"
 msgstr "Add Sandbox Node "
 
 #: ../../Projects/Developer/Developer_Features.md:140
-msgid "![](/uploads/images/2021/developer/sys-saxbox-new.PNG \"sys-saxbox-new.PNG\")"
-msgstr "![](/uploads/images/2021/developer/sys-saxbox-new_en.png \"sys-saxbox-new.PNG\")"
+msgid "![](/uploads/images/2021/developer/sandbox-new.png \"saxbox-new.png\")"
+msgstr "![](/uploads/images/2021/developer/sandbox-new_en.png \"sandbox-new_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:142
 msgid "能力中心管理"
@@ -370,178 +345,13 @@ msgid "能力中心列表"
 msgstr "List of Competence Centers"
 
 #: ../../Projects/Developer/Developer_Features.md:145
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83%E5%88%97%E8%A1%A8.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E8%83%BD%E5%8A%9B%E4%B8%AD%E5%BF%83%E5%88%97%E8%A1%A8.png)"
+msgid "![](/uploads/images/2021/developer/capability-list.png \"capability-list.png\")"
+msgstr "![](/uploads/images/2021/developer/capability-list_en.png \"capability-list_en.png\")"
 
-#: ../../Projects/Developer/Developer_Features.md:146
-msgid "新增能力中心"
+#: ../../Projects/Developer/Developer_Features.md:147
+msgid "新增能力"
 msgstr "Competence Center"
 
-#: ../../Projects/Developer/Developer_Features.md:148
-#, python-format
-msgid "![输入图片说明](../../uploads/images/2021/developer/%E6%96%B0%E5%A2%9E%E8%83%BD%E5%8A%9B.png)"
-msgstr "![Enter picture description](../../uploads/images/2021/developer/%E6%96%B0%E5%A2%9E%E8%83%BD%E5%8A%9B.png)"
-
-#~ msgid "开发工具管理"
-#~ msgstr "Development tools management"
-
-#~ msgid "工作空间"
-#~ msgstr "Workspaces"
-
-#~ msgid "目前开发工具管理提供生成API调用的样例代码和生成csar包格式的插件，该插件目前支持java和python。"
-#~ msgstr "The present development tools management provides a sample code for generating API calls and a plugin for the csar format, which currently supports java and python."
-
-#~ msgid "插件列表"
-#~ msgstr "List of Plugins"
-
-#~ msgid "![](/uploads/images/2021/developer/plugin-list.PNG \"plugin-list.PNG\")"
-#~ msgstr "![](/uploads/images/2021/developer/plugin-list_en.png \"plugin-list.PNG\")"
-
-#~ msgid "插件上传"
-#~ msgstr "Plugin Upload"
-
-#~ msgid "![](/uploads/images/2021/developer/pluginupload.PNG \"pluginupload.PNG\")"
-#~ msgstr "![](/uploads/images/2021/developer/pluginupload_en.png \"pluginupload.PNG\")"
-
-#~ msgid "工具链是开发者平台提供给开发者分析源代码，定位出需要修改的地方，以便于在不同平台部署。"
-#~ msgstr "Tools is a developer platform which provides developers the analysis of source code, positioning them in the place where they need to be modified in order to deploy them on different platforms."
-
-#~ msgid "![](/uploads/images/2021/developer/toolchain.PNG \"toolchain.PNG\")"
-#~ msgstr "![](/uploads/images/2021/developer/toolchain_en.png \"toolchain.PNG\")"
-
-#~ msgid "![](/uploads/images/2021/developer/abilitycenter.PNG \"abilitycenter.PNG\")"
-#~ msgstr "![](/uploads/images/2021/developer/abilitycenter_en.png \"abilitycenter.png\")"
-
-#~ msgid "**应用开发** 从编码开始，开发一个全新的应用"
-#~ msgstr "**Application Development** Start with coding. Develop a new app."
-
-#~ msgid "![](/uploads/images/2021/v1.1/FlowChart.png \"ApplicationDevelopmentProcess.PNG\")"
-#~ msgstr "![](/uploads/images/2021/v1.1/FlowChart_en.png \"ApplicationDevelopmentProcess.png\")"
-
-#~ msgid "创建项目时，需要输入项目基本信息和选择需要依赖的生态能力，当前版本支持容器应用和虚机应用。"
-#~ msgstr "When the project is created, the project basic information needs to be provided and the selection has to made based on the ecological capability. The current version supports the container application and the virtual machine."
-
-#~ msgid "能力详情"
-#~ msgstr "Capability Details"
-
-#~ msgid "创建项目时选择的能力，这里会展示对应能力的详细API，帮助开发者理解如何调用能力服务，并在后台提供API模拟器，可以测试API的请求和返回值。"
-#~ msgstr "For the capability selected when creating the project, the detailed API of the corresponding capability will be displayed here to help developers understand how to call the capability service, and an API simulator is provided in the background to test the request and return value of the API."
-
-#~ msgid "针对每个能力服务，还提供SDK下载功能，开发者可以将SDK直接集成到代码中。"
-#~ msgstr "The SDK download feature is also available for each capacity service, and developers can integrate the SDK directly into the code."
-
-#~ msgid "![](/uploads/images/2021/cor2020/CapabilityDetails.png \"CapabilityDetails.png\")"
-#~ msgstr "![](/uploads/images/2021/cor2020/CapabilityDetails_en.png \"CapabilityDetails.png\")"
-
-#~ msgid "应用开发"
-#~ msgstr "Application Development"
-
-#~ msgid "针对选择依赖的能力API，提供调用的样例代码，帮助开发者将依赖API快速集成到自己的代码中。"
-#~ msgstr "For the capability APIs which depends on, provide a sample code of calls to help developers quickly integrate depending APIs into their own code."
-
-#~ msgid "![](/uploads/images/2021/cor2020/ApplicationDevelopment.png \"ApplicationDevelopment.png\")"
-#~ msgstr "![](/uploads/images/2021/cor2020/ApplicationDevelopment_en.png \"ApplicationDevelopment.png\")"
-
-#~ msgid "支持两种镜像上传方式"
-#~ msgstr "Supporting two types of mirror uploads"
-
-#~ msgid "用户上传镜像打包文件。"
-#~ msgstr "The user uploads the image packing file."
-
-#~ msgid "上传到EdgeGallery的镜像仓库。"
-#~ msgstr "Upload to a mirrored repository in EdgeGallery."
-
-#~ msgid "![](/uploads/images/2021/developer/deploy-one.PNG \"deploy-one.PNG\")"
-#~ msgstr "![](/uploads/images/2021/developer/deploy-one_en.png \"deploy-one.png\")"
-
-#~ msgid "![](/uploads/images/2021/developer/deploy-two-file.PNG \"deploy-two-file.PNG\")"
-#~ msgstr " ![](/uploads/images/2021/developer/deploy-two-file_en.png \"deploy-two-file.png\")"
-
-#~ msgid "可视化配置文件，目前版本支持的部署类型为Pod和Service。"
-#~ msgstr "Visual configuration file. The deployment types supported by the current version are Pod and Service."
-
-#~ msgid "![](/uploads/images/2021/developer/deploy-two-config.PNG \"deploy-two-config.PNG\")"
-#~ msgstr "![](/uploads/images/2021/developer/deploy-two-config_en.png \"deploy-two-config.PNG\")"
-
-#~ msgid "**Step1** 部署调测前可以根据需要选择部署环境，EdgeGallery提供‘模拟环境’和‘5G真实’两种测试环境（v1.1版本只实现模拟环境分配）；"
-#~ msgstr "**Step1** The deployment environment can be selected according to the requirement, and EdgeGallery provides the 'simulated environment' and '5G real' test environment (v1.1 version only to realize simulation environment distribution)."
-
-#~ msgid "![](/uploads/images/2021/cor2020/DeploymentTest.png \"DeploymentTest.png\")"
-#~ msgstr "![](/uploads/images/2021/cor2020/DeploymentTest_en.png \"DeploymentTest.png\")"
-
-#~ msgid "![](/uploads/images/2021/cor2020/DeploymentTest-DeploySuccess.png \"DeploymentTest-DeploySuccess.png\")"
-#~ msgstr "![](/uploads/images/2021/cor2020/DeploymentTest-DeploySuccess_en.png \"DeploymentTest-DeploySuccess.png\")"
-
-#~ msgid "![](/uploads/images/2021/v1.1/ApplyingVm.png \"ApplyingVm.png\")"
-#~ msgstr "![](/uploads/images/2021/v1.1/ApplyingVm_en.png \"ApplyingVm.png\")"
-
-#~ msgid "![](/uploads/images/2021/v1.1/BasicVmInformation.png \"BasicVmInformation.png\")"
-#~ msgstr "![](/uploads/images/2021/v1.1/BasicVmInformation_en.png \"BasicVmInformation.png\")"
-
-#~ msgid "![](/uploads/images/2021/v1.1/SettingVmSpecification.png \"SettingVmSpecification.png\")"
-#~ msgstr "![](/uploads/images/2021/v1.1/SettingVmSpecification_en.png \"SettingVmSpecification.png\")"
-
-#~ msgid "![](/uploads/images/2021/v1.1/NetworkSettings.png \"NetworkSettings.png\")"
-#~ msgstr "![](/uploads/images/2021/v1.1/NetworkSettings_en.png \"NetworkSettings.png\")"
-
-#~ msgid "申请虚机"
-#~ msgstr "Application for virtual machine "
-
-#~ msgid "![](/uploads/images/2021/v1.1/VmDeployment.png \"VmDeployment.png\")"
-#~ msgstr "![](/uploads/images/2021/v1.1/VmDeployment_en.png \"VmDeployment.png\")"
-
-#~ msgid "![](/uploads/images/2021/v1.1/VmVNC.png \"VmVNC.png\")"
-#~ msgstr "![](/uploads/images/2021/v1.1/VmDeployment_en.png \"VmDeployment.png\")"
-
-#~ msgid "将镜像分片下载并打包在csar包中"
-#~ msgstr "Download and package the mirrored fragments in the csar package."
-
-#~ msgid "![](/uploads/images/2021/v1.1/VmImage.png \"VmImage.png\")"
-#~ msgstr "![](/uploads/images/2021/v1.1/VmImage_en.png \"VmImage.png\")"
-
-#~ msgid "应用发布分为三个步骤："
-#~ msgstr "The application publication is divided into three steps:"
-
-#~ msgid "应用配置"
-#~ msgstr "Application Configuration"
-
-#~ msgid "**可选** 流规则配置"
-#~ msgstr "**Optional** Stream Rule Configuration"
-
-#~ msgid "**可选** 应用服务发布配置：如果该应用需要成为生态能力服务，需要进行该配置。需要上传对应的API接口文档和MD说明文档，具体配置如下"
-#~ msgstr "**Optional** Application service publishing configuration: This configuration is required if the application needs to become an ecologically capable service. The corresponding API interface document and MD documentation needs to be uploaded as follows:"
-
-#~ msgid "![](/uploads/images/2021/cor2020/ApplicationRelease-RuleConfiguration.png \"ApplicationRelease-RuleConfiguration.png\")"
-#~ msgstr "![](/uploads/images/2021/cor2020/ApplicationRelease-RuleConfiguration_en.png \"ApplicationRelease-RuleConfiguration.png\")"
-
-#~ msgid "应用认证"
-#~ msgstr "Application Credentials"
-
-#~ msgid "选择测试场景"
-#~ msgstr "Choose Test Scene "
-
-#~ msgid "![](/uploads/images/2021/developer/atp-1.PNG \"atp-1.PNG\")"
-#~ msgstr "![](/uploads/images/2021/developer/atp-1_en.png \"atp-1.PNG\")"
-
-#~ msgid "![](/uploads/images/2021/developer/atp-2.PNG \"atp-2.PNG\")"
-#~ msgstr "![](/uploads/images/2021/developer/atp-2_en.png \"atp-2.PNG\")"
-
-#~ msgid "![](/uploads/images/2021/cor2020/ApplicationRelease.png \"ApplicationRelease.png\")"
-#~ msgstr "![](/uploads/images/2021/cor2020/ApplicationRelease_en.png \"ApplicationRelease.png\")"
-
-#~ msgid "![](/uploads/images/2021/developer/sys-saxbox.PNG \"sys-saxbox.PNG\")"
-#~ msgstr "![](/uploads/images/2021/developer/sys-saxbox_en.png \"sys-axbox.PNG\")"
-
-#~ msgid "![](/uploads/images/2021/developer/sys-ability.PNG \"sys-ability.PNG\")"
-#~ msgstr "![](/uploads/images/2021/developer/sys-ability_en.png \"sys-ability.PNG\")"
-
-#~ msgid "![](/uploads/images/2021/developer/sys-ability-new.PNG \"sys-ability-new.PNG\")"
-#~ msgstr "![](/uploads/images/2021/developer/sys-ability-new_en.png \"sys-ability-new.PNG\")"
-
-#~ msgid "对接认证测试平台，所有完成开发的应用都需要通过认证测试平台的认证后才能发布到AppStore平台，生成的认证测试报告会附带发送给你AppStore平台。"
-#~ msgstr "Docking the certification test platform, all completed applications need to pass the certification of the test platform before they can be published to the AppStore platform, and the generated certification test report will be sent to the AppStore platform."
-
-#~ msgid "执行测试用例"
-#~ msgstr "Run test case "
-
+#: ../../Projects/Developer/Developer_Features.md:149
+msgid "![](/uploads/images/2021/developer/capability-new.png \"capability-new.png\")"
+msgstr "![](/uploads/images/2021/developer/capability-new_en.png \"capability-new_en.PNG\")"
