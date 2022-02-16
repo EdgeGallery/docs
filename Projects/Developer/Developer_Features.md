@@ -53,7 +53,7 @@ Developer 特性清单
     集成开发-系统管理-系统镜像管理-容器镜像
     - 将镜像文件上传至容器镜像管理中。
 
-![](/uploads/images/2021/developer/uoload-container-image.png "uoload-container-image.png")
+![](/uploads/images/2021/developer/upload-container-image.png "upload-container-image.png")
 
 - 配置部署文件
 
