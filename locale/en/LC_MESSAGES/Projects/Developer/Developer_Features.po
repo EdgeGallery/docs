@@ -294,7 +294,7 @@ msgstr "![](/uploads/images/2021/developer/select-test-scence_en.png \"select-te
 
 #: ../../Projects/Developer/Developer_Features.md:120
 msgid "执行测试用例     ![](/uploads/images/2021/developer/execute-test-case.png \"execute-test-case.png\")"
-msgstr "![](/uploads/images/2021/developer/execute-test-case_en.png \"execute-test-case_en.png\")"
+msgstr "Execute test cases ![](/uploads/images/2021/developer/execute-test-case_en.png \"execute-test-case_en.png\")"
 
 #: ../../Projects/Developer/Developer_Features.md:124
 msgid "应用发布"
