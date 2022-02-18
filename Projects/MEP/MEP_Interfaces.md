@@ -1640,6 +1640,7 @@ GET /mep/mec_service_mgmt/v1/services
   |名称            | 类型  |   描述     |                           IN    |   必选|
   |---|---|---|---|---| 
   |Authorization |  String |  Token信息，格式：Bearer token信息  | header  | 是|
+  |X-AppInstanceId |  String |  App instance id  | header  | 是|
   |ser_name| String  | service name                   |query    | 否|
 
 **Body参数**
@@ -1655,6 +1656,10 @@ GET /mep/mec_service_mgmt/v1/services?ser_name=xxx
     {
       "key": "Authorization",
       "value": "Bearer xxx"
+    },
+    {
+      "key": "X-AppInstanceId",
+      "value": "xxx"
     }
   ]
 }
