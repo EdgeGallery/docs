@@ -33,6 +33,7 @@
     - [2.13 获取应用包列表-v2](#213-获取应用包列表-v2)
     - [2.14 根据创建时间区间获取应用包列表-v2](#214-根据创建时间区间获取应用包列表-v2)
     - [2.15 下载应用图标](#215-下载应用图标)
+    - [2.16 应用下架](#216-应用下架)
   - [3. 评论](#3-评论)
     - [3.1 获取评论列表](#31-获取评论列表)
     - [3.2 提交评论](#32-提交评论)
@@ -1015,6 +1016,29 @@ METHOD: GET
 ```
 200 OK
   binary output.
+```
+
+### 2.16 应用下架
+
+通过应用ID和应用包ID下架应用。
+
+```
+URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/offShelf
+METHOD: POST
+```
+
+| 名称      | 描述     | IN            | 必选 |
+| --------- | -------- | ------------- | ---- |
+| appId     | 应用ID   | path          | yes  |
+| packageId | 应用包ID | path          | yes  |
+| userId    | 用户Id   | request param | yes  |
+| userName  | 用户名   | request param | yes  |
+
+响应示例:
+
+```
+200 OK
+  OffShelf Success.
 ```
 
 ## 3. 评论

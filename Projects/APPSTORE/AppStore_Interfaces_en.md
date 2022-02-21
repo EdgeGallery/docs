@@ -33,6 +33,7 @@ The document is for the appstore-be project, there are six parts of interfaces i
     - [2.13 Get all packages of user-v2](#213-Get-All-Packages-of-User-v2)
     - [2.14 Get all packages by create time range-v2](#214-Get-All-Packages-by-Create-Time-Range -v2)
     - [2.15 Download icon of app](#215-Download-Icon-of-App)
+    - [2.16 APP offShelf](#216-App-OffShelf)
   - [3. Comment](#3-Comment)
     - [3.1 Get comments of app](#31-Get-Comments-of-App)
     - [3.2 Submit comment to app](#32-Submit-Comment-to-App)
@@ -1042,6 +1043,29 @@ Example response:
 ```
 200 OK
   binary output.
+```
+
+### 2.16 App OffShelf
+
+Take a application off shelf by application id and package id.
+
+```
+Resource URI: /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/offShelf
+Method: POST
+```
+
+| Name      | Definition     | Type          | Required |
+| --------- | -------------- | ------------- | -------- |
+| appId     | application id | path          | yes      |
+| packageId | package id     | path          | yes      |
+| userId    | user id        | request param | yes      |
+| userName  | user name      | request param | yes      |
+
+Example response:
+
+```
+200 OK
+  OffShelf Success.
 ```
 
 ## 3. Comment
