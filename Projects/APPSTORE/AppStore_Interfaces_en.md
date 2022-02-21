@@ -31,7 +31,7 @@ The document is for the appstore-be project, there are six parts of interfaces i
     - [2.11 Get all packages of app-v2](#211-Get-All-Packages-of-App-v2)
     - [2.12 Get one package-v2](#212-Get-One-Package-v2)
     - [2.13 Get all packages of user-v2](#213-Get-All-Packages-of-User-v2)
-    - [2.14 Get all packages by create time range-v2](#214-Get-All-Packages-by-Create-Time-Range -v2)
+    - [2.14 Get all packages by create time range-v2](#214-Get-All-Packages-by-Create-Time-Range-v2)
     - [2.15 Download icon of app](#215-Download-Icon-of-App)
     - [2.16 APP offShelf](#216-App-OffShelf)
   - [3. Comment](#3-Comment)
