@@ -27,16 +27,16 @@ msgstr "![EdgeGallery v1.1 Architecture](/uploads/images/2021/v1.1/EdgeGallery_A
 
 #: ../../Architecture/Architecture.md:5
 msgid "参与EdgeGallery 架构讨论"
-msgstr "Architecture collaboration"
+msgstr "Join Us in the Architecture Discussion"
 
 #: ../../Architecture/Architecture.md:6
 msgid "架构工作组[会议纪要](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Meetings)"
-msgstr "Framework Working Group [minutes](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Meetings)"
+msgstr "Architecture Working Group [minutes](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Meetings)"
 
 #: ../../Architecture/Architecture.md:7
 msgid "架构工作组[需求讨论](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements)"
-msgstr "Framework Working Group [Requirements Discussion](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements)"
+msgstr "Architecture Working Group [Requirements Discussion](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Requirements)"
 
 #: ../../Architecture/Architecture.md:8
 msgid "项目[架构Review](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Architecture%20Review)"
-msgstr "Project [Framework Review](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Architecture%20Review)"
+msgstr "Project [Architecture Review](https://gitee.com/edgegallery/community/tree/master/Architecture%20WG/Architecture%20Review)"

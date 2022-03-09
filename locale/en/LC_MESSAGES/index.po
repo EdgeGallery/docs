@@ -18,32 +18,32 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../index.rst:8
-msgid "EdgeGallery Home"
-msgstr ""
+msgid "EdgeGallery 主页"
+msgstr "EdgeGallery Home"
 
 #: ../../index.rst:11
-msgid "Getting Started"
-msgstr ""
+msgid "新人入门"
+msgstr "Getting Started"
 
 #: ../../index.rst:17
-msgid "Release Details"
-msgstr ""
+msgid "版本详情"
+msgstr "Release Details"
 
 #: ../../index.rst:17
-msgid "Release Notes"
-msgstr ""
+msgid "版本信息"
+msgstr "Release Notes"
 
 #: ../../index.rst:23
-msgid "Architecture"
-msgstr ""
+msgid "架构"
+msgstr "Architecture"
 
 #: ../../index.rst:36
-msgid "Developer Guide"
-msgstr ""
+msgid "开发者指南"
+msgstr "Developer Guide"
 
 #: ../../index.rst:42
-msgid "Installer Guide"
-msgstr ""
+msgid "安装指导"
+msgstr "Installer Guide"
 
 #: ../../index.rst:48
 msgid "AppStore"
@@ -78,7 +78,7 @@ msgid "Port Matrix"
 msgstr ""
 
 #: ../../index.rst:65
-msgid "Raise issue"
+msgid "Report Issue"
 msgstr ""
 
 #: ../../index.rst:65
@@ -91,11 +91,11 @@ msgstr ""
 
 #: ../../index.rst:2
 msgid "Welcome to EdgeGallery documentation!"
-msgstr ""
+msgstr "欢迎来到Edge Gallery!"
 
 #: ../../index.rst:4
 msgid "EdgeGallery社区聚焦5G边缘计算场景，通过开源协作构建起MEC边缘的资源、应 用、安全、管理的基础框架和网络开放服务的事实标准，并实现同公有云的互联互通。 在兼容边缘基础设施异构差异化的基础上，构建起统一的MEC应用生态系统。"
-msgstr "The EdgeGallery community focuses on the MEC platform framework of the carrier network’s edge. It builds the basic framework of MEC edge resources, applications, security and management, and de facto standards of network openness services through open source collaboration, and implements interconnection with the public cloud. A unified MEC application ecosystem is constructed based on compatibility with heterogeneous edge infrastructures"
+msgstr "The EdgeGallery community focuses on 5G edge computing scenarios. It builds the basic framework of MEC edge resources, applications, security and management and de facto standards for open network services through open source collaboration. Meanwhile, it realizes interconnection within the public cloud. On the basis of being compatible with the heterogeneous and differentiated edge infrastructure, a unified MEC application ecosystem is built."
 
 #~ msgid "APPD Definition"
 #~ msgstr ""
