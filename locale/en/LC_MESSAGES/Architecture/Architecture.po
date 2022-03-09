@@ -26,7 +26,7 @@ msgid "![EdgeGallery v1.1 Architecture](/uploads/images/2021/v1.1/EdgeGallery_Ar
 msgstr "![EdgeGallery v1.1 Architecture](/uploads/images/2021/v1.1/EdgeGallery_Architecture_en.png \"EdgeGallery_Architecture.png\")"
 
 #: ../../Architecture/Architecture.md:5
-msgid "参与EdgeGallery 架构讨论"
+msgid "参与 EdgeGallery 架构讨论"
 msgstr "Join Us in the Architecture Discussion"
 
 #: ../../Architecture/Architecture.md:6
