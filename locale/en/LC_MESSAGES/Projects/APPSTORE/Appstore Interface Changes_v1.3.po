@@ -103,7 +103,7 @@ msgstr "online experience"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
 msgid "修改"
-msgstr "Revise"
+msgstr "Modify"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
 msgid "返回参数data由字符串修改为数组，里面存储应用的多个服务信息对象[{serviceName，nodePort，mecHost}]。"
@@ -115,7 +115,7 @@ msgstr ""
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
 msgid "获取沙箱列表"
-msgstr "Get a list of sandboxes"
+msgstr "Get sandboxes list"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.3.md Interface
 msgid "优化接口响应规范"

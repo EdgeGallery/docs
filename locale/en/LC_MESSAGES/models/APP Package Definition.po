@@ -75,7 +75,7 @@ msgstr "Dscribe"
 
 #: ../../models/APP Definition.md Package
 msgid "是否必选"
-msgstr "Whether to choose or not
+msgstr "Whether is required or not"
 
 #: ../../models/APP Definition.md Package
 msgid "id"

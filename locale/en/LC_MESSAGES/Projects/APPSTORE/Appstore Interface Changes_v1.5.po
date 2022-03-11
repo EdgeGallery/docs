@@ -18,6 +18,6 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.5.md:1 Interface
-msgid "新增或者修改的接口 New or modified interfaces"
-msgstr "New or modified interface New or modified interfaces"
+msgid "新增或者修改的接口"
+msgstr "New or modified interface"
 
