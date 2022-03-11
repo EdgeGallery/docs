@@ -30,7 +30,7 @@ msgstr "Adding DB table CONFIG_TABLE, and creating table info can be seen below.
 
 #: ../../Projects/ATP/ATP_DataBase_Design.md:9
 msgid "ATP数据库使用了开源的PostgreSQL数据库，推荐版本为12.2。目前设计并应用的数据库表格如下："
-msgstr "The ATP database uses open-source PostgreSQL databases with a recommended version of 12.2.The database tables currently designed and applied are as follows:"
+msgstr "The ATP database uses open-source PostgreSQL databases with a recommended version of 12.2.The database tables are currently designed and applied are as follows:"
 
 #: ../../Projects/ATP/ATP_DataBase_Design.md:11
 msgid "TABLE TASK_TABLE: 存储测试任务信息"
@@ -61,5 +61,5 @@ msgid "CONFIG_TABLE: 存储配置项信息"
 msgstr "CONFIG_TABLE: Storage config item information"
 
 #~ msgid "在V1.3版本中，较v1.2版本，数据库表TEST_CASE_TABLE新增了configIdList字段，表TASK_TABLE新增字段reportPath，需要在上述2个数据库表中执行如下sql语句："
-#~ msgstr "In the V1.3 version, compared to the v1.2 version, the database tables TEST_CASE_TABLE have newly added configIdList fields. The following SQL statements need to be executed in the above three database tables:"
+#~ msgstr "In the V1.3 version, compared to the v1.2 version, the database tables TEST_CASE_TABLE added configIdList fields. The following SQL statements need to be executed in the above three database tables:"
 

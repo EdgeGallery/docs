@@ -107,7 +107,7 @@ msgstr "tosca.policies.nfv.SecurityGroupRule"
 
 #: ../../models/APPD Definition.md:17
 msgid "一个APPD文件包含最基本的信息，metadata，inputs参数，节点类型，数据类型，文件类型，分组类型和策略类型等。"
-msgstr "An APPD document contains the most basic information, metadata, inputs parameters, node types, data types, document types, grouping types, and policy types."
+msgstr "An APPD document contains basic information of metadata, inputs parameters, node types, data types, document types, grouping types, and policy types."
 
 #: ../../models/APPD Definition.md:19
 msgid "基本信息"
@@ -115,7 +115,7 @@ msgstr "Basic information"
 
 #: ../../models/APPD Definition.md:20
 msgid "APPD最开始需要包含最基本的信息，包含tosca_definition_version,  description, imports。   样例如下："
-msgstr "APPD begins with the most basic information, including tosca_definition_version, description, imports. The examples are as follows:"
+msgstr "APPD begins with basic information of tosca_definition_version, description, imports. The examples are as follows:"
 
 #: ../../models/APPD Definition.md:30
 msgid "Metadata定义"
@@ -131,7 +131,7 @@ msgstr "name"
 
 #: ../../models/APPD Definition.md
 msgid "是否必选"
-msgstr "whether or not to choose"
+msgstr "whether is required or not"
 
 #: ../../models/APPD Definition.md
 msgid "数据类型"
@@ -191,7 +191,7 @@ msgstr "MEPM"
 
 #: ../../models/APPD Definition.md
 msgid "该参数用于表明APPD使用的平台，目前取值MEPM"
-msgstr "This parameter is used to indicate the platform used by APPD, currently numeric MEPM"
+msgstr "This parameter is used to indicate the platform used by APPD, currently values MEPM"
 
 #: ../../models/APPD Definition.md
 msgid "vnfd_id"
@@ -235,7 +235,7 @@ msgstr "Inputs parameter"
 
 #: ../../models/APPD Definition.md:59
 msgid "Inputs参数格式参见TOSCA Simple Profile in YAML Version 1.1。以下列出APPD涉及到的定义部分。"
-msgstr "The Inputs parameter format is referred to TOSCA Simple Profile in YAML Version 1.1.The following lists the parts of the definition that the APPD involves."
+msgstr "The Inputs parameter format is referred to TOSCA Simple Profile in YAML Version 1.1. The following lists the parts of the definition that the APPD involves."
 
 #: ../../models/APPD Definition.md:71
 msgid "Inputs样例如下："
@@ -247,7 +247,7 @@ msgstr "Node Type Definition"
 
 #: ../../models/APPD Definition.md:89
 msgid "本章节此处只描述目前已经用到的部分节点类型。EdgeGallery节点类型基于ETSI NFV SOL001相关规范定义，具体可以参考ETSI NFV SOL001相关规范。"
-msgstr "This section describes only some of the node types that are currently used.The EdgeGallery node type is based on the ETSI NFV SOL001-related specification and can refer to the ETSI NFV SOL001-related specifications."
+msgstr "This section describes only some of the node types that are currently used. The EdgeGallery node type is based on the ETSI NFV SOL001-related specification and can refer to the ETSI NFV SOL001-related specifications."
 
 #: ../../models/APPD Definition.md:90
 msgid "APP(tosca.nodes.nfv.VNF)"
@@ -255,7 +255,7 @@ msgstr "APP(tosca.nodes.nfv.VNF)"
 
 #: ../../models/APPD Definition.md:91
 msgid "APP在APPD描述文件中对应tosca.nodes.nfv.VNF节点，参数定义如下："
-msgstr "The APP corresponds to the tosca.nodes.nfv.VNF node in the APPD description document, as follows:"
+msgstr "The tosca.nodes.nfv.VNF node in the APPD description file of an app is defining parameters as follows:"
 
 #: ../../models/APPD Definition.md
 msgid "app描述id"
@@ -263,7 +263,7 @@ msgstr "app description id"
 
 #: ../../models/APPD Definition.md
 msgid "app描述的版本"
-msgstr "Version described by app"
+msgstr "app description version"
 
 #: ../../models/APPD Definition.md
 msgid "provider"
@@ -271,7 +271,7 @@ msgstr "provider"
 
 #: ../../models/APPD Definition.md
 msgid "app的提供方"
-msgstr "The offering of app"
+msgstr "The provider of app"
 
 #: ../../models/APPD Definition.md
 msgid "product_name"
@@ -279,7 +279,7 @@ msgstr "product_name"
 
 #: ../../models/APPD Definition.md
 msgid "用来标识app产品的产品类型"
-msgstr "Product type used to identify the app product"
+msgstr "Used to mark the type of an app."
 
 #: ../../models/APPD Definition.md
 msgid "software_version"
@@ -287,7 +287,7 @@ msgstr "software_version"
 
 #: ../../models/APPD Definition.md
 msgid "app的软件版本"
-msgstr "The software version of the app"
+msgstr "software version of the app"
 
 #: ../../models/APPD Definition.md
 msgid "product_info_name"

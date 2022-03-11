@@ -31,7 +31,7 @@ msgstr "method"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "API说明"
-msgstr "APIinstruction"
+msgstr "API Introduction"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "/mec/appstore/v1/apps/{appId}/action/download"
@@ -43,11 +43,11 @@ msgstr ""
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "根据appId下载最新版本应用包"
-msgstr "according toappIdDownload the latest version of the application package"
+msgstr "Download the latest version of the application package based on appId"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md:6 Interface
 msgid "新增或者修改的接口"
-msgstr "New or modified interface"
+msgstr "Add or modify interface"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "**API**"
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "根据appid获取应用包"
-msgstr "according toappidGet the application package"
+msgstr "Get the application package by appid"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "/mec/appstore/v2/packages"
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "获取应用包列表"
-msgstr "Get a list of application packages"
+msgstr "Get application packages list"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "请求参数在v1接口基础上增加字段  appName、limit、offset;  后台进行分页查询、支持模糊查询 ，按条件排序，响应参数增加总数量total、limit、offset。"
@@ -123,11 +123,11 @@ msgstr ""
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "获取应用推送app列表"
-msgstr "Get app pushappList"
+msgstr "Get app list that can be posted"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "请求参数在v1接口基础上增加字段  appName、limit、offset、sortItem、sortType ;  后台进行分页查询、支持模糊查询，按条件排序 ，响应参数增加总数量total、limit、offset。"
-msgstr "The request parameters are inv1Add fields based on the interface  appName、limit、offset、sortItem、sortType ;  Paging query in the background、Support fuzzy query，Sort by condition ，Total number of response parameters increasetotal、limit、offset。"
+msgstr "Add fields for requested params based on v1 interface. appName、limit、offset、sortItem、sortType ;  Paging query in the background, support fuzzy query, sort by condition. Total number of increasing response parameters total, limit, offset."
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "/mec/appstore/v2/packages/pullable"
@@ -135,11 +135,11 @@ msgstr ""
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "获取应用拉取app列表"
-msgstr "Get app pullappList"
+msgstr "Get app available app list"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "请求参数在v1接口基础上增加字段  appName、limit、offset、sortItem、sortType;  后台进行分页查询、支持模糊查询 ，按条件排序，响应参数增加总数量total、limit、offset。"
-msgstr "The request parameters are inv1Add fields based on the interface  appName、limit、offset、sortItem、sortType;  Paging query in the background、Support fuzzy query ，Sort by condition，Total number of response parameters increasetotal、limit、offset。"
+msgstr "Add fields for requested params based on v1 interface. appName、limit、offset、sortItem、sortType ;  Paging query in the background, support fuzzy query, sort by condition. Total number of increasing response parameters total, limit, offset."
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "/mec/appstore/v2/packages/{platformId}/pullable"
@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "根据appstoreid获取应用拉取app列表"
-msgstr "according toappstoreidGet app pullappList"
+msgstr "Get avaialbe app list by appstoreid."
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.2.md Interface
 msgid "/mec/appstore/v2/messages"

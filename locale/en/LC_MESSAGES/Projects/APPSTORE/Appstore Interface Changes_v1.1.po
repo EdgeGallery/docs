@@ -27,7 +27,7 @@ msgstr "Original URI"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "现URI"
-msgstr "Now URI"
+msgstr "Current URI"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "方法"
@@ -51,7 +51,7 @@ msgstr "GET"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "查询可推送的应用列表"
-msgstr "List of queries that can be pulled by queries"
+msgstr "Query application list that can be posted"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/poke/pushable/packages/{packageId}"
@@ -63,7 +63,7 @@ msgstr "/mec/appstore/v1/packages/{packageId}/pushable"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "根据packageId获取可推送应用包"
-msgstr "Get Pushable App Based on packageId"
+msgstr "Get Apps that can be posted based on packageId"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/poke/pushable/packages/{packageId}/action/push"
@@ -79,7 +79,7 @@ msgstr "POST"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "根据packageId推送应用包"
-msgstr "Pushing an application based on packageId"
+msgstr "Post an app based on packageId"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/poke/pushable/packages/{packageId}/action/download-package"
@@ -91,7 +91,7 @@ msgstr "/mec/appstore/v1/packages/{packageId}/action/download-package"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "根据packageId下载推送应用包"
-msgstr "Download push app based on packageId"
+msgstr "Download app based on packageId"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/poke/pushable/packages/{packageId}/action/download-icon"
@@ -103,7 +103,7 @@ msgstr "/mec/appstore/v1/packages/{packageId}/action/download-icon"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "根据packageId下载推送应用图标"
-msgstr "Download push app icon based on packageId"
+msgstr "Download app icon based on packageId"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/poke/appstores"
@@ -139,7 +139,7 @@ msgstr "PUT"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "修改外部应用仓库"
-msgstr "Modifying an external application warehouse"
+msgstr "Modify external application warehouse"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "查询外部应用仓库列表"
@@ -163,7 +163,7 @@ msgstr "Add a message."
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "根据消息类型获取消息"
-msgstr "Get the message based on the message type."
+msgstr "Get message based on the message type."
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/poke/messages/{messageId}"
@@ -191,7 +191,7 @@ msgstr "/mec/appstore/v1/messages/{messageId}/action/download"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "根据message id下载app相关信息"
-msgstr "Download app-related information according to message id"
+msgstr "Download app-related information based on message id"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/poke/messages/{messageId}/action/readed"
@@ -227,7 +227,7 @@ msgstr "Add or Modify Interface"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "变更类型"
-msgstr "Change Type"
+msgstr "Type of Change"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "说明"
@@ -243,7 +243,7 @@ msgstr "Upload app"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "修改"
-msgstr "amend"
+msgstr "modify"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "修改上传请求参数，增加可选字段demoVideo，含义为应用演示视频"
@@ -255,7 +255,7 @@ msgstr "/mec/appstore/v1/packages/pullable"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "获取本平台仓库全部可拉取应用列表"
-msgstr "Get the list of all available pull applications for this platform warehouse"
+msgstr "Get all available application list for the current platform warehouse"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "新增"
@@ -263,7 +263,7 @@ msgstr "add"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "查询可拉取的应用列表"
-msgstr "List of queries that can be pulled by queries"
+msgstr "Query available application list"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/v1/packages/{platformId}/pullable"
@@ -271,11 +271,11 @@ msgstr "/mec/appstore/v1/packages/{platformId}/pullable"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "查询指定平台仓库可拉取应用列表"
-msgstr "Query specifying platform warehouse accessible application list"
+msgstr "Query available appilcation list from a specific warehouse"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "appstore后台调用指定平台仓库的URI，查询可推送应用列表，并过滤本平台已发布的应用，返回可拉取的应用列表给appstore前台"
-msgstr "The appstore background call specifies the URI of the platform warehouse, the query can push the application list, and filters the published application of the platform, returns the callable application list to the appstore front desk"
+msgstr "The Appstore backend calls the URI of the specified platform warehouse to query the list of applications that can be pushed, filter the published applications of the platform, and return the list of applications that can be pulled to the foreground of the Appstore"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/v1/packages/{packageId}/action/pull"
@@ -283,11 +283,11 @@ msgstr "/mec/appstore/v1/packages/{packageId}/action/pull"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "从指定平台仓库拉取指定应用"
-msgstr "Specifying the application from the specified platform warehouse pull"
+msgstr "Pull specified applications from the specified platform warehouse"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "appstore后台调用指定平台仓库的URI，下载指定应用的应用包和图标，并注册该应用到本平台，同时记录一条拉取消息"
-msgstr "appstore background calls the URI of the designated platform warehouse, downloads the application package and icon for the specified application, and registers the application to the platform, while recording a pull message"
+msgstr "Appstore backend calls the URI of the specified platform warehouse, downloads the application package and icon of the specified application, registers the application to the platform, and records a pull message at the same time"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/v1/apps/upload"
@@ -295,7 +295,7 @@ msgstr "/mec/appstore/v1/apps/upload"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "分片上传应用包"
-msgstr "Shards upload application package"
+msgstr "Fragment pload application package"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "当应用包大于10M时，采用分片上传方式"
@@ -307,11 +307,11 @@ msgstr "/met/appstore/v1/apps/merge"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "合并应用包"
-msgstr "Combined application package"
+msgstr "Combine application package"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "将分片的应用包合并到一起上传到服务器目标路径"
-msgstr "Merge the sliced application package together into the server target path together"
+msgstr "Merge fragmented package to the target path on server"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/v1/apps/vm-register"
@@ -319,11 +319,11 @@ msgstr "/mec/appstore/v1/apps/vm-register"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "注册虚机应用"
-msgstr "Application of registered virtual machine"
+msgstr "Register virtual machine application"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "对于应用包较大的虚机应用调用此接口注册"
-msgstr "calling this interface registration for the application packet with larger virtual machine application"
+msgstr "For virtual machine applications with large application packages, call this interface for registration."
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "/mec/appstore/v1/apps/{appId}/demoVideo"
@@ -331,7 +331,7 @@ msgstr "/mec/appstore/v1/apps/{appId}/demoVideo"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "获取应用视频"
-msgstr "Get the app video"
+msgstr "Get app video"
 
 #: ../../Projects/APPSTORE/Appstore Changes_v1.1.md Interface
 msgid "根据应用ID获取演示视频"

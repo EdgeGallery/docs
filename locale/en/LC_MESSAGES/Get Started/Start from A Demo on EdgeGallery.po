@@ -18,8 +18,8 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../Get A Demo EdgeGallery.md:1 Started/Start from on
-msgid "Getting Started"
-msgstr ""
+msgid "新手入门"
+msgstr "Getting Started"
 
 #: ../../Get A Demo EdgeGallery.md:4 Started/Start from on
 msgid "EdgeGallery界面一览"
@@ -59,7 +59,7 @@ msgstr "![](/uploads/images/2021/v1.2/atp-en.png \"atp-en.png\")<br>"
 
 #: ../../Get A Demo EdgeGallery.md:18 Started/Start from on
 msgid "边缘节点管理平台"
-msgstr "Edge node management platform"
+msgstr "Edge Node Management Platform"
 
 #: ../../Get A Demo EdgeGallery.md:19 Started/Start from on
 msgid "![](/uploads/images/2021/v1.2/mepm.png \"mepm.png\")<br>"
@@ -86,20 +86,20 @@ msgid "定位服务应用作为服务消费者依赖EdgeGallery平台的“人�
 msgstr "As a consumer service, the Positioning Service Application depends on \"Face Recognition Service\" of EdgeGallery Platform.<br>"
 
 #: ../../Get A Demo EdgeGallery.md:29 Started/Start from on
-msgid "定位服务应用作为服务供应者发布“定位服务”，对外提供生态API，其他服务可以消费“定位服务”<br>"
-msgstr "As a service provider, the Positioning Service Application publishes Location Service, provides external eco-API, and other services which can consume Location Service.<br>"
+msgid "作为服务供应者发布的定位服务，对外提供生态API，其他服务可以消费“定位服务”<br>"
+msgstr "The Positioning Service Application, which is published by service provider, provides external eco-API, so other services can consume Location Service.<br>"
 
 #: ../../Get A Demo EdgeGallery.md:31 Started/Start from on
 msgid "开发者平台容器部署流程介绍"
-msgstr "Introduction to the developer platform container deployment process"
+msgstr "Introduction to Container Deployment Process on Developer Platform"
 
-#: ../../Get A Demo EdgeGallery.md:33 Started/Start from on
+#: ../../Get A Demo EdgeG allery.md:33 Started/Start from on
 msgid "![](/uploads/images/2021/v1.2/dev_development.png \"dev_development.png\")"
 msgstr "![](/uploads/images/2021/v1.2/dev_development-en.png \"dev_development.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:35 EdgeGallery.md:73 Started/Start from on
 msgid "开发准备"
-msgstr "Development Preparation"
+msgstr "Prepare for Development"
 
 #: ../../Get A Demo EdgeGallery.md:36 EdgeGallery.md:74 Started/Start from on
 msgid "新建一个项目"
@@ -111,7 +111,7 @@ msgstr "![](/uploads/images/2021/v1.2/createproject-en.png \"createproject-en.pn
 
 #: ../../Get A Demo EdgeGallery.md:40 Started/Start from on
 msgid "选择依赖的平台能力，勾选“服务发现”"
-msgstr "Choose one of the platform Capabilities to depend on. Select \"service discovery\""
+msgstr "Choose one of the platform capabilities to depend on. Select \"service discovery\""
 
 #: ../../Get A Demo EdgeGallery.md:42 Started/Start from on
 msgid "![](/uploads/images/2021/v1.2/capability.png \"capability.png\")"
@@ -139,7 +139,7 @@ msgstr "![](/uploads/images/2021/v1.2/uploadyaml-en.png \"uploadyaml-en.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:54 Started/Start from on
 msgid "**第三步** 部署调测"
-msgstr "**Step 3** Deployment and commissioning"
+msgstr "**Step 3** Deploy and Test"
 
 #: ../../Get A Demo EdgeGallery.md:56 Started/Start from on
 msgid "![](/uploads/images/2021/v1.2/startdeploy.png \"startdeploy.png\")"
@@ -147,7 +147,7 @@ msgstr "![](/uploads/images/2021/v1.2/startdeploy-en.png \"startdeploy-en.png\")
 
 #: ../../Get A Demo EdgeGallery.md:58 EdgeGallery.md:110 Started/Start from on
 msgid "应用发布"
-msgstr "Application Publish"
+msgstr "App Release"
 
 #: ../../Get A Demo EdgeGallery.md:60 EdgeGallery.md:112 Started/Start from on
 msgid "**第一步** ATP测试"
@@ -159,7 +159,7 @@ msgstr "![](/uploads/images/2021/v1.2/starttest-en.png \"starttest-en.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:64 EdgeGallery.md:116 Started/Start from on
 msgid "**第二步** 应用发布"
-msgstr "**Step 2** Application release"
+msgstr "**Step 2** App release"
 
 #: ../../Get A Demo EdgeGallery.md:66 EdgeGallery.md:118 Started/Start from on
 msgid "![](/uploads/images/2021/v1.2/publish.png \"publish.png\")"
@@ -167,7 +167,7 @@ msgstr "![](/uploads/images/2021/v1.2/publish-en.png \"publish-en.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:68 Started/Start from on
 msgid "开发者平台虚机部署流程介绍"
-msgstr "Introduction to the deployment process of the developer platform virtual machine"
+msgstr "Introduction to the deployment process of virtual machine on Developer Platform"
 
 #: ../../Get A Demo EdgeGallery.md:71 Started/Start from on
 msgid "![](/uploads/images/2021/v1.2/dev_integrate.png \"dev_integrate.png\")"
@@ -179,11 +179,11 @@ msgstr "![](/uploads/images/2021/v1.2/createVMproject-en.png \"createVMproject-e
 
 #: ../../Get A Demo EdgeGallery.md:78 Started/Start from on
 msgid "资源配置"
-msgstr "Resource allocation"
+msgstr "Resource Allocation"
 
 #: ../../Get A Demo EdgeGallery.md:80 Started/Start from on
 msgid "**第一步** 基本信息配置"
-msgstr "**Step 1** Basic information configuration"
+msgstr "**Step 1** Basic Information"
 
 #: ../../Get A Demo EdgeGallery.md:82 Started/Start from on
 msgid "![](/uploads/images/2021/v1.2/basicinformation.png \"basicinformation.png\")"
@@ -191,7 +191,7 @@ msgstr "![](/uploads/images/2021/v1.2/basicinformation-en.png \"basicinformation
 
 #: ../../Get A Demo EdgeGallery.md:84 Started/Start from on
 msgid "**第二步** 规格设置"
-msgstr "**Step 2** Specification setting"
+msgstr "**Step 2** Specification Settings"
 
 #: ../../Get A Demo EdgeGallery.md:86 Started/Start from on
 msgid "![](/uploads/images/2021/v1.2/specificationsetting.png \"specificationsetting.png\")"
@@ -215,7 +215,7 @@ msgstr "![](/uploads/images/2021/v1.2/othersetting-en.png \"othersetting-en.png\
 
 #: ../../Get A Demo EdgeGallery.md:98 Started/Start from on
 msgid "**第一步** 开始部署"
-msgstr "**Step 1** Start deployment"
+msgstr "**Step 1** Start to Deploy"
 
 #: ../../Get A Demo EdgeGallery.md:100 Started/Start from on
 msgid "![](/uploads/images/2021/v1.2/VMdeploy.png \"VMdeploy.png\")"
@@ -223,7 +223,7 @@ msgstr "![](/uploads/images/2021/v1.2/VMdeploy-en.png \"VMdeploy-en.png\")"
 
 #: ../../Get A Demo EdgeGallery.md:102 Started/Start from on
 msgid "部署成功后，可上传应用代码文件，使用VNC功能进行运维操作"
-msgstr "After the deployment is successful, you can upload the application code file and use the VNC function for operation and maintenance operations."
+msgstr "After deployment, you can upload the code of the App and use the VNC function we provide for future operation and maintenance."
 
 #: ../../Get A Demo EdgeGallery.md:104 Started/Start from on
 msgid "**第二步** 生成镜像"
@@ -243,7 +243,7 @@ msgstr "Local Development"
 
 #: ../../Get A Demo EdgeGallery.md:121 Started/Start from on
 msgid "下载依赖的插件-BashSupport，并导入到本地IDE"
-msgstr "Download the dependent plug-in-BashSupport and import into local IDE."
+msgstr "Download plug-in-BashSupport in dependency and import it to local IDE."
 
 #: ../../Get A Demo EdgeGallery.md:123 Started/Start from on
 msgid "![](/uploads/images/2020/v1.0/Plug-in.png \"Plug-in.png\")"
@@ -259,7 +259,7 @@ msgstr "![](/uploads/images/2021/cor2020/execute_plugin_en.png \"Run plugin gene
 
 #: ../../Get A Demo EdgeGallery.md:129 Started/Start from on
 msgid "编写APP代码"
-msgstr "Author the APP code"
+msgstr "Code"
 
 #: ../../Get A Demo EdgeGallery.md:131 Started/Start from on
 msgid "构建docker image"
