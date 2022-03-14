@@ -1023,7 +1023,7 @@ METHOD: GET
 通过应用ID和应用包ID下架应用。
 
 ```
-URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/offShelf
+URI： /mec/appstore/v1/apps/{appId}/packages/{packageId}/action/unpublish
 METHOD: POST
 ```
 
@@ -1038,7 +1038,7 @@ METHOD: POST
 
 ```
 200 OK
-  OffShelf Success.
+  Unpublish Success.
 ```
 
 ## 3. 评论
